@@ -141,6 +141,14 @@ def check_packet(root):
     return counts
 
 
+def check_protocol_calibration(version, calibration):
+    require(version in {3, 4}, 'Unsupported calibrated protocol')
+    minimum = 38 if version == 4 else 18
+    require(calibration.get('protocol_version') == version and
+            calibration.get('counts', {}).get('controls', 0) >= minimum,
+            f'Protocol v{version} needs fresh expanded blind calibration with matching protocol')
+
+
 def check_qualification(repo, path):
     repo = Path(repo).resolve()
     record = json.loads(Path(path).read_text())
@@ -162,10 +170,10 @@ def check_qualification(repo, path):
     baseline = json.loads((repo / 'skills/video-production-router/references/scenarios.json').read_text())['cases']
     require({c['id'] for c in baseline} <= cases.keys(), 'Qualification case set misses baseline scenarios')
     freeze = json.loads((packet / 'freeze.json').read_text())
-    require(freeze.get('protocol_version') in {2, 3}, 'Qualification needs typed planning criteria')
-    if freeze['protocol_version'] == 3:
+    require(freeze.get('protocol_version') in {2, 3, 4}, 'Qualification needs typed planning criteria')
+    if freeze['protocol_version'] >= 3:
         calibration = json.loads((packet / manifest['calibration'] / 'manifest.json').read_text())
-        require(calibration.get('protocol_version') == 3 and calibration['counts']['controls'] >= 18, 'Protocol v3 needs fresh expanded blind calibration')
+        check_protocol_calibration(freeze['protocol_version'], calibration)
     require(freeze['case_sha256'] == hashlib.sha256((packet / 'cases.json').read_bytes()).hexdigest(), 'Frozen case hash mismatch')
     require(freeze['protocol_sha256'] == hashlib.sha256((packet / 'protocol.txt').read_bytes()).hexdigest(), 'Frozen protocol hash mismatch')
     require(record.get('model') == freeze['model'] and record.get('reasoning_effort') == freeze['effort'], 'Qualification model/config differs')

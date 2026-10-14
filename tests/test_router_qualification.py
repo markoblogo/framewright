@@ -136,6 +136,17 @@ class QualificationGateTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'v3 needs fresh'):
             evidence.check_qualification(self.root, self.path)
 
+    def test_v4_cannot_reuse_v3_grading_controls(self):
+        with self.assertRaisesRegex(ValueError, 'matching protocol'):
+            evidence.check_protocol_calibration(4, {'protocol_version': 3, 'counts': {'controls': 38}})
+
+    def test_v4_needs_all_new_boundary_controls(self):
+        with self.assertRaisesRegex(ValueError, 'v4 needs fresh'):
+            evidence.check_protocol_calibration(4, {'protocol_version': 4, 'counts': {'controls': 28}})
+
+    def test_v4_accepts_complete_matching_controls(self):
+        evidence.check_protocol_calibration(4, {'protocol_version': 4, 'counts': {'controls': 38}})
+
     def test_partial_case_set_cannot_promote(self):
         self.record['case_ids'] = self.record['case_ids'][:8]
         self.save()

@@ -51,6 +51,16 @@ it with video/audio checks. Correct words and no clipping do not establish legib
 plan to read titles, labels and CTA at the intended output size and a reduced preview.
 When media is absent these are specific planned/blocked checks, not verified results.
 
+## Preserve locked source audio
+
+For an existing/locked master, plan source-preservation checks, not just a promise:
+record its original hash, verify the source stays unchanged, and confirm the
+working input is that approved version. Inspect final decoded duration, sample
+rate/timing, content and sync for unintended trims, offsets, retiming or replacement.
+Use a format-appropriate comparison; AAC output bytes need not match a WAV source.
+Keep this separate from loudness/peak measurement and listening. Missing files
+block verification, not naming these future checks.
+
 ## Transparency and temporal effects
 
 For each alpha-bearing deliverable, including a separate PNG still, plan decoded
