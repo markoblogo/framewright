@@ -104,5 +104,12 @@ class BlockPlannerTest(unittest.TestCase):
                 self.run_plan(b)
 
 
+
+    def test_malformed_briefs_fail_with_clear_errors(self):
+        for brief in [[], {'blocks': ['bad']}, {'blocks': [{'id': 'x', 'input': 'brand'}], 'canvas': 42}, self.brief(language=[]), self.brief(effects=[''])]:
+            with self.subTest(brief=brief), self.assertRaises(ValueError):
+                self.run_plan(brief)
+
+
 if __name__ == '__main__':
     unittest.main()

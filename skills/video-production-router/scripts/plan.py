@@ -36,6 +36,8 @@ def frames(value, fps):
 
 
 def plan(brief, registry):
+    if not isinstance(brief, dict):
+        raise ValueError('Brief must be a JSON object')
     tools = {t['id']: t for t in registry['tools']}
     blocks = brief.get('blocks')
     if not isinstance(blocks, list) or not blocks:
@@ -44,12 +46,14 @@ def plan(brief, registry):
     if minimum not in {'tested', 'documented'}:
         raise ValueError('minimum_evidence must be tested or documented')
     canvas = brief.get('canvas', {'width': 1920, 'height': 1080, 'fps': 30})
-    if set(canvas) != {'width', 'height', 'fps'} or not all(type(v) is int and v > 0 for v in canvas.values()):
+    if not isinstance(canvas, dict) or set(canvas) != {'width', 'height', 'fps'} or not all(type(v) is int and v > 0 for v in canvas.values()):
         raise ValueError('canvas needs positive integer width, height and fps')
     if type(brief.get('allow_paid', False)) is not bool:
         raise ValueError('allow_paid must be a boolean (planning constraint, not purchase authority)')
     result, ids, cursor = [], set(), 0
     for block in blocks:
+        if not isinstance(block, dict):
+            raise ValueError('Each block must be a JSON object')
         identity = block.get('id')
         kind = block.get('input')
         if not isinstance(identity, str) or not identity or identity in ids:
@@ -62,13 +66,15 @@ def plan(brief, registry):
             raise ValueError('assets must be a list of recognised input kinds')
         available = {kind, *assets}
         effects, deliverables = block.get('effects', []), block.get('deliverables', ['video-export'])
-        if not all(isinstance(v, list) and all(isinstance(x, str) for x in v) for v in (effects, deliverables)):
+        if not all(isinstance(v, list) and all(isinstance(x, str) and x for x in v) for v in (effects, deliverables)):
             raise ValueError('effects and deliverables must be lists of feature IDs')
         requested = list(dict.fromkeys(effects + deliverables))
         if canvas['height'] > canvas['width']:
             requested.append('vertical-format')
         requested = list(dict.fromkeys(requested))
         language = block.get('language', brief.get('language', 'en'))
+        if not isinstance(language, str) or not language:
+            raise ValueError('language must be a nonempty string')
         paid = brief.get('allow_paid', False)
         style = block.get('style', '')
         if not isinstance(style, str):
@@ -117,7 +123,7 @@ def plan(brief, registry):
     if 'duration_seconds' in brief and (cursor is None or frames(brief['duration_seconds'], canvas['fps']) != cursor):
         raise ValueError('Declared total duration must match the known block timeline including overlaps')
     blocked = any(x['unmet'] for x in result)
-    return {'schema_version': 1, 'status': 'blocked' if blocked else 'proposed', 'qualification': 'planning_only', 'execution': 'not_started', 'minimum_evidence': minimum, 'canvas': canvas, 'duration_frames': cursor, 'blocks': result, 'assembly': {'tool': 'ffmpeg', 'evidence': 'documented', 'qualification': 'new multi-block combinations need an integration test; individual successes do not qualify a chain', 'steps': ['normalise actual size/fps/colour/alpha and frame boundaries', 'assemble picture and a single master audio timeline', 'inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata', 'retain native exports, final hashes and per-block evidence']}, 'notes': ['Styles are preferences, not fixed renderer limits or quality scores.', 'Read the cited installed-version docs before execution.', 'Paid availability in a plan is not purchase/account/publication authorisation.', 'Missing durations require timing decisions; no final timeline is claimed.'] if cursor is None else ['No model evaluation, rendering or publication was performed by this planner.']}
+    return {'schema_version': 1, 'status': 'blocked' if blocked else 'proposed', 'qualification': 'planning_only', 'execution': 'not_started', 'minimum_evidence': minimum, 'canvas': canvas, 'duration_frames': cursor, 'blocks': result, 'assembly': {'tool': 'ffmpeg', 'evidence': 'documented', 'qualification': 'new multi-block combinations need an integration test; individual successes do not qualify a chain', 'steps': ['normalise actual size/fps/colour/alpha and frame boundaries', 'assemble picture and a single master audio timeline', 'inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata', 'retain native exports, final hashes and per-block evidence']}, 'notes': ['Styles are preferences, not fixed renderer limits or quality scores.', 'Read the cited installed-version docs before execution.', 'Paid availability in a plan is not purchase/account/publication authorisation.', 'Missing durations require timing decisions; no final timeline is claimed.'] if cursor is None else ['No model evaluation, rendering or publication was performed by this planner.', 'Style matching does not qualify a new combination.', 'Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review.']}
 
 
 def main():
