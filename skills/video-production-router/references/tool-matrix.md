@@ -214,6 +214,49 @@ Finishing/transcoding/filter primitives, not a project-specific visual direction
 
 **Limits:** Stream copy is conditional on compatible containers/codecs; resizing, burning captions or frame-rate conversion requires re-encoding and final QA.
 
+## Suno
+
+**Role:** music-provider. **Inputs:** .
+
+**Style directions:** electronic, cinematic, pop, song, instrumental.
+Prompted genre/instrument/voice directions, not a fixed house style or verified coverage of every language. Singing is distinct from Kokoro narration.
+
+**Tested version/scope:** No public qualification record; current account/model must be checked
+
+**Licence:** Cloud service terms, not the repository MIT licence. Free/trial use can be personal and noncommercial; approved-download rights and account/song history require per-asset review. A noncommercial limitation is not a technical failure.
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `instrumental-generation` | documented | Instrumental creation and custom style controls are documented; current model/access can differ. [Source](https://help.suno.com/en/articles/2415873) |
+| `song-generation` | documented | Custom original/licensed lyrics; actual singing, pronunciation and timings require listening. [Source](https://help.suno.com/en/articles/2415873) |
+| `audio-download` | documented | Approved download workflow only. Formats and trial/download allocations are account-dependent. [Source](https://help.suno.com/en/articles/13926081) |
+| `song-card-video` | documented | Video export is documented. Inspect whether the actual file is a lyric/song card or scene footage; MP4 is not proof of a narrative music video. [Source](https://help.suno.com/en/articles/13926081) |
+| `video-cover-art` | documented | Image/video cover-art generation; release index states Pro/Premier availability. A cover loop is not a full multi-scene film. [Source](https://suno.com/release-notes/cover-art-improvements) |
+
+**Limits:** Do not infer commercial clearance from a playable library item or current paid status alone. Retain current terms and permitted-download evidence. Use approved downloads; do not bypass limits or strip provenance/branding. Song-card export, generated video cover art, uploaded looping art and third-party full music videos are separate capabilities. Private test media and account details are not public experiment evidence.
+
+## Google Flow Music
+
+**Role:** music-provider. **Inputs:** .
+
+**Style directions:** electronic, cinematic, song, instrumental, music-video.
+Conversational Producer and compose controls describe music and visuals; specific style, timing and story adherence require a bounded trial. Google Flow Music is distinct from Google Flow filmmaking and Autodesk Flow Studio.
+
+**Tested version/scope:** No public qualification record; live Lyria/Veo availability must be checked
+
+**Licence:** Cloud service/Google terms. Plan benefits can include commercial use; do not infer a Free account grant from credits or a general product page. Input, music and visual rights require separate records.
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `instrumental-generation` | documented | Lyria music creation; requested duration/tempo is a prompt, not an exact delivery guarantee. [Source](https://www.flowmusic.app/?version=published) |
+| `song-generation` | documented | Songs with dynamic vocals and lyrics are described; language/lyric alignment must be evaluated. [Source](https://www.flowmusic.app/?version=published) |
+| `audio-download` | documented | MP3/WAV/M4A downloads listed; inspect the actual approved export. [Source](https://www.flowmusic.app/pricing?plan=monthly) |
+| `music-video-generation` | documented | Veo-backed music videos are advertised; inspect account entitlement, clip length, credits, storyboard and final export. [Source](https://www.flowmusic.app/?version=published) |
+| `song-card-video` | unknown | A video/download menu does not establish which picture treatment is produced. Classify an actual export first. [Source](https://www.flowmusic.app/pricing?plan=monthly) |
+| `stem-export` | documented | Stem downloads listed; not qualified in the public catalogue. [Source](https://www.flowmusic.app/pricing?plan=monthly) |
+
+**Limits:** Inspect actual account credits/model/plan before generation; no purchasing or upgrade authority is implied. Do not treat the Producer chat response as proof of generation, rights, export success or account entitlement. A music-driven generative scene needs deterministic finishing for exact typography, UI facts and reliable logos. Cloud uploads/outputs may be retained and reviewed under the privacy notice. Private microtests do not promote the public catalogue to tested_for_scope.
+
 ## Source freshness
 
 Immutable repository README links retain the reviewed revision. Live documentation

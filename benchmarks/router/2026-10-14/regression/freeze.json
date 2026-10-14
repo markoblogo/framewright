@@ -1,0 +1,35 @@
+{
+  "evaluated_source_commit": "07d0b541190ae2beb5f78f8a6b61780f73b66a85",
+  "model": "gpt-6.1-sol",
+  "effort": "medium",
+  "runtime": "codex-cli 0.162.0-alpha.17.2",
+  "scope": "Partial regression: eight impacted cases; not a full-suite promotion or held-out result",
+  "previous_run": "framewright-router-eval-20261014-round2",
+  "source_tree_sha256": {
+    "skills/video-production-router/SKILL.md": "cfd9fa599629b34c896c916df22fab17af4d2c49ed739918578de264d1c4e69c",
+    "skills/video-production-router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+    "skills/video-production-router/references/music-workflows.md": "4b008a8c4973a4cd1a9fe2a5c8f04bab947101fb38c21109c95cce1a83489502",
+    "skills/video-production-router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+    "skills/video-production-router/references/scenarios.json": "45d9a2ae1de83716c324a9e946b68a6416093b659ed24b91104dab7bc7e5de75",
+    "skills/video-production-router/references/selection.md": "e783c097a7ff8ed2bfd418fa4f77c42851ac7a578cfa396ca58434ad882f38fd",
+    "skills/video-production-router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+    "skills/video-production-router/references/tool-matrix.md": "285c4e9908e87062f6d2c2a2320f1c63330edf9bedadbee080898ad296e91adb",
+    "skills/video-production-router/references/tools.json": "3b06dd0da5eee72cc40298f33ee535b272b1710a82a5856ed671e1a0e6fed3d7",
+    "skills/video-production-router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+    "skills/video-production-router/scripts/plan.py": "96e08b12b6bda67254d68f8260b178098d003d780e2a6b8748b65a74483aefc4"
+  },
+  "case_sha256": "7a01b9ff9838d86f4da948b3e8cf582bd6d7c9611984a4d43193734b61492ce2",
+  "prompt_sha256": {
+    "teaser": "8b705a09375bf209a8ea7ffe6fac8d3db0ffb50412c6caae4cb092589ff352c0",
+    "flute-react": "c94c8d4977f2ba2f21759795deb6e4a297a3fe0655e19fd50ffbbf9c4fe261ad",
+    "complete-chain": "88fa2d9d24c8016303a20661d3e32344354324b2aa2e1afb6f91b6ae5dd02a31",
+    "remotion-framewright": "102127741f531ce41f6561ff24bfce52bd7d07e254da73893e4ff0be9a15cc6e",
+    "flute-still-fallback": "1f613c338f7ed041d659adaa38b97ea25b25ba6cb1d6a20700f8f6c29f0d918f",
+    "explicit-paid-no-authority": "e89bf0ae29b663aa4d4daac3bc2fcd6dca25a0eedba7f5a697fb98081ed5e869",
+    "heldout-short-cut": "174aca8ad59387d136bcf7b0cdb6560f0ac64ab7ac13aca685178b051fc9dcc6",
+    "heldout-finish-no-new-tools": "d57b42d28aeea07627056a983d92ad32d4cee71f6491503555237ba2cca522a4"
+  },
+  "runner_sha256": "c0fe1137b2db54efef7c055cc666611585c8514981afc6767e45739b2cccfceb",
+  "cost": "monetary cost unavailable; token usage retained",
+  "qualification_limit": "Read-only synthetic planning decisions, not production execution or an independent third-party certification."
+}

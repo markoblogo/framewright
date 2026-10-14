@@ -162,7 +162,7 @@ def validate(root, local_root=None):
                 slugs = {re.sub('[^\\w -]', '', h.lower()).replace(' ', '-') for h in headings}
                 require(anchor in slugs, f'Broken heading: {doc}: {target}')
     print(f"PASS: {len(methods)} methods, {len(records)} outputs, {len(scenarios['cases'])} scenario specifications; local links intact.")
-    print('Router evaluation: structural_only; no model or video experiment was run.')
+    print('Catalogue qualification: structural_only; this integrity check runs no model or renderer.')
     if local_root:
         print('All recorded local artifacts match sizes and SHA-256 (finals, native exports and thumbnails); recorded PNG dimensions match.')
 if __name__ == '__main__':

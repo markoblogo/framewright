@@ -32,7 +32,7 @@ pinned versions, exact commands, an agent prompt and expected outputs.
 
 Start with [selection guidance](skills/video-production-router/references/selection.md)
 and [the capability matrix](skills/video-production-router/references/tool-matrix.md).
-Eight tool profiles distinguish tested, documented, failed and unknown functions.
+Ten tool profiles distinguish tested, documented, failed and unknown functions.
 Styles guide direction; they are not fixed engine limits or quality scores.
 
 For a multi-tool film the agent decomposes the request into blocks/layers. The offline
@@ -44,6 +44,27 @@ python3 skills/video-production-router/scripts/plan.py examples/briefs/mixed-pro
 
 That 30-second mixed example is a **proposed plan**, not another tested film. Each new
 combination needs an integration test. [Selection audit](docs/selection-audit.md).
+
+## Music, songs and native video
+
+Plan in three directions: **brief → music/song → picture**, **fixed video → music**,
+or **existing music → video**. Keep singing distinct from spoken narration. Suno and
+Flow Music have documented provider profiles; native song cards, animated cover art
+and generated scenes are different assets that can join a larger toolchain.
+
+[Music workflow guide](skills/video-production-router/references/music-workflows.md)
+explains timing, lyrics, supported downloads, independent usage-rights checks and
+encoded QA. Personal/noncommercial restrictions do not mean a tool cannot work.
+Account access and an asset's permitted use need separate verification.
+
+```sh
+python3 skills/video-production-router/scripts/music.py examples/briefs/music-video-first.json
+```
+
+This is an offline plan, not a service integration or rendering command. These
+additions are unreleased; private microtests do not qualify public capabilities.
+See [related projects and borrowed ideas](docs/related-work.md) and the
+[prioritised experiment queue](docs/experiment-queue.md). No queued job runs itself.
 
 ## Choose a workflow
 
@@ -101,8 +122,11 @@ for Hyperframes-backed routes; Flute and Remotion use their own guides.
 Example: “Make a French trailer from this book page and cover. Use
 $video-production-router to choose a workflow.”
 
-The router is structurally validated. Its scenario suite has **not** yet been
-evaluated by an independent model. This is separate from the completed video tests.
+The router is structurally validated. Bounded model checks now retain two full
+synthetic runs and a targeted retest: [results and limits](docs/router-evaluation.md).
+Observed route/action boundaries held, but strict checklist grades were incomplete;
+no general behavioural qualification or autonomous-production safety is claimed.
+This is separate from completed video tests.
 
 ## Add the next experiment
 

@@ -1,0 +1,26 @@
+{
+  "direction": "video-first",
+  "mode": "instrumental",
+  "provider": "flow-music",
+  "video_source": "authorised-demo.mp4",
+  "inputs_authorized": false,
+  "intended_use": "private-test",
+  "visual_source": "external-renderer",
+  "cues": [
+    {
+      "time_seconds": 0,
+      "event": "opening title"
+    },
+    {
+      "time_seconds": 6,
+      "event": "product reveal"
+    },
+    {
+      "time_seconds": 12,
+      "event": "end"
+    }
+  ],
+  "rights": {
+    "status": "unknown"
+  }
+}

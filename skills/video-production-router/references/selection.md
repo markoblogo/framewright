@@ -34,6 +34,16 @@ language. It does not interpret prose, install, render or call an AI model. Set
 If a preferred tool cannot consume the input, preserve that choice and report a
 blocked plan; propose an adapter explicitly instead of silently replacing it.
 
+For the picture shortlist, compare complete feasible chains: coverage of requested
+features, number supported by tested evidence, then chain size, style and task
+default. Preserve an explicit primary. A direct documented feature must not displace
+a tested companion route merely because it is native. Finishers need real inputs;
+their own export capability does not prove those inputs exist.
+
+For music, singing, an existing soundtrack or a provider's video export, read
+[music-workflows.md](music-workflows.md). Select the timeline owner and inspect the
+independent music plan; picture coverage alone does not clear music or its rights.
+
 ## Common assembly contract
 
 For every block retain source/tool version, feature evidence, inputs/rights, start

@@ -19,6 +19,15 @@ class BlockPlannerTest(unittest.TestCase):
     def run_plan(self, brief):
         return planner.plan(brief, copy.deepcopy(REGISTRY))
 
+    def test_music_provider_cannot_bypass_independent_music_plan(self):
+        for feature in ['song-generation', 'audio-download']:
+            with self.subTest(feature=feature):
+                p = self.run_plan(self.brief(effects=[feature]))
+                self.assertEqual(p['status'], 'blocked')
+                self.assertIsNone(p['music'])
+                self.assertIn(feature, p['blocks'][0]['unmet'])
+                self.assertFalse({'suno', 'flow-music'}.intersection(p['blocks'][0]['tools']))
+
     def test_existing_ui_uses_flute_without_extra_renderer(self):
         p = self.run_plan(self.brief(input='react-ui', effects=['camera-travel', 'depth-of-field']))
         self.assertEqual(p['blocks'][0]['tools'], ['flute'])
@@ -152,6 +161,25 @@ class BlockPlannerTest(unittest.TestCase):
         p = self.run_plan(self.brief(input='book-art', deliverables=['still-export']))
         self.assertIsNone(p['assembly']['tool'])
         self.assertIn('Still-only', p['assembly']['qualification'])
+
+
+
+    def test_tested_fallback_beats_documented_native_still(self):
+        p = self.run_plan(self.brief(input='source-project', deliverables=['still-export']))
+        b = p['blocks'][0]
+        self.assertEqual(b['tools'], ['brag', 'ffmpeg'])
+        self.assertEqual(b['coverage'][0]['evidence'], 'tested')
+        self.assertEqual(b['requires_feature_test'], [])
+
+
+
+    def test_existing_documented_provider_cannot_hide_tested_alternative(self):
+        p = self.run_plan(self.brief(effects=['normalization', 'audio-mix']))
+        b = p['blocks'][0]
+        self.assertEqual(b['requires_feature_test'], [])
+        by_feature = {x['feature']: x for x in b['coverage']}
+        self.assertEqual(by_feature['normalization']['tool'], 'ffmpeg')
+        self.assertEqual(by_feature['audio-mix']['tool'], 'sound-layer')
 
 
 if __name__ == '__main__':

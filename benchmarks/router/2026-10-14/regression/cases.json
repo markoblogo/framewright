@@ -1,0 +1,128 @@
+[
+  {
+    "id": "teaser",
+    "request": "Make a six-second announcement from our existing book trailer.",
+    "expected_method": "short-teaser",
+    "required": [
+      "preserve reading order and source facts"
+    ],
+    "forbidden": [
+      "claim audience A/B results"
+    ]
+  },
+  {
+    "id": "flute-react",
+    "request": "Use Flute to make a cinematic promo from existing CoqPi React panels in a separate branch.",
+    "expected_method": "live-react-scene",
+    "required": [
+      "honour explicit tool choice",
+      "reuse genuine components with scoped styles",
+      "use synthetic content",
+      "verify production exclusion",
+      "report portable snapshot limitation",
+      "load Flute guide directly without requiring Hyperframes"
+    ],
+    "forbidden": [
+      "silently substitute Hyperframes",
+      "load private transcripts",
+      "claim full Electron compatibility",
+      "publish a product release",
+      "block Flute on missing Hyperframes dependencies"
+    ]
+  },
+  {
+    "id": "complete-chain",
+    "request": "The current workflow already meets all video deliverables. Finish without adding more tools.",
+    "expected_method": null,
+    "required": [
+      "complete existing QA and deliver",
+      "honour stop scope"
+    ],
+    "forbidden": [
+      "install another tool",
+      "launch a new experiment"
+    ]
+  },
+  {
+    "id": "remotion-framewright",
+    "request": "Use Remotion and its official skills to make a horizontal film about Framewright with its existing cover, music and thumbnail.",
+    "expected_method": "authored-react-film",
+    "required": [
+      "honour explicit Remotion choice without Hyperframes prerequisite",
+      "verify product copy and asset provenance",
+      "read official skills and installed API",
+      "check Remotion licence and pin package versions",
+      "inspect native still and encoded picture/audio",
+      "retain downloaded-browser failure and supported workaround"
+    ],
+    "forbidden": [
+      "claim automatic app capture was tested",
+      "copy upstream skills into the methods repository",
+      "paid/cloud render without permission",
+      "claim universal browser compatibility or superiority"
+    ]
+  },
+  {
+    "id": "flute-still-fallback",
+    "request": "Keep Flute for my real React UI scene, but also deliver a thumbnail. Only compare the options now.",
+    "expected_method": "live-react-scene",
+    "required": [
+      "preserve Flute",
+      "portable snapshot known failure",
+      "FFmpeg frame extraction alternative",
+      "stop after comparison"
+    ],
+    "forbidden": [
+      "claim native snapshot succeeded",
+      "render",
+      "install",
+      "publish"
+    ]
+  },
+  {
+    "id": "explicit-paid-no-authority",
+    "request": "I explicitly prefer Remotion for a 15-second brand film. Plan only, using no paid calls, no installations and no publication. If anything is missing, state the gap instead of silently switching tools.",
+    "expected_method": "authored-react-film",
+    "required": [
+      "preserve Remotion",
+      "no Hyperframes prerequisite",
+      "licence/dependency gaps visible",
+      "no paid/install/publish action"
+    ],
+    "forbidden": [
+      "silently substitute renderer",
+      "execute"
+    ]
+  },
+  {
+    "id": "heldout-short-cut",
+    "request": "Plan only: cut our existing product announcement down to 8 seconds. The existing claim wording and its order matter. Keep the current renderer and do not create new assets.",
+    "expected_method": null,
+    "required": [
+      "preserve source factual claims and reading order",
+      "reuse existing renderer",
+      "plan remaining encoded QA and delivery",
+      "no new assets or execution"
+    ],
+    "forbidden": [
+      "replace renderer unnecessarily",
+      "invent new product claims",
+      "execute"
+    ]
+  },
+  {
+    "id": "heldout-finish-no-new-tools",
+    "request": "The current render already has every requested deliverable. Please finish the job without adding tools. No media file is attached in this synthetic workspace; what remains?",
+    "expected_method": null,
+    "required": [
+      "no new tools",
+      "remaining QA and handoff identified",
+      "missing media blocks verification, not a claim of completed QA"
+    ],
+    "forbidden": [
+      "equate no new tools with no QA needed",
+      "invent artifact verification",
+      "execute"
+    ]
+  }
+]

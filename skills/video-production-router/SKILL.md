@@ -1,6 +1,6 @@
 ---
 name: video-production-router
-description: Choose a tested video-production workflow for software promos, book trailers, or announcements, and record new production experiments. Use when planning a video or comparing video tools; not for ordinary image generation or YouTube copy alone.
+description: Choose a tested video-production workflow for software promos, book trailers, music-driven videos, or announcements, and record new production experiments. Use when planning a video or comparing video tools; not for ordinary image generation or YouTube copy alone.
 ---
 
 # Video production router
@@ -20,17 +20,37 @@ it does not replace rendering skills or confer permission to publish.
    Then read [the catalogue](references/catalog.json), then only the matching section
    of [the recipes](references/recipes.md). Recommend a default with one sentence
    of evidence and relevant limits. If the user only asks to compare, stop there.
-3. Follow the selected renderer's instructions. For Hyperframes-backed routes,
+   For music or songs, read [music workflows](references/music-workflows.md): choose
+   brief-first, video-first or music-first; keep singing separate from TTS, and
+   classify native video before reuse. The optional `scripts/music.py MUSIC.json`
+   or `music` object in a picture brief records independent source/rights/account
+   gates. It does not generate or download music. Cloud music profiles are documented,
+   not publicly tested; private probes do not change that qualification.
+3. Follow the selected renderer's instructions. Verify its installed API, licence
+   eligibility and pinned package version before execution. For Hyperframes-backed routes,
    load the installed `hyperframes` entry skill and relevant composition/audio/media
    guidance. For `live-react-scene` or another explicitly selected renderer, load
    that tool's installed guide directly; Hyperframes is not a prerequisite. If the
    selected route lacks instructions or dependencies, inspect its upstream docs
    and report the gap without silently installing tools. Preserve the requested
    format rather than applying today's horizontal 1080p examples to every job.
-4. Work from verified product facts and authorised assets. Measure generated speech
+   Renderer-specific preflight belongs in the handoff, including blocked checks:
+   Flute: genuine components, explicitly scoped capture-style overrides, synthetic
+   inputs, production exclusion and the recorded snapshot failure. Remotion: pin
+   package versions, check installed API/official skills and licence eligibility,
+   retain downloaded-browser failure plus workaround, and inspect native stills
+   separately from encoded picture/audio when stills are requested.
+4. Work from verified product facts and authorised assets. When shortening existing
+   material, preserve factual claims and reading order unless the user requests a
+   substantive rewrite. Measure generated speech
    before finalising cuts. Keep deterministic seekable picture timing and sound cues
    on a common timeline. Inspect the encoded final file, not just an intermediate mix.
-5. Deliver the export, thumbnail, subtitles/copy if requested, and honest QA status.
+5. If the current chain already meets deliverables, finish outstanding QA and
+   hand over the result without adding tools or experiments. No more tools does not
+   mean QA is complete; retain any checks blocked by missing files or authority.
+   For a plan-only request, name the intended output artifacts and the remaining
+   QA/delivery steps; missing media blocks verification, not listing those steps.
+   Deliver the export, thumbnail, subtitles/copy if requested, and honest QA status.
    Distinguish automated checks, human listening, user acceptance and public upload.
    Ask before external publication or a paid/account-authorisation step unless
    already authorised. Honour stop signals and do not extend a successful test into
@@ -47,12 +67,15 @@ For camera travel and focus around an existing React interface, consider the
 tested `live-react-scene` Flute recipe. An explicit Flute request overrides the
 default renderer choice; load its installed guide. Its browser-host success does
 not prove full Electron or arbitrary React support. Keep the ordinary app and
-production bundle outside the demonstration.
+production bundle outside the demonstration. Scope capture-style overrides to the
+development host so genuine components retain their ordinary app styling.
 
 For authored React motion graphics with a controllable frame timeline, native
 audio and stills, consider `authored-react-film` (Remotion). Distinguish it from
 camera treatment of existing app UI. Keep its own licence and observed browser
-workaround visible; a successful pilot does not prove every rendering mode.
+workaround visible; a successful pilot does not prove every rendering mode. If a
+native still is a requested deliverable, plan its own inspection alongside the
+encoded picture/audio rather than substituting an extracted or pre-existing frame.
 
 When the chosen tool misses a requested deliverable, compose the smallest useful
 chain rather than drop the deliverable or replace the whole workflow. Read
