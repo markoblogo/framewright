@@ -1,7 +1,9 @@
 # Router decision checks — 2026-10-14
 
-Latest: [integrated source 43/46](storyboard-integrated/README.md); first-exposure
-[transfer 9/12](transfer-1/README.md). Historical [v4 30/30](qa-v4/README.md) remains.
+Latest: [protocol v3 52/52 with fresh 22/22 controls](grading-v3-complete/README.md).
+Earlier [integrated 43/46](storyboard-integrated/README.md),
+[transfer 9/12](transfer-1/README.md) and [v4 30/30](qa-v4/README.md) remain.
+
 All earlier packets below preserve their own source, rubric and results.
 
 These are synthetic planning cases, not music/video-generation trials. No private
@@ -19,6 +21,10 @@ controller review. This is not independent third-party certification.
 | [Historical v4](qa-v4/manifest.json) | `9c2ec79` | 30 | 30 |
 | [First-exposure transfer](transfer-1/manifest.json) | `6af1f50` | 12 | 9 |
 | [Storyboard integrated](storyboard-integrated/manifest.json) | `7c67b1f` | 46 | 43 |
+| [Initial v3](grading-v3/manifest.json) | `c142ff6` | 52 | 50 |
+| [Second v3](grading-v3-final/manifest.json) | `8c21ee1` | 52 | 49 |
+| [Isolated v3](grading-v3-isolated/manifest.json) | `5befe6d` | 52 | 51 |
+| [Complete v3](grading-v3-complete/manifest.json) | `5befe6d` | 52 | 52 |
 
 Each packet now includes a `source-snapshot.zip` with exactly the router files
 listed in its frozen source hash map. Commit IDs are provenance labels; those
@@ -50,7 +56,7 @@ Strict failures remain visible. See [controller review](controller-review.json) 
 one evaluator inconsistency about planned versus completed QA and the ambiguity of
 an existing thumbnail versus a newly rendered native PNG. No raw grade was replaced
 with a favourable controller score. The catalogue retains its legacy `structural_only` status; the separate current
-scope record is tied to the integrated snapshot; a record with gaps is not
+scope record is tied to the isolated-v3 snapshot; a record with gaps is not
 a complete passing qualification.
 
 V3 added an execution-request contract-read case; one existing language case failed

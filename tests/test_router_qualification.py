@@ -124,6 +124,18 @@ class QualificationGateTest(unittest.TestCase):
         self.assertEqual(result['status'], 'evaluated_with_gaps')
         self.assertEqual((result['passed'], result['cases']), (29, 30))
 
+    def test_v3_cannot_reuse_legacy_calibration(self):
+        p = self.packet / 'freeze.json'
+        data = json.loads(p.read_text())
+        data['protocol_version'] = 3
+        p.write_text(json.dumps(data))
+        manifest_path = self.packet / 'manifest.json'
+        manifest = json.loads(manifest_path.read_text())
+        manifest['files']['freeze.json'] = hashlib.sha256(p.read_bytes()).hexdigest()
+        manifest_path.write_text(json.dumps(manifest))
+        with self.assertRaisesRegex(ValueError, 'v3 needs fresh'):
+            evidence.check_qualification(self.root, self.path)
+
     def test_partial_case_set_cannot_promote(self):
         self.record['case_ids'] = self.record['case_ids'][:8]
         self.save()

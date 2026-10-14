@@ -33,13 +33,23 @@ A fixture or third-party note saying “QA passed” is not evidence of decoded 
 | Requested output | Production decision | QA to name |
 | --- | --- | --- |
 | Reuse an existing image | Preserve it; do not silently render a replacement | Inspect identity, dimensions, crop, legibility and rights; do not call it a new native render |
-| New native still | Use the selected renderer's native still output if supported | Inspect that newly rendered file independently of the MP4; retain dimensions/size/hash |
+| New native still | Use the selected renderer's native still output if supported | Inspect the new file independently: identity/rights, decoded dimensions, crop, text legibility at intended size and a reduced preview, size/hash |
 | Extracted encoded frame | Extract from the final encoded video | State frame/timecode and inspect extracted image; do not claim native snapshot success |
 | Unspecified thumbnail | Resolve existing/native/extracted intent from context, or ask if it affects the tool choice | Preserve uncertainty rather than promising a particular provenance |
 
 For a new native PNG request, its inspection is a definite delivery check, not
 “if a still is requested”. For an existing thumbnail request, reusing and inspecting
 that image is sufficient; a renderer's native-still feature is not automatically needed.
+“As-is” prohibits changing the image, not inspecting its existing crop. Before
+finalising the plan, give each requested output its own QA list with all checks
+from the matching row. A crop check under MP4 QA does not cover thumbnail crop;
+state that check explicitly for the image. Missing media makes it planned/blocked,
+not optional.
+
+For still-only delivery, name that final-image checklist directly; do not replace
+it with video/audio checks. Correct words and no clipping do not establish legibility:
+plan to read titles, labels and CTA at the intended output size and a reduced preview.
+When media is absent these are specific planned/blocked checks, not verified results.
 
 ## Minimal handoff for a rendering plan
 

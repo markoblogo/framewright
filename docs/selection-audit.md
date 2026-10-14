@@ -18,12 +18,14 @@ source and commands. It has not been re-rendered on a clean machine after the li
 dependency repair. No time/cost advantage or universal reproducibility is claimed.
 
 Bounded router decision checks are retained in the
-[behavioural report](router-evaluation.md). Historical v4 scored 30/30 on its exact
-source. New first-exposure requests scored 9/12; the integrated storyboard source
-scored 43/46, including 4/4 adapter cases. Its explicit `evaluated_with_gaps` status
-is not an all-passing qualification. Tests preserve strict grades, controller
-disagreements, source/fixture hashes and the grading-context repair. None of these
-text-only checks qualifies rendering or privileged execution.
+[behavioural report](router-evaluation.md). The latest complete source passes 52/52
+under protocol v3 with 22/22 blind controls. The earlier 43/46 and
+first-exposure 9/12 remain unchanged: a [versioned diagnosis](grading-v3.md) corrects
+source-comparison, singing-alternative and comparison-stop criteria, plus the
+router's comparison/production instruction conflict, explicit native-PNG legibility
+and complete permission context for grading. This is development/regression
+coverage, not unseen transfer or a causal improvement score. Rendering and real
+permissions remain separate scopes.
 
 Release 0.1.1 resolves companion dependencies to a fixed point in canonical feature
 order. Equivalent requirement arrays have equivalent tool coverage; requested native

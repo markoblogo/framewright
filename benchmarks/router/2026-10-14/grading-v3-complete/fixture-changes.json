@@ -1,0 +1,13 @@
+{
+  "reason": "The preceding full51/52 run exposed a malformed development case: compare two claims without supplying those claims. Clarify only that synthetic input; no criterion, original46 request, prompt envelope or router source changed.",
+  "changes": [
+    {
+      "id": "completed-comparison-v3",
+      "fixture": "product.md",
+      "before": "Framewright is a methods library. It helps an AI agent select existing video-production tools using recorded experiments. It is not a rendering engine. No performance, customer or conversion metrics are supplied. Original synthetic text only; no media or runtime.\n",
+      "after": "Framewright is a methods library. It helps an AI agent select existing video-production tools using recorded experiments. It is not a rendering engine. No performance, customer or conversion metrics are supplied. Original synthetic text only; no media or runtime.\n\nProposed copy to compare against the factual paragraph above (these are candidate claims, not additional established facts):\nClaim A: Framewright is a methods library.\nClaim B: Framewright is a rendering engine.\n",
+      "before_sha256": "51d9474191605d52eb7d6d4d8c111befe6d1199948029da31d255e283f89dbb1",
+      "after_sha256": "1a8d7e9d23a89c47c12afed7bc32684167d67291ae59369e5119915e07c3e1d8"
+    }
+  ]
+}

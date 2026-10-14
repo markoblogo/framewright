@@ -138,3 +138,9 @@ class GraderCalibrationTest(unittest.TestCase):
         self.save()
         with self.assertRaisesRegex(ValueError, 'calibration'):
             evaluation.check_calibration(self.root)
+
+    def test_uncertain_negative_is_not_correct_rejection(self):
+        self.grades['cases'][1]['required'][0]['verdict'] = 'INSUFFICIENT_EVIDENCE'
+        self.save()
+        with self.assertRaisesRegex(ValueError, 'calibration'):
+            evaluation.check_calibration(self.root)

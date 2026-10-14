@@ -1,0 +1,1 @@
+22 freshly graded opaque-ID controls under protocol v3: 12 historical examples plus 10 source-proof, human-singing rights, comparison-vs-unblock, legibility and permission-context boundaries. Gold hidden; every synthetic positive and negative classified correctly. These are fabricated counterexamples, not real uploads/renders.

@@ -10,10 +10,12 @@ it does not replace rendering skills or confer permission to publish.
 
 1. Use the brief's product, available assets, audience/language, format, narration,
    cost/account constraints and intended deliverables. Ask only for missing facts
-   that materially affect the choice. If support or evidence is missing, explicitly
-   request the unresolved choice (such as the target language) or propose a bounded
-   test with pass conditions before execution; naming a prerequisite alone does not
-   resolve it. Preserve the user's explicit tool choice.
+   that materially affect the choice. For a production plan or execution blocked
+   by missing support/evidence, request the unresolved choice or propose a bounded
+   future test with pass conditions; naming a prerequisite alone does not resolve it.
+   For comparison-only feasibility, a supported negative answer and its limits can
+   be complete: do not require relaxing constraints or an unsolicited experiment.
+   Preserve the user's explicit tool choice.
 2. For requests with style/effect requirements or multiple scenes, read
    [selection guidance](references/selection.md). Decompose into blocks and picture,
    text, voice, sound and finishing layers. Consult [the tool matrix](references/tool-matrix.md)
@@ -47,7 +49,10 @@ it does not replace rendering skills or confer permission to publish.
    package versions, check installed API/official skills and licence eligibility,
    retain downloaded-browser failure plus workaround, and inspect native stills
    separately from encoded picture/audio when stills are requested.
-4. Work from verified product facts and authorised assets. When shortening existing
+4. Work from verified product facts and authorised assets. In a prompt-only task,
+   state an absent asset as a prerequisite inside the prompt (“use the approved
+   logo once supplied”); do not imply it is available or inspected, or add intake.
+   When shortening existing
    material, preserve factual claims and reading order unless the user requests a
    substantive rewrite. Measure generated speech
    before finalising cuts. Keep deterministic seekable picture timing and sound cues
@@ -58,6 +63,10 @@ it does not replace rendering skills or confer permission to publish.
    If the current chain already meets deliverables, finish outstanding QA and
    hand over the result without adding tools or experiments. No more tools does not
    mean QA is complete; retain any checks blocked by missing files or authority.
+   Before finalising a plan, check each requested output against its own handoff
+   row and retain every named check, explicitly planned/blocked where necessary.
+   Keep thumbnail QA separate from MP4 QA; preserving an image as-is does not
+   replace inspecting its existing crop. Do not silently omit checklist items.
    For a plan-only request, name the intended output artifacts and the remaining
    QA/delivery steps; missing media blocks verification, not listing those steps.
    Deliver the export, thumbnail, subtitles/copy if requested, and honest QA status.

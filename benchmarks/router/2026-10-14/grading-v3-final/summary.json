@@ -1,0 +1,35 @@
+{
+  "cases": 52,
+  "strict_model_rubric_passed": 50,
+  "route_review_passed": 52,
+  "trace_review_passed": 51,
+  "actor_usage": {
+    "input_tokens": 6742956,
+    "cached_input_tokens": 5746816,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 48104,
+    "reasoning_output_tokens": 1267
+  },
+  "actor_worker_seconds": 1863.14,
+  "monetary_cost": "NOT_AVAILABLE",
+  "qualification": "bounded_read_only_planning_only",
+  "public_trace_format": "all tool events retained; repeated command output replaced by bytes/hash; diagnostic home paths minimised; original full streams retained locally",
+  "limitations": [
+    "All 52 cases are development/regression, not unseen transfer or statistical certification.",
+    "Same-family model actor and grader in separate contexts; all grades retained without manual override or favourable actor retries.",
+    "Protocol and three rubric criteria were versioned before this run; old43/46 remains unchanged and is not a causal quality comparison.",
+    "22 opaque-ID controls freshly graded with identical v3 protocol and grader configuration; negative controls preserve proof, rights and scope checks.",
+    "Read-only synthetic context; no renderer, real accounts/authority, media quality, discovery or audience qualification.",
+    "Actor token usage excludes calibration/grading and is not account billing.",
+    "Strict model rubric50/52; controller trace review rejects one additional case for an outside user-skill read. Overall49/52; incomplete CLI host-context isolation."
+  ],
+  "grader_calibration": {
+    "controls": 22,
+    "correct": 22,
+    "blind_ids": true,
+    "protocol_version": 3,
+    "freshly_graded": true
+  },
+  "public_answer_format": "Full factual answer content; any machine-local citation destination made fixture-relative with original answer hash. Full raw streams retained locally.",
+  "overall_controller_and_rubric_passed": 49
+}

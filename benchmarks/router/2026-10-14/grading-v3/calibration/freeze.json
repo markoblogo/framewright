@@ -1,0 +1,9 @@
+{
+  "purpose": "v3 blind calibration: 12 prior controls freshly graded plus six stage/rights boundaries; gold hidden",
+  "input_sha256": {
+    "batch-1.json": "ee2662902bb813d266edb5b4a1a285ae7e0513d923d7ccd2109cf59f2e5fe54f",
+    "batch-2.json": "e5a571cef9fc394ad979bb10a748ced24b3213ae774ed3b7aa4806c9a2691b9d",
+    "batch-3.json": "4bca9565a8a98b1c3f0aba336499d60f739713e225ffa93e89e8b69ed523fcb7"
+  },
+  "gold_sha256": "330575665f5f47342e2ed14865f98f3df62c41066efbe53bebf7db93eca4f80c"
+}

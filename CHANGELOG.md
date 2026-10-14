@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+Resolve the three strict misses with versioned grading semantics and a router
+comparison/production stage clarification. Preserve 43/46 unchanged; complete the
+new 52/52 development run and freshly grade 22/22 opaque-ID controls, including
+negative proof/rights/scope examples. Reject legacy calibration for protocol v3.
+Close per-output QA and absent-artwork prompt conditions; isolate CLI user context
+and retain a controller-detected outside-read failure. No rendering, new provider
+integration, tag or release.
+
 Add an attributed, original storyboard adapter for new multi-shot briefs. Preserve
 silence/format/cadence, source facts, asset rights and per-shot tool handoffs; skip
 unneeded storyboarding. Exclude preproduction roles from picture-chain providers.

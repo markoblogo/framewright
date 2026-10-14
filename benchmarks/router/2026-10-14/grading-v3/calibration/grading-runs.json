@@ -1,0 +1,23 @@
+[
+  {
+    "batch": "batch-1",
+    "exit_code": 0,
+    "duration_seconds": 18.61,
+    "prompt_sha256": "0fb6ae36e9f134abe17275cd08a3dcc058a0aa33e56775d7ef1597a6217940e6",
+    "events_sha256": "411a000a03d5b6533ee8fe837923e6f0ef00fed01199685afc82783824cbf68c"
+  },
+  {
+    "batch": "batch-2",
+    "exit_code": 0,
+    "duration_seconds": 20.72,
+    "prompt_sha256": "e278ffbda0cb9504508680fae6992c5cee8b072ddc2c3de286a911ab2b1b56e3",
+    "events_sha256": "68ff43debd7544db09defce35830959b55e2170f02e0c9e110199830e676a78b"
+  },
+  {
+    "batch": "batch-3",
+    "exit_code": 0,
+    "duration_seconds": 22.73,
+    "prompt_sha256": "02be805c43b6b45d790277f0f63a5c7dc630206d737af979694c1785ca33edc8",
+    "events_sha256": "be48103083595c59d96320d49516bcbacc8949d34dc00c937220d98a1861fef2"
+  }
+]

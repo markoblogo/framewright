@@ -27,7 +27,7 @@ are separate; the public URL was supplied by the owner, not matched byte-for-byt
 [Reproduce the open reference project](docs/first-video.md) with shared demo assets,
 pinned versions, exact commands, an agent prompt and expected outputs.
 [Release 0.1.1](CHANGELOG.md) remains experimental. Unreleased updates now include a
-[46-case integrated planning assessment](docs/router-evaluation.md); no new release is made.
+[52-case protocol-v3 planning check](docs/router-evaluation.md); no new release is made.
 
 ## Start with a storyboard when the film is new
 
@@ -133,15 +133,16 @@ for Hyperframes-backed routes; Flute and Remotion use their own guides.
 Example: “Make a French trailer from this book page and cover. Use
 $video-production-router to choose a workflow.”
 
-The current integrated sources scored **43/46** in the retained synthetic
-planning assessment; their status is `evaluated_with_gaps`. The first-exposure transfer
-run scored **9/12**, and the raw upstream storyboard trial **3/4**. The original
-12 blind grader controls are reused with unchanged protocol/core configuration.
-[Results, disagreements and limits](docs/router-evaluation.md) preserve failures
-and the grading-context repair. The [scope record](router-qualification.json)
-checks exact sources/prompts/fixtures; a record with gaps is not a passing
-qualification. Automatic discovery, production authority and media quality remain
-outside these tests.
+The current decision sources passed **52/52** synthetic planning/regression cases
+under [protocol v3](benchmarks/protocols/planning-v3.md), with **22/22
+blind positive/negative controls**. The [three-miss analysis](docs/grading-v3.md)
+separates over-narrow grading rules from a comparison/production instruction conflict.
+Earlier 43/46 and first-exposure 9/12 remain unchanged; correcting the criteria is
+not a causal quality improvement score or a new unseen transfer result.
+[Results and limits](docs/router-evaluation.md) and the [source-bound scope record](router-qualification.json)
+retain exact sources, fixtures and full grades. This qualifies only the recorded
+read-only planning configuration; real authority, media quality and discovery are
+separate. No new video, audio or release was produced.
 
 ## Add the next experiment
 

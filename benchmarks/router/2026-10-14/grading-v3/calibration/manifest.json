@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "protocol_version": 3,
+  "blind_ids": true,
+  "files": {
+    "cases.json": "1882263282cb73c511c38020f7b48e18cf05f7ad40940de24edfa45d5c06d6c0",
+    "freeze.json": "19660fe7524ecc77491cb27f1309e8c9c58c96e584be05eb1b676f070dc3f6c9",
+    "gold.json": "330575665f5f47342e2ed14865f98f3df62c41066efbe53bebf7db93eca4f80c",
+    "grader-config.json": "139caa686ed9357fe33d8ada7dd7ee304c5e3372fd473eac2177ef22d34697cf",
+    "grades.json": "f6ae6d5fab5f8c42713f95447df4de445b5dc3cc4d869b68457410d1f82cb700",
+    "grading-runs.json": "5beaa30a473cad1e37a8fd90d1679facd6c2e7d47f547a17f8a4f19d299a41c2",
+    "input.json": "d04c55a84d087c18e459fe0d9b4c2cfaf337e018092c79a86551aa0a31b3412a",
+    "protocol.txt": "7677b81c84c3d42841675fd534e369b9b0f2cb4139fe3c8c2d1706fcfd8d4177"
+  },
+  "counts": {
+    "controls": 18,
+    "correct": 17
+  },
+  "status": "historical_calibration_with_uncertain_negative"
+}
