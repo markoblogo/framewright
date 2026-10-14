@@ -1,0 +1,221 @@
+# Tool capability matrix
+
+Generated from `tools.json`; reviewed 2026-10-14.
+
+Scope: decision-relevant inventory, not an exhaustive API guarantee. Tested means
+the stated local experiment only. Documented needs installed-version verification;
+failed is a retained limitation; unknown is not a usable promise. Styles are
+affordances and preferences, not renderer boundaries or comparative quality scores.
+
+## Brag full
+
+**Role:** orchestrator. **Inputs:** source-project, brand.
+
+**Style directions:** playful, polished, cinematic, deadpan, app-store, chaotic, yc-parody.
+Seven documented tone presets shape story, rhythm and typography; freeform tone overrides them. Brand-specific, not a single fixed look.
+
+**Tested version/scope:** retained full-workflow snapshot
+
+**Licence:** MIT; renderer/providers have separate terms
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `storyboard` | tested | Observed scope: asciitheme, ami [Source](https://github.com/latent-spaces/brag/blob/069432cac935ed1895859df201c31436c07fb74e/README.md) |
+| `video-export` | tested | Observed scope: asciitheme, ami [Source](https://github.com/latent-spaces/brag/blob/069432cac935ed1895859df201c31436c07fb74e/README.md) |
+| `typography` | tested | Observed scope: asciitheme, ami [Source](https://github.com/latent-spaces/brag/blob/069432cac935ed1895859df201c31436c07fb74e/README.md) |
+| `narration` | documented | Upstream claim; not locally qualified [Source](https://github.com/latent-spaces/brag/blob/069432cac935ed1895859df201c31436c07fb74e/README.md) |
+| `vertical-format` | documented | Upstream claim; not locally qualified [Source](https://github.com/latent-spaces/brag/blob/069432cac935ed1895859df201c31436c07fb74e/README.md) |
+| `transitions` | documented | Upstream claim; not locally qualified [Source](https://github.com/latent-spaces/brag/blob/069432cac935ed1895859df201c31436c07fb74e/README.md) |
+
+**Limits:** Full Hyperframes workflow was tested; brag-slim was not. Voice is documented, not exercised in our Brag runs.
+
+## Hyperframes
+
+**Role:** renderer. **Inputs:** source-project, brand, book-art, composition, video, object.
+
+**Style directions:** editorial, montage, kinetic, minimal, playful.
+HTML/CSS/SVG/Canvas plus seekable motion. The book-test editorial look was our direction, not an engine restriction.
+
+**Tested version/scope:** 0.8.157 in retained pilots
+
+**Licence:** Apache-2.0 for CLI; check current runtime, asset, cloud/provider terms
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `video-export` | tested | Observed scope: asciitheme, ami, jeanne-fr, good-dogs-en, good-dogs-teaser [Source](https://hyperframes.heygen.com/concepts/compositions) |
+| `typography` | tested | Observed scope: asciitheme, ami, jeanne-fr, good-dogs-en, good-dogs-teaser [Source](https://hyperframes.heygen.com/concepts/compositions) |
+| `image-pan-zoom` | tested | Observed scope: asciitheme, ami, jeanne-fr, good-dogs-en, good-dogs-teaser [Source](https://hyperframes.heygen.com/concepts/compositions) |
+| `scene-timeline` | tested | Observed scope: asciitheme, ami, jeanne-fr, good-dogs-en, good-dogs-teaser [Source](https://hyperframes.heygen.com/concepts/compositions) |
+| `transitions` | tested | Observed scope: asciitheme, ami, jeanne-fr, good-dogs-en, good-dogs-teaser [Source](https://hyperframes.heygen.com/concepts/compositions) |
+| `still-export` | documented | Upstream claim; not locally qualified [Source](https://hyperframes.heygen.com/concepts/compositions) |
+| `native-audio` | documented | Upstream claim; not locally qualified [Source](https://hyperframes.heygen.com/concepts/compositions) |
+| `captions` | documented | Upstream claim; not locally qualified [Source](https://hyperframes.heygen.com/concepts/compositions) |
+| `vertical-format` | documented | Upstream claim; not locally qualified [Source](https://hyperframes.heygen.com/concepts/compositions) |
+| `svg-overlay` | documented | Upstream claim; not locally qualified [Source](https://hyperframes.heygen.com/concepts/compositions) |
+| `shader-transitions` | documented | Upstream claim; not locally qualified [Source](https://hyperframes.heygen.com/packages/shader-transitions) |
+| `color-grade` | documented | Upstream claim; not locally qualified [Source](https://hyperframes.heygen.com/reference/color-grading) |
+| `speed-ramp` | documented | Upstream claim; not locally qualified [Source](https://hyperframes.heygen.com/reference/speed-ramps) |
+| `ascii-treatment` | documented | Check current installed version, browser/capture requirements and effect-specific controls. [Source](https://hyperframes.heygen.com/reference/color-grading) |
+| `pixelate` | documented | Check current installed version, browser/capture requirements and effect-specific controls. [Source](https://hyperframes.heygen.com/reference/color-grading) |
+| `bloom` | documented | Check current installed version, browser/capture requirements and effect-specific controls. [Source](https://hyperframes.heygen.com/reference/color-grading) |
+| `lut` | documented | Check current installed version, browser/capture requirements and effect-specific controls. [Source](https://hyperframes.heygen.com/reference/color-grading) |
+| `wave-warp` | documented | Check current installed version, browser/capture requirements and effect-specific controls. [Source](https://hyperframes.heygen.com/guides/vfx-chain) |
+| `displacement` | documented | Check current installed version, browser/capture requirements and effect-specific controls. [Source](https://hyperframes.heygen.com/guides/vfx-chain) |
+
+**Limits:** New VFX, captions, vertical/4K/cloud paths were not validated by our horizontal pilots. Media and animation timing must share the seekable timeline. Current docs note conflicts between capturing VFX chains and page-side shader transitions; test the combined layer, do not assume independent effects compose safely.
+
+## Flute
+
+**Role:** renderer. **Inputs:** react-ui.
+
+**Style directions:** cinematic-ui, spatial, minimal.
+Camera travel, perspective, depth and selective focus around actual DOM panels; preserve host styles/providers. DOM blur is not ray-traced optics.
+
+**Tested version/scope:** 0.1.2
+
+**Licence:** MIT
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `video-export` | tested | Observed scope: coqpi-flute [Source](https://github.com/webprodigies-org/flute/blob/4ab8c4a310ed051db9990e5a10a35fbcf2080cb1/README.md) |
+| `react-components` | tested | Observed scope: coqpi-flute [Source](https://github.com/webprodigies-org/flute/blob/4ab8c4a310ed051db9990e5a10a35fbcf2080cb1/README.md) |
+| `camera-travel` | tested | Observed scope: coqpi-flute [Source](https://github.com/webprodigies-org/flute/blob/4ab8c4a310ed051db9990e5a10a35fbcf2080cb1/README.md) |
+| `depth-of-field` | tested | Observed scope: coqpi-flute [Source](https://github.com/webprodigies-org/flute/blob/4ab8c4a310ed051db9990e5a10a35fbcf2080cb1/README.md) |
+| `scene-timeline` | tested | Observed scope: coqpi-flute [Source](https://github.com/webprodigies-org/flute/blob/4ab8c4a310ed051db9990e5a10a35fbcf2080cb1/README.md) |
+| `vertical-format` | documented | Upstream claim; not locally qualified [Source](https://github.com/webprodigies-org/flute/blob/4ab8c4a310ed051db9990e5a10a35fbcf2080cb1/README.md) |
+| `still-export` | failed | Portable CoqPi adapter snapshot CLI failed; FFmpeg extracted the delivered thumbnail. [Source](https://github.com/webprodigies-org/flute/blob/4ab8c4a310ed051db9990e5a10a35fbcf2080cb1/README.md) |
+
+**Limits:** Browser-host CoqPi success does not establish packaged Electron or arbitrary React support. Keep real data and IPC outside demo. No Flute audio workflow was tested.
+
+## Remotion
+
+**Role:** renderer. **Inputs:** brand, data, book-art, composition, react-ui, video, object.
+
+**Style directions:** editorial, kinetic, minimal, data-motion.
+React frame-driven graphics and programmable layout; typography, editorial montage, UI or 3D can be authored. Our restrained Framewright film is one art direction.
+
+**Tested version/scope:** 4.0.535
+
+**Licence:** Remotion Free/Company licence; individual/small-team eligibility and paid features need separate checking
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `video-export` | tested | Observed scope: framewright-remotion [Source](https://www.remotion.dev/docs/) |
+| `still-export` | tested | Observed scope: framewright-remotion [Source](https://www.remotion.dev/docs/) |
+| `native-audio` | tested | Observed scope: framewright-remotion [Source](https://www.remotion.dev/docs/) |
+| `typography` | tested | Observed scope: framewright-remotion [Source](https://www.remotion.dev/docs/) |
+| `scene-timeline` | tested | Observed scope: framewright-remotion [Source](https://www.remotion.dev/docs/) |
+| `image-pan-zoom` | documented | Upstream claim; not locally qualified [Source](https://www.remotion.dev/docs/) |
+| `data-driven` | documented | Upstream claim; not locally qualified [Source](https://www.remotion.dev/docs/) |
+| `vertical-format` | documented | Upstream claim; not locally qualified [Source](https://www.remotion.dev/docs/) |
+| `react-components` | documented | Upstream claim; not locally qualified [Source](https://www.remotion.dev/docs/) |
+| `svg-overlay` | documented | Upstream claim; not locally qualified [Source](https://www.remotion.dev/docs/) |
+| `transitions` | documented | Upstream claim; not locally qualified [Source](https://www.remotion.dev/docs/transitions/) |
+| `book-flip` | documented | Upstream claim; not locally qualified [Source](https://www.remotion.dev/docs/transitions/) |
+| `film-burn` | documented | Upstream claim; not locally qualified [Source](https://www.remotion.dev/docs/transitions/) |
+| `zoom-blur` | documented | Upstream claim; not locally qualified [Source](https://www.remotion.dev/docs/transitions/) |
+| `object-3d` | documented | Upstream claim; not locally qualified [Source](https://www.remotion.dev/docs/three) |
+| `captions` | documented | Upstream claim; not locally qualified [Source](https://www.remotion.dev/docs/captions) |
+| `cube-transition` | documented | Official transition list marks cube paid; not covered by this pilot. [Source](https://www.remotion.dev/docs/transitions/) |
+| `wipe` | documented | Official transition presentation; not exercised in the Framewright film. [Source](https://www.remotion.dev/docs/transitions/) |
+| `slide` | documented | Official transition presentation; not exercised in the Framewright film. [Source](https://www.remotion.dev/docs/transitions/) |
+| `iris` | documented | Official transition presentation; not exercised in the Framewright film. [Source](https://www.remotion.dev/docs/transitions/) |
+| `ripple` | documented | Official transition presentation; not exercised in the Framewright film. [Source](https://www.remotion.dev/docs/transitions/) |
+| `crosswarp` | documented | Official transition presentation; not exercised in the Framewright film. [Source](https://www.remotion.dev/docs/transitions/) |
+
+**Limits:** Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately.
+
+## Anatomy
+
+**Role:** illustrator. **Inputs:** object.
+
+**Style directions:** isometric, technical.
+Dense crafted isometric objects, four-tone shaded SVG, optional integrated WebGL layers and beta 3D moving parts. Recognisable mechanical explanations, not generic slides.
+
+**Tested version/scope:** e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f in prototype
+
+**Licence:** Check upstream licence and inputs; no upstream code bundled
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `isometric-svg` | tested | Observed scope: anatomy-prototype [Source](https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/README.md) |
+| `object-motion` | tested | Observed scope: anatomy-prototype [Source](https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/README.md) |
+| `svg-overlay` | documented | Upstream claim; not locally qualified [Source](https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/README.md) |
+| `webgl-effects` | documented | Upstream claim; not locally qualified [Source](https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/README.md) |
+| `object-3d` | documented | Upstream claim; not locally qualified [Source](https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/README.md) |
+| `still-export` | documented | Upstream claim; not locally qualified [Source](https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/README.md) |
+| `video-export` | unknown | No native MP4 exporter verified; a deterministic adapter and renderer are a separate chain. [Source](https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/README.md) |
+
+**Limits:** Local visual prototype only; combined sound QA failed. Beta 3D is not a calibrated physics simulator. Historical accuracy remains unverified.
+
+## Kokoro ONNX
+
+**Role:** voice. **Inputs:** .
+
+**Style directions:** narrated, measured.
+Synthetic narration with selectable voice/speed; language and pronunciation choices shape performance. It does not write the story or render picture.
+
+**Tested version/scope:** retained v1.0 ONNX voice/model files
+
+**Licence:** Wrapper MIT; model Apache-2.0; inspect individual input/voice rights
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `narration` | tested | Observed scope: jeanne-fr, good-dogs-en [Source](https://github.com/thewh1teagle/kokoro-onnx/blob/3596b26764286a7de9d90c363e988d50578918e5/README.md) |
+
+**Limits:** Local FR/EN tested; other documented languages require a voice/pronunciation and timing trial. No voice cloning tested.
+
+## opus-sound-layer
+
+**Role:** audio. **Inputs:** .
+
+**Style directions:** cinematic, tactile.
+Recorded sound effects, cue placement and measured final-file QA; sonic palette can be restrained or dramatic. Metrics do not replace listening.
+
+**Tested version/scope:** 52ac266a24b7dfd3cd06a28c34d5af360a8d7586 in pilots
+
+**Licence:** MIT code; upstream kit CC0 with credits; added sounds retain their own rights
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `audio-mix` | tested | Observed scope: jeanne-fr, good-dogs-en, good-dogs-teaser [Source](https://github.com/Bodila51/opus-sound-layer/blob/52ac266a24b7dfd3cd06a28c34d5af360a8d7586/README.md) |
+| `audio-qa` | tested | Observed scope: jeanne-fr, good-dogs-en, good-dogs-teaser [Source](https://github.com/Bodila51/opus-sound-layer/blob/52ac266a24b7dfd3cd06a28c34d5af360a8d7586/README.md) |
+| `ducking` | documented | Upstream claim; not locally qualified [Source](https://github.com/Bodila51/opus-sound-layer/blob/52ac266a24b7dfd3cd06a28c34d5af360a8d7586/README.md) |
+| `sfx-library` | documented | Upstream claim; not locally qualified [Source](https://github.com/Bodila51/opus-sound-layer/blob/52ac266a24b7dfd3cd06a28c34d5af360a8d7586/README.md) |
+| `peak-alignment` | documented | Upstream claim; not locally qualified [Source](https://github.com/Bodila51/opus-sound-layer/blob/52ac266a24b7dfd3cd06a28c34d5af360a8d7586/README.md) |
+| `room-effect` | documented | Upstream claim; not locally qualified [Source](https://github.com/Bodila51/opus-sound-layer/blob/52ac266a24b7dfd3cd06a28c34d5af360a8d7586/README.md) |
+| `normalization` | documented | Upstream claim; not locally qualified [Source](https://github.com/Bodila51/opus-sound-layer/blob/52ac266a24b7dfd3cd06a28c34d5af360a8d7586/README.md) |
+
+**Limits:** Anatomy combined sound run failed (22 audibility failures); Good Dogs intermediate effects were removed after QA. Never lower thresholds to make an effect pass.
+
+## FFmpeg
+
+**Role:** finisher. **Inputs:** video.
+
+**Style directions:** neutral.
+Finishing/transcoding/filter primitives, not a project-specific visual direction. Combine with a renderer rather than add an unnecessary redesign.
+
+**Tested version/scope:** local ffmpeg/ffprobe on PATH
+
+**Licence:** Build-dependent LGPL/GPL and codec/asset conditions; verify the actual build
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `video-export` | tested | Observed scope: coqpi-flute, framewright-remotion, jeanne-fr, good-dogs-en [Source](https://ffmpeg.org/ffmpeg-filters.html) |
+| `still-export` | tested | Observed scope: coqpi-flute, framewright-remotion, jeanne-fr, good-dogs-en [Source](https://ffmpeg.org/ffmpeg-filters.html) |
+| `media-mux` | tested | Observed scope: coqpi-flute, framewright-remotion, jeanne-fr, good-dogs-en [Source](https://ffmpeg.org/ffmpeg-filters.html) |
+| `normalization` | tested | Observed scope: coqpi-flute, framewright-remotion, jeanne-fr, good-dogs-en [Source](https://ffmpeg.org/ffmpeg-filters.html) |
+| `concat` | documented | Upstream claim; not locally qualified [Source](https://ffmpeg.org/ffmpeg-filters.html) |
+| `captions` | documented | Upstream claim; not locally qualified [Source](https://ffmpeg.org/ffmpeg-filters.html) |
+| `transitions` | documented | Upstream claim; not locally qualified [Source](https://ffmpeg.org/ffmpeg-filters.html) |
+| `image-pan-zoom` | documented | Upstream claim; not locally qualified [Source](https://ffmpeg.org/ffmpeg-filters.html) |
+| `color-grade` | documented | Upstream claim; not locally qualified [Source](https://ffmpeg.org/ffmpeg-filters.html) |
+| `speed-ramp` | documented | Upstream claim; not locally qualified [Source](https://ffmpeg.org/ffmpeg-filters.html) |
+
+**Limits:** Stream copy is conditional on compatible containers/codecs; resizing, burning captions or frame-rate conversion requires re-encoding and final QA.
+
+## Source freshness
+
+Immutable repository README links retain the reviewed revision. Live documentation
+links describe upstream capability on the review date, not a test of the pilot
+runtime. Refresh the registry before depending on a changed external contract.

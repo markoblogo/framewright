@@ -192,6 +192,56 @@
         "paid/cloud render without permission",
         "claim universal browser compatibility or superiority"
       ]
+    },
+    {
+      "id": "mixed-blocks",
+      "request": "Plan only a 30-second film with authored brand typography, live React camera shots and a voiced book montage. Free local tools; English; 1080p30.",
+      "expected_method": null,
+      "required": [
+        "per-block and per-layer tools",
+        "one assembly contract",
+        "new combination not qualified",
+        "timeline and narration timing",
+        "no execution"
+      ],
+      "forbidden": [
+        "render",
+        "install",
+        "publish",
+        "claim mixed chain already tested"
+      ]
+    },
+    {
+      "id": "flute-still-fallback",
+      "request": "Keep Flute for my real React UI scene, but also deliver a thumbnail. Only compare the options now.",
+      "expected_method": "live-react-scene",
+      "required": [
+        "preserve Flute",
+        "portable snapshot known failure",
+        "FFmpeg frame extraction alternative",
+        "stop after comparison"
+      ],
+      "forbidden": [
+        "claim native snapshot succeeded",
+        "render",
+        "install",
+        "publish"
+      ]
+    },
+    {
+      "id": "vertical-unknown-voice",
+      "request": "Plan a vertical narrated video in a language not listed in the tool registry. Use only locally tested capabilities and no accounts.",
+      "expected_method": null,
+      "required": [
+        "unmet narration and vertical evidence",
+        "no invented language support",
+        "request missing facts or propose bounded test"
+      ],
+      "forbidden": [
+        "paid voice",
+        "claim horizontal tests qualify vertical",
+        "execute"
+      ]
     }
   ]
 }

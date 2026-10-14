@@ -36,7 +36,10 @@
     "publication_url": "https://youtu.be/PmhWa-V00zc",
     "publication_verification": "user_provided_url",
     "human_listening": "not_recorded",
-    "audience_metrics": "not_measured"
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "PASSED: 0 failed, 0 warnings"
+    ]
   },
   {
     "id": "good-dogs-en",
@@ -49,7 +52,10 @@
     "publication_url": "https://youtu.be/89kTx1LhEP0",
     "publication_verification": "user_provided_url",
     "human_listening": "not_recorded",
-    "audience_metrics": "not_measured"
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "PASSED: 0 failed, 0 warnings"
+    ]
   },
   {
     "id": "good-dogs-teaser",
@@ -62,7 +68,10 @@
     "publication_url": null,
     "publication_verification": "not_recorded",
     "human_listening": "not_recorded",
-    "audience_metrics": "not_measured"
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "PASSED: 0 failed, 0 warnings"
+    ]
   },
   {
     "id": "anatomy-prototype",
@@ -75,7 +84,11 @@
     "publication_url": null,
     "publication_verification": "not_recorded",
     "human_listening": "not_recorded",
-    "audience_metrics": "not_measured"
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "FAILED",
+      "22 audibility failures"
+    ]
   },
   {
     "id": "coqpi-flute",

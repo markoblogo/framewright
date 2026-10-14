@@ -8,11 +8,42 @@
 [![8 recorded exports](https://img.shields.io/badge/recorded__exports-8-293F48?style=flat-square)](experiments/2026-10-14/outputs.json)
 [![ABVX ecosystem](https://img.shields.io/badge/ecosystem-ABVX-E7BA6A?style=flat-square)](docs/ecosystem.md)
 
-**Small films. Real products. Evidence behind every cut.**
+**Framewright helps an AI agent choose and execute a suitable video pipeline,
+based on documented experiments.**
 
-An evolving, evidence-led collection of video-production methods and agent skills.
-Start with the task, choose the smallest useful workflow, keep the evidence, and
-promote only the capability that was actually tested.
+Not a new video engine. Tested recipes, limitations and result checks for existing
+tools. Choose tools per scene and layer, then verify the assembled film.
+
+## One concrete result
+
+**Task:** a 30-second horizontal film introducing Framewright.
+**Chain:** authored Remotion scenes + original locally synthesized music → native MP4
+and PNG still.
+**Video:** [watch the published example](https://youtu.be/s3BBP698_r8).
+**Checked:** H264 1920×1080, 30 fps, 900 frames, stereo AAC, native PNG, sampled encoded
+frames and transitions. Listening/owner artistic acceptance and audience performance
+are separate; the public URL was supplied by the owner, not matched byte-for-byte.
+
+[Reproduce the open reference project](docs/first-video.md) with shared demo assets,
+pinned versions, exact commands, an agent prompt and expected outputs.
+[Release 0.1.0](CHANGELOG.md) is experimental; agent routing remains `structural_only`.
+
+## Plan by scene, style and effect
+
+Start with [selection guidance](skills/video-production-router/references/selection.md)
+and [the capability matrix](skills/video-production-router/references/tool-matrix.md).
+Eight tool profiles distinguish tested, documented, failed and unknown functions.
+Styles guide direction; they are not fixed engine limits or quality scores.
+
+For a multi-tool film the agent decomposes the request into blocks/layers. The offline
+planner can check the shortlist and frame timeline without installing or rendering:
+
+```sh
+python3 skills/video-production-router/scripts/plan.py examples/briefs/mixed-promo.json
+```
+
+That 30-second mixed example is a **proposed plan**, not another tested film. Each new
+combination needs an integration test. [Selection audit](docs/selection-audit.md).
 
 ## Choose a workflow
 
@@ -41,7 +72,8 @@ visible. See [tool-chain guidance](skills/video-production-router/references/too
 
 ## Quick start
 
-1. Pick a workflow from the table above, or ask `$video-production-router`.
+1. For a first result, follow the complete [open reference route](docs/first-video.md).
+   For your own brief, ask `$video-production-router` or use the table above.
 2. Follow the selected recipe with your own authorised product inputs.
 3. Record the result, including failures, before adding a new tested capability.
 
@@ -63,8 +95,8 @@ ln -s "$(pwd)/framewright/skills/video-production-router" ~/.codex/skills/video-
 The link command refuses to overwrite an existing skill. Keep the checkout mounted
 and use the skill in a fresh Codex session. No upstream video tools are installed.
  It recommends a workflow; it does not install dependencies,
-render a video or publish anything by itself. Existing Hyperframes skills remain
-the rendering entry point and must still be followed when making a video.
+render a video or publish anything by itself. Follow the selected renderer’s guide. Installed Hyperframes skills are required
+for Hyperframes-backed routes; Flute and Remotion use their own guides.
 
 Example: “Make a French trailer from this book page and cover. Use
 $video-production-router to choose a workflow.”

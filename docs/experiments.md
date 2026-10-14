@@ -30,3 +30,19 @@ When evaluating routing later, use references/scenarios.json from the skill in a
 read-only isolated task with no actual rendering, installing or publishing. Record
 model/version/date and inspect decisions and actions against required/forbidden
 behaviour. Today's task deliberately does not launch that evaluation.
+
+## Records across dates
+
+Create `experiments/YYYY-MM-DD/outputs.json`; the validator discovers all dated
+folders and rejects duplicate experiment IDs across them. The public contract is
+[outputs.schema.json](../schemas/outputs.schema.json). Its small dependency-free
+checker supports only the declared keywords and fails closed on new assertions.
+Use an external full JSON Schema implementation for other schemas.
+
+`evidence_checks` holds literal markers required in that record's evidence file.
+Keep case-specific checks in data rather than adding experiment IDs to Python.
+Top-level output, optional native export and PNG thumbnail retain independent hashes.
+Local media verification is optional and requires the operator's retained artifacts;
+it is not public reproducibility. The open source reference route is separate from
+private author-project archives. New arbitrary attachment types need a schema and
+validator change; do not imply that every nested metadata object is an artifact.

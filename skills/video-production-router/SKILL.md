@@ -11,7 +11,13 @@ it does not replace rendering skills or confer permission to publish.
 1. Use the brief's product, available assets, audience/language, format, narration,
    cost/account constraints and intended deliverables. Ask only for missing facts
    that materially affect the choice. Preserve the user's explicit tool choice.
-2. Read [the catalogue](references/catalog.json), then only the matching section
+2. For requests with style/effect requirements or multiple scenes, read
+   [selection guidance](references/selection.md). Decompose into blocks and picture,
+   text, voice, sound and finishing layers. Consult [the tool matrix](references/tool-matrix.md)
+   and only relevant profiles in `references/tools.json`. The optional offline
+   `scripts/plan.py BRIEF.json` shortlists tools; it never executes the plan. Distinguish
+   tested, documented, failed and unknown features; preserve cost/language/format limits.
+   Then read [the catalogue](references/catalog.json), then only the matching section
    of [the recipes](references/recipes.md). Recommend a default with one sentence
    of evidence and relevant limits. If the user only asks to compare, stop there.
 3. Follow the selected renderer's instructions. For Hyperframes-backed routes,
