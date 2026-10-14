@@ -89,26 +89,34 @@ def plan(brief, registry):
             if preferred not in tools or tools[preferred]['role'] not in MAIN_ROLES:
                 raise ValueError('preferred_tool must name a known picture/orchestration/finishing tool')
             candidates = [tools[preferred]] if kind in tools[preferred]['inputs'] else []
-        candidates.sort(key=lambda t: (-sum(acceptable(capability(t, f, language, paid)) for f in effects), -(style in t['styles']), -(t['id'] == DEFAULTS[kind]), t['id']))
+        candidates.sort(key=lambda t: (-sum(acceptable(capability(t, f, language, paid)) for f in requested), -sum(bool(c and c['evidence'] == 'tested') for f in requested for c in [capability(t, f, language, paid)]), -(style in t['styles']), -(t['id'] == DEFAULTS[kind]), t['id']))
         primary = candidates[0] if candidates else None
         selected = [primary] if primary else []
-        coverage, unmet, needs_test = [], [], []
-        for feature in requested:
-            cap = next((c for t in selected if acceptable(c := capability(t, feature, language, paid))), None)
-            if cap is None and primary is not None:
-                providers = [t for t in tools.values() if fits(t) and acceptable(capability(t, feature, language, paid))]
-                providers.sort(key=lambda t: (t['role'] != PREFERRED_ROLES.get(feature), capability(t, feature, language, paid)['evidence'] != 'tested', t['id']))
-                if providers:
-                    provider = providers[0]
-                    if provider not in selected:
-                        selected.append(provider)
-                    cap = capability(provider, feature, language, paid)
-            if cap:
-                coverage.append(cap)
-                if cap['evidence'] != 'tested':
-                    needs_test.append(feature)
-            else:
-                unmet.append(feature)
+        # Canonical traversal plus a fixed point: a finisher may become eligible
+        # only after another requirement has supplied a picture/export provider.
+        pending = sorted(requested)
+        found = {}
+        while pending:
+            progress = False
+            for feature in pending[:]:
+                cap = next((c for t in selected if acceptable(c := capability(t, feature, language, paid))), None)
+                if cap is None and primary is not None:
+                    providers = [t for t in tools.values() if fits(t) and acceptable(capability(t, feature, language, paid))]
+                    providers.sort(key=lambda t: (t['role'] != PREFERRED_ROLES.get(feature), capability(t, feature, language, paid)['evidence'] != 'tested', t['id']))
+                    if providers:
+                        provider = providers[0]
+                        if provider not in selected:
+                            selected.append(provider)
+                        cap = capability(provider, feature, language, paid)
+                if cap:
+                    found[feature] = cap
+                    pending.remove(feature)
+                    progress = True
+            if not progress:
+                break
+        coverage = [found[f] for f in requested if f in found]
+        unmet = [f for f in requested if f not in found]
+        needs_test = [c['feature'] for c in coverage if c['evidence'] != 'tested']
         if primary is None:
             unmet.append('input-compatible-primary')
         duration = frames(block['duration_seconds'], canvas['fps']) if 'duration_seconds' in block else None

@@ -1,4 +1,5 @@
 import copy
+import itertools
 import importlib.util
 import json
 from pathlib import Path
@@ -109,6 +110,41 @@ class BlockPlannerTest(unittest.TestCase):
         for brief in [[], {'blocks': ['bad']}, {'blocks': [{'id': 'x', 'input': 'brand'}], 'canvas': 42}, self.brief(language=[]), self.brief(effects=[''])]:
             with self.subTest(brief=brief), self.assertRaises(ValueError):
                 self.run_plan(brief)
+
+
+
+    def test_requirement_order_does_not_block_finishing_dependencies(self):
+        plans = []
+        for deliverables in [['media-mux', 'video-export'], ['video-export', 'media-mux']]:
+            plans.append(self.run_plan(self.brief(input='object', preferred_tool='anatomy', deliverables=deliverables)))
+        for p in plans:
+            self.assertEqual(p['status'], 'proposed')
+            self.assertEqual(p['blocks'][0]['tools'], ['anatomy', 'hyperframes', 'ffmpeg'])
+            self.assertEqual(p['blocks'][0]['unmet'], [])
+        self.assertEqual(plans[0]['blocks'][0]['tools'], plans[1]['blocks'][0]['tools'])
+
+    def test_still_only_prefers_direct_tested_export(self):
+        brief = self.brief(input='book-art', deliverables=['still-export'])
+        brief['minimum_evidence'] = 'tested'
+        p = self.run_plan(brief)
+        self.assertEqual(p['blocks'][0]['tools'], ['remotion'])
+        self.assertEqual(p['blocks'][0]['coverage'][0]['tool'], 'remotion')
+
+
+
+    def test_requirement_permutations_have_identical_tool_coverage(self):
+        expected = None
+        for items in itertools.permutations(['media-mux', 'video-export', 'still-export', 'narration']):
+            p = self.run_plan(self.brief(input='object', preferred_tool='anatomy', deliverables=list(items)))
+            block = p['blocks'][0]
+            actual = (block['tools'], sorted((x['feature'], x['tool'], x['evidence']) for x in block['coverage']), sorted(block['unmet']))
+            if expected is None:
+                expected = actual
+            self.assertEqual(actual, expected)
+
+    def test_native_tested_still_beats_documented_default(self):
+        p = self.run_plan(self.brief(input='book-art', deliverables=['still-export']))
+        self.assertEqual(p['blocks'][0]['tools'], ['remotion'])
 
 
 if __name__ == '__main__':

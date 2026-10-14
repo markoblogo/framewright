@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.1 — 2026-10-14 — experimental
+
+Fix planner dependence on requirement ordering: canonical traversal and repeated
+resolution allow finishing tools to consume an export supplied later in the plan.
+Rank primary tools by all requested capabilities, including deliverables, then prefer
+local evidence before style/default tie-breaks. A tested native still no longer
+requires an unnecessary video-and-extract route. Explicit tool choices remain fixed.
+Regression cases and requirement permutations cover both review findings.
+
 ## 0.1.0 — 2026-10-14 — experimental
 
 First public methods/skills release: six scoped routes, eight retained exports and

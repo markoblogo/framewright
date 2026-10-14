@@ -26,7 +26,7 @@ are separate; the public URL was supplied by the owner, not matched byte-for-byt
 
 [Reproduce the open reference project](docs/first-video.md) with shared demo assets,
 pinned versions, exact commands, an agent prompt and expected outputs.
-[Release 0.1.0](CHANGELOG.md) is experimental; agent routing remains `structural_only`.
+[Release 0.1.1](CHANGELOG.md) is experimental; agent routing remains `structural_only`.
 
 ## Plan by scene, style and effect
 

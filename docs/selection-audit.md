@@ -6,7 +6,7 @@ The release adds an eight-tool registry, a generated feature matrix and a standa
 offline block/layer planner. Profiles cite upstream sources and distinguish local
 experiments from documented capability, retained failures and unknowns.
 
-Selection is input-compatible first, requested effects next, style preference then
+Selection is input-compatible first, requested effects/deliverables next, local evidence strength, style preference then
 the task default. Explicit tool choices survive incompatible inputs as blocked plans.
 Companions supply missing features only when their inputs fit. Paid capabilities
 are excluded by default. Known voice languages, vertical scope and exact frame timing
@@ -20,3 +20,7 @@ dependency repair. No time/cost advantage or universal reproducibility is claime
 The next experiment should evaluate the router, not add a renderer. See
 [the behavioural protocol](router-evaluation.md). Keep structural_only until an
 independent model's retained decisions and tool traces have been graded.
+
+Release 0.1.1 resolves companion dependencies to a fixed point in canonical feature
+order. Equivalent requirement arrays have equivalent tool coverage; requested native
+stills influence the primary choice instead of falling through to video extraction.
