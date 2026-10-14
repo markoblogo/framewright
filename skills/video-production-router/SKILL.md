@@ -45,7 +45,7 @@ it does not replace rendering skills or confer permission to publish.
    substantive rewrite. Measure generated speech
    before finalising cuts. Keep deterministic seekable picture timing and sound cues
    on a common timeline. Inspect the encoded final file, not just an intermediate mix.
-5. For production planning or finishing, read the [QA/handoff contract](references/handoff.md).
+5. For production planning, implementation/execution or finishing, read the [QA/handoff contract](references/handoff.md).
    Explicitly compare proposed copy with its named source, and identify whether
    each thumbnail is reused, newly rendered natively or extracted from video.
    If the current chain already meets deliverables, finish outstanding QA and
