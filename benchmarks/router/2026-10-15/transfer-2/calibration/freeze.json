@@ -1,0 +1,12 @@
+{
+  "purpose": "28 blind controls: prior22 plus six new rational-timeline/alpha/visible-credit boundaries. Fresh grading before first-exposure actors; opaque permuted IDs; hidden gold.",
+  "input_sha256": {
+    "batch-1.json": "2a86a6daf17305020eb5c32deb2923ff34a9a7092a0d9ed70b4cb154bcc40746",
+    "batch-2.json": "c0bc1cf951fe799c52d6ec8d7cf1ac03a937cf6349b4f7d531f265ac1bea7fdf",
+    "batch-3.json": "b230d9a983d0922ff3baf022d3fb644a0a3adca4d92479a60dd125e20d5f593b",
+    "batch-4.json": "92808f381c40af00887a95f21cfd2d5bdcda41cba35efa94f6a1fdc608ec0507",
+    "batch-5.json": "3cb213060de294111c288a3d39cde572979dcf0b7cdea0c30dc34f6269be031c"
+  },
+  "gold_sha256": "9605a404558f51cd910d9a9b4d60df769f4a9285930575db15cd870c99030be5",
+  "protocol_sha256": "9fe5e1842af47af4936361e11b2339f69bb10fffd71cd0678365e48d2cdffb64"
+}

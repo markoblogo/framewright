@@ -1,0 +1,79 @@
+{
+  "baseline_packet": "benchmarks/router/2026-10-14/grading-v3-complete",
+  "baseline_cases": 52,
+  "new_cases": [
+    {
+      "id": "three-canvas-campaign",
+      "new_decision": "Multiple simultaneous canvases and per-output responsive layout, rather than a single vertical or square deliverable."
+    },
+    {
+      "id": "rational-overlap",
+      "new_decision": "Fractional frame rate plus overlap accounting; prior fixed25fps case had no overlaps."
+    },
+    {
+      "id": "transparent-overlay",
+      "new_decision": "Alpha-channel handoff and two transparent formats, absent from all52."
+    },
+    {
+      "id": "gif-byte-cap",
+      "new_decision": "GIF, palette/loop constraints and strict byte cap; not a teaser MP4."
+    },
+    {
+      "id": "flute-ascii-finish",
+      "new_decision": "Real UI capture followed by a second renderer effect, not the earlier voice/music finish."
+    },
+    {
+      "id": "vfx-composition-collision",
+      "new_decision": "Specific documented effect-path collision, not generic unsupported physics."
+    },
+    {
+      "id": "data-noir",
+      "new_decision": "Source-driven numerical motion and nonmonotonic data semantics, not an abstract diagram."
+    },
+    {
+      "id": "watercolor-loop",
+      "new_decision": "Seamless looping and existing watercolor art, not a sequential book montage."
+    },
+    {
+      "id": "company-license-zero",
+      "new_decision": "Internal company use and entitlement uncertainty, not renderer price or music licence."
+    },
+    {
+      "id": "upgrade-history-rights",
+      "new_decision": "Account-plan chronology and saved audiovisual asset provenance, not an unentitled free user."
+    },
+    {
+      "id": "stems-rebuild",
+      "new_decision": "Stem extraction/reassembly and sum/alignment QA, absent from previous music plans."
+    },
+    {
+      "id": "voice-identity-codeswitch",
+      "new_decision": "Speaker identity, voice cloning and delivery across languages, not narration language availability."
+    },
+    {
+      "id": "beatmap-conflict",
+      "new_decision": "Contradictory beat-grid versus complete-audio duration, not a consistent locked frame schedule."
+    },
+    {
+      "id": "interactive-mp4",
+      "new_decision": "Output-format interactivity contradiction, not input compatibility or ordinary UI filming."
+    },
+    {
+      "id": "vr-ambisonic",
+      "new_decision": "Immersive projection and spatial audio, absent from all ordinary film examples."
+    },
+    {
+      "id": "split-render-ownership",
+      "new_decision": "Two explicit renderer ownership roles and a native still from the assembly stage, not three separate content blocks."
+    },
+    {
+      "id": "attribution-style-conflict",
+      "new_decision": "Mandatory visible attribution versus art direction, not generic copyright unknowns."
+    },
+    {
+      "id": "copy-only-incompatible-streams",
+      "new_decision": "Cross-codec heterogeneous clip concat with forbidden normalization, not muxing one locked video."
+    }
+  ],
+  "policy": "new decision dimensions and constraints, not renamed old prompts; first complete answers retained, no tuning or favourable retries"
+}

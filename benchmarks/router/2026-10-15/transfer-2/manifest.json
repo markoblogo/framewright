@@ -1,0 +1,26 @@
+{
+  "schema_version": 3,
+  "files": {
+    "actor-runner.py": "ce58e72f98817b9d31cd9773f9ce1d9de418b5318b583fbc3189f70427d8ae46",
+    "adjudication.json": "668293758334175c3526e6673b7c6a6da1003ad69966ffeea56e5f1ecb4fab21",
+    "cases.json": "8fe9954ee7746a736327b8ca56aeeebc752532ed65e2ff46ee86eb24b3d647e1",
+    "freeze.json": "21cbb9258df1d19a9249a47389d9defbb7147f7979e2b2af39fd0c0c683a8333",
+    "grader-config.json": "a92dac67ba8a9c5ef0806fa2933ea89fa16bc46d6731f13fb040e77e69a8eab9",
+    "grader-runner.py": "741ce81ea0652028a5f98534679f9a7a90893fc139c8c3136878d00ee1f4bc2e",
+    "grades.json": "6f191446cf7c338c73b59e5fb293d9ae8e12ccbc65aaa019cdafabe92bb22e81",
+    "inputs.json": "d31e650c72e3b4d520a9cb633981a2eb63353a4fe4e2825c6bd94c91f1f0e79d",
+    "novelty.json": "a65bc0668b37d273a674e4877f489a5134b2a9c631d4eddd2f85b44f3be96032",
+    "prelaunch-review.json": "45024abaf41bf84a848d0a82af9bef572e6dcdc6a13a01602cdca9aeddba94d7",
+    "protocol.txt": "9fe5e1842af47af4936361e11b2339f69bb10fffd71cd0678365e48d2cdffb64",
+    "results.json": "8b869756a6549478abd3011c875e39a1f31571dcca7fc0c33245b466cf6dd085",
+    "source-snapshot.zip": "641e924517e337701e44941b8032add12e96141df46455326defc8370be28943",
+    "summary.json": "e806db8e912a146727c2ec834942835918a6dcd8da210b238b8175b98c2ff280"
+  },
+  "counts": {
+    "cases": 18,
+    "passed": 13
+  },
+  "source_snapshot": "source-snapshot.zip",
+  "calibration": "calibration",
+  "calibration_manifest_sha256": "d2d064457536f5362240b4aa19e208ee9010a1d61f8e34bb1617530388a07410"
+}

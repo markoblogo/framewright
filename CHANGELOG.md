@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+Record a second first-exposure router assessment on 18 genuinely new scenarios:
+13/18 strict passes,28/28 fresh blind grader controls, unchanged router sources.
+Retain five strict misses and separate QA omissions from disputed comparison and
+future-approval wording. Keep the 52-case development qualification scoped. No fixes,
+actor retries, rendering, media publication or release.
+
 Resolve the three strict misses with versioned grading semantics and a router
 comparison/production stage clarification. Preserve 43/46 unchanged; complete the
 new 52/52 development run and freshly grade 22/22 opaque-ID controls, including

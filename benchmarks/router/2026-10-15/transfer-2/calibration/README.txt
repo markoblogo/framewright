@@ -1,0 +1,1 @@
+28 freshly evaluated opaque-ID blind controls: prior22 plus six rational-timeline, alpha and visible-attribution boundaries. Positive/negative gold hidden, order permuted, strict exact verdicts28/28. All examples synthetic; no actual media or outside actions.

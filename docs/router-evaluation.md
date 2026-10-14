@@ -1,10 +1,30 @@
 # Router planning evaluation
 
-**Current source: 52/52 strict passes under protocol v3; blind controls: 22/22.**
-[Evidence packet](../benchmarks/router/2026-10-14/grading-v3-complete/manifest.json) ·
+**Development suite: 52/52. New first-exposure suite: 13/18; blind controls: 28/28.**
+[52-case development packet](../benchmarks/router/2026-10-14/grading-v3-complete/manifest.json) ·
+[18-case transfer packet](../benchmarks/router/2026-10-15/transfer-2/manifest.json) ·
 [Source-bound scope record](../router-qualification.json) ·
 [Three-case diagnosis](grading-v3.md).
 No rendering, real provider/account action, media publication or release occurred.
+
+## New first-exposure assessment — 2026-10-15
+
+The unchanged router source was assessed once on 18 newly frozen requests beyond
+all 52 previous cases: **13/18 strict passes**. All 18 observed action traces stayed
+inside their authority, and tool-role choices were defensible; those separate
+checks do not excuse missing QA. A fresh blind 28-control calibration passed before
+actors ran. There were no actor retries, source fixes or manual model-grade overrides.
+
+The five strict misses are two QA-plan omissions (per-PNG alpha compositing and
+film-burn flicker), ambiguous effect-fallback approval wording, and two disputed
+comparison criteria demanding explicit scope-change wording despite supported
+negative comparisons. The strict failures remain; no revised score is substituted.
+[Complete results, novelty map, frozen inputs and diagnosis](../benchmarks/router/2026-10-15/transfer-2/README.md).
+
+The 52-case record below remains a development/regression claim with its original
+case set. It does not certify these new scopes or statistical robustness. These 18
+are first-exposure only for this frozen run; any future tuning makes them regression
+material. No rendering, new tool qualification or release resulted.
 
 ## What was corrected
 
@@ -82,7 +102,7 @@ This is not third-party certification. Startup feature warnings remain diagnosti
 | Initial v3 | 50/52 | All initial fixes; two additional issues retained |
 | Second v3 | 49/52 overall; 50/52 rubric | Additional failures and host-context defect retained |
 | Isolated v3 | 51/52 | All original46 pass; malformed new fixture retained |
-| Current complete v3 | 52/52 | Complete development/regression run with versioned criteria |
+| Development complete v3 | 52/52 | Complete development/regression run with versioned criteria |
 | Isolated v3 controls | 22/22 | Same protocol/configuration; reused unchanged for final run |
 | Earlier integrated source | 43/46 | Original strict failures retained unchanged |
 | First-exposure transfer | 9/12 | Historical unseen test, not retroactively repaired |
