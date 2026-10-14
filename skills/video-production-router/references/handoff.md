@@ -51,6 +51,20 @@ it with video/audio checks. Correct words and no clipping do not establish legib
 plan to read titles, labels and CTA at the intended output size and a reduced preview.
 When media is absent these are specific planned/blocked checks, not verified results.
 
+## Transparency and temporal effects
+
+For each alpha-bearing deliverable, including a separate PNG still, plan decoded
+alpha/channel inspection and compositing on contrasting light/dark backgrounds.
+Inspect edges, matte/halos and unintended opacity for that file. A video trial does
+not cover the still. Keep exact codec/container alpha support unqualified until a
+bounded export/decoder test passes; an opaque background is not a substitute.
+
+For film-burn, strobes, scanlines or other temporal effects, plan inspection across
+frames at the intended playback rate for flicker/flashes, transition boundaries
+and text readability. Agree artistic/comfort acceptance for intended flicker; do
+not assume either zero flicker or automatic acceptance. This remains planned QA
+until the actual encoded output has been inspected.
+
 ## Minimal handoff for a rendering plan
 
 Keep it compact; prose or a small table is enough:

@@ -65,6 +65,7 @@ it does not replace rendering skills or confer permission to publish.
    mean QA is complete; retain any checks blocked by missing files or authority.
    Before finalising a plan, check each requested output against its own handoff
    row and retain every named check, explicitly planned/blocked where necessary.
+   Apply output-specific transparency and effect-specific temporal checks from that contract.
    Keep thumbnail QA separate from MP4 QA; preserving an image as-is does not
    replace inspecting its existing crop. Do not silently omit checklist items.
    For a plan-only request, name the intended output artifacts and the remaining
@@ -106,8 +107,8 @@ For a new candidate, record its source/version, task, inputs, side effects/cost,
 test, failure modes and evidence before promotion. In a full checkout, use
 `docs/experiments.md` and `templates/experiment.md`. If installed standalone, retain
 these fields in the active project's own experiment record instead. Keep large
-artifacts outside Git. Never weaken QA thresholds to rescue an effect; revise or
-remove the effect and record the failed attempt.
+artifacts outside Git. Never weaken QA thresholds to rescue an effect. Record the failed attempt;
+propose revision/removal, and obtain acceptance before dropping a requested effect.
 
 Routing behaviour scenarios are in [scenarios.json](references/scenarios.json).
 They are specifications, not evidence of an independent model evaluation.
