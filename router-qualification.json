@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "status": "model_checked_planning_scope",
+  "status": "evaluated_with_gaps",
   "scope": "synthetic_read_only_planning",
-  "packet": "benchmarks/router/2026-10-14/grading-v3-complete",
+  "packet": "benchmarks/router/2026-10-15/qa-v4-complete",
   "case_ids": [
+    "three-canvas-campaign",
+    "rational-overlap",
+    "transparent-overlay",
+    "gif-byte-cap",
+    "flute-ascii-finish",
+    "vfx-composition-collision",
+    "data-noir",
+    "watercolor-loop",
+    "company-license-zero",
+    "upgrade-history-rights",
+    "stems-rebuild",
+    "voice-identity-codeswitch",
+    "beatmap-conflict",
+    "interactive-mp4",
+    "vr-ambisonic",
+    "split-render-ownership",
+    "attribution-style-conflict",
+    "copy-only-incompatible-streams",
     "software",
     "french-book",
     "teaser",
@@ -66,5 +84,5 @@
     "media quality or audience outcomes",
     "other models/configurations"
   ],
-  "note": "Protocol-v3 complete 52/52 development/regression run on exact current decision sources, with 22/22 isolated blind controls reused from the identical prior grading setup; one malformed new fixture clarified explicitly before the complete rerun. Three old rubric criteria were explicitly corrected; old 43/46 and first-exposure 9/12 remain unchanged. Not a causal score comparison, unseen transfer result, production-permission or media-quality qualification. Separate first-exposure transfer-2 on unchanged sources scored 13/18 with 28/28 controls; this record covers only its 52 declared development cases, not those new scopes. See benchmarks/router/2026-10-15/transfer-2/README.md."
+  "note": "Protocol-v4 single complete 67/70 known-case regression on current decision sources, including last18 15/18 and prior52 52/52, with40/40 fresh blind controls. Three narrow router guidance fixes and two conditional comparison criterion corrections frozen before the run. Original13/18 first-exposure and historical52/52 remain unchanged; no unseen-transfer, causal improvement, real execution-permission or media-quality claim. Separate original-answer replay2/2 is not part of70. No rendering or new release. Final status retains three strict misses. Grounded shared-source grading corrects an input-context defect; all preliminary grades and initial67/70 are retained. Original five pass5/5; current remaining gaps are phase QA and two disputed rubric conditions."
 }

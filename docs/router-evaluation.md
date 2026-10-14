@@ -1,11 +1,34 @@
 # Router planning evaluation
 
-**Development suite: 52/52. New first-exposure suite: 13/18; blind controls: 28/28.**
+**Current known-case regression: 67/70; controls40/40. Historical first-exposure:13/18.**
 [52-case development packet](../benchmarks/router/2026-10-14/grading-v3-complete/manifest.json) ·
 [18-case transfer packet](../benchmarks/router/2026-10-15/transfer-2/manifest.json) ·
 [Source-bound scope record](../router-qualification.json) ·
 [Three-case diagnosis](grading-v3.md).
 No rendering, real provider/account action, media publication or release occurred.
+
+## Five corrections and complete regression — 2026-10-15
+
+The [protocol-v4 packet](../benchmarks/router/2026-10-15/qa-v4-complete/README.md)
+records **67/70** in a single new run on one repaired source: last18 **15/18**,
+prior52 **52/52**, with **40/40** freshly graded blind controls. Router
+clarifications cover per-output alpha QA, temporal-effect inspection and consent
+before dropping a requested effect. Two comparison criteria now require a scope
+change gate only when an alternative is proposed for adoption. A supported negative
+comparison can stop. Both original disputed answers pass a separate unchanged-answer
+replay; their old grades stay intact. No model verdict was manually overridden.
+
+All five original cases pass. The current67/70 retains one phase-QA omission
+and two disputed conditions: readability for a text-free artwork loop and an
+explicit documented-export label in a rights-only comparison. Qualification stays
+**evaluated_with_gaps**. Source-master QA was additionally clarified; the final
+accepted grader receives frozen decision text. The initial67/70 and all preliminary
+incomplete-context grades remain linked in the packet. No green adjustment.
+
+All70 are now known regression material. The old52/52 and first-exposure13/18 remain
+historical source-bound results; this is not a causal or unseen-transfer claim.
+The current qualification record points to this complete70-case packet, not a union
+of favourable answers from older runs. No rendering, media qualification or release.
 
 ## New first-exposure assessment — 2026-10-15
 

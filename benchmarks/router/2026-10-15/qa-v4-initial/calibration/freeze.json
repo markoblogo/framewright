@@ -1,0 +1,14 @@
+{
+  "purpose": "38 blind controls: previous28 plus positive/negative boundaries for all five transfer-2 findings; fresh grading before actors, gold hidden.",
+  "input_sha256": {
+    "batch-1.json": "74fc255c02b20d83100c315caef105093155b4c534486c5350976378f33a006c",
+    "batch-2.json": "efe7058973ba1ab3950e343e1c09d4ecf56c3e1ce881686df80256c398f53834",
+    "batch-3.json": "12be8f85c938f22c82d4834760375d2011a1767b7e461a8b32c9678f7f1c2ab6",
+    "batch-4.json": "32b974344d365e0d9d15db0d41c83d359b083799fc8295dd21f463b5eb634063",
+    "batch-5.json": "40484ab52550e2e4aeb25679440d390f244974d29c8f81bec963d40fab930628",
+    "batch-6.json": "71ffbb0b8345ec8c4831961e52aaa66f9f2d862b1613330bbd209f1043f76b38",
+    "batch-7.json": "12de2f00454f070c81f813ed76e40d4007de0ec06e9149c90fc96e48b17d5f48"
+  },
+  "gold_sha256": "200a67e9c391f2f8b5bc8d55d7a2fe42902b338db3f38796ca2398cf74c5d1ee",
+  "protocol_sha256": "4de69a7ff8865ff8c1b988cec64383cffd0609b82c6f0b4baa3adf21869c4587"
+}

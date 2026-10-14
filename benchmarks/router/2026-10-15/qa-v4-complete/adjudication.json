@@ -1,0 +1,28 @@
+{
+  "original_five": {
+    "transparent-overlay": "PASS",
+    "data-noir": "PASS",
+    "vfx-composition-collision": "PASS",
+    "interactive-mp4": "PASS",
+    "copy-only-incompatible-streams": "PASS"
+  },
+  "strict_score_unchanged": "67/70",
+  "no_adjusted_score": true,
+  "remaining": [
+    {
+      "id": "stems-rebuild",
+      "classification": "specific_qa_plan_omission",
+      "assessment": "Alignment, master recombination and listening are planned, but a specific phase/coherence/cancellation check is not named. Keep this strict miss; next regression should distinguish sum similarity from phase inspection."
+    },
+    {
+      "id": "watercolor-loop",
+      "classification": "disputed_criterion_applicability",
+      "assessment": "The answer explicitly proposes no text, preserves approved artwork and plans colour/detail/framing/loop QA. The frozen criterion still demands readability. Review conditional relevance in a later version; do not alter this grade."
+    },
+    {
+      "id": "upgrade-history-rights",
+      "classification": "disputed_explicitness_requirement",
+      "assessment": "The answer retains native song-card identity and separates export availability from rights but does not explicitly label export a documented technical capability. The frozen required criterion fails; comparison semantics deserve review. No rights bypass or false inspection occurred."
+    }
+  ]
+}

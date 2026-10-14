@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+Close the five transfer-2 findings with per-output transparency QA, temporal-effect
+inspection, conditional effect-fallback acceptance and stage-aware comparison
+criteria. Retain one complete 67/70 protocol-v4 regression and40/40 fresh blind
+controls; separately replay both original disputed answers2/2 without edits. Keep
+original13/18 and historical52/52 unchanged. Add protocol/calibration compatibility
+checks and frozen grader source context. Retain the initial67/70 and preliminary
+grades; the final67/70 contains different misses, including phase QA and two
+disputed rubric conditions. Keep evaluated_with_gaps. Shorten the README around
+planning and reference-film entrypoints; include actual offline planner output. No rendering or new release.
+
 Record a second first-exposure router assessment on 18 genuinely new scenarios:
 13/18 strict passes,28/28 fresh blind grader controls, unchanged router sources.
 Retain five strict misses and separate QA omissions from disputed comparison and

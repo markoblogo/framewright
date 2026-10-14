@@ -188,3 +188,14 @@ class QualificationGateTest(unittest.TestCase):
         manifest_path.write_text(json.dumps(manifest))
         with self.assertRaisesRegex(ValueError, 'Prompt hash mismatch'):
             evidence.check_qualification(self.root, self.path)
+
+    def test_grader_fact_text_must_match_frozen_source_and_exclude_gold(self):
+        text = 'Recorded object prototype; calibrated physics untested.'
+        frozen = {'skills/video-production-router/references/catalog.json': hashlib.sha256(text.encode()).hexdigest(),
+                  'skills/video-production-router/references/scenarios.json': 'withheld'}
+        corpus = {'router/references/catalog.json': text}
+        evidence.check_decision_text(corpus, frozen)
+        with self.assertRaisesRegex(ValueError, 'source drift'):
+            evidence.check_decision_text({'router/references/catalog.json': 'Physics is tested'}, frozen)
+        with self.assertRaisesRegex(ValueError, 'source set'):
+            evidence.check_decision_text({**corpus, 'router/references/scenarios.json': 'hidden gold'}, frozen)

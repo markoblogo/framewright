@@ -1,0 +1,5 @@
+{
+  "phase": "before any model response",
+  "reason": "in-process app-server initialization blocked by parent sandbox; exit1 in all seven batches; no model events/answers",
+  "resolution": "retry entire calibration outside parent sandbox, retain failed attempt"
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 3,
+  "files": {
+    "actor-runner.py": "ce58e72f98817b9d31cd9773f9ce1d9de418b5318b583fbc3189f70427d8ae46",
+    "cases.json": "e6d792b113c1799963b2cf7a709be2e5118fb0c17f5e51efd217c0d5ce2cb58b",
+    "criteria-changes.json": "e1d551b376a43bccf0c4e763061c0cb72641f0422d3f469f79bfb1e073cf2919",
+    "freeze.json": "c3b8d5f8dde31943a8e075b25c0b10897ccec2df9ffc7869e91814f35d109bf0",
+    "grader-config.json": "e4f29639fbdb60a53d942ae2510926988bdc351fd86f62a5c72e05a7786c069c",
+    "grader-runner.py": "741ce81ea0652028a5f98534679f9a7a90893fc139c8c3136878d00ee1f4bc2e",
+    "grades.json": "b42b7b32f78fbf3af3b85ad20524da41247360dcca9eec1211076bb5a7a47882",
+    "grading-interruption.json": "6ce8c63c606d71c7be8ab4191c2eaa92d98404bd264b17ef5e471b7b018e0f6d",
+    "inputs.json": "e5a45c3a9d310ade9e073089462324cef759ead2459fd95746b9508360f35089",
+    "protocol.txt": "4de69a7ff8865ff8c1b988cec64383cffd0609b82c6f0b4baa3adf21869c4587",
+    "results.json": "d6bca759fcf219b406ae8df5863d7896167d4229c78921f098baeeb8e0e96c45",
+    "source-snapshot.zip": "e167712b546d2f6aaa8e21980742868441788d60875dbd35633c37699c300c15",
+    "summary.json": "f220afc24a6efb69072e0a279c81752d0a1c0e76d0e83e4faf71d580313d04f6"
+  },
+  "counts": {
+    "cases": 70,
+    "passed": 67
+  },
+  "source_snapshot": "source-snapshot.zip",
+  "calibration": "calibration",
+  "calibration_manifest_sha256": "b8d37f77de6f41e24c193e630c8b35e56d82fab83f3f1c782b6446829bb78398"
+}

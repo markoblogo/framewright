@@ -1,0 +1,11 @@
+{
+  "reason": "First batch7 grader timed out after240seconds with turn.started only and no grade answer. Original actor answers/criteria unchanged; regrade same batch in separate context. No model verdict discarded.",
+  "archived": {
+    "execution": {
+      "exit_code": 124,
+      "duration_seconds": 240.07
+    },
+    "events_sha256": "26e8be28e3e7bb1d234fd7e1cdb0f9370862bf7cb7fbfa63da3951aee4fe640f",
+    "prompt_sha256": "a414fa02fae33edcb35b7b17b4d9d7491674867de2e93ef078aa372157ba3590"
+  }
+}

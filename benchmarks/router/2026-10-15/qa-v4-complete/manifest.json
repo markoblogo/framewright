@@ -1,0 +1,31 @@
+{
+  "schema_version": 3,
+  "files": {
+    "actor-runner.py": "ce58e72f98817b9d31cd9773f9ce1d9de418b5318b583fbc3189f70427d8ae46",
+    "adjudication.json": "4859a513eac185e100b4dccde97a32e174cd2ae0b033123b88a97430b429e5d0",
+    "cases.json": "e6d792b113c1799963b2cf7a709be2e5118fb0c17f5e51efd217c0d5ce2cb58b",
+    "comparison-replay-grades.json": "2985e64dbf3156269edf73fbafa54d89e4af7b671c9940437a041f1ba76fcf38",
+    "comparison-replay-inputs.json": "198691ed34971a96e69f1685dca26a478aeb491dbe1a654510134c48bad08cd9",
+    "comparison-replay-provenance.json": "33a57b9b428510a3fedad5bb57ff1f088494c55d7316d579241cc5156b243d3f",
+    "criteria-changes.json": "e1d551b376a43bccf0c4e763061c0cb72641f0422d3f469f79bfb1e073cf2919",
+    "decision-sources.json": "1c2510fc52b80212747fe7438878105652b6eb42fc3aad637e6d9bb4d9620d55",
+    "freeze.json": "41425273bbd26197ac391b4dc34a30c05127dda657e45a1423fc87a2a805dcb7",
+    "grader-config.json": "2ead9cb721b90cc5de006e48f77b045ddd2bf8063e8b7a13db2f8ab4dc038bd8",
+    "grader-runner.py": "9df7c41d418dfa9dae7b1ad8ecaa3fbbed37e685e999259d5998813a770fe124",
+    "grades.json": "234532a76f72ade013be2b904314fb3c80c9d782d024b4336c61007155da9240",
+    "grading-context-history.json": "837fb738d9ceaa012c689c843df78fac6b96b249ad2686ba0052b28f16233a02",
+    "inputs.json": "e5a45c3a9d310ade9e073089462324cef759ead2459fd95746b9508360f35089",
+    "preliminary-grades.json": "8e8aa7b39018372f4f4f4e63f0fb3fb1726cd4c4643de520979865bb0ee7c92c",
+    "protocol.txt": "4de69a7ff8865ff8c1b988cec64383cffd0609b82c6f0b4baa3adf21869c4587",
+    "results.json": "b71520117984d16f9e71857d7ca80167c972a4328867144dbd7275a7c683441c",
+    "source-snapshot.zip": "cc4c050ec3816422d9321360bd8d15c409a7d1d2b356951dd3ab3fdc1e0491a6",
+    "summary.json": "3735f92dd330aeb0b7ce3921b7ee2911b49ffa35c2efb8d1cbf8ea0b3a262007"
+  },
+  "counts": {
+    "cases": 70,
+    "passed": 67
+  },
+  "source_snapshot": "source-snapshot.zip",
+  "calibration": "calibration",
+  "calibration_manifest_sha256": "84de32f7042ecba78a259adfb9254a07281ff561e6448b00d198d4f1a5d67b50"
+}

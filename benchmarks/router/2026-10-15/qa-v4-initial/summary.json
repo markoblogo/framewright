@@ -1,0 +1,38 @@
+{
+  "cases": 70,
+  "strict_model_rubric_passed": 67,
+  "route_review_passed": 70,
+  "trace_review_passed": 70,
+  "actor_usage": {
+    "input_tokens": 6421345,
+    "cached_input_tokens": 4917504,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 69156,
+    "reasoning_output_tokens": 2273
+  },
+  "actor_worker_seconds": 2265.88,
+  "monetary_cost": "NOT_AVAILABLE",
+  "qualification": "development_regression_known70_not_unseen",
+  "public_trace_format": "all tool attempt/completion events; command output replaced by hash/byte size; full original event streams retained locally",
+  "limitations": [
+    "All70cases are disclosed regression material. No unseen-transfer or causal improvement claim.",
+    "One new answer per case on one source snapshot; no manual grading overrides or favourable actor retries.",
+    "Two comparison criteria and the grading protocol changed before the run; score is not directly comparable to13/18.",
+    "Same-family isolated actors/graders, controller action/route review; no renderer/media/account/spending/production privilege tested.",
+    "Actor usage excludes calibration/grading; billing cost NOT_AVAILABLE."
+  ],
+  "grader_calibration": {
+    "controls": 38,
+    "correct": 38,
+    "blind_ids": true,
+    "protocol_version": 4,
+    "freshly_graded": true
+  },
+  "source_changed": true,
+  "baseline_first_exposure": {
+    "packet": "../transfer-2",
+    "strict_passed": 13,
+    "cases": 18,
+    "unchanged": true
+  }
+}

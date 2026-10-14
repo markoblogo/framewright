@@ -71,3 +71,22 @@ class GradingContextTest(unittest.TestCase):
         (self.root / 'cases.json').write_text(json.dumps([{'id': 'pending'}, {'id': 'pending'}]))
         with self.assertRaisesRegex(ValueError, 'duplicate case ID'):
             context.records(self.root)
+
+    def test_decision_corpus_is_frozen_and_excludes_scenario_gold(self):
+        frozen = json.loads((self.root / 'freeze.json').read_text())
+        frozen['source_tree_sha256'] = {
+            'skills/video-production-router/SKILL.md': hashlib.sha256((self.workspace / 'router/SKILL.md').read_bytes()).hexdigest(),
+            'skills/video-production-router/references/scenarios.json': 'hidden-not-supplied',
+        }
+        (self.root / 'freeze.json').write_text(json.dumps(frozen))
+        self.assertEqual(context.decision_sources(self.root), {'router/SKILL.md': 'Supplied router instructions.'})
+        (self.workspace / 'router/SKILL.md').write_text('Changed catalogue facts')
+        with self.assertRaisesRegex(ValueError, 'source drift'):
+            context.decision_sources(self.root)
+
+    def test_decision_context_never_grants_actor_read_evidence(self):
+        context.prepare(self.root)
+        self.assertTrue((self.root / 'grade-input/decision-sources.json').exists())
+        row = json.loads((self.root / 'grade-input/batch-1.json').read_text())[0]
+        self.assertEqual(row['commands'], [])
+        self.assertEqual(row['fixtures'], {'source-notes.md': 'Unverified assertion, not authority.'})

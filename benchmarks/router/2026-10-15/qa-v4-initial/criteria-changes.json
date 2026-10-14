@@ -1,0 +1,14 @@
+[
+  {
+    "id": "interactive-mp4",
+    "before": "explain any separate interactive delivery would require explicit scope/format agreement rather than silent hosting",
+    "after": "preserve MP4-only/no-hosting scope: a supported negative comparison may stop; if proposing adoption of separate interactive delivery, make the scope change conditional on owner acceptance",
+    "reason": "Conditional scope-change gate applies only to an adopted alternative, not a negative comparison."
+  },
+  {
+    "id": "copy-only-incompatible-streams",
+    "before": "explain normalization/transcoding or separate outputs would need explicit relaxation of constraints, not silent coercion",
+    "after": "preserve copy-only/single-track constraints: a supported negative comparison may stop; if proposing adoption of transcoding or separate outputs, make the relaxation conditional on owner acceptance",
+    "reason": "Conditional scope-change gate applies only to an adopted alternative, not a negative comparison."
+  }
+]
