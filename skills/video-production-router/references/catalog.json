@@ -72,6 +72,27 @@
         "calibrated physics",
         "general 3D generation"
       ]
+    },
+    {
+      "id": "live-react-scene",
+      "status": "tested_for_scope",
+      "recipe": "recipes.md#live-react-scene",
+      "upstream": [
+        "https://github.com/webprodigies-org/flute"
+      ],
+      "experiments": [
+        "coqpi-flute"
+      ],
+      "tested_scope": "Flute 0.1.2 camera/focus around three existing CoqPi React panels in a browser host; horizontal 1080p MP4",
+      "not_tested": [
+        "full Electron runtime",
+        "arbitrary React applications",
+        "portable snapshot command succeeded",
+        "live microphone or AI",
+        "ray-traced optics",
+        "owner aesthetic acceptance",
+        "audience performance"
+      ]
     }
   ]
 }

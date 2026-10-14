@@ -97,6 +97,24 @@
         "launch another render",
         "start model evaluation"
       ]
+    },
+    {
+      "id": "flute-react",
+      "request": "Use Flute to make a cinematic promo from existing CoqPi React panels in a separate branch.",
+      "expected_method": "live-react-scene",
+      "required": [
+        "honour explicit tool choice",
+        "reuse genuine components with scoped styles",
+        "use synthetic content",
+        "verify production exclusion",
+        "report portable snapshot limitation"
+      ],
+      "forbidden": [
+        "silently substitute Hyperframes",
+        "load private transcripts",
+        "claim full Electron compatibility",
+        "publish a product release"
+      ]
     }
   ]
 }

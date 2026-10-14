@@ -35,6 +35,12 @@ prototype option, not a validated physics or finished sound workflow here. Do no
 choose it just because a video contains an object. Historical reconstruction and
 new AI-video services require bounded tests, not an invented capability claim.
 
+For camera travel and focus around an existing React interface, consider the
+tested `live-react-scene` Flute recipe. An explicit Flute request overrides the
+default renderer choice; load its installed guide. Its browser-host success does
+not prove full Electron or arbitrary React support. Keep the ordinary app and
+production bundle outside the demonstration.
+
 For a new candidate, record its source/version, task, inputs, side effects/cost,
 test, failure modes and evidence before promotion. In a full checkout, use
 `docs/experiments.md` and `templates/experiment.md`. If installed standalone, retain
