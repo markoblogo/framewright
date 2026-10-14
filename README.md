@@ -41,7 +41,7 @@ This is text preproduction, not a new renderer or permission to generate clips.
 
 Start with [selection guidance](skills/video-production-router/references/selection.md)
 and [the capability matrix](skills/video-production-router/references/tool-matrix.md).
-Ten tool profiles distinguish tested, documented, failed and unknown functions.
+11 tool profiles distinguish tested, documented, failed and unknown functions.
 Styles guide direction; they are not fixed engine limits or quality scores.
 
 For a multi-tool film the agent decomposes the request into blocks/layers. The offline
@@ -79,12 +79,14 @@ See [related projects and borrowed ideas](docs/related-work.md) and the
 
 | Need | Starting point | Evidence / limits |
 | --- | --- | --- |
+| New multi-shot film without a useful shot plan | Original storyboard adapter → tools selected per scene/layer | Text-only adapter subset 4/4; does not generate media or clear rights |
 | Short software launch or landing-page introduction | Brag full workflow + Hyperframes | AsciiTheme and AMI delivered and accepted; narration not tested in these runs |
 | Voiced book/product trailer using existing imagery | Hyperframes montage + local Kokoro + sound-layer mixing/QA | French and English book trailers delivered; not a general turnkey generator |
 | Very short announcement | Short edit of an established composition | Six-second Good Dogs teaser; no audience-performance comparison |
 | Cinematic camera/focus around existing React UI | Flute + a development-only component host | CoqPi browser-renderer export verified; full Electron and snapshot CLI remain limited |
 | Authored React motion graphics and editable scene timing | Remotion + official skills | Framewright film: native audio/still/MP4; explicit browser workaround and own licence |
 | Detailed object visualisation | Anatomy + deterministic timeline adapter | Visual prototype worked; combined sound prototype failed QA and was stopped |
+| URL/prompt-to-launch-film cloud workflow (Shipvideo) | Research queue only | Not installed/tested; account, cost and licence inspection required |
 | Historical reconstruction, calibrated physics, new generative-video workflows | Research candidate | Not validated here; agree a bounded experiment first |
 
 See [recipes](skills/video-production-router/references/recipes.md),

@@ -9,13 +9,15 @@
 | [Framewright](https://github.com/markoblogo/framewright) | Own router, method catalogue, recipes and experiment evidence | Does not mirror upstream rendering/audio tools |
 
 These are optional integration contracts, not a claim that a combined SET →
-agentsgen → video build has been exercised end to end. The six retained video
-exports predate these cross-repository integration changes.
+agentsgen → video build has been exercised end to end. Retained video
+exports do not qualify these cross-repository integrations.
 
 ## Optional handoff
 
 1. Use existing repo context or agentsgen when useful; preserve handwritten rules.
-2. Ask Framewright to select a recipe. Keep the actual brief/assets in the video project.
+2. Ask Framewright to establish a storyboard for a new multi-shot brief, then select
+   recipes per shot/layer. Existing approved shots, recuts and finishing skip the
+   extra preparation. Keep actual briefs/assets in the video project.
 3. Use SET only when the task benefits from an explicit multi-step plan. A plan can
    name the selected recipe and required evidence without granting new permissions.
 4. Run production with the chosen tools and project-specific commands, not SET by inference.

@@ -21,15 +21,21 @@ combination. Keep native failures visible even when another tool supplies the
 requested deliverable. See [tool chains](../skills/video-production-router/references/tool-chains.md).
 
 Catalogue states: candidate, prototype, tested_for_scope. They are scope labels,
-not a ranking. Router validation: structural_only or model_evaluated; promotion
-requires retained independent model traces and a graded scenario result. A schema
+not a ranking. The legacy catalogue remains structural_only. The separate
+router-qualification.json record binds an actual current-source planning assessment
+to its complete packet: model_checked_planning_scope requires all criteria to pass;
+evaluated_with_gaps retains explicit failures without promotion. Separate actor and
+grader contexts of one model family are not third-party certification. A schema
 check does not evaluate a model. Do not claim comparative efficiency without a
 fair comparison of time/cost/quality on the same task.
 
 When evaluating routing later, use references/scenarios.json from the skill in a
 read-only isolated task with no actual rendering, installing or publishing. Record
 model/version/date and inspect decisions and actions against required/forbidden
-behaviour. Today's task deliberately does not launch that evaluation.
+behaviour. Freeze genuinely unseen cases before actor execution; do not relabel
+exposed development requests as held-out. Include supplied source text in grading
+and preserve incomplete-context or disputed grade attempts separately. The offline
+validator never launches a model.
 
 ## Records across dates
 
