@@ -59,3 +59,15 @@ class GradingContextTest(unittest.TestCase):
         (self.root / 'evidence/scope/answer.txt').write_text('A different reply.')
         with self.assertRaisesRegex(ValueError, 'never overwrite'):
             context.prepare(self.root)
+
+    def test_external_symlink_is_rejected_before_source_read(self):
+        outside = self.root / 'unrelated.txt'
+        outside.write_text('Not an authorised fixture.')
+        (self.workspace / 'outside.md').symlink_to(outside)
+        with self.assertRaisesRegex(ValueError, 'symlink or path outside'):
+            context.records(self.root)
+
+    def test_duplicate_pending_ids_are_rejected(self):
+        (self.root / 'cases.json').write_text(json.dumps([{'id': 'pending'}, {'id': 'pending'}]))
+        with self.assertRaisesRegex(ValueError, 'duplicate case ID'):
+            context.records(self.root)

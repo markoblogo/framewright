@@ -16,9 +16,11 @@ def records(root):
     cases = json.loads((root / 'cases.json').read_text())
     frozen = json.loads((root / 'freeze.json').read_text())
     result = {}
+    seen = set()
     for case in cases:
         identity = case['id']
-        require(isinstance(identity, str) and identity not in {'.', '..'} and Path(identity).name == identity and identity not in result, 'Unsafe or duplicate case ID')
+        require(isinstance(identity, str) and identity not in {'.', '..'} and Path(identity).name == identity and identity not in seen, 'Unsafe or duplicate case ID')
+        seen.add(identity)
         evidence = root / 'evidence' / identity
         if not (evidence / 'execution.json').exists():
             continue
@@ -26,7 +28,9 @@ def records(root):
         workspace = root / 'runs' / identity
         before = execution['files_before']
         require(before == execution['files_after'] and execution['workspace_unchanged'], f'{identity}: changed fixture')
-        actual = {p.relative_to(workspace).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(workspace.rglob('*')) if p.is_file()}
+        paths = [p for p in sorted(workspace.rglob('*')) if p.is_file()]
+        require(all(not p.is_symlink() and p.resolve().is_relative_to(workspace.resolve()) for p in paths), f'{identity}: symlink or path outside fixture')
+        actual = {p.relative_to(workspace).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
         require(actual == before, f'{identity}: current fixture differs from execution snapshot')
         prompt = (root / (identity + '-prompt.txt')).read_text()
         require(hashlib.sha256(prompt.encode()).hexdigest() == frozen['prompt_sha256'][identity], f'{identity}: actor prompt drift')
