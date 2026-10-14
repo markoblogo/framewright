@@ -7,6 +7,8 @@
 - Authorised side effects / costs / workspace:
 - Success criteria decided before execution:
 - Method / reproduction steps / timeline:
+- Missing requirement / tool roles / handoff formats / transformations:
+- Final chain QA / individually tested versus combined capabilities:
 - Local output hashes / evidence paths:
 - Failed attempts and changes (keep thresholds unchanged):
 - Automated QA:

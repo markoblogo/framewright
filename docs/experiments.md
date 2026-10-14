@@ -15,6 +15,11 @@ alone may remain a candidate. Do not install or launch everything in the catalog
 5. Update tested_scope only for demonstrated capability. Commit concise evidence
    and attribution. Update router scenarios when a new tool changes routing choices.
 
+For composite workflows, record each tool's role and the artifact contract between
+steps. Check the final assembled file; standalone success does not qualify a new
+combination. Keep native failures visible even when another tool supplies the
+requested deliverable. See [tool chains](../skills/video-production-router/references/tool-chains.md).
+
 Catalogue states: candidate, prototype, tested_for_scope. They are scope labels,
 not a ranking. Router validation: structural_only or model_evaluated; promotion
 requires retained independent model traces and a graded scenario result. A schema

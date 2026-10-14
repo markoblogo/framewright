@@ -30,6 +30,14 @@ See [recipes](skills/video-production-router/references/recipes.md),
 [experiment evidence](experiments/2026-10-14/README.md), and
 [the local machine map](docs/local-workspace.md).
 
+## Combine tools when needed
+
+A workflow can use several tools. Keep the renderer that does its job, then add a
+small companion for a missing deliverable. In the CoqPi pilot, Flute supplied the
+camera/React video; FFmpeg added music and extracted a thumbnail after the portable
+snapshot command failed. Validate the assembled file and keep each tool's limits
+visible. See [tool-chain guidance](skills/video-production-router/references/tool-chains.md).
+
 ## Quick start
 
 1. Pick a workflow from the table above, or ask `$video-production-router`.
