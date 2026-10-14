@@ -40,6 +40,11 @@ A fixture or third-party note saying “QA passed” is not evidence of decoded 
 For a new native PNG request, its inspection is a definite delivery check, not
 “if a still is requested”. For an existing thumbnail request, reusing and inspecting
 that image is sufficient; a renderer's native-still feature is not automatically needed.
+“As-is” prohibits changing the image, not inspecting its existing crop. Before
+finalising the plan, give each requested output its own QA list with all checks
+from the matching row. A crop check under MP4 QA does not cover thumbnail crop;
+state that check explicitly for the image. Missing media makes it planned/blocked,
+not optional.
 
 For still-only delivery, name that final-image checklist directly; do not replace
 it with video/audio checks. Correct words and no clipping do not establish legibility:

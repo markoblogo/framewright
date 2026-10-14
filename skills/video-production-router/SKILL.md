@@ -60,6 +60,10 @@ it does not replace rendering skills or confer permission to publish.
    If the current chain already meets deliverables, finish outstanding QA and
    hand over the result without adding tools or experiments. No more tools does not
    mean QA is complete; retain any checks blocked by missing files or authority.
+   Before finalising a plan, check each requested output against its own handoff
+   row and retain every named check, explicitly planned/blocked where necessary.
+   Keep thumbnail QA separate from MP4 QA; preserving an image as-is does not
+   replace inspecting its existing crop. Do not silently omit checklist items.
    For a plan-only request, name the intended output artifacts and the remaining
    QA/delivery steps; missing media blocks verification, not listing those steps.
    Deliver the export, thumbnail, subtitles/copy if requested, and honest QA status.
