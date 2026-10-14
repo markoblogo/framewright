@@ -128,11 +128,13 @@
           "result": "failed",
           "detail": "Two native still attempts timed out after 25000ms connecting to the downloaded browser; explicit existing Chromium worked. A later still with the downloaded Chromium 157 succeeded after warm-up and --timeout=120000. Full film used existing Chromium 152. Root cause unproven.",
           "evidence": "experiments/2026-10-14/evidence/framewright-remotion.txt"
-        },
+        }
+      ],
+      "resolved_limitations": [
         {
-          "capability": "full scaffold dependency audit",
-          "result": "failed",
-          "detail": "10 high advisories in dev lint dependency chain. Runtime-only audit found zero.",
+          "capability": "source-example dev lint dependency chain",
+          "original_result": "10 high package findings from GHSA-vfj7-8cjw-p6xm in the initial scaffold",
+          "resolution": "Scoped typescript-eslint 8.71.2 override removes braces; separate install, full audit (0), ESLint and TypeScript passed. Runtime package versions unchanged.",
           "evidence": "experiments/2026-10-14/evidence/framewright-remotion.txt"
         }
       ]

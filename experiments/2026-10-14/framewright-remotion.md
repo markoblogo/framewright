@@ -55,8 +55,12 @@ A later still with the downloaded Chromium 157.0.8080.0 also succeeded after
 warm-up with --timeout=120000. This does not erase the initial failures or prove
 their root cause. Full-film qualification uses the explicit Chromium 152 route.
 
-The scaffold audit retained 10 high findings in its dev lint chain; the runtime
-audit with --omit=dev returned zero. Lint/type success does not dismiss advisories.
+The original scaffold audit retained 10 high findings in its dev lint chain; its
+runtime audit returned zero. A subsequent separate installation of the source
+example scoped typescript-eslint 8.71.2 under the Remotion ESLint config, removing
+the vulnerable braces chain. Full audit (including dev), ESLint and TypeScript
+then passed with zero vulnerabilities; runtime package versions were unchanged.
+The original audit is retained as historical evidence, not the example’s current status.
 Studio was used locally and is not published as a hosted service.
 
 ## Result and qualification
@@ -64,9 +68,12 @@ Studio was used locally and is not published as a hosted service.
 Native H264 MP4 with stereo AAC, 30 seconds, 1920x1080, 30fps, 900 frames.
 Native still succeeded. Representative encoded frames and transitions inspected;
 audio metrics retained in [evidence](evidence/framewright-remotion.txt). No claim
-of human listening, owner aesthetic acceptance, public upload or audience result.
-Final file size/hash in outputs.json; thumbnail and delivery manifest retained
-locally. A copied source example is retained here but clean-machine reproduction
+of human listening, owner aesthetic acceptance or audience result. The agent did
+not upload the video. The owner subsequently supplied [the YouTube publication](https://youtu.be/s3BBP698_r8);
+it is a user-provided reference, not a byte-verified copy of the local export.
+Final MP4 and selected native PNG path, size and SHA-256 are recorded in
+outputs.json; the validator also checks PNG dimensions. The delivery manifest
+is retained locally. A copied source example is retained here but clean-machine reproduction
 has not been tested. The copied example passed lint/types and asset preparation
 using the existing dependency tree; its regenerated score matched the pilot score
 hash. Published TSX was formatted without changing the authored scene behaviour.

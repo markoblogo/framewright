@@ -114,8 +114,8 @@
     "bytes": 7881683,
     "evidence": "experiments/2026-10-14/evidence/framewright-remotion.txt",
     "qa_scope": "native MP4 with Audio + native still + encoded metadata, audio metrics and sampled frames",
-    "publication_url": null,
-    "publication_verification": "not_published",
+    "publication_url": "https://youtu.be/s3BBP698_r8",
+    "publication_verification": "user_provided_url",
     "human_listening": "not_recorded",
     "user_acceptance": "pending",
     "audience_metrics": "not_measured",
@@ -128,6 +128,14 @@
     "source_revision": {
       "official_skills": "7ba4dcf8ebe1626b00baa41e1f2478113719b60b",
       "remotion_release_tag": "0155f8c883351eaa0d9b40b2c0ee9c863626c323"
+    },
+    "thumbnail": {
+      "local_output": "remotion-pilot-20261014/outputs/Framewright-Remotion-thumbnail.png",
+      "format": "png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2632073,
+      "sha256": "42873c15ce5455eade0e4d5d90f8989770bd4fa551b90772e5b1761407036b4a"
     }
   }
 ]

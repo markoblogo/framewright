@@ -10,7 +10,7 @@ Explicit --browser-executable plus --timeout=120000 workaround succeeded.
 Existing-browser default root-load timeout also FAILED before the longer allowance.
 Later downloaded Chromium 157 still passed after warm-up with --timeout=120000.
 No vendor patch; loading allowance increased, result checks unchanged.
-Full npm audit: 10 high findings in dev lint tree. Runtime-only audit: 0 vulnerabilities.
+Original pilot full npm audit: 10 high findings in dev lint tree. Runtime-only audit: 0 vulnerabilities.
 Human listening and owner artistic acceptance: not recorded/pending.
 No new model eval, account, paid/cloud service or public upload performed.
 
@@ -31,3 +31,16 @@ Summary:
     Peak:       -7.0 dBFS
 [out#0/null @ 0x9b6c049c0] video:366KiB audio:5628KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
 frame=  900 fps=0.0 q=-0.0 Lsize=N/A time=00:00:30.00 bitrate=N/A speed= 106x elapsed=0:00:00.28
+
+Selected native still: Framewright-Remotion-thumbnail.png; PNG 1920x1080; 2632073 bytes; SHA-256 42873c15ce5455eade0e4d5d90f8989770bd4fa551b90772e5b1761407036b4a.
+
+Post-pilot repair, 2026-10-14: separate source-example install with scoped
+typescript-eslint 8.71.2 override under @remotion/eslint-config-flat 4.0.535.
+The braces dependency is absent; runtime package versions unchanged.
+npm run check: ESLint, TypeScript and full npm audit --audit-level=high PASSED.
+Full npm audit: 0 vulnerabilities, including dev dependencies. No advisory waivers.
+Thumbnail regressions: missing file, size/hash replacement, dimension drift,
+invalid PNG and malformed metadata rejected. Valid PNG fixture passed.
+
+Owner-provided publication: https://youtu.be/s3BBP698_r8 (no byte verification).
+Documentation validation: project links checked; dependency/vendor README trees excluded.
