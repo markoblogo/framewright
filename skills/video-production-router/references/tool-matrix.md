@@ -257,6 +257,25 @@ Conversational Producer and compose controls describe music and visuals; specifi
 
 **Limits:** Inspect actual account credits/model/plan before generation; no purchasing or upgrade authority is implied. Do not treat the Producer chat response as proof of generation, rights, export success or account entitlement. A music-driven generative scene needs deterministic finishing for exact typography, UI facts and reliable logos. Cloud uploads/outputs may be retained and reviewed under the privacy notice. Private microtests do not promote the public catalogue to tested_for_scope.
 
+## AI Video Storyboard / Framewright adapter
+
+**Role:** preproduction. **Inputs:** brief.
+
+**Style directions:** cinematic, editorial, paper-collage, minimal.
+Shared visual-language planning across shots; style labels are creative targets, not proof of a renderer effect. Framewright adapts the pattern to existing UI, artwork and authored graphics.
+
+**Tested version/scope:** Upstream 93f8a6d6935858bc4acd7ff3bbea2411edf88caa: 3/4 strict Codex text-only cases after grading-context repair; missing explicit pre-render storyboard approval handoff retained. Original adapter addresses the handoff; its routing is checked separately. No rendered media tested.
+
+**Licence:** MIT declared in upstream README and SKILL; no standalone LICENSE at inspected revision. Original Framewright adapter links upstream without vendoring its code/skill. Provider and asset rights remain separate.
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `shot-list` | documented | Text-only preproduction: coordinated shot purposes, timing and per-shot instructions; use references/storyboard.md, not picture-chain export. [Source](https://github.com/aicontentskills/ai-video-storyboard-skill/blob/93f8a6d6935858bc4acd7ff3bbea2411edf88caa/SKILL.md) |
+| `visual-consistency-plan` | documented | Plan shared palette, lighting, lens/motion and recurring assets; no guarantee of generated visual continuity. [Source](https://github.com/aicontentskills/ai-video-storyboard-skill/blob/93f8a6d6935858bc4acd7ff3bbea2411edf88caa/SKILL.md) |
+| `post-production-plan` | documented | Plan transitions, audio/caption roles, export targets and QA. Does not execute editing or export. [Source](https://github.com/aicontentskills/ai-video-storyboard-skill/blob/93f8a6d6935858bc4acd7ff3bbea2411edf88caa/SKILL.md) |
+
+**Limits:** Not a renderer, image generator, audio generator or editor; never selected as a picture provider by plan.py. Upstream references directory is absent. Fixed five-second pacing, 1080p and synchronized-audio suffix are defaults that explicit user constraints override. Plan-only trials cannot qualify generated continuity, actual duration/sync, native export or provider costs.
+
 ## Source freshness
 
 Immutable repository README links retain the reviewed revision. Live documentation

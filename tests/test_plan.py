@@ -28,6 +28,18 @@ class BlockPlannerTest(unittest.TestCase):
                 self.assertIn(feature, p['blocks'][0]['unmet'])
                 self.assertFalse({'suno', 'flow-music'}.intersection(p['blocks'][0]['tools']))
 
+    def test_storyboard_cannot_act_as_picture_provider(self):
+        registry = copy.deepcopy(REGISTRY)
+        registry['tools'].append({
+            'id': 'preproduction-probe', 'role': 'preproduction', 'inputs': ['brand'],
+            'styles': [], 'limitations': [],
+            'features': [{'id': 'shot-list', 'status': 'documented', 'source': 'remotion', 'note': 'text only'}],
+        })
+        result = planner.plan(self.brief(deliverables=['shot-list']), registry)
+        self.assertEqual(result['status'], 'blocked')
+        self.assertIn('shot-list', result['blocks'][0]['unmet'])
+        self.assertNotIn('preproduction-probe', result['blocks'][0]['tools'])
+
     def test_existing_ui_uses_flute_without_extra_renderer(self):
         p = self.run_plan(self.brief(input='react-ui', effects=['camera-travel', 'depth-of-field']))
         self.assertEqual(p['blocks'][0]['tools'], ['flute'])
