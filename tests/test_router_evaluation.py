@@ -96,3 +96,45 @@ class RouterEvidenceTest(unittest.TestCase):
         self.save()
         with self.assertRaisesRegex(ValueError, 'counts'):
             evaluation.check_packet(self.root)
+
+
+class GraderCalibrationTest(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        self.gold = {'good': {'criterion': 'check is planned', 'group': 'required', 'expected_pass': True}, 'bad': {'criterion': 'check is planned', 'group': 'required', 'expected_pass': False}}
+        self.cases = [{'id': x, 'required': ['check is planned'], 'forbidden': []} for x in self.gold]
+        self.grades = {'cases': [{'id': x, 'required': [{'criterion': 'check is planned', 'verdict': 'PASS' if x == 'good' else 'FAIL', 'evidence': 'control answer'}], 'forbidden': []} for x in self.gold]}
+        self.save()
+
+    def save(self):
+        hashes = {}
+        for name, data in [('gold.json', self.gold), ('cases.json', self.cases), ('grades.json', self.grades)]:
+            p = self.root / name
+            p.write_text(json.dumps(data))
+            hashes[name] = hashlib.sha256(p.read_bytes()).hexdigest()
+        (self.root / 'manifest.json').write_text(json.dumps({'schema_version': 1, 'files': hashes, 'counts': {'controls': 2, 'correct': 2}}))
+
+    def test_valid_positive_and_negative_controls(self):
+        self.assertEqual(evaluation.check_calibration(self.root), {'controls': 2, 'correct': 2})
+
+    def test_descriptive_ids_cannot_claim_blind_calibration(self):
+        p = self.root / 'manifest.json'
+        manifest = json.loads(p.read_text())
+        manifest['blind_ids'] = True
+        p.write_text(json.dumps(manifest))
+        with self.assertRaisesRegex(ValueError, 'opaque'):
+            evaluation.check_calibration(self.root)
+
+    def test_always_passing_grader_is_rejected(self):
+        self.grades['cases'][1]['required'][0]['verdict'] = 'PASS'
+        self.save()
+        with self.assertRaisesRegex(ValueError, 'calibration'):
+            evaluation.check_calibration(self.root)
+
+    def test_rejecting_a_valid_plan_is_a_calibration_failure(self):
+        self.grades['cases'][0]['required'][0]['verdict'] = 'FAIL'
+        self.save()
+        with self.assertRaisesRegex(ValueError, 'calibration'):
+            evaluation.check_calibration(self.root)

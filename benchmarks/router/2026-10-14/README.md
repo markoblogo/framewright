@@ -1,5 +1,8 @@
 # Router decision checks — 2026-10-14
 
+Current stage-aware check: [29/29 cases with 12/12 grader controls](qa-v2/README.md).
+The three packets below preserve the historical experiment and its failures.
+
 These are synthetic planning cases, not music/video-generation trials. No private
 song, lyric, account record or media is included. Each actor used a fresh Codex CLI
 context; grading used separate contexts of the same model family, followed by

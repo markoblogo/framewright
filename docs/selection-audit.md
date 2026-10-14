@@ -18,9 +18,9 @@ source and commands. It has not been re-rendered on a clean machine after the li
 dependency repair. No time/cost advantage or universal reproducibility is claimed.
 
 Bounded router decision checks are now retained in the
-[behavioural report](router-evaluation.md). Strict checklist grades were incomplete;
-keep structural_only and distinguish observed route/action decisions from a full
-qualification pass.
+[behavioural report](router-evaluation.md). Earlier checklist grades were incomplete. The new stage-aware run passed 29/29
+with calibrated grading controls; its separate scoped qualification covers planning
+with the named configuration, leaving renderer and privileged-execution claims unchanged.
 
 Release 0.1.1 resolves companion dependencies to a fixed point in canonical feature
 order. Equivalent requirement arrays have equivalent tool coverage; requested native

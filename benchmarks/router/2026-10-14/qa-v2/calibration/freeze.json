@@ -1,0 +1,8 @@
+{
+  "purpose": "Blind-ID calibration; supersedes descriptive-ID smoke without changing answers, criteria or gold decisions",
+  "input_sha256": {
+    "batch-1.json": "f4ed9c3af4aa60a66401ec66921b675354fa96bca441e871f11e65959eed5e61",
+    "batch-2.json": "50493c7712ceef338b47b4e95b5f037906e0baf67c6b846f5616d2f964abe57b"
+  },
+  "gold_sha256": "2618a250aa07022159edd365e9a18821497b01da2d95b2e355fe7a5f870bc37a"
+}
