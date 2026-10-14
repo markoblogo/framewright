@@ -3,11 +3,15 @@
 ## Unreleased
 
 Clarify planned/blocked/verified QA, explicit source-copy checks and separate
-existing/native/extracted thumbnail handoffs. Retain a complete 29/29 planning run
-with 12/12 frozen grader controls; preserve prior unsuccessful scores. Add a scoped
+existing/native/extracted thumbnail handoffs. Retain a complete 30/30 planning run
+with 12/12 frozen grader controls; preserve prior unsuccessful scores, including
+the intervening 29/30 full run. Add a scoped
 qualification gate for exact current sources, prompts, fixtures and full case set.
 Historical packets now retain validated source snapshots independently of squash
-history. No renderer/media qualification or release is added.
+history. Reject hidden scenario gold and unexpected actor router files; apply
+the handoff contract to implementation/execution requests and require actionable
+clarification or bounded tests when support is unresolved. No renderer/media
+qualification or release is added.
 
 Fix three reviewed music-planning gaps: provider exclusion from picture extras,
 account/credit checks for visuals with existing audio, and retention of both sources.

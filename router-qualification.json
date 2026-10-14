@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "model_checked_planning_scope",
   "scope": "synthetic_read_only_planning",
-  "packet": "benchmarks/router/2026-10-14/qa-v2",
+  "packet": "benchmarks/router/2026-10-14/qa-v4",
   "case_ids": [
     "software",
     "french-book",
@@ -32,7 +32,8 @@
     "heldout-existing-music-cost",
     "reuse-existing-thumbnail",
     "source-copy-evidence",
-    "unverified-qa-note"
+    "unverified-qa-note",
+    "execution-request-handoff"
   ],
   "model": "gpt-6.1-sol",
   "reasoning_effort": "medium",

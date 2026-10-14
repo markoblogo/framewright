@@ -19,7 +19,7 @@ class QualificationGateTest(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         self.packet = self.root / 'packet'
-        shutil.copytree(REPO / 'benchmarks/router/2026-10-14/qa-v2', self.packet)
+        shutil.copytree(REPO / 'benchmarks/router/2026-10-14/qa-v4', self.packet)
         # Reconstruct evaluated sources without Git or any historical object.
         with zipfile.ZipFile(self.packet / 'source-snapshot.zip') as archive:
             for name in archive.namelist():
@@ -35,7 +35,7 @@ class QualificationGateTest(unittest.TestCase):
 
     def test_complete_qualification_needs_no_git_history(self):
         result = evidence.check_qualification(self.root, self.path)
-        self.assertEqual(result['cases'], 29)
+        self.assertEqual(result['cases'], 30)
         self.assertEqual(result['status'], 'model_checked_planning_scope')
 
     def rehash_calibration(self, *names):
@@ -94,6 +94,15 @@ class QualificationGateTest(unittest.TestCase):
     def test_extra_router_file_cannot_enter_actor_workspace(self):
         self.inject_actor_file('router/extra-context.md')
         with self.assertRaisesRegex(ValueError, 'actor router file set'):
+            evidence.check_qualification(self.root, self.path)
+
+    def test_retained_failed_complete_run_cannot_promote(self):
+        shutil.rmtree(self.packet)
+        shutil.copytree(REPO / 'benchmarks/router/2026-10-14/qa-v3', self.packet)
+        self.record['case_ids'] = [x['id'] for x in json.loads((self.packet / 'cases.json').read_text())]
+        self.save()
+        self.assertEqual(evidence.check_packet(self.packet), {'cases': 30, 'passed': 29})
+        with self.assertRaisesRegex(ValueError, 'Incomplete behavioural qualification'):
             evidence.check_qualification(self.root, self.path)
 
     def test_partial_case_set_cannot_promote(self):

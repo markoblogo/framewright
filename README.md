@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](experiments/2026-10-14/README.md)
-[![Planning check: 29/29](https://img.shields.io/badge/planning__check-29%2F29-526C73?style=flat-square)](docs/router-evaluation.md)
+[![Planning check: 30/30](https://img.shields.io/badge/planning__check-30%2F30-526C73?style=flat-square)](docs/router-evaluation.md)
 [![8 recorded exports](https://img.shields.io/badge/recorded__exports-8-293F48?style=flat-square)](experiments/2026-10-14/outputs.json)
 [![ABVX ecosystem](https://img.shields.io/badge/ecosystem-ABVX-E7BA6A?style=flat-square)](docs/ecosystem.md)
 
@@ -27,7 +27,7 @@ are separate; the public URL was supplied by the owner, not matched byte-for-byt
 [Reproduce the open reference project](docs/first-video.md) with shared demo assets,
 pinned versions, exact commands, an agent prompt and expected outputs.
 [Release 0.1.1](CHANGELOG.md) remains experimental. Unreleased updates now include a
-[29-case scoped planning check](docs/router-evaluation.md); no new release is made.
+[30-case scoped planning check](docs/router-evaluation.md); no new release is made.
 
 ## Plan by scene, style and effect
 
@@ -123,7 +123,7 @@ for Hyperframes-backed routes; Flute and Remotion use their own guides.
 Example: “Make a French trailer from this book page and cover. Use
 $video-production-router to choose a workflow.”
 
-The current decision sources passed **29/29 synthetic planning cases**; the evaluator
+The current decision sources passed **30/30 synthetic planning cases**; the evaluator
 passed **12/12 positive/negative controls**. [Results and reproduction](docs/router-evaluation.md)
 retain earlier failures and the new unambiguous rubric. The
 [scoped qualification](router-qualification.json) is checked against current source,
