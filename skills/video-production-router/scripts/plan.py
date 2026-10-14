@@ -3,6 +3,8 @@
 import argparse
 from decimal import Decimal, InvalidOperation
 import json
+import runpy
+from itertools import combinations
 from pathlib import Path
 
 DEFAULTS = {'source-project': 'brag', 'react-ui': 'flute', 'book-art': 'hyperframes', 'brand': 'remotion', 'data': 'remotion', 'object': 'anatomy', 'composition': 'hyperframes', 'video': 'ffmpeg'}
@@ -38,6 +40,7 @@ def frames(value, fps):
 def plan(brief, registry):
     if not isinstance(brief, dict):
         raise ValueError('Brief must be a JSON object')
+    music = runpy.run_path(str(Path(__file__).with_name('music.py')))['plan_music'](brief['music'], registry) if 'music' in brief else None
     tools = {t['id']: t for t in registry['tools']}
     blocks = brief.get('blocks')
     if not isinstance(blocks, list) or not blocks:
@@ -81,39 +84,44 @@ def plan(brief, registry):
             raise ValueError('style must be a string')
         def acceptable(cap):
             return cap is not None and (minimum != 'tested' or cap['evidence'] == 'tested')
-        def fits(tool):
-            return not tool['inputs'] or bool(available.intersection(tool['inputs'])) or (tool['role'] == 'finisher' and any(capability(t, 'video-export', language, paid) for t in selected))
         candidates = [t for t in tools.values() if t['role'] in MAIN_ROLES and kind in t['inputs']]
         preferred = block.get('preferred_tool')
         if preferred is not None:
             if preferred not in tools or tools[preferred]['role'] not in MAIN_ROLES:
                 raise ValueError('preferred_tool must name a known picture/orchestration/finishing tool')
             candidates = [tools[preferred]] if kind in tools[preferred]['inputs'] else []
-        candidates.sort(key=lambda t: (-sum(acceptable(capability(t, f, language, paid)) for f in requested), -sum(bool(c and c['evidence'] == 'tested') for f in requested for c in [capability(t, f, language, paid)]), -(style in t['styles']), -(t['id'] == DEFAULTS[kind]), t['id']))
-        primary = candidates[0] if candidates else None
-        selected = [primary] if primary else []
-        # Canonical traversal plus a fixed point: a finisher may become eligible
-        # only after another requirement has supplied a picture/export provider.
-        pending = sorted(requested)
-        found = {}
-        while pending:
-            progress = False
-            for feature in pending[:]:
-                cap = next((c for t in selected if acceptable(c := capability(t, feature, language, paid))), None)
-                if cap is None and primary is not None:
-                    providers = [t for t in tools.values() if fits(t) and acceptable(capability(t, feature, language, paid))]
-                    providers.sort(key=lambda t: (t['role'] != PREFERRED_ROLES.get(feature), capability(t, feature, language, paid)['evidence'] != 'tested', t['id']))
-                    if providers:
-                        provider = providers[0]
-                        if provider not in selected:
-                            selected.append(provider)
-                        cap = capability(provider, feature, language, paid)
-                if cap:
-                    found[feature] = cap
-                    pending.remove(feature)
-                    progress = True
-            if not progress:
-                break
+        caps = {(t['id'], f): capability(t, f, language, paid) for t in tools.values() for f in set(requested + ['video-export'])}
+        def chain_solution(main):
+            # Exact subsets are small for this curated catalogue. Compare complete
+            # chains, not a greedy alphabetical path or only direct capabilities.
+            extras = sorted((t for t in tools.values() if t != main and (
+                any(acceptable(caps[t['id'], f]) for f in requested) or
+                (t['role'] in {'renderer', 'orchestrator'} and acceptable(caps[t['id'], 'video-export']))
+            )), key=lambda t: (t['role'] == 'finisher', t['id']))
+            best = None
+            for count in range(len(extras) + 1):
+                for subset in combinations(extras, count):
+                    chain = [main, *subset]
+                    has_picture = any(t['role'] in {'renderer', 'orchestrator'} and acceptable(caps[t['id'], 'video-export']) for t in chain)
+                    if any(t['inputs'] and not available.intersection(t['inputs']) and not (t['role'] == 'finisher' and has_picture) for t in subset):
+                        continue
+                    found = {}
+                    for feature in requested:
+                        choices = [t for t in chain if acceptable(caps[t['id'], feature])]
+                        choices.sort(key=lambda t: (caps[t['id'], feature]['evidence'] != 'tested', t != main, t['role'] != PREFERRED_ROLES.get(feature), t['id']))
+                        if choices:
+                            found[feature] = caps[choices[0]['id'], feature]
+                    rank = (-len(found), -sum(c['evidence'] == 'tested' for c in found.values()), len(chain), tuple(t['id'] for t in chain))
+                    if best is None or rank < best[0]:
+                        best = (rank, chain, found)
+            return best
+        solutions = [(chain_solution(t), t) for t in candidates]
+        solutions.sort(key=lambda item: (*item[0][0][:3], -(style in item[1]['styles']), -(item[1]['id'] == DEFAULTS[kind]), item[1]['id'], item[0][0][3]))
+        if solutions:
+            solution, primary = solutions[0]
+            _, selected, found = solution
+        else:
+            primary, selected, found = None, [], {}
         coverage = [found[f] for f in requested if f in found]
         unmet = [f for f in requested if f not in found]
         needs_test = [c['feature'] for c in coverage if c['evidence'] != 'tested']
@@ -132,7 +140,7 @@ def plan(brief, registry):
         raise ValueError('Declared total duration must match the known block timeline including overlaps')
     blocked = any(x['unmet'] for x in result)
     still_only = all(set(b.get('deliverables', ['video-export'])) == {'still-export'} for b in blocks)
-    return {'schema_version': 1, 'status': 'blocked' if blocked else 'proposed', 'qualification': 'planning_only', 'execution': 'not_started', 'minimum_evidence': minimum, 'canvas': canvas, 'duration_frames': cursor, 'blocks': result, 'assembly': ({'tool': None, 'evidence': 'planning_only', 'qualification': 'Still-only delivery: no video assembly is proposed.', 'steps': ['validate native image format, dimensions, visual content and hashes']} if still_only else {'tool': 'ffmpeg', 'evidence': 'documented', 'qualification': 'new multi-block combinations need an integration test; individual successes do not qualify a chain', 'steps': ['normalise actual size/fps/colour/alpha and frame boundaries', 'assemble picture and a single master audio timeline', 'inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata', 'retain native exports, final hashes and per-block evidence']}), 'notes': ['Styles are preferences, not fixed renderer limits or quality scores.', 'Read the cited installed-version docs before execution.', 'Paid availability in a plan is not purchase/account/publication authorisation.', 'Missing durations require timing decisions; no final timeline is claimed.'] if cursor is None else ['No model evaluation, rendering or publication was performed by this planner.', 'Style matching does not qualify a new combination.', 'Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review.']}
+    return {'schema_version': 1, 'status': 'blocked' if blocked else 'proposed', 'qualification': 'planning_only', 'execution': 'not_started', 'music': music, 'minimum_evidence': minimum, 'canvas': canvas, 'duration_frames': cursor, 'blocks': result, 'assembly': ({'tool': None, 'evidence': 'planning_only', 'qualification': 'Still-only delivery: no video assembly is proposed.', 'steps': ['validate native image format, dimensions, visual content and hashes']} if still_only else {'tool': 'ffmpeg', 'evidence': 'documented', 'qualification': 'new multi-block combinations need an integration test; individual successes do not qualify a chain', 'steps': ['normalise actual size/fps/colour/alpha and frame boundaries', 'assemble picture and a single master audio timeline', 'inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata', 'retain native exports, final hashes and per-block evidence']}), 'notes': ['Styles are preferences, not fixed renderer limits or quality scores.', 'Read the cited installed-version docs before execution.', 'Paid availability in a plan is not purchase/account/publication authorisation.', 'Missing durations require timing decisions; no final timeline is claimed.'] if cursor is None else ['No model evaluation, rendering or publication was performed by this planner.', 'Style matching does not qualify a new combination.', 'Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review.']}
 
 
 def main():

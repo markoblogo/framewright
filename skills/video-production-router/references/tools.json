@@ -103,6 +103,56 @@
       "url": "https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/LICENSE",
       "reviewed": "2026-10-14",
       "revision": "e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f"
+    },
+    "suno-create": {
+      "url": "https://help.suno.com/en/articles/2415873",
+      "reviewed": "2026-10-14",
+      "revision": "live service documentation; recheck before use"
+    },
+    "suno-files": {
+      "url": "https://help.suno.com/en/articles/13926081",
+      "reviewed": "2026-10-14",
+      "revision": "live service documentation; recheck before use"
+    },
+    "suno-downloads": {
+      "url": "https://help.suno.com/en/articles/13614785",
+      "reviewed": "2026-10-14",
+      "revision": "live service documentation; recheck before use"
+    },
+    "suno-rights": {
+      "url": "https://suno.com/terms",
+      "reviewed": "2026-10-14",
+      "revision": "live service documentation; recheck before use"
+    },
+    "suno-video-art": {
+      "url": "https://suno.com/release-notes/cover-art-improvements",
+      "reviewed": "2026-10-14",
+      "revision": "live service documentation; recheck before use"
+    },
+    "suno-video-tiers": {
+      "url": "https://blog.suno.com/release-notes",
+      "reviewed": "2026-10-14",
+      "revision": "live service documentation; recheck before use"
+    },
+    "flow-music": {
+      "url": "https://www.flowmusic.app/?version=published",
+      "reviewed": "2026-10-14",
+      "revision": "live service documentation; recheck before use"
+    },
+    "flow-pricing": {
+      "url": "https://www.flowmusic.app/pricing?plan=monthly",
+      "reviewed": "2026-10-14",
+      "revision": "live service documentation; recheck before use"
+    },
+    "flow-privacy": {
+      "url": "https://www.flowmusic.app/privacynotice",
+      "reviewed": "2026-10-14",
+      "revision": "live service documentation; recheck before use"
+    },
+    "flow-google-benefit": {
+      "url": "https://support.google.com/googleone/answer/14534406?hl=en-VI",
+      "reviewed": "2026-10-14",
+      "revision": "live service documentation; recheck before use"
     }
   },
   "tools": [
@@ -957,6 +1007,135 @@
         "Stream copy is conditional on compatible containers/codecs; resizing, burning captions or frame-rate conversion requires re-encoding and final QA."
       ],
       "style_basis": "authoring_affordance_and_observed_art_direction"
+    },
+    {
+      "id": "suno",
+      "name": "Suno",
+      "role": "music-provider",
+      "inputs": [],
+      "styles": [
+        "electronic",
+        "cinematic",
+        "pop",
+        "song",
+        "instrumental"
+      ],
+      "style_note": "Prompted genre/instrument/voice directions, not a fixed house style or verified coverage of every language. Singing is distinct from Kokoro narration.",
+      "style_basis": "documented_authoring_affordance",
+      "tested_version": "No public qualification record; current account/model must be checked",
+      "licence_note": "Cloud service terms, not the repository MIT licence. Free/trial use can be personal and noncommercial; approved-download rights and account/song history require per-asset review. A noncommercial limitation is not a technical failure.",
+      "features": [
+        {
+          "id": "instrumental-generation",
+          "status": "documented",
+          "source": "suno-create",
+          "note": "Instrumental creation and custom style controls are documented; current model/access can differ.",
+          "experiments": []
+        },
+        {
+          "id": "song-generation",
+          "status": "documented",
+          "source": "suno-create",
+          "note": "Custom original/licensed lyrics; actual singing, pronunciation and timings require listening.",
+          "experiments": []
+        },
+        {
+          "id": "audio-download",
+          "status": "documented",
+          "source": "suno-files",
+          "note": "Approved download workflow only. Formats and trial/download allocations are account-dependent.",
+          "experiments": []
+        },
+        {
+          "id": "song-card-video",
+          "status": "documented",
+          "source": "suno-files",
+          "note": "Video export is documented. Inspect whether the actual file is a lyric/song card or scene footage; MP4 is not proof of a narrative music video.",
+          "experiments": []
+        },
+        {
+          "id": "video-cover-art",
+          "status": "documented",
+          "source": "suno-video-art",
+          "note": "Image/video cover-art generation; release index states Pro/Premier availability. A cover loop is not a full multi-scene film.",
+          "experiments": [],
+          "requires_paid": true
+        }
+      ],
+      "limitations": [
+        "Do not infer commercial clearance from a playable library item or current paid status alone. Retain current terms and permitted-download evidence.",
+        "Use approved downloads; do not bypass limits or strip provenance/branding.",
+        "Song-card export, generated video cover art, uploaded looping art and third-party full music videos are separate capabilities.",
+        "Private test media and account details are not public experiment evidence."
+      ]
+    },
+    {
+      "id": "flow-music",
+      "name": "Google Flow Music",
+      "role": "music-provider",
+      "inputs": [],
+      "styles": [
+        "electronic",
+        "cinematic",
+        "song",
+        "instrumental",
+        "music-video"
+      ],
+      "style_note": "Conversational Producer and compose controls describe music and visuals; specific style, timing and story adherence require a bounded trial. Google Flow Music is distinct from Google Flow filmmaking and Autodesk Flow Studio.",
+      "style_basis": "documented_authoring_affordance",
+      "tested_version": "No public qualification record; live Lyria/Veo availability must be checked",
+      "licence_note": "Cloud service/Google terms. Plan benefits can include commercial use; do not infer a Free account grant from credits or a general product page. Input, music and visual rights require separate records.",
+      "features": [
+        {
+          "id": "instrumental-generation",
+          "status": "documented",
+          "source": "flow-music",
+          "note": "Lyria music creation; requested duration/tempo is a prompt, not an exact delivery guarantee.",
+          "experiments": []
+        },
+        {
+          "id": "song-generation",
+          "status": "documented",
+          "source": "flow-music",
+          "note": "Songs with dynamic vocals and lyrics are described; language/lyric alignment must be evaluated.",
+          "experiments": []
+        },
+        {
+          "id": "audio-download",
+          "status": "documented",
+          "source": "flow-pricing",
+          "note": "MP3/WAV/M4A downloads listed; inspect the actual approved export.",
+          "experiments": []
+        },
+        {
+          "id": "music-video-generation",
+          "status": "documented",
+          "source": "flow-music",
+          "note": "Veo-backed music videos are advertised; inspect account entitlement, clip length, credits, storyboard and final export.",
+          "experiments": []
+        },
+        {
+          "id": "song-card-video",
+          "status": "unknown",
+          "source": "flow-pricing",
+          "note": "A video/download menu does not establish which picture treatment is produced. Classify an actual export first.",
+          "experiments": []
+        },
+        {
+          "id": "stem-export",
+          "status": "documented",
+          "source": "flow-pricing",
+          "note": "Stem downloads listed; not qualified in the public catalogue.",
+          "experiments": []
+        }
+      ],
+      "limitations": [
+        "Inspect actual account credits/model/plan before generation; no purchasing or upgrade authority is implied.",
+        "Do not treat the Producer chat response as proof of generation, rights, export success or account entitlement.",
+        "A music-driven generative scene needs deterministic finishing for exact typography, UI facts and reliable logos.",
+        "Cloud uploads/outputs may be retained and reviewed under the privacy notice.",
+        "Private microtests do not promote the public catalogue to tested_for_scope."
+      ]
     }
   ]
 }

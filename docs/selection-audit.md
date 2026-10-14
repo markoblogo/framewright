@@ -24,3 +24,20 @@ independent model's retained decisions and tool traces have been graded.
 Release 0.1.1 resolves companion dependencies to a fixed point in canonical feature
 order. Equivalent requirement arrays have equivalent tool coverage; requested native
 stills influence the primary choice instead of falling through to video extraction.
+
+## Unreleased correction
+
+The fixed-point implementation could freeze an inferior provider: documented
+Hyperframes stills displaced tested Brag + FFmpeg extraction, and sound-layer's
+documented normalization displaced tested FFmpeg normalization. The new solver
+compares complete feasible chains: requirement coverage, then tested-feature
+coverage, then fewer tools, then style/default preferences. Each feature uses the
+strongest eligible provider even when a selected tool also documents it. Finishers
+cannot establish their own picture input. Regression tests retain both examples
+and requirement permutations.
+
+The inventory now has ten profiles. The two music providers are documented-only and
+handled by a separate optional planning object, not selected as picture renderers.
+Public exports and routing model qualification are unchanged. See the
+[music guide](../skills/video-production-router/references/music-workflows.md) and
+[research queue](experiment-queue.md).

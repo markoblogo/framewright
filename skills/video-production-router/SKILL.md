@@ -1,6 +1,6 @@
 ---
 name: video-production-router
-description: Choose a tested video-production workflow for software promos, book trailers, or announcements, and record new production experiments. Use when planning a video or comparing video tools; not for ordinary image generation or YouTube copy alone.
+description: Choose a tested video-production workflow for software promos, book trailers, music-driven videos, or announcements, and record new production experiments. Use when planning a video or comparing video tools; not for ordinary image generation or YouTube copy alone.
 ---
 
 # Video production router
@@ -20,6 +20,12 @@ it does not replace rendering skills or confer permission to publish.
    Then read [the catalogue](references/catalog.json), then only the matching section
    of [the recipes](references/recipes.md). Recommend a default with one sentence
    of evidence and relevant limits. If the user only asks to compare, stop there.
+   For music or songs, read [music workflows](references/music-workflows.md): choose
+   brief-first, video-first or music-first; keep singing separate from TTS, and
+   classify native video before reuse. The optional `scripts/music.py MUSIC.json`
+   or `music` object in a picture brief records independent source/rights/account
+   gates. It does not generate or download music. Cloud music profiles are documented,
+   not publicly tested; private probes do not change that qualification.
 3. Follow the selected renderer's instructions. For Hyperframes-backed routes,
    load the installed `hyperframes` entry skill and relevant composition/audio/media
    guidance. For `live-react-scene` or another explicitly selected renderer, load

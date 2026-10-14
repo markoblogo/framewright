@@ -1,5 +1,18 @@
 # Changelog
 
+## Unreleased
+
+Compare complete feasible tool chains by requested coverage, tested evidence and
+chain size before style/default preferences. Preserve tested Brag + FFmpeg still
+extraction over a merely documented native export; choose tested FFmpeg normalization
+alongside sound-layer mixing. Explicit primary choices remain fixed.
+
+Add planning-only music handoffs in three directions, instrumental/song modes,
+independent rights gates, native-video asset classes, and documented Suno/Flow Music
+profiles. Add an attributed related-work comparison and a bounded experiment queue.
+Private account trials and media are excluded from public qualification. No version
+bump or release is made.
+
 ## 0.1.1 — 2026-10-14 — experimental
 
 Fix planner dependence on requirement ordering: canonical traversal and repeated
