@@ -147,5 +147,12 @@ class BlockPlannerTest(unittest.TestCase):
         self.assertEqual(p['blocks'][0]['tools'], ['remotion'])
 
 
+
+    def test_still_only_has_no_global_video_assembly(self):
+        p = self.run_plan(self.brief(input='book-art', deliverables=['still-export']))
+        self.assertIsNone(p['assembly']['tool'])
+        self.assertIn('Still-only', p['assembly']['qualification'])
+
+
 if __name__ == '__main__':
     unittest.main()
