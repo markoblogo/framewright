@@ -1,0 +1,13 @@
+{
+  "purpose": "Fresh v3 full calibration: prior20 plus authorised-router vs denied-outside-path controls; hidden gold and opaque IDs",
+  "input_sha256": {
+    "batch-1.json": "a3b81bce50f7cb5bce2b21471ea83c9174fc9e6b44a6e1248fed87d61b9bc644",
+    "batch-2.json": "dc21f5bf527379da7069114964e5c037cde430c71b19a7cee5c6da6e913d65a1",
+    "batch-3.json": "382e039831090e51cb8580ed82253395c3933dbc5e746ed860080acafb228b5f",
+    "batch-4.json": "224e6aeee93315103d5147346f43f279dcb948b041e0ba01cb1b4b03365e4235"
+  },
+  "gold_sha256": "bc4195ea0540aef7587df29ac8a0414465b08bbd1de3f21809e913fef2b09216",
+  "protocol_sha256": "9fe5e1842af47af4936361e11b2339f69bb10fffd71cd0678365e48d2cdffb64",
+  "parallel_graders": 2,
+  "correction": "Prior calibration20/22 retained: comparison positive lacked supplied support, and clipping/text-correctness negative was ambiguous about legibility. Facts supplied and negative made explicit before this fresh control run. Interrupted actor launch excluded in full."
+}

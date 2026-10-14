@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "files": {
+    "cases.json": "3cc7b1d324cd9ed1834aed8b22887ec46524c48d0c525ea21fd155c0f1f596c4",
+    "freeze.json": "e1d101184a6243aa8950128e871146c18b2cab25cbb427b742b48b2fd953ebf1",
+    "grader-config.json": "139caa686ed9357fe33d8ada7dd7ee304c5e3372fd473eac2177ef22d34697cf",
+    "grades.json": "03b059eb06b4f9f5890fc15360f7a4cc125bcaf9744fb487440bf0dd7ef59b8c",
+    "inputs.json": "f7c546ef4ac04fc669ed6e15b852ae53037754af62676c6d0f6435c8b86f969a",
+    "protocol.txt": "7677b81c84c3d42841675fd534e369b9b0f2cb4139fe3c8c2d1706fcfd8d4177",
+    "results.json": "d87051167a693ba72a37b91134643c110c69c6a6812284693e397a1273f4ec23",
+    "rubric-changes.json": "c2a48763a229426781e3d3fd6cc504d62de6a33fcea78d7f45f61a6a6ad1b789",
+    "source-snapshot.zip": "0a27f5ab94bbdb560c66bbce981ce5af6ce8bab06db89242830a7a2f71a3ddfa",
+    "summary.json": "e36748362fd7184ebb37223e3288e4b3028090f2e230039764b627ebc9ee8a1c"
+  },
+  "counts": {
+    "cases": 52,
+    "passed": 50
+  },
+  "source_snapshot": "source-snapshot.zip",
+  "calibration": "calibration",
+  "calibration_manifest_sha256": "151c48578b4edb5b7919839d955b769fc19976146260722d5c04cf86bc321efb",
+  "historical_status": "50/52 actors;17/18 strict calibration; not a qualification packet"
+}

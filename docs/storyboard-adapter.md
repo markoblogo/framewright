@@ -52,8 +52,9 @@ criterion changed between the two passes, illustrating model-grader variance.
 
 The source registry keeps these capabilities **documented**: its `tested` feature
 labels refer to retained production artifacts, whereas this trial produces only
-text plans. The integrated adapter subset scored **4/4** within the complete
-43/46 current-source run. This is development/regression evidence, not an
+text plans. The earlier integrated adapter subset scored **4/4** within its retained 43/46
+run. Protocol v3 subsequently passes the complete 52-case source check, including
+those four adapter requests. This is development/regression evidence, not an
 unseen transfer result. The integrated router/adaptation is evaluated in the
 [planning report](router-evaluation.md); these results cannot qualify video quality,
 provider compatibility, actual costs or automatic discovery.

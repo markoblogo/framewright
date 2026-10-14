@@ -1,0 +1,30 @@
+[
+  {
+    "batch": "batch-1",
+    "exit_code": 0,
+    "duration_seconds": 19.3,
+    "prompt_sha256": "11d8300de4e58458ef87bdbdfe9f7fc6f742783c03b0a38573704e1e9793a3cb",
+    "events_sha256": "7dcdebae90362b550bfc792128268e8aa186025dd04e6d16e94aeb31085cdd84"
+  },
+  {
+    "batch": "batch-2",
+    "exit_code": 0,
+    "duration_seconds": 18.02,
+    "prompt_sha256": "087cef6fd17ccdecdcce767a0cdc4e05f3e5eabb9de1b1379059f53d5ae6461e",
+    "events_sha256": "70cff24f91f79a98ac58a292e1fdf4876677f53f144e60c4e50e63923a9beb10"
+  },
+  {
+    "batch": "batch-3",
+    "exit_code": 0,
+    "duration_seconds": 23.01,
+    "prompt_sha256": "9c923c609fa0c51ac6c022bbc8452abdcffe2b0ca0499f11986221442ff2ddb4",
+    "events_sha256": "c23de88dbeabdcdc927c7ec1eba35e0f877bd0f1493ce56ced97e31b77ead225"
+  },
+  {
+    "batch": "batch-4",
+    "exit_code": 0,
+    "duration_seconds": 14.61,
+    "prompt_sha256": "b24138121ea650d8d390c71d046b79d5dd58674ca627e43dfc88a4569a93b933",
+    "events_sha256": "3b3682f74194aa208beb1bc9e2ab9793db02796d0f36596466fe3b2d5945cbaa"
+  }
+]

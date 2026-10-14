@@ -1,0 +1,1 @@
+Initial18 controls were reported as18 correct by the old PASS-versus-nonPASS tally. Strict classification is17/18: one negative was INSUFFICIENT_EVIDENCE, not FAIL. The complete grades remain unchanged. This packet cannot support full qualification. The final run uses fresh22/22 strict controls.

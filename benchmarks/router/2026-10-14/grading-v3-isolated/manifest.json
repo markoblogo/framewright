@@ -1,0 +1,26 @@
+{
+  "schema_version": 3,
+  "files": {
+    "actor-runner.py": "7b67812c3ff7cace85b9e8b2918f793e7a0fdea3ec9fae433c5295962915c387",
+    "calibration-history.json": "139a93830773274f29962ef4863409404ca8f67ef2f04d92c92771d76cf9ae0e",
+    "cases.json": "3cc7b1d324cd9ed1834aed8b22887ec46524c48d0c525ea21fd155c0f1f596c4",
+    "freeze.json": "e73be1bd118668604005094243cbf48555bd68baafc0ff9213a5a3203b79bb4e",
+    "grader-config.json": "a92dac67ba8a9c5ef0806fa2933ea89fa16bc46d6731f13fb040e77e69a8eab9",
+    "grader-runner.py": "741ce81ea0652028a5f98534679f9a7a90893fc139c8c3136878d00ee1f4bc2e",
+    "grades.json": "6011cbea9626b9a6b0774d10bc06d81e9a72ad5e7b6046f323530c04df7375a1",
+    "inputs.json": "f7c546ef4ac04fc669ed6e15b852ae53037754af62676c6d0f6435c8b86f969a",
+    "isolation-smoke.txt": "2ccf2469fafb95cbff80bb001caa0b837068ef3d8f0f7469c1d34d990c25c084",
+    "protocol.txt": "9fe5e1842af47af4936361e11b2339f69bb10fffd71cd0678365e48d2cdffb64",
+    "results.json": "2b0bf3f25cefbd903526181c960c64b4ad5bd72456a64eba0af0e217a7244603",
+    "rubric-changes.json": "c2a48763a229426781e3d3fd6cc504d62de6a33fcea78d7f45f61a6a6ad1b789",
+    "source-snapshot.zip": "641e924517e337701e44941b8032add12e96141df46455326defc8370be28943",
+    "summary.json": "4727a1b06228a9fb24024ad0ff36d223a44b4a6a6e28883e56130db216199bbd"
+  },
+  "counts": {
+    "cases": 52,
+    "passed": 51
+  },
+  "source_snapshot": "source-snapshot.zip",
+  "calibration": "calibration",
+  "calibration_manifest_sha256": "fd10bd4c7eb6b4eef45e29345b413658f3d4d05b6cdb2fbd1aa58414d3d8de38"
+}

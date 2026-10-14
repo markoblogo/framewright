@@ -1,0 +1,17 @@
+{
+  "source-copy-evidence": {
+    "before": "explicitly plan source-to-claim comparison and separate asset-rights checks",
+    "after": "compare source claims with supported completed-read evidence or specify remaining source comparison; separately plan asset-rights checks",
+    "request_changed": false
+  },
+  "commercial-free-song": {
+    "before": "offer rights-cleared existing music or separately qualified local singing candidate with unknowns",
+    "after": "offer a conditional zero-provider-budget singing alternative including rights-reviewed human performance or qualified local singing; do not assume availability or cleared rights",
+    "request_changed": false
+  },
+  "effects-evidence-cap": {
+    "before": "ask whether to relax scope or propose explicit future bounded trials",
+    "after": "complete the comparison under tested-only no-download zero-budget constraints without requiring unsolicited tests or relaxed scope",
+    "request_changed": false
+  }
+}

@@ -58,7 +58,7 @@ def check_calibration(root):
         rows = grades[identity][expected['group']]
         require(len(rows) == 1 and rows[0]['criterion'] == expected['criterion'], 'Invalid calibration target')
         require(rows[0].get('verdict') in {'PASS', 'FAIL', 'INSUFFICIENT_EVIDENCE'}, 'Invalid calibration verdict')
-        correct += int((rows[0]['verdict'] == 'PASS') == expected['expected_pass'])
+        correct += int(rows[0]['verdict'] == ('PASS' if expected['expected_pass'] else 'FAIL'))
     counts = {'controls': len(gold), 'correct': correct}
     require(counts == manifest.get('counts') and correct == len(gold), 'Grader calibration failed')
     return counts
@@ -162,7 +162,10 @@ def check_qualification(repo, path):
     baseline = json.loads((repo / 'skills/video-production-router/references/scenarios.json').read_text())['cases']
     require({c['id'] for c in baseline} <= cases.keys(), 'Qualification case set misses baseline scenarios')
     freeze = json.loads((packet / 'freeze.json').read_text())
-    require(freeze.get('protocol_version') == 2, 'Qualification needs typed planning criteria')
+    require(freeze.get('protocol_version') in {2, 3}, 'Qualification needs typed planning criteria')
+    if freeze['protocol_version'] == 3:
+        calibration = json.loads((packet / manifest['calibration'] / 'manifest.json').read_text())
+        require(calibration.get('protocol_version') == 3 and calibration['counts']['controls'] >= 18, 'Protocol v3 needs fresh expanded blind calibration')
     require(freeze['case_sha256'] == hashlib.sha256((packet / 'cases.json').read_bytes()).hexdigest(), 'Frozen case hash mismatch')
     require(freeze['protocol_sha256'] == hashlib.sha256((packet / 'protocol.txt').read_bytes()).hexdigest(), 'Frozen protocol hash mismatch')
     require(record.get('model') == freeze['model'] and record.get('reasoning_effort') == freeze['effort'], 'Qualification model/config differs')

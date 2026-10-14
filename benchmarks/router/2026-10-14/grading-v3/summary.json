@@ -1,0 +1,34 @@
+{
+  "cases": 52,
+  "strict_model_rubric_passed": 50,
+  "route_review_passed": 52,
+  "trace_review_passed": 52,
+  "actor_usage": {
+    "input_tokens": 6997092,
+    "cached_input_tokens": 5851392,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 50142,
+    "reasoning_output_tokens": 1397
+  },
+  "actor_worker_seconds": 1923.61,
+  "monetary_cost": "NOT_AVAILABLE",
+  "qualification": "bounded_read_only_planning_only",
+  "public_trace_format": "all tool events retained; repeated command output replaced by bytes/hash; diagnostic home paths minimised; original full streams retained locally",
+  "limitations": [
+    "All 52 cases are development/regression, not unseen transfer or statistical certification.",
+    "Same-family model actor and grader in separate contexts; all grades retained without manual override or favourable actor retries.",
+    "Protocol and three rubric criteria were versioned before this run; old43/46 remains unchanged and is not a causal quality comparison.",
+    "Initial18 controls:17 exact verdicts; old tally counted an uncertain negative as rejection. This calibration cannot qualify the source.",
+    "Read-only synthetic context; no renderer, real accounts/authority, media quality, discovery or audience qualification.",
+    "Actor token usage excludes calibration/grading and is not account billing."
+  ],
+  "grader_calibration": {
+    "controls": 18,
+    "correct": 17,
+    "blind_ids": true,
+    "protocol_version": 3,
+    "freshly_graded": true,
+    "legacy_tally_nonpass_as_negative": 18
+  },
+  "public_answer_format": "Full factual answer content; any machine-local citation destination made fixture-relative with original answer hash. Full raw streams retained locally."
+}
