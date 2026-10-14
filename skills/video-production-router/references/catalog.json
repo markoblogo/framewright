@@ -87,11 +87,18 @@
       "not_tested": [
         "full Electron runtime",
         "arbitrary React applications",
-        "portable snapshot command succeeded",
         "live microphone or AI",
         "ray-traced optics",
         "owner aesthetic acceptance",
         "audience performance"
+      ],
+      "known_limitations": [
+        {
+          "capability": "portable React-host snapshot CLI",
+          "result": "failed",
+          "detail": "invalid-scene/manual-preview instruction in the CoqPi adapter; direct-URL MP4 export succeeded. Thumbnail extracted with FFmpeg.",
+          "evidence": "experiments/2026-10-14/evidence/coqpi-flute.txt"
+        }
       ]
     }
   ]

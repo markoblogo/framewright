@@ -107,13 +107,15 @@
         "reuse genuine components with scoped styles",
         "use synthetic content",
         "verify production exclusion",
-        "report portable snapshot limitation"
+        "report portable snapshot limitation",
+        "load Flute guide directly without requiring Hyperframes"
       ],
       "forbidden": [
         "silently substitute Hyperframes",
         "load private transcripts",
         "claim full Electron compatibility",
-        "publish a product release"
+        "publish a product release",
+        "block Flute on missing Hyperframes dependencies"
       ]
     },
     {

@@ -7,6 +7,21 @@ from pathlib import Path
 import re
 
 
+def validate_artifact(artifact, local_root=None):
+    assert isinstance(artifact, dict), 'Artifact must be an object'
+    assert re.fullmatch(r'[0-9a-f]{64}', artifact['sha256'])
+    assert type(artifact['bytes']) is int and artifact['bytes'] > 0
+    output = Path(artifact['local_output'])
+    assert artifact['local_output'] and not output.is_absolute() and '..' not in output.parts
+    if local_root:
+        media = local_root / output
+        assert media.resolve().is_relative_to(local_root.resolve()), f'Artifact outside local root: {media}'
+        assert media.stat().st_size == artifact['bytes'], f'Size drift: {media}'
+        with media.open('rb') as stream:
+            digest = hashlib.file_digest(stream, 'sha256').hexdigest()
+        assert digest == artifact['sha256'], f'Hash drift: {media}'
+
+
 def validate(root, local_root=None):
     refs = root / 'skills/video-production-router/references'
     catalog = json.loads((refs / 'catalog.json').read_text())
@@ -30,8 +45,9 @@ def validate(root, local_root=None):
             assert records[cid]['route'] == method['id'], 'Mismatched evidence route'
     for record in records.values():
         assert record['route'] in methods
-        assert re.fullmatch(r'[0-9a-f]{64}', record['sha256'])
-        assert record['bytes'] > 0
+        validate_artifact(record, local_root)
+        if 'native_export' in record:
+            validate_artifact(record['native_export'], local_root)
         evidence = root / record['evidence']
         assert evidence.resolve().is_relative_to(root.resolve())
         assert evidence.is_file()
@@ -41,10 +57,6 @@ def validate(root, local_root=None):
             assert 'PASSED: 0 failed, 0 warnings' in text, record['id']
         if record['id'] == 'anatomy-prototype':
             assert 'FAILED' in text and '22 audibility failures' in text
-        if local_root:
-            media = local_root / record['local_output']
-            assert media.stat().st_size == record['bytes'], f'Size drift: {media}'
-            assert hashlib.file_digest(media.open('rb'), 'sha256').hexdigest() == record['sha256'], f'Hash drift: {media}'
     for case in scenarios['cases']:
         assert case['request'] and case['required'] and case['forbidden']
         assert case['expected_method'] is None or case['expected_method'] in methods
@@ -63,7 +75,7 @@ def validate(root, local_root=None):
     print(f'PASS: {len(methods)} methods, {len(records)} outputs, {len(scenarios["cases"])} scenario specifications; local links intact.')
     print('Router evaluation: structural_only; no model or video experiment was run.')
     if local_root:
-        print('All retained local video sizes and SHA-256 hashes match.')
+        print('All retained local video sizes and SHA-256 hashes match (including native exports).')
 
 
 if __name__ == '__main__':
