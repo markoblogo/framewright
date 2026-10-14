@@ -72,3 +72,46 @@ checks may not capture tiny key movements well. Do not declare the sound mix pas
 or disable thresholds to compensate. The user stopped this direction, preferring
 the earlier AsciiTheme promo. Historical-photo reconstruction, calibrated physics,
 general 3D beta and agent swarms remain untested.
+
+## live-react-scene
+
+Use [Flute](https://github.com/webprodigies-org/flute) when the requested effect is
+cinematic camera travel and focus around existing React DOM components. Honour an
+explicit Flute choice; do not route it back to Hyperframes just because that is the
+default renderer elsewhere. It is a different route from a narrated image montage.
+
+Tested: Flute 0.1.2, React 19.2.7, Vite 6.4.3, Playwright 1.58.2, Node 24; CoqPi's
+Electron-project renderer running in an isolated browser, not the packaged Electron
+runtime. Requirements documented upstream: React DOM 18.2+/19, Node 22.12+, FFmpeg
+and Chromium. Check current source/docs before a new installation.
+
+1. Create a separate branch/checkout on the work disk. Inspect existing components,
+   style scopes, providers and side effects. Use synthetic, visibly labelled inputs;
+   do not load real app records merely to make the demonstration look populated.
+2. Install the pinned dev dependency using the host package manager. Read FLUTE.md
+   and the installed `flute guide --json`. For a custom/Electron renderer use its
+   portable React adapter and an explicit compile-time development-only host.
+3. Import real host components as Surface leaves. The JSON node transforms must
+   also reach actual Surface props; metadata alone does not position the React tree.
+   Preserve the required surrounding style/provider context. CoqPi needed scoped
+   presentation spacing and existing prepare-layout styles; it was not zero-adaptation.
+4. Use one studio/capture bridge and its canonical scene clock. Inspect close shots,
+   intermediate camera positions and the closing view before a full export.
+5. Export via the explicit loopback scene URL to a fresh project-relative MP4 filename.
+   In this pnpm layout Playwright was available under Flute's optional dependencies
+   but had no root CLI bin, so its installed cli.js downloaded Chromium to Work.
+6. Check the encoded file, sample frames, original component provenance and the
+   production build boundary. The CoqPi scene exported 23s/1080p30/690 frames.
+   Optional original instrumental was added with FFmpeg; the H.264 stream hash
+   stayed identical. Flute itself exported silent video.
+
+Observed limitation: `flute snapshot` refused the portable React host with the
+manual-preview instruction. Direct-URL video export worked. Extract a thumbnail
+from the encoded export, record the limitation, and do not report the snapshot CLI
+as passed. No Flute package code was patched for this test.
+
+Native DOM depth-of-field approximates blur; it is not ray-traced bokeh or physics.
+Full Electron, other hosts, narrator/audio workflows, arbitrary React compatibility
+and audience impact remain untested. The new route does not promote the router
+itself beyond structural_only. Do not change the host's production configuration
+or install a global skill just to capture one scene.

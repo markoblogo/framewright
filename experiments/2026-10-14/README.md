@@ -30,3 +30,9 @@ opus-sound-layer 52ac266a24b7dfd3cd06a28c34d5af360a8d7586.
 Brag source snapshot and Hyperframes 0.8.157 retained in local workspace; Brag
 immutable revision was not captured in this record. No claim of clean-machine
 reproducibility. Local implementation locations: docs/local-workspace.md.
+
+## Additional pilot: CoqPi / Flute
+
+See [the CoqPi record](coqpi-flute.md) for a genuine React-component camera/focus
+scene, verified native MP4, production boundary, and the failed portable snapshot
+command. This adds one recorded delivered output; artistic acceptance is pending.

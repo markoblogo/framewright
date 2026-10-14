@@ -16,3 +16,7 @@ There is no frozen portable environment or clean-machine reproduction test yet.
 Inspect project scripts and upstream docs before reusing them. Kokoro and sound
 scripts ran in an isolated Python 3.12 environment after a Python 3.14 dependency
 loading stall. Do not automatically reinstall or relocate the archived workspaces.
+
+- /Volumes/Work/flute-pilot-20261014 — isolated CoqPi branch, Flute source inspection,
+  pinned installed package/browser, native and finished exports, thumbnail, English
+  YouTube metadata and validation logs. No public video URL yet.

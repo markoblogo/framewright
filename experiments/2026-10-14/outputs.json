@@ -76,5 +76,34 @@
     "publication_verification": "not_recorded",
     "human_listening": "not_recorded",
     "audience_metrics": "not_measured"
+  },
+  {
+    "id": "coqpi-flute",
+    "route": "live-react-scene",
+    "local_output": "flute-pilot-20261014/outputs/CoqPi-Flute-1080p.mp4",
+    "sha256": "d89c2fe9fe045d252a740f3ab47e9791350bbb42d69f7c03407cbe859d0ffbd1",
+    "bytes": 3608712,
+    "evidence": "experiments/2026-10-14/evidence/coqpi-flute.txt",
+    "qa_scope": "Flute native MP4 + encoded final inspection + production renderer boundary",
+    "publication_url": null,
+    "publication_verification": "not_published",
+    "human_listening": "not_recorded",
+    "user_acceptance": "pending",
+    "audience_metrics": "not_measured",
+    "native_export": {
+      "local_output": "flute-pilot-20261014/outputs/CoqPi-Flute-native-1080p.mp4",
+      "sha256": "e1dc1b09feb73b985716c923a39bf06b00dca625692845b88d4893974fe88b02",
+      "bytes": 2997284
+    },
+    "tool_versions": {
+      "flute": "0.1.2",
+      "react": "19.2.7",
+      "vite": "6.4.3",
+      "playwright": "1.58.2"
+    },
+    "source_revision": {
+      "coqpi": "848fbdb89a7b99054f430429fd4f0a2bdc22bcfb",
+      "flute_source_inspected": "4ab8c4a310ed051db9990e5a10a35fbcf2080cb1"
+    }
   }
 ]

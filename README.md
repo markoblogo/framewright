@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](experiments/2026-10-14/README.md)
 [![Router: structural only](https://img.shields.io/badge/router-structural__only-526C73?style=flat-square)](skills/video-production-router/references/scenarios.json)
-[![6 recorded exports](https://img.shields.io/badge/recorded__exports-6-293F48?style=flat-square)](experiments/2026-10-14/outputs.json)
+[![7 recorded exports](https://img.shields.io/badge/recorded__exports-7-293F48?style=flat-square)](experiments/2026-10-14/outputs.json)
 [![ABVX ecosystem](https://img.shields.io/badge/ecosystem-ABVX-E7BA6A?style=flat-square)](docs/ecosystem.md)
 
 **Small films. Real products. Evidence behind every cut.**
@@ -21,6 +21,7 @@ promote only the capability that was actually tested.
 | Short software launch or landing-page introduction | Brag full workflow + Hyperframes | AsciiTheme and AMI delivered and accepted; narration not tested in these runs |
 | Voiced book/product trailer using existing imagery | Hyperframes montage + local Kokoro + sound-layer mixing/QA | French and English book trailers delivered; not a general turnkey generator |
 | Very short announcement | Short edit of an established composition | Six-second Good Dogs teaser; no audience-performance comparison |
+| Cinematic camera/focus around existing React UI | Flute + a development-only component host | CoqPi browser-renderer export verified; full Electron and snapshot CLI remain limited |
 | Detailed object visualisation | Anatomy + deterministic timeline adapter | Visual prototype worked; combined sound prototype failed QA and was stopped |
 | Historical reconstruction, calibrated physics, new generative-video workflows | Research candidate | Not validated here; agree a bounded experiment first |
 
