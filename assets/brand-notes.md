@@ -1,0 +1,10 @@
+# Framewright visual identity
+
+Generated on 2026-10-14 with the built-in imagegen tool. The PNG is the selected
+README cover; the SVG is an earlier lightweight banner alternative. No book art
+or upstream logos are incorporated. The requested direction was a film-frame F
+monogram, ink/ivory/amber colours, an editorial wordmark and a restrained timeline.
+
+Prompt used:
+
+> Create a finished premium landscape 16:9 GitHub README hero and website social-card image for a new independent creative developer project named Framewright. It is an evidence-led video methods lab: agent skills choose tools for software promos and narrated book trailers, retain tested recipes and QA. Design an original powerful geometric F monogram assembled from three precise offset film-frame outlines or cut film-strip pieces, suggesting both a crafted letter and an editing timeline. The monogram must read as a distinct standalone app identity; no play triangle as main symbol, no robots, no brains, no generic AI sparks. Elegant flat print/vector-like graphic treatment with subtle tactile paper texture, no photographed screens or book covers. Ink-black navy #101D24 background; warm ivory #F6EFDB and restrained amber #E7BA6A symbol; a tiny desaturated teal accent if useful. Composition: left third large beautiful monogram inside broad negative space; right two thirds large perfectly typeset custom-feeling wordmark EXACTLY “Framewright” (capital F, other letters lowercase). Under wordmark set small tasteful sans serif tagline EXACTLY “Craft the cut. Keep the evidence.” At lower edge very small spaced uppercase EXACTLY “ABVX / VIDEO METHODS LAB”. Thin understated timeline rule with a few small precise frame markers near bottom, avoid clutter. Strong legibility at small card sizes. Sophisticated editorial technology identity, restrained, warm, professional, memorable. Keep all identity and text within generous 8 percent safe margins. No additional words, fake badges, UI panels, gradients, watermarks, 3D glossy objects or oversaturated neon. Render high resolution, clean correct typography.
