@@ -4,7 +4,8 @@ import argparse
 from collections import Counter
 import hashlib
 import json
-from pathlib import Path
+from pathlib import Path, PurePosixPath
+import zipfile
 
 
 def require(condition, message):
@@ -22,15 +23,37 @@ def indexed(rows, label):
     return result
 
 
+def check_snapshot(root, manifest):
+    name = manifest.get('source_snapshot')
+    require(name in manifest['files'] and 'freeze.json' in manifest['files'], 'Missing retained source snapshot')
+    frozen = json.loads((root / 'freeze.json').read_text())['source_tree_sha256']
+    require(isinstance(frozen, dict) and frozen, 'Empty source snapshot specification')
+    expected = {}
+    for source, digest in frozen.items():
+        path = PurePosixPath(source)
+        require(path.parts[:2] == ('skills', 'video-production-router') and '..' not in path.parts, 'Unsafe frozen source path')
+        expected[str(path.relative_to('skills'))] = digest
+    with zipfile.ZipFile(root / name) as archive:
+        members = archive.infolist()
+        require(len({i.filename for i in members}) == len(members), 'Duplicate snapshot member')
+        require({i.filename for i in members} == expected.keys(), 'Snapshot member set differs from frozen source')
+        require(sum(i.file_size for i in members) <= 8 * 1024 * 1024, 'Source snapshot is unexpectedly large')
+        for item in members:
+            require((item.external_attr >> 16) & 0o170000 != 0o120000, 'Snapshot symlinks are not supported')
+            require(hashlib.sha256(archive.read(item)).hexdigest() == expected[item.filename], f'Source hash mismatch: {item.filename}')
+
+
 def check_packet(root):
     root = Path(root)
     manifest = json.loads((root / 'manifest.json').read_text())
-    require(manifest.get('schema_version') == 1, 'Unknown evaluation schema')
+    require(manifest.get('schema_version') in {1, 2}, 'Unknown evaluation schema')
     files = manifest.get('files', {})
     require({'cases.json', 'results.json', 'grades.json'} <= files.keys(), 'Missing evidence files')
     for name, digest in files.items():
         require(Path(name).name == name and name not in {'.', '..'}, 'Unsafe evidence filename')
         require(hashlib.sha256((root / name).read_bytes()).hexdigest() == digest, f'Hash mismatch: {name}')
+    if manifest['schema_version'] == 2:
+        check_snapshot(root, manifest)
     cases = indexed(json.loads((root / 'cases.json').read_text()), 'cases')
     results = indexed(json.loads((root / 'results.json').read_text()), 'results')
     grades = indexed(json.loads((root / 'grades.json').read_text())['cases'], 'grades')

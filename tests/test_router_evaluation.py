@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+import zipfile
 
 spec = importlib.util.spec_from_file_location('evaluation', Path(__file__).resolve().parents[1] / 'scripts/check_router_evaluation.py')
 evaluation = importlib.util.module_from_spec(spec)
@@ -28,6 +29,41 @@ class RouterEvidenceTest(unittest.TestCase):
             p.write_text(json.dumps(data))
             hashes[name] = hashlib.sha256(p.read_bytes()).hexdigest()
         (self.root / 'manifest.json').write_text(json.dumps({'schema_version': 1, 'files': hashes, 'counts': {'cases': 1, 'passed': 1}}))
+
+    def add_snapshot(self, content=b'fixture skill'):
+        archive = self.root / 'source-snapshot.zip'
+        with zipfile.ZipFile(archive, 'w') as z:
+            z.writestr('video-production-router/SKILL.md', content)
+        freeze = self.root / 'freeze.json'
+        freeze.write_text(json.dumps({'source_tree_sha256': {'skills/video-production-router/SKILL.md': hashlib.sha256(b'fixture skill').hexdigest()}}))
+        p = self.root / 'manifest.json'
+        manifest = json.loads(p.read_text())
+        manifest.update(schema_version=2, source_snapshot='source-snapshot.zip')
+        for source in [archive, freeze]:
+            manifest['files'][source.name] = hashlib.sha256(source.read_bytes()).hexdigest()
+        p.write_text(json.dumps(manifest))
+
+    def test_snapshot_supports_reproduction_without_git_history(self):
+        self.add_snapshot()
+        self.assertEqual(evaluation.check_packet(self.root), {'cases': 1, 'passed': 1})
+
+    def test_rehashed_snapshot_cannot_hide_wrong_source(self):
+        self.add_snapshot(b'changed source')
+        with self.assertRaisesRegex(ValueError, 'Source hash mismatch'):
+            evaluation.check_packet(self.root)
+
+    def test_snapshot_cannot_omit_a_frozen_file(self):
+        self.add_snapshot()
+        p = self.root / 'freeze.json'
+        freeze = json.loads(p.read_text())
+        freeze['source_tree_sha256']['skills/video-production-router/missing.md'] = 'a' * 64
+        p.write_text(json.dumps(freeze))
+        manifest_path = self.root / 'manifest.json'
+        manifest = json.loads(manifest_path.read_text())
+        manifest['files']['freeze.json'] = hashlib.sha256(p.read_bytes()).hexdigest()
+        manifest_path.write_text(json.dumps(manifest))
+        with self.assertRaisesRegex(ValueError, 'member set'):
+            evaluation.check_packet(self.root)
 
     def test_valid_complete_evidence(self):
         self.assertEqual(evaluation.check_packet(self.root), {'cases': 1, 'passed': 1})

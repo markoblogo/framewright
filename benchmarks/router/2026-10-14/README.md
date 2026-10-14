@@ -11,6 +11,12 @@ controller review. This is not independent third-party certification.
 | [Second complete run](round-2/manifest.json) | `525200b` | 26 | 22 |
 | [Targeted regression](regression/manifest.json) | `07d0b54` | 8 | 6 |
 
+Each packet now includes a `source-snapshot.zip` with exactly the router files
+listed in its frozen source hash map. Commit IDs are provenance labels; those
+intermediate commits need not be reachable after a squash merge. Source snapshots,
+not Git reachability, are the reproduction basis. The packet checker verifies every
+archived member against the frozen hashes without executing or extracting it.
+
 The first 17 requests were frozen from the existing scenario file; six boundary
 cases were added before the first run. The second run preserved all 23 requests
 and criteria and added three held-out paraphrase/transfer cases. The final eight
@@ -44,7 +50,9 @@ overwriting an active grading output. Actor runs were not replaced by this repai
 ## Inspect or repeat
 
 1. Read a packet's `inputs.json`, `cases.json`, `freeze.json` and `protocol.txt`.
-2. Check out the recorded source commit and verify the router file hashes.
+2. Verify the packet, then extract its `source-snapshot.zip` into a separate
+   directory. Compare archived files with `freeze.json`; no historical Git object
+   or old branch is needed. The repository MIT licence covers these original files.
 3. For each case, copy that skill into a separate read-only synthetic workspace,
    omit `references/scenarios.json` (rubric hidden), and add only its listed fixture
    files. Never provide expected routes or criteria to the actor.

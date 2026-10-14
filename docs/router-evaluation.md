@@ -53,7 +53,8 @@ media sync or successful file delivery. The eight-case retest is not a full curr
 revision suite; do not combine successful answers across revisions into a pass.
 
 All fixture files, including unexpected additions, were rechecked after execution.
-Packet hashes, exact case/criterion sets, command completion pairs and aggregate
+Each historical packet retains its evaluated source snapshot independently of
+squashed commits. Packet/member hashes, exact case/criterion sets, command completion pairs and aggregate
 counts are checked by `scripts/check_router_evaluation.py`. The checker verifies
 record integrity, not semantic correctness or shell safety. Model/cost/token and
 source details are retained per packet. A model alias is not a permanent model pin.

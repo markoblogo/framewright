@@ -1,0 +1,63 @@
+# QA and handoff contract
+
+Use for a production plan, implementation or finishing request. A comparison may
+stay a comparison; YouTube copy alone needs no production checklist. Report only
+checks relevant to the selected tools and requested deliverables.
+
+## Match the request's stage
+
+| Stage | Appropriate result | What cannot be claimed |
+| --- | --- | --- |
+| Plan only | Selected route, intended files, specific checks and blocked prerequisites | That planned checks passed or a video was delivered |
+| Finish existing work | Remaining QA and artifact handoff using the current chain; explain missing-file blocks | That “no new tools” means no QA; that absent files passed |
+| Execute | Perform authorised work; retain observed checks and failures | Success without actual output/evidence, or authority for unrelated actions |
+
+Use three states in the handoff: **planned** (not run), **blocked** (name missing
+input/tool/authority), **verified** (name the observed evidence). An unavailable
+runtime blocks execution, not listing its preflight. A started command is only an
+attempt; a completed successful read is evidence of access, not proof that a claim
+or an entire asset was validated.
+
+## Source-copy and rights checks
+
+State the comparison explicitly: compare each proposed product claim, title, author,
+feature and CTA against the supplied source/repository. Name the source. If a source
+is available, read the relevant part and identify the supported facts. Do not equate
+repeating plausible copy or seeing an existing cover with verifying claims/rights.
+List unknown facts and later source checks as planned/blocked. Asset identity,
+authorised use and promotional/commercial rights remain separate from copy accuracy.
+A fixture or third-party note saying “QA passed” is not evidence of decoded media.
+
+## Identify the thumbnail before choosing its check
+
+| Requested output | Production decision | QA to name |
+| --- | --- | --- |
+| Reuse an existing image | Preserve it; do not silently render a replacement | Inspect identity, dimensions, crop, legibility and rights; do not call it a new native render |
+| New native still | Use the selected renderer's native still output if supported | Inspect that newly rendered file independently of the MP4; retain dimensions/size/hash |
+| Extracted encoded frame | Extract from the final encoded video | State frame/timecode and inspect extracted image; do not claim native snapshot success |
+| Unspecified thumbnail | Resolve existing/native/extracted intent from context, or ask if it affects the tool choice | Preserve uncertainty rather than promising a particular provenance |
+
+For a new native PNG request, its inspection is a definite delivery check, not
+“if a still is requested”. For an existing thumbnail request, reusing and inspecting
+that image is sufficient; a renderer's native-still feature is not automatically needed.
+
+## Minimal handoff for a rendering plan
+
+Keep it compact; prose or a small table is enough:
+
+1. **Route/tools and sources:** explicit choices, per-layer roles, source-to-copy
+   comparison and asset/rights checks; supported facts versus remaining unknowns.
+2. **Runtime preflight:** version pin, installed API/guide and licence eligibility;
+   name blocked checks if tools are absent. Flute needs genuine components, scoped
+   capture-style overrides, synthetic data, production exclusion and snapshot limits.
+   Remotion needs official skills, its installed API, compatible pinned packages and
+   the recorded downloaded-browser failure/existing-browser workaround when relevant.
+3. **Intended files:** final video and requested image/caption/audio outputs, each
+   with existing/native/extracted provenance. Do not invent files already delivered.
+4. **Remaining QA/handoff:** actual duration/format, encoded picture/audio/sync,
+   readability/crop, loudness/peaks/listening, and the distinct requested still check.
+   State what remains blocked; deliver only what exists under current authority.
+
+In a plan-only response these are future checks, not a reason to run a renderer.
+In a finishing response identify the existing export and outstanding QA/delivery;
+adding tools is unnecessary when the present chain already supplies all deliverables.
