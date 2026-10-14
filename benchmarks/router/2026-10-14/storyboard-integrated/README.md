@@ -12,3 +12,7 @@ opaque-ID controls are reused with unchanged protocol/core grader configuration.
 All strict failures stay failures; an integrity check does not qualify a renderer,
 real permissions, media quality, new models or audience outcomes. No media render,
 release, provider spend or publication occurred.
+
+One machine-local source-citation destination is normalised to a fixture-relative
+path for portability. The record retains its original answer hash; no factual
+answer content, criteria or grades were changed. Original full logs stay on Work.

@@ -26,5 +26,6 @@
     "correct": 12,
     "blind_ids": true,
     "reuse_from": "qa-v2"
-  }
+  },
+  "public_answer_format": "Complete answer content; one machine-local citation destination prefix normalized to fixture-relative path, with original answer SHA-256 retained. No factual content or grades changed."
 }
