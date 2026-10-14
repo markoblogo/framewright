@@ -26,17 +26,23 @@ it does not replace rendering skills or confer permission to publish.
    or `music` object in a picture brief records independent source/rights/account
    gates. It does not generate or download music. Cloud music profiles are documented,
    not publicly tested; private probes do not change that qualification.
-3. Follow the selected renderer's instructions. For Hyperframes-backed routes,
+3. Follow the selected renderer's instructions. Verify its installed API, licence
+   eligibility and pinned package version before execution. For Hyperframes-backed routes,
    load the installed `hyperframes` entry skill and relevant composition/audio/media
    guidance. For `live-react-scene` or another explicitly selected renderer, load
    that tool's installed guide directly; Hyperframes is not a prerequisite. If the
    selected route lacks instructions or dependencies, inspect its upstream docs
    and report the gap without silently installing tools. Preserve the requested
    format rather than applying today's horizontal 1080p examples to every job.
-4. Work from verified product facts and authorised assets. Measure generated speech
+4. Work from verified product facts and authorised assets. When shortening existing
+   material, preserve factual claims and reading order unless the user requests a
+   substantive rewrite. Measure generated speech
    before finalising cuts. Keep deterministic seekable picture timing and sound cues
    on a common timeline. Inspect the encoded final file, not just an intermediate mix.
-5. Deliver the export, thumbnail, subtitles/copy if requested, and honest QA status.
+5. If the current chain already meets deliverables, finish outstanding QA and
+   hand over the result without adding tools or experiments. No more tools does not
+   mean QA is complete; retain any checks blocked by missing files or authority.
+   Deliver the export, thumbnail, subtitles/copy if requested, and honest QA status.
    Distinguish automated checks, human listening, user acceptance and public upload.
    Ask before external publication or a paid/account-authorisation step unless
    already authorised. Honour stop signals and do not extend a successful test into
