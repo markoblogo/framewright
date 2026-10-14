@@ -1,0 +1,22 @@
+{
+  "cases": 23,
+  "strict_model_rubric_passed": 19,
+  "route_review_passed": 23,
+  "trace_review_passed": 23,
+  "actor_usage": {
+    "input_tokens": 2544517,
+    "cached_input_tokens": 2055680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 12058,
+    "reasoning_output_tokens": 561
+  },
+  "actor_worker_seconds": 758.71,
+  "monetary_cost": "NOT_AVAILABLE",
+  "qualification": "bounded_read_only_planning_only",
+  "public_trace_format": "all tool attempt/completion events; command output replaced by hash/byte size; full original event streams retained locally",
+  "limitations": [
+    "same model family in separate actor/evaluator contexts, not third-party certification",
+    "read-only envelope itself restricts actions; no production authority, account access, rendering or media quality was tested",
+    "initial smoke and invalid overlapping grading attempt are excluded from these counts; account billing totals are not inferred"
+  ]
+}

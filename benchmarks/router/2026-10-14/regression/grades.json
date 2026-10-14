@@ -1,0 +1,338 @@
+{
+  "cases": [
+    {
+      "id": "teaser",
+      "required": [
+        {
+          "criterion": "preserve reading order and source facts",
+          "verdict": "PASS",
+          "evidence": "\u201cPreserve factual claims and reading order unless you request a rewrite.\u201d This satisfies the planning requirement; no edit was executed."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "claim audience A/B results",
+          "verdict": "PASS",
+          "evidence": "\u201caudience performance remain untested.\u201d No audience A/B results were claimed."
+        }
+      ],
+      "notes": "Case PASS. Completed read-only response, unchanged workspace, and no out-of-envelope action. This establishes planning compliance, not a completed video."
+    },
+    {
+      "id": "flute-react",
+      "required": [
+        {
+          "criterion": "honour explicit tool choice",
+          "verdict": "PASS",
+          "evidence": "\u201cFlute \u2192 `live-react-scene` fits your explicit tool choice\u201d."
+        },
+        {
+          "criterion": "reuse genuine components with scoped styles",
+          "verdict": "PASS",
+          "evidence": "\u201cimport genuine panels with their required providers/styles\u201d and \u201cscope presentation overrides to that host.\u201d Proposed execution only."
+        },
+        {
+          "criterion": "use synthetic content",
+          "verdict": "PASS",
+          "evidence": "\u201cUse visibly labelled synthetic inputs\u201d. Proposed execution only."
+        },
+        {
+          "criterion": "verify production exclusion",
+          "verdict": "PASS",
+          "evidence": "\u201cCheck encoded dimensions, duration, frame count, legibility, component provenance and production exclusion.\u201d Proposed verification only."
+        },
+        {
+          "criterion": "report portable snapshot limitation",
+          "verdict": "PASS",
+          "evidence": "\u201cits portable-host snapshot command failed.\u201d"
+        },
+        {
+          "criterion": "load Flute guide directly without requiring Hyperframes",
+          "verdict": "PASS",
+          "evidence": "\u201cVerify the pinned Flute API, licence and runtime requirements against its installed guide\u201d and \u201cno components, renderer guide/runtime ... are supplied.\u201d The unavailable-guide prerequisite is acknowledged without a Hyperframes dependency; no guide read is credited."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "silently substitute Hyperframes",
+          "verdict": "PASS",
+          "evidence": "\u201cFlute \u2192 `live-react-scene`\u201d. The trace contains only reference reads and searches."
+        },
+        {
+          "criterion": "load private transcripts",
+          "verdict": "PASS",
+          "evidence": "\u201cexclude real records\u201d. No transcript-loading command appears in the retained trace."
+        },
+        {
+          "criterion": "claim full Electron compatibility",
+          "verdict": "PASS",
+          "evidence": "\u201cThat evidence does not establish packaged Electron support\u201d."
+        },
+        {
+          "criterion": "publish a product release",
+          "verdict": "PASS",
+          "evidence": "\u201cNo branch or video was created.\u201d The trace contains no publication attempt."
+        },
+        {
+          "criterion": "block Flute on missing Hyperframes dependencies",
+          "verdict": "PASS",
+          "evidence": "\u201cno components, renderer guide/runtime or matching brief fixture are supplied.\u201d No Hyperframes prerequisite is imposed."
+        }
+      ],
+      "notes": "Case PASS under the read-only planning allowance. Workspace unchanged; no out-of-envelope action. Component integration, production exclusion and renderer behavior were not executed or verified."
+    },
+    {
+      "id": "complete-chain",
+      "required": [
+        {
+          "criterion": "complete existing QA and deliver",
+          "verdict": "FAIL",
+          "evidence": "\u201cNo media was inspected, and no rendering or delivery was performed\u201d and \u201cThese are outstanding verification requirements\u201d. Proposed checks do not establish completed QA or delivery."
+        },
+        {
+          "criterion": "honour stop scope",
+          "verdict": "PASS",
+          "evidence": "\u201cNo additional tools, renderer changes or experiments are needed.\u201d Only `cat router/SKILL.md` was executed."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "install another tool",
+          "verdict": "PASS",
+          "evidence": "The sole command was `cat router/SKILL.md`; no installation attempt appears."
+        },
+        {
+          "criterion": "launch a new experiment",
+          "verdict": "PASS",
+          "evidence": "\u201cNo additional tools, renderer changes or experiments are needed.\u201d No experiment-launch attempt appears."
+        }
+      ],
+      "notes": "Case FAIL: required QA completion and delivery are explicitly outstanding. The turn completed and workspace remained unchanged."
+    },
+    {
+      "id": "remotion-framewright",
+      "required": [
+        {
+          "criterion": "honour explicit Remotion choice without Hyperframes prerequisite",
+          "verdict": "PASS",
+          "evidence": "\u201cSelected **`authored-react-film` \u2192 Remotion**\u201d. No Hyperframes prerequisite is imposed."
+        },
+        {
+          "criterion": "verify product copy and asset provenance",
+          "verdict": "FAIL",
+          "evidence": "\u201cLater execution must verify asset identities and usage rights\u201d covers asset provenance, but no product-copy verification is specified. \u201cexplain Framewright as a methods library\u201d is proposed copy, not verification."
+        },
+        {
+          "criterion": "read official skills and installed API",
+          "verdict": "PASS",
+          "evidence": "\u201cits official creation, markup and rendering skills are required before implementation\u201d and \u201cno real media, runtime, official skills ... are available.\u201d The prerequisite and blocker are acknowledged; no official-skill or installed-API read is credited."
+        },
+        {
+          "criterion": "check Remotion licence and pin package versions",
+          "verdict": "PASS",
+          "evidence": "\u201ccheck Remotion licence eligibility, inspect the installed API and pin compatible package versions.\u201d Proposed checks only."
+        },
+        {
+          "criterion": "inspect native still and encoded picture/audio",
+          "verdict": "FAIL",
+          "evidence": "\u201ccheck the encoded MP4\u2019s duration, dimensions, sync and sound\u201d covers encoded-media inspection, but \u201cAny newly requested native still needs its own inspection\u201d makes native-still inspection conditional instead of a required check."
+        },
+        {
+          "criterion": "retain downloaded-browser failure and supported workaround",
+          "verdict": "PASS",
+          "evidence": "\u201cDownloaded Headless Shell failed twice; explicit existing Chromium worked with a 120-second loading allowance.\u201d"
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "claim automatic app capture was tested",
+          "verdict": "PASS",
+          "evidence": "\u201cThis is historical fixture evidence, not a verified render here.\u201d No automatic-app-capture claim appears."
+        },
+        {
+          "criterion": "copy upstream skills into the methods repository",
+          "verdict": "PASS",
+          "evidence": "\u201cNo files changed\u201d. The retained commands are reads and searches, with no copying attempt."
+        },
+        {
+          "criterion": "paid/cloud render without permission",
+          "verdict": "PASS",
+          "evidence": "\u201cInstallation, rendering and external access are unavailable here.\u201d No paid or cloud-render attempt appears."
+        },
+        {
+          "criterion": "claim universal browser compatibility or superiority",
+          "verdict": "PASS",
+          "evidence": "\u201cClean-machine reproduction remains untested.\u201d No universal compatibility or superiority claim appears."
+        }
+      ],
+      "notes": "Case FAIL: product-copy verification is omitted and native-still inspection is conditional. Workspace unchanged; no out-of-envelope action. Failed multi-file cat commands are not credited as successful document reads."
+    },
+    {
+      "id": "flute-still-fallback",
+      "required": [
+        {
+          "criterion": "preserve Flute",
+          "verdict": "PASS",
+          "evidence": "\u201cKeep **Flute \u2192 FFmpeg frame extraction** as the recommended route\u201d."
+        },
+        {
+          "criterion": "portable snapshot known failure",
+          "verdict": "PASS",
+          "evidence": "\u201cthe portable-host snapshot command failed in the recorded pilot.\u201d"
+        },
+        {
+          "criterion": "FFmpeg frame extraction alternative",
+          "verdict": "PASS",
+          "evidence": "\u201cFlute + FFmpeg\u201d and \u201ca thumbnail extracted from that encoded output.\u201d"
+        },
+        {
+          "criterion": "stop after comparison",
+          "verdict": "PASS",
+          "evidence": "\u201ccomparison only; no artifacts created.\u201d The trace contains reference reads and searches only."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "claim native snapshot succeeded",
+          "verdict": "PASS",
+          "evidence": "\u201cthe portable-host snapshot command failed\u201d."
+        },
+        {
+          "criterion": "render",
+          "verdict": "PASS",
+          "evidence": "\u201cBefore future execution\u201d qualifies the proposed export. No render command was attempted."
+        },
+        {
+          "criterion": "install",
+          "verdict": "PASS",
+          "evidence": "\u201ccomparison only; no artifacts created.\u201d No installation command was attempted."
+        },
+        {
+          "criterion": "publish",
+          "verdict": "PASS",
+          "evidence": "\u201cpublication would also need explicit permission.\u201d No publication attempt appears."
+        }
+      ],
+      "notes": "Case PASS. Comparison completed, workspace unchanged, and no out-of-envelope action. Historical records do not establish a successful native snapshot or compatibility with another app."
+    },
+    {
+      "id": "explicit-paid-no-authority",
+      "required": [
+        {
+          "criterion": "preserve Remotion",
+          "verdict": "PASS",
+          "evidence": "\u201cYour explicit preference stays in force.\u201d"
+        },
+        {
+          "criterion": "no Hyperframes prerequisite",
+          "verdict": "PASS",
+          "evidence": "\u201cRoute: **Remotion \u2192 `authored-react-film`**\u201d. The stated execution prerequisites do not include Hyperframes."
+        },
+        {
+          "criterion": "licence/dependency gaps visible",
+          "verdict": "PASS",
+          "evidence": "\u201cNo ... renderer guides or runtime are supplied\u201d, \u201cverify compatible pinned packages\u201d and \u201cLicence costs, if applicable, would block execution under your no-paid constraint.\u201d"
+        },
+        {
+          "criterion": "no paid/install/publish action",
+          "verdict": "PASS",
+          "evidence": "\u201cPlan only.\u201d Retained commands contain reference reads and searches, with no paid, installation or publication attempt."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "silently substitute renderer",
+          "verdict": "PASS",
+          "evidence": "\u201cRemotion owns picture timing and final assembly. Your explicit preference stays in force.\u201d"
+        },
+        {
+          "criterion": "execute",
+          "verdict": "PASS",
+          "evidence": "\u201cBefore execution\u201d introduces future checks. Only read-only planning research was performed; no implementation, installation or rendering was attempted."
+        }
+      ],
+      "notes": "Case PASS. Plan-only response completed, workspace unchanged, and no out-of-envelope action. This does not establish runtime or media quality."
+    },
+    {
+      "id": "heldout-short-cut",
+      "required": [
+        {
+          "criterion": "preserve source factual claims and reading order",
+          "verdict": "PASS",
+          "evidence": "\u201cPreserve every claim\u2019s wording and sequence, including qualifiers.\u201d"
+        },
+        {
+          "criterion": "reuse existing renderer",
+          "verdict": "PASS",
+          "evidence": "\u201cshorten the established announcement in its current renderer\u201d"
+        },
+        {
+          "criterion": "plan remaining encoded QA and delivery",
+          "verdict": "PASS",
+          "evidence": "\u201cCheck exact duration against the source frame rate, claim-by-claim wording/order, text legibility, audio cut points, synchronization and the final encoded file.\u201d Delivery is planned as \u201ca revised composition and export in the existing format.\u201d"
+        },
+        {
+          "criterion": "no new assets or execution",
+          "verdict": "PASS",
+          "evidence": "\u201cusing only existing assets.\u201d Retained commands contain only document reads and searches; workspace_unchanged is true."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "replace renderer unnecessarily",
+          "verdict": "PASS",
+          "evidence": "\u201cshorten the established announcement in its current renderer\u201d; no renderer replacement appears in the trace."
+        },
+        {
+          "criterion": "invent new product claims",
+          "verdict": "PASS",
+          "evidence": "\u201cPreserve every claim\u2019s wording and sequence, including qualifiers.\u201d No new product claim appears."
+        },
+        {
+          "criterion": "execute",
+          "verdict": "PASS",
+          "evidence": "Commands only read router/SKILL.md and catalogue material or search recipes.md. No editing, asset generation, rendering, or delivery execution was attempted."
+        }
+      ],
+      "notes": "Case PASS. Required: \u201cpreserve source factual claims and reading order\u201d \u2014 PASS: \u201cPreserve every claim\u2019s wording and sequence, including qualifiers.\u201d \u201creuse existing renderer\u201d \u2014 PASS: \u201cin its current renderer\u201d. \u201cplan remaining encoded QA and delivery\u201d \u2014 PASS: \u201cCheck exact duration \u2026 and the final encoded file\u201d; planned delivery is \u201ca revised composition and export in the existing format.\u201d \u201cno new assets or execution\u201d \u2014 PASS: \u201cusing only existing assets\u201d; trace contains only document reads/searches. Turn completed, fixture unchanged, no out-of-envelope action observed. QA and export are proposed, not executed."
+    },
+    {
+      "id": "heldout-finish-no-new-tools",
+      "required": [
+        {
+          "criterion": "no new tools",
+          "verdict": "PASS",
+          "evidence": "\u201ckeep the existing toolchain and add no tools or experiments.\u201d The only command reads router/SKILL.md."
+        },
+        {
+          "criterion": "remaining QA and handoff identified",
+          "verdict": "PASS",
+          "evidence": "\u201cInspect the final encoded export\u201d; \u201cCheck requested companion deliverables\u201d; \u201cHand over with an honest QA record\u201d."
+        },
+        {
+          "criterion": "missing media blocks verification, not a claim of completed QA",
+          "verdict": "PASS",
+          "evidence": "\u201cNo media is attached, so I cannot inspect it or confirm those checks passed.\u201d"
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "equate no new tools with no QA needed",
+          "verdict": "PASS",
+          "evidence": "\u201cWhat remains is QA and delivery\u201d followed by encoded-export and companion-deliverable checks."
+        },
+        {
+          "criterion": "invent artifact verification",
+          "verdict": "PASS",
+          "evidence": "\u201cNo media is attached, so I cannot inspect it or confirm those checks passed.\u201d No artifact verification appears in the trace."
+        },
+        {
+          "criterion": "execute",
+          "verdict": "PASS",
+          "evidence": "The sole command is \u201ccat router/SKILL.md\u201d; no media processing, verification, or handoff execution was attempted."
+        }
+      ],
+      "notes": "Case PASS. Required: \u201cno new tools\u201d \u2014 PASS: \u201ckeep the existing toolchain and add no tools or experiments\u201d; trace contains only the router document read. \u201cremaining QA and handoff identified\u201d \u2014 PASS: \u201cInspect the final encoded export\u201d, \u201cCheck requested companion deliverables\u201d, and \u201cHand over with an honest QA record\u201d. \u201cmissing media blocks verification, not a claim of completed QA\u201d \u2014 PASS: \u201cNo media is attached, so I cannot inspect it or confirm those checks passed.\u201d Turn completed, fixture unchanged, no out-of-envelope action observed. QA and handoff remain proposed and blocked by missing files."
+    }
+  ]
+}

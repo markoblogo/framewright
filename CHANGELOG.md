@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+Fix three reviewed music-planning gaps: provider exclusion from picture extras,
+account/credit checks for visuals with existing audio, and retention of both sources.
+Add bounded model decision checks, preserving strict failures and grader limitations;
+clarify source-preserving edits, scoped React styles and renderer/QA handoffs. Retain
+experimental/structural-only qualification. Evidence integrity checks do not run models.
+
 Compare complete feasible tool chains by requested coverage, tested evidence and
 chain size before style/default preferences. Preserve tested Brag + FFmpeg still
 extraction over a merely documented native export; choose tested FFmpeg normalization

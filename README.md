@@ -122,8 +122,11 @@ for Hyperframes-backed routes; Flute and Remotion use their own guides.
 Example: “Make a French trailer from this book page and cover. Use
 $video-production-router to choose a workflow.”
 
-The router is structurally validated. Its scenario suite has **not** yet been
-evaluated by an independent model. This is separate from the completed video tests.
+The router is structurally validated. Bounded model checks now retain two full
+synthetic runs and a targeted retest: [results and limits](docs/router-evaluation.md).
+Observed route/action boundaries held, but strict checklist grades were incomplete;
+no general behavioural qualification or autonomous-production safety is claimed.
+This is separate from completed video tests.
 
 ## Add the next experiment
 

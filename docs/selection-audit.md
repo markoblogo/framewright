@@ -17,9 +17,10 @@ new mixed pipeline. The reference project closes the first-result gap with share
 source and commands. It has not been re-rendered on a clean machine after the lint
 dependency repair. No time/cost advantage or universal reproducibility is claimed.
 
-The next experiment should evaluate the router, not add a renderer. See
-[the behavioural protocol](router-evaluation.md). Keep structural_only until an
-independent model's retained decisions and tool traces have been graded.
+Bounded router decision checks are now retained in the
+[behavioural report](router-evaluation.md). Strict checklist grades were incomplete;
+keep structural_only and distinguish observed route/action decisions from a full
+qualification pass.
 
 Release 0.1.1 resolves companion dependencies to a fixed point in canonical feature
 order. Equivalent requirement arrays have equivalent tool coverage; requested native

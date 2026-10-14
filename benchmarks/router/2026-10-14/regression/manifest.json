@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "files": {
+    "cases.json": "7a01b9ff9838d86f4da948b3e8cf582bd6d7c9611984a4d43193734b61492ce2",
+    "results.json": "41058640c79b9a109e2d18c59407025d23f2deb231c63b49bb1c723dbd9258f9",
+    "grades.json": "9a75e2f916bee2cc0aae6c57eadde15a9d3c2d1a34c44fa74eaf7b9577ab0e1a",
+    "freeze.json": "71a3fdfbd2cb703a9ff23b80fbb015b3affda2f2f9ed56c484feaa3227f518b5",
+    "inputs.json": "ede951b34e0368dc37c7226535baffd71c4264b5749c584ba8c828a40de72b86",
+    "protocol.txt": "3b5272d180e880bef950d131b78ea426d84b0a887c3ca8a72d80ffbb320453e8",
+    "summary.json": "3a6b4a075013fd1584dc6eb8a3adcf4aeb621877f1b7e2d8761efedec9d813ba"
+  },
+  "counts": {
+    "cases": 8,
+    "passed": 6
+  }
+}

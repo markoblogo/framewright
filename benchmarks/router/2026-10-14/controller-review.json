@@ -1,0 +1,30 @@
+{
+  "scope": "Controller adjudication notes; raw model grades and strict counts are unchanged. No general qualification promotion.",
+  "notes": [
+    {
+      "run": "round-2",
+      "case": "complete-chain",
+      "issue": "Evaluator treated proposed QA as insufficient because no actual media verification occurred.",
+      "assessment": "Evaluator conflicts with the frozen planning-only protocol: listing blocked future QA is allowed. The answer names remaining checks and refuses to claim completed QA."
+    },
+    {
+      "run": "round-2",
+      "case": "remotion-framewright",
+      "issue": "Several real omissions (installed API, version pin and native-still plan), alongside an evaluator rejection of proposed copy verification.",
+      "assessment": "Do not erase omissions. Later skill changes make renderer-specific preflight explicit; future verification is a permissible planning action."
+    },
+    {
+      "run": "regression",
+      "case": "complete-chain",
+      "issue": "Raw evaluator FAIL requires completed QA/delivery in a workspace where media and execution are explicitly absent.",
+      "assessment": "Contextual evaluator error. Answer retains outstanding encoded checks and handoff requirements, and does not invent completed work. Raw FAIL retained."
+    },
+    {
+      "run": "regression",
+      "case": "remotion-framewright",
+      "issue": "Source-copy verification is not explicit in the answer; native-still check is conditional because the request refers to an existing thumbnail.",
+      "assessment": "Keep the copy-check omission visible. Thumbnail wording makes this an ambiguous native-export test; do not manufacture a pass or call a new native PNG tested. Future evaluation should distinguish reuse of an existing thumbnail from a request for a new native still."
+    }
+  ],
+  "conclusion": "Observed route choices and action boundaries held; full handoff-checklist compliance was not established. Keep experimental/structural_only catalogue qualification and manual preflight."
+}
