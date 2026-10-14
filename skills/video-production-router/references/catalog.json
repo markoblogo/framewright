@@ -100,6 +100,42 @@
           "evidence": "experiments/2026-10-14/evidence/coqpi-flute.txt"
         }
       ]
+    },
+    {
+      "id": "authored-react-film",
+      "status": "tested_for_scope",
+      "recipe": "recipes.md#authored-react-film",
+      "upstream": [
+        "https://github.com/remotion-dev/remotion",
+        "https://github.com/remotion-dev/skills"
+      ],
+      "experiments": [
+        "framewright-remotion"
+      ],
+      "tested_scope": "Remotion 4.0.535 authored React motion graphics, native instrumental audio and still export; Framewright 30-second horizontal 1080p30 pilot with explicit existing Chromium",
+      "not_tested": [
+        "automatic app capture",
+        "narration or captions in Remotion",
+        "vertical output",
+        "cloud rendering",
+        "clean-machine reproduction",
+        "owner aesthetic/audio acceptance",
+        "audience performance"
+      ],
+      "known_limitations": [
+        {
+          "capability": "downloaded Headless Shell launch in pilot environment",
+          "result": "failed",
+          "detail": "Two native still attempts timed out after 25000ms connecting to the downloaded browser; explicit existing Chromium worked. A later still with the downloaded Chromium 157 succeeded after warm-up and --timeout=120000. Full film used existing Chromium 152. Root cause unproven.",
+          "evidence": "experiments/2026-10-14/evidence/framewright-remotion.txt"
+        },
+        {
+          "capability": "full scaffold dependency audit",
+          "result": "failed",
+          "detail": "10 high advisories in dev lint dependency chain. Runtime-only audit found zero.",
+          "evidence": "experiments/2026-10-14/evidence/framewright-remotion.txt"
+        }
+      ]
     }
   ]
 }

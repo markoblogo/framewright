@@ -43,6 +43,11 @@ default renderer choice; load its installed guide. Its browser-host success does
 not prove full Electron or arbitrary React support. Keep the ordinary app and
 production bundle outside the demonstration.
 
+For authored React motion graphics with a controllable frame timeline, native
+audio and stills, consider `authored-react-film` (Remotion). Distinguish it from
+camera treatment of existing app UI. Keep its own licence and observed browser
+workaround visible; a successful pilot does not prove every rendering mode.
+
 When the chosen tool misses a requested deliverable, compose the smallest useful
 chain rather than drop the deliverable or replace the whole workflow. Read
 [tool chains](references/tool-chains.md) for handoff checks and tested combinations.

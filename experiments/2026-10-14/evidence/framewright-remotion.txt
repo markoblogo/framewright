@@ -1,0 +1,33 @@
+Remotion / Framewright pilot — 2026-10-14
+Installed Remotion, cli, media, transitions: 4.0.535; React 19.2.3; Node 24.
+TypeScript and ESLint passed in the pilot and copied/formatted example. Asset preparation passed with a matching score hash using reused dependencies. Official creation/markup/render skills read locally.
+Native PNG still and MP4 passed with explicit existing Chromium 152.0.7977.30.
+MP4: H264 1920x1080, 30fps, 900 frames, 30 seconds; stereo AAC present.
+Music is original local synthesis, rendered natively via Remotion Audio.
+Encoded representative frames and scene transitions inspected; no Studio UI in export.
+Downloaded Headless Shell: two still attempts FAILED connecting within 25000ms.
+Explicit --browser-executable plus --timeout=120000 workaround succeeded.
+Existing-browser default root-load timeout also FAILED before the longer allowance.
+Later downloaded Chromium 157 still passed after warm-up with --timeout=120000.
+No vendor patch; loading allowance increased, result checks unchanged.
+Full npm audit: 10 high findings in dev lint tree. Runtime-only audit: 0 vulnerabilities.
+Human listening and owner artistic acceptance: not recorded/pending.
+No new model eval, account, paid/cloud service or public upload performed.
+
+Native encoded audio measurements:
+Summary:
+
+  Integrated loudness:
+    I:         -19.4 LUFS
+    Threshold: -29.5 LUFS
+
+  Loudness range:
+    LRA:         0.8 LU
+    Threshold: -39.3 LUFS
+    LRA low:   -19.5 LUFS
+    LRA high:  -18.8 LUFS
+
+  True peak:
+    Peak:       -7.0 dBFS
+[out#0/null @ 0x9b6c049c0] video:366KiB audio:5628KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  900 fps=0.0 q=-0.0 Lsize=N/A time=00:00:30.00 bitrate=N/A speed= 106x elapsed=0:00:00.28    

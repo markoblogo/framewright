@@ -36,3 +36,9 @@ reproducibility. Local implementation locations: docs/local-workspace.md.
 See [the CoqPi record](coqpi-flute.md) for a genuine React-component camera/focus
 scene, verified native MP4, production boundary, and the failed portable snapshot
 command. This adds one recorded delivered output; artistic acceptance is pending.
+
+## Additional pilot: Framewright / Remotion
+
+See [the Framewright record](framewright-remotion.md) for authored React motion
+graphics with native audio and still export, an explicit-browser workaround,
+licence evidence and dependency-audit limits. Owner acceptance remains pending.

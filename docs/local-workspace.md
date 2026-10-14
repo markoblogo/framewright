@@ -19,4 +19,8 @@ loading stall. Do not automatically reinstall or relocate the archived workspace
 
 - /Volumes/Work/flute-pilot-20261014 — isolated CoqPi branch, Flute source inspection,
   pinned installed package/browser, native and finished exports, thumbnail, English
-  YouTube metadata and validation logs. No public video URL yet.
+  YouTube metadata and validation logs. Owner-provided video URL is retained in the experiment record.
+
+- /Volumes/Work/remotion-pilot-20261014 — official skill mirror, isolated Remotion
+  composition, browser/cache, native MP4/still, audio sources, English YouTube copy
+  and QA logs. Our authored source is also retained in examples/remotion-framewright.
