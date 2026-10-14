@@ -105,5 +105,29 @@
       "coqpi": "848fbdb89a7b99054f430429fd4f0a2bdc22bcfb",
       "flute_source_inspected": "4ab8c4a310ed051db9990e5a10a35fbcf2080cb1"
     }
+  },
+  {
+    "id": "framewright-remotion",
+    "route": "authored-react-film",
+    "local_output": "remotion-pilot-20261014/outputs/Framewright-Remotion-1080p.mp4",
+    "sha256": "e5b369ef72f522fd7bbd4d41409aa99f5092bcda093ae018f5784f77adab3f7c",
+    "bytes": 7881683,
+    "evidence": "experiments/2026-10-14/evidence/framewright-remotion.txt",
+    "qa_scope": "native MP4 with Audio + native still + encoded metadata, audio metrics and sampled frames",
+    "publication_url": null,
+    "publication_verification": "not_published",
+    "human_listening": "not_recorded",
+    "user_acceptance": "pending",
+    "audience_metrics": "not_measured",
+    "tool_versions": {
+      "remotion": "4.0.535",
+      "react": "19.2.3",
+      "typescript": "5.9.3",
+      "chromium": "152.0.7977.30"
+    },
+    "source_revision": {
+      "official_skills": "7ba4dcf8ebe1626b00baa41e1f2478113719b60b",
+      "remotion_release_tag": "0155f8c883351eaa0d9b40b2c0ee9c863626c323"
+    }
   }
 ]

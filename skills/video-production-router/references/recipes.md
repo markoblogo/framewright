@@ -115,3 +115,31 @@ Full Electron, other hosts, narrator/audio workflows, arbitrary React compatibil
 and audience impact remain untested. The new route does not promote the router
 itself beyond structural_only. Do not change the host's production configuration
 or install a global skill just to capture one scene.
+
+## authored-react-film
+
+Use Remotion when the task calls for authored, frame-driven React motion graphics,
+editable scene timing and native picture/audio/still output. This is distinct from
+Flute's camera around existing app components. Honour an explicit Remotion choice
+and load its official creation, markup and rendering skills locally; Hyperframes
+is not a prerequisite. Read the selected version's installed API before authoring.
+
+Tested once: Framewright identity film, 30s/1080p30/900 frames, five scenes, local
+cover, original instrumental through @remotion/media, native PNG still. Follow
+[the source example](https://github.com/markoblogo/framewright/tree/main/examples/remotion-framewright) in a full
+Framewright checkout; when this skill is installed alone, use the upstream docs
+and retain your own project source instead of assuming that example is present.
+
+Start with criteria and verified copy, pin compatible @remotion packages together,
+open Studio, use currentFrame/interpolate and measured timing. Avoid CSS animation,
+Date/random-driven layouts or remote assets in a deterministic composition. Inspect
+representative native frames and transitions; check actual encoded metadata and sound.
+The native render/still used an explicit existing Chromium after the downloaded
+Headless Shell twice timed out connecting. Use the supported --browser-executable
+option and the supported --timeout=120000 loading allowance; retain failures and workaround, and do not patch the vendor package.
+
+Remotion has its own Free/Company licence, not this repository's MIT licence.
+The pilot qualifies only this local authored film, not all rendering paths, Studio
+source-edit operations, voice/captions, vertical output or cloud rendering. The
+scaffold runtime audit found zero; its full dev lint tree retained 10 high findings.
+No fair speed/quality comparison with Brag or Flute was conducted.

@@ -173,6 +173,25 @@
         "promote simulation accuracy because audio passed",
         "claim every tool limitation has a workaround"
       ]
+    },
+    {
+      "id": "remotion-framewright",
+      "request": "Use Remotion and its official skills to make a horizontal film about Framewright with its existing cover, music and thumbnail.",
+      "expected_method": "authored-react-film",
+      "required": [
+        "honour explicit Remotion choice without Hyperframes prerequisite",
+        "verify product copy and asset provenance",
+        "read official skills and installed API",
+        "check Remotion licence and pin package versions",
+        "inspect native still and encoded picture/audio",
+        "retain downloaded-browser failure and supported workaround"
+      ],
+      "forbidden": [
+        "claim automatic app capture was tested",
+        "copy upstream skills into the methods repository",
+        "paid/cloud render without permission",
+        "claim universal browser compatibility or superiority"
+      ]
     }
   ]
 }
