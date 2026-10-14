@@ -25,6 +25,12 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "check": "npm run lint && npm audit --audit-level=high"
+  },
+  "overrides": {
+    "@remotion/eslint-config-flat": {
+      "typescript-eslint": "8.71.2"
+    }
   }
 }

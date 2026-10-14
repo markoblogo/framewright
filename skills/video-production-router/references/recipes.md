@@ -141,5 +141,7 @@ option and the supported --timeout=120000 loading allowance; retain failures and
 Remotion has its own Free/Company licence, not this repository's MIT licence.
 The pilot qualifies only this local authored film, not all rendering paths, Studio
 source-edit operations, voice/captions, vertical output or cloud rendering. The
-scaffold runtime audit found zero; its full dev lint tree retained 10 high findings.
+original scaffold had 10 high dev lint findings. The retained example now removes
+the braces chain through a scoped typescript-eslint update; full audit, lint and
+types passed with zero vulnerabilities. The pilot environment remains historical.
 No fair speed/quality comparison with Brag or Flute was conducted.

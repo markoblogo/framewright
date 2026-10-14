@@ -5,6 +5,8 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import os
+import struct
 
 
 def validate_artifact(artifact, local_root=None):
@@ -20,6 +22,14 @@ def validate_artifact(artifact, local_root=None):
         with media.open('rb') as stream:
             digest = hashlib.file_digest(stream, 'sha256').hexdigest()
         assert digest == artifact['sha256'], f'Hash drift: {media}'
+
+
+def markdown_files(root):
+    for directory, folders, files in os.walk(root):
+        folders[:] = [f for f in folders if f not in {'.git', 'node_modules', '.venv', '__pycache__'}]
+        for name in files:
+            if name.endswith('.md'):
+                yield Path(directory) / name
 
 
 def validate(root, local_root=None):
@@ -48,6 +58,17 @@ def validate(root, local_root=None):
         validate_artifact(record, local_root)
         if 'native_export' in record:
             validate_artifact(record['native_export'], local_root)
+        if 'thumbnail' in record:
+            thumbnail = record['thumbnail']
+            validate_artifact(thumbnail, local_root)
+            assert thumbnail['format'] == 'png', 'Only PNG thumbnail dimensions are supported'
+            assert all(type(thumbnail[k]) is int and thumbnail[k] > 0 for k in ('width', 'height'))
+            if local_root:
+                image = local_root / thumbnail['local_output']
+                with image.open('rb') as stream:
+                    header = stream.read(24)
+                assert len(header) == 24 and header[:8] == b'\x89PNG\r\n\x1a\n' and header[12:16] == b'IHDR', 'Invalid PNG header'
+                assert struct.unpack('>II', header[16:24]) == (thumbnail['width'], thumbnail['height']), f'Dimension drift: {image}'
         evidence = root / record['evidence']
         assert evidence.resolve().is_relative_to(root.resolve())
         assert evidence.is_file()
@@ -61,7 +82,7 @@ def validate(root, local_root=None):
         assert case['request'] and case['required'] and case['forbidden']
         assert case['expected_method'] is None or case['expected_method'] in methods
     # Check local Markdown destinations, including heading fragments.
-    for doc in root.rglob('*.md'):
+    for doc in markdown_files(root):
         for target in re.findall(r'\]\(([^)]+)\)', doc.read_text()):
             if '://' in target:
                 continue
@@ -75,7 +96,7 @@ def validate(root, local_root=None):
     print(f'PASS: {len(methods)} methods, {len(records)} outputs, {len(scenarios["cases"])} scenario specifications; local links intact.')
     print('Router evaluation: structural_only; no model or video experiment was run.')
     if local_root:
-        print('All retained local video sizes and SHA-256 hashes match (including native exports).')
+        print('All recorded local artifacts match sizes and SHA-256 (finals, native exports and thumbnails); recorded PNG dimensions match.')
 
 
 if __name__ == '__main__':

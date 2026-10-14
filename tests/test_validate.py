@@ -1,3 +1,4 @@
+import base64
 import contextlib
 import hashlib
 import importlib.util
@@ -12,7 +13,7 @@ validator = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(validator)
 
 
-class NativeExportValidationTest(unittest.TestCase):
+class ArtifactValidationTest(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
@@ -33,6 +34,9 @@ class NativeExportValidationTest(unittest.TestCase):
                 self.record[key] = artifact
             else:
                 self.record.update(artifact)
+        png = base64.b64decode('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aZ1sAAAAASUVORK5CYII=')
+        (self.root / 'thumbnail.png').write_bytes(png)
+        self.record['thumbnail'] = {'local_output': 'thumbnail.png', 'bytes': len(png), 'sha256': hashlib.sha256(png).hexdigest(), 'format': 'png', 'width': 1, 'height': 1}
         self.save()
 
     def save(self):
@@ -41,6 +45,17 @@ class NativeExportValidationTest(unittest.TestCase):
     def check(self, local=True):
         with contextlib.redirect_stdout(io.StringIO()):
             validator.validate(self.root, self.root if local else None)
+
+    def test_dependency_readme_is_not_project_documentation(self):
+        dependency = self.root / 'node_modules/fixture'
+        dependency.mkdir(parents=True)
+        (dependency / 'README.md').write_text('[upstream-only link](missing.md)')
+        self.check()
+
+    def test_broken_project_readme_still_rejected(self):
+        (self.root / 'README.md').write_text('[broken](missing.md)')
+        with self.assertRaisesRegex(AssertionError, 'Broken link'):
+            self.check()
 
     def test_valid_native_export_passes(self):
         self.check()
@@ -64,6 +79,48 @@ class NativeExportValidationTest(unittest.TestCase):
         (self.root / 'final.mp4').write_bytes(b'wrong')
         with self.assertRaisesRegex(AssertionError, 'Hash drift'):
             self.check()
+
+    def test_missing_thumbnail_rejected(self):
+        (self.root / 'thumbnail.png').unlink()
+        with self.assertRaises(FileNotFoundError):
+            self.check()
+
+    def test_same_size_thumbnail_corruption_rejected(self):
+        p = self.root / 'thumbnail.png'
+        data = p.read_bytes()
+        p.write_bytes(data[:-1] + bytes([data[-1] ^ 1]))
+        with self.assertRaisesRegex(AssertionError, 'Hash drift'):
+            self.check()
+
+    def test_thumbnail_size_drift_rejected(self):
+        (self.root / 'thumbnail.png').write_bytes(b'wrong')
+        with self.assertRaisesRegex(AssertionError, 'Size drift'):
+            self.check()
+
+    def test_thumbnail_dimension_drift_rejected(self):
+        self.record['thumbnail']['width'] = 2
+        self.save()
+        with self.assertRaisesRegex(AssertionError, 'Dimension drift'):
+            self.check()
+
+    def test_non_png_thumbnail_rejected_even_with_matching_hash(self):
+        data = b'X' * 32
+        (self.root / 'thumbnail.png').write_bytes(data)
+        self.record['thumbnail']['bytes'] = len(data)
+        self.record['thumbnail']['sha256'] = hashlib.sha256(data).hexdigest()
+        self.save()
+        with self.assertRaisesRegex(AssertionError, 'Invalid PNG header'):
+            self.check()
+
+    def test_thumbnail_metadata_rejected_without_files(self):
+        for field, value in [('width', 0), ('height', '1080'), ('sha256', 'invalid'), ('local_output', '../escape.png')]:
+            with self.subTest(field=field):
+                old = self.record['thumbnail'][field]
+                self.record['thumbnail'][field] = value
+                self.save()
+                with self.assertRaises(AssertionError):
+                    self.check(local=False)
+                self.record['thumbnail'][field] = old
 
     def test_native_metadata_rejected_without_local_files(self):
         for field, value in [('sha256', 'invalid'), ('bytes', 0), ('local_output', '../escape.mp4')]:

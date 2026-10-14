@@ -82,7 +82,8 @@ No scheduled jobs or autonomous downloads are configured.
 Run `python3 scripts/validate.py` to check catalogue integrity and retained evidence.
 Run `python3 -m unittest discover -s tests -v` for validator regression tests.
 With `--local-root /Volumes/Work`, the validator checks both final and recorded
-native export files against their sizes and SHA-256 hashes.
+native export files and recorded thumbnails against their sizes and SHA-256
+hashes; PNG thumbnail dimensions are checked too.
 This check needs no network or third-party packages and does not run video tools.
 
 ## Part of the ABVX ecosystem
@@ -95,6 +96,8 @@ discovery surface. Framewright owns video methods and their evidence. None is a
 mandatory runtime dependency. See [the integration boundaries](docs/ecosystem.md).
 
 ## Published examples and notes
+
+- [Framewright identity film: Remotion](https://youtu.be/s3BBP698_r8)
 
 - [CoqPi cinematic React demo](https://youtu.be/rqKXx_Z5AR0)
 
