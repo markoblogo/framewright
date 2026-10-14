@@ -2,7 +2,8 @@
 
 Question: can Flute produce a useful promo from a real, previously untested ABVX
 React application? Owner selected CoqPi. The local source branch is
-`experiment/flute-coqpi`. The run used its actual components, synthetic demo inputs,
+`experiment/flute-coqpi` ([CoqPi draft PR #8](https://github.com/markoblogo/CoqPi/pull/8),
+commit `83bd7ac`). The run used its actual components, synthetic demo inputs,
 and restored host style scopes. It did not use real recordings, credentials or
 live AI generation. No Electron main/preload or production service was changed.
 
