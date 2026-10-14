@@ -7,6 +7,7 @@ keeps a small selection/evidence layer instead of importing another complete sta
 
 | Project / inspected revision | Useful idea for Framewright | Boundary / next check |
 | --- | --- | --- |
+| [AI Video Storyboard](https://github.com/aicontentskills/ai-video-storyboard-skill/tree/93f8a6d6935858bc4acd7ff3bbea2411edf88caa), MIT declared in README/SKILL | Shared visual language plus coordinated shots, prompts and post-production notes | Raw text trial 3/4; missing references and fixed defaults documented. Original [Framewright adapter](storyboard-adapter.md) checked 4/4 as part of the integrated suite; no upstream skill vendored or media generated |
 | [ViMax](https://github.com/HKUDS/ViMax/blob/fd4b72e7731be6e5f88486206d25ea59849b0285/readme.md), MIT | Story → storyboard → reference assets → shots; per-shot checkpoints and resumable work | Adopt inspectable stages and approval before paid motion; do not copy unbounded autonomous generation or assume provider access |
 | [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo/blob/c184fccd05621d7a654b6e6ea34102a0a0de0657/README.md), MIT | Explicit script/material/voice/subtitle/music stages and custom-audio override | Preserve asset provenance and owner audio; no automatic stock collection or bulk public publishing |
 | [Editly](https://github.com/mifi/editly/blob/dc46674052eacd15ef6e0f563a58eb378b3804ad/README.md), MIT | Declarative clip/layer manifest, durations, transitions and audio tracks | Useful contract pattern; its default duration fitting can retime media, so locked picture/music needs an explicit preservation check |
@@ -30,8 +31,10 @@ keeps a small selection/evidence layer instead of importing another complete sta
    normalise only at the declared handoff, then check the encoded master.
 
 These are attributed design proposals, not copied upstream code or imported skills.
-The current planner already provides explicit choices and evidence states; a shot
-checkpoint engine and storyboard approval interface are **not implemented** here.
+The planner provides explicit choices and evidence states. The new textual
+[storyboard contract](storyboard-adapter.md) adds proposed/approved plan status and
+per-shot tool handoffs. A resumable shot-checkpoint engine and interactive approval
+interface are **not implemented**; a text contract is not such a runtime.
 
 ## Creative workflow references
 

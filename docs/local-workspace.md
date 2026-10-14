@@ -24,3 +24,19 @@ loading stall. Do not automatically reinstall or relocate the archived workspace
 - /Volumes/Work/remotion-pilot-20261014 — official skill mirror, isolated Remotion
   composition, browser/cache, native MP4/still, audio sources, English YouTube copy
   and QA logs. Our authored source is also retained in examples/remotion-framewright.
+
+## Text-only evaluations and new source inspection
+
+- /Volumes/Work/framewright-transfer-20261014 — first-exposure 12-case router
+  trial; unchanged actor answers and both grading-context attempts.
+- /Volumes/Work/framewright-storyboard-upstream-20261014 — pinned upstream source
+  inspection; not a global installation or a vendored skill.
+- /Volumes/Work/framewright-storyboard-test-20261014 — four raw upstream text
+  cases, no media generation.
+- /Volumes/Work/framewright-storyboard-integrated-20261014 — complete 46-case
+  integrated-source run, raw traces, package smoke and fresh-clone checks.
+
+Public evidence lives in benchmarks/router and benchmarks/storyboard. Original
+upstream files, full machine-local streams and trial workspaces stay on Work.
+Source-snapshot reconstruction is verified without old Git objects; it does not
+establish clean-machine media-render reproducibility. No new render or release.

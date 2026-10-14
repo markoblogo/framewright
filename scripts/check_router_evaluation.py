@@ -144,7 +144,7 @@ def check_packet(root):
 def check_qualification(repo, path):
     repo = Path(repo).resolve()
     record = json.loads(Path(path).read_text())
-    require(record.get('schema_version') == 1 and record.get('status') == 'model_checked_planning_scope' and record.get('scope') == 'synthetic_read_only_planning', 'Unsupported qualification scope')
+    require(record.get('schema_version') == 1 and record.get('status') in {'model_checked_planning_scope', 'evaluated_with_gaps'} and record.get('scope') == 'synthetic_read_only_planning', 'Unsupported qualification scope')
     relative = record.get('packet')
     require(isinstance(relative, str) and relative and not Path(relative).is_absolute() and '..' not in Path(relative).parts, 'Unsafe qualification packet path')
     packet = (repo / relative).resolve()
@@ -152,7 +152,10 @@ def check_qualification(repo, path):
     manifest = json.loads((packet / 'manifest.json').read_text())
     require(manifest.get('schema_version') == 3, 'Qualification needs calibrated grading and source snapshot')
     counts = check_packet(packet)
-    require(counts['cases'] == counts['passed'], 'Incomplete behavioural qualification')
+    if record['status'] == 'model_checked_planning_scope':
+        require(counts['cases'] == counts['passed'], 'Incomplete behavioural qualification')
+    else:
+        require(counts['passed'] < counts['cases'], 'Gap status needs retained behavioural failures')
     cases = indexed(json.loads((packet / 'cases.json').read_text()), 'qualification cases')
     expected = record.get('case_ids', [])
     require(isinstance(expected, list) and len(set(expected)) == len(expected) and set(expected) == cases.keys(), 'Qualification case set differs')
@@ -197,7 +200,7 @@ def check_qualification(repo, path):
             execution = result['execution']
             require(execution['files_before'] == execution['files_after'], f'{identity}: changed actor workspace')
             require(execution['files_before'].get(actor_path) == digest, f'{identity}: mixed evaluated sources')
-    return {'status': record['status'], 'scope': record['scope'], 'cases': counts['cases']}
+    return {'status': record['status'], 'scope': record['scope'], 'cases': counts['cases'], 'passed': counts['passed']}
 
 
 if __name__ == '__main__':

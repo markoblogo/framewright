@@ -105,6 +105,25 @@ class QualificationGateTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Incomplete behavioural qualification'):
             evidence.check_qualification(self.root, self.path)
 
+    def test_gap_status_cannot_hide_a_complete_pass(self):
+        self.record['status'] = 'evaluated_with_gaps'
+        self.save()
+        with self.assertRaisesRegex(ValueError, 'Gap status needs'):
+            evidence.check_qualification(self.root, self.path)
+
+    def test_current_sources_can_retain_a_failed_evaluation_without_promotion(self):
+        shutil.rmtree(self.packet)
+        shutil.copytree(REPO / 'benchmarks/router/2026-10-14/qa-v3', self.packet)
+        shutil.rmtree(self.root / 'skills')
+        with zipfile.ZipFile(self.packet / 'source-snapshot.zip') as archive:
+            archive.extractall(self.root / 'skills')
+        self.record['status'] = 'evaluated_with_gaps'
+        self.record['case_ids'] = [x['id'] for x in json.loads((self.packet / 'cases.json').read_text())]
+        self.save()
+        result = evidence.check_qualification(self.root, self.path)
+        self.assertEqual(result['status'], 'evaluated_with_gaps')
+        self.assertEqual((result['passed'], result['cases']), (29, 30))
+
     def test_partial_case_set_cannot_promote(self):
         self.record['case_ids'] = self.record['case_ids'][:8]
         self.save()

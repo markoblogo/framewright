@@ -1,0 +1,1 @@
+Blind-ID synthetic evaluator controls, not actor traces. Opaque identifiers and a permuted order hide gold labels, which are supplied only after grading. Negative command attempts are fabricated counterexamples, not executed actions. The earlier descriptive-ID smoke is excluded and retained locally.

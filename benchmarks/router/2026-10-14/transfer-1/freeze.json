@@ -1,0 +1,46 @@
+{
+  "protocol_version": 2,
+  "evaluated_source_commit": "6af1f50fe8fc3d01dfbfc90cfab1a7079f597a7d",
+  "model": "gpt-6.1-sol",
+  "effort": "medium",
+  "runtime": "codex-cli 0.162.0-alpha.17.2",
+  "scope": "12 new transfer scenarios frozen before actor execution and before storyboard integration; not old-case paraphrase-only retests",
+  "case_sha256": "abd8aaf1a51f4bff4d2128721004406ddeec68622c7ef16a1190e68a299cb75c",
+  "protocol_sha256": "8d0a290354ba11f225b8d50a9678f23299eb80834d2872ef12b97a420a36fddc",
+  "source_tree_sha256": {
+    "skills/video-production-router/SKILL.md": "2fd82b1c5752b597073ba84562492d8c3c1959180c4e98c25d9003e6737c5087",
+    "skills/video-production-router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+    "skills/video-production-router/references/handoff.md": "0922890587e919715729dd84514d0a92b1b9ab40696fcc4f9638eea5d0f2f043",
+    "skills/video-production-router/references/music-workflows.md": "4b008a8c4973a4cd1a9fe2a5c8f04bab947101fb38c21109c95cce1a83489502",
+    "skills/video-production-router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+    "skills/video-production-router/references/scenarios.json": "45d9a2ae1de83716c324a9e946b68a6416093b659ed24b91104dab7bc7e5de75",
+    "skills/video-production-router/references/selection.md": "e783c097a7ff8ed2bfd418fa4f77c42851ac7a578cfa396ca58434ad882f38fd",
+    "skills/video-production-router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+    "skills/video-production-router/references/tool-matrix.md": "285c4e9908e87062f6d2c2a2320f1c63330edf9bedadbee080898ad296e91adb",
+    "skills/video-production-router/references/tools.json": "3b06dd0da5eee72cc40298f33ee535b272b1710a82a5856ed671e1a0e6fed3d7",
+    "skills/video-production-router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+    "skills/video-production-router/scripts/plan.py": "96e08b12b6bda67254d68f8260b178098d003d780e2a6b8748b65a74483aefc4"
+  },
+  "prompt_sha256": {
+    "low-motion-diagram": "ec804da81c009c960e0b39485bcac39fad3f1cebdd43bc53a4bd6c3d921b62b1",
+    "print-native-still": "7b9e6d544404072c002000eafef1bda9803b9cdf87611f93a47c41cbdce9a345",
+    "screenshots-explicit-flute": "7b3e654c558bf85ec4e63d9c22bfe18eed515875c4c344f536a52caf84bb032a",
+    "three-style-blocks": "85419df02221c0bfbd1814db1ac34fd259ef748c90db623a0e7ee9278da2a60f",
+    "locked-score-frames": "08edcfe3c7ddbe357993fdf78d5da0ad1cbc8a721d8f1e63abd23e262836cf5d",
+    "commercial-free-song": "bb786e733403ca81ec2eb786402a0f46ae83f38617cc0dc23fed673544b6619d",
+    "credit-ceiling": "a927e01e6f8b3cd78eea458374be04f6a61918bae319e2caba6c857beb981a31",
+    "zero-data-egress": "2438255100f96dbccd4f0806943822527f9f00eea784d7bd0b828f958249b1ed",
+    "effects-evidence-cap": "4a7cdecafac9dc94dd80cf5b3c8eccea230fe16b766b74948f7808362355bae2",
+    "captioned-human-voice": "648e1ec4b9238d7edb6b6e26c48e00e309bcac024e7a7346e7a304104eac6100",
+    "budget-style-conflict": "8f08e771fb6d0495a8d9916e2ed7cb0fad30c8f31a5f45c6de4ab8cb50571099",
+    "finishing-compare-only": "5b8b7c2a9fa3bbfd6b8d970f84208211a7327ef80fa290a65333f2c783ef5173"
+  },
+  "runner_sha256": "dc6251458a6b5f95c38ee54d905f65c44acfd522fad5caeb273809a76c0e816d",
+  "cost": "NOT_AVAILABLE; model usage retained",
+  "limits": "Synthetic read-only planning, not renderer execution or safety with production privileges",
+  "grading_context_repair": "Initial grading omitted supplied source fixture text; original actor answers retained unchanged and all cases regraded with source text. Initial grades retained separately, not counted.",
+  "grader_input_sha256": {
+    "batch-1.json": "6069b37607d014aff2695efafbe768fe24d4b4342d1caaf63be771877f49225c",
+    "batch-2.json": "7395b492e5d3f77bf0644c40473364ddb7db70109a70d076e1f597b86a7372b4"
+  }
+}

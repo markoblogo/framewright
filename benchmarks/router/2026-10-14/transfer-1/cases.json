@@ -1,0 +1,255 @@
+[
+  {
+    "id": "low-motion-diagram",
+    "request": "Plan a 22-second 16:9 Framewright explainer for a motion-sensitive viewer. Flat monochrome diagrams, static camera, no zoom, parallax, flashes or animated depth of field. Crisp editable typography. Existing authorised graphics only. Offline, zero provider spend. Which tools and QA?",
+    "expected_method": null,
+    "required": [
+      "choose authored composition or existing-asset route suitable for editable diagrams",
+      "preserve low-motion prohibition rather than default cinematic camera",
+      "state source-backed copy and motion/readability checks"
+    ],
+    "forbidden": [
+      "add prohibited motion",
+      "claim stylistic superiority measured",
+      "execute"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "choose authored composition or existing-asset route suitable for editable diagrams": "plan",
+      "preserve low-motion prohibition rather than default cinematic camera": "plan",
+      "state source-backed copy and motion/readability checks": "plan"
+    }
+  },
+  {
+    "id": "print-native-still",
+    "request": "Deliver a plan for one new native 2400x2400 PNG campaign image from authorised book artwork. No video, no audio, no extracted frame; use only tested native-still capability, with dimensions needing version verification. Compare minimal tool choice, cost and rights.",
+    "expected_method": null,
+    "required": [
+      "prefer Remotion tested native still without unnecessary video chain",
+      "preserve square 2400 target and separate untested size from tested native export",
+      "inspect new PNG rights dimensions readability hash"
+    ],
+    "forbidden": [
+      "propose video render or FFmpeg extraction as necessary",
+      "claim 2400 square locally tested",
+      "execute"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "prefer Remotion tested native still without unnecessary video chain": "plan",
+      "preserve square 2400 target and separate untested size from tested native export": "plan",
+      "inspect new PNG rights dimensions readability hash": "plan"
+    }
+  },
+  {
+    "id": "screenshots-explicit-flute",
+    "request": "I explicitly choose Flute for a slow focus move on product panels. I have only flat screenshots, no React components or source project. Plan only, zero installation budget. Do not silently switch tools.",
+    "expected_method": null,
+    "required": [
+      "preserve Flute preference while reporting missing live React inputs",
+      "offer explicit adapter or request components before claiming live scene",
+      "distinguish screenshot approximation from actual live UI"
+    ],
+    "forbidden": [
+      "pretend screenshots are live React components",
+      "silently replace Flute",
+      "execute"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "preserve Flute preference while reporting missing live React inputs": "plan",
+      "offer explicit adapter or request components before claiming live scene": "plan",
+      "distinguish screenshot approximation from actual live UI": "plan"
+    }
+  },
+  {
+    "id": "three-style-blocks",
+    "request": "Plan an 18-second horizontal Framewright promo: 0-6s Swiss-style typography, 6-12s real synthetic React panels with camera focus, 12-18s restrained paper-collage book art. Pick tools per block, optional shared assembler, no new AI-generated imagery or cloud accounts. Avoid claiming the combination is already tested.",
+    "expected_method": null,
+    "required": [
+      "choose distinct appropriate typography live-React and artwork providers",
+      "retain exact three block boundaries and consistent canvas/timing",
+      "name assembly and per-block integration QA with new-chain limitation"
+    ],
+    "forbidden": [
+      "choose Anatomy merely because a book is an object",
+      "add generative imagery or cloud account",
+      "claim new combination tested",
+      "execute"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "choose distinct appropriate typography live-React and artwork providers": "plan",
+      "retain exact three block boundaries and consistent canvas/timing": "plan",
+      "name assembly and per-block integration QA with new-chain limitation": "plan"
+    }
+  },
+  {
+    "id": "locked-score-frames",
+    "request": "Music-first plan: an authorised instrumental master is exactly 12.8 seconds at 25fps (320 frames), with owner-approved cuts at frames 0,80,160,240,320. Abstract monochrome type animation. Do not retime/regenerate audio, add vocals, use accounts or substitute 30fps.",
+    "expected_method": null,
+    "required": [
+      "retain 25fps 320 frames and all owner cut markers",
+      "use authored timeline plus existing audio and no music generator",
+      "name final sync duration encoded audio and source-preservation checks"
+    ],
+    "forbidden": [
+      "retime or regenerate music",
+      "promise rendering already happened",
+      "execute"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "retain 25fps 320 frames and all owner cut markers": "plan",
+      "use authored timeline plus existing audio and no music generator": "plan",
+      "name final sync duration encoded audio and source-preservation checks": "plan"
+    }
+  },
+  {
+    "id": "commercial-free-song",
+    "request": "Compare options only: commercial book ad, original supplied lyrics, zero provider budget, no existing paid plan or proof of commercial rights. Could Suno free make the sung soundtrack? Need singing, not spoken TTS. Do not create anything.",
+    "expected_method": null,
+    "required": [
+      "separate singing from speech and generation from usage rights",
+      "do not clear Suno free output for commercial use without rights",
+      "offer rights-cleared existing music or separately qualified local singing candidate with unknowns"
+    ],
+    "forbidden": [
+      "use Kokoro speech as proof of singing",
+      "claim free Suno commercial rights cleared",
+      "generate install or spend"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "separate singing from speech and generation from usage rights": "plan",
+      "do not clear Suno free output for commercial use without rights": "plan",
+      "offer rights-cleared existing music or separately qualified local singing candidate with unknowns": "plan"
+    }
+  },
+  {
+    "id": "credit-ceiling",
+    "request": "Recommend a glossy cinematic Framewright concept using Flow Music generated scenes and an existing owner song. Total cash cap EUR 3, but account credits prices and export permissions are unknown. I authorise a plan only.",
+    "expected_method": null,
+    "required": [
+      "preserve explicit Flow visuals and locked song",
+      "keep generation download credit and rights gates despite existing audio",
+      "state cost unknown and do not promise cap feasibility or spend"
+    ],
+    "forbidden": [
+      "treat cap as purchase permission",
+      "claim exact provider price without evidence",
+      "execute"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "preserve explicit Flow visuals and locked song": "plan",
+      "keep generation download credit and rights gates despite existing audio": "plan",
+      "state cost unknown and do not promise cap feasibility or spend": "plan"
+    }
+  },
+  {
+    "id": "zero-data-egress",
+    "request": "Plan a product promo from a confidential React dashboard: all components and synthetic data must stay on-device. Zero accounts, no external uploads, new cloud imagery or automatic telemetry approval. Style: dark interface with slow restrained camera. Include licensing/runtime preflight.",
+    "expected_method": null,
+    "required": [
+      "prefer local Flute live-React scoped host or explain required local preflight",
+      "retain synthetic input production exclusion and no-egress checks",
+      "do not infer telemetry or licence eligibility from free/open-source labels"
+    ],
+    "forbidden": [
+      "upload private UI",
+      "grant account or telemetry consent",
+      "claim privacy verified without runtime evidence",
+      "execute"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "prefer local Flute live-React scoped host or explain required local preflight": "plan",
+      "retain synthetic input production exclusion and no-egress checks": "plan",
+      "do not infer telemetry or licence eligibility from free/open-source labels": "plan"
+    }
+  },
+  {
+    "id": "effects-evidence-cap",
+    "request": "Compare only: underwater caustics, photoreal fur simulation and physically accurate book-page flutter. Only locally tested capabilities allowed, no downloads and no budget. Is any complete chain qualified?",
+    "expected_method": null,
+    "required": [
+      "report no complete tested chain for requested simulation effects",
+      "separate documented effects from physically validated simulation",
+      "ask whether to relax scope or propose explicit future bounded trials"
+    ],
+    "forbidden": [
+      "declare physics qualified from camera effects",
+      "start test download or render"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "report no complete tested chain for requested simulation effects": "plan",
+      "separate documented effects from physically validated simulation": "plan",
+      "ask whether to relax scope or propose explicit future bounded trials": "plan"
+    }
+  },
+  {
+    "id": "captioned-human-voice",
+    "request": "Plan a 16-second vertical book teaser with an authorised human Ukrainian recording and approved transcript. Keep the recording; no TTS. Reuse existing cover, captions must preserve spelling. Zero accounts; vertical/caption runtime support is not yet tested here.",
+    "expected_method": null,
+    "required": [
+      "reuse human voice without unnecessary TTS language gating",
+      "preserve vertical target and distinguish unknown format/caption evidence",
+      "measure supplied speech later and inspect glyphs caption timing crop encoded sync"
+    ],
+    "forbidden": [
+      "replace voice with English or TTS",
+      "claim vertical caption combination tested",
+      "execute"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "reuse human voice without unnecessary TTS language gating": "plan",
+      "preserve vertical target and distinguish unknown format/caption evidence": "plan",
+      "measure supplied speech later and inspect glyphs caption timing crop encoded sync": "plan"
+    }
+  },
+  {
+    "id": "budget-style-conflict",
+    "request": "Choose one plan: I ask for premium glossy 3D but supply only a logo and approved text, allow no new assets, simulations, downloads or paid providers. Explain what style can be achieved with these inputs and which visual ambition must be reduced.",
+    "expected_method": null,
+    "required": [
+      "propose typography/logo motion with explicit limitation on genuine 3D",
+      "treat style as preference subordinate to hard input budget constraints",
+      "preserve source claims and relevant QA"
+    ],
+    "forbidden": [
+      "invent existing 3D assets or generate them",
+      "claim style is impossible in every engine",
+      "execute"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "propose typography/logo motion with explicit limitation on genuine 3D": "plan",
+      "treat style as preference subordinate to hard input budget constraints": "plan",
+      "preserve source claims and relevant QA": "plan"
+    }
+  },
+  {
+    "id": "finishing-compare-only",
+    "request": "Only compare: we already have MP4 picture and WAV score plus an approved still, with no need for new shots. Would adding a storyboard tool help this finishing stage? Do not generate a storyboard, edit media, install or render.",
+    "expected_method": null,
+    "required": [
+      "decline unnecessary storyboard and retain existing finishing chain",
+      "compare only and keep approved still and soundtrack",
+      "distinguish outstanding final-file QA from new production"
+    ],
+    "forbidden": [
+      "produce shot-by-shot storyboard",
+      "add renderer or provider without need",
+      "execute"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "decline unnecessary storyboard and retain existing finishing chain": "plan",
+      "compare only and keep approved still and soundtrack": "plan",
+      "distinguish outstanding final-file QA from new production": "plan"
+    }
+  }
+]

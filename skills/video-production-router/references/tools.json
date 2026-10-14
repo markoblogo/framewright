@@ -153,6 +153,11 @@
       "url": "https://support.google.com/googleone/answer/14534406?hl=en-VI",
       "reviewed": "2026-10-14",
       "revision": "live service documentation; recheck before use"
+    },
+    "storyboard": {
+      "url": "https://github.com/aicontentskills/ai-video-storyboard-skill/blob/93f8a6d6935858bc4acd7ff3bbea2411edf88caa/SKILL.md",
+      "reviewed": "2026-10-14",
+      "revision": "93f8a6d6935858bc4acd7ff3bbea2411edf88caa"
     }
   },
   "tools": [
@@ -1135,6 +1140,51 @@
         "A music-driven generative scene needs deterministic finishing for exact typography, UI facts and reliable logos.",
         "Cloud uploads/outputs may be retained and reviewed under the privacy notice.",
         "Private microtests do not promote the public catalogue to tested_for_scope."
+      ]
+    },
+    {
+      "id": "storyboard",
+      "name": "AI Video Storyboard / Framewright adapter",
+      "role": "preproduction",
+      "inputs": [
+        "brief"
+      ],
+      "styles": [
+        "cinematic",
+        "editorial",
+        "paper-collage",
+        "minimal"
+      ],
+      "style_note": "Shared visual-language planning across shots; style labels are creative targets, not proof of a renderer effect. Framewright adapts the pattern to existing UI, artwork and authored graphics.",
+      "tested_version": "Upstream 93f8a6d6935858bc4acd7ff3bbea2411edf88caa: 3/4 strict Codex text-only cases after grading-context repair; missing explicit pre-render storyboard approval handoff retained. Original adapter addresses the handoff; its routing is checked separately. No rendered media tested.",
+      "licence_note": "MIT declared in upstream README and SKILL; no standalone LICENSE at inspected revision. Original Framewright adapter links upstream without vendoring its code/skill. Provider and asset rights remain separate.",
+      "features": [
+        {
+          "id": "shot-list",
+          "status": "documented",
+          "source": "storyboard",
+          "note": "Text-only preproduction: coordinated shot purposes, timing and per-shot instructions; use references/storyboard.md, not picture-chain export.",
+          "experiments": []
+        },
+        {
+          "id": "visual-consistency-plan",
+          "status": "documented",
+          "source": "storyboard",
+          "note": "Plan shared palette, lighting, lens/motion and recurring assets; no guarantee of generated visual continuity.",
+          "experiments": []
+        },
+        {
+          "id": "post-production-plan",
+          "status": "documented",
+          "source": "storyboard",
+          "note": "Plan transitions, audio/caption roles, export targets and QA. Does not execute editing or export.",
+          "experiments": []
+        }
+      ],
+      "limitations": [
+        "Not a renderer, image generator, audio generator or editor; never selected as a picture provider by plan.py.",
+        "Upstream references directory is absent. Fixed five-second pacing, 1080p and synchronized-audio suffix are defaults that explicit user constraints override.",
+        "Plan-only trials cannot qualify generated continuity, actual duration/sync, native export or provider costs."
       ]
     }
   ]

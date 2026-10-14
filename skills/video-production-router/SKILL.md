@@ -20,6 +20,10 @@ it does not replace rendering skills or confer permission to publish.
    and only relevant profiles in `references/tools.json`. The optional offline
    `scripts/plan.py BRIEF.json` shortlists tools; it never executes the plan. Distinguish
    tested, documented, failed and unknown features; preserve cost/language/format limits.
+   For a new multi-shot video without a useful shot plan, read the
+   [storyboard adapter](references/storyboard.md) and establish its shot/continuity
+   handoff before production. Skip it for comparison, finishing, recuts or a single
+   shot; it is a preparation layer, not a renderer or permission to generate clips.
    Then read [the catalogue](references/catalog.json), then only the matching section
    of [the recipes](references/recipes.md). Recommend a default with one sentence
    of evidence and relevant limits. If the user only asks to compare, stop there.

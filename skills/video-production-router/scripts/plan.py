@@ -94,7 +94,7 @@ def plan(brief, registry):
         def chain_solution(main):
             # Exact subsets are small for this curated catalogue. Compare complete
             # chains, not a greedy alphabetical path or only direct capabilities.
-            extras = sorted((t for t in tools.values() if t != main and t['role'] != 'music-provider' and (
+            extras = sorted((t for t in tools.values() if t != main and t['role'] not in {'music-provider', 'preproduction'} and (
                 any(acceptable(caps[t['id'], f]) for f in requested) or
                 (t['role'] in {'renderer', 'orchestrator'} and acceptable(caps[t['id'], 'video-export']))
             )), key=lambda t: (t['role'] == 'finisher', t['id']))

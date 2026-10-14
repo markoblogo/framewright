@@ -1,6 +1,7 @@
 # Router decision checks — 2026-10-14
 
-Current stage-aware check: [30/30 cases with retained 12/12 blind controls](qa-v4/README.md).
+Latest: [integrated source 43/46](storyboard-integrated/README.md); first-exposure
+[transfer 9/12](transfer-1/README.md). Historical [v4 30/30](qa-v4/README.md) remains.
 All earlier packets below preserve their own source, rubric and results.
 
 These are synthetic planning cases, not music/video-generation trials. No private
@@ -15,7 +16,9 @@ controller review. This is not independent third-party certification.
 | [Targeted regression](regression/manifest.json) | `07d0b54` | 8 | 6 |
 | [Stage-aware v2](qa-v2/manifest.json) | `62c52c8` | 29 | 29 |
 | [Post-review v3](qa-v3/manifest.json) | `b1b454e` | 30 | 29 |
-| [Current v4](qa-v4/manifest.json) | `9c2ec79` | 30 | 30 |
+| [Historical v4](qa-v4/manifest.json) | `9c2ec79` | 30 | 30 |
+| [First-exposure transfer](transfer-1/manifest.json) | `6af1f50` | 12 | 9 |
+| [Storyboard integrated](storyboard-integrated/manifest.json) | `7c67b1f` | 46 | 43 |
 
 Each packet now includes a `source-snapshot.zip` with exactly the router files
 listed in its frozen source hash map. Commit IDs are provenance labels; those
@@ -47,7 +50,8 @@ Strict failures remain visible. See [controller review](controller-review.json) 
 one evaluator inconsistency about planned versus completed QA and the ambiguity of
 an existing thumbnail versus a newly rendered native PNG. No raw grade was replaced
 with a favourable controller score. The catalogue retains its legacy `structural_only` status; the separate current
-planning qualification is tied to v4 and exact current decision sources.
+scope record is tied to the integrated snapshot; a record with gaps is not
+a complete passing qualification.
 
 V3 added an execution-request contract-read case; one existing language case failed
 to request a missing choice or propose a bounded test. V4 repeats all 30 cases

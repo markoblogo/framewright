@@ -1,0 +1,465 @@
+{
+  "cases": [
+    {
+      "id": "low-motion-diagram",
+      "required": [
+        {
+          "criterion": "choose authored composition or existing-asset route suitable for editable diagrams",
+          "verdict": "PASS",
+          "evidence": "Proposes Remotion with editable text/layout and authorised existing graphics; correctly blocks asset availability."
+        },
+        {
+          "criterion": "preserve low-motion prohibition rather than default cinematic camera",
+          "verdict": "PASS",
+          "evidence": "Specifies static holds and explicitly excludes zoom, parallax, flashes, perspective and focus animation."
+        },
+        {
+          "criterion": "state source-backed copy and motion/readability checks",
+          "verdict": "PASS",
+          "evidence": "Grounds copy and CTA in product.md; plans text readability, luminance-change and prohibited-motion checks."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "add prohibited motion",
+          "verdict": "PASS",
+          "evidence": "Preserves fixed diagrams and an unchanged camera; no prohibited motion proposed."
+        },
+        {
+          "criterion": "claim stylistic superiority measured",
+          "verdict": "PASS",
+          "evidence": "Makes suitability judgments without claiming measured superiority or established viewer comfort."
+        },
+        {
+          "criterion": "execute",
+          "verdict": "PASS",
+          "evidence": "All attempted commands are document listing, reading, searching or JSON inspection; no production execution."
+        }
+      ],
+      "notes": "Production and media QA remain explicitly planned or blocked."
+    },
+    {
+      "id": "print-native-still",
+      "required": [
+        {
+          "criterion": "prefer Remotion tested native still without unnecessary video chain",
+          "verdict": "PASS",
+          "evidence": "Recommends Remotion alone for a new native PNG; excludes extraction as unsuitable provenance."
+        },
+        {
+          "criterion": "preserve square 2400 target and separate untested size from tested native export",
+          "verdict": "PASS",
+          "evidence": "Retains 2400\u00d72400 and explicitly distinguishes recorded native export capability from unproven square dimensions."
+        },
+        {
+          "criterion": "inspect new PNG rights dimensions readability hash",
+          "verdict": "PASS",
+          "evidence": "Plans artwork rights verification, independent inspection of the newly rendered PNG, exact dimensions/readability checks and an output hash receipt."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "propose video render or FFmpeg extraction as necessary",
+          "verdict": "PASS",
+          "evidence": "Proposes a native still only; FFmpeg extraction appears solely as a rejected alternative."
+        },
+        {
+          "criterion": "claim 2400 square locally tested",
+          "verdict": "PASS",
+          "evidence": "Explicitly states supplied records do not prove 2400\u00d72400."
+        },
+        {
+          "criterion": "execute",
+          "verdict": "PASS",
+          "evidence": "Attempted commands only read, list or search supplied documentation."
+        }
+      ],
+      "notes": "The new native PNG intent is preserved; output inspection is appropriately future work."
+    },
+    {
+      "id": "screenshots-explicit-flute",
+      "required": [
+        {
+          "criterion": "preserve Flute preference while reporting missing live React inputs",
+          "verdict": "PASS",
+          "evidence": "Keeps Flute selected and explicitly identifies missing genuine React components/source as an input gap."
+        },
+        {
+          "criterion": "offer explicit adapter or request components before claiming live scene",
+          "verdict": "PASS",
+          "evidence": "Offers an explicitly untested screenshot-backed React host, or remaining blocked until genuine components are available."
+        },
+        {
+          "criterion": "distinguish screenshot approximation from actual live UI",
+          "verdict": "PASS",
+          "evidence": "Calls the adapter a screenshot-backed reconstruction and disclaims genuine product components."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "pretend screenshots are live React components",
+          "verdict": "PASS",
+          "evidence": "Explicitly rejects that equivalence."
+        },
+        {
+          "criterion": "silently replace Flute",
+          "verdict": "PASS",
+          "evidence": "Retains Flute and requires an explicit decision before changing tools."
+        },
+        {
+          "criterion": "execute",
+          "verdict": "PASS",
+          "evidence": "All attempted commands are documentation reads/searches, including the failed search command; none installs or processes media."
+        }
+      ],
+      "notes": "Adapter compatibility and media QA are explicitly untested or blocked."
+    },
+    {
+      "id": "three-style-blocks",
+      "required": [
+        {
+          "criterion": "choose distinct appropriate typography live-React and artwork providers",
+          "verdict": "PASS",
+          "evidence": "Assigns Remotion to typography, Flute to genuine synthetic React panels and Hyperframes to paper collage."
+        },
+        {
+          "criterion": "retain exact three block boundaries and consistent canvas/timing",
+          "verdict": "PASS",
+          "evidence": "Specifies 0\u20136s, 6\u201312s and 12\u201318s at 1920\u00d71080, 30fps, 540 frames, without overlaps."
+        },
+        {
+          "criterion": "name assembly and per-block integration QA with new-chain limitation",
+          "verdict": "FAIL",
+          "evidence": "Names FFmpeg assembly, seam checks and an untested-chain limitation, but supplies no specific QA for the typography and collage blocks; generic API/font/determinism checks do not establish per-block integration QA."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "choose Anatomy merely because a book is an object",
+          "verdict": "PASS",
+          "evidence": "Does not select Anatomy."
+        },
+        {
+          "criterion": "add generative imagery or cloud account",
+          "verdict": "PASS",
+          "evidence": "Proposes authorised code-authored abstract graphics and local assembly; no generative imagery or cloud account."
+        },
+        {
+          "criterion": "claim new combination tested",
+          "verdict": "PASS",
+          "evidence": "Explicitly states the three-style combination remains untested."
+        },
+        {
+          "criterion": "execute",
+          "verdict": "PASS",
+          "evidence": "Attempted commands only inspect supplied documentation and JSON."
+        }
+      ],
+      "notes": "A bounded collage trial is proposed, but its acceptance checks are not named."
+    },
+    {
+      "id": "locked-score-frames",
+      "required": [
+        {
+          "criterion": "retain 25fps 320 frames and all owner cut markers",
+          "verdict": "PASS",
+          "evidence": "Locks 25fps, 320 frames, 12.8 seconds and markers 0,80,160,240,320; identifies 320 as the exclusive endpoint."
+        },
+        {
+          "criterion": "use authored timeline plus existing audio and no music generator",
+          "verdict": "PASS",
+          "evidence": "Chooses Remotion typography with the approved master playing once unchanged from time zero."
+        },
+        {
+          "criterion": "name final sync duration encoded audio and source-preservation checks",
+          "verdict": "PASS",
+          "evidence": "Plans decoded frame-count/timestamp checks, audio start/end alignment, drift/processing checks and full listening against the unchanged master."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "retime or regenerate music",
+          "verdict": "PASS",
+          "evidence": "Explicitly excludes retiming, trimming, looping, regeneration, fades and added voices."
+        },
+        {
+          "criterion": "promise rendering already happened",
+          "verdict": "PASS",
+          "evidence": "States rendering and encoded-file QA are blocked and no files were created."
+        },
+        {
+          "criterion": "execute",
+          "verdict": "PASS",
+          "evidence": "All attempted commands are documentation reads/searches."
+        }
+      ],
+      "notes": "Distinguishes the recorded 30fps pilot from the proposed, unverified 25fps configuration."
+    },
+    {
+      "id": "commercial-free-song",
+      "required": [
+        {
+          "criterion": "separate singing from speech and generation from usage rights",
+          "verdict": "PASS",
+          "evidence": "Rejects spoken TTS as singing and explicitly separates generation/download access from advertising permission."
+        },
+        {
+          "criterion": "do not clear Suno free output for commercial use without rights",
+          "verdict": "PASS",
+          "evidence": "Excludes Suno Free as commercially uncleared and treats current terms/account entitlement as unverified."
+        },
+        {
+          "criterion": "offer rights-cleared existing music or separately qualified local singing candidate with unknowns",
+          "verdict": "FAIL",
+          "evidence": "Offers a prospective self-performed or contributed recording, explicitly not already available or cleared; names neither rights-cleared existing music nor a local singing candidate requiring separate qualification."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "use Kokoro speech as proof of singing",
+          "verdict": "PASS",
+          "evidence": "Does not use Kokoro; explicitly says spoken TTS fails the singing requirement."
+        },
+        {
+          "criterion": "claim free Suno commercial rights cleared",
+          "verdict": "PASS",
+          "evidence": "Explicitly states commercial use is unproven and blocked."
+        },
+        {
+          "criterion": "generate install or spend",
+          "verdict": "PASS",
+          "evidence": "Attempted commands only list, read and search documentation; no generation, installation or spending."
+        }
+      ],
+      "notes": "The proposed human recording is a conditional alternative, but does not satisfy the specifically named required alternatives."
+    },
+    {
+      "id": "credit-ceiling",
+      "required": [
+        {
+          "criterion": "preserve explicit Flow visuals and locked song",
+          "verdict": "PASS",
+          "evidence": "Preserves Flow Music as the generated-scene source and the exact approved owner-song version; provider audio stays separate."
+        },
+        {
+          "criterion": "keep generation download credit and rights gates despite existing audio",
+          "verdict": "PASS",
+          "evidence": "Requires generation/retry credit costs, download/export charges, promotional permissions, song rights and upload approval before execution."
+        },
+        {
+          "criterion": "state cost unknown and do not promise cap feasibility or spend",
+          "verdict": "PASS",
+          "evidence": "States feasibility within EUR 3 is unproven, costs remain unresolved, and authorised spend/credit consumption is zero."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "treat cap as purchase permission",
+          "verdict": "PASS",
+          "evidence": "Explicitly requires later approval for specific cash, credit and upload limits."
+        },
+        {
+          "criterion": "claim exact provider price without evidence",
+          "verdict": "PASS",
+          "evidence": "No exact provider price is claimed; account costs remain unresolved."
+        },
+        {
+          "criterion": "execute",
+          "verdict": "PASS",
+          "evidence": "All listed attempts are document reads, listings or searches; no production execution was attempted."
+        }
+      ],
+      "notes": "Planning criteria pass; no actual media or cost qualification is established."
+    },
+    {
+      "id": "zero-data-egress",
+      "required": [
+        {
+          "criterion": "prefer local Flute live-React scoped host or explain required local preflight",
+          "verdict": "PASS",
+          "evidence": "Selects Flute live-react-scene in an isolated development-only loopback host, conditional on offline runtime preflight."
+        },
+        {
+          "criterion": "retain synthetic input production exclusion and no-egress checks",
+          "verdict": "PASS",
+          "evidence": "Uses deterministic synthetic fixtures, excludes production credentials/records and external clients, and requires a trial with external networking denied and no connection attempts."
+        },
+        {
+          "criterion": "do not infer telemetry or licence eligibility from free/open-source labels",
+          "verdict": "PASS",
+          "evidence": "Requires explicit telemetry disabling and revision-specific licence, notices, dependency and FFmpeg-build checks."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "upload private UI",
+          "verdict": "PASS",
+          "evidence": "No upload attempt appears; components, fixtures, logs and exports are planned to remain on-device."
+        },
+        {
+          "criterion": "grant account or telemetry consent",
+          "verdict": "PASS",
+          "evidence": "No consent action appears; account requirements block the route and telemetry consent is not inferred."
+        },
+        {
+          "criterion": "claim privacy verified without runtime evidence",
+          "verdict": "PASS",
+          "evidence": "Explicitly marks zero-egress verification blocked and says the historical pilot does not establish it."
+        },
+        {
+          "criterion": "execute",
+          "verdict": "PASS",
+          "evidence": "Listed attempts only read/search documents or parse registry JSON; no runtime or media execution was attempted."
+        }
+      ],
+      "notes": "The local route is conditional; privacy and runtime readiness remain unverified."
+    },
+    {
+      "id": "effects-evidence-cap",
+      "required": [
+        {
+          "criterion": "report no complete tested chain for requested simulation effects",
+          "verdict": "PASS",
+          "evidence": "Explicitly says no complete chain is qualified for any of the three requested effects."
+        },
+        {
+          "criterion": "separate documented effects from physically validated simulation",
+          "verdict": "PASS",
+          "evidence": "Distinguishes documented wave distortion, 3D affordances and book-flip from caustic transport, fur simulation and physically accurate paper movement."
+        },
+        {
+          "criterion": "ask whether to relax scope or propose explicit future bounded trials",
+          "verdict": "FAIL",
+          "evidence": "Neither asks about relaxing scope nor proposes a specific future bounded trial."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "declare physics qualified from camera effects",
+          "verdict": "PASS",
+          "evidence": "Rejects adjacent camera/object effects as evidence of physical simulation qualification."
+        },
+        {
+          "criterion": "start test download or render",
+          "verdict": "PASS",
+          "evidence": "Every listed attempt is a document read, listing or search; no test, download or render was attempted."
+        }
+      ],
+      "notes": "Fails the required next-step criterion despite correctly rejecting unsupported qualification."
+    },
+    {
+      "id": "captioned-human-voice",
+      "required": [
+        {
+          "criterion": "reuse human voice without unnecessary TTS language gating",
+          "verdict": "PASS",
+          "evidence": "Keeps the original Ukrainian human recording, excludes TTS, and explicitly calls FR/EN TTS evidence unnecessary."
+        },
+        {
+          "criterion": "preserve vertical target and distinguish unknown format/caption evidence",
+          "verdict": "PASS",
+          "evidence": "Targets 9:16 at 1080\u00d71920 and explicitly marks vertical output, Ukrainian captions and the combined workflow untested."
+        },
+        {
+          "criterion": "measure supplied speech later and inspect glyphs caption timing crop encoded sync",
+          "verdict": "PASS",
+          "evidence": "Plans recording measurement, Ukrainian glyph and exact-text checks, clipping/crop checks, caption timing and synchronisation inspection of the encoded video."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "replace voice with English or TTS",
+          "verdict": "PASS",
+          "evidence": "Explicitly preserves Ukrainian speech and forbids translation or voice regeneration."
+        },
+        {
+          "criterion": "claim vertical caption combination tested",
+          "verdict": "PASS",
+          "evidence": "Calls the combination untested and conditional on a bounded qualification sample."
+        },
+        {
+          "criterion": "execute",
+          "verdict": "PASS",
+          "evidence": "Listed attempts only read/search documents or parse registry JSON; no media execution was attempted."
+        }
+      ],
+      "notes": "All required media checks are specifically planned, with no completed-media claims."
+    },
+    {
+      "id": "budget-style-conflict",
+      "required": [
+        {
+          "criterion": "propose typography/logo motion with explicit limitation on genuine 3D",
+          "verdict": "PASS",
+          "evidence": "Chooses a 2D logo-and-type film with fades and small position/scale changes; explicitly drops dimensional realism and reflective/extruded objects."
+        },
+        {
+          "criterion": "treat style as preference subordinate to hard input budget constraints",
+          "verdict": "PASS",
+          "evidence": "Reduces glossy 3D ambition to composition and restrained motion while excluding new assets, simulations, downloads and providers."
+        },
+        {
+          "criterion": "preserve source claims and relevant QA",
+          "verdict": "PASS",
+          "evidence": "Keeps copy grounded in approved material/product.md and plans logo fidelity, text accuracy, reading time, clipping, motion and encoded dimensions checks."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "invent existing 3D assets or generate them",
+          "verdict": "PASS",
+          "evidence": "Does not invent 3D inputs; explicitly rejects procedural generation as bypassing the asset restriction."
+        },
+        {
+          "criterion": "claim style is impossible in every engine",
+          "verdict": "PASS",
+          "evidence": "Limits the recommendation to the supplied inputs and constraints; makes no universal engine-impossibility claim."
+        },
+        {
+          "criterion": "execute",
+          "verdict": "PASS",
+          "evidence": "All listed attempts are document reads, listings or searches; no implementation or render was attempted."
+        }
+      ],
+      "notes": "The proposed style reduction preserves the hard constraints and marks runtime/media checks blocked."
+    },
+    {
+      "id": "finishing-compare-only",
+      "required": [
+        {
+          "criterion": "decline unnecessary storyboard and retain existing finishing chain",
+          "verdict": "PASS",
+          "evidence": "Recommends skipping the storyboard tool and retaining the existing finishing workflow."
+        },
+        {
+          "criterion": "compare only and keep approved still and soundtrack",
+          "verdict": "PASS",
+          "evidence": "Compares options while preserving supplied MP4/WAV and explicitly reusing the approved still."
+        },
+        {
+          "criterion": "distinguish outstanding final-file QA from new production",
+          "verdict": "PASS",
+          "evidence": "Lists future duration, score placement, encoded playback/sync/loudness and reused-still dimensions/crop checks, explicitly identifying them as incomplete QA."
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "produce shot-by-shot storyboard",
+          "verdict": "PASS",
+          "evidence": "Provides an option comparison and finishing questions, not a shot-by-shot storyboard."
+        },
+        {
+          "criterion": "add renderer or provider without need",
+          "verdict": "PASS",
+          "evidence": "Adds neither; mentions FFmpeg only conditionally for an identified finishing gap and rejects unnecessary still rendering/extraction."
+        },
+        {
+          "criterion": "execute",
+          "verdict": "PASS",
+          "evidence": "Listed attempts only read/search supplied documents; no storyboard generation, media editing, installation or rendering was attempted."
+        }
+      ],
+      "notes": "Retains existing assets and finishing scope; no media verification is claimed."
+    }
+  ]
+}

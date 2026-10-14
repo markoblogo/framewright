@@ -1,0 +1,26 @@
+{
+  "model": "gpt-6.1-sol",
+  "effort": "medium",
+  "upstream": "https://github.com/aicontentskills/ai-video-storyboard-skill",
+  "revision": "93f8a6d6935858bc4acd7ff3bbea2411edf88caa",
+  "licence": "MIT stated in README and SKILL; no standalone LICENSE file at this revision",
+  "case_sha256": "7183c574f3737e9a0f710f650f6c7b945d42d4a972be78af2e3f29911b032242",
+  "protocol_sha256": "8d0a290354ba11f225b8d50a9678f23299eb80834d2872ef12b97a420a36fddc",
+  "upstream_file_sha256": {
+    "README.md": "467f46ad9caa1a388ba614b3032b552be56103c1a2d24abde5a457f38894be41",
+    ".gitignore": "1b0aaab62d708faf393b5d7d5abb8dff7bfe7d4f38b5f1ca276740e145c3e50c",
+    "SKILL.md": "030662a226bd3e4ba0f8bbdf088b0fe1ebbb3805c586a856616a3f4c372a5eff",
+    "examples/tiktok-reel-30s-coffee.md": "6e64bccd606f66d418d483da082f3052a2709a8d3e60c8a315bec8fcfa36dc51"
+  },
+  "prompts": {
+    "shared-shot-plan": "2cd455fcd95700878beccf6f820adc9758caf7b10689edc840854e9eda23283c",
+    "silent-4k-override": "3baccd22d0d319ff0665eb8cba2a5656966c84f471daa2604ad275d25e135295",
+    "single-shot-skip": "5e5ac6dce9bdd7eb001c3ccf6c18b9878419cb9d711a6be1c53b5404d5a77d12",
+    "untrusted-brief": "0bed77dd556c8edf4b5525f18f4242540cbf36b401c4fc1e028f88ef8b56754b"
+  },
+  "scope": "raw upstream skill in Codex, bounded text planning only; no redistribution of upstream skill in Framewright",
+  "grading_context_repair": "Initial grading omitted supplied source fixture text; original actor answers retained unchanged and all cases regraded with source text. Initial grades retained separately, not counted.",
+  "grader_input_sha256": {
+    "batch-1.json": "b5df8c184aecbc53419c0c6fb9c85f1994c44c42575ddc751140826ef5eea7f8"
+  }
+}
