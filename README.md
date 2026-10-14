@@ -1,4 +1,14 @@
-# ABVX Video Lab
+# Framewright
+
+![Framewright — craft the cut, keep the evidence](assets/framewright-cover.png)
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
+[![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](experiments/2026-10-14/README.md)
+[![Router: structural only](https://img.shields.io/badge/router-structural__only-526C73?style=flat-square)](skills/video-production-router/references/scenarios.json)
+[![6 recorded exports](https://img.shields.io/badge/recorded__exports-6-293F48?style=flat-square)](experiments/2026-10-14/outputs.json)
+[![ABVX ecosystem](https://img.shields.io/badge/ecosystem-ABVX-E7BA6A?style=flat-square)](docs/ecosystem.md)
+
+**Small films. Real products. Evidence behind every cut.**
 
 An evolving, evidence-led collection of video-production methods and agent skills.
 Start with the task, choose the smallest useful workflow, keep the evidence, and
@@ -19,11 +29,30 @@ See [recipes](skills/video-production-router/references/recipes.md),
 [experiment evidence](experiments/2026-10-14/README.md), and
 [the local machine map](docs/local-workspace.md).
 
+## Quick start
+
+1. Pick a workflow from the table above, or ask `$video-production-router`.
+2. Follow the selected recipe with your own authorised product inputs.
+3. Record the result, including failures, before adding a new tested capability.
+
+**Not a renderer, hosted service, or one-click historical simulator.** Framewright
+is the selection and learning layer around production tools you choose to run.
+
 ## Use with Codex
 
 The original skill is [video-production-router](skills/video-production-router/SKILL.md).
 Install only that skill folder in your Codex skills directory, or link it from a
-stable checkout. It recommends a workflow; it does not install dependencies,
+stable checkout. For a clone already reviewed locally:
+
+```bash
+git clone https://github.com/markoblogo/framewright.git
+mkdir -p ~/.codex/skills
+ln -s "$(pwd)/framewright/skills/video-production-router" ~/.codex/skills/video-production-router
+```
+
+The link command refuses to overwrite an existing skill. Keep the checkout mounted
+and use the skill in a fresh Codex session. No upstream video tools are installed.
+ It recommends a workflow; it does not install dependencies,
 render a video or publish anything by itself. Existing Hyperframes skills remain
 the rendering entry point and must still be followed when making a video.
 
@@ -42,6 +71,15 @@ No scheduled jobs or autonomous downloads are configured.
 
 Run `python3 scripts/validate.py` to check catalogue integrity and retained evidence.
 This check needs no network or third-party packages and does not run video tools.
+
+## Part of the ABVX ecosystem
+
+[ABVX Agent Skills](https://github.com/markoblogo/abvx-agent-skills) provides general
+workflows; [SET](https://github.com/markoblogo/SET) coordinates optional plans;
+[AGENTS.md Generator](https://github.com/markoblogo/AGENTS.md_generator) maintains
+repository context; [ABVX Lab](https://github.com/markoblogo/lab.abvx) is the public
+discovery surface. Framewright owns video methods and their evidence. None is a
+mandatory runtime dependency. See [the integration boundaries](docs/ecosystem.md).
 
 ## Published examples and notes
 

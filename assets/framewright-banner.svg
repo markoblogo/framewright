@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="560" viewBox="0 0 1600 560" role="img" aria-labelledby="title desc">
+<title id="title">Framewright</title><desc id="desc">An ink and amber film-strip wordmark for evidence-led video craft.</desc>
+<rect width="1600" height="560" fill="#101D24"/>
+<path d="M1050 0H1600V560H930Z" fill="#18343A"/>
+<g fill="none" stroke="#E7BA6A" stroke-width="3">
+<rect x="1090" y="116" width="330" height="212" rx="4"/>
+<path d="M1108 142H1402M1108 302H1402M1128 142V302M1382 142V302"/>
+<path d="M1210 180L1285 223L1210 266Z" fill="#E7BA6A" stroke="none"/>
+</g>
+<g fill="#E7BA6A"><path d="M1108 122H1120V134H1108ZM1140 122H1152V134H1140ZM1172 122H1184V134H1172ZM1204 122H1216V134H1204ZM1236 122H1248V134H1236ZM1268 122H1280V134H1268ZM1300 122H1312V134H1300ZM1332 122H1344V134H1332ZM1364 122H1376V134H1364Z"/></g>
+<text x="88" y="114" fill="#E7BA6A" font-family="monospace" font-size="20" letter-spacing="5">ABVX / VIDEO METHODS LAB</text>
+<text x="82" y="268" fill="#F6EFDB" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="118" letter-spacing="-5">Framewright</text>
+<text x="88" y="334" fill="#F6EFDB" font-family="Arial, Helvetica, sans-serif" font-size="27">Craft the cut. Keep the evidence.</text>
+<path d="M88 419H150L158 410L166 432L174 400L182 439L190 413L198 419H340L348 395L356 447L364 382L372 455L380 401L388 419H654L662 410L670 430L678 402L686 435L694 419H980L988 401L996 443L1004 391L1012 450L1020 411L1028 419H1512" fill="none" stroke="#E7BA6A" stroke-width="2"/>
+<text x="88" y="493" fill="#C0D1CF" font-family="monospace" font-size="18">CHOOSE A WORKFLOW / MAKE SOMETHING REAL / RECORD WHAT WORKED</text>
+</svg>
