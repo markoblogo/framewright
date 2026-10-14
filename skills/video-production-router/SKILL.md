@@ -14,11 +14,13 @@ it does not replace rendering skills or confer permission to publish.
 2. Read [the catalogue](references/catalog.json), then only the matching section
    of [the recipes](references/recipes.md). Recommend a default with one sentence
    of evidence and relevant limits. If the user only asks to compare, stop there.
-3. For actual video creation, first follow the installed `hyperframes` entry skill
-   if available, then its relevant composition/audio/media guidance. If unavailable,
-   inspect the selected upstream documentation and report missing dependencies;
-   do not silently install tools. Preserve format requirements rather than applying
-   today's horizontal 1080p examples to every future job.
+3. Follow the selected renderer's instructions. For Hyperframes-backed routes,
+   load the installed `hyperframes` entry skill and relevant composition/audio/media
+   guidance. For `live-react-scene` or another explicitly selected renderer, load
+   that tool's installed guide directly; Hyperframes is not a prerequisite. If the
+   selected route lacks instructions or dependencies, inspect its upstream docs
+   and report the gap without silently installing tools. Preserve the requested
+   format rather than applying today's horizontal 1080p examples to every job.
 4. Work from verified product facts and authorised assets. Measure generated speech
    before finalising cuts. Keep deterministic seekable picture timing and sound cues
    on a common timeline. Inspect the encoded final file, not just an intermediate mix.

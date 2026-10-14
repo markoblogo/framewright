@@ -79,6 +79,9 @@ the evidence justifies changing its tested scope. Tools may remain candidates.
 No scheduled jobs or autonomous downloads are configured.
 
 Run `python3 scripts/validate.py` to check catalogue integrity and retained evidence.
+Run `python3 -m unittest discover -s tests -v` for validator regression tests.
+With `--local-root /Volumes/Work`, the validator checks both final and recorded
+native export files against their sizes and SHA-256 hashes.
 This check needs no network or third-party packages and does not run video tools.
 
 ## Part of the ABVX ecosystem
@@ -91,6 +94,8 @@ discovery surface. Framewright owns video methods and their evidence. None is a
 mandatory runtime dependency. See [the integration boundaries](docs/ecosystem.md).
 
 ## Published examples and notes
+
+- [CoqPi cinematic React demo](https://youtu.be/rqKXx_Z5AR0)
 
 - [French book trailer: Jeanne la bataillonneuse](https://youtu.be/PmhWa-V00zc)
 - [English series trailer: Good Dogs of the Apocalypse](https://youtu.be/89kTx1LhEP0)

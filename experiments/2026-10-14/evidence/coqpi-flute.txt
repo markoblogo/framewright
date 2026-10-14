@@ -10,4 +10,4 @@ Production guard regression: ordinary fixture accepted; injected __FLUTE_CAPTURE
 Native Flute snapshot: FAILED, invalid-scene/manual-preview instruction for portable React host.
 Direct-URL export: PASSED. Thumbnail is extracted from encoded video; no upstream patch.
 Human review: five encoded sample frames inspected; full aesthetic/listening acceptance pending owner.
-Public upload: not performed. Microphone/provider/production runtime: not exercised.
+Agent public upload: not performed. Owner supplied https://youtu.be/rqKXx_Z5AR0; no byte verification. Microphone/provider/production runtime: not exercised.
