@@ -1,0 +1,21 @@
+{
+  "schema_version": 3,
+  "files": {
+    "cases.json": "b236eb36543b668c7b0868bcbedfa454bb5aeb13154789bbb43d6299dd89be82",
+    "freeze.json": "22360a5ea392b9616dcfb2ad2694296a90b47de721065949f37defb914c995f4",
+    "grader-config.json": "56f9537da55930c998b51a663400a6c98e03cb99d61a2ce22a0700c646fb9caa",
+    "grades.json": "5885a9c9d844345c55951cec67649fd3b6e2767c0911f0f4421a15fbd83c3cc8",
+    "inputs.json": "eaa78a098625b26f7417f8bda0edf8af80712d14a2bfaa9e4bdb066638cc0ba3",
+    "protocol.txt": "8d0a290354ba11f225b8d50a9678f23299eb80834d2872ef12b97a420a36fddc",
+    "results.json": "84131dfae8b984a53f412332298283a9adf0b362387670ec021a6fa6862e8585",
+    "source-snapshot.zip": "410aa326d8f9b6f1d22f6224b0b91ec75c920b45498ae29b23fb9cf6d8dc8398",
+    "summary.json": "8b592f84a16ee93d194670491da87d73f32a7ea28f7f55c59fb3a7c4620e1ed3"
+  },
+  "counts": {
+    "cases": 30,
+    "passed": 30
+  },
+  "source_snapshot": "source-snapshot.zip",
+  "calibration": "calibration",
+  "calibration_manifest_sha256": "75658a653f64055ddab7330c1d3afa06506a3e0b45e1eb73ae05e9b742002dd1"
+}

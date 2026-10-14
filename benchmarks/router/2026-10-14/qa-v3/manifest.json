@@ -1,0 +1,21 @@
+{
+  "schema_version": 3,
+  "files": {
+    "cases.json": "b236eb36543b668c7b0868bcbedfa454bb5aeb13154789bbb43d6299dd89be82",
+    "freeze.json": "79c1fb11f23e2f9ff7c9c464a1b971bc3ae7ca974174d19d04392e482350b9b6",
+    "grader-config.json": "56f9537da55930c998b51a663400a6c98e03cb99d61a2ce22a0700c646fb9caa",
+    "grades.json": "b0448e5d6e97214d9fc0370f03111f9c2d8e87f6d7f8af8499ad70565cc738d4",
+    "inputs.json": "eaa78a098625b26f7417f8bda0edf8af80712d14a2bfaa9e4bdb066638cc0ba3",
+    "protocol.txt": "8d0a290354ba11f225b8d50a9678f23299eb80834d2872ef12b97a420a36fddc",
+    "results.json": "a05c1ce2661327e9b31fecf526bf8bbb9e0677e4acfec30c1a6360522d2726ff",
+    "source-snapshot.zip": "8e4fc169e2ca426dfa64f7a3e5bd5b943d14b63c3ac3864b5ac1a0c271cb6600",
+    "summary.json": "7a93f0e587f5f2b0f33effaaaff7065abedbb19daa6159993bc7f305e06d8225"
+  },
+  "counts": {
+    "cases": 30,
+    "passed": 29
+  },
+  "source_snapshot": "source-snapshot.zip",
+  "calibration": "calibration",
+  "calibration_manifest_sha256": "75658a653f64055ddab7330c1d3afa06506a3e0b45e1eb73ae05e9b742002dd1"
+}

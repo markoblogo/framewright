@@ -1,5 +1,8 @@
 # Router decision checks — 2026-10-14
 
+Current stage-aware check: [30/30 cases with retained 12/12 blind controls](qa-v4/README.md).
+All earlier packets below preserve their own source, rubric and results.
+
 These are synthetic planning cases, not music/video-generation trials. No private
 song, lyric, account record or media is included. Each actor used a fresh Codex CLI
 context; grading used separate contexts of the same model family, followed by
@@ -10,6 +13,15 @@ controller review. This is not independent third-party certification.
 | [First complete run](round-1/manifest.json) | `562008e` | 23 | 19 |
 | [Second complete run](round-2/manifest.json) | `525200b` | 26 | 22 |
 | [Targeted regression](regression/manifest.json) | `07d0b54` | 8 | 6 |
+| [Stage-aware v2](qa-v2/manifest.json) | `62c52c8` | 29 | 29 |
+| [Post-review v3](qa-v3/manifest.json) | `b1b454e` | 30 | 29 |
+| [Current v4](qa-v4/manifest.json) | `9c2ec79` | 30 | 30 |
+
+Each packet now includes a `source-snapshot.zip` with exactly the router files
+listed in its frozen source hash map. Commit IDs are provenance labels; those
+intermediate commits need not be reachable after a squash merge. Source snapshots,
+not Git reachability, are the reproduction basis. The packet checker verifies every
+archived member against the frozen hashes without executing or extracting it.
 
 The first 17 requests were frozen from the existing scenario file; six boundary
 cases were added before the first run. The second run preserved all 23 requests
@@ -34,7 +46,14 @@ No media quality, live account behaviour or general model consistency was tested
 Strict failures remain visible. See [controller review](controller-review.json) for
 one evaluator inconsistency about planned versus completed QA and the ambiguity of
 an existing thumbnail versus a newly rendered native PNG. No raw grade was replaced
-with a favourable controller score. Catalogue qualification remains `structural_only`.
+with a favourable controller score. The catalogue retains its legacy `structural_only` status; the separate current
+planning qualification is tied to v4 and exact current decision sources.
+
+V3 added an execution-request contract-read case; one existing language case failed
+to request a missing choice or propose a bounded test. V4 repeats all 30 cases
+after that instruction was clarified. No favourable answers were stitched across
+runs. V3/v4 reuse the retained opaque-ID controls with unchanged grader protocol
+and core configuration. See the report for scope and response-budget differences.
 
 The first software-only smoke and an overlapping batch-4 grading attempt were
 retained locally but excluded; the identical complete batch-4 input was graded once
@@ -44,7 +63,9 @@ overwriting an active grading output. Actor runs were not replaced by this repai
 ## Inspect or repeat
 
 1. Read a packet's `inputs.json`, `cases.json`, `freeze.json` and `protocol.txt`.
-2. Check out the recorded source commit and verify the router file hashes.
+2. Verify the packet, then extract its `source-snapshot.zip` into a separate
+   directory. Compare archived files with `freeze.json`; no historical Git object
+   or old branch is needed. The repository MIT licence covers these original files.
 3. For each case, copy that skill into a separate read-only synthetic workspace,
    omit `references/scenarios.json` (rubric hidden), and add only its listed fixture
    files. Never provide expected routes or criteria to the actor.

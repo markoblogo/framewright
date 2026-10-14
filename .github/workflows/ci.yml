@@ -11,7 +11,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: python3 -m unittest discover -s tests -q
-      - run: python3 scripts/check_router_evaluation.py --root benchmarks/router
+      - run: python3 scripts/check_router_evaluation.py --root benchmarks/router --qualification router-qualification.json
       - run: python3 scripts/validate.py
       - run: python3 scripts/render_tool_reference.py --check
       - run: python3 scripts/build_release.py --output /tmp/framewright-release

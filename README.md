@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](experiments/2026-10-14/README.md)
-[![Router: structural only](https://img.shields.io/badge/router-structural__only-526C73?style=flat-square)](skills/video-production-router/references/scenarios.json)
+[![Planning check: 30/30](https://img.shields.io/badge/planning__check-30%2F30-526C73?style=flat-square)](docs/router-evaluation.md)
 [![8 recorded exports](https://img.shields.io/badge/recorded__exports-8-293F48?style=flat-square)](experiments/2026-10-14/outputs.json)
 [![ABVX ecosystem](https://img.shields.io/badge/ecosystem-ABVX-E7BA6A?style=flat-square)](docs/ecosystem.md)
 
@@ -26,7 +26,8 @@ are separate; the public URL was supplied by the owner, not matched byte-for-byt
 
 [Reproduce the open reference project](docs/first-video.md) with shared demo assets,
 pinned versions, exact commands, an agent prompt and expected outputs.
-[Release 0.1.1](CHANGELOG.md) is experimental; agent routing remains `structural_only`.
+[Release 0.1.1](CHANGELOG.md) remains experimental. Unreleased updates now include a
+[30-case scoped planning check](docs/router-evaluation.md); no new release is made.
 
 ## Plan by scene, style and effect
 
@@ -122,11 +123,12 @@ for Hyperframes-backed routes; Flute and Remotion use their own guides.
 Example: “Make a French trailer from this book page and cover. Use
 $video-production-router to choose a workflow.”
 
-The router is structurally validated. Bounded model checks now retain two full
-synthetic runs and a targeted retest: [results and limits](docs/router-evaluation.md).
-Observed route/action boundaries held, but strict checklist grades were incomplete;
-no general behavioural qualification or autonomous-production safety is claimed.
-This is separate from completed video tests.
+The current decision sources passed **30/30 synthetic planning cases**; the evaluator
+passed **12/12 positive/negative controls**. [Results and reproduction](docs/router-evaluation.md)
+retain earlier failures and the new unambiguous rubric. The
+[scoped qualification](router-qualification.json) is checked against current source,
+prompt and fixture hashes. This covers planning with the named model/configuration;
+automatic discovery, production permissions and media quality remain separate scopes.
 
 ## Add the next experiment
 
@@ -136,6 +138,8 @@ the evidence justifies changing its tested scope. Tools may remain candidates.
 No scheduled jobs or autonomous downloads are configured.
 
 Run `python3 scripts/validate.py` to check catalogue integrity and retained evidence.
+Run `python3 scripts/check_router_evaluation.py --root benchmarks/router --qualification router-qualification.json`
+to verify current planning qualification and its source snapshots.
 Run `python3 -m unittest discover -s tests -v` for validator regression tests.
 With `--local-root /Volumes/Work`, the validator checks both final and recorded
 native export files and recorded thumbnails against their sizes and SHA-256

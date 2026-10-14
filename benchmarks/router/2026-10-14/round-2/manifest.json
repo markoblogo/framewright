@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "files": {
     "cases.json": "37479c0bf1baa7b59f5b2db680a559d676ba9020a4a2f1ab7809e1bbd6386669",
     "results.json": "5e47d38d5092a7d347f3235f00f0d9fd201773de758b8299d3dab57a366081dd",
@@ -7,10 +7,12 @@
     "freeze.json": "8b5a9052eda121e9366c4744de6d6df515bcce81fa27e382a22213a058665a02",
     "inputs.json": "c7cfad7af0f3677696c6454c253a049cc7e58853d6986be28cc51be193fe2388",
     "protocol.txt": "3b5272d180e880bef950d131b78ea426d84b0a887c3ca8a72d80ffbb320453e8",
-    "summary.json": "c7b70249dd326e75fbba0e46d13a13d124f810077c7e57c901cfbbca5515ee0c"
+    "summary.json": "c7b70249dd326e75fbba0e46d13a13d124f810077c7e57c901cfbbca5515ee0c",
+    "source-snapshot.zip": "7f248eab4bacc804cc4f692028ce770bd625732b743b5c5d450073ada914f550"
   },
   "counts": {
     "cases": 26,
     "passed": 22
-  }
+  },
+  "source_snapshot": "source-snapshot.zip"
 }

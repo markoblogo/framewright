@@ -10,7 +10,10 @@ it does not replace rendering skills or confer permission to publish.
 
 1. Use the brief's product, available assets, audience/language, format, narration,
    cost/account constraints and intended deliverables. Ask only for missing facts
-   that materially affect the choice. Preserve the user's explicit tool choice.
+   that materially affect the choice. If support or evidence is missing, explicitly
+   request the unresolved choice (such as the target language) or propose a bounded
+   test with pass conditions before execution; naming a prerequisite alone does not
+   resolve it. Preserve the user's explicit tool choice.
 2. For requests with style/effect requirements or multiple scenes, read
    [selection guidance](references/selection.md). Decompose into blocks and picture,
    text, voice, sound and finishing layers. Consult [the tool matrix](references/tool-matrix.md)
@@ -45,7 +48,10 @@ it does not replace rendering skills or confer permission to publish.
    substantive rewrite. Measure generated speech
    before finalising cuts. Keep deterministic seekable picture timing and sound cues
    on a common timeline. Inspect the encoded final file, not just an intermediate mix.
-5. If the current chain already meets deliverables, finish outstanding QA and
+5. For production planning, implementation/execution or finishing, read the [QA/handoff contract](references/handoff.md).
+   Explicitly compare proposed copy with its named source, and identify whether
+   each thumbnail is reused, newly rendered natively or extracted from video.
+   If the current chain already meets deliverables, finish outstanding QA and
    hand over the result without adding tools or experiments. No more tools does not
    mean QA is complete; retain any checks blocked by missing files or authority.
    For a plan-only request, name the intended output artifacts and the remaining
