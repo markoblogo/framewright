@@ -69,11 +69,13 @@ def plan_music(spec, registry):
         gates.append('confirm input rights before upload or generation')
     if mode == 'song' and not spec.get('lyrics_authorized', False):
         gates.append('confirm original/licensed lyrics before generation')
-    if mode != 'existing':
-        gates.append('inspect current account model, credits and approved download availability; no purchases implied')
     visual = spec.get('visual_source', 'external-renderer')
     if visual not in {'external-renderer', 'native-export', 'generated-scenes'}:
         raise ValueError('Unknown music.visual_source')
+    if mode != 'existing' or (provider in profiles and visual != 'external-renderer'):
+        gates.append('inspect current account model, credits and approved download availability; no purchases implied')
+    if visual != 'external-renderer' and provider not in profiles:
+        gates.append('choose a documented visual provider and check its account/credit/export requirements before execution')
     visual_feature = {'native-export': 'song-card-video', 'generated-scenes': 'music-video-generation'}.get(visual)
     if provider == 'suno' and visual == 'generated-scenes':
         visual_feature = 'video-cover-art'
@@ -86,6 +88,7 @@ def plan_music(spec, registry):
         'timeline_owner': {'brief-first': 'storyboard', 'video-first': 'locked_picture', 'music-first': 'locked_music'}[direction],
         'audio_role': 'foreground_song' if mode == 'song' else 'music_bed' if mode == 'instrumental' else 'existing_music',
         'source_reference': spec.get(required_source) if required_source else spec.get('video_source'),
+        'sources': {'video': spec.get('video_source'), 'audio': spec.get('audio_source')},
         'cues': cues, 'usage_status': usage, 'intended_use': purpose, 'rights': rights,
         'publication_authorized': False, 'permission_gates': gates,
         'native_visuals': {'requested': visual, 'feature': visual_feature, 'evidence': feature['status'] if feature else 'not_selected' if visual == 'external-renderer' else 'unknown', 'source': feature.get('source') if feature else None, 'requires_paid_feature': bool(feature and feature.get('requires_paid'))},

@@ -24,6 +24,17 @@ class MusicPlanTest(unittest.TestCase):
         self.assertEqual(p['audio_role'], 'foreground_song')
         self.assertEqual(p['execution'], 'not_started')
 
+    def test_existing_audio_with_provider_visuals_still_has_account_gate(self):
+        for visual in ['native-export', 'generated-scenes']:
+            with self.subTest(visual=visual):
+                p = self.run_plan(direction='music-first', mode='existing', provider='suno', audio_source='demo.wav', inputs_authorized=True, visual_source=visual)
+                self.assertTrue(any('account model' in gate for gate in p['permission_gates']))
+
+    def test_video_first_existing_audio_retains_both_sources(self):
+        p = self.run_plan(direction='video-first', mode='existing', provider='existing', video_source='locked.mp4', audio_source='score.wav')
+        self.assertEqual(p['sources'], {'video': 'locked.mp4', 'audio': 'score.wav'})
+        self.assertEqual(p['timeline_owner'], 'locked_picture')
+
     def test_video_first_locks_picture(self):
         p = self.run_plan(direction='video-first', video_source='clip.mp4', cues=[{'time_seconds': 0, 'event': 'opening'}, {'time_seconds': 6, 'event': 'cut'}])
         self.assertEqual(p['timeline_owner'], 'locked_picture')

@@ -79,7 +79,11 @@ python3 skills/video-production-router/scripts/music.py examples/briefs/music-vi
 The standalone installed skill uses the same script relative to its folder. A
 picture brief passed to `plan.py` can include this object under `music`; its picture
 `status` covers picture requirements only. Inspect the independent music permission,
-rights and native-visual fields before execution. `minimum_evidence`/`allow_paid` in
+rights and native-visual fields before execution. Both audio and video identities
+are retained under `sources`; `source_reference` is only a compatibility alias.
+Existing audio does not waive account, credit or approved-export checks for new
+provider visuals. Music providers are excluded from ordinary picture-chain extras;
+a music effect alone cannot bypass the independent music plan. `minimum_evidence`/`allow_paid` in
 the picture planner do not qualify a cloud song or authorise its generation.
 `visual_source` chooses `external-renderer`, `native-export` or `generated-scenes`;
 for Suno the last maps to documented cover art, not a claim of a full narrative film.

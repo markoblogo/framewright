@@ -10,6 +10,9 @@ alongside sound-layer mixing. Explicit primary choices remain fixed.
 Add planning-only music handoffs in three directions, instrumental/song modes,
 independent rights gates, native-video asset classes, and documented Suno/Flow Music
 profiles. Add an attributed related-work comparison and a bounded experiment queue.
+Picture chains exclude music providers: use independent music gates instead. Existing
+audio still requires provider checks for generated/downloaded visuals; video-first
+plans retain both picture and audio references.
 Private account trials and media are excluded from public qualification. No version
 bump or release is made.
 

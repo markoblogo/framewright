@@ -19,6 +19,15 @@ class BlockPlannerTest(unittest.TestCase):
     def run_plan(self, brief):
         return planner.plan(brief, copy.deepcopy(REGISTRY))
 
+    def test_music_provider_cannot_bypass_independent_music_plan(self):
+        for feature in ['song-generation', 'audio-download']:
+            with self.subTest(feature=feature):
+                p = self.run_plan(self.brief(effects=[feature]))
+                self.assertEqual(p['status'], 'blocked')
+                self.assertIsNone(p['music'])
+                self.assertIn(feature, p['blocks'][0]['unmet'])
+                self.assertFalse({'suno', 'flow-music'}.intersection(p['blocks'][0]['tools']))
+
     def test_existing_ui_uses_flute_without_extra_renderer(self):
         p = self.run_plan(self.brief(input='react-ui', effects=['camera-travel', 'depth-of-field']))
         self.assertEqual(p['blocks'][0]['tools'], ['flute'])
