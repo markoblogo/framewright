@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asciitheme",
+    "route": "software-launch",
+    "local_output": "brag-pilot-20261014/asciitheme/brag.mp4",
+    "sha256": "fdce6d3f08a254a8cab6d15bb9bd6679a334b2f544f90ad591baf5b1118fac7c",
+    "bytes": 1809142,
+    "evidence": "experiments/2026-10-14/evidence/asciitheme.txt",
+    "qa_scope": "visual checks",
+    "publication_url": null,
+    "publication_verification": "not_recorded",
+    "human_listening": "not_recorded",
+    "audience_metrics": "not_measured"
+  },
+  {
+    "id": "ami",
+    "route": "software-launch",
+    "local_output": "brag-pilot-20261014/ami/brag.mp4",
+    "sha256": "6634701282b4a50d3fb159d863756879919e3e3bcaef7d467ea90f7d30cc7a15",
+    "bytes": 6550284,
+    "evidence": "experiments/2026-10-14/evidence/ami.txt",
+    "qa_scope": "visual checks",
+    "publication_url": null,
+    "publication_verification": "not_recorded",
+    "human_listening": "not_recorded",
+    "audience_metrics": "not_measured"
+  },
+  {
+    "id": "jeanne-fr",
+    "route": "narrated-montage",
+    "local_output": "book-trailer-jeanne-20261014/Jeanne-la-bataillonneuse-FR-1080p.mp4",
+    "sha256": "1b1e9171894fd405eade4e9fa174f6eb7f3422b90df921e337d61a3a0c0d8779",
+    "bytes": 21028782,
+    "evidence": "experiments/2026-10-14/evidence/jeanne-fr.txt",
+    "qa_scope": "encoded audio",
+    "publication_url": "https://youtu.be/PmhWa-V00zc",
+    "publication_verification": "user_provided_url",
+    "human_listening": "not_recorded",
+    "audience_metrics": "not_measured"
+  },
+  {
+    "id": "good-dogs-en",
+    "route": "narrated-montage",
+    "local_output": "good-dogs-trailer-20261014/Good-Dogs-EN-1080p.mp4",
+    "sha256": "dd4c83328af5bd9e962d1e203879e082c813fb4493e9726681e4467b4b7d5153",
+    "bytes": 25942649,
+    "evidence": "experiments/2026-10-14/evidence/good-dogs-en.txt",
+    "qa_scope": "encoded audio",
+    "publication_url": "https://youtu.be/89kTx1LhEP0",
+    "publication_verification": "user_provided_url",
+    "human_listening": "not_recorded",
+    "audience_metrics": "not_measured"
+  },
+  {
+    "id": "good-dogs-teaser",
+    "route": "short-teaser",
+    "local_output": "good-dogs-trailer-20261014/Good-Dogs-Teaser-6s-1080p.mp4",
+    "sha256": "c452b51027b7e385803a49ded1a2b6c5e6cebde406b81c4cc98afcc2a3c1c1fa",
+    "bytes": 5080897,
+    "evidence": "experiments/2026-10-14/evidence/good-dogs-teaser.txt",
+    "qa_scope": "encoded audio",
+    "publication_url": null,
+    "publication_verification": "not_recorded",
+    "human_listening": "not_recorded",
+    "audience_metrics": "not_measured"
+  },
+  {
+    "id": "anatomy-prototype",
+    "route": "object-prototype",
+    "local_output": "anatomy-sound-pilot-20261014/out/AsciiTheme-Retro-Lab-1080p.mp4",
+    "sha256": "53b7b7b4200c4a817e2679d4e2fd9fff19587bc12b56258bd1d7a59f5e449c6a",
+    "bytes": 1138926,
+    "evidence": "experiments/2026-10-14/evidence/anatomy-prototype.txt",
+    "qa_scope": "visual prototype; combined audio failed",
+    "publication_url": null,
+    "publication_verification": "not_recorded",
+    "human_listening": "not_recorded",
+    "audience_metrics": "not_measured"
+  }
+]

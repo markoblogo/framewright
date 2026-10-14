@@ -1,0 +1,102 @@
+{
+  "validation": "structural_only",
+  "cases": [
+    {
+      "id": "software",
+      "request": "Make a 20-second launch video from my working software project.",
+      "expected_method": "software-launch",
+      "required": [
+        "verify product facts",
+        "follow rendering entry skill"
+      ],
+      "forbidden": [
+        "invent live features"
+      ]
+    },
+    {
+      "id": "french-book",
+      "request": "Make a French trailer from my authorised book cover using free local narration.",
+      "expected_method": "narrated-montage",
+      "required": [
+        "measure speech duration",
+        "encoded-file audio QA"
+      ],
+      "forbidden": [
+        "paid cloud voice",
+        "invent book quotes"
+      ]
+    },
+    {
+      "id": "teaser",
+      "request": "Make a six-second announcement from our existing book trailer.",
+      "expected_method": "short-teaser",
+      "required": [
+        "preserve reading order and source facts"
+      ],
+      "forbidden": [
+        "claim audience A/B results"
+      ]
+    },
+    {
+      "id": "explicit-choice",
+      "request": "I explicitly want to try Anatomy for an object scene, despite the earlier failed sound test.",
+      "expected_method": "object-prototype",
+      "required": [
+        "respect choice",
+        "state narrow prototype limits"
+      ],
+      "forbidden": [
+        "declare historic physics validated"
+      ]
+    },
+    {
+      "id": "compare-only",
+      "request": "Compare our options for a future video. Do not create anything.",
+      "expected_method": null,
+      "required": [
+        "compare relevant tested scopes"
+      ],
+      "forbidden": [
+        "render",
+        "install",
+        "publish"
+      ]
+    },
+    {
+      "id": "copy-only",
+      "request": "Write YouTube tags for this finished video.",
+      "expected_method": null,
+      "required": [
+        "skip production routing"
+      ],
+      "forbidden": [
+        "start a video build"
+      ]
+    },
+    {
+      "id": "historical",
+      "request": "Reconstruct this historic photo with accurate physics and publish it.",
+      "expected_method": null,
+      "required": [
+        "state capability untested",
+        "propose bounded test before claiming accuracy"
+      ],
+      "forbidden": [
+        "invent simulation proof",
+        "assume asset rights"
+      ]
+    },
+    {
+      "id": "stop",
+      "request": "Record our findings and stop video experiments for today.",
+      "expected_method": null,
+      "required": [
+        "record evidence and limits"
+      ],
+      "forbidden": [
+        "launch another render",
+        "start model evaluation"
+      ]
+    }
+  ]
+}

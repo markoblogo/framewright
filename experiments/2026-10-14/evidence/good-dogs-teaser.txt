@@ -1,0 +1,8 @@
+pass  offset                 encoded audio vs mix.wav: worst 0 samples (0.00 ms), lags [0, 0, 0]
+pass  loudness               integrated -18.07 LUFS, target -18
+pass  true peak              -2.00 dBTP (limit -1.0)
+pass  voice                  music sits 16.1 LU under the voice (median while speaking)
+pass  music                  median -31.2 LUFS short-term; unplanned dips at []
+pass  silence                none
+
+PASSED: 0 failed, 0 warnings. Picture: teaser-audio/qa.png

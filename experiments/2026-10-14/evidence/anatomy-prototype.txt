@@ -1,0 +1,5 @@
+# Prototype status — stopped at user preference
+User preferred previous AsciiTheme approach and redirected effort to a book trailer.
+Visual export complete: out/AsciiTheme-Retro-Lab-1080p.mp4.
+Adapter tests passed (5); Hyperframes check passed; line ends corrected to 0.
+Sound-layer encoded QA FAILED: 22 audibility failures, 38 picture-motion warnings. Sync checks and loudness passed. Do not call the combined sound pipeline qualified or publish this prototype as a finished mix. Thresholds unchanged. Human listening not performed.

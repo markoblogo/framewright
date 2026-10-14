@@ -1,0 +1,41 @@
+◆  Checking composition
+
+Lint
+  ⚠ duplicate_media_discovery_risk: Detected 3 matching img entries with the same source/start/duration.
+    Fix: Avoid duplicated media nodes that can be discovered twice during compilation.
+  ⚠ timeline_track_too_dense: Track 1 has 5 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.
+    Fix: Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate.
+  ⚠ nested_structure_needs_subcomposition: <section id="hero-scene"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <section id="hero-scene"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="mn-scene"> is a timeline element that contains nested <div id="mn-copy">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <section id="mn-scene"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="ssi-scene"> is a timeline element that contains nested <div id="ssi-copy">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <section id="ssi-scene"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="books-scene"> is a timeline element that contains nested <div id="books-copy">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <section id="books-scene"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="outro-scene"> is a timeline element that contains nested <div id="outro-content">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <section id="outro-scene"> and its contents into a sub-composition file and mount it with data-composition-src.
+  0 error(s), 7 warning(s), 0 info(s)
+
+Runtime
+  ◇ 0 errors, 0 warnings
+
+Layout
+  ℹ t=5.2, 7s container_overflow #mn-panel > img:nth-of-type(1) inside #mn-panel overflowed left 9.62px, right 9.62px, top 5.62px, bottom 5.62px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=10.8, 12.5s container_overflow #ssi-panel > img:nth-of-type(1) inside #ssi-panel overflowed top 5.47px, bottom 5.47px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=16.3, 17.5s container_overflow #books-panel > img:nth-of-type(1) inside #books-panel overflowed left 9.05px, right 9.05px, top 4.7px, bottom 4.7px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  0 error(s), 0 warning(s), 3 info(s)
+
+Motion
+  ◇ 0 errors, 0 warnings
+
+Contrast
+  ◇ 48/48 text checks pass WCAG AA
+
+Snapshots
+  ◇ 5 PNG(s) saved
+
+◇  Check passed

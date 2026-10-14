@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-14",
+  "router_validation": "structural_only",
+  "methods": [
+    {
+      "id": "software-launch",
+      "status": "tested_for_scope",
+      "recipe": "recipes.md#software-launch",
+      "upstream": [
+        "https://github.com/latent-spaces/brag"
+      ],
+      "experiments": [
+        "asciitheme",
+        "ami"
+      ],
+      "tested_scope": "Horizontal 1080p short software introductions without narration",
+      "not_tested": [
+        "Brag voice mode",
+        "brag-slim",
+        "audience conversion"
+      ]
+    },
+    {
+      "id": "narrated-montage",
+      "status": "tested_for_scope",
+      "recipe": "recipes.md#narrated-montage",
+      "upstream": [
+        "https://github.com/thewh1teagle/kokoro-onnx",
+        "https://github.com/Bodila51/opus-sound-layer"
+      ],
+      "experiments": [
+        "jeanne-fr",
+        "good-dogs-en"
+      ],
+      "tested_scope": "Existing book artwork, local FR/EN narration, encoded audio QA, horizontal 1080p",
+      "not_tested": [
+        "turnkey installer",
+        "clean-machine reproduction",
+        "other languages",
+        "human voice-quality benchmark"
+      ]
+    },
+    {
+      "id": "short-teaser",
+      "status": "tested_for_scope",
+      "recipe": "recipes.md#short-teaser",
+      "upstream": [],
+      "experiments": [
+        "good-dogs-teaser"
+      ],
+      "tested_scope": "One six-second horizontal edit derived from established series assets",
+      "not_tested": [
+        "vertical Shorts",
+        "audience A/B test"
+      ]
+    },
+    {
+      "id": "object-prototype",
+      "status": "prototype",
+      "recipe": "recipes.md#object-prototype",
+      "upstream": [
+        "https://github.com/wheresryan22/anatomy"
+      ],
+      "experiments": [
+        "anatomy-prototype"
+      ],
+      "tested_scope": "Deterministic visual adaptation of bundled desk-computer example",
+      "not_tested": [
+        "finished sound pipeline",
+        "historical reconstruction",
+        "calibrated physics",
+        "general 3D generation"
+      ]
+    }
+  ]
+}

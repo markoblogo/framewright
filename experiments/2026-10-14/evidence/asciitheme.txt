@@ -1,0 +1,30 @@
+◆  Checking composition
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Apple)" renderer="ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)")
+
+Lint
+  ⚠ nested_structure_needs_subcomposition: <section id="intro"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <section id="intro"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="theme-scene"> is a timeline element that contains nested <h2 id="themes-title">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <section id="theme-scene"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="widget-scene"> is a timeline element that contains nested <h2 id="widgets-title">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <section id="widget-scene"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="outro-scene"> is a timeline element that contains nested <div id="outro">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <section id="outro-scene"> and its contents into a sub-composition file and mount it with data-composition-src.
+  0 error(s), 4 warning(s), 0 info(s)
+
+Runtime
+  ◇ 0 errors, 0 warnings
+
+Layout
+  ◇ 0 issues across 9 sample(s)
+
+Motion
+  ◇ 0 errors, 0 warnings
+
+Contrast
+  ◇ 37/37 text checks pass WCAG AA
+
+Snapshots
+  ◇ 5 PNG(s) saved
+
+◇  Check passed

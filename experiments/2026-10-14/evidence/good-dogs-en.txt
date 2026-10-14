@@ -1,0 +1,14 @@
+pass  offset                 encoded audio vs mix.wav: worst 0 samples (0.00 ms), lags [0, 0, 0]
+pass  loudness               integrated -18.04 LUFS, target -18
+pass  true peak              -2.00 dBTP (limit -1.0)
+pass  picture reveal-system  cut at frame 434: largest change at frame 434 (32.0 vs local 1.3)
+pass  picture reveal-authority cut at frame 576: largest change at frame 576 (24.8 vs local 1.4)
+pass  sync reveal-system     peak 0.00 frames from its cue
+pass  audible reveal-system  stands out by 2.7 dB in 125-250 Hz over music+voice
+pass  sync reveal-authority  peak 0.00 frames from its cue
+pass  audible reveal-authority stands out by 2.1 dB in 250-500 Hz over music+voice
+pass  voice                  music sits 16.4 LU under the voice (median while speaking)
+pass  music                  median -30.4 LUFS short-term; unplanned dips at []
+pass  silence                none
+
+PASSED: 0 failed, 0 warnings. Picture: audio-final/qa.png
