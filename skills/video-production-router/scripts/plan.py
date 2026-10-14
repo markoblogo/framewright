@@ -89,26 +89,34 @@ def plan(brief, registry):
             if preferred not in tools or tools[preferred]['role'] not in MAIN_ROLES:
                 raise ValueError('preferred_tool must name a known picture/orchestration/finishing tool')
             candidates = [tools[preferred]] if kind in tools[preferred]['inputs'] else []
-        candidates.sort(key=lambda t: (-sum(acceptable(capability(t, f, language, paid)) for f in effects), -(style in t['styles']), -(t['id'] == DEFAULTS[kind]), t['id']))
+        candidates.sort(key=lambda t: (-sum(acceptable(capability(t, f, language, paid)) for f in requested), -sum(bool(c and c['evidence'] == 'tested') for f in requested for c in [capability(t, f, language, paid)]), -(style in t['styles']), -(t['id'] == DEFAULTS[kind]), t['id']))
         primary = candidates[0] if candidates else None
         selected = [primary] if primary else []
-        coverage, unmet, needs_test = [], [], []
-        for feature in requested:
-            cap = next((c for t in selected if acceptable(c := capability(t, feature, language, paid))), None)
-            if cap is None and primary is not None:
-                providers = [t for t in tools.values() if fits(t) and acceptable(capability(t, feature, language, paid))]
-                providers.sort(key=lambda t: (t['role'] != PREFERRED_ROLES.get(feature), capability(t, feature, language, paid)['evidence'] != 'tested', t['id']))
-                if providers:
-                    provider = providers[0]
-                    if provider not in selected:
-                        selected.append(provider)
-                    cap = capability(provider, feature, language, paid)
-            if cap:
-                coverage.append(cap)
-                if cap['evidence'] != 'tested':
-                    needs_test.append(feature)
-            else:
-                unmet.append(feature)
+        # Canonical traversal plus a fixed point: a finisher may become eligible
+        # only after another requirement has supplied a picture/export provider.
+        pending = sorted(requested)
+        found = {}
+        while pending:
+            progress = False
+            for feature in pending[:]:
+                cap = next((c for t in selected if acceptable(c := capability(t, feature, language, paid))), None)
+                if cap is None and primary is not None:
+                    providers = [t for t in tools.values() if fits(t) and acceptable(capability(t, feature, language, paid))]
+                    providers.sort(key=lambda t: (t['role'] != PREFERRED_ROLES.get(feature), capability(t, feature, language, paid)['evidence'] != 'tested', t['id']))
+                    if providers:
+                        provider = providers[0]
+                        if provider not in selected:
+                            selected.append(provider)
+                        cap = capability(provider, feature, language, paid)
+                if cap:
+                    found[feature] = cap
+                    pending.remove(feature)
+                    progress = True
+            if not progress:
+                break
+        coverage = [found[f] for f in requested if f in found]
+        unmet = [f for f in requested if f not in found]
+        needs_test = [c['feature'] for c in coverage if c['evidence'] != 'tested']
         if primary is None:
             unmet.append('input-compatible-primary')
         duration = frames(block['duration_seconds'], canvas['fps']) if 'duration_seconds' in block else None
@@ -123,7 +131,8 @@ def plan(brief, registry):
     if 'duration_seconds' in brief and (cursor is None or frames(brief['duration_seconds'], canvas['fps']) != cursor):
         raise ValueError('Declared total duration must match the known block timeline including overlaps')
     blocked = any(x['unmet'] for x in result)
-    return {'schema_version': 1, 'status': 'blocked' if blocked else 'proposed', 'qualification': 'planning_only', 'execution': 'not_started', 'minimum_evidence': minimum, 'canvas': canvas, 'duration_frames': cursor, 'blocks': result, 'assembly': {'tool': 'ffmpeg', 'evidence': 'documented', 'qualification': 'new multi-block combinations need an integration test; individual successes do not qualify a chain', 'steps': ['normalise actual size/fps/colour/alpha and frame boundaries', 'assemble picture and a single master audio timeline', 'inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata', 'retain native exports, final hashes and per-block evidence']}, 'notes': ['Styles are preferences, not fixed renderer limits or quality scores.', 'Read the cited installed-version docs before execution.', 'Paid availability in a plan is not purchase/account/publication authorisation.', 'Missing durations require timing decisions; no final timeline is claimed.'] if cursor is None else ['No model evaluation, rendering or publication was performed by this planner.', 'Style matching does not qualify a new combination.', 'Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review.']}
+    still_only = all(set(b.get('deliverables', ['video-export'])) == {'still-export'} for b in blocks)
+    return {'schema_version': 1, 'status': 'blocked' if blocked else 'proposed', 'qualification': 'planning_only', 'execution': 'not_started', 'minimum_evidence': minimum, 'canvas': canvas, 'duration_frames': cursor, 'blocks': result, 'assembly': ({'tool': None, 'evidence': 'planning_only', 'qualification': 'Still-only delivery: no video assembly is proposed.', 'steps': ['validate native image format, dimensions, visual content and hashes']} if still_only else {'tool': 'ffmpeg', 'evidence': 'documented', 'qualification': 'new multi-block combinations need an integration test; individual successes do not qualify a chain', 'steps': ['normalise actual size/fps/colour/alpha and frame boundaries', 'assemble picture and a single master audio timeline', 'inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata', 'retain native exports, final hashes and per-block evidence']}), 'notes': ['Styles are preferences, not fixed renderer limits or quality scores.', 'Read the cited installed-version docs before execution.', 'Paid availability in a plan is not purchase/account/publication authorisation.', 'Missing durations require timing decisions; no final timeline is claimed.'] if cursor is None else ['No model evaluation, rendering or publication was performed by this planner.', 'Style matching does not qualify a new combination.', 'Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review.']}
 
 
 def main():

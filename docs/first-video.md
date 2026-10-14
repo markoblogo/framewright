@@ -15,7 +15,7 @@ The repository licence does not relicense the engine or its dependencies.
 
 ## Environment and exact route
 
-Clone this repository at the v0.1.0 tag on a disk with space for Node/browser downloads.
+Clone this repository at the v0.1.1 tag on a disk with space for Node/browser downloads.
 Use Node 24 and npm, Python 3.11+, FFmpeg/ffprobe and a compatible local Chromium.
 Remotion/CLI/media/transitions are pinned to 4.0.535; React/React DOM to 19.2.3.
 The tested browser path used Chromium 152.0.7977.30; see the source example for the

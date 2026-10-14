@@ -37,7 +37,7 @@ def build(root, output):
         with zipfile.ZipFile(archive) as z:
             z.extractall(target)
         brief = target / 'brief.json'
-        brief.write_text(json.dumps({'blocks': [{'id': 'ui', 'input': 'react-ui', 'deliverables': ['video-export', 'still-export']}]}))
+        brief.write_text(json.dumps({'blocks': [{'id': 'ui', 'input': 'react-ui', 'preferred_tool': 'flute', 'deliverables': ['video-export', 'still-export']}]}))
         run = subprocess.run([sys.executable, str(target / 'video-production-router/scripts/plan.py'), str(brief)], check=True, capture_output=True, text=True)
         plan = json.loads(run.stdout)
         if plan['blocks'][0]['tools'] != ['flute', 'ffmpeg'] or plan['execution'] != 'not_started':
