@@ -174,9 +174,19 @@ def check_qualification(repo, path):
         require(isinstance(fixtures, dict) and fixtures.keys() == {p for p in before if not p.startswith('router/')}, f'{identity}: fixture set differs')
         for name, text in fixtures.items():
             require(hashlib.sha256(text.encode()).hexdigest() == before[name], f'Fixture hash mismatch: {identity}/{name}')
-    current_sources = {str(p.relative_to(repo)) for p in (repo / 'skills/video-production-router').rglob('*') if p.is_file() and p.suffix in {'.md', '.py', '.json'}}
-    require(current_sources == freeze['source_tree_sha256'].keys(), 'Current source set differs from evaluated snapshot')
-    for source, digest in freeze['source_tree_sha256'].items():
+    sources = freeze['source_tree_sha256']
+    expected_router = {'router/' + Path(p).relative_to('skills/video-production-router').as_posix() for p in sources}
+    hidden = 'router/references/scenarios.json'
+    expected_router.discard(hidden)
+    for identity, result in results.items():
+        execution = result['execution']
+        for phase in ('files_before', 'files_after'):
+            actual = {p for p in execution[phase] if p.startswith('router/')}
+            require(hidden not in actual, f'{identity}: Hidden gold in actor workspace')
+            require(actual == expected_router, f'{identity}: actor router file set differs from snapshot')
+    current_sources = {str(p.relative_to(repo)) for p in (repo / 'skills/video-production-router').rglob('*') if p.is_file() and '__pycache__' not in p.parts}
+    require(current_sources == sources.keys(), 'Current source set differs from evaluated snapshot')
+    for source, digest in sources.items():
         require(hashlib.sha256((repo / source).read_bytes()).hexdigest() == digest, f'Current source drift: {source}')
         # Scenario gold is deliberately withheld from actor contexts.
         relative = Path(source).relative_to('skills/video-production-router').as_posix()

@@ -75,6 +75,27 @@ class QualificationGateTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Frozen calibration gold'):
             evidence.check_qualification(self.root, self.path)
 
+    def inject_actor_file(self, path):
+        p = self.packet / 'results.json'
+        rows = json.loads(p.read_text())
+        for key in ('files_before', 'files_after'):
+            rows[0]['execution'][key][path] = hashlib.sha256(b'contaminated input').hexdigest()
+        p.write_text(json.dumps(rows))
+        manifest_path = self.packet / 'manifest.json'
+        manifest = json.loads(manifest_path.read_text())
+        manifest['files']['results.json'] = hashlib.sha256(p.read_bytes()).hexdigest()
+        manifest_path.write_text(json.dumps(manifest))
+
+    def test_hidden_gold_cannot_enter_actor_workspace(self):
+        self.inject_actor_file('router/references/scenarios.json')
+        with self.assertRaisesRegex(ValueError, 'Hidden gold|actor router file set'):
+            evidence.check_qualification(self.root, self.path)
+
+    def test_extra_router_file_cannot_enter_actor_workspace(self):
+        self.inject_actor_file('router/extra-context.md')
+        with self.assertRaisesRegex(ValueError, 'actor router file set'):
+            evidence.check_qualification(self.root, self.path)
+
     def test_partial_case_set_cannot_promote(self):
         self.record['case_ids'] = self.record['case_ids'][:8]
         self.save()
