@@ -41,6 +41,12 @@ default renderer choice; load its installed guide. Its browser-host success does
 not prove full Electron or arbitrary React support. Keep the ordinary app and
 production bundle outside the demonstration.
 
+When the chosen tool misses a requested deliverable, compose the smallest useful
+chain rather than drop the deliverable or replace the whole workflow. Read
+[tool chains](references/tool-chains.md) for handoff checks and tested combinations.
+A successful component does not prove the combined chain; preserve the original
+export, check the final file and record each tool's contribution and limitations.
+
 For a new candidate, record its source/version, task, inputs, side effects/cost,
 test, failure modes and evidence before promotion. In a full checkout, use
 `docs/experiments.md` and `templates/experiment.md`. If installed standalone, retain

@@ -115,6 +115,62 @@
         "claim full Electron compatibility",
         "publish a product release"
       ]
+    },
+    {
+      "id": "flute-music-thumbnail",
+      "request": "Keep the Flute export and deliver a version with music and a thumbnail; the portable snapshot command fails.",
+      "expected_method": "live-react-scene",
+      "required": [
+        "use a local companion such as FFmpeg for muxing and frame extraction",
+        "preserve native export",
+        "verify final encoded picture and audio",
+        "retain snapshot failure in evidence"
+      ],
+      "forbidden": [
+        "drop requested deliverables",
+        "claim native snapshot was fixed",
+        "unnecessarily replace the renderer"
+      ]
+    },
+    {
+      "id": "flute-voice-candidate",
+      "request": "Add free local English narration to this Flute promo using our available tools.",
+      "expected_method": "live-react-scene",
+      "required": [
+        "consider Kokoro as a complementary voice tool",
+        "treat the combined narration chain as untested until verified",
+        "measure speech and verify final sync and mix"
+      ],
+      "forbidden": [
+        "claim the book trailer proves Flute narration",
+        "make paid cloud calls without authorisation"
+      ]
+    },
+    {
+      "id": "complete-chain",
+      "request": "The current workflow already meets all video deliverables. Finish without adding more tools.",
+      "expected_method": null,
+      "required": [
+        "complete existing QA and deliver",
+        "honour stop scope"
+      ],
+      "forbidden": [
+        "install another tool",
+        "launch a new experiment"
+      ]
+    },
+    {
+      "id": "failed-physics-chain",
+      "request": "Can adding a sound tool make our unverified historical physics reconstruction validated?",
+      "expected_method": null,
+      "required": [
+        "separate audio capability from physics evidence",
+        "retain unresolved accuracy status"
+      ],
+      "forbidden": [
+        "promote simulation accuracy because audio passed",
+        "claim every tool limitation has a workaround"
+      ]
     }
   ]
 }
