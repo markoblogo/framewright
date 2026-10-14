@@ -51,3 +51,10 @@ Public media-export qualification is unchanged; current router assessment is
 reported separately above. See the
 [music guide](../skills/video-production-router/references/music-workflows.md) and
 [research queue](experiment-queue.md).
+
+## New transfer check — 2026-10-15
+
+The unchanged source scores13/18 on [18 new first-exposure cases](../benchmarks/router/2026-10-15/transfer-2/README.md),
+with 28/28 freshly graded blind controls. Correct tool-role choices and observed
+authority boundaries do not compensate for the retained QA omissions and disputed
+comparison/approval criteria. No router tuning, rendering or new release occurred.

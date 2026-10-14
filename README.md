@@ -27,7 +27,8 @@ are separate; the public URL was supplied by the owner, not matched byte-for-byt
 [Reproduce the open reference project](docs/first-video.md) with shared demo assets,
 pinned versions, exact commands, an agent prompt and expected outputs.
 [Release 0.1.1](CHANGELOG.md) remains experimental. Unreleased updates now include a
-[52-case protocol-v3 planning check](docs/router-evaluation.md); no new release is made.
+[52-case protocol-v3 development check](docs/router-evaluation.md) and a new
+[18-case first-exposure assessment](benchmarks/router/2026-10-15/transfer-2/README.md); no new release is made.
 
 ## Start with a storyboard when the film is new
 
@@ -143,6 +144,12 @@ not a causal quality improvement score or a new unseen transfer result.
 retain exact sources, fixtures and full grades. This qualifies only the recorded
 read-only planning configuration; real authority, media quality and discovery are
 separate. No new video, audio or release was produced.
+
+The [new first-exposure assessment](benchmarks/router/2026-10-15/transfer-2/README.md)
+scored **13/18**, with **28/28 blind grader controls**, on unchanged router sources.
+It found two QA-plan omissions, ambiguous fallback wording and two disputed
+comparison criteria. This separate result limits generalisation beyond the 52-case
+regression suite; it does not replace old scores or promote broader qualification.
 
 ## Add the next experiment
 

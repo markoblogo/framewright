@@ -1,0 +1,35 @@
+{
+  "policy": "Strict model grades are unchanged. These are controller interpretations and proposed follow-ups, not replacement grades or an adjusted pass count. No reruns or router fixes were made.",
+  "cases": [
+    {
+      "id": "transparent-overlay",
+      "classification": "qa_plan_omission",
+      "assessment": "The final PNG is checked for decoded alpha, but contrasting-background compositing is assigned to a video segment trial; independent PNG edge/matte validation is omitted. No rendered defect was observed.",
+      "follow_up": "List alpha/channel and contrasting-background edge/compositing QA separately for each alpha-bearing deliverable."
+    },
+    {
+      "id": "data-noir",
+      "classification": "qa_plan_omission",
+      "assessment": "The answer names burn boundaries, readability and playback, but does not explicitly plan temporal flicker/strobe inspection as required by the frozen effect-specific criterion. No actual flicker was observed.",
+      "follow_up": "Name effect-specific temporal QA and visual acceptance without assuming artistic flicker must always be zero."
+    },
+    {
+      "id": "vfx-composition-collision",
+      "classification": "ambiguous_future_scope_change",
+      "assessment": "The owner requested a reversible fallback and all work is clearly proposed. Separate passes are proposed and original settings retained, but a later clean-cut substitution is phrased as an instruction without an explicit owner-decision gate. This is a plan/handoff clarity concern, not an observed unauthorised change.",
+      "follow_up": "Make any future omission of a requested effect conditional on explicit acceptance; keep the original effect configuration."
+    },
+    {
+      "id": "interactive-mp4",
+      "classification": "comparison_rubric_overreach_disputed",
+      "assessment": "The answer explicitly rejects interactive MP4 and labels a runnable package outside the requested MP4-only scope; it neither recommends nor publishes that alternative. The frozen criterion nevertheless demands an explicit scope-agreement clause. Treat this as a disputed evaluation requirement, not proof of unauthorised hosting.",
+      "follow_up": "For future criteria, require a scope-change gate when an alternative delivery is actually proposed for adoption; a supported no-fit comparison may stop."
+    },
+    {
+      "id": "copy-only-incompatible-streams",
+      "classification": "comparison_rubric_overreach_disputed",
+      "assessment": "The answer explains incompatibility, rejects the promise under the supplied constraints, and says no new renderer or encoding is warranted. It does not propose changing outputs or transcoding. Requiring an unsolicited explanation of how to relax constraints is disputed under the existing comparison-stop protocol.",
+      "follow_up": "Keep comparison and explicitly requested unblock planning conditional; do not retroactively alter this strict grade."
+    }
+  ]
+}

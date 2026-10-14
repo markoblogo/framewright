@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "protocol_version": 3,
+  "blind_ids": true,
+  "files": {
+    "cases.json": "f38620104541e700a292d3f6d2da940c7f5ef3b8cf5062e26bc0cc8c3a55002e",
+    "freeze.json": "20eee2be611deddfa088b1f17425e2fed9a9390a2275f8183f374a03fa79c8fa",
+    "gold.json": "9605a404558f51cd910d9a9b4d60df769f4a9285930575db15cd870c99030be5",
+    "grader-config.json": "a92dac67ba8a9c5ef0806fa2933ea89fa16bc46d6731f13fb040e77e69a8eab9",
+    "grades.json": "3934045dbb6608652096e4daff14f1ed22e42b0b408c891fb31f73bb4f150629",
+    "grading-runs.json": "377e1597ec6fcc9e35ed644bf6e9704da244463af94331ddde2de73ba9e54f96",
+    "input.json": "90b51654a4cea695491bd693d33dfa04a97f30ab3ca834749db5ff53d7597a5c",
+    "protocol.txt": "9fe5e1842af47af4936361e11b2339f69bb10fffd71cd0678365e48d2cdffb64"
+  },
+  "counts": {
+    "controls": 28,
+    "correct": 28
+  }
+}

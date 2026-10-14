@@ -1,6 +1,6 @@
 # Proposed experiment queue
 
-Updated 2026-10-14. This is a prioritised backlog, not a schedule or permission to
+Updated 2026-10-15. This is a prioritised backlog, not a schedule or permission to
 install, spend credits, upload assets or run autonomous jobs. Use authorised ABVX
 products or distributable demo assets. Declare success criteria before each run;
 retain failures, costs and human review separately. No new release is planned for
@@ -8,7 +8,7 @@ this batch of research. [Source comparison](related-work.md).
 
 | Order | Experiment / why next | Bounded input and success gate | Resources / stop boundary |
 | --- | --- | --- | --- |
-| 0 | **Router transfer evaluation** — check unseen requests beyond the retained planning suite | The [v3 development run](router-evaluation.md) passes 52/52 with 22/22 fresh controls; earlier first-exposure 9/12 remains historical. Freeze another genuinely unseen set before extending scope; assess tool choice, explicit preferences, evidence, budget and comparison-only stopping; retain decisions and tool traces | Approve a model/runtime budget; no real infrastructure or public uploads. Do not extend current planning qualification to unseen or privileged scopes without matching evidence |
+| 0 | **Router transfer follow-up** — separate output QA from comparison grading | New first-exposure suite: [13/18,28/28 controls](../benchmarks/router/2026-10-15/transfer-2/README.md). Preserve first answers; address alpha-PNG compositing and effect flicker QA, clarify fallback approval, and make future comparison criteria conditional on actually proposing a scope change | No fixes or reruns are implied by this record. Freeze changes and controls before a later regression run; use another unseen set for further transfer claims. No render or release |
 | 1 | **librosa + PySceneDetect** — music/video cue sheets in both directions | One authorised 10–15 s audio excerpt and one fixed clip; compare detected onset/beat and cut candidates with manual annotations, declare tolerance before running; produce JSON cue sheet + edited microclip | Isolated local environment on Work; no model download initially. Distinguish beat errors from useful cut detection; record timing/memory and false positives |
 | 2 | **WhisperX lyric alignment** — readable song words at the right time | One 10 s English sung excerpt with known original lyrics; compare word timestamps and omissions against listening; export reviewed captions | Review exact ASR/alignment model licences and sizes first; no diarisation or voice cloning needed. Do not equate speech alignment with singing success |
 | 3 | **ACE-Step 1.5** — bounded local alternative to cloud music | After hardware preflight, one short instrumental and, if feasible, one original-lyric excerpt; compare intelligibility, cadence, control and real render time | Record Mac backend, free memory/storage and weight terms before download; agree model-size ceiling. Stop if the machine cannot support it; no advertised CUDA speed claims |
