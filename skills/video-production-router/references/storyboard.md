@@ -4,6 +4,10 @@ Use this original Framewright adapter when creating a new film from a brief and
 no useful shot plan exists. A short launch can use a compact shot table; a complex
 film may need per-shot prompts. Do not impose a full storyboard on comparison,
 finished-media QA, a simple recut, supplied approved shots, or a single-shot prompt.
+For a prompt-only task with absent artwork, keep the asset prerequisite explicit
+inside the concise prompt: use the approved logo once supplied; do not fabricate
+missing artwork. This preserves uncertainty without intake questions, extra shots
+or implying that a file or its rights were inspected.
 An explicit renderer remains fixed; storyboard is preproduction, not its replacement.
 
 The upstream [AI Video Storyboard skill](https://github.com/aicontentskills/ai-video-storyboard-skill/blob/93f8a6d6935858bc4acd7ff3bbea2411edf88caa/SKILL.md)

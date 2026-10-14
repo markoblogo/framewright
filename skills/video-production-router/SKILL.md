@@ -49,7 +49,10 @@ it does not replace rendering skills or confer permission to publish.
    package versions, check installed API/official skills and licence eligibility,
    retain downloaded-browser failure plus workaround, and inspect native stills
    separately from encoded picture/audio when stills are requested.
-4. Work from verified product facts and authorised assets. When shortening existing
+4. Work from verified product facts and authorised assets. In a prompt-only task,
+   state an absent asset as a prerequisite inside the prompt (“use the approved
+   logo once supplied”); do not imply it is available or inspected, or add intake.
+   When shortening existing
    material, preserve factual claims and reading order unless the user requests a
    substantive rewrite. Measure generated speech
    before finalising cuts. Keep deterministic seekable picture timing and sound cues
