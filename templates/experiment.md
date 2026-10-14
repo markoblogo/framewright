@@ -7,6 +7,9 @@
 - Authorised side effects / costs / workspace:
 - Success criteria decided before execution:
 - Method / reproduction steps / timeline:
+- Per-block picture/text/voice/music/finishing tools, style and effect evidence:
+- Common canvas/fps/colour/alpha, frame counts and overlap:
+- Measured elapsed time / marginal cost / unrecorded values:
 - Missing requirement / tool roles / handoff formats / transformations:
 - Final chain QA / individually tested versus combined capabilities:
 - Local output hashes / evidence paths:

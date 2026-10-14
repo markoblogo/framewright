@@ -1,0 +1,65 @@
+{
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "minimum_evidence": "documented",
+  "allow_paid": false,
+  "language": "en",
+  "duration_seconds": 30,
+  "blocks": [
+    {
+      "id": "intro",
+      "input": "brand",
+      "style": "editorial",
+      "preferred_tool": "remotion",
+      "effects": [
+        "typography"
+      ],
+      "deliverables": [
+        "video-export",
+        "still-export"
+      ],
+      "duration_seconds": 6
+    },
+    {
+      "id": "interface",
+      "input": "react-ui",
+      "preferred_tool": "flute",
+      "effects": [
+        "camera-travel",
+        "depth-of-field"
+      ],
+      "duration_seconds": 8
+    },
+    {
+      "id": "object",
+      "input": "object",
+      "effects": [
+        "isometric-svg",
+        "object-motion"
+      ],
+      "duration_seconds": 6
+    },
+    {
+      "id": "book",
+      "input": "book-art",
+      "preferred_tool": "hyperframes",
+      "deliverables": [
+        "video-export",
+        "narration"
+      ],
+      "duration_seconds": 6
+    },
+    {
+      "id": "outro",
+      "input": "brand",
+      "preferred_tool": "remotion",
+      "effects": [
+        "typography"
+      ],
+      "duration_seconds": 4
+    }
+  ]
+}

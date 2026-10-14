@@ -1,0 +1,16 @@
+name: Validate methods library
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - run: python3 -m unittest discover -s tests -q
+      - run: python3 scripts/validate.py
+      - run: python3 scripts/render_tool_reference.py --check
+      - run: python3 scripts/build_release.py --output /tmp/framewright-release

@@ -1,0 +1,962 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-14",
+  "scope": "Decision-relevant audited inventory, not an exhaustive promise for every upstream API. Styles are affordances and directions, not hard renderer limits. Missing features are unknown.",
+  "statuses": [
+    "tested",
+    "documented",
+    "failed",
+    "unknown"
+  ],
+  "sources": {
+    "brag": {
+      "url": "https://github.com/latent-spaces/brag/blob/069432cac935ed1895859df201c31436c07fb74e/README.md",
+      "reviewed": "2026-10-14",
+      "revision": "069432cac935ed1895859df201c31436c07fb74e"
+    },
+    "flute": {
+      "url": "https://github.com/webprodigies-org/flute/blob/4ab8c4a310ed051db9990e5a10a35fbcf2080cb1/README.md",
+      "reviewed": "2026-10-14",
+      "revision": "4ab8c4a310ed051db9990e5a10a35fbcf2080cb1"
+    },
+    "anatomy": {
+      "url": "https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/README.md",
+      "reviewed": "2026-10-14",
+      "revision": "e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f"
+    },
+    "sound-layer": {
+      "url": "https://github.com/Bodila51/opus-sound-layer/blob/52ac266a24b7dfd3cd06a28c34d5af360a8d7586/README.md",
+      "reviewed": "2026-10-14",
+      "revision": "52ac266a24b7dfd3cd06a28c34d5af360a8d7586"
+    },
+    "kokoro": {
+      "url": "https://github.com/thewh1teagle/kokoro-onnx/blob/3596b26764286a7de9d90c363e988d50578918e5/README.md",
+      "reviewed": "2026-10-14",
+      "revision": "3596b26764286a7de9d90c363e988d50578918e5"
+    },
+    "brag-tones": {
+      "url": "https://github.com/latent-spaces/brag/blob/069432cac935ed1895859df201c31436c07fb74e/skills/brag/references/tones.md",
+      "reviewed": "2026-10-14",
+      "revision": "069432cac935ed1895859df201c31436c07fb74e"
+    },
+    "hyperframes": {
+      "url": "https://hyperframes.heygen.com/concepts/compositions",
+      "reviewed": "2026-10-14",
+      "revision": null
+    },
+    "hf-effects": {
+      "url": "https://hyperframes.heygen.com/guides/keyframes",
+      "reviewed": "2026-10-14",
+      "revision": null
+    },
+    "hf-vfx": {
+      "url": "https://hyperframes.heygen.com/guides/vfx-chain",
+      "reviewed": "2026-10-14",
+      "revision": null
+    },
+    "remotion": {
+      "url": "https://www.remotion.dev/docs/",
+      "reviewed": "2026-10-14",
+      "revision": null
+    },
+    "rm-effects": {
+      "url": "https://www.remotion.dev/docs/transitions/",
+      "reviewed": "2026-10-14",
+      "revision": null
+    },
+    "rm-three": {
+      "url": "https://www.remotion.dev/docs/three",
+      "reviewed": "2026-10-14",
+      "revision": null
+    },
+    "rm-captions": {
+      "url": "https://www.remotion.dev/docs/captions",
+      "reviewed": "2026-10-14",
+      "revision": null
+    },
+    "voices": {
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/blob/main/VOICES.md",
+      "reviewed": "2026-10-14",
+      "revision": null
+    },
+    "ffmpeg": {
+      "url": "https://ffmpeg.org/ffmpeg-filters.html",
+      "reviewed": "2026-10-14",
+      "revision": null
+    },
+    "hf-grade": {
+      "url": "https://hyperframes.heygen.com/reference/color-grading",
+      "reviewed": "2026-10-14",
+      "revision": null
+    },
+    "hf-speed": {
+      "url": "https://hyperframes.heygen.com/reference/speed-ramps",
+      "reviewed": "2026-10-14",
+      "revision": null
+    },
+    "hf-transitions": {
+      "url": "https://hyperframes.heygen.com/packages/shader-transitions",
+      "reviewed": "2026-10-14",
+      "revision": null
+    },
+    "anatomy-licence": {
+      "url": "https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/LICENSE",
+      "reviewed": "2026-10-14",
+      "revision": "e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f"
+    }
+  },
+  "tools": [
+    {
+      "id": "brag",
+      "name": "Brag full",
+      "role": "orchestrator",
+      "inputs": [
+        "source-project",
+        "brand"
+      ],
+      "styles": [
+        "default",
+        "polished",
+        "cinematic",
+        "deadpan",
+        "app-store",
+        "chaotic",
+        "yc-parody"
+      ],
+      "style_note": "Seven documented tone presets shape story, rhythm and typography; default is playful/clean. Freeform tone overrides the presets. See the immutable tone reference in sources.brag-tones.",
+      "tested_version": "retained full-workflow snapshot",
+      "licence_note": "MIT; renderer/providers have separate terms",
+      "features": [
+        {
+          "id": "storyboard",
+          "status": "tested",
+          "source": "brag",
+          "note": "",
+          "experiments": [
+            "asciitheme",
+            "ami"
+          ]
+        },
+        {
+          "id": "video-export",
+          "status": "tested",
+          "source": "brag",
+          "note": "",
+          "experiments": [
+            "asciitheme",
+            "ami"
+          ]
+        },
+        {
+          "id": "typography",
+          "status": "tested",
+          "source": "brag",
+          "note": "",
+          "experiments": [
+            "asciitheme",
+            "ami"
+          ]
+        },
+        {
+          "id": "narration",
+          "status": "documented",
+          "source": "brag",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "vertical-format",
+          "status": "documented",
+          "source": "brag",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "transitions",
+          "status": "documented",
+          "source": "brag",
+          "note": "",
+          "experiments": []
+        }
+      ],
+      "limitations": [
+        "Full Hyperframes workflow was tested; brag-slim was not. Voice is documented, not exercised in our Brag runs."
+      ],
+      "style_basis": "documented_presets"
+    },
+    {
+      "id": "hyperframes",
+      "name": "Hyperframes",
+      "role": "renderer",
+      "inputs": [
+        "source-project",
+        "brand",
+        "book-art",
+        "composition",
+        "video",
+        "object"
+      ],
+      "styles": [
+        "editorial",
+        "montage",
+        "kinetic",
+        "minimal",
+        "playful"
+      ],
+      "style_note": "HTML/CSS/SVG/Canvas plus seekable motion. The book-test editorial look was our direction, not an engine restriction.",
+      "tested_version": "0.8.157 in retained pilots",
+      "licence_note": "Apache-2.0 for CLI; check current runtime, asset, cloud/provider terms",
+      "features": [
+        {
+          "id": "video-export",
+          "status": "tested",
+          "source": "hyperframes",
+          "note": "",
+          "experiments": [
+            "asciitheme",
+            "ami",
+            "jeanne-fr",
+            "good-dogs-en",
+            "good-dogs-teaser"
+          ]
+        },
+        {
+          "id": "typography",
+          "status": "tested",
+          "source": "hyperframes",
+          "note": "",
+          "experiments": [
+            "asciitheme",
+            "ami",
+            "jeanne-fr",
+            "good-dogs-en",
+            "good-dogs-teaser"
+          ]
+        },
+        {
+          "id": "image-pan-zoom",
+          "status": "tested",
+          "source": "hyperframes",
+          "note": "",
+          "experiments": [
+            "asciitheme",
+            "ami",
+            "jeanne-fr",
+            "good-dogs-en",
+            "good-dogs-teaser"
+          ]
+        },
+        {
+          "id": "scene-timeline",
+          "status": "tested",
+          "source": "hyperframes",
+          "note": "",
+          "experiments": [
+            "asciitheme",
+            "ami",
+            "jeanne-fr",
+            "good-dogs-en",
+            "good-dogs-teaser"
+          ]
+        },
+        {
+          "id": "transitions",
+          "status": "tested",
+          "source": "hyperframes",
+          "note": "",
+          "experiments": [
+            "asciitheme",
+            "ami",
+            "jeanne-fr",
+            "good-dogs-en",
+            "good-dogs-teaser"
+          ]
+        },
+        {
+          "id": "still-export",
+          "status": "documented",
+          "source": "hyperframes",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "native-audio",
+          "status": "documented",
+          "source": "hyperframes",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "captions",
+          "status": "documented",
+          "source": "hyperframes",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "vertical-format",
+          "status": "documented",
+          "source": "hyperframes",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "svg-overlay",
+          "status": "documented",
+          "source": "hyperframes",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "shader-transitions",
+          "status": "documented",
+          "source": "hf-transitions",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "color-grade",
+          "status": "documented",
+          "source": "hf-grade",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "speed-ramp",
+          "status": "documented",
+          "source": "hf-speed",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "ascii-treatment",
+          "status": "documented",
+          "source": "hf-grade",
+          "note": "Check current installed version, browser/capture requirements and effect-specific controls.",
+          "experiments": []
+        },
+        {
+          "id": "pixelate",
+          "status": "documented",
+          "source": "hf-grade",
+          "note": "Check current installed version, browser/capture requirements and effect-specific controls.",
+          "experiments": []
+        },
+        {
+          "id": "bloom",
+          "status": "documented",
+          "source": "hf-grade",
+          "note": "Check current installed version, browser/capture requirements and effect-specific controls.",
+          "experiments": []
+        },
+        {
+          "id": "lut",
+          "status": "documented",
+          "source": "hf-grade",
+          "note": "Check current installed version, browser/capture requirements and effect-specific controls.",
+          "experiments": []
+        },
+        {
+          "id": "wave-warp",
+          "status": "documented",
+          "source": "hf-vfx",
+          "note": "Check current installed version, browser/capture requirements and effect-specific controls.",
+          "experiments": []
+        },
+        {
+          "id": "displacement",
+          "status": "documented",
+          "source": "hf-vfx",
+          "note": "Check current installed version, browser/capture requirements and effect-specific controls.",
+          "experiments": []
+        }
+      ],
+      "limitations": [
+        "New VFX, captions, vertical/4K/cloud paths were not validated by our horizontal pilots. Media and animation timing must share the seekable timeline.",
+        "Current docs note conflicts between capturing VFX chains and page-side shader transitions; test the combined layer, do not assume independent effects compose safely."
+      ],
+      "style_basis": "authoring_affordance_and_observed_art_direction"
+    },
+    {
+      "id": "flute",
+      "name": "Flute",
+      "role": "renderer",
+      "inputs": [
+        "react-ui"
+      ],
+      "styles": [
+        "cinematic-ui",
+        "spatial",
+        "minimal"
+      ],
+      "style_note": "Camera travel, perspective, depth and selective focus around actual DOM panels; preserve host styles/providers. DOM blur is not ray-traced optics.",
+      "tested_version": "0.1.2",
+      "licence_note": "MIT",
+      "features": [
+        {
+          "id": "video-export",
+          "status": "tested",
+          "source": "flute",
+          "note": "",
+          "experiments": [
+            "coqpi-flute"
+          ]
+        },
+        {
+          "id": "react-components",
+          "status": "tested",
+          "source": "flute",
+          "note": "",
+          "experiments": [
+            "coqpi-flute"
+          ]
+        },
+        {
+          "id": "camera-travel",
+          "status": "tested",
+          "source": "flute",
+          "note": "",
+          "experiments": [
+            "coqpi-flute"
+          ]
+        },
+        {
+          "id": "depth-of-field",
+          "status": "tested",
+          "source": "flute",
+          "note": "",
+          "experiments": [
+            "coqpi-flute"
+          ]
+        },
+        {
+          "id": "scene-timeline",
+          "status": "tested",
+          "source": "flute",
+          "note": "",
+          "experiments": [
+            "coqpi-flute"
+          ]
+        },
+        {
+          "id": "vertical-format",
+          "status": "documented",
+          "source": "flute",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "still-export",
+          "status": "failed",
+          "source": "flute",
+          "note": "Portable CoqPi adapter snapshot CLI failed; FFmpeg extracted the delivered thumbnail.",
+          "experiments": [
+            "coqpi-flute"
+          ]
+        }
+      ],
+      "limitations": [
+        "Browser-host CoqPi success does not establish packaged Electron or arbitrary React support. Keep real data and IPC outside demo. No Flute audio workflow was tested."
+      ],
+      "style_basis": "authoring_affordance_and_observed_art_direction"
+    },
+    {
+      "id": "remotion",
+      "name": "Remotion",
+      "role": "renderer",
+      "inputs": [
+        "brand",
+        "data",
+        "book-art",
+        "composition",
+        "react-ui",
+        "video",
+        "object"
+      ],
+      "styles": [
+        "editorial",
+        "kinetic",
+        "minimal",
+        "data-motion"
+      ],
+      "style_note": "React frame-driven graphics and programmable layout; typography, editorial montage, UI or 3D can be authored. Our restrained Framewright film is one art direction.",
+      "tested_version": "4.0.535",
+      "licence_note": "Remotion Free/Company licence; individual/small-team eligibility and paid features need separate checking",
+      "features": [
+        {
+          "id": "video-export",
+          "status": "tested",
+          "source": "remotion",
+          "note": "",
+          "experiments": [
+            "framewright-remotion"
+          ]
+        },
+        {
+          "id": "still-export",
+          "status": "tested",
+          "source": "remotion",
+          "note": "",
+          "experiments": [
+            "framewright-remotion"
+          ]
+        },
+        {
+          "id": "native-audio",
+          "status": "tested",
+          "source": "remotion",
+          "note": "",
+          "experiments": [
+            "framewright-remotion"
+          ]
+        },
+        {
+          "id": "typography",
+          "status": "tested",
+          "source": "remotion",
+          "note": "",
+          "experiments": [
+            "framewright-remotion"
+          ]
+        },
+        {
+          "id": "scene-timeline",
+          "status": "tested",
+          "source": "remotion",
+          "note": "",
+          "experiments": [
+            "framewright-remotion"
+          ]
+        },
+        {
+          "id": "image-pan-zoom",
+          "status": "documented",
+          "source": "remotion",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "data-driven",
+          "status": "documented",
+          "source": "remotion",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "vertical-format",
+          "status": "documented",
+          "source": "remotion",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "react-components",
+          "status": "documented",
+          "source": "remotion",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "svg-overlay",
+          "status": "documented",
+          "source": "remotion",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "transitions",
+          "status": "documented",
+          "source": "rm-effects",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "book-flip",
+          "status": "documented",
+          "source": "rm-effects",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "film-burn",
+          "status": "documented",
+          "source": "rm-effects",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "zoom-blur",
+          "status": "documented",
+          "source": "rm-effects",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "object-3d",
+          "status": "documented",
+          "source": "rm-three",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "captions",
+          "status": "documented",
+          "source": "rm-captions",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "cube-transition",
+          "status": "documented",
+          "source": "rm-effects",
+          "note": "Official transition list marks cube paid; not covered by this pilot.",
+          "experiments": [],
+          "requires_paid": true
+        },
+        {
+          "id": "wipe",
+          "status": "documented",
+          "source": "rm-effects",
+          "note": "Official transition presentation; not exercised in the Framewright film.",
+          "experiments": []
+        },
+        {
+          "id": "slide",
+          "status": "documented",
+          "source": "rm-effects",
+          "note": "Official transition presentation; not exercised in the Framewright film.",
+          "experiments": []
+        },
+        {
+          "id": "iris",
+          "status": "documented",
+          "source": "rm-effects",
+          "note": "Official transition presentation; not exercised in the Framewright film.",
+          "experiments": []
+        },
+        {
+          "id": "ripple",
+          "status": "documented",
+          "source": "rm-effects",
+          "note": "Official transition presentation; not exercised in the Framewright film.",
+          "experiments": []
+        },
+        {
+          "id": "crosswarp",
+          "status": "documented",
+          "source": "rm-effects",
+          "note": "Official transition presentation; not exercised in the Framewright film.",
+          "experiments": []
+        }
+      ],
+      "limitations": [
+        "Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately."
+      ],
+      "style_basis": "authoring_affordance_and_observed_art_direction"
+    },
+    {
+      "id": "anatomy",
+      "name": "Anatomy",
+      "role": "illustrator",
+      "inputs": [
+        "object"
+      ],
+      "styles": [
+        "isometric",
+        "technical"
+      ],
+      "style_note": "Dense crafted isometric objects, four-tone shaded SVG, optional integrated WebGL layers and beta 3D moving parts. Recognisable mechanical explanations, not generic slides.",
+      "tested_version": "e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f in prototype",
+      "licence_note": "MIT at the reviewed revision (sources.anatomy-licence); input assets retain their own rights.",
+      "features": [
+        {
+          "id": "isometric-svg",
+          "status": "tested",
+          "source": "anatomy",
+          "note": "",
+          "experiments": [
+            "anatomy-prototype"
+          ]
+        },
+        {
+          "id": "object-motion",
+          "status": "tested",
+          "source": "anatomy",
+          "note": "",
+          "experiments": [
+            "anatomy-prototype"
+          ]
+        },
+        {
+          "id": "svg-overlay",
+          "status": "documented",
+          "source": "anatomy",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "webgl-effects",
+          "status": "documented",
+          "source": "anatomy",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "object-3d",
+          "status": "documented",
+          "source": "anatomy",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "still-export",
+          "status": "documented",
+          "source": "anatomy",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "video-export",
+          "status": "unknown",
+          "source": "anatomy",
+          "note": "No native MP4 exporter verified; a deterministic adapter and renderer are a separate chain.",
+          "experiments": []
+        }
+      ],
+      "limitations": [
+        "Local visual prototype only; combined sound QA failed. Beta 3D is not a calibrated physics simulator. Historical accuracy remains unverified."
+      ],
+      "style_basis": "authoring_affordance_and_observed_art_direction"
+    },
+    {
+      "id": "kokoro",
+      "name": "Kokoro ONNX",
+      "role": "voice",
+      "inputs": [],
+      "styles": [
+        "narrated",
+        "measured"
+      ],
+      "style_note": "Synthetic narration with selectable voice/speed; language and pronunciation choices shape performance. It does not write the story or render picture.",
+      "tested_version": "retained v1.0 ONNX voice/model files",
+      "licence_note": "Wrapper MIT; model Apache-2.0; inspect individual input/voice rights",
+      "features": [
+        {
+          "id": "narration",
+          "status": "tested",
+          "source": "kokoro",
+          "note": "",
+          "experiments": [
+            "jeanne-fr",
+            "good-dogs-en"
+          ],
+          "tested_languages": [
+            "en",
+            "fr"
+          ],
+          "documented_languages": [
+            "en",
+            "fr",
+            "es",
+            "hi",
+            "it",
+            "ja",
+            "pt",
+            "zh"
+          ],
+          "language_source": "voices"
+        }
+      ],
+      "limitations": [
+        "Local FR/EN tested; other documented languages require a voice/pronunciation and timing trial. No voice cloning tested."
+      ],
+      "style_basis": "authoring_affordance_and_observed_art_direction"
+    },
+    {
+      "id": "sound-layer",
+      "name": "opus-sound-layer",
+      "role": "audio",
+      "inputs": [],
+      "styles": [
+        "cinematic",
+        "tactile"
+      ],
+      "style_note": "Recorded sound effects, cue placement and measured final-file QA; sonic palette can be restrained or dramatic. Metrics do not replace listening.",
+      "tested_version": "52ac266a24b7dfd3cd06a28c34d5af360a8d7586 in pilots",
+      "licence_note": "MIT code; upstream kit CC0 with credits; added sounds retain their own rights",
+      "features": [
+        {
+          "id": "audio-mix",
+          "status": "tested",
+          "source": "sound-layer",
+          "note": "",
+          "experiments": [
+            "jeanne-fr",
+            "good-dogs-en",
+            "good-dogs-teaser"
+          ]
+        },
+        {
+          "id": "audio-qa",
+          "status": "tested",
+          "source": "sound-layer",
+          "note": "",
+          "experiments": [
+            "jeanne-fr",
+            "good-dogs-en",
+            "good-dogs-teaser"
+          ]
+        },
+        {
+          "id": "ducking",
+          "status": "documented",
+          "source": "sound-layer",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "sfx-library",
+          "status": "documented",
+          "source": "sound-layer",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "peak-alignment",
+          "status": "documented",
+          "source": "sound-layer",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "room-effect",
+          "status": "documented",
+          "source": "sound-layer",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "normalization",
+          "status": "documented",
+          "source": "sound-layer",
+          "note": "",
+          "experiments": []
+        }
+      ],
+      "limitations": [
+        "Anatomy combined sound run failed (22 audibility failures); Good Dogs intermediate effects were removed after QA. Never lower thresholds to make an effect pass."
+      ],
+      "style_basis": "authoring_affordance_and_observed_art_direction"
+    },
+    {
+      "id": "ffmpeg",
+      "name": "FFmpeg",
+      "role": "finisher",
+      "inputs": [
+        "video"
+      ],
+      "styles": [
+        "neutral"
+      ],
+      "style_note": "Finishing/transcoding/filter primitives, not a project-specific visual direction. Combine with a renderer rather than add an unnecessary redesign.",
+      "tested_version": "local ffmpeg/ffprobe on PATH",
+      "licence_note": "Build-dependent LGPL/GPL and codec/asset conditions; verify the actual build",
+      "features": [
+        {
+          "id": "video-export",
+          "status": "tested",
+          "source": "ffmpeg",
+          "note": "",
+          "experiments": [
+            "coqpi-flute",
+            "framewright-remotion",
+            "jeanne-fr",
+            "good-dogs-en"
+          ]
+        },
+        {
+          "id": "still-export",
+          "status": "tested",
+          "source": "ffmpeg",
+          "note": "",
+          "experiments": [
+            "coqpi-flute",
+            "framewright-remotion",
+            "jeanne-fr",
+            "good-dogs-en"
+          ]
+        },
+        {
+          "id": "media-mux",
+          "status": "tested",
+          "source": "ffmpeg",
+          "note": "",
+          "experiments": [
+            "coqpi-flute",
+            "framewright-remotion",
+            "jeanne-fr",
+            "good-dogs-en"
+          ]
+        },
+        {
+          "id": "normalization",
+          "status": "tested",
+          "source": "ffmpeg",
+          "note": "",
+          "experiments": [
+            "coqpi-flute",
+            "framewright-remotion",
+            "jeanne-fr",
+            "good-dogs-en"
+          ]
+        },
+        {
+          "id": "concat",
+          "status": "documented",
+          "source": "ffmpeg",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "captions",
+          "status": "documented",
+          "source": "ffmpeg",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "transitions",
+          "status": "documented",
+          "source": "ffmpeg",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "image-pan-zoom",
+          "status": "documented",
+          "source": "ffmpeg",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "color-grade",
+          "status": "documented",
+          "source": "ffmpeg",
+          "note": "",
+          "experiments": []
+        },
+        {
+          "id": "speed-ramp",
+          "status": "documented",
+          "source": "ffmpeg",
+          "note": "",
+          "experiments": []
+        }
+      ],
+      "limitations": [
+        "Stream copy is conditional on compatible containers/codecs; resizing, burning captions or frame-rate conversion requires re-encoding and final QA."
+      ],
+      "style_basis": "authoring_affordance_and_observed_art_direction"
+    }
+  ]
+}

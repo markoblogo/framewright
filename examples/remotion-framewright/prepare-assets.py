@@ -4,7 +4,8 @@ import shutil
 import subprocess
 
 here = Path(__file__).resolve().parent
-assert Path.cwd().resolve() == here, 'Run this command from the example directory'
+if Path.cwd().resolve() != here:
+    raise ValueError('Run this command from the example directory')
 (here/'public').mkdir(exist_ok=True)
 (here/'outputs').mkdir(exist_ok=True)
 shutil.copy2(here.parents[1]/'assets/framewright-cover.png', here/'public/framewright-cover.png')
