@@ -1,0 +1,30 @@
+{
+  "cases": 46,
+  "strict_model_rubric_passed": 43,
+  "route_review_passed": 46,
+  "trace_review_passed": 46,
+  "actor_usage": {
+    "input_tokens": 6325642,
+    "cached_input_tokens": 5297024,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 45114,
+    "reasoning_output_tokens": 1155
+  },
+  "actor_worker_seconds": 1847.04,
+  "monetary_cost": "NOT_AVAILABLE",
+  "qualification": "bounded_read_only_planning_only",
+  "public_trace_format": "all tool events retained; repeated command output replaced by bytes/hash; diagnostic home paths minimised; original full streams retained locally",
+  "limitations": [
+    "same model family in separate actor/evaluator contexts, not third-party certification",
+    "read-only planning/blocked-execution envelope restricts actions; production privileges and media quality were not tested",
+    "12 opaque-ID frozen grader controls reused from qa-v2; grading protocol and core configuration unchanged",
+    "reported actor token totals exclude calibration and grading calls and are not account billing totals",
+    "complete runs are retained separately; no manual grade overrides or cherry-picked answers"
+  ],
+  "grader_calibration": {
+    "controls": 12,
+    "correct": 12,
+    "blind_ids": true,
+    "reuse_from": "qa-v2"
+  }
+}

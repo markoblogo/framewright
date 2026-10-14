@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+Add an attributed, original storyboard adapter for new multi-shot briefs. Preserve
+silence/format/cadence, source facts, asset rights and per-shot tool handoffs; skip
+unneeded storyboarding. Exclude preproduction roles from picture-chain providers.
+Retain first-exposure transfer 9/12, raw storyboard 3/4 and integrated 43/46
+with grading-context repair and disagreements visible. Add `evaluated_with_gaps`
+for complete current-source assessments that must not claim an all-passing
+qualification. No render, release or new provider/account integration.
+
 Clarify planned/blocked/verified QA, explicit source-copy checks and separate
 existing/native/extracted thumbnail handoffs. Retain a complete 30/30 planning run
 with 12/12 frozen grader controls; preserve prior unsuccessful scores, including

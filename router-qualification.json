@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "status": "model_checked_planning_scope",
+  "status": "evaluated_with_gaps",
   "scope": "synthetic_read_only_planning",
-  "packet": "benchmarks/router/2026-10-14/qa-v4",
+  "packet": "benchmarks/router/2026-10-14/storyboard-integrated",
   "case_ids": [
     "software",
     "french-book",
@@ -33,7 +33,23 @@
     "reuse-existing-thumbnail",
     "source-copy-evidence",
     "unverified-qa-note",
-    "execution-request-handoff"
+    "execution-request-handoff",
+    "low-motion-diagram",
+    "print-native-still",
+    "screenshots-explicit-flute",
+    "three-style-blocks",
+    "locked-score-frames",
+    "commercial-free-song",
+    "credit-ceiling",
+    "zero-data-egress",
+    "effects-evidence-cap",
+    "captioned-human-voice",
+    "budget-style-conflict",
+    "finishing-compare-only",
+    "storyboard-shared-shot-plan",
+    "storyboard-silent-4k-override",
+    "storyboard-single-shot-skip",
+    "storyboard-untrusted-brief"
   ],
   "model": "gpt-6.1-sol",
   "reasoning_effort": "medium",
@@ -44,5 +60,5 @@
     "media quality or audience outcomes",
     "other models/configurations"
   ],
-  "note": "Legacy catalogue structural_only describes the original scenario specifications and does not assert unrestricted behavioural qualification. This record separately qualifies the retained bounded planning run on exact current decision sources."
+  "note": "Current integrated source was assessed on all 46 declared cases. evaluated_with_gaps, if present, is not a full qualification pass. First-exposure transfer 9/12 and raw upstream text trial 3/4 remain separate. This is bounded synthetic planning, not production execution or statistical reliability."
 }

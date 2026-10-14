@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](experiments/2026-10-14/README.md)
-[![Planning check: 30/30](https://img.shields.io/badge/planning__check-30%2F30-526C73?style=flat-square)](docs/router-evaluation.md)
+[![Planning evidence: scoped](https://img.shields.io/badge/planning__evidence-scoped-526C73?style=flat-square)](docs/router-evaluation.md)
 [![8 recorded exports](https://img.shields.io/badge/recorded__exports-8-293F48?style=flat-square)](experiments/2026-10-14/outputs.json)
 [![ABVX ecosystem](https://img.shields.io/badge/ecosystem-ABVX-E7BA6A?style=flat-square)](docs/ecosystem.md)
 
@@ -27,7 +27,15 @@ are separate; the public URL was supplied by the owner, not matched byte-for-byt
 [Reproduce the open reference project](docs/first-video.md) with shared demo assets,
 pinned versions, exact commands, an agent prompt and expected outputs.
 [Release 0.1.1](CHANGELOG.md) remains experimental. Unreleased updates now include a
-[30-case scoped planning check](docs/router-evaluation.md); no new release is made.
+[46-case integrated planning assessment](docs/router-evaluation.md); no new release is made.
+
+## Start with a storyboard when the film is new
+
+For a new multi-shot brief, the [storyboard adapter](docs/storyboard-adapter.md)
+sets continuity, exact timings, source assets and a tool for each scene before
+production. It adapts AI Video Storyboard without importing its fixed 1080p/audio
+defaults. Existing edits, finishing and single-shot prompts skip this layer.
+This is text preproduction, not a new renderer or permission to generate clips.
 
 ## Plan by scene, style and effect
 
@@ -123,12 +131,15 @@ for Hyperframes-backed routes; Flute and Remotion use their own guides.
 Example: “Make a French trailer from this book page and cover. Use
 $video-production-router to choose a workflow.”
 
-The current decision sources passed **30/30 synthetic planning cases**; the evaluator
-passed **12/12 positive/negative controls**. [Results and reproduction](docs/router-evaluation.md)
-retain earlier failures and the new unambiguous rubric. The
-[scoped qualification](router-qualification.json) is checked against current source,
-prompt and fixture hashes. This covers planning with the named model/configuration;
-automatic discovery, production permissions and media quality remain separate scopes.
+The current integrated sources scored **43/46** in the retained synthetic
+planning assessment; their status is `evaluated_with_gaps`. The first-exposure transfer
+run scored **9/12**, and the raw upstream storyboard trial **3/4**. The original
+12 blind grader controls are reused with unchanged protocol/core configuration.
+[Results, disagreements and limits](docs/router-evaluation.md) preserve failures
+and the grading-context repair. The [scope record](router-qualification.json)
+checks exact sources/prompts/fixtures; a record with gaps is not a passing
+qualification. Automatic discovery, production authority and media quality remain
+outside these tests.
 
 ## Add the next experiment
 
@@ -139,7 +150,7 @@ No scheduled jobs or autonomous downloads are configured.
 
 Run `python3 scripts/validate.py` to check catalogue integrity and retained evidence.
 Run `python3 scripts/check_router_evaluation.py --root benchmarks/router --qualification router-qualification.json`
-to verify current planning qualification and its source snapshots.
+to verify the current planning assessment/status and its source snapshots.
 Run `python3 -m unittest discover -s tests -v` for validator regression tests.
 With `--local-root /Volumes/Work`, the validator checks both final and recorded
 native export files and recorded thumbnails against their sizes and SHA-256

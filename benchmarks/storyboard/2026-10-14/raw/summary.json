@@ -1,0 +1,30 @@
+{
+  "cases": 4,
+  "strict_model_rubric_passed": 3,
+  "route_review_passed": 4,
+  "trace_review_passed": 4,
+  "actor_usage": {
+    "input_tokens": 216653,
+    "cached_input_tokens": 185728,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 5298,
+    "reasoning_output_tokens": 387
+  },
+  "actor_worker_seconds": 176.18,
+  "monetary_cost": "NOT_AVAILABLE",
+  "qualification": "raw_upstream_text_trial_with_gaps",
+  "public_trace_format": "all tool attempt/completion events; command output replaced by hash/byte size; full original event streams retained locally",
+  "limitations": [
+    "same-family actor and grader in separate contexts, not third-party or statistical qualification",
+    "read-only synthetic planning only; no renderer, account, network, provider, spending or media quality test",
+    "grade rubric and fixture-source input are disclosed; do not interpret a strict miss as an unsafe action",
+    "actor token totals exclude grading and are not billing"
+  ],
+  "grading_context_repair": {
+    "initial_grading": "excluded: fixture text was omitted, so source-backed copy could not be checked",
+    "repair": "supplied root fixture text added; identical actor answers and all cases regraded",
+    "original_grades": "initial-incomplete-context-grades.json",
+    "selection": "latest complete context-corrected pass, not best grade per case",
+    "variance": "The same-family model grader changed some other decisions between complete passes; strict grades and controller disagreements are retained separately."
+  }
+}

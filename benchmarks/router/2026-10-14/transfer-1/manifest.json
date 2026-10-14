@@ -1,0 +1,23 @@
+{
+  "schema_version": 3,
+  "files": {
+    "cases.json": "abd8aaf1a51f4bff4d2128721004406ddeec68622c7ef16a1190e68a299cb75c",
+    "freeze.json": "c29d8cdb9d600b07ff954ba0feaad2fae8a3be062e13df552541f65108e969f2",
+    "grader-config.json": "56f9537da55930c998b51a663400a6c98e03cb99d61a2ce22a0700c646fb9caa",
+    "grades.json": "2d31f058122e605c2a723d52fb061c25b3179bb8a25f7ca03078d6a1aa7792a4",
+    "initial-incomplete-context-grades.json": "357316e1d63db1e7251569b8c1354f5b64c6d5720201973c296bb4f1f938aefe",
+    "inputs.json": "01cca59cf7c9b43a13ea6421d1701be6ee85f14df48f3650aa3f53bc8c8b2f37",
+    "protocol.txt": "8d0a290354ba11f225b8d50a9678f23299eb80834d2872ef12b97a420a36fddc",
+    "results.json": "ced22e4d473009bf7af1feb64b7906b8ed15a6cc0bade6b33804324d0597821f",
+    "source-snapshot.zip": "410aa326d8f9b6f1d22f6224b0b91ec75c920b45498ae29b23fb9cf6d8dc8398",
+    "summary.json": "b1b6afc6c9503422b04c263a130ca50cb89588bd750163244e49703d14c999dd",
+    "controller-review.json": "758f705c5fa2ad211bd19c26a8ba0dead3cc0b82effab63058dde849dec36524"
+  },
+  "counts": {
+    "cases": 12,
+    "passed": 9
+  },
+  "source_snapshot": "source-snapshot.zip",
+  "calibration": "calibration",
+  "calibration_manifest_sha256": "75658a653f64055ddab7330c1d3afa06506a3e0b45e1eb73ae05e9b742002dd1"
+}

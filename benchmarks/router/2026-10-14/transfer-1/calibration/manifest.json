@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "files": {
+    "gold.json": "2618a250aa07022159edd365e9a18821497b01da2d95b2e355fe7a5f870bc37a",
+    "grades.json": "5c86487a7dc12af46a17a5e3abc80f4eadac9b5167bfcca375bdb061a913414f",
+    "input.json": "ebe7ee8105a1a6ef7e29cb7aea4b274eebba30f89292d21f83061f20010c4402",
+    "protocol.txt": "8d0a290354ba11f225b8d50a9678f23299eb80834d2872ef12b97a420a36fddc",
+    "grader-config.json": "56f9537da55930c998b51a663400a6c98e03cb99d61a2ce22a0700c646fb9caa",
+    "cases.json": "9dc216f6faadbbe9f28ed6cfeb04a8d4d3b302e58cbe23751347ae81eccd3b72",
+    "README.txt": "d8ce41c9c40ae1b089b226d9e45f42de272fbeaedb7aa19bd9d55a5505e2d460",
+    "freeze.json": "31fad967d9403dfe1d0325f5b9062138832db28150fe19b08886b03f456335b6"
+  },
+  "counts": {
+    "controls": 12,
+    "correct": 12
+  },
+  "blind_ids": true
+}

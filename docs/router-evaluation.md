@@ -1,10 +1,88 @@
 # Router planning evaluation
 
-**Current result: 30/30 cases pass the stage-aware planning rubric; the evaluator
-passes 12/12 frozen controls.** [Scoped qualification](../router-qualification.json)
-is tied to the exact decision sources, prompts, fixtures, protocol and complete
-case set. [Current evidence packet](../benchmarks/router/2026-10-14/qa-v4/manifest.json).
-No release is created by this update.
+**Latest integrated source: 43/46 strict passes; status `evaluated_with_gaps`.**
+[Current evidence](../benchmarks/router/2026-10-14/storyboard-integrated/manifest.json)
+and [source-bound scope record](../router-qualification.json). No renderer, media
+or release was produced.
+
+## New transfer and storyboard checks
+
+Before integration, 12 new requests were frozen on source `6af1f50`: low-motion
+style, native still-only delivery, incompatible Flute inputs, a three-style chain,
+locked 25fps cues, commercial song rights with no budget, unknown credits, local
+data restrictions, unqualified simulation, human Ukrainian speech, asset/style
+conflicts and finishing without storyboarding. Their complete-context score is
+**9/12**, not a new all-green qualification. [First-exposure packet](../benchmarks/router/2026-10-14/transfer-1/README.md).
+
+Strict misses concerned per-block QA specificity, a particular permitted music
+alternative, and an explicit future unblock/test proposal. The music answer safely
+proposed a self-performed/contributed recording with rights checks; the frozen
+rubric only admitted existing cleared music or a separately qualified local singing
+candidate. That is a rubric limitation, not an unsafe action. Keep the strict miss
+and the controller disagreement; do not silently expand the accepted answers.
+
+The raw upstream storyboard trial scored **3/4** with source context supplied.
+It preserved silence/4K overrides and single-shot exclusion; a missing explicit
+pre-assembly storyboard approval state remains a strict failure. Its original
+[Framewright adaptation](storyboard-adapter.md) separates preproduction from picture
+providers, preserves constraints and passes ordinary renderer work to selected
+tools. It is a useful experimental preparation layer, not a tested video generator.
+
+The final integrated run includes the prior 30 development cases, all 12 transfer
+requests and four adapter cases: **43/46**, with **4/4** in the adapter
+subset. New adapter contract reads are observed criteria; single-shot exclusion
+does not require loading a multi-shot guide. These 46 cases are now development/
+regression material, not unseen transfer validation. No grade or actor answer was
+replaced with a favourable retry.
+
+| Assessment | Strict result | Interpretation |
+| --- | --- | --- |
+| First exposure on original router | 9/12 | Transfer gaps retained |
+| Raw upstream storyboard | 3/4 | Narrow text-only handoff gap |
+| Integrated router + original adapter | 43/46 | `evaluated_with_gaps` |
+| Adapter subset in integrated run | 4/4 | Included in 46, not another independent sample |
+| Frozen opaque-ID grader controls | 12/12 | Reused; protocol/core config unchanged |
+
+Remaining strict misses in the integrated run:
+
+- `source-copy-evidence`: explicitly plan source-to-claim comparison and separate asset-rights checks.
+- `commercial-free-song`: offer rights-cleared existing music or separately qualified local singing candidate with unknowns.
+- `effects-evidence-cap`: ask whether to relax scope or propose explicit future bounded trials.
+
+`evaluated_with_gaps` retains a complete auditable assessment without promoting it
+to an all-passing qualification. CI checks that the gaps remain visible and every
+source/fixture matches; green integrity checks do not turn failed criteria green.
+
+Controller disagreement: `source-copy-evidence` successfully read the fixture,
+explicitly compared two claims and separately planned rights checks. The grader
+failed it for not proposing the already completed comparison again as future work.
+That is a stage/rubric limitation; its strict FAIL is retained without overriding it.
+A source-text comparison is not media QA and does not establish independent product
+truth. This does not excuse an invented completed check.
+
+For `effects-evidence-cap`, the conservative comparison correctly answers that no
+complete chain is qualified. Its strict miss concerns the predeclared extra next-step
+proposal; it is not evidence of a wrong tool choice or a constraint violation.
+These rubric disagreements need a separately frozen evaluation design, not repeated
+grading until the current replies become green.
+
+## Grading-context repair and variance
+
+The first grading pass omitted supplied product facts: it scored 10/12 for transfer
+and 0/4 for the raw storyboard. Those incomplete-context grades are retained but
+excluded. All identical actor answers were graded again with fixture text included,
+yielding 9/12 and 3/4. Not every change was due to the missing context: the per-block
+QA judgement and the single-shot logo uncertainty judgement varied between passes.
+This is evidence of same-family model-grader variance, not a causal improvement
+score or a licence to choose the best grade per case. Future repetition must supply
+source text and retain all attempts. Actor fixture trees stayed unchanged.
+
+## Historical stage-aware work
+
+The earlier 30/30 v4 run below qualified its exact historical source and bounded
+configuration. It does not automatically qualify the storyboard-integrated source.
+The complete current assessment replaces the active source record; old packets and
+frozen controls remain unchanged. No new release is made.
 
 ## What changed
 
@@ -32,7 +110,7 @@ verification, and attempted/rejected uploads. All twelve were classified correct
 The packet checker requires the same protocol and grader configuration for controls
 and actor grading; an always-passing grader fails the negative controls.
 
-## Complete current run
+## Earlier complete v4 run
 
 Thirty fresh actor contexts covered the existing 17 baseline scenarios,
 music rights/source/credit boundaries, stop/comparison-only behaviour, source
@@ -60,8 +138,8 @@ diagnostics, not mistaken for action attempts or successful media QA.
 | Historical regression | 8 affected cases | 6/8 | Partial; not a qualification pass |
 | Stage-aware v2 | 29 cases | 29/29 | Historical source; retained unchanged |
 | Post-review v3 | 30 cases | 29/30 | Complete failure retained; no promotion |
-| Current v4 | 30 cases | 30/30 | Complete bounded planning check |
-| Current grader controls | 12 synthetic controls | 12/12 | Positive and negative controls agree |
+| Historical v4 | 30 cases | 30/30 | Complete bounded planning check |
+| Retained grader controls | 12 synthetic controls | 12/12 | Positive and negative controls agree |
 
 The stage-aware series changes skill guidance, resolves rubric ambiguity and allows
 roughly 300–400 answer words where needed instead of the earlier roughly 200. Scores are
@@ -108,7 +186,7 @@ For model repetition, follow the [packet guide](../benchmarks/router/2026-10-14/
 
 ## Qualified scope
 
-The record is `model_checked_planning_scope`: the observed synthetic read-only
+A passing record is `model_checked_planning_scope`: the observed synthetic read-only
 planning run with the named model/configuration. The general catalogue retains its
 legacy structural status; renderer/media qualification is unchanged. Automatic
 skill discovery, privileged execution, real account rights/spending, media quality,
