@@ -34,6 +34,12 @@ it does not replace rendering skills or confer permission to publish.
    selected route lacks instructions or dependencies, inspect its upstream docs
    and report the gap without silently installing tools. Preserve the requested
    format rather than applying today's horizontal 1080p examples to every job.
+   Renderer-specific preflight belongs in the handoff, including blocked checks:
+   Flute: genuine components, explicitly scoped capture-style overrides, synthetic
+   inputs, production exclusion and the recorded snapshot failure. Remotion: pin
+   package versions, check installed API/official skills and licence eligibility,
+   retain downloaded-browser failure plus workaround, and inspect native stills
+   separately from encoded picture/audio when stills are requested.
 4. Work from verified product facts and authorised assets. When shortening existing
    material, preserve factual claims and reading order unless the user requests a
    substantive rewrite. Measure generated speech
@@ -42,6 +48,8 @@ it does not replace rendering skills or confer permission to publish.
 5. If the current chain already meets deliverables, finish outstanding QA and
    hand over the result without adding tools or experiments. No more tools does not
    mean QA is complete; retain any checks blocked by missing files or authority.
+   For a plan-only request, name the intended output artifacts and the remaining
+   QA/delivery steps; missing media blocks verification, not listing those steps.
    Deliver the export, thumbnail, subtitles/copy if requested, and honest QA status.
    Distinguish automated checks, human listening, user acceptance and public upload.
    Ask before external publication or a paid/account-authorisation step unless
