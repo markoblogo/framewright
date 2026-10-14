@@ -11,8 +11,8 @@ affordances and preferences, not renderer boundaries or comparative quality scor
 
 **Role:** orchestrator. **Inputs:** source-project, brand.
 
-**Style directions:** playful, polished, cinematic, deadpan, app-store, chaotic, yc-parody.
-Seven documented tone presets shape story, rhythm and typography; freeform tone overrides them. Brand-specific, not a single fixed look.
+**Style directions:** default, polished, cinematic, deadpan, app-store, chaotic, yc-parody.
+Seven documented tone presets shape story, rhythm and typography; default is playful/clean. Freeform tone overrides the presets. See the immutable tone reference in sources.brag-tones.
 
 **Tested version/scope:** retained full-workflow snapshot
 
@@ -134,7 +134,7 @@ Dense crafted isometric objects, four-tone shaded SVG, optional integrated WebGL
 
 **Tested version/scope:** e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f in prototype
 
-**Licence:** Check upstream licence and inputs; no upstream code bundled
+**Licence:** MIT at the reviewed revision (sources.anatomy-licence); input assets retain their own rights.
 
 | Feature | Evidence | Scope / source |
 | --- | --- | --- |

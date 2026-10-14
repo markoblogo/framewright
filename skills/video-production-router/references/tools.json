@@ -35,9 +35,9 @@
       "revision": "3596b26764286a7de9d90c363e988d50578918e5"
     },
     "brag-tones": {
-      "url": "https://github.com/latent-spaces/brag/blob/main/skills/brag/references/tones.md",
+      "url": "https://github.com/latent-spaces/brag/blob/069432cac935ed1895859df201c31436c07fb74e/skills/brag/references/tones.md",
       "reviewed": "2026-10-14",
-      "revision": null
+      "revision": "069432cac935ed1895859df201c31436c07fb74e"
     },
     "hyperframes": {
       "url": "https://hyperframes.heygen.com/concepts/compositions",
@@ -98,6 +98,11 @@
       "url": "https://hyperframes.heygen.com/packages/shader-transitions",
       "reviewed": "2026-10-14",
       "revision": null
+    },
+    "anatomy-licence": {
+      "url": "https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/LICENSE",
+      "reviewed": "2026-10-14",
+      "revision": "e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f"
     }
   },
   "tools": [
@@ -110,7 +115,7 @@
         "brand"
       ],
       "styles": [
-        "playful",
+        "default",
         "polished",
         "cinematic",
         "deadpan",
@@ -118,7 +123,7 @@
         "chaotic",
         "yc-parody"
       ],
-      "style_note": "Seven documented tone presets shape story, rhythm and typography; freeform tone overrides them. Brand-specific, not a single fixed look.",
+      "style_note": "Seven documented tone presets shape story, rhythm and typography; default is playful/clean. Freeform tone overrides the presets. See the immutable tone reference in sources.brag-tones.",
       "tested_version": "retained full-workflow snapshot",
       "licence_note": "MIT; renderer/providers have separate terms",
       "features": [
@@ -662,7 +667,7 @@
       ],
       "style_note": "Dense crafted isometric objects, four-tone shaded SVG, optional integrated WebGL layers and beta 3D moving parts. Recognisable mechanical explanations, not generic slides.",
       "tested_version": "e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f in prototype",
-      "licence_note": "Check upstream licence and inputs; no upstream code bundled",
+      "licence_note": "MIT at the reviewed revision (sources.anatomy-licence); input assets retain their own rights.",
       "features": [
         {
           "id": "isometric-svg",
