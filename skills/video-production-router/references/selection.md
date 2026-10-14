@@ -65,6 +65,10 @@ loudness/peaks and encoded thumbnail dimensions. Preserve native and final hashe
 Use shared palette, typography, grain, pacing and transitions to join stylistically
 different tools. Hyperframes capture-side VFX and page shader transitions have a
 documented compatibility warning; do not combine them without a feature trial.
+Keep original effect settings and exports. Separate passes can be a reversible
+fallback; any fallback that removes/replaces a requested effect or changes a
+required output must remain a proposal pending the owner's explicit acceptance.
+Do not present a scope-changing fallback as an automatic next action.
 
 ## Example: one film, several tools
 

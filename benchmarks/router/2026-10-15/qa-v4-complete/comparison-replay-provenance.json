@@ -1,0 +1,14 @@
+{
+  "source_packet": "../transfer-2",
+  "purpose": "Same original answers/traces; two corrected conditional criteria and protocolv4. No actor rerun; not included in70-case score.",
+  "input_sha256": "198691ed34971a96e69f1685dca26a478aeb491dbe1a654510134c48bad08cd9",
+  "grades_sha256": "2985e64dbf3156269edf73fbafa54d89e4af7b671c9940437a041f1ba76fcf38",
+  "grading_prompt_sha256": "dc2291d5805747f497abf4ff3127ca3617478a7bef5331310ed069af4fbe9019",
+  "grading_events_sha256": "b40544f7cb3dba84705d7aa37afbe18e392075f62c679a55568072c8472ef6e4",
+  "execution": {
+    "exit_code": 0,
+    "duration_seconds": 28.15
+  },
+  "original_input_sha256": "fca70fd9d14b0fb49c3f1d3ac361dbc70149959db4b2d7180335b92df5e15b21",
+  "normalization": "Only diagnostic machine-local CLI-home path; original input/message hashes retained, answer/criteria/grades unchanged."
+}

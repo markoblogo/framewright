@@ -44,12 +44,39 @@ def records(root):
     return cases, result
 
 
+def decision_sources(root):
+    """Frozen shared decision text is fact context, not evidence of an actor read."""
+    root = Path(root)
+    frozen = json.loads((root / 'freeze.json').read_text())
+    cases = json.loads((root / 'cases.json').read_text())
+    result = {}
+    for source, digest in frozen.get('source_tree_sha256', {}).items():
+        path = Path(source)
+        require(path.parts[:2] == ('skills', 'video-production-router') and '..' not in path.parts,
+                'Unsafe frozen decision source')
+        relative = path.relative_to('skills/video-production-router')
+        if str(relative) == 'references/scenarios.json':
+            continue  # Withheld rubric must not enter the fact corpus.
+        supplied = root / 'runs' / cases[0]['id'] / 'router' / relative
+        require(supplied.is_file() and not supplied.is_symlink() and supplied.resolve().is_relative_to((root / 'runs' / cases[0]['id']).resolve()), 'Missing, symlinked or outside decision source')
+        require(hashlib.sha256(supplied.read_bytes()).hexdigest() == digest, 'Frozen decision source drift')
+        result['router/' + relative.as_posix()] = supplied.read_text()
+    return result
+
+
 def prepare(root, batch_size=6):
     root = Path(root)
     require(type(batch_size) is int and batch_size > 0, 'Batch size must be positive')
     cases, ready = records(root)
     output = root / 'grade-input'
     output.mkdir(exist_ok=True)
+    shared = json.dumps(decision_sources(root), indent=2) + '\n'
+    path = output / 'decision-sources.json'
+    if path.exists():
+        require(path.read_text() == shared, 'Retained decision source context changed')
+    else:
+        with path.open('x') as stream:
+            stream.write(shared)
     count = 0
     for start in range(0, len(cases), batch_size):
         expected = cases[start:start + batch_size]

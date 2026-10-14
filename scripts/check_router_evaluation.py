@@ -84,6 +84,16 @@ def check_snapshot(root, manifest):
             require(hashlib.sha256(archive.read(item)).hexdigest() == expected[item.filename], f'Source hash mismatch: {item.filename}')
 
 
+def check_decision_text(sources, frozen):
+    expected = {'router/' + str(Path(name).relative_to('skills/video-production-router')): digest
+                for name, digest in frozen.items()
+                if name != 'skills/video-production-router/references/scenarios.json'}
+    require(isinstance(sources, dict) and sources.keys() == expected.keys(), 'Grader decision source set differs')
+    for name, text in sources.items():
+        require(isinstance(text, str) and hashlib.sha256(text.encode()).hexdigest() == expected[name],
+                f'Grader decision source drift: {name}')
+
+
 def check_packet(root):
     root = Path(root)
     manifest = json.loads((root / 'manifest.json').read_text())
@@ -100,6 +110,13 @@ def check_packet(root):
         for shared in ('protocol.txt', 'grader-config.json'):
             require(shared in manifest['files'], f'Missing shared grader evidence: {shared}')
             require((root / shared).read_bytes() == (root / name / shared).read_bytes(), f'Calibration and actor grading differ: {shared}')
+    config = json.loads((root / 'grader-config.json').read_text()) if (root / 'grader-config.json').exists() else {}
+    if 'decision_sources_sha256' in config:
+        require('decision-sources.json' in manifest['files'], 'Missing grounded grader context')
+        context = root / 'decision-sources.json'
+        require(hashlib.sha256(context.read_bytes()).hexdigest() == config['decision_sources_sha256'], 'Grader context hash mismatch')
+        require(context.read_bytes() == (root / manifest['calibration'] / 'decision-sources.json').read_bytes(), 'Calibration and actor source context differ')
+        check_decision_text(json.loads(context.read_text()), json.loads((root / 'freeze.json').read_text())['source_tree_sha256'])
     cases = indexed(json.loads((root / 'cases.json').read_text()), 'cases')
     results = indexed(json.loads((root / 'results.json').read_text()), 'results')
     grades = indexed(json.loads((root / 'grades.json').read_text())['cases'], 'grades')
@@ -141,6 +158,14 @@ def check_packet(root):
     return counts
 
 
+def check_protocol_calibration(version, calibration):
+    require(version in {3, 4}, 'Unsupported calibrated protocol')
+    minimum = 38 if version == 4 else 18
+    require(calibration.get('protocol_version') == version and
+            calibration.get('counts', {}).get('controls', 0) >= minimum,
+            f'Protocol v{version} needs fresh expanded blind calibration with matching protocol')
+
+
 def check_qualification(repo, path):
     repo = Path(repo).resolve()
     record = json.loads(Path(path).read_text())
@@ -162,10 +187,12 @@ def check_qualification(repo, path):
     baseline = json.loads((repo / 'skills/video-production-router/references/scenarios.json').read_text())['cases']
     require({c['id'] for c in baseline} <= cases.keys(), 'Qualification case set misses baseline scenarios')
     freeze = json.loads((packet / 'freeze.json').read_text())
-    require(freeze.get('protocol_version') in {2, 3}, 'Qualification needs typed planning criteria')
-    if freeze['protocol_version'] == 3:
+    require(freeze.get('protocol_version') in {2, 3, 4}, 'Qualification needs typed planning criteria')
+    if freeze['protocol_version'] == 4:
+        require('decision_sources_sha256' in json.loads((packet / 'grader-config.json').read_text()), 'Protocol v4 qualification needs grounded source context')
+    if freeze['protocol_version'] >= 3:
         calibration = json.loads((packet / manifest['calibration'] / 'manifest.json').read_text())
-        require(calibration.get('protocol_version') == 3 and calibration['counts']['controls'] >= 18, 'Protocol v3 needs fresh expanded blind calibration')
+        check_protocol_calibration(freeze['protocol_version'], calibration)
     require(freeze['case_sha256'] == hashlib.sha256((packet / 'cases.json').read_bytes()).hexdigest(), 'Frozen case hash mismatch')
     require(freeze['protocol_sha256'] == hashlib.sha256((packet / 'protocol.txt').read_bytes()).hexdigest(), 'Frozen protocol hash mismatch')
     require(record.get('model') == freeze['model'] and record.get('reasoning_effort') == freeze['effort'], 'Qualification model/config differs')

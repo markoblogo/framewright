@@ -1,0 +1,15 @@
+{
+  "purpose": "40 fresh blind controls: prior38 plus positive/negative source-preservation check. No actor retries on unchanged source; final correction round source frozen separately. Fresh calibration of complete source-aware grading context; prior context attempts retained.",
+  "input_sha256": {
+    "batch-1.json": "9e3059715cd7dff7ec998cbe3d7e73fa521eec5d8389e711e5d93dced68e1159",
+    "batch-2.json": "935e6252e2a3380307ca2d8b8a524b3b7c5b218d3c2ebba761f146c3d8afd13a",
+    "batch-3.json": "eba04e7e240acdb94c70f1ed26d6f078cf8a4de1d00fb6c6ceb3c2165a9c160a",
+    "batch-4.json": "70571cc1b45f26a81c4b07af49092a793572f4d8ed949c889a65cd25f363d0c3",
+    "batch-5.json": "87f5e7711de28fab72b73edda934af6b8a9372d58d3bfd4b88b05919f3f3b2ad",
+    "batch-6.json": "b3fd49de94e52200f7dc3b954475cb7339bb864eef2b6df9f98b70869f96b35c",
+    "batch-7.json": "4cad7fe3f076b946df0ec5308f7a640ed718f9647d5508c281b850eb01d735c7"
+  },
+  "gold_sha256": "77569c949b2509ae53a67c941d34ae6826f037164c3860ae76b94fba10983731",
+  "protocol_sha256": "4de69a7ff8865ff8c1b988cec64383cffd0609b82c6f0b4baa3adf21869c4587",
+  "decision_sources_sha256": "1c2510fc52b80212747fe7438878105652b6eb42fc3aad637e6d9bb4d9620d55"
+}

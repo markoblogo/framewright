@@ -18,8 +18,8 @@ source and commands. It has not been re-rendered on a clean machine after the li
 dependency repair. No time/cost advantage or universal reproducibility is claimed.
 
 Bounded router decision checks are retained in the
-[behavioural report](router-evaluation.md). The latest complete source passes 52/52
-under protocol v3 with 22/22 blind controls. The earlier 43/46 and
+[behavioural report](router-evaluation.md). The current complete source passes 67/70
+under protocol v4 with40/40 blind controls. The historical v3 run remains52/52. The earlier 43/46 and
 first-exposure 9/12 remain unchanged: a [versioned diagnosis](grading-v3.md) corrects
 source-comparison, singing-alternative and comparison-stop criteria, plus the
 router's comparison/production instruction conflict, explicit native-PNG legibility
@@ -58,3 +58,10 @@ The unchanged source scores13/18 on [18 new first-exposure cases](../benchmarks/
 with 28/28 freshly graded blind controls. Correct tool-role choices and observed
 authority boundaries do not compensate for the retained QA omissions and disputed
 comparison/approval criteria. No router tuning, rendering or new release occurred.
+
+## Transfer corrections — 2026-10-15
+
+Three handoff clarifications and two conditional comparison criteria are followed
+by one [67/70 known-case regression](../benchmarks/router/2026-10-15/qa-v4-complete/README.md).
+The original13/18 is retained; both original disputed answers also pass independent
+regrading without edits. No new renderer, media claim or release.

@@ -1,0 +1,95 @@
+{
+  "initial_packet": "../qa-v4-initial",
+  "initial_strict_score": "67/70",
+  "final_preliminary_same_answer_grades": "preliminary-grades.json",
+  "reason_for_entire_regrade": "Earlier grader inputs omitted the frozen router decision-source text and command outputs; two correct physics conclusions were therefore INSUFFICIENT_EVIDENCE. Supply a hash-checked shared corpus, recalibrate40 controls, then regrade all70 unchanged final answers. No criterion or answer was changed for that regrade.",
+  "accepted_context": "decision-sources.json",
+  "source_fact_context_not_actor_access_proof": true,
+  "calibration_sequence": "Initial38 before first-source actors;40 before final-source actors; same40 freshly calibrated again with the complete shared corpus before accepted grading.",
+  "preliminary_grading_runs": [
+    {
+      "batch": "batch-1",
+      "exit_code": 0,
+      "duration_seconds": 58.24,
+      "prompt_sha256": "3600566585d8d63df6a393f7dcfbe068352730738ee8869b464dc75aab51868a",
+      "events_sha256": "0500f6746f4e33a8931155ed04b97457bce93291d272f7ec79b635c089a3e4dc"
+    },
+    {
+      "batch": "batch-10",
+      "exit_code": 0,
+      "duration_seconds": 47.57,
+      "prompt_sha256": "c8f45fdd741fad144fcdb5525bc3fd3d25e0997e7b00f905a3c60bdec82f7c28",
+      "events_sha256": "b93f8bd5a260e56fd95f5e619a3efe0b9a7c0b173ce971f808c9b7fc3ad8de94"
+    },
+    {
+      "batch": "batch-11",
+      "exit_code": 0,
+      "duration_seconds": 46.3,
+      "prompt_sha256": "4dd8d2af822220daf15d64847e5ea38ef1ae1e9e3a0f9f104abe7fd174c3bb49",
+      "events_sha256": "2ce3648570c7c75935566204466cdc3f82d20b21d0ec22d2fc94884746ea3ead"
+    },
+    {
+      "batch": "batch-12",
+      "exit_code": 0,
+      "duration_seconds": 45.98,
+      "prompt_sha256": "13a3ef73e8ca334214174d3b06d49b6e3d7872642261d1bc4cfad48a78a48a61",
+      "events_sha256": "51bbec3bc82f48a6d724694b2abc433794cee5d705698cc111fb63c899a045cd"
+    },
+    {
+      "batch": "batch-2",
+      "exit_code": 0,
+      "duration_seconds": 55.0,
+      "prompt_sha256": "7c04bb9bf1ad73c36da9f78e3684ae890a8b147d70e1123d0cf7e217e3711ff6",
+      "events_sha256": "de3b15fa5549c0c8fee8bf0ddaac8339f3fd9c365d01bf127874f8109c30a32c"
+    },
+    {
+      "batch": "batch-3",
+      "exit_code": 0,
+      "duration_seconds": 47.38,
+      "prompt_sha256": "fdaa0914eff1c3ba518754843bcf46d180fb2fb9cd84f585ac348991aaf7aefb",
+      "events_sha256": "48296acc505ceb6a57541a28f8049bfa85dde4d251a185bf00253082a199a312"
+    },
+    {
+      "batch": "batch-4",
+      "exit_code": 0,
+      "duration_seconds": 24.73,
+      "prompt_sha256": "18c94d0f4166298902022b7a5356c992d0018130ec92b09f7fa58987fe5b0310",
+      "events_sha256": "433a27026d9d8c7eaf37493954ad47d7a8a0df18fcca7d43b17b81036ccc27e5"
+    },
+    {
+      "batch": "batch-5",
+      "exit_code": 0,
+      "duration_seconds": 34.44,
+      "prompt_sha256": "3d3c1bb17b53c5ae33c16500bb986e6c74e9c09a62692ab91a7eab0449bccd82",
+      "events_sha256": "c65a377bb1337de191843f7714f5bfba504cbdda9cd4f6183db6a475c27cdf14"
+    },
+    {
+      "batch": "batch-6",
+      "exit_code": 0,
+      "duration_seconds": 53.19,
+      "prompt_sha256": "374a9711b3ab184016a464c794487a68fc867a631da06a8b843514bc2ee1b71c",
+      "events_sha256": "43c10dba8edfebe91695e9a0eefe3c43b7bbd9cba171aaa73c356ed6b1dbe51c"
+    },
+    {
+      "batch": "batch-7",
+      "exit_code": 0,
+      "duration_seconds": 34.39,
+      "prompt_sha256": "42e6baaa088a6217b266e823e2d88c337e0391c22efc2a286a1a1172e4cc7fb1",
+      "events_sha256": "a28572729224bf5d1b2287bd1e418c5edb9278b74148b236566eb5fd8ae7cf84"
+    },
+    {
+      "batch": "batch-8",
+      "exit_code": 0,
+      "duration_seconds": 34.15,
+      "prompt_sha256": "68f53d003818a1139bb453e72d222816f4954ec38612f3eabf422b1488d36215",
+      "events_sha256": "c29c865e0e7cd46b7bb73ddea370c70bfea1abb38288850d66edc36370384fb7"
+    },
+    {
+      "batch": "batch-9",
+      "exit_code": 0,
+      "duration_seconds": 56.69,
+      "prompt_sha256": "6190faa944545cab25e243a3d9d2733284908e7540ba50e70f91653c0ca69dd8",
+      "events_sha256": "3a2c31a310a108083dad64a7595a097d2219791ce14913b82a3be82c7d460bba"
+    }
+  ]
+}

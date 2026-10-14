@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "status": "proposed",
+  "qualification": "planning_only",
+  "execution": "not_started",
+  "music": null,
+  "minimum_evidence": "documented",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "duration_frames": 900,
+  "blocks": [
+    {
+      "id": "intro",
+      "input": "brand",
+      "style": "editorial",
+      "style_match": true,
+      "primary_tool": "remotion",
+      "tools": [
+        "remotion"
+      ],
+      "coverage": [
+        {
+          "feature": "typography",
+          "tool": "remotion",
+          "evidence": "tested",
+          "source": "remotion",
+          "note": ""
+        },
+        {
+          "feature": "video-export",
+          "tool": "remotion",
+          "evidence": "tested",
+          "source": "remotion",
+          "note": ""
+        },
+        {
+          "feature": "still-export",
+          "tool": "remotion",
+          "evidence": "tested",
+          "source": "remotion",
+          "note": ""
+        }
+      ],
+      "unmet": [],
+      "requires_feature_test": [],
+      "start_frame": 0,
+      "duration_frames": 180,
+      "overlap_frames": 0,
+      "known_limits": {
+        "remotion": [
+          "Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately."
+        ]
+      },
+      "handoff": {
+        "canvas": {
+          "width": 1920,
+          "height": 1080,
+          "fps": 30
+        },
+        "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+        "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+      }
+    },
+    {
+      "id": "interface",
+      "input": "react-ui",
+      "style": "",
+      "style_match": false,
+      "primary_tool": "flute",
+      "tools": [
+        "flute"
+      ],
+      "coverage": [
+        {
+          "feature": "camera-travel",
+          "tool": "flute",
+          "evidence": "tested",
+          "source": "flute",
+          "note": ""
+        },
+        {
+          "feature": "depth-of-field",
+          "tool": "flute",
+          "evidence": "tested",
+          "source": "flute",
+          "note": ""
+        },
+        {
+          "feature": "video-export",
+          "tool": "flute",
+          "evidence": "tested",
+          "source": "flute",
+          "note": ""
+        }
+      ],
+      "unmet": [],
+      "requires_feature_test": [],
+      "start_frame": 180,
+      "duration_frames": 240,
+      "overlap_frames": 0,
+      "known_limits": {
+        "flute": [
+          "Browser-host CoqPi success does not establish packaged Electron or arbitrary React support. Keep real data and IPC outside demo. No Flute audio workflow was tested."
+        ]
+      },
+      "handoff": {
+        "canvas": {
+          "width": 1920,
+          "height": 1080,
+          "fps": 30
+        },
+        "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+        "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+      }
+    },
+    {
+      "id": "object",
+      "input": "object",
+      "style": "",
+      "style_match": false,
+      "primary_tool": "anatomy",
+      "tools": [
+        "anatomy",
+        "hyperframes"
+      ],
+      "coverage": [
+        {
+          "feature": "isometric-svg",
+          "tool": "anatomy",
+          "evidence": "tested",
+          "source": "anatomy",
+          "note": ""
+        },
+        {
+          "feature": "object-motion",
+          "tool": "anatomy",
+          "evidence": "tested",
+          "source": "anatomy",
+          "note": ""
+        },
+        {
+          "feature": "video-export",
+          "tool": "hyperframes",
+          "evidence": "tested",
+          "source": "hyperframes",
+          "note": ""
+        }
+      ],
+      "unmet": [],
+      "requires_feature_test": [],
+      "start_frame": 420,
+      "duration_frames": 180,
+      "overlap_frames": 0,
+      "known_limits": {
+        "anatomy": [
+          "Local visual prototype only; combined sound QA failed. Beta 3D is not a calibrated physics simulator. Historical accuracy remains unverified."
+        ],
+        "hyperframes": [
+          "New VFX, captions, vertical/4K/cloud paths were not validated by our horizontal pilots. Media and animation timing must share the seekable timeline.",
+          "Current docs note conflicts between capturing VFX chains and page-side shader transitions; test the combined layer, do not assume independent effects compose safely."
+        ]
+      },
+      "handoff": {
+        "canvas": {
+          "width": 1920,
+          "height": 1080,
+          "fps": 30
+        },
+        "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+        "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+      }
+    },
+    {
+      "id": "book",
+      "input": "book-art",
+      "style": "",
+      "style_match": false,
+      "primary_tool": "hyperframes",
+      "tools": [
+        "hyperframes",
+        "kokoro"
+      ],
+      "coverage": [
+        {
+          "feature": "video-export",
+          "tool": "hyperframes",
+          "evidence": "tested",
+          "source": "hyperframes",
+          "note": ""
+        },
+        {
+          "feature": "narration",
+          "tool": "kokoro",
+          "evidence": "tested",
+          "source": "kokoro",
+          "note": ""
+        }
+      ],
+      "unmet": [],
+      "requires_feature_test": [],
+      "start_frame": 600,
+      "duration_frames": 180,
+      "overlap_frames": 0,
+      "known_limits": {
+        "hyperframes": [
+          "New VFX, captions, vertical/4K/cloud paths were not validated by our horizontal pilots. Media and animation timing must share the seekable timeline.",
+          "Current docs note conflicts between capturing VFX chains and page-side shader transitions; test the combined layer, do not assume independent effects compose safely."
+        ],
+        "kokoro": [
+          "Local FR/EN tested; other documented languages require a voice/pronunciation and timing trial. No voice cloning tested."
+        ]
+      },
+      "handoff": {
+        "canvas": {
+          "width": 1920,
+          "height": 1080,
+          "fps": 30
+        },
+        "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+        "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+      }
+    },
+    {
+      "id": "outro",
+      "input": "brand",
+      "style": "",
+      "style_match": false,
+      "primary_tool": "remotion",
+      "tools": [
+        "remotion"
+      ],
+      "coverage": [
+        {
+          "feature": "typography",
+          "tool": "remotion",
+          "evidence": "tested",
+          "source": "remotion",
+          "note": ""
+        },
+        {
+          "feature": "video-export",
+          "tool": "remotion",
+          "evidence": "tested",
+          "source": "remotion",
+          "note": ""
+        }
+      ],
+      "unmet": [],
+      "requires_feature_test": [],
+      "start_frame": 780,
+      "duration_frames": 120,
+      "overlap_frames": 0,
+      "known_limits": {
+        "remotion": [
+          "Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately."
+        ]
+      },
+      "handoff": {
+        "canvas": {
+          "width": 1920,
+          "height": 1080,
+          "fps": 30
+        },
+        "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+        "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+      }
+    }
+  ],
+  "assembly": {
+    "tool": "ffmpeg",
+    "evidence": "documented",
+    "qualification": "new multi-block combinations need an integration test; individual successes do not qualify a chain",
+    "steps": [
+      "normalise actual size/fps/colour/alpha and frame boundaries",
+      "assemble picture and a single master audio timeline",
+      "inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata",
+      "retain native exports, final hashes and per-block evidence"
+    ]
+  },
+  "notes": [
+    "No model evaluation, rendering or publication was performed by this planner.",
+    "Style matching does not qualify a new combination.",
+    "Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review."
+  ]
+}
