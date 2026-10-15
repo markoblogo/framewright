@@ -47,3 +47,12 @@ SunoMV is an independent third party, not Suno. Treat pricing, performance and
 comparisons in vendor guides as claims, not evidence. Do not adopt advice to remove
 required watermarks. Use [the experiment queue](experiment-queue.md) to turn ideas
 into bounded tests rather than expanding the supported-tool matrix prematurely.
+
+## Expanded owner-supplied inventory — 2026-10-15
+
+[Tool research](tool-research.md) records the 18 suggested tools/reference sources,
+current upstream checks and bounded next trials. The persistent
+[review ledger](../skills/video-production-router/references/review-ledger.json)
+also backfills earlier profiles/deferred studies, including negative limitations.
+[Prompt Motion](prompt-motion-trial.md) is a creative-reference study, not another
+renderer. No candidate was installed, run or promoted from README inspection.

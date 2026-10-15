@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "scope": "Exact RU/EN vocabulary normalization, not evidence that any renderer implements a technique. Free-form prose is interpreted by the agent.",
+  "provenance": "Original explanations adapted from the owner-supplied 24-technique Russian reference; no image or original layout redistributed.",
+  "sources": [
+    "https://www.studiobinder.com/camera-shots/camera-movements/",
+    "https://www.adobe.com/creativecloud/video/production/cinematography/camera-shots-and-angles/dolly-zoom-shot.html",
+    "https://helpx.adobe.com/in/premiere/desktop/edit-projects/trim-clips/perform-j-cuts-and-l-cuts.html"
+  ],
+  "terms": [
+    {
+      "id": "pan",
+      "ru": "Панорама",
+      "en": "Pan",
+      "category": "camera",
+      "aliases": [
+        "панорамирование"
+      ],
+      "explanation_ru": "Камера поворачивается по горизонтали из фиксированной точки. Это не боковой проезд камеры.",
+      "parameters": [
+        "direction",
+        "angle",
+        "duration"
+      ]
+    },
+    {
+      "id": "tilt",
+      "ru": "Вертикальная панорама",
+      "en": "Tilt",
+      "category": "camera",
+      "aliases": [],
+      "explanation_ru": "Камера наклоняется вверх или вниз; её положение не обязано меняться.",
+      "parameters": [
+        "direction",
+        "angle",
+        "duration"
+      ]
+    },
+    {
+      "id": "dolly-in",
+      "ru": "Наезд",
+      "en": "Dolly in",
+      "category": "camera",
+      "aliases": [
+        "push-in"
+      ],
+      "explanation_ru": "Камера приближается к объекту в пространстве; меняются перспектива и параллакс.",
+      "parameters": [
+        "subject",
+        "distance",
+        "duration",
+        "easing"
+      ]
+    },
+    {
+      "id": "zoom-in",
+      "ru": "Зум",
+      "en": "Zoom in",
+      "category": "lens",
+      "aliases": [
+        "zoom"
+      ],
+      "explanation_ru": "Меняется фокусное расстояние или цифровое увеличение. Цифровой кроп не создаёт параллакс.",
+      "parameters": [
+        "scale_or_focal_length",
+        "duration"
+      ]
+    },
+    {
+      "id": "tracking-shot",
+      "ru": "Проводка",
+      "en": "Tracking shot",
+      "category": "camera",
+      "aliases": [
+        "tracking"
+      ],
+      "explanation_ru": "Камера следует за объектом, сохраняя выбранное кадрирование.",
+      "parameters": [
+        "subject",
+        "path",
+        "speed",
+        "framing"
+      ]
+    },
+    {
+      "id": "orbit",
+      "ru": "Облет",
+      "en": "Orbit",
+      "category": "camera",
+      "aliases": [
+        "облёт",
+        "arc shot"
+      ],
+      "explanation_ru": "Камера проходит по дуге вокруг объекта; вращение самого объекта — другой приём.",
+      "parameters": [
+        "subject",
+        "radius",
+        "angle",
+        "direction",
+        "duration"
+      ]
+    },
+    {
+      "id": "crane-up",
+      "ru": "Кран вверх",
+      "en": "Crane up",
+      "category": "camera",
+      "aliases": [],
+      "explanation_ru": "Камера поднимается в пространстве; это не простой наклон объектива вверх.",
+      "parameters": [
+        "height",
+        "target",
+        "duration"
+      ]
+    },
+    {
+      "id": "dolly-zoom",
+      "ru": "Долли-зум",
+      "en": "Dolly zoom",
+      "category": "lens",
+      "aliases": [
+        "vertigo"
+      ],
+      "explanation_ru": "Проезд камеры и встречный зум удерживают размер героя, меняя перспективу фона.",
+      "parameters": [
+        "subject_size",
+        "travel",
+        "focal_length",
+        "duration"
+      ]
+    },
+    {
+      "id": "rack-focus",
+      "ru": "Перевод фокуса",
+      "en": "Rack focus",
+      "category": "lens",
+      "aliases": [],
+      "explanation_ru": "Резкость переводится между выбранными объектами. Постоянное размытие фона само по себе не перевод фокуса.",
+      "parameters": [
+        "from_subject",
+        "to_subject",
+        "timing",
+        "aperture"
+      ]
+    },
+    {
+      "id": "handheld",
+      "ru": "Ручная камера",
+      "en": "Handheld",
+      "category": "camera",
+      "aliases": [],
+      "explanation_ru": "Контролируемая нерегулярность камеры; амплитуда и комфорт просмотра задаются явно.",
+      "parameters": [
+        "amplitude",
+        "frequency",
+        "duration"
+      ]
+    },
+    {
+      "id": "fpv-drone",
+      "ru": "FPV-дрон",
+      "en": "FPV drone shot",
+      "category": "camera",
+      "aliases": [],
+      "explanation_ru": "Субъективный пролёт по траектории. В синтетической сцене это виртуальная камера, а не реальная съёмка дроном.",
+      "parameters": [
+        "path",
+        "speed",
+        "clearance"
+      ]
+    },
+    {
+      "id": "dutch-angle",
+      "ru": "Голландский угол",
+      "en": "Dutch angle",
+      "category": "framing",
+      "aliases": [],
+      "explanation_ru": "Кадр намеренно наклонён вокруг оптической оси.",
+      "parameters": [
+        "roll_angle",
+        "duration"
+      ]
+    },
+    {
+      "id": "slow-motion",
+      "ru": "Слоумо",
+      "en": "Slow motion",
+      "category": "time",
+      "aliases": [
+        "слоу-мо"
+      ],
+      "explanation_ru": "Действие воспроизводится медленнее. Для исходного видео проверить частоту кадров и артефакты интерполяции.",
+      "parameters": [
+        "speed",
+        "source_fps",
+        "interpolation"
+      ]
+    },
+    {
+      "id": "speed-ramp",
+      "ru": "Спидрамп",
+      "en": "Speed ramp",
+      "category": "time",
+      "aliases": [
+        "спид-рамп"
+      ],
+      "explanation_ru": "Скорость меняется внутри фрагмента; сохранить согласованность тайминга и звука.",
+      "parameters": [
+        "speed_curve",
+        "segment",
+        "audio_policy"
+      ]
+    },
+    {
+      "id": "time-lapse",
+      "ru": "Таймлапс",
+      "en": "Time-lapse",
+      "category": "time",
+      "aliases": [
+        "timelapse"
+      ],
+      "explanation_ru": "Длительный процесс показан за короткое время; ускоренное видео не всегда равно интервальной съёмке.",
+      "parameters": [
+        "interval_or_speed",
+        "duration"
+      ]
+    },
+    {
+      "id": "freeze-frame",
+      "ru": "Стоп-кадр",
+      "en": "Freeze frame",
+      "category": "time",
+      "aliases": [],
+      "explanation_ru": "Выбранный кадр удерживается; судьба звука задаётся отдельно.",
+      "parameters": [
+        "frame",
+        "hold_duration",
+        "audio_policy"
+      ]
+    },
+    {
+      "id": "jump-cut",
+      "ru": "Джамп-кат",
+      "en": "Jump cut",
+      "category": "edit",
+      "aliases": [],
+      "explanation_ru": "Скачок времени внутри близкого плана; не любой жёсткий стык является джамп-катом.",
+      "parameters": [
+        "cut_points",
+        "continuity"
+      ]
+    },
+    {
+      "id": "match-cut",
+      "ru": "Матч-кат",
+      "en": "Match cut",
+      "category": "edit",
+      "aliases": [],
+      "explanation_ru": "Два плана связаны формой, композицией, движением или смыслом. Нужна согласованная пара кадров.",
+      "parameters": [
+        "outgoing_match",
+        "incoming_match",
+        "timing"
+      ]
+    },
+    {
+      "id": "whip-pan",
+      "ru": "Панорама-переброска",
+      "en": "Whip pan",
+      "category": "edit",
+      "aliases": [],
+      "explanation_ru": "Быстрый поворот с направленным смазом может связать планы; направление и скорость должны согласоваться.",
+      "parameters": [
+        "direction",
+        "blur",
+        "seam"
+      ]
+    },
+    {
+      "id": "cross-dissolve",
+      "ru": "Наплыв",
+      "en": "Cross dissolve",
+      "category": "edit",
+      "aliases": [
+        "dissolve"
+      ],
+      "explanation_ru": "Планы перекрываются по прозрачности. Перекрытие уменьшает общую длительность последовательности.",
+      "parameters": [
+        "overlap_duration",
+        "opacity_curve"
+      ]
+    },
+    {
+      "id": "wipe",
+      "ru": "Шторка",
+      "en": "Wipe",
+      "category": "edit",
+      "aliases": [],
+      "explanation_ru": "Граница маски постепенно заменяет один план другим.",
+      "parameters": [
+        "direction",
+        "edge",
+        "overlap_duration"
+      ]
+    },
+    {
+      "id": "smash-cut",
+      "ru": "Смэш-кат",
+      "en": "Smash cut",
+      "category": "edit",
+      "aliases": [],
+      "explanation_ru": "Резкий переход создаёт намеренный контраст между сценами; это решение по содержанию, не только фильтр.",
+      "parameters": [
+        "contrast",
+        "cut_point",
+        "audio_policy"
+      ]
+    },
+    {
+      "id": "j-cut",
+      "ru": "J-склейка",
+      "en": "J-cut",
+      "category": "audio-edit",
+      "aliases": [
+        "j cut"
+      ],
+      "explanation_ru": "Звук следующей сцены начинается до смены изображения.",
+      "parameters": [
+        "audio_lead",
+        "picture_cut",
+        "gain"
+      ]
+    },
+    {
+      "id": "l-cut",
+      "ru": "L-склейка",
+      "en": "L-cut",
+      "category": "audio-edit",
+      "aliases": [
+        "l cut"
+      ],
+      "explanation_ru": "Звук предыдущей сцены продолжается после смены изображения.",
+      "parameters": [
+        "audio_tail",
+        "picture_cut",
+        "gain"
+      ]
+    }
+  ]
+}

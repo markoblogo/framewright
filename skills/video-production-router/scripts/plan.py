@@ -73,6 +73,7 @@ def plan(brief, registry):
         effects, deliverables = block.get('effects', []), block.get('deliverables', ['video-export'])
         if not all(isinstance(v, list) and all(isinstance(x, str) and x for x in v) for v in (effects, deliverables)):
             raise ValueError('effects and deliverables must be lists of feature IDs')
+        effects = runpy.run_path(str(Path(__file__).with_name('terms.py')))['normalize_effects'](effects)
         requested = list(dict.fromkeys(effects + deliverables))
         if canvas['height'] > canvas['width']:
             requested.append('vertical-format')
