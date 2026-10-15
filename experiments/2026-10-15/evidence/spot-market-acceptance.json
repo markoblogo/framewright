@@ -1,0 +1,12 @@
+{
+  "declared_before_render": true,
+  "duration_seconds": 20,
+  "fps": 30,
+  "canvas": [1920,1080],
+  "visual_question": "Does a continuous staged 3D miniature give this book a visibly different treatment from the prior artwork/typography slideshow?",
+  "required_actions": ["visible grain transfer from silo to truck", "truck moves along delivery route to port", "separate quote tickets converge to benchmark", "camera changes viewpoint", "real-cover volumetric book appears for readable closing hold"],
+  "not_claimed": ["validated physical simulation", "live market data", "accurate shipping geography", "profit forecasts", "independent audience validation"],
+  "qa": ["deterministic seek at multiple times", "five scene samples and encoded transition samples", "readable title/CTA and independent thumbnail inspection", "full decode plus video/audio timing/loudness checks"],
+  "creative_acceptance": "pending_owner_review",
+  "budget": "reuse existing voice model, analysis environment and Hyperframes; no paid provider or new model download; one small pinned Three.js module"
+}

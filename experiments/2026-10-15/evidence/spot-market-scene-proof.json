@@ -1,0 +1,239 @@
+{
+  "scope": "standalone 3D-engine seek test; timed section visibility is applied by the harness, native Hyperframes checked/exported separately",
+  "errors": [],
+  "rows": [
+    {
+      "time": 1,
+      "state": {
+        "time": 1,
+        "truck": [
+          -4.2,
+          0.08,
+          2
+        ],
+        "grainVisible": 0,
+        "quotePositions": [
+          [
+            -4.8,
+            4.1,
+            1.2
+          ],
+          [
+            -0.25,
+            3.7,
+            -2.7
+          ],
+          [
+            4.8,
+            3.9,
+            0.2
+          ]
+        ],
+        "benchmarkVisible": false,
+        "bookVisible": false,
+        "bookScale": 0.4,
+        "camera": [
+          12,
+          13,
+          17
+        ]
+      },
+      "screenshot_sha256": "007e45a71d9205f88982fac6d2cf093940383590e0839cbc0bc77f0b426b6d83"
+    },
+    {
+      "time": 4.8,
+      "state": {
+        "time": 4.8,
+        "truck": [
+          -4.2,
+          0.08,
+          2
+        ],
+        "grainVisible": 22,
+        "quotePositions": [
+          [
+            -4.8,
+            4.1,
+            1.2
+          ],
+          [
+            -0.25,
+            3.7,
+            -2.7
+          ],
+          [
+            4.8,
+            3.9,
+            0.2
+          ]
+        ],
+        "benchmarkVisible": false,
+        "bookVisible": false,
+        "bookScale": 0.4,
+        "camera": [
+          3,
+          7.500000000000001,
+          10
+        ]
+      },
+      "screenshot_sha256": "8445f5046a055607c935d4b49af8b4176c58f4c5e9fe43cdbe4f9b0592bbac63"
+    },
+    {
+      "time": 8,
+      "state": {
+        "time": 8,
+        "truck": [
+          0.8316509693067142,
+          0.08,
+          2.868342879717092
+        ],
+        "grainVisible": 0,
+        "quotePositions": [
+          [
+            -4.8,
+            4.1,
+            1.2
+          ],
+          [
+            -0.25,
+            3.7,
+            -2.7
+          ],
+          [
+            4.8,
+            3.9,
+            0.2
+          ]
+        ],
+        "benchmarkVisible": false,
+        "bookVisible": false,
+        "bookScale": 0.4,
+        "camera": [
+          7.395043731778425,
+          7.291545189504373,
+          10.416909620991255
+        ]
+      },
+      "screenshot_sha256": "2b4ff3c5aae78aa262e3c1627d0bfbc7b5f932421a369001be087b8343abaa71"
+    },
+    {
+      "time": 13.5,
+      "state": {
+        "time": 13.5,
+        "truck": [
+          3.700000000000001,
+          0.08,
+          -2.1999999999999997
+        ],
+        "grainVisible": 0,
+        "quotePositions": [
+          [
+            -0.7526627218934907,
+            1.8514792899408277,
+            -0.2701866181156125
+          ],
+          [
+            0.1391670459717798,
+            1.883887118798361,
+            -0.7974055530268545
+          ],
+          [
+            1.098588984979517,
+            1.9974055530268542,
+            -0.40537096040054627
+          ]
+        ],
+        "benchmarkVisible": true,
+        "bookVisible": false,
+        "bookScale": 0.4,
+        "camera": [
+          9.5,
+          10,
+          13
+        ]
+      },
+      "screenshot_sha256": "d6fc2f25c02790e07e3c2aa86cc74a4ec1508b6f029006efcefa6c79223c4cca"
+    },
+    {
+      "time": 18.5,
+      "state": {
+        "time": 18.5,
+        "truck": [
+          3.700000000000001,
+          0.08,
+          -2.1999999999999997
+        ],
+        "grainVisible": 0,
+        "quotePositions": [
+          [
+            -0.1200000000000001,
+            1.5,
+            -0.5
+          ],
+          [
+            0.2,
+            1.6,
+            -0.5
+          ],
+          [
+            0.5200000000000005,
+            1.6999999999999997,
+            -0.49999999999999994
+          ]
+        ],
+        "benchmarkVisible": true,
+        "bookVisible": true,
+        "bookScale": 1.4500000000000002,
+        "camera": [
+          4.7,
+          4.3,
+          16.8
+        ]
+      },
+      "screenshot_sha256": "fd0cfa611964caf4213b1d0340c8d7198a9d9e34b2e301f4a0a5cbf43c549fb9"
+    },
+    {
+      "time": 8,
+      "state": {
+        "time": 8,
+        "truck": [
+          0.8316509693067142,
+          0.08,
+          2.868342879717092
+        ],
+        "grainVisible": 0,
+        "quotePositions": [
+          [
+            -4.8,
+            4.1,
+            1.2
+          ],
+          [
+            -0.25,
+            3.7,
+            -2.7
+          ],
+          [
+            4.8,
+            3.9,
+            0.2
+          ]
+        ],
+        "benchmarkVisible": false,
+        "bookVisible": false,
+        "bookScale": 0.4,
+        "camera": [
+          7.395043731778425,
+          7.291545189504373,
+          10.416909620991255
+        ]
+      },
+      "screenshot_sha256": "2b4ff3c5aae78aa262e3c1627d0bfbc7b5f932421a369001be087b8343abaa71"
+    }
+  ],
+  "repeat_8s_pixels_equal": true,
+  "repeat_8s_state_equal": true,
+  "truck_displacement": 5.106028871214946,
+  "book_visible_final": true,
+  "grain_particles_visible_loading": 22
+}
