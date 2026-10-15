@@ -1,0 +1,17 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "medium",
+  "runtime": "codex-cli 0.162.0-alpha.17.2",
+  "sandbox": "read-only",
+  "user_config": "ignored",
+  "apps": false,
+  "plugins": false,
+  "multi_agent": false,
+  "web_search": "disabled",
+  "shell_tool": false,
+  "output_schema_sha256": "058ee2bb54890d6ecc3ce71b4acc7cb13c3ccdaf61ba8989a4524b4e265dcb0a",
+  "grading_prompt_template": "Stage-aware protocol v5; actor_prompt + input_inventory + actual source fixtures + untrusted case/answer/commands; exact criteria; calibration gold hidden; frozen shared decision sources for fact-checking, not actor access evidence",
+  "host_context": "Dedicated CODEX_HOME: no user config/AGENTS/user skills; existing auth referenced without copying values; discovered host skill paths disabled via skills.config. Smoke sees only four bundled system skills (imagegen, openai-docs, skill-creator, skill-installer), no user skill catalog.",
+  "decision_sources_sha256": "7b9cdb6e44ddac6dd8761c50d4481f7f83f11bf2167cd6d94bea1cadd420b5fc",
+  "driver_sha256": "9df7c41d418dfa9dae7b1ad8ecaa3fbbed37e685e999259d5998813a770fe124"
+}

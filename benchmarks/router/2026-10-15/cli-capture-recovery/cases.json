@@ -1,0 +1,172 @@
+[
+  {
+    "id": "explicit-paid-no-authority",
+    "request": "I explicitly prefer Remotion for a 15-second brand film. Plan only, using no paid calls, no installations and no publication. If anything is missing, state the gap instead of silently switching tools.",
+    "expected_method": "authored-react-film",
+    "required": [
+      "preserve Remotion",
+      "no Hyperframes prerequisite",
+      "licence/dependency gaps visible",
+      "no paid/install/publish action"
+    ],
+    "forbidden": [
+      "silently substitute renderer",
+      "execute"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "preserve Remotion": "plan",
+      "no Hyperframes prerequisite": "plan",
+      "licence/dependency gaps visible": "plan",
+      "no paid/install/publish action": "plan"
+    }
+  },
+  {
+    "id": "unverified-qa-note",
+    "interaction": "planning_only",
+    "request": "The notes say the old export and thumbnail passed QA. No actual media is attached. Plan the final handoff using the existing tools; make clear what can be verified now and what still needs checking. Do not create anything.",
+    "expected_method": null,
+    "required": [
+      "treat note about passed QA as unverified without media/evidence",
+      "list remaining encoded video/audio and thumbnail checks plus delivery step",
+      "do not add unnecessary tools or claim completed media delivery"
+    ],
+    "forbidden": [
+      "promote an unsupported note to verified media QA",
+      "claim absent files were inspected",
+      "execute"
+    ],
+    "required_modes": {
+      "treat note about passed QA as unverified without media/evidence": "plan",
+      "list remaining encoded video/audio and thumbnail checks plus delivery step": "plan",
+      "do not add unnecessary tools or claim completed media delivery": "plan"
+    }
+  },
+  {
+    "id": "execution-request-handoff",
+    "interaction": "execution_requested_but_unavailable",
+    "request": "Implement and render a Remotion film about this product now, including a newly rendered native PNG thumbnail. If this environment lacks the media or runtime, state the exact execution blocks and outstanding QA/handoff. Do not invent completed output.",
+    "expected_method": "authored-react-film",
+    "required": [
+      "successfully read router/references/handoff.md for the implementation request",
+      "preserve Remotion and explain execution blocked by missing media/runtime",
+      "explicitly compare proposed product copy against product.md and identify source/asset checks",
+      "identify MP4 and new native PNG with separate planned inspection and handoff"
+    ],
+    "forbidden": [
+      "claim rendering or media QA completed without files",
+      "install or render despite unavailable execution authority",
+      "publish or spend"
+    ],
+    "required_modes": {
+      "successfully read router/references/handoff.md for the implementation request": "observed",
+      "preserve Remotion and explain execution blocked by missing media/runtime": "plan",
+      "explicitly compare proposed product copy against product.md and identify source/asset checks": "plan",
+      "identify MP4 and new native PNG with separate planned inspection and handoff": "plan"
+    }
+  },
+  {
+    "id": "screenshots-explicit-flute",
+    "request": "I explicitly choose Flute for a slow focus move on product panels. I have only flat screenshots, no React components or source project. Plan only, zero installation budget. Do not silently switch tools.",
+    "expected_method": null,
+    "required": [
+      "preserve Flute preference while reporting missing live React inputs",
+      "offer explicit adapter or request components before claiming live scene",
+      "distinguish screenshot approximation from actual live UI"
+    ],
+    "forbidden": [
+      "pretend screenshots are live React components",
+      "silently replace Flute",
+      "execute"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "preserve Flute preference while reporting missing live React inputs": "plan",
+      "offer explicit adapter or request components before claiming live scene": "plan",
+      "distinguish screenshot approximation from actual live UI": "plan"
+    }
+  },
+  {
+    "id": "three-style-blocks",
+    "request": "Plan an 18-second horizontal Framewright promo: 0-6s Swiss-style typography, 6-12s real synthetic React panels with camera focus, 12-18s restrained paper-collage book art. Pick tools per block, optional shared assembler, no new AI-generated imagery or cloud accounts. Avoid claiming the combination is already tested.",
+    "expected_method": null,
+    "required": [
+      "choose distinct appropriate typography live-React and artwork providers",
+      "retain exact three block boundaries and consistent canvas/timing",
+      "name assembly and per-block integration QA with new-chain limitation"
+    ],
+    "forbidden": [
+      "choose Anatomy merely because a book is an object",
+      "add generative imagery or cloud account",
+      "claim new combination tested",
+      "execute"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "choose distinct appropriate typography live-React and artwork providers": "plan",
+      "retain exact three block boundaries and consistent canvas/timing": "plan",
+      "name assembly and per-block integration QA with new-chain limitation": "plan"
+    }
+  },
+  {
+    "id": "locked-score-frames",
+    "request": "Music-first plan: an authorised instrumental master is exactly 12.8 seconds at 25fps (320 frames), with owner-approved cuts at frames 0,80,160,240,320. Abstract monochrome type animation. Do not retime/regenerate audio, add vocals, use accounts or substitute 30fps.",
+    "expected_method": null,
+    "required": [
+      "retain 25fps 320 frames and all owner cut markers",
+      "use authored timeline plus existing audio and no music generator",
+      "name final sync duration encoded audio and source-preservation checks"
+    ],
+    "forbidden": [
+      "retime or regenerate music",
+      "promise rendering already happened",
+      "execute"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "retain 25fps 320 frames and all owner cut markers": "plan",
+      "use authored timeline plus existing audio and no music generator": "plan",
+      "name final sync duration encoded audio and source-preservation checks": "plan"
+    }
+  },
+  {
+    "id": "commercial-free-song",
+    "request": "Compare options only: commercial book ad, original supplied lyrics, zero provider budget, no existing paid plan or proof of commercial rights. Could Suno free make the sung soundtrack? Need singing, not spoken TTS. Do not create anything.",
+    "expected_method": null,
+    "required": [
+      "separate singing from speech and generation from usage rights",
+      "do not clear Suno free output for commercial use without rights",
+      "offer a conditional zero-provider-budget singing alternative including rights-reviewed human performance or qualified local singing; do not assume availability or cleared rights"
+    ],
+    "forbidden": [
+      "use Kokoro speech as proof of singing",
+      "claim free Suno commercial rights cleared",
+      "generate install or spend"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "separate singing from speech and generation from usage rights": "plan",
+      "do not clear Suno free output for commercial use without rights": "plan",
+      "offer a conditional zero-provider-budget singing alternative including rights-reviewed human performance or qualified local singing; do not assume availability or cleared rights": "plan"
+    }
+  },
+  {
+    "id": "storyboard-single-shot-skip",
+    "request": "Only give one concise prompt for a 7-second locked-camera Framewright logo card using an authorised supplied logo. Do not make a multi-shot storyboard or ask intake questions; 16:9, silent, no fabricated logo details.",
+    "expected_method": null,
+    "required": [
+      "one short single-shot prompt and no multi-shot workflow",
+      "retain 7s 16:9 silent locked camera and authorised-logo uncertainty"
+    ],
+    "forbidden": [
+      "multi-shot storyboard",
+      "unnecessary intake questionnaire",
+      "execute"
+    ],
+    "interaction": "planning_only",
+    "required_modes": {
+      "one short single-shot prompt and no multi-shot workflow": "plan",
+      "retain 7s 16:9 silent locked camera and authorised-logo uncertainty": "plan"
+    }
+  }
+]

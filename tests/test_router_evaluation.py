@@ -43,6 +43,31 @@ class RouterEvidenceTest(unittest.TestCase):
             manifest['files'][source.name] = hashlib.sha256(source.read_bytes()).hexdigest()
         p.write_text(json.dumps(manifest))
 
+    def add_capture(self, command=False):
+        row = self.data['results.json'][0]
+        events = [{'type': 'turn.started'}]
+        if command:
+            item = {'id': 'read', 'type': 'command_execution', 'command': 'cat product.md'}
+            events += [{'type': 'item.started', 'item': item}, {'type': 'item.completed',
+                       'item': {**item, 'status': 'completed', 'exit_code': 0}}]
+        events += [{'type': 'item.completed', 'item': {'type': 'agent_message', 'text': row['answer']}}, {'type': 'turn.completed'}]
+        path = self.root / 'raw.jsonl'
+        path.write_text('\n'.join(json.dumps(e) for e in events) + '\n')
+        manifest_path = self.root / 'manifest.json'
+        manifest = json.loads(manifest_path.read_text())
+        manifest['files']['raw.jsonl'] = hashlib.sha256(path.read_bytes()).hexdigest()
+        manifest['capture_streams'] = {'demo': 'raw.jsonl'}
+        manifest_path.write_text(json.dumps(manifest))
+
+    def test_hashed_raw_capture_matches_answer_and_trace(self):
+        self.add_capture()
+        self.assertEqual(evaluation.check_packet(self.root)['passed'], 1)
+
+    def test_omitting_raw_attempt_from_summary_is_rejected(self):
+        self.add_capture(command=True)
+        with self.assertRaisesRegex(ValueError, 'trace differs from raw capture'):
+            evaluation.check_packet(self.root)
+
     def test_snapshot_supports_reproduction_without_git_history(self):
         self.add_snapshot()
         self.assertEqual(evaluation.check_packet(self.root), {'cases': 1, 'passed': 1})

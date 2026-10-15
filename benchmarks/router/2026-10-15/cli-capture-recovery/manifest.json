@@ -1,0 +1,52 @@
+{
+  "schema_version": 3,
+  "files": {
+    "actor-runner.py": "ecff9f4b229fe19e696cdaa517bf239de88b0a5a4d080b19e5de4cd2ee8f3a06",
+    "batch-1-grader-events.jsonl": "74a48f9647ed125a3603485860e3ef568b6ce98e8c451829bc14db1dcf80a534",
+    "batch-1-grader-execution.json": "f330197cb08567e898810a121275a169189b4761ebc47c4cbebc2d318203ff77",
+    "batch-2-grader-events.jsonl": "fc50da8a3b59b3c4c0ae3cfd9f5eb018eb0926e7362ea94d586129d421a871c9",
+    "batch-2-grader-execution.json": "f08badc27ae4a8e6b383d81a1b342ce447457681bdcfa272b263afedd3edbba1",
+    "cases.json": "ec7453e3fe322c8225a0c7dc4fdb1bd2f99a2cf4911812416a96afd19551a287",
+    "cli_capture.py": "5d50ea9e714cc3a5f64d38b906941ba9cb04b26b8215ec3a61ca2f5a95112da2",
+    "commercial-free-song-events.jsonl": "9a4e01a006ba56b24e814391f2a3abc4399c3e4f4ca955376f2a54ef2209e6b9",
+    "decision-sources.json": "7b9cdb6e44ddac6dd8761c50d4481f7f83f11bf2167cd6d94bea1cadd420b5fc",
+    "execution-request-handoff-events.jsonl": "19e74323adfb65c33311196cfc24deea6bc407f49769093b2ca1e4da8adfab23",
+    "explicit-paid-no-authority-events.jsonl": "06ff05639b57128f3ad77b14cb92c2133e53455dc33d57af1de400b5e6399c0a",
+    "freeze.json": "b599df41e500332b32158b745f4f13c6fa99964d7b68fa732d9c7c4448b81991",
+    "grader-config.json": "a9f6f8e99ff17321f0536e894a8703b77d074cec979558bdbeac51e7d20b295c",
+    "grader-runner.py": "9df7c41d418dfa9dae7b1ad8ecaa3fbbed37e685e999259d5998813a770fe124",
+    "grades.json": "60f21f9101b872e25dbce2afea5e937e14a520ed48dcffa749c9055d1848918e",
+    "hypotheses.md": "b63b9a89d92acd072e052a5369ba36ff0a5bc2de5ad6966a454d0ca56b8434e4",
+    "inputs.json": "19826d2524e9a8d02b93e3e590b7fd03232b3289d5b20745df6fae753a4e3960",
+    "locked-score-frames-events.jsonl": "3f72d08cdf8c4a9635bcf68eac42720206f190b0bceeaa8a4e05fbaab37b5acb",
+    "original-gaps.json": "2940ae4c8a4d576b79628ecc9c68aff39673aba016cf05bc4c14e521a257239c",
+    "prelaunch-freeze.json": "a69443b53d1e5e17e27733f1a8bf2c4196962ba152c96cb9d5765efe2b0b4149",
+    "prepare_router_grading.py": "5005413d2d8feba5389cb0559401f910e5ca32c6996772cbf6c6d03c61159e25",
+    "protocol.txt": "09ab3c3fb53f7af79a0d2e1db2006ec41afc2ed853786d2c1cad8533e03cbdaa",
+    "results.json": "1325bb1643695e009f21e323818edc3a545d1fef058d4b2e9bcc564ff2bd0aaa",
+    "screenshots-explicit-flute-events.jsonl": "d0854cd2657f8e496aaacf0020ec82f8c2df179fffaf7ab7e5b222a971f1b6f1",
+    "shell-probes.json": "a0bae8f2a8b5adeb42da69851eb1271ebd76dbc99ba2b392df96d35dd8233682",
+    "source-snapshot.zip": "00350dd1a6c2df20b204a7787988ed19155189bc2128f77ac3f8fbe388954b44",
+    "storyboard-single-shot-skip-events.jsonl": "0aad1765e7bef95132f675066415079e968f6d179e00800dbfd16a54daafc090",
+    "summary.json": "ee1ae4cb3ef3509b75be881c97dab20a5d50f11f78dbe54589504902181accb5",
+    "three-style-blocks-events.jsonl": "1eec2a3cce8949cd1a9a5a5d9a26852abe47bfbd92f2553b6e108a9ab23a2bec",
+    "unverified-qa-note-events.jsonl": "3db1cf01980eecd92588a604d45f7352ee64b60280a297b5ed970028824f2971"
+  },
+  "counts": {
+    "cases": 8,
+    "passed": 8
+  },
+  "source_snapshot": "source-snapshot.zip",
+  "calibration": "calibration",
+  "calibration_manifest_sha256": "c313b238e9ce66764cb2b1d79a4339cf444833170c025fb6afc3cdf0917309c5",
+  "capture_streams": {
+    "explicit-paid-no-authority": "explicit-paid-no-authority-events.jsonl",
+    "unverified-qa-note": "unverified-qa-note-events.jsonl",
+    "execution-request-handoff": "execution-request-handoff-events.jsonl",
+    "screenshots-explicit-flute": "screenshots-explicit-flute-events.jsonl",
+    "three-style-blocks": "three-style-blocks-events.jsonl",
+    "locked-score-frames": "locked-score-frames-events.jsonl",
+    "commercial-free-song": "commercial-free-song-events.jsonl",
+    "storyboard-single-shot-skip": "storyboard-single-shot-skip-events.jsonl"
+  }
+}

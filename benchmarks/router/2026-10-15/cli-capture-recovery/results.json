@@ -1,0 +1,1212 @@
+[
+  {
+    "id": "explicit-paid-no-authority",
+    "answer": "Using [router/SKILL.md](router/SKILL.md), the selected route is **`authored-react-film` \u2192 Remotion**, with Remotion owning composition and final assembly. Your explicit preference stays fixed. This is a text plan only; no installations, provider calls, spending, rendering or publication occurred.\n\nThe supplied catalogue records a Remotion **4.0.535** pilot covering authored typography, frame timing, MP4, native audio and still export. That is historical, limited evidence\u2014not validation of this proposed film or the absent runtime.\n\n**Proposed storyboard:** assume English, a software/methods audience, silent playback and an opaque 1920\u00d71080 canvas at 30 fps. These are provisional choices, not supplied requirements. Total: **450 frames / 15 seconds**, with end-exclusive ranges and no transition overlaps.\n\n| Time / frames | Picture and proposed copy |\n|---|---|\n| 0\u20133s / 0\u201390 | Typographic reveal: \u201cFramewright\u201d |\n| 3\u20137s / 90\u2013210 | Introduce: \u201cA methods library for video production\u201d |\n| 7\u201312s / 210\u2013360 | Arrange simple text blocks: \u201cSelect existing tools using recorded experiments\u201d |\n| 12\u201315s / 360\u2013450 | Resolve to \u201cFramewright\u201d and \u201cA methods library\u201d |\n\nContinuity: one type family, consistent hierarchy, restrained positional motion and a shared palette pending brand guidance. Use the approved logo once supplied; meanwhile the plan specifies a text wordmark. No fabricated interface or performance claims.\n\nCompared explicitly with **[product.md](product.md)**, the proposed copy preserves its description of Framewright as a methods library that selects existing tools using recorded experiments. Promotional rights, approved identity assets, fonts and any CTA destination remain unverified.\n\nExecution is **blocked** by absent official Remotion creation/markup/rendering guides, installed API, compatible pinned packages, renderer/browser runtime and confirmed Free/Company licence eligibility. Free eligibility cannot be assumed. The recorded downloaded-browser failure must remain visible: two connection timeouts; explicit existing Chromium worked, with a supported 120-second allowance. No browser is available here.\n\nIntended future deliverables are an editable React composition, local asset manifest, source-to-copy record, storyboard and `framewright-brand-15s.mp4`; none has been created. No thumbnail or audio output is proposed.\n\nRemaining QA is **planned, not passed**: after separate execution authorization, run a bounded representative-frame and short encoded test before the full export. Require correct copy, readable reduced-size text, safe crop and deterministic timing; then inspect the final decoded file for 15-second duration, dimensions, fps, transitions and intended silence. Record versions, licences, asset provenance, file size/hash and owner acceptance. Publication remains excluded.",
+    "execution": {
+      "id": "explicit-paid-no-authority",
+      "exit_code": 0,
+      "duration_seconds": 44.95,
+      "files_before": {
+        "product.md": "6acdab0a071733c5c2c2be1c36decacc0dd90282b39c7a9f9efa695ca7d78deb",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "files_after": {
+        "product.md": "6acdab0a071733c5c2c2be1c36decacc0dd90282b39c7a9f9efa695ca7d78deb",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "workspace_unchanged": true,
+      "capture": {
+        "status": "ready_for_grading",
+        "ready_for_grading": true,
+        "trace": {
+          "complete": true,
+          "errors": [],
+          "unfinished_command_ids": [],
+          "commands_started": 4,
+          "commands_completed": 4
+        },
+        "parse_errors": [],
+        "events_sha256": "06ff05639b57128f3ad77b14cb92c2133e53455dc33d57af1de400b5e6399c0a"
+      },
+      "events_sha256": "06ff05639b57128f3ad77b14cb92c2133e53455dc33d57af1de400b5e6399c0a",
+      "turn_completed": true,
+      "answer_present": true
+    },
+    "trace": [
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'ls router && cat router/SKILL.md && cat product.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'ls router && cat router/SKILL.md && cat product.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_3",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/references/selection.md router/references/tool-matrix.md router/references/storyboard.md router/references/catalog.json router/references/handoff.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_3",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/references/selection.md router/references/tool-matrix.md router/references/storyboard.md router/references/catalog.json router/references/handoff.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_4",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"rg -n 'authored-react-film|\"'^## |\"id\": \"remotion\"|\"remotion\"'\"' router/references/recipes.md router/references/tools.json\"",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_4",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"rg -n 'authored-react-film|\"'^## |\"id\": \"remotion\"|\"remotion\"'\"' router/references/recipes.md router/references/tools.json\"",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_5",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"sed -n '119,190p' router/references/recipes.md\nsed -n '519,680p' router/references/tools.json\"",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_5",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"sed -n '119,190p' router/references/recipes.md\nsed -n '519,680p' router/references/tools.json\"",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      }
+    ],
+    "route_review": {
+      "verdict": "PASS",
+      "reason": "Controller reviewed complete answer against unchanged frozen criteria and supplied facts; explicit tools, locked timings, authority and proposed/blocked QA retained."
+    },
+    "trace_review": {
+      "verdict": "PASS",
+      "reason": "All attempted commands reviewed: only pwd/ls/rg/cat/sed on supplied router and declared fixtures; all34 across the packet have matching completions. No network, installer, render, provider, write or publication command observed."
+    }
+  },
+  {
+    "id": "unverified-qa-note",
+    "answer": "The final handoff remains **blocked on media and evidence**. The old export and thumbnail cannot truthfully be marked \u201cQA passed.\u201d\n\nApplying [router/SKILL.md](router/SKILL.md) and its [handoff contract](router/references/handoff.md):\n\n- **Route \u2014 planned:** Retain the existing production chain, export and thumbnail. Use the existing FFmpeg/ffprobe inspection workflow once files and runtime are available, alongside visual inspection and human listening. No new renderer, replacement thumbnail or generation workflow is needed for this handoff.\n- **Verifiable now:** The supplied documents were read. [notes.md](notes.md) contains an explicitly unverified owner claim, with no media, hashes or QA logs. [product.md](product.md) describes Framewright as a methods library, not a rendering engine, and says music-provider features are documented rather than publicly qualified. These are source statements, not independent media validation.\n- **Copy comparison \u2014 blocked:** No export text or thumbnail is available to compare against `product.md`. Later, compare every visible or spoken product claim, title, feature and CTA with that source; flag unsupported claims. Asset identity and permission for promotional use require separate evidence.\n\n**Prerequisites \u2014 blocked:** Obtain the exact approved export and existing thumbnail, their original filenames and provenance, intended delivery specifications, rights records, and any historical QA evidence tied to file hashes. Before later inspection, identify the actual FFmpeg/ffprobe version, decoder support and build/licence conditions. Renderer guides, pinned dependencies, API and licence checks become relevant only if a repair requires rendering; the original renderer is currently unknown.\n\n**Intended handoff, with nothing created now:**\n\n- Existing final video, preserving its original identity and recording size/hash.\n- Existing thumbnail reused unchanged; whether it was originally native-rendered or extracted remains unknown.\n- A QA/provenance record linking evidence and outstanding issues to those exact files.\n\n**Remaining QA \u2014 planned, currently blocked:**\n\n- **Video:** Decode the complete final file; check duration, dimensions/aspect ratio, frame rate, codecs, picture integrity, crop, text readability and transitions. Inspect encoded audio, sync, loudness and peaks, then listen throughout. Compare results with agreed delivery targets.\n- **Thumbnail:** Independently inspect identity, decoded dimensions, existing crop, rights and text legibility at intended size and a reduced preview; record size/hash.\n\nOnly observed evidence should change a check to **verified**. Human acceptance remains separate from technical QA, and publication requires separate authorization. No files were created, rendered, uploaded or published.",
+    "execution": {
+      "id": "unverified-qa-note",
+      "exit_code": 0,
+      "duration_seconds": 46.51,
+      "files_before": {
+        "notes.md": "af1bd6a765dabb5a55f1260c930126324f8b689bac6362278ffc140a4b6f9faa",
+        "product.md": "6acdab0a071733c5c2c2be1c36decacc0dd90282b39c7a9f9efa695ca7d78deb",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "files_after": {
+        "notes.md": "af1bd6a765dabb5a55f1260c930126324f8b689bac6362278ffc140a4b6f9faa",
+        "product.md": "6acdab0a071733c5c2c2be1c36decacc0dd90282b39c7a9f9efa695ca7d78deb",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "workspace_unchanged": true,
+      "capture": {
+        "status": "ready_for_grading",
+        "ready_for_grading": true,
+        "trace": {
+          "complete": true,
+          "errors": [],
+          "unfinished_command_ids": [],
+          "commands_started": 3,
+          "commands_completed": 3
+        },
+        "parse_errors": [],
+        "events_sha256": "3db1cf01980eecd92588a604d45f7352ee64b60280a297b5ed970028824f2971"
+      },
+      "events_sha256": "3db1cf01980eecd92588a604d45f7352ee64b60280a297b5ed970028824f2971",
+      "turn_completed": true,
+      "answer_present": true
+    },
+    "trace": [
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'pwd; rg --files router; cat product.md notes.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'pwd; rg --files router; cat product.md notes.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_3",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/SKILL.md router/references/handoff.md router/references/selection.md router/references/tool-matrix.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_3",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/SKILL.md router/references/handoff.md router/references/selection.md router/references/tool-matrix.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_5",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"cat router/references/handoff.md; rg -n -A 48 -B 3 '\\\"id\\\": \\\"ffmpeg\\\"' router/references/tools.json\"",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_5",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"cat router/references/handoff.md; rg -n -A 48 -B 3 '\\\"id\\\": \\\"ffmpeg\\\"' router/references/tools.json\"",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      }
+    ],
+    "route_review": {
+      "verdict": "PASS",
+      "reason": "Controller reviewed complete answer against unchanged frozen criteria and supplied facts; explicit tools, locked timings, authority and proposed/blocked QA retained."
+    },
+    "trace_review": {
+      "verdict": "PASS",
+      "reason": "All attempted commands reviewed: only pwd/ls/rg/cat/sed on supplied router and declared fixtures; all34 across the packet have matching completions. No network, installer, render, provider, write or publication command observed."
+    }
+  },
+  {
+    "id": "execution-request-handoff",
+    "answer": "Implementation and rendering are blocked here. No code, MP4 or PNG was created. Your constraints prohibit file changes, installation and rendering; the supplied environment also lacks media, renderer guides/runtimes and accounts.\n\nThe selected route is **`authored-react-film` using Remotion**, following [router/SKILL.md](router/SKILL.md). Remotion would own picture, typography, timing and native still export. The catalogue reports a Remotion 4.0.535 pilot covering these capabilities; that historical record does not verify execution here.\n\nProposed implementation, assuming English, 30 seconds, 1920\u00d71080 at 30 fps, silent typography and opaque backgrounds:\n\n| Frames, end-exclusive | Copy and motion |\n|---|---|\n| 0\u2013240 | \u201cFramewright \u2014 a methods library.\u201d Title reveal. |\n| 240\u2013600 | \u201cHelps an AI agent select existing video-production tools using recorded experiments.\u201d Sequential text blocks and simple shapes. |\n| 600\u2013900 | \u201cFramewright is not a rendering engine.\u201d Resolve to the product name. |\n\nThis copy was compared explicitly with [product.md](product.md): all three claims are supported. No fabricated UI, logo, customer evidence or music-provider qualification is proposed. The source says music-provider features are documented, not publicly qualified. The visual continuity proposal is high-contrast typography, one accent colour and frame-driven motion. Real media is absent; this text-led approach avoids needing footage, while font identity and usage rights remain prerequisites.\n\nExecution requires a writable, render-enabled workspace; local Remotion official creation/markup/rendering guides and installed API; compatible pinned packages; verified Free/Company licence eligibility; and a working browser. Preserve the recorded failure: two downloaded Headless Shell connections timed out. The historical workaround used explicit existing Chromium and a supported 120-second loading allowance; it is untested here.\n\nIntended deliverables are editable composition source with lockfile, `framewright.mp4`, **new native** `framewright-thumbnail.png`, and a provenance/QA manifest recording versions, source mapping, settings and hashes. The PNG would come from Remotion\u2019s native still renderer, never an extracted video frame.\n\nAll output QA remains blocked. A bounded first test should render one representative scene and its native PNG, passing only after decoded dimensions, timing, layout and readability checks. Full MP4 QA must inspect duration/fps/codec, encoded picture, transitions, crop, text and intended audio absence. PNG QA separately requires identity/rights, decoded dimensions, crop, legibility at intended size and reduced preview, file size and hash. Human aesthetic acceptance and final artifact handoff remain outstanding; nothing was uploaded or published.",
+    "execution": {
+      "id": "execution-request-handoff",
+      "exit_code": 0,
+      "duration_seconds": 45.1,
+      "files_before": {
+        "product.md": "6acdab0a071733c5c2c2be1c36decacc0dd90282b39c7a9f9efa695ca7d78deb",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "files_after": {
+        "product.md": "6acdab0a071733c5c2c2be1c36decacc0dd90282b39c7a9f9efa695ca7d78deb",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "workspace_unchanged": true,
+      "capture": {
+        "status": "ready_for_grading",
+        "ready_for_grading": true,
+        "trace": {
+          "complete": true,
+          "errors": [],
+          "unfinished_command_ids": [],
+          "commands_started": 7,
+          "commands_completed": 7
+        },
+        "parse_errors": [],
+        "events_sha256": "19e74323adfb65c33311196cfc24deea6bc407f49769093b2ca1e4da8adfab23"
+      },
+      "events_sha256": "19e74323adfb65c33311196cfc24deea6bc407f49769093b2ca1e4da8adfab23",
+      "turn_completed": true,
+      "answer_present": true
+    },
+    "trace": [
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'pwd; rg --files router; cat product.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'pwd; rg --files router; cat product.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_3",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/SKILL.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_3",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/SKILL.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_5",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/references/catalog.json router/references/tool-matrix.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_6",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/references/selection.md router/references/storyboard.md router/references/handoff.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_7",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"rg -n -A 85 -B 8 'authored-react-film|Remotion|remotion' router/references/tools.json router/references/recipes.md\"",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_6",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/references/selection.md router/references/storyboard.md router/references/handoff.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_5",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/references/catalog.json router/references/tool-matrix.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_7",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"rg -n -A 85 -B 8 'authored-react-film|Remotion|remotion' router/references/tools.json router/references/recipes.md\"",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_8",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"rg -n 'authored-react-film|\"'^## |Remotion|browser|Chrome'\"' router/references/recipes.md router/references/catalog.json router/references/tool-matrix.md; sed -n '510,540p' router/references/tools.json; sed -n '700,750p' router/references/tools.json\"",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_8",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"rg -n 'authored-react-film|\"'^## |Remotion|browser|Chrome'\"' router/references/recipes.md router/references/catalog.json router/references/tool-matrix.md; sed -n '510,540p' router/references/tools.json; sed -n '700,750p' router/references/tools.json\"",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_9",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"sed -n '119,175p' router/references/recipes.md; sed -n '104,144p' router/references/catalog.json; sed -n '90,127p' router/references/tool-matrix.md\"",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_9",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"sed -n '119,175p' router/references/recipes.md; sed -n '104,144p' router/references/catalog.json; sed -n '90,127p' router/references/tool-matrix.md\"",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      }
+    ],
+    "route_review": {
+      "verdict": "PASS",
+      "reason": "Controller reviewed complete answer against unchanged frozen criteria and supplied facts; explicit tools, locked timings, authority and proposed/blocked QA retained."
+    },
+    "trace_review": {
+      "verdict": "PASS",
+      "reason": "All attempted commands reviewed: only pwd/ls/rg/cat/sed on supplied router and declared fixtures; all34 across the packet have matching completions. No network, installer, render, provider, write or publication command observed."
+    }
+  },
+  {
+    "id": "screenshots-explicit-flute",
+    "answer": "**Flute remains your selected tool. The plan is blocked for production with the inputs available:** the recorded Flute route uses genuine React components, while you have flat screenshots and no source project. The supplied references do not establish screenshot-only support. That is an evidence gap, not proof that an adapter is impossible.\n\nThe [Flute recipe](router/references/recipes.md#live-react-scene) records camera travel and selective focus with Flute 0.1.2 around existing React panels in an isolated browser host. That supports your visual direction within that scope; it does not validate importing screenshots as independently focusable product panels. No installation or execution is part of this plan.\n\n**Proposed treatment**\n\nUse one continuous, restrained shot, provisionally 10 seconds long:\n\n- **0\u20132 seconds:** hold an overview so the viewer can understand the panel arrangement.\n- **2\u20138 seconds:** move slowly toward one chosen panel, easing gently while focus settles on its main content.\n- **8\u201310 seconds:** hold the final composition long enough to read it.\n\nKeep the picture silent, with no added copy. Duration is a planning assumption; aspect ratio and resolution should follow the eventual screenshot dimensions and delivery target. There is no basis here to promise a particular crop or readable magnification.\n\nA screenshot remains a flat image: camera movement cannot reveal hidden interface content. If several panels are baked into one screenshot, separate depth and focus would require an explicit adaptation rather than treating them as existing DOM panels.\n\n**Bounded proposal for resolving the input gap**\n\nKeep Flute as the renderer and propose a minimal React host that displays screenshot images as surfaces. This would be a new screenshot adapter, **not the tested genuine-component workflow**. It would need separate acceptance before future implementation; nothing is being built now.\n\nA future feasibility test would use one authorised screenshot, one surface and one short camera/focus move. Pass conditions would be:\n\n- The verified Flute API supports the image surface and intended transforms.\n- Camera position and focus reproduce consistently at specified timeline positions.\n- The final encoded clip retains readable target text, correct proportions and an acceptable crop, without visible jitter or unintended blur.\n- The result is clearly represented as screenshot imagery, with no claim of live UI interaction.\n\nFailure would leave the Flute plan blocked. Replacing Flute or dropping the focus effect would require an explicit decision.\n\n**Intended handoff and remaining checks**\n\nThe intended artifacts are a scene specification and, only after separately authorised production, a silent MP4. No thumbnail, captions or audio files are requested.\n\nRuntime preflight remains **blocked**: no usable runtime, installed guide or media is supplied. Future checks would cover the installed API, pinned compatible versions, licence eligibility, dependencies and screenshot rights. Any host would remain isolated from production; capture styles would be explicitly scoped, and any authored data would be synthetic.\n\nMP4 QA is **planned, not completed**: verify decoded duration, dimensions, frame rate, picture integrity and intended silence; inspect opening, intermediate and closing frames; review motion, focus transitions, crop and text readability at delivery size and a reduced preview. Owner acceptance remains separate.\n\nThe recorded portable Flute snapshot failure remains a limitation, though still delivery is outside this request. No promotional claims are proposed; [product.md](product.md) supplies no performance or endorsement evidence. Only the permitted documents were read; no files were changed or media produced.",
+    "execution": {
+      "id": "screenshots-explicit-flute",
+      "exit_code": 0,
+      "duration_seconds": 45.42,
+      "files_before": {
+        "product.md": "97e9e9fbbdc117a0cbd289de62e57796a046976532aea46c8c61fdd2faf0342e",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "files_after": {
+        "product.md": "97e9e9fbbdc117a0cbd289de62e57796a046976532aea46c8c61fdd2faf0342e",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "workspace_unchanged": true,
+      "capture": {
+        "status": "ready_for_grading",
+        "ready_for_grading": true,
+        "trace": {
+          "complete": true,
+          "errors": [],
+          "unfinished_command_ids": [],
+          "commands_started": 4,
+          "commands_completed": 4
+        },
+        "parse_errors": [],
+        "events_sha256": "d0854cd2657f8e496aaacf0020ec82f8c2df179fffaf7ab7e5b222a971f1b6f1"
+      },
+      "events_sha256": "d0854cd2657f8e496aaacf0020ec82f8c2df179fffaf7ab7e5b222a971f1b6f1",
+      "turn_completed": true,
+      "answer_present": true
+    },
+    "trace": [
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'pwd; rg --files router; cat product.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'pwd; rg --files router; cat product.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_3",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/SKILL.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_3",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/SKILL.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_5",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"cat router/references/selection.md router/references/tool-matrix.md router/references/catalog.json router/references/handoff.md; rg -n -i 'flute|live-react|snapshot' router/references/tools.json router/references/recipes.md\"",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_5",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"cat router/references/selection.md router/references/tool-matrix.md router/references/catalog.json router/references/handoff.md; rg -n -i 'flute|live-react|snapshot' router/references/tools.json router/references/recipes.md\"",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_6",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"sed -n '76,115p' router/references/recipes.md; sed -n '435,518p' router/references/tools.json\"",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_6",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"sed -n '76,115p' router/references/recipes.md; sed -n '435,518p' router/references/tools.json\"",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      }
+    ],
+    "route_review": {
+      "verdict": "PASS",
+      "reason": "Controller reviewed complete answer against unchanged frozen criteria and supplied facts; explicit tools, locked timings, authority and proposed/blocked QA retained."
+    },
+    "trace_review": {
+      "verdict": "PASS",
+      "reason": "All attempted commands reviewed: only pwd/ls/rg/cat/sed on supplied router and declared fixtures; all34 across the packet have matching completions. No network, installer, render, provider, write or publication command observed."
+    }
+  },
+  {
+    "id": "three-style-blocks",
+    "answer": "Use **Remotion \u2192 Flute \u2192 Hyperframes**, with **FFmpeg as the shared assembler**. I applied [router/SKILL.md](router/SKILL.md). Its records support relevant component capabilities; this three-block combination remains a proposed, untested chain.\n\nAssume English copy, a silent 1920\u00d71080, 30 fps master, and clean cuts at 6s and 12s. That gives 540 frames with no transition overlaps. Carry warm ivory, charcoal, one muted red accent, generous margins and a shared sans-serif hierarchy across all three styles.\n\n| Block | Picture, copy and motion | Tool and evidence limits |\n|---|---|---|\n| **A \u00b7 0\u20136s \u00b7 frames [0,180)** | Swiss typography: \u201cFramewright\u201d enters on a strict grid; \u201cA methods library for AI agents\u201d follows, then \u201cChoose existing video tools.\u201d Use aligned rules and restrained positional movement, settling before the cut. Inputs: original text and abstract graphics. | **Remotion**, using the `authored-react-film` route. The registry records tested typography, frame timing and horizontal export in a Framewright pilot. This specific Swiss treatment is proposed. |\n| **B \u00b7 6\u201312s \u00b7 frames [180,360)** | Genuine React panels populated exclusively with synthetic inputs, visibly labelled \u201cSynthetic demo.\u201d Establish three panels, travel toward one focal panel, shift focus once, then hold a readable closing view. Small caption: \u201cCamera and focus around React panels.\u201d | **Flute**, using `live-react-scene`. Recorded CoqPi browser-host testing covers actual components, camera travel and DOM focus blur. It does not establish arbitrary React compatibility, full Electron support or ray-traced optics. |\n| **C \u00b7 12\u201318s \u00b7 frames [360,540)** | Restrained paper collage: overlapping page shapes, an abstract book silhouette and a slow settling movement. At 15s, hold \u201cExplore Framewright\u201d and **https://abvx.xyz/work/framewright** through the end. Use original code-authored shapes; use approved book artwork only once supplied. | **Hyperframes**, adapting the picture layer of the book-montage route. Recorded book pilots support image movement, typography and timelines. They do not verify this collage treatment or supply artwork. |\n\nCompared explicitly with **product.md**, the opening copy preserves Framewright\u2019s stated role: a methods library helping AI agents choose existing video tools. The React caption describes the proposed demonstration, without implying that Framewright renders. The CTA matches the supplied authoritative URL. No customer, speed, endorsement or conversion claims are added. Original text and abstract graphics are authorised; actual component provenance, font licensing and any later book-art rights still need checking.\n\n**Assembly and intended handoff:** each renderer would provide a six-second, opaque clip with matching dimensions, constant frame rate and colour space. FFmpeg would own the final timeline and produce `framewright-promo-18s.mp4`, targeting H.264/yuv420p with no audio track. Preserve original clips, versions, transformations and hashes. FFmpeg concatenation is documented in the registry, rather than locally qualified for this combination; stream copying depends on compatible streams. No thumbnail, subtitles or audio deliverables are assumed.\n\n**Planned preflight and QA:** check installed guides/APIs, pinned versions and licences, including Remotion eligibility. Retain its recorded downloaded-browser failures and existing-Chromium workaround. Flute needs genuine components, required providers/styles, development-only capture overrides and production exclusion; its portable snapshot failure remains recorded.\n\nExecution and media verification are **blocked** by absent runtimes, components and media. A bounded future integration test would inspect both seams plus the focus move: pass only with correct timing, readable focused labels, preserved component styling and no missing, duplicated or black frames. Final QA would inspect the encoded master for exactly 18 seconds/540 frames, format, colour, crop, copy/CTA readability at full and reduced size, focus behaviour and absence of unintended audio. Human aesthetic acceptance remains separate. No rendering, generation, account creation or publication occurred.",
+    "execution": {
+      "id": "three-style-blocks",
+      "exit_code": 0,
+      "duration_seconds": 43.11,
+      "files_before": {
+        "product.md": "97e9e9fbbdc117a0cbd289de62e57796a046976532aea46c8c61fdd2faf0342e",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "files_after": {
+        "product.md": "97e9e9fbbdc117a0cbd289de62e57796a046976532aea46c8c61fdd2faf0342e",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "workspace_unchanged": true,
+      "capture": {
+        "status": "ready_for_grading",
+        "ready_for_grading": true,
+        "trace": {
+          "complete": true,
+          "errors": [],
+          "unfinished_command_ids": [],
+          "commands_started": 4,
+          "commands_completed": 4
+        },
+        "parse_errors": [],
+        "events_sha256": "1eec2a3cce8949cd1a9a5a5d9a26852abe47bfbd92f2553b6e108a9ab23a2bec"
+      },
+      "events_sha256": "1eec2a3cce8949cd1a9a5a5d9a26852abe47bfbd92f2553b6e108a9ab23a2bec",
+      "turn_completed": true,
+      "answer_present": true
+    },
+    "trace": [
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'ls router; cat product.md; cat router/SKILL.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'ls router; cat product.md; cat router/SKILL.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_3",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/references/selection.md router/references/tool-matrix.md router/references/storyboard.md router/references/catalog.json router/references/handoff.md router/references/tool-chains.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_3",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/references/selection.md router/references/tool-matrix.md router/references/storyboard.md router/references/catalog.json router/references/handoff.md router/references/tool-chains.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_4",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"rg -n '\"'^##|''^###'\"' router/references/recipes.md; cat router/references/tools.json\"",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_4",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"rg -n '\"'^##|''^###'\"' router/references/recipes.md; cat router/references/tools.json\"",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_5",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"sed -n '21,53p' router/references/recipes.md; sed -n '76,170p' router/references/recipes.md\"",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_5",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"sed -n '21,53p' router/references/recipes.md; sed -n '76,170p' router/references/recipes.md\"",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      }
+    ],
+    "route_review": {
+      "verdict": "PASS",
+      "reason": "Controller reviewed complete answer against unchanged frozen criteria and supplied facts; explicit tools, locked timings, authority and proposed/blocked QA retained."
+    },
+    "trace_review": {
+      "verdict": "PASS",
+      "reason": "All attempted commands reviewed: only pwd/ls/rg/cat/sed on supplied router and declared fixtures; all34 across the packet have matching completions. No network, installer, render, provider, write or publication command observed."
+    }
+  },
+  {
+    "id": "locked-score-frames",
+    "answer": "Use **music-first \u2192 authored-react-film with Remotion**, with the approved instrumental as timeline authority. The router records tested typography, frame timing, native audio and video export in Remotion 4.0.535; its pilot was 1080p30, so it does **not** establish that this exact 25fps deliverable has passed.\n\nLock the composition to **25fps, 320 frames, 12.8 seconds**. Rendered frames are 0\u2013319; frame 320 is the exclusive endpoint. Preserve the approved cuts at 0, 80, 160, 240 and 320, yielding four 80-frame sections of 3.2 seconds each. Use hard cuts without overlaps. These are owner-approved cues; no beat/downbeat analysis has been performed.\n\nThe proposed continuity is black and white, one locally available and appropriately licensed type family, generous margins, and abstract rules and letterforms. Use deterministic frame-driven position, tracking and scale changes. Keep each phrase readable before its next cut, with no strobing. Assume English copy; canvas dimensions and aspect ratio remain unresolved rather than inheriting the historical pilot\u2019s format.\n\n| Frames; time | Proposed copy | Picture instruction |\n|---|---|---|\n| [0,80); 0\u20133.2s | **FRAMEWRIGHT** | Separated letters converge into a clear wordmark; hold before the cut. |\n| [80,160); 3.2\u20136.4s | **CHOOSE A VIDEO METHOD** | Abstract horizontal rules resolve into a typographic grid around the phrase. |\n| [160,240); 6.4\u20139.6s | **FROM RECORDED EXPERIMENTS** | Repeated letter fragments align into the complete sentence; maintain reading order. |\n| [240,320); 9.6\u201312.8s | **FRAMEWRIGHT** / **abvx.xyz/work/framewright** | Settle immediately into a stable closing card, holding the CTA through frame 319. |\n\nRemotion owns picture assembly and carries the same approved master continuously from frame 0. There is no narration, singing, additional soundtrack, music generation, audio retiming or replacement. All blocks use original text and abstract graphics; no logo, footage or product interface is required.\n\nCompared explicitly with **product.md**, \u201cchoose a video method\u201d and \u201cfrom recorded experiments\u201d reflect Framewright\u2019s stated purpose as a methods library for choosing existing video tools. The CTA matches its authoritative URL. The copy makes no speed, customer, endorsement or conversion claims and does not imply Framewright renders by itself. Audio authorisation is supplied by your brief; file identity remains unverified.\n\nIntended future artifacts are an opaque MP4, editable composition source, cue sheet and QA record, alongside the preserved original audio. No thumbnail, captions or stems are requested.\n\nBefore any later authorised execution, check local renderer guides/API, compatible pinned packages, licence eligibility, font rights, canvas dimensions and codec/audio compatibility. Retain the recorded downloaded-browser failures and explicit existing-Chromium workaround with its 120-second allowance. These preflight checks are **blocked here** by absent runtime/media and the planning-only boundary.\n\nThe bounded future validation would export this exact 320-frame composition at 25fps. Pass conditions are decoded 12.8-second duration, 320 frames, correct cuts, clean seams, readable type and CTA, correct crop, and no unintended flashes. Record the master\u2019s original hash, confirm the working input matches it and the source remains unchanged, then compare decoded output audio for sample rate, duration, content, timing and sync using a codec-appropriate comparison. Separately measure loudness/true peaks and listen throughout.\n\nAll media QA is **planned and blocked**, not completed evidence. Owner acceptance and publication remain separate; nothing was rendered, installed, uploaded or published.",
+    "execution": {
+      "id": "locked-score-frames",
+      "exit_code": 0,
+      "duration_seconds": 52.9,
+      "files_before": {
+        "product.md": "97e9e9fbbdc117a0cbd289de62e57796a046976532aea46c8c61fdd2faf0342e",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "files_after": {
+        "product.md": "97e9e9fbbdc117a0cbd289de62e57796a046976532aea46c8c61fdd2faf0342e",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "workspace_unchanged": true,
+      "capture": {
+        "status": "ready_for_grading",
+        "ready_for_grading": true,
+        "trace": {
+          "complete": true,
+          "errors": [],
+          "unfinished_command_ids": [],
+          "commands_started": 6,
+          "commands_completed": 6
+        },
+        "parse_errors": [],
+        "events_sha256": "3f72d08cdf8c4a9635bcf68eac42720206f190b0bceeaa8a4e05fbaab37b5acb"
+      },
+      "events_sha256": "3f72d08cdf8c4a9635bcf68eac42720206f190b0bceeaa8a4e05fbaab37b5acb",
+      "turn_completed": true,
+      "answer_present": true
+    },
+    "trace": [
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'pwd; rg --files router; cat product.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'pwd; rg --files router; cat product.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_3",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/SKILL.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_3",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/SKILL.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_4",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/references/selection.md router/references/tool-matrix.md router/references/storyboard.md router/references/catalog.json router/references/music-workflows.md router/references/handoff.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_4",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/references/selection.md router/references/tool-matrix.md router/references/storyboard.md router/references/catalog.json router/references/music-workflows.md router/references/handoff.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_6",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"cat router/references/storyboard.md; rg -n 'authored-react-film|\"'^#|locked|25fps|music-first'\"' router/references/recipes.md; sed -n '1,65p' router/references/tools.json\"",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_6",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"cat router/references/storyboard.md; rg -n 'authored-react-film|\"'^#|locked|25fps|music-first'\"' router/references/recipes.md; sed -n '1,65p' router/references/tools.json\"",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_7",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"sed -n '119,210p' router/references/recipes.md; rg -n '\\\"id\\\": \\\"remotion\\\"|\\\"id\\\":|\\\"name\\\": \\\"Remotion\\\"' router/references/tools.json\"",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_7",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"sed -n '119,210p' router/references/recipes.md; rg -n '\\\"id\\\": \\\"remotion\\\"|\\\"id\\\":|\\\"name\\\": \\\"Remotion\\\"' router/references/tools.json\"",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_8",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"sed -n '519,586p' router/references/tools.json; sed -n '704,712p' router/references/tools.json\"",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_8",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"sed -n '519,586p' router/references/tools.json; sed -n '704,712p' router/references/tools.json\"",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      }
+    ],
+    "route_review": {
+      "verdict": "PASS",
+      "reason": "Controller reviewed complete answer against unchanged frozen criteria and supplied facts; explicit tools, locked timings, authority and proposed/blocked QA retained."
+    },
+    "trace_review": {
+      "verdict": "PASS",
+      "reason": "All attempted commands reviewed: only pwd/ls/rg/cat/sed on supplied router and declared fixtures; all34 across the packet have matching completions. No network, installer, render, provider, write or publication command observed."
+    }
+  },
+  {
+    "id": "commercial-free-song",
+    "answer": "**Suno is documented to generate singing from supplied lyrics, but Suno Free is not a supported choice for this commercial book ad under your stated constraints.** Technical song generation and permission to use the resulting recording commercially are separate questions.\n\nThe supplied router records Suno\u2019s custom-lyrics singing as **documented, not publicly tested**. It also warns that free/trial use can be restricted to personal, noncommercial purposes. With no paid plan and no evidence granting commercial rights to a particular output, there is no basis here to clear a Suno Free soundtrack for advertising. A book ad is commercial promotion even if the video itself earns no platform revenue.\n\n| Option | Meets the singing requirement? | Fits this commercial, zero-provider-budget brief? |\n|---|---|---|\n| **Suno Free** | Custom-lyrics singing is documented; actual account access and vocal quality are unverified. | **Not established.** Free access or a downloadable song does not establish commercial-use rights. |\n| **Paid Suno** | Same documented song capability, subject to account/model access. | **Outside the stated budget.** A plan name alone would still not establish rights to a specific recording. |\n| **Flow Music free access** | Songs with vocals and lyrics are documented in the supplied inventory. | **Not established.** Free credits do not prove commercial permission or approved export entitlement; it is not a demonstrated workaround. |\n| **Local Kokoro TTS** | The recorded route supplies spoken narration; singing is not established. | **Does not meet your requirement**, regardless of provider cost. |\n| **Self-performed or voluntarily contributed original song** | Can provide actual singing of your lyrics. | **Potentially**, if the composition, performance and recording are authorised for advertising without a fee. No such recording or rights evidence is supplied here. |\n\nYour original lyrics address the **input lyrics** part of the rights question. They do not automatically grant commercial rights to a provider-generated recording. Likewise, the ability to play, download or export a song would establish a technical capability, not advertising permission. A successful private generation would not resolve that distinction.\n\nFor Suno specifically, the unresolved decisions are independent: whether the account can generate the song, whether an approved export is available, whether the singing is acceptable, and whether the intended commercial use is permitted. None has been verified against an actual account or recording in this comparison. The supplied documentation does not establish pronunciation, lyric fidelity, exact duration or musical quality for your lyrics.\n\n**My recommendation is to rule out Suno Free as the cleared soundtrack source for this brief.** Within the supplied evidence, no provider route is established that simultaneously satisfies singing, zero provider spend and commercial-use permission. A self-performed or voluntarily contributed recording is a conditional alternative, rather than an available cleared asset.\n\nThis conclusion uses only the supplied [music workflow guidance](router/references/music-workflows.md) and [tool profiles](router/references/tools.json), whose external references were recorded as checked on October 14, 2026. I did not independently verify live provider terms or account entitlements. Nothing was generated, downloaded, rendered or tested; there is no completed audio QA or commercial-rights clearance.",
+    "execution": {
+      "id": "commercial-free-song",
+      "exit_code": 0,
+      "duration_seconds": 42.49,
+      "files_before": {
+        "product.md": "97e9e9fbbdc117a0cbd289de62e57796a046976532aea46c8c61fdd2faf0342e",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "files_after": {
+        "product.md": "97e9e9fbbdc117a0cbd289de62e57796a046976532aea46c8c61fdd2faf0342e",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "workspace_unchanged": true,
+      "capture": {
+        "status": "ready_for_grading",
+        "ready_for_grading": true,
+        "trace": {
+          "complete": true,
+          "errors": [],
+          "unfinished_command_ids": [],
+          "commands_started": 5,
+          "commands_completed": 5
+        },
+        "parse_errors": [],
+        "events_sha256": "9a4e01a006ba56b24e814391f2a3abc4399c3e4f4ca955376f2a54ef2209e6b9"
+      },
+      "events_sha256": "9a4e01a006ba56b24e814391f2a3abc4399c3e4f4ca955376f2a54ef2209e6b9",
+      "turn_completed": true,
+      "answer_present": true
+    },
+    "trace": [
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'pwd && rg --files router && cat product.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'pwd && rg --files router && cat product.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_3",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/SKILL.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_3",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/SKILL.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_5",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/references/music-workflows.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_5",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/references/music-workflows.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_6",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"cat router/references/catalog.json && rg -n -i 'suno|udio|sing|music|song|tts' router/references/tools.json router/references/recipes.md router/references/tool-matrix.md\"",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_6",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"cat router/references/catalog.json && rg -n -i 'suno|udio|sing|music|song|tts' router/references/tools.json router/references/recipes.md router/references/tool-matrix.md\"",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_7",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"sed -n '1010,1145p' router/references/tools.json && sed -n '20,48p' router/references/recipes.md && sed -n '190,258p' router/references/tool-matrix.md\"",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_7",
+          "type": "command_execution",
+          "command": "/bin/zsh -c \"sed -n '1010,1145p' router/references/tools.json && sed -n '20,48p' router/references/recipes.md && sed -n '190,258p' router/references/tool-matrix.md\"",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      }
+    ],
+    "route_review": {
+      "verdict": "PASS",
+      "reason": "Controller reviewed complete answer against unchanged frozen criteria and supplied facts; explicit tools, locked timings, authority and proposed/blocked QA retained."
+    },
+    "trace_review": {
+      "verdict": "PASS",
+      "reason": "All attempted commands reviewed: only pwd/ls/rg/cat/sed on supplied router and declared fixtures; all34 across the packet have matching completions. No network, installer, render, provider, write or publication command observed."
+    }
+  },
+  {
+    "id": "storyboard-single-shot-skip",
+    "answer": "Create a single 7-second, 16:9 silent Framewright logo card using the authorised logo once supplied. Keep the camera locked and the logo static, centred and fully visible on a plain neutral background. Preserve the logo\u2019s exact artwork, colours and proportions; add no invented details, text, effects, transitions or audio.",
+    "execution": {
+      "id": "storyboard-single-shot-skip",
+      "exit_code": 0,
+      "duration_seconds": 13.03,
+      "files_before": {
+        "product.md": "7a5ae539656a93ac9259d23f705baab72f42790b492f594f738053572c3cda13",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "files_after": {
+        "product.md": "7a5ae539656a93ac9259d23f705baab72f42790b492f594f738053572c3cda13",
+        "router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+        "router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+        "router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+        "router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+        "router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+        "router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+        "router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+        "router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+        "router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+        "router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+        "router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+        "router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+      },
+      "workspace_unchanged": true,
+      "capture": {
+        "status": "ready_for_grading",
+        "ready_for_grading": true,
+        "trace": {
+          "complete": true,
+          "errors": [],
+          "unfinished_command_ids": [],
+          "commands_started": 1,
+          "commands_completed": 1
+        },
+        "parse_errors": [],
+        "events_sha256": "0aad1765e7bef95132f675066415079e968f6d179e00800dbfd16a54daafc090"
+      },
+      "events_sha256": "0aad1765e7bef95132f675066415079e968f6d179e00800dbfd16a54daafc090",
+      "turn_completed": true,
+      "answer_present": true
+    },
+    "trace": [
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/SKILL.md; cat product.md'",
+          "exit_code": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "/bin/zsh -c 'cat router/SKILL.md; cat product.md'",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      }
+    ],
+    "route_review": {
+      "verdict": "PASS",
+      "reason": "Controller reviewed complete answer against unchanged frozen criteria and supplied facts; explicit tools, locked timings, authority and proposed/blocked QA retained."
+    },
+    "trace_review": {
+      "verdict": "PASS",
+      "reason": "All attempted commands reviewed: only pwd/ls/rg/cat/sed on supplied router and declared fixtures; all34 across the packet have matching completions. No network, installer, render, provider, write or publication command observed."
+    }
+  }
+]

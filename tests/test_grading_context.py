@@ -28,9 +28,18 @@ class GradingContextTest(unittest.TestCase):
         evidence = self.root / 'evidence/scope'
         evidence.mkdir(parents=True)
         before = {p.relative_to(self.workspace).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in self.workspace.rglob('*') if p.is_file()}
-        (evidence / 'execution.json').write_text(json.dumps({'files_before': before, 'files_after': before, 'workspace_unchanged': True, 'exit_code': 0}))
-        (evidence / 'events.jsonl').write_text('')
+        (evidence / 'execution.json').write_text(json.dumps({'files_before': before, 'files_after': before, 'workspace_unchanged': True, 'exit_code': 0, 'turn_completed': True}))
+        (evidence / 'events.jsonl').write_text('{"type":"turn.started"}\n{"type":"turn.completed"}\n')
         (evidence / 'answer.txt').write_text('No verified product facts; only the allowed router and note were read.')
+
+    def test_unfinished_command_is_rejected_before_grading(self):
+        events = [{'type': 'turn.started'}, {'type': 'item.started', 'item': {
+            'id': 'abandoned', 'type': 'command_execution', 'command': 'cat source-notes.md'}},
+            {'type': 'turn.completed'}]
+        (self.root / 'evidence/scope/events.jsonl').write_text('\n'.join(json.dumps(e) for e in events))
+        with self.assertRaisesRegex(ValueError, 'incomplete CLI capture'):
+            context.prepare(self.root)
+        self.assertFalse((self.root / 'grade-input').exists())
 
     def test_root_fixture_list_does_not_erase_actor_permissions(self):
         _, rows = context.records(self.root)
