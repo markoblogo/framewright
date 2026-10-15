@@ -31,4 +31,4 @@ stretch Ukrainian speech to rescue an overloaded script. Narration starts at
 0.3,6.5,11.7,15.3,18.8seconds;last voice end23.722646s.
 
 [Experiment and limitations](../../experiments/2026-10-15/agro-uk-paper-piper.md).
-Human pronunciation and artistic acceptance are separate from technical export.
+Owner accepted the simple visual style but found this Ukrainian voice weak;use a different tool for the next Ukrainian narration. Technical export remains valid.

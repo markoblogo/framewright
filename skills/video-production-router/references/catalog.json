@@ -113,7 +113,7 @@
         "framewright-remotion",
         "agro-uk-paper-piper"
       ],
-      "tested_scope": "Remotion 4.0.535 authored React motion graphics, native instrumental audio and still export; Framewright 30-second horizontal 1080p30 pilot with explicit existing Chromium;24s Ukrainian paper-route animation plus Piper/Tetiana voice externally muxed with FFmpeg,encoded PNG thumbnail;owner listening pending",
+      "tested_scope": "Remotion 4.0.535 authored React motion graphics, native instrumental audio and still export; Framewright 30-second horizontal 1080p30 pilot with explicit existing Chromium;24s Ukrainian paper-route animation plus Piper/Tetiana voice externally muxed with FFmpeg,encoded PNG thumbnail;owner accepted simple visual style but found this exact Ukrainian voice weak",
       "not_tested": [
         "automatic app capture",
         "narration or captions in Remotion",
@@ -135,6 +135,12 @@
           "result": "partial",
           "detail": "Downloaded browser25s connection failure;installed Chrome full render stalled near book reveal;prior Chromium152 with one worker completed. Separate Chrome native PNGs differed slightly;no bit-exact raster claim.",
           "evidence": "experiments/2026-10-15/evidence/agro-uk-paper-piper.txt"
+        },
+        {
+          "capability": "Piper/Tetiana Ukrainian narration quality",
+          "result": "owner_reviewed_weak",
+          "detail": "Unnecessary pauses,wrong word stress and intonation. Existing video retained unchanged;next Ukrainian narration should use a different tool. This is independent of successful technical export.",
+          "evidence": "experiments/2026-10-15/agro-uk-paper-piper.md"
         }
       ],
       "resolved_limitations": [

@@ -350,9 +350,9 @@ Exact Ukrainian female voice; one short promotional script,not singing or cloned
 
 | Feature | Evidence | Scope / source |
 | --- | --- | --- |
-| `narration` | tested | Five22.05kHz Ukrainian lines locally synthesized and integrated into24s1080p30 promo;encoded QA retained. Human pronunciation pending. [Source](https://github.com/OHF-Voice/piper1-gpl) |
+| `narration` | tested | Technical synthesis/integration tested:five Ukrainian lines in24s promo. Owner found this exact voice weak:unnecessary pauses,wrong stress and intonation. Technical tested status is not a voice-quality endorsement. [Source](https://github.com/OHF-Voice/piper1-gpl) |
 
-**Limits:** Only this exact voice/script evaluated;human pronunciation and artistic approval pending. No EN/FR,singing,voice cloning or arbitrary Piper voices qualified. ONNXRuntime emitted telemetry/cache-ID persistence warnings;no external voice API called;network traffic not independently audited. One script/voice integration,not general language quality;native Remotion raster repeat differed slightly and full-export browser workarounds were required.
+**Limits:** Owner listened:broken rhythm,unnecessary pauses,stress and intonation errors in this exact Tetiana/Piper version. Keep existing clip;choose a different tool for the next Ukrainian voice test. Do not generalize to all Piper models. No EN/FR,singing,voice cloning or arbitrary Piper voices qualified. ONNXRuntime emitted telemetry/cache-ID persistence warnings;no external voice API called;network traffic not independently audited. One script/voice integration,not general language quality;native Remotion raster repeat differed slightly and full-export browser workarounds were required.
 
 ## Source freshness
 

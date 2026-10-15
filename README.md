@@ -76,7 +76,7 @@ Independent reproduction in a second environment remains [queued](docs/experimen
 The latest [Ukrainian brokerage-book trial](experiments/2026-10-15/agro-uk-paper-piper.md)
 pairs a new local Piper/Tetiana voice with authored Remotion paper-cut motion:
 grains regroup into a supply route and contract,then the genuine book appears.
-Ukrainian pronunciation and artistic approval remain pending owner review.
+Owner accepted the simple,distinct visual style but found Ukrainian voice weak:unnecessary pauses,stress and intonation errors. The next Ukrainian narration will test another tool.
 [Editable example](examples/remotion-agro-uk/README.md) ·
 [Structured brief](examples/briefs/agro-uk-paper.json).
 

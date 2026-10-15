@@ -95,3 +95,14 @@ output includes128MB voice environment,114.2MB weights and~132MB task cache.
 No exact peak-memory,cold-install or cross-machine timing claim.
 
 Alternative reviewed,not run:[Piper ukrainian_tts medium](https://huggingface.co/rhasspy/piper-voices/tree/main/uk/uk_UA/ukrainian_tts/medium). Official card documents three22.05kHz speakers,text phonemes and CC0 dataset;not a complete voice/model rights audit. Tetiana was selected;alternative remains deferred for a concrete comparison.
+
+## Later owner review —2026-10-15
+
+Visuals:acceptable,new/distinct style,but simple;potentially useful for selected
+cases. Ukrainian voice:weak,with broken rhythm,unnecessary pauses,incorrect
+stress and intonation. The owner explicitly requests no remake. Preserve all
+existing media/hashes and technical evidence. For the next Ukrainian narration,
+try a different tool after exact model/rights/resource review;do not repeat this
+unchanged voice as the default. These observations apply to this tested version
+and script,not every Piper model. Earlier pending statuses in at-run QA evidence
+are historical;this later assessment supersedes the pending owner review.

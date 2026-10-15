@@ -219,7 +219,7 @@ local Piper1.4.2/Tetiana Ukrainian voice,then FFmpeg assembly.
 [source example](../../../examples/remotion-agro-uk/README.md) retain the exact
 24s1080p30 scope. `paper-cut-regroup` names authored kernel regrouping/route/truck/
 contract action;it does not promise an automatic generator,real geography,3D or
-physics. Exact Ukrainian script/voice needs owner listening. Keep unsupported
+physics. Owner listening found this exact Ukrainian voice weak:unnecessary pauses,wrong stress/intonation. Keep the existing clip;choose another tool for the next Ukrainian narration. Technical synthesis is not a quality recommendation. Keep unsupported
 languages,singing and other voices outside the qualification.
 
 Measure each voice WAV before cuts;retain locked timeline and separate stems.
