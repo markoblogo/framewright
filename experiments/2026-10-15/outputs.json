@@ -6,7 +6,7 @@
     "id": "burgers-cue-analysis",
     "route": "narrated-montage",
     "evidence": "experiments/2026-10-15/evidence/burgers-cue-analysis.txt",
-    "qa_scope": "15s encoded picture/audio, extracted PNG thumbnail, authored-cue onset and hard-cut detection; no independent human listening",
+    "qa_scope": "15s encoded picture/audio, extracted PNG thumbnail, authored-cue onset and hard-cut detection; independent cue-listening annotation not performed",
     "thumbnail": {
       "local_output": "burgers-video-pilot-20261015/Burgers-Lipstick-Underwear-YouTube.png",
       "sha256": "d08f7c6767438efa7394158a913bb41bb2d7e852a190841749fde096dc58373c",
@@ -15,13 +15,20 @@
       "width": 1280,
       "height": 720
     },
-    "publication_url": null,
-    "publication_verification": "not_recorded",
-    "human_listening": "pending_owner_review",
+    "publication_url": "https://youtu.be/GVrbTMZxbpg",
+    "publication_verification": "user_provided_url",
+    "human_listening": "owner_reviewed_voice_positive",
     "audience_metrics": "not_measured",
     "evidence_checks": [
       "CUE_CHECKS_PASS",
       "MEDIA_CHECKS_PASS"
-    ]
+    ],
+    "owner_feedback": {
+      "voice": "good",
+      "visuals": "acceptable_but_basic_and_not_particularly_engaging",
+      "creative_novelty": "no_meaningful_improvement_over_previous_similar_trailers",
+      "overall": "usable_with_reservations",
+      "source": "owner feedback in conversation,2026-10-15"
+    }
   }
 ]

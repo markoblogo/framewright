@@ -2,7 +2,8 @@
 
 2026-10-15. Owner requested the [agreed plan](../../docs/experiments/burgers-cue-analysis-plan.md),
 English narration, an MP4, YouTube thumbnail/copy, local retention and documentation.
-No new release. Publication is left to the owner; its URL is not yet recorded.
+No new release. Owner-provided publication URL: [watch on YouTube](https://youtu.be/GVrbTMZxbpg).
+Recorded2026-10-15; public playback was not independently verified.
 
 ## Result and tool roles
 
@@ -10,7 +11,7 @@ No new release. Publication is left to the owner; its URL is not yet recorded.
   export,1920×1080,30fps,450frames,exactly15.000s. Render54.6s, screenshot/hardware GPU.
 - Existing local Kokoro ONNX code (MIT; Kokoro82M model Apache-2.0): am_michael,
   en-us,speed1.03,10.88s total speech. Fitted phrases on the timeline without audio
-  retiming. Native English voice quality is still subject to owner listening.
+  retiming. The owner subsequently rated the English narration positively.
 - Original deterministic bass/keys/percussion score, no sampled recording or paid
   music provider. FFmpeg owns the voice/music mix; no audio claim about cloud music.
 - librosa1.0.0 (ISC): music-stem onset/beat candidates. PySceneDetect0.7.2
@@ -76,8 +77,16 @@ markers/matches on the same inputs; [replay provenance](evidence/burgers-helper-
 is an integration check, not independent media evidence.
 
 Workspace: `/Volumes/Work/burgers-video-pilot-20261015`. Deliverables: MP4, PNG/JPEG,
-`YouTube-EN.txt` and English SRT. Owner listening, creative acceptance, public URL
-and audience results remain pending. No public media upload or release occurred.
+`YouTube-EN.txt` and English SRT. The owner supplied the YouTube URL above; the
+agent did not upload the media. Audience results remain unmeasured. No new release.
+
+## Owner assessment after viewing
+
+The owner rated the narration as good. The picture was acceptable but very basic,
+not particularly engaging, and similar to trailers already produced. The clip is
+usable with reservations; it does not demonstrate a meaningful creative improvement.
+Detector results remain a technical capability result, separate from visual appeal.
+This feedback is not independent landmark annotation or an audience study.
 
 ## Setup failures and budget boundary
 

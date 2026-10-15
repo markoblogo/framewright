@@ -21,7 +21,10 @@ The owner chose **Burgers, Lipstick & Underwear**, with English narration and
 subsequently authorised execution. The [completed pilot](../experiments/2026-10-15/burgers-cue-analysis.md)
 retains the15-second master/thumbnail metadata, detector outputs and limitations.
 The [pre-run plan](experiments/burgers-cue-analysis-plan.md) remains linked;
-listening/creative acceptance and the owner's publication URL are pending.
+The [owner-provided YouTube link](https://youtu.be/GVrbTMZxbpg) is recorded.
+Owner review: good narration; acceptable but basic visuals, with no meaningful
+creative improvement over earlier similar clips. Independent cue-listening
+annotation and audience results remain unmeasured.
 Routine maintenance follows the [bounded checking policy](checking-policy.md).
 
 ## Conditional / deferred
