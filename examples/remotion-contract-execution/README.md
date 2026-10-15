@@ -64,3 +64,8 @@ Every synthesis run regenerates selected WAVs,including existing names;there is 
 Before replacing any speech, synthesis invalidates previous run metadata; failures therefore block assembly. The assembler verifies every WAV against completed metadata and rejects clipped raw lines. Preserve accepted audio externally before rerunning.
 
 `--probe` writes only `audio/probe-lines.json`;it cannot authorize full assembly. Full assembly requires the exact five expected IDs,texts and start times,plus matching hashes and zero clipped samples.
+
+Before integer PCM export,the assembler rejects nonfinite or clipping peaks in every
+stem and their floating-point sum. Rebuild/lower an unsafe mix before normalisation;
+later loudness processing cannot repair earlier clipped PCM. No rerender was performed
+for this archive guard.

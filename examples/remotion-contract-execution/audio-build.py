@@ -2,6 +2,7 @@ from pathlib import Path
 import hashlib,json,math,numpy as np,soundfile as sf
 import subprocess,textwrap
 from synthesize import LINES,validate_rows
+from audio_checks import validate_peak
 b=Path(__file__).parent;sr=48000;N=32*sr;music=np.zeros((N,2));fx=np.zeros((N,2));voice=np.zeros((N,2));rows=json.loads((b/'audio/voice-lines.json').read_text())
 validate_rows(rows,LINES)
 def put(dest,start,a,gain=1,pan=0):
@@ -25,7 +26,12 @@ for r in rows:
  # speech carve in background,including margins
  l=max(0,start-int(.1*sr));z=min(N,end+int(.15*sr));music[l:z]*=.55
 fade=np.minimum(np.arange(N)/sr/.35,1)*np.minimum((N-1-np.arange(N))/sr/.4,1);music*=fade[:,None];fx*=fade[:,None]
-for name,a in [('voice-timeline',voice),('music-original',music),('effects-original',fx),('pre-master',voice+music+fx)]:sf.write(b/'audio'/f'{name}.wav',a,sr,subtype='PCM_24')
+exports=[('voice-timeline',voice),('music-original',music),('effects-original',fx),('pre-master',voice+music+fx)]
+# Check every floating-point stem and their sum before any integer PCM write.
+for name,a in exports:
+ if not np.isfinite(a).all():raise ValueError('Nonfinite PCM:'+name)
+ validate_peak(float(np.max(np.abs(a))))
+for name,a in exports:sf.write(b/'audio'/f'{name}.wav',a,sr,subtype='PCM_24')
 (b/'audio/voice-lines-timed.json').write_text(json.dumps(rows,indent=2)+'\n')
 def stamp(t):
  n=round(t*1000);return f'{n//3600000:02}:{n//60000%60:02}:{n//1000%60:02},{n%1000:03}'

@@ -1,9 +1,14 @@
 # MN7R agricultural library — reusable promo series
 
-Owner proposal,2026-10-15. Initial related-edition links identified five books.
+Stage completed by owner,2026-10-15. Six book promos,one landing tour and one
+series compilation are delivered with owner-supplied publication links below.
+Individual pending reviews remain separate. No further media production before the
+next release;see the [product audit](../product-audit-2026-10-15.md).
+
+Initial related-edition links identified five books.
 Owner subsequently added Contract Execution Officer Handbook from books.1d3x.com:
 six books in the working series plan,four English,two Ukrainian. Each book gets one useful promo and a distinct
-bounded experiment. Future books/landing/compilation are queued,not unattended work.
+bounded experiment. Future additions require a new agreed stage;none are unattended work.
 
 | Subject | Language | State / purpose |
 | --- | --- | --- |

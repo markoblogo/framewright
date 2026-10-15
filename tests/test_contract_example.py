@@ -106,3 +106,12 @@ class ContractVoiceTest(unittest.TestCase):
             voice.validate_rows(rows, voice.LINES)
         full = [{'id': n, 'text': t, 'start': s} for n,t,s in voice.LINES]
         voice.validate_rows(full, voice.LINES)
+
+    def test_summed_pcm_guard_rejects_clipping_and_nonfinite_peak(self):
+        spec = importlib.util.spec_from_file_location('contract_audio_checks', EXAMPLE / 'audio_checks.py')
+        checks = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(checks)
+        checks.validate_peak(.98)
+        for peak in [1.0, 1.02, float('nan'), float('inf')]:
+            with self.subTest(peak=peak), self.assertRaisesRegex(ValueError, 'Unsafe PCM peak'):
+                checks.validate_peak(peak)

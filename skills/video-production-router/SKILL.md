@@ -24,7 +24,11 @@ it does not replace rendering skills or confer permission to publish.
    [reference-selection workflow](references/creative-references.md) before production. Decompose into blocks and picture,
    text, voice, sound and finishing layers. Consult [the tool matrix](references/tool-matrix.md)
    and only relevant profiles in `references/tools.json`. The optional offline
-   `scripts/plan.py BRIEF.json` shortlists tools; it never executes the plan. Distinguish
+   `scripts/plan.py BRIEF.json` shortlists tools; it never executes the plan. Add `--format markdown` for a
+   readable production packet: timeline, capability evidence, intended files and
+   common per-output QA. Every checkbox remains planned/blocked; source kinds and
+   suggested filenames are not inspected/delivered artifacts. The packet supplements,
+   rather than replaces, the full handoff and renderer-specific contract. Distinguish
    tested, documented, failed and unknown features; preserve cost/language/format limits.
    For a new multi-shot video without a useful shot plan, read the
    [storyboard adapter](references/storyboard.md) and establish its shot/continuity
@@ -80,48 +84,9 @@ it does not replace rendering skills or confer permission to publish.
    already authorised. Honour stop signals and do not extend a successful test into
    adjacent experiments without request.
 
-Prefer Brag full for a short software launch; prefer the local narrated montage
-recipe for existing book imagery with speech. Brag itself also supports voice:
-our silent Brag tests do not establish a product limitation. Anatomy is a visual
-prototype option, not a validated physics or finished sound workflow here. Do not
-choose it just because a video contains an object. Historical reconstruction and
-new AI-video services require bounded tests, not an invented capability claim.
-
-For camera travel and focus around an existing React interface, consider the
-tested `live-react-scene` Flute recipe. An explicit Flute request overrides the
-default renderer choice; load its installed guide. Its browser-host success does
-not prove full Electron or arbitrary React support. Keep the ordinary app and
-production bundle outside the demonstration. Scope capture-style overrides to the
-development host so genuine components retain their ordinary app styling.
-
-For authored React motion graphics with a controllable frame timeline, native
-audio and stills, consider `authored-react-film` (Remotion). Distinguish it from
-camera treatment of existing app UI. Keep its own licence and observed browser
-workaround visible; a successful pilot does not prove every rendering mode. If a
-native still is a requested deliverable, plan its own inspection alongside the
-encoded picture/audio rather than substituting an extracted or pre-existing frame.
-
-For a miniature world with purposeful object action and camera travel, consider
-`staged-3d-scene`: an authored Three.js scene inside Hyperframes, not Anatomy.
-Use `three-scene` with `staged-3d`, `object-3d`, `object-motion` or `camera-travel`
-requirements, or miniature/low-poly style. Do not infer it from a book cover alone.
-The tested 20s 1080p30 pilot has grain loading, truck delivery, quote convergence
-and a genuine-cover book reveal. Keep geometry/staging work explicit. Read its
-[recipe](references/recipes.md#staged-3d-scene); other formats, physics, new assets
-and cross-tool seams need their own checks. Kokoro and FFmpeg are separate layers.
-
-For a labelled workflow/process diagram, consider `diagram-explainer` (ManimGX
-plus the retained FFmpeg timing adapter). Its20s 2D English pilot does not qualify
-native timestamp portability,3D/math plots or Ukrainian. Inspect the native
-storyboard and preserve held-frame timing before CFR assembly. `mlx-audio` is a
-separate English Kokoro voice option; respect an explicit `preferred_voice` and
-read the [recipe](references/recipes.md#diagram-explainer) before another setup.
-
-When the chosen tool misses a requested deliverable, compose the smallest useful
-chain rather than drop the deliverable or replace the whole workflow. Read
-[tool chains](references/tool-chains.md) for handoff checks and tested combinations.
-A successful component does not prove the combined chain; preserve the original
-export, check the final file and record each tool's contribution and limitations.
+For scoped default routes, voice preferences and renderer-specific limits, read
+[route choices](references/selection.md#scoped-route-choices). These remain
+separate from capability coverage and execution authority.
 
 Before a new candidate or repeat trial, inspect [the review ledger](references/review-ledger.json).
 Search by tool ID/upstream and read only relevant records. After every review or
@@ -137,13 +102,3 @@ propose revision/removal, and obtain acceptance before dropping a requested effe
 
 Routing behaviour scenarios are in [scenarios.json](references/scenarios.json).
 They are specifications, not evidence of an independent model evaluation.
-
-For Ukrainian narration,prefer `supertonic3` within its scoped M1/F1 evidence.
-Owner found both usable and much better than Tetiana;F1 has a slight preference.
-Residual pauses/stress errors remain;do not claim perfect Ukrainian or long-form
-quality. Model terms require explicit synthetic-content disclosure.
-Retain Piper/Tetiana as a low-quality explicit fallback with a visible warning;
-`default_narration_eligible:false` prevents silent automatic substitution. Preserve
-explicit provider choices and inspect new scripts/final integration. Other voices,
-languages,singing and cloning need separate review. Paper-cut/LCD picture treatment
-is independent of the voice engine. See [recipes](references/recipes.md).

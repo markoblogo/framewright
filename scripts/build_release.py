@@ -42,6 +42,10 @@ def build(root, output):
         plan = json.loads(run.stdout)
         if plan['blocks'][0]['tools'] != ['flute', 'ffmpeg'] or plan['execution'] != 'not_started' or plan['music']['timeline_owner'] != 'locked_music':
             raise ValueError('Standalone routing smoke check failed')
+        packet = subprocess.run([sys.executable, str(target / 'video-production-router/scripts/plan.py'), str(brief),
+                                 '--format', 'markdown'], check=True, capture_output=True, text=True)
+        if not all(text in packet.stdout for text in ['# Production plan', 'still-export', 'permission_gates', 'not_started']):
+            raise ValueError('Standalone production packet smoke check failed')
     print(f'PASS: standalone package {archive.name}; SHA-256 {digest}')
     return archive
 

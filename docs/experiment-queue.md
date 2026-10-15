@@ -6,10 +6,14 @@ Use the owner's ABVX books/services. Discuss the subject and bounded brief befor
 each actual new-tool experiment. [Research](tool-research.md) ·
 [Decision ledger](../skills/video-production-router/references/review-ledger.json).
 
-## Current owner-selected series
+## Completed agricultural stage — production paused
 
-[Six-book MN7R promo plan](experiments/agro-series-plan.md):Spot-Market EN completed;
-MN7R Product Guide EN has a delivered ManimGX/MLX-Audio trial,owner accepted its basic infographic style;[YouTube](https://youtu.be/TISOtCghMVY). Ukrainian brokerage now has a delivered24s Piper/Tetiana + Remotion paper-route trial;owner accepted simple distinct picture,but Ukrainian voice weak;next UK voice should use another tool;exact-raster repeat gate not met. The Ukrainian spot-market LCD film is now delivered with Supertonic3 F1;full-film owner review separate;[YouTube](https://youtu.be/Kx1ftrOWQm8). Contract Execution Officer EN delivered with owner-accepted Supertonic3F1 English;[YouTube](https://youtu.be/k7DYPrNV7ZY). The English brokerage film is delivered with narration only;[YouTube](https://youtu.be/H6l1leVo34A);ACE-Step trial is retained incomplete after the CPU disk-space guard. Do not start an unchanged duplicate. Landing tour is delivered with scoped OpenScreen2.0.0/FFmpeg capture and finishing;[owner-supplied YouTube](https://youtu.be/RpxHRWhH4Yw). [Compilation](../experiments/2026-10-15/agro-series-compilation.md) is delivered locally:MoviePy2.2.1/FFmpeg,60s,new EN narration and original bed. Owner supplied its [YouTube link](https://youtu.be/vAPgNupIp2s);final-film review remains pending;no next job starts automatically. Reuse stems/picture masters;no future jobs start automatically.
+Owner closed the [six-book + landing + compilation stage](experiments/agro-series-plan.md).
+All eight deliverables have owner-supplied publication links;individual final-film
+reviews remain separate. [Product audit and proposals](product-audit-2026-10-15.md)
+are the next work. No media production before the next release. The queue below is
+retained research history/candidates,not an active production schedule. Select the
+next direction after release;ACE-Step remains resource/diagnostic-gated.
 
 ## Phase 1 — useful book and service promos
 

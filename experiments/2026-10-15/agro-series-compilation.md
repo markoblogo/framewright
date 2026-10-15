@@ -107,3 +107,9 @@ vertical versions,automatic semantic clip selection,ASR alignment,singing,new
 fonts and clean-machine reproduction remain untested. Future edits need new
 source/cut/audio/thumbnail checks. No release,public media upload or next trial
 is triggered automatically. Owner supplied the [published film](https://youtu.be/vAPgNupIp2s). Publication provenance is `user_provided_url`;playback and uploaded bytes were not independently verified. Owner final-film listening/style review remains separate and pending.
+
+Archive review correction,2026-10-16: `auxiliary-inputs.json` pins both the retained
+original music stem and the exact separate landing assembly used for the thumbnail.
+Their hashes are checked before media decoding. Reproduction commands use ignored
+`.venv` and the configured FFmpeg binary. A synthetic changed/missing-source test
+passed;no media was regenerated and the original output hashes/QA remain unchanged.
