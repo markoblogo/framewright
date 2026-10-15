@@ -1,7 +1,9 @@
 from pathlib import Path
 import hashlib,json,math,numpy as np,soundfile as sf
 import subprocess,textwrap
+from synthesize import LINES,validate_rows
 b=Path(__file__).parent;sr=48000;N=32*sr;music=np.zeros((N,2));fx=np.zeros((N,2));voice=np.zeros((N,2));rows=json.loads((b/'audio/voice-lines.json').read_text())
+validate_rows(rows,LINES)
 def put(dest,start,a,gain=1,pan=0):
  i=round(start*sr);n=min(len(a),N-i)
  if n>0:dest[i:i+n]+=a[:n,None]*gain*np.array([math.sqrt((1-pan)/2),math.sqrt((1+pan)/2)])

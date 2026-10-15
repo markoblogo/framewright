@@ -49,6 +49,19 @@ def reject_clipping(count):
         raise ValueError("Clipped raw speech: " + str(count) + " samples")
 
 
+def validate_rows(rows, expected):
+    actual = [(r['id'], r['text'], r['start']) for r in rows]
+    if actual != expected:
+        raise ValueError('Incomplete or mismatched narration manifest')
+
+
+def publish_metadata(base, rows, probe):
+    if not probe:
+        validate_rows(rows, LINES)
+    name = 'probe-lines.json' if probe else 'voice-lines.json'
+    (base / 'audio' / name).write_text(json.dumps(rows, indent=2) + '\n')
+
+
 def main(base=BASE, shared=None, probe=False):
     shared = Path(shared) if shared is not None else Path(os.environ['SUPERTONIC_SOURCE_ROOT'])
     manifest, root = verify_model(shared, base / 'model-manifest.json')
@@ -87,7 +100,7 @@ def main(base=BASE, shared=None, probe=False):
                'wall_seconds': round(time.monotonic() - started, 3)}
         rows.append(row)
         print(row, flush=True)
-    (base / 'audio/voice-lines.json').write_text(json.dumps(rows, indent=2) + '\n')
+    publish_metadata(base, rows, probe)
 
 
 if __name__ == '__main__':

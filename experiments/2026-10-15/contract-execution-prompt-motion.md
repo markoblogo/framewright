@@ -91,3 +91,5 @@ tests exercise alternate-manifest rejection,style drift,valid pins,stale-WAV
 replacement and Git ignore boundaries. All155 unit tests and record validation pass.
 These fixes do not regenerate or change the accepted film. Prompt Motion's retest
 condition and the remaining stale UK YouTube-pending note were corrected.
+
+Follow-up review:before regenerating WAVs,synthesis invalidates old completion metadata;assembly checks every WAV hash and rejects clipped raw lines. Eight offline example tests pass;probe metadata is separate and full assembly requires every expected line. The archive no longer offers an unqualified clean-install command:the reused transitive tree was not retained. Narrated commands stop on any failed stage. Accepted movie remains unchanged.

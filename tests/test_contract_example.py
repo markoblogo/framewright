@@ -95,3 +95,14 @@ class ContractVoiceTest(unittest.TestCase):
         voice.reject_clipping(0)
         with self.assertRaisesRegex(ValueError, 'Clipped raw speech'):
             voice.reject_clipping(1)
+
+    def test_probe_does_not_publish_full_assembly_metadata(self):
+        (self.base / 'audio').mkdir()
+        rows = [{'id': voice.LINES[0][0], 'text': voice.LINES[0][1], 'start': voice.LINES[0][2]}]
+        voice.publish_metadata(self.base, rows, True)
+        self.assertTrue((self.base / 'audio/probe-lines.json').exists())
+        self.assertFalse((self.base / 'audio/voice-lines.json').exists())
+        with self.assertRaisesRegex(ValueError, 'Incomplete'):
+            voice.validate_rows(rows, voice.LINES)
+        full = [{'id': n, 'text': t, 'start': s} for n,t,s in voice.LINES]
+        voice.validate_rows(full, voice.LINES)

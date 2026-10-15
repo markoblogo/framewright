@@ -62,3 +62,5 @@ Inspect native thumbnail and final encoded video/audio separately.
 Every synthesis run regenerates selected WAVs,including existing names;there is no filename-based audio cache. Preserve accepted masters externally before a new trial. Scoped ignores exclude generated audio/metadata,cache,guides,authorised public assets and root PNG/JPG/SRT outputs from Git. Ignore rules prevent accidental adds,not automatic storage cleanup.
 
 Before replacing any speech, synthesis invalidates previous run metadata; failures therefore block assembly. The assembler verifies every WAV against completed metadata and rejects clipped raw lines. Preserve accepted audio externally before rerunning.
+
+`--probe` writes only `audio/probe-lines.json`;it cannot authorize full assembly. Full assembly requires the exact five expected IDs,texts and start times,plus matching hashes and zero clipped samples.
