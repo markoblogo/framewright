@@ -19,6 +19,67 @@ class BlockPlannerTest(unittest.TestCase):
     def run_plan(self, brief):
         return planner.plan(brief, copy.deepcopy(REGISTRY))
 
+    def test_staged_3d_selects_authored_adapter_and_local_voice(self):
+        brief = self.brief(input='book-art', effects=['staged-3d', 'object-motion', 'camera-travel'], deliverables=['video-export', 'narration', 'still-export'])
+        brief['minimum_evidence'] = 'tested'
+        p = self.run_plan(brief)
+        b = p['blocks'][0]
+        self.assertEqual(p['status'], 'proposed')
+        self.assertEqual(b['primary_tool'], 'three-scene')
+        self.assertEqual(set(b['tools']), {'three-scene', 'kokoro', 'ffmpeg'})
+        self.assertNotIn('anatomy', b['tools'])
+        self.assertFalse(b['requires_feature_test'])
+
+    def test_staged_3d_does_not_replace_plain_object_or_book(self):
+        for kind in ['object', 'book-art', 'brand']:
+            p = self.run_plan(self.brief(input=kind))
+            self.assertNotIn('three-scene', p['blocks'][0]['tools'])
+
+    def test_staged_3d_style_alone_is_an_explicit_activation(self):
+        p = self.run_plan(self.brief(input='book-art', style='miniature-diorama'))
+        self.assertEqual(p['blocks'][0]['primary_tool'], 'three-scene')
+        self.assertTrue(p['blocks'][0]['style_match'])
+
+    def test_staged_3d_does_not_claim_tested_60fps(self):
+        brief = self.brief(input='object', preferred_tool='three-scene', effects=['staged-3d', 'object-motion'])
+        brief['canvas'] = {'width': 1920, 'height': 1080, 'fps': 60}
+        p = self.run_plan(brief)
+        self.assertIn('staged-3d', p['blocks'][0]['requires_feature_test'])
+        brief['minimum_evidence'] = 'tested'
+        self.assertIn('staged-3d', self.run_plan(brief)['blocks'][0]['unmet'])
+
+    def test_staged_3d_preserves_explicit_renderer(self):
+        p = self.run_plan(self.brief(input='object', preferred_tool='anatomy', effects=['staged-3d']))
+        self.assertEqual(p['blocks'][0]['primary_tool'], 'anatomy')
+        self.assertIn('three-scene', p['blocks'][0]['tools'])
+        self.assertIn('integration test', p['assembly']['qualification'])
+
+    def test_staged_3d_unknown_physics_is_unmet(self):
+        p = self.run_plan(self.brief(input='object', effects=['staged-3d', 'calibrated-physics']))
+        self.assertEqual(p['status'], 'blocked')
+        self.assertIn('calibrated-physics', p['blocks'][0]['unmet'])
+
+    def test_staged_3d_other_canvas_needs_test(self):
+        brief = self.brief(input='object', preferred_tool='three-scene', effects=['staged-3d'])
+        brief['canvas'] = {'width': 1080, 'height': 1920, 'fps': 30}
+        p = self.run_plan(brief)
+        self.assertIn('staged-3d', p['blocks'][0]['requires_feature_test'])
+        self.assertIn('vertical-format', p['blocks'][0]['requires_feature_test'])
+        brief['minimum_evidence'] = 'tested'
+        self.assertIn('staged-3d', self.run_plan(brief)['blocks'][0]['unmet'])
+
+    def test_staged_3d_style_and_multiblock_combination(self):
+        brief = {'minimum_evidence': 'tested', 'blocks': [
+            {'id': 'object', 'input': 'object', 'style': 'miniature-diorama', 'effects': ['staged-3d'], 'duration_seconds': 5},
+            {'id': 'ui', 'input': 'react-ui', 'preferred_tool': 'flute', 'duration_seconds': 5},
+            {'id': 'title', 'input': 'brand', 'preferred_tool': 'remotion', 'duration_seconds': 5}]}
+        p = self.run_plan(brief)
+        self.assertEqual([b['primary_tool'] for b in p['blocks']], ['three-scene', 'flute', 'remotion'])
+        self.assertTrue(p['blocks'][0]['style_match'])
+        self.assertEqual(p['duration_frames'], 450)
+        self.assertEqual(p['execution'], 'not_started')
+        self.assertIn('integration test', p['assembly']['qualification'])
+
     def test_music_provider_cannot_bypass_independent_music_plan(self):
         for feature in ['song-generation', 'audio-download']:
             with self.subTest(feature=feature):

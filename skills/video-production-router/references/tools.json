@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed": "2026-10-14",
+  "reviewed": "2026-10-15",
   "scope": "Decision-relevant audited inventory, not an exhaustive promise for every upstream API. Styles are affordances and directions, not hard renderer limits. Missing features are unknown.",
   "statuses": [
     "tested",
@@ -158,6 +158,11 @@
       "url": "https://github.com/aicontentskills/ai-video-storyboard-skill/blob/93f8a6d6935858bc4acd7ff3bbea2411edf88caa/SKILL.md",
       "reviewed": "2026-10-14",
       "revision": "93f8a6d6935858bc4acd7ff3bbea2411edf88caa"
+    },
+    "spot-market-3d": {
+      "url": "https://github.com/markoblogo/framewright/blob/7d8a326de3bd6e6bfb1fbd243155b6ad61b24952/experiments/2026-10-15/spot-market-3d-miniature.md",
+      "reviewed": "2026-10-15",
+      "revision": "7d8a326de3bd6e6bfb1fbd243155b6ad61b24952"
     }
   },
   "tools": [
@@ -1186,6 +1191,108 @@
         "Upstream references directory is absent. Fixed five-second pacing, 1080p and synchronized-audio suffix are defaults that explicit user constraints override.",
         "Plan-only trials cannot qualify generated continuity, actual duration/sync, native export or provider costs."
       ]
+    },
+    {
+      "id": "three-scene",
+      "name": "Authored Three.js scene + Hyperframes",
+      "role": "renderer",
+      "inputs": [
+        "object",
+        "book-art",
+        "brand"
+      ],
+      "styles": [
+        "miniature-diorama",
+        "low-poly",
+        "staged-3d"
+      ],
+      "style_note": "A miniature world with purposeful object action and camera travel. Owner found this pilot more interesting than the preceding basic montage; not a comparative quality benchmark.",
+      "activation": {
+        "features": [
+          "staged-3d",
+          "object-3d",
+          "object-motion",
+          "camera-travel"
+        ],
+        "styles": [
+          "miniature-diorama",
+          "low-poly",
+          "staged-3d"
+        ]
+      },
+      "tested_canvases": [
+        {
+          "width": 1920,
+          "height": 1080,
+          "fps": 30
+        }
+      ],
+      "tested_version": "Three.js0.186.1 inside Hyperframes0.8.161; Spot-Market20s1080p30 pilot",
+      "licence_note": "Original adapter and Three.js MIT; Hyperframes CLI Apache-2.0. Inspect GSAP, fonts, cover and model terms separately; no paid/cloud account used.",
+      "features": [
+        {
+          "id": "staged-3d",
+          "status": "tested",
+          "source": "spot-market-3d",
+          "note": "One authored low-poly grain/truck/port miniature; planned loading, delivery and quote-to-benchmark action.",
+          "experiments": [
+            "spot-market-3d-miniature"
+          ]
+        },
+        {
+          "id": "object-3d",
+          "status": "tested",
+          "source": "spot-market-3d",
+          "note": "Actual Three.js geometry and uncropped cover texture on a volumetric book; no arbitrary mesh generation.",
+          "experiments": [
+            "spot-market-3d-miniature"
+          ]
+        },
+        {
+          "id": "object-motion",
+          "status": "tested",
+          "source": "spot-market-3d",
+          "note": "22 grain meshes, route-following truck and converging quote tickets; illustrative choreography, not calibrated physics.",
+          "experiments": [
+            "spot-market-3d-miniature"
+          ]
+        },
+        {
+          "id": "camera-travel",
+          "status": "tested",
+          "source": "spot-market-3d",
+          "note": "Deterministic establishing, loading closeup, truck tracking and closing-book camera poses; not ray-traced optics.",
+          "experiments": [
+            "spot-market-3d-miniature"
+          ]
+        },
+        {
+          "id": "scene-timeline",
+          "status": "tested",
+          "source": "spot-market-3d",
+          "note": "Absolute-time renderAt(t), paused GSAP timeline; repeated 8s seek matched state and pixels in the pilot environment.",
+          "experiments": [
+            "spot-market-3d-miniature"
+          ]
+        },
+        {
+          "id": "video-export",
+          "status": "tested",
+          "source": "spot-market-3d",
+          "note": "Hyperframes owns H2641080p30/600frames/20s native MP4; final AAC mix checked. Other durations/content need their own QA.",
+          "experiments": [
+            "spot-market-3d-miniature"
+          ]
+        }
+      ],
+      "limitations": [
+        "Authored geometry and staging are required; a book cover is not an automatic 3D reconstruction.",
+        "Only the20s horizontal1920x1080/30fps pilot is tested; other canvases/fps downgrade feature evidence.",
+        "No calibrated physics, historical reconstruction, live market data, arbitrary imported models, native still, transparency, vertical export or cross-GPU reproducibility qualified.",
+        "Hyperframes owns rendering; no unrelated Anatomy/Flute/Remotion execution is implied. Kokoro and FFmpeg supply voice/audio/encoded stills as separate layers.",
+        "New multi-tool combinations require encoded integration QA. Technical QA and owner preference do not prove agent routing or audience performance."
+      ],
+      "style_basis": "observed_pilot"
     }
   ]
 }

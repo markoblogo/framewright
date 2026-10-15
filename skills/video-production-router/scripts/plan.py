@@ -12,13 +12,15 @@ MAIN_ROLES = {'orchestrator', 'renderer', 'illustrator', 'finisher'}
 PREFERRED_ROLES = {'narration': 'voice', 'audio-qa': 'audio', 'audio-mix': 'audio', 'media-mux': 'finisher', 'still-export': 'finisher'}
 
 
-def capability(tool, feature, language, paid):
+def capability(tool, feature, language, paid, canvas=None):
     cap = next((x for x in tool['features'] if x['id'] == feature), None)
     if not cap or cap['status'] not in {'tested', 'documented'}:
         return None
     if cap.get('requires_paid') and not paid:
         return None
     status = cap['status']
+    if status == 'tested' and tool.get('tested_canvases') and canvas not in tool['tested_canvases']:
+        status = 'documented'
     if feature == 'narration':
         if language not in cap.get('documented_languages', []):
             return None
@@ -84,17 +86,20 @@ def plan(brief, registry):
             raise ValueError('style must be a string')
         def acceptable(cap):
             return cap is not None and (minimum != 'tested' or cap['evidence'] == 'tested')
-        candidates = [t for t in tools.values() if t['role'] in MAIN_ROLES and kind in t['inputs']]
+        def activated(tool):
+            gate = tool.get('activation')
+            return not gate or bool(set(requested).intersection(gate['features'])) or style in gate['styles']
+        candidates = [t for t in tools.values() if t['role'] in MAIN_ROLES and kind in t['inputs'] and activated(t)]
         preferred = block.get('preferred_tool')
         if preferred is not None:
             if preferred not in tools or tools[preferred]['role'] not in MAIN_ROLES:
                 raise ValueError('preferred_tool must name a known picture/orchestration/finishing tool')
             candidates = [tools[preferred]] if kind in tools[preferred]['inputs'] else []
-        caps = {(t['id'], f): capability(t, f, language, paid) for t in tools.values() for f in set(requested + ['video-export'])}
+        caps = {(t['id'], f): capability(t, f, language, paid, canvas) for t in tools.values() for f in set(requested + ['video-export'])}
         def chain_solution(main):
             # Exact subsets are small for this curated catalogue. Compare complete
             # chains, not a greedy alphabetical path or only direct capabilities.
-            extras = sorted((t for t in tools.values() if t != main and t['role'] not in {'music-provider', 'preproduction'} and (
+            extras = sorted((t for t in tools.values() if t != main and activated(t) and t['role'] not in {'music-provider', 'preproduction'} and (
                 any(acceptable(caps[t['id'], f]) for f in requested) or
                 (t['role'] in {'renderer', 'orchestrator'} and acceptable(caps[t['id'], 'video-export']))
             )), key=lambda t: (t['role'] == 'finisher', t['id']))
@@ -116,7 +121,7 @@ def plan(brief, registry):
                         best = (rank, chain, found)
             return best
         solutions = [(chain_solution(t), t) for t in candidates]
-        solutions.sort(key=lambda item: (*item[0][0][:3], -(style in item[1]['styles']), -(item[1]['id'] == DEFAULTS[kind]), item[1]['id'], item[0][0][3]))
+        solutions.sort(key=lambda item: (*item[0][0][:3], -sum(acceptable(caps[item[1]['id'], f]) for f in set(effects)), -(style in item[1]['styles']), -(item[1]['id'] == DEFAULTS[kind]), item[1]['id'], item[0][0][3]))
         if solutions:
             solution, primary = solutions[0]
             _, selected, found = solution

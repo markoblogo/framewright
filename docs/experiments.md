@@ -52,3 +52,9 @@ Local media verification is optional and requires the operator's retained artifa
 it is not public reproducibility. The open source reference route is separate from
 private author-project archives. New arbitrary attachment types need a schema and
 validator change; do not imply that every nested metadata object is an artifact.
+
+When decision sources change without a new complete model evaluation, record
+`not_evaluated_current_source`, the prior `evaluated_status`, immutable packet and
+current source hashes. Historical scores remain attached to their old source;
+targeted deterministic tests do not promote current agent behaviour. The checker
+continues checking archived actor/snapshot hashes and current file drift separately.

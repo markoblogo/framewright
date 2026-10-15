@@ -200,7 +200,9 @@ def check_protocol_calibration(version, calibration):
 def check_qualification(repo, path):
     repo = Path(repo).resolve()
     record = json.loads(Path(path).read_text())
-    require(record.get('schema_version') == 1 and record.get('status') in {'model_checked_planning_scope', 'evaluated_with_gaps'} and record.get('scope') == 'synthetic_read_only_planning', 'Unsupported qualification scope')
+    historical = record.get('status') == 'not_evaluated_current_source'
+    evaluated_status = record.get('evaluated_status') if historical else record.get('status')
+    require(record.get('schema_version') == 1 and evaluated_status in {'model_checked_planning_scope', 'evaluated_with_gaps'} and record.get('scope') == 'synthetic_read_only_planning', 'Unsupported qualification scope')
     relative = record.get('packet')
     require(isinstance(relative, str) and relative and not Path(relative).is_absolute() and '..' not in Path(relative).parts, 'Unsafe qualification packet path')
     packet = (repo / relative).resolve()
@@ -208,14 +210,19 @@ def check_qualification(repo, path):
     manifest = json.loads((packet / 'manifest.json').read_text())
     require(manifest.get('schema_version') == 3, 'Qualification needs calibrated grading and source snapshot')
     counts = check_packet(packet)
-    if record['status'] == 'model_checked_planning_scope':
+    if evaluated_status == 'model_checked_planning_scope':
         require(counts['cases'] == counts['passed'], 'Incomplete behavioural qualification')
     else:
         require(counts['passed'] < counts['cases'], 'Gap status needs retained behavioural failures')
     cases = indexed(json.loads((packet / 'cases.json').read_text()), 'qualification cases')
     expected = record.get('case_ids', [])
     require(isinstance(expected, list) and len(set(expected)) == len(expected) and set(expected) == cases.keys(), 'Qualification case set differs')
-    baseline = json.loads((repo / 'skills/video-production-router/references/scenarios.json').read_text())['cases']
+    if historical:
+        # Historical gold belongs to the immutable packet, not today's catalogue.
+        with zipfile.ZipFile(packet / manifest['source_snapshot']) as archive:
+            baseline = json.loads(archive.read('video-production-router/references/scenarios.json'))['cases']
+    else:
+        baseline = json.loads((repo / 'skills/video-production-router/references/scenarios.json').read_text())['cases']
     require({c['id'] for c in baseline} <= cases.keys(), 'Qualification case set misses baseline scenarios')
     freeze = json.loads((packet / 'freeze.json').read_text())
     require(freeze.get('protocol_version') in {2, 3, 4, 5}, 'Qualification needs typed planning criteria')
@@ -249,9 +256,17 @@ def check_qualification(repo, path):
             require(hidden not in actual, f'{identity}: Hidden gold in actor workspace')
             require(actual == expected_router, f'{identity}: actor router file set differs from snapshot')
     current_sources = {str(p.relative_to(repo)) for p in (repo / 'skills/video-production-router').rglob('*') if p.is_file() and '__pycache__' not in p.parts}
-    require(current_sources == sources.keys(), 'Current source set differs from evaluated snapshot')
+    if historical:
+        current = record.get('current_source_tree_sha256')
+        require(isinstance(current, dict) and current_sources == current.keys(), 'Current unqualified source set differs')
+        require(current != sources, 'Unqualified status requires a source change')
+        for source, digest in current.items():
+            require(hashlib.sha256((repo / source).read_bytes()).hexdigest() == digest, f'Unqualified current source drift: {source}')
+    else:
+        require(current_sources == sources.keys(), 'Current source set differs from evaluated snapshot')
     for source, digest in sources.items():
-        require(hashlib.sha256((repo / source).read_bytes()).hexdigest() == digest, f'Current source drift: {source}')
+        if not historical:
+            require(hashlib.sha256((repo / source).read_bytes()).hexdigest() == digest, f'Current source drift: {source}')
         # Scenario gold is deliberately withheld from actor contexts.
         relative = Path(source).relative_to('skills/video-production-router').as_posix()
         if relative == 'references/scenarios.json':
@@ -261,6 +276,10 @@ def check_qualification(repo, path):
             execution = result['execution']
             require(execution['files_before'] == execution['files_after'], f'{identity}: changed actor workspace')
             require(execution['files_before'].get(actor_path) == digest, f'{identity}: mixed evaluated sources')
+    if historical:
+        return {'status': record['status'], 'scope': record['scope'],
+                'previous_evaluation': {'status': evaluated_status, **counts},
+                'current_model_evaluation': 'not_performed'}
     return {'status': record['status'], 'scope': record['scope'], 'cases': counts['cases'], 'passed': counts['passed']}
 
 

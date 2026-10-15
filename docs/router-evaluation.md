@@ -1,11 +1,22 @@
 # Router planning evaluation
 
-**Current regression:70/70 rubric;62/70 complete evidence; controls46/46. Historical first-exposure:13/18.**
+**Historical source-bound regression:70/70 rubric;62/70 complete evidence; controls46/46. Historical first-exposure:13/18.**
 [52-case development packet](../benchmarks/router/2026-10-14/grading-v3-complete/manifest.json) ·
 [18-case transfer packet](../benchmarks/router/2026-10-15/transfer-2/manifest.json) ·
 [Source-bound scope record](../router-qualification.json) ·
 [Three-case diagnosis](grading-v3.md).
 No rendering, real provider/account action, media publication or release occurred.
+
+## Staged 3D addition — 2026-10-15
+
+The `three-scene` profile adds a tested production adapter, not a new full model
+qualification. Targeted deterministic selection/combination/format/physics tests
+are recorded in [the routing change](staged-3d-routing.md). The prior source snapshot,
+actor records, failures and scores stay immutable. `router-qualification.json` now
+explicitly says `not_evaluated_current_source`, binds current file hashes and names
+the previous evaluated status. The checker validates both retained packet integrity
+and current source binding; historical evidence cannot promote the changed source.
+No new full actor benchmark, render or release was run for this addition.
 
 ## CLI capture follow-up — 2026-10-15
 

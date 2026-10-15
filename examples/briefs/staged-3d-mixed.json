@@ -1,0 +1,47 @@
+{
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "minimum_evidence": "tested",
+  "allow_paid": false,
+  "language": "en",
+  "duration_seconds": 30,
+  "blocks": [
+    {
+      "id": "market",
+      "input": "object",
+      "style": "miniature-diorama",
+      "duration_seconds": 20,
+      "effects": [
+        "staged-3d",
+        "object-motion",
+        "camera-travel"
+      ],
+      "deliverables": [
+        "video-export",
+        "narration",
+        "still-export"
+      ]
+    },
+    {
+      "id": "interface",
+      "input": "react-ui",
+      "preferred_tool": "flute",
+      "duration_seconds": 5,
+      "effects": [
+        "camera-travel"
+      ]
+    },
+    {
+      "id": "closing-title",
+      "input": "brand",
+      "preferred_tool": "remotion",
+      "duration_seconds": 5,
+      "effects": [
+        "typography"
+      ]
+    }
+  ]
+}

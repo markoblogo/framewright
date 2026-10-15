@@ -15,7 +15,10 @@ Split the film into blocks, then picture, text, voice, music/SFX and finishing l
 A global style is a continuity target, not a demand to use one engine everywhere.
 Match actual inputs before style: Flute needs live React components; Remotion authors
 new React compositions; Anatomy makes object illustrations. An object appearing in
-a book cover is not by itself a reason to choose Anatomy.
+a book cover is not by itself a reason to choose Anatomy or an authored 3D scene.
+For a process explained by object action/camera, `three-scene` offers the scoped
+`staged-3d-scene` route. Its feature/style activation prevents generic export
+requests from silently acquiring3D work. It needs authored geometry/staging.
 
 ## Evidence and capabilities
 
@@ -35,7 +38,7 @@ If a preferred tool cannot consume the input, preserve that choice and report a
 blocked plan; propose an adapter explicitly instead of silently replacing it.
 
 For the picture shortlist, compare complete feasible chains: coverage of requested
-features, number supported by tested evidence, then chain size, style and task
+features, number supported by tested evidence, then chain size, primary ownership of requested effects, style and task
 default. Preserve an explicit primary. A direct documented feature must not displace
 a tested companion route merely because it is native. Finishers need real inputs;
 their own export capability does not prove those inputs exist.

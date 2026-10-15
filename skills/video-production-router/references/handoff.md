@@ -99,3 +99,12 @@ Keep it compact; prose or a small table is enough:
 In a plan-only response these are future checks, not a reason to run a renderer.
 In a finishing response identify the existing export and outstanding QA/delivery;
 adding tools is unnecessary when the present chain already supplies all deliverables.
+
+## Authored 3D miniature
+
+For `three-scene`, plan WebGL/dependency readiness, approved texture/font inputs,
+absolute-time seek/reseek, visible object action/camera, occlusion/legibility and
+book/CTA hold checks. Inspect the encoded output and its audio on the common master.
+Only the Spot-Market 20s 1080p30 pilot is qualified as production evidence; another
+format or mixed-renderer sequence needs scoped feature/seam QA. List these checks
+as planned/blocked until actually run. No calibrated physics claim is supported.
