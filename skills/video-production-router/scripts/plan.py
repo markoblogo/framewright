@@ -96,6 +96,9 @@ def plan(brief, registry):
             if preferred not in tools or tools[preferred]['role'] not in MAIN_ROLES:
                 raise ValueError('preferred_tool must name a known picture/orchestration/finishing tool')
             candidates = [tools[preferred]] if kind in tools[preferred]['inputs'] else []
+        preferred_voice = block.get('preferred_voice', brief.get('preferred_voice'))
+        if preferred_voice is not None and (not isinstance(preferred_voice, str) or preferred_voice not in tools or tools[preferred_voice]['role'] != 'voice'):
+            raise ValueError('preferred_voice must name a known voice tool')
         caps = {(t['id'], f): capability(t, f, language, paid, canvas) for t in tools.values() for f in set(requested + ['video-export'])}
         def chain_solution(main):
             # Exact subsets are small for this curated catalogue. Compare complete
@@ -113,7 +116,7 @@ def plan(brief, registry):
                         continue
                     found = {}
                     for feature in requested:
-                        choices = [t for t in chain if acceptable(caps[t['id'], feature])]
+                        choices = [t for t in chain if acceptable(caps[t['id'], feature]) and (feature != 'narration' or preferred_voice is None or t['id'] == preferred_voice)]
                         choices.sort(key=lambda t: (caps[t['id'], feature]['evidence'] != 'tested', t != main, t['role'] != PREFERRED_ROLES.get(feature), t['id']))
                         if choices:
                             found[feature] = caps[choices[0]['id'], feature]

@@ -87,3 +87,9 @@ assembly owner before execution. Follow selected renderer guides; Hyperframes is
 required only for its own routes. Do not launch unrelated tools. After authorised
 execution, report technical QA, human listening, owner acceptance, publication and
 audience performance separately. A successful render does not qualify agent routing.
+
+For labelled workflows, the scoped `manimgx` diagram-explainer adapter is an option;
+its qualified export includes FFmpeg timing normalisation. Explicit narration can
+use `preferred_voice` with a known voice-tool ID. Missing language support remains
+blocked; do not silently swap an explicitly requested voice runtime. MLX-Audio's
+current tested profile is Kokoro English only,not the whole upstream model range.

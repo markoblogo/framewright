@@ -1,0 +1,47 @@
+[
+  {
+    "id": "intro",
+    "text": "Brokerage is more than closing a deal.",
+    "start": 0.45,
+    "duration": 3.2,
+    "generation_wall_seconds": 68.649,
+    "start_seconds": 0.45,
+    "end_seconds": 3.65
+  },
+  {
+    "id": "workflow",
+    "text": "Clients, offers, and execution need a shared workflow.",
+    "start": 4.05,
+    "duration": 4.4,
+    "generation_wall_seconds": 0.966,
+    "start_seconds": 4.05,
+    "end_seconds": 8.45
+  },
+  {
+    "id": "roles",
+    "text": "Explore roles, operating discipline, and A I support.",
+    "start": 8.55,
+    "duration": 4.125,
+    "generation_wall_seconds": 1.618,
+    "start_seconds": 8.55,
+    "end_seconds": 12.675
+  },
+  {
+    "id": "book",
+    "text": "The M N seven R Product Guide.",
+    "start": 13.1,
+    "duration": 3.0,
+    "generation_wall_seconds": 1.614,
+    "start_seconds": 13.1,
+    "end_seconds": 16.1
+  },
+  {
+    "id": "cta",
+    "text": "Read the free English edition at A B V X.",
+    "start": 16.1,
+    "duration": 3.425,
+    "generation_wall_seconds": 1.092,
+    "start_seconds": 16.1,
+    "end_seconds": 19.525
+  }
+]

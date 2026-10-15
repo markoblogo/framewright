@@ -110,6 +110,13 @@ and a genuine-cover book reveal. Keep geometry/staging work explicit. Read its
 [recipe](references/recipes.md#staged-3d-scene); other formats, physics, new assets
 and cross-tool seams need their own checks. Kokoro and FFmpeg are separate layers.
 
+For a labelled workflow/process diagram, consider `diagram-explainer` (ManimGX
+plus the retained FFmpeg timing adapter). Its20s 2D English pilot does not qualify
+native timestamp portability,3D/math plots or Ukrainian. Inspect the native
+storyboard and preserve held-frame timing before CFR assembly. `mlx-audio` is a
+separate English Kokoro voice option; respect an explicit `preferred_voice` and
+read the [recipe](references/recipes.md#diagram-explainer) before another setup.
+
 When the chosen tool misses a requested deliverable, compose the smallest useful
 chain rather than drop the deliverable or replace the whole workflow. Read
 [tool chains](references/tool-chains.md) for handoff checks and tested combinations.

@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](docs/router-evaluation.md)
 [![Planning evidence: scoped](https://img.shields.io/badge/planning__evidence-scoped-526C73?style=flat-square)](docs/router-evaluation.md)
-[![10 recorded exports](https://img.shields.io/badge/recorded__exports-10-293F48?style=flat-square)](docs/experiments.md)
+[![11 recorded exports](https://img.shields.io/badge/recorded__exports-11-293F48?style=flat-square)](docs/experiments.md)
 
 **Framewright helps an AI agent choose and execute a suitable video pipeline,
 based on documented experiments.**
@@ -127,3 +127,7 @@ New [Burgers pilot](experiments/2026-10-15/burgers-cue-analysis.md): 15s narrate
 [Tool research and revisit decisions](docs/tool-research.md) ·
 [24 camera/editing terms in Russian and English](skills/video-production-router/references/video-terms.md) ·
 [Prompt Motion reference-selection trial](docs/prompt-motion-trial.md).
+
+[MN7R paired-tool pilot](experiments/2026-10-15/mn7r-manim-mlx.md):ManimGX workflow
+animation + local MLX-Audio English voice,20s;FFmpeg timing adapter required. Setup
+budget overrun retained. [Five-book reuse/compilation plan](docs/experiments/agro-series-plan.md).

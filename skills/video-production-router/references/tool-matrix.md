@@ -298,6 +298,44 @@ A miniature world with purposeful object action and camera travel. Owner found t
 
 **Limits:** Authored geometry and staging are required; a book cover is not an automatic 3D reconstruction. Only the20s horizontal1920x1080/30fps pilot is tested; other canvases/fps downgrade feature evidence. No calibrated physics, historical reconstruction, live market data, arbitrary imported models, native still, transparency, vertical export or cross-GPU reproducibility qualified. Hyperframes owns rendering; no unrelated Anatomy/Flute/Remotion execution is implied. Kokoro and FFmpeg supply voice/audio/encoded stills as separate layers. New multi-tool combinations require encoded integration QA. Technical QA and owner preference do not prove agent routing or audience performance.
 
+## ManimGX + FFmpeg timing adapter
+
+**Role:** renderer. **Inputs:** brand, data, book-art.
+
+**Style directions:** technical-diagram, editorial-diagram.
+Readable vector workflow/action/role diagrams. This pilot did not test 3D,scientific plots or aesthetic superiority.
+
+**Tested version/scope:** ManimGX0.1.1 on Python3.14.5,FFmpeg normalisation;MN7R20s pilot
+
+**Licence:** MIT engine;bundled fonts/x264/FFmpeg components retain their own terms. Owner cover not redistributed.
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `workflow-diagram` | tested | Scattered labelled cards align,connect and reveal roles/AI support;illustrative,no live data. [Source](https://github.com/markoblogo/framewright/blob/main/experiments/2026-10-15/mn7r-manim-mlx.md) |
+| `scene-timeline` | tested | 20s absolute scene timeline;21native storyboard samples and encoded stages inspected. [Source](https://github.com/markoblogo/framewright/blob/main/experiments/2026-10-15/mn7r-manim-mlx.md) |
+| `typography` | tested | Bundled sans-serif text and genuine cover import,layout checked. [Source](https://github.com/markoblogo/framewright/blob/main/experiments/2026-10-15/mn7r-manim-mlx.md) |
+| `video-export` | tested | Qualified adapter includes mandatory FFmpeg CFR/timestamp normalisation and encoded QA;native VFR direct mux warned. [Source](https://github.com/markoblogo/framewright/blob/main/experiments/2026-10-15/mn7r-manim-mlx.md) |
+| `native-mux-timing` | failed | Native VFR direct-mux Invalid DTS warnings;do not stream-copy this pilot without adaptation. [Source](https://github.com/markoblogo/framewright/blob/main/experiments/2026-10-15/mn7r-manim-mlx.md) |
+
+**Limits:** FFmpeg timing adapter required for this qualified path;native standalone timestamp compatibility is not qualified. Only20s1080p30 2D workflow promo tested;3D/math plots,other formats,native still and unrelated data inputs need new scoped checks. Setup snapshot exceeded planned2GB before task-cache cleanup;no cold-install speed or general portability claim. Human voice/creative review and audience outcomes remain pending.
+
+## MLX-Audio — scoped Kokoro English voice
+
+**Role:** voice. **Inputs:** .
+
+**Style directions:** narrated, neutral.
+Tested am_michael English model/runtime only;not all MLX-Audio models or languages.
+
+**Tested version/scope:** MLX-Audio0.5.9,Kokoro82M MLX weights,Python3.12.13,speed1.03;MN7R20s pilot
+
+**Licence:** MIT library,Kokoro model Apache-2.0;exact voice/NLP/model terms separate,no cloning or paid service.
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `narration` | tested | Five local English phrases;18.15s speech,last end19.525s;no retiming. Listening pending. [Source](https://github.com/markoblogo/framewright/blob/main/experiments/2026-10-15/mn7r-manim-mlx.md) |
+
+**Limits:** Ukrainian is unsupported by this tested profile;choose and review another exact model before that experiment. Local model-directory naming affects type detection;explicit English spaCy package setup required in this environment. Audio environment approximately1.2GB plus~327MB voice weights;first pipeline/phrase init68.649s,subsequent phrases0.966–1.618s;not a speed comparison. No singing,diarization,cloning,other voices/languages or arbitrary models qualified.
+
 ## Source freshness
 
 Immutable repository README links retain the reviewed revision. Live documentation

@@ -1,0 +1,28 @@
+{
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "minimum_evidence": "tested",
+  "allow_paid": false,
+  "language": "en",
+  "duration_seconds": 20,
+  "blocks": [
+    {
+      "id": "guide",
+      "input": "book-art",
+      "style": "technical-diagram",
+      "effects": [
+        "workflow-diagram"
+      ],
+      "preferred_voice": "mlx-audio",
+      "duration_seconds": 20,
+      "deliverables": [
+        "video-export",
+        "narration",
+        "still-export"
+      ]
+    }
+  ]
+}

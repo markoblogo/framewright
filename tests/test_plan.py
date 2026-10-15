@@ -19,6 +19,28 @@ class BlockPlannerTest(unittest.TestCase):
     def run_plan(self, brief):
         return planner.plan(brief, copy.deepcopy(REGISTRY))
 
+    def test_mn7r_diagram_keeps_explicit_mlx_voice_and_extracted_still(self):
+        brief = self.brief(input='book-art', effects=['workflow-diagram'], preferred_voice='mlx-audio', deliverables=['video-export', 'narration', 'still-export'])
+        brief['minimum_evidence'] = 'tested'
+        p = self.run_plan(brief)
+        b = p['blocks'][0]
+        self.assertEqual(p['status'], 'proposed')
+        self.assertEqual(b['primary_tool'], 'manimgx')
+        self.assertEqual(set(b['tools']), {'manimgx', 'mlx-audio', 'ffmpeg'})
+        self.assertEqual(next(x['tool'] for x in b['coverage'] if x['feature']=='narration'), 'mlx-audio')
+        self.assertIn('timing', ' '.join(b['known_limits']['manimgx']))
+
+    def test_explicit_english_mlx_profile_does_not_claim_ukrainian(self):
+        p = self.run_plan(self.brief(input='book-art', effects=['workflow-diagram'], preferred_voice='mlx-audio', language='uk', deliverables=['video-export', 'narration']))
+        self.assertIn('narration', p['blocks'][0]['unmet'])
+        self.assertEqual(p['status'], 'blocked')
+        self.assertNotIn('kokoro', p['blocks'][0]['tools'])
+
+    def test_invalid_preferred_voice_rejected(self):
+        for tool in ['unknown', 'manimgx', []]:
+            with self.subTest(tool=tool), self.assertRaisesRegex(ValueError, 'preferred_voice'):
+                self.run_plan(self.brief(preferred_voice=tool))
+
     def test_staged_3d_selects_authored_adapter_and_local_voice(self):
         brief = self.brief(input='book-art', effects=['staged-3d', 'object-motion', 'camera-travel'], deliverables=['video-export', 'narration', 'still-export'])
         brief['minimum_evidence'] = 'tested'
