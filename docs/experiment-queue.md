@@ -74,7 +74,7 @@ No unattended paid pipeline, voice cloning or historical/physical accuracy promi
 
 ## Completed and retained
 
-- [Ukrainian brokerage](../experiments/2026-10-15/agro-uk-paper-piper.md):new exact Piper voice,authored paper-cut regrouping in reused Remotion;24s encoded QA passed,browser/raster limits retained. Owner accepted simple distinct visuals;voice weak(pauses,stress,intonation). No remake;different tool for next UK narration. YouTube pending.
+- [Ukrainian brokerage](../experiments/2026-10-15/agro-uk-paper-piper.md):new exact Piper voice,authored paper-cut regrouping in reused Remotion;24s encoded QA passed,browser/raster limits retained. Owner accepted simple distinct visuals;voice weak(pauses,stress,intonation). No remake;different tool for next UK narration. [Owner-supplied YouTube](https://youtu.be/qer7WfdIWLI).
 
 - [Burgers](../experiments/2026-10-15/burgers-cue-analysis.md): 15s EN promo,
   librosa 3/3 authored accents and PySceneDetect 4/4 exact cuts. Independent listening

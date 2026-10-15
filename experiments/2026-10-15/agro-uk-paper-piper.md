@@ -85,7 +85,7 @@ separately on Work for later series assembly. No autonomous follow-up or release
 Piper/Tetiana short Ukrainian synthesis/integration and the24s1080p30 paper action
 are qualified technically for this scope. The predeclared exact-raster repeat gate
 was not met,so not every acceptance gate passed;no pixel-exact portability claim.
-Human Ukrainian listening/artistic approval and YouTube link remain pending owner.
+Owner review and publication were pending at completion;later updates follow.
 Old router model scores remain historical;new source has no new model evaluation.
 
 Encoded truck red-body centroid moved699.699pixels between8s and10.5s,above the
@@ -106,3 +106,10 @@ try a different tool after exact model/rights/resource review;do not repeat this
 unchanged voice as the default. These observations apply to this tested version
 and script,not every Piper model. Earlier pending statuses in at-run QA evidence
 are historical;this later assessment supersedes the pending owner review.
+
+## Publication link —2026-10-15
+
+[Owner-supplied YouTube URL](https://youtu.be/qer7WfdIWLI). Public bytes were not
+matched against the local master;audience outcomes are unmeasured. Existing owner
+assessment remains:acceptable simple distinct picture,weak Ukrainian voice;next
+Ukrainian narration should use a different tool. No media changes or new release.
