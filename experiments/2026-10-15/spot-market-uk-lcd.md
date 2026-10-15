@@ -72,3 +72,5 @@ on Work. No new dependency/model download;one successful full native render.
 Owner microprobe feedback is retained separately;full-film listening and artistic
 review remain pending. No new router-model evaluation or release.
 
+
+Owner supplied publication URL: https://youtu.be/Kx1ftrOWQm8 . Link recorded from owner;not an independent playback/access check. Final-film listening/artistic acceptance remains separate.

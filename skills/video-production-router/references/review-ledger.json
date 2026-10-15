@@ -273,11 +273,12 @@
       "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
       "upstream_revision": null,
       "disposition": "reference_only",
-      "scope_and_findings": "Public catalogue, prompts/skills and customizer; creator-owned material. Improved prompt may be Untested while original has a video.",
+      "scope_and_findings": "Public catalogue, prompts/skills and customizer; creator-owned material. Improved prompt may be Untested while original has a video. Contract Execution Officer production trial:actual Diagrams filter,three-entry text shortlist,Alex Prompter five-scene finalist and one paused preview frame;original adapted prompt executed through existing Remotion. No customizer/creator-media reuse or renderer qualification implied.",
       "licence_note": "creator-specific; no blanket reuse licence established",
       "next_trial_or_retest_condition": "Brief → metadata filters → shortlist → finalist → original bounded prompt adaptation → agreed render/QA. Current trial stops at prompt.",
       "evidence": [
-        "docs/tool-research.md"
+        "docs/tool-research.md",
+        "experiments/2026-10-15/contract-execution-prompt-motion.md"
       ]
     },
     {
@@ -550,12 +551,13 @@
       "review_basis": "Official model/license,SDKAPI/pins and bounded two-preset local audio probe",
       "upstream_revision": "model3cadd1ee6394adea1bd021217a0e650ede09a323;SDK1.3.1",
       "disposition": "owner_accepted_scoped_voice",
-      "scope_and_findings": "M1/F1 same23-word UK text,12.19s each. Owner:usable,much better than Tetiana;fewer/shorter pauses,2–3 stress errors,good intonation. Slight subjectiveF1 preference. Recommended among tested UK voices;not general long-form quality. Full24s F1 LCD film integrated:accepted intro reused,new title/CTA measured,encoded QA passed;final owner listening pending.",
+      "scope_and_findings": "M1/F1 same23-word UK text,12.19s each. Owner:usable,much better than Tetiana;fewer/shorter pauses,2–3 stress errors,good intonation. Slight subjectiveF1 preference. Recommended among tested UK voices;not general long-form quality. Full24s F1 LCD film integrated:accepted intro reused,new title/CTA measured,encoded QA passed;final owner listening pending. EnglishF1:opening microprobe followed by five-line32s Contract Execution Officer integration;technical QA recorded separately. Owner English pronunciation/naturalness review pending;UK recommendation is not an EN endorsement.",
       "licence_note": "SDKMIT;modelBigScienceOpenRAIL-M,including explicit machine-generated-content disclosure. No weights/art/audio redistributed.",
       "next_trial_or_retest_condition": "Owner review of the retained full film next;no unchanged regeneration. Longer/new languages,voices or prosody controls require a bounded new question.",
       "evidence": [
         "experiments/2026-10-15/spot-market-uk-voice-probe.md",
-        "experiments/2026-10-15/spot-market-uk-lcd.md"
+        "experiments/2026-10-15/spot-market-uk-lcd.md",
+        "experiments/2026-10-15/contract-execution-prompt-motion.md"
       ]
     },
     {

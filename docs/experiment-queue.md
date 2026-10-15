@@ -111,3 +111,8 @@ in force; no automatic broad model benchmark or extra film is required.
 ## Current Ukrainian voice gate
 
 [Spot-market UK microprobe](../experiments/2026-10-15/spot-market-uk-voice-probe.md):Supertonic3 M1/F1,12.19s each,technical WAV checks complete. Owner accepted both,with slightF1 preference;Supertonic3 is now the primary scoped UK voice,Piper a low-quality explicit fallback. [Full LCD-style film](../experiments/2026-10-15/spot-market-uk-lcd.md) delivered with technical QA;owner final-film review/YouTube pending. No general speech-quality claim. OmniVoice weights remain rights-blocked for this promotional brief;Piper/Tetiana is not retried.
+
+## Contract Execution Officer follow-up —2026-10-15
+
+Prompt Motion reference-selection path exercised in a real authorised book promo:
+Diagrams filter→three-entry shortlist→five-scene finalist→original adapted prompt→Remotion output. See [record](../experiments/2026-10-15/contract-execution-prompt-motion.md). Customizer and arbitrary gallery ports remain untested. Supertonic3F1 English is a new technical trial;owner listening pending. Do not repeat unchanged filtering/probing as a new experiment. ACE-Step/OpenScreen/Editly and ASR remain candidates for the other book,landing and compilation;no unattended execution implied.

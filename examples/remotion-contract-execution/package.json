@@ -1,0 +1,11 @@
+{
+  "name": "contract-execution-prompt-motion-pilot",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "remotion": "4.0.535",
+    "@remotion/cli": "4.0.535",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  }
+}

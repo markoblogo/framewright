@@ -46,3 +46,7 @@ or downloaded models. Record entry/version/attribution and inspect reuse terms
 before incorporating creator material. Runtime applicability to Codex remains
 untested. A useful next step is one agreed ABVX product and shot, not installing
 every linked skill or reproducing the gallery.
+
+## Follow-up production trial
+
+The [Contract Execution Officer experiment](../experiments/2026-10-15/contract-execution-prompt-motion.md) uses a different five-scene business-explainer entry. Keep this original prompt-only fixture historical;its 3D template was not retrospectively rendered.

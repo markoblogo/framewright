@@ -169,6 +169,37 @@
     ],
     "human_listening": "final_film_pending_owner_review;prior_short_F1_probe_accepted",
     "creative_acceptance": "pending_owner_review",
+    "publication_url": "https://youtu.be/Kx1ftrOWQm8",
+    "audience_metrics": "not_measured"
+  },
+  {
+    "local_output": "contract-execution-video-pilot-20261015/Contract-Execution-1080p.mp4",
+    "bytes": 3738803,
+    "sha256": "df6de09225524272198619ea638dde8da4ea2a9a593b5379cd1d6f42427195fd",
+    "id": "contract-execution-prompt-motion",
+    "route": "authored-react-film",
+    "native_export": {
+      "local_output": "contract-execution-video-pilot-20261015/Contract-Execution-Picture-1080p.mp4",
+      "bytes": 2961245,
+      "sha256": "7c30bb0b90911568c42028aa26c27ce696e6cd612a0d32a047d58940f42470b4"
+    },
+    "thumbnail": {
+      "local_output": "contract-execution-video-pilot-20261015/Contract-Execution-YouTube.png",
+      "bytes": 775024,
+      "sha256": "6d3e194a5e63decdf5df8215dd072836890f618255d29f656dd636d61c581ca8",
+      "format": "png",
+      "width": 1280,
+      "height": 720
+    },
+    "evidence": "experiments/2026-10-15/evidence/contract-execution-prompt-motion.txt",
+    "qa_scope": "32s1080p30 authored dossier/action graphics;Supertonic3F1 EN external narration,original bed/effects;full decode,960frames,sync/audio metrics,14scene samples/18reveal samples,native1280x720opaquePNG full/reduced inspection.",
+    "evidence_checks": [
+      "MEDIA_CHECKS_PASS",
+      "PROMPT_ADAPTATION",
+      "EN_VOICE_SCOPE"
+    ],
+    "human_listening": "EnglishF1_pending_owner_review;no_intelligibility_or_naturalness_approval_claim",
+    "creative_acceptance": "pending_owner_review",
     "publication_url": null,
     "audience_metrics": "not_measured"
   }

@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](docs/router-evaluation.md)
 [![Planning evidence: scoped](https://img.shields.io/badge/planning__evidence-scoped-526C73?style=flat-square)](docs/router-evaluation.md)
-[![13 recorded exports](https://img.shields.io/badge/recorded__exports-13-293F48?style=flat-square)](docs/experiments.md)
+[![14 recorded exports](https://img.shields.io/badge/recorded__exports-14-293F48?style=flat-square)](docs/experiments.md)
 
 **Framewright helps an AI agent choose and execute a suitable video pipeline,
 based on documented experiments.**
@@ -140,3 +140,7 @@ New [Burgers pilot](experiments/2026-10-15/burgers-cue-analysis.md): 15s narrate
 [MN7R paired-tool pilot](experiments/2026-10-15/mn7r-manim-mlx.md):ManimGX workflow
 animation + local MLX-Audio English voice,20s;FFmpeg timing adapter required. Setup
 budget overrun retained. [Five-book reuse/compilation plan](docs/experiments/agro-series-plan.md).
+
+### Contract execution:reference selection to authored film
+
+[Contract Execution Officer pilot](experiments/2026-10-15/contract-execution-prompt-motion.md):Prompt Motion Diagrams filter and five-scene reference adapted into an original navy/gold dossier-action film,with Supertonic3F1 English narration. [Archived source](examples/remotion-contract-execution/README.md). Technical evidence and pending owner voice/style approval remain separate;Prompt Motion is a reference resource,not a renderer. No new release.
