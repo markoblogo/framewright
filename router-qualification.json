@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "evaluated_with_gaps",
   "scope": "synthetic_read_only_planning",
-  "packet": "benchmarks/router/2026-10-15/qa-v4-complete",
+  "packet": "benchmarks/router/2026-10-15/qa-v5-complete",
   "case_ids": [
     "three-canvas-campaign",
     "rational-overlap",
@@ -84,5 +84,5 @@
     "media quality or audience outcomes",
     "other models/configurations"
   ],
-  "note": "Protocol-v4 single complete 67/70 known-case regression on current decision sources, including last18 15/18 and prior52 52/52, with40/40 fresh blind controls. Three narrow router guidance fixes and two conditional comparison criterion corrections frozen before the run. Original13/18 first-exposure and historical52/52 remain unchanged; no unseen-transfer, causal improvement, real execution-permission or media-quality claim. Separate original-answer replay2/2 is not part of70. No rendering or new release. Final status retains three strict misses. Grounded shared-source grading corrects an input-context defect; all preliminary grades and initial67/70 are retained. Original five pass5/5; current remaining gaps are phase QA and two disputed rubric conditions."
+  "note": "One complete protocol-v5 70/70 known70-case regression on current decision sources;46/46 fresh matching blind controls. Added explicit stem phase/stereo-mono cancellation QA and corrected two conditional/semantic criteria before the run. Original three results:{'stems-rebuild': True, 'watercolor-loop': True, 'upgrade-history-rights': True}. Separate unchanged-answer replay2/2 is not included in70. Original v4 67/70 and13/18 first-exposure retained, not overwritten. No manual overrides, favourable answer stitching, unseen/causal claim, rendering, service qualification or new release. Model rubric70/70, complete evidence62/70: eight cases have started reads without terminal events; retained as INSUFFICIENT_EVIDENCE, no completion inferred or actor retried. The original three fixes all pass with complete traces."
 }

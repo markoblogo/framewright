@@ -7,3 +7,6 @@ router fixes, rendering or release. Five strict misses are retained and diagnose
 
 [Five corrections and complete protocol-v4 regression: 67/70,40/40 controls](qa-v4-complete/README.md).
 Known-case regression after tuning; first-exposure13/18 remains unchanged.
+
+[Phase and semantic grading corrections: v5 rubric70/70,complete evidence62/70,46/46 controls](qa-v5-complete/README.md).
+Known-case regression; no render or release.

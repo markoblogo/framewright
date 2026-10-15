@@ -68,6 +68,28 @@ class RouterEvidenceTest(unittest.TestCase):
     def test_valid_complete_evidence(self):
         self.assertEqual(evaluation.check_packet(self.root), {'cases': 1, 'passed': 1})
 
+    def add_explicit_trace_gap(self):
+        row = self.data['results.json'][0]
+        row['trace'] = [{'type': 'item.started', 'item': {'id': '1', 'type': 'command_execution', 'command': 'cat router/SKILL.md'}}]
+        row['trace_incompleteness'] = {'command_ids': ['1'], 'reason': 'CLI ended without a terminal event; no completion inferred.'}
+        row['trace_review']['verdict'] = 'INSUFFICIENT_EVIDENCE'
+
+    def test_explicit_trace_gap_is_retained_only_as_failure(self):
+        self.add_explicit_trace_gap()
+        self.save()
+        p = self.root / 'manifest.json'
+        manifest = json.loads(p.read_text())
+        manifest['counts']['passed'] = 0
+        p.write_text(json.dumps(manifest))
+        self.assertEqual(evaluation.check_packet(self.root), {'cases': 1, 'passed': 0})
+
+    def test_declaring_trace_gap_cannot_promote_case(self):
+        self.add_explicit_trace_gap()
+        self.data['results.json'][0]['trace_review']['verdict'] = 'PASS'
+        self.save()
+        with self.assertRaisesRegex(ValueError, 'cannot be qualified'):
+            evaluation.check_packet(self.root)
+
     def test_tampered_answer_rejected(self):
         (self.root / 'results.json').write_text('[]')
         with self.assertRaisesRegex(ValueError, 'Hash mismatch'):

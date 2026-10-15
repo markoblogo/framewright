@@ -18,8 +18,8 @@ source and commands. It has not been re-rendered on a clean machine after the li
 dependency repair. No time/cost advantage or universal reproducibility is claimed.
 
 Bounded router decision checks are retained in the
-[behavioural report](router-evaluation.md). The current complete source passes 67/70
-under protocol v4 with40/40 blind controls. The historical v3 run remains52/52. The earlier 43/46 and
+[behavioural report](router-evaluation.md). The current source records70/70 rubric;62/70 complete evidence
+under protocol v5 with46/46 blind controls. The historical v4 result remains67/70. The historical v3 run remains52/52. The earlier 43/46 and
 first-exposure 9/12 remain unchanged: a [versioned diagnosis](grading-v3.md) corrects
 source-comparison, singing-alternative and comparison-stop criteria, plus the
 router's comparison/production instruction conflict, explicit native-PNG legibility
@@ -65,3 +65,13 @@ Three handoff clarifications and two conditional comparison criteria are followe
 by one [67/70 known-case regression](../benchmarks/router/2026-10-15/qa-v4-complete/README.md).
 The original13/18 is retained; both original disputed answers also pass independent
 regrading without edits. No new renderer, media claim or release.
+
+## Phase/content follow-up — 2026-10-15
+
+Explicit phase QA and two content-aware semantic criteria are followed by one
+[70/70 complete known-case regression](../benchmarks/router/2026-10-15/qa-v5-complete/README.md),
+with46/46 controls and unchanged-answer replay2/2. Old67/70 stays unchanged.
+No renderer, service qualification or release was added.
+
+The v5 model grades remain70/70, but eight incomplete CLI read traces prevent full
+qualification:62/70 complete-evidence cases, evaluated_with_gaps. No inferred completion.

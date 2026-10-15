@@ -149,8 +149,20 @@ def check_packet(root):
             if bucket is not None:
                 require(item.get('id') not in bucket, f'{identity}: duplicate command event')
                 bucket[item['id']] = item
-        require(started.keys() == completed.keys(), f'{identity}: Unfinished command trace')
-        for key in started:
+        missing = started.keys() - completed.keys()
+        require(completed.keys() <= started.keys(), f'{identity}: completion without command start')
+        gap = result.get('trace_incompleteness')
+        if gap is not None:
+            ids = gap.get('command_ids', []) if isinstance(gap, dict) else []
+            require(missing and isinstance(ids, list) and all(isinstance(i, str) for i in ids) and len(ids) == len(set(ids)) and set(ids) == missing
+                    and isinstance(gap.get('reason'), str) and gap['reason'].strip(),
+                    f'{identity}: invalid incomplete trace declaration')
+            require(result['trace_review']['verdict'] == 'INSUFFICIENT_EVIDENCE',
+                    f'{identity}: incomplete trace cannot be qualified')
+            ok = False  # Preserve the failed packet; never synthesize a completion or promote it.
+        else:
+            require(not missing, f'{identity}: Unfinished command trace')
+        for key in completed:
             require(started[key]['command'] == completed[key]['command'] and isinstance(completed[key].get('exit_code'), int), f'{identity}: inconsistent command completion')
         passed += int(ok)
     counts = {'cases': len(cases), 'passed': passed}
@@ -159,8 +171,8 @@ def check_packet(root):
 
 
 def check_protocol_calibration(version, calibration):
-    require(version in {3, 4}, 'Unsupported calibrated protocol')
-    minimum = 38 if version == 4 else 18
+    require(version in {3, 4, 5}, 'Unsupported calibrated protocol')
+    minimum = {3: 18, 4: 38, 5: 46}[version]
     require(calibration.get('protocol_version') == version and
             calibration.get('counts', {}).get('controls', 0) >= minimum,
             f'Protocol v{version} needs fresh expanded blind calibration with matching protocol')
@@ -187,9 +199,9 @@ def check_qualification(repo, path):
     baseline = json.loads((repo / 'skills/video-production-router/references/scenarios.json').read_text())['cases']
     require({c['id'] for c in baseline} <= cases.keys(), 'Qualification case set misses baseline scenarios')
     freeze = json.loads((packet / 'freeze.json').read_text())
-    require(freeze.get('protocol_version') in {2, 3, 4}, 'Qualification needs typed planning criteria')
-    if freeze['protocol_version'] == 4:
-        require('decision_sources_sha256' in json.loads((packet / 'grader-config.json').read_text()), 'Protocol v4 qualification needs grounded source context')
+    require(freeze.get('protocol_version') in {2, 3, 4, 5}, 'Qualification needs typed planning criteria')
+    if freeze['protocol_version'] >= 4:
+        require('decision_sources_sha256' in json.loads((packet / 'grader-config.json').read_text()), 'Protocol v4+ qualification needs grounded source context')
     if freeze['protocol_version'] >= 3:
         calibration = json.loads((packet / manifest['calibration'] / 'manifest.json').read_text())
         check_protocol_calibration(freeze['protocol_version'], calibration)

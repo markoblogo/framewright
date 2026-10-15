@@ -1,0 +1,29 @@
+{
+  "schema_version": 3,
+  "files": {
+    "actor-runner.py": "ce58e72f98817b9d31cd9773f9ce1d9de418b5318b583fbc3189f70427d8ae46",
+    "cases.json": "940f23657111957edf9be1594fabb9e02546e86c229e293cf56b2e3ec0f74c63",
+    "comparison-replay-grades.json": "1842731de76bfaf51523255a041b152e5ec669a1c5e21b7611868ef6e55e2580",
+    "comparison-replay-inputs.json": "8a0534c1fbe64630043e527bb67facd3541bfd04a14fa07afd4790acfb2d4b7f",
+    "comparison-replay-provenance.json": "5c34efdc519b9f4a153c38b8518572e8f1c6afa158d0829015cc50bfe42b4804",
+    "criteria-changes.json": "3cd5f782541df2c7616bfc415010b15c37227ea80da73a98a5d9ebc798be9b3c",
+    "decision-sources.json": "7b9cdb6e44ddac6dd8761c50d4481f7f83f11bf2167cd6d94bea1cadd420b5fc",
+    "findings.json": "d17db1beed968e609b3bdce3e637a4917f9c38d4642de0110ab12c6b3a9e2ca2",
+    "freeze.json": "7e4f79987efc7df9ebadd19af1c1edc619af5b226c6dd051082fc80b123fa56f",
+    "grader-config.json": "a9f6f8e99ff17321f0536e894a8703b77d074cec979558bdbeac51e7d20b295c",
+    "grader-runner.py": "9df7c41d418dfa9dae7b1ad8ecaa3fbbed37e685e999259d5998813a770fe124",
+    "grades.json": "554cae0c3f7669b2533ab23853390ceeb3153d7a0208b3121ebc3e29851c9a3f",
+    "inputs.json": "e5a45c3a9d310ade9e073089462324cef759ead2459fd95746b9508360f35089",
+    "protocol.txt": "09ab3c3fb53f7af79a0d2e1db2006ec41afc2ed853786d2c1cad8533e03cbdaa",
+    "results.json": "c3d7cfa6359da90757974b3f92b5903ef2706908171846c1461ac041f3f2fbf6",
+    "source-snapshot.zip": "00350dd1a6c2df20b204a7787988ed19155189bc2128f77ac3f8fbe388954b44",
+    "summary.json": "34c66e4891d80569a2f3339d40d9d2e406b3e59759c75be15e0dc0a90e1fba87"
+  },
+  "counts": {
+    "cases": 70,
+    "passed": 62
+  },
+  "source_snapshot": "source-snapshot.zip",
+  "calibration": "calibration",
+  "calibration_manifest_sha256": "c313b238e9ce66764cb2b1d79a4339cf444833170c025fb6afc3cdf0917309c5"
+}

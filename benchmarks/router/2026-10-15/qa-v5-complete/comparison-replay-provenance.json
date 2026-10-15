@@ -1,0 +1,18 @@
+{
+  "source_packet": "benchmarks/router/2026-10-15/qa-v4-complete",
+  "purpose": "Replay exactly the two previous disputed answers with v5 conditional/semantic criteria; separate from new70-case actor score. Original old grades stay67/70.",
+  "input_sha256": "8a0534c1fbe64630043e527bb67facd3541bfd04a14fa07afd4790acfb2d4b7f",
+  "grades_sha256": "1842731de76bfaf51523255a041b152e5ec669a1c5e21b7611868ef6e55e2580",
+  "grading_prompt_sha256": "b29b06cafc944beef320e85ec22db3135df4852f6e1dadf3e418218b0ceb5e46",
+  "grading_events_sha256": "be89b58e57074e3b8d479cdeebe834f26b312b98dea33921b39cc6b09c004d84",
+  "execution": {
+    "exit_code": 0,
+    "duration_seconds": 33.06
+  },
+  "answer_sha256": {
+    "watercolor-loop": "d537674776f9fbb0159395b51050a156650d12e2de55ab28ca60632a1781abc9",
+    "upgrade-history-rights": "74d88ed37e0d9eff733a1c37ac4b4eb0800fbe8d9bfc1fb96be9ae63378dec6c"
+  },
+  "original_public_input_sha256": "74f0038a3eedde5917e6e5c4f24f32a0b51847e464ba2a4f4cc7405e756d550d",
+  "normalization": "Only diagnostic machine-local CLI-home path; factual answer, criteria and grades unchanged."
+}

@@ -199,3 +199,14 @@ class QualificationGateTest(unittest.TestCase):
             evidence.check_decision_text({'router/references/catalog.json': 'Physics is tested'}, frozen)
         with self.assertRaisesRegex(ValueError, 'source set'):
             evidence.check_decision_text({**corpus, 'router/references/scenarios.json': 'hidden gold'}, frozen)
+
+    def test_v5_rejects_older_protocol_even_with_enough_controls(self):
+        with self.assertRaisesRegex(ValueError, 'matching protocol'):
+            evidence.check_protocol_calibration(5, {'protocol_version': 4, 'counts': {'controls': 46}})
+
+    def test_v5_needs_new_content_phase_and_rights_boundaries(self):
+        with self.assertRaisesRegex(ValueError, 'v5 needs fresh'):
+            evidence.check_protocol_calibration(5, {'protocol_version': 5, 'counts': {'controls': 40}})
+
+    def test_v5_accepts_complete_matching_control_set(self):
+        evidence.check_protocol_calibration(5, {'protocol_version': 5, 'counts': {'controls': 46}})
