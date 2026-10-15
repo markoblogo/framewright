@@ -1,6 +1,7 @@
 from pathlib import Path
 import os,json,hashlib,time,sys
 b=Path(__file__).parent;shared=Path(os.environ['SUPERTONIC_SOURCE_ROOT'])
+for folder in ['audio','guides','cache']:(b/folder).mkdir(parents=True,exist_ok=True)
 os.environ['HF_HUB_OFFLINE']='1';os.environ['HF_HOME']=str(b/'cache/hf');os.environ['SUPERTONIC_CACHE_DIR']=str(b/'cache/supertonic')
 manifest=json.loads((shared/'model-manifest.json').read_text());root=shared/'models/Supertonic-3'
 for r in manifest['files']:
