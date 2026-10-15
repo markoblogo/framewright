@@ -1,0 +1,297 @@
+{
+  "version": 2,
+  "media": {
+    "screenVideoPath": "Screen-Assembly.mp4",
+    "cursorCaptureMode": "system"
+  },
+  "editor": {
+    "cursorTheme": "default",
+    "wallpaper": "#081725",
+    "wallpaperMotion": "none",
+    "shadowIntensity": 0.6,
+    "backgroundBlur": 0,
+    "motionBlurAmount": 0.12,
+    "depthOfField": false,
+    "borderRadius": 18,
+    "padding": 70,
+    "cropRegion": {
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    "zoomRegions": [
+      {
+        "id": "books",
+        "startMs": 1200,
+        "endMs": 5400,
+        "depth": 1,
+        "customScale": 1.035,
+        "focus": {
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        "focusMode": "manual",
+        "hideCursor": true
+      },
+      {
+        "id": "product",
+        "startMs": 8300,
+        "endMs": 12500,
+        "depth": 1,
+        "customScale": 1.035,
+        "focus": {
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        "focusMode": "manual",
+        "hideCursor": true
+      },
+      {
+        "id": "brokerage",
+        "startMs": 15500,
+        "endMs": 20200,
+        "depth": 1,
+        "customScale": 1.035,
+        "focus": {
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        "focusMode": "manual",
+        "hideCursor": true
+      },
+      {
+        "id": "contract",
+        "startMs": 23500,
+        "endMs": 27800,
+        "depth": 1,
+        "customScale": 1.035,
+        "focus": {
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        "focusMode": "manual",
+        "hideCursor": true
+      },
+      {
+        "id": "languages",
+        "startMs": 31100,
+        "endMs": 34500,
+        "depth": 1,
+        "customScale": 1.035,
+        "focus": {
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        "focusMode": "manual",
+        "hideCursor": true
+      },
+      {
+        "id": "cta",
+        "startMs": 37300,
+        "endMs": 41000,
+        "depth": 1,
+        "customScale": 1.035,
+        "focus": {
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        "focusMode": "manual",
+        "hideCursor": true
+      }
+    ],
+    "cameraFullscreenRegions": [],
+    "autoZoomEnabled": false,
+    "autoFocusAll": false,
+    "trimRegions": [],
+    "speedRegions": [],
+    "annotationRegions": [
+      {
+        "id": "title-0",
+        "startMs": 0,
+        "endMs": 6500,
+        "type": "text",
+        "content": "The work behind the deal",
+        "textContent": "The work behind the deal",
+        "space": "frame",
+        "position": {
+          "x": 10,
+          "y": 90
+        },
+        "size": {
+          "width": 80,
+          "height": 6
+        },
+        "style": {
+          "color": "#f8f5ed",
+          "backgroundColor": "#081725",
+          "fontSize": 35,
+          "fontFamily": "Arial",
+          "fontWeight": "bold",
+          "fontStyle": "normal",
+          "textDecoration": "none",
+          "textAlign": "center",
+          "textAnimation": "fade"
+        },
+        "zIndex": 10
+      },
+      {
+        "id": "title-1",
+        "startMs": 7000,
+        "endMs": 13500,
+        "type": "text",
+        "content": "Choose your next guide",
+        "textContent": "Choose your next guide",
+        "space": "frame",
+        "position": {
+          "x": 10,
+          "y": 90
+        },
+        "size": {
+          "width": 80,
+          "height": 6
+        },
+        "style": {
+          "color": "#f8f5ed",
+          "backgroundColor": "#081725",
+          "fontSize": 35,
+          "fontFamily": "Arial",
+          "fontWeight": "bold",
+          "fontStyle": "normal",
+          "textDecoration": "none",
+          "textAlign": "center",
+          "textAnimation": "fade"
+        },
+        "zIndex": 10
+      },
+      {
+        "id": "title-2",
+        "startMs": 14000,
+        "endMs": 21500,
+        "type": "text",
+        "content": "Brokerage. Logistics. Risk.",
+        "textContent": "Brokerage. Logistics. Risk.",
+        "space": "frame",
+        "position": {
+          "x": 10,
+          "y": 90
+        },
+        "size": {
+          "width": 80,
+          "height": 6
+        },
+        "style": {
+          "color": "#f8f5ed",
+          "backgroundColor": "#081725",
+          "fontSize": 35,
+          "fontFamily": "Arial",
+          "fontWeight": "bold",
+          "fontStyle": "normal",
+          "textDecoration": "none",
+          "textAlign": "center",
+          "textAnimation": "fade"
+        },
+        "zIndex": 10
+      },
+      {
+        "id": "title-3",
+        "startMs": 22000,
+        "endMs": 29500,
+        "type": "text",
+        "content": "From agreement to execution",
+        "textContent": "From agreement to execution",
+        "space": "frame",
+        "position": {
+          "x": 10,
+          "y": 90
+        },
+        "size": {
+          "width": 80,
+          "height": 6
+        },
+        "style": {
+          "color": "#f8f5ed",
+          "backgroundColor": "#081725",
+          "fontSize": 35,
+          "fontFamily": "Arial",
+          "fontWeight": "bold",
+          "fontStyle": "normal",
+          "textDecoration": "none",
+          "textAlign": "center",
+          "textAnimation": "fade"
+        },
+        "zIndex": 10
+      },
+      {
+        "id": "title-4",
+        "startMs": 30000,
+        "endMs": 35500,
+        "type": "text",
+        "content": "English + Ukrainian editions",
+        "textContent": "English + Ukrainian editions",
+        "space": "frame",
+        "position": {
+          "x": 10,
+          "y": 90
+        },
+        "size": {
+          "width": 80,
+          "height": 6
+        },
+        "style": {
+          "color": "#f8f5ed",
+          "backgroundColor": "#081725",
+          "fontSize": 35,
+          "fontFamily": "Arial",
+          "fontWeight": "bold",
+          "fontStyle": "normal",
+          "textDecoration": "none",
+          "textAlign": "center",
+          "textAnimation": "fade"
+        },
+        "zIndex": 10
+      },
+      {
+        "id": "title-5",
+        "startMs": 36000,
+        "endMs": 42000,
+        "type": "text",
+        "content": "Explore books.1d3x.com",
+        "textContent": "Explore books.1d3x.com",
+        "space": "frame",
+        "position": {
+          "x": 10,
+          "y": 90
+        },
+        "size": {
+          "width": 80,
+          "height": 6
+        },
+        "style": {
+          "color": "#f8f5ed",
+          "backgroundColor": "#081725",
+          "fontSize": 35,
+          "fontFamily": "Arial",
+          "fontWeight": "bold",
+          "fontStyle": "normal",
+          "textDecoration": "none",
+          "textAlign": "center",
+          "textAnimation": "fade"
+        },
+        "zIndex": 10
+      }
+    ],
+    "aspectRatio": "16:9",
+    "webcamLayoutPreset": "picture-in-picture",
+    "webcamMaskShape": "square",
+    "webcamMirrored": false,
+    "webcamReactiveZoom": true,
+    "webcamSizePreset": 40,
+    "webcamPosition": null,
+    "exportQuality": "good",
+    "exportFormat": "mp4",
+    "gifFrameRate": 15,
+    "gifLoop": true,
+    "gifSizePreset": "medium"
+  }
+}

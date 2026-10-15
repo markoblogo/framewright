@@ -58,14 +58,15 @@
       "name": "OpenScreen",
       "url": "https://github.com/getopenscreen/openscreen",
       "reviewed": "2026-10-15",
-      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
-      "upstream_revision": "56d590d33160b79e82f84cd7e402360346088780",
-      "disposition": "candidate",
-      "scope_and_findings": "Screen capture with auto/manual zoom, editing and export; optional AI editing needs an explicit provider/key.",
+      "review_basis": "Officialv2.0.0 release CLI/source and retained local capture/export experiment",
+      "upstream_revision": "eff86dcba48fac490a0e153141bf8537df7ffc54",
+      "disposition": "supported_scoped",
+      "scope_and_findings": "Manual public-window capture and pack;crop/manual zoom/annotations and native1080p60 export completed;FFmpeg source selection/freeze and30fps/voice finishing. Fullscreen/hidden-window capture produced miniature or black output despite success;inspect source raster and content. No automatic planner provider added.",
       "licence_note": "MIT",
-      "next_trial_or_retest_condition": "Synthetic local UI,10\u201315s; inspect cursor focus, private-window exclusion, readability and export. No account action.",
+      "next_trial_or_retest_condition": "Retest only changed need:stable foreground/capture-boundary control,automatic cursor zoom with explicit Accessibility grant,or a released MCP interface. Do not repeat the same whole tour blindly.",
       "evidence": [
-        "docs/tool-research.md"
+        "experiments/2026-10-15/ami-books-openscreen.md",
+        "experiments/2026-10-15/evidence/ami-books-openscreen.txt"
       ]
     },
     {

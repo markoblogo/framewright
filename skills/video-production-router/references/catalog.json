@@ -220,6 +220,26 @@
           "evidence": "experiments/2026-10-15/evidence/mn7r-manim-mlx.txt"
         }
       ]
+    },
+    {
+      "id": "live-site-tour",
+      "status": "tested_for_scope",
+      "recipe": "recipes.md#live-site-tour",
+      "upstream": [
+        "https://github.com/getopenscreen/openscreen"
+      ],
+      "experiments": [
+        "ami-books-openscreen"
+      ],
+      "tested_scope": "Manual OpenScreen2.0.0 macOS CLI public-window capture/pack,crop/manual zoom/annotations,native1080p60;FFmpeg edited42s1080p30 website tour and external EN Supertonic3F1 narration. Manual recipe only;not a new automated planner provider.",
+      "not_tested": [
+        "MCP interface absent from tested release help",
+        "automatic cursor zoom and Accessibility-dependent click tracking",
+        "continuous whole-site capture;known miniature/black-window failures retained",
+        "native30fps export",
+        "clean machine and other operating systems",
+        "owner final-film listening/style acceptance"
+      ]
     }
   ]
 }

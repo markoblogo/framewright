@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](docs/router-evaluation.md)
 [![Planning evidence: scoped](https://img.shields.io/badge/planning__evidence-scoped-526C73?style=flat-square)](docs/router-evaluation.md)
-[![15 recorded exports](https://img.shields.io/badge/recorded__exports-15-293F48?style=flat-square)](docs/experiments.md)
+[![16 recorded exports](https://img.shields.io/badge/recorded__exports-16-293F48?style=flat-square)](docs/experiments.md)
 
 **Framewright helps an AI agent choose and execute a suitable video pipeline,
 based on documented experiments.**
@@ -68,6 +68,11 @@ Independent reproduction in a second environment remains [queued](docs/experimen
 | Authored typography, scene timing and native still | Remotion | One Framewright film; licence and browser workaround documented |
 | Detailed object visualisation | Anatomy → deterministic timeline adapter | Visual prototype only; combined sound QA failed |
 | Miniature world with object action and camera | Authored Three.js → Hyperframes; Kokoro/FFmpeg layers | Spot-Market 20s 1080p30 pilot; other formats/physics and mixed-renderer seams unqualified |
+
+A real-site tour is now recorded with **OpenScreen2.0.0 + FFmpeg + Supertonic3F1**:
+[AMI Books pilot](experiments/2026-10-15/ami-books-openscreen.md),42s1080p30.
+Window-capture failures and freeze workarounds are retained;this is a manual recipe,
+with owner review pending,not a newly qualified automatic planner provider.
 
 [Recipes and evidence](skills/video-production-router/references/recipes.md) ·
 [Capabilities and styles](skills/video-production-router/references/tool-matrix.md) ·

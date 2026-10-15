@@ -1,0 +1,78 @@
+{
+  "checks": [
+    "MEDIA_CHECKS_PASS",
+    "OPENSCREEN_SCOPED",
+    "CAPTURE_FAILURES_RETAINED"
+  ],
+  "video": {
+    "codec_name": "h264",
+    "width": 1920,
+    "height": 1080,
+    "r_frame_rate": "30/1",
+    "nb_frames": "1260",
+    "duration": "42.000000"
+  },
+  "audio": {
+    "codec_name": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "duration": "42.000000"
+  },
+  "loudness": {
+    "input_i": "-16.06",
+    "input_tp": "-1.69",
+    "input_lra": "7.30",
+    "input_thresh": "-26.41",
+    "output_i": "-16.07",
+    "output_tp": "-2.00",
+    "output_lra": "5.50",
+    "output_thresh": "-26.40",
+    "normalization_type": "dynamic",
+    "target_offset": "0.07"
+  },
+  "full_decode_exit": 0,
+  "sampled_frames": 84,
+  "maximum_dark_pixel_fraction": 0.051604938271604936,
+  "picture_final_encoded_stream_hash": "SHA256=fb0c135774705196f295556d6ed22f609172d3e1c50848de0eff7ea5ceec16db",
+  "thumbnail": {
+    "width": 1280,
+    "height": 720,
+    "mode": "RGB",
+    "source": "Frame extraction from inspected screen assembly before OpenScreen framing"
+  },
+  "artifacts": {
+    "AMI-Books-1080p.mp4": {
+      "local_output": "ami-books-landing-pilot-20261015/AMI-Books-1080p.mp4",
+      "bytes": 9608993,
+      "sha256": "ff9449650474d0f1ecda6c6a6d723bbd8f7492be53369b1460a457ba71bbceba"
+    },
+    "AMI-Books-Picture-1080p.mp4": {
+      "local_output": "ami-books-landing-pilot-20261015/AMI-Books-Picture-1080p.mp4",
+      "bytes": 8744535,
+      "sha256": "a2602e2c143565d617af88e7ddb0855df356e0403c05b0202c7d4289cb1d0592"
+    },
+    "AMI-Books-OpenScreen-native.mp4": {
+      "local_output": "ami-books-landing-pilot-20261015/AMI-Books-OpenScreen-native.mp4",
+      "bytes": 72087984,
+      "sha256": "0e15950c93af28df3bc1991f5fce37e169e382a8e36ee09a44c3ed804288dc47"
+    },
+    "AMI-Books-YouTube.png": {
+      "local_output": "ami-books-landing-pilot-20261015/AMI-Books-YouTube.png",
+      "bytes": 613904,
+      "sha256": "5f33c8978d7fd98cb30202a2179716653ebe889f5306d60811465d6f797ce720"
+    },
+    "AMI-Books-English.srt": {
+      "local_output": "ami-books-landing-pilot-20261015/AMI-Books-English.srt",
+      "bytes": 659,
+      "sha256": "17600886ab77adb69428e96ef1e7aa7ef8a06cb7e6cf84060fc18affbffc0400"
+    },
+    "YouTube-EN.txt": {
+      "local_output": "ami-books-landing-pilot-20261015/YouTube-EN.txt",
+      "bytes": 1452,
+      "sha256": "393088655ad5abc4eebdd37be0f895d74f0648d6e1226034a8dcee820c82f7d4"
+    }
+  },
+  "human_listening": "pending_owner_review",
+  "creative_acceptance": "pending_owner_review",
+  "publication_url": null
+}

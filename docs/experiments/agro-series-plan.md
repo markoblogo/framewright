@@ -21,9 +21,11 @@ different books share a rubric,not identical conditions. Original synthesized be
 already exist in prior promos;testing a new music generator is a separate question.
 Kokoro's tested English profile does not establish Ukrainian support.
 
-When the owner has the new series/service landing ready,agree a separate promo
-brief: books plus service,using public/synthetic inputs. Do not assume that today's
-series index is that forthcoming landing. Then separately authorise a compilation:
+The owner supplied [the library landing](https://books.1d3x.com/) and authorised its
+promo. [OpenScreen tour](../../experiments/2026-10-15/ami-books-openscreen.md) is now
+locally delivered,42s English,with silent master/scene map retained;owner final-film
+review and publication pending. Capture failures and freeze/reused-hero workarounds
+are documented;this was not a continuous whole-site recording. Then separately authorise a compilation:
 new series-level script and voice,select reusable book/landing picture segments,
 remove/replace old VO,one assembly/master audio owner. Inspect claim consistency,
 seams,timing,colour,phase/sync and final encoded MP4/thumbnail. Do not concatenate
