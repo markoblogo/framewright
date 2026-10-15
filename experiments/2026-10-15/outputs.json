@@ -198,9 +198,15 @@
       "PROMPT_ADAPTATION",
       "EN_VOICE_SCOPE"
     ],
-    "human_listening": "EnglishF1_pending_owner_review;no_intelligibility_or_naturalness_approval_claim",
+    "human_listening": "owner_accepted_English_F1;natural_sounding_synthetic_origin_not_obvious",
     "creative_acceptance": "pending_owner_review",
     "publication_url": null,
-    "audience_metrics": "not_measured"
+    "audience_metrics": "not_measured",
+    "owner_feedback": {
+      "date": "2026-10-15",
+      "scope": "Supertonic3 F1 English narration in the32s Contract Execution Officer promo",
+      "assessment": "Owner:English is good;could be mistaken for non-synthetic speech.",
+      "limits": "One owner assessment of one script/voice;not blind testing or a claim about all English voices,long-form narration or other languages."
+    }
   }
 ]

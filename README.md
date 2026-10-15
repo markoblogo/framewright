@@ -143,4 +143,4 @@ budget overrun retained. [Five-book reuse/compilation plan](docs/experiments/agr
 
 ### Contract execution:reference selection to authored film
 
-[Contract Execution Officer pilot](experiments/2026-10-15/contract-execution-prompt-motion.md):Prompt Motion Diagrams filter and five-scene reference adapted into an original navy/gold dossier-action film,with Supertonic3F1 English narration. [Archived source](examples/remotion-contract-execution/README.md). Technical evidence and pending owner voice/style approval remain separate;Prompt Motion is a reference resource,not a renderer. No new release.
+[Contract Execution Officer pilot](experiments/2026-10-15/contract-execution-prompt-motion.md):Prompt Motion Diagrams filter and five-scene reference adapted into an original navy/gold dossier-action film,with Supertonic3F1 English narration. [Archived source](examples/remotion-contract-execution/README.md). Owner accepted the EnglishF1 voice as natural-sounding;visual/style approval remains separate. Technical and listening evidence remain separate;Prompt Motion is a reference resource,not a renderer. No new release.

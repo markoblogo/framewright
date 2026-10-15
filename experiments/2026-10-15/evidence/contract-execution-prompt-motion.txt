@@ -37,7 +37,7 @@ PROMPT_ADAPTATION
 Actual Diagrams filter,three-entry shortlist,Alex Prompter five-scene finalist,one paused preview frame inspected. Original adapted instruction executed in Remotion;not customizer/creator-media/full-playback qualification.
 
 EN_VOICE_SCOPE
-Supertonic3 SDK1.3.1,F1 English,model3cadd1ee6394adea1bd021217a0e650ede09a323;all retained weights/config/style hashes checked. Opening microprobe first,then five-line32s integration. Raw lines no clipped samples. Owner English listening pending;UK approval does not establish English quality. SDKMIT;weightsOpenRAIL-M,AI-voice disclosure in description/MP4 comment.
+Supertonic3 SDK1.3.1,F1 English,model3cadd1ee6394adea1bd021217a0e650ede09a323;all retained weights/config/style hashes checked. Opening microprobe first,then five-line32s integration. Raw lines no clipped samples. Owner accepted this EnglishF1 film voice as good,natural-sounding,synthetic origin not obvious;one subjective script/voice assessment. SDKMIT;weightsOpenRAIL-M,AI-voice disclosure in description/MP4 comment.
 
 Native/final copied video stream SHA256 matches:SHA256=99f5666413e722b29db227deb9c5cedb8260d1a9bbd247808699bf68ee89ff3a
 

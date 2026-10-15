@@ -55,7 +55,7 @@ every weights/config/style file hash verified before load. Opening microprobe fi
 then four additional lines. No clipping in raw five lines. Final timing moved to
 0.6,4.8,10.8,16.8,22.6s after measuring speech;no truncation/retiming or overlap.
 Narration wording pronounces MN7R as M N seven R. Technical production is separate
-from intelligibility/pronunciation/naturalness;owner English listening pending.
+from intelligibility/pronunciation/naturalness;owner English listening subsequently accepted,see feedback below.
 
 SDKMIT;weightsBigScienceOpenRAIL-M. AI voice disclosure retained in description
 and final MP4 comment. No cloning,no new model download,no paid provider call.
@@ -75,4 +75,8 @@ logs;do not claim arbitrary-browser or pixel-identical portability.
 [Final evidence](evidence/contract-execution-prompt-motion.txt) records960frames32s1080p30,48kHz stereoAAC,full decode0errors,-15.89LUFS,-1.99dBTP,reference correlation0.9997809093,lag0samples. Native/final video streams match. Native opaqueRGB24thumbnail1280x720 and320x180 preview inspected;JPG derivative retained. Owner
 listening,creative acceptance,publication and audience metrics remain separate.
 
-First encoded contact review found a short empty hold before the book reveal;the outgoing payment scene was extended into the reveal crossfade and the picture rerendered. This correction is retained;not a one-shot-success claim. English naturalness remains unapproved by owner;no automatic EN voice recommendation is promoted.
+First encoded contact review found a short empty hold before the book reveal;the outgoing payment scene was extended into the reveal crossfade and the picture rerendered. This correction is retained;not a one-shot-success claim. Owner subsequently accepted English naturalness;no automatic EN voice recommendation is promoted by this documentation update.
+
+## Owner listening —2026-10-15
+
+Owner:English is good,and the synthetic origin may not be obvious. Record as positive listening/naturalness feedback for this exact F1 script/film. This is subjective owner acceptance,not blind testing or universal human-equivalence. Visual/style acceptance and public upload remain pending.
