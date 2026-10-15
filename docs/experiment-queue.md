@@ -6,6 +6,13 @@ Use the owner's ABVX books/services. Discuss the subject and bounded brief befor
 each actual new-tool experiment. [Research](tool-research.md) ·
 [Decision ledger](../skills/video-production-router/references/review-ledger.json).
 
+## Current owner-selected series
+
+[Five-book MN7R promo plan](experiments/agro-series-plan.md):Spot-Market EN completed;
+MN7R Product Guide EN now has a delivered ManimGX/MLX-Audio technical trial,owner
+review pending. Ukrainian books,next music-generator test,landing and compilation
+remain queued. Reuse stems/picture masters;no future jobs start automatically.
+
 ## Phase 1 — useful book and service promos
 
 Prefer one new picture tool plus one new audio tool when the task and resources
@@ -18,7 +25,7 @@ that integration only; retain observations for each new component separately.
 
 | Order | Proposed pair / use | First bounded gate |
 | --- | --- | --- |
-| 1 | **ManimGX + MLX-Audio TTS**, book explainer promo | One 10–20s economic/process diagram and EN voice. Exact TTS model/terms/size, Python/GPU/backend first. Keep Kokoro as proven audio fallback if needed. Choose the book/brief before execution; Spot-Market is an available comparison candidate, not an automatically approved new run |
+| 1 | **ManimGX + MLX-Audio TTS**, book explainer promo | First [MN7R20s trial](../experiments/2026-10-15/mn7r-manim-mlx.md) completed technically;native timing workaround and setup-budget breach retained. Exact TTS model/terms/size, Python/GPU/backend first. Keep Kokoro as proven audio fallback if needed. Choose the book/brief before execution; Spot-Market is an available comparison candidate, not an automatically approved new run |
 | 2 | **OpenScreen + selected new audio**, service promo | 10–15s synthetic local UI with cursor-driven zooms. Reuse the voice qualified in row 1, or Kokoro if no new audio fits. Screen/audio permissions and private-surface exclusion first; optional AI provider stays off unless authorised |
 | 3 | **Existing Three.js/Hyperframes + ACE-Step**, book/service promo | New instrumental bed over proven picture. Hardware, exact weights/terms and download cap before model installation; no claimed Mac speed/quality. Original-lyric songs belong in phase 2 |
 | 4 | **Proven renderer + mlx-whisper / parakeet-mlx / WhisperX**, captioned promo | Same short EN spoken fixture and known transcript; compare words, timestamps and actual resources. Pick an exact model/budget; ASR is QA/captions, not a new music generator |

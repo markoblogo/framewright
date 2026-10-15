@@ -63,5 +63,36 @@
     },
     "publication_verification": "user_provided_url",
     "audience_metrics": "not_measured"
+  },
+  {
+    "local_output": "mn7r-guide-video-pilot-20261015/MN7R-Product-Guide-EN-1080p.mp4",
+    "bytes": 1880423,
+    "sha256": "469edcca1c2b1c4f2171e72f0730fc11dd410a7b05fdf987acdec4d4d899b05b",
+    "id": "mn7r-manim-mlx",
+    "route": "diagram-explainer",
+    "native_export": {
+      "local_output": "mn7r-guide-video-pilot-20261015/MN7R-Product-Guide-Picture-1080p.mp4",
+      "bytes": 1253108,
+      "sha256": "386a72648dd38cc17730798c8d8656a956129c78665b3add3bfe35c575bace7a"
+    },
+    "thumbnail": {
+      "local_output": "mn7r-guide-video-pilot-20261015/MN7R-Product-Guide-YouTube.png",
+      "bytes": 317635,
+      "sha256": "c395c4c5d0fa019aa158efa3ece99fb0c413da7964652ca5cafcec5a38426f7a",
+      "format": "png",
+      "width": 1280,
+      "height": 720
+    },
+    "evidence": "experiments/2026-10-15/evidence/mn7r-manim-mlx.txt",
+    "qa_scope": "Final FFmpeg-normalised20s1080p30 workflow diagram plus local English MLX voice,encoded audio/video and extracted thumbnail;native timing warnings/setup budget breach retained",
+    "evidence_checks": [
+      "MEDIA_CHECKS_PASS",
+      "NATIVE_SCOPE",
+      "RESOURCE_LIMIT"
+    ],
+    "human_listening": "pending_owner_review",
+    "creative_acceptance": "pending_owner_review",
+    "publication_url": null,
+    "audience_metrics": "not_measured"
   }
 ]

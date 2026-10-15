@@ -103,14 +103,15 @@
       "name": "ManimGX",
       "url": "https://github.com/academa-labs/manimgx",
       "reviewed": "2026-10-15",
-      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "review_basis": "Actual MN7R pilot;technical final QA passed;owner review pending;original setup/timing/resource limitations retained.",
       "upstream_revision": "cfd33af5aa7cc0d6aa7dfe13919744e2124629dc",
-      "disposition": "candidate",
-      "scope_and_findings": "Python/Manim-style scene API with Rust/wgpu engine. Upstream speed claims are not local measurements.",
+      "disposition": "supported_scoped",
+      "scope_and_findings": "20s2D workflow export through FFmpeg timing normalization. Native VFR direct mux warned;no3D/math/native still qualified.",
       "licence_note": "MIT code; bundled components retain separate notices",
-      "next_trial_or_retest_condition": "One10s authorised economic diagram; Python/backend/wheel/font preflight, labelled values, timing/legibility and encoded MP4.",
+      "next_trial_or_retest_condition": "Do not repeat unchanged setup;use retained environments/models. Revisit only a named missing capability or changed upstream revision/requirement.",
       "evidence": [
-        "docs/tool-research.md"
+        "experiments/2026-10-15/mn7r-manim-mlx.md",
+        "experiments/2026-10-15/evidence/mn7r-manim-mlx.txt"
       ]
     },
     {
@@ -193,14 +194,15 @@
       "name": "MLX-Audio",
       "url": "https://github.com/Blaizzy/mlx-audio",
       "reviewed": "2026-10-15",
-      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "review_basis": "Actual MN7R pilot;technical final QA passed;owner review pending;original setup/timing/resource limitations retained.",
       "upstream_revision": "dad2087f790dfe96b07d5aac1405db4b578b411f",
-      "disposition": "candidate",
-      "scope_and_findings": "Apple Silicon TTS/STT/STS and specific diarization models; choose an exact model, not a generic speaker-label promise.",
+      "disposition": "supported_scoped",
+      "scope_and_findings": "Local Kokoro am_michael English speech tested,not Ukrainian. Missing WAV I/O,local model-name inference and English-model auto-install setup were resolved. Audio environment~1.2GB;whole setup snapshot exceeded2GB before cache cleanup.",
       "licence_note": "MIT code; model-specific terms",
-      "next_trial_or_retest_condition": "Only for a needed voice task: model size/terms/backend preflight; two authorised speakers for diarization. No cloning inferred.",
+      "next_trial_or_retest_condition": "Do not repeat unchanged setup;use retained environments/models. Revisit only a named missing capability or changed upstream revision/requirement.",
       "evidence": [
-        "docs/tool-research.md"
+        "experiments/2026-10-15/mn7r-manim-mlx.md",
+        "experiments/2026-10-15/evidence/mn7r-manim-mlx.txt"
       ]
     },
     {

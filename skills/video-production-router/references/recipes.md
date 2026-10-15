@@ -179,3 +179,33 @@ reconstruction, live market values, vertical/alpha/native still or other fps/can
 qualified. The profile downgrades evidence outside 1080p30; do not call a proposed
 fallback tested. Preserve explicit tool choices, budget/account and publication
 boundaries. No installer, paid service or media upload is implied.
+
+## diagram-explainer
+
+Use the `manimgx` profile for labelled workflow/process diagrams and intentional
+card/line transformations. Tested path: ManimGX 0.1.1 → **FFmpeg CFR/timestamp
+normalisation** → one audio master. It is not the authored Three.js miniature or
+real UI capture. [MN7R experiment](../../../experiments/2026-10-15/mn7r-manim-mlx.md)
+and [source](../../../examples/manimgx-mn7r/README.md) retain exact setup/limits.
+
+Inspect native layout/storyboard first. Preserve the native VFR file, including
+held-frame durations. The pilot had409 frames spanning20.033333s; that count alone
+is not frame loss. Direct mux warned about DTS. The qualified route explicitly
+uses `fps=30,setpts=PTS-STARTPTS`,600 output frames and re-encoding, then checks the
+final 20s CFR picture/audio. Do not reset frame-number timestamps on deduplicated
+VFR or stream-copy the native pilot without inspecting its timestamps.
+
+For the new English audio layer, `mlx-audio` means only MLX-Audio 0.5.9 + local
+Kokoro 82M/am_michael,speed1.03. Use a recognisable Kokoro model directory or explicit
+supported configuration and install soundfile plus the correct English spaCy model
+in its isolated environment before synthesis. Keep caches/models on Work. The
+current voice profile supports **en only**; Ukrainian needs another verified exact
+model and owner pronunciation review. No singing,diarization or cloning qualified.
+`preferred_voice: "mlx-audio"` preserves an explicit voice runtime in offline plans;
+unsupported languages remain unmet instead of silently changing the voice tool.
+
+No known human preference or audience qualification for this film yet. Resource
+setup exceeded the 2GB plan before task-only cache cleanup; retained runtimes/model
+and new model downloads must be budgeted together. Reuse this environment instead
+of repeating unchanged installation. New languages/formats/3D/math plots need
+bounded follow-ups,not a general claim based on this 2D English promo.

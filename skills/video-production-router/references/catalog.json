@@ -161,6 +161,42 @@
         "cross-machine pixel identity",
         "audience performance"
       ]
+    },
+    {
+      "id": "diagram-explainer",
+      "status": "tested_for_scope",
+      "recipe": "recipes.md#diagram-explainer",
+      "upstream": [
+        "https://github.com/academa-labs/manimgx",
+        "https://github.com/Blaizzy/mlx-audio"
+      ],
+      "experiments": [
+        "mn7r-manim-mlx"
+      ],
+      "tested_scope": "MN7R20s2D workflow diagrams in ManimGX0.1.1,FFmpeg CFR30 normalization/mux,MLX-Audio0.5.9 Kokoro English;final MP4 and extracted PNG checked.",
+      "not_tested": [
+        "native timestamp portability",
+        "ManimGX3D/math/data plots",
+        "Ukrainian or other MLX-Audio models/voices",
+        "native still",
+        "cross-machine reproduction",
+        "owner listening/creative acceptance",
+        "audience performance"
+      ],
+      "known_limitations": [
+        {
+          "capability": "native VFR MP4 direct mux",
+          "result": "warnings_observed",
+          "detail": "409native frames include held pauses;Invalid DTS warnings on direct mux. Explicit FFmpeg CFR conversion produced600frames20s. Do not treat fewer VFR frames alone as loss.",
+          "evidence": "experiments/2026-10-15/evidence/mn7r-manim-mlx.txt"
+        },
+        {
+          "capability": "setup budget",
+          "result": "exceeded",
+          "detail": "Planned2GB ceiling exceeded in a~3.2GB directory snapshot before task cache cleanup;not an exact peak or physical-sharing measurement.",
+          "evidence": "experiments/2026-10-15/evidence/mn7r-manim-mlx.txt"
+        }
+      ]
     }
   ]
 }
