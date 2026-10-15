@@ -1,0 +1,71 @@
+SPOT MARKET UK LCD — scoped production evidence
+
+MEDIA_CHECKS_PASS
+{
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "frames": 720,
+    "seconds": 24.0
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "seconds": 24.0,
+    "integrated_lufs": -17.35,
+    "true_peak_dbtp": -3.89,
+    "reference_mix_samples": 1152000,
+    "decoded_samples_including_codec_padding": 1152000,
+    "common_samples": 1152000,
+    "correlation_with_reference_mix": 0.9998474914045167,
+    "lag_samples": 0,
+    "channel_correlation": 0.9989359184023086,
+    "mono_rms_vs_mean_channel_rms": 0.9997339758974362
+  },
+  "full_decode_errors_bytes": 0,
+  "visual_inspection": "12encoded scene/action samples,9slat-transition samples,1280x720 and320x180 thumbnail inspected:main labels/CTA and original full cover readable;no exact-raster portability claim",
+  "human_listening": "pending_owner_review",
+  "creative_acceptance": "pending_owner_review",
+  "publication_url": null,
+  "technical_checks_passed": true
+}
+
+LCD_SCOPE
+Original authored24s1080p30 Remotion4.0.535 LCD terminal,pixel grain,factor selectors,abstract conveyor and staggered slats. Twelve encoded scene samples and nine transition samples inspected;full/reduced thumbnail readable. No real quotes,geography,service UI,physics,strobe or pixel-identical raster claim. Existing Chromium152,one worker completed.
+
+VOICE_PROVENANCE
+Supertonic3 F1,model3cadd1ee6394adea1bd021217a0e650ede09a323,SDK1.3.1. Accepted raw introSHA6985d854de853746009271d1194b013803d866781d07e73eaf6bb954914d60ca reused unchanged. New title2.995374s and CTA5.154830s;last speech22.954833s,no speed-up or silence edits. Owner short-probe preference is separate from final-film listening/creative acceptance.
+
+SYNTHETIC_DISCLOSURE_METADATA
+AI-generated Ukrainian narration:Supertonic3 F1;original illustrative animation,no live market quotes
+YouTube copy also explicitly identifies synthetic AI voice,as required by modelOpenRAIL-M.
+
+MOTION_SAMPLE
+{
+  "scope": "Encoded conveyor strip10.5s vs12.5s,not physical simulation or exhaustive motion check",
+  "mean_abs_channel_difference": 25.52945918367347,
+  "changed_pixels_over10": 37770
+}
+
+ARTIFACTS
+{
+  "local_output": "spot-market-uk-video-pilot-20261015/Spot-Market-Handbook-UK-LCD-1080p.mp4",
+  "bytes": 4158541,
+  "sha256": "9aaaebd94e19ddff67b71c40e81306d58acb1f3e24c6c11b43175a4544f9a783",
+  "native_export": {
+    "local_output": "spot-market-uk-video-pilot-20261015/Spot-Market-Handbook-UK-LCD-Picture-1080p.mp4",
+    "bytes": 3571627,
+    "sha256": "adec7e85d871072d1a31ff5c90bbbbe89317bb077fd8230a7e2021f0fcdfea3c"
+  },
+  "thumbnail": {
+    "local_output": "spot-market-uk-video-pilot-20261015/Spot-Market-Handbook-UK-YouTube.png",
+    "bytes": 551461,
+    "sha256": "cd94190cc294149bc7d0737a43251eba39b4f1723fdb9ac875298b4e097309f0",
+    "format": "png",
+    "width": 1280,
+    "height": 720
+  }
+}

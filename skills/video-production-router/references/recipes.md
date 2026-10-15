@@ -227,3 +227,15 @@ Native silent MP4 is retained;final audio is added with FFmpeg. Inspect encoded
 scene boundaries,object displacement,labels/cover and closing hold. Thumbnail is
 an encoded20s frame,not a native-still claim. Chromium launch/root timeouts can
 recur:retain failed logs and use a supported working executable,not disabled checks.
+
+### Ukrainian LCD editorial variation
+
+[Spot-market UK film](../../../experiments/2026-10-15/spot-market-uk-lcd.md):
+Remotion4.0.535 `lcd-terminal-motion`,Supertonic3 F1,original score/effects,
+FFmpeg assembly.24s1080p30 only;no real quotes/UI,geography,physics or strobe.
+[Source](../../../examples/remotion-spot-uk-lcd/README.md). Reuse accepted raw
+voice where appropriate,verify every model/config/style file,measure new lines
+before cuts and retain separate stems. The primary UK voice is owner-recommended
+Supertonic3 with slightF1 preference;Piper stays low-quality explicit fallback.
+Retain synthetic-content disclosure in publication copy/metadata. New scripts
+and full-film aesthetics require owner review,even after successful numeric QA.

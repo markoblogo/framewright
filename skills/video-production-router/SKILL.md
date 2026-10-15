@@ -138,15 +138,12 @@ propose revision/removal, and obtain acceptance before dropping a requested effe
 Routing behaviour scenarios are in [scenarios.json](references/scenarios.json).
 They are specifications, not evidence of an independent model evaluation.
 
-For the next Ukrainian narration,choose a different tool after exact model/rights/
-resource review. Owner found the tested Piper/Tetiana version weak:unnecessary
-pauses,wrong stress and intonation. Retain its technical evidence,but do not
-recommend it as the default Ukrainian voice or silently reuse it. The planner
-consumes `default_narration_eligible: false`,preserving technical evidence while
-excluding automatic narration coverage. An explicit
-request for this exact voice should surface the retained quality warning.
-The authored `paper-cut-regroup` picture treatment remains reusable independently
-of this voice. Other voices/languages and singing need their own review;the
-picture test does not qualify physics or automatic asset generation. Preserve
-explicit voice choices instead of falling back to Kokoro EN.
-See the Ukrainian paper-route variation in [recipes](references/recipes.md).
+For Ukrainian narration,prefer `supertonic3` within its scoped M1/F1 evidence.
+Owner found both usable and much better than Tetiana;F1 has a slight preference.
+Residual pauses/stress errors remain;do not claim perfect Ukrainian or long-form
+quality. Model terms require explicit synthetic-content disclosure.
+Retain Piper/Tetiana as a low-quality explicit fallback with a visible warning;
+`default_narration_eligible:false` prevents silent automatic substitution. Preserve
+explicit provider choices and inspect new scripts/final integration. Other voices,
+languages,singing and cloning need separate review. Paper-cut/LCD picture treatment
+is independent of the voice engine. See [recipes](references/recipes.md).

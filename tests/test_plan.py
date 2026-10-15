@@ -67,8 +67,8 @@ class BlockPlannerTest(unittest.TestCase):
     def test_owner_rejected_voice_is_not_automatically_selected(self):
         result = self.run_plan(self.brief(input='book-art', language='uk',
                                          deliverables=['video-export', 'narration']))
-        self.assertEqual(result['status'], 'blocked')
-        self.assertIn('narration', result['blocks'][0]['unmet'])
+        self.assertEqual(result['status'], 'proposed')
+        self.assertIn('supertonic3', result['blocks'][0]['tools'])
         self.assertNotIn('piper', result['blocks'][0]['tools'])
         self.assertTrue(next(t for t in REGISTRY['tools'] if t['id'] == 'piper')['features'][0]['status'] == 'tested')
 
@@ -81,6 +81,7 @@ class BlockPlannerTest(unittest.TestCase):
 
     def test_new_eligible_ukrainian_voice_can_replace_rejected_default(self):
         registry = copy.deepcopy(REGISTRY)
+        registry['tools'] = [t for t in registry['tools'] if t['id'] != 'supertonic3']
         alternative = copy.deepcopy(next(t for t in registry['tools'] if t['id'] == 'piper'))
         alternative['id'] = 'fixture-uk-voice'
         alternative['default_narration_eligible'] = True
@@ -90,6 +91,23 @@ class BlockPlannerTest(unittest.TestCase):
         self.assertEqual(result['status'], 'proposed')
         self.assertIn('fixture-uk-voice', result['blocks'][0]['tools'])
         self.assertNotIn('piper', result['blocks'][0]['tools'])
+
+    def test_low_quality_fallback_is_not_silent_when_primary_missing(self):
+        registry = copy.deepcopy(REGISTRY)
+        registry['tools'] = [t for t in registry['tools'] if t['id'] != 'supertonic3']
+        result = planner.plan(self.brief(input='book-art', language='uk', deliverables=['narration']), registry)
+        self.assertEqual(result['status'], 'blocked')
+        self.assertNotIn('piper', result['blocks'][0]['tools'])
+
+    def test_lcd_uk_scene_selects_recommended_voice_and_actual_finisher(self):
+        brief = self.brief(input='book-art', language='uk', preferred_tool='remotion',
+                           style='lcd-editorial', effects=['lcd-terminal-motion'],
+                           deliverables=['video-export', 'narration', 'media-mux', 'still-export'])
+        brief['minimum_evidence'] = 'tested'
+        result = self.run_plan(brief)
+        self.assertEqual(result['status'], 'proposed')
+        self.assertEqual(set(result['blocks'][0]['tools']), {'remotion', 'supertonic3', 'ffmpeg'})
+        self.assertEqual(next(c['tool'] for c in result['blocks'][0]['coverage'] if c['feature']=='narration'), 'supertonic3')
 
     def test_invalid_preferred_voice_rejected(self):
         for tool in ['unknown', 'manimgx', []]:
