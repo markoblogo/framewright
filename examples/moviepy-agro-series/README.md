@@ -5,6 +5,8 @@ Use [the reference film](../../docs/first-video.md) for open demo assets. No boo
 clips,voice/model files,music or fonts are redistributed. Source identities in
 `sources.json` refer to the owner's retained media under `FRAMEWRIGHT_MEDIA_ROOT`;
 `render.py` checks hashes before decoding and disables all input audio.
+`auxiliary-inputs.json` also pins the original instrumental stem and the separate
+landing `Screen-Assembly.mp4` used for the thumbnail;both are verified before opening.
 
 MoviePy2.2.1 MIT;tested Python3.12.13 and FFmpeg8.0.1. Python dependencies pinned in `requirements.lock`. Existing
 FFmpeg is explicit;the code does not ask ImageIO to fetch a binary. Tested system
@@ -13,19 +15,19 @@ checks. Supertonic3SDK1.3.1 uses the existing separate voice environment and the
 committed model/config/style hashes:code MIT,weights BigScienceOpenRAIL-M.
 
 ```sh
-python3 -m venv env
+python3 -m venv .venv
 # Set TMPDIR/PIP_CACHE_DIR to a disk with space BEFORE installation.
-env/bin/pip install -r requirements.lock
+.venv/bin/pip install -r requirements.lock
 export FRAMEWRIGHT_MEDIA_ROOT='/path/to/retained-media-root'
 export FFMPEG_BINARY='/path/to/working/ffmpeg'
 export SUPERTONIC_SOURCE_ROOT='/path/to/retained-voice-model-root'
 # VOICE_PYTHON points to the separate pinned Supertonic runtime.
 "$VOICE_PYTHON" synthesize.py
-env/bin/python render.py
-env/bin/python audio.py
-env/bin/python thumbnail.py
+.venv/bin/python render.py
+.venv/bin/python audio.py
+.venv/bin/python thumbnail.py
 python3 finish.py
-ffmpeg -hide_banner -loglevel error -xerror -i Agro-Library-1080p.mp4 -f null -
+"$FFMPEG_BINARY" -hide_banner -loglevel error -xerror -i Agro-Library-1080p.mp4 -f null -
 ```
 
 `render.py` first writes eight silent framed scenes,then dissolves them with
