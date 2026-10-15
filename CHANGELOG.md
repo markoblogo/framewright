@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+Close the retained stem-phase and two grading findings: explicit stereo/mono
+phase/cancellation QA, content-aware visual checks, and semantic native-card/rights
+evidence. Retain one complete protocol-v5 70/70 known-case run,46/46 fresh blind
+controls and separate unchanged-answer replay2/2; preserve v4 67/70 and all earlier
+failures. Keep README concise. Preserve eight incomplete CLI read traces as an evidence gap:
+70/70 model rubric,62/70 complete evidence; no completion inferred or actor retried.
+No rendering or new release.
+
 Close the five transfer-2 findings with per-output transparency QA, temporal-effect
 inspection, conditional effect-fallback acceptance and stage-aware comparison
 criteria. Retain one complete 67/70 protocol-v4 regression and40/40 fresh blind

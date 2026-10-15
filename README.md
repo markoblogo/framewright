@@ -104,10 +104,10 @@ No new engine is needed for the current follow-up work.
 
 ## Planning checks
 
-Current known-case regression: **67/70**; original first-exposure result:
+Current known-case regression: **70/70 rubric;62/70 complete evidence**; original first-exposure result:
 **13/18**. These apply to the recorded planning configuration, not rendering quality
 or general reliability. **[Evaluation details and retained failures](docs/router-evaluation.md)**.
-The current run retains three QA/rubric gaps; all five original findings pass. Release 0.1.1 remains experimental; no new release.
+The three retained findings pass; eight CLI trace gaps keep qualification limited. Release 0.1.1 remains experimental; no new release.
 
 ## Contribute and connect
 

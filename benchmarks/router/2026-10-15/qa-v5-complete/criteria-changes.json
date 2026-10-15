@@ -1,0 +1,14 @@
+[
+  {
+    "id": "watercolor-loop",
+    "before": "separate recorded image-motion capability from untested seam/integration and plan decoded seam, crop and readability checks",
+    "after": "separate recorded image-motion capability from untested seam/integration; plan decoded seam, framing/crop and visual-clarity checks, plus text legibility only if text or labels are proposed",
+    "reason": "Grade actual content and semantic technical/rights distinction; do not impose absent text or a magic evidence-status word."
+  },
+  {
+    "id": "upgrade-history-rights",
+    "before": "retain Suno/native song-card as documented technical possibility without pretending this asset was downloaded or inspected",
+    "after": "retain native song-card as a technical possibility and separate unverified export/inspection from commercial clearance; accept equivalent meaning without requiring the literal label documented",
+    "reason": "Grade actual content and semantic technical/rights distinction; do not impose absent text or a magic evidence-status word."
+  }
+]

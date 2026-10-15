@@ -61,6 +61,10 @@ Use a format-appropriate comparison; AAC output bytes need not match a WAV sourc
 Keep this separate from loudness/peak measurement and listening. Missing files
 block verification, not naming these future checks.
 
+For a multi-stem mix, also name relative alignment, polarity/phase and stereo/mono
+sum inspection for unwanted cancellation. A master recombination comparison or a
+promise to listen does not replace this check. See the [music handoff](music-workflows.md#stem-mix-qa).
+
 ## Transparency and temporal effects
 
 For each alpha-bearing deliverable, including a separate PNG still, plan decoded

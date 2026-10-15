@@ -1,0 +1,84 @@
+{
+  "original_three": {
+    "stems-rebuild": true,
+    "watercolor-loop": true,
+    "upgrade-history-rights": true
+  },
+  "strict_score": "70/70 model rubric;62/70 evidence-complete",
+  "remaining": [
+    {
+      "id": "explicit-paid-no-authority",
+      "command_ids": [
+        "item_6"
+      ],
+      "terminal_status": "NOT_AVAILABLE",
+      "classification": "incomplete_cli_trace",
+      "not_a_model_rubric_override": true
+    },
+    {
+      "id": "unverified-qa-note",
+      "command_ids": [
+        "item_2"
+      ],
+      "terminal_status": "NOT_AVAILABLE",
+      "classification": "incomplete_cli_trace",
+      "not_a_model_rubric_override": true
+    },
+    {
+      "id": "execution-request-handoff",
+      "command_ids": [
+        "item_2"
+      ],
+      "terminal_status": "NOT_AVAILABLE",
+      "classification": "incomplete_cli_trace",
+      "not_a_model_rubric_override": true
+    },
+    {
+      "id": "screenshots-explicit-flute",
+      "command_ids": [
+        "item_2"
+      ],
+      "terminal_status": "NOT_AVAILABLE",
+      "classification": "incomplete_cli_trace",
+      "not_a_model_rubric_override": true
+    },
+    {
+      "id": "three-style-blocks",
+      "command_ids": [
+        "item_2"
+      ],
+      "terminal_status": "NOT_AVAILABLE",
+      "classification": "incomplete_cli_trace",
+      "not_a_model_rubric_override": true
+    },
+    {
+      "id": "locked-score-frames",
+      "command_ids": [
+        "item_2"
+      ],
+      "terminal_status": "NOT_AVAILABLE",
+      "classification": "incomplete_cli_trace",
+      "not_a_model_rubric_override": true
+    },
+    {
+      "id": "commercial-free-song",
+      "command_ids": [
+        "item_2"
+      ],
+      "terminal_status": "NOT_AVAILABLE",
+      "classification": "incomplete_cli_trace",
+      "not_a_model_rubric_override": true
+    },
+    {
+      "id": "storyboard-single-shot-skip",
+      "command_ids": [
+        "item_2"
+      ],
+      "terminal_status": "NOT_AVAILABLE",
+      "classification": "incomplete_cli_trace",
+      "not_a_model_rubric_override": true
+    }
+  ],
+  "manual_grade_overrides": false,
+  "prior_packet_unchanged": "../qa-v4-complete"
+}

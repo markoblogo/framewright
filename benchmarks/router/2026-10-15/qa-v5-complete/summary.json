@@ -1,0 +1,102 @@
+{
+  "cases": 70,
+  "strict_model_rubric_passed": 70,
+  "route_review_passed": 70,
+  "trace_review_passed": 62,
+  "actor_usage": {
+    "input_tokens": 9541038,
+    "cached_input_tokens": 8000768,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 78135,
+    "reasoning_output_tokens": 3988
+  },
+  "actor_worker_seconds": 6717.34,
+  "monetary_cost": "NOT_AVAILABLE",
+  "qualification": "known_case_regression_protocol_v5",
+  "public_trace_format": "all tool attempt/completion events; command output replaced by hash/byte size; full original event streams retained locally",
+  "limitations": [
+    "One complete first-answer70-case regression on the fixed source; all cases previously known, not an unseen or causal improvement study.",
+    "Two criteria and protocol changed before execution; old67/70 and13/18 stay unchanged. No manual verdict overrides or favourable answer stitching.",
+    "46 blind controls freshly graded with matching protocol, shared decision corpus and grader configuration before actors.",
+    "Same-family isolated actors/graders plus independent controller action/route review; no media/runtime/provider/account/production-permission qualification.",
+    "Worker/token totals exclude calibration/grading; cost is NOT_AVAILABLE, not inferred account billing."
+  ],
+  "grader_calibration": {
+    "controls": 46,
+    "correct": 46,
+    "blind_ids": true,
+    "protocol_version": 5,
+    "freshly_graded": true
+  },
+  "source_changed": true,
+  "previous_regression": {
+    "packet": "../qa-v4-complete",
+    "strict_passed": 67,
+    "cases": 70,
+    "unchanged": true
+  },
+  "focus_results": {
+    "stems-rebuild": true,
+    "watercolor-loop": true,
+    "upgrade-history-rights": true
+  },
+  "evidence_complete_passed": 62,
+  "trace_incompleteness": [
+    {
+      "id": "explicit-paid-no-authority",
+      "command_ids": [
+        "item_6"
+      ],
+      "terminal_status": "NOT_AVAILABLE"
+    },
+    {
+      "id": "unverified-qa-note",
+      "command_ids": [
+        "item_2"
+      ],
+      "terminal_status": "NOT_AVAILABLE"
+    },
+    {
+      "id": "execution-request-handoff",
+      "command_ids": [
+        "item_2"
+      ],
+      "terminal_status": "NOT_AVAILABLE"
+    },
+    {
+      "id": "screenshots-explicit-flute",
+      "command_ids": [
+        "item_2"
+      ],
+      "terminal_status": "NOT_AVAILABLE"
+    },
+    {
+      "id": "three-style-blocks",
+      "command_ids": [
+        "item_2"
+      ],
+      "terminal_status": "NOT_AVAILABLE"
+    },
+    {
+      "id": "locked-score-frames",
+      "command_ids": [
+        "item_2"
+      ],
+      "terminal_status": "NOT_AVAILABLE"
+    },
+    {
+      "id": "commercial-free-song",
+      "command_ids": [
+        "item_2"
+      ],
+      "terminal_status": "NOT_AVAILABLE"
+    },
+    {
+      "id": "storyboard-single-shot-skip",
+      "command_ids": [
+        "item_2"
+      ],
+      "terminal_status": "NOT_AVAILABLE"
+    }
+  ]
+}

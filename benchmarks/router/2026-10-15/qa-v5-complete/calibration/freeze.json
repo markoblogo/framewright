@@ -1,0 +1,16 @@
+{
+  "purpose": "46 freshly graded blind controls: prior40 plus positive/negative phase, content-aware legibility and semantic native-card/rights boundaries. Gold hidden; exact shared source corpus and protocol match actor grading before actor launch.",
+  "input_sha256": {
+    "batch-1.json": "583459f0daf9d63b5de393a942394bc5f3d700a0476eacd6e695664c7f156e6f",
+    "batch-2.json": "11b525882299d0ace7b1ece2053c64180a7aa00e3bab33837436dc3564f4f36d",
+    "batch-3.json": "39b89df491b5718c9b08c30a082cd7b12df56706e44b0a0a333b790a5537d347",
+    "batch-4.json": "f25ad4adfd82533cb6bff3d860555d062f70df79d7783b0789d4dd45787db753",
+    "batch-5.json": "8d8f3b594a1ada2ec2499aebddb2c3980f4f5825df3c1635ed3eba54dde181a4",
+    "batch-6.json": "7cb390115c511a39fd7e4f569ff933b6b0d7c1f8cc6ae4a0f19ae3791e481c8b",
+    "batch-7.json": "388ba00c9cc321538c4ab9fe3045432a8ce8da34fc9ef0b382d32650f4d3d6ff",
+    "batch-8.json": "49016416c67394c18874abbc00fc7c6628080fe29b5c2992564091b1fc91c414"
+  },
+  "gold_sha256": "6bcea58c67136c951f07daabc70fc453f81a77ff297634222361ee004c51cb73",
+  "protocol_sha256": "09ab3c3fb53f7af79a0d2e1db2006ec41afc2ed853786d2c1cad8533e03cbdaa",
+  "decision_sources_sha256": "7b9cdb6e44ddac6dd8761c50d4481f7f83f11bf2167cd6d94bea1cadd420b5fc"
+}

@@ -1,13 +1,32 @@
 # Router planning evaluation
 
-**Current known-case regression: 67/70; controls40/40. Historical first-exposure:13/18.**
+**Current regression:70/70 rubric;62/70 complete evidence; controls46/46. Historical first-exposure:13/18.**
 [52-case development packet](../benchmarks/router/2026-10-14/grading-v3-complete/manifest.json) ·
 [18-case transfer packet](../benchmarks/router/2026-10-15/transfer-2/manifest.json) ·
 [Source-bound scope record](../router-qualification.json) ·
 [Three-case diagnosis](grading-v3.md).
 No rendering, real provider/account action, media publication or release occurred.
 
-## Five corrections and complete regression — 2026-10-15
+## Three remaining findings — protocol v5, 2026-10-15
+
+The [complete v5 packet](../benchmarks/router/2026-10-15/qa-v5-complete/README.md)
+records **70/70**, with46/46 freshly graded blind controls. Stem-phase/coherence,
+stereo/mono cancellation and final-output checks are explicit in the router. Two
+criteria now apply readability to actual content and accept equivalent technical
+availability/rights explanations without requiring a magic label. The stem criterion
+was preserved. All requests, criteria, source and grading context were frozen before
+one complete actor run. Current status:evaluated_with_gaps because eight started CLI reads lack terminal
+events. Its model grade is retained; complete-evidence counting excludes that case.
+No completion was invented or actor retried. The original three fixes all pass.
+
+The two unchanged old disputed answers pass2/2 separately; no old answer or grade
+was overwritten. Original three focus results: stems-rebuild: PASS, watercolor-loop: PASS, upgrade-history-rights: PASS. All70 are known regression
+material. Different criteria/source versions mean these scores are not a causal
+improvement estimate, unseen test, media QA or execution-permission qualification.
+No render, new integration or release. Full grades, traces and remaining misses
+(if any) stay in the packet; no manually adjusted green score.
+
+## Historical five corrections and v4 regression — 2026-10-15
 
 The [protocol-v4 packet](../benchmarks/router/2026-10-15/qa-v4-complete/README.md)
 records **67/70** in a single new run on one repaired source: last18 **15/18**,
@@ -18,16 +37,16 @@ change gate only when an alternative is proposed for adoption. A supported negat
 comparison can stop. Both original disputed answers pass a separate unchanged-answer
 replay; their old grades stay intact. No model verdict was manually overridden.
 
-All five original cases pass. The current67/70 retains one phase-QA omission
+All five original cases pass. That v4 run67/70 retains one phase-QA omission
 and two disputed conditions: readability for a text-free artwork loop and an
-explicit documented-export label in a rights-only comparison. Qualification stays
+explicit documented-export label in a rights-only comparison. Its qualification remained
 **evaluated_with_gaps**. Source-master QA was additionally clarified; the final
 accepted grader receives frozen decision text. The initial67/70 and all preliminary
 incomplete-context grades remain linked in the packet. No green adjustment.
 
 All70 are now known regression material. The old52/52 and first-exposure13/18 remain
 historical source-bound results; this is not a causal or unseen-transfer claim.
-The current qualification record points to this complete70-case packet, not a union
+That v4 qualification record covered its complete70-case packet, not a union
 of favourable answers from older runs. No rendering, media qualification or release.
 
 ## New first-exposure assessment — 2026-10-15
