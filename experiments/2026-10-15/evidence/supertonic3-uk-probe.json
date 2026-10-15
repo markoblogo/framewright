@@ -1,0 +1,121 @@
+{
+  "text": "Чому ціна на зерно різна навіть в один день? Базис поставки, якість і логістика формують ціну фізичного ринку. Розберімося, як працює спотовий ринок.",
+  "model_revision": "3cadd1ee6394adea1bd021217a0e650ede09a323",
+  "load_wall_sec": 12.565,
+  "settings": {
+    "steps": 12,
+    "speed": 1.0,
+    "seed": 20261015,
+    "intra_threads": 4,
+    "inter_threads": 1,
+    "auto_download": false
+  },
+  "voices": [
+    {
+      "voice": "M1",
+      "file": "audio/Spot-Market-UK-Supertonic3-M1-AI.wav",
+      "language": "uk",
+      "samplerate": 44100,
+      "seconds": 12.19047619047619,
+      "synthesis_wall_sec": 20.067,
+      "sample_peak_dbfs": -6.186519419357309,
+      "clipped_samples": 0,
+      "rms_dbfs": -25.985592143454106,
+      "sha256": "b5c95cd5954cb8e6c4d6fc5a119af9e39d651d896854c59ee5a4d53a33e4f761",
+      "bytes": 1075244,
+      "human_pronunciation": "pending_owner_review",
+      "listening_copy": {
+        "file": "audio/Spot-Market-UK-Supertonic3-M1-listen-AI.wav",
+        "bytes": 1075278,
+        "sha256": "d36d91ee1e32f7e362924d34e0603c84483d47bba8420ba32531de5acac662a3",
+        "seconds": 12.19047619047619,
+        "sample_rate": 44100,
+        "sample_peak_dbfs": -1.9951784803798864,
+        "full_decode_errors_bytes": 0,
+        "silences_over150ms_at_minus40db": [
+          {
+            "end": 0.493447,
+            "seconds": 0.493447
+          },
+          {
+            "end": 3.720068,
+            "seconds": 0.523719
+          },
+          {
+            "end": 5.225057,
+            "seconds": 0.155828
+          },
+          {
+            "end": 5.922109,
+            "seconds": 0.155442
+          },
+          {
+            "end": 8.893968,
+            "seconds": 0.41102
+          },
+          {
+            "end": 9.927324,
+            "seconds": 0.152653
+          },
+          {
+            "end": 12.190476,
+            "seconds": 0.642517
+          }
+        ],
+        "processing": "FFmpeg loudnorm-18LUFS/TP-2 target;no edits,retiming or silence removal"
+      }
+    },
+    {
+      "voice": "F1",
+      "file": "audio/Spot-Market-UK-Supertonic3-F1-AI.wav",
+      "language": "uk",
+      "samplerate": 44100,
+      "seconds": 12.19047619047619,
+      "synthesis_wall_sec": 15.792,
+      "sample_peak_dbfs": -9.741641025253129,
+      "clipped_samples": 0,
+      "rms_dbfs": -25.440106902310422,
+      "sha256": "6985d854de853746009271d1194b013803d866781d07e73eaf6bb954914d60ca",
+      "bytes": 1075244,
+      "human_pronunciation": "pending_owner_review",
+      "listening_copy": {
+        "file": "audio/Spot-Market-UK-Supertonic3-F1-listen-AI.wav",
+        "bytes": 1075278,
+        "sha256": "0563493b2f5a855f1453c83eee78304ddb3ca2bc1340292f07ace8dae22b379c",
+        "seconds": 12.19047619047619,
+        "sample_rate": 44100,
+        "sample_peak_dbfs": -2.774905260254779,
+        "full_decode_errors_bytes": 0,
+        "silences_over150ms_at_minus40db": [
+          {
+            "end": 0.580658,
+            "seconds": 0.580658
+          },
+          {
+            "end": 3.730726,
+            "seconds": 0.393651
+          },
+          {
+            "end": 8.852971,
+            "seconds": 0.367868
+          },
+          {
+            "end": 9.941224,
+            "seconds": 0.161542
+          },
+          {
+            "end": 12.190476,
+            "seconds": 0.486281
+          }
+        ],
+        "processing": "FFmpeg loudnorm-18LUFS/TP-2 target;no edits,retiming or silence removal"
+      }
+    }
+  ],
+  "scope": "Technical audio probe only,no video or production qualification",
+  "input_source_hashes": {
+    "book.jpeg": "1812cf2d97e11ee1119dcf62812fee6b816bb2cde6905313986327db07d44002",
+    "cover.jpeg": "bb11f4e89357bb09d146345500407c2b0b7b5ca81bd9e551336b6cf7afd440e9"
+  },
+  "synthetic_content_disclosure": "AI-generated/synthetic Ukrainian voice probe;no human identity or voice cloning"
+}

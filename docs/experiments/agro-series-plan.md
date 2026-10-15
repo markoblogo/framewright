@@ -10,7 +10,7 @@ bounded experiment. Future books/landing/compilation are queued,not unattended w
 | [MN7R Product Guide](https://abvx.xyz/books/mn7r-product-guide) | EN | Current ManimGX/MLX-Audio 20s diagram promo;technical final QA passed;owner:basic,good,distinctive infographic style;[YouTube](https://youtu.be/TISOtCghMVY) |
 | [Agri-Commodity Brokerage](https://abvx.xyz/books/mn7r-agro-commodity-brokerage-en-free-edition) | EN | Queued;agree next distinct trial,possibly voice over an authorised/generated music bed |
 | [Брокеридж зернових та олійних](https://abvx.xyz/books/mn7r-agro-commodity-brokerage-ua-free-edition) | UK | Delivered24s Piper/Tetiana Ukrainian narration + Remotion paper-route;encoded checks passed,exact-raster repeat not met;owner accepts simple distinct picture;Ukrainian voice weak(pauses,stress,intonation);no remake,next UK voice uses another tool;[YouTube](https://youtu.be/qer7WfdIWLI) |
-| [Практичний гайд по спотовому ринку](https://abvx.xyz/books/spot-market-handbook-ua-free-edition) | UK | Queued;avoid repeating an unchanged voice trial,choose the next specific question |
+| [Практичний гайд по спотовому ринку](https://abvx.xyz/books/spot-market-handbook-ua-free-edition) | UK | Supertonic3 M1/F1 short Ukrainian voice probes delivered;owner listening pending before full film;no automatic voice qualification |
 
 Retain 1920×1080/30fps delivery where suitable,script/source/asset provenance,original
 native and normalized picture,separate voice/music/effects,subtitles,thumbnail,exact
