@@ -1,0 +1,6 @@
+Spot-Market Handbook,2026-10-15
+SCENE_CHECKS_PASS: no browser errors; deterministic seek8→18.5→8 produces identical state and screenshot pixels;22grain meshes at loading;truck displacement5.106local units;final book visible.
+MEDIA_CHECKS_PASS: H2641920x1080,30fps,600frames,20.000s;AAC48000Hz stereo20s;complete decode0errors;−18.32LUFS,−1.21dBTP;reference correlation0.999826,zero-sample lag over960000common samples;512trailing decoded codec-padding samples.
+Native Hyperframes0.8.161 check:0errors,27/27contrast checks,6structural/editor warnings. Delivery render44.9s,hardwareGPU screenshot capture. Seven encoded samples inspected, including loading/truck/benchmark/book reveal. PNG1280x720 extracted at18.5s; full-size and contact-sheet layout inspected.
+Three.js0.186.1 MIT; Hyperframes0.8.161 Apache-2.0; local Kokoro code MIT / Kokoro82M model Apache-2.0; existing FFmpeg runtime. Original deterministic music/effects; no cloud music or paid provider calls.
+Illustrative choreography, not calibrated physics, live market data or geography. No Anatomy execution. Human listening, owner creative approval and public upload remain pending. Router source/qualification unchanged; no release.

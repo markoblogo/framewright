@@ -1,0 +1,31 @@
+{
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "frames": 600,
+    "seconds": 20.0
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "seconds": 20.0,
+    "integrated_lufs": -18.32,
+    "true_peak_dbtp": -1.21,
+    "reference_mix_samples": 960000,
+    "decoded_samples_including_codec_padding": 960512,
+    "common_samples": 960000,
+    "correlation_with_reference_mix": 0.9998261175071164,
+    "lag_samples": 0,
+    "channel_correlation": 0.99986339026076,
+    "mono_rms_vs_mean_channel_rms": 0.9999658467183227
+  },
+  "full_decode_errors_bytes": 0,
+  "visual_inspection": "seven encoded samples spanning loading, moving truck, quote convergence and book reveal; full-size and contact-sheet thumbnail inspection",
+  "human_listening": "pending_owner_review",
+  "creative_acceptance": "pending_owner_review",
+  "publication_url": null,
+  "technical_checks_passed": true
+}

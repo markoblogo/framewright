@@ -30,5 +30,30 @@
       "overall": "usable_with_reservations",
       "source": "owner feedback in conversation,2026-10-15"
     }
+  },
+  {
+    "local_output": "spot-market-video-pilot-20261015/Spot-Market-Handbook-EN-3D-1080p.mp4",
+    "sha256": "d94e469473e644b3b66caf95338ac79ad2c7e282fb6e2f2d704c42e83daf5745",
+    "bytes": 13794522,
+    "id": "spot-market-3d-miniature",
+    "route": "object-prototype",
+    "actual_pipeline": "Original authored Three.js scene \u2192 Hyperframes; Kokoro narration + FFmpeg mix. Anatomy not used.",
+    "evidence": "experiments/2026-10-15/evidence/spot-market-3d-miniature.txt",
+    "qa_scope": "20s encoded 3D miniature, deterministic seek, motion/camera samples, complete decode/audio metrics and extracted PNG thumbnail; creative acceptance and human listening pending",
+    "thumbnail": {
+      "local_output": "spot-market-video-pilot-20261015/Spot-Market-Handbook-YouTube.png",
+      "sha256": "80111b6aacf8eb3b764aa5f691c1b26e85cc5fa2d66ad70e2ae6f57c7e6e763f",
+      "bytes": 363031,
+      "format": "png",
+      "width": 1280,
+      "height": 720
+    },
+    "human_listening": "pending_owner_review",
+    "creative_acceptance": "pending_owner_review",
+    "publication_url": null,
+    "evidence_checks": [
+      "SCENE_CHECKS_PASS",
+      "MEDIA_CHECKS_PASS"
+    ]
   }
 ]
