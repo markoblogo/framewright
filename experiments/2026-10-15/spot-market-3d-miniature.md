@@ -4,7 +4,8 @@
 after rating the prior [Burgers trailer](burgers-cue-analysis.md) visually basic.
 Question: can staged objects and camera action provide a different treatment from
 an artwork/typography montage? The20s1080p English trailer is delivered locally;
-artistic improvement awaits owner review. No new release or public upload.
+owner subsequently rated the 3D animation positively and the voice as good. No new release. Owner supplied the [YouTube publication](https://youtu.be/7hkMaEjINZA);
+public playback was not independently verified and the agent did not upload it.
 
 ## Planned action and actual chain
 
@@ -12,12 +13,12 @@ artistic improvement awaits owner review. No new release or public upload.
 from silo to truck; delivery to port; quote tickets converging to a benchmark;
 changing camera viewpoint; readable genuine cover/CTA on a volumetric closing book.
 
-**Original Three.js0.186.1 scene → Hyperframes0.8.161 MP4**, local Kokoro English
+**Original Three.js 0.186.1 scene → Hyperframes 0.8.161 MP4**, local Kokoro English
 narration (`am_michael`,en-us,speed1.03), original synthesized score/effects and
 FFmpeg audio mixing. [Retained authored source](../../examples/staged-market-scene/README.md).
-`object-prototype` is the record's family; **Anatomy was not run**, and its existing
-prototype/audio limitation is unchanged. This is a manual adaptation, not a newly
-qualified automatic router choice.
+The record now uses the distinct `staged-3d-scene` route; **Anatomy was not run**,
+and its existing prototype/audio limitation is unchanged. Production evidence
+covers this authored adapter; it does not establish general agent routing.
 
 | Time | Staging |
 | --- | --- |
@@ -27,7 +28,7 @@ qualified automatic router choice.
 |10.5–15s | Tickets converge to a stylised shared benchmark |
 |15–20s | Miniature exits; genuine textured book and free PDF/EPUB CTA |
 
-This is illustrative choreography with real3D geometry, not calibrated physics,
+This is illustrative choreography with real 3D geometry, not calibrated physics,
 shipping geography, live quotes or a model of price formation. No invented prices,
 returns or financial advice. Source facts: basis, logistics, delivery, liquidity,
 benchmarks and free English PDF/EPUB were checked against the official book page.
@@ -35,7 +36,7 @@ Owner-supplied AVIF was converted without repainting/cropping the cover.
 
 ## Checks and limitations
 
-[Scene proof](evidence/spot-market-scene-proof.json): no browser errors,22grain
+[Scene proof](evidence/spot-market-scene-proof.json): no browser errors,22 grain
 meshes during loading,5.106local units truck displacement, final book visible.
 After seeking8→18.5→8, state and screenshot pixels match in this environment.
 The standalone engine harness applied caption visibility itself; native Hyperframes
@@ -69,6 +70,9 @@ cloud music, new voice model or new analysis environment was used.
 Retained on Work in `spot-market-video-pilot-20261015`: final MP4,PNG/JPEG thumbnail,
 English YouTube title/description/tags,SRT,original source/audio, source page,
 owner-cover hash,pre-render criteria,checks,render logs and delivery manifest.
-Human listening,owner creative acceptance,publication URL and audience results
-are pending. The previous voice approval concerned Burgers, not this new film.
-Router code/qualification and release0.1.1 are unchanged.
+Owner feedback on this film: narration remains good; the 3D animation is a more
+interesting visual treatment. This is one owner assessment, not a blinded comparison
+or audience study. Automated QA files retain their pre-feedback status as history;
+outputs.json records the later feedback. The owner subsequently supplied the YouTube URL above; audience results remain
+unmeasured. The adapter is now selectable in the router with explicit limits; previous
+model evaluation remains historical. Release 0.1.1 is unchanged.

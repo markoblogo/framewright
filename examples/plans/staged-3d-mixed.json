@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "status": "proposed",
+  "qualification": "planning_only",
+  "execution": "not_started",
+  "music": null,
+  "minimum_evidence": "tested",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "duration_frames": 900,
+  "blocks": [
+    {
+      "id": "market",
+      "input": "object",
+      "style": "miniature-diorama",
+      "style_match": true,
+      "primary_tool": "three-scene",
+      "tools": [
+        "three-scene",
+        "kokoro",
+        "ffmpeg"
+      ],
+      "coverage": [
+        {
+          "feature": "staged-3d",
+          "tool": "three-scene",
+          "evidence": "tested",
+          "source": "spot-market-3d",
+          "note": "One authored low-poly grain/truck/port miniature; planned loading, delivery and quote-to-benchmark action."
+        },
+        {
+          "feature": "object-motion",
+          "tool": "three-scene",
+          "evidence": "tested",
+          "source": "spot-market-3d",
+          "note": "22 grain meshes, route-following truck and converging quote tickets; illustrative choreography, not calibrated physics."
+        },
+        {
+          "feature": "camera-travel",
+          "tool": "three-scene",
+          "evidence": "tested",
+          "source": "spot-market-3d",
+          "note": "Deterministic establishing, loading closeup, truck tracking and closing-book camera poses; not ray-traced optics."
+        },
+        {
+          "feature": "video-export",
+          "tool": "three-scene",
+          "evidence": "tested",
+          "source": "spot-market-3d",
+          "note": "Hyperframes owns H2641080p30/600frames/20s native MP4; final AAC mix checked. Other durations/content need their own QA."
+        },
+        {
+          "feature": "narration",
+          "tool": "kokoro",
+          "evidence": "tested",
+          "source": "kokoro",
+          "note": ""
+        },
+        {
+          "feature": "still-export",
+          "tool": "ffmpeg",
+          "evidence": "tested",
+          "source": "ffmpeg",
+          "note": ""
+        }
+      ],
+      "unmet": [],
+      "requires_feature_test": [],
+      "start_frame": 0,
+      "duration_frames": 600,
+      "overlap_frames": 0,
+      "known_limits": {
+        "three-scene": [
+          "Authored geometry and staging are required; a book cover is not an automatic 3D reconstruction.",
+          "Only the20s horizontal1920x1080/30fps pilot is tested; other canvases/fps downgrade feature evidence.",
+          "No calibrated physics, historical reconstruction, live market data, arbitrary imported models, native still, transparency, vertical export or cross-GPU reproducibility qualified.",
+          "Hyperframes owns rendering; no unrelated Anatomy/Flute/Remotion execution is implied. Kokoro and FFmpeg supply voice/audio/encoded stills as separate layers.",
+          "New multi-tool combinations require encoded integration QA. Technical QA and owner preference do not prove agent routing or audience performance."
+        ],
+        "kokoro": [
+          "Local FR/EN tested; other documented languages require a voice/pronunciation and timing trial. No voice cloning tested."
+        ],
+        "ffmpeg": [
+          "Stream copy is conditional on compatible containers/codecs; resizing, burning captions or frame-rate conversion requires re-encoding and final QA."
+        ]
+      },
+      "handoff": {
+        "canvas": {
+          "width": 1920,
+          "height": 1080,
+          "fps": 30
+        },
+        "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+        "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+      }
+    },
+    {
+      "id": "interface",
+      "input": "react-ui",
+      "style": "",
+      "style_match": false,
+      "primary_tool": "flute",
+      "tools": [
+        "flute"
+      ],
+      "coverage": [
+        {
+          "feature": "camera-travel",
+          "tool": "flute",
+          "evidence": "tested",
+          "source": "flute",
+          "note": ""
+        },
+        {
+          "feature": "video-export",
+          "tool": "flute",
+          "evidence": "tested",
+          "source": "flute",
+          "note": ""
+        }
+      ],
+      "unmet": [],
+      "requires_feature_test": [],
+      "start_frame": 600,
+      "duration_frames": 150,
+      "overlap_frames": 0,
+      "known_limits": {
+        "flute": [
+          "Browser-host CoqPi success does not establish packaged Electron or arbitrary React support. Keep real data and IPC outside demo. No Flute audio workflow was tested."
+        ]
+      },
+      "handoff": {
+        "canvas": {
+          "width": 1920,
+          "height": 1080,
+          "fps": 30
+        },
+        "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+        "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+      }
+    },
+    {
+      "id": "closing-title",
+      "input": "brand",
+      "style": "",
+      "style_match": false,
+      "primary_tool": "remotion",
+      "tools": [
+        "remotion"
+      ],
+      "coverage": [
+        {
+          "feature": "typography",
+          "tool": "remotion",
+          "evidence": "tested",
+          "source": "remotion",
+          "note": ""
+        },
+        {
+          "feature": "video-export",
+          "tool": "remotion",
+          "evidence": "tested",
+          "source": "remotion",
+          "note": ""
+        }
+      ],
+      "unmet": [],
+      "requires_feature_test": [],
+      "start_frame": 750,
+      "duration_frames": 150,
+      "overlap_frames": 0,
+      "known_limits": {
+        "remotion": [
+          "Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately."
+        ]
+      },
+      "handoff": {
+        "canvas": {
+          "width": 1920,
+          "height": 1080,
+          "fps": 30
+        },
+        "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+        "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+      }
+    }
+  ],
+  "assembly": {
+    "tool": "ffmpeg",
+    "evidence": "documented",
+    "qualification": "new multi-block combinations need an integration test; individual successes do not qualify a chain",
+    "steps": [
+      "normalise actual size/fps/colour/alpha and frame boundaries",
+      "assemble picture and a single master audio timeline",
+      "inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata",
+      "retain native exports, final hashes and per-block evidence"
+    ]
+  },
+  "notes": [
+    "No model evaluation, rendering or publication was performed by this planner.",
+    "Style matching does not qualify a new combination.",
+    "Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review."
+  ]
+}

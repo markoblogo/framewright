@@ -1,6 +1,6 @@
 # Tool capability matrix
 
-Generated from `tools.json`; reviewed 2026-10-14.
+Generated from `tools.json`; reviewed 2026-10-15.
 
 Scope: decision-relevant inventory, not an exhaustive API guarantee. Tested means
 the stated local experiment only. Documented needs installed-version verification;
@@ -275,6 +275,28 @@ Shared visual-language planning across shots; style labels are creative targets,
 | `post-production-plan` | documented | Plan transitions, audio/caption roles, export targets and QA. Does not execute editing or export. [Source](https://github.com/aicontentskills/ai-video-storyboard-skill/blob/93f8a6d6935858bc4acd7ff3bbea2411edf88caa/SKILL.md) |
 
 **Limits:** Not a renderer, image generator, audio generator or editor; never selected as a picture provider by plan.py. Upstream references directory is absent. Fixed five-second pacing, 1080p and synchronized-audio suffix are defaults that explicit user constraints override. Plan-only trials cannot qualify generated continuity, actual duration/sync, native export or provider costs.
+
+## Authored Three.js scene + Hyperframes
+
+**Role:** renderer. **Inputs:** object, book-art, brand.
+
+**Style directions:** miniature-diorama, low-poly, staged-3d.
+A miniature world with purposeful object action and camera travel. Owner found this pilot more interesting than the preceding basic montage; not a comparative quality benchmark.
+
+**Tested version/scope:** Three.js0.186.1 inside Hyperframes0.8.161; Spot-Market20s1080p30 pilot
+
+**Licence:** Original adapter and Three.js MIT; Hyperframes CLI Apache-2.0. Inspect GSAP, fonts, cover and model terms separately; no paid/cloud account used.
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `staged-3d` | tested | One authored low-poly grain/truck/port miniature; planned loading, delivery and quote-to-benchmark action. [Source](https://github.com/markoblogo/framewright/blob/7d8a326de3bd6e6bfb1fbd243155b6ad61b24952/experiments/2026-10-15/spot-market-3d-miniature.md) |
+| `object-3d` | tested | Actual Three.js geometry and uncropped cover texture on a volumetric book; no arbitrary mesh generation. [Source](https://github.com/markoblogo/framewright/blob/7d8a326de3bd6e6bfb1fbd243155b6ad61b24952/experiments/2026-10-15/spot-market-3d-miniature.md) |
+| `object-motion` | tested | 22 grain meshes, route-following truck and converging quote tickets; illustrative choreography, not calibrated physics. [Source](https://github.com/markoblogo/framewright/blob/7d8a326de3bd6e6bfb1fbd243155b6ad61b24952/experiments/2026-10-15/spot-market-3d-miniature.md) |
+| `camera-travel` | tested | Deterministic establishing, loading closeup, truck tracking and closing-book camera poses; not ray-traced optics. [Source](https://github.com/markoblogo/framewright/blob/7d8a326de3bd6e6bfb1fbd243155b6ad61b24952/experiments/2026-10-15/spot-market-3d-miniature.md) |
+| `scene-timeline` | tested | Absolute-time renderAt(t), paused GSAP timeline; repeated 8s seek matched state and pixels in the pilot environment. [Source](https://github.com/markoblogo/framewright/blob/7d8a326de3bd6e6bfb1fbd243155b6ad61b24952/experiments/2026-10-15/spot-market-3d-miniature.md) |
+| `video-export` | tested | Hyperframes owns H2641080p30/600frames/20s native MP4; final AAC mix checked. Other durations/content need their own QA. [Source](https://github.com/markoblogo/framewright/blob/7d8a326de3bd6e6bfb1fbd243155b6ad61b24952/experiments/2026-10-15/spot-market-3d-miniature.md) |
+
+**Limits:** Authored geometry and staging are required; a book cover is not an automatic 3D reconstruction. Only the20s horizontal1920x1080/30fps pilot is tested; other canvases/fps downgrade feature evidence. No calibrated physics, historical reconstruction, live market data, arbitrary imported models, native still, transparency, vertical export or cross-GPU reproducibility qualified. Hyperframes owns rendering; no unrelated Anatomy/Flute/Remotion execution is implied. Kokoro and FFmpeg supply voice/audio/encoded stills as separate layers. New multi-tool combinations require encoded integration QA. Technical QA and owner preference do not prove agent routing or audience performance.
 
 ## Source freshness
 

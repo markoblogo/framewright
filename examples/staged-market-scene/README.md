@@ -9,7 +9,7 @@ Use [the reference film](../../docs/first-video.md) for that purpose.
 
 The supplied HTML expects these operator-provided files under `assets/`:
 
-- `three.module.js` and `three.core.js`: Three.js0.186.1 ES modules (MIT).
+- `three.module.js` and `three.core.js`: Three.js 0.186.1 ES modules (MIT).
 - `gsap.min.js`: GSAP runtime used by Hyperframes; inspect its applicable terms.
 - `display.ttf` and `serif.ttf`: legally available display/serif fonts. The pilot
   used local macOS Arial Narrow Bold and Georgia; they are not redistributed.
@@ -17,7 +17,7 @@ The supplied HTML expects these operator-provided files under `assets/`:
   artwork; do not assume the repository licence grants rights to that artwork.
 - `final-mix.wav`:20s48kHz stereo mix with speech aligned to the retained timeline.
 
-Node22.14, Hyperframes0.8.161 and a working Chrome runtime were used. The pilot
+Node22.14, Hyperframes 0.8.161 and a working Chrome runtime were used. The pilot
 reused its existing Hyperframes installation. `package.json` pins CLI invocations;
 no clean-machine installation or arbitrary replacement assets were tested.
 
@@ -35,6 +35,7 @@ The paused20s GSAP timeline calls `renderAt(t)`; transforms derive from absolute
 time, without a realtime animation loop. Repeated8s seeks matched pixel-for-pixel
 in the same environment. Cross-GPU pixel identity is not claimed.
 
-The route family is `object-prototype`, but this adapter is authored Three.js,
-not Anatomy. Catalogue scope and router qualification remain unchanged. Real
+The route is `staged-3d-scene`, tool ID `three-scene`: authored Three.js,
+not Anatomy. Production scope remains the single pilot; new routing rules have
+deterministic regressions but no new full model qualification. Real
 geometry/action does not imply physically validated grain or logistics simulation.

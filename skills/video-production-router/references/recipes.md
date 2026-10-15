@@ -145,3 +145,37 @@ original scaffold had 10 high dev lint findings. The retained example now remove
 the braces chain through a scoped typescript-eslint update; full audit, lint and
 types passed with zero vulnerabilities. The pilot environment remains historical.
 No fair speed/quality comparison with Brag or Flute was conducted.
+
+## staged-3d-scene
+
+Choose for authored miniature/diorama scenes where objects act and the camera
+explains a process. Tool ID `three-scene` means Three.js geometry/action authored
+inside a Hyperframes composition; it does not mean Anatomy or a standalone engine.
+Do not choose solely because a product has a cover or contains a pictured object.
+
+Evidence: [Spot-Market 20s pilot](../../../experiments/2026-10-15/spot-market-3d-miniature.md)
+and [authored source/asset contract](../../../examples/staged-market-scene/README.md).
+Three.js 0.186.1 + Hyperframes 0.8.161,1920×1080/30fps;22 grain meshes, route-following
+truck, converging quote tickets, absolute-time camera and genuine-cover book reveal.
+Repeated seeking matched state/pixels in this environment. MP4/audio and extracted
+PNG checked. Owner liked the 3D animation and narration; audience response unknown.
+
+1. Plan actions, camera framing and reading holds. Obtain authorised assets and
+   build simple geometry; cover art is not an automatic reconstruction source.
+2. Follow Hyperframes instructions, verify WebGL/runtime/dependency licences and
+   required assets. Derive all transforms from absolute timeline time, register a
+   paused timeline and verify readiness before capture. No realtime-only loops.
+3. Seek forward/back through action and inspect loading, object paths, camera,
+   occlusion, title/CTA and closing hold. Deterministic animation is not physics.
+4. Add Kokoro speech/original or authorised audio separately, measure duration,
+   mix with FFmpeg or the selected master, then inspect the encoded MP4. Extracted
+   thumbnails get independent crop/readability/dimensions/hash checks.
+5. For mixed Flute/Remotion/other scenes, declare picture/colour/fps/frame boundaries,
+   one audio/assembly owner and planned integration QA. Such seams were not tested
+   by this single-scene pilot. Keep unavailable source/runtime checks blocked.
+
+Known limits: no calibrated physics, arbitrary model import, automatic historical
+reconstruction, live market values, vertical/alpha/native still or other fps/canvas
+qualified. The profile downgrades evidence outside 1080p30; do not call a proposed
+fallback tested. Preserve explicit tool choices, budget/account and publication
+boundaries. No installer, paid service or media upload is implied.

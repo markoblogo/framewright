@@ -67,6 +67,7 @@ Independent reproduction in a second environment remains [queued](docs/experimen
 | Camera and focus around genuine React UI | Flute → optional FFmpeg finishing | CoqPi browser-host export; Electron and snapshot CLI limits retained |
 | Authored typography, scene timing and native still | Remotion | One Framewright film; licence and browser workaround documented |
 | Detailed object visualisation | Anatomy → deterministic timeline adapter | Visual prototype only; combined sound QA failed |
+| Miniature world with object action and camera | Authored Three.js → Hyperframes; Kokoro/FFmpeg layers | Spot-Market 20s 1080p30 pilot; other formats/physics and mixed-renderer seams unqualified |
 
 [Recipes and evidence](skills/video-production-router/references/recipes.md) ·
 [Capabilities and styles](skills/video-production-router/references/tool-matrix.md) ·
@@ -104,10 +105,10 @@ No new engine is needed for the current follow-up work.
 
 ## Planning checks
 
-Current known-case regression: **70/70 rubric;62/70 complete evidence**; original first-exposure result:
+Historical source-bound regression: **70/70 rubric;62/70 complete evidence**; original first-exposure result:
 **13/18**. These apply to the recorded planning configuration, not rendering quality
 or general reliability. **[Evaluation details and retained failures](docs/router-evaluation.md)**.
-The three retained findings pass; eight CLI trace gaps keep qualification limited. Release 0.1.1 remains experimental; no new release.
+The3D route update has targeted deterministic checks; it does not inherit that model score. Release 0.1.1 remains experimental; no new release.
 
 ## Contribute and connect
 
@@ -121,4 +122,4 @@ Maintenance: [one offline check command and bounded model checks](docs/checking-
 [CLI follow-up](benchmarks/router/2026-10-15/cli-capture-recovery/README.md): 8/8 affected cases now have complete traces and pass the unchanged rubric; historical full-run counts remain unchanged.
 New [Burgers pilot](experiments/2026-10-15/burgers-cue-analysis.md): 15s narrated promo; librosa recovered3/3 authored accents and PySceneDetect4/4 exact cuts. [Analysis helper](examples/cue-analysis/README.md); independent listening remains pending.
 
-[Spot-Market visual pilot](experiments/2026-10-15/spot-market-3d-miniature.md): staged Three.js grain/truck/port action and camera inside Hyperframes,20s with English narration. [Authored source](examples/staged-market-scene/README.md); technical QA passed, owner creative review pending.
+[Spot-Market visual pilot](experiments/2026-10-15/spot-market-3d-miniature.md): staged Three.js grain/truck/port action and camera inside Hyperframes,20s with English narration. [Authored source](examples/staged-market-scene/README.md); technical QA passed; owner liked the 3D animation and narration. The scoped `three-scene` profile is now selectable; mixed-renderer combinations remain proposed.

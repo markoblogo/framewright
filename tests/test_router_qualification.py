@@ -210,3 +210,42 @@ class QualificationGateTest(unittest.TestCase):
 
     def test_v5_accepts_complete_matching_control_set(self):
         evidence.check_protocol_calibration(5, {'protocol_version': 5, 'counts': {'controls': 46}})
+
+    def mark_changed_source_unqualified(self):
+        source = self.root / 'skills/video-production-router/SKILL.md'
+        source.write_text(source.read_text() + '\nNew route.\n')
+        self.record['evaluated_status'] = self.record['status']
+        self.record['status'] = 'not_evaluated_current_source'
+        self.record['current_source_tree_sha256'] = {
+            str(p.relative_to(self.root)): hashlib.sha256(p.read_bytes()).hexdigest()
+            for p in (self.root / 'skills/video-production-router').rglob('*') if p.is_file()}
+        self.save()
+
+    def test_changed_source_retains_historical_evidence_without_promotion(self):
+        self.mark_changed_source_unqualified()
+        result = evidence.check_qualification(self.root, self.path)
+        self.assertEqual(result['status'], 'not_evaluated_current_source')
+        self.assertEqual(result['previous_evaluation']['cases'], 30)
+        self.assertEqual(result['current_model_evaluation'], 'not_performed')
+        self.assertNotIn('passed', result)
+
+    def test_unqualified_current_source_still_fails_on_drift(self):
+        self.mark_changed_source_unqualified()
+        (self.root / 'skills/video-production-router/SKILL.md').write_text('unrecorded change')
+        with self.assertRaisesRegex(ValueError, 'Unqualified current source drift'):
+            evidence.check_qualification(self.root, self.path)
+
+    def test_unqualified_record_cannot_relabel_itself_as_model_checked(self):
+        self.mark_changed_source_unqualified()
+        self.record['status'] = 'model_checked_planning_scope'
+        self.save()
+        with self.assertRaisesRegex(ValueError, 'Current source drift'):
+            evidence.check_qualification(self.root, self.path)
+
+    def test_unqualified_status_requires_an_actual_source_change(self):
+        self.record['evaluated_status'] = self.record['status']
+        self.record['status'] = 'not_evaluated_current_source'
+        self.record['current_source_tree_sha256'] = json.loads((self.packet / 'freeze.json').read_text())['source_tree_sha256']
+        self.save()
+        with self.assertRaisesRegex(ValueError, 'requires a source change'):
+            evidence.check_qualification(self.root, self.path)

@@ -39,3 +39,13 @@ Keep the method catalogue scoped to demonstrated capabilities. For each new chai
 record the gap, tool roles/versions, artifact handoff, transformations, final QA and
 retained output hashes in the experiment record. No new render or model evaluation
 is required merely to document these rules.
+
+## Authored 3D scenes in a mixed film
+
+`three-scene` wraps original Three.js staging in Hyperframes. The Spot-Market pilot
+checked that single-scene export plus Kokoro/FFmpeg audio and an extracted PNG.
+Flute UI shots, Remotion title cards, and a 3D process scene can be planned as
+separate blocks with FFmpeg assembly; the combination remains proposed until its
+encoded seams, colour/fps, audio sync/phase, readability and thumbnail are checked.
+Do not reuse Anatomy's prototype failure as evidence that this adapter failed,
+or this adapter's success as proof that Anatomy physics/audio now works.

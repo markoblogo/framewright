@@ -97,6 +97,15 @@ workaround visible; a successful pilot does not prove every rendering mode. If a
 native still is a requested deliverable, plan its own inspection alongside the
 encoded picture/audio rather than substituting an extracted or pre-existing frame.
 
+For a miniature world with purposeful object action and camera travel, consider
+`staged-3d-scene`: an authored Three.js scene inside Hyperframes, not Anatomy.
+Use `three-scene` with `staged-3d`, `object-3d`, `object-motion` or `camera-travel`
+requirements, or miniature/low-poly style. Do not infer it from a book cover alone.
+The tested 20s 1080p30 pilot has grain loading, truck delivery, quote convergence
+and a genuine-cover book reveal. Keep geometry/staging work explicit. Read its
+[recipe](references/recipes.md#staged-3d-scene); other formats, physics, new assets
+and cross-tool seams need their own checks. Kokoro and FFmpeg are separate layers.
+
 When the chosen tool misses a requested deliverable, compose the smallest useful
 chain rather than drop the deliverable or replace the whole workflow. Read
 [tool chains](references/tool-chains.md) for handoff checks and tested combinations.

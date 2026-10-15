@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "router_validation": "structural_only",
   "methods": [
     {
@@ -137,6 +137,29 @@
           "resolution": "Scoped typescript-eslint 8.71.2 override removes braces; separate install, full audit (0), ESLint and TypeScript passed. Runtime package versions unchanged.",
           "evidence": "experiments/2026-10-14/evidence/framewright-remotion.txt"
         }
+      ]
+    },
+    {
+      "id": "staged-3d-scene",
+      "status": "tested_for_scope",
+      "recipe": "recipes.md#staged-3d-scene",
+      "upstream": [
+        "https://github.com/mrdoob/three.js",
+        "https://github.com/heygen-com/hyperframes"
+      ],
+      "experiments": [
+        "spot-market-3d-miniature"
+      ],
+      "tested_scope": "Authored Three.js0.186.1 miniature geometry/action/camera in Hyperframes0.8.161;20s1080p30 English trailer with Kokoro/FFmpeg, encoded MP4 and extracted PNG QA. Owner liked the 3D animation and narration.",
+      "not_tested": [
+        "calibrated physics",
+        "automatic cover-to-3D reconstruction",
+        "arbitrary imported models",
+        "native still export",
+        "vertical/alpha or other canvas/fps",
+        "new mixed-renderer integration",
+        "cross-machine pixel identity",
+        "audience performance"
       ]
     }
   ]
