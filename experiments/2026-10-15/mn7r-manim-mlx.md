@@ -97,3 +97,10 @@ Apache-2.0;NLP dependencies retain their own terms. Package pins:
 Book art,packages,weights and rendered media are not distributed in Git.
 [Authored source](../../examples/manimgx-mn7r/README.md). New profiles qualify this
 adapter/English scope only;old router model scores remain historical. No release.
+
+## Later owner feedback / publication
+
+Owner found the result basic but good/acceptable,with its own infographic style.
+[Owner-supplied YouTube URL](https://youtu.be/TISOtCghMVY). No byte matching or
+audience measurement;no separate pronunciation assessment was supplied. Original
+at-run pending QA statuses remain historical.

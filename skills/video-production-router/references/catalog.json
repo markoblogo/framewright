@@ -110,9 +110,10 @@
         "https://github.com/remotion-dev/skills"
       ],
       "experiments": [
-        "framewright-remotion"
+        "framewright-remotion",
+        "agro-uk-paper-piper"
       ],
-      "tested_scope": "Remotion 4.0.535 authored React motion graphics, native instrumental audio and still export; Framewright 30-second horizontal 1080p30 pilot with explicit existing Chromium",
+      "tested_scope": "Remotion 4.0.535 authored React motion graphics, native instrumental audio and still export; Framewright 30-second horizontal 1080p30 pilot with explicit existing Chromium;24s Ukrainian paper-route animation plus Piper/Tetiana voice externally muxed with FFmpeg,encoded PNG thumbnail;owner listening pending",
       "not_tested": [
         "automatic app capture",
         "narration or captions in Remotion",
@@ -128,6 +129,12 @@
           "result": "failed",
           "detail": "Two native still attempts timed out after 25000ms connecting to the downloaded browser; explicit existing Chromium worked. A later still with the downloaded Chromium 157 succeeded after warm-up and --timeout=120000. Full film used existing Chromium 152. Root cause unproven.",
           "evidence": "experiments/2026-10-14/evidence/framewright-remotion.txt"
+        },
+        {
+          "capability": "Ukrainian paper-route render reproducibility",
+          "result": "partial",
+          "detail": "Downloaded browser25s connection failure;installed Chrome full render stalled near book reveal;prior Chromium152 with one worker completed. Separate Chrome native PNGs differed slightly;no bit-exact raster claim.",
+          "evidence": "experiments/2026-10-15/evidence/agro-uk-paper-piper.txt"
         }
       ],
       "resolved_limitations": [
@@ -180,7 +187,7 @@
         "Ukrainian or other MLX-Audio models/voices",
         "native still",
         "cross-machine reproduction",
-        "owner listening/creative acceptance",
+        "separate owner pronunciation assessment",
         "audience performance"
       ],
       "known_limitations": [

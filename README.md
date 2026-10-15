@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](docs/router-evaluation.md)
 [![Planning evidence: scoped](https://img.shields.io/badge/planning__evidence-scoped-526C73?style=flat-square)](docs/router-evaluation.md)
-[![11 recorded exports](https://img.shields.io/badge/recorded__exports-11-293F48?style=flat-square)](docs/experiments.md)
+[![12 recorded exports](https://img.shields.io/badge/recorded__exports-12-293F48?style=flat-square)](docs/experiments.md)
 
 **Framewright helps an AI agent choose and execute a suitable video pipeline,
 based on documented experiments.**
@@ -72,6 +72,13 @@ Independent reproduction in a second environment remains [queued](docs/experimen
 [Recipes and evidence](skills/video-production-router/references/recipes.md) ·
 [Capabilities and styles](skills/video-production-router/references/tool-matrix.md) ·
 [Per-layer selection](skills/video-production-router/references/selection.md)
+
+The latest [Ukrainian brokerage-book trial](experiments/2026-10-15/agro-uk-paper-piper.md)
+pairs a new local Piper/Tetiana voice with authored Remotion paper-cut motion:
+grains regroup into a supply route and contract,then the genuine book appears.
+Ukrainian pronunciation and artistic approval remain pending owner review.
+[Editable example](examples/remotion-agro-uk/README.md) ·
+[Structured brief](examples/briefs/agro-uk-paper.json).
 
 ## Use the agent skill
 

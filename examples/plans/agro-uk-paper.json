@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "status": "proposed",
+  "qualification": "planning_only",
+  "execution": "not_started",
+  "music": null,
+  "minimum_evidence": "tested",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "duration_frames": 720,
+  "blocks": [
+    {
+      "id": "paper-route",
+      "input": "book-art",
+      "style": "paper-cut",
+      "style_match": true,
+      "primary_tool": "remotion",
+      "tools": [
+        "remotion",
+        "piper"
+      ],
+      "coverage": [
+        {
+          "feature": "paper-cut-regroup",
+          "tool": "remotion",
+          "evidence": "tested",
+          "source": "remotion",
+          "note": "Authored90-kernel field\u2192route\u2192contract motion,paper truck/stamp/book reveal in24s1080p30 UK promo;not physics or automatic scene generation. Native pixel-repeat discrepancy retained."
+        },
+        {
+          "feature": "video-export",
+          "tool": "remotion",
+          "evidence": "tested",
+          "source": "remotion",
+          "note": ""
+        },
+        {
+          "feature": "narration",
+          "tool": "piper",
+          "evidence": "tested",
+          "source": "piper",
+          "note": "Five22.05kHz Ukrainian lines locally synthesized and integrated into24s1080p30 promo;encoded QA retained. Human pronunciation pending."
+        },
+        {
+          "feature": "still-export",
+          "tool": "remotion",
+          "evidence": "tested",
+          "source": "remotion",
+          "note": ""
+        }
+      ],
+      "unmet": [],
+      "requires_feature_test": [],
+      "start_frame": 0,
+      "duration_frames": 720,
+      "overlap_frames": 0,
+      "known_limits": {
+        "remotion": [
+          "Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately."
+        ],
+        "piper": [
+          "Only this exact voice/script evaluated;human pronunciation and artistic approval pending.",
+          "No EN/FR,singing,voice cloning or arbitrary Piper voices qualified.",
+          "ONNXRuntime emitted telemetry/cache-ID persistence warnings;no external voice API called;network traffic not independently audited.",
+          "One script/voice integration,not general language quality;native Remotion raster repeat differed slightly and full-export browser workarounds were required."
+        ]
+      },
+      "handoff": {
+        "canvas": {
+          "width": 1920,
+          "height": 1080,
+          "fps": 30
+        },
+        "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+        "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+      }
+    }
+  ],
+  "assembly": {
+    "tool": "ffmpeg",
+    "evidence": "documented",
+    "qualification": "new multi-block combinations need an integration test; individual successes do not qualify a chain",
+    "steps": [
+      "normalise actual size/fps/colour/alpha and frame boundaries",
+      "assemble picture and a single master audio timeline",
+      "inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata",
+      "retain native exports, final hashes and per-block evidence"
+    ]
+  },
+  "notes": [
+    "No model evaluation, rendering or publication was performed by this planner.",
+    "Style matching does not qualify a new combination.",
+    "Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review."
+  ]
+}

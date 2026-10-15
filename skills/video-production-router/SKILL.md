@@ -137,3 +137,9 @@ propose revision/removal, and obtain acceptance before dropping a requested effe
 
 Routing behaviour scenarios are in [scenarios.json](references/scenarios.json).
 They are specifications, not evidence of an independent model evaluation.
+
+For Ukrainian book promos,consider `preferred_voice: piper` only within the exact
+Tetiana voice scope. An authored `paper-cut-regroup` Remotion scene can pair with
+it;other languages/voices,singing,physics and automatic asset generation are not
+qualified. Preserve explicit voice choices instead of falling back to Kokoro EN.
+See the Ukrainian paper-route variation in [recipes](references/recipes.md).

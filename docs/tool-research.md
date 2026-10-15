@@ -63,3 +63,13 @@ brief/assets/script/format and stems so each component can be assessed separatel
 Music-video and animation-series research follows those promos. See the phase/pair
 [queue](experiment-queue.md), including the proposed next-release checkpoint after
 one agreed production experiment and its documentation. No release now.
+
+## Ukrainian voice / paper-route follow-up
+
+[Piper/Tetiana](../experiments/2026-10-15/agro-uk-paper-piper.md) is the new exact
+Ukrainian TTS candidate,paired with reused Remotion and original paper-cut motion.
+EngineGPL3/modelcardApache2.0 are separate;human pronunciation is not inferred
+from a valid WAV. MMS Ukrainian remains rights-blocked for this promotional brief
+under its noncommercial model terms,not technically failed. No repeated unchanged
+Kokoro language trial. Creative technique and renderer novelty are recorded
+separately;an SVG animation is not a physical simulation.
