@@ -505,9 +505,9 @@
       "review_basis": "Exact engineAPI,voice card/config/hash;bounded local synthesis plus encoded24s integration QA",
       "upstream_revision": "piper-tts1.4.2;model42be6e3f72a7c6042271236b94e48edffd1f0c63",
       "disposition": "tested_scoped",
-      "scope_and_findings": "Local22.05kHz Ukrainian female voice,five lines,total21.4901s speech integrated without retiming. Owner pronunciation pending. Runtime~128MB,weights114.2MB;no clean-machine or speed comparison. ONNX telemetry/cache warnings retained.",
+      "scope_and_findings": "Local22.05kHz Ukrainian female voice,five lines,total21.4901s speech integrated without retiming. Owner pronunciation pending. Runtime~128MB,weights114.2MB;no clean-machine or speed comparison. ONNX telemetry/cache warnings retained. Later owner listening:weak Ukrainian,unnecessary pauses,incorrect stress/intonation. Visual style accepted as simple/distinct;existing clip stays unchanged.",
       "licence_note": "EngineGPL3;modelcardApache2.0;114204024-byte weights SHA1206d8447b99632badeb63d6132241f76cf551874e5254eb8836db36aed7c85c;not redistributed.",
-      "next_trial_or_retest_condition": "New exact voice/language/pronunciation requirement or changed runtime/model;do not repeat unchanged setup.",
+      "next_trial_or_retest_condition": "Next Ukrainian narration should use a different tool after model/rights/resource preflight. Do not repeat this unchanged Tetiana version;retest only if a concrete model/runtime/prosody change addresses the retained defects.",
       "evidence": [
         "experiments/2026-10-15/agro-uk-paper-piper.md"
       ]

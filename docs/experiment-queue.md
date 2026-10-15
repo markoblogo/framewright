@@ -9,7 +9,7 @@ each actual new-tool experiment. [Research](tool-research.md) ·
 ## Current owner-selected series
 
 [Five-book MN7R promo plan](experiments/agro-series-plan.md):Spot-Market EN completed;
-MN7R Product Guide EN has a delivered ManimGX/MLX-Audio trial,owner accepted its basic infographic style;[YouTube](https://youtu.be/TISOtCghMVY). Ukrainian brokerage now has a delivered24s Piper/Tetiana + Remotion paper-route trial;owner pronunciation/creative review pending,exact-raster repeat gate not met. The other Ukrainian book,next music-generator test,landing and compilation remain queued. Reuse stems/picture masters;no future jobs start automatically.
+MN7R Product Guide EN has a delivered ManimGX/MLX-Audio trial,owner accepted its basic infographic style;[YouTube](https://youtu.be/TISOtCghMVY). Ukrainian brokerage now has a delivered24s Piper/Tetiana + Remotion paper-route trial;owner accepted simple distinct picture,but Ukrainian voice weak;next UK voice should use another tool;exact-raster repeat gate not met. The other Ukrainian book,next music-generator test,landing and compilation remain queued. Reuse stems/picture masters;no future jobs start automatically.
 
 ## Phase 1 — useful book and service promos
 
@@ -74,7 +74,7 @@ No unattended paid pipeline, voice cloning or historical/physical accuracy promi
 
 ## Completed and retained
 
-- [Ukrainian brokerage](../experiments/2026-10-15/agro-uk-paper-piper.md):new exact Piper voice,authored paper-cut regrouping in reused Remotion;24s encoded QA passed,browser/raster limits retained. Voice pronunciation/creative review and YouTube pending.
+- [Ukrainian brokerage](../experiments/2026-10-15/agro-uk-paper-piper.md):new exact Piper voice,authored paper-cut regrouping in reused Remotion;24s encoded QA passed,browser/raster limits retained. Owner accepted simple distinct visuals;voice weak(pauses,stress,intonation). No remake;different tool for next UK narration. YouTube pending.
 
 - [Burgers](../experiments/2026-10-15/burgers-cue-analysis.md): 15s EN promo,
   librosa 3/3 authored accents and PySceneDetect 4/4 exact cuts. Independent listening

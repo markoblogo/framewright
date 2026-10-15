@@ -138,8 +138,13 @@ propose revision/removal, and obtain acceptance before dropping a requested effe
 Routing behaviour scenarios are in [scenarios.json](references/scenarios.json).
 They are specifications, not evidence of an independent model evaluation.
 
-For Ukrainian book promos,consider `preferred_voice: piper` only within the exact
-Tetiana voice scope. An authored `paper-cut-regroup` Remotion scene can pair with
-it;other languages/voices,singing,physics and automatic asset generation are not
-qualified. Preserve explicit voice choices instead of falling back to Kokoro EN.
+For the next Ukrainian narration,choose a different tool after exact model/rights/
+resource review. Owner found the tested Piper/Tetiana version weak:unnecessary
+pauses,wrong stress and intonation. Retain its technical evidence,but do not
+recommend it as the default Ukrainian voice or silently reuse it. An explicit
+request for this exact voice should surface the retained quality warning.
+The authored `paper-cut-regroup` picture treatment remains reusable independently
+of this voice. Other voices/languages and singing need their own review;the
+picture test does not qualify physics or automatic asset generation. Preserve
+explicit voice choices instead of falling back to Kokoro EN.
 See the Ukrainian paper-route variation in [recipes](references/recipes.md).
