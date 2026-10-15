@@ -1,0 +1,20 @@
+{
+  "scope": "targeted CLI infrastructure recovery on eight known cases, not a fresh70-case run",
+  "cases": 8,
+  "model_rubric_passed": 8,
+  "complete_captures": 8,
+  "completed_commands": 34,
+  "actor_calls": 8,
+  "grader_calls": 2,
+  "automatic_retries": 0,
+  "median_actor_seconds": 45.025000000000006,
+  "actor_usage": {
+    "input_tokens": 722623,
+    "cached_input_tokens": 504960,
+    "output_tokens": 7292
+  },
+  "billing_cost": "NOT_AVAILABLE",
+  "qualification_promoted": false,
+  "media_rendered": false,
+  "release_created": false
+}

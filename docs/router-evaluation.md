@@ -7,6 +7,17 @@
 [Three-case diagnosis](grading-v3.md).
 No rendering, real provider/account action, media publication or release occurred.
 
+## CLI capture follow-up — 2026-10-15
+
+[Eight-case targeted recovery](../benchmarks/router/2026-10-15/cli-capture-recovery/README.md):
+**8/8 complete traces, 34/34 commands terminal, 8/8 rubric passes**, on unchanged
+requests/source/criteria. Login-shell startup stalled in a local probe; the harness
+now uses non-login shells and rejects incomplete capture before grading. All old
+attempts remain. This follow-up is not a new full-run70/70 or an unseen set, and
+it does not replace the historical qualification record. The46 prior calibration
+controls are reused unchanged, not freshly graded. Eight actors/two grader calls,
+no retries, render or release. [Proportionate checking policy](checking-policy.md).
+
 ## Three remaining findings — protocol v5, 2026-10-15
 
 The [complete v5 packet](../benchmarks/router/2026-10-15/qa-v5-complete/README.md)

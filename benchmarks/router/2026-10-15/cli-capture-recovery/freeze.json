@@ -1,0 +1,51 @@
+{
+  "protocol_version": 5,
+  "evaluated_source_commit": "7dc276e536e2b598afff90262b362c19075f146b",
+  "model": "gpt-6.1-sol",
+  "effort": "medium",
+  "runtime": "codex-cli 0.162.0-alpha.17.2",
+  "scope": "Targeted CLI-capture recovery on eight known incomplete cases; identical actor prompts and decision source; no general qualification or first-exposure claim.",
+  "case_sha256": "ec7453e3fe322c8225a0c7dc4fdb1bd2f99a2cf4911812416a96afd19551a287",
+  "protocol_sha256": "09ab3c3fb53f7af79a0d2e1db2006ec41afc2ed853786d2c1cad8533e03cbdaa",
+  "source_tree_sha256": {
+    "skills/video-production-router/SKILL.md": "6416f4b82542c23198d372be43e64a5f9c98abe4528c0b6ff32e345b6ead5671",
+    "skills/video-production-router/references/catalog.json": "dab479a6b1cbf2c4c870e0e10f1c85ceb8fafcab548043c1c914a3c7abc3bc8b",
+    "skills/video-production-router/references/handoff.md": "22f465d57023f8b0aa7e283262446ad36a491e590ade1582e540a2c72f6e2fc2",
+    "skills/video-production-router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
+    "skills/video-production-router/references/recipes.md": "d20262337ff0fdaa66d0090bccff09959d762420ce54defbac04e5525593c18f",
+    "skills/video-production-router/references/scenarios.json": "45d9a2ae1de83716c324a9e946b68a6416093b659ed24b91104dab7bc7e5de75",
+    "skills/video-production-router/references/selection.md": "b32afa85eb357cd9f999e7dc9dfbfa7f4e99c28bf13bbf270021c26bb6e082f4",
+    "skills/video-production-router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
+    "skills/video-production-router/references/tool-chains.md": "572cd9dc398923ac5102dabba37b6dd1175a47df64384f8bdcd500cbeee140e3",
+    "skills/video-production-router/references/tool-matrix.md": "0d92b874454f3669c2554fa7f39c500ab8dfd7baa470a06b3024ce3f0b494e49",
+    "skills/video-production-router/references/tools.json": "b17584569bf362bab509778ffff17ae4bf58b5d98903f5cbbfe7aa8fa602beb0",
+    "skills/video-production-router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
+    "skills/video-production-router/scripts/plan.py": "c11caecf955c853b7336b15bfd37ecec295eb125d566cc306d95e8526d6d136d"
+  },
+  "prompt_sha256": {
+    "explicit-paid-no-authority": "f6588e290836e882466317450dcdee304fd49aacd3e840d5e2b4c5ddb7497e69",
+    "unverified-qa-note": "709c9b177c8e4428d972f673d7debc53e2b0b0b0de70bbe9798c1cab6fcb4ec3",
+    "execution-request-handoff": "8043714fe049b8af357ef4d1d2cb49427d4a4976e3e2ef5a1e576503653b7c54",
+    "screenshots-explicit-flute": "7b3e654c558bf85ec4e63d9c22bfe18eed515875c4c344f536a52caf84bb032a",
+    "three-style-blocks": "85419df02221c0bfbd1814db1ac34fd259ef748c90db623a0e7ee9278da2a60f",
+    "locked-score-frames": "08edcfe3c7ddbe357993fdf78d5da0ad1cbc8a721d8f1e63abd23e262836cf5d",
+    "commercial-free-song": "bb786e733403ca81ec2eb786402a0f46ae83f38617cc0dc23fed673544b6619d",
+    "storyboard-single-shot-skip": "332381f06bd0ba46a1c1f5c047ce00e3f7a93327afb17e61159130e6b9497ea7"
+  },
+  "runner_sha256": "ce58e72f98817b9d31cd9773f9ce1d9de418b5318b583fbc3189f70427d8ae46",
+  "parallel_actors": 8,
+  "parallel_graders": 2,
+  "host_context": "Dedicated CODEX_HOME: no user config/AGENTS/user skills; existing auth referenced without copying values; discovered host skill paths disabled via skills.config. Smoke sees only four bundled system skills (imagegen, openai-docs, skill-creator, skill-installer), no user skill catalog.",
+  "prelaunch_review": "Budget coverage clarified before any actors: zero and EUR10/12/20/25/40/150; actor criteria remain frozen from this point. Initial draft was not evaluated.",
+  "baseline": "benchmarks/router/2026-10-15/qa-v4-complete",
+  "parent_commit": "cce52a8ba462abe1155bc1a3a4b09e3cadc4f988",
+  "calibration_controls": 46,
+  "stopping_policy": "Retain every first answer and grade; disclose any remaining gaps. A technical process failure with no answer may be retried only with its failed trace archived.",
+  "parent_packet": "benchmarks/router/2026-10-15/qa-v5-complete",
+  "collector_source_sha256": {
+    "scripts/cli_capture.py": "5d50ea9e714cc3a5f64d38b906941ba9cb04b26b8215ec3a61ca2f5a95112da2",
+    "scripts/run_router_actors.py": "ecff9f4b229fe19e696cdaa517bf239de88b0a5a4d080b19e5de4cd2ee8f3a06",
+    "scripts/prepare_router_grading.py": "5005413d2d8feba5389cb0559401f910e5ca32c6996772cbf6c6d03c61159e25"
+  },
+  "calibration_reuse": "Same frozen protocol, model, effort, grading configuration and decision corpus as qa-v5-complete. Prior46 controls reused unchanged, not freshly run."
+}

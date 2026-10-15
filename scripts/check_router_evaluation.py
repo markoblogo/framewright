@@ -7,6 +7,10 @@ import json
 import re
 from pathlib import Path, PurePosixPath
 import zipfile
+try:
+    from cli_capture import assess, parse_events
+except ModuleNotFoundError:
+    from scripts.cli_capture import assess, parse_events
 
 
 def require(condition, message):
@@ -121,6 +125,9 @@ def check_packet(root):
     results = indexed(json.loads((root / 'results.json').read_text()), 'results')
     grades = indexed(json.loads((root / 'grades.json').read_text())['cases'], 'grades')
     require(cases and cases.keys() == results.keys() == grades.keys(), 'Incomplete case set')
+    capture_streams = manifest.get('capture_streams')
+    if capture_streams is not None:
+        require(isinstance(capture_streams, dict) and capture_streams.keys() == cases.keys(), 'Capture stream case set differs')
     passed = 0
     for identity, case in cases.items():
         result, grade = results[identity], grades[identity]
@@ -129,6 +136,18 @@ def check_packet(root):
             require(modes.keys() == set(case['required']) and all(v in {'plan', 'observed', 'decision'} for v in modes.values()), f'{identity}: missing typed criteria')
         require(isinstance(result.get('answer'), str) and result['answer'].strip(), f'{identity}: missing answer')
         execution = result['execution']
+        if capture_streams is not None:
+            filename = capture_streams[identity]
+            require(isinstance(filename, str) and filename in manifest['files'], f'{identity}: missing hashed raw stream')
+            raw = (root / filename).read_text()
+            capture = assess(raw, execution.get('exit_code'), bool(result['answer'].strip()), execution.get('workspace_unchanged') is True)
+            require(capture['ready_for_grading'], f'{identity}: incomplete raw CLI capture')
+            events, _ = parse_events(raw)
+            commands = [{'type': e['type'], 'item': {k: v for k, v in e['item'].items() if k != 'aggregated_output'}}
+                        for e in events if e.get('item', {}).get('type') == 'command_execution']
+            require(result.get('trace') == commands, f'{identity}: trace differs from raw capture')
+            answers = [e['item'].get('text', '') for e in events if e.get('item', {}).get('type') == 'agent_message']
+            require(answers and answers[-1].strip() == result['answer'].strip(), f'{identity}: answer differs from raw capture')
         ok = execution.get('exit_code') == 0 and execution.get('turn_completed') is True and execution.get('workspace_unchanged') is True
         for group in ('required', 'forbidden'):
             rows = grade.get(group, [])

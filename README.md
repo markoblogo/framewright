@@ -116,3 +116,7 @@ The three retained findings pass; eight CLI trace gaps keep qualification limite
 
 The repository's MIT licence covers its original materials; upstream software,
 models, music and artwork have their own terms. Large media stay outside Git.
+
+Maintenance: [one offline check command and bounded model checks](docs/checking-policy.md).
+[CLI follow-up](benchmarks/router/2026-10-15/cli-capture-recovery/README.md): 8/8 affected cases now have complete traces and pass the unchanged rubric; historical full-run counts remain unchanged.
+Next agreed subject: [Burgers, Lipstick & Underwear — narrated cue-analysis plan](docs/experiments/burgers-cue-analysis-plan.md), not yet rendered.

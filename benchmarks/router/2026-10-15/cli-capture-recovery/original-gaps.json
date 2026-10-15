@@ -1,0 +1,66 @@
+[
+  {
+    "id": "commercial-free-song",
+    "missing": {
+      "item_2": "/bin/zsh -lc 'rg --files router product.md'"
+    },
+    "malformed_lines": [],
+    "turn_completed": true
+  },
+  {
+    "id": "execution-request-handoff",
+    "missing": {
+      "item_2": "/bin/zsh -lc 'pwd; rg --files router; cat product.md'"
+    },
+    "malformed_lines": [],
+    "turn_completed": true
+  },
+  {
+    "id": "explicit-paid-no-authority",
+    "missing": {
+      "item_6": "/bin/zsh -lc \"sed -n '/\"'^## authored-react-film/,/''^## /p'\"' router/references/recipes.md\""
+    },
+    "malformed_lines": [],
+    "turn_completed": true
+  },
+  {
+    "id": "locked-score-frames",
+    "missing": {
+      "item_2": "/bin/zsh -lc 'pwd && rg --files router && cat product.md'"
+    },
+    "malformed_lines": [],
+    "turn_completed": true
+  },
+  {
+    "id": "screenshots-explicit-flute",
+    "missing": {
+      "item_2": "/bin/zsh -lc 'rg --files router product.md'"
+    },
+    "malformed_lines": [],
+    "turn_completed": true
+  },
+  {
+    "id": "storyboard-single-shot-skip",
+    "missing": {
+      "item_2": "/bin/zsh -lc 'cat router/SKILL.md; cat product.md'"
+    },
+    "malformed_lines": [],
+    "turn_completed": true
+  },
+  {
+    "id": "three-style-blocks",
+    "missing": {
+      "item_2": "/bin/zsh -lc 'pwd && rg --files router && cat product.md'"
+    },
+    "malformed_lines": [],
+    "turn_completed": true
+  },
+  {
+    "id": "unverified-qa-note",
+    "missing": {
+      "item_2": "/bin/zsh -lc 'pwd; rg --files router; cat product.md notes.md'"
+    },
+    "malformed_lines": [],
+    "turn_completed": true
+  }
+]

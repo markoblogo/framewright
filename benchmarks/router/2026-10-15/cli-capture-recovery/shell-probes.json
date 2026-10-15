@@ -1,0 +1,63 @@
+{
+  "pwd_nonlogin_seconds": 0.1,
+  "pwd_login_timeout_seconds": 8,
+  "exact_missing_reads_nonlogin": [
+    {
+      "id": "commercial-free-song",
+      "command_id": "item_2",
+      "nonlogin_exit": 0,
+      "seconds": 0.137,
+      "stderr_bytes": 0
+    },
+    {
+      "id": "execution-request-handoff",
+      "command_id": "item_2",
+      "nonlogin_exit": 0,
+      "seconds": 0.078,
+      "stderr_bytes": 0
+    },
+    {
+      "id": "explicit-paid-no-authority",
+      "command_id": "item_6",
+      "nonlogin_exit": 0,
+      "seconds": 0.066,
+      "stderr_bytes": 0
+    },
+    {
+      "id": "locked-score-frames",
+      "command_id": "item_2",
+      "nonlogin_exit": 0,
+      "seconds": 0.056,
+      "stderr_bytes": 0
+    },
+    {
+      "id": "screenshots-explicit-flute",
+      "command_id": "item_2",
+      "nonlogin_exit": 0,
+      "seconds": 0.048,
+      "stderr_bytes": 0
+    },
+    {
+      "id": "storyboard-single-shot-skip",
+      "command_id": "item_2",
+      "nonlogin_exit": 0,
+      "seconds": 0.068,
+      "stderr_bytes": 0
+    },
+    {
+      "id": "three-style-blocks",
+      "command_id": "item_2",
+      "nonlogin_exit": 0,
+      "seconds": 0.079,
+      "stderr_bytes": 0
+    },
+    {
+      "id": "unverified-qa-note",
+      "command_id": "item_2",
+      "nonlogin_exit": 0,
+      "seconds": 0.113,
+      "stderr_bytes": 0
+    }
+  ],
+  "scope": "Operator diagnostic replay of commands, not completion evidence for original actors."
+}

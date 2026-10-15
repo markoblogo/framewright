@@ -4,6 +4,10 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+try:
+    from cli_capture import assess
+except ModuleNotFoundError:
+    from scripts.cli_capture import assess
 
 
 def require(condition, message):
@@ -35,7 +39,10 @@ def records(root):
         prompt = (root / (identity + '-prompt.txt')).read_text()
         require(hashlib.sha256(prompt.encode()).hexdigest() == frozen['prompt_sha256'][identity], f'{identity}: actor prompt drift')
         fixtures = {name: (workspace / name).read_text() for name in before if not name.startswith('router/')}
-        events = [json.loads(line) for line in (evidence / 'events.jsonl').read_text().splitlines() if line.strip()]
+        raw = (evidence / 'events.jsonl').read_text()
+        capture = assess(raw, execution.get('exit_code'), (evidence / 'answer.txt').is_file() and bool((evidence / 'answer.txt').read_text().strip()), execution.get('workspace_unchanged') is True)
+        require(capture['ready_for_grading'], f'{identity}: incomplete CLI capture; retain infrastructure failure before grading: {capture}')
+        events = [json.loads(line) for line in raw.splitlines() if line.strip()]
         commands = [{'event': e['type'], 'item': {k: v for k, v in e['item'].items() if k != 'aggregated_output'}} for e in events if e.get('item', {}).get('type') == 'command_execution']
         other = [e for e in events if e.get('item', {}).get('type') not in {None, 'command_execution', 'agent_message', 'reasoning'}]
         result[identity] = {'case': case, 'actor_prompt': prompt, 'input_inventory': sorted(before), 'fixtures': fixtures,
