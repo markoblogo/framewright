@@ -1,0 +1,113 @@
+{
+  "checks": [
+    "MEDIA_CHECKS_PASS",
+    "TRADING_TABLE_SCOPE",
+    "ACE_STEP_INCOMPLETE"
+  ],
+  "final": {
+    "video": {
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "frames": 900,
+      "seconds": 30.0
+    },
+    "audio": {
+      "codec": "aac",
+      "sample_rate": 48000,
+      "channels": 2,
+      "seconds": 30.0,
+      "integrated_lufs": -16.02,
+      "true_peak_dbtp": -2.0,
+      "reference_mix_samples": 1440000,
+      "decoded_samples_including_codec_padding": 1440768,
+      "common_samples": 1440000,
+      "correlation_with_reference_mix": 0.9998488302913462,
+      "lag_samples": 0,
+      "channel_correlation": 0.9999902819704625,
+      "mono_rms_vs_mean_channel_rms": 0.9999975706725281
+    },
+    "full_decode_errors_bytes": 0,
+    "visual_inspection": "16 encoded scene/action samples,18 consecutive cut frames and full-size deal frame inspected;headlines clear after camera correction,shared book movement continues through22.2s hard background cut. Native opaque1280x720 and reduced320x180 thumbnail inspected.",
+    "human_listening": "pending_owner_review",
+    "creative_acceptance": "pending_owner_review",
+    "publication_url": null,
+    "technical_checks_passed": true,
+    "native_final_video_stream_sha256": "93a78f6c3dec18d9fc71a458d7c549c186a22463a6f80908a3ea08c45b1d1d28",
+    "soundtrack": "English narration only;no music or effects;owner selected after ACE-Step resource stop"
+  },
+  "thumbnail": {
+    "width": 1280,
+    "height": 720,
+    "decoded_rgba_bytes": 3686400,
+    "fully_opaque": true,
+    "full_and_320x180_inspected": true,
+    "finding": "Title,book and CTA visible;no transparent lower region after explicit closing canvas dimensions."
+  },
+  "music_cpu_attempt": {
+    "state": "disk_free_below_5GiB",
+    "exit_code": -15,
+    "elapsed_seconds": 350.22,
+    "peak_rss_bytes": 2159722496,
+    "limits": {
+      "threads": 2,
+      "rss_bytes": 8589934592,
+      "seconds": 600,
+      "minimum_internal_free_bytes": 5368709120
+    },
+    "gpu_backends": "disabled"
+  },
+  "model_integrity_failure": {
+    "actual_sha256": "0653655b1efe4ba2f9eb75f52a1babd13ccbec900ecf128ee3176008073c236d",
+    "expected_sha256": "3f6e0797fad420a39bd33979eb6e840e30989e34a3794e843d23b60ec6e422d7",
+    "bytes": 4787825604
+  },
+  "model_retry": {
+    "bytes": 4787825604,
+    "sha256": "3f6e0797fad420a39bd33979eb6e840e30989e34a3794e843d23b60ec6e422d7",
+    "expected_sha256": "3f6e0797fad420a39bd33979eb6e840e30989e34a3794e843d23b60ec6e422d7",
+    "seconds": 221.94
+  },
+  "runtime_code_sync": [
+    {
+      "file": "acestep-v15-turbo/configuration_acestep_v15.py",
+      "downloaded_sha256": "b89870c5c7a7ce060eb0bcdbb5ffc86b0b1a324ca325a26be552ea1b42496dc5",
+      "runtime_sha256": "5f15aa79fe793bba3c00b6992dd193a269954950603d5031ecd7703b0fa69da1",
+      "source_revision": "ca1e85fe9430179831e6bc6be790c332190a3866"
+    },
+    {
+      "file": "acestep-v15-turbo/modeling_acestep_v15_turbo.py",
+      "downloaded_sha256": "c1ab0dd547124fee7ada449b2b86eae8201dc7d15889932643bbb67e3c982444",
+      "runtime_sha256": "71b22e01b490bd9e149e4c0c5da2e1f512126f3ab3316e0ae97779af84d19512",
+      "source_revision": "ca1e85fe9430179831e6bc6be790c332190a3866"
+    }
+  ],
+  "system_interruption": {
+    "owner_report": "Emergency computer restart during earlier work",
+    "system_evidence": "watchdog timeout:no checkins from watchdogd in90seconds;reset counter1",
+    "reported_panic_time": "2026-10-15T21:55:45+02:00",
+    "last_retained_mps_stage": "Diffusion completed;VAE load/decode began;no final WAV retained",
+    "causality": "Not established;system report does not identify ACE-Step as cause",
+    "gpu_replay": "Stopped after owner reported reboot",
+    "owner_authorized_next": "CPU-only bounded probe,8GiB processRSS,600seconds,10second requested audio,PyTorch2threads;noMPS/noMLX",
+    "private_report": "Raw system report not redistributed"
+  },
+  "publication_url": null,
+  "human_listening": "pending_owner_review",
+  "creative_acceptance": "pending_owner_review",
+  "owner_decision": "English narration only;ACE-Step music not included",
+  "authoring_sources_sha256": {
+    "src/index.tsx": "7017f46e29090efbb6fa5dc1cdfd5a21ce4e8cd2715b723fe48505441849047f",
+    "package.json": "74e0d78fa715908e7c76c59c3d37293bae944a1da67842bf872452fe050b0d9c",
+    "remotion.config.ts": "fefb2d560042212945f836e40d1cec82f228f9a9c1bf40867e8897cb63c2da76"
+  },
+  "music_environment": {
+    "installed_snapshot": "agri-brokerage-music-installed-requirements.lock",
+    "effective_pillow_overlay": "12.0.0;installed snapshot contains12.3.0;no clean install qualification",
+    "torch": "2.10.0",
+    "cpu_dit_dtype": "bfloat16",
+    "cpu_text_dtype": "bfloat16",
+    "cpu_vae_dtype": "float32"
+  }
+}

@@ -37,7 +37,7 @@
     "bytes": 13794522,
     "id": "spot-market-3d-miniature",
     "route": "staged-3d-scene",
-    "actual_pipeline": "Original authored Three.js scene → Hyperframes; Kokoro narration + FFmpeg mix. Anatomy not used.",
+    "actual_pipeline": "Original authored Three.js scene \u2192 Hyperframes; Kokoro narration + FFmpeg mix. Anatomy not used.",
     "evidence": "experiments/2026-10-15/evidence/spot-market-3d-miniature.txt",
     "qa_scope": "20s encoded 3D miniature, deterministic seek, motion/camera samples, complete decode/audio metrics and extracted PNG thumbnail; creative acceptance and human listening pending",
     "thumbnail": {
@@ -210,5 +210,38 @@
       "limits": "One owner assessment of one script/voice;not blind testing or a claim about all English voices,long-form narration or other languages."
     },
     "publication_verification": "user_provided_url"
+  },
+  {
+    "local_output": "agri-brokerage-en-video-pilot-20261015/Agri-Brokerage-1080p.mp4",
+    "bytes": 5375628,
+    "sha256": "2987827fcdcb6d56945d03d11d9bf8f01509f8ca43a88d1dc841a27a13e42889",
+    "id": "agri-brokerage-trading-table",
+    "route": "authored-react-film",
+    "native_export": {
+      "local_output": "agri-brokerage-en-video-pilot-20261015/Agri-Brokerage-Picture-1080p.mp4",
+      "bytes": 4887350,
+      "sha256": "c51b6110a35f9dc2c94449bc6ddc2fd144401c6f3ba499ed8c7b813218b95255"
+    },
+    "thumbnail": {
+      "local_output": "agri-brokerage-en-video-pilot-20261015/Agri-Brokerage-YouTube.png",
+      "bytes": 446210,
+      "sha256": "d5b626c6e517b09abe0c071d66877324946f47d90c747bce9c71a5323b4d4959",
+      "format": "png",
+      "width": 1280,
+      "height": 720
+    },
+    "evidence": "experiments/2026-10-15/evidence/agri-brokerage-ace-step.txt",
+    "qa_scope": "30s1080p30 authored Three.js/Remotion trading table;Supertonic3F1 EN narration-only assembly;900frames,full decode,sync/loudness/peak/mono,16scene samples/18cut frames,native opaque1280x720PNG full/reduced inspection;native/final video streams match.",
+    "evidence_checks": [
+      "MEDIA_CHECKS_PASS",
+      "TRADING_TABLE_SCOPE",
+      "ACE_STEP_INCOMPLETE"
+    ],
+    "human_listening": "pending_owner_review_of_this_script_and_final_film",
+    "creative_acceptance": "pending_owner_review",
+    "publication_url": null,
+    "audience_metrics": "not_measured",
+    "owner_decision": "Final English narration only after ACE-Step CPU resource guard;no music/effects included",
+    "music_trial_status": "incomplete_resource_guard;not a qualified music capability"
   }
 ]

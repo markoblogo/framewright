@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](docs/router-evaluation.md)
 [![Planning evidence: scoped](https://img.shields.io/badge/planning__evidence-scoped-526C73?style=flat-square)](docs/router-evaluation.md)
-[![14 recorded exports](https://img.shields.io/badge/recorded__exports-14-293F48?style=flat-square)](docs/experiments.md)
+[![15 recorded exports](https://img.shields.io/badge/recorded__exports-15-293F48?style=flat-square)](docs/experiments.md)
 
 **Framewright helps an AI agent choose and execute a suitable video pipeline,
 based on documented experiments.**
@@ -81,6 +81,8 @@ Owner accepted the simple,distinct visual style but found Ukrainian voice weak:u
 [Structured brief](examples/briefs/agro-uk-paper.json).
 
 [Latest LCD-style spot-market UK film](experiments/2026-10-15/spot-market-uk-lcd.md):Supertonic3 F1 + authored Remotion terminal/pixel motion. The voice is owner-recommended from short probes,with residual errors;final-film review remains separate.
+
+[Latest English brokerage promo](experiments/2026-10-15/agri-brokerage-ace-step.md):30s authored Three.js/Remotion trading table with Supertonic3F1 narration only. ACE-Step music attempts remained incomplete;the CPU resource guard and system-interruption uncertainty are retained separately. No automatic music-route qualification is claimed.
 
 ## Use the agent skill
 

@@ -112,9 +112,10 @@
       "experiments": [
         "framewright-remotion",
         "agro-uk-paper-piper",
-        "spot-market-uk-lcd"
+        "spot-market-uk-lcd",
+        "agri-brokerage-trading-table"
       ],
-      "tested_scope": "Remotion 4.0.535 authored React motion graphics, native instrumental audio and still export; Framewright 30-second horizontal 1080p30 pilot with explicit existing Chromium;24s Ukrainian paper-route animation plus Piper/Tetiana voice externally muxed with FFmpeg,encoded PNG thumbnail;24s1080p30 LCD/pixel/factor/conveyor/slat film with Supertonic3 F1 external voice mix and encoded thumbnail QA",
+      "tested_scope": "Remotion 4.0.535 authored React motion graphics, native instrumental audio and still export; Framewright 30-second horizontal 1080p30 pilot with explicit existing Chromium;24s Ukrainian paper-route animation plus Piper/Tetiana voice externally muxed with FFmpeg,encoded PNG thumbnail;24s1080p30 LCD/pixel/factor/conveyor/slat film with Supertonic3 F1 external voice mix and encoded thumbnail QA;30s Three.js0.186.0 trading-table in Remotion with Supertonic3F1 narration-only assembly;ACE-Step music incomplete,not included",
       "not_tested": [
         "automatic app capture",
         "narration or captions in Remotion",
