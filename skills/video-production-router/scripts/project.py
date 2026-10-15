@@ -30,7 +30,7 @@ def file_record(path, root):
     if (before.st_size, before.st_mtime_ns) != (after.st_size, after.st_mtime_ns):
         raise ValueError('File changed while hashing')
     return {'path': os.path.relpath(path, root), 'bytes': after.st_size,
-            'sha256': h.hexdigest(), 'inspection': 'not_decoded'}
+            'sha256': h.hexdigest(), 'inspection': 'not_decoded_by_project_cli'}
 
 
 def planning_sources():

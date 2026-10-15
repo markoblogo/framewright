@@ -54,7 +54,7 @@ class ProjectTest(unittest.TestCase):
         self.assertEqual(before,self.project.read_bytes())
         qa=next(s for s in self.load()['steps'] if s['id']=='qa:scene:1:video-export')
         self.assertEqual(qa['state'],'planned')
-        self.assertEqual(self.load()['artifacts']['scene:1:video-export']['file']['inspection'],'not_decoded')
+        self.assertEqual(self.load()['artifacts']['scene:1:video-export']['file']['inspection'],'not_decoded_by_project_cli')
 
     def test_cannot_finish_before_dependencies_files_or_evidence(self):
         self.create()
