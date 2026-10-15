@@ -27,7 +27,7 @@ locally delivered,42s English,with silent master/scene map retained;owner suppli
 are documented;this was not a continuous whole-site recording. Owner authorised the compilation;the [60s MoviePy2.2.1 film](../../experiments/2026-10-15/agro-series-compilation.md) is now delivered locally with
 new series-level script and voice,selected reusable book/landing picture segments.
 Its picture master has no audio;new voice/music are on one master. Owner final-film
-review and publication remain pending. Future compilations should
+review remains pending;owner supplied its [YouTube link](https://youtu.be/vAPgNupIp2s). Future compilations should
 replace old VO and use one assembly/master audio owner. Inspect claim consistency,
 seams,timing,colour,phase/sync and final encoded MP4/thumbnail. Do not concatenate
 old voiced clips blindly. Diagram labels are baked in;editable scenes permit a

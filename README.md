@@ -78,7 +78,7 @@ A [60s agricultural-library compilation](experiments/2026-10-15/agro-series-comp
 now reuses six book films and the landing tour through **MoviePy + FFmpeg**,with
 new English narration and a retained original instrumental bed. Source audio is
 removed;multi-panel scenes,transitions and a separate thumbnail have scoped QA.
-Owner final-film review remains pending;automatic clip selection is unqualified.
+[Owner-supplied published film](https://youtu.be/vAPgNupIp2s). Owner final-film review remains pending;automatic clip selection is unqualified.
 
 [Recipes and evidence](skills/video-production-router/references/recipes.md) ·
 [Capabilities and styles](skills/video-production-router/references/tool-matrix.md) ·

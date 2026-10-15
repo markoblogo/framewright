@@ -37,7 +37,7 @@
     "bytes": 13794522,
     "id": "spot-market-3d-miniature",
     "route": "staged-3d-scene",
-    "actual_pipeline": "Original authored Three.js scene \u2192 Hyperframes; Kokoro narration + FFmpeg mix. Anatomy not used.",
+    "actual_pipeline": "Original authored Three.js scene → Hyperframes; Kokoro narration + FFmpeg mix. Anatomy not used.",
     "evidence": "experiments/2026-10-15/evidence/spot-market-3d-miniature.txt",
     "qa_scope": "20s encoded 3D miniature, deterministic seek, motion/camera samples, complete decode/audio metrics and extracted PNG thumbnail; creative acceptance and human listening pending",
     "thumbnail": {
@@ -310,7 +310,8 @@
     ],
     "human_listening": "pending_owner_review_of_new_script_and_final_film",
     "creative_acceptance": "pending_owner_review",
-    "publication_url": null,
-    "audience_metrics": "not_measured"
+    "publication_url": "https://youtu.be/vAPgNupIp2s",
+    "audience_metrics": "not_measured",
+    "publication_verification": "user_provided_url"
   }
 ]

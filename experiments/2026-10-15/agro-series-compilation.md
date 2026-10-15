@@ -106,4 +106,4 @@ planner provider or fresh independent router-model evaluation. Other codecs,
 vertical versions,automatic semantic clip selection,ASR alignment,singing,new
 fonts and clean-machine reproduction remain untested. Future edits need new
 source/cut/audio/thumbnail checks. No release,public media upload or next trial
-is triggered automatically. Owner final-film review/publication pending.
+is triggered automatically. Owner supplied the [published film](https://youtu.be/vAPgNupIp2s). Publication provenance is `user_provided_url`;playback and uploaded bytes were not independently verified. Owner final-film listening/style review remains separate and pending.

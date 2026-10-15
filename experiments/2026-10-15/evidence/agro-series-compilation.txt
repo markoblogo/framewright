@@ -70,7 +70,7 @@
   },
   "human_listening": "pending_owner_review_of_new_script_and_final_film",
   "creative_acceptance": "pending_owner_review",
-  "publication_url": null,
+  "publication_url": "https://youtu.be/vAPgNupIp2s",
   "audio_qa": {
     "tested_lags_samples": [
       -96,
@@ -200,5 +200,6 @@
     "overlap_seconds": 0.5
   },
   "python_version": "3.12.13",
-  "ffmpeg_version": "8.0.1"
+  "ffmpeg_version": "8.0.1",
+  "publication_verification": "user_provided_url"
 }
