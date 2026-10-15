@@ -19,7 +19,10 @@ def capability(tool, feature, language, paid, canvas=None):
     if cap.get('requires_paid') and not paid:
         return None
     status = cap['status']
-    if status == 'tested' and tool.get('tested_canvases') and canvas not in tool['tested_canvases']:
+    if status == 'tested' and any(
+        owner.get('tested_canvases') and canvas not in owner['tested_canvases']
+        for owner in (tool, cap)
+    ):
         status = 'documented'
     if feature == 'narration':
         if language not in cap.get('documented_languages', []):

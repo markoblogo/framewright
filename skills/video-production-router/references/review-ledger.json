@@ -48,7 +48,7 @@
       "disposition": "candidate",
       "scope_and_findings": "Automatic timeline cuts by audio loudness/motion; not semantic judgement of which words can be removed.",
       "licence_note": "Unlicense; packaged artefacts may differ",
-      "next_trial_or_retest_condition": "Authorised60\u201390s spoken sample; label pauses first, protect phrase edges, check edit list and sync.",
+      "next_trial_or_retest_condition": "Authorised60–90s spoken sample; label pauses first, protect phrase edges, check edit list and sync.",
       "evidence": [
         "docs/tool-research.md"
       ]
@@ -63,7 +63,7 @@
       "disposition": "candidate",
       "scope_and_findings": "Screen capture with auto/manual zoom, editing and export; optional AI editing needs an explicit provider/key.",
       "licence_note": "MIT",
-      "next_trial_or_retest_condition": "Synthetic local UI,10\u201315s; inspect cursor focus, private-window exclusion, readability and export. No account action.",
+      "next_trial_or_retest_condition": "Synthetic local UI,10–15s; inspect cursor focus, private-window exclusion, readability and export. No account action.",
       "evidence": [
         "docs/tool-research.md"
       ]
@@ -215,7 +215,7 @@
       "disposition": "candidate",
       "scope_and_findings": "Speaker diarization/embeddings. Anonymous speaker clusters are not verified real-person identity.",
       "licence_note": "MIT code; model/provider terms separate",
-      "next_trial_or_retest_condition": "Two-speaker20\u201330s sample with manual turns/overlap; inspect model conditions, token/telemetry and local-vs-premium route first.",
+      "next_trial_or_retest_condition": "Two-speaker20–30s sample with manual turns/overlap; inspect model conditions, token/telemetry and local-vs-premium route first.",
       "evidence": [
         "docs/tool-research.md"
       ]
@@ -230,7 +230,7 @@
       "disposition": "candidate",
       "scope_and_findings": "MLX Whisper speech transcription; word timing is an estimate, not proven lyric alignment. Exact path is whisper/README.md.",
       "licence_note": "MIT code; inspect selected weights",
-      "next_trial_or_retest_condition": "Same10\u201315s EN narration and known transcript as Parakeet/WhisperX; errors, timing and real resource use. Singing separately.",
+      "next_trial_or_retest_condition": "Same10–15s EN narration and known transcript as Parakeet/WhisperX; errors, timing and real resource use. Singing separately.",
       "evidence": [
         "docs/tool-research.md"
       ]
@@ -260,7 +260,7 @@
       "disposition": "candidate",
       "scope_and_findings": "Documented Agent Skills/Codex path, sampled frames plus transcript; this is not proof of continuous video/audio understanding.",
       "licence_note": "MIT code; providers/models independent",
-      "next_trial_or_retest_condition": "Existing local10\u201315s owned MP4; inspect planned paths/dependencies/cloud fallback first. Compare known visual events and transcript, no automatic installs/uploads.",
+      "next_trial_or_retest_condition": "Existing local10–15s owned MP4; inspect planned paths/dependencies/cloud fallback first. Compare known visual events and transcript, no automatic installs/uploads.",
       "evidence": [
         "docs/tool-research.md"
       ]
@@ -275,7 +275,7 @@
       "disposition": "reference_only",
       "scope_and_findings": "Public catalogue, prompts/skills and customizer; creator-owned material. Improved prompt may be Untested while original has a video.",
       "licence_note": "creator-specific; no blanket reuse licence established",
-      "next_trial_or_retest_condition": "Brief \u2192 metadata filters \u2192 shortlist \u2192 finalist \u2192 original bounded prompt adaptation \u2192 agreed render/QA. Current trial stops at prompt.",
+      "next_trial_or_retest_condition": "Brief → metadata filters → shortlist → finalist → original bounded prompt adaptation → agreed render/QA. Current trial stops at prompt.",
       "evidence": [
         "docs/tool-research.md"
       ]
@@ -495,6 +495,51 @@
       "evidence": [
         "docs/related-work.md",
         "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "piper",
+      "name": "Piper / Tetiana Ukrainian",
+      "url": "https://github.com/OHF-Voice/piper1-gpl",
+      "reviewed": "2026-10-15",
+      "review_basis": "Exact engineAPI,voice card/config/hash;bounded local synthesis plus encoded24s integration QA",
+      "upstream_revision": "piper-tts1.4.2;model42be6e3f72a7c6042271236b94e48edffd1f0c63",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Local22.05kHz Ukrainian female voice,five lines,total21.4901s speech integrated without retiming. Owner pronunciation pending. Runtime~128MB,weights114.2MB;no clean-machine or speed comparison. ONNX telemetry/cache warnings retained.",
+      "licence_note": "EngineGPL3;modelcardApache2.0;114204024-byte weights SHA1206d8447b99632badeb63d6132241f76cf551874e5254eb8836db36aed7c85c;not redistributed.",
+      "next_trial_or_retest_condition": "New exact voice/language/pronunciation requirement or changed runtime/model;do not repeat unchanged setup.",
+      "evidence": [
+        "experiments/2026-10-15/agro-uk-paper-piper.md"
+      ]
+    },
+    {
+      "id": "mms-tts-ukr",
+      "name": "MMS Ukrainian TTS",
+      "url": "https://huggingface.co/facebook/mms-tts-ukr",
+      "reviewed": "2026-10-15",
+      "review_basis": "Model-card licence review only;not downloaded or executed",
+      "upstream_revision": null,
+      "disposition": "rights_blocked",
+      "scope_and_findings": "Ukrainian support documented;noncommercial model terms unsuitable for the selected promotional use without separate permission. Technical ability not classified as failed.",
+      "licence_note": "ModelcardCC-BY-NC4.0;verify exact terms before a different noncommercial trial.",
+      "next_trial_or_retest_condition": "Separate appropriate noncommercial brief or verified permission/changed terms.",
+      "evidence": [
+        "experiments/2026-10-15/agro-uk-paper-piper.md"
+      ]
+    },
+    {
+      "id": "piper-ukrainian-tts-medium",
+      "name": "Piper Ukrainian TTS medium alternative",
+      "url": "https://huggingface.co/rhasspy/piper-voices/tree/main/uk/uk_UA/ukrainian_tts/medium",
+      "reviewed": "2026-10-15",
+      "review_basis": "Official MODEL_CARD inspected;no weights downloaded or synthesis performed",
+      "upstream_revision": null,
+      "disposition": "deferred",
+      "scope_and_findings": "uk_UA,three speakers,22.05kHz,text phonemes documented. Exact runtime/voice suitability not tested;Tetiana selected for this bounded task.",
+      "licence_note": "Card identifies CC0 dataset;dataset terms alone were not treated as a complete independent model-rights audit.",
+      "next_trial_or_retest_condition": "A concrete voice-quality comparison or unresolved pronunciation requirement;pin model revision and inspect full rights/config before execution.",
+      "evidence": [
+        "experiments/2026-10-15/agro-uk-paper-piper.md"
       ]
     }
   ]

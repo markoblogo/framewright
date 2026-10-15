@@ -1,0 +1,29 @@
+{
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "minimum_evidence": "tested",
+  "allow_paid": false,
+  "language": "uk",
+  "duration_seconds": 24,
+  "blocks": [
+    {
+      "id": "paper-route",
+      "input": "book-art",
+      "style": "paper-cut",
+      "preferred_tool": "remotion",
+      "preferred_voice": "piper",
+      "effects": [
+        "paper-cut-regroup"
+      ],
+      "duration_seconds": 24,
+      "deliverables": [
+        "video-export",
+        "narration",
+        "still-export"
+      ]
+    }
+  ]
+}

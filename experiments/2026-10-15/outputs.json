@@ -37,7 +37,7 @@
     "bytes": 13794522,
     "id": "spot-market-3d-miniature",
     "route": "staged-3d-scene",
-    "actual_pipeline": "Original authored Three.js scene \u2192 Hyperframes; Kokoro narration + FFmpeg mix. Anatomy not used.",
+    "actual_pipeline": "Original authored Three.js scene → Hyperframes; Kokoro narration + FFmpeg mix. Anatomy not used.",
     "evidence": "experiments/2026-10-15/evidence/spot-market-3d-miniature.txt",
     "qa_scope": "20s encoded 3D miniature, deterministic seek, motion/camera samples, complete decode/audio metrics and extracted PNG thumbnail; creative acceptance and human listening pending",
     "thumbnail": {
@@ -91,6 +91,44 @@
       "RESOURCE_LIMIT"
     ],
     "human_listening": "pending_owner_review",
+    "creative_acceptance": "owner_acceptable_basic_infographic_style",
+    "publication_url": "https://youtu.be/TISOtCghMVY",
+    "audience_metrics": "not_measured",
+    "publication_verification": "user_provided_url",
+    "owner_feedback": {
+      "visuals": "basic but good/acceptable, distinctive infographic style",
+      "source": "owner conversation2026-10-15",
+      "limits": "one owner assessment; no separate pronunciation or audience evaluation"
+    }
+  },
+  {
+    "local_output": "agro-brokerage-uk-video-pilot-20261015/Agro-Brokerage-UK-1080p.mp4",
+    "bytes": 10378498,
+    "sha256": "ed304c8885b23993cffac27e8c7b0a47ea0e14e4b1115b7e4cdedd313de35145",
+    "id": "agro-uk-paper-piper",
+    "route": "authored-react-film",
+    "actual_pipeline": "Remotion4.0.535 original SVG/React paper-route,local Piper1.4.2/Tetiana UK narration,original synthesized bed/effects,FFmpeg assembly",
+    "native_export": {
+      "local_output": "agro-brokerage-uk-video-pilot-20261015/Agro-Brokerage-UK-Picture-1080p.mp4",
+      "bytes": 9782712,
+      "sha256": "b783b2f8be06aeeb86c8c36c25caffc7bbfa97fc13d8bb5aa041590c4e0ac803"
+    },
+    "thumbnail": {
+      "local_output": "agro-brokerage-uk-video-pilot-20261015/Agro-Brokerage-UK-YouTube.png",
+      "bytes": 649222,
+      "sha256": "ec31706db7db600fcb06e3e4a3085ae245098a85afec67eb927afe623bf0c5ce",
+      "format": "png",
+      "width": 1280,
+      "height": 720
+    },
+    "evidence": "experiments/2026-10-15/evidence/agro-uk-paper-piper.txt",
+    "qa_scope": "24s1080p30 Ukrainian paper-route integration,full decode/audio metrics and encoded PNG thumbnail. Pixel-exact native repeats failed;browser workarounds retained;pronunciation/artistic review pending.",
+    "evidence_checks": [
+      "MEDIA_CHECKS_PASS",
+      "RENDER_LIMITS",
+      "RASTER_REPEAT_NOT_IDENTICAL"
+    ],
+    "human_listening": "pending_owner_ukrainian_pronunciation_review",
     "creative_acceptance": "pending_owner_review",
     "publication_url": null,
     "audience_metrics": "not_measured"

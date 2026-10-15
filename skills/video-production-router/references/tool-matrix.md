@@ -91,7 +91,7 @@ Camera travel, perspective, depth and selective focus around actual DOM panels; 
 
 **Role:** renderer. **Inputs:** brand, data, book-art, composition, react-ui, video, object.
 
-**Style directions:** editorial, kinetic, minimal, data-motion.
+**Style directions:** editorial, kinetic, minimal, data-motion, paper-cut.
 React frame-driven graphics and programmable layout; typography, editorial montage, UI or 3D can be authored. Our restrained Framewright film is one art direction.
 
 **Tested version/scope:** 4.0.535
@@ -122,6 +122,7 @@ React frame-driven graphics and programmable layout; typography, editorial monta
 | `iris` | documented | Official transition presentation; not exercised in the Framewright film. [Source](https://www.remotion.dev/docs/transitions/) |
 | `ripple` | documented | Official transition presentation; not exercised in the Framewright film. [Source](https://www.remotion.dev/docs/transitions/) |
 | `crosswarp` | documented | Official transition presentation; not exercised in the Framewright film. [Source](https://www.remotion.dev/docs/transitions/) |
+| `paper-cut-regroup` | tested | Authored90-kernel field→route→contract motion,paper truck/stamp/book reveal in24s1080p30 UK promo;not physics or automatic scene generation. Native pixel-repeat discrepancy retained. [Source](https://www.remotion.dev/docs/) |
 
 **Limits:** Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately.
 
@@ -317,7 +318,7 @@ Readable vector workflow/action/role diagrams. This pilot did not test 3D,scient
 | `video-export` | tested | Qualified adapter includes mandatory FFmpeg CFR/timestamp normalisation and encoded QA;native VFR direct mux warned. [Source](https://github.com/markoblogo/framewright/blob/main/experiments/2026-10-15/mn7r-manim-mlx.md) |
 | `native-mux-timing` | failed | Native VFR direct-mux Invalid DTS warnings;do not stream-copy this pilot without adaptation. [Source](https://github.com/markoblogo/framewright/blob/main/experiments/2026-10-15/mn7r-manim-mlx.md) |
 
-**Limits:** FFmpeg timing adapter required for this qualified path;native standalone timestamp compatibility is not qualified. Only20s1080p30 2D workflow promo tested;3D/math plots,other formats,native still and unrelated data inputs need new scoped checks. Setup snapshot exceeded planned2GB before task-cache cleanup;no cold-install speed or general portability claim. Human voice/creative review and audience outcomes remain pending.
+**Limits:** FFmpeg timing adapter required for this qualified path;native standalone timestamp compatibility is not qualified. Only20s1080p30 2D workflow promo tested;3D/math plots,other formats,native still and unrelated data inputs need new scoped checks. Setup snapshot exceeded planned2GB before task-cache cleanup;no cold-install speed or general portability claim. Owner accepted basic infographic style;separate voice review and audience outcomes remain pending.
 
 ## MLX-Audio — scoped Kokoro English voice
 
@@ -335,6 +336,23 @@ Tested am_michael English model/runtime only;not all MLX-Audio models or languag
 | `narration` | tested | Five local English phrases;18.15s speech,last end19.525s;no retiming. Listening pending. [Source](https://github.com/markoblogo/framewright/blob/main/experiments/2026-10-15/mn7r-manim-mlx.md) |
 
 **Limits:** Ukrainian is unsupported by this tested profile;choose and review another exact model before that experiment. Local model-directory naming affects type detection;explicit English spaCy package setup required in this environment. Audio environment approximately1.2GB plus~327MB voice weights;first pipeline/phrase init68.649s,subsequent phrases0.966–1.618s;not a speed comparison. No singing,diarization,cloning,other voices/languages or arbitrary models qualified.
+
+## Piper — Tetiana Ukrainian voice
+
+**Role:** voice. **Inputs:** .
+
+**Style directions:** narrated, neutral.
+Exact Ukrainian female voice; one short promotional script,not singing or cloned identity.
+
+**Tested version/scope:** Piper1.4.2,ONNXRuntime CPU,Python3.12.13;Tetiana model42be6e3f72a7c6042271236b94e48edffd1f0c63
+
+**Licence:** GPL3 engine;exact voice card declaresApache2.0;dataset provenance linked by author,not independently audited;no engine/weights redistributed.
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `narration` | tested | Five22.05kHz Ukrainian lines locally synthesized and integrated into24s1080p30 promo;encoded QA retained. Human pronunciation pending. [Source](https://github.com/OHF-Voice/piper1-gpl) |
+
+**Limits:** Only this exact voice/script evaluated;human pronunciation and artistic approval pending. No EN/FR,singing,voice cloning or arbitrary Piper voices qualified. ONNXRuntime emitted telemetry/cache-ID persistence warnings;no external voice API called;network traffic not independently audited. One script/voice integration,not general language quality;native Remotion raster repeat differed slightly and full-export browser workarounds were required.
 
 ## Source freshness
 

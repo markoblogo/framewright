@@ -124,7 +124,7 @@ Flute's camera around existing app components. Honour an explicit Remotion choic
 and load its official creation, markup and rendering skills locally; Hyperframes
 is not a prerequisite. Read the selected version's installed API before authoring.
 
-Tested once: Framewright identity film, 30s/1080p30/900 frames, five scenes, local
+First scoped test: Framewright identity film, 30s/1080p30/900 frames, five scenes, local
 cover, original instrumental through @remotion/media, native PNG still. Follow
 [the source example](https://github.com/markoblogo/framewright/tree/main/examples/remotion-framewright) in a full
 Framewright checkout; when this skill is installed alone, use the upstream docs
@@ -209,3 +209,21 @@ setup exceeded the 2GB plan before task-only cache cleanup; retained runtimes/mo
 and new model downloads must be budgeted together. Reuse this environment instead
 of repeating unchanged installation. New languages/formats/3D/math plots need
 bounded follow-ups,not a general claim based on this 2D English promo.
+
+### Ukrainian paper-route variation
+
+For a narrative transformation from agricultural objects to a workflow,use the
+authored-react-film route:Remotion4.0.535 authored SVG/React paper layers plus
+local Piper1.4.2/Tetiana Ukrainian voice,then FFmpeg assembly.
+[Experiment](../../../experiments/2026-10-15/agro-uk-paper-piper.md) and
+[source example](../../../examples/remotion-agro-uk/README.md) retain the exact
+24s1080p30 scope. `paper-cut-regroup` names authored kernel regrouping/route/truck/
+contract action;it does not promise an automatic generator,real geography,3D or
+physics. Exact Ukrainian script/voice needs owner listening. Keep unsupported
+languages,singing and other voices outside the qualification.
+
+Measure each voice WAV before cuts;retain locked timeline and separate stems.
+Native silent MP4 is retained;final audio is added with FFmpeg. Inspect encoded
+scene boundaries,object displacement,labels/cover and closing hold. Thumbnail is
+an encoded20s frame,not a native-still claim. Chromium launch/root timeouts can
+recur:retain failed logs and use a supported working executable,not disabled checks.

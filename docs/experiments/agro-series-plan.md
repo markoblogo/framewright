@@ -7,9 +7,9 @@ bounded experiment. Future books/landing/compilation are queued,not unattended w
 | Subject | Language | State / purpose |
 | --- | --- | --- |
 | [Spot-Market Handbook](https://abvx.xyz/books/spot-market-handbook-en-free-edition) | EN | Completed authored 3D action/camera;owner liked it;[YouTube](https://youtu.be/7hkMaEjINZA) |
-| [MN7R Product Guide](https://abvx.xyz/books/mn7r-product-guide) | EN | Current ManimGX/MLX-Audio 20s diagram promo;technical final QA passed,owner review pending |
+| [MN7R Product Guide](https://abvx.xyz/books/mn7r-product-guide) | EN | Current ManimGX/MLX-Audio 20s diagram promo;technical final QA passed;owner:basic,good,distinctive infographic style;[YouTube](https://youtu.be/TISOtCghMVY) |
 | [Agri-Commodity Brokerage](https://abvx.xyz/books/mn7r-agro-commodity-brokerage-en-free-edition) | EN | Queued;agree next distinct trial,possibly voice over an authorised/generated music bed |
-| [Брокеридж зернових та олійних](https://abvx.xyz/books/mn7r-agro-commodity-brokerage-ua-free-edition) | UK | Queued;verify exact Ukrainian TTS support,weights/terms/resources and owner pronunciation |
+| [Брокеридж зернових та олійних](https://abvx.xyz/books/mn7r-agro-commodity-brokerage-ua-free-edition) | UK | Delivered24s Piper/Tetiana Ukrainian narration + Remotion paper-route;encoded checks passed,exact-raster repeat not met;owner pronunciation/artistic review pending |
 | [Практичний гайд по спотовому ринку](https://abvx.xyz/books/spot-market-handbook-ua-free-edition) | UK | Queued;avoid repeating an unchanged voice trial,choose the next specific question |
 
 Retain 1920×1080/30fps delivery where suitable,script/source/asset provenance,original

@@ -1,0 +1,75 @@
+AGRO UK PAPER / PIPER — scoped retained evidence
+
+MEDIA_CHECKS_PASS
+{
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "frames": 720,
+    "seconds": 24.0
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "seconds": 24.0,
+    "integrated_lufs": -17.55,
+    "true_peak_dbtp": -3.18,
+    "reference_mix_samples": 1152000,
+    "decoded_samples_including_codec_padding": 1152000,
+    "common_samples": 1152000,
+    "correlation_with_reference_mix": 0.9999038945380524,
+    "lag_samples": 0,
+    "channel_correlation": 0.9999136581369472,
+    "mono_rms_vs_mean_channel_rms": 0.9999784143267972
+  },
+  "full_decode_errors_bytes": 0,
+  "visual_inspection": "11encoded scene/action samples,10sample reveal transition,full-size1280x720 and reduced320x180 thumbnail inspected;title/CTA/cover crop readable;no exact-pixel raster claim",
+  "human_listening": "pending_owner_review",
+  "creative_acceptance": "pending_owner_review",
+  "publication_url": null,
+  "technical_checks_passed": true
+}
+
+RENDER_LIMITS
+Initial sandboxed still ErrorEvent;downloaded Chromium full-export connection25s timeout;installed Chrome stalled467/720frames near reveal;prior Chromium152,concurrency1 completed720frames24s. Vendor unchanged.
+
+RASTER_REPEAT_NOT_IDENTICAL
+Separate native600-frame Chrome PNGs:mean absolute channel difference0.1051499807/255,max33,951pixels over10/255. Predeclared bit-identical raster gate not met;no exact-pixel reproducibility qualification.
+
+VOICE
+Piper1.4.2,Tetiana42be6e3f72a7c6042271236b94e48edffd1f0c63;22050Hz,five lines21.490068s;scheduled last end23.722646s,no forced speech retiming. Voice synthesis wall intervals sum18.881s,exclude model load/setup;not speed comparison.128MB environment,114204024-byte model,~132MB task uv cache snapshot. ONNX cache/telemetry warnings retained.
+
+ARTIFACTS
+{
+  "local_output": "agro-brokerage-uk-video-pilot-20261015/Agro-Brokerage-UK-1080p.mp4",
+  "bytes": 10378498,
+  "sha256": "ed304c8885b23993cffac27e8c7b0a47ea0e14e4b1115b7e4cdedd313de35145",
+  "native_export": {
+    "local_output": "agro-brokerage-uk-video-pilot-20261015/Agro-Brokerage-UK-Picture-1080p.mp4",
+    "bytes": 9782712,
+    "sha256": "b783b2f8be06aeeb86c8c36c25caffc7bbfa97fc13d8bb5aa041590c4e0ac803"
+  },
+  "thumbnail": {
+    "local_output": "agro-brokerage-uk-video-pilot-20261015/Agro-Brokerage-UK-YouTube.png",
+    "bytes": 649222,
+    "sha256": "ec31706db7db600fcb06e3e4a3085ae245098a85afec67eb927afe623bf0c5ce",
+    "format": "png",
+    "width": 1280,
+    "height": 720
+  }
+}
+
+ENCODED_MOTION
+{
+  "encoded_truck_red_body_centroid_x": {
+    "8s": 436.29027890603845,
+    "10.5s": 1135.9890003235198
+  },
+  "displacement_pixels": 699.6987214174814,
+  "sample_gate_min_pixels": 400,
+  "passed": true,
+  "scope": "Two encoded samples;not a full physical-motion or stutter analysis"
+}

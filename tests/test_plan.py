@@ -36,6 +36,34 @@ class BlockPlannerTest(unittest.TestCase):
         self.assertEqual(p['status'], 'blocked')
         self.assertNotIn('kokoro', p['blocks'][0]['tools'])
 
+    def test_ukrainian_paper_scene_preserves_voice_and_picture(self):
+        brief = self.brief(input='book-art', language='uk', style='paper-cut',
+                           preferred_tool='remotion', preferred_voice='piper',
+                           effects=['paper-cut-regroup'],
+                           deliverables=['video-export', 'narration', 'still-export'])
+        result = self.run_plan(brief)
+        block = result['blocks'][0]
+        self.assertEqual(result['status'], 'proposed')
+        self.assertEqual(set(block['tools']), {'remotion', 'piper'})
+        self.assertEqual(next(c['tool'] for c in block['coverage'] if c['feature'] == 'narration'), 'piper')
+
+    def test_ukrainian_piper_does_not_claim_french_or_singing(self):
+        french = self.run_plan(self.brief(input='book-art', language='fr', preferred_voice='piper', deliverables=['narration']))
+        self.assertIn('narration', french['blocks'][0]['unmet'])
+        song = self.run_plan(self.brief(input='book-art', language='uk', preferred_voice='piper', deliverables=['song-generation']))
+        self.assertIn('song-generation', song['blocks'][0]['unmet'])
+
+    def test_paper_effect_other_canvas_is_not_promoted(self):
+        tool = copy.deepcopy(next(t for t in REGISTRY['tools'] if t['id'] == 'remotion'))
+        feature = next(f for f in tool['features'] if f['id'] == 'paper-cut-regroup')
+        feature['status'] = 'tested'
+        feature['tested_canvases'] = [{'width': 1920, 'height': 1080, 'fps': 30}]
+        cap = planner.capability(tool, 'paper-cut-regroup', 'uk', False,
+                                 {'width': 1080, 'height': 1080, 'fps': 30})
+        self.assertEqual(cap['evidence'], 'documented')
+        self.assertEqual(planner.capability(tool, 'paper-cut-regroup', 'uk', False,
+                         {'width': 1920, 'height': 1080, 'fps': 30})['evidence'], 'tested')
+
     def test_invalid_preferred_voice_rejected(self):
         for tool in ['unknown', 'manimgx', []]:
             with self.subTest(tool=tool), self.assertRaisesRegex(ValueError, 'preferred_voice'):
