@@ -130,7 +130,7 @@
     ],
     "human_listening": "owner_reviewed_ukrainian_voice_weak",
     "creative_acceptance": "owner_acceptable_simple_distinct_style",
-    "publication_url": null,
+    "publication_url": "https://youtu.be/qer7WfdIWLI",
     "audience_metrics": "not_measured",
     "owner_feedback": {
       "visuals": "Acceptable,new distinct style,simple,but useful for some cases.",
@@ -138,6 +138,7 @@
       "decision": "Keep current video unchanged;try a different tool for the next Ukrainian narration.",
       "source": "Owner conversation2026-10-15",
       "limits": "One voice/model/script and owner assessment;not a judgment of all Piper voices or Ukrainian TTS."
-    }
+    },
+    "publication_verification": "user_provided_url"
   }
 ]
