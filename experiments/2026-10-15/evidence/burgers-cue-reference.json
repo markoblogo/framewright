@@ -1,0 +1,61 @@
+{
+  "frozen_before_detector_run": true,
+  "duration_seconds": 15,
+  "fps": 30,
+  "expected_all_hard_cuts_seconds": [
+    3,
+    6,
+    9,
+    12
+  ],
+  "target_cut_seconds": [
+    6,
+    9,
+    12
+  ],
+  "cut_tolerance_seconds": 0.03333333333333333,
+  "target_music_accents_seconds": [
+    6,
+    9,
+    12
+  ],
+  "accent_tolerance_seconds": 0.1,
+  "minimum_accent_matches": 2,
+  "target_accent_events": [
+    {
+      "time_seconds": 3.0,
+      "type": "authored_rim_accent",
+      "verification": "score schedule; independent listening pending"
+    },
+    {
+      "time_seconds": 6.0,
+      "type": "authored_rim_accent",
+      "verification": "score schedule; independent listening pending"
+    },
+    {
+      "time_seconds": 9.0,
+      "type": "authored_rim_accent",
+      "verification": "score schedule; independent listening pending"
+    },
+    {
+      "time_seconds": 12.0,
+      "type": "authored_rim_accent",
+      "verification": "score schedule; independent listening pending"
+    }
+  ],
+  "reference_method": "Authored music schedule and planned frame boundaries; not independent manual listening. Verify picture boundaries before analysis; user listening/acceptance remains separate.",
+  "initial_parameters": {
+    "onset": {
+      "sr": 22050,
+      "hop_length": 256,
+      "backtrack": false,
+      "defaults_otherwise": true
+    },
+    "scene": {
+      "detector": "ContentDetector",
+      "threshold": 27,
+      "min_scene_len_frames": 15
+    }
+  },
+  "allowed_parameter_adjustments": 1
+}

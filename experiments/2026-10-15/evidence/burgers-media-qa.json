@@ -1,0 +1,31 @@
+{
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "frames": 450,
+    "seconds": 15.0
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "seconds": 15.0,
+    "integrated_lufs": -17.36,
+    "true_peak_dbtp": -1.48,
+    "reference_mix_samples": 720000,
+    "decoded_samples_including_codec_padding": 720896,
+    "common_samples": 720000,
+    "correlation_with_reference_mix": 0.9996535037462838,
+    "lag_samples": 0,
+    "channel_correlation": 0.9998138700023851,
+    "mono_rms_vs_mean_channel_rms": 0.9999534660778979
+  },
+  "full_decode_errors_bytes": 0,
+  "visual_inspection": "five scene midpoints; encoded before/after all four cuts and final frame; full and reduced-size thumbnail inspected",
+  "human_listening": "pending_owner_review",
+  "creative_acceptance": "pending_owner_review",
+  "publication_url": null,
+  "technical_checks_passed": true
+}

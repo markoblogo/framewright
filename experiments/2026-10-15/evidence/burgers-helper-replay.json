@@ -1,0 +1,13 @@
+{
+  "kind": "same-input public-helper replay, not an independent experiment or parameter adjustment",
+  "source_sha256": "e487f3bffd926bf4112da5c9ebea7606ebe4061af00db269354644aed94720b3",
+  "comparison_fields_equal": [
+    "rows",
+    "cuts_seconds",
+    "onsets_seconds",
+    "accent_matches",
+    "cut_matches",
+    "passed_authored_reference_tolerances"
+  ],
+  "duration_seconds": 19.795
+}

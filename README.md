@@ -119,4 +119,4 @@ models, music and artwork have their own terms. Large media stay outside Git.
 
 Maintenance: [one offline check command and bounded model checks](docs/checking-policy.md).
 [CLI follow-up](benchmarks/router/2026-10-15/cli-capture-recovery/README.md): 8/8 affected cases now have complete traces and pass the unchanged rubric; historical full-run counts remain unchanged.
-Next agreed subject: [Burgers, Lipstick & Underwear — narrated cue-analysis plan](docs/experiments/burgers-cue-analysis-plan.md), not yet rendered.
+New [Burgers pilot](experiments/2026-10-15/burgers-cue-analysis.md): 15s narrated promo; librosa recovered3/3 authored accents and PySceneDetect4/4 exact cuts. [Analysis helper](examples/cue-analysis/README.md); independent listening remains pending.

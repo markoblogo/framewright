@@ -10,17 +10,18 @@ this batch of research. [Source comparison](related-work.md).
 | --- | --- | --- | --- |
 | 0 | **Router phase/content follow-up — regression recorded** | Explicit phase QA and two semantic/content criteria; [70/70 rubric,62/70 complete evidence;46/46 controls](../benchmarks/router/2026-10-15/qa-v5-complete/README.md). Original67/70 and13/18 retained | Three requested fixes pass; [targeted CLI recovery](../benchmarks/router/2026-10-15/cli-capture-recovery/README.md) now records8/8 complete captures and rubric passes. Original incomplete traces stay retained. These70 are known cases. Freeze another unseen set before future transfer claims; no automatic test, render or release |
 | 0a | **Independent reference reproduction** — portability before another renderer | Repeat the same open reference film in a genuinely different environment; record dependencies/versions, changed commands, installation/render/QA timings and output checks | Queued only. Requires a later rendering request; do not count a second same-machine run as independent transfer or infer zero cost |
-| 1 | **librosa + PySceneDetect** — music/video cue sheets in both directions | One authorised 10–15 s audio excerpt and one fixed clip; compare detected onset/beat and cut candidates with manual annotations, declare tolerance before running; produce JSON cue sheet + edited microclip | Isolated local environment on Work; no model download initially. Distinguish beat errors from useful cut detection; record timing/memory and false positives |
+| 1 | **librosa + PySceneDetect** — first authored-cue trial completed | One authorised 10–15 s audio excerpt and one fixed clip; compare detected onset/beat and cut candidates with manual annotations, declare tolerance before running; produce JSON cue sheet + edited microclip | [Burgers pilot](../experiments/2026-10-15/burgers-cue-analysis.md):3/3 accents,4/4 exact cuts; manual-listening reference and broader music remain unqualified. No next trial starts automatically |
 | 2 | **WhisperX lyric alignment** — readable song words at the right time | One 10 s English sung excerpt with known original lyrics; compare word timestamps and omissions against listening; export reviewed captions | Review exact ASR/alignment model licences and sizes first; no diarisation or voice cloning needed. Do not equate speech alignment with singing success |
 | 3 | **ACE-Step 1.5** — bounded local alternative to cloud music | After hardware preflight, one short instrumental and, if feasible, one original-lyric excerpt; compare intelligibility, cadence, control and real render time | Record Mac backend, free memory/storage and weight terms before download; agree model-size ceiling. Stop if the machine cannot support it; no advertised CUDA speed claims |
 | 4 | **ViMax storyboard/checkpoint pilot** — test continuity and resumability | Two shots for one authorised product; approve references/animatic, interrupt one stage, resume without regenerating accepted shots; record actual calls/cost | Inspect provider requirements and set an explicit generation cap first. Borrow the stage contract even if execution is unsuitable; do not enable an unattended paid pipeline |
 
-## Next subject agreed with the owner
+## Latest owner-selected production subject
 
-The owner chose **Burgers, Lipstick & Underwear**, with English narration. The
-[next pilot plan](experiments/burgers-cue-analysis-plan.md) proposes a 15-second
-editorial trailer and a librosa/PySceneDetect cue-analysis check. Storyboard/music
-approval precedes execution; no install, audio generation or render has occurred.
+The owner chose **Burgers, Lipstick & Underwear**, with English narration and
+subsequently authorised execution. The [completed pilot](../experiments/2026-10-15/burgers-cue-analysis.md)
+retains the15-second master/thumbnail metadata, detector outputs and limitations.
+The [pre-run plan](experiments/burgers-cue-analysis-plan.md) remains linked;
+listening/creative acceptance and the owner's publication URL are pending.
 Routine maintenance follows the [bounded checking policy](checking-policy.md).
 
 ## Conditional / deferred
