@@ -1,0 +1,204 @@
+{
+  "checks": [
+    "MEDIA_CHECKS_PASS",
+    "MOVIEPY_COMPILATION_SCOPE",
+    "SOURCE_AUDIO_REMOVED"
+  ],
+  "video": {
+    "codec_name": "h264",
+    "width": 1920,
+    "height": 1080,
+    "r_frame_rate": "30/1",
+    "nb_frames": "1800",
+    "duration": "60.000000"
+  },
+  "audio": {
+    "codec_name": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "duration": "60.000000"
+  },
+  "encoded_audio_metrics": {
+    "input_i": "-16.04",
+    "input_tp": "-2.45",
+    "input_lra": "6.70",
+    "input_thresh": "-27.78",
+    "output_i": "-16.05",
+    "output_tp": "-2.43",
+    "output_lra": "5.60",
+    "output_thresh": "-27.69",
+    "normalization_type": "dynamic",
+    "target_offset": "0.05"
+  },
+  "full_decode_exit": 0,
+  "sampled_scene_frames": 120,
+  "visually_reviewed_scene_frames": 16,
+  "transition_samples": 21,
+  "encoded_picture_final_stream": "SHA256=e33cd6f77dc39be0ca74f2907c715f303cb8a3f531989813ef03f586100b338b",
+  "thumbnail": {
+    "source": "dedicated MoviePy/Pillow composition with authorised landing frame",
+    "width": 1280,
+    "height": 720,
+    "mode": "RGB"
+  },
+  "artifacts": {
+    "Agro-Library-1080p.mp4": {
+      "local_output": "agro-series-compilation-pilot-20261015/Agro-Library-1080p.mp4",
+      "sha256": "4955a70e0cc0381f52e1ec10ab7103602676735945bd225afca4f0e20ceb8aa5",
+      "bytes": 9227055
+    },
+    "Agro-Library-Picture-1080p.mp4": {
+      "local_output": "agro-series-compilation-pilot-20261015/Agro-Library-Picture-1080p.mp4",
+      "sha256": "88b5d762f262735486607c4e7df21a75a16348d00a6bd4aa15c4cbeb4ac3070a",
+      "bytes": 7742964
+    },
+    "Agro-Library-YouTube.png": {
+      "local_output": "agro-series-compilation-pilot-20261015/Agro-Library-YouTube.png",
+      "bytes": 437095,
+      "sha256": "d9e74a7ff852895248cc3b7f70c04fa508810b73117955938d04572c96040c21"
+    },
+    "Agro-Library-English.srt": {
+      "local_output": "agro-series-compilation-pilot-20261015/Agro-Library-English.srt",
+      "sha256": "bdda8a7968dd71e87900ec173ca544c242b3c65edcb40283496a12e7ab3310e2",
+      "bytes": 935
+    },
+    "YouTube-EN.txt": {
+      "local_output": "agro-series-compilation-pilot-20261015/YouTube-EN.txt",
+      "sha256": "8a81ddf26f5c28c9f0d53e155cb2254e705cff1005c962566e52678a9af485bb",
+      "bytes": 1812
+    }
+  },
+  "human_listening": "pending_owner_review_of_new_script_and_final_film",
+  "creative_acceptance": "pending_owner_review",
+  "publication_url": null,
+  "audio_qa": {
+    "tested_lags_samples": [
+      -96,
+      -48,
+      0,
+      48,
+      96
+    ],
+    "best_lag_samples": 0,
+    "correlation": 0.9999391488524408,
+    "mono_to_stereo_energy_ratio": 0.9999787211418152,
+    "finite": true,
+    "decoded_samples": 2880512,
+    "comparison": "decoded AAC against Soundtrack-master;does not independently evaluate pronunciation"
+  },
+  "moviepy_distribution": "2.2.1",
+  "native_export": "MoviePy H264 picture;no old audio",
+  "source_identities": [
+    {
+      "id": "spot-market-3d-miniature",
+      "sha256": "d94e469473e644b3b66caf95338ac79ad2c7e282fb6e2f2d704c42e83daf5745",
+      "bytes": 13794522,
+      "duration": 20.0,
+      "strip_audio": true
+    },
+    {
+      "id": "agri-brokerage-trading-table",
+      "sha256": "c51b6110a35f9dc2c94449bc6ddc2fd144401c6f3ba499ed8c7b813218b95255",
+      "bytes": 4887350,
+      "duration": 30.0,
+      "strip_audio": true
+    },
+    {
+      "id": "contract-execution-prompt-motion",
+      "sha256": "7c30bb0b90911568c42028aa26c27ce696e6cd612a0d32a047d58940f42470b4",
+      "bytes": 2961245,
+      "duration": 32.0,
+      "strip_audio": true
+    },
+    {
+      "id": "mn7r-manim-mlx",
+      "sha256": "386a72648dd38cc17730798c8d8656a956129c78665b3add3bfe35c575bace7a",
+      "bytes": 1253108,
+      "duration": 20.033333,
+      "strip_audio": true
+    },
+    {
+      "id": "agro-uk-paper-piper",
+      "sha256": "b783b2f8be06aeeb86c8c36c25caffc7bbfa97fc13d8bb5aa041590c4e0ac803",
+      "bytes": 9782712,
+      "duration": 24.0,
+      "strip_audio": true
+    },
+    {
+      "id": "spot-market-uk-lcd",
+      "sha256": "adec7e85d871072d1a31ff5c90bbbbe89317bb077fd8230a7e2021f0fcdfea3c",
+      "bytes": 3571627,
+      "duration": 24.0,
+      "strip_audio": true
+    },
+    {
+      "id": "ami-books-openscreen",
+      "sha256": "ff9449650474d0f1ecda6c6a6d723bbd8f7492be53369b1460a457ba71bbceba",
+      "bytes": 9608993,
+      "duration": 42.0,
+      "strip_audio": true
+    }
+  ],
+  "render_metrics": {
+    "scenes": [
+      {
+        "scene": 0,
+        "seconds": 6,
+        "wall_seconds": 8.6
+      },
+      {
+        "scene": 1,
+        "seconds": 7.5,
+        "wall_seconds": 8.38
+      },
+      {
+        "scene": 2,
+        "seconds": 7.5,
+        "wall_seconds": 8.29
+      },
+      {
+        "scene": 3,
+        "seconds": 7.5,
+        "wall_seconds": 9.7
+      },
+      {
+        "scene": 4,
+        "seconds": 7.5,
+        "wall_seconds": 8.32
+      },
+      {
+        "scene": 5,
+        "seconds": 8.5,
+        "wall_seconds": 9.73
+      },
+      {
+        "scene": 6,
+        "seconds": 10.5,
+        "wall_seconds": 12.24
+      },
+      {
+        "scene": 7,
+        "seconds": 8.5,
+        "wall_seconds": 9.7
+      }
+    ],
+    "total_wall_seconds": 133.89,
+    "transition_overlap": 0.5,
+    "duration": 60
+  },
+  "final_assembly_metrics": {
+    "scenes": [],
+    "total_wall_seconds": 117.85,
+    "transition_overlap": 0.5,
+    "duration": 60
+  },
+  "probe": {
+    "passed": true,
+    "frames": 120,
+    "seconds": 4,
+    "source_audio": false,
+    "overlap_seconds": 0.5
+  },
+  "python_version": "3.12.13",
+  "ffmpeg_version": "8.0.1"
+}

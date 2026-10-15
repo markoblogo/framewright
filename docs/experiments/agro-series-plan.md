@@ -23,11 +23,12 @@ Kokoro's tested English profile does not establish Ukrainian support.
 
 The owner supplied [the library landing](https://books.1d3x.com/) and authorised its
 promo. [OpenScreen tour](../../experiments/2026-10-15/ami-books-openscreen.md) is now
-locally delivered,42s English,with silent master/scene map retained;owner final-film
-review and publication pending. Capture failures and freeze/reused-hero workarounds
-are documented;this was not a continuous whole-site recording. Then separately authorise a compilation:
-new series-level script and voice,select reusable book/landing picture segments,
-remove/replace old VO,one assembly/master audio owner. Inspect claim consistency,
+locally delivered,42s English,with silent master/scene map retained;owner supplied its [YouTube link](https://youtu.be/RpxHRWhH4Yw);final-film listening/style acceptance remains separate. Capture failures and freeze/reused-hero workarounds
+are documented;this was not a continuous whole-site recording. Owner authorised the compilation;the [60s MoviePy2.2.1 film](../../experiments/2026-10-15/agro-series-compilation.md) is now delivered locally with
+new series-level script and voice,selected reusable book/landing picture segments.
+Its picture master has no audio;new voice/music are on one master. Owner final-film
+review and publication remain pending. Future compilations should
+replace old VO and use one assembly/master audio owner. Inspect claim consistency,
 seams,timing,colour,phase/sync and final encoded MP4/thumbnail. Do not concatenate
 old voiced clips blindly. Diagram labels are baked in;editable scenes permit a
 later textless/change-language render if needed.

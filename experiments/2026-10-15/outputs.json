@@ -273,12 +273,44 @@
     ],
     "human_listening": "pending_owner_review_of_this_script_and_final_film",
     "creative_acceptance": "pending_owner_review",
-    "publication_url": null,
+    "publication_url": "https://youtu.be/RpxHRWhH4Yw",
     "audience_metrics": "not_measured",
     "scope_limits": [
       "Not a continuous top-to-bottom recording. Ukrainian section capture failed;edition information appears over reused hero footage.",
       "Contract page is a retained inspected freeze with native zoom,not uninterrupted live motion.",
       "Automatic cursor zoom,MCP,AI editing,other platforms and clean installation not qualified."
-    ]
+    ],
+    "publication_verification": "user_provided_url"
+  },
+  {
+    "local_output": "agro-series-compilation-pilot-20261015/Agro-Library-1080p.mp4",
+    "sha256": "4955a70e0cc0381f52e1ec10ab7103602676735945bd225afca4f0e20ceb8aa5",
+    "bytes": 9227055,
+    "id": "agro-series-compilation",
+    "route": "footage-compilation",
+    "native_export": {
+      "local_output": "agro-series-compilation-pilot-20261015/Agro-Library-Picture-1080p.mp4",
+      "sha256": "88b5d762f262735486607c4e7df21a75a16348d00a6bd4aa15c4cbeb4ac3070a",
+      "bytes": 7742964
+    },
+    "thumbnail": {
+      "local_output": "agro-series-compilation-pilot-20261015/Agro-Library-YouTube.png",
+      "sha256": "d9e74a7ff852895248cc3b7f70c04fa508810b73117955938d04572c96040c21",
+      "bytes": 437095,
+      "format": "png",
+      "width": 1280,
+      "height": 720
+    },
+    "evidence": "experiments/2026-10-15/evidence/agro-series-compilation.txt",
+    "qa_scope": "60s1080p30 MoviePy2.2.1 seven-source compilation,eight chapters,seven0.5s overlaps,six-panel and two-panel compositing,independent chapter-heading layer;all source audio disabled,new Supertonic3F1 EN and original retained instrumental stem;1800frames,full decode,120sampled frames,16scene/21transition visual samples,encoded loudness/truepeak,sync and mono metrics,native1280x720RGB PNG full/reduced inspection;native/final picture streams match.",
+    "evidence_checks": [
+      "MEDIA_CHECKS_PASS",
+      "MOVIEPY_COMPILATION_SCOPE",
+      "SOURCE_AUDIO_REMOVED"
+    ],
+    "human_listening": "pending_owner_review_of_new_script_and_final_film",
+    "creative_acceptance": "pending_owner_review",
+    "publication_url": null,
+    "audience_metrics": "not_measured"
   }
 ]

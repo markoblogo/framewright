@@ -74,5 +74,6 @@
   },
   "human_listening": "pending_owner_review",
   "creative_acceptance": "pending_owner_review",
-  "publication_url": null
+  "publication_url": "https://youtu.be/RpxHRWhH4Yw",
+  "publication_verification": "user_provided_url"
 }

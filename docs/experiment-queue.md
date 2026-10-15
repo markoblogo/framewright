@@ -9,7 +9,7 @@ each actual new-tool experiment. [Research](tool-research.md) ·
 ## Current owner-selected series
 
 [Six-book MN7R promo plan](experiments/agro-series-plan.md):Spot-Market EN completed;
-MN7R Product Guide EN has a delivered ManimGX/MLX-Audio trial,owner accepted its basic infographic style;[YouTube](https://youtu.be/TISOtCghMVY). Ukrainian brokerage now has a delivered24s Piper/Tetiana + Remotion paper-route trial;owner accepted simple distinct picture,but Ukrainian voice weak;next UK voice should use another tool;exact-raster repeat gate not met. The Ukrainian spot-market LCD film is now delivered with Supertonic3 F1;full-film owner review separate;[YouTube](https://youtu.be/Kx1ftrOWQm8). Contract Execution Officer EN delivered with owner-accepted Supertonic3F1 English;[YouTube](https://youtu.be/k7DYPrNV7ZY). The English brokerage film is delivered with narration only;[YouTube](https://youtu.be/H6l1leVo34A);ACE-Step trial is retained incomplete after the CPU disk-space guard. Do not start an unchanged duplicate. Landing tour is delivered locally with scoped OpenScreen2.0.0/FFmpeg capture and finishing;owner review/publication pending. Compilation remains queued. Reuse stems/picture masters;no future jobs start automatically.
+MN7R Product Guide EN has a delivered ManimGX/MLX-Audio trial,owner accepted its basic infographic style;[YouTube](https://youtu.be/TISOtCghMVY). Ukrainian brokerage now has a delivered24s Piper/Tetiana + Remotion paper-route trial;owner accepted simple distinct picture,but Ukrainian voice weak;next UK voice should use another tool;exact-raster repeat gate not met. The Ukrainian spot-market LCD film is now delivered with Supertonic3 F1;full-film owner review separate;[YouTube](https://youtu.be/Kx1ftrOWQm8). Contract Execution Officer EN delivered with owner-accepted Supertonic3F1 English;[YouTube](https://youtu.be/k7DYPrNV7ZY). The English brokerage film is delivered with narration only;[YouTube](https://youtu.be/H6l1leVo34A);ACE-Step trial is retained incomplete after the CPU disk-space guard. Do not start an unchanged duplicate. Landing tour is delivered with scoped OpenScreen2.0.0/FFmpeg capture and finishing;[owner-supplied YouTube](https://youtu.be/RpxHRWhH4Yw). [Compilation](../experiments/2026-10-15/agro-series-compilation.md) is delivered locally:MoviePy2.2.1/FFmpeg,60s,new EN narration and original bed. Owner final-film review/publication pending;no next job starts automatically. Reuse stems/picture masters;no future jobs start automatically.
 
 ## Phase 1 — useful book and service promos
 
@@ -114,4 +114,13 @@ in force; no automatic broad model benchmark or extra film is required.
 ## Contract Execution Officer follow-up —2026-10-15
 
 Prompt Motion reference-selection path exercised in a real authorised book promo:
-Diagrams filter→three-entry shortlist→five-scene finalist→original adapted prompt→Remotion output. See [record](../experiments/2026-10-15/contract-execution-prompt-motion.md). Customizer and arbitrary gallery ports remain untested. Supertonic3F1 English technical trial completed;owner accepted this film voice as natural-sounding. Do not repeat unchanged filtering/probing as a new experiment. ACE-Step attempt is now retained incomplete;OpenScreen now has the scoped landing trial;Editly and ASR remain candidates for the separately queued compilation;no unattended execution implied.
+Diagrams filter→three-entry shortlist→five-scene finalist→original adapted prompt→Remotion output. See [record](../experiments/2026-10-15/contract-execution-prompt-motion.md). Customizer and arbitrary gallery ports remain untested. Supertonic3F1 English technical trial completed;owner accepted this film voice as natural-sounding. Do not repeat unchanged filtering/probing as a new experiment. ACE-Step attempt is now retained incomplete;OpenScreen now has the scoped landing trial;MoviePy now has the scoped completed compilation;Editly stays deferred until a concrete remaining gap and ASR remains a future candidate. No unattended execution implied.
+
+### Completed compilation and cooldown
+
+[MoviePy trial](../experiments/2026-10-15/agro-series-compilation.md) completes the
+six-book + landing production pass. Keep its silent master/scene map for future
+recuts;new books require a new source/story/audio check. Music-video or animation
+experiments remain future choices,not scheduled work. OpenScreen and MoviePy are
+two intervening completed trials after ACE-Step;its resource/diagnostic gate still
+blocks an unchanged retry and does not make it the automatic next test.

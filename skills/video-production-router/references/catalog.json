@@ -240,6 +240,26 @@
         "clean machine and other operating systems",
         "owner final-film listening/style acceptance"
       ]
+    },
+    {
+      "id": "footage-compilation",
+      "status": "tested_for_scope",
+      "recipe": "recipes.md#footage-compilation",
+      "upstream": [
+        "https://github.com/Zulko/moviepy"
+      ],
+      "experiments": [
+        "agro-series-compilation"
+      ],
+      "tested_scope": "MoviePy2.2.1 manual60s1080p30 compilation of six book films and one landing film,subclips,multi-panel compositions,0.5s picture dissolves,independent headings,native PNG and timed audio mix;FFmpeg normalisation/mux. Manual recipe,not an automated planner provider.",
+      "not_tested": [
+        "automatic semantic selection of footage",
+        "generic font/layout compatibility;measured Pillow bounds used after clipping",
+        "vertical or other codecs",
+        "independent ASR or new-script owner listening",
+        "clean-machine complete reproduction",
+        "independent router-model evaluation"
+      ]
     }
   ]
 }

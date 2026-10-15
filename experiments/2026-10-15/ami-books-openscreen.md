@@ -78,7 +78,8 @@ foreground/capture-boundary reliability and clean-machine reproduction remain op
 No claim of independent router-model evaluation or automatic provider integration.
 The catalogue adds a scoped manual recipe;the deterministic planner is unchanged.
 
-Owner final-film listening/style review and publication are pending. Later compile
+Owner final-film listening/style review remains separate. Owner supplied the published URL
+[YouTube](https://youtu.be/RpxHRWhH4Yw);provenance is `user_provided_url`,not an independently matched playback. Later compile
 from silent masters,replace narration on one master timeline,inspect seams/claims
 and revalidate the resulting film. Compilation is not started here. ACE-Step stays
 deferred until at least two intervening completed experiments and a changed resource

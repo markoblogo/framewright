@@ -574,6 +574,22 @@
       "evidence": [
         "experiments/2026-10-15/spot-market-uk-voice-probe.md"
       ]
+    },
+    {
+      "id": "moviepy",
+      "name": "MoviePy",
+      "url": "https://github.com/Zulko/moviepy",
+      "reviewed": "2026-10-15",
+      "review_basis": "Official v2 API documentation,installed2.2.1 distribution and local bounded probe/full compilation",
+      "upstream_revision": "PyPI distribution2.2.1;requirements.lock retained",
+      "disposition": "supported_scoped",
+      "scope_and_findings": "Seven-source60s1080p30 compilation:subclips,multi-panel composition,picture crossfades,heading overlay,native RGB thumbnail,timed speech and loop/faded instrumental mixing. Source audio explicitly disabled. Tuple orientation and this font baseline needed adapter correction;no blanket API/font guarantee.",
+      "licence_note": "MIT code;FFmpeg/fonts/input media and Supertonic weights have separate terms",
+      "next_trial_or_retest_condition": "A changed assembly requirement,codec/format or font,with bounded preflight;do not rerun identical montage as a new capability test. Deterministic planner provider integration remains separate.",
+      "evidence": [
+        "experiments/2026-10-15/agro-series-compilation.md",
+        "experiments/2026-10-15/evidence/agro-series-compilation.txt"
+      ]
     }
   ]
 }

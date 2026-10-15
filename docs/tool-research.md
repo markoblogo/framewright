@@ -77,3 +77,9 @@ separately;an SVG animation is not a physical simulation.
 ## Supertonic3 Ukrainian audio-first gate
 
 [Two short preset probes](../experiments/2026-10-15/spot-market-uk-voice-probe.md) use a different model/engine from Piper,with local synthesis and pinned files. Owner subsequently accepted both as usable and much better than Tetiana,with residual pauses/stress errors;F1 is a slight preference and the scoped UK default. Full-film integration remains a separate check. OmniVoice code/weight licensing differs and was retained as rights-blocked for the intended promo,not technically failed.
+
+[MoviePy2.2.1](https://github.com/Zulko/moviepy) now has a
+[scoped compilation trial](../experiments/2026-10-15/agro-series-compilation.md):
+subclips,multi-panel scenes,picture crossfades,independent headings,native RGB PNG
+and timed audio mix. MIT code;fonts/media/weights retain separate rights. Editly
+remains deferred,not failed. This manual recipe is not an automatic planner provider.

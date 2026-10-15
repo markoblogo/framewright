@@ -256,3 +256,19 @@ Fullscreen/hidden-window miniature and black output occurred in this pilot. Nati
 export was60fps;the delivered30fps file is a separately checked FFmpeg conversion.
 Automatic cursor zoom,AI editing and account/provider calls remain unqualified.
 This is an agent-selectable manual recipe,not a new deterministic planner provider.
+
+## Footage compilation
+
+Use MoviePy when an authorised brief combines retained clips into a new story.
+Read the [agricultural-library trial](../../../experiments/2026-10-15/agro-series-compilation.md)
+and [archived adapter](../../../examples/moviepy-agro-series/README.md). Lock source
+identities and selected ranges;disable input audio before compositing. Keep original
+voice/music stems separate,new speech measured,one final audio timeline. Overlaps
+subtract from total duration. Dissolve pictures while keeping main headings on an
+independent layer;inspect baked text,colour/timebase and each encoded seam.
+
+The tested2.2.1 recipe adds multi-panel scenes,native PNG and timed audio mix;FFmpeg
+owns final normalisation/AAC mux and QA. Existing source art/text is not automatically
+textless or language-independent. Native thumbnails need separate raster/legibility
+checks. Use measured font bounds;the first font adapter clipped. No automatic clip
+selection,new deterministic planner provider,ASR or generic font/format claim.

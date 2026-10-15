@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](docs/router-evaluation.md)
 [![Planning evidence: scoped](https://img.shields.io/badge/planning__evidence-scoped-526C73?style=flat-square)](docs/router-evaluation.md)
-[![16 recorded exports](https://img.shields.io/badge/recorded__exports-16-293F48?style=flat-square)](docs/experiments.md)
+[![17 recorded exports](https://img.shields.io/badge/recorded__exports-17-293F48?style=flat-square)](docs/experiments.md)
 
 **Framewright helps an AI agent choose and execute a suitable video pipeline,
 based on documented experiments.**
@@ -73,6 +73,12 @@ A real-site tour is now recorded with **OpenScreen2.0.0 + FFmpeg + Supertonic3F1
 [AMI Books pilot](experiments/2026-10-15/ami-books-openscreen.md),42s1080p30.
 Window-capture failures and freeze workarounds are retained;this is a manual recipe,
 with owner review pending,not a newly qualified automatic planner provider.
+
+A [60s agricultural-library compilation](experiments/2026-10-15/agro-series-compilation.md)
+now reuses six book films and the landing tour through **MoviePy + FFmpeg**,with
+new English narration and a retained original instrumental bed. Source audio is
+removed;multi-panel scenes,transitions and a separate thumbnail have scoped QA.
+Owner final-film review remains pending;automatic clip selection is unqualified.
 
 [Recipes and evidence](skills/video-production-router/references/recipes.md) ·
 [Capabilities and styles](skills/video-production-router/references/tool-matrix.md) ·
