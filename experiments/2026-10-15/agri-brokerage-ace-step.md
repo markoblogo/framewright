@@ -124,7 +124,13 @@ lag0samples,mono RMS ratio0.99999757. Native/final video bitstreams match.
 Sixteen encoded action samples and18consecutive cut frames inspected;native opaque
 1280x720PNG and reduced320x180 inspected. No independent all-frame/artistic review
 or pixel-identical portability claim. Voice-only final selected by owner;new-script
-listening,creative acceptance and publication remain pending. MP4,PNG/JPG,English
+listening and creative acceptance remain pending. MP4,PNG/JPG,English
 YouTube title/description/tags andSRT retained onWork. No media/model assets inGit.
 
 [Installed music environment snapshot](evidence/agri-brokerage-music-installed-requirements.lock) records package installation;effective Pillow overlay12.0.0 differs from installed12.3.0 and is recorded separately in evidence. This is not a clean-install lock qualification. Three.jsMIT;RemotionFree/Company licence checked for the owner context,not a blanketMIT renderer licence.
+
+## Publication and deferred revisit —2026-10-15
+
+Owner supplied the [published film](https://youtu.be/H6l1leVo34A). Provenance:`user_provided_url`;not independently playback-verified or matched to the retained master. Publication does not imply listening or artistic approval.
+
+Owner requested ACE-Step return to the queue after a break. Revisit after at least two other completed experiments,not as the next trial. Existing integrity/resource findings remain in force;use changed resources/environment or a concrete diagnostic question with a bounded preflight. No new run or release is started by this scheduling update.

@@ -239,9 +239,10 @@
     ],
     "human_listening": "pending_owner_review_of_this_script_and_final_film",
     "creative_acceptance": "pending_owner_review",
-    "publication_url": null,
+    "publication_url": "https://youtu.be/H6l1leVo34A",
     "audience_metrics": "not_measured",
     "owner_decision": "Final English narration only after ACE-Step CPU resource guard;no music/effects included",
-    "music_trial_status": "incomplete_resource_guard;not a qualified music capability"
+    "music_trial_status": "incomplete_resource_guard;not a qualified music capability",
+    "publication_verification": "user_provided_url"
   }
 ]

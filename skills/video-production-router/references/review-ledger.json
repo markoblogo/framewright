@@ -412,7 +412,7 @@
       "disposition": "runtime_incomplete_resource_guard",
       "scope_and_findings": "Initial DiT download hash mismatch repaired by verified221.94s retry. ScopedMPSfloat16/MLXVAE initialization and diffusion reached valid latents;no deliverableWAV retained across owner-reported emergency restart. System watchdog report does not prove ACE-Step causality. Owner-authorized10sCPU-only bfloat16/2-thread probe stopped after350.22s by internal-free-disk<5GiB guard;sampled peakRSS2159722496bytes. No final music,quality approval or end-to-end music pass. Owner selected English narration-only final film.",
       "licence_note": "Official codeMIT/model cardMIT;exact pinned weights/code hashes retained;Qwen component retains its upstream terms. No weights or generated music redistributed.",
-      "next_trial_or_retest_condition": "Changed resources/environment or concrete investigation with explicit bounded authority;no unchanged automatic MPS/CPU replay. Do not mark technical music generation failed universally or promote a tested music route.",
+      "next_trial_or_retest_condition": "Owner-scheduled delayed revisit:after at least two other completed experiments,not the next trial. Changed resources/environment or concrete investigation with explicit bounded authority;no unchanged automatic MPS/CPU replay. Do not mark technical music generation failed universally or promote a tested music route.",
       "evidence": [
         "experiments/2026-10-15/agri-brokerage-ace-step.md"
       ]

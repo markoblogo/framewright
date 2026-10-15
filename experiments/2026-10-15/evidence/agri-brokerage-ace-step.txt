@@ -32,10 +32,11 @@
     "visual_inspection": "16 encoded scene/action samples,18 consecutive cut frames and full-size deal frame inspected;headlines clear after camera correction,shared book movement continues through22.2s hard background cut. Native opaque1280x720 and reduced320x180 thumbnail inspected.",
     "human_listening": "pending_owner_review",
     "creative_acceptance": "pending_owner_review",
-    "publication_url": null,
+    "publication_url": "https://youtu.be/H6l1leVo34A",
     "technical_checks_passed": true,
     "native_final_video_stream_sha256": "93a78f6c3dec18d9fc71a458d7c549c186a22463a6f80908a3ea08c45b1d1d28",
-    "soundtrack": "English narration only;no music or effects;owner selected after ACE-Step resource stop"
+    "soundtrack": "English narration only;no music or effects;owner selected after ACE-Step resource stop",
+    "publication_verification": "user_provided_url"
   },
   "thumbnail": {
     "width": 1280,
@@ -93,7 +94,7 @@
     "owner_authorized_next": "CPU-only bounded probe,8GiB processRSS,600seconds,10second requested audio,PyTorch2threads;noMPS/noMLX",
     "private_report": "Raw system report not redistributed"
   },
-  "publication_url": null,
+  "publication_url": "https://youtu.be/H6l1leVo34A",
   "human_listening": "pending_owner_review",
   "creative_acceptance": "pending_owner_review",
   "owner_decision": "English narration only;ACE-Step music not included",
@@ -109,5 +110,7 @@
     "cpu_dit_dtype": "bfloat16",
     "cpu_text_dtype": "bfloat16",
     "cpu_vae_dtype": "float32"
-  }
+  },
+  "publication_verification": "user_provided_url",
+  "music_retest_schedule": "Deferred until at least two other experiments have completed;not the next trial;changed resources/environment or concrete diagnosis and bounded preflight still required."
 }

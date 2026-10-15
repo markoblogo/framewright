@@ -82,7 +82,7 @@ Owner accepted the simple,distinct visual style but found Ukrainian voice weak:u
 
 [Latest LCD-style spot-market UK film](experiments/2026-10-15/spot-market-uk-lcd.md):Supertonic3 F1 + authored Remotion terminal/pixel motion. The voice is owner-recommended from short probes,with residual errors;final-film review remains separate.
 
-[Latest English brokerage promo](experiments/2026-10-15/agri-brokerage-ace-step.md):30s authored Three.js/Remotion trading table with Supertonic3F1 narration only. ACE-Step music attempts remained incomplete;the CPU resource guard and system-interruption uncertainty are retained separately. No automatic music-route qualification is claimed.
+[Latest English brokerage promo](experiments/2026-10-15/agri-brokerage-ace-step.md) · [Watch on YouTube](https://youtu.be/H6l1leVo34A):30s authored Three.js/Remotion trading table with Supertonic3F1 narration only. ACE-Step music attempts remained incomplete;the CPU resource guard and system-interruption uncertainty are retained separately. No automatic music-route qualification is claimed.
 
 ## Use the agent skill
 
