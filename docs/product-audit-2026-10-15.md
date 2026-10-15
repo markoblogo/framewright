@@ -10,7 +10,10 @@ Framewright helps an agent turn a video brief into an evidence-aware production
 method. The agent executes external tools; Framewright supplies planning logic,
 recipes, limitations and handoff instructions. The first action should be producing
 an inspectable production plan or following the open reference-film recipe.
-The audience is an agent operator making useful promos from authorised materials.
+The audience is an agent operator planning and producing video from authorised
+materials. Books/software promos are initial evidence,not a product boundary.
+Owner clarified the general video-production positioning on2026-10-16;new genres
+still need scoped qualification.
 No audience/conversion, comparative cost or general reliability claim is established.
 
 ## Closed production stage
