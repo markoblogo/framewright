@@ -109,7 +109,7 @@ in force; no automatic broad model benchmark or extra film is required.
 
 ## Current Ukrainian voice gate
 
-[Spot-market UK microprobe](../experiments/2026-10-15/spot-market-uk-voice-probe.md):Supertonic3 M1/F1,12.19s each,technical WAV checks complete. Owner accepted both,with slightF1 preference;Supertonic3 is now the primary scoped UK voice,Piper a low-quality explicit fallback. [Full LCD-style film](../experiments/2026-10-15/spot-market-uk-lcd.md) delivered with technical QA;owner final-film review/YouTube pending. No general speech-quality claim. OmniVoice weights remain rights-blocked for this promotional brief;Piper/Tetiana is not retried.
+[Spot-market UK microprobe](../experiments/2026-10-15/spot-market-uk-voice-probe.md):Supertonic3 M1/F1,12.19s each,technical WAV checks complete. Owner accepted both,with slightF1 preference;Supertonic3 is now the primary scoped UK voice,Piper a low-quality explicit fallback. [Full LCD-style film](../experiments/2026-10-15/spot-market-uk-lcd.md) delivered with technical QA;owner final-film review remains separate;[owner-supplied YouTube](https://youtu.be/Kx1ftrOWQm8) recorded. No general speech-quality claim. OmniVoice weights remain rights-blocked for this promotional brief;Piper/Tetiana is not retried.
 
 ## Contract Execution Officer follow-up —2026-10-15
 

@@ -12,8 +12,8 @@ Prompt Motion supplies references,not rendering or a licence to creator assets.
 
 Inspect the pinned Remotion Free/Company licence eligibility before installing.
 The pilot reused existing packages/models;it was not a clean-install test.
-`synthesize.py` uses the retained local Supertonic model manifest and verifies all
-model/config/style hashes. Set `SUPERTONIC_SOURCE_ROOT` to your verified model workspace,containing `model-manifest.json` and `models/Supertonic-3`;
+`synthesize.py` loads this example's committed `model-manifest.json` and verifies all
+model/config/style hashes against that pin;an external manifest cannot redefine it. Set `SUPERTONIC_SOURCE_ROOT` to your verified model workspace,containing `models/Supertonic-3`;its own manifest is not trusted.
 retain SDK1.3.1 and the experiment's model revision. No automatic download.
 Model weights use BigScienceOpenRAIL-M;disclose AI-generated narration.
 Do not run this example unchanged against an unrelated book or voice model.
@@ -34,3 +34,5 @@ Cache disabled in config. The pilot isolated its writable cache from reused
 packages after a shared-cache permission failure. Keep browser/cache failures in
 [the experiment record](../../experiments/2026-10-15/contract-execution-prompt-motion.md).
 Inspect native thumbnail and final encoded video/audio separately.
+
+Every synthesis run regenerates selected WAVs,including existing names;there is no filename-based audio cache. Preserve accepted masters externally before a new trial. Scoped ignores exclude generated audio/metadata,cache,guides,authorised public assets and root PNG/JPG/SRT outputs from Git. Ignore rules prevent accidental adds,not automatic storage cleanup.

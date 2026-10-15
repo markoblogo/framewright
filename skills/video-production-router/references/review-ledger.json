@@ -275,7 +275,7 @@
       "disposition": "reference_only",
       "scope_and_findings": "Public catalogue, prompts/skills and customizer; creator-owned material. Improved prompt may be Untested while original has a video. Contract Execution Officer production trial:actual Diagrams filter,three-entry text shortlist,Alex Prompter five-scene finalist and one paused preview frame;original adapted prompt executed through existing Remotion. No customizer/creator-media reuse or renderer qualification implied.",
       "licence_note": "creator-specific; no blanket reuse licence established",
-      "next_trial_or_retest_condition": "Brief → metadata filters → shortlist → finalist → original bounded prompt adaptation → agreed render/QA. Current trial stops at prompt.",
+      "next_trial_or_retest_condition": "The Contract Execution Officer filter/shortlist/adapted-prompt/render/QA path is complete. Next trial only for a concrete new question:customizer operation or a different gallery entry/renderer port;owner visual review remains separate. Do not repeat the completed path unchanged.",
       "evidence": [
         "docs/tool-research.md",
         "experiments/2026-10-15/contract-execution-prompt-motion.md"

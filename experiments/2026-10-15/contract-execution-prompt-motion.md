@@ -80,3 +80,14 @@ First encoded contact review found a short empty hold before the book reveal;the
 ## Owner listening —2026-10-15
 
 Owner:English is good,and the synthetic origin may not be obvious. Record as positive listening/naturalness feedback for this exact F1 script/film. This is subjective owner acceptance,not blind testing or universal human-equivalence. Visual/style acceptance remains separate. Owner supplied publication URL:https://youtu.be/k7DYPrNV7ZY;link recorded from owner,not independently playback-verified.
+
+## PR review corrections
+
+Archived synthesizer now verifies weights/config/styles against its committed
+manifest,ignoring an external self-consistent manifest. Every selected WAV is
+regenerated rather than reused by filename. Scoped ignores cover generated
+cache/guides/audio metadata/public art/root stills/captions. Five offline regression
+tests exercise alternate-manifest rejection,style drift,valid pins,stale-WAV
+replacement and Git ignore boundaries. All155 unit tests and record validation pass.
+These fixes do not regenerate or change the accepted film. Prompt Motion's retest
+condition and the remaining stale UK YouTube-pending note were corrected.
