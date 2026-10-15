@@ -123,3 +123,7 @@ Maintenance: [one offline check command and bounded model checks](docs/checking-
 New [Burgers pilot](experiments/2026-10-15/burgers-cue-analysis.md): 15s narrated promo; librosa recovered3/3 authored accents and PySceneDetect4/4 exact cuts. [Analysis helper](examples/cue-analysis/README.md); independent listening remains pending.
 
 [Spot-Market visual pilot](experiments/2026-10-15/spot-market-3d-miniature.md): staged Three.js grain/truck/port action and camera inside Hyperframes,20s with English narration. [Authored source](examples/staged-market-scene/README.md); technical QA passed; owner liked the 3D animation and narration. The scoped `three-scene` profile is now selectable; mixed-renderer combinations remain proposed.
+
+[Tool research and revisit decisions](docs/tool-research.md) ·
+[24 camera/editing terms in Russian and English](skills/video-production-router/references/video-terms.md) ·
+[Prompt Motion reference-selection trial](docs/prompt-motion-trial.md).

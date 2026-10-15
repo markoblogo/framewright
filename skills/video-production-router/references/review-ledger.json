@@ -1,0 +1,499 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-15",
+  "policy": {
+    "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
+    "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
+    "separate": "Documentation review, runtime attempt, technical pass, owner preference, rights and public publication are distinct. Unknown is not failure.",
+    "authority": "A queued item is not install, model download, purchase, account, upload or autonomous execution authority."
+  },
+  "tools": [
+    {
+      "id": "hyperframes",
+      "name": "Hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": null,
+      "disposition": "supported_scoped",
+      "scope_and_findings": "HTML rendering used in delivered pilots; only recorded formats/effects qualified.",
+      "licence_note": "Apache-2.0",
+      "next_trial_or_retest_condition": "Existing tool profile and experiment records; no blanket retest.",
+      "evidence": [
+        "skills/video-production-router/references/tools.json"
+      ]
+    },
+    {
+      "id": "ffmpeg",
+      "name": "FFmpeg",
+      "url": "https://github.com/FFmpeg/FFmpeg",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": null,
+      "disposition": "supported_scoped",
+      "scope_and_findings": "Assembly, encoded audio mixing/QA and frame extraction used; permissions and build licences differ from media rights.",
+      "licence_note": "build-dependent LGPL/GPL",
+      "next_trial_or_retest_condition": "Test only a new codec/filter/handoff requirement.",
+      "evidence": [
+        "skills/video-production-router/references/tools.json"
+      ]
+    },
+    {
+      "id": "auto-editor",
+      "name": "auto-editor",
+      "url": "https://github.com/WyattBlue/auto-editor",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": "44bf4ec3dfffdd1bb5410b06dc9f0365d8f6bbbc",
+      "disposition": "candidate",
+      "scope_and_findings": "Automatic timeline cuts by audio loudness/motion; not semantic judgement of which words can be removed.",
+      "licence_note": "Unlicense; packaged artefacts may differ",
+      "next_trial_or_retest_condition": "Authorised60\u201390s spoken sample; label pauses first, protect phrase edges, check edit list and sync.",
+      "evidence": [
+        "docs/tool-research.md"
+      ]
+    },
+    {
+      "id": "openscreen",
+      "name": "OpenScreen",
+      "url": "https://github.com/getopenscreen/openscreen",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": "56d590d33160b79e82f84cd7e402360346088780",
+      "disposition": "candidate",
+      "scope_and_findings": "Screen capture with auto/manual zoom, editing and export; optional AI editing needs an explicit provider/key.",
+      "licence_note": "MIT",
+      "next_trial_or_retest_condition": "Synthetic local UI,10\u201315s; inspect cursor focus, private-window exclusion, readability and export. No account action.",
+      "evidence": [
+        "docs/tool-research.md"
+      ]
+    },
+    {
+      "id": "yt-dlp",
+      "name": "yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": "897341241f2bfb2439fe0367f4c7c9ccd29a3828",
+      "disposition": "candidate",
+      "scope_and_findings": "Acquisition utility, not a renderer/editor or licence to reuse downloaded media.",
+      "licence_note": "Unlicense source; bundled release dependencies vary",
+      "next_trial_or_retest_condition": "Only an authorised owner clip if no retained local master exists; test segment timing/metadata; do not import browser cookies implicitly.",
+      "evidence": [
+        "docs/tool-research.md"
+      ]
+    },
+    {
+      "id": "puppeteer",
+      "name": "Puppeteer",
+      "url": "https://github.com/puppeteer/puppeteer",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": "10c43c1b9101ab62835332393f49e3fb426dde88",
+      "disposition": "component_used",
+      "scope_and_findings": "Browser/seek harness used for Spot-Market; this is not a separate continuous recorder qualification.",
+      "licence_note": "Apache-2.0",
+      "next_trial_or_retest_condition": "Reuse existing browser harness; test only new seek/readiness/capture requirements.",
+      "evidence": [
+        "experiments/2026-10-15/spot-market-3d-miniature.md"
+      ]
+    },
+    {
+      "id": "manimgx",
+      "name": "ManimGX",
+      "url": "https://github.com/academa-labs/manimgx",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": "cfd33af5aa7cc0d6aa7dfe13919744e2124629dc",
+      "disposition": "candidate",
+      "scope_and_findings": "Python/Manim-style scene API with Rust/wgpu engine. Upstream speed claims are not local measurements.",
+      "licence_note": "MIT code; bundled components retain separate notices",
+      "next_trial_or_retest_condition": "One10s authorised economic diagram; Python/backend/wheel/font preflight, labelled values, timing/legibility and encoded MP4.",
+      "evidence": [
+        "docs/tool-research.md"
+      ]
+    },
+    {
+      "id": "anatomy",
+      "name": "Anatomy",
+      "url": "https://github.com/wheresryan22/anatomy",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": null,
+      "disposition": "prototype",
+      "scope_and_findings": "Desk/isometric adaptation is a visual prototype; original combined sound QA failed. New Three.js success does not repair that chain.",
+      "licence_note": "retain upstream licence evidence before reuse",
+      "next_trial_or_retest_condition": "No repeat of the same prototype. Revisit only a specific changed component or new illustration requirement.",
+      "evidence": [
+        "skills/video-production-router/references/tools.json"
+      ]
+    },
+    {
+      "id": "gsap",
+      "name": "GSAP",
+      "url": "https://github.com/greensock/GSAP",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": null,
+      "disposition": "component_used",
+      "scope_and_findings": "Paused absolute-time timelines used inside Hyperframes; not every plugin/effect tested.",
+      "licence_note": "own standard licence; inspect exact distribution/terms",
+      "next_trial_or_retest_condition": "Use existing installed runtime; new plugins, text morphs or capture timing need their own scoped checks.",
+      "evidence": [
+        "experiments/2026-10-15/spot-market-3d-miniature.md"
+      ]
+    },
+    {
+      "id": "three-js",
+      "name": "Three.js",
+      "url": "https://github.com/mrdoob/three.js",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": null,
+      "disposition": "supported_scoped",
+      "scope_and_findings": "Authored Spot-Market miniature/action/camera via three-scene profile; no calibrated physics or arbitrary model reconstruction.",
+      "licence_note": "MIT",
+      "next_trial_or_retest_condition": "Reuse tested adapter; ASCII treatment, new geometry/import or formats are new scoped experiments.",
+      "evidence": [
+        "experiments/2026-10-15/spot-market-3d-miniature.md"
+      ]
+    },
+    {
+      "id": "sound-layer",
+      "name": "opus-sound-layer",
+      "url": "https://github.com/Bodila51/opus-sound-layer",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": null,
+      "disposition": "partial",
+      "scope_and_findings": "Sound-layer methods/mix QA are retained; a library-level CC0 statement does not clear every chosen recording. Anatomy combined failure remains retained.",
+      "licence_note": "inspect skill/code and each recording independently",
+      "next_trial_or_retest_condition": "Inspect each sample provenance; test only missing sound/mix capability, not the whole pipeline again.",
+      "evidence": [
+        "skills/video-production-router/references/tools.json"
+      ]
+    },
+    {
+      "id": "librosa",
+      "name": "librosa",
+      "url": "https://github.com/librosa/librosa",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": null,
+      "disposition": "supported_scoped",
+      "scope_and_findings": "Burgers:3/3 authored target onsets; no independent listening labels, general beat/downbeat or song alignment qualification.",
+      "licence_note": "ISC",
+      "next_trial_or_retest_condition": "New genuine music reference with manual labels, not the same authored-marker recovery.",
+      "evidence": [
+        "experiments/2026-10-15/burgers-cue-analysis.md"
+      ]
+    },
+    {
+      "id": "mlx-audio",
+      "name": "MLX-Audio",
+      "url": "https://github.com/Blaizzy/mlx-audio",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": "dad2087f790dfe96b07d5aac1405db4b578b411f",
+      "disposition": "candidate",
+      "scope_and_findings": "Apple Silicon TTS/STT/STS and specific diarization models; choose an exact model, not a generic speaker-label promise.",
+      "licence_note": "MIT code; model-specific terms",
+      "next_trial_or_retest_condition": "Only for a needed voice task: model size/terms/backend preflight; two authorised speakers for diarization. No cloning inferred.",
+      "evidence": [
+        "docs/tool-research.md"
+      ]
+    },
+    {
+      "id": "pyannote",
+      "name": "pyannote-audio",
+      "url": "https://github.com/pyannote/pyannote-audio",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": "b749285c5cdd4636b2edc7f766f1352c8dde9369",
+      "disposition": "candidate",
+      "scope_and_findings": "Speaker diarization/embeddings. Anonymous speaker clusters are not verified real-person identity.",
+      "licence_note": "MIT code; model/provider terms separate",
+      "next_trial_or_retest_condition": "Two-speaker20\u201330s sample with manual turns/overlap; inspect model conditions, token/telemetry and local-vs-premium route first.",
+      "evidence": [
+        "docs/tool-research.md"
+      ]
+    },
+    {
+      "id": "mlx-whisper",
+      "name": "mlx-whisper",
+      "url": "https://github.com/ml-explore/mlx-examples",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": "796f5b53cab69a3d48a44233ce21aae889e94a08",
+      "disposition": "candidate",
+      "scope_and_findings": "MLX Whisper speech transcription; word timing is an estimate, not proven lyric alignment. Exact path is whisper/README.md.",
+      "licence_note": "MIT code; inspect selected weights",
+      "next_trial_or_retest_condition": "Same10\u201315s EN narration and known transcript as Parakeet/WhisperX; errors, timing and real resource use. Singing separately.",
+      "evidence": [
+        "docs/tool-research.md"
+      ]
+    },
+    {
+      "id": "parakeet-mlx",
+      "name": "parakeet-mlx",
+      "url": "https://github.com/senstella/parakeet-mlx",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": "2d9748c04aca31405274a13c20ef9b62f1a73351",
+      "disposition": "candidate",
+      "scope_and_findings": "Apple Silicon implementation of Parakeet ASR, documented word-level caption outputs; speed/accuracy unmeasured here.",
+      "licence_note": "Apache-2.0 code; weight terms separate",
+      "next_trial_or_retest_condition": "Share the transcription fixture/model budget; record exact language/model, omitted words, timestamps and output SRT.",
+      "evidence": [
+        "docs/tool-research.md"
+      ]
+    },
+    {
+      "id": "claude-video",
+      "name": "claude-video / Watch",
+      "url": "https://github.com/bradautomates/claude-video",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": "03ceb42f7fa2c4439aca01752118044baabffb8f",
+      "disposition": "candidate",
+      "scope_and_findings": "Documented Agent Skills/Codex path, sampled frames plus transcript; this is not proof of continuous video/audio understanding.",
+      "licence_note": "MIT code; providers/models independent",
+      "next_trial_or_retest_condition": "Existing local10\u201315s owned MP4; inspect planned paths/dependencies/cloud fallback first. Compare known visual events and transcript, no automatic installs/uploads.",
+      "evidence": [
+        "docs/tool-research.md"
+      ]
+    },
+    {
+      "id": "prompt-motion",
+      "name": "Prompt Motion",
+      "url": "https://prompt-motion.com/",
+      "reviewed": "2026-10-15",
+      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "Public catalogue, prompts/skills and customizer; creator-owned material. Improved prompt may be Untested while original has a video.",
+      "licence_note": "creator-specific; no blanket reuse licence established",
+      "next_trial_or_retest_condition": "Brief \u2192 metadata filters \u2192 shortlist \u2192 finalist \u2192 original bounded prompt adaptation \u2192 agreed render/QA. Current trial stops at prompt.",
+      "evidence": [
+        "docs/tool-research.md"
+      ]
+    },
+    {
+      "id": "brag",
+      "name": "Brag full",
+      "url": "https://github.com/latent-spaces/brag/blob/069432cac935ed1895859df201c31436c07fb74e/README.md",
+      "reviewed": "2026-10-15",
+      "review_basis": "backfilled retained router profile; no fresh upstream/runtime audit",
+      "upstream_revision": null,
+      "disposition": "retained_profile",
+      "scope_and_findings": "Full Hyperframes workflow was tested; brag-slim was not. Voice is documented, not exercised in our Brag runs.",
+      "licence_note": "MIT; renderer/providers have separate terms",
+      "next_trial_or_retest_condition": "Inspect the existing profile and evidence first; test only the specific changed or missing requirement.",
+      "evidence": [
+        "skills/video-production-router/references/tools.json"
+      ]
+    },
+    {
+      "id": "flute",
+      "name": "Flute",
+      "url": "https://github.com/webprodigies-org/flute/blob/4ab8c4a310ed051db9990e5a10a35fbcf2080cb1/README.md",
+      "reviewed": "2026-10-15",
+      "review_basis": "backfilled retained router profile; no fresh upstream/runtime audit",
+      "upstream_revision": null,
+      "disposition": "retained_profile",
+      "scope_and_findings": "Browser-host CoqPi success does not establish packaged Electron or arbitrary React support. Keep real data and IPC outside demo. No Flute audio workflow was tested.",
+      "licence_note": "MIT",
+      "next_trial_or_retest_condition": "Inspect the existing profile and evidence first; test only the specific changed or missing requirement.",
+      "evidence": [
+        "skills/video-production-router/references/tools.json"
+      ]
+    },
+    {
+      "id": "remotion",
+      "name": "Remotion",
+      "url": "https://www.remotion.dev/docs/",
+      "reviewed": "2026-10-15",
+      "review_basis": "backfilled retained router profile; no fresh upstream/runtime audit",
+      "upstream_revision": null,
+      "disposition": "retained_profile",
+      "scope_and_findings": "Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately.",
+      "licence_note": "Remotion Free/Company licence; individual/small-team eligibility and paid features need separate checking",
+      "next_trial_or_retest_condition": "Inspect the existing profile and evidence first; test only the specific changed or missing requirement.",
+      "evidence": [
+        "skills/video-production-router/references/tools.json"
+      ]
+    },
+    {
+      "id": "kokoro",
+      "name": "Kokoro ONNX",
+      "url": "https://github.com/thewh1teagle/kokoro-onnx/blob/3596b26764286a7de9d90c363e988d50578918e5/README.md",
+      "reviewed": "2026-10-15",
+      "review_basis": "backfilled retained router profile; no fresh upstream/runtime audit",
+      "upstream_revision": null,
+      "disposition": "retained_profile",
+      "scope_and_findings": "Local FR/EN tested; other documented languages require a voice/pronunciation and timing trial. No voice cloning tested.",
+      "licence_note": "Wrapper MIT; model Apache-2.0; inspect individual input/voice rights",
+      "next_trial_or_retest_condition": "Inspect the existing profile and evidence first; test only the specific changed or missing requirement.",
+      "evidence": [
+        "skills/video-production-router/references/tools.json"
+      ]
+    },
+    {
+      "id": "suno",
+      "name": "Suno",
+      "url": "https://help.suno.com/en/articles/2415873",
+      "reviewed": "2026-10-15",
+      "review_basis": "backfilled retained router profile; no fresh upstream/runtime audit",
+      "upstream_revision": null,
+      "disposition": "retained_profile",
+      "scope_and_findings": "Do not infer commercial clearance from a playable library item or current paid status alone. Retain current terms and permitted-download evidence. Use approved downloads; do not bypass limits or strip provenance/branding. Song-card export, generated video cover art, uploaded looping art and third-party full music videos are separate capabilities. Private test media and account details are not public experiment evidence.",
+      "licence_note": "Cloud service terms, not the repository MIT licence. Free/trial use can be personal and noncommercial; approved-download rights and account/song history require per-asset review. A noncommercial limitation is not a technical failure.",
+      "next_trial_or_retest_condition": "Inspect the existing profile and evidence first; test only the specific changed or missing requirement.",
+      "evidence": [
+        "skills/video-production-router/references/tools.json"
+      ]
+    },
+    {
+      "id": "flow-music",
+      "name": "Google Flow Music",
+      "url": "https://www.flowmusic.app/?version=published",
+      "reviewed": "2026-10-15",
+      "review_basis": "backfilled retained router profile; no fresh upstream/runtime audit",
+      "upstream_revision": null,
+      "disposition": "retained_profile",
+      "scope_and_findings": "Inspect actual account credits/model/plan before generation; no purchasing or upgrade authority is implied. Do not treat the Producer chat response as proof of generation, rights, export success or account entitlement. A music-driven generative scene needs deterministic finishing for exact typography, UI facts and reliable logos. Cloud uploads/outputs may be retained and reviewed under the privacy notice. Private microtests do not promote the public catalogue to tested_for_scope.",
+      "licence_note": "Cloud service/Google terms. Plan benefits can include commercial use; do not infer a Free account grant from credits or a general product page. Input, music and visual rights require separate records.",
+      "next_trial_or_retest_condition": "Inspect the existing profile and evidence first; test only the specific changed or missing requirement.",
+      "evidence": [
+        "skills/video-production-router/references/tools.json"
+      ]
+    },
+    {
+      "id": "storyboard",
+      "name": "AI Video Storyboard / Framewright adapter",
+      "url": "https://github.com/aicontentskills/ai-video-storyboard-skill/blob/93f8a6d6935858bc4acd7ff3bbea2411edf88caa/SKILL.md",
+      "reviewed": "2026-10-15",
+      "review_basis": "backfilled retained router profile; no fresh upstream/runtime audit",
+      "upstream_revision": null,
+      "disposition": "retained_profile",
+      "scope_and_findings": "Not a renderer, image generator, audio generator or editor; never selected as a picture provider by plan.py. Upstream references directory is absent. Fixed five-second pacing, 1080p and synchronized-audio suffix are defaults that explicit user constraints override. Plan-only trials cannot qualify generated continuity, actual duration/sync, native export or provider costs.",
+      "licence_note": "MIT declared in upstream README and SKILL; no standalone LICENSE at inspected revision. Original Framewright adapter links upstream without vendoring its code/skill. Provider and asset rights remain separate.",
+      "next_trial_or_retest_condition": "Inspect the existing profile and evidence first; test only the specific changed or missing requirement.",
+      "evidence": [
+        "skills/video-production-router/references/tools.json"
+      ]
+    },
+    {
+      "id": "whisperx",
+      "name": "whisperx",
+      "url": "https://github.com/m-bain/whisperX",
+      "reviewed": "2026-10-14",
+      "review_basis": "backfilled retained queue/related-work record; no new upstream/runtime audit",
+      "upstream_revision": null,
+      "disposition": "deferred",
+      "scope_and_findings": "Lyric alignment remains queued; speech does not qualify singing.",
+      "licence_note": "See retained source comparison; exact package/model/media terms still need per-trial review.",
+      "next_trial_or_retest_condition": "A concrete authorised task and resolution of the recorded prerequisite; never repeat an unchanged blocked setup.",
+      "evidence": [
+        "docs/related-work.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "ace-step",
+      "name": "ace-step",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "reviewed": "2026-10-14",
+      "review_basis": "backfilled retained queue/related-work record; no new upstream/runtime audit",
+      "upstream_revision": null,
+      "disposition": "deferred",
+      "scope_and_findings": "Local music remains deferred to hardware/weights/model-size preflight.",
+      "licence_note": "See retained source comparison; exact package/model/media terms still need per-trial review.",
+      "next_trial_or_retest_condition": "A concrete authorised task and resolution of the recorded prerequisite; never repeat an unchanged blocked setup.",
+      "evidence": [
+        "docs/related-work.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "vimax",
+      "name": "vimax",
+      "url": "https://github.com/HKUDS/ViMax",
+      "reviewed": "2026-10-14",
+      "review_basis": "backfilled retained queue/related-work record; no new upstream/runtime audit",
+      "upstream_revision": null,
+      "disposition": "deferred",
+      "scope_and_findings": "Storyboard/checkpoint pilot requires agreed provider and generation cap.",
+      "licence_note": "See retained source comparison; exact package/model/media terms still need per-trial review.",
+      "next_trial_or_retest_condition": "A concrete authorised task and resolution of the recorded prerequisite; never repeat an unchanged blocked setup.",
+      "evidence": [
+        "docs/related-work.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "editly",
+      "name": "editly",
+      "url": "https://github.com/mifi/editly",
+      "reviewed": "2026-10-14",
+      "review_basis": "backfilled retained queue/related-work record; no new upstream/runtime audit",
+      "upstream_revision": null,
+      "disposition": "deferred",
+      "scope_and_findings": "Only if the existing assemblers lack a concrete requirement.",
+      "licence_note": "See retained source comparison; exact package/model/media terms still need per-trial review.",
+      "next_trial_or_retest_condition": "A concrete authorised task and resolution of the recorded prerequisite; never repeat an unchanged blocked setup.",
+      "evidence": [
+        "docs/related-work.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "ltx-2",
+      "name": "ltx-2",
+      "url": "https://github.com/Lightricks/LTX-2",
+      "reviewed": "2026-10-14",
+      "review_basis": "backfilled retained queue/related-work record; no new upstream/runtime audit",
+      "upstream_revision": null,
+      "disposition": "deferred",
+      "scope_and_findings": "Large audio/video model remains deferred to exact terms/hardware/download budget.",
+      "licence_note": "See retained source comparison; exact package/model/media terms still need per-trial review.",
+      "next_trial_or_retest_condition": "A concrete authorised task and resolution of the recorded prerequisite; never repeat an unchanged blocked setup.",
+      "evidence": [
+        "docs/related-work.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "shipvideo",
+      "name": "shipvideo",
+      "url": "https://github.com/diggerhq/shipvideo",
+      "reviewed": "2026-10-14",
+      "review_basis": "backfilled retained queue/related-work record; no new upstream/runtime audit",
+      "upstream_revision": null,
+      "disposition": "deferred",
+      "scope_and_findings": "Cloud/account review and restricted scene inputs remain unresolved.",
+      "licence_note": "See retained source comparison; exact package/model/media terms still need per-trial review.",
+      "next_trial_or_retest_condition": "A concrete authorised task and resolution of the recorded prerequisite; never repeat an unchanged blocked setup.",
+      "evidence": [
+        "docs/related-work.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "moneyprinterturbo",
+      "name": "moneyprinterturbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "reviewed": "2026-10-14",
+      "review_basis": "backfilled retained queue/related-work record; no new upstream/runtime audit",
+      "upstream_revision": null,
+      "disposition": "deferred",
+      "scope_and_findings": "Stage separation reviewed; no stock collection or bulk publishing executed.",
+      "licence_note": "See retained source comparison; exact package/model/media terms still need per-trial review.",
+      "next_trial_or_retest_condition": "A concrete authorised task and resolution of the recorded prerequisite; never repeat an unchanged blocked setup.",
+      "evidence": [
+        "docs/related-work.md",
+        "docs/experiment-queue.md"
+      ]
+    }
+  ]
+}

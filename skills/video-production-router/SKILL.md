@@ -17,7 +17,11 @@ it does not replace rendering skills or confer permission to publish.
    be complete: do not require relaxing constraints or an unsolicited experiment.
    Preserve the user's explicit tool choice.
 2. For requests with style/effect requirements or multiple scenes, read
-   [selection guidance](references/selection.md). Decompose into blocks and picture,
+   [selection guidance](references/selection.md). For Russian or English camera/edit
+   terms, use the [24-technique glossary](references/video-terms.md). Preserve exact
+   technique requirements; a generic camera/export feature does not prove dolly zoom,
+   rack focus or audio split edits. When a creative reference is requested, use the
+   [reference-selection workflow](references/creative-references.md) before production. Decompose into blocks and picture,
    text, voice, sound and finishing layers. Consult [the tool matrix](references/tool-matrix.md)
    and only relevant profiles in `references/tools.json`. The optional offline
    `scripts/plan.py BRIEF.json` shortlists tools; it never executes the plan. Distinguish
@@ -112,6 +116,11 @@ chain rather than drop the deliverable or replace the whole workflow. Read
 A successful component does not prove the combined chain; preserve the original
 export, check the final file and record each tool's contribution and limitations.
 
+Before a new candidate or repeat trial, inspect [the review ledger](references/review-ledger.json).
+Search by tool ID/upstream and read only relevant records. After every review or
+trial, update the ledger and documentation, including rejected or blocked/no-run
+outcomes. Retain negative, rights-blocked and deferred decisions as well as successes; name
+the changed version, terms, requirement or unresolved feature before repeating work.
 For a new candidate, record its source/version, task, inputs, side effects/cost,
 test, failure modes and evidence before promotion. In a full checkout, use
 `docs/experiments.md` and `templates/experiment.md`. If installed standalone, retain
