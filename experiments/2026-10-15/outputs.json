@@ -170,7 +170,8 @@
     "human_listening": "final_film_pending_owner_review;prior_short_F1_probe_accepted",
     "creative_acceptance": "pending_owner_review",
     "publication_url": "https://youtu.be/Kx1ftrOWQm8",
-    "audience_metrics": "not_measured"
+    "audience_metrics": "not_measured",
+    "publication_verification": "user_provided_url"
   },
   {
     "local_output": "contract-execution-video-pilot-20261015/Contract-Execution-1080p.mp4",
@@ -207,6 +208,7 @@
       "scope": "Supertonic3 F1 English narration in the32s Contract Execution Officer promo",
       "assessment": "Owner:English is good;could be mistaken for non-synthetic speech.",
       "limits": "One owner assessment of one script/voice;not blind testing or a claim about all English voices,long-form narration or other languages."
-    }
+    },
+    "publication_verification": "user_provided_url"
   }
 ]

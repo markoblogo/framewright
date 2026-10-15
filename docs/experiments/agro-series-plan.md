@@ -36,4 +36,4 @@ no tag or public media upload is implied by this plan.
 Owner clarification,2026-10-15: the two English promos selected in this planning pass are
 Agri-Commodity Brokerage and Contract Execution Officer Handbook. Missing ABVX
 listing is tracked here;creating/publishing that card is a separate site task.
-Tool allocation remains a proposal,not a completed test or render authorisation.
+Contract Execution Officer allocation is delivered,with owner-accepted English voice and a supplied publication URL. Agri-Commodity Brokerage was subsequently authorised by owner;its ACE-Step/3D trading-table trial is in progress,not yet a completed result.

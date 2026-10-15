@@ -27,9 +27,10 @@ MEDIA_CHECKS_PASS
   },
   "full_decode_errors_bytes": 0,
   "visual_inspection": "14 encoded scene/action samples and18 consecutive reveal frames inspected;empty hold corrected;native1280x720 and reduced320x180 thumbnail inspected,main title/CTA readable,no clipped cover;opaqueRGB24. No pixel-identical portability claim.",
-  "human_listening": "pending_owner_review",
+  "human_listening": "owner_accepted_English_F1;natural_sounding_synthetic_origin_not_obvious",
   "creative_acceptance": "pending_owner_review",
-  "publication_url": null,
+  "publication_url": "https://youtu.be/k7DYPrNV7ZY",
+  "publication_verification": "user_provided_url",
   "technical_checks_passed": true
 }
 

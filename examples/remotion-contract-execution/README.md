@@ -30,6 +30,29 @@ npx remotion still src/index.tsx Thumbnail Contract-Execution-YouTube.png --brow
 npx remotion render src/index.tsx Contract Contract-Execution-Picture-1080p.mp4 --codec=h264 --crf=18 --concurrency=1 --browser-executable="$REMOTION_BROWSER" --timeout=120000
 ```
 
+
+## Narrated assembly
+
+Use a Python3.12 environment with the pinned Supertonic SDK1.3.1 and dependencies
+listed in [the voice lock](../../experiments/2026-10-15/evidence/contract-execution-voice-requirements.lock).
+`SUPERTONIC_SOURCE_ROOT` points to the verified model workspace described above.
+From this example directory,after the picture render:
+
+```sh
+export SUPERTONIC_SOURCE_ROOT='/absolute/path/to/verified/model-workspace'
+python synthesize.py
+python audio-build.py
+ffmpeg -hide_banner -y -i audio/pre-master.wav -af loudnorm=I=-16:TP=-2:LRA=9 -ar 48000 -c:a pcm_s24le audio/final-mix.wav
+ffmpeg -hide_banner -y -i Contract-Execution-Picture-1080p.mp4 -i audio/final-mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -t 32 -metadata 'comment=AI-generated English narration:Supertonic3 F1;original conceptual contract-execution animation,not a live MN7R interface' -movflags +faststart Contract-Execution-1080p.mp4
+ffmpeg -v error -i Contract-Execution-1080p.mp4 -f null -
+ffmpeg -hide_banner -i Contract-Execution-1080p.mp4 -af loudnorm=I=-16:TP=-1:LRA=11:print_format=json -f null -
+```
+
+These are the retained synthesis/mix/mux settings;they do not promise byte-identical
+new speech or renders. Recheck measured voice intervals before mixing:the assembler
+rejects overlap/overflow. Final decode/loudness checks do not replace listening,
+encoded picture/seam inspection,reference sync/phase or separate thumbnail review.
+
 Cache disabled in config. The pilot isolated its writable cache from reused
 packages after a shared-cache permission failure. Keep browser/cache failures in
 [the experiment record](../../experiments/2026-10-15/contract-execution-prompt-motion.md).
