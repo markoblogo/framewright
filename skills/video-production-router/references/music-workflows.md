@@ -30,6 +30,19 @@ SFX stems separate where exports permit; a stereo master is not a guaranteed ste
 export. Prefer a music bed under product narration and a foreground song only when
 its words serve the film. Review the actual singing, not just the submitted lyrics.
 
+## Stem-mix QA
+
+When separate stems are requested, name alignment/sample-rate and phase checks
+explicitly. Inspect relative timing, polarity and phase/coherence; audition the sum
+in stereo and mono for unexpected cancellation or loss of vocals/instruments.
+Compare the recombined stems with the approved master at matched level, allowing
+for documented mastering differences. Sum similarity alone is not an explicit
+phase/cancellation check. Agree acceptable differences; do not assume perfect
+nulling or zero phase difference is required. Preserve originals and do not apply
+polarity/timing corrections automatically. Inspect both the stereo mix and final
+encoded video, including vocal balance, sync, loudness/peaks and listening.
+Missing stems block execution, not listing these planned checks.
+
 ## Reuse a service's native video deliberately
 
 | Asset class | Suitable reuse | What it does not establish |
