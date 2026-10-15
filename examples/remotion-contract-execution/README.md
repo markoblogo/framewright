@@ -11,7 +11,7 @@ using original wording,animation and audio. No creator media/code is included.
 Prompt Motion supplies references,not rendering or a licence to creator assets.
 
 Inspect the pinned Remotion Free/Company licence eligibility before installing.
-The pilot reused existing packages/models;it was not a clean-install test.
+The pilot reused existing packages/models;it was not a clean-install test. No complete tested transitive lock was retained, so this archive does not offer a clean-install reproduction command. Direct package pins identify authoring versions only; use the open-asset starter for an installable reference.
 `synthesize.py` loads this example's committed `model-manifest.json` and verifies all
 model/config/style hashes against that pin;an external manifest cannot redefine it. Set `SUPERTONIC_SOURCE_ROOT` to your verified model workspace,containing `models/Supertonic-3`;its own manifest is not trusted.
 retain SDK1.3.1 and the experiment's model revision. No automatic download.
@@ -24,7 +24,7 @@ Python environment/version pins and model manifest belong to retained experiment
 evidence. No voice-quality approval is implied by a technical export.
 
 ```sh
-npm install
+# Use the retained qualified runtime; clean installation is not qualified.
 REMOTION_BROWSER='/absolute/path/to/working/chrome-headless-shell'
 npx remotion still src/index.tsx Thumbnail Contract-Execution-YouTube.png --browser-executable="$REMOTION_BROWSER" --timeout=120000
 npx remotion render src/index.tsx Contract Contract-Execution-Picture-1080p.mp4 --codec=h264 --crf=18 --concurrency=1 --browser-executable="$REMOTION_BROWSER" --timeout=120000
@@ -39,6 +39,7 @@ listed in [the voice lock](../../experiments/2026-10-15/evidence/contract-execut
 From this example directory,after the picture render:
 
 ```sh
+set -e
 export SUPERTONIC_SOURCE_ROOT='/absolute/path/to/verified/model-workspace'
 python synthesize.py
 python audio-build.py
@@ -59,3 +60,5 @@ packages after a shared-cache permission failure. Keep browser/cache failures in
 Inspect native thumbnail and final encoded video/audio separately.
 
 Every synthesis run regenerates selected WAVs,including existing names;there is no filename-based audio cache. Preserve accepted masters externally before a new trial. Scoped ignores exclude generated audio/metadata,cache,guides,authorised public assets and root PNG/JPG/SRT outputs from Git. Ignore rules prevent accidental adds,not automatic storage cleanup.
+
+Before replacing any speech, synthesis invalidates previous run metadata; failures therefore block assembly. The assembler verifies every WAV against completed metadata and rejects clipped raw lines. Preserve accepted audio externally before rerunning.

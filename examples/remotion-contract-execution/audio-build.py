@@ -1,5 +1,5 @@
 from pathlib import Path
-import json,math,numpy as np,soundfile as sf
+import hashlib,json,math,numpy as np,soundfile as sf
 import subprocess,textwrap
 b=Path(__file__).parent;sr=48000;N=32*sr;music=np.zeros((N,2));fx=np.zeros((N,2));voice=np.zeros((N,2));rows=json.loads((b/'audio/voice-lines.json').read_text())
 def put(dest,start,a,gain=1,pan=0):
@@ -14,6 +14,9 @@ for k,t in enumerate([.6,1,1.4,2.7,4.9,5.35,5.8,10.7,11.4,12.1,12.8,16.8,17.7,18
  x=np.arange(int(.15*sr))/sr;a=(np.sin(2*np.pi*(430+k*25)*x)+.2*np.sin(2*np.pi*130*x))*np.minimum(x/.002,1)*np.exp(-x*55);put(fx,t,a,.055)
 last=0
 for r in rows:
+ path=b/'audio'/f"{r['id']}.wav"
+ if hashlib.sha256(path.read_bytes()).hexdigest()!=r['sha256']:raise ValueError('Voice WAV/metadata mismatch:'+r['id'])
+ if r['clipped_samples']:raise ValueError('Clipped raw voice:'+r['id'])
  a,hz=sf.read(b/'audio'/f"{r['id']}.wav");g=math.gcd(sr,hz);a=np.frombuffer(subprocess.run(['ffmpeg','-v','error','-i',str(b/'audio'/f"{r['id']}.wav"),'-f','f64le','-ac','1','-ar',str(sr),'-'],capture_output=True,check=True).stdout,dtype='<f8');start=round(r['start']*sr);end=start+len(a)
  if start<last or end>N:raise ValueError('Voice overlap or overflow')
  voice[start:end]+=a[:,None];last=end;r['end']=end/sr

@@ -38,11 +38,23 @@ def generate_line(tts, style, text, target, seed, set_seed):
     tts.save_audio(wav, str(target))
 
 
+def invalidate_previous_run(base):
+    # Fail closed before any WAV can be replaced, including import/runtime failure.
+    for name in ["voice-lines.json", "voice-lines-timed.json"]:
+        (base / "audio" / name).unlink(missing_ok=True)
+
+
+def reject_clipping(count):
+    if count:
+        raise ValueError("Clipped raw speech: " + str(count) + " samples")
+
+
 def main(base=BASE, shared=None, probe=False):
     shared = Path(shared) if shared is not None else Path(os.environ['SUPERTONIC_SOURCE_ROOT'])
     manifest, root = verify_model(shared, base / 'model-manifest.json')
     for folder in ['audio', 'guides', 'cache']:
         (base / folder).mkdir(parents=True, exist_ok=True)
+    invalidate_previous_run(base)
     os.environ['HF_HUB_OFFLINE'] = '1'
     os.environ['HF_HOME'] = str(base / 'cache/hf')
     os.environ['SUPERTONIC_CACHE_DIR'] = str(base / 'cache/supertonic')
@@ -65,10 +77,12 @@ def main(base=BASE, shared=None, probe=False):
         audio, sr = sf.read(target)
         if not np.isfinite(audio).all() or not len(audio):
             raise ValueError('Invalid speech')
+        clipped = int((abs(audio) >= .999969).sum())
+        reject_clipping(clipped)
         row = {'id': name, 'text': text, 'start': start, 'seconds': len(audio) / sr,
                'sample_rate': sr,
                'peak_dbfs': float(20 * np.log10(max(abs(audio).max(), 1e-12))),
-               'clipped_samples': int((abs(audio) >= .999969).sum()),
+               'clipped_samples': clipped,
                'sha256': hashlib.sha256(target.read_bytes()).hexdigest(),
                'wall_seconds': round(time.monotonic() - started, 3)}
         rows.append(row)

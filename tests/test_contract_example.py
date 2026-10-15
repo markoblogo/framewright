@@ -77,3 +77,21 @@ class ContractVoiceTest(unittest.TestCase):
             with self.subTest(name=name):
                 self.assertEqual(subprocess.run(['git', 'check-ignore', '--no-index', '-q',
                                                 str(EXAMPLE / name)], cwd=ROOT).returncode, 1)
+
+    def test_failed_rerun_cannot_leave_valid_old_metadata(self):
+        audio = self.base / 'audio'
+        audio.mkdir()
+        for name in ['voice-lines.json', 'voice-lines-timed.json']:
+            (audio / name).write_text('old complete metadata')
+        voice.invalidate_previous_run(self.base)
+        tts = Mock()
+        tts.synthesize.side_effect = RuntimeError('failed synthesis')
+        with self.assertRaises(RuntimeError):
+            voice.generate_line(tts, 'F1', 'new text', audio / 'opening.wav', 42, Mock())
+        self.assertFalse((audio / 'voice-lines.json').exists())
+        self.assertFalse((audio / 'voice-lines-timed.json').exists())
+
+    def test_clipped_raw_speech_rejected(self):
+        voice.reject_clipping(0)
+        with self.assertRaisesRegex(ValueError, 'Clipped raw speech'):
+            voice.reject_clipping(1)
