@@ -1,0 +1,366 @@
+{
+  "schema_version": 1,
+  "scope": "Discovery tags and retained-use eligibility only,not current legal clearance. Conditional means licence/model/build/account/asset review remains required. Never infer rights to inputs or publication. Capability evidence stays in tools.json and review-ledger.json.",
+  "aliases": {
+    "three-js": "three-scene"
+  },
+  "task_features": {
+    "video": [
+      "video-export"
+    ],
+    "software": [
+      "video-export"
+    ],
+    "interface": [
+      "react-components",
+      "camera-travel"
+    ],
+    "graphics": [
+      "typography",
+      "object-motion"
+    ],
+    "montage": [
+      "image-pan-zoom",
+      "video-export"
+    ],
+    "illustration": [
+      "isometric-svg"
+    ],
+    "3d": [
+      "staged-3d",
+      "object-3d"
+    ],
+    "narration": [
+      "narration"
+    ],
+    "audio": [
+      "audio-mix",
+      "audio-qa",
+      "normalization"
+    ],
+    "editing": [
+      "video-export",
+      "concat",
+      "media-mux"
+    ],
+    "music": [
+      "instrumental-generation"
+    ],
+    "song": [
+      "song-generation"
+    ],
+    "storyboard": [
+      "shot-list",
+      "storyboard"
+    ],
+    "diagram": [
+      "workflow-diagram"
+    ],
+    "analysis": [
+      "hard-cut-detection"
+    ]
+  },
+  "tools": {
+    "brag": {
+      "tasks": [
+        "video",
+        "software",
+        "storyboard"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "fdd90a53d91230f225843d87a5edb8fb2890776078ff676ffdafee848688dd3c"
+    },
+    "hyperframes": {
+      "tasks": [
+        "video",
+        "graphics",
+        "montage"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "5ee4e2ee7e0c907f379793e52699546a96c0878ba8495bde71c3dfa089ea12d0"
+    },
+    "flute": {
+      "tasks": [
+        "video",
+        "interface"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7"
+    },
+    "remotion": {
+      "tasks": [
+        "video",
+        "graphics",
+        "editing"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "07290c94de9c84cd52473be5aa418b2fb13c4b682553101ee3e8ed4db50a80e1"
+    },
+    "anatomy": {
+      "tasks": [
+        "illustration",
+        "3d",
+        "video"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "dd059a6eb184f32e31128c0c9c33c235b91ff62bcd03e58912f69e817251a661"
+    },
+    "kokoro": {
+      "tasks": [
+        "narration"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "9b5e4e3b20acac765cabff25d40efabb620f38fb93f83dcfe7cea102d48412a0"
+    },
+    "sound-layer": {
+      "tasks": [
+        "audio"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "29860a46663d84ea5700f02e02db4ee270afa07d085721044787d396a620221f"
+    },
+    "ffmpeg": {
+      "tasks": [
+        "editing",
+        "video",
+        "audio"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "d0953705187c885f542ac3af5332eb8b72c9d70b8278c88fdba6feaccbee6933"
+    },
+    "suno": {
+      "tasks": [
+        "music",
+        "song"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "2b8822d9b94dc7373f3b7220896f7588c1809faa084d1f467e13065a0c3f946d"
+    },
+    "flow-music": {
+      "tasks": [
+        "music",
+        "song"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "7737d28b6573d20cc05bf7d89180e44985f26c47a29bdbb9a35d087fda6374e7"
+    },
+    "storyboard": {
+      "tasks": [
+        "storyboard"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "489566dcb3227f5d272d2623b1aeb160075c6d94fa5655a6c92a5ce36828b406"
+    },
+    "three-scene": {
+      "tasks": [
+        "video",
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "9b207cb9a21ee25efd948dcf1caf162ee3e42fd3bc6312c82295d3a4ce1b3076"
+    },
+    "manimgx": {
+      "tasks": [
+        "video",
+        "diagram"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "7fa0d7edb9b962b5a16ff62d6794ef5b19b9b6c1979c8ededb22bb323aae86d6"
+    },
+    "mlx-audio": {
+      "tasks": [
+        "narration"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "79a686bca01a741bde910e9139eb429b165b0029b9325a557d97283426e829fc"
+    },
+    "piper": {
+      "tasks": [
+        "narration"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "baf3b89cf34588e37dc175fd2c26fe577f9653fe3f26c1396aa3e34dfaf1677b"
+    },
+    "supertonic3": {
+      "tasks": [
+        "narration"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "ff05a084aadfb46c56f930d4f99e68084c6c5317fad0c66c33f880de3b4d4cec"
+    },
+    "pyscenedetect": {
+      "tasks": [
+        "analysis"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "76a18adceb07e313be71b406ffdefd790e7bf169671aba7e2b00cd33e1c56b22"
+    },
+    "auto-editor": {
+      "tasks": [
+        "editing"
+      ],
+      "rights_class": "conditional",
+      "inputs": [
+        "video"
+      ],
+      "licence_note_sha256": "56fa75af50d22f24c2af610a5ecf13e4f69f05312476349287d5c79b8709e867"
+    },
+    "openscreen": {
+      "tasks": [
+        "screen-capture"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7"
+    },
+    "yt-dlp": {
+      "tasks": [
+        "acquisition"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "0a5c74e66fede8463a6abede8d91cdb40e3c5a5c5916413bf4e844d196aef33b"
+    },
+    "puppeteer": {
+      "tasks": [
+        "screen-capture"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "2af71558e438db0b73a20beab92dc278a94e1bbe974c00c1a33e3ab62d53a608"
+    },
+    "gsap": {
+      "tasks": [
+        "graphics"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "105bdcfefbc740e7a55e5e66141fedf258de96d14ccb0e97655d7bdd345f7609"
+    },
+    "librosa": {
+      "tasks": [
+        "analysis"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "d8d62d58d661d5ddeff06fdf1ebc08968da4743e369c74cef96eff0241eaea05"
+    },
+    "pyannote": {
+      "tasks": [
+        "speaker-analysis"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "f084879f7a57d02522b12157dc946ee5550e0cfe5194c171bc1ac145098b46a8"
+    },
+    "mlx-whisper": {
+      "tasks": [
+        "transcription"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "6846130d97e68933077ce3244c3417e2fd00deef8acd469e1c33082962ee6157"
+    },
+    "parakeet-mlx": {
+      "tasks": [
+        "transcription"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "55281dfaefc00ded34c96cae814ddcac59477bfb969da597af409c86e583fad1"
+    },
+    "claude-video": {
+      "tasks": [
+        "analysis"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "32ed60dad27cb92d56acddb6e7dbd08ecd737d707236fb7dc1cccafcbfb383b5"
+    },
+    "prompt-motion": {
+      "tasks": [
+        "creative-reference"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "56e9e1a7c4f5eb4f1dd5f6b99c0e178931e78d0aba185570cafd42043d67a9d3"
+    },
+    "whisperx": {
+      "tasks": [
+        "transcription"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "f9254c0cbf792abb871386a1f1ca8bbf997710d0576eb34ce5338f37e6d2eaf5"
+    },
+    "ace-step": {
+      "tasks": [
+        "music",
+        "song"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "ebc1639966a8603fffaa33a08e748d0fe83179be0e00571e25923e7411dbed82"
+    },
+    "vimax": {
+      "tasks": [
+        "video"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "f9254c0cbf792abb871386a1f1ca8bbf997710d0576eb34ce5338f37e6d2eaf5"
+    },
+    "editly": {
+      "tasks": [
+        "editing"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "f9254c0cbf792abb871386a1f1ca8bbf997710d0576eb34ce5338f37e6d2eaf5"
+    },
+    "ltx-2": {
+      "tasks": [
+        "video"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "f9254c0cbf792abb871386a1f1ca8bbf997710d0576eb34ce5338f37e6d2eaf5"
+    },
+    "shipvideo": {
+      "tasks": [
+        "video"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "f9254c0cbf792abb871386a1f1ca8bbf997710d0576eb34ce5338f37e6d2eaf5"
+    },
+    "moneyprinterturbo": {
+      "tasks": [
+        "video"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "f9254c0cbf792abb871386a1f1ca8bbf997710d0576eb34ce5338f37e6d2eaf5"
+    },
+    "mms-tts-ukr": {
+      "tasks": [
+        "narration"
+      ],
+      "rights_class": "noncommercial_only",
+      "declared_languages": [
+        "uk"
+      ],
+      "licence_note_sha256": "594e17be1f7ca98c541f22df96f5ce4eb4651db52b7668d3bc71f0a2bb04e453"
+    },
+    "piper-ukrainian-tts-medium": {
+      "tasks": [
+        "narration"
+      ],
+      "rights_class": "unknown",
+      "declared_languages": [
+        "uk"
+      ],
+      "licence_note_sha256": "a4377ccedee5f67593505ad9645167080978f60bb148683b5c0be12394de5829"
+    },
+    "omnivoice": {
+      "tasks": [
+        "narration"
+      ],
+      "rights_class": "noncommercial_only",
+      "licence_note_sha256": "007f30e18308ad36c194fcf0f8a911768abc683b15f0fa9a37b0aff0d747b4a2"
+    },
+    "moviepy": {
+      "tasks": [
+        "editing"
+      ],
+      "rights_class": "conditional",
+      "inputs": [
+        "video"
+      ],
+      "licence_note_sha256": "ce0463f8adb59a62756034956616c33be2c8515c0fb1a80ffad8984cbd432dce"
+    }
+  }
+}

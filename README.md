@@ -19,6 +19,8 @@ New genres and tool combinations need scoped evidence before qualification.
 | Start here | What you get |
 | --- | --- |
 | **Try a production plan** — command below | A readable timeline, tools, intended files, blockers and QA; no rendering |
+| **[Find tools and combinations](skills/video-production-router/references/arsenal-search.md)** | Task/style/language/rights/evidence filters with scoped results |
+| **[Save and resume work](skills/video-production-router/references/projects.md)** | Frozen plan, file pins, manual progress and remaining steps |
 | **[Render the reference film](docs/first-video.md)** | Open demo assets, pinned dependencies, exact commands and expected outputs |
 
 ## Try a production plan
@@ -47,17 +49,9 @@ or **blocked**, never automatically verified. This combined pipeline needs its o
 integration test. Omit `--format markdown` for the unchanged JSON interface.
 [Packet guide and limits](docs/production-plan.md).
 
-Save progress with a [production project](skills/video-production-router/references/projects.md):
-
-```sh
-mkdir -p local/my-film
-python3 skills/video-production-router/scripts/project.py init examples/briefs/mixed-promo.json local/my-film/project.json
-python3 skills/video-production-router/scripts/project.py resume local/my-film/project.json
-```
-
-The checkpoint keeps the brief/plan, registered file hashes, manual QA states and
-history. Resume reports remaining work and changed files; it executes no production.
-
+Use [arsenal search](skills/video-production-router/references/arsenal-search.md) before freezing a brief,
+then [save a project](skills/video-production-router/references/projects.md) for work across sessions.
+Search rights remain conditional;resume checks file pins and never executes production.
 
 ## One concrete result
 

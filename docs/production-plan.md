@@ -48,3 +48,7 @@ budget objects, are not enforced by the existing planner. Only documented brief
 fields affect routing; `allow_paid` is a capability filter, not a quote or permission.
 Strict brief/resource validation is deferred by owner choice. No new model behaviour
 qualification, provider integration or video experiment is claimed for this feature.
+
+For tool discovery before freezing a brief,use [arsenal search](../skills/video-production-router/references/arsenal-search.md).
+Its combinations reuse the existing planner and remain proposed;search results
+do not alter a saved project or its accepted choices.

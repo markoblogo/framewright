@@ -12,7 +12,7 @@ Owner closed the [six-book + landing + compilation stage](experiments/agro-serie
 All eight deliverables have owner-supplied publication links;individual final-film
 reviews remain separate. [Product audit and proposals](product-audit-2026-10-15.md)
 record the completed closeout;experimental v0.2.0 is published. Current work adds
-production checkpoints without rendering or another release. The queue below is
+production checkpoints and arsenal discovery without rendering or another release. The queue below is
 retained research history/candidates,not an active production schedule. Select the
 next direction after release;ACE-Step remains resource/diagnostic-gated.
 
