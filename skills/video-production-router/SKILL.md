@@ -5,7 +5,10 @@ description: Plan video production scene by scene and layer by layer using evide
 
 # Video production router
 
-Select a method before committing to a toolchain. This skill selects and records;
+Select a method before committing to a toolchain. For arsenal discovery,filters
+and compatible proposed chains,read [search](references/arsenal-search.md) and use
+`scripts/search.py`;keep evidence/rights limits and explicit choices visible.
+Search/comparison alone never authorises execution. This skill selects and records;
 it does not replace rendering skills or confer permission to publish.
 
 1. Use the brief's product, available assets, audience/language, format, narration,

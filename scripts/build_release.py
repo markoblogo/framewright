@@ -52,6 +52,18 @@ def build(root, output):
         resumed = subprocess.run([sys.executable, str(project_cli), 'resume', str(project), '--json'], check=True, capture_output=True, text=True)
         if json.loads(resumed.stdout)['ready'] != ['source-review', 'preflight']:
             raise ValueError('Standalone project checkpoint smoke check failed')
+        search_cli = target / 'video-production-router/scripts/search.py'
+        found = subprocess.run([sys.executable, str(search_cli), '--task', 'narration', '--language', 'uk',
+                                '--evidence', 'tested', '--rights', 'commercial'], check=True, capture_output=True, text=True)
+        rows = json.loads(found.stdout)['results']
+        if not any(row['id']=='supertonic3' and not row['rights']['asset_clearance'] for row in rows):
+            raise ValueError('Standalone arsenal discovery smoke check failed')
+        combined = subprocess.run([sys.executable, str(search_cli), '--task', 'video', '--input', 'book-art',
+                                   '--style', 'paper-cut', '--feature', 'paper-cut-regroup', '--feature', 'narration',
+                                   '--language', 'uk', '--combinations', '--evidence', 'tested'],
+                                  check=True, capture_output=True, text=True)
+        if not any(set(c['tools'])=={'remotion','supertonic3'} for c in json.loads(combined.stdout)['combinations']):
+            raise ValueError('Standalone arsenal combination smoke check failed')
     print(f'PASS: standalone package {archive.name}; SHA-256 {digest}')
     return archive
 

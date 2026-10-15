@@ -86,9 +86,11 @@
   ],
   "note": "One complete protocol-v5 70/70 known70-case regression on the packet's historical decision sources;46/46 fresh matching blind controls. Added explicit stem phase/stereo-mono cancellation QA and corrected two conditional/semantic criteria before the run. Original three results:{'stems-rebuild': True, 'watercolor-loop': True, 'upgrade-history-rights': True}. Separate unchanged-answer replay2/2 is not included in70. Original v4 67/70 and13/18 first-exposure retained, not overwritten. No manual overrides, favourable answer stitching, unseen/causal claim, rendering, service qualification or new release. Model rubric70/70, complete evidence62/70: eight cases have started reads without terminal events; retained as INSUFFICIENT_EVIDENCE, no completion inferred or actor retried. The original three fixes all pass with complete traces.",
   "evaluated_status": "evaluated_with_gaps",
-  "current_source_change": "Post-evaluation production/voice adapters and scoped evidence remain unqualified at agent-model level. Version0.2.0 added readable packets/general positioning. Current post-release changes add local resumable production checkpoints,manual state/file integrity/dependency tracking,PySceneDetect existing-video hard-cut analysis backfilled from the Burgers trial,and Markdown-escaping/archive review fixes. Default JSON interface remains unchanged;new analysis capability is explicit,not a renderer/default expansion. No fresh model evaluation,new render or release;historical scores/snapshots remain immutable.",
+  "current_source_change": "Post-evaluation changes include scoped production/voice adapters,evidence metadata,readable packets and local resumable production checkpoints. Current source adds offline arsenal discovery over profiles/review records,task/style/speech-language/retained-rights/evidence filters,and proposed compatible chains via the existing planner. Discovery facets preserve manual/candidate/failed states;rights classes are tied to retained licence notes and never confer asset/account/publication rights. Core planner defaults and ranking remain unchanged by search;new search tests are deterministic only. No new model evaluation,media render or release;historical source snapshots/scores remain immutable.",
   "current_source_tree_sha256": {
-    "skills/video-production-router/SKILL.md": "0b7106f358c2c87363c7fc2543e42b0abb3d32209b0e2ddc46bc6a901ab33916",
+    "skills/video-production-router/SKILL.md": "2d91a9ee1d7433bb82f075a863b7a604215d4ef069ddaef3553d41f7f2950855",
+    "skills/video-production-router/references/arsenal-facets.json": "489a4979de4a620c2da813d20826a731e760c6da5b810e911a24a85a20575c19",
+    "skills/video-production-router/references/arsenal-search.md": "4cf3df8b48f92bbca40a3aa633d11ef599b4cda5e0a733e5df658c1c563b814d",
     "skills/video-production-router/references/catalog.json": "e4519d779247fa0af4c50ed696a996c49d75858ed061e08b6e132306e6e2c809",
     "skills/video-production-router/references/creative-references.md": "8b51e6ddfe96aa34f8895d98c2e84cbbc4600b70f425fb12b79cef271517d03d",
     "skills/video-production-router/references/handoff.md": "489247f8ec922addaa2c6089f060e345fea4bf6dee8b912931d24ed6126d8447",
@@ -108,6 +110,7 @@
     "skills/video-production-router/scripts/packet.py": "deef0207ed311344cccdebdfb2a89b2faa58330bace901f547d91fe043348ac6",
     "skills/video-production-router/scripts/plan.py": "ae99564ec9368c82c4a8e1dfd96081ca84c4b0caf2e34a92eb9e2cd76003fd9e",
     "skills/video-production-router/scripts/project.py": "444003590ebf873411689ecd85b697ba36fe4c073aa1b4888f48bfea20d7545e",
+    "skills/video-production-router/scripts/search.py": "060a46907d05749e5c2f80b4883a01f1580c025823f99aff5cd740dc82658b36",
     "skills/video-production-router/scripts/terms.py": "301b222717a134a961efb834b5b5d61ab8e2d9a516012e54135401553722e39e"
   }
 }

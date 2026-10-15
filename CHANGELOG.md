@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+Add offline arsenal search across profiles and retained review records,with task,
+style,speech-language,retained-rights and evidence filters. Reuse the existing
+planner for proposed compatible chains;preserve explicit choices,low-quality voice
+fallback policy,known failures and independent music/account gates. Conditional
+rights classifications are bound to retained licence notes,not asset clearance.
+Index manual methods/candidates separately;new search evidence is deterministic only.
+
 Add local production checkpoints with frozen brief/plan/packet,file pins,manual
 step states,dependency invalidation and read-only resume/status. Atomic writes
 and exclusive macOS/Linux locking preserve the last complete checkpoint;no render,
