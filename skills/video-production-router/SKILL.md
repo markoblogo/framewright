@@ -1,6 +1,6 @@
 ---
 name: video-production-router
-description: Choose a tested video-production workflow for software promos, book trailers, music-driven videos, or announcements, and record new production experiments. Use when planning a video or comparing video tools; not for ordinary image generation or YouTube copy alone.
+description: Plan video production scene by scene and layer by layer using evidence-aware tool choices, reusable workflows and output checks; record new production experiments. Use when planning a video or comparing video tools; not for ordinary image generation or YouTube copy alone.
 ---
 
 # Video production router

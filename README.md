@@ -13,6 +13,8 @@ handoff, using documented experiments.**
 Framewright provides instructions and planning checks; your agent executes the
 selected tools in your environment. Choose tools per scene and layer, with evidence,
 known limitations and output checks visible before production.
+Books and software promos are the first test cases, not the product boundary.
+New genres and tool combinations need scoped evidence before qualification.
 
 | Start here | What you get |
 | --- | --- |
