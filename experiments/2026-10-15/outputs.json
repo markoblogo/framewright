@@ -122,7 +122,7 @@
       "height": 720
     },
     "evidence": "experiments/2026-10-15/evidence/agro-uk-paper-piper.txt",
-    "qa_scope": "24s1080p30 Ukrainian paper-route integration,full decode/audio metrics and encoded PNG thumbnail. Pixel-exact native repeats failed;browser workarounds retained;owner accepted simple visual style but found Ukrainian voice weak;do not recommend this exact voice for the next UK promo.",
+    "qa_scope": "24s1080p30 Ukrainian paper-route integration,full decode/audio metrics and encoded PNG thumbnail. Pixel-exact native repeats failed;browser workarounds retained.",
     "evidence_checks": [
       "MEDIA_CHECKS_PASS",
       "RENDER_LIMITS",

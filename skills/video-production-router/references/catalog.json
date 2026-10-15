@@ -113,14 +113,13 @@
         "framewright-remotion",
         "agro-uk-paper-piper"
       ],
-      "tested_scope": "Remotion 4.0.535 authored React motion graphics, native instrumental audio and still export; Framewright 30-second horizontal 1080p30 pilot with explicit existing Chromium;24s Ukrainian paper-route animation plus Piper/Tetiana voice externally muxed with FFmpeg,encoded PNG thumbnail;owner accepted simple visual style but found this exact Ukrainian voice weak",
+      "tested_scope": "Remotion 4.0.535 authored React motion graphics, native instrumental audio and still export; Framewright 30-second horizontal 1080p30 pilot with explicit existing Chromium;24s Ukrainian paper-route animation plus Piper/Tetiana voice externally muxed with FFmpeg,encoded PNG thumbnail",
       "not_tested": [
         "automatic app capture",
         "narration or captions in Remotion",
         "vertical output",
         "cloud rendering",
         "clean-machine reproduction",
-        "owner aesthetic/audio acceptance",
         "audience performance"
       ],
       "known_limitations": [
@@ -149,6 +148,15 @@
           "original_result": "10 high package findings from GHSA-vfj7-8cjw-p6xm in the initial scaffold",
           "resolution": "Scoped typescript-eslint 8.71.2 override removes braces; separate install, full audit (0), ESLint and TypeScript passed. Runtime package versions unchanged.",
           "evidence": "experiments/2026-10-14/evidence/framewright-remotion.txt"
+        }
+      ],
+      "owner_reviews": [
+        {
+          "experiment": "agro-uk-paper-piper",
+          "visuals": "acceptable_simple_distinct_style",
+          "audio": "weak_ukrainian_pauses_stress_intonation",
+          "decision": "keep_clip_choose_different_voice_tool_next_time",
+          "source": "experiments/2026-10-15/agro-uk-paper-piper.md"
         }
       ]
     },

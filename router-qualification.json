@@ -86,10 +86,10 @@
   ],
   "note": "One complete protocol-v5 70/70 known70-case regression on the packet's historical decision sources;46/46 fresh matching blind controls. Added explicit stem phase/stereo-mono cancellation QA and corrected two conditional/semantic criteria before the run. Original three results:{'stems-rebuild': True, 'watercolor-loop': True, 'upgrade-history-rights': True}. Separate unchanged-answer replay2/2 is not included in70. Original v4 67/70 and13/18 first-exposure retained, not overwritten. No manual overrides, favourable answer stitching, unseen/causal claim, rendering, service qualification or new release. Model rubric70/70, complete evidence62/70: eight cases have started reads without terminal events; retained as INSUFFICIENT_EVIDENCE, no completion inferred or actor retried. The original three fixes all pass with complete traces.",
   "evaluated_status": "evaluated_with_gaps",
-  "current_source_change": "Adds scoped ManimGX/FFmpeg timing adapter and MLX-Audio Kokoro English voice;explicit preferred_voice preserves provider/language constraints. Production evidence is not fresh model qualification.",
+  "current_source_change": "Since the retained model-evaluated snapshot:scoped ManimGX/FFmpeg timing adapter and MLX-Audio Kokoro English voice;explicit preferred_voice constraints;Piper/Tetiana Ukrainian technical integration and authored Remotion paper-cut regrouping with feature-specific canvas evidence limits;later owner review marks this Ukrainian voice weak and directs the next UK narration to another tool. Current hashes bind these changes,not a fresh model qualification. Example model/config verification and reproduction-command fixes do not add rendering or model evidence. The planner now consumes default_narration_eligible:false to exclude the owner-rejected voice from automatic selection while preserving explicit voice requests and quality warnings;owner feedback is separate from technical QA/scope.",
   "current_source_tree_sha256": {
-    "skills/video-production-router/SKILL.md": "f314296eb2a701787113e7bb24e48b4a752984a469f9473f9dd7f9d270969fa5",
-    "skills/video-production-router/references/catalog.json": "17493aa6cee9e40cdff47a039d1e21bef7f85a6bf9d14e9a9c08b0ce4553bc3d",
+    "skills/video-production-router/SKILL.md": "b7ce45b3a757d3d308d957c155382074ade76e0e8474a5658f505e6fdc735d99",
+    "skills/video-production-router/references/catalog.json": "428bb5fbd390550be8c6fba8f26604d8b02f568104cdd53232056bbe4cdc76a0",
     "skills/video-production-router/references/creative-references.md": "8b51e6ddfe96aa34f8895d98c2e84cbbc4600b70f425fb12b79cef271517d03d",
     "skills/video-production-router/references/handoff.md": "489247f8ec922addaa2c6089f060e345fea4bf6dee8b912931d24ed6126d8447",
     "skills/video-production-router/references/music-workflows.md": "bc499289fbb4cc8b9e0ad155e7162d434b0220ac88b6f0b8ee6129c0da0276e7",
@@ -100,11 +100,11 @@
     "skills/video-production-router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
     "skills/video-production-router/references/tool-chains.md": "2d3b6ba78e940d51c1c71e63a31eec397962bf4819578950a8d043c7c96e7a73",
     "skills/video-production-router/references/tool-matrix.md": "1f02a3629b5b6ecce59ccf452d035c13e742de0698d1ed7573bedcbec8276755",
-    "skills/video-production-router/references/tools.json": "c3aa67bd3f088d2375cb6e4dd072517dc4ba72f1949c42cc4c127ba7943f916a",
+    "skills/video-production-router/references/tools.json": "5dd4732e899aeab51fc6498f963077828114542d87543ce2cacb468e634b9dda",
     "skills/video-production-router/references/video-terms.json": "a5810527dec666e7c7cfbfcb261323059b2bb026a0b61039e9e1a938bd2e0166",
     "skills/video-production-router/references/video-terms.md": "2b892463f96a2e15c317b659026de52904305e9870202735ae7802cc356c1fe1",
     "skills/video-production-router/scripts/music.py": "620e1d3f94b1ff2655259a25eb1aa3341f420acbe99b86a8485d8f7a64a1bbca",
-    "skills/video-production-router/scripts/plan.py": "9aa6e16062c740345465f3835ce0df6d61101ed8253dd7b5dd86d3558d131f0b",
+    "skills/video-production-router/scripts/plan.py": "6103bf63a39165a700f64f16a31b114f3580b01c6b223587ef26dfd2b26d7696",
     "skills/video-production-router/scripts/terms.py": "301b222717a134a961efb834b5b5d61ab8e2d9a516012e54135401553722e39e"
   }
 }

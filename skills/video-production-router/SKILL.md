@@ -141,7 +141,9 @@ They are specifications, not evidence of an independent model evaluation.
 For the next Ukrainian narration,choose a different tool after exact model/rights/
 resource review. Owner found the tested Piper/Tetiana version weak:unnecessary
 pauses,wrong stress and intonation. Retain its technical evidence,but do not
-recommend it as the default Ukrainian voice or silently reuse it. An explicit
+recommend it as the default Ukrainian voice or silently reuse it. The planner
+consumes `default_narration_eligible: false`,preserving technical evidence while
+excluding automatic narration coverage. An explicit
 request for this exact voice should surface the retained quality warning.
 The authored `paper-cut-regroup` picture treatment remains reusable independently
 of this voice. Other voices/languages and singing need their own review;the

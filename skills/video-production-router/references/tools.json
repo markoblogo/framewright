@@ -1478,7 +1478,8 @@
         "ONNXRuntime emitted telemetry/cache-ID persistence warnings;no external voice API called;network traffic not independently audited.",
         "One script/voice integration,not general language quality;native Remotion raster repeat differed slightly and full-export browser workarounds were required."
       ],
-      "style_basis": "observed_pilot"
+      "style_basis": "observed_pilot",
+      "default_narration_eligible": false
     }
   ]
 }
