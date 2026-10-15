@@ -79,4 +79,4 @@ First encoded contact review found a short empty hold before the book reveal;the
 
 ## Owner listening —2026-10-15
 
-Owner:English is good,and the synthetic origin may not be obvious. Record as positive listening/naturalness feedback for this exact F1 script/film. This is subjective owner acceptance,not blind testing or universal human-equivalence. Visual/style acceptance and public upload remain pending.
+Owner:English is good,and the synthetic origin may not be obvious. Record as positive listening/naturalness feedback for this exact F1 script/film. This is subjective owner acceptance,not blind testing or universal human-equivalence. Visual/style acceptance remains separate. Owner supplied publication URL:https://youtu.be/k7DYPrNV7ZY;link recorded from owner,not independently playback-verified.

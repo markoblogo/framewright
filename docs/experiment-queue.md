@@ -8,8 +8,8 @@ each actual new-tool experiment. [Research](tool-research.md) ·
 
 ## Current owner-selected series
 
-[Five-book MN7R promo plan](experiments/agro-series-plan.md):Spot-Market EN completed;
-MN7R Product Guide EN has a delivered ManimGX/MLX-Audio trial,owner accepted its basic infographic style;[YouTube](https://youtu.be/TISOtCghMVY). Ukrainian brokerage now has a delivered24s Piper/Tetiana + Remotion paper-route trial;owner accepted simple distinct picture,but Ukrainian voice weak;next UK voice should use another tool;exact-raster repeat gate not met. The Ukrainian spot-market LCD film is now delivered with Supertonic3 F1;full-film owner review/YouTube pending. The English brokerage book,next music-generator test,landing and compilation remain queued. Reuse stems/picture masters;no future jobs start automatically.
+[Six-book MN7R promo plan](experiments/agro-series-plan.md):Spot-Market EN completed;
+MN7R Product Guide EN has a delivered ManimGX/MLX-Audio trial,owner accepted its basic infographic style;[YouTube](https://youtu.be/TISOtCghMVY). Ukrainian brokerage now has a delivered24s Piper/Tetiana + Remotion paper-route trial;owner accepted simple distinct picture,but Ukrainian voice weak;next UK voice should use another tool;exact-raster repeat gate not met. The Ukrainian spot-market LCD film is now delivered with Supertonic3 F1;full-film owner review separate;[YouTube](https://youtu.be/Kx1ftrOWQm8). Contract Execution Officer EN delivered with owner-accepted Supertonic3F1 English;[YouTube](https://youtu.be/k7DYPrNV7ZY). The English brokerage book,next music-generator test,landing and compilation remain queued. Reuse stems/picture masters;no future jobs start automatically.
 
 ## Phase 1 — useful book and service promos
 
@@ -30,8 +30,7 @@ that integration only; retain observations for each new component separately.
 
 **Creative preparation:** [Prompt Motion](prompt-motion-trial.md) supplies a
 brief→filter→shortlist→provisional finalist→adapted-prompt study before one of these
-runs when a reference is useful. Text/metadata inspection is complete; actual preview,
-customizer operation and generated result remain untested. A reference gallery is
+runs when a reference is useful. The Contract Execution Officer trial exercised the Diagrams filter,shortlist,one paused finalist preview frame and original prompt adaptation into a finished Remotion film. Customizer operation and other gallery ports remain untested. A reference gallery is
 not counted as a new renderer. No creator skill or media is imported automatically.
 
 Every completed promo should retain MP4, a separately checked YouTube thumbnail,
