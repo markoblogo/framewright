@@ -1,0 +1,9 @@
+# Generated author-project media and runtime files; keep pins and source tracked.
+/*.png
+/*.jpg
+/*.srt
+/audio/
+/cache/
+/guides/
+/scenes/
+/music-provenance.json

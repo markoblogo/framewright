@@ -39,7 +39,9 @@ The packet covers common output QA. It is not an exhaustive checklist compiler:
 read the selected recipe and the [full handoff contract](../skills/video-production-router/references/handoff.md)
 for renderer/effect-specific checks, alpha, locked sources and native export details.
 Planned checks need observed evidence before being marked verified by an operator.
-No production job state, asset inspection or runtime detection is implemented.
+The [project helper](../skills/video-production-router/references/projects.md)
+can now persist this packet, manual step states and actual file pins. It does not
+inspect/decode assets, detect runtimes or run production.
 
 Selection/ranking is unchanged. Unknown top-level brief fields, including custom
 budget objects, are not enforced by the existing planner. Only documented brief

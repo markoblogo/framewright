@@ -70,3 +70,10 @@ class ProductionPacketTest(unittest.TestCase):
         result = subprocess.run([sys.executable, str(CLI), str(source)], text=True, capture_output=True, check=True)
         self.assertEqual(json.loads(result.stdout), json.loads((ROOT / 'examples/plans/mixed-promo.json').read_text()))
         self.assertEqual(self.run_packet(json.loads(source.read_text())), (ROOT / 'examples/plans/mixed-promo.md').read_text())
+
+    def test_brief_links_images_and_formatting_are_literal(self):
+        packet = self.run_packet({'blocks':[{'id':'![remote](https://example.test/pixel)',
+                                             'input':'brand','style':'[click](https://example.test) *bold*'}]})
+        self.assertNotIn('![remote](', packet)
+        self.assertNotIn('[click](', packet)
+        self.assertIn(r'\!\[remote\]\(https\://example.test/pixel\)', packet)

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed": "2026-10-15",
+  "reviewed": "2026-10-16",
   "scope": "Decision-relevant audited inventory, not an exhaustive promise for every upstream API. Styles are affordances and directions, not hard renderer limits. Missing features are unknown.",
   "statuses": [
     "tested",
@@ -177,6 +177,12 @@
     "supertonic3": {
       "url": "https://huggingface.co/Supertone/supertonic-3",
       "reviewed": "2026-10-15"
+    },
+    "pyscenedetect": {
+      "url": "https://www.scenedetect.com/docs/latest/api/detectors.html",
+      "reviewed": "2026-10-16",
+      "revision": null,
+      "note": "Retained 0.7.2 local experiment;backfill does not establish latest API behavior"
     }
   },
   "tools": [
@@ -1555,6 +1561,40 @@
         "limits": "One owner assessment of one23-word script;not general Ukrainian quality or long-form qualification",
         "decision": "Supertonic3 primary Ukrainian option;Piper/Tetiana low-quality explicit fallback"
       }
+    },
+    {
+      "id": "pyscenedetect",
+      "name": "PySceneDetect",
+      "role": "analysis",
+      "inputs": [
+        "video"
+      ],
+      "styles": [],
+      "style_note": "Encoded hard-cut analysis;does not choose a visual style or create footage.",
+      "tested_version": "0.7.2 with OpenCV5.0.0.93",
+      "licence_note": "BSD-3-Clause;OpenCV/build dependencies have separate terms",
+      "features": [
+        {
+          "id": "hard-cut-detection",
+          "status": "tested",
+          "source": "pyscenedetect",
+          "note": "4/4 exact authored cuts in one15s1080p30 promo;not general scene understanding or semantic editing.",
+          "experiments": [
+            "burgers-cue-analysis"
+          ],
+          "tested_canvases": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "fps": 30
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "Existing encoded video required;not a picture renderer.",
+        "Only retained authored hard-cut fixture and same-input helper replay tested;fades,complex footage and blind generalisation unqualified."
+      ]
     }
   ]
 }

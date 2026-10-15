@@ -47,6 +47,18 @@ or **blocked**, never automatically verified. This combined pipeline needs its o
 integration test. Omit `--format markdown` for the unchanged JSON interface.
 [Packet guide and limits](docs/production-plan.md).
 
+Save progress with a [production project](skills/video-production-router/references/projects.md):
+
+```sh
+mkdir -p local/my-film
+python3 skills/video-production-router/scripts/project.py init examples/briefs/mixed-promo.json local/my-film/project.json
+python3 skills/video-production-router/scripts/project.py resume local/my-film/project.json
+```
+
+The checkpoint keeps the brief/plan, registered file hashes, manual QA states and
+history. Resume reports remaining work and changed files; it executes no production.
+
+
 ## One concrete result
 
 **Task:** introduce a library of practical commodity-market books.

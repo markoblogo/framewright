@@ -182,8 +182,8 @@ All QA above is planned or blocked. Human listening, creative acceptance and pub
 This packet covers common export checks, not the complete tool/effect contract. Read references/handoff.md and selected recipes before execution.
 
 Source keys resolve in references/tools.json; local evidence and scope live in references/catalog.json.
-- anatomy: https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/README.md
-- flute: https://github.com/webprodigies-org/flute/blob/4ab8c4a310ed051db9990e5a10a35fbcf2080cb1/README.md
-- hyperframes: https://hyperframes.heygen.com/concepts/compositions
-- kokoro: https://github.com/thewh1teagle/kokoro-onnx/blob/3596b26764286a7de9d90c363e988d50578918e5/README.md
-- remotion: https://www.remotion.dev/docs/
+- anatomy: https\://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/README.md
+- flute: https\://github.com/webprodigies-org/flute/blob/4ab8c4a310ed051db9990e5a10a35fbcf2080cb1/README.md
+- hyperframes: https\://hyperframes.heygen.com/concepts/compositions
+- kokoro: https\://github.com/thewh1teagle/kokoro-onnx/blob/3596b26764286a7de9d90c363e988d50578918e5/README.md
+- remotion: https\://www.remotion.dev/docs/
