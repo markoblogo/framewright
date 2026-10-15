@@ -46,6 +46,12 @@ def build(root, output):
                                  '--format', 'markdown'], check=True, capture_output=True, text=True)
         if not all(text in packet.stdout for text in ['# Production plan', 'still-export', 'permission_gates', 'not_started']):
             raise ValueError('Standalone production packet smoke check failed')
+        project = target / 'production.json'
+        project_cli = target / 'video-production-router/scripts/project.py'
+        subprocess.run([sys.executable, str(project_cli), 'init', str(brief), str(project)], check=True, capture_output=True, text=True)
+        resumed = subprocess.run([sys.executable, str(project_cli), 'resume', str(project), '--json'], check=True, capture_output=True, text=True)
+        if json.loads(resumed.stdout)['ready'] != ['source-review', 'preflight']:
+            raise ValueError('Standalone project checkpoint smoke check failed')
     print(f'PASS: standalone package {archive.name}; SHA-256 {digest}')
     return archive
 

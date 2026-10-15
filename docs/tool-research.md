@@ -83,3 +83,11 @@ separately;an SVG animation is not a physical simulation.
 subclips,multi-panel scenes,picture crossfades,independent headings,native RGB PNG
 and timed audio mix. MIT code;fonts/media/weights retain separate rights. Editly
 remains deferred,not failed. This manual recipe is not an automatic planner provider.
+
+## PySceneDetect — retained component backfill,2026-10-16
+
+Indexed the existing0.7.2/OpenCV5.0.0.93 cut-analysis evidence in the ledger and
+capability matrix. `hard-cut-detection` accepts existing video,not artwork alone.
+Four authored cuts recovered exactly in one15s1080p30 fixture;other transitions,
+formats and blind footage remain unqualified. No new runtime/upstream audit.
+[Trial and dependency/licence evidence](../experiments/2026-10-15/burgers-cue-analysis.md).

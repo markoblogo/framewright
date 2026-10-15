@@ -1,6 +1,6 @@
 # Proposed experiment queue
 
-Updated 2026-10-15. This is a task-led backlog, not permission for unattended tests,
+Updated 2026-10-16. This is a task-led backlog, not permission for unattended tests,
 installs, model downloads, spending, account grants or public media uploads.
 Use the owner's ABVX books/services. Discuss the subject and bounded brief before
 each actual new-tool experiment. [Research](tool-research.md) ·
@@ -11,7 +11,8 @@ each actual new-tool experiment. [Research](tool-research.md) ·
 Owner closed the [six-book + landing + compilation stage](experiments/agro-series-plan.md).
 All eight deliverables have owner-supplied publication links;individual final-film
 reviews remain separate. [Product audit and proposals](product-audit-2026-10-15.md)
-are the next work. No media production before the next release. The queue below is
+record the completed closeout;experimental v0.2.0 is published. Current work adds
+production checkpoints without rendering or another release. The queue below is
 retained research history/candidates,not an active production schedule. Select the
 next direction after release;ACE-Step remains resource/diagnostic-gated.
 
@@ -105,11 +106,10 @@ including rejection, blocked setup, rights restriction, unknown result or no-op.
 Name the changed revision, terms, task or unresolved feature before any repeat.
 Never erase a failed attempt when a later workaround succeeds.
 
-Owner proposes the **next release after the next agreed production experiment**:
-retain its output/QA, update recipes/capability limits, review findings and refresh
-documentation first. Choose the release version at that checkpoint; no tag/release
-is created by this queue update. [Proportionate checks](checking-policy.md) remain
-in force; no automatic broad model benchmark or extra film is required.
+Experimental v0.2.0 closed the agricultural stage. No next production experiment is
+authorised by the queue;choose its direction and bounded brief with the owner.
+Checkpoint/review maintenance does not imply a new release.
+[Proportionate checks](checking-policy.md) remain in force.
 
 ## Current Ukrainian voice gate
 
@@ -128,3 +128,10 @@ recuts;new books require a new source/story/audio check. Music-video or animatio
 experiments remain future choices,not scheduled work. OpenScreen and MoviePy are
 two intervening completed trials after ACE-Step;its resource/diagnostic gate still
 blocks an unchanged retry and does not make it the automatic next test.
+
+## Retained cut-analysis component
+
+PySceneDetect0.7.2 is now indexed in the decision ledger and tool registry. Its
+`hard-cut-detection` companion requires existing video;the retained Burgers trial
+recovered4/4 authored cuts in one15s1080p30 film. This is a backfill,not a new run
+or a general scene-understanding claim. See [evidence](../experiments/2026-10-15/burgers-cue-analysis.md).

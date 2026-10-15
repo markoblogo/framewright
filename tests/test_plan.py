@@ -349,6 +349,14 @@ class BlockPlannerTest(unittest.TestCase):
         self.assertEqual(by_feature['normalization']['tool'], 'ffmpeg')
         self.assertEqual(by_feature['audio-mix']['tool'], 'sound-layer')
 
+    def test_cut_analysis_is_a_companion_for_existing_video_only(self):
+        video = self.run_plan(self.brief(input='video', effects=['hard-cut-detection']))
+        self.assertEqual(set(video['blocks'][0]['tools']), {'ffmpeg','pyscenedetect'})
+        self.assertEqual(video['blocks'][0]['requires_feature_test'], [])
+        art = self.run_plan(self.brief(input='book-art', effects=['hard-cut-detection']))
+        self.assertIn('hard-cut-detection', art['blocks'][0]['unmet'])
+        self.assertNotIn('pyscenedetect', art['blocks'][0]['tools'])
+
 
 if __name__ == '__main__':
     unittest.main()

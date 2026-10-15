@@ -1,6 +1,6 @@
 # Tool capability matrix
 
-Generated from `tools.json`; reviewed 2026-10-15.
+Generated from `tools.json`; reviewed 2026-10-16.
 
 Scope: decision-relevant inventory, not an exhaustive API guarantee. Tested means
 the stated local experiment only. Documented needs installed-version verification;
@@ -371,6 +371,23 @@ Local stockM1/F1;owner slight preferenceF1 after same-text Ukrainian probe. Natu
 | `narration` | tested | M1/F1 short UK probes owner-accepted;defaultF1(slight subjective preference). First24s F1 video integration passed encoded checks,accepted intro reused,new title/CTA generated;final-film listening pending. Residual pause/stress errors known. [Source](https://huggingface.co/Supertone/supertonic-3) |
 
 **Limits:** M1/F1 short-script probes and one24s F1 film integrated;longer/new scripts and other voices need QA. Final film owner listening remains pending. Owner reports residual pauses and2–3 stress errors;intonation good. F1 preference is slight and subjective. Other upstream-documented languages are not locally qualified by this profile. No singing,cloning or other stock voices tested. Model output requires explicit synthetic/AI-generated disclosure;licence restrictions still apply.
+
+## PySceneDetect
+
+**Role:** analysis. **Inputs:** video.
+
+**Style directions:** .
+Encoded hard-cut analysis;does not choose a visual style or create footage.
+
+**Tested version/scope:** 0.7.2 with OpenCV5.0.0.93
+
+**Licence:** BSD-3-Clause;OpenCV/build dependencies have separate terms
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `hard-cut-detection` | tested | 4/4 exact authored cuts in one15s1080p30 promo;not general scene understanding or semantic editing. [Source](https://www.scenedetect.com/docs/latest/api/detectors.html) |
+
+**Limits:** Existing encoded video required;not a picture renderer. Only retained authored hard-cut fixture and same-input helper replay tested;fades,complex footage and blind generalisation unqualified.
 
 ## Source freshness
 

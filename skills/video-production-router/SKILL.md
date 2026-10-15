@@ -28,7 +28,10 @@ it does not replace rendering skills or confer permission to publish.
    readable production packet: timeline, capability evidence, intended files and
    common per-output QA. Every checkbox remains planned/blocked; source kinds and
    suggested filenames are not inspected/delivered artifacts. The packet supplements,
-   rather than replaces, the full handoff and renderer-specific contract. Distinguish
+   rather than replaces, the full handoff and renderer-specific contract.
+   For work spanning sessions, use [production checkpoints](references/projects.md):
+   freeze the accepted brief/plan, register actual files and record manual states.
+   Resume inspects pins and remaining work; it never executes or marks QA passed. Distinguish
    tested, documented, failed and unknown features; preserve cost/language/format limits.
    For a new multi-shot video without a useful shot plan, read the
    [storyboard adapter](references/storyboard.md) and establish its shot/continuity

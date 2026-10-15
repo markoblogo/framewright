@@ -43,7 +43,7 @@ cannot establish their own picture input. Regression tests retain both examples
 and requirement permutations.
 
 The inventory at that historical correction had eleven profiles;the current
-registry has sixteen profiles,including voices and preparation,not sixteen renderers. The two music providers are documented-only and
+registry has seventeen profiles,including voices and preparation,not seventeen renderers. The two music providers are documented-only and
 handled by a separate optional planning object, not selected as picture renderers.
 The storyboard profile is a separate preproduction layer; it cannot supply picture
 features through the offline chain solver. Its original guide retains format,

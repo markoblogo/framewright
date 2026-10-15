@@ -6,7 +6,8 @@ import re
 
 def cell(value):
     """Treat brief content as text, not Markdown/HTML instructions."""
-    return html.escape(str(value), quote=False).replace('\\', '\\\\').replace('|', '\\|').replace('`', '\\`').replace('\n', ' ').replace('\r', ' ')
+    text = html.escape(str(value), quote=False).replace('\n', ' ').replace('\r', ' ')
+    return re.sub(r'([\\`*_{}\[\]()#+!:|>~])', r'\\\1', text)
 
 
 def checks(lines, items, status='planned'):

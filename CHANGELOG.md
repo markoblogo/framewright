@@ -1,5 +1,17 @@
 # Changelog
 
+## Unreleased
+
+Add local production checkpoints with frozen brief/plan/packet,file pins,manual
+step states,dependency invalidation and read-only resume/status. Atomic writes
+and exclusive macOS/Linux locking preserve the last complete checkpoint;no render,
+decode,installation or upload is performed.
+
+Backfill PySceneDetect from retained Burgers evidence as an existing-video analysis
+companion. Escape brief Markdown images/links,validate OpenScreen narration against
+the pinned script/timing,ignore generated compilation thumbnails,and require the
+retained local Remotion executable in its archive. No new release/model/media run.
+
 ## 0.2.0 — 2026-10-16 — experimental
 
 - Add `plan.py BRIEF.json --format markdown`: a readable production packet with

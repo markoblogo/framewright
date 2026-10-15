@@ -26,8 +26,8 @@ evidence. No voice-quality approval is implied by a technical export.
 ```sh
 # Use the retained qualified runtime; clean installation is not qualified.
 REMOTION_BROWSER='/absolute/path/to/working/chrome-headless-shell'
-npx remotion still src/index.tsx Thumbnail Contract-Execution-YouTube.png --browser-executable="$REMOTION_BROWSER" --timeout=120000
-npx remotion render src/index.tsx Contract Contract-Execution-Picture-1080p.mp4 --codec=h264 --crf=18 --concurrency=1 --browser-executable="$REMOTION_BROWSER" --timeout=120000
+./node_modules/.bin/remotion still src/index.tsx Thumbnail Contract-Execution-YouTube.png --browser-executable="$REMOTION_BROWSER" --timeout=120000
+./node_modules/.bin/remotion render src/index.tsx Contract Contract-Execution-Picture-1080p.mp4 --codec=h264 --crf=18 --concurrency=1 --browser-executable="$REMOTION_BROWSER" --timeout=120000
 ```
 
 
