@@ -102,7 +102,13 @@ def plan(brief, registry):
         preferred_voice = block.get('preferred_voice', brief.get('preferred_voice'))
         if preferred_voice is not None and (not isinstance(preferred_voice, str) or preferred_voice not in tools or tools[preferred_voice]['role'] != 'voice'):
             raise ValueError('preferred_voice must name a known voice tool')
-        caps = {(t['id'], f): capability(t, f, language, paid, canvas) for t in tools.values() for f in set(requested + ['video-export'])}
+        def selectable_capability(tool, feature):
+            if (feature == 'narration' and
+                    not tool.get('default_narration_eligible', True) and
+                    tool['id'] != preferred_voice):
+                return None
+            return capability(tool, feature, language, paid, canvas)
+        caps = {(t['id'], f): selectable_capability(t, f) for t in tools.values() for f in set(requested + ['video-export'])}
         def chain_solution(main):
             # Exact subsets are small for this curated catalogue. Compare complete
             # chains, not a greedy alphabetical path or only direct capabilities.

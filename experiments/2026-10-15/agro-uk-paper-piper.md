@@ -113,3 +113,18 @@ are historical;this later assessment supersedes the pending owner review.
 matched against the local master;audience outcomes are unmeasured. Existing owner
 assessment remains:acceptable simple distinct picture,weak Ukrainian voice;next
 Ukrainian narration should use a different tool. No media changes or new release.
+
+## Reproduction review corrections
+
+Both the114204024-byte ONNX and its sibling config are now hash-checked before
+Piper loads,with the verified config path passed explicitly. Retained local config
+SHA256:`12de3568ea07f32b4ad922667b27c01ac3da9aeeb04f62a0036f9b32a2eb6aee`.
+The example render command now uses the successful single-worker setting. The
+current qualification description includes Piper,paper-cut,canvas guards and owner
+quality feedback. Offline regression tests only;no speech generation or rerender.
+
+The follow-up planner fix consumes `default_narration_eligible:false`:ordinary
+Ukrainian narration now remains unmet instead of silently selecting this rejected
+voice. Explicit Piper selection remains possible with retained quality warnings.
+Technical QA scope,owner outcomes and future-tool decisions are separate fields;
+the catalogue no longer labels the completed owner review as untested.

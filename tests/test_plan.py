@@ -64,6 +64,33 @@ class BlockPlannerTest(unittest.TestCase):
         self.assertEqual(planner.capability(tool, 'paper-cut-regroup', 'uk', False,
                          {'width': 1920, 'height': 1080, 'fps': 30})['evidence'], 'tested')
 
+    def test_owner_rejected_voice_is_not_automatically_selected(self):
+        result = self.run_plan(self.brief(input='book-art', language='uk',
+                                         deliverables=['video-export', 'narration']))
+        self.assertEqual(result['status'], 'blocked')
+        self.assertIn('narration', result['blocks'][0]['unmet'])
+        self.assertNotIn('piper', result['blocks'][0]['tools'])
+        self.assertTrue(next(t for t in REGISTRY['tools'] if t['id'] == 'piper')['features'][0]['status'] == 'tested')
+
+    def test_explicit_rejected_voice_keeps_quality_warning(self):
+        result = self.run_plan(self.brief(input='book-art', language='uk',
+                                         preferred_voice='piper', deliverables=['narration']))
+        self.assertEqual(result['status'], 'proposed')
+        self.assertIn('piper', result['blocks'][0]['tools'])
+        self.assertIn('unnecessary pauses', ' '.join(result['blocks'][0]['known_limits']['piper']))
+
+    def test_new_eligible_ukrainian_voice_can_replace_rejected_default(self):
+        registry = copy.deepcopy(REGISTRY)
+        alternative = copy.deepcopy(next(t for t in registry['tools'] if t['id'] == 'piper'))
+        alternative['id'] = 'fixture-uk-voice'
+        alternative['default_narration_eligible'] = True
+        registry['tools'].append(alternative)
+        result = planner.plan(self.brief(input='book-art', language='uk',
+                                         deliverables=['narration']), registry)
+        self.assertEqual(result['status'], 'proposed')
+        self.assertIn('fixture-uk-voice', result['blocks'][0]['tools'])
+        self.assertNotIn('piper', result['blocks'][0]['tools'])
+
     def test_invalid_preferred_voice_rejected(self):
         for tool in ['unknown', 'manimgx', []]:
             with self.subTest(tool=tool), self.assertRaisesRegex(ValueError, 'preferred_voice'):

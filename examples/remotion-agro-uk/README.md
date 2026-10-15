@@ -19,11 +19,11 @@ working Chromium,not a clean new install. Exact voice pins are in the
 npm install
 REMOTION_BROWSER='/absolute/path/to/working/chrome-headless-shell'
 npx remotion still src/index.ts AgroUK preview.png --frame=600 --browser-executable="$REMOTION_BROWSER" --timeout=120000
-npx remotion render src/index.ts AgroUK picture.mp4 --codec=h264 --crf=18 --concurrency=2 --browser-executable="$REMOTION_BROWSER" --timeout=120000
+npx remotion render src/index.ts AgroUK picture.mp4 --codec=h264 --crf=18 --concurrency=1 --browser-executable="$REMOTION_BROWSER" --timeout=120000
 ```
 
 Picture is silent. Piper1.4.2/Tetiana produces separate mono22.05kHz phrases using
-`synthesize.py`,after exact model/hash and terms review. Create `models/` and
+`synthesize.py`,after exact model/config hashes and terms review. Create `models/` and
 `audio/`,place the pinned model/config under the expected names;no implicit model
 download or paid API. EngineGPL3,voice cardApache2.0,no cloning. Resample/mix on a
 common48kHz24s timeline,then mux picture with checked voice/music/effects;do not
@@ -32,3 +32,9 @@ stretch Ukrainian speech to rescue an overloaded script. Narration starts at
 
 [Experiment and limitations](../../experiments/2026-10-15/agro-uk-paper-piper.md).
 Owner accepted the simple visual style but found this Ukrainian voice weak;use a different tool for the next Ukrainian narration. Technical export remains valid.
+
+The script verifies both pinned files before loading Piper,including the config
+SHA-256 `12de3568ea07f32b4ad922667b27c01ac3da9aeeb04f62a0036f9b32a2eb6aee`.
+The config controls phonemes/sample rate;do not substitute a different revision.
+Use the successful Chromium152/single-worker path for pilot reproduction;other
+Chromium versions require their own check. No rerender was performed for this fix.
