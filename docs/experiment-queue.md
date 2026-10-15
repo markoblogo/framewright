@@ -107,3 +107,7 @@ retain its output/QA, update recipes/capability limits, review findings and refr
 documentation first. Choose the release version at that checkpoint; no tag/release
 is created by this queue update. [Proportionate checks](checking-policy.md) remain
 in force; no automatic broad model benchmark or extra film is required.
+
+## Current Ukrainian voice gate
+
+[Spot-market UK microprobe](../experiments/2026-10-15/spot-market-uk-voice-probe.md):Supertonic3 M1/F1,12.19s each,technical WAV checks complete. Owner listening decides whether either voice is suitable before the full book film. No video render or router-profile promotion. OmniVoice weights remain rights-blocked for this promotional brief;Piper/Tetiana is not retried.
