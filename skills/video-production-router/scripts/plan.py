@@ -164,13 +164,18 @@ def plan(brief, registry):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('brief', type=Path)
+    parser.add_argument('--format', choices=['json', 'markdown'], default='json', help='Machine JSON or a readable, unverified production packet')
     args = parser.parse_args()
     try:
         registry = json.loads((Path(__file__).resolve().parents[1] / 'references/tools.json').read_text())
-        result = plan(json.loads(args.brief.read_text()), registry)
+        brief = json.loads(args.brief.read_text())
+        result = plan(brief, registry)
     except (ValueError, KeyError, TypeError) as exc:
         parser.error(str(exc))
-    print(json.dumps(result, indent=2))
+    if args.format == 'markdown':
+        print(runpy.run_path(str(Path(__file__).with_name('packet.py')))['markdown'](brief, result, registry), end='')
+    else:
+        print(json.dumps(result, indent=2))
 
 
 if __name__ == '__main__':

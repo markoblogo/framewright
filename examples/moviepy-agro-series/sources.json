@@ -1,0 +1,58 @@
+[
+  {
+    "id": "spot-market-3d-miniature",
+    "sha256": "d94e469473e644b3b66caf95338ac79ad2c7e282fb6e2f2d704c42e83daf5745",
+    "bytes": 13794522,
+    "duration": 20.0,
+    "strip_audio": true,
+    "local_output": "spot-market-video-pilot-20261015/Spot-Market-Handbook-EN-3D-1080p.mp4"
+  },
+  {
+    "id": "agri-brokerage-trading-table",
+    "sha256": "c51b6110a35f9dc2c94449bc6ddc2fd144401c6f3ba499ed8c7b813218b95255",
+    "bytes": 4887350,
+    "duration": 30.0,
+    "strip_audio": true,
+    "local_output": "agri-brokerage-en-video-pilot-20261015/Agri-Brokerage-Picture-1080p.mp4"
+  },
+  {
+    "id": "contract-execution-prompt-motion",
+    "sha256": "7c30bb0b90911568c42028aa26c27ce696e6cd612a0d32a047d58940f42470b4",
+    "bytes": 2961245,
+    "duration": 32.0,
+    "strip_audio": true,
+    "local_output": "contract-execution-video-pilot-20261015/Contract-Execution-Picture-1080p.mp4"
+  },
+  {
+    "id": "mn7r-manim-mlx",
+    "sha256": "386a72648dd38cc17730798c8d8656a956129c78665b3add3bfe35c575bace7a",
+    "bytes": 1253108,
+    "duration": 20.033333,
+    "strip_audio": true,
+    "local_output": "mn7r-guide-video-pilot-20261015/MN7R-Product-Guide-Picture-1080p.mp4"
+  },
+  {
+    "id": "agro-uk-paper-piper",
+    "sha256": "b783b2f8be06aeeb86c8c36c25caffc7bbfa97fc13d8bb5aa041590c4e0ac803",
+    "bytes": 9782712,
+    "duration": 24.0,
+    "strip_audio": true,
+    "local_output": "agro-brokerage-uk-video-pilot-20261015/Agro-Brokerage-UK-Picture-1080p.mp4"
+  },
+  {
+    "id": "spot-market-uk-lcd",
+    "sha256": "adec7e85d871072d1a31ff5c90bbbbe89317bb077fd8230a7e2021f0fcdfea3c",
+    "bytes": 3571627,
+    "duration": 24.0,
+    "strip_audio": true,
+    "local_output": "spot-market-uk-video-pilot-20261015/Spot-Market-Handbook-UK-LCD-Picture-1080p.mp4"
+  },
+  {
+    "id": "ami-books-openscreen",
+    "sha256": "ff9449650474d0f1ecda6c6a6d723bbd8f7492be53369b1460a457ba71bbceba",
+    "bytes": 9608993,
+    "duration": 42.0,
+    "strip_audio": true,
+    "local_output": "ami-books-landing-pilot-20261015/AMI-Books-1080p.mp4"
+  }
+]

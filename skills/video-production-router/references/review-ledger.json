@@ -48,7 +48,7 @@
       "disposition": "candidate",
       "scope_and_findings": "Automatic timeline cuts by audio loudness/motion; not semantic judgement of which words can be removed.",
       "licence_note": "Unlicense; packaged artefacts may differ",
-      "next_trial_or_retest_condition": "Authorised60–90s spoken sample; label pauses first, protect phrase edges, check edit list and sync.",
+      "next_trial_or_retest_condition": "Authorised60\u201390s spoken sample; label pauses first, protect phrase edges, check edit list and sync.",
       "evidence": [
         "docs/tool-research.md"
       ]
@@ -58,14 +58,15 @@
       "name": "OpenScreen",
       "url": "https://github.com/getopenscreen/openscreen",
       "reviewed": "2026-10-15",
-      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
-      "upstream_revision": "56d590d33160b79e82f84cd7e402360346088780",
-      "disposition": "candidate",
-      "scope_and_findings": "Screen capture with auto/manual zoom, editing and export; optional AI editing needs an explicit provider/key.",
+      "review_basis": "Officialv2.0.0 release CLI/source and retained local capture/export experiment",
+      "upstream_revision": "eff86dcba48fac490a0e153141bf8537df7ffc54",
+      "disposition": "supported_scoped",
+      "scope_and_findings": "Manual public-window capture and pack;crop/manual zoom/annotations and native1080p60 export completed;FFmpeg source selection/freeze and30fps/voice finishing. Fullscreen/hidden-window capture produced miniature or black output despite success;inspect source raster and content. No automatic planner provider added.",
       "licence_note": "MIT",
-      "next_trial_or_retest_condition": "Synthetic local UI,10–15s; inspect cursor focus, private-window exclusion, readability and export. No account action.",
+      "next_trial_or_retest_condition": "Retest only changed need:stable foreground/capture-boundary control,automatic cursor zoom with explicit Accessibility grant,or a released MCP interface. Do not repeat the same whole tour blindly.",
       "evidence": [
-        "docs/tool-research.md"
+        "experiments/2026-10-15/ami-books-openscreen.md",
+        "experiments/2026-10-15/evidence/ami-books-openscreen.txt"
       ]
     },
     {
@@ -215,7 +216,7 @@
       "disposition": "candidate",
       "scope_and_findings": "Speaker diarization/embeddings. Anonymous speaker clusters are not verified real-person identity.",
       "licence_note": "MIT code; model/provider terms separate",
-      "next_trial_or_retest_condition": "Two-speaker20–30s sample with manual turns/overlap; inspect model conditions, token/telemetry and local-vs-premium route first.",
+      "next_trial_or_retest_condition": "Two-speaker20\u201330s sample with manual turns/overlap; inspect model conditions, token/telemetry and local-vs-premium route first.",
       "evidence": [
         "docs/tool-research.md"
       ]
@@ -230,7 +231,7 @@
       "disposition": "candidate",
       "scope_and_findings": "MLX Whisper speech transcription; word timing is an estimate, not proven lyric alignment. Exact path is whisper/README.md.",
       "licence_note": "MIT code; inspect selected weights",
-      "next_trial_or_retest_condition": "Same10–15s EN narration and known transcript as Parakeet/WhisperX; errors, timing and real resource use. Singing separately.",
+      "next_trial_or_retest_condition": "Same10\u201315s EN narration and known transcript as Parakeet/WhisperX; errors, timing and real resource use. Singing separately.",
       "evidence": [
         "docs/tool-research.md"
       ]
@@ -260,7 +261,7 @@
       "disposition": "candidate",
       "scope_and_findings": "Documented Agent Skills/Codex path, sampled frames plus transcript; this is not proof of continuous video/audio understanding.",
       "licence_note": "MIT code; providers/models independent",
-      "next_trial_or_retest_condition": "Existing local10–15s owned MP4; inspect planned paths/dependencies/cloud fallback first. Compare known visual events and transcript, no automatic installs/uploads.",
+      "next_trial_or_retest_condition": "Existing local10\u201315s owned MP4; inspect planned paths/dependencies/cloud fallback first. Compare known visual events and transcript, no automatic installs/uploads.",
       "evidence": [
         "docs/tool-research.md"
       ]
@@ -273,11 +274,12 @@
       "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
       "upstream_revision": null,
       "disposition": "reference_only",
-      "scope_and_findings": "Public catalogue, prompts/skills and customizer; creator-owned material. Improved prompt may be Untested while original has a video.",
+      "scope_and_findings": "Public catalogue, prompts/skills and customizer; creator-owned material. Improved prompt may be Untested while original has a video. Contract Execution Officer production trial:actual Diagrams filter,three-entry text shortlist,Alex Prompter five-scene finalist and one paused preview frame;original adapted prompt executed through existing Remotion. No customizer/creator-media reuse or renderer qualification implied.",
       "licence_note": "creator-specific; no blanket reuse licence established",
-      "next_trial_or_retest_condition": "Brief → metadata filters → shortlist → finalist → original bounded prompt adaptation → agreed render/QA. Current trial stops at prompt.",
+      "next_trial_or_retest_condition": "The Contract Execution Officer filter/shortlist/adapted-prompt/render/QA path is complete. Next trial only for a concrete new question:customizer operation or a different gallery entry/renderer port;owner visual review remains separate. Do not repeat the completed path unchanged.",
       "evidence": [
-        "docs/tool-research.md"
+        "docs/tool-research.md",
+        "experiments/2026-10-15/contract-execution-prompt-motion.md"
       ]
     },
     {
@@ -405,16 +407,15 @@
       "id": "ace-step",
       "name": "ace-step",
       "url": "https://github.com/ace-step/ACE-Step-1.5",
-      "reviewed": "2026-10-14",
-      "review_basis": "backfilled retained queue/related-work record; no new upstream/runtime audit",
-      "upstream_revision": null,
-      "disposition": "deferred",
-      "scope_and_findings": "Local music remains deferred to hardware/weights/model-size preflight.",
-      "licence_note": "See retained source comparison; exact package/model/media terms still need per-trial review.",
-      "next_trial_or_retest_condition": "A concrete authorised task and resolution of the recorded prerequisite; never repeat an unchanged blocked setup.",
+      "reviewed": "2026-10-15",
+      "review_basis": "Pinned official code/model terms and hardware preflight;local MPS/CPU attempts with retained integrity/resource evidence",
+      "upstream_revision": "codeca1e85fe9430179831e6bc6be790c332190a3866;model19671f406d603126926c1b7e2adc169acbcade22",
+      "disposition": "runtime_incomplete_resource_guard",
+      "scope_and_findings": "Initial DiT download hash mismatch repaired by verified221.94s retry. ScopedMPSfloat16/MLXVAE initialization and diffusion reached valid latents;no deliverableWAV retained across owner-reported emergency restart. System watchdog report does not prove ACE-Step causality. Owner-authorized10sCPU-only bfloat16/2-thread probe stopped after350.22s by internal-free-disk<5GiB guard;sampled peakRSS2159722496bytes. No final music,quality approval or end-to-end music pass. Owner selected English narration-only final film.",
+      "licence_note": "Official codeMIT/model cardMIT;exact pinned weights/code hashes retained;Qwen component retains its upstream terms. No weights or generated music redistributed.",
+      "next_trial_or_retest_condition": "Owner-scheduled delayed revisit:after at least two other completed experiments,not the next trial. Changed resources/environment or concrete investigation with explicit bounded authority;no unchanged automatic MPS/CPU replay. Do not mark technical music generation failed universally or promote a tested music route.",
       "evidence": [
-        "docs/related-work.md",
-        "docs/experiment-queue.md"
+        "experiments/2026-10-15/agri-brokerage-ace-step.md"
       ]
     },
     {
@@ -550,12 +551,13 @@
       "review_basis": "Official model/license,SDKAPI/pins and bounded two-preset local audio probe",
       "upstream_revision": "model3cadd1ee6394adea1bd021217a0e650ede09a323;SDK1.3.1",
       "disposition": "owner_accepted_scoped_voice",
-      "scope_and_findings": "M1/F1 same23-word UK text,12.19s each. Owner:usable,much better than Tetiana;fewer/shorter pauses,2–3 stress errors,good intonation. Slight subjectiveF1 preference. Recommended among tested UK voices;not general long-form quality. Full24s F1 LCD film integrated:accepted intro reused,new title/CTA measured,encoded QA passed;final owner listening pending.",
+      "scope_and_findings": "M1/F1 same23-word UK text,12.19s each. Owner:usable,much better than Tetiana;fewer/shorter pauses,2\u20133 stress errors,good intonation. Slight subjectiveF1 preference. Recommended among tested UK voices;not general long-form quality. Full24s F1 LCD film integrated:accepted intro reused,new title/CTA measured,encoded QA passed;final owner listening pending. EnglishF1:opening microprobe followed by five-line32s Contract Execution Officer integration;technical QA recorded separately. Owner accepted EnglishF1 in this film:good,natural-sounding,synthetic origin not obvious. This is one subjective script/voice assessment,not a general English quality score.",
       "licence_note": "SDKMIT;modelBigScienceOpenRAIL-M,including explicit machine-generated-content disclosure. No weights/art/audio redistributed.",
       "next_trial_or_retest_condition": "Owner review of the retained full film next;no unchanged regeneration. Longer/new languages,voices or prosody controls require a bounded new question.",
       "evidence": [
         "experiments/2026-10-15/spot-market-uk-voice-probe.md",
-        "experiments/2026-10-15/spot-market-uk-lcd.md"
+        "experiments/2026-10-15/spot-market-uk-lcd.md",
+        "experiments/2026-10-15/contract-execution-prompt-motion.md"
       ]
     },
     {
@@ -571,6 +573,22 @@
       "next_trial_or_retest_condition": "Verified compatible weight terms/permission or separate appropriate noncommercial brief;do not repeat unchanged licensing review as a technical test.",
       "evidence": [
         "experiments/2026-10-15/spot-market-uk-voice-probe.md"
+      ]
+    },
+    {
+      "id": "moviepy",
+      "name": "MoviePy",
+      "url": "https://github.com/Zulko/moviepy",
+      "reviewed": "2026-10-15",
+      "review_basis": "Official v2 API documentation,installed2.2.1 distribution and local bounded probe/full compilation",
+      "upstream_revision": "PyPI distribution2.2.1;requirements.lock retained",
+      "disposition": "supported_scoped",
+      "scope_and_findings": "Seven-source60s1080p30 compilation:subclips,multi-panel composition,picture crossfades,heading overlay,native RGB thumbnail,timed speech and loop/faded instrumental mixing. Source audio explicitly disabled. Tuple orientation and this font baseline needed adapter correction;no blanket API/font guarantee.",
+      "licence_note": "MIT code;FFmpeg/fonts/input media and Supertonic weights have separate terms",
+      "next_trial_or_retest_condition": "A changed assembly requirement,codec/format or font,with bounded preflight;do not rerun identical montage as a new capability test. Deterministic planner provider integration remains separate.",
+      "evidence": [
+        "experiments/2026-10-15/agro-series-compilation.md",
+        "experiments/2026-10-15/evidence/agro-series-compilation.txt"
       ]
     }
   ]

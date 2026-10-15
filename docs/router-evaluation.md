@@ -190,8 +190,9 @@ V3's calibration includes frozen input/gold hashes and model-run evidence. Repet
 instructions and answer-link normalization are in the [packet guide](../benchmarks/router/2026-10-14/grading-v3-complete/README.md).
 Token totals are actor-only, not billing or an end-to-end performance comparison.
 
-The active status is `model_checked_planning_scope`, bound to the exact current
-sources and complete packet. Tests still reject source drift, hidden gold, extra
+The active status is `not_evaluated_current_source`, bound to the recorded current
+source hashes. `model_checked_planning_scope` is available only for an exact
+source-bound complete passing assessment; historical scores do not promote this tree. Tests still reject source drift, hidden gold, extra
 actor context, partial promotion and using legacy calibration for v3. A separate
 `evaluated_with_gaps` status remains available for honest failing assessments.
 Integrity checks alone do not launch or evaluate a model.

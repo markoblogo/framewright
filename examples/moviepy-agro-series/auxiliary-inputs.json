@@ -1,0 +1,12 @@
+{
+  "music": {
+    "local_output": "contract-execution-video-pilot-20261015/audio/music-original.wav",
+    "sha256": "c215cc9feba36a81f69a953985befff0b50ba297cfa3fe02adee72616bd786ac",
+    "bytes": 9216044
+  },
+  "thumbnail": {
+    "local_output": "ami-books-landing-pilot-20261015/Screen-Assembly.mp4",
+    "sha256": "78f93e543e53f80c1a5761193e6197974e466f5cf94bcd354c00a0aa93e14243",
+    "bytes": 1923879
+  }
+}

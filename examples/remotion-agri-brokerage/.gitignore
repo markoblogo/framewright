@@ -1,0 +1,10 @@
+node_modules/
+public/
+audio/
+cache/
+guides/
+*.mp4
+*.png
+*.jpg
+*.srt
+__pycache__/

@@ -112,9 +112,10 @@
       "experiments": [
         "framewright-remotion",
         "agro-uk-paper-piper",
-        "spot-market-uk-lcd"
+        "spot-market-uk-lcd",
+        "agri-brokerage-trading-table"
       ],
-      "tested_scope": "Remotion 4.0.535 authored React motion graphics, native instrumental audio and still export; Framewright 30-second horizontal 1080p30 pilot with explicit existing Chromium;24s Ukrainian paper-route animation plus Piper/Tetiana voice externally muxed with FFmpeg,encoded PNG thumbnail;24s1080p30 LCD/pixel/factor/conveyor/slat film with Supertonic3 F1 external voice mix and encoded thumbnail QA",
+      "tested_scope": "Remotion 4.0.535 authored React motion graphics, native instrumental audio and still export; Framewright 30-second horizontal 1080p30 pilot with explicit existing Chromium;24s Ukrainian paper-route animation plus Piper/Tetiana voice externally muxed with FFmpeg,encoded PNG thumbnail;24s1080p30 LCD/pixel/factor/conveyor/slat film with Supertonic3 F1 external voice mix and encoded thumbnail QA;30s Three.js0.186.0 trading-table in Remotion with Supertonic3F1 narration-only assembly;ACE-Step music incomplete,not included",
       "not_tested": [
         "automatic app capture",
         "narration or captions in Remotion",
@@ -218,6 +219,46 @@
           "detail": "Planned2GB ceiling exceeded in a~3.2GB directory snapshot before task cache cleanup;not an exact peak or physical-sharing measurement.",
           "evidence": "experiments/2026-10-15/evidence/mn7r-manim-mlx.txt"
         }
+      ]
+    },
+    {
+      "id": "live-site-tour",
+      "status": "tested_for_scope",
+      "recipe": "recipes.md#live-site-tour",
+      "upstream": [
+        "https://github.com/getopenscreen/openscreen"
+      ],
+      "experiments": [
+        "ami-books-openscreen"
+      ],
+      "tested_scope": "Manual OpenScreen2.0.0 macOS CLI public-window capture/pack,crop/manual zoom/annotations,native1080p60;FFmpeg edited42s1080p30 website tour and external EN Supertonic3F1 narration. Manual recipe only;not a new automated planner provider.",
+      "not_tested": [
+        "MCP interface absent from tested release help",
+        "automatic cursor zoom and Accessibility-dependent click tracking",
+        "continuous whole-site capture;known miniature/black-window failures retained",
+        "native30fps export",
+        "clean machine and other operating systems",
+        "owner final-film listening/style acceptance"
+      ]
+    },
+    {
+      "id": "footage-compilation",
+      "status": "tested_for_scope",
+      "recipe": "recipes.md#footage-compilation",
+      "upstream": [
+        "https://github.com/Zulko/moviepy"
+      ],
+      "experiments": [
+        "agro-series-compilation"
+      ],
+      "tested_scope": "MoviePy2.2.1 manual60s1080p30 compilation of six book films and one landing film,subclips,multi-panel compositions,0.5s picture dissolves,independent headings,native PNG and timed audio mix;FFmpeg normalisation/mux. Manual recipe,not an automated planner provider.",
+      "not_tested": [
+        "automatic semantic selection of footage",
+        "generic font/layout compatibility;measured Pillow bounds used after clipping",
+        "vertical or other codecs",
+        "independent ASR or new-script owner listening",
+        "clean-machine complete reproduction",
+        "independent router-model evaluation"
       ]
     }
   ]

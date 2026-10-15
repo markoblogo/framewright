@@ -18,7 +18,7 @@ source and commands. It has not been re-rendered on a clean machine after the li
 dependency repair. No time/cost advantage or universal reproducibility is claimed.
 
 Bounded router decision checks are retained in the
-[behavioural report](router-evaluation.md). The current source records70/70 rubric;62/70 complete evidence
+[behavioural report](router-evaluation.md). The historical evaluated source records70/70 rubric;62/70 complete evidence
 under protocol v5 with46/46 blind controls. The historical v4 result remains67/70. The historical v3 run remains52/52. The earlier 43/46 and
 first-exposure 9/12 remain unchanged: a [versioned diagnosis](grading-v3.md) corrects
 source-comparison, singing-alternative and comparison-stop criteria, plus the
@@ -31,7 +31,7 @@ Release 0.1.1 resolves companion dependencies to a fixed point in canonical feat
 order. Equivalent requirement arrays have equivalent tool coverage; requested native
 stills influence the primary choice instead of falling through to video extraction.
 
-## Unreleased correction
+## Post-0.1.1 correction
 
 The fixed-point implementation could freeze an inferior provider: documented
 Hyperframes stills displaced tested Brag + FFmpeg extraction, and sound-layer's
@@ -42,7 +42,8 @@ strongest eligible provider even when a selected tool also documents it. Finishe
 cannot establish their own picture input. Regression tests retain both examples
 and requirement permutations.
 
-The inventory now has eleven profiles. The two music providers are documented-only and
+The inventory at that historical correction had eleven profiles;the current
+registry has sixteen profiles,including voices and preparation,not sixteen renderers. The two music providers are documented-only and
 handled by a separate optional planning object, not selected as picture renderers.
 The storyboard profile is a separate preproduction layer; it cannot supply picture
 features through the offline chain solver. Its original guide retains format,

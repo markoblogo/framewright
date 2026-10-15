@@ -93,3 +93,58 @@ its qualified export includes FFmpeg timing normalisation. Explicit narration ca
 use `preferred_voice` with a known voice-tool ID. Missing language support remains
 blocked; do not silently swap an explicitly requested voice runtime. MLX-Audio's
 current tested profile is Kokoro English only,not the whole upstream model range.
+
+## Scoped route choices
+
+Prefer Brag full for a short software launch; prefer the local narrated montage
+recipe for existing book imagery with speech. Brag itself also supports voice:
+our silent Brag tests do not establish a product limitation. Anatomy is a visual
+prototype option, not a validated physics or finished sound workflow here. Do not
+choose it just because a video contains an object. Historical reconstruction and
+new AI-video services require bounded tests, not an invented capability claim.
+
+For camera travel and focus around an existing React interface, consider the
+tested `live-react-scene` Flute recipe. An explicit Flute request overrides the
+default renderer choice; load its installed guide. Its browser-host success does
+not prove full Electron or arbitrary React support. Keep the ordinary app and
+production bundle outside the demonstration. Scope capture-style overrides to the
+development host so genuine components retain their ordinary app styling.
+
+For authored React motion graphics with a controllable frame timeline, native
+audio and stills, consider `authored-react-film` (Remotion). Distinguish it from
+camera treatment of existing app UI. Keep its own licence and observed browser
+workaround visible; a successful pilot does not prove every rendering mode. If a
+native still is a requested deliverable, plan its own inspection alongside the
+encoded picture/audio rather than substituting an extracted or pre-existing frame.
+
+For a miniature world with purposeful object action and camera travel, consider
+`staged-3d-scene`: an authored Three.js scene inside Hyperframes, not Anatomy.
+Use `three-scene` with `staged-3d`, `object-3d`, `object-motion` or `camera-travel`
+requirements, or miniature/low-poly style. Do not infer it from a book cover alone.
+The tested 20s 1080p30 pilot has grain loading, truck delivery, quote convergence
+and a genuine-cover book reveal. Keep geometry/staging work explicit. Read its
+[recipe](recipes.md#staged-3d-scene); other formats, physics, new assets
+and cross-tool seams need their own checks. Kokoro and FFmpeg are separate layers.
+
+For a labelled workflow/process diagram, consider `diagram-explainer` (ManimGX
+plus the retained FFmpeg timing adapter). Its20s 2D English pilot does not qualify
+native timestamp portability,3D/math plots or Ukrainian. Inspect the native
+storyboard and preserve held-frame timing before CFR assembly. `mlx-audio` is a
+separate English Kokoro voice option; respect an explicit `preferred_voice` and
+read the [recipe](recipes.md#diagram-explainer) before another setup.
+
+When the chosen tool misses a requested deliverable, compose the smallest useful
+chain rather than drop the deliverable or replace the whole workflow. Read
+[tool chains](tool-chains.md) for handoff checks and tested combinations.
+A successful component does not prove the combined chain; preserve the original
+export, check the final file and record each tool's contribution and limitations.
+
+For Ukrainian narration,prefer `supertonic3` within its scoped M1/F1 evidence.
+Owner found both usable and much better than Tetiana;F1 has a slight preference.
+Residual pauses/stress errors remain;do not claim perfect Ukrainian or long-form
+quality. Model terms require explicit synthetic-content disclosure.
+Retain Piper/Tetiana as a low-quality explicit fallback with a visible warning;
+`default_narration_eligible:false` prevents silent automatic substitution. Preserve
+explicit provider choices and inspect new scripts/final integration. Other voices,
+languages,singing and cloning need separate review. Paper-cut/LCD picture treatment
+is independent of the voice engine. See [recipes](recipes.md).

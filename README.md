@@ -5,82 +5,78 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](docs/router-evaluation.md)
 [![Planning evidence: scoped](https://img.shields.io/badge/planning__evidence-scoped-526C73?style=flat-square)](docs/router-evaluation.md)
-[![13 recorded exports](https://img.shields.io/badge/recorded__exports-13-293F48?style=flat-square)](docs/experiments.md)
+[![17 recorded exports](https://img.shields.io/badge/recorded__exports-17-293F48?style=flat-square)](docs/experiments.md)
 
-**Framewright helps an AI agent choose and execute a suitable video pipeline,
-based on documented experiments.**
+**Framewright helps an AI agent choose a video pipeline and prepare its production
+handoff, using documented experiments.**
 
 Framewright provides instructions and planning checks; your agent executes the
-selected tools in your environment. Tested recipes and limitations guide the choice
-of tools for each scene and layer.
+selected tools in your environment. Choose tools per scene and layer, with evidence,
+known limitations and output checks visible before production.
 
 | Start here | What you get |
 | --- | --- |
-| **Try a plan** — run the command below | A proposed scene-by-scene toolchain, timeline and handoff checks; no rendering |
-| **[Render the reference film](docs/first-video.md)** | Open demo assets, pinned dependencies, exact commands, expected files and QA |
+| **Try a production plan** — command below | A readable timeline, tools, intended files, blockers and QA; no rendering |
+| **[Render the reference film](docs/first-video.md)** | Open demo assets, pinned dependencies, exact commands and expected outputs |
 
-## Try a plan
+## Try a production plan
 
-From a local checkout, with Python 3:
+From a local checkout, with Python 3; no third-party Python packages required:
 
 ```sh
-python3 skills/video-production-router/scripts/plan.py examples/briefs/mixed-promo.json
+python3 skills/video-production-router/scripts/plan.py examples/briefs/mixed-promo.json --format markdown
 ```
 
-This is a deterministic offline check of a structured brief. An agent first turns
-your request into scenes and requirements; the script itself does not interpret prose.
-The current command returns `status: proposed`, `execution: not_started`, 1920×1080,
-30 fps and 900 frames. Selected fields from its [actual full output](examples/plans/mixed-promo.json):
+An agent first turns your request into a structured brief. This offline command
+does not interpret prose or inspect your assets. Its [actual output](examples/plans/mixed-promo.md)
+starts with this 30-second timeline:
 
-| Scene | Frames, end-exclusive | Duration | Input kind | Selected tools |
-| --- | --- | --- | --- | --- |
-| intro | 0–180 | 6s | brand | Remotion |
-| interface | 180–420 | 8s | react-ui | Flute |
-| object | 420–600 | 6s | object | Anatomy → Hyperframes |
-| book | 600–780 | 6s | book-art | Hyperframes + Kokoro |
-| outro | 780–900 | 4s | brand | Remotion |
+| Scene | Duration | Selected tools |
+| --- | --- | --- |
+| Intro | 6s | Remotion |
+| Interface | 8s | Flute |
+| Object | 6s | Anatomy → Hyperframes |
+| Book | 6s | Hyperframes + Kokoro |
+| Outro | 4s | Remotion |
 
-The input column names required source kinds, not assets already inspected.
-FFmpeg is the proposed assembly owner. This combined chain needs an integration
-test; individual component successes do not qualify it. The output calls for actual
-codec/alpha/colour and frame-boundary checks, one master audio timeline, encoded
-transition/sync/loudness/peak and thumbnail inspection, and retained export hashes.
-Licence eligibility, input rights and runtime availability still need review.
+The packet then lists capability evidence, required inputs, suggested output files,
+separate video/still/voice checks and retained tool limits. Checks are **planned**
+or **blocked**, never automatically verified. This combined pipeline needs its own
+integration test. Omit `--format markdown` for the unchanged JSON interface.
+[Packet guide and limits](docs/production-plan.md).
 
 ## One concrete result
 
-**Task:** a 30-second horizontal Framewright introduction.
-**Chain:** Remotion scenes + original locally synthesized music → native MP4 and PNG.
-**[Watch the film](https://youtu.be/s3BBP698_r8)** · **[Reproduce its source](docs/first-video.md)**
+**Task:** introduce a library of practical commodity-market books.
+**Chain:** retained book films + real-site tour → MoviePy/FFmpeg, new English
+Supertonic narration and a retained original instrumental bed.
+**[Watch the 60s compilation](https://youtu.be/vAPgNupIp2s)** ·
+**[Method and QA](experiments/2026-10-15/agro-series-compilation.md)**
 
-Recorded checks: H264 1920×1080, 30 fps, 900 frames, stereo AAC, native PNG, sampled
-encoded frames and transitions. Human listening, artistic acceptance and audience
-performance are separate. The supplied public URL was not matched byte-for-byte.
-Independent reproduction in a second environment remains [queued](docs/experiment-queue.md).
+Recorded checks include 1080p30 H264/AAC, full decode, scene/transition samples,
+audio sync/loudness/phase and a separate PNG thumbnail. Publication URL is
+owner-supplied; final-film owner listening/style review remains separate.
+The [completed stage](docs/experiments/agro-series-plan.md) contains six books,
+one landing tour and this compilation. These author-project assets are not redistributed;
+use the [open reference film](docs/first-video.md) for a public starting example.
 
-## Main routes
+## Choose a method
 
-| Request / inputs | Starting chain | Recorded limits |
+| Need | Starting chain | Scope / limitation |
 | --- | --- | --- |
-| Short software introduction | Brag full → Hyperframes | AsciiTheme and AMI delivered; those pilots did not test narration |
-| Existing artwork with French/English narration | Hyperframes + local Kokoro + sound-layer/FFmpeg | Book trailers delivered; new languages/formats require checks |
-| Camera and focus around genuine React UI | Flute → optional FFmpeg finishing | CoqPi browser-host export; Electron and snapshot CLI limits retained |
-| Authored typography, scene timing and native still | Remotion | One Framewright film; licence and browser workaround documented |
-| Detailed object visualisation | Anatomy → deterministic timeline adapter | Visual prototype only; combined sound QA failed |
-| Miniature world with object action and camera | Authored Three.js → Hyperframes; Kokoro/FFmpeg layers | Spot-Market 20s 1080p30 pilot; other formats/physics and mixed-renderer seams unqualified |
+| Short software introduction | Brag → Hyperframes | Delivered software pilots; narration not tested in those pilots |
+| Existing book art with speech | Hyperframes + voice + FFmpeg | EN/FR Kokoro; Supertonic EN/UK scopes recorded separately |
+| Camera/focus around genuine React UI | Flute → finishing | Browser-host pilot; Electron/snapshot limitations retained |
+| Authored typography or paper/LCD graphics | Remotion | Scoped films and native stills; licence/browser checks required |
+| Object action and camera in a miniature world | Three.js → Hyperframes or authored Remotion | Recorded scenes; new geometry, physics and mixed seams unqualified |
+| Workflow diagram | ManimGX → FFmpeg | Recorded timing adapter; setup-budget overrun retained |
+| Live-site walkthrough | OpenScreen → FFmpeg | Manual recipe with capture/freeze workarounds; not an automatic planner provider |
+| Recut existing films | MoviePy + FFmpeg | Manual compilation recipe; automatic semantic selection unqualified |
 
-[Recipes and evidence](skills/video-production-router/references/recipes.md) ·
-[Capabilities and styles](skills/video-production-router/references/tool-matrix.md) ·
-[Per-layer selection](skills/video-production-router/references/selection.md)
-
-The latest [Ukrainian brokerage-book trial](experiments/2026-10-15/agro-uk-paper-piper.md)
-pairs a new local Piper/Tetiana voice with authored Remotion paper-cut motion:
-grains regroup into a supply route and contract,then the genuine book appears.
-Owner accepted the simple,distinct visual style but found Ukrainian voice weak:unnecessary pauses,stress and intonation errors. The later [Supertonic3 probe](experiments/2026-10-15/spot-market-uk-voice-probe.md) was owner-accepted as much better,with residual stress/pauses;F1 is the slight preference. Piper remains a low-quality explicit fallback.
-[Editable example](examples/remotion-agro-uk/README.md) ·
-[Structured brief](examples/briefs/agro-uk-paper.json).
-
-[Latest LCD-style spot-market UK film](experiments/2026-10-15/spot-market-uk-lcd.md):Supertonic3 F1 + authored Remotion terminal/pixel motion. The voice is owner-recommended from short probes,with residual errors;final-film review remains separate.
+[Recipes](skills/video-production-router/references/recipes.md) ·
+[Capability matrix](skills/video-production-router/references/tool-matrix.md) ·
+[Per-layer selection](skills/video-production-router/references/selection.md).
+A method can be documented without being an automatically selectable provider.
 
 ## Use the agent skill
 
@@ -94,49 +90,30 @@ test ! -e ~/.codex/skills/video-production-router && \
   ln -s "$(pwd)/framewright/skills/video-production-router" ~/.codex/skills/video-production-router
 ```
 
-The link refuses to overwrite an existing skill; keep the checkout mounted and
-start a fresh Codex session. Example request: “Plan a French trailer from this book
-page and approved cover. Use $video-production-router. Do not render yet.”
-Follow the selected renderer's own guide when execution is authorised.
+Keep the checkout mounted and start a fresh Codex session. The command refuses to
+overwrite a skill. Example: “Plan a French trailer from this page and approved cover.
+Use $video-production-router. Do not render yet.” Follow the selected tool’s guide
+before authorised execution.
 
-## Experimental planning capabilities
+## Evidence and experimental scope
 
-For new multi-shot briefs, the [storyboard adapter](docs/storyboard-adapter.md)
-establishes timings, continuity and per-scene handoffs. Existing edits, finishing
-and single-shot requests can skip it. It prepares a plan, not generated footage.
+Current source has **no fresh model qualification**. Historical source-bound checks:
+**70/70 rubric; 62/70 complete traces**, separate recovery **8/8**, original
+first-exposure **13/18**. Scores are not added together and do not establish general
+reliability or render quality. [Full evaluation](docs/router-evaluation.md).
 
-[Music/song planning](skills/video-production-router/references/music-workflows.md)
-covers brief → music → video, fixed video → music, and existing music → video.
-Suno/Flow Music generation, lyrics and native video are documented planning
-capabilities, without public service-integration qualification. Account access,
-credits, export availability and asset-specific rights remain independent gates.
-No new engine is needed for the current follow-up work.
+[Storyboarding](docs/storyboard-adapter.md) is a preparation layer.
+[Music/song workflows](skills/video-production-router/references/music-workflows.md)
+are offline planning, with independent rights/account gates; public service integration
+is unqualified. Strict budget/download-limit validation is deferred; `allow_paid`
+filters capabilities and grants no spending authority.
 
-## Planning checks
+## Develop and extend
 
-Historical source-bound regression: **70/70 rubric;62/70 complete evidence**; original first-exposure result:
-**13/18**. These apply to the recorded planning configuration, not rendering quality
-or general reliability. **[Evaluation details and retained failures](docs/router-evaluation.md)**.
-The3D route update has targeted deterministic checks; it does not inherit that model score. Release 0.1.1 remains experimental; no new release.
+Run `python3 scripts/check.py --scope docs` for offline validation; no model/render.
+[Checking policy](docs/checking-policy.md) · [Record an experiment](docs/experiments.md) ·
+[Research queue](docs/experiment-queue.md) · [Stage audit](docs/product-audit-2026-10-15.md).
 
-## Contribute and connect
-
-[Record an experiment](docs/experiments.md) · [Next tests](docs/experiment-queue.md) ·
-[ABVX ecosystem links](docs/ecosystem.md) · [Project page](https://abvx.xyz/work/framewright)
-
-The repository's MIT licence covers its original materials; upstream software,
-models, music and artwork have their own terms. Large media stay outside Git.
-
-Maintenance: [one offline check command and bounded model checks](docs/checking-policy.md).
-[CLI follow-up](benchmarks/router/2026-10-15/cli-capture-recovery/README.md): 8/8 affected cases now have complete traces and pass the unchanged rubric; historical full-run counts remain unchanged.
-New [Burgers pilot](experiments/2026-10-15/burgers-cue-analysis.md): 15s narrated promo; librosa recovered3/3 authored accents and PySceneDetect4/4 exact cuts. [Analysis helper](examples/cue-analysis/README.md); independent listening remains pending.
-
-[Spot-Market visual pilot](experiments/2026-10-15/spot-market-3d-miniature.md): staged Three.js grain/truck/port action and camera inside Hyperframes,20s with English narration. [Authored source](examples/staged-market-scene/README.md); technical QA passed; owner liked the 3D animation and narration. The scoped `three-scene` profile is now selectable; mixed-renderer combinations remain proposed.
-
-[Tool research and revisit decisions](docs/tool-research.md) ·
-[24 camera/editing terms in Russian and English](skills/video-production-router/references/video-terms.md) ·
-[Prompt Motion reference-selection trial](docs/prompt-motion-trial.md).
-
-[MN7R paired-tool pilot](experiments/2026-10-15/mn7r-manim-mlx.md):ManimGX workflow
-animation + local MLX-Audio English voice,20s;FFmpeg timing adapter required. Setup
-budget overrun retained. [Five-book reuse/compilation plan](docs/experiments/agro-series-plan.md).
+The MIT licence covers original repository materials. Tools, models, music and art
+have their own terms. Large media remain outside Git. [ABVX ecosystem](docs/ecosystem.md) ·
+[Project page](https://abvx.xyz/work/framewright).

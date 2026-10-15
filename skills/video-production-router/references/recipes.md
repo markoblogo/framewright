@@ -239,3 +239,36 @@ before cuts and retain separate stems. The primary UK voice is owner-recommended
 Supertonic3 with slightF1 preference;Piper stays low-quality explicit fallback.
 Retain synthetic-content disclosure in publication copy/metadata. New scripts
 and full-film aesthetics require owner review,even after successful numeric QA.
+
+## Live site tour
+
+Use this manual route when the product is an existing public website and the viewer
+needs to see real navigation. Read the [AMI Books trial](../../../experiments/2026-10-15/ami-books-openscreen.md)
+and [archived authoring recipe](../../../examples/openscreen-ami-books/README.md).
+OpenScreen captures one authorised window;FFmpeg selects/crops the retained footage;
+OpenScreen adds restrained manual zooms/callouts;FFmpeg owns final fps/audio assembly.
+Keep a silent picture master and source scene map for later compilations.
+
+Pin the actual release:2.0.0 CLI does not expose the upstream guide's MCP interface.
+Record a bounded probe and check dimensions AND content;success exit is insufficient.
+Do not record the desktop or other windows to work around a bad window capture.
+Fullscreen/hidden-window miniature and black output occurred in this pilot. Native
+export was60fps;the delivered30fps file is a separately checked FFmpeg conversion.
+Automatic cursor zoom,AI editing and account/provider calls remain unqualified.
+This is an agent-selectable manual recipe,not a new deterministic planner provider.
+
+## Footage compilation
+
+Use MoviePy when an authorised brief combines retained clips into a new story.
+Read the [agricultural-library trial](../../../experiments/2026-10-15/agro-series-compilation.md)
+and [archived adapter](../../../examples/moviepy-agro-series/README.md). Lock source
+identities and selected ranges;disable input audio before compositing. Keep original
+voice/music stems separate,new speech measured,one final audio timeline. Overlaps
+subtract from total duration. Dissolve pictures while keeping main headings on an
+independent layer;inspect baked text,colour/timebase and each encoded seam.
+
+The tested2.2.1 recipe adds multi-panel scenes,native PNG and timed audio mix;FFmpeg
+owns final normalisation/AAC mux and QA. Existing source art/text is not automatically
+textless or language-independent. Native thumbnails need separate raster/legibility
+checks. Use measured font bounds;the first font adapter clipped. No automatic clip
+selection,new deterministic planner provider,ASR or generic font/format claim.
