@@ -1,0 +1,27 @@
+[
+  {
+    "local_output": "burgers-video-pilot-20261015/Burgers-Lipstick-Underwear-EN-1080p.mp4",
+    "sha256": "992a1971407254278dc7691f48a03a6a4829c3f0e1b58073aa76c87864aa6b83",
+    "bytes": 10671679,
+    "id": "burgers-cue-analysis",
+    "route": "narrated-montage",
+    "evidence": "experiments/2026-10-15/evidence/burgers-cue-analysis.txt",
+    "qa_scope": "15s encoded picture/audio, extracted PNG thumbnail, authored-cue onset and hard-cut detection; no independent human listening",
+    "thumbnail": {
+      "local_output": "burgers-video-pilot-20261015/Burgers-Lipstick-Underwear-YouTube.png",
+      "sha256": "d08f7c6767438efa7394158a913bb41bb2d7e852a190841749fde096dc58373c",
+      "bytes": 691132,
+      "format": "png",
+      "width": 1280,
+      "height": 720
+    },
+    "publication_url": null,
+    "publication_verification": "not_recorded",
+    "human_listening": "pending_owner_review",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "CUE_CHECKS_PASS",
+      "MEDIA_CHECKS_PASS"
+    ]
+  }
+]

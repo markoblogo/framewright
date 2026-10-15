@@ -1,6 +1,8 @@
 # Burgers, Lipstick & Underwear — proposed cue-analysis pilot
 
-Status: owner selected the book and requested English narration. Planning only;
+Execution update,2026-10-15: [completed pilot and retained limitations](../../experiments/2026-10-15/burgers-cue-analysis.md). The text below is the original pre-execution plan, preserved without relaxing its criteria.
+
+Original status: owner selected the book and requested English narration. Planning only;
 no tools installed, audio generated, media rendered or capability promoted.
 
 Source: [book page](https://abvx.xyz/books/burgers-lipstick-underwear).

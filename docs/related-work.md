@@ -1,7 +1,7 @@
 # Related work and useful design ideas
 
-Research snapshot: 2026-10-14. These are upstream source/documentation comparisons,
-not installations, benchmarks or endorsements. Licences below describe repository
+Research snapshot: 2026-10-14; bounded cue-analysis follow-up2026-10-15. These are upstream source/documentation comparisons,
+not blanket benchmarks or endorsements; bounded follow-ups are linked separately. Licences below describe repository
 code; weights, media and paid providers can carry separate conditions. Framewright
 keeps a small selection/evidence layer instead of importing another complete stack.
 
@@ -11,8 +11,8 @@ keeps a small selection/evidence layer instead of importing another complete sta
 | [ViMax](https://github.com/HKUDS/ViMax/blob/fd4b72e7731be6e5f88486206d25ea59849b0285/readme.md), MIT | Story → storyboard → reference assets → shots; per-shot checkpoints and resumable work | Adopt inspectable stages and approval before paid motion; do not copy unbounded autonomous generation or assume provider access |
 | [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo/blob/c184fccd05621d7a654b6e6ea34102a0a0de0657/README.md), MIT | Explicit script/material/voice/subtitle/music stages and custom-audio override | Preserve asset provenance and owner audio; no automatic stock collection or bulk public publishing |
 | [Editly](https://github.com/mifi/editly/blob/dc46674052eacd15ef6e0f563a58eb378b3804ad/README.md), MIT | Declarative clip/layer manifest, durations, transitions and audio tracks | Useful contract pattern; its default duration fitting can retime media, so locked picture/music needs an explicit preservation check |
-| [librosa](https://github.com/librosa/librosa/blob/08e2c0a20d650fe00f10aaf3a1eaa9698ac19641/README.md), ISC | Onset, tempo and beat analysis to make music-first cue sheets | Compare against manual markers; beats and downbeats are not guaranteed by a tempo estimate |
-| [PySceneDetect](https://github.com/Breakthrough/PySceneDetect/blob/7cd1005e8349d8e913d0930fc1750363eb4ddc51/README.md), BSD-3-Clause | Detect picture cuts before choosing music for a fixed video | A visual cut is not necessarily a story beat; review thresholds and fades |
+| [librosa](https://github.com/librosa/librosa/blob/08e2c0a20d650fe00f10aaf3a1eaa9698ac19641/README.md), ISC | Onset, tempo and beat analysis to make music-first cue sheets | [Authored-reference trial](../experiments/2026-10-15/burgers-cue-analysis.md):3/3 accents within17ms. Manual-listening annotation remains pending; no downbeat qualification |
+| [PySceneDetect](https://github.com/Breakthrough/PySceneDetect/blob/7cd1005e8349d8e913d0930fc1750363eb4ddc51/README.md), BSD-3-Clause | Detect picture cuts before choosing music for a fixed video | [Same trial](../experiments/2026-10-15/burgers-cue-analysis.md):4/4 exact hard cuts, no extras. Fades and story-beat judgement remain untested |
 | [WhisperX](https://github.com/m-bain/whisperX/blob/771b4a14a9486f8fd5aef18ef49e35d639523dd3/README.md), BSD-2-Clause code | Word alignment as a candidate for lyric/subtitle cues | Speech performance does not establish singing accuracy; inspect individual model licences, particularly language aligners, and compare supplied lyrics by ear |
 | [ACE-Step 1.5](https://github.com/ace-step/ACE-Step-1.5/blob/ca1e85fe9430179831e6bc6be790c332190a3866/README.md), MIT code | Local music/lyrics alternative with reproducible parameters | Preflight this machine's memory, model size, runtime and exact weight terms; advertised GPU speed is not a local result |
 | [LTX-2](https://github.com/Lightricks/LTX-2/blob/be6d6d0a69d11a0a399c462ed92606692e5f8697/README.md), own licence review required | Joint audio/video generation as a possible hero-shot source | Defer large downloads and hardware commitments; no claim of Mac feasibility or MIT model rights |

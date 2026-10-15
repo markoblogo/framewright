@@ -1,0 +1,13 @@
+Burgers, Lipstick & Underwear — 2026-10-15
+CUE_CHECKS_PASS: librosa accents3/3 within100ms; PySceneDetect cuts4/4 at exact30fps boundaries; no extra cuts. No parameter adjustment.
+MEDIA_CHECKS_PASS: H.2641920x1080,30fps,450frames,15.000s; AAC48kHz stereo15.000s; full decode no errors; integrated -17.36LUFS, true peak -1.48dBTP; reference-mix correlation0.9996535 and zero lag.
+Thumbnail: extracted final encoded frame at13.5s,1280x720 PNG; full/reduced layout inspected. Not a native-render still claim.
+Video SHA256 992a1971407254278dc7691f48a03a6a4829c3f0e1b58073aa76c87864aa6b83; bytes 10671679.
+Thumbnail SHA256 d08f7c6767438efa7394158a913bb41bb2d7e852a190841749fde096dc58373c; bytes 691132.
+Reference source: owner-approved book promo plus official https://abvx.xyz/books/burgers-lipstick-underwear . Copy limited to title, subtitle and everyday economic-indicator theme; no sales, performance or investment claims.
+Technical cue reference: authored music schedule and visual cut timeline frozen before detectors. Independent manual listening annotation NOT_PERFORMED. Sparse onset labels do not support a precision estimate for all attacks.
+Render Hyperframes0.8.161,54.6s,screenshot capture/hardware GPU; analysis cold run50.484s; Python3.12.13,librosa1.0.0,PySceneDetect0.7.2,OpenCV5.0.0.93. Kokoro ONNX reused locally,am_michael,en-us,speed1.03.
+Music: original deterministic synthesis, no sampled recordings or cloud provider. Narrative rendered locally; no model downloaded.
+Separate setup misses retained locally: deprecated opencv extra did not install decoder; global skill update denied; initial mix used wrong env/TP option before correction, no failed media delivered. Final composition check0errors/7nonblocking structural/editorial warnings,26/26 contrast checks.
+Budget deviation: observed analysis env420MiB plus download cache541MiB (~1.01decimalGB) slightly exceeded1GB before cleanup; removed521.1MiB task download cache. Reused existing TTS model. Exact whole-setup wall time and billing cost NOT_CAPTURED; package-manager timings retained in local logs. No paid provider calls.
+Human listening/creative acceptance pending owner. YouTube publication URL pending owner; no upload or new release.
