@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](docs/router-evaluation.md)
 [![Planning evidence: scoped](https://img.shields.io/badge/planning__evidence-scoped-526C73?style=flat-square)](docs/router-evaluation.md)
-[![12 recorded exports](https://img.shields.io/badge/recorded__exports-12-293F48?style=flat-square)](docs/experiments.md)
+[![13 recorded exports](https://img.shields.io/badge/recorded__exports-13-293F48?style=flat-square)](docs/experiments.md)
 
 **Framewright helps an AI agent choose and execute a suitable video pipeline,
 based on documented experiments.**
@@ -76,9 +76,11 @@ Independent reproduction in a second environment remains [queued](docs/experimen
 The latest [Ukrainian brokerage-book trial](experiments/2026-10-15/agro-uk-paper-piper.md)
 pairs a new local Piper/Tetiana voice with authored Remotion paper-cut motion:
 grains regroup into a supply route and contract,then the genuine book appears.
-Owner accepted the simple,distinct visual style but found Ukrainian voice weak:unnecessary pauses,stress and intonation errors. The next Ukrainian narration will test another tool.
+Owner accepted the simple,distinct visual style but found Ukrainian voice weak:unnecessary pauses,stress and intonation errors. The later [Supertonic3 probe](experiments/2026-10-15/spot-market-uk-voice-probe.md) was owner-accepted as much better,with residual stress/pauses;F1 is the slight preference. Piper remains a low-quality explicit fallback.
 [Editable example](examples/remotion-agro-uk/README.md) ·
 [Structured brief](examples/briefs/agro-uk-paper.json).
+
+[Latest LCD-style spot-market UK film](experiments/2026-10-15/spot-market-uk-lcd.md):Supertonic3 F1 + authored Remotion terminal/pixel motion. The voice is owner-recommended from short probes,with residual errors;final-film review remains separate.
 
 ## Use the agent skill
 

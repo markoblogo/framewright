@@ -140,5 +140,36 @@
       "limits": "One voice/model/script and owner assessment;not a judgment of all Piper voices or Ukrainian TTS."
     },
     "publication_verification": "user_provided_url"
+  },
+  {
+    "local_output": "spot-market-uk-video-pilot-20261015/Spot-Market-Handbook-UK-LCD-1080p.mp4",
+    "bytes": 4158541,
+    "sha256": "9aaaebd94e19ddff67b71c40e81306d58acb1f3e24c6c11b43175a4544f9a783",
+    "id": "spot-market-uk-lcd",
+    "route": "authored-react-film",
+    "native_export": {
+      "local_output": "spot-market-uk-video-pilot-20261015/Spot-Market-Handbook-UK-LCD-Picture-1080p.mp4",
+      "bytes": 3571627,
+      "sha256": "adec7e85d871072d1a31ff5c90bbbbe89317bb077fd8230a7e2021f0fcdfea3c"
+    },
+    "thumbnail": {
+      "local_output": "spot-market-uk-video-pilot-20261015/Spot-Market-Handbook-UK-YouTube.png",
+      "bytes": 551461,
+      "sha256": "cd94190cc294149bc7d0737a43251eba39b4f1723fdb9ac875298b4e097309f0",
+      "format": "png",
+      "width": 1280,
+      "height": 720
+    },
+    "evidence": "experiments/2026-10-15/evidence/spot-market-uk-lcd.txt",
+    "qa_scope": "24s1080p30 authored LCD/pixel/factor/conveyor/slat animation;Supertonic3 F1 external voice mix,full decode/sync/audio metrics,encoded scene/transition samples and extracted PNG inspection.",
+    "evidence_checks": [
+      "MEDIA_CHECKS_PASS",
+      "LCD_SCOPE",
+      "VOICE_PROVENANCE"
+    ],
+    "human_listening": "final_film_pending_owner_review;prior_short_F1_probe_accepted",
+    "creative_acceptance": "pending_owner_review",
+    "publication_url": null,
+    "audience_metrics": "not_measured"
   }
 ]

@@ -76,4 +76,4 @@ separately;an SVG animation is not a physical simulation.
 
 ## Supertonic3 Ukrainian audio-first gate
 
-[Two short preset probes](../experiments/2026-10-15/spot-market-uk-voice-probe.md) use a different model/engine from Piper,with local synthesis and pinned files. Technical success is separate from owner speech-quality approval;no production voice/default added yet. OmniVoice code/weight licensing differs and was retained as rights-blocked for the intended promo,not technically failed.
+[Two short preset probes](../experiments/2026-10-15/spot-market-uk-voice-probe.md) use a different model/engine from Piper,with local synthesis and pinned files. Owner subsequently accepted both as usable and much better than Tetiana,with residual pauses/stress errors;F1 is a slight preference and the scoped UK default. Full-film integration remains a separate check. OmniVoice code/weight licensing differs and was retained as rights-blocked for the intended promo,not technically failed.

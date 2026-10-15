@@ -59,9 +59,28 @@ accounting. Downloads stayed within500MB cap. ONNXRuntime emitted a device-ID
 cache/telemetry warning before the telemetry-disable call;network traffic was not
 independently audited. No third-party voice service was called.
 
-**Owner listening pending:**pauses,word stress,question/declarative intonation,
+**At-probe owner listening was pending:**pauses,word stress,question/declarative intonation,
 clarity of зерно/базис/поставки/логістика/фізичного/спотовий. No naturalness or
-production qualification inferred from technical WAV success. This candidate is
-in the decision ledger,not an automatically eligible router voice profile. The
-next film stays unstarted until the owner accepts a voice. Existing Piper quality
+production qualification inferred from technical WAV success. At that stage this candidate was in the decision ledger,not an automatically
+eligible router profile;the owner review and subsequent authorisation follow. Existing Piper quality
 warnings and default-selection exclusion remain unchanged.
+
+## Later owner review and next step
+
+{
+  "source": "owner conversation2026-10-15",
+  "overall": "usable,recommended among tools tested for Ukrainian",
+  "pauses": "still present,but much less frequent and shorter than previous voice",
+  "stress": "about2–3 errors over the short speech;male seemed to have one more error",
+  "intonation": "good",
+  "voices": "M1/F1 very close;slight preference for F1,not a measured score",
+  "limits": "One owner assessment of one23-word script;not general Ukrainian quality or long-form qualification",
+  "decision": "Supertonic3 primary Ukrainian option;Piper/Tetiana low-quality explicit fallback"
+}
+
+Owner explicitly authorised the next book film using this engine. F1 is the
+production default;M1 is also acceptable. Piper remains low-quality explicit
+fallback,not a silent automatic substitution. Full-film QA is a separate trial.
+
+[Subsequent full LCD film](spot-market-uk-lcd.md) completed technical QA with F1;
+final-film owner listening remains separate from the accepted microprobe.

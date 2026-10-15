@@ -9,7 +9,7 @@ each actual new-tool experiment. [Research](tool-research.md) ·
 ## Current owner-selected series
 
 [Five-book MN7R promo plan](experiments/agro-series-plan.md):Spot-Market EN completed;
-MN7R Product Guide EN has a delivered ManimGX/MLX-Audio trial,owner accepted its basic infographic style;[YouTube](https://youtu.be/TISOtCghMVY). Ukrainian brokerage now has a delivered24s Piper/Tetiana + Remotion paper-route trial;owner accepted simple distinct picture,but Ukrainian voice weak;next UK voice should use another tool;exact-raster repeat gate not met. The other Ukrainian book,next music-generator test,landing and compilation remain queued. Reuse stems/picture masters;no future jobs start automatically.
+MN7R Product Guide EN has a delivered ManimGX/MLX-Audio trial,owner accepted its basic infographic style;[YouTube](https://youtu.be/TISOtCghMVY). Ukrainian brokerage now has a delivered24s Piper/Tetiana + Remotion paper-route trial;owner accepted simple distinct picture,but Ukrainian voice weak;next UK voice should use another tool;exact-raster repeat gate not met. The Ukrainian spot-market LCD film is now delivered with Supertonic3 F1;full-film owner review/YouTube pending. The English brokerage book,next music-generator test,landing and compilation remain queued. Reuse stems/picture masters;no future jobs start automatically.
 
 ## Phase 1 — useful book and service promos
 
@@ -110,4 +110,4 @@ in force; no automatic broad model benchmark or extra film is required.
 
 ## Current Ukrainian voice gate
 
-[Spot-market UK microprobe](../experiments/2026-10-15/spot-market-uk-voice-probe.md):Supertonic3 M1/F1,12.19s each,technical WAV checks complete. Owner listening decides whether either voice is suitable before the full book film. No video render or router-profile promotion. OmniVoice weights remain rights-blocked for this promotional brief;Piper/Tetiana is not retried.
+[Spot-market UK microprobe](../experiments/2026-10-15/spot-market-uk-voice-probe.md):Supertonic3 M1/F1,12.19s each,technical WAV checks complete. Owner accepted both,with slightF1 preference;Supertonic3 is now the primary scoped UK voice,Piper a low-quality explicit fallback. [Full LCD-style film](../experiments/2026-10-15/spot-market-uk-lcd.md) delivered with technical QA;owner final-film review/YouTube pending. No general speech-quality claim. OmniVoice weights remain rights-blocked for this promotional brief;Piper/Tetiana is not retried.

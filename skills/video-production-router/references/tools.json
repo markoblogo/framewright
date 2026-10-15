@@ -173,6 +173,10 @@
       "url": "https://github.com/OHF-Voice/piper1-gpl",
       "reviewed": "2026-10-15",
       "note": "Installed1.4.2; exact Tetiana Ukrainian model42be6e3f72a7c6042271236b94e48edffd1f0c63,model card Apache2.0,engineGPL3"
+    },
+    "supertonic3": {
+      "url": "https://huggingface.co/Supertone/supertonic-3",
+      "reviewed": "2026-10-15"
     }
   },
   "tools": [
@@ -548,7 +552,8 @@
         "kinetic",
         "minimal",
         "data-motion",
-        "paper-cut"
+        "paper-cut",
+        "lcd-editorial"
       ],
       "style_note": "React frame-driven graphics and programmable layout; typography, editorial montage, UI or 3D can be authored. Our restrained Framewright film is one art direction.",
       "tested_version": "4.0.535",
@@ -726,6 +731,22 @@
           "note": "Authored90-kernel field→route→contract motion,paper truck/stamp/book reveal in24s1080p30 UK promo;not physics or automatic scene generation. Native pixel-repeat discrepancy retained.",
           "experiments": [
             "agro-uk-paper-piper"
+          ],
+          "tested_canvases": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "fps": 30
+            }
+          ]
+        },
+        {
+          "id": "lcd-terminal-motion",
+          "status": "tested",
+          "source": "remotion",
+          "note": "24s1080p30 authored LCD housing,pixel grain,factor selectors,abstract conveyor and slat-to-cover reveal;encoded samples checked. No real quotes,service UI,geography,physics or strobe.",
+          "experiments": [
+            "spot-market-uk-lcd"
           ],
           "tested_canvases": [
             {
@@ -1473,13 +1494,67 @@
         }
       ],
       "limitations": [
-        "Owner listened:broken rhythm,unnecessary pauses,stress and intonation errors in this exact Tetiana/Piper version. Keep existing clip;choose a different tool for the next Ukrainian voice test. Do not generalize to all Piper models.",
+        "Owner reports broken rhythm,unnecessary pauses,stress/intonation errors in this exact version. Retained as low-quality explicit fallback to Supertonic3;never silently substitute. Existing film unchanged;do not generalize to all Piper voices.",
         "No EN/FR,singing,voice cloning or arbitrary Piper voices qualified.",
         "ONNXRuntime emitted telemetry/cache-ID persistence warnings;no external voice API called;network traffic not independently audited.",
         "One script/voice integration,not general language quality;native Remotion raster repeat differed slightly and full-export browser workarounds were required."
       ],
       "style_basis": "observed_pilot",
-      "default_narration_eligible": false
+      "default_narration_eligible": false,
+      "fallback_policy": "low_quality_explicit_selection_with_warning"
+    },
+    {
+      "id": "supertonic3",
+      "name": "Supertonic3 — owner-recommended Ukrainian voice",
+      "role": "voice",
+      "inputs": [],
+      "styles": [
+        "narrated",
+        "neutral"
+      ],
+      "style_note": "Local stockM1/F1;owner slight preferenceF1 after same-text Ukrainian probe. Naturalness is owner-assessed,not a universal quality score.",
+      "tested_version": "SDK1.3.1,ONNX CPU,Python3.12.13;model3cadd1ee6394adea1bd021217a0e650ede09a323",
+      "licence_note": "SDKMIT;weightsBigScienceOpenRAIL-M,including explicit machine-generated-content disclosure;no cloning or redistribution.",
+      "features": [
+        {
+          "id": "narration",
+          "status": "tested",
+          "source": "supertonic3",
+          "note": "M1/F1 short UK probes owner-accepted;defaultF1(slight subjective preference). First24s F1 video integration passed encoded checks,accepted intro reused,new title/CTA generated;final-film listening pending. Residual pause/stress errors known.",
+          "experiments": [
+            "spot-market-uk-lcd"
+          ],
+          "tested_languages": [
+            "uk"
+          ],
+          "documented_languages": [
+            "uk"
+          ]
+        }
+      ],
+      "limitations": [
+        "M1/F1 short-script probes and one24s F1 film integrated;longer/new scripts and other voices need QA. Final film owner listening remains pending.",
+        "Owner reports residual pauses and2–3 stress errors;intonation good. F1 preference is slight and subjective.",
+        "Other upstream-documented languages are not locally qualified by this profile. No singing,cloning or other stock voices tested.",
+        "Model output requires explicit synthetic/AI-generated disclosure;licence restrictions still apply."
+      ],
+      "style_basis": "observed_pilot",
+      "default_narration_eligible": true,
+      "default_voice": "F1",
+      "tested_voices": [
+        "M1",
+        "F1"
+      ],
+      "owner_review": {
+        "source": "owner conversation2026-10-15",
+        "overall": "usable,recommended among tools tested for Ukrainian",
+        "pauses": "still present,but much less frequent and shorter than previous voice",
+        "stress": "about2–3 errors over the short speech;male seemed to have one more error",
+        "intonation": "good",
+        "voices": "M1/F1 very close;slight preference for F1,not a measured score",
+        "limits": "One owner assessment of one23-word script;not general Ukrainian quality or long-form qualification",
+        "decision": "Supertonic3 primary Ukrainian option;Piper/Tetiana low-quality explicit fallback"
+      }
     }
   ]
 }

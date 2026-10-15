@@ -1,0 +1,30 @@
+{
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "minimum_evidence": "tested",
+  "language": "uk",
+  "allow_paid": false,
+  "duration_seconds": 24,
+  "blocks": [
+    {
+      "id": "spot-uk-lcd",
+      "input": "book-art",
+      "preferred_tool": "remotion",
+      "preferred_voice": "supertonic3",
+      "style": "lcd-editorial",
+      "effects": [
+        "lcd-terminal-motion"
+      ],
+      "duration_seconds": 24,
+      "deliverables": [
+        "video-export",
+        "narration",
+        "media-mux",
+        "still-export"
+      ]
+    }
+  ]
+}

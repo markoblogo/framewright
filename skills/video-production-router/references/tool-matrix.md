@@ -91,7 +91,7 @@ Camera travel, perspective, depth and selective focus around actual DOM panels; 
 
 **Role:** renderer. **Inputs:** brand, data, book-art, composition, react-ui, video, object.
 
-**Style directions:** editorial, kinetic, minimal, data-motion, paper-cut.
+**Style directions:** editorial, kinetic, minimal, data-motion, paper-cut, lcd-editorial.
 React frame-driven graphics and programmable layout; typography, editorial montage, UI or 3D can be authored. Our restrained Framewright film is one art direction.
 
 **Tested version/scope:** 4.0.535
@@ -123,6 +123,7 @@ React frame-driven graphics and programmable layout; typography, editorial monta
 | `ripple` | documented | Official transition presentation; not exercised in the Framewright film. [Source](https://www.remotion.dev/docs/transitions/) |
 | `crosswarp` | documented | Official transition presentation; not exercised in the Framewright film. [Source](https://www.remotion.dev/docs/transitions/) |
 | `paper-cut-regroup` | tested | Authored90-kernel field→route→contract motion,paper truck/stamp/book reveal in24s1080p30 UK promo;not physics or automatic scene generation. Native pixel-repeat discrepancy retained. [Source](https://www.remotion.dev/docs/) |
+| `lcd-terminal-motion` | tested | 24s1080p30 authored LCD housing,pixel grain,factor selectors,abstract conveyor and slat-to-cover reveal;encoded samples checked. No real quotes,service UI,geography,physics or strobe. [Source](https://www.remotion.dev/docs/) |
 
 **Limits:** Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately.
 
@@ -352,7 +353,24 @@ Exact Ukrainian female voice; one short promotional script,not singing or cloned
 | --- | --- | --- |
 | `narration` | tested | Technical synthesis/integration tested:five Ukrainian lines in24s promo. Owner found this exact voice weak:unnecessary pauses,wrong stress and intonation. Technical tested status is not a voice-quality endorsement. [Source](https://github.com/OHF-Voice/piper1-gpl) |
 
-**Limits:** Owner listened:broken rhythm,unnecessary pauses,stress and intonation errors in this exact Tetiana/Piper version. Keep existing clip;choose a different tool for the next Ukrainian voice test. Do not generalize to all Piper models. No EN/FR,singing,voice cloning or arbitrary Piper voices qualified. ONNXRuntime emitted telemetry/cache-ID persistence warnings;no external voice API called;network traffic not independently audited. One script/voice integration,not general language quality;native Remotion raster repeat differed slightly and full-export browser workarounds were required.
+**Limits:** Owner reports broken rhythm,unnecessary pauses,stress/intonation errors in this exact version. Retained as low-quality explicit fallback to Supertonic3;never silently substitute. Existing film unchanged;do not generalize to all Piper voices. No EN/FR,singing,voice cloning or arbitrary Piper voices qualified. ONNXRuntime emitted telemetry/cache-ID persistence warnings;no external voice API called;network traffic not independently audited. One script/voice integration,not general language quality;native Remotion raster repeat differed slightly and full-export browser workarounds were required.
+
+## Supertonic3 — owner-recommended Ukrainian voice
+
+**Role:** voice. **Inputs:** .
+
+**Style directions:** narrated, neutral.
+Local stockM1/F1;owner slight preferenceF1 after same-text Ukrainian probe. Naturalness is owner-assessed,not a universal quality score.
+
+**Tested version/scope:** SDK1.3.1,ONNX CPU,Python3.12.13;model3cadd1ee6394adea1bd021217a0e650ede09a323
+
+**Licence:** SDKMIT;weightsBigScienceOpenRAIL-M,including explicit machine-generated-content disclosure;no cloning or redistribution.
+
+| Feature | Evidence | Scope / source |
+| --- | --- | --- |
+| `narration` | tested | M1/F1 short UK probes owner-accepted;defaultF1(slight subjective preference). First24s F1 video integration passed encoded checks,accepted intro reused,new title/CTA generated;final-film listening pending. Residual pause/stress errors known. [Source](https://huggingface.co/Supertone/supertonic-3) |
+
+**Limits:** M1/F1 short-script probes and one24s F1 film integrated;longer/new scripts and other voices need QA. Final film owner listening remains pending. Owner reports residual pauses and2–3 stress errors;intonation good. F1 preference is slight and subjective. Other upstream-documented languages are not locally qualified by this profile. No singing,cloning or other stock voices tested. Model output requires explicit synthetic/AI-generated disclosure;licence restrictions still apply.
 
 ## Source freshness
 
