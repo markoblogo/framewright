@@ -64,6 +64,18 @@ def build(root, output):
                                   check=True, capture_output=True, text=True)
         if not any(set(c['tools'])=={'remotion','supertonic3'} for c in json.loads(combined.stdout)['combinations']):
             raise ValueError('Standalone arsenal combination smoke check failed')
+        spec = target / 'workflow.json'
+        spec.write_text(json.dumps({'scenario':'repackaging','sources':[
+            {'id':'owner-clip','kind':'video','origin':'placeholder,not inspected',
+             'audio_policy':'remove','video_rights':{'status':'unknown'}}],
+            'brief':{'blocks':[{'id':'recut','input':'video','duration_seconds':3}]}}))
+        workflow = subprocess.run([sys.executable, str(target / 'video-production-router/scripts/workflow.py'), str(spec)],
+                                  check=True, capture_output=True, text=True)
+        report = json.loads(workflow.stdout)
+        if not report['publication_blockers'] or report['execution_authorized']:
+            raise ValueError('Standalone studio workflow gates failed')
+        subprocess.run([sys.executable, str(target / 'video-production-router/scripts/library.py'), '--help'],
+                       check=True, capture_output=True, text=True)
     print(f'PASS: standalone package {archive.name}; SHA-256 {digest}')
     return archive
 

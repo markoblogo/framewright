@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -36,6 +36,14 @@
       "next_trial_or_retest_condition": "Test only a new codec/filter/handoff requirement.",
       "evidence": [
         "skills/video-production-router/references/tools.json"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-17",
+          "kind": "documentation_only",
+          "evidence": "docs/personal-studio.md",
+          "outcome": "Reuse recorded scope; new tasks/combinations untested; no install/upgrade/runtime promotion"
+        }
       ]
     },
     {
@@ -48,9 +56,17 @@
       "disposition": "candidate",
       "scope_and_findings": "Automatic timeline cuts by audio loudness/motion; not semantic judgement of which words can be removed.",
       "licence_note": "Unlicense; packaged artefacts may differ",
-      "next_trial_or_retest_condition": "Authorised60–90s spoken sample; label pauses first, protect phrase edges, check edit list and sync.",
+      "next_trial_or_retest_condition": "Authorised60\u201390s spoken sample; label pauses first, protect phrase edges, check edit list and sync.",
       "evidence": [
         "docs/tool-research.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-17",
+          "kind": "documentation_only",
+          "evidence": "docs/personal-studio.md",
+          "outcome": "Reuse recorded scope; new tasks/combinations untested; no install/upgrade/runtime promotion"
+        }
       ]
     },
     {
@@ -216,7 +232,7 @@
       "disposition": "candidate",
       "scope_and_findings": "Speaker diarization/embeddings. Anonymous speaker clusters are not verified real-person identity.",
       "licence_note": "MIT code; model/provider terms separate",
-      "next_trial_or_retest_condition": "Two-speaker20–30s sample with manual turns/overlap; inspect model conditions, token/telemetry and local-vs-premium route first.",
+      "next_trial_or_retest_condition": "Two-speaker20\u201330s sample with manual turns/overlap; inspect model conditions, token/telemetry and local-vs-premium route first.",
       "evidence": [
         "docs/tool-research.md"
       ]
@@ -231,7 +247,7 @@
       "disposition": "candidate",
       "scope_and_findings": "MLX Whisper speech transcription; word timing is an estimate, not proven lyric alignment. Exact path is whisper/README.md.",
       "licence_note": "MIT code; inspect selected weights",
-      "next_trial_or_retest_condition": "Same10–15s EN narration and known transcript as Parakeet/WhisperX; errors, timing and real resource use. Singing separately.",
+      "next_trial_or_retest_condition": "Same10\u201315s EN narration and known transcript as Parakeet/WhisperX; errors, timing and real resource use. Singing separately.",
       "evidence": [
         "docs/tool-research.md"
       ]
@@ -261,7 +277,7 @@
       "disposition": "candidate",
       "scope_and_findings": "Documented Agent Skills/Codex path, sampled frames plus transcript; this is not proof of continuous video/audio understanding.",
       "licence_note": "MIT code; providers/models independent",
-      "next_trial_or_retest_condition": "Existing local10–15s owned MP4; inspect planned paths/dependencies/cloud fallback first. Compare known visual events and transcript, no automatic installs/uploads.",
+      "next_trial_or_retest_condition": "Existing local10\u201315s owned MP4; inspect planned paths/dependencies/cloud fallback first. Compare known visual events and transcript, no automatic installs/uploads.",
       "evidence": [
         "docs/tool-research.md"
       ]
@@ -551,7 +567,7 @@
       "review_basis": "Official model/license,SDKAPI/pins and bounded two-preset local audio probe",
       "upstream_revision": "model3cadd1ee6394adea1bd021217a0e650ede09a323;SDK1.3.1",
       "disposition": "owner_accepted_scoped_voice",
-      "scope_and_findings": "M1/F1 same23-word UK text,12.19s each. Owner:usable,much better than Tetiana;fewer/shorter pauses,2–3 stress errors,good intonation. Slight subjectiveF1 preference. Recommended among tested UK voices;not general long-form quality. Full24s F1 LCD film integrated:accepted intro reused,new title/CTA measured,encoded QA passed;final owner listening pending. EnglishF1:opening microprobe followed by five-line32s Contract Execution Officer integration;technical QA recorded separately. Owner accepted EnglishF1 in this film:good,natural-sounding,synthetic origin not obvious. This is one subjective script/voice assessment,not a general English quality score.",
+      "scope_and_findings": "M1/F1 same23-word UK text,12.19s each. Owner:usable,much better than Tetiana;fewer/shorter pauses,2\u20133 stress errors,good intonation. Slight subjectiveF1 preference. Recommended among tested UK voices;not general long-form quality. Full24s F1 LCD film integrated:accepted intro reused,new title/CTA measured,encoded QA passed;final owner listening pending. EnglishF1:opening microprobe followed by five-line32s Contract Execution Officer integration;technical QA recorded separately. Owner accepted EnglishF1 in this film:good,natural-sounding,synthetic origin not obvious. This is one subjective script/voice assessment,not a general English quality score.",
       "licence_note": "SDKMIT;modelBigScienceOpenRAIL-M,including explicit machine-generated-content disclosure. No weights/art/audio redistributed.",
       "next_trial_or_retest_condition": "Owner review of the retained full film next;no unchanged regeneration. Longer/new languages,voices or prosody controls require a bounded new question.",
       "evidence": [
@@ -589,6 +605,14 @@
       "evidence": [
         "experiments/2026-10-15/agro-series-compilation.md",
         "experiments/2026-10-15/evidence/agro-series-compilation.txt"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-17",
+          "kind": "documentation_only",
+          "evidence": "docs/personal-studio.md",
+          "outcome": "Reuse recorded scope; new tasks/combinations untested; no install/upgrade/runtime promotion"
+        }
       ]
     },
     {
@@ -606,6 +630,44 @@
         "experiments/2026-10-15/burgers-cue-analysis.md",
         "experiments/2026-10-15/evidence/burgers-cue-comparison.json",
         "examples/cue-analysis/README.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-17",
+          "kind": "documentation_only",
+          "evidence": "docs/personal-studio.md",
+          "outcome": "Reuse recorded scope; new tasks/combinations untested; no install/upgrade/runtime promotion"
+        }
+      ]
+    },
+    {
+      "id": "whisper",
+      "name": "OpenAI Whisper",
+      "url": "https://github.com/openai/whisper",
+      "reviewed": "2026-10-17",
+      "review_basis": "Official README, model table and MIT code/weights statement; documentation only",
+      "upstream_revision": "86098128c0b4f24f0e2aa2994de830614b474227",
+      "disposition": "candidate",
+      "scope_and_findings": "Gap-led ASR/caption candidate. No installation, model download, transcription or semantic selection qualification. Existing MLX candidates remain alternatives, not additional compulsory stages.",
+      "licence_note": "MIT code and weights per upstream README; source recordings and transcripts require separate rights/privacy review.",
+      "next_trial_or_retest_condition": "Owner-approved 15s EN speech plus exact transcript; compare omissions and word timing on already installed MLX runtime first. For Whisper tiny.en upstream quotes ~1GB VRAM; CPU timing/RAM and exact model bytes remain unmeasured. Preflight explicit disk/model/RAM/time cap before download; no default turbo download.",
+      "evidence": [
+        "docs/personal-studio.md"
+      ]
+    },
+    {
+      "id": "diffusers-sdxl",
+      "name": "Diffusers + SDXL base 1.0",
+      "url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+      "reviewed": "2026-10-17",
+      "review_basis": "Official Diffusers README, SDXL model card/licence and metadata sizes; no weights retrieved",
+      "upstream_revision": "SDXL 462165984030d82259a11f4367a4eed129e94a7b",
+      "disposition": "deferred",
+      "scope_and_findings": "Potential local still-generation gap only; not a tested video generator or production provider. Prefer existing authored Remotion/Three.js scenes for B/C until a real need justifies this resource gate.",
+      "licence_note": "Diffusers Apache-2.0 code; SDXL base CreativeML Open RAIL++-M weights with use/distribution restrictions, not an unrestricted OSI model licence. Outputs still require source/likeness/trademark review; no blanket asset clearance.",
+      "next_trial_or_retest_condition": "Specific approved two-still storyboard experiment; max 10min and explicit storage/RAM/device preflight. Official checkpoint metadata 6,938,078,334 bytes (not total installation); FP16 UNet alone 5,135,149,760 bytes. Runtime peak RAM/VRAM unknown here. No download until changed available disk/device and owner-approved exact budget. Motion comes from qualified renderer, not SDXL.",
+      "evidence": [
+        "docs/personal-studio.md"
       ]
     }
   ]

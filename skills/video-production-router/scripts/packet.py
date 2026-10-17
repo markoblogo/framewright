@@ -34,6 +34,15 @@ def markdown(brief, plan, registry):
                    'Check selected versions, installed guides/APIs, dependencies and licence eligibility.',
                    'Confirm resource availability, input rights and execution authority; allow_paid is not spending permission.'])
     lines += ['', 'Cost/setup estimates are unavailable. This view does not enforce a spending, download or runtime budget.', '']
+    if plan.get('production'):
+        production = plan['production']
+        lines += ['## Experimental production intake', '',
+                  'Scenario: ' + cell(production['scenario']) + '. No end-to-end qualification or execution authority is implied.',
+                  'Limits (declarations, not runtime enforcement): ' + cell(json.dumps(production['limits'])), '']
+        checks(lines, [cell(x) for x in production['production_blockers']], 'blocked')
+        checks(lines, [cell(x) for x in production['publication_blockers']], 'publication blocked')
+        checks(lines, ['Retain and inspect separate MP4, audio stems, subtitles, first screen, thumbnail, YouTube copy, provenance, technical QA and time/resource log.',
+                       'Owner reviews concept, sourced facts, ordered edit decisions, music choice and bounded experiment before execution.'])
     any_video = False
     for index, (source, block) in enumerate(zip(brief['blocks'], plan['blocks']), 1):
         identity = cell(block['id'])

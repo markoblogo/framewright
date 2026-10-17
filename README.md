@@ -10,6 +10,9 @@
 **Framewright helps an AI agent choose a video pipeline and prepare its production
 handoff, using documented experiments.**
 
+Built as a personal AI video studio for YouTube, ABVX and other projects; open
+source, with quality and saved production time as the priority.
+
 Framewright provides instructions and planning checks; your agent executes the
 selected tools in your environment. Choose tools per scene and layer, with evidence,
 known limitations and output checks visible before production.
@@ -52,6 +55,10 @@ integration test. Omit `--format markdown` for the unchanged JSON interface.
 Use [arsenal search](skills/video-production-router/references/arsenal-search.md) before freezing a brief,
 then [save a project](skills/video-production-router/references/projects.md) for work across sessions.
 Search rights remain conditional;resume checks file pins and never executes production.
+
+**Next programme:** [repackaging, insight → video and hybrid production](docs/personal-studio.md)
+share source/rights, facts, edit decisions and delivery gates. A private audio catalogue
+can index an owner-selected folder later. Infrastructure only; no new films or models tested.
 
 ## One concrete result
 

@@ -126,7 +126,7 @@ class ArsenalSearchTest(unittest.TestCase):
         r=self.search('--task','transcription','--evidence','tested')
         self.assertEqual(r['results'],[])
         candidates=self.search('--task','transcription','--evidence','any')
-        self.assertEqual({x['id'] for x in candidates['results']},{'mlx-whisper','parakeet-mlx','whisperx'})
+        self.assertEqual({x['id'] for x in candidates['results']},{'mlx-whisper','parakeet-mlx','whisperx','whisper'})
         self.assertTrue(all(not x['eligible_for_feature_planning'] for x in candidates['results']))
 
     def test_cross_format_evidence_is_not_promoted_and_unknown_style_has_no_match(self):

@@ -361,6 +361,20 @@
         "video"
       ],
       "licence_note_sha256": "ce0463f8adb59a62756034956616c33be2c8515c0fb1a80ffad8984cbd432dce"
+    },
+    "whisper": {
+      "tasks": [
+        "transcription"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "1d02547887531ccd983b9a016462d81ba027023c7c764080149868bdf07772bd"
+    },
+    "diffusers-sdxl": {
+      "tasks": [
+        "illustration"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "334ef080748b1fe2f28c3d16fbffe024b3656873963cdec6d6301e56779a2588"
     }
   }
 }

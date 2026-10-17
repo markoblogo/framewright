@@ -11,6 +11,15 @@ and compatible proposed chains,read [search](references/arsenal-search.md) and u
 Search/comparison alone never authorises execution. This skill selects and records;
 it does not replace rendering skills or confer permission to publish.
 
+For recuts, sourced insight stories, hybrid films or private music libraries, read
+[shared studio intake](references/studio-workflows.md). Reuse one source/claim/EDL
+contract; `workflow.py` adds experimental confirmation/delivery gates to the existing
+checkpoint, not a new production route. `library.py` only scans an explicitly chosen
+local folder. No actual source/track is needed for conditional planning. Origin is
+separate from video/audio rights; remove unknown source audio when required and
+block publication until retained rights are resolved. Never infer a reuse grant from
+Telegram/X availability. New combinations remain unqualified until a bounded trial.
+
 1. Use the brief's product, available assets, audience/language, format, narration,
    cost/account constraints and intended deliverables. Ask only for missing facts
    that materially affect the choice. For a production plan or execution blocked

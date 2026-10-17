@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+Add shared experimental repackaging,insight-to-video and hybrid source/claim/edit
+intake,owner-confirmation/publication gates and complete delivery records in existing
+checkpoints. Add private opt-in audio indexing,annotations,rights-aware search and
+bounded optional loudness sampling. Document the A/B/C programme and gap-led local
+tool review;Whisper candidate and SDXL deferred,no new production eligibility.
+No real source/music folder selected,no films/models/paid calls or release in this pass.
+Preserve the previous audio index when the final probe exhausts the scan budget;
+retain a deterministic regression and offline/package verification.
+Address PR review:propagate production blockers to top-level plan status,align music
+use with the workflow,record per-track stat failures,and require brief in the schema.
+
 Add offline arsenal search across profiles and retained review records,with task,
 style,speech-language,retained-rights and evidence filters. Reuse the existing
 planner for proposed compatible chains;preserve explicit choices,low-quality voice
