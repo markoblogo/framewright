@@ -1,0 +1,56 @@
+{
+  "actors": 8,
+  "jobs": 1,
+  "retries": 0,
+  "model": "gpt-6.1-sol",
+  "effort": "medium",
+  "cli_version": "codex-cli 0.162.0-alpha.17.2",
+  "timeout_seconds_per_actor": 180,
+  "sum_actor_duration_seconds": 314.04,
+  "commands_reviewed": 51,
+  "cli_usage_sum": {
+    "input_tokens": 1071447,
+    "cached_input_tokens": 803328,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 10229,
+    "reasoning_output_tokens": 550
+  },
+  "billing_cost": "not_measured",
+  "media_models_downloaded_or_run": 0,
+  "actual_media_inputs": 0,
+  "runtime_warnings": [
+    {
+      "case": "recut-separate-audio-rights",
+      "message": "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+    },
+    {
+      "case": "recut-manual-semantic-boundary",
+      "message": "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+    },
+    {
+      "case": "recut-explicit-flute-input-gap",
+      "message": "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+    },
+    {
+      "case": "insight-source-claims-native-still",
+      "message": "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+    },
+    {
+      "case": "insight-vertical-evidence-and-budget",
+      "message": "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+    },
+    {
+      "case": "hybrid-purpose-music-downgrade",
+      "message": "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+    },
+    {
+      "case": "hybrid-multilayer-still-and-speech",
+      "message": "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+    },
+    {
+      "case": "hybrid-blocked-phase-no-authority",
+      "message": "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+    }
+  ],
+  "warning_assessment": "All8 item.type=error messages are the same nonfatal under-development skip_host_skill_discovery configuration warning. Retained,not filtered; no turn.failed or top-level error event,all commands and turns completed."
+}

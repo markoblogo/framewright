@@ -1,0 +1,25 @@
+Retain a **conditional Remotion plan**, the once-per-minute telemetry fact, and the explicit measurement limitation. Reject “saves 42 percent energy.”
+
+The source comparison is decisive: the fictional engineering note, summarized in `context.md`, says telemetry is sent once per minute and energy savings were not measured. The marketing proposal supplies no measurement supporting 42%. “Not measured” also does not establish zero savings. These are fictional source statements, not independently verified product facts.
+
+A proposed 12-second sequence, assuming 1920×1080 at 30 fps:
+
+| Time | Swiss-style picture and copy |
+|---|---|
+| 0–4s | Asymmetric grid, large “ONCE PER MINUTE,” restrained telemetry marks |
+| 4–8s | “ENERGY SAVINGS: NOT MEASURED” |
+| 8–12s | “REPORT THE CADENCE. KEEP THE LIMIT.” with “Fictional engineering example” |
+
+Proposed English narration: “Telemetry is sent once per minute. Energy savings were not measured. The note supports the reporting interval; it does not support a savings percentage.” Speech duration must be measured before fixing internal cuts; the final target remains 12 seconds.
+
+The retained tools and evidence are:
+
+- **Remotion**, following `authored-react-film`, owns picture timing, typography and the **new native PNG thumbnail**. The supplied profile records tested typography, timeline, video and still export in version 4.0.535. Swiss styling is an authored design choice, not a separately qualified preset. Use text and geometric layout; no generated imagery or image models.
+- **Supertonic3 F1** remains the requested conditional English voice. The review ledger records one English film with technical QA and subjective owner acceptance. However, `tools.json` indexes only Ukrainian: the offline English combination search returned **no complete chain, blocked on narration**. Preserve both findings; neither silently substitute a voice nor call the new chain qualified.
+- **FFmpeg/ffprobe** may be proposed for audio muxing and encoded-file inspection. Their retained scope supports those roles. Separate subtitles can be authored from the approved script and timed against measured speech; automatic captioning is not established.
+
+Intended artifacts are `explanation.mp4`, native `thumbnail.png`, separate `subtitles.srt`, narration WAV, and a source/copy record. None exists or has passed QA.
+
+All execution checks remain **blocked** by absent runtimes/assets and plan-only authority. Future preflight must inspect installed guides/API, pin compatible Remotion packages, check licence eligibility, and retain the downloaded-browser timeout history plus existing-Chromium workaround. Supertonic’s model terms require synthetic-content disclosure; fonts, codecs and source-use rights need separate review. Publication is unauthorised.
+
+Future QA must inspect MP4 duration, format, picture, crop/readability, audio sync, loudness/peaks and listening; subtitle text, timing and encoding; and independently inspect the native PNG’s identity/rights, decoded dimensions, crop, intended-size/reduced-preview legibility, size and hash. A later authorised bounded trial must pass these checks and receive owner acceptance before delivery. No files, checkpoint, installation, render or provider call was made.

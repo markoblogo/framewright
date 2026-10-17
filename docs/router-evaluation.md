@@ -7,6 +7,14 @@
 [Three-case diagnosis](grading-v3.md).
 No rendering, real provider/account action, media publication or release occurred.
 
+## Targeted conditional studio scenarios — 2026-10-17
+
+[Source-bound packet](../benchmarks/studio-routing/2026-10-17/README.md):8/8 complete
+captures and8/8 manual controller semantic passes;12 workflow CLI cases matched11
+original expectations. One expectation incorrectly assumed an automatic English
+Supertonic profile;the original failure and separate adjudication are retained.
+No independent calibrated grader,new broad qualification,render or release.
+
 ## Staged 3D addition — 2026-10-15
 
 The `three-scene` profile adds a tested production adapter, not a new full model

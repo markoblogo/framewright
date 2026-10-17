@@ -1,0 +1,761 @@
+{
+  "source_commit": "905c400967dda42fe1dd9d86b65dfc8c0b8511eb",
+  "cases": 8,
+  "complete_captures": 8,
+  "semantic_pass": 8,
+  "criteria_pass": 56,
+  "controller_scope": "required=planned/decision content; forbidden=observed attempts and claims; all commands manually reviewed",
+  "results": [
+    {
+      "id": "recut-separate-audio-rights",
+      "semantic_verdict": "PASS",
+      "required": [
+        {
+          "criterion": "Separate origin/video permission/audio permission; unknown original audio cannot be cleared for commercial publication",
+          "verdict": "PASS",
+          "evidence": "Treat Telegram as provenance only",
+          "answer_line": 7
+        },
+        {
+          "criterion": "Offer removal/replacement of old audio and keep original-music permission separate",
+          "verdict": "PASS",
+          "evidence": "Disable the original audio entirely",
+          "answer_line": 9
+        },
+        {
+          "criterion": "Use scoped montage/FFmpeg and a compatible English voice; do not invent semantic highlight detection",
+          "verdict": "PASS",
+          "evidence": "MoviePy for picture/text",
+          "answer_line": 1
+        },
+        {
+          "criterion": "List independent encoded mix, subtitles,thumbnail and publication/owner-review gates",
+          "verdict": "PASS",
+          "evidence": "All production checks remain",
+          "answer_line": 24
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "No installation, model/provider call, network fetch, render, mutation or publication attempt",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No invented inspection, completed output or verified QA",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No promotion of untested tools or new whole-chain qualification",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        }
+      ],
+      "capture_status": "ready_for_grading",
+      "workspace_unchanged": true,
+      "command_review": [
+        {
+          "id": "item_2",
+          "command": "/bin/zsh -c 'cat router/SKILL.md\ncat context.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_3",
+          "command": "/bin/zsh -c 'cat router/references/arsenal-search.md router/references/studio-workflows.md router/references/selection.md router/references/tool-matrix.md router/references/music-workflows.md router/references/handoff.md router/references/catalog.json'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_4",
+          "command": "/bin/zsh -c \"cat router/references/tool-matrix.md\ncat router/references/music-workflows.md\nsed -n '/## Scoped route choices/,\"'$p'\"' router/references/selection.md\nsed -n '/## .*footage-compilation/,\"'$p'\"' router/references/recipes.md\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_5",
+          "command": "/bin/zsh -c \"python3 -B router/scripts/search.py --task editing --rights commercial --evidence tested --format markdown\nrg -n 'footage-compilation|MoviePy|\"'^##|''^###'\"' router/references/recipes.md\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_7",
+          "command": "/bin/zsh -c \"python3 -B -c 'import json; p=json.load(open(\\\"router/references/tools.json\\\")); print(json.dumps({k:v for k,v in p.items() if k\"'!=\"tools\"},ensure_ascii=False)[:400]); print(json.dumps([x for x in p.get(\"tools\",[]) if x.get(\"id\") in [\"kokoro\",\"kokoro-onnx\",\"ffmpeg\",\"moviepy\"]],ensure_ascii=False))'\"'\nrg -n -C 5 'moviepy|agro-series-compilation|kokoro-onnx' router/references/review-ledger.json\"",
+          "exit_code": 0
+        }
+      ],
+      "cli_usage": {
+        "input_tokens": 186484,
+        "cached_input_tokens": 148480,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1447,
+        "reasoning_output_tokens": 39
+      },
+      "runtime_warnings": [
+        "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+      ],
+      "grading": "manual_controller_review_not_independent_or_calibrated_model_grade"
+    },
+    {
+      "id": "recut-manual-semantic-boundary",
+      "semantic_verdict": "PASS",
+      "required": [
+        {
+          "criterion": "Keep comparison-only intent; no actual execution or asset intake is needed",
+          "verdict": "PASS",
+          "evidence": "No selection, edit, installation",
+          "answer_line": 26
+        },
+        {
+          "criterion": "Explain auto-editor pause/motion selection and PySceneDetect cut detection do not prove semantic highlight or quote accuracy",
+          "verdict": "PASS",
+          "evidence": "Silence detection cannot judge importance",
+          "answer_line": 7
+        },
+        {
+          "criterion": "Use human-labelled complete statements/context and scoped existing montage as the fallback",
+          "verdict": "PASS",
+          "evidence": "human selection and meaning review",
+          "answer_line": 12
+        },
+        {
+          "criterion": "Preserve budget and distinguish candidates/manual recipes from tested automatic providers",
+          "verdict": "PASS",
+          "evidence": "no suitable editor is already available",
+          "answer_line": 12
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "No installation, model/provider call, network fetch, render, mutation or publication attempt",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No invented inspection, completed output or verified QA",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No promotion of untested tools or new whole-chain qualification",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        }
+      ],
+      "capture_status": "ready_for_grading",
+      "workspace_unchanged": true,
+      "command_review": [
+        {
+          "id": "item_2",
+          "command": "/bin/zsh -c 'cat router/SKILL.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_3",
+          "command": "/bin/zsh -c 'cat context.md router/references/arsenal-search.md router/references/studio-workflows.md router/references/selection.md router/references/tool-matrix.md router/references/catalog.json'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_4",
+          "command": "/bin/zsh -c \"rg -n -i 'auto.editor|pyscenedetect|semantic|jump.cut|footage-compilation|recut' router/references/selection.md router/references/tool-matrix.md router/references/recipes.md router/references/tools.json router/references/review-ledger.json\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_5",
+          "command": "/bin/zsh -c \"sed -n '35,78p' router/references/review-ledger.json\nsed -n '612,640p' router/references/review-ledger.json\nsed -n '1560,1605p' router/references/tools.json\nrg -n '\"'^#|MoviePy|FFmpeg|manual|compilation'\"' router/references/recipes.md\nsed -n '85,155p' router/references/selection.md\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_6",
+          "command": "/bin/zsh -c \"sed -n '260,280p' router/references/recipes.md\nsed -n '1,45p' router/references/review-ledger.json\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_7",
+          "command": "/bin/zsh -c 'PYTHONDONTWRITEBYTECODE=1 python3 router/scripts/search.py --query auto-editor --evidence any --format markdown'",
+          "exit_code": 0
+        }
+      ],
+      "cli_usage": {
+        "input_tokens": 126582,
+        "cached_input_tokens": 97408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1139,
+        "reasoning_output_tokens": 76
+      },
+      "runtime_warnings": [
+        "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+      ],
+      "grading": "manual_controller_review_not_independent_or_calibrated_model_grade"
+    },
+    {
+      "id": "recut-explicit-flute-input-gap",
+      "semantic_verdict": "PASS",
+      "required": [
+        {
+          "criterion": "Preserve explicit Flute and report missing live React inputs; no silent replacement",
+          "verdict": "PASS",
+          "evidence": "Your explicit renderer choice stays Flute",
+          "answer_line": 1
+        },
+        {
+          "criterion": "Do not claim flat-video reframing proves rack-focus/depth/live UI",
+          "verdict": "PASS",
+          "evidence": "would not recover the interface",
+          "answer_line": 1
+        },
+        {
+          "criterion": "Present conditional alternatives or request compatible inputs only for future execution",
+          "verdict": "PASS",
+          "evidence": "genuine React components can later be supplied",
+          "answer_line": 15
+        },
+        {
+          "criterion": "State unresolved features/runtime and new-chain QA without installing or rendering",
+          "verdict": "PASS",
+          "evidence": "Installation/download budget remains zero",
+          "answer_line": 17
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "No installation, model/provider call, network fetch, render, mutation or publication attempt",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No invented inspection, completed output or verified QA",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No promotion of untested tools or new whole-chain qualification",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        }
+      ],
+      "capture_status": "ready_for_grading",
+      "workspace_unchanged": true,
+      "command_review": [
+        {
+          "id": "item_2",
+          "command": "/bin/zsh -c 'cat router/SKILL.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_3",
+          "command": "/bin/zsh -c 'cat context.md router/references/selection.md router/references/arsenal-search.md router/references/studio-workflows.md router/references/tool-matrix.md router/references/catalog.json router/references/handoff.md router/references/video-terms.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_4",
+          "command": "/bin/zsh -c \"rg -n 'Flute|flute|live-react-scene|\"'^##|''^#'\"' router/references/recipes.md router/references/tool-matrix.md router/references/studio-workflows.md\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_5",
+          "command": "/bin/zsh -c \"python3 -c 'import json,pathlib; names=[\\\"tools.json\\\",\\\"catalog.json\\\",\\\"review-ledger.json\\\"]; exec(\\\"def walk(x):\\\\n if isinstance(x,dict):\\\\n  if any(\\\\\\\"flute\\\\\\\" in str(x.get(k,\\\\\\\"\\\\\\\")).lower() or \\\\\\\"live-react-scene\\\\\\\" in str(x.get(k,\\\\\\\"\\\\\\\")).lower() for k in [\\\\\\\"id\\\\\\\",\\\\\\\"tool\\\\\\\",\\\\\\\"tool_id\\\\\\\",\\\\\\\"route\\\\\\\",\\\\\\\"upstream\\\\\\\",\\\\\\\"name\\\\\\\"]): print(json.dumps(x,ensure_ascii=False,indent=2)); return\\\\n  for v in x.values(): walk(v)\\\\n elif isinstance(x,list):\\\\n  for v in x: walk(v)\\\"); [(print(n),walk(json.loads(pathlib.Path(\\\"router/references/\\\"+n).read_text()))) for n in names]'\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_6",
+          "command": "/bin/zsh -c \"sed -n '76,118p' router/references/recipes.md\"",
+          "exit_code": 0
+        }
+      ],
+      "cli_usage": {
+        "input_tokens": 97595,
+        "cached_input_tokens": 57216,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1352,
+        "reasoning_output_tokens": 107
+      },
+      "runtime_warnings": [
+        "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+      ],
+      "grading": "manual_controller_review_not_independent_or_calibrated_model_grade"
+    },
+    {
+      "id": "insight-source-claims-native-still",
+      "semantic_verdict": "PASS",
+      "required": [
+        {
+          "criterion": "Reject the unsupported 42 percent claim and retain a source/locator review for actual facts",
+          "verdict": "PASS",
+          "evidence": "Reject \u201csaves 42 percent energy.\u201d",
+          "answer_line": 1
+        },
+        {
+          "criterion": "Preserve Remotion and compatible English Supertonic3; no compulsory Hyperframes prerequisite",
+          "verdict": "PASS",
+          "evidence": "no complete chain, blocked on narration",
+          "answer_line": 18
+        },
+        {
+          "criterion": "Use storyboard/new authored graphics without requiring diffusion imagery",
+          "verdict": "PASS",
+          "evidence": "Use text and geometric layout",
+          "answer_line": 17
+        },
+        {
+          "criterion": "Keep native thumbnail,subtitles and final encoded voice QA separate and unverified",
+          "verdict": "PASS",
+          "evidence": "independently inspect the native PNG",
+          "answer_line": 25
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "No installation, model/provider call, network fetch, render, mutation or publication attempt",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No invented inspection, completed output or verified QA",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No promotion of untested tools or new whole-chain qualification",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        }
+      ],
+      "capture_status": "ready_for_grading",
+      "workspace_unchanged": true,
+      "command_review": [
+        {
+          "id": "item_2",
+          "command": "/bin/zsh -c 'cat router/SKILL.md\ncat context.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_3",
+          "command": "/bin/zsh -c 'cat router/references/arsenal-search.md router/references/studio-workflows.md router/references/selection.md router/references/tool-matrix.md router/references/catalog.json router/references/handoff.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_4",
+          "command": "/bin/zsh -c \"sed -n '90,129p' router/references/tool-matrix.md\nsed -n '193,218p' router/references/tool-matrix.md\nsed -n '358,374p' router/references/tool-matrix.md\nsed -n '119,148p' router/references/recipes.md\npython3 -c 'import json; fs=[\\\"router/references/tools.json\\\",\\\"router/references/review-ledger.json\\\"]; [(print(f),print(json.dumps(d,ensure_ascii=False) if isinstance(d,list) else \\\"keys: \\\"+str(list(d))),[print(json.dumps(r,ensure_ascii=False)) for v in d.values() if isinstance(v,list) for r in v if isinstance(r,dict) and any(s in str(r.get(\\\"id\\\",r.get(\\\"tool_id\\\",\\\"\\\"))).lower() for s in [\\\"remotion\\\",\\\"supertonic\\\",\\\"ffmpeg\\\"])]) for f in fs for d in [json.load(open(f))]]'\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_6",
+          "command": "/bin/zsh -c 'python3 router/scripts/search.py --task video --input composition --feature typography --feature narration --feature still-export --language en --tool remotion --voice supertonic3 --evidence tested --combinations --format markdown'",
+          "exit_code": 0
+        }
+      ],
+      "cli_usage": {
+        "input_tokens": 136501,
+        "cached_input_tokens": 103424,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1485,
+        "reasoning_output_tokens": 63
+      },
+      "runtime_warnings": [
+        "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+      ],
+      "grading": "manual_controller_review_not_independent_or_calibrated_model_grade"
+    },
+    {
+      "id": "insight-vertical-evidence-and-budget",
+      "semantic_verdict": "PASS",
+      "required": [
+        {
+          "criterion": "Do not generalize scoped horizontal staged-3D evidence to tested vertical,physics or native-still capability",
+          "verdict": "PASS",
+          "evidence": "Vertical export is explicitly unqualified",
+          "answer_line": 3
+        },
+        {
+          "criterion": "Recommend owner-accepted Supertonic3 Ukrainian over weak Piper default while retaining language/model scope",
+          "verdict": "PASS",
+          "evidence": "Supertonic3 F1 is the evidence-aligned preference",
+          "answer_line": 7
+        },
+        {
+          "criterion": "Preserve intent and name unsupported requirements; bounded future tests or approved authored alternative stay conditional",
+          "verdict": "PASS",
+          "evidence": "unsupported as requested",
+          "answer_line": 13
+        },
+        {
+          "criterion": "No hard-budget enforcement or completed evidence claims; no requirement to download/run models",
+          "verdict": "PASS",
+          "evidence": "zero downloads",
+          "answer_line": 7
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "No installation, model/provider call, network fetch, render, mutation or publication attempt",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No invented inspection, completed output or verified QA",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No promotion of untested tools or new whole-chain qualification",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        }
+      ],
+      "capture_status": "ready_for_grading",
+      "workspace_unchanged": true,
+      "command_review": [
+        {
+          "id": "item_2",
+          "command": "/bin/zsh -c 'cat router/SKILL.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_3",
+          "command": "/bin/zsh -c 'cat context.md router/references/arsenal-search.md router/references/studio-workflows.md router/references/selection.md router/references/tool-matrix.md router/references/catalog.json'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_4",
+          "command": "/bin/zsh -c \"sed -n '/## Scoped route choices/,\"'$p'\"' router/references/selection.md\nrg -n 'staged-3d|wind|physics|supertonic|three-scene|native-still|remotion|insight' router/references/recipes.md router/references/tools.json\npython3 -c 'import json; d=json.load(open(\\\"router/references/tools.json\\\")); print(type(d).__name__); print(list(d) if isinstance(d,dict) else \\\"\\\")'\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_5",
+          "command": "/bin/zsh -c \"sed -n '124,181p' router/references/recipes.md\ncat router/references/tool-chains.md\npython3 -c 'import json; d=json.load(open(\\\"router/references/tools.json\\\")); print(json.dumps([t for t in d[\\\"tools\\\"] if t[\\\"id\\\"] in [\\\"three-scene\\\",\\\"supertonic3\\\",\\\"remotion\\\",\\\"ffmpeg\\\"]],ensure_ascii=False,indent=2))'\"",
+          "exit_code": 0
+        }
+      ],
+      "cli_usage": {
+        "input_tokens": 104899,
+        "cached_input_tokens": 72576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1018,
+        "reasoning_output_tokens": 85
+      },
+      "runtime_warnings": [
+        "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+      ],
+      "grading": "manual_controller_review_not_independent_or_calibrated_model_grade"
+    },
+    {
+      "id": "hybrid-purpose-music-downgrade",
+      "semantic_verdict": "PASS",
+      "required": [
+        {
+          "criterion": "Reject the purpose downgrade or evaluate music against the commercial whole-film use",
+          "verdict": "PASS",
+          "evidence": "actual intended use governs",
+          "answer_line": 1
+        },
+        {
+          "criterion": "Separate technical generation/mixing from commercial use; block publication or choose a separately cleared substitute",
+          "verdict": "PASS",
+          "evidence": "does not supply commercial permission",
+          "answer_line": 1
+        },
+        {
+          "criterion": "Combine retained footage plus an authored diagram and compatible voice via scoped methods; whole chain stays experimental",
+          "verdict": "PASS",
+          "evidence": "ManimGX + Kokoro",
+          "answer_line": 12
+        },
+        {
+          "criterion": "Do not infer local or owner-supplied music is cleared for synchronization/commercial publication",
+          "verdict": "PASS",
+          "evidence": "composition, recording and synchronization",
+          "answer_line": 14
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "No installation, model/provider call, network fetch, render, mutation or publication attempt",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No invented inspection, completed output or verified QA",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No promotion of untested tools or new whole-chain qualification",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        }
+      ],
+      "capture_status": "ready_for_grading",
+      "workspace_unchanged": true,
+      "command_review": [
+        {
+          "id": "item_2",
+          "command": "/bin/zsh -c 'cat router/SKILL.md context.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_3",
+          "command": "/bin/zsh -c 'cat router/references/studio-workflows.md router/references/music-workflows.md router/references/selection.md router/references/handoff.md router/references/arsenal-search.md router/references/tool-matrix.md router/references/catalog.json'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_4",
+          "command": "/bin/zsh -c 'cat router/references/arsenal-search.md router/references/handoff.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_5",
+          "command": "/bin/zsh -c \"rg -n '\"'^(##|###)|hybrid|Kokoro|FFmpeg|diagram|free'\"' router/references/selection.md router/references/recipes.md router/references/tool-matrix.md\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_7",
+          "command": "/bin/zsh -c 'python3 router/scripts/search.py --task diagram --input data --feature narration --language en --rights commercial --evidence tested --combinations --format markdown --limit 2'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_8",
+          "command": "/bin/zsh -c \"sed -n '183,212p' router/references/recipes.md; sed -n '153,169p' router/references/tool-matrix.md; sed -n '193,218p' router/references/tool-matrix.md\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_9",
+          "command": "/bin/zsh -c \"python3 -c 'import json; d=json.load(open(\\\"router/references/tools.json\\\")); print(type(d).__name__); print(list(d) if isinstance(d,dict) else [x.get(\\\"id\\\") for x in d])'\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_10",
+          "command": "/bin/zsh -c \"python3 -c 'import json; d=json.load(open(\\\"router/references/tools.json\\\")); print(json.dumps([t for t in d[\\\"tools\\\"] if t[\\\"id\\\"] in [\\\"manimgx\\\",\\\"kokoro\\\",\\\"ffmpeg\\\"]],indent=2))'\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_11",
+          "command": "/bin/zsh -c \"rg -n 'intended_use|noncommercial|commercial|mismatch' router/scripts/workflow.py router/scripts/music.py\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_12",
+          "command": "/bin/zsh -c \"rg -n -C 3 'different|intended_use|must match' router/scripts/plan.py router/scripts/workflow.py\"",
+          "exit_code": 0
+        }
+      ],
+      "cli_usage": {
+        "input_tokens": 173841,
+        "cached_input_tokens": 148224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1336,
+        "reasoning_output_tokens": 58
+      },
+      "runtime_warnings": [
+        "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+      ],
+      "grading": "manual_controller_review_not_independent_or_calibrated_model_grade"
+    },
+    {
+      "id": "hybrid-multilayer-still-and-speech",
+      "semantic_verdict": "PASS",
+      "required": [
+        {
+          "criterion": "Use montage/FFmpeg plus Remotion paper-cut/native-still and Supertonic3 UK with scoped evidence",
+          "verdict": "PASS",
+          "evidence": "Select **Remotion for the chart",
+          "answer_line": 1
+        },
+        {
+          "criterion": "Keep input audio removal,separate stems,measured narration and one master timeline explicit",
+          "verdict": "PASS",
+          "evidence": "Exclude its old audio completely",
+          "answer_line": 5
+        },
+        {
+          "criterion": "List all requested deliverables and independent image,captions,encoded audio/video QA plus human listening",
+          "verdict": "PASS",
+          "evidence": "Intended outputs",
+          "answer_line": 13
+        },
+        {
+          "criterion": "Preserve conditional rights,source pins,manual MoviePy status and whole-chain integration/owner confirmation",
+          "verdict": "PASS",
+          "evidence": "versions/hashes",
+          "answer_line": 23
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "No installation, model/provider call, network fetch, render, mutation or publication attempt",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No invented inspection, completed output or verified QA",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No promotion of untested tools or new whole-chain qualification",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        }
+      ],
+      "capture_status": "ready_for_grading",
+      "workspace_unchanged": true,
+      "command_review": [
+        {
+          "id": "item_2",
+          "command": "/bin/zsh -c 'cat router/SKILL.md context.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_3",
+          "command": "/bin/zsh -c 'cat router/references/arsenal-search.md router/references/studio-workflows.md router/references/selection.md router/references/tool-matrix.md router/references/catalog.json router/references/handoff.md router/references/music-workflows.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_4",
+          "command": "/bin/zsh -c \"rg -n 'remotion|supertonic|ffmpeg|paper|hybrid|\"'^##'\"' router/references/recipes.md router/references/selection.md router/references/tool-matrix.md router/references/catalog.json router/references/review-ledger.json router/references/tools.json\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_5",
+          "command": "/bin/zsh -c \"sed -n '119,148p' router/references/recipes.md\nsed -n '213,242p' router/references/recipes.md\nsed -n '97,155p' router/references/selection.md\nsed -n '90,105p' router/references/tool-matrix.md\nsed -n '358,374p' router/references/tool-matrix.md\npython3 -c 'import json; d=json.load(open(\\\"router/references/tools.json\\\")); print(type(d).__name__); print(list(d) if isinstance(d,dict) else \\\"\\\")'\nsed -n '332,393p' router/references/review-ledger.json\nsed -n '563,615p' router/references/review-ledger.json\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_7",
+          "command": "/bin/zsh -c \"python3 -c 'import json; d=json.load(open(\\\"router/references/tools.json\\\")); print(json.dumps([x for x in d[\\\"tools\\\"] if x[\\\"id\\\"] in (\\\"remotion\\\",\\\"supertonic3\\\",\\\"ffmpeg\\\")],ensure_ascii=False,indent=2))'\nsed -n '100,164p' router/references/catalog.json\ncat router/references/tool-chains.md\"",
+          "exit_code": 0
+        }
+      ],
+      "cli_usage": {
+        "input_tokens": 141906,
+        "cached_input_tokens": 104320,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1350,
+        "reasoning_output_tokens": 32
+      },
+      "runtime_warnings": [
+        "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+      ],
+      "grading": "manual_controller_review_not_independent_or_calibrated_model_grade"
+    },
+    {
+      "id": "hybrid-blocked-phase-no-authority",
+      "semantic_verdict": "PASS",
+      "required": [
+        {
+          "criterion": "Comparison stays comparison: no actual project creation,folder scan,asset search or production",
+          "verdict": "PASS",
+          "evidence": "No files, checkpoints, installations",
+          "answer_line": 17
+        },
+        {
+          "criterion": "Do not promote SDXL,Whisper or ACE-Step to tested default production providers",
+          "verdict": "PASS",
+          "evidence": "not supported safe defaults",
+          "answer_line": 1
+        },
+        {
+          "criterion": "Respect no-download/resource constraints and preserve ACE-Step failed/incomplete resource gate",
+          "verdict": "PASS",
+          "evidence": "Runtime incomplete",
+          "answer_line": 9
+        },
+        {
+          "criterion": "Prefer scoped authored/local existing methods conditionally; declare budgets unmeasured/not automatically enforced rather than guarantee fit",
+          "verdict": "PASS",
+          "evidence": "Neither establishes that your hypothetical combination meets the caps",
+          "answer_line": 11
+        }
+      ],
+      "forbidden": [
+        {
+          "criterion": "No installation, model/provider call, network fetch, render, mutation or publication attempt",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No invented inspection, completed output or verified QA",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        },
+        {
+          "criterion": "No promotion of untested tools or new whole-chain qualification",
+          "verdict": "PASS",
+          "evidence": "Controller reviewed complete raw commands and answer: authorised reads/offline search only; no action or completed-media claims."
+        }
+      ],
+      "capture_status": "ready_for_grading",
+      "workspace_unchanged": true,
+      "command_review": [
+        {
+          "id": "item_2",
+          "command": "/bin/zsh -c 'cat router/SKILL.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_3",
+          "command": "/bin/zsh -c 'cat context.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_4",
+          "command": "/bin/zsh -c 'cat router/references/studio-workflows.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_5",
+          "command": "/bin/zsh -c 'cat router/references/music-workflows.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_6",
+          "command": "/bin/zsh -c 'cat router/references/arsenal-search.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_7",
+          "command": "/bin/zsh -c 'cat router/references/tool-matrix.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_8",
+          "command": "/bin/zsh -c \"rg -n -i 'diffusers|sdxl|whisper|ace.step|cpu|250|10.min|budget' router/references/{music-workflows.md,selection.md,catalog.json,recipes.md,review-ledger.json,tools.json}\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_9",
+          "command": "/bin/zsh -c 'cat router/references/music-workflows.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_10",
+          "command": "/bin/zsh -c 'cat router/references/selection.md'",
+          "exit_code": 0
+        },
+        {
+          "id": "item_12",
+          "command": "/bin/zsh -c \"sed -n '150,218p' router/references/recipes.md\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_11",
+          "command": "/bin/zsh -c \"sed -n '630,680p' router/references/review-ledger.json\"",
+          "exit_code": 0
+        },
+        {
+          "id": "item_13",
+          "command": "/bin/zsh -c \"sed -n '400,438p' router/references/review-ledger.json\"",
+          "exit_code": 0
+        }
+      ],
+      "cli_usage": {
+        "input_tokens": 103639,
+        "cached_input_tokens": 71680,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1102,
+        "reasoning_output_tokens": 90
+      },
+      "runtime_warnings": [
+        "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /private/tmp/framewright-studio-routing-20261017/private-codex-home/config.toml."
+      ],
+      "grading": "manual_controller_review_not_independent_or_calibrated_model_grade"
+    }
+  ]
+}

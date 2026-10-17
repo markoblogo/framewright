@@ -1,0 +1,21 @@
+**The Flute plan is blocked by the supplied input type.** Your explicit renderer choice stays Flute; no replacement renderer is selected. Its retained route consumes genuine React UI components, while the hypothetical inputs are flat browser recordings. Placing a recording on a moving plane would remain recorded footage and would not recover the interface’s internal depth.
+
+I used the supplied router skill, selection guidance, Flute profile, `live-react-scene` recipe, catalogue, review ledger, terminology and handoff contract. These distinguish tested camera travel and DOM depth-of-field from the exact requested effects. The retained Flute 0.1.2 test covered existing CoqPi components in a browser host. It does **not** establish video-to-component reconstruction, ray-traced optics, arbitrary application compatibility, or this slow rack-focus sequence. DOM blur is an approximation; constant blur or digital zoom would not satisfy the request.
+
+A conditional 12-second creative plan can still preserve the intended treatment:
+
+| Time | Picture intent | Current blocker |
+|---|---|---|
+| 0–3s | Establish two interface subjects at distinct depths with restrained camera travel. | No genuine components or depth-bearing scene. |
+| 3–9s | Slowly transfer focus from the nearer subject to the farther subject. | No independently focusable subjects; exact rack focus remains unqualified. |
+| 9–12s | Hold the farther subject clearly, allowing a readable closing view. | No source media or approved closing copy. |
+
+No cuts, source timecodes or EDL selections can be validated without footage. Picture would use Flute’s scene clock; text would use approved source wording. Plan a silent output, with source audio removed rather than assuming reuse rights. No music provider is selected.
+
+The unresolved decision is whether genuine React components can later be supplied, or whether you would explicitly accept an authored reconstruction as an adapter. That reconstruction would be new work, not recovered live UI. **Neither is assumed authorised here.** If suitable components and an already available runtime later exist, a bounded future test should prove distinct depth placement, a continuous six-second focus transfer, readable endpoints and temporal stability. Failure retains the requested effect as unmet.
+
+Installation/download budget remains zero. Later preflight must verify existing dependencies, pinned versions, installed Flute guidance and licence eligibility, synthetic inputs, scoped capture styling and exclusion from production. The recorded snapshot failure remains a failure.
+
+The intended artifact is a 12-second MP4; aspect ratio and frame rate remain provisional. Planned QA covers decoded duration/format, focus progression, depth/parallax, crop, readability and audio absence. Source-video rights remain unresolved; public publication is unauthorised. Against `context.md`, “telemetry once per minute” is supported; energy-savings claims are not.
+
+No media, runtime or output was inspected, and no files, checkpoints, downloads or renders were created.

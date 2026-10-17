@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+Retain a targeted conditional studio check:12 CLI cases,8 one-pass read-only actor
+requests,complete traces and controller grading. Preserve the EN Supertonic expectation
+error separately from router failures. No selection/profile changes,render or release.
+
 Add shared experimental repackaging,insight-to-video and hybrid source/claim/edit
 intake,owner-confirmation/publication gates and complete delivery records in existing
 checkpoints. Add private opt-in audio indexing,annotations,rights-aware search and
