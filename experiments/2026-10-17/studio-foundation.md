@@ -36,6 +36,13 @@ index. A regression failed before the fix;scan now checks the deadline before
 returning a persistable result. Follow-up:11 studio tests and209 full-suite tests
 passed (7.592s unittest time),plus the same integrity/package checks. No media run.
 
+PR #36 external review identified four additional boundaries:top-level blocked
+status,per-track stat errors,required brief in the schema,and conflicting music
+use versus workflow use. All four were reproduced before patching. The follow-up
+run passed15 studio tests and213 full-suite tests (7.296s unittest time),plus the
+same integrity,source-fingerprint and standalone-package checks. These fixes do
+not add film production,independent model qualification or a release.
+
 ```sh
 python3 -m unittest discover -s tests -p test_studio.py -q
 python3 scripts/check.py --scope router

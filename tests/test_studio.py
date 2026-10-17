@@ -16,6 +16,53 @@ SCRIPTS = ROOT / 'skills/video-production-router/scripts'
 
 
 class StudioTests(unittest.TestCase):
+    def test_production_blockers_affect_top_status_but_publication_only_does_not(self):
+        planner = runpy.run_path(str(SCRIPTS / 'plan.py'))['plan']
+        registry = json.loads((SCRIPTS.parent / 'references/tools.json').read_text())
+        spec = self.example()
+        brief = spec['brief']; brief['production'] = {k:v for k,v in spec.items() if k != 'brief'}
+        self.assertEqual(planner(brief, registry)['status'], 'proposed')
+        del brief['production']['limits']['wall_minutes']
+        result = planner(brief, registry)
+        self.assertTrue(result['production']['production_blockers'])
+        self.assertEqual(result['status'], 'blocked')
+
+    def test_music_cannot_lower_the_outer_workflow_use_and_omitted_use_inherits(self):
+        planner = runpy.run_path(str(SCRIPTS / 'plan.py'))['plan']
+        registry = json.loads((SCRIPTS.parent / 'references/tools.json').read_text())
+        spec = self.example()
+        brief = spec['brief']; brief['production'] = {k:v for k,v in spec.items() if k != 'brief'}
+        brief['music'] = {'direction':'music-first', 'audio_source':'owner.wav', 'inputs_authorized':True,
+                          'intended_use':'noncommercial', 'rights':{'status':'noncommercial_only','evidence':'NC terms'}}
+        with self.assertRaisesRegex(ValueError, 'intended_use'):
+            planner(brief, registry)
+        del brief['music']['intended_use']
+        result = planner(brief, registry)
+        self.assertEqual(result['music']['intended_use'], 'commercial')
+        self.assertTrue(any('commercial_not_permitted' in x for x in result['production']['publication_blockers']))
+        self.assertNotIn('intended_use', brief['music'])
+
+    def test_missing_file_stat_is_retained_as_a_track_error(self):
+        api = runpy.run_path(str(SCRIPTS / 'library.py'))
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory).resolve(); target = folder / 'disappeared.wav'
+            target.write_bytes(b'synthetic fixture')
+            original = Path.stat
+            def stat(path, *args, **kwargs):
+                if path == target and kwargs.get('follow_symlinks', True):
+                    raise FileNotFoundError('disappeared after directory traversal')
+                return original(path, *args, **kwargs)
+            args = SimpleNamespace(max_files=10, wall_seconds=10, max_file_mb=1,
+                                   ffprobe='ffprobe', ffmpeg='ffmpeg', analyze_seconds=0)
+            with patch.object(Path, 'stat', stat), patch('subprocess.run', return_value=SimpleNamespace(stdout='test version\n')):
+                result = api['scan'](folder, {'tracks': []}, args)
+            self.assertEqual(result['tracks'], [])
+            self.assertIn('disappeared', result['errors'][0]['error'])
+
+    def test_standalone_workflow_schema_requires_the_consumed_brief(self):
+        schema = json.loads((SCRIPTS.parent / 'references/production-workflow.schema.json').read_text())
+        self.assertIn('brief', schema['required'])
+
     def test_last_probe_exhausting_scan_budget_does_not_return_partial_index(self):
         api = runpy.run_path(str(SCRIPTS / 'library.py'))
         with tempfile.TemporaryDirectory() as directory:

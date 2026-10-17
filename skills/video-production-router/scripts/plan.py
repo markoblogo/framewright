@@ -46,7 +46,13 @@ def plan(brief, registry):
     if not isinstance(brief, dict):
         raise ValueError('Brief must be a JSON object')
     production = runpy.run_path(str(Path(__file__).with_name('workflow.py')))['assess'](brief['production']) if 'production' in brief else None
-    music = runpy.run_path(str(Path(__file__).with_name('music.py')))['plan_music'](brief['music'], registry) if 'music' in brief else None
+    music_spec = brief.get('music')
+    if production is not None and isinstance(music_spec, dict):
+        purpose = brief['production'].get('intended_use', 'commercial')
+        if 'intended_use' in music_spec and music_spec['intended_use'] != purpose:
+            raise ValueError('music.intended_use must match production.intended_use')
+        music_spec = {**music_spec, 'intended_use': purpose}
+    music = runpy.run_path(str(Path(__file__).with_name('music.py')))['plan_music'](music_spec, registry) if 'music' in brief else None
     tools = {t['id']: t for t in registry['tools']}
     blocks = brief.get('blocks')
     if not isinstance(blocks, list) or not blocks:
@@ -170,6 +176,7 @@ def plan(brief, registry):
             production['production_blockers'].extend('music: ' + gate for gate in music['permission_gates'])
             if music['usage_status'] in {'rights_review_required', 'commercial_not_permitted_by_record', 'local_evaluation_only'}:
                 production['publication_blockers'].append('music usage: ' + music['usage_status'])
+        blocked = blocked or bool(production['production_blockers'])
     still_only = all(set(b.get('deliverables', ['video-export'])) == {'still-export'} for b in blocks)
     return {'schema_version': 1, 'status': 'blocked' if blocked else 'proposed', 'qualification': 'planning_only', 'execution': 'not_started', 'music': music, **({'production': production} if production is not None else {}), 'minimum_evidence': minimum, 'canvas': canvas, 'duration_frames': cursor, 'blocks': result, 'assembly': ({'tool': None, 'evidence': 'planning_only', 'qualification': 'Still-only delivery: no video assembly is proposed.', 'steps': ['validate native image format, dimensions, visual content and hashes']} if still_only else {'tool': 'ffmpeg', 'evidence': 'documented', 'qualification': 'new multi-block combinations need an integration test; individual successes do not qualify a chain', 'steps': ['normalise actual size/fps/colour/alpha and frame boundaries', 'assemble picture and a single master audio timeline', 'inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata', 'retain native exports, final hashes and per-block evidence']}), 'notes': ['Styles are preferences, not fixed renderer limits or quality scores.', 'Read the cited installed-version docs before execution.', 'Paid availability in a plan is not purchase/account/publication authorisation.', 'Missing durations require timing decisions; no final timeline is claimed.'] if cursor is None else ['No model evaluation, rendering or publication was performed by this planner.', 'Style matching does not qualify a new combination.', 'Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review.']}
 

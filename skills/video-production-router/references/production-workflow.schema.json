@@ -4,7 +4,8 @@
   "type": "object",
   "required": [
     "scenario",
-    "sources"
+    "sources",
+    "brief"
   ],
   "properties": {
     "scenario": {

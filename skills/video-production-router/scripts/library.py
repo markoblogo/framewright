@@ -78,9 +78,9 @@ def scan(folder, previous, args):
             candidates += 1
             if candidates > args.max_files or time.monotonic() - begun > args.wall_seconds:
                 raise ValueError('Scan budget reached; previous catalogue retained. Use a smaller folder or explicit larger bound')
-            if path.stat().st_size > args.max_file_mb * 1024 * 1024:
-                errors.append({'path': str(path.relative_to(root)), 'error': 'file exceeds max_file_mb'}); continue
             try:
+                if path.stat().st_size > args.max_file_mb * 1024 * 1024:
+                    errors.append({'path': str(path.relative_to(root)), 'error': 'file exceeds max_file_mb'}); continue
                 record = pin(path)
                 remaining = args.wall_seconds - (time.monotonic() - begun)
                 if remaining <= 0:

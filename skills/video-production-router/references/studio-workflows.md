@@ -25,6 +25,10 @@ python3 skills/video-production-router/scripts/project.py resume local/story-pro
 Standalone installs contain the helpers and schemas but not repository examples;
 use the schema to author the same spec. `--format brief` embeds its shared intake
 under `production` and enforces `minimum_evidence: tested`. No sources are fetched.
+Production blockers also set the plan's top-level status to `blocked`; publication-only
+blockers stay separate. An omitted `music.intended_use` inherits the workflow's use;
+an explicitly different use is rejected, so noncommercial terms cannot clear a
+commercial workflow. The standalone schema requires the consumed `brief` object.
 The original `plan.py` supports this optional field directly; legacy briefs keep
 their existing behavior. Styles/preferences do not upgrade evidence or prove seams.
 
