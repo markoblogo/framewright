@@ -1,6 +1,6 @@
 # Proposed experiment queue
 
-Updated 2026-10-16. This is a task-led backlog, not permission for unattended tests,
+Updated 2026-10-17. This is a task-led backlog, not permission for unattended tests,
 installs, model downloads, spending, account grants or public media uploads.
 Use the owner's ABVX books/services. Discuss the subject and bounded brief before
 each actual new-tool experiment. [Research](tool-research.md) ·
@@ -12,9 +12,20 @@ Owner closed the [six-book + landing + compilation stage](experiments/agro-serie
 All eight deliverables have owner-supplied publication links;individual final-film
 reviews remain separate. [Product audit and proposals](product-audit-2026-10-15.md)
 record the completed closeout;experimental v0.2.0 is published. Current work adds
-production checkpoints and arsenal discovery without rendering or another release. The queue below is
-retained research history/candidates,not an active production schedule. Select the
-next direction after release;ACE-Step remains resource/diagnostic-gated.
+production checkpoints,arsenal discovery and shared studio intake without rendering
+or another release. The new owner-selected direction is the conditional programme
+below;older phases remain research history. ACE-Step stays resource/diagnostic-gated.
+
+## Next direction — personal studio A/B/C (not started)
+
+[Predeclared programme and audit](personal-studio.md): A repackaging, B sourced
+insight → video, C hybrid using the same components. Current scope is infrastructure
+and synthetic helper checks only;owner explicitly deferred choosing footage or
+creating a music folder. No actual film/music selection, installs or model calls.
+Reuse existing FFmpeg/MoviePy/Remotion/voice methods. ASR is a specific remaining
+gap;Whisper is a documentation-only alternative to retained MLX candidates.
+Diffusers/SDXL is deferred behind exact model rights/storage/device/budget checks.
+No untested candidate or whole-chain qualification enters production routing.
 
 ## Phase 1 — useful book and service promos
 

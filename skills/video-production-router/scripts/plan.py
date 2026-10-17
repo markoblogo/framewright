@@ -45,6 +45,7 @@ def frames(value, fps):
 def plan(brief, registry):
     if not isinstance(brief, dict):
         raise ValueError('Brief must be a JSON object')
+    production = runpy.run_path(str(Path(__file__).with_name('workflow.py')))['assess'](brief['production']) if 'production' in brief else None
     music = runpy.run_path(str(Path(__file__).with_name('music.py')))['plan_music'](brief['music'], registry) if 'music' in brief else None
     tools = {t['id']: t for t in registry['tools']}
     blocks = brief.get('blocks')
@@ -53,6 +54,8 @@ def plan(brief, registry):
     minimum = brief.get('minimum_evidence', 'documented')
     if minimum not in {'tested', 'documented'}:
         raise ValueError('minimum_evidence must be tested or documented')
+    if production is not None:
+        minimum = 'tested'
     canvas = brief.get('canvas', {'width': 1920, 'height': 1080, 'fps': 30})
     if not isinstance(canvas, dict) or set(canvas) != {'width', 'height', 'fps'} or not all(type(v) is int and v > 0 for v in canvas.values()):
         raise ValueError('canvas needs positive integer width, height and fps')
@@ -157,8 +160,18 @@ def plan(brief, registry):
     if 'duration_seconds' in brief and (cursor is None or frames(brief['duration_seconds'], canvas['fps']) != cursor):
         raise ValueError('Declared total duration must match the known block timeline including overlaps')
     blocked = any(x['unmet'] for x in result)
+    if production is not None:
+        limit = production['limits'].get('max_output_seconds')
+        if cursor is None:
+            production['production_blockers'].append('freeze the complete output timeline before execution')
+        elif limit is not None and cursor / canvas['fps'] > limit:
+            production['production_blockers'].append('planned complete timeline exceeds max_output_seconds')
+        if music is not None:
+            production['production_blockers'].extend('music: ' + gate for gate in music['permission_gates'])
+            if music['usage_status'] in {'rights_review_required', 'commercial_not_permitted_by_record', 'local_evaluation_only'}:
+                production['publication_blockers'].append('music usage: ' + music['usage_status'])
     still_only = all(set(b.get('deliverables', ['video-export'])) == {'still-export'} for b in blocks)
-    return {'schema_version': 1, 'status': 'blocked' if blocked else 'proposed', 'qualification': 'planning_only', 'execution': 'not_started', 'music': music, 'minimum_evidence': minimum, 'canvas': canvas, 'duration_frames': cursor, 'blocks': result, 'assembly': ({'tool': None, 'evidence': 'planning_only', 'qualification': 'Still-only delivery: no video assembly is proposed.', 'steps': ['validate native image format, dimensions, visual content and hashes']} if still_only else {'tool': 'ffmpeg', 'evidence': 'documented', 'qualification': 'new multi-block combinations need an integration test; individual successes do not qualify a chain', 'steps': ['normalise actual size/fps/colour/alpha and frame boundaries', 'assemble picture and a single master audio timeline', 'inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata', 'retain native exports, final hashes and per-block evidence']}), 'notes': ['Styles are preferences, not fixed renderer limits or quality scores.', 'Read the cited installed-version docs before execution.', 'Paid availability in a plan is not purchase/account/publication authorisation.', 'Missing durations require timing decisions; no final timeline is claimed.'] if cursor is None else ['No model evaluation, rendering or publication was performed by this planner.', 'Style matching does not qualify a new combination.', 'Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review.']}
+    return {'schema_version': 1, 'status': 'blocked' if blocked else 'proposed', 'qualification': 'planning_only', 'execution': 'not_started', 'music': music, **({'production': production} if production is not None else {}), 'minimum_evidence': minimum, 'canvas': canvas, 'duration_frames': cursor, 'blocks': result, 'assembly': ({'tool': None, 'evidence': 'planning_only', 'qualification': 'Still-only delivery: no video assembly is proposed.', 'steps': ['validate native image format, dimensions, visual content and hashes']} if still_only else {'tool': 'ffmpeg', 'evidence': 'documented', 'qualification': 'new multi-block combinations need an integration test; individual successes do not qualify a chain', 'steps': ['normalise actual size/fps/colour/alpha and frame boundaries', 'assemble picture and a single master audio timeline', 'inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata', 'retain native exports, final hashes and per-block evidence']}), 'notes': ['Styles are preferences, not fixed renderer limits or quality scores.', 'Read the cited installed-version docs before execution.', 'Paid availability in a plan is not purchase/account/publication authorisation.', 'Missing durations require timing decisions; no final timeline is claimed.'] if cursor is None else ['No model evaluation, rendering or publication was performed by this planner.', 'Style matching does not qualify a new combination.', 'Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review.']}
 
 
 def main():

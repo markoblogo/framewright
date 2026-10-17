@@ -1,0 +1,60 @@
+{
+  "scenario": "insight",
+  "intended_use": "commercial",
+  "sources": [
+    {
+      "id": "article",
+      "kind": "text",
+      "origin": "PLACEHOLDER: owner selects article and rights basis",
+      "rights": {
+        "status": "unknown"
+      }
+    },
+    {
+      "id": "music",
+      "kind": "audio",
+      "origin": "PLACEHOLDER: select hash-pinned recording from private catalogue",
+      "rights": {
+        "status": "unknown"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "text": "PLACEHOLDER: reviewed factual statement, no invented claim",
+      "source": "article",
+      "locator": "section/paragraph to be supplied",
+      "review": "pending"
+    }
+  ],
+  "edits": [],
+  "limits": {
+    "wall_minutes": 30,
+    "max_input_seconds": 60,
+    "max_output_seconds": 15,
+    "max_work_mb": 500,
+    "max_download_mb": 0,
+    "paid_calls": 0
+  },
+  "acceptance": [
+    "Preserve factual meaning and attribution",
+    "Readable first screen, captions and thumbnail at delivery size",
+    "Full encoded decode, sync/loudness, human speech and loop/seam review",
+    "No retained old audio when audio_policy is replace/remove"
+  ],
+  "brief": {
+    "language": "en",
+    "duration_seconds": 15,
+    "blocks": [
+      {
+        "id": "story",
+        "input": "brand",
+        "duration_seconds": 15,
+        "deliverables": [
+          "video-export",
+          "still-export"
+        ]
+      }
+    ]
+  }
+}

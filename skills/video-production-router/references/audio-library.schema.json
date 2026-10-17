@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Private local music/sound catalogue",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "root",
+    "tracks"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "root": {
+      "type": "string"
+    },
+    "tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "path",
+          "bytes",
+          "duration_seconds",
+          "rights",
+          "bpm",
+          "mood",
+          "genre",
+          "loudness"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "path": {
+            "type": "string"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "duration_seconds": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "mood": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "genre": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "bpm": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "exclusiveMinimum": 0
+          },
+          "rights": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "enum": [
+                  "unknown",
+                  "granted",
+                  "noncommercial_only",
+                  "denied"
+                ]
+              },
+              "evidence": {
+                "type": "string"
+              }
+            }
+          },
+          "loudness": {
+            "type": [
+              "object",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "publication_authorized": {
+      "const": false
+    }
+  }
+}

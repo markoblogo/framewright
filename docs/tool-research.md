@@ -1,5 +1,10 @@
 # Tool review and test inventory
 
+For the 2026-10-17 gap-led update (recuts,sourced stories,hybrid production and
+private audio),see [personal studio audit](personal-studio.md). It refreshes existing
+assembly/analysis decisions and retains Whisper/SDXL as candidate/deferred only.
+The older inventory below describes earlier evidence,not new runtime qualification.
+
 Reviewed2026-10-15. Initial upstream README/code metadata was inspected without installations.
 Later bounded runtime trials are linked below; no blanket benchmark is claimed. [Decision ledger](../skills/video-production-router/references/review-ledger.json)
 is the lookup point for previous tests, partial results, rights and revisit conditions.

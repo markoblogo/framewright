@@ -34,7 +34,7 @@ def file_record(path, root):
 
 
 def planning_sources():
-    paths = [BASE / name for name in ['plan.py', 'music.py', 'terms.py']]
+    paths = [BASE / name for name in ['plan.py', 'music.py', 'terms.py', 'workflow.py']]
     paths.append(BASE.parent / 'references/tools.json')
     return {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 
@@ -58,6 +58,10 @@ def initial(brief):
 
     add('source-review', 'Check product facts, authorised assets and input identities')
     add('preflight', 'Check versions, licences, runtime/resources and authority')
+    production = plan.get('production')
+    if production:
+        add('production-review', 'Owner confirms concept, sources, limits and bounded experimental execution',
+            ['source-review', 'preflight'], blocked=production['production_blockers'])
     scene_steps = []
     video = False
     for index, (source, block) in enumerate(zip(brief['blocks'], plan['blocks']), 1):
@@ -77,21 +81,40 @@ def initial(brief):
                 qa.append(listen)
             video = video or kind == 'video-export'
         add(scene, f"Author scene: {block['id']}", ['source-review', 'preflight'], files, block['unmet'])
+        if production:
+            steps[-1]['depends_on'].append('production-review')
     if video:
         outputs['final-video'] = {'kind': 'video-export', 'scene': None, 'file': None}
         add('assembly', 'Assemble selected scenes with one master audio timeline', scene_steps, ['final-video'])
         add('qa:final-video', 'Final encoded decode, timing/seams, audio sync/phase/loudness and hashes', ['assembly'], ['final-video'])
         add('listen:final-video', 'Human final soundtrack listening or confirmation of intentional silence', ['qa:final-video'], ['final-video'])
         qa.extend(['qa:final-video','listen:final-video'])
+    if production:
+        extra = []
+        for kind in production['outputs']:
+            if kind == 'mp4' and video:
+                continue
+            identity = 'production:' + kind
+            outputs[identity] = {'kind': kind, 'scene': None, 'file': None}
+            extra.append(identity)
+        add('delivery-materials', 'Create separate stems, captions, first screen, thumbnail, copy, provenance, QA and resource log',
+            ['production-review'] + scene_steps, extra)
+        add('qa:delivery-materials', 'Inspect every separate delivery artifact; technical receipt and rights review are independent',
+            ['delivery-materials'], extra)
+        qa.append('qa:delivery-materials')
     add('delivery', 'Hand over existing outputs and disclose remaining limits', scene_steps + qa)
     add('owner-review', 'Separate creative acceptance of the final work', ['delivery'], optional=True)
     add('publication', 'Record a supplied publication outcome; this command never uploads', ['delivery'], optional=True)
+    if production:
+        steps[-1]['unmet'] = production['publication_blockers']
+        if steps[-1]['unmet']:
+            steps[-1]['state'] = 'blocked'
     # Keep authoring before dependent checks in the human read order.
-    steps.sort(key=lambda s: (0 if s['id'] in ['source-review','preflight'] else
+    steps.sort(key=lambda s: (0 if s['id'] in ['source-review','preflight','production-review'] else
                               1 if s['id'].startswith('scene:') else
                               2 if s['id'].startswith(('qa:scene:', 'listen:')) else
                               3 if s['id']=='assembly' else 4 if s['id']=='qa:final-video' else
-                              5 if s['id']=='listen:final-video' else 6 if s['id']=='delivery' else 7))
+                              5 if s['id'] in ['listen:final-video','delivery-materials','qa:delivery-materials'] else 6 if s['id']=='delivery' else 7))
     data = {'schema_version': 1, 'brief': brief, 'plan': plan, 'plan_sha256': digest(plan), 'brief_sha256': digest(brief), 'packet_sha256': digest(packet),
             'production_packet': packet, 'planning_sources': planning_sources(),
             'steps': steps, 'inputs': {}, 'artifacts': outputs, 'history': []}
