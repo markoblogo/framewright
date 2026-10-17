@@ -8,6 +8,8 @@ checkpoints. Add private opt-in audio indexing,annotations,rights-aware search a
 bounded optional loudness sampling. Document the A/B/C programme and gap-led local
 tool review;Whisper candidate and SDXL deferred,no new production eligibility.
 No real source/music folder selected,no films/models/paid calls or release in this pass.
+Preserve the previous audio index when the final probe exhausts the scan budget;
+retain a deterministic regression and offline/package verification.
 
 Add offline arsenal search across profiles and retained review records,with task,
 style,speech-language,retained-rights and evidence filters. Reuse the existing

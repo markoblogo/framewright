@@ -8,12 +8,26 @@ import unittest
 import copy
 import runpy
 import shutil
+from types import SimpleNamespace
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / 'skills/video-production-router/scripts'
 
 
 class StudioTests(unittest.TestCase):
+    def test_last_probe_exhausting_scan_budget_does_not_return_partial_index(self):
+        api = runpy.run_path(str(SCRIPTS / 'library.py'))
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory)
+            (folder / 'sample.wav').write_bytes(b'synthetic probe fixture')
+            args = SimpleNamespace(max_files=10, wall_seconds=1, max_file_mb=1,
+                                   ffprobe='ffprobe', ffmpeg='ffmpeg', analyze_seconds=0)
+            with patch('time.monotonic', side_effect=[0, 0, 0, 2]), patch('subprocess.run', side_effect=[
+                    subprocess.TimeoutExpired('ffprobe', 1), SimpleNamespace(stdout='test version\n')]):
+                with self.assertRaisesRegex(ValueError, 'budget reached'):
+                    api['scan'](folder, {'tracks': []}, args)
+
     def example(self, scenario='repackaging'):
         return json.loads((ROOT / f'examples/workflows/{scenario}.json').read_text())
 

@@ -27,9 +27,14 @@ installed; no binary download. PCM sample mean is checked against known amplitud
 this does not evaluate LUFS,real music,beat/mood detection or final mix quality.
 The full offline check and extracted-package smoke are the reproduction gate:
 
-Observed final run:10 studio boundary/helper tests;208 full-suite tests passed in
+Observed initial run:10 studio boundary/helper tests;208 full-suite tests passed in
 6.818s unittest wall time. Integrity,links,generated matrix and extracted standalone
 package smoke passed. This is test-run time,not a film-production or model benchmark.
+
+PR publication preflight found a final-probe budget overrun could return a partial
+index. A regression failed before the fix;scan now checks the deadline before
+returning a persistable result. Follow-up:11 studio tests and209 full-suite tests
+passed (7.592s unittest time),plus the same integrity/package checks. No media run.
 
 ```sh
 python3 -m unittest discover -s tests -p test_studio.py -q

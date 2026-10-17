@@ -124,6 +124,10 @@ def scan(folder, previous, args):
                 tracks.append(row)
             except (OSError, ValueError, KeyError, subprocess.SubprocessError) as exc:
                 errors.append({'path': str(path.relative_to(root)), 'error': str(exc)})
+    # Even the final probe/traversal may exhaust the global budget. Propagate
+    # this stop before returning anything that the caller could persist.
+    if time.monotonic() - begun >= args.wall_seconds:
+        raise ValueError('Scan budget reached; previous catalogue retained. Use a smaller folder or explicit larger bound')
     return {'schema_version': 1, 'root': str(root), 'updated_utc': datetime.now(timezone.utc).isoformat(),
             'tracks': tracks, 'errors': errors, 'previous_unavailable': [r for r in retained.values()
                if (r['id'], r['path']) not in {(t['id'], t['path']) for t in tracks}],
