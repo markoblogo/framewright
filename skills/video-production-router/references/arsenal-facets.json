@@ -413,7 +413,6 @@
     },
     "openverse": {
       "tasks": [
-        "audio",
         "acquisition"
       ],
       "inputs": [

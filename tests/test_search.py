@@ -38,18 +38,18 @@ class ArsenalSearchTest(unittest.TestCase):
                 self.assertFalse(rows[0]['rights']['asset_clearance'])
                 self.assertEqual(self.search('--tool',identity,'--evidence','tested')['results'],[])
 
-    def test_openverse_sfx_is_tested_without_qualifying_music_or_asset_rights(self):
-        for task in ['audio','acquisition']:
+    def test_openverse_sfx_acquisition_does_not_qualify_audio_or_music_work(self):
+        rows=self.search('--tool','openverse','--task','acquisition','--evidence','tested')['results']
+        self.assertEqual([row['id'] for row in rows],['openverse'])
+        row=rows[0]
+        self.assertEqual(row['evidence'],'tested')
+        self.assertEqual(row['disposition'],'tested_scoped')
+        self.assertFalse(row['eligible_for_feature_planning'])
+        self.assertFalse(row['rights']['asset_clearance'])
+        self.assertFalse(row['rights']['publication_authorized'])
+        for task in ['audio','music']:
             with self.subTest(task=task):
-                rows=self.search('--tool','openverse','--task',task,'--evidence','tested')['results']
-                self.assertEqual([row['id'] for row in rows],['openverse'])
-                row=rows[0]
-                self.assertEqual(row['evidence'],'tested')
-                self.assertEqual(row['disposition'],'tested_scoped')
-                self.assertFalse(row['eligible_for_feature_planning'])
-                self.assertFalse(row['rights']['asset_clearance'])
-                self.assertFalse(row['rights']['publication_authorized'])
-        self.assertEqual(self.search('--tool','openverse','--task','music','--evidence','tested')['results'],[])
+                self.assertEqual(self.search('--tool','openverse','--task',task,'--evidence','tested')['results'],[])
 
     def test_tesseract_conversion_is_discoverable_without_becoming_a_renderer(self):
         result = self.search('--task', 'editing', '--tool', 'tesseract-converter',

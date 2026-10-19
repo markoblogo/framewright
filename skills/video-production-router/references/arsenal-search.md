@@ -35,7 +35,8 @@ Openverse is a **tested manual SFX acquisition workflow** after the SSI pilot an
 owner acceptance on 2026-10-20. Find it with
 `python3 skills/video-production-router/scripts/search.py --task acquisition --tool openverse --evidence tested --format markdown`.
 Its tested scope covers discovery, per-item admission, download and manual montage
-use; it is not an automatic planner provider. Reuse retained effects first,
+use; it is indexed only under `acquisition`, not generic audio mixing/QA or music.
+It is not an automatic planner provider. Reuse retained effects first,
 preserve source/licence/attribution and check the final mix. Music discovery and
 automatic semantic placement remain untested. [Trial](../../../docs/experiments/ssi-logistics-illustrated.md).
 
