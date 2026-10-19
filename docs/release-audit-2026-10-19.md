@@ -27,7 +27,7 @@ model routing remains unevaluated; historical frozen scores are unchanged.
 | Catalogue-only validation could miss discovery drift | Validate the ledger/facet ID set in the offline integrity entry point |
 | README still called the delivered Jekyll book promo planned | Reconcile current status with its owner-supplied publication URL; keep independent playback and final acceptance separate |
 | Review was described as awaiting its first recording and blocking release | Record actual owner take, local ASR/timing trials and pending listening/retakes; software release is independent |
-| Router ZIP could be mistaken for the entire studio | State that it contains the router only; full source checkout includes both skills and case documentation |
+| Router ZIP scope was unclear and13 optional source/case links escaped the archive | State router-only scope; pin external case links to the release tag and validate installed Markdown links during package smoke. Full source includes both skills and case docs |
 | Changelog repeated session-specific “no release” notes | Condense the unreleased increment into a user-facing0.3.0 entry; retain historical experiment reports |
 
 Review of new project, journal and kit paths preserves manual attestation,

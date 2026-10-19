@@ -3,6 +3,9 @@
 import argparse
 import hashlib
 import json
+import re
+import posixpath
+from urllib.parse import quote
 from pathlib import Path
 import subprocess
 import sys
@@ -27,7 +30,25 @@ def build(root, output):
     archive = output / f'framewright-router-{version}.zip'
     with zipfile.ZipFile(archive, 'w', compression=zipfile.ZIP_DEFLATED) as z:
         for p in sorted(files):
-            z.write(p, 'video-production-router/' + p.relative_to(skill).as_posix())
+            name = 'video-production-router/' + p.relative_to(skill).as_posix()
+            if p.suffix == '.md':
+                def release_link(match):
+                    link = match.group(1)
+                    if '://' in link or link.startswith(('#', 'mailto:')):
+                        return match.group(0)
+                    path, separator, anchor = link.partition('#')
+                    destination = (p.parent / path).resolve()
+                    if destination.is_relative_to(skill.resolve()):
+                        return match.group(0)
+                    if not destination.is_relative_to(root.resolve()) or not destination.is_file():
+                        raise ValueError('Unresolvable release documentation link: ' + link)
+                    url = 'https://github.com/markoblogo/framewright/blob/v' + version + '/' + quote(destination.relative_to(root.resolve()).as_posix(), safe='/')
+                    return '](' + url + (separator + anchor if separator else '') + ')'
+                # Preserve core offline references; pin optional source/case links to this release.
+                content = re.sub(r'\]\(([^)]+)\)', release_link, p.read_text())
+                z.writestr(zipfile.ZipInfo.from_file(p, name), content, compress_type=zipfile.ZIP_DEFLATED)
+            else:
+                z.write(p, name)
         z.write(root / 'LICENSE', 'video-production-router/LICENSE')
     digest = hashlib.sha256(archive.read_bytes()).hexdigest()
     (output / 'SHA256SUMS').write_text(f'{digest}  {archive.name}\n')
@@ -35,6 +56,16 @@ def build(root, output):
     with tempfile.TemporaryDirectory() as directory:
         target = Path(directory)
         with zipfile.ZipFile(archive) as z:
+            names = set(z.namelist())
+            for name in names:
+                if not name.endswith('.md'):
+                    continue
+                for link in re.findall(r'\]\(([^)]+)\)', z.read(name).decode()):
+                    if '://' in link or link.startswith(('#', 'mailto:')):
+                        continue
+                    destination = posixpath.normpath(posixpath.join(posixpath.dirname(name), link.split('#')[0]))
+                    if destination not in names:
+                        raise ValueError('Broken installed documentation link: ' + name + ': ' + link)
             z.extractall(target)
         brief = target / 'brief.json'
         brief.write_text(json.dumps({'blocks': [{'id': 'ui', 'input': 'react-ui', 'preferred_tool': 'flute', 'deliverables': ['video-export', 'still-export']}], 'music': {'direction': 'music-first', 'audio_source': 'authorised-demo.wav'}}))

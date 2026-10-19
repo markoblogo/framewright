@@ -123,7 +123,8 @@ test ! -e ~/.codex/skills/video-production-router && \
 For games, engine reviews and virtual sets, also link
 `framewright/skills/game-engine-production` into your skills folder from this
 complete checkout. The release ZIP installs the router skill only; GitHub source
-archives include both skills and their case documentation.
+archives include both skills and their case documentation. ZIP case links point
+to the matching tagged source; core planning/project references remain local.
 
 Keep the checkout mounted and start a fresh Codex session. The command refuses to
 overwrite a skill. Example: “Plan a French trailer from this page and approved cover.
