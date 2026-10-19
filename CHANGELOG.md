@@ -18,6 +18,8 @@
   and corrected mlx-whisper timing scopes, rejected probes and failed attempts.
 - Record the external-agent SSI field report and a partial Awwwards capture trial.
   Openverse, genjutsu and world-model production remain bounded research candidates.
+- Fix silent speech detection, publication-revision matching, explicit waits,
+  text-kit validation, video-check invalidation and audio/image discovery filters.
 - Reconcile current docs and install/release boundaries. Keep historical router
   scores frozen and current-source model qualification explicitly unevaluated.
   Strict resource enforcement and a universal renderer remain out of scope.

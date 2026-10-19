@@ -9,6 +9,11 @@ spec=importlib.util.spec_from_file_location('capture_check',path)
 cc=importlib.util.module_from_spec(spec);spec.loader.exec_module(cc)
 
 class CaptureChecks(unittest.TestCase):
+    def test_silent_declared_speech_is_flagged_even_with_normal_room_peak(self):
+        row=cc.audio_metrics([.2]*100+[0]*100,1,100,(0,1),(1,2))['channels'][0]
+        self.assertIn('no_signal_in_declared_speech_interval_repeat',row['flags'])
+        self.assertIsNone(row['declared_speech_to_room_db'])
+
     def test_low_level_guidance(self):
         r=cc.audio_metrics([.02,-.02]*100,1,100)
         self.assertIn('low_input_raise_level_or_move_closer_and_repeat',r['channels'][0]['flags'])

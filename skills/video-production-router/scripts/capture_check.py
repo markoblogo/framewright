@@ -61,6 +61,8 @@ def audio_metrics(samples, channels, rate, room=None, speech=None):
             flags.append('near_full_scale_reduce_input_and_repeat')
         elif peak < 10**(-18/20):
             flags.append('low_input_raise_level_or_move_closer_and_repeat')
+        if speech is not None and voice == 0:
+            flags.append('no_signal_in_declared_speech_interval_repeat')
         if snr is not None and snr < 20:
             flags.append('low_declared_speech_to_room_ratio_quieten_room_and_repeat')
         rows.append({'channel':ch+1,'sample_peak_dbfs':db(peak),'rms_dbfs':db(rms),

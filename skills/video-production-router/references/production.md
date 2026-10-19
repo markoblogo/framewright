@@ -127,3 +127,9 @@ last as the completion marker; an interrupted final move may leave an incomplete
 directory for inspection. Project bytes and task/observation history are unchanged
 by board/bundle commands. Kits/reports contain private context and are local review
 artifacts, not material automatically cleared for public sharing.
+
+Before a local kit can be complete, title, description and subtitle files must
+contain non-whitespace UTF-8 text. This checks text presence/encoding, not its
+meaning or subtitle timing. Changing only external cover/copy/subtitle mappings
+or attached task metadata does not reopen video conformance; actual cut, picture,
+audio or final-video changes do. Other delivery checks still apply independently.

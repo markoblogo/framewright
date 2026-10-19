@@ -27,6 +27,27 @@ class LifecycleTest(unittest.TestCase):
     def status(self):
         return json.loads(self.cli('resume', self.project, '--json').stdout)
 
+    def test_removal_cannot_be_attached_to_unpublished_replacement_bytes(self):
+        self.cli('create',self.project,'--goal','Publication history','--note','Fixture')
+        self.cli('asset',self.project,'film','--kind','video-export')
+        f=self.root/'film.txt';f.write_text('revision one')
+        self.cli('retain',self.project,'film',f)
+        self.observe('output:film','publication','published','--url','https://example.test/film','--visibility','unlisted')
+        f.write_text('revision two');self.cli('retain',self.project,'film',f,'--replace')
+        before=self.project.read_bytes()
+        self.observe('output:film','publication','removed','--url','https://example.test/film',ok=False)
+        self.assertEqual(before,self.project.read_bytes())
+        self.observe('output:film','publication','published','--url','https://example.test/film','--visibility','unlisted')
+        self.observe('output:film','publication','removed','--url','https://example.test/film')
+        self.assertEqual(self.status()['observations']['effective'][0]['result'],'removed')
+
+    def test_routing_blockers_are_not_external_waits(self):
+        brief=self.root/'brief.json';brief.write_text(json.dumps({'blocks':[{'id':'a','input':'book-art','language':'uk','preferred_voice':'mlx-audio','deliverables':['narration']}]}))
+        self.cli('init',brief,self.project)
+        result=self.status()
+        self.assertTrue(result['blocked'])
+        self.assertEqual(result['waiting'],{})
+
     def test_old_project_read_is_unchanged_and_explicit_migration_preserves_original(self):
         brief = self.root / 'brief.json'
         brief.write_text(json.dumps({'blocks': [{'id': 'intro', 'input': 'brand'}]}))

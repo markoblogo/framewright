@@ -43,7 +43,7 @@ The first preflight exposed13 failures and3 errors in236 tests, centred on the
 missing discovery facets. The release fix addresses that cause; final check
 results and package/publication identity are recorded in the release receipt.
 
-Final local verification:238 unit tests pass; retained router/storyboard evidence,
+Initial local verification:238 unit tests pass; retained router/storyboard evidence,
 10 methods/23 outputs/17 scenarios, local links, generated tool matrix and extracted
 0.3.0 router-package smoke pass. Diff whitespace check passes. A729-file candidate
 scan found no versionable private audio/video/model files, files over3MiB, or
@@ -62,3 +62,19 @@ Later tool experiments require a concrete shot and their own access/rights/budge
 Native acoustic/video understanding, broader world production, strict brief/resource
 enforcement and automatic rendering remain unqualified or deferred. No new feature
 is added merely to increase release scope.
+
+## Automated PR review follow-up
+
+Six findings were reproduced and addressed before release: flag a silent declared
+speech interval; bind removal receipts to the published file revision; keep
+routing blockers separate from explicit external waits; reject whitespace or
+invalid UTF-8 delivery text on the board; preserve video conformance checks when
+only cover/copy/subtitle mappings or task metadata change; and expose indexed
+audio/image input kinds through arsenal search. Six targeted regressions cover
+these boundaries. Final full checks and the rebuilt ZIP supersede the initial
+238-test pass; no previous failure was removed from history.
+
+Final verification after review fixes:244 unit tests and the complete offline
+check pass. Read-only resume of both current private PlayMCP checkpoints succeeds
+with no file-pin problems; changed helper-source flags preserve the frozen plans
+rather than replanning them. No production was run.

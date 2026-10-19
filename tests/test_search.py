@@ -14,6 +14,12 @@ class ArsenalSearchTest(unittest.TestCase):
         self.assertEqual(p.returncode==0,ok,p.stderr)
         return json.loads(p.stdout) if ok else p
 
+    def test_review_modalities_audio_and_image_are_reachable_filters(self):
+        for modality in ['audio','image','video']:
+            rows=self.search('--task','media-review','--input',modality,'--evidence','any')['results']
+            self.assertIn('gemini-media-review',{row['id'] for row in rows})
+            self.assertTrue(all(not row['eligible_for_feature_planning'] for row in rows))
+
     def test_latest_research_is_discoverable_without_tested_promotion(self):
         for identity in ['openverse','awwwards-mcp','odyssey-world-models','genjutsu']:
             with self.subTest(tool=identity):

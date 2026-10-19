@@ -197,7 +197,8 @@ def main():
     tasks=sorted({t for row in facets['tools'].values() for t in row['tasks']})
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--task',choices=['all',*tasks],default='all')
-    parser.add_argument('--input',choices=sorted(runpy.run_path(str(BASE/'plan.py'))['DEFAULTS']))
+    input_kinds = set(runpy.run_path(str(BASE/'plan.py'))['DEFAULTS']) | {kind for row in facets['tools'].values() for kind in (row.get('inputs') or [])}
+    parser.add_argument('--input',choices=sorted(input_kinds))
     parser.add_argument('--style');parser.add_argument('--language');parser.add_argument('--rights',choices=['any','commercial','noncommercial'],default='any')
     parser.add_argument('--evidence',choices=['tested','documented','any'],default='documented')
     parser.add_argument('--feature',action='append',default=[]);parser.add_argument('--query',default='')

@@ -69,8 +69,9 @@ def append(data, subject, kind, result, actor, provenance, note, topic=None,
         if not url or (result == 'published' and visibility not in {'public','unlisted','private','unknown'}):
             raise ValueError('Publication requires URL and published observations require explicit visibility')
         if result == 'removed' and not any(r['kind']=='publication' and r['result']=='published' and
-                r['subject']==subject and r.get('url')==url for r in data['journal']):
-            raise ValueError('Record the prior supplied/observed publication before its removal')
+                r['subject']==subject and r.get('url')==url and
+                r['pins'].get(subject)==pin(data,subject) for r in data['journal']):
+            raise ValueError('Record publication of this exact retained revision before its removal')
         topic = url  # Different uploads must not silently replace one another.
     elif url or visibility:
         raise ValueError('URL/visibility belong only to publication observations')

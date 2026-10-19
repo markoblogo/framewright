@@ -46,6 +46,37 @@ class ProductionProjectTest(unittest.TestCase):
     def board(self):
         return json.loads(self.cli('board',self.project,'--json').stdout)
 
+    def test_board_rejects_whitespace_and_invalid_utf8_delivery_text(self):
+        spec=self.complete_fixture()
+        for role,suffix in [('title','.txt'),('description','.txt'),('subtitles','.srt')]:
+            f=self.root/(role+suffix);original=f.read_bytes()
+            for content in [b' \n\t ',b'valid prefix\xff']:
+                f.write_bytes(content);self.cli('retain',self.project,role,f,'--replace')
+                self.compose(spec,replace=True)
+                for kind,result in ({'technical':'pass'} if role=='subtitles' else {'creative':'accepted'}).items():
+                    self.observe('output:'+role,kind,result)
+                board=self.board()['variants']['main']
+                self.assertFalse(board['complete_local_handoff'])
+                self.assertTrue(any('text' in problem for problem in board['delivery'][role]['problems']))
+                self.cli('bundle',self.project,'main','--output',self.root/('invalid-'+role),ok=False)
+            f.write_bytes(original);self.cli('retain',self.project,role,f,'--replace')
+            self.compose(spec,replace=True)
+            for kind,result in ({'technical':'pass'} if role=='subtitles' else {'creative':'accepted'}).items():
+                self.observe('output:'+role,kind,result)
+
+    def test_delivery_metadata_and_task_changes_preserve_video_check(self):
+        spec=self.complete_fixture()
+        for role in ['thumbnail','subtitles','title','description']:
+            changed=copy.deepcopy(spec);changed['variants'][0]['delivery'][role]=None
+            self.compose(changed,replace=True)
+            self.assertEqual(self.board()['variants']['main']['delivery']['video']['problems'],[])
+            self.compose(spec,replace=True)
+            self.assertTrue(self.board()['variants']['main']['complete_local_handoff'])
+        self.cli('task',self.project,'copy-review','--label','Review updated copy')
+        spec['variants'][0]['tasks']=['copy-review'];self.compose(spec,replace=True)
+        self.assertEqual(self.board()['variants']['main']['delivery']['video']['problems'],[])
+        self.assertFalse(self.board()['variants']['main']['complete_local_handoff'])
+
     def test_one_catalogue_supplies_independent_main_and_short_edits_without_execution(self):
         self.compose(self.spec())
         before=self.project.read_bytes();board=self.board()

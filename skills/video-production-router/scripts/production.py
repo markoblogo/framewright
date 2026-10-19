@@ -146,7 +146,14 @@ def validate_stored(data):
     validate_spec(spec,data)
 
 
-def report(data,problems,observations):
+def nonempty_utf8(path):
+    has_text=False
+    with path.open(encoding='utf-8') as stream:
+        for line in stream:has_text=bool(line.strip()) or has_text
+    return has_text
+
+
+def report(data,problems,observations,root):
     if 'production' not in data:return None
     stored=data['production'];materials=index(stored['materials'],'materials');scenes=index(stored['scenes'],'scenes')
     material_view={}
@@ -203,6 +210,12 @@ def report(data,problems,observations):
                 if row['_pin'] and row['_pin']['bytes']<=0:slot['problems'].append('empty delivery file')
                 if row['_pin'] and Path(row['_pin']['path']).suffix.lower() not in EXTENSIONS[role]:
                     slot['problems'].append('unsupported filename extension for delivery role')
+                if role in {'subtitles','title','description'} and row['_pin'] and not material_view[identity]['problems']:
+                    try:
+                        if not nonempty_utf8(root/row['_pin']['path']):
+                            slot['problems'].append('empty delivery text')
+                    except (OSError, UnicodeError):
+                        slot['problems'].append('delivery text is not readable UTF-8')
                 if role=='video' and row.get('duration_seconds') is not None and abs(row['duration_seconds']-clock)>1/variant['canvas']['fps']:
                     slot['problems'].append('declared final duration differs from cut')
             issues.extend(role+': '+p for p in slot['problems']);slots[role]=slot
@@ -256,13 +269,15 @@ def variant_bases(production):
             used.add(identity)
             for parent in materials[identity].get('derived_from',[]):use(parent)
         use(variant['music'])
-        for identity in variant['delivery'].values():use(identity)
+        use(variant['delivery']['video'])
         for edit in variant['edits']:
             scene=scenes[edit['scene']];selected[scene['id']]=scene
             for identity in scene['materials']:use(identity)
             for claim in scene.get('claims',[]):use(claim['material'])
             use(edit['material']);use(edit.get('narration',scene['narration'])['material'])
-        result[variant['id']]=digest({'variant':variant,'scenes':selected,
+        video_variant={k:v for k,v in variant.items() if k not in {'tasks','delivery'}}
+        video_variant['delivery']={'video':variant['delivery']['video']}
+        result[variant['id']]=digest({'variant':video_variant,'scenes':selected,
                                      'materials':{k:materials[k] for k in sorted(used)}})
     return result
 
@@ -292,10 +307,7 @@ def build_bundle(data,view,variant_id,root,output,project_sha256,cell,draft=Fals
             if target.stat().st_size!=pin['bytes'] or h.hexdigest()!=pin['sha256']:
                 raise ValueError('Source changed during bundle copy: '+role)
             if role in {'subtitles','title','description'}:
-                has_text=False
-                with target.open(encoding='utf-8') as stream:
-                    for line in stream:has_text=bool(line.strip()) or has_text
-                if not has_text:raise ValueError('Empty delivery text: '+role)
+                if not nonempty_utf8(target):raise ValueError('Empty delivery text: '+role)
             files[role]={'name':name,'bytes':pin['bytes'],'sha256':pin['sha256'],
                          'material':identity,'subject':materials[identity]['subject']}
         # The manifest is the last completion marker; an interrupted export cannot claim completion.

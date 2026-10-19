@@ -180,3 +180,9 @@ script, separate main/Short edits and local delivery kit to the same project.
 missing takes/narration, rights and output checks. `bundle` collects existing finals
 and a review report, without completing tasks or uploading anything. Old projects
 without a composition remain readable and keep their previous behaviour.
+
+Publication removal requires a prior publication receipt for the same retained
+file revision and URL. Keep older published versions as distinct retained
+artifacts when replacing production files; a new file must not inherit an old
+publication or removal. Routing blockers remain in `blocked`; only explicit
+external parties/reasons appear in `waiting`.

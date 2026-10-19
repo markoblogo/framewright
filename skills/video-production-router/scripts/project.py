@@ -286,9 +286,9 @@ def summary(data, root):
     return {'project': data.get('project', {'goal': '', 'context': ''}), 'schema_version': data['schema_version'],
             'execution': 'not_started_by_project_cli', 'ready': ready,
             'next_actions': [{'id':i,'label':steps[i]['label']} for i in ready],
-            'waiting': {s['id']:{'party':s.get('waiting_for') or 'unspecified','reason':s['evidence']} for s in data['steps'] if s['state']=='blocked'},
+            'waiting': {s['id']:{'party':s['waiting_for'],'reason':s['evidence']} for s in data['steps'] if s['state']=='blocked' and s.get('waiting_for')},
             'observations': JOURNAL['project'](data,problems), 'evidence_blockers':gates,
-            'production': PRODUCTION['report'](data,problems,JOURNAL['project'](data,problems)),
+            'production': PRODUCTION['report'](data,problems,JOURNAL['project'](data,problems),root),
             'file_problems': problems, 'planning_sources_changed': data['planning_sources'] != planning_sources(),
             'recorded_done': [s['id'] for s in data['steps'] if s['state']=='done'],
             'blocked': {s['id']:s['unmet'] or s['evidence'] for s in data['steps'] if s['state']=='blocked'},
@@ -321,7 +321,7 @@ def main():
         if args.command=='bundle':
             with locked(path):
                 data=load(path);problems=file_problems(data,path.parent)
-                view=PRODUCTION['report'](data,problems,JOURNAL['project'](data,problems))
+                view=PRODUCTION['report'](data,problems,JOURNAL['project'](data,problems),path.parent)
                 if view is None:raise ValueError('No production composition')
                 print(json.dumps(PRODUCTION['build_bundle'](data,view,args.variant,path.parent,args.output,
                     hashlib.sha256(path.read_bytes()).hexdigest(),runpy.run_path(str(BASE/'packet.py'))['cell'],args.draft),indent=2))
