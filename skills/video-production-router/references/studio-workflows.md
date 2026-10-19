@@ -109,3 +109,37 @@ encoded mix. No private audio/catalogue/paths are uploaded to GitHub or cloud to
 
 Catalogue contract: [audio-library schema](audio-library.schema.json). The catalogue
 is a local index, not a portable licensed media collection or a backup of the audio.
+
+## Production handoff to another project
+
+For recurring videos belonging to another product, the default workflow is
+**sample → demos → feedback → reusable template → full handoff**. Framewright
+prepares the format; the receiving project owns its recurring production and
+publication. A supplied manual report is a sufficient pilot input: no live data
+connection, callback to Framewright or shared scheduler is required.
+
+1. Retain one authorised real sample, its source identity and selected claims.
+   Separate facts, draft narration, visual preferences and unknowns. Prototype
+   the requested variants from the same input; keep meaning and comparison bases.
+2. Obtain owner/partner feedback on actual demos. Freeze the chosen layout,
+   language, duration/reading limits, voice/music policy and delivery mode.
+   For multipart reports, use common scene modules for individual clips and an
+   aggregate; remove repeated openings/closings without losing section context.
+3. Transfer an editable template, input/output field contract, exact build and
+   preflight instructions, dependency versions, asset/voice rights, reference
+   examples and known limits. Provide readable fallback rules for absent values,
+   long labels and unsupported claims; never replace missing figures with zero.
+4. Validate reproduction inside the receiving project on another real sample,
+   including missing/unchanged/negative data and the accepted formats. Keep
+   technical QA, actual listening/viewing and editorial acceptance separate.
+   Handoff is planned until that reproduction is demonstrated.
+5. The receiving project implements its own source mapping, content selection,
+   rendering, checks, retry/idempotency policy, schedule and channel publication.
+   Production changes and first outbound publication need their own authorised
+   scope. A later Framewright-hosted production service is an explicit alternative,
+   not an implicit dependency of the template.
+
+This is a working method, not an implemented connector or automatic exporter.
+Use existing project checkpoints and revision-bound observations to record the
+sample, selected template, feedback and handoff evidence. Keep private source
+reports, account data, media and credentials outside the public repository.

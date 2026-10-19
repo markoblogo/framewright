@@ -31,6 +31,15 @@ unknown or failed diagnostic records: read their disposition/coverage. They are 
 promoted to usable providers. Low-quality Piper is excluded by default; use explicit
 `--tool piper` or `--include-fallbacks` to inspect it. It remains an explicit fallback.
 
+Openverse is a **tested manual SFX acquisition workflow** after the SSI pilot and
+owner acceptance on 2026-10-20. Find it with
+`python3 skills/video-production-router/scripts/search.py --task acquisition --tool openverse --evidence tested --format markdown`.
+Its tested scope covers discovery, per-item admission, download and manual montage
+use; it is indexed only under `acquisition`, not generic audio mixing/QA or music.
+It is not an automatic planner provider. Reuse retained effects first,
+preserve source/licence/attribution and check the final mix. Music discovery and
+automatic semantic placement remain untested. [Trial](../../../docs/experiments/ssi-logistics-illustrated.md).
+
 ## Compare proposed picture chains
 
 ```sh

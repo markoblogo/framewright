@@ -1,6 +1,6 @@
 # Proposed experiment queue
 
-Updated 2026-10-19. This is a task-led backlog, not permission for unattended tests,
+Updated 2026-10-20. This is a task-led backlog, not permission for unattended tests,
 installs, model downloads, spending, account grants or public media uploads.
 Use an owner-selected subject with authorised sources. Discuss the subject and bounded brief before
 each actual new-tool experiment. [Research](tool-research.md) ·
@@ -21,11 +21,11 @@ provider/model-flexible direction. No automatic experiment or paid run follows a
 
 ## New findings — assessed candidates,2026-10-19
 
-[Assessment and pass conditions](research-review-2026-10-19.md). These priorities are within the new batch;existing delayed/resource-gated trials keep their limits. Initial assessment installed/tested no tools; the later partial Awwwards trial is recorded separately above.
+[Assessment and pass conditions](research-review-2026-10-19.md). These priorities are within the new batch;existing delayed/resource-gated trials keep their limits. Initial assessment installed/tested no tools; the later partial Awwwards trial and completed Openverse SFX trial are recorded separately.
 
 | Priority | Candidate | Bounded next experiment |
 | --- | --- | --- |
-| P1 | [Openverse](https://api.openverse.org) | Missing-SFX search/admission/credits for up to three sound types in the PlayMCP review;verify live limits/providers and audible fit |
+| Completed / production SFX | [Openverse](https://api.openverse.org) | Owner accepted the successful SSI SFX trial on2026-10-20; tested search, per-item admission, download and manual montage use. Reuse retained effects; new assets still need licence/provenance and mix checks. [Evidence](experiments/ssi-logistics-illustrated.md) |
 | P2 | [Awwwards-mcp](https://github.com/INSANE0777/Awwwards-mcp) | One fixed-viewport PlayMCP page capture plus motion evidence;compare retained capture route,pin version,no self-update |
 | P3 / access-gated | [Odyssey worlds](https://odyssey.systems/introducing-odyssey-3) | Later10–15s virtual-set recording with one camera/object action;record model provenance and confirm export,use scope and budget first |
 | P4 / optional | [genjutsu cast](https://genjutsu.athevon.dev/docs/cast) | One5–8s replayable chapter/game card;qualify deterministic timeline and encoded motion. Full paint/bunshin excluded from immediate video queue |
