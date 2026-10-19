@@ -64,6 +64,7 @@ Search rights remain conditional;resume checks file pins and never executes prod
 share source/rights, facts, edit decisions and delivery gates. A private audio catalogue
 indexes owner-selected folders;[first2-track bank use](docs/workflows/private-music-bank.md)
 is recorded separately. A/B/C remain infrastructure only;no new A/B/C films or models tested.
+For another project’s recurring videos, use the [demo-to-template production handoff](skills/video-production-router/references/studio-workflows.md#production-handoff-to-another-project): validate the format here, then transfer production and publication ownership to that project.
 
 ## Games and game engines
 

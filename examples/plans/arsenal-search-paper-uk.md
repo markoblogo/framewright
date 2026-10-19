@@ -61,7 +61,7 @@ Component capabilities:
     "task does not match": 35,
     "style not indexed for this tool": 47,
     "input kind does not match or is unindexed": 37,
-    "task evidence below requested level": 34,
+    "task evidence below requested level": 33,
     "requested speech language not indexed at this evidence level": 46,
     "feature unavailable or below level: video-export": 41,
     "feature unavailable or below level: paper-cut-regroup": 47,

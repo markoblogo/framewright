@@ -30,13 +30,26 @@ class ArsenalSearchTest(unittest.TestCase):
             self.assertTrue(all(not row['eligible_for_feature_planning'] for row in rows))
 
     def test_latest_research_is_discoverable_without_tested_promotion(self):
-        for identity in ['openverse','awwwards-mcp','odyssey-world-models','genjutsu']:
+        for identity in ['awwwards-mcp','odyssey-world-models','genjutsu']:
             with self.subTest(tool=identity):
                 rows=self.search('--tool',identity,'--evidence','any')['results']
                 self.assertEqual([r['id'] for r in rows],[identity])
                 self.assertFalse(rows[0]['eligible_for_feature_planning'])
                 self.assertFalse(rows[0]['rights']['asset_clearance'])
                 self.assertEqual(self.search('--tool',identity,'--evidence','tested')['results'],[])
+
+    def test_openverse_sfx_is_tested_without_qualifying_music_or_asset_rights(self):
+        for task in ['audio','acquisition']:
+            with self.subTest(task=task):
+                rows=self.search('--tool','openverse','--task',task,'--evidence','tested')['results']
+                self.assertEqual([row['id'] for row in rows],['openverse'])
+                row=rows[0]
+                self.assertEqual(row['evidence'],'tested')
+                self.assertEqual(row['disposition'],'tested_scoped')
+                self.assertFalse(row['eligible_for_feature_planning'])
+                self.assertFalse(row['rights']['asset_clearance'])
+                self.assertFalse(row['rights']['publication_authorized'])
+        self.assertEqual(self.search('--tool','openverse','--task','music','--evidence','tested')['results'],[])
 
     def test_tesseract_conversion_is_discoverable_without_becoming_a_renderer(self):
         result = self.search('--task', 'editing', '--tool', 'tesseract-converter',

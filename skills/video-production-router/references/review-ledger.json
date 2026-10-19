@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -723,16 +723,17 @@
       "id": "openverse",
       "name": "Openverse",
       "url": "https://api.openverse.org",
-      "reviewed": "2026-10-19",
-      "review_basis": "Primary-source documentation review only;no installation,live production API call,asset download or render",
+      "reviewed": "2026-10-20",
+      "review_basis": "Bounded SSI live API/download/local mix/export trial plus explicit owner acceptance on 2026-10-20 for production SFX use",
       "upstream_revision": null,
-      "disposition": "candidate",
-      "scope_and_findings": "Primary API docs describe anonymous audio discovery and filters;root browse403,not a live search/runtime test. Supplied quota/inventory unqualified. Proposed P1 missing-SFX search/admission/credits trial;preserve per-item provenance and actual final credits.",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Production-usable, scoped to sound-effect discovery, per-item licence/provenance admission, download and manual montage placement. SSI pilot:3anonymous filtered searches HTTP200;3CC0 Freesound previews retained (721409bytes) with URLs, hashes and unchanged attribution; decoded and used under original instrumental scores in3local20s1080p30 videos. Full decode/faststart and sampled frames passed; audio -19.19/-19.11/-19.04LUFS, peak <=-2.11dBTP. On2026-10-20 owner explicitly declared the SFX tool experiment successful and approved tested-arsenal/production use. Partner template selection and per-video final listening remain separate. Sandfall is designed granular texture, not a grain recording. No automatic semantic placement, music-search trial, quota/inventory qualification, API key or paid call.",
       "licence_note": "API software docs/terms and per-result media licences separate;CC0/BY/PDM filters do not replace item checks.",
-      "next_trial_or_retest_condition": "A concrete missing-SFX need;verify providers/live headers,download cap and source terms before acquisition.",
+      "next_trial_or_retest_condition": "Use retained SFX and this tested workflow in production. For a new effect check item licence/source, preserve attribution and cap acquisition; review fit in the final mix. New providers/licence types/music discovery or automatic placement require their own evidence; no unchanged blanket retest.",
       "evidence": [
         "docs/research-intake-2026-10-19.md",
-        "docs/research-review-2026-10-19.md"
+        "docs/research-review-2026-10-19.md",
+        "docs/experiments/ssi-logistics-illustrated.md"
       ]
     },
     {
