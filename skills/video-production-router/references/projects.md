@@ -186,3 +186,8 @@ file revision and URL. Keep older published versions as distinct retained
 artifacts when replacing production files; a new file must not inherit an old
 publication or removal. Routing blockers remain in `blocked`; only explicit
 external parties/reasons appear in `waiting`.
+
+Replacing a retained output also reopens checks whose latest receipt pins that
+output through `--depends-on`, and their downstream tasks. Authoring tasks that
+do not require the replaced output remain done. A fresh scoped receipt is needed
+before the reopened check and delivery can be marked done again.

@@ -27,6 +27,35 @@ class LifecycleTest(unittest.TestCase):
     def status(self):
         return json.loads(self.cli('resume', self.project, '--json').stdout)
 
+    def test_repinned_receipt_dependency_reopens_linked_check_and_delivery(self):
+        self.cli('create',self.project,'--goal','Dependent QA','--note','Synthetic fixture')
+        files={}
+        for name in ['source','final']:
+            f=self.root/(name+'.txt');f.write_text('first '+name);files[name]=f
+            self.cli('asset',self.project,name,'--kind','video-export')
+            self.cli('retain',self.project,name,f)
+        self.cli('task',self.project,'author','--label','Author final','--requires','final')
+        self.cli('task',self.project,'check-final','--label','Check final','--requires','final',
+                 '--after','author','--check-kind','technical')
+        self.cli('task',self.project,'delivery','--label','Deliver','--after','check-final')
+        self.observe('output:final','technical','pass','--depends-on','output:source')
+        for step in ['author','check-final','delivery']:
+            self.cli('mark',self.project,step,'--state','done','--evidence','Fixture check')
+        self.assertTrue(self.status()['technical_handoff_recorded'])
+        files['source'].write_text('replacement source')
+        self.cli('retain',self.project,'source',files['source'],'--replace')
+        result=self.status();states={step['id']:step['state'] for step in self.data()['steps']}
+        self.assertEqual(states['author'],'done')
+        self.assertEqual(states['check-final'],'planned')
+        self.assertEqual(states['delivery'],'planned')
+        self.assertFalse(result['technical_handoff_recorded'])
+        self.assertIn('check-final',result['evidence_blockers'])
+        self.cli('mark',self.project,'check-final','--state','done','--evidence','No recheck',ok=False)
+        self.observe('output:final','technical','pass','--depends-on','output:source')
+        for step in ['check-final','delivery']:
+            self.cli('mark',self.project,step,'--state','done','--evidence','Rechecked fixture')
+        self.assertTrue(self.status()['technical_handoff_recorded'])
+
     def test_removal_cannot_be_attached_to_unpublished_replacement_bytes(self):
         self.cli('create',self.project,'--goal','Publication history','--note','Fixture')
         self.cli('asset',self.project,'film','--kind','video-export')

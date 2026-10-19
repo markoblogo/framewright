@@ -102,3 +102,7 @@ never infer asset clearance or an executable provider from a manual record.
 Run `python3 -m unittest discover -s tests -p test_search.py -q` and refresh retained
 CLI examples when diagnostics change. A stale index fails discovery closed rather
 than silently omitting tools. The full offline gate also checks the installed ZIP.
+
+An unindexed input kind (`null`) cannot satisfy an explicit `--input` filter.
+A review-only candidate may still be found without an input filter using
+`--evidence any`; that result is not a compatibility or production claim.

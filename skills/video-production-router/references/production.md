@@ -133,3 +133,8 @@ contain non-whitespace UTF-8 text. This checks text presence/encoding, not its
 meaning or subtitle timing. Changing only external cover/copy/subtitle mappings
 or attached task metadata does not reopen video conformance; actual cut, picture,
 audio or final-video changes do. Other delivery checks still apply independently.
+
+Catalogue origin, tags, licence basis and attribution are administrative fields:
+correcting them does not itself reopen video conformance. Rights/parent checks
+are recalculated independently and can still block the local kit. The conformance
+footprint retains media pins, kinds, duration, capture/disclosure and cut inputs.

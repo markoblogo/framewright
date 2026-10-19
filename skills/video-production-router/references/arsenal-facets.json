@@ -440,7 +440,7 @@
         "3d",
         "video"
       ],
-      "inputs": [],
+      "inputs": null,
       "rights_class": "unknown",
       "licence_note_sha256": "c85b2f640a788b41f265fb98441a53290b9c0fca88b5414045ba419659dfa742"
     },

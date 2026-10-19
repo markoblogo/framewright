@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.3.1 — 2026-10-19 — experimental
+
+- Reopen linked checks and downstream delivery after repinning a file used by a
+  receipt's `--depends-on`, even when the check does not directly require that file.
+- Keep attribution, origin, tags and rights administration out of video-conformance
+  hashes. Rights and lineage checks still gate the kit independently; media revision,
+  duration, capture/disclosure and cut changes remain conformance inputs.
+- Mark Odyssey inputs unindexed so explicit audio/image/video/source filters cannot
+  silently match the candidate. No new capability qualification or production run.
+- Add three public-CLI regressions with retained failing/passing evidence.
+
 ## 0.3.0 — 2026-10-19 — experimental
 
 - Save and resume schema-2 production projects with explicit goals/tasks/waits,

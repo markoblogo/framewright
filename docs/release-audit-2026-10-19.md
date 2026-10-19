@@ -78,3 +78,14 @@ Final verification after review fixes:244 unit tests and the complete offline
 check pass. Read-only resume of both current private PlayMCP checkpoints succeeds
 with no file-pin problems; changed helper-source flags preserve the frozen plans
 rather than replanning them. No production was run.
+
+## Post-release follow-up — 0.3.1
+
+Late automated feedback on PR37 identified three further boundary bugs: dependency
+repins left linked checks/delivery done; administrative catalogue edits reopened
+video conformance; and an empty Odyssey input list matched every input filter.
+Each was reproduced through the public CLI and fixed with a regression. The tests
+also retain unaffected authoring, rights-blocked kits and duration-change rechecks
+as controls. Odyssey input support remains unindexed. Retained historical release
+records are not rewritten;0.3.1 carries these corrections as a patch. Final broad
+verification and public package checks are recorded separately.
