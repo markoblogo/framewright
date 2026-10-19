@@ -46,6 +46,25 @@ class ProductionProjectTest(unittest.TestCase):
     def board(self):
         return json.loads(self.cli('board',self.project,'--json').stdout)
 
+    def test_material_admin_edits_do_not_reopen_video_but_rights_still_gate_kit(self):
+        spec=self.complete_fixture();clip=spec['materials'][0]
+        clip['origin']='Corrected source credit';clip['tags']=['reviewed']
+        clip['rights']['status']='licensed';clip['rights']['basis']='Retained fixture licence'
+        clip['rights']['attribution']='Corrected author credit'
+        self.compose(spec,replace=True)
+        board=self.board()
+        self.assertEqual(board['variants']['main']['delivery']['video']['problems'],[])
+        self.assertTrue(board['variants']['main']['complete_local_handoff'])
+        self.assertEqual(board['materials']['clip']['rights']['attribution'],'Corrected author credit')
+        clip['rights']['status']='unknown';clip['rights']['restrictions']=['Confirm reuse permission']
+        self.compose(spec,replace=True);main=self.board()['variants']['main']
+        self.assertEqual(main['delivery']['video']['problems'],[])
+        self.assertFalse(main['complete_local_handoff'])
+        self.assertTrue(any('rights unresolved' in problem for problem in main['blockers']))
+        clip['duration_seconds']=9
+        self.compose(spec,replace=True)
+        self.assertIn('technical: no current pass receipt',self.board()['variants']['main']['delivery']['video']['problems'])
+
     def test_board_rejects_whitespace_and_invalid_utf8_delivery_text(self):
         spec=self.complete_fixture()
         for role,suffix in [('title','.txt'),('description','.txt'),('subtitles','.srt')]:

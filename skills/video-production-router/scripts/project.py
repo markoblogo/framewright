@@ -225,6 +225,8 @@ def retain(data, root, identity, path, is_input, replace):
     else:
         invalidate(data, [s['id'] for s in data['steps'] if identity in s['required_outputs']])
         data['artifacts'][identity]['file'] = record
+        # Receipts can depend on outputs that their check tasks do not directly require.
+        invalidate(data, list(evidence_blockers(data, file_problems(data, root))))
     event(data, 'retain_input' if is_input else 'retain_output', identity=identity,
           previous=previous, retained=record)
 

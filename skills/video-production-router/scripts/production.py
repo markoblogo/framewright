@@ -260,7 +260,7 @@ def markdown(view,cell):
 
 
 def variant_bases(production):
-    """Conservative footprint hashes; unused catalogue additions do not alter a cut."""
+    """Hash media/cut conformance independently of catalogue administration."""
     materials=index(production['materials'],'materials');scenes=index(production['scenes'],'scenes');result={}
     for variant in production['variants']:
         used=set();selected={}
@@ -278,7 +278,9 @@ def variant_bases(production):
         video_variant={k:v for k,v in variant.items() if k not in {'tasks','delivery'}}
         video_variant['delivery']={'video':variant['delivery']['video']}
         result[variant['id']]=digest({'variant':video_variant,'scenes':selected,
-                                     'materials':{k:materials[k] for k in sorted(used)}})
+                                     'materials':{k:{field:value for field,value in materials[k].items()
+                                         if field in {'kind','subject','_pin','duration_seconds','capture_mode','disclosure'}}
+                                                  for k in sorted(used)}})
     return result
 
 

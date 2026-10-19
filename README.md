@@ -2,7 +2,7 @@
 
 ![Framewright — craft the cut, keep the evidence](assets/framewright-cover.png)
 
-[![Version: 0.3.0](https://img.shields.io/badge/version-0.3.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.3.0)
+[![Version: 0.3.1](https://img.shields.io/badge/version-0.3.1-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.3.1)
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](docs/router-evaluation.md)
 [![Planning evidence: scoped](https://img.shields.io/badge/planning__evidence-scoped-526C73?style=flat-square)](docs/router-evaluation.md)

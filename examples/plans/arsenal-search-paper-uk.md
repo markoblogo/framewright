@@ -60,7 +60,7 @@ Component capabilities:
   "excluded_summary": {
     "task does not match": 35,
     "style not indexed for this tool": 47,
-    "input kind does not match or is unindexed": 36,
+    "input kind does not match or is unindexed": 37,
     "task evidence below requested level": 34,
     "requested speech language not indexed at this evidence level": 46,
     "feature unavailable or below level: video-export": 41,

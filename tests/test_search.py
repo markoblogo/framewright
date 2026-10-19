@@ -14,6 +14,15 @@ class ArsenalSearchTest(unittest.TestCase):
         self.assertEqual(p.returncode==0,ok,p.stderr)
         return json.loads(p.stdout) if ok else p
 
+    def test_unindexed_world_candidate_does_not_match_explicit_input_modalities(self):
+        rows=self.search('--task','video','--tool','odyssey-world-models','--evidence','any')['results']
+        self.assertEqual([row['id'] for row in rows],['odyssey-world-models'])
+        for kind in ['audio','image','video','book-art']:
+            result=self.search('--task','video','--tool','odyssey-world-models','--input',kind,'--evidence','any','--explain')
+            self.assertEqual(result['results'],[])
+            self.assertTrue(any(row['id']=='odyssey-world-models' and
+                'input kind does not match or is unindexed' in row['reasons'] for row in result['excluded']))
+
     def test_review_modalities_audio_and_image_are_reachable_filters(self):
         for modality in ['audio','image','video']:
             rows=self.search('--task','media-review','--input',modality,'--evidence','any')['results']
