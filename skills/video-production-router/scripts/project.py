@@ -11,6 +11,8 @@ import runpy
 import tempfile
 
 BASE = Path(__file__).resolve().parent
+JOURNAL = runpy.run_path(str(BASE / "journal.py"))
+PRODUCTION = runpy.run_path(str(BASE / "production.py"))
 
 
 def digest(value):
@@ -34,7 +36,7 @@ def file_record(path, root):
 
 
 def planning_sources():
-    paths = [BASE / name for name in ['plan.py', 'music.py', 'terms.py', 'workflow.py']]
+    paths = [BASE / name for name in ['plan.py', 'music.py', 'terms.py', 'workflow.py', 'project.py', 'journal.py', 'packet.py', 'production.py']]
     paths.append(BASE.parent / 'references/tools.json')
     return {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 
@@ -115,7 +117,7 @@ def initial(brief):
                               2 if s['id'].startswith(('qa:scene:', 'listen:')) else
                               3 if s['id']=='assembly' else 4 if s['id']=='qa:final-video' else
                               5 if s['id'] in ['listen:final-video','delivery-materials','qa:delivery-materials'] else 6 if s['id']=='delivery' else 7))
-    data = {'schema_version': 1, 'brief': brief, 'plan': plan, 'plan_sha256': digest(plan), 'brief_sha256': digest(brief), 'packet_sha256': digest(packet),
+    data = {'schema_version': 2, 'project': {'goal': '', 'context': ''}, 'journal': [], 'journal_sha256': digest([]), 'brief': brief, 'plan': plan, 'plan_sha256': digest(plan), 'brief_sha256': digest(brief), 'packet_sha256': digest(packet),
             'production_packet': packet, 'planning_sources': planning_sources(),
             'steps': steps, 'inputs': {}, 'artifacts': outputs, 'history': []}
     event(data, 'init', note='Offline plan frozen; no production or QA performed')
@@ -124,9 +126,12 @@ def initial(brief):
 
 def load(path):
     data = json.loads(path.read_text())
-    if (data.get('schema_version') != 1 or digest(data['plan']) != data['plan_sha256'] or
+    if (data.get('schema_version') not in {1, 2} or digest(data['plan']) != data['plan_sha256'] or
             digest(data['brief']) != data['brief_sha256'] or digest(data['production_packet']) != data['packet_sha256']):
         raise ValueError('Unsupported/corrupted project or changed frozen plan; keep the original checkpoint')
+    if data['schema_version']==2:
+        JOURNAL['validate'](data)
+        PRODUCTION['validate_stored'](data)
     return data
 
 
@@ -145,6 +150,10 @@ def locked(path):
 
 def save(path, data):
     # Same-directory rename keeps the old complete checkpoint until the new one is flushed.
+    if data['schema_version']==2:
+        data['journal_sha256']=digest(data['journal'])
+        JOURNAL['validate'](data)
+        PRODUCTION['validate_stored'](data)
     temporary = None
     try:
         with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=path.parent,
@@ -184,6 +193,8 @@ def invalidate(data, roots):
     old = []
     for step in data['steps']:
         if step['id'] in affected:
+            if step['state']=='blocked' and step.get('waiting_for'):
+                continue  # File/receipt changes never silently remove an explicit wait.
             target = 'blocked' if step['unmet'] else 'planned'
             if step['state'] != target or step['evidence']:
                 old.append(dict(step))
@@ -218,6 +229,29 @@ def retain(data, root, identity, path, is_input, replace):
           previous=previous, retained=record)
 
 
+def check_kind(step):
+    return step.get('check_kind') or ('technical' if step['id'].startswith('qa:') else
+            'listening' if step['id'].startswith('listen:') else
+            'creative' if step['id']=='owner-review' else None)
+
+
+def evidence_blockers(data, problems):
+    view=JOURNAL['project'](data,problems)
+    latest={(r['subject'],r['kind'],r['topic']):r['id'] for r in data.get('journal',[])}
+    blockers={}
+    for step in data['steps']:
+        kind=check_kind(step)
+        subjects={'output:'+f for f in step['required_outputs']}
+        if step['id']=='owner-review' and 'final-video' in data['artifacts']:
+            subjects.add('output:final-video')
+        for row in [*view['effective'],*view['stale']]:
+            if row['id']!=latest[(row['subject'],row['kind'],row['topic'])]:continue
+            if row['kind']==kind and row['subject'] in subjects and (row['stale_reasons'] or row['result'] in {'fail','rejected','pending'}):
+                blockers.setdefault(step['id'],[]).append({'entry':row['id'],'result':row['result'],
+                    'reason':'stale evidence' if row['stale_reasons'] else 'unresolved observation'})
+    return blockers
+
+
 def mark(data, root, identity, state, evidence):
     steps = {s['id']:s for s in data['steps']}
     if identity not in steps:
@@ -228,6 +262,8 @@ def mark(data, root, identity, state, evidence):
     if state != 'blocked' and step['unmet']:
         raise ValueError('Frozen plan has unmet requirements; create a revised project, do not override')
     if state == 'done':
+        if evidence_blockers(data,file_problems(data,root)).get(identity):
+            raise ValueError('Current rejected, failed, pending or stale evidence blocks this check; record the actual resolution first')
         if file_problems(data, root):
             raise ValueError('Retained evidence changed/missing; inspect status before continuing')
         if any(steps[d]['state'] != 'done' for d in step['depends_on']):
@@ -244,13 +280,19 @@ def mark(data, root, identity, state, evidence):
 def summary(data, root):
     steps = {s['id']:s for s in data['steps']}
     problems = file_problems(data, root)
-    ready = [s['id'] for s in data['steps'] if s['state']=='planned' and
+    gates=evidence_blockers(data,problems)
+    ready = [s['id'] for s in data['steps'] if s['state']=='planned' and s['id'] not in gates and
              all(steps[d]['state']=='done' for d in s['depends_on'])] if not problems else []
-    return {'execution': 'not_started_by_project_cli', 'ready': ready,
+    return {'project': data.get('project', {'goal': '', 'context': ''}), 'schema_version': data['schema_version'],
+            'execution': 'not_started_by_project_cli', 'ready': ready,
+            'next_actions': [{'id':i,'label':steps[i]['label']} for i in ready],
+            'waiting': {s['id']:{'party':s.get('waiting_for') or 'unspecified','reason':s['evidence']} for s in data['steps'] if s['state']=='blocked'},
+            'observations': JOURNAL['project'](data,problems), 'evidence_blockers':gates,
+            'production': PRODUCTION['report'](data,problems,JOURNAL['project'](data,problems)),
             'file_problems': problems, 'planning_sources_changed': data['planning_sources'] != planning_sources(),
             'recorded_done': [s['id'] for s in data['steps'] if s['state']=='done'],
             'blocked': {s['id']:s['unmet'] or s['evidence'] for s in data['steps'] if s['state']=='blocked'},
-            'technical_handoff_recorded': steps['delivery']['state']=='done' and not problems,
+            'technical_handoff_recorded': steps.get('delivery',{}).get('state')=='done' and not problems,
             'outputs': {k:v['file'] is not None for k,v in data['artifacts'].items()},
             'note': 'Done means operator-recorded, not independently verified. Frozen plan is retained; no automatic replan.'}
 
@@ -263,34 +305,143 @@ def main():
     packet = commands.add_parser('packet');packet.add_argument('project',type=Path)
     pin = commands.add_parser('retain');pin.add_argument('project',type=Path);pin.add_argument('identity');pin.add_argument('file',type=Path);pin.add_argument('--input',action='store_true');pin.add_argument('--replace',action='store_true')
     update = commands.add_parser('mark');update.add_argument('project',type=Path);update.add_argument('step');update.add_argument('--state',choices=['planned','blocked','done'],required=True);update.add_argument('--evidence',default='')
+    migrate = commands.add_parser('migrate');migrate.add_argument('project',type=Path)
+    describe = commands.add_parser('describe');describe.add_argument('project',type=Path);describe.add_argument('--goal',required=True);describe.add_argument('--note',required=True)
+    create = commands.add_parser('create');create.add_argument('project',type=Path);create.add_argument('--goal',required=True);create.add_argument('--note',required=True)
+    asset = commands.add_parser('asset');asset.add_argument('project',type=Path);asset.add_argument('identity');asset.add_argument('--kind',required=True)
+    task = commands.add_parser('task');task.add_argument('project',type=Path);task.add_argument('identity');task.add_argument('--label',required=True);task.add_argument('--after',action='append',default=[]);task.add_argument('--requires',action='append',default=[]);task.add_argument('--waiting-for');task.add_argument('--note',default='');task.add_argument('--check-kind',choices=['technical','listening','creative','provider','publication'])
+    observe = commands.add_parser('observe');observe.add_argument('project',type=Path);observe.add_argument('subject');observe.add_argument('--kind',choices=JOURNAL['RESULTS'],required=True);observe.add_argument('--result',required=True);observe.add_argument('--actor',required=True);observe.add_argument('--provenance',choices=sorted(JOURNAL['PROVENANCE']),required=True);observe.add_argument('--note',required=True);observe.add_argument('--topic');observe.add_argument('--depends-on',action='append',default=[]);observe.add_argument('--url');observe.add_argument('--visibility',choices=['public','unlisted','private','unknown']);observe.add_argument('--observed-at')
+    log = commands.add_parser('journal');log.add_argument('project',type=Path);log.add_argument('--json',action='store_true')
+    compose = commands.add_parser('compose');compose.add_argument('project',type=Path);compose.add_argument('spec',type=Path);compose.add_argument('--replace',action='store_true')
+    board = commands.add_parser('board');board.add_argument('project',type=Path);board.add_argument('--json',action='store_true')
+    bundle = commands.add_parser('bundle');bundle.add_argument('project',type=Path);bundle.add_argument('variant');bundle.add_argument('--output',type=Path,required=True);bundle.add_argument('--draft',action='store_true')
     args = parser.parse_args()
     try:
         path = args.project.resolve()
-        if args.command in {'status','resume','packet'}:
+        if args.command=='bundle':
+            with locked(path):
+                data=load(path);problems=file_problems(data,path.parent)
+                view=PRODUCTION['report'](data,problems,JOURNAL['project'](data,problems))
+                if view is None:raise ValueError('No production composition')
+                print(json.dumps(PRODUCTION['build_bundle'](data,view,args.variant,path.parent,args.output,
+                    hashlib.sha256(path.read_bytes()).hexdigest(),runpy.run_path(str(BASE/'packet.py'))['cell'],args.draft),indent=2))
+            return
+        if args.command in {'status','resume','packet','journal','board'}:
             data = load(path)
             if args.command=='packet':
                 print(data['production_packet'],end='');return
+            if args.command=='journal':
+                print(json.dumps({'observations':data.get('journal',[]),'history':data['history']},indent=2));return
             result = summary(data,path.parent)
+            if args.command=='board':
+                if result['production'] is None:raise ValueError('No composition; use compose first')
+                if args.json:print(json.dumps(result['production'],indent=2))
+                else:print(PRODUCTION['markdown'](result['production'],runpy.run_path(str(BASE/'packet.py'))['cell']),end='')
+                return
             if args.json:
                 print(json.dumps(result,indent=2));return
             print('Production checkpoint — manual records; no work executed by this command')
+            print('Goal:',result['project']['goal'] or 'not recorded')
+            print('Waiting:',json.dumps(result['waiting']))
+            for row in result['observations']['effective']:
+                print('Observation:',row['id'],row['subject'],row['kind'],row['result'],'—',row['note'])
+            if result['observations']['stale']:print('Stale observations:',len(result['observations']['stale']))
             print('Recorded done:',len(result['recorded_done']), '/', len(data['steps']))
             print('Ready to continue:',', '.join(result['ready'][:5]) or 'none')
             if len(result['ready'])>5:print('Additional ready steps:',len(result['ready'])-5)
             print('File problems:',json.dumps(result['file_problems']))
             print('Blocked:',json.dumps(result['blocked']))
+            if result['evidence_blockers']:print('Evidence blockers:',json.dumps(result['evidence_blockers']))
             if result['planning_sources_changed']:print('Planning sources changed; review the frozen plan. It was not recalculated.')
+            if result['production']:
+                print('Variants:',json.dumps({k:{'complete_local_handoff':v['complete_local_handoff'],'remaining':len(v['blockers'])} for k,v in result['production']['variants'].items()}))
             print('Output IDs:',', '.join(result['outputs']))
             return
         if not path.parent.is_dir():
             raise ValueError('Create the project parent directory explicitly first')
         with locked(path):
-            if args.command=='init':
+            if args.command=='create':
+                if path.exists():raise ValueError('Project already exists; refusing to overwrite')
+                if not args.goal.strip() or not args.note.strip():raise ValueError('Goal and note must be nonempty')
+                brief={'blocks':[]};plan={'mode':'manual_production','execution':'not_started','blocks':[]};packet='Manual production project; no tool plan or capability qualification inferred.\n'
+                data={'schema_version':2,'project':{'goal':args.goal,'context':args.note},'journal':[],
+                      'brief':brief,'plan':plan,'brief_sha256':digest(brief),'plan_sha256':digest(plan),
+                      'production_packet':packet,'packet_sha256':digest(packet),'planning_sources':planning_sources(),
+                      'steps':[],'inputs':{},'artifacts':{},'history':[]}
+                event(data,'create',note='Manual project, no production or QA performed')
+            elif args.command=='init':
                 if path.exists():raise ValueError('Project already exists; refusing to overwrite')
                 data = initial(json.loads(args.brief.read_text()))
             else:
                 data = load(path)
-                if args.command=='retain':retain(data,path.parent,args.identity,args.file,args.input,args.replace)
+                if args.command in {'asset','task','observe','compose'} and data['schema_version']!=2:
+                    raise ValueError('Run migrate explicitly before using project memory')
+                if args.command=='compose':
+                    compiled=PRODUCTION['compile_project'](data,json.loads(args.spec.read_text()))
+                    if data.get('production')==compiled:
+                        print('Composition unchanged');return
+                    if 'production' in data and not args.replace:raise ValueError('Existing composition differs; inspect and use --replace explicitly')
+                    previous=data.get('production')
+                    data['production']=compiled;data['production_sha256']=PRODUCTION['digest'](compiled)
+                    event(data,'compose',previous=previous,production_sha256=data['production_sha256'])
+                    old_bases=PRODUCTION['variant_bases'](previous) if previous else {}
+                    new_bases=PRODUCTION['variant_bases'](compiled)
+                    recheck={}
+                    mats={m['id']:m for m in compiled['materials']}
+                    for variant in compiled['variants']:
+                        video=variant['delivery']['video']
+                        if old_bases.get(variant['id'])!=new_bases[variant['id']] and video is not None and mats[video]['_pin'] is not None:
+                            recheck.setdefault(mats[video]['subject'],[]).append(variant['id'])
+                    for subject,variants in recheck.items():
+                        row=JOURNAL['append'](data,subject,'technical','pending','project_cli','administrative_change',
+                            'Cut/composition changed; check final video conformance for '+', '.join(variants)+'. No media QA performed by CLI.')
+                        event(data,'composition_recheck',entry=row['id'],variants=variants)
+                    invalidate(data,list(evidence_blockers(data,file_problems(data,path.parent))))
+                elif args.command=='asset':
+                    if not args.identity.strip() or not args.kind.strip() or args.identity in data['artifacts']:
+                        raise ValueError('Use a new nonempty artifact ID/kind')
+                    data['artifacts'][args.identity]={'kind':args.kind,'scene':None,'file':None}
+                    event(data,'declare_artifact',identity=args.identity,kind=args.kind)
+                elif args.command=='task':
+                    steps={s['id']:s for s in data['steps']}
+                    if not args.identity.strip() or not args.label.strip() or args.identity in steps:
+                        raise ValueError('Use a new nonempty task ID/label')
+                    if any(d not in steps for d in args.after) or any(a not in data['artifacts'] for a in args.requires):
+                        raise ValueError('Task dependencies and output IDs must already exist')
+                    if args.check_kind and not args.requires:raise ValueError('A check task requires at least one declared artifact')
+                    if args.waiting_for is not None and (not args.waiting_for.strip() or not args.note.strip()):
+                        raise ValueError('Waiting requires a party and reason')
+                    data['steps'].append({'id':args.identity,'label':args.label,'depends_on':list(dict.fromkeys(args.after)),
+                        'required_outputs':list(dict.fromkeys(args.requires)),'unmet':[],'state':'blocked' if args.waiting_for else 'planned',
+                        'evidence':args.note,'waiting_for':args.waiting_for,'check_kind':args.check_kind,'optional':False,
+                        'attestation':'operator_recorded_not_independently_verified'})
+                    event(data,'add_task',step=args.identity)
+                elif args.command=='observe':
+                    # An observation of changed/missing bytes cannot claim to describe the retained revision.
+                    targets=[args.subject,*args.depends_on]
+                    if any(t in file_problems(data,path.parent) for t in targets):
+                        raise ValueError('Observation files changed/missing; explicitly retain the intended revision first')
+                    row=JOURNAL['append'](data,args.subject,args.kind,args.result,args.actor,args.provenance,args.note,
+                        args.topic,args.depends_on,args.url,args.visibility,args.observed_at)
+                    if row['result'] in {'fail','rejected','pending'}:
+                        blocked=evidence_blockers(data,file_problems(data,path.parent))
+                        invalidate(data,list(blocked))
+                    event(data,'observe',entry=row['id'])
+                elif args.command=='migrate':
+                    if data['schema_version']==2:
+                        print('Already schema version 2; unchanged');return
+                    backup = Path(str(path) + '.v1.bak')
+                    with os.fdopen(os.open(backup,os.O_WRONLY|os.O_CREAT|os.O_EXCL,0o600),'wb') as stream:
+                        stream.write(path.read_bytes());stream.flush();os.fsync(stream.fileno())
+                    data.update(schema_version=2, project={'goal':'','context':''}, journal=[])
+                    event(data,'migrate',from_version=1,backup=backup.name)
+                elif args.command=='describe':
+                    if data['schema_version']!=2:raise ValueError('Run migrate explicitly before using project memory')
+                    if not args.goal.strip() or not args.note.strip():raise ValueError('Goal and note must be nonempty')
+                    previous=dict(data['project'])
+                    data['project']={'goal':args.goal,'context':args.note}
+                    event(data,'describe',previous=previous,project=data['project'])
+                elif args.command=='retain':retain(data,path.parent,args.identity,args.file,args.input,args.replace)
                 else:mark(data,path.parent,args.step,args.state,args.evidence)
             save(path,data)
         print('Saved checkpoint:',path)

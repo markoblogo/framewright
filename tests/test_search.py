@@ -14,6 +14,29 @@ class ArsenalSearchTest(unittest.TestCase):
         self.assertEqual(p.returncode==0,ok,p.stderr)
         return json.loads(p.stdout) if ok else p
 
+    def test_latest_research_is_discoverable_without_tested_promotion(self):
+        for identity in ['openverse','awwwards-mcp','odyssey-world-models','genjutsu']:
+            with self.subTest(tool=identity):
+                rows=self.search('--tool',identity,'--evidence','any')['results']
+                self.assertEqual([r['id'] for r in rows],[identity])
+                self.assertFalse(rows[0]['eligible_for_feature_planning'])
+                self.assertFalse(rows[0]['rights']['asset_clearance'])
+                self.assertEqual(self.search('--tool',identity,'--evidence','tested')['results'],[])
+
+    def test_tesseract_conversion_is_discoverable_without_becoming_a_renderer(self):
+        result = self.search('--task', 'editing', '--tool', 'tesseract-converter',
+                             '--input', 'source-project', '--rights', 'commercial',
+                             '--evidence', 'tested')
+        self.assertEqual([r['id'] for r in result['results']], ['tesseract-converter'])
+        row = result['results'][0]
+        self.assertFalse(row['eligible_for_feature_planning'])
+        self.assertFalse(row['rights']['asset_clearance'])
+        self.assertTrue(row['rights']['classification_matches_retained_note'])
+        self.assertIn('Native editor playback/export unverified', ' '.join(row['limits']))
+        rendered = self.search('--task', 'video', '--tool', 'tesseract-converter',
+                               '--feature', 'video-export', '--evidence', 'tested')
+        self.assertEqual(rendered['results'], [])
+
     def test_ukrainian_voice_discovery_keeps_scope_and_excludes_low_quality_default(self):
         r=self.search('--task','narration','--language','uk','--evidence','tested','--rights','commercial')
         ids=[x['id'] for x in r['results']]
@@ -124,7 +147,14 @@ class ArsenalSearchTest(unittest.TestCase):
         r=self.search('--task','editing','--input','book-art','--evidence','tested')
         self.assertNotIn('moviepy',[x['id'] for x in r['results']])
         r=self.search('--task','transcription','--evidence','tested')
-        self.assertEqual(r['results'],[])
+        self.assertEqual([x['id'] for x in r['results']], ['mlx-whisper'])
+        self.assertFalse(r['results'][0]['eligible_for_feature_planning'])
+        self.assertIn('No general ASR/lyric alignment qualification', ' '.join(r['results'][0]['limits']))
+        for candidate in ['parakeet-mlx', 'whisperx', 'whisper']:
+            self.assertEqual(self.search('--task', 'transcription', '--tool', candidate,
+                                         '--evidence', 'tested')['results'], [])
+        self.assertEqual(self.search('--task', 'transcription', '--language', 'uk',
+                                     '--evidence', 'tested')['results'], [])
         candidates=self.search('--task','transcription','--evidence','any')
         self.assertEqual({x['id'] for x in candidates['results']},{'mlx-whisper','parakeet-mlx','whisperx','whisper'})
         self.assertTrue(all(not x['eligible_for_feature_planning'] for x in candidates['results']))

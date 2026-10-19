@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-17",
+  "updated": "2026-10-19",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -12,15 +12,17 @@
       "id": "hyperframes",
       "name": "Hyperframes",
       "url": "https://github.com/heygen-com/hyperframes",
-      "reviewed": "2026-10-15",
-      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "reviewed": "2026-10-19",
+      "review_basis": "Prior delivered pilots plus scoped0.8.174 Jekyll book-promo final57s1080p30 render and encoded technical QA; owner accepted source preview.",
       "upstream_revision": null,
       "disposition": "supported_scoped",
-      "scope_and_findings": "HTML rendering used in delivered pilots; only recorded formats/effects qualified.",
+      "scope_and_findings": "Six-scene HTML film with local video,real owner TP/offline EN mix,actual cover,UCSUR glyph mapping,separate native thumbnail. Source lint/runtime/layout22contrast pass;1710 encoded frames/full decode,23 scene/cut samples,seven subtitle cues,zero-lag audio correlation checked. Screenshot capture/hardware GPU/two workers. Copied third-party HTML outside composition scanning. Exact internal-footer correction retained;27 motion-helper hints not a clean motion score. No new encoded-owner listening or broad model-quality claim.",
       "licence_note": "Apache-2.0",
       "next_trial_or_retest_condition": "Existing tool profile and experiment records; no blanket retest.",
       "evidence": [
-        "skills/video-production-router/references/tools.json"
+        "skills/video-production-router/references/tools.json",
+        "docs/experiments/jekyll-toki-pona.md",
+        "experiments/2026-10-19/evidence/jekyll-book-promo.json"
       ]
     },
     {
@@ -56,7 +58,7 @@
       "disposition": "candidate",
       "scope_and_findings": "Automatic timeline cuts by audio loudness/motion; not semantic judgement of which words can be removed.",
       "licence_note": "Unlicense; packaged artefacts may differ",
-      "next_trial_or_retest_condition": "Authorised60\u201390s spoken sample; label pauses first, protect phrase edges, check edit list and sync.",
+      "next_trial_or_retest_condition": "Authorised60–90s spoken sample; label pauses first, protect phrase edges, check edit list and sync.",
       "evidence": [
         "docs/tool-research.md"
       ],
@@ -232,7 +234,7 @@
       "disposition": "candidate",
       "scope_and_findings": "Speaker diarization/embeddings. Anonymous speaker clusters are not verified real-person identity.",
       "licence_note": "MIT code; model/provider terms separate",
-      "next_trial_or_retest_condition": "Two-speaker20\u201330s sample with manual turns/overlap; inspect model conditions, token/telemetry and local-vs-premium route first.",
+      "next_trial_or_retest_condition": "Two-speaker20–30s sample with manual turns/overlap; inspect model conditions, token/telemetry and local-vs-premium route first.",
       "evidence": [
         "docs/tool-research.md"
       ]
@@ -241,15 +243,16 @@
       "id": "mlx-whisper",
       "name": "mlx-whisper",
       "url": "https://github.com/ml-explore/mlx-examples",
-      "reviewed": "2026-10-15",
-      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "reviewed": "2026-10-18",
+      "review_basis": "observed local23s clean Supertonic EN trial,mlx-whisper0.4.3,tiny.en exact weights pinned",
       "upstream_revision": "796f5b53cab69a3d48a44233ce21aae889e94a08",
-      "disposition": "candidate",
-      "scope_and_findings": "MLX Whisper speech transcription; word timing is an estimate, not proven lyric alignment. Exact path is whisper/README.md.",
+      "disposition": "supported_scoped",
+      "scope_and_findings": "23s clean EN word timestamps; raw2 substitutions/35words and one zero-duration interval; known-script correction required.23.60s,242267878B MLX peak allocation,1GiB cap. No general ASR/lyric alignment qualification.",
       "licence_note": "MIT code; inspect selected weights",
-      "next_trial_or_retest_condition": "Same10\u201315s EN narration and known transcript as Parakeet/WhisperX; errors, timing and real resource use. Singing separately.",
+      "next_trial_or_retest_condition": "New speaker/language/noise or larger model is a new bounded trial; do not repeat this unchanged clean tiny.en probe.",
       "evidence": [
-        "docs/tool-research.md"
+        "experiments/2026-10-18/sirtet-videos.md",
+        "experiments/2026-10-18/evidence/sirtet-videos.json"
       ]
     },
     {
@@ -277,7 +280,7 @@
       "disposition": "candidate",
       "scope_and_findings": "Documented Agent Skills/Codex path, sampled frames plus transcript; this is not proof of continuous video/audio understanding.",
       "licence_note": "MIT code; providers/models independent",
-      "next_trial_or_retest_condition": "Existing local10\u201315s owned MP4; inspect planned paths/dependencies/cloud fallback first. Compare known visual events and transcript, no automatic installs/uploads.",
+      "next_trial_or_retest_condition": "Existing local10–15s owned MP4; inspect planned paths/dependencies/cloud fallback first. Compare known visual events and transcript, no automatic installs/uploads.",
       "evidence": [
         "docs/tool-research.md"
       ]
@@ -567,7 +570,7 @@
       "review_basis": "Official model/license,SDKAPI/pins and bounded two-preset local audio probe",
       "upstream_revision": "model3cadd1ee6394adea1bd021217a0e650ede09a323;SDK1.3.1",
       "disposition": "owner_accepted_scoped_voice",
-      "scope_and_findings": "M1/F1 same23-word UK text,12.19s each. Owner:usable,much better than Tetiana;fewer/shorter pauses,2\u20133 stress errors,good intonation. Slight subjectiveF1 preference. Recommended among tested UK voices;not general long-form quality. Full24s F1 LCD film integrated:accepted intro reused,new title/CTA measured,encoded QA passed;final owner listening pending. EnglishF1:opening microprobe followed by five-line32s Contract Execution Officer integration;technical QA recorded separately. Owner accepted EnglishF1 in this film:good,natural-sounding,synthetic origin not obvious. This is one subjective script/voice assessment,not a general English quality score.",
+      "scope_and_findings": "M1/F1 same23-word UK text,12.19s each. Owner:usable,much better than Tetiana;fewer/shorter pauses,2–3 stress errors,good intonation. Slight subjectiveF1 preference. Recommended among tested UK voices;not general long-form quality. Full24s F1 LCD film integrated:accepted intro reused,new title/CTA measured,encoded QA passed;final owner listening pending. EnglishF1:opening microprobe followed by five-line32s Contract Execution Officer integration;technical QA recorded separately. Owner accepted EnglishF1 in this film:good,natural-sounding,synthetic origin not obvious. This is one subjective script/voice assessment,not a general English quality score.",
       "licence_note": "SDKMIT;modelBigScienceOpenRAIL-M,including explicit machine-generated-content disclosure. No weights/art/audio redistributed.",
       "next_trial_or_retest_condition": "Owner review of the retained full film next;no unchanged regeneration. Longer/new languages,voices or prosody controls require a bounded new question.",
       "evidence": [
@@ -668,6 +671,117 @@
       "next_trial_or_retest_condition": "Specific approved two-still storyboard experiment; max 10min and explicit storage/RAM/device preflight. Official checkpoint metadata 6,938,078,334 bytes (not total installation); FP16 UNet alone 5,135,149,760 bytes. Runtime peak RAM/VRAM unknown here. No download until changed available disk/device and owner-approved exact budget. Motion comes from qualified renderer, not SDXL.",
       "evidence": [
         "docs/personal-studio.md"
+      ]
+    },
+    {
+      "id": "tesseract-converter",
+      "name": "Tesseract Converter",
+      "url": "https://github.com/mirage-hq/Tesseract-Converter",
+      "reviewed": "2026-10-18",
+      "review_basis": "local0.2.1/schema70 original6s three-layer conversion roundtrip",
+      "upstream_revision": "cdea27e1b31d30354fc195e56575c7c69f7174f4",
+      "disposition": "supported_scoped",
+      "scope_and_findings": "tsrct→prproj→tsrct:6s30fps,media hashes,active spans and simple transforms preserved; title PNG,video,background. Names normalize; extra black canvas. Native editor playback/export unverified. Converter is not renderer.",
+      "licence_note": "MIT converter; editor/renderer separate terms",
+      "next_trial_or_retest_condition": "Next useful gate is opening this existing project in a compatible editor; no unchanged CLI-only retest or full Adobe fidelity claim.",
+      "evidence": [
+        "experiments/2026-10-18/sirtet-videos.md",
+        "experiments/2026-10-18/evidence/sirtet-videos.json"
+      ]
+    },
+    {
+      "id": "gemini-media-review",
+      "name": "Gemini media understanding",
+      "url": "https://ai.google.dev/gemini-api/docs/audio",
+      "reviewed": "2026-10-18",
+      "review_basis": "Primary documentation only; no API/model run",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Official documentation supports audio/image/video input analysis. Candidate for acoustic and temporal review; not connected or runtime-tested here; current session cannot consume audio. Language/TP and creative judgment unqualified.",
+      "licence_note": "Cloud service/model and data-use terms must be reviewed for selected account; no asset/voice upload permission inferred.",
+      "next_trial_or_retest_condition": "Owner-approved destination and bounded budget; known-sample modality check then human-labelled audio/image/video controls.",
+      "evidence": [
+        "skills/video-production-router/references/media-review.md"
+      ]
+    },
+    {
+      "id": "qwen3-omni-review",
+      "name": "Qwen3-Omni media understanding",
+      "url": "https://github.com/QwenLM/Qwen3-Omni",
+      "reviewed": "2026-10-18",
+      "review_basis": "Primary documentation only; no API/model run",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Upstream documents audio/image/video understanding. Local candidate only, no downloaded weights, runtime attempt or Apple Silicon/resource qualification.",
+      "licence_note": "Inspect exact selected code/model licences and runtime before use; upstream availability is not input-media clearance.",
+      "next_trial_or_retest_condition": "Resource/runtime preflight and explicit model download approval, followed by a bounded known-control comparison.",
+      "evidence": [
+        "skills/video-production-router/references/media-review.md"
+      ]
+    },
+    {
+      "id": "openverse",
+      "name": "Openverse",
+      "url": "https://api.openverse.org",
+      "reviewed": "2026-10-19",
+      "review_basis": "Primary-source documentation review only;no installation,live production API call,asset download or render",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Primary API docs describe anonymous audio discovery and filters;root browse403,not a live search/runtime test. Supplied quota/inventory unqualified. Proposed P1 missing-SFX search/admission/credits trial;preserve per-item provenance and actual final credits.",
+      "licence_note": "API software docs/terms and per-result media licences separate;CC0/BY/PDM filters do not replace item checks.",
+      "next_trial_or_retest_condition": "A concrete missing-SFX need;verify providers/live headers,download cap and source terms before acquisition.",
+      "evidence": [
+        "docs/research-intake-2026-10-19.md",
+        "docs/research-review-2026-10-19.md"
+      ]
+    },
+    {
+      "id": "awwwards-mcp",
+      "name": "Awwwards MCP",
+      "url": "https://github.com/INSANE0777/Awwwards-mcp",
+      "reviewed": "2026-10-19",
+      "review_basis": "Primary docs plus actual isolated1.9.0 public-landing capture-component trial;default MCP workflow not executed",
+      "upstream_revision": "npm1.9.0",
+      "disposition": "partial",
+      "scope_and_findings": "Adapted upstream recordSiteMotion with injected installed-Chrome launcher/native FFmpeg and generic clicks suppressed:21.8s1440x900p25 VP9,full decode,12 sampled frames. Initial missing Playwright recorder-FFmpeg helper fixed with isolated official1.4MiB download.8-frame motion sheet;strip padding/event-clock limits retained. No MCP startup/search/index or same-fixture baseline comparison;not globally offline. Source clips need voice-led editorial pacing.",
+      "licence_note": "MIT software licence confirmed;reference-site/CDN content is separately owned and not automatically reusable.",
+      "next_trial_or_retest_condition": "Use verified source-time shots from this candidate;full MCP/default click or broad crawl remains unqualified. Test authenticated/account pages only through approved capture path,without secret links/cookie extraction.",
+      "evidence": [
+        "docs/research-intake-2026-10-19.md",
+        "docs/research-review-2026-10-19.md",
+        "docs/experiments/playmcp-service-review.md"
+      ]
+    },
+    {
+      "id": "odyssey-world-models",
+      "name": "Odyssey world models",
+      "url": "https://odyssey.systems/introducing-odyssey-3",
+      "reviewed": "2026-10-19",
+      "review_basis": "Primary-source documentation review only;no installation,live production API call,asset download or render",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Odyssey-3 research preview documented;public API introduction still names Odyssey-2 Pro. SDK recordings/simulations documented,not tested. Proposed P3 later virtual-set shot trial,not a proven editable3D engine or current PlayMCP feature. Owner clarification:worlds as footage is cross-provider/model-flexible;an available Odyssey model can satisfy the first trial. Model identity must be recorded,not used to require Odyssey-3.",
+      "licence_note": "Hosted service/API terms,account/order and exact output-use scope unresolved;no account or budget checked.",
+      "next_trial_or_retest_condition": "Use an accessible Odyssey model that fits the shot;verify recording/export,use scope and bounded cost,then log actual model and control/continuity results. Later compare other world resources.",
+      "evidence": [
+        "docs/research-intake-2026-10-19.md",
+        "docs/research-review-2026-10-19.md"
+      ]
+    },
+    {
+      "id": "genjutsu",
+      "name": "genjutsu creative skills",
+      "url": "https://github.com/AThevon/genjutsu",
+      "reviewed": "2026-10-19",
+      "review_basis": "Primary-source documentation review only;no installation,live production API call,asset download or render",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "cast/paint/bunshin documented;no skill installed/invoked. P4 narrow cast scene trial only;whole-site/mobile/multi-agent modes excluded from immediate video queue. Renderer/timeline fidelity and model-host compatibility untested.",
+      "licence_note": "MIT with vendored notices confirmed;asset rights separate.",
+      "next_trial_or_retest_condition": "A specific5–8s card needing a creative effect;review exact skill revision/host and absolute-time render contract before use.",
+      "evidence": [
+        "docs/research-intake-2026-10-19.md",
+        "docs/research-review-2026-10-19.md"
       ]
     }
   ]

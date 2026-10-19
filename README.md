@@ -2,13 +2,14 @@
 
 ![Framewright — craft the cut, keep the evidence](assets/framewright-cover.png)
 
+[![Version: 0.3.0](https://img.shields.io/badge/version-0.3.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.3.0)
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](docs/router-evaluation.md)
 [![Planning evidence: scoped](https://img.shields.io/badge/planning__evidence-scoped-526C73?style=flat-square)](docs/router-evaluation.md)
-[![17 recorded exports](https://img.shields.io/badge/recorded__exports-17-293F48?style=flat-square)](docs/experiments.md)
+[![23 recorded exports](https://img.shields.io/badge/recorded__exports-23-293F48?style=flat-square)](docs/experiments.md)
 
-**Framewright helps an AI agent choose a video pipeline and prepare its production
-handoff, using documented experiments.**
+**Framewright helps an AI agent plan and resume video production, reuse materials
+and prepare a reviewable local publication kit, using documented methods.**
 
 Built as a personal AI video studio for YouTube, ABVX and other projects; open
 source, with quality and saved production time as the priority.
@@ -23,8 +24,11 @@ New genres and tool combinations need scoped evidence before qualification.
 | --- | --- |
 | **Try a production plan** — command below | A readable timeline, tools, intended files, blockers and QA; no rendering |
 | **[Find tools and combinations](skills/video-production-router/references/arsenal-search.md)** | Task/style/language/rights/evidence filters with scoped results |
-| **[Save and resume work](skills/video-production-router/references/projects.md)** | Frozen plan, file pins, manual progress and remaining steps |
+| **[Save and resume work](skills/video-production-router/references/projects.md)** | Goal, frozen plan, file pins, revision-bound decisions and next steps |
+| **[Connect scenes, reuse assets and collect a kit](skills/video-production-router/references/production.md)** | Shared materials, independent main/Short cuts and visible delivery checks |
 | **[Render the reference film](docs/first-video.md)** | Open demo assets, pinned dependencies, exact commands and expected outputs |
+
+Before a full operator take, run the local [recording rehearsal check and media-review workflow](skills/video-production-router/references/media-review.md). Technical measurements, actual listening/viewing and owner acceptance remain separate; multimodal model candidates are documented, not connected or qualified.
 
 ## Try a production plan
 
@@ -56,24 +60,35 @@ Use [arsenal search](skills/video-production-router/references/arsenal-search.md
 then [save a project](skills/video-production-router/references/projects.md) for work across sessions.
 Search rights remain conditional;resume checks file pins and never executes production.
 
-**Next programme:** [repackaging, insight → video and hybrid production](docs/personal-studio.md)
+**Production workflows:** [repackaging, insight → video and hybrid production](docs/personal-studio.md)
 share source/rights, facts, edit decisions and delivery gates. A private audio catalogue
-can index an owner-selected folder later. Infrastructure only; no new films or models tested.
+indexes owner-selected folders;[first2-track bank use](docs/workflows/private-music-bank.md)
+is recorded separately. A/B/C remain infrastructure only;no new A/B/C films or models tested.
+
+## Games and game engines
+
+Game engines are also a production direction: **create playable games, make
+reviews of games and engines, and stage original video stories in interactive
+worlds**. A world may supply an interior, characters, camera moves and action for
+a film whose subject has nothing to do with the engine.
+
+Three PlayMCP games are published. Two have retained overview/Shorts evidence;
+the third, a Toki Pona reading duel, supplied the virtual set for a delivered
+book promo with an owner-supplied publication URL. The full service review
+continues separately with owner narration; it does not gate software releases. [Current scopes and reusable workflow](docs/workflows/game-engines.md) ·
+[Agent skill](skills/game-engine-production/SKILL.md).
+A separate [SSI OAuth demo](docs/experiments/ssi-oauth-field-report.md) records
+another agent using Framewright for real-screen evidence video; its temporary
+unlisted upload and playback are owner-confirmed, Google approval is pending.
+Other engines and general autonomous production remain unqualified.
 
 ## One concrete result
 
-**Task:** introduce a library of practical commodity-market books.
-**Chain:** retained book films + real-site tour → MoviePy/FFmpeg, new English
-Supertonic narration and a retained original instrumental bed.
-**[Watch the 60s compilation](https://youtu.be/vAPgNupIp2s)** ·
-**[Method and QA](experiments/2026-10-15/agro-series-compilation.md)**
-
-Recorded checks include 1080p30 H264/AAC, full decode, scene/transition samples,
-audio sync/loudness/phase and a separate PNG thumbnail. Publication URL is
-owner-supplied; final-film owner listening/style review remains separate.
-The [completed stage](docs/experiments/agro-series-plan.md) contains six books,
-one landing tour and this compilation. These author-project assets are not redistributed;
-use the [open reference film](docs/first-video.md) for a public starting example.
+[Watch the 60s book-library compilation](https://youtu.be/vAPgNupIp2s)
+(owner-supplied URL): retained films + real-site tour, MoviePy/FFmpeg and Supertonic.
+[Method and QA](experiments/2026-10-15/agro-series-compilation.md) ·
+[Closed eight-film stage](docs/experiments/agro-series-plan.md).
+Private author assets are not redistributed; use the open reference film to start.
 
 ## Choose a method
 
@@ -105,6 +120,11 @@ test ! -e ~/.codex/skills/video-production-router && \
   ln -s "$(pwd)/framewright/skills/video-production-router" ~/.codex/skills/video-production-router
 ```
 
+For games, engine reviews and virtual sets, also link
+`framewright/skills/game-engine-production` into your skills folder from this
+complete checkout. The release ZIP installs the router skill only; GitHub source
+archives include both skills and their case documentation.
+
 Keep the checkout mounted and start a fresh Codex session. The command refuses to
 overwrite a skill. Example: “Plan a French trailer from this page and approved cover.
 Use $video-production-router. Do not render yet.” Follow the selected tool’s guide
@@ -112,10 +132,9 @@ before authorised execution.
 
 ## Evidence and experimental scope
 
-Current source has **no fresh model qualification**. Historical source-bound checks:
-**70/70 rubric; 62/70 complete traces**, separate recovery **8/8**, original
-first-exposure **13/18**. Scores are not added together and do not establish general
-reliability or render quality. [Full evaluation](docs/router-evaluation.md).
+Current source has **no fresh model qualification**. Historical scores are
+source-bound and do not establish general reliability or render quality.
+[Evaluation, exact scores and limitations](docs/router-evaluation.md).
 
 [Storyboarding](docs/storyboard-adapter.md) is a preparation layer.
 [Music/song workflows](skills/video-production-router/references/music-workflows.md)
@@ -127,7 +146,7 @@ filters capabilities and grants no spending authority.
 
 Run `python3 scripts/check.py --scope docs` for offline validation; no model/render.
 [Checking policy](docs/checking-policy.md) · [Record an experiment](docs/experiments.md) ·
-[Research queue](docs/experiment-queue.md) · [Stage audit](docs/product-audit-2026-10-15.md).
+[Research queue](docs/experiment-queue.md) · [Release audit and remaining work](docs/release-audit-2026-10-19.md).
 
 The MIT licence covers original repository materials. Tools, models, music and art
 have their own terms. Large media remain outside Git. [ABVX ecosystem](docs/ecosystem.md) ·

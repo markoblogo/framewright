@@ -1,5 +1,7 @@
 # QA and handoff contract
 
+For actual listening/viewing and operator recording preflight, use [media review](media-review.md). Record actual modality and coverage; unavailable input stays pending.
+
 Use for a production plan, implementation or finishing request. A comparison may
 stay a comparison; YouTube copy alone needs no production checklist. Report only
 checks relevant to the selected tools and requested deliverables.

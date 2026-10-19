@@ -1,10 +1,29 @@
-# Personal studio: next production programme
+# Personal studio: direction and production workflows
+
+Current status,2026-10-19: schema-2 production memory, scene/material/cut planning
+and local kits are implemented. Three PlayMCP games and the Jekyll virtual-set
+book promo have retained case evidence. The overall service review waits for
+owner retakes and continues independently of the software release.
+[Release audit and limits](release-audit-2026-10-19.md). The dated programme below
+preserves its original decisions; A/B/C media experiments remain unstarted.
+
 
 2026-10-17. Framewright is an open-source personal AI production toolkit for the
 owner's YouTube, ABVX and other films. Quality and saved operator time take priority
 over a commercial editor product. The existing router and renderers remain the base.
-Owner clarified: **infrastructure and conditional examples now; no real recut, music
-folder, model installation or film production in this pass**. No new release.
+Initial pass was infrastructure and conditional examples only. A/B/C remain
+unstarted. The owner subsequently selected a music folder;the first real
+[private bank trial](workflows/private-music-bank.md) indexed2 tracks and supplied
+a bounded excerpt to the separate PlayMCP game. No new release.
+
+## Game engines as subjects and production tools
+
+A separate [game-engine workflow](workflows/game-engines.md) covers playable
+games, game/engine video reviews and virtual sets for unrelated video stories.
+The published PlayMCP game and its locally delivered narrated overview are the
+first scoped case. The [overview publication URL](https://youtu.be/WLBxcM5JQ3U) is owner-supplied;final
+film owner review remains pending. The service
+review,other engines and virtual-set production require separate tests. This work does not start the deferred A/B/C source experiments below.
 
 ## Audit → minimum extension
 
@@ -49,7 +68,8 @@ cleared footage, voices, fonts, compositions, recordings or generated likenesses
 ## Predeclared A/B/C experiments — not started
 
 All examples are **placeholders**, not licensed footage or factual scripts.
-No input has been chosen and no music folder is required now. Do not search/download
+No A/B/C video input has been chosen. The separate music-bank trial does not
+authorise any A/B/C production. Do not search/download
 random Telegram/X footage to fill these examples. A source URL is not a reuse grant.
 
 | Trial | Inputs / method | Pass criteria | Initial declared caps / stop |

@@ -1,38 +1,30 @@
 # Changelog
 
-## Unreleased
+## 0.3.0 — 2026-10-19 — experimental
 
-Retain a targeted conditional studio check:12 CLI cases,8 one-pass read-only actor
-requests,complete traces and controller grading. Preserve the EN Supertonic expectation
-error separately from router failures. No selection/profile changes,render or release.
+- Save and resume schema-2 production projects with explicit goals/tasks/waits,
+  file revisions, decisions and separate technical, listening, creative,
+  publication and provider observations. Migrate schema 1 with a backup.
+- Connect scene scripts, demonstrations, narration and missing inputs; reuse a
+  rights/source-bound material catalogue across independent main/Short edits.
+  Prepare local publication kits with hashes and unresolved checks; no auto-upload.
+- Add arsenal filters and proposed combinations, shared repackaging/insight/hybrid
+  intake, and private opt-in music indexing. Fix discovery of the four latest
+  research records without promoting candidates into tested providers.
+- Add short-clip operator recording measurements and explicit media-review routes.
+  Retain the new human-English transcription trial separately from actual listening.
+- Document three PlayMCP games, game/engine reviews and virtual sets for unrelated
+  films, including Jekyll's delivered book promo. Retain Shorts, Tesseract converter
+  and corrected mlx-whisper timing scopes, rejected probes and failed attempts.
+- Record the external-agent SSI field report and a partial Awwwards capture trial.
+  Openverse, genjutsu and world-model production remain bounded research candidates.
+- Reconcile current docs and install/release boundaries. Keep historical router
+  scores frozen and current-source model qualification explicitly unevaluated.
+  Strict resource enforcement and a universal renderer remain out of scope.
 
-Add shared experimental repackaging,insight-to-video and hybrid source/claim/edit
-intake,owner-confirmation/publication gates and complete delivery records in existing
-checkpoints. Add private opt-in audio indexing,annotations,rights-aware search and
-bounded optional loudness sampling. Document the A/B/C programme and gap-led local
-tool review;Whisper candidate and SDXL deferred,no new production eligibility.
-No real source/music folder selected,no films/models/paid calls or release in this pass.
-Preserve the previous audio index when the final probe exhausts the scan budget;
-retain a deterministic regression and offline/package verification.
-Address PR review:propagate production blockers to top-level plan status,align music
-use with the workflow,record per-track stat failures,and require brief in the schema.
-
-Add offline arsenal search across profiles and retained review records,with task,
-style,speech-language,retained-rights and evidence filters. Reuse the existing
-planner for proposed compatible chains;preserve explicit choices,low-quality voice
-fallback policy,known failures and independent music/account gates. Conditional
-rights classifications are bound to retained licence notes,not asset clearance.
-Index manual methods/candidates separately;new search evidence is deterministic only.
-
-Add local production checkpoints with frozen brief/plan/packet,file pins,manual
-step states,dependency invalidation and read-only resume/status. Atomic writes
-and exclusive macOS/Linux locking preserve the last complete checkpoint;no render,
-decode,installation or upload is performed.
-
-Backfill PySceneDetect from retained Burgers evidence as an existing-video analysis
-companion. Escape brief Markdown images/links,validate OpenScreen narration against
-the pinned script/timing,ignore generated compilation thumbnails,and require the
-retained local Remotion executable in its archive. No new release/model/media run.
+The PlayMCP service review continues separately: the first owner English recording
+has local timing trials and possible short retakes; no completed review export yet.
+Its completion is not a prerequisite for this software release.
 
 ## 0.2.0 — 2026-10-16 — experimental
 

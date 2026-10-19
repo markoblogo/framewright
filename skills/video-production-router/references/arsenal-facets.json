@@ -58,7 +58,8 @@
     ],
     "analysis": [
       "hard-cut-detection"
-    ]
+    ],
+    "media-review": []
   },
   "tools": {
     "brag": {
@@ -375,6 +376,84 @@
       ],
       "rights_class": "conditional",
       "licence_note_sha256": "334ef080748b1fe2f28c3d16fbffe024b3656873963cdec6d6301e56779a2588"
+    },
+    "tesseract-converter": {
+      "tasks": [
+        "editing"
+      ],
+      "inputs": [
+        "source-project"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "30215b6bc560aa7ba1ed806b36b264079c78dca2f09d438949985853c09e9f64"
+    },
+    "gemini-media-review": {
+      "tasks": [
+        "media-review"
+      ],
+      "inputs": [
+        "audio",
+        "image",
+        "video"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "4ad65685e31199729e0d5d5f6517c8ca0e500887b05fdc37fba9b2580dcb24fb"
+    },
+    "qwen3-omni-review": {
+      "tasks": [
+        "media-review"
+      ],
+      "inputs": [
+        "audio",
+        "image",
+        "video"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "d46674b247834dd4d64f56c720c74ebcffc028d7242b05108e8c2c1492a232e4"
+    },
+    "openverse": {
+      "tasks": [
+        "audio",
+        "music",
+        "acquisition"
+      ],
+      "inputs": [
+        "audio"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "4d48471354cff302c9f696b25f125860db0476c71a0fc6bf0fcd9f210dfa105b"
+    },
+    "awwwards-mcp": {
+      "tasks": [
+        "screen-capture",
+        "creative-reference",
+        "interface"
+      ],
+      "inputs": [
+        "react-ui"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "2de7367ccf7f5ac97fef797fc0f64524bb5c754eaae09b47ea01083a7b411228"
+    },
+    "odyssey-world-models": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [],
+      "rights_class": "unknown",
+      "licence_note_sha256": "c85b2f640a788b41f265fb98441a53290b9c0fca88b5414045ba419659dfa742"
+    },
+    "genjutsu": {
+      "tasks": [
+        "graphics",
+        "interface"
+      ],
+      "inputs": [
+        "react-ui"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "51cd7645489c2315c5a4fd1eebc96943222969e022fb149d7216461055fe5614"
     }
   }
 }

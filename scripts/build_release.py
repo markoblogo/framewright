@@ -52,6 +52,39 @@ def build(root, output):
         resumed = subprocess.run([sys.executable, str(project_cli), 'resume', str(project), '--json'], check=True, capture_output=True, text=True)
         if json.loads(resumed.stdout)['ready'] != ['source-review', 'preflight']:
             raise ValueError('Standalone project checkpoint smoke check failed')
+        # The new memory/journal must work from the standalone ZIP as well.
+        manual = target / 'manual-production.json'
+        subprocess.run([sys.executable,str(project_cli),'create',str(manual),
+                        '--goal','Paused review fixture','--note','Offline package smoke'],
+                       check=True,capture_output=True,text=True)
+        subprocess.run([sys.executable,str(project_cli),'observe',str(manual),'project',
+                        '--kind','decision','--result','deferred','--topic','owner-recording',
+                        '--actor','operator','--provenance','supplied_report','--note','Fixture, no voice supplied'],
+                       check=True,capture_output=True,text=True)
+        remembered = subprocess.run([sys.executable,str(project_cli),'resume',str(manual),'--json'],
+                                    check=True,capture_output=True,text=True)
+        if json.loads(remembered.stdout)['observations']['effective'][0]['result']!='deferred':
+            raise ValueError('Standalone production journal smoke check failed')
+        composition = target / 'composition.json'
+        composition.write_text(json.dumps({'schema_version':1,'materials':[],
+            'scenes':[{'id':'demo','tell':'Fixture review','show':'Await real capture','materials':[],
+                       'narration':{'text':'','material':None},'missing':['Capture pending']}],
+            'variants':[{'id':'short','kind':'short','canvas':{'width':1080,'height':1920,'fps':30},
+                'edits':[{'scene':'demo','material':None,'duration_seconds':2,'framing':'Portrait planned'}],
+                'music':None,'tasks':[],
+                'delivery':{k:None for k in ['video','thumbnail','subtitles','title','description']}}]}))
+        subprocess.run([sys.executable,str(project_cli),'compose',str(manual),str(composition)],
+                       check=True,capture_output=True,text=True)
+        board = subprocess.run([sys.executable,str(project_cli),'board',str(manual),'--json'],
+                               check=True,capture_output=True,text=True)
+        if json.loads(board.stdout)['variants']['short']['complete_local_handoff']:
+            raise ValueError('Standalone board promoted an unfinished cut')
+        kit = target / 'draft-kit'
+        subprocess.run([sys.executable,str(project_cli),'bundle',str(manual),'short','--output',str(kit),'--draft'],
+                       check=True,capture_output=True,text=True)
+        receipt=json.loads((kit/'manifest.json').read_text())
+        if receipt['complete_local_handoff'] or receipt['publication_authorized'] or receipt['files']:
+            raise ValueError('Standalone draft kit invented delivery or publication')
         search_cli = target / 'video-production-router/scripts/search.py'
         found = subprocess.run([sys.executable, str(search_cli), '--task', 'narration', '--language', 'uk',
                                 '--evidence', 'tested', '--rights', 'commercial'], check=True, capture_output=True, text=True)

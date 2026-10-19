@@ -1,0 +1,30 @@
+SHORTS_MEDIA_PASS
+VERTICAL_REFRAIN_SCOPE
+REAL_GAMEPLAY_REFRAME
+2026-10-17. Two Shorts delivered;owner later supplied both publication URLs.No software release.
+Actual rev12 game footage from pinned shoot/hold captures;original scripted-input provenance retained.
+No game modification,PlayMCP generation or additional credits.
+FFmpeg manual focal crops,two-panel simultaneous context,short wide impact shot;8segments per20s film.
+First boys payoff crop missed fragments on left:retained failed crop,changed focal x1130→200,re-encoded affected segment and repeated final QA.
+The edited source return meets the opening source position;captions/music reset means no mathematically seamless-loop claim.
+Supertonic3SDK1.3.1,F1,en,12steps,speed1.0,local CPU4intra/1inter threads.
+Pinned model/config/style manifest verified;14new lines,no raw clipping.
+Measured first schedules exposed one overlap and two end overruns. Retime meeting/decaf/again/caffeine without changing generated WAV bytes.
+Original game audio disabled. New mix uses the same owner-provided26s instrumental edit,drop moved to14.6s,and authored non-tonal coffee/transition sounds.
+No automatic mood selection or music-generation claim.
+PNG/JPG covers are frame0.4s extracted from encoded final Shorts;also selectable opening frames. Full/reduced inspection retained.
+20one-second samples plus4full-resolution samples per film;technical pass is separate from owner acceptance.
+worms:20s,600frames,1080x1920,30fps,H264/AAC48kHz;full decode PASS;picture stream matches silent export.
+worms:encoded-16.1LUFS,-2.44dBTP,LRA1.5LU;minimum voice/background RMS12.49dB.
+boys:20s,600frames,1080x1920,30fps,H264/AAC48kHz;full decode PASS;picture stream matches silent export.
+boys:encoded-16.1LUFS,-2.47dBTP,LRA2.4LU;minimum voice/background RMS10.66dB.
+Human listening and creative acceptance remain pending.
+worms publication_url:https://youtube.com/shorts/RsUVTrr3Dmc
+boys publication_url:https://youtube.com/shorts/lky20OJaAqo
+publication_verification:user_provided_url for both;independent playback not verified.
+Virality,retention and shares are not measured. This is a complementary creative pair,not a controlled audience A/B test.
+YouTube official docs checked: https://support.google.com/youtube/answer/10343433?hl=en
+Shorts description/comment URLs non-clickable: https://support.google.com/youtube/answer/13748639?hl=en
+Format eligibility: https://support.google.com/youtube/answer/15424877?hl=en
+Actual mobile publishing/account eligibility/UI overlays have not been tested.
+No independent third-party character/franchise rights qualification is established by technical QA.

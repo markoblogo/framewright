@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "materials": [
+    {
+      "id": "demo-take",
+      "kind": "video",
+      "subject": null,
+      "origin": "Planned authorised UI capture, not yet recorded",
+      "tags": [
+        "source",
+        "clip"
+      ],
+      "capture_mode": "screen_capture",
+      "rights": {
+        "status": "unknown",
+        "basis": "Rights/account permissions not checked; planned fixture only",
+        "uses": [],
+        "attribution": "",
+        "restrictions": []
+      }
+    },
+    {
+      "id": "voice-main",
+      "kind": "audio",
+      "subject": null,
+      "origin": "Planned separate narration; no synthesis or recording performed",
+      "tags": [
+        "narration"
+      ],
+      "rights": {
+        "status": "unknown",
+        "basis": "Rights/account permissions not checked; planned fixture only",
+        "uses": [],
+        "attribution": "",
+        "restrictions": []
+      }
+    },
+    {
+      "id": "voice-short",
+      "kind": "audio",
+      "subject": null,
+      "origin": "Planned separate narration; no synthesis or recording performed",
+      "tags": [
+        "narration"
+      ],
+      "rights": {
+        "status": "unknown",
+        "basis": "Rights/account permissions not checked; planned fixture only",
+        "uses": [],
+        "attribution": "",
+        "restrictions": []
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "id": "demonstration",
+      "tell": "Explain a function from the supplied source brief",
+      "show": "Show its real recorded action",
+      "materials": [
+        "demo-take"
+      ],
+      "narration": {
+        "text": "Show the real action in its context.",
+        "material": "voice-main"
+      },
+      "missing": [
+        "Capture the authorised demonstration and review the script"
+      ],
+      "claims": [
+        {
+          "text": "The shown action matches the commentary",
+          "material": "demo-take"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "main",
+      "kind": "main",
+      "canvas": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "edits": [
+        {
+          "scene": "demonstration",
+          "material": "demo-take",
+          "source_in": 0,
+          "source_out": 6,
+          "duration_seconds": 6,
+          "framing": "Full context, readable controls",
+          "narration": {
+            "text": "Show the real action in its context.",
+            "material": "voice-main"
+          }
+        }
+      ],
+      "music": null,
+      "tasks": [],
+      "delivery": {
+        "video": null,
+        "thumbnail": null,
+        "subtitles": null,
+        "title": null,
+        "description": null
+      }
+    },
+    {
+      "id": "short",
+      "kind": "short",
+      "canvas": {
+        "width": 1080,
+        "height": 1920,
+        "fps": 30
+      },
+      "edits": [
+        {
+          "scene": "demonstration",
+          "material": "demo-take",
+          "source_in": 1,
+          "source_out": 4,
+          "duration_seconds": 3,
+          "framing": "Portrait close-up; preserve the visible consequence",
+          "narration": {
+            "text": "One useful action, shown directly.",
+            "material": "voice-short"
+          }
+        }
+      ],
+      "music": null,
+      "tasks": [],
+      "delivery": {
+        "video": null,
+        "thumbnail": null,
+        "subtitles": null,
+        "title": null,
+        "description": null
+      }
+    }
+  ]
+}

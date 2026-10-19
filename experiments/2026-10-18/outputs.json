@@ -1,0 +1,62 @@
+[
+  {
+    "id": "sirtet-overview",
+    "route": "footage-compilation",
+    "local_output": "sirtet-prototype/film/registered-media/SIRTET-Overview.mp4",
+    "bytes": 34552040,
+    "sha256": "f9abb20d83e57ba763595cd035ea19c7beb97cc0f4de2cb6e20495d1d9f20dd5",
+    "native_export": {
+      "local_output": "sirtet-prototype/film/final-picture/SIRTET-Overview-Picture.mp4",
+      "bytes": 33021673,
+      "sha256": "5cfd7d3edc336e254ec264bab2f1cc2e9a7159568203841774ffee3cd4aadafb"
+    },
+    "thumbnail": {
+      "local_output": "sirtet-prototype/film/registered-media/SIRTET-Overview-YouTube.png",
+      "bytes": 592607,
+      "sha256": "61466ca35918da4fa173c8b7c70e2aae4f3d408ab8bfc8e54b51f9f34ac44701",
+      "format": "png",
+      "width": 1280,
+      "height": 720
+    },
+    "evidence": "experiments/2026-10-18/evidence/sirtet-videos.json",
+    "qa_scope": "65.000000s1920x1080p30 H264/AAC;1950frames;full decode,source-clock music,Supertonic3F1 narration,encoded loudness/truepeak,scene/boundary samples,separate opaque cover native/reduced inspection. AI footage is same-rules seed88 replay,not public-seed19 victory.",
+    "human_listening": "pending_owner_review",
+    "creative_acceptance": "pending_owner_review",
+    "publication_url": "https://youtu.be/wPIyeBYJZbQ",
+    "game_publication_url": "https://playmcp.io/g/g_hxx3yDS0",
+    "game_publication_verification": "publish_response_and_independent_challenge_entry_list",
+    "audience_metrics": "not_measured",
+    "publication_verification": "user_provided_url",
+    "publication_url_as_provided": "https://youtu.be/wPIyeBYJZbQ"
+  },
+  {
+    "id": "sirtet-ai-short",
+    "route": "footage-compilation",
+    "local_output": "sirtet-prototype/film/registered-media/SIRTET-AI-Wins-Short.mp4",
+    "bytes": 21926677,
+    "sha256": "bafbeab4f7aa9df72264cc2eb61f9a944e45bf3ba820b7fe048deb44ad59a334",
+    "native_export": {
+      "local_output": "sirtet-prototype/film/final-picture/SIRTET-AI-Wins-Short-Picture.mp4",
+      "bytes": 21382761,
+      "sha256": "a4c7c4fe3867b46acf5f4180b26f8cebb516e1f88ccde1307fc54c7b9957772d"
+    },
+    "thumbnail": {
+      "local_output": "sirtet-prototype/film/registered-media/SIRTET-AI-Wins-Short-Cover.png",
+      "bytes": 1402223,
+      "sha256": "9121ee635bf95f862a13abc93d45d08c0421612a05209cda9cd4769545ca046f",
+      "format": "png",
+      "width": 1080,
+      "height": 1920
+    },
+    "evidence": "experiments/2026-10-18/evidence/sirtet-videos.json",
+    "qa_scope": "23.000000s1080x1920p30 H264/AAC;690frames;full decode,source-clock music,Supertonic3F1 narration,encoded loudness/truepeak,scene/boundary samples,separate opaque cover native/reduced inspection. AI footage is same-rules seed88 replay,not public-seed19 victory.",
+    "human_listening": "pending_owner_review",
+    "creative_acceptance": "pending_owner_review",
+    "publication_url": "https://youtube.com/shorts/Xeta6R8hvPg",
+    "game_publication_url": "https://playmcp.io/g/g_hxx3yDS0",
+    "game_publication_verification": "publish_response_and_independent_challenge_entry_list",
+    "audience_metrics": "not_measured",
+    "publication_verification": "user_provided_url",
+    "publication_url_as_provided": "https://youtube.com/shorts/Xeta6R8hvPg?feature=share"
+  }
+]

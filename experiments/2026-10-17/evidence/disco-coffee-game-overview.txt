@@ -1,0 +1,36 @@
+MEDIA_CHECKS_PASS
+REAL_GAMEPLAY_CAPTURE
+VOICE_F1_CPU
+Game: g_4FzN0mD8,site s_KxfJ4NLO,revision12,published;native response and signed-out browser verified.
+Watch j_i9fkSGtr full26s,13samples/5pairs;first_change WARN12.22s,no failed flags.
+Check j_qExB2MmG FORMAT OK;bob.webm request warning;no uncaught page errors.
+Judges j_5e3pZF3F (chapters),j_xLYOcv7W (full):CLEAN,no blocking items.
+Historical publication gate retained stale before-song instruction findings until full judge.
+Feedback fb_RHAMXHqJ;cover j_qNa3kywC/cover.png inspected.
+Game finalisation delta762credits;case total21294 of25000;3706remaining.
+No challenge entry or software release.
+
+Film:88s,1920x1080,30fps,H264/AAC48kHz,2640frames,full decode PASS.
+Encoded loudness -16.13LUFS,true peak -2.34dBTP,LRA4.8LU.
+Native/final compressed video streams identical.27scene/boundary samples inspected.
+Two local actual rev12 takes,scripted key events;not human-performance footage.
+Canvas2560x1440 captureStream(30),VP9/Opus MediaRecorder,real final safetyTrim audio bus.
+Shoot:fill0,wonfalse,Jay/Bob losers.Hold:fill1,wontrue,worm losers.
+Recorded-start offsets0.3153s/0.0457s removed;CFR take end padding up to0.9s.
+Initial WebM Opus packet warnings retained;converted/final media independently decoded.
+Initial ending comparison209frames instead of210;final-frame pad fixed exact88s timeline.
+Slow per-frame MoviePy composite stopped;static frames baked once,FFmpeg assembles footage.
+MoviePy2.1.2,Pillow11.3.0;no new package installation.
+Supertonic3SDK1.3.1,F1,en,12steps,speed1.0,CPU4intra/1inter threads.
+Committed model/config/style manifest verified before synthesis;11lines,no raw clipped samples.
+Initial minimum voice/background RMS7.82dB;duck lowered to0.07 during voice windows.
+Final minimum voice/background RMS14.44dB;mono fold delta-0.249dB;no nonfinite/clipped premix samples.
+Sentence subtitles use measured line duration and proportional phrase times;not ASR word alignment.
+Thumbnail:native authored MoviePy frame using owner-supplied generated concept art;not game screenshot.
+PNG1280x720RGB and320x180 reduced inspected;JPG companion retained.
+Delivery hashes and sizes are in outputs.json;private scripts/source pins retained with local production.
+Technical results are not human listening,creative acceptance,rights clearance or audience validation.
+Film human listening/style review pending.
+publication_url:https://youtu.be/WLBxcM5JQ3U
+publication_verification:user_provided_url
+Owner supplied the publication link on2026-10-17;independent playback not verified.

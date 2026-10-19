@@ -51,6 +51,14 @@ class ArtifactValidationTest(unittest.TestCase):
         with contextlib.redirect_stdout(io.StringIO()):
             validator.validate(self.root, self.root if local else None)
 
+    def test_discovery_drift_is_rejected_before_search(self):
+        refs=self.root/'skills/video-production-router/references'
+        (refs/'tools.json').write_text(json.dumps({'schema_version':1,'tools':[],'sources':{}}))
+        (refs/'review-ledger.json').write_text(json.dumps({'tools':[{'id':'new-candidate'}]}))
+        (refs/'arsenal-facets.json').write_text(json.dumps({'aliases':{},'tools':{}}))
+        with self.assertRaisesRegex(ValueError,'Arsenal facets differ'):
+            validator.validate(self.root, None)
+
     def test_dependency_readme_is_not_project_documentation(self):
         dependency = self.root / 'node_modules/fixture'
         dependency.mkdir(parents=True)

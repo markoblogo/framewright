@@ -58,3 +58,14 @@ When decision sources change without a new complete model evaluation, record
 current source hashes. Historical scores remain attached to their old source;
 targeted deterministic tests do not promote current agent behaviour. The checker
 continues checking archived actor/snapshot hashes and current file drift separately.
+
+[SIRTET overview and AI-win Short](../experiments/2026-10-18/sirtet-videos.md): real seeded gameplay, partial Tesseract roundtrip and corrected mlx-whisper timings; scoped evidence and two local video exports.
+
+[SSI OAuth external-agent field report](experiments/ssi-oauth-field-report.md): owner-supplied production report and video URL; reported technical QA, capture failures and proposed recipe improvements. Owner confirmed playback and temporary unlisted access; plans deletion after Google’s decision. Google approval remains unconfirmed; separate from validated export totals.
+
+
+[Scene/reuse/local-kit infrastructure](../experiments/2026-10-18/production-composition.md):
+synthetic CLI/copy checks and planning metadata on the paused Jekyll project; no
+additional rendered export, model qualification or release.
+
+- [Operator recording calibration and media-review routing](../experiments/2026-10-18/media-review-intake.md): local technical probes; listening unavailable, model candidates untested.
