@@ -14,3 +14,15 @@ node_modules/
 
 # Local production checkpoints include asset paths and operator notes.
 .framewright/
+
+# Private production audio/video and model weights.
+*.m4a
+*.mp3
+*.aac
+*.flac
+*.ogg
+*.webm
+*.mov
+*.mkv
+*.safetensors
+*.npz

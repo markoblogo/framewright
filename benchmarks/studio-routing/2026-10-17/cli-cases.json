@@ -1,0 +1,921 @@
+[
+  {
+    "id": "recut-unknown-original-audio",
+    "scenario": "repackaging",
+    "spec": {
+      "scenario": "repackaging",
+      "intended_use": "commercial",
+      "sources": [
+        {
+          "id": "clip",
+          "kind": "video",
+          "origin": "SYNTHETIC: authorised community event recording, not supplied",
+          "duration_seconds": 35,
+          "video_rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          },
+          "audio_policy": "keep",
+          "audio_rights": {
+            "status": "unknown"
+          }
+        }
+      ],
+      "limits": {
+        "wall_minutes": 20,
+        "max_input_seconds": 90,
+        "max_output_seconds": 18,
+        "max_work_mb": 300,
+        "max_download_mb": 0,
+        "paid_calls": 0
+      },
+      "acceptance": [
+        "Preserve quoted meaning and chronology",
+        "No reused old audio when remove/replace is selected",
+        "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+      ],
+      "claims": [],
+      "edits": [
+        {
+          "source": "clip",
+          "in_seconds": 3,
+          "out_seconds": 9,
+          "reason": "Conditional owner-selected complete sentence"
+        }
+      ],
+      "brief": {
+        "language": "en",
+        "duration_seconds": 12,
+        "blocks": [
+          {
+            "id": "story",
+            "input": "video",
+            "duration_seconds": 12,
+            "deliverables": [
+              "video-export",
+              "still-export"
+            ]
+          }
+        ]
+      }
+    },
+    "expected": {
+      "status": "proposed",
+      "publication_blocked": true,
+      "production_blocked": false,
+      "tools": [
+        "ffmpeg"
+      ]
+    }
+  },
+  {
+    "id": "recut-removed-original-audio",
+    "scenario": "repackaging",
+    "spec": {
+      "scenario": "repackaging",
+      "intended_use": "commercial",
+      "sources": [
+        {
+          "id": "clip",
+          "kind": "video",
+          "origin": "SYNTHETIC: authorised community event recording, not supplied",
+          "duration_seconds": 35,
+          "video_rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          },
+          "audio_policy": "remove",
+          "audio_rights": {
+            "status": "unknown"
+          }
+        }
+      ],
+      "limits": {
+        "wall_minutes": 20,
+        "max_input_seconds": 90,
+        "max_output_seconds": 18,
+        "max_work_mb": 300,
+        "max_download_mb": 0,
+        "paid_calls": 0
+      },
+      "acceptance": [
+        "Preserve quoted meaning and chronology",
+        "No reused old audio when remove/replace is selected",
+        "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+      ],
+      "claims": [],
+      "edits": [
+        {
+          "source": "clip",
+          "in_seconds": 3,
+          "out_seconds": 9,
+          "reason": "Conditional owner-selected complete sentence"
+        }
+      ],
+      "brief": {
+        "language": "en",
+        "duration_seconds": 12,
+        "blocks": [
+          {
+            "id": "story",
+            "input": "video",
+            "duration_seconds": 12,
+            "deliverables": [
+              "video-export",
+              "still-export"
+            ]
+          }
+        ]
+      }
+    },
+    "expected": {
+      "status": "proposed",
+      "publication_blocked": false,
+      "production_blocked": false,
+      "tools": [
+        "ffmpeg"
+      ]
+    }
+  },
+  {
+    "id": "recut-explicit-live-ui-on-flat-footage",
+    "scenario": "repackaging",
+    "spec": {
+      "scenario": "repackaging",
+      "intended_use": "commercial",
+      "sources": [
+        {
+          "id": "clip",
+          "kind": "video",
+          "origin": "SYNTHETIC: authorised community event recording, not supplied",
+          "duration_seconds": 35,
+          "video_rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          },
+          "audio_policy": "remove"
+        }
+      ],
+      "limits": {
+        "wall_minutes": 20,
+        "max_input_seconds": 90,
+        "max_output_seconds": 18,
+        "max_work_mb": 300,
+        "max_download_mb": 0,
+        "paid_calls": 0
+      },
+      "acceptance": [
+        "Preserve quoted meaning and chronology",
+        "No reused old audio when remove/replace is selected",
+        "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+      ],
+      "claims": [],
+      "edits": [
+        {
+          "source": "clip",
+          "in_seconds": 3,
+          "out_seconds": 9,
+          "reason": "Conditional owner-selected complete sentence"
+        }
+      ],
+      "brief": {
+        "language": "en",
+        "duration_seconds": 12,
+        "blocks": [
+          {
+            "id": "story",
+            "input": "video",
+            "duration_seconds": 12,
+            "deliverables": [
+              "video-export",
+              "still-export"
+            ],
+            "preferred_tool": "flute"
+          }
+        ]
+      }
+    },
+    "expected": {
+      "status": "blocked",
+      "publication_blocked": false,
+      "production_blocked": false,
+      "unmet": [
+        "input-compatible-primary"
+      ]
+    }
+  },
+  {
+    "id": "recut-candidate-not-auto-provider",
+    "scenario": "repackaging",
+    "spec": {
+      "scenario": "repackaging",
+      "intended_use": "commercial",
+      "sources": [
+        {
+          "id": "clip",
+          "kind": "video",
+          "origin": "SYNTHETIC: authorised community event recording, not supplied",
+          "duration_seconds": 35,
+          "video_rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          },
+          "audio_policy": "remove"
+        }
+      ],
+      "limits": {
+        "wall_minutes": 20,
+        "max_input_seconds": 90,
+        "max_output_seconds": 18,
+        "max_work_mb": 300,
+        "max_download_mb": 0,
+        "paid_calls": 0
+      },
+      "acceptance": [
+        "Preserve quoted meaning and chronology",
+        "No reused old audio when remove/replace is selected",
+        "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+      ],
+      "claims": [],
+      "edits": [
+        {
+          "source": "clip",
+          "in_seconds": 3,
+          "out_seconds": 9,
+          "reason": "Conditional owner-selected complete sentence"
+        }
+      ],
+      "brief": {
+        "language": "en",
+        "duration_seconds": 12,
+        "blocks": [
+          {
+            "id": "story",
+            "input": "video",
+            "duration_seconds": 12,
+            "deliverables": [
+              "video-export",
+              "still-export"
+            ],
+            "preferred_tool": "auto-editor"
+          }
+        ]
+      }
+    },
+    "expected": {
+      "error": "preferred_tool must name a known"
+    }
+  },
+  {
+    "id": "insight-unreviewed-fact",
+    "scenario": "insight",
+    "spec": {
+      "scenario": "insight",
+      "intended_use": "commercial",
+      "sources": [
+        {
+          "id": "report",
+          "kind": "text",
+          "origin": "SYNTHETIC: dated engineering note, not a fetched article",
+          "rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          }
+        }
+      ],
+      "limits": {
+        "wall_minutes": 20,
+        "max_input_seconds": 90,
+        "max_output_seconds": 18,
+        "max_work_mb": 300,
+        "max_download_mb": 0,
+        "paid_calls": 0
+      },
+      "acceptance": [
+        "Preserve quoted meaning and chronology",
+        "No reused old audio when remove/replace is selected",
+        "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+      ],
+      "claims": [
+        {
+          "text": "The prototype reports telemetry once per minute.",
+          "source": "report",
+          "locator": "Section 2 paragraph 1",
+          "review": "pending"
+        }
+      ],
+      "edits": [],
+      "brief": {
+        "language": "en",
+        "duration_seconds": 12,
+        "blocks": [
+          {
+            "id": "story",
+            "input": "brand",
+            "duration_seconds": 12,
+            "deliverables": [
+              "video-export",
+              "still-export"
+            ]
+          }
+        ]
+      }
+    },
+    "expected": {
+      "status": "blocked",
+      "production_blocked": true,
+      "publication_blocked": false,
+      "tools": [
+        "remotion"
+      ]
+    }
+  },
+  {
+    "id": "insight-uk-voice-with-native-still",
+    "scenario": "insight",
+    "spec": {
+      "scenario": "insight",
+      "intended_use": "commercial",
+      "sources": [
+        {
+          "id": "report",
+          "kind": "text",
+          "origin": "SYNTHETIC: dated engineering note, not a fetched article",
+          "rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          }
+        }
+      ],
+      "limits": {
+        "wall_minutes": 20,
+        "max_input_seconds": 90,
+        "max_output_seconds": 18,
+        "max_work_mb": 300,
+        "max_download_mb": 0,
+        "paid_calls": 0
+      },
+      "acceptance": [
+        "Preserve quoted meaning and chronology",
+        "No reused old audio when remove/replace is selected",
+        "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+      ],
+      "claims": [
+        {
+          "text": "The prototype reports telemetry once per minute.",
+          "source": "report",
+          "locator": "Section 2 paragraph 1",
+          "review": "verified"
+        }
+      ],
+      "edits": [],
+      "brief": {
+        "language": "uk",
+        "duration_seconds": 12,
+        "blocks": [
+          {
+            "id": "story",
+            "input": "brand",
+            "duration_seconds": 12,
+            "deliverables": [
+              "video-export",
+              "still-export",
+              "narration"
+            ],
+            "preferred_tool": "remotion"
+          }
+        ],
+        "preferred_voice": "supertonic3"
+      }
+    },
+    "expected": {
+      "status": "proposed",
+      "production_blocked": false,
+      "publication_blocked": false,
+      "tools": [
+        "remotion",
+        "supertonic3"
+      ]
+    }
+  },
+  {
+    "id": "insight-unqualified-diffusion-provider",
+    "scenario": "insight",
+    "spec": {
+      "scenario": "insight",
+      "intended_use": "commercial",
+      "sources": [
+        {
+          "id": "report",
+          "kind": "text",
+          "origin": "SYNTHETIC: dated engineering note, not a fetched article",
+          "rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          }
+        }
+      ],
+      "limits": {
+        "wall_minutes": 20,
+        "max_input_seconds": 90,
+        "max_output_seconds": 18,
+        "max_work_mb": 300,
+        "max_download_mb": 0,
+        "paid_calls": 0
+      },
+      "acceptance": [
+        "Preserve quoted meaning and chronology",
+        "No reused old audio when remove/replace is selected",
+        "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+      ],
+      "claims": [
+        {
+          "text": "The prototype reports telemetry once per minute.",
+          "source": "report",
+          "locator": "Section 2 paragraph 1",
+          "review": "verified"
+        }
+      ],
+      "edits": [],
+      "brief": {
+        "language": "en",
+        "duration_seconds": 12,
+        "blocks": [
+          {
+            "id": "story",
+            "input": "brand",
+            "duration_seconds": 12,
+            "deliverables": [
+              "video-export",
+              "still-export"
+            ],
+            "preferred_tool": "diffusers-sdxl"
+          }
+        ]
+      }
+    },
+    "expected": {
+      "error": "preferred_tool must name a known"
+    }
+  },
+  {
+    "id": "insight-vertical-staged-3d-evidence",
+    "scenario": "insight",
+    "spec": {
+      "scenario": "insight",
+      "intended_use": "commercial",
+      "sources": [
+        {
+          "id": "report",
+          "kind": "text",
+          "origin": "SYNTHETIC: dated engineering note, not a fetched article",
+          "rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          }
+        }
+      ],
+      "limits": {
+        "wall_minutes": 20,
+        "max_input_seconds": 90,
+        "max_output_seconds": 18,
+        "max_work_mb": 300,
+        "max_download_mb": 0,
+        "paid_calls": 0
+      },
+      "acceptance": [
+        "Preserve quoted meaning and chronology",
+        "No reused old audio when remove/replace is selected",
+        "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+      ],
+      "claims": [
+        {
+          "text": "The prototype reports telemetry once per minute.",
+          "source": "report",
+          "locator": "Section 2 paragraph 1",
+          "review": "verified"
+        }
+      ],
+      "edits": [],
+      "brief": {
+        "language": "en",
+        "duration_seconds": 12,
+        "blocks": [
+          {
+            "id": "story",
+            "input": "object",
+            "duration_seconds": 12,
+            "deliverables": [
+              "video-export",
+              "still-export"
+            ],
+            "preferred_tool": "three-scene",
+            "effects": [
+              "staged-3d"
+            ]
+          }
+        ],
+        "canvas": {
+          "width": 1080,
+          "height": 1920,
+          "fps": 30
+        }
+      }
+    },
+    "expected": {
+      "status": "blocked",
+      "production_blocked": false,
+      "publication_blocked": false,
+      "unmet": [
+        "staged-3d"
+      ]
+    }
+  },
+  {
+    "id": "hybrid-conflicting-music-purpose",
+    "scenario": "hybrid",
+    "spec": {
+      "scenario": "hybrid",
+      "intended_use": "commercial",
+      "sources": [
+        {
+          "id": "clip",
+          "kind": "video",
+          "origin": "SYNTHETIC: authorised community event recording, not supplied",
+          "duration_seconds": 35,
+          "video_rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          },
+          "audio_policy": "remove"
+        },
+        {
+          "id": "report",
+          "kind": "text",
+          "origin": "SYNTHETIC: dated engineering note, not a fetched article",
+          "rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          }
+        },
+        {
+          "id": "score",
+          "kind": "audio",
+          "origin": "SYNTHETIC: original composition and recording",
+          "rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          }
+        }
+      ],
+      "limits": {
+        "wall_minutes": 20,
+        "max_input_seconds": 90,
+        "max_output_seconds": 18,
+        "max_work_mb": 300,
+        "max_download_mb": 0,
+        "paid_calls": 0
+      },
+      "acceptance": [
+        "Preserve quoted meaning and chronology",
+        "No reused old audio when remove/replace is selected",
+        "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+      ],
+      "claims": [
+        {
+          "text": "The prototype reports telemetry once per minute.",
+          "source": "report",
+          "locator": "Section 2 paragraph 1",
+          "review": "verified"
+        }
+      ],
+      "edits": [
+        {
+          "source": "clip",
+          "in_seconds": 3,
+          "out_seconds": 9,
+          "reason": "Conditional owner-selected complete sentence"
+        }
+      ],
+      "brief": {
+        "language": "en",
+        "duration_seconds": 12,
+        "blocks": [
+          {
+            "id": "story",
+            "input": "brand",
+            "duration_seconds": 12,
+            "deliverables": [
+              "video-export",
+              "still-export"
+            ]
+          }
+        ],
+        "music": {
+          "direction": "music-first",
+          "mode": "existing",
+          "audio_source": "conditional-score.wav",
+          "intended_use": "noncommercial",
+          "inputs_authorized": true,
+          "rights": {
+            "status": "noncommercial_only",
+            "evidence": "SYNTHETIC NC licence"
+          }
+        }
+      }
+    },
+    "expected": {
+      "error": "music.intended_use must match"
+    }
+  },
+  {
+    "id": "hybrid-complete-timeline-over-cap",
+    "scenario": "hybrid",
+    "spec": {
+      "scenario": "hybrid",
+      "intended_use": "commercial",
+      "sources": [
+        {
+          "id": "clip",
+          "kind": "video",
+          "origin": "SYNTHETIC: authorised community event recording, not supplied",
+          "duration_seconds": 35,
+          "video_rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          },
+          "audio_policy": "remove"
+        },
+        {
+          "id": "report",
+          "kind": "text",
+          "origin": "SYNTHETIC: dated engineering note, not a fetched article",
+          "rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          }
+        },
+        {
+          "id": "score",
+          "kind": "audio",
+          "origin": "SYNTHETIC: original composition and recording",
+          "rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          }
+        }
+      ],
+      "limits": {
+        "wall_minutes": 20,
+        "max_input_seconds": 90,
+        "max_output_seconds": 10,
+        "max_work_mb": 300,
+        "max_download_mb": 0,
+        "paid_calls": 0
+      },
+      "acceptance": [
+        "Preserve quoted meaning and chronology",
+        "No reused old audio when remove/replace is selected",
+        "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+      ],
+      "claims": [
+        {
+          "text": "The prototype reports telemetry once per minute.",
+          "source": "report",
+          "locator": "Section 2 paragraph 1",
+          "review": "verified"
+        }
+      ],
+      "edits": [
+        {
+          "source": "clip",
+          "in_seconds": 3,
+          "out_seconds": 9,
+          "reason": "Conditional owner-selected complete sentence"
+        }
+      ],
+      "brief": {
+        "language": "en",
+        "duration_seconds": 12,
+        "blocks": [
+          {
+            "id": "story",
+            "input": "brand",
+            "duration_seconds": 12,
+            "deliverables": [
+              "video-export",
+              "still-export"
+            ]
+          }
+        ]
+      }
+    },
+    "expected": {
+      "status": "blocked",
+      "production_blocked": true,
+      "publication_blocked": false
+    }
+  },
+  {
+    "id": "hybrid-denied-source-quotation",
+    "scenario": "hybrid",
+    "spec": {
+      "scenario": "hybrid",
+      "intended_use": "commercial",
+      "sources": [
+        {
+          "id": "clip",
+          "kind": "video",
+          "origin": "SYNTHETIC: authorised community event recording, not supplied",
+          "duration_seconds": 35,
+          "video_rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          },
+          "audio_policy": "remove"
+        },
+        {
+          "id": "report",
+          "kind": "text",
+          "origin": "SYNTHETIC: dated engineering note, not a fetched article",
+          "rights": {
+            "status": "denied"
+          }
+        },
+        {
+          "id": "score",
+          "kind": "audio",
+          "origin": "SYNTHETIC: original composition and recording",
+          "rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          }
+        }
+      ],
+      "limits": {
+        "wall_minutes": 20,
+        "max_input_seconds": 90,
+        "max_output_seconds": 18,
+        "max_work_mb": 300,
+        "max_download_mb": 0,
+        "paid_calls": 0
+      },
+      "acceptance": [
+        "Preserve quoted meaning and chronology",
+        "No reused old audio when remove/replace is selected",
+        "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+      ],
+      "claims": [
+        {
+          "text": "The prototype reports telemetry once per minute.",
+          "source": "report",
+          "locator": "Section 2 paragraph 1",
+          "review": "verified"
+        }
+      ],
+      "edits": [
+        {
+          "source": "clip",
+          "in_seconds": 3,
+          "out_seconds": 9,
+          "reason": "Conditional owner-selected complete sentence"
+        }
+      ],
+      "brief": {
+        "language": "en",
+        "duration_seconds": 12,
+        "blocks": [
+          {
+            "id": "story",
+            "input": "brand",
+            "duration_seconds": 12,
+            "deliverables": [
+              "video-export",
+              "still-export"
+            ]
+          }
+        ]
+      }
+    },
+    "expected": {
+      "status": "blocked",
+      "production_blocked": true,
+      "publication_blocked": true
+    }
+  },
+  {
+    "id": "hybrid-conditional-mixed-handoff",
+    "scenario": "hybrid",
+    "spec": {
+      "scenario": "hybrid",
+      "intended_use": "commercial",
+      "sources": [
+        {
+          "id": "clip",
+          "kind": "video",
+          "origin": "SYNTHETIC: authorised community event recording, not supplied",
+          "duration_seconds": 35,
+          "video_rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          },
+          "audio_policy": "remove"
+        },
+        {
+          "id": "report",
+          "kind": "text",
+          "origin": "SYNTHETIC: dated engineering note, not a fetched article",
+          "rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          }
+        },
+        {
+          "id": "score",
+          "kind": "audio",
+          "origin": "SYNTHETIC: original composition and recording",
+          "rights": {
+            "status": "granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          }
+        }
+      ],
+      "limits": {
+        "wall_minutes": 20,
+        "max_input_seconds": 90,
+        "max_output_seconds": 18,
+        "max_work_mb": 300,
+        "max_download_mb": 0,
+        "paid_calls": 0
+      },
+      "acceptance": [
+        "Preserve quoted meaning and chronology",
+        "No reused old audio when remove/replace is selected",
+        "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+      ],
+      "claims": [
+        {
+          "text": "The prototype reports telemetry once per minute.",
+          "source": "report",
+          "locator": "Section 2 paragraph 1",
+          "review": "verified"
+        }
+      ],
+      "edits": [
+        {
+          "source": "clip",
+          "in_seconds": 3,
+          "out_seconds": 9,
+          "reason": "Conditional owner-selected complete sentence"
+        }
+      ],
+      "brief": {
+        "language": "en",
+        "duration_seconds": 12,
+        "blocks": [
+          {
+            "id": "retained",
+            "input": "video",
+            "duration_seconds": 6,
+            "deliverables": [
+              "video-export"
+            ]
+          },
+          {
+            "id": "explain",
+            "input": "brand",
+            "duration_seconds": 6,
+            "preferred_tool": "remotion",
+            "preferred_voice": "supertonic3",
+            "deliverables": [
+              "video-export",
+              "still-export",
+              "narration"
+            ]
+          }
+        ],
+        "music": {
+          "direction": "music-first",
+          "mode": "existing",
+          "audio_source": "conditional-score.wav",
+          "inputs_authorized": true,
+          "rights": {
+            "status": "commercial_granted",
+            "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+          }
+        }
+      }
+    },
+    "expected": {
+      "status": "proposed",
+      "production_blocked": false,
+      "publication_blocked": false,
+      "tools": [
+        "ffmpeg",
+        "remotion",
+        "supertonic3"
+      ],
+      "music_use": "commercial"
+    }
+  }
+]

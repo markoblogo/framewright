@@ -1,0 +1,26 @@
+No. Neither auto-editor nor PySceneDetect can be treated as a **tested semantic selector** for choosing the most interesting eight seconds, judging humour, or preserving meaning while shuffling quotes.
+
+The supplied evidence supports a narrower comparison:
+
+| Tool | Supported evidence | Limit for this request |
+|---|---|---|
+| auto-editor | The retained review describes cuts based on audio loudness/motion. Offline search returns **candidate**, with unknown structured feature evidence. | Silence detection cannot judge importance, meaning, or whether removing a pause changes emphasis. It is not qualified here as a tested semantic selector. |
+| PySceneDetect | Version 0.7.2 with OpenCV 5.0.0.93 recovered four authored hard cuts in one 15-second, 1080p30 fixture. | This tests visual cut detection on that fixture, not interview comprehension, quote ranking, or safe reordering. |
+
+These findings come from the supplied [review ledger](router/references/review-ledger.json), [tool profiles](router/references/tools.json), and the offline search helper. The helper only printed registry information; it did not inspect footage or test either runtime.
+
+The feasible path under your constraints is **human selection and meaning review, followed by manual editing in an already available local editor**. There is no supported automatic semantic route in the supplied evidence. If no suitable editor is already available, actual editing remains blocked by the no-install constraint.
+
+For a later edit, the method would be:
+
+1. Watch/listen to the complete 70-second interview. Manually note candidate quotes, source timestamps, their surrounding question/context, and why each might work. No transcription model is necessary.
+2. Select complete, self-contained statements whose combined edited duration can fit eight seconds. Keep negations, qualifications, attribution and relevant context. “Most interesting” and “funny” remain human editorial judgments.
+3. Reorder only statements that remain accurate in their new surroundings. Reject arrangements that imply a new answer, causal relationship, chronology or endorsement. If shuffling cannot preserve meaning, keep the relevant order.
+4. Trim pauses individually, protecting word boundaries, breaths and pauses that communicate hesitation or emphasis. Use jump-cut timing for humour.
+5. Compare the proposed sequence against the full original context, then review the eventual encoded edit for eight-second duration, intelligibility, clipped words, sync and cut seams.
+
+The supplied MoviePy/FFmpeg compilation recipe supports assembly of manually selected ranges; it does not establish automatic selection. Adding that chain would be unnecessary under your “no new pipeline” constraint.
+
+Tool licences are separate from interview rights: auto-editor’s retained note says Unlicense, PySceneDetect BSD-3-Clause with separate dependency terms. Neither clears picture, recorded speech or permission for the intended reuse. Those remain hypothetical, and publication is unauthorised.
+
+No media or runtime was supplied. No selection, edit, installation, provider call, render, file write or checkpoint occurred.

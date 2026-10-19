@@ -161,6 +161,14 @@ def validate(root, local_root=None):
                 headings = re.findall('^#+ (.+)$', destination.read_text(), re.M)
                 slugs = {re.sub('[^\\w -]', '', h.lower()).replace(' ', '-') for h in headings}
                 require(anchor in slugs, f'Broken heading: {doc}: {target}')
+    # A newly admitted research record must not break unrelated arsenal searches.
+    facets_path = refs / 'arsenal-facets.json'
+    ledger_path = refs / 'review-ledger.json'
+    if profile_path.is_file() and facets_path.is_file() and ledger_path.is_file():
+        facets = json.loads(facets_path.read_text())
+        ledger = json.loads(ledger_path.read_text())
+        discovered = {facets['aliases'].get(t['id'], t['id']) for t in ledger['tools']} | {t['id'] for t in registry['tools']}
+        require(discovered == facets['tools'].keys(), 'Arsenal facets differ from registry/review ledger')
     print(f"PASS: {len(methods)} methods, {len(records)} outputs, {len(scenarios['cases'])} scenario specifications; local links intact.")
     print('Catalogue qualification: structural_only; this integrity check runs no model or renderer.')
     if local_root:

@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-19",
+  "status": "encoded_technical_checks_and_visual_sample_review_pass",
+  "video": {
+    "path": "Jekyll-Book-Promo-1080p.mp4",
+    "bytes": 55436674,
+    "sha256": "9ced3cf1409d1fd3ed27386f8027c7ee5329fdac32497e259747063d646bdd77",
+    "duration": 57.0,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 1710,
+    "video_codec": "h264",
+    "audio_codec": "aac"
+  },
+  "full_decode": "pass_no_errors",
+  "approved_source_pins": "unchanged except exact internal-footer deletion documented in footer-cleanup.json",
+  "owner_tp_sha256": "5932fdef2800b555b7f4df81a0f8633dc7db007520e286d25e35a2577b1b29e6",
+  "source_subtitle_text_and_timing": "7/7_match_schedule_within_1.1ms",
+  "encoded_audio": {
+    "approved_mix_correlations": [
+      {
+        "id": "hook",
+        "start": 0.25,
+        "end": 7.076666666666667,
+        "zero_lag_correlation_with_approved_mix": 0.9997809877818865
+      },
+      {
+        "id": "book",
+        "start": 8.4,
+        "end": 14.7390625,
+        "zero_lag_correlation_with_approved_mix": 0.9997116224556147
+      },
+      {
+        "id": "layers",
+        "start": 17.4,
+        "end": 24.435666666666666,
+        "zero_lag_correlation_with_approved_mix": 0.9997092641564101
+      },
+      {
+        "id": "listen",
+        "start": 25.1,
+        "end": 26.562875000000002,
+        "zero_lag_correlation_with_approved_mix": 0.9998731447073174
+      },
+      {
+        "id": "owner-tp",
+        "start": 26.9,
+        "end": 35.23,
+        "zero_lag_correlation_with_approved_mix": 0.99992875908179
+      },
+      {
+        "id": "play",
+        "start": 36.35,
+        "end": 43.66429166666667,
+        "zero_lag_correlation_with_approved_mix": 0.9996465689260832
+      },
+      {
+        "id": "cta",
+        "start": 46.4,
+        "end": 54.06260416666667,
+        "zero_lag_correlation_with_approved_mix": 0.9997868684012026
+      }
+    ],
+    "zero_and_nearby_lags": {
+      "-0.02": -0.005972580244453694,
+      "-0.001": -0.0167117842721294,
+      "0.0": 0.9997923140639062,
+      "0.001": -0.01678026039690455,
+      "0.02": -0.005871747518183696
+    },
+    "integrated_lufs": -16.81,
+    "true_peak_dbtp": -2.04,
+    "lra_lu": 12.2
+  },
+  "frame_sample_times": [
+    0.5,
+    4.75,
+    7.96,
+    8,
+    14.25,
+    16.96,
+    17,
+    23.75,
+    24.96,
+    25,
+    28.5,
+    33.25,
+    35.96,
+    36,
+    39,
+    40.5,
+    42.75,
+    45.96,
+    46,
+    49,
+    52.25,
+    55.8,
+    56.9
+  ],
+  "visual_review": "Operator inspected23 encoded samples across all six scenes/cut boundaries and full-size layers frame: glyphs, typography, actual cover, gameplay/reaction and final CTA readable; internal footer absent. Temporal samples show distinct character poses; not a full subjective real-time listening pass.",
+  "owner_preview_acceptance": "owner said «все ок»; source preview, not subsequent encoded bytes",
+  "model_listening": "not performed",
+  "publication_url": "https://youtu.be/GPfkz36JWbI",
+  "paid_generation_credits_added": 0,
+  "limits": [
+    "No audience response measurement",
+    "No new independent language or pronunciation validation",
+    "Original system-bank music use provenance retained; rights qualification remains separate"
+  ],
+  "thumbnail": {
+    "bytes": 1232775,
+    "sha256": "01c3cf17622a18cf2405b4d50153419e4feebfcb69d49819112116d2d942f73a",
+    "format": "png",
+    "width": 1280,
+    "height": 720
+  },
+  "renderer": {
+    "version": "0.8.174",
+    "capture": "screenshot",
+    "gpu": "hardware",
+    "workers": 2,
+    "source_preview_checks": "lint/runtime/layout/22contrast pass; not model listening",
+    "motion_helper": "27 heuristic hints retained; no warning-free motion claim",
+    "renderer_warning": "Sparse-keyframe warnings retained; source videos pre-extracted by renderer and movement confirmed in encoded samples. No blanket freeze-free proof."
+  },
+  "publication_verification": "user_provided_url",
+  "publication": {
+    "url": "https://youtu.be/GPfkz36JWbI",
+    "publication_verification": "user_provided_url",
+    "reported_by": "owner",
+    "reported_on": "2026-10-19",
+    "visibility": "unknown",
+    "independent_playback_verification": "not_performed"
+  }
+}

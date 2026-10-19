@@ -1,0 +1,26 @@
+Recommend a **conditional local recut: MoviePy for picture/text, Kokoro ONNX for English narration, and FFmpeg for final audio, encoding and thumbnail extraction**. This is a plan only; nothing was downloaded, generated, rendered or written.
+
+The offline editing search returned MoviePy, FFmpeg and Remotion. MoviePy is the closest fit: the supplied catalogue, compilation recipe and review ledger retain evidence for subclips, headings, dissolves and timed audio in version 2.2.1. Kokoro has scoped English narration evidence; FFmpeg has retained encoding, muxing, normalisation and frame-extraction evidence. Caption burning is documented rather than locally qualified. These component records do **not** establish that this particular combination or recap has passed testing.
+
+**Rights determine the soundtrack branch:**
+
+- Treat Telegram as provenance only. Assume the written video permission covers this commercial recut, while retaining its scope and evidence for later review.
+- Keep the original soundtrack only if permission covering its composition, recording and commercial synchronisation is established. Unknown ownership currently blocks that branch’s publication.
+- Otherwise, explicitly replace the source audio with the conditionally cleared original instrumental, once its conditions covering those same rights are satisfied. Disable the original audio entirely; do not retain background music accidentally through dialogue or ambience. Source separation would not clear rights.
+- If neither soundtrack clears, pause the music decision for an approved alternative; do not silently discard the requested music.
+
+A provisional 12-second structure, without invented source timecodes:
+
+| Recap time | Proposed treatment |
+|---|---|
+| 0–3s | Establishing moment; brief, high-contrast opening text held steadily |
+| 3–8s | Two meaningful community moments, with restrained cuts and warm, natural pacing |
+| 8–12s | Resolving human moment and a readable closing hold |
+
+Later, record selected source in/out points and reasons in an EDL, preserving context and meaning. Compare every opening line, narration claim and caption against the **actual 35-second clip**; this comparison is currently blocked. Measure the English speech before locking cuts, leaving breathing room. Confirm aspect ratio, dimensions and frame rate before layout.
+
+Intended outputs are `recap.mp4`, `captions.srt`, `thumbnail.png` extracted from the final encoded video at a recorded timecode, and separate narration/music working stems with provenance and rights notes.
+
+All production checks remain **planned or blocked**. Before any future execution, verify already-installed versions, APIs, fonts, model files and licence eligibility. Zero downloads and paid services remain firm constraints; missing dependencies block execution.
+
+A future bounded trial would require authorised local assets and runtime. Pass conditions include exact 12-second duration, coherent source meaning, legible opening/captions, clean seams, correct crop, intelligible English, sync, measured loudness/true peaks, and stem alignment/phase checks in stereo and mono. Inspect the thumbnail independently for identity, rights, dimensions, crop, readability at full/reduced size, size and hash. Human listening, owner acceptance and publication remain separate gates.

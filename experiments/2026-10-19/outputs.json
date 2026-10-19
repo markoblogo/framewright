@@ -1,0 +1,27 @@
+[
+  {
+    "id": "jekyll-toki-pona-book-promo",
+    "route": "narrated-montage",
+    "local_output": "jekyll-playmcp-design/book-promo/Jekyll-Book-Promo-1080p.mp4",
+    "bytes": 55436674,
+    "sha256": "9ced3cf1409d1fd3ed27386f8027c7ee5329fdac32497e259747063d646bdd77",
+    "thumbnail": {
+      "local_output": "jekyll-playmcp-design/book-promo/evidence/thumbnail/frame-00-at-0s.png",
+      "bytes": 1232775,
+      "sha256": "01c3cf17622a18cf2405b4d50153419e4feebfcb69d49819112116d2d942f73a",
+      "format": "png",
+      "width": 1280,
+      "height": 720
+    },
+    "evidence": "experiments/2026-10-19/evidence/jekyll-book-promo.json",
+    "qa_scope": "57s1920x1080p30 H264/AAC;1710frames;full decode,23 encoded scene/cut samples,7 source-timed subtitle cues,approved-mix zero-lag correlation by line,encoded loudness/truepeak,native1280x720 opaque cover and reduced inspection. Hyperframes0.8.174 screenshot/hardware GPU; owner TP source unchanged.",
+    "human_listening": "owner_accepted_source_preview;encoded_waveform_equivalence_verified;no_new_encoded_owner_listening_claim",
+    "creative_acceptance": "owner_accepted_source_preview;exact_internal_footer_cleanup_documented;encoded_owner_review_not_recorded",
+    "publication_url": "https://youtu.be/GPfkz36JWbI",
+    "audience_metrics": "not_measured",
+    "production_credits_added": 0,
+    "publication_url_as_provided": "https://youtu.be/GPfkz36JWbI",
+    "publication_verification": "user_provided_url",
+    "publication_visibility": "unknown"
+  }
+]

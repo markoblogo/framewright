@@ -1,0 +1,188 @@
+{
+  "media": {
+    "SIRTET-Overview": {
+      "bytes": 34552040,
+      "sha256": "f9abb20d83e57ba763595cd035ea19c7beb97cc0f4de2cb6e20495d1d9f20dd5",
+      "video": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30/1",
+        "frames": 1950,
+        "duration": "65.000000"
+      },
+      "audio": {
+        "sample_rate": "48000",
+        "channels": 2,
+        "integrated_lufs": "-16.08",
+        "true_peak_dbtp": "-1.51",
+        "lra": "9.80"
+      },
+      "full_decode": "pass",
+      "mux_video_stream_identity": "pass",
+      "visual_samples_seconds": [
+        0.5,
+        3,
+        6,
+        14,
+        23,
+        25,
+        32,
+        37,
+        41,
+        46,
+        50,
+        58,
+        63
+      ],
+      "human_listening": "pending_owner_review",
+      "creative_acceptance": "pending_owner_review",
+      "publication_url": "https://youtu.be/wPIyeBYJZbQ",
+      "publication_verification": "user_provided_url"
+    },
+    "SIRTET-AI-Wins-Short": {
+      "bytes": 21926677,
+      "sha256": "bafbeab4f7aa9df72264cc2eb61f9a944e45bf3ba820b7fe048deb44ad59a334",
+      "video": {
+        "width": 1080,
+        "height": 1920,
+        "fps": "30/1",
+        "frames": 690,
+        "duration": "23.000000"
+      },
+      "audio": {
+        "sample_rate": "48000",
+        "channels": 2,
+        "integrated_lufs": "-16.06",
+        "true_peak_dbtp": "-1.52",
+        "lra": "4.70"
+      },
+      "full_decode": "pass",
+      "mux_video_stream_identity": "pass",
+      "visual_samples_seconds": [
+        0.5,
+        2,
+        5,
+        9,
+        11,
+        12.5,
+        14,
+        16,
+        19,
+        22
+      ],
+      "human_listening": "pending_owner_review",
+      "creative_acceptance": "pending_owner_review",
+      "publication_url": "https://youtube.com/shorts/Xeta6R8hvPg",
+      "publication_verification": "user_provided_url"
+    },
+    "SIRTET-Overview-YouTube.png": {
+      "size": [
+        1280,
+        720
+      ],
+      "mode": "RGB",
+      "bytes": 592607,
+      "sha256": "61466ca35918da4fa173c8b7c70e2aae4f3d408ab8bfc8e54b51f9f34ac44701",
+      "provenance": "independent original PIL composition over approved generated game performance frame",
+      "inspection": "native and reduced preview"
+    },
+    "SIRTET-AI-Wins-Short-Cover.png": {
+      "size": [
+        1080,
+        1920
+      ],
+      "mode": "RGB",
+      "bytes": 1402223,
+      "sha256": "9121ee635bf95f862a13abc93d45d08c0421612a05209cda9cd4769545ca046f",
+      "provenance": "independent original PIL composition over approved generated game performance frame",
+      "inspection": "native and reduced preview"
+    }
+  },
+  "mix": {
+    "SIRTET-Overview": {
+      "active_voice_to_bed_db": 22.309649068963353,
+      "mono_to_stereo_rms_db": -0.00021600760861666314,
+      "raw_premaster_clipped_samples": 0,
+      "burial_music_stop_residual_peak": 9.536743164617612e-08
+    },
+    "SIRTET-AI-Wins-Short": {
+      "active_voice_to_bed_db": 24.118957425965558,
+      "mono_to_stereo_rms_db": -0.0004795854378681226,
+      "raw_premaster_clipped_samples": 0
+    }
+  },
+  "Tesseract": {
+    "checks": {
+      "dimensions": true,
+      "duration": true,
+      "asset_hashes": true,
+      "Image_timing": true,
+      "Image_transform": true,
+      "Video_timing": true,
+      "Video_transform": true
+    },
+    "version": "0.2.1/schema70",
+    "source_layers": 3,
+    "returned_layers": 4,
+    "losses": [
+      "layer names normalized",
+      "additional black canvas"
+    ],
+    "native_Adobe_or_Tesseract_runtime_playback": "not_verified_no_editor_installed",
+    "render": "downstream FFmpeg interpretation of returned simple static transforms; not converter rendering or native Adobe fidelity"
+  },
+  "ASR": {
+    "raw_word_count": 35,
+    "substitutions_corrected": 2,
+    "raw_script_wer": 0.05714285714285714,
+    "timing_defects_repaired": 1,
+    "corrections": [
+      {
+        "from": " tates",
+        "to": " tidies",
+        "reason": "compare committed narration script"
+      },
+      {
+        "word": " gone.",
+        "old_end": 12.34,
+        "end": 12.72,
+        "reason": "zero-duration alignment repaired within source line boundary"
+      },
+      {
+        "from": " Sertet,",
+        "to": " SIRTET.",
+        "reason": "game name in committed narration script"
+      }
+    ],
+    "scope": "one 23s clean Supertonic clip, tiny.en; known-script correction required; not a general ASR accuracy claim",
+    "listening": "owner listening pending; word timing estimated and source-boundary inspected",
+    "initial_sandbox_failure": "No Metal device available; bounded execution outside sandbox succeeded",
+    "known_limits": [
+      "two lexical errors in35 words",
+      "zero-length gone interval corrected within original line",
+      "no independent human timing/listening approval"
+    ]
+  },
+  "gameplay": {
+    "human": "published default seed19, real-time keyboard capture, top-out118.983s",
+    "ai": "same original core/input/simulation and visual assets; capture adapter sets seed88 and replays accepted legal actions; all-clear126.883s",
+    "original_seed19_search": "no AI win in700 random control schedules and three incomplete bounded beam searches; not a proof of impossibility",
+    "public_game": "unchanged",
+    "no_fixture_board_substitution": true,
+    "disclosure": "SEEDED DEMO \u00b7 SAME RULES on AI sequence and Short; seed specified in YouTube descriptions"
+  },
+  "replay": {
+    "outcome": "ai",
+    "board_cells": 0,
+    "accepted_actions": 27,
+    "seed": 88,
+    "end": 126.88333333333334,
+    "scope": "real simulation from its normal constructor; replay of accepted legal inputs, no board replacement",
+    "pins": {
+      "core.mjs": "3091f959d1d54aa4c224146f67a7b7a66e70808d84afeba6511f5fec26b629e0",
+      "input.mjs": "fb62eebf7795ee01f5eb713e02fd8642e2ec844d1f5330743953c4b623a85731",
+      "native/simulation.mjs": "9bf6eb18305af9b1260bf295375c34677991d929df15c66112ecc6cda10eb6a8",
+      "native/native.mjs": "ea321e3cb4ed1bcafe8f478a7445454e9e618fe988be2a53370c02229f6bf8d3"
+    }
+  }
+}

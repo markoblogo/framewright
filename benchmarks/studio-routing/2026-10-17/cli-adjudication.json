@@ -1,0 +1,19 @@
+{
+  "case": "hybrid-conditional-mixed-handoff",
+  "raw_expected_status": "proposed",
+  "observed_status": "blocked",
+  "classification": "expectation_error_not_selector_failure",
+  "reason": "Frozen expectation assumed an automatic EN Supertonic3 profile. Current profile only indexes UK; selection correctly preserves explicit EN voice as unmet. Retained EN pilot is not automatic profile promotion. Raw cases/result remain unchanged; no 12/12 raw score is claimed.",
+  "evidence": [
+    {
+      "path": "skills/video-production-router/references/tools.json",
+      "fact": "supertonic3 narration documented_languages and tested_languages contain only uk"
+    },
+    {
+      "path": "experiments/2026-10-15/contract-execution-prompt-motion.md",
+      "sha256": "108253b910265f5531061ade22f7b8da93b2649045aa52deeeb1ed5e2046c510",
+      "quote": "no automatic EN voice recommendation is promoted by this documentation update."
+    }
+  ],
+  "future_choice": "Use indexed EN Kokoro or explicitly qualify/backfill exact EN F1 scope in a separate change; do not silently substitute a requested voice."
+}

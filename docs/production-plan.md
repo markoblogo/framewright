@@ -52,3 +52,9 @@ qualification, provider integration or video experiment is claimed for this feat
 For tool discovery before freezing a brief,use [arsenal search](../skills/video-production-router/references/arsenal-search.md).
 Its combinations reuse the existing planner and remain proposed;search results
 do not alter a saved project or its accepted choices.
+
+
+The packet above is the frozen routing handoff. For a saved project's current
+script, sources, narration, main/Short edits and delivery files, use the
+[production board and local kit](../skills/video-production-router/references/production.md).
+These extend the project; they do not run the planned media tools.

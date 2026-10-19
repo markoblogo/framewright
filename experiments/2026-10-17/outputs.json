@@ -1,0 +1,106 @@
+[
+  {
+    "local_output": "playmcp-coffee-showdown/film/Disco-Coffee-Showdown-1080p.mp4",
+    "bytes": 20543909,
+    "sha256": "9b5938726ef81d589c37010150de97dffa36161fb4d8c51a10facc497262898a",
+    "id": "disco-coffee-game-overview",
+    "route": "footage-compilation",
+    "native_export": {
+      "local_output": "playmcp-coffee-showdown/film/Disco-Coffee-Picture-1080p.mp4",
+      "bytes": 17591687,
+      "sha256": "1c3be6daad74215a9f0cca053672420c3494d116205de05637534c9ae506d568"
+    },
+    "thumbnail": {
+      "local_output": "playmcp-coffee-showdown/film/Disco-Coffee-YouTube.png",
+      "bytes": 792806,
+      "sha256": "6fd9285880bc043a96ec433ae38f4c111d8b71af4b984e82de362af2ddbd1ce2",
+      "format": "png",
+      "width": 1280,
+      "height": 720
+    },
+    "evidence": "experiments/2026-10-17/evidence/disco-coffee-game-overview.txt",
+    "qa_scope": "88s1080p30 H264/AAC;actual rev12 Canvas/MediaRecorder gameplay with scripted keys and safetyTrim game-audio bus,two complete26s branches,7s side-by-side ending comparison;MoviePy2.1.2/Pillow11.3.0 static composition plus FFmpeg assembly;Supertonic3F1 EN CPU external narration;2640frames,full decode,27scene/boundary samples,native/final video-stream identity,encoded loudness/truepeak,voice/background RMS and mono checks,1280x720RGB PNG full/reduced inspection.",
+    "evidence_checks": [
+      "MEDIA_CHECKS_PASS",
+      "REAL_GAMEPLAY_CAPTURE",
+      "VOICE_F1_CPU"
+    ],
+    "human_listening": "pending_owner_review_of_this_new_script_and_final_mix",
+    "creative_acceptance": "pending_owner_review_of_film_and_thumbnail",
+    "publication_url": "https://youtu.be/WLBxcM5JQ3U",
+    "game_publication_url": "https://playmcp.io/g/g_4FzN0mD8",
+    "game_publication_verification": "native_publish_response_and_signed_out_browser_page",
+    "audience_metrics": "not_measured",
+    "publication_verification": "user_provided_url"
+  },
+  {
+    "local_output": "playmcp-coffee-showdown/shorts/worms/Worms-Win-Short.mp4",
+    "bytes": 6451077,
+    "sha256": "44438956b4715d06c164957cf41a2f6c4483afc788033c87e5f2406117739caa",
+    "id": "disco-coffee-shorts-worms",
+    "route": "footage-compilation",
+    "native_export": {
+      "local_output": "playmcp-coffee-showdown/shorts/worms/Picture-1080x1920.mp4",
+      "bytes": 5917886,
+      "sha256": "5a5e79b6647ad339dcb8f12ec3b48019b6a070166f2be3025b4afd5e0f9ee05d"
+    },
+    "thumbnail": {
+      "local_output": "playmcp-coffee-showdown/shorts/worms/Cover.png",
+      "bytes": 945436,
+      "sha256": "6940a9fcc56800367523a28dde0737cfc801783ceee8b4d06db8db9f8b724efe",
+      "format": "png",
+      "width": 1080,
+      "height": 1920
+    },
+    "thumbnail_provenance": "extracted_final_encoded_frame_0.4s",
+    "evidence": "experiments/2026-10-17/evidence/disco-coffee-shorts.txt",
+    "qa_scope": "20s1080x1920 H264/AAC48kHz,30fps600frames;manual portrait crops and simultaneous context panels from pinned actual rev12 gameplay;8cuts,large editorial captions,source-adjacent replay return;new Supertonic3F1 EN narration,re-edited owner music and authored non-tonal FX;full decode,encoded loudness/truepeak,voice/background separation,matching picture streams,20one-second plus4full-resolution visual samples,1080x1920RGB cover and270x480 reduction inspection.",
+    "evidence_checks": [
+      "SHORTS_MEDIA_PASS",
+      "VERTICAL_REFRAIN_SCOPE",
+      "REAL_GAMEPLAY_REFRAME"
+    ],
+    "human_listening": "pending_owner_review_of_new_jokes_and_mix",
+    "creative_acceptance": "pending_owner_review",
+    "publication_url": "https://youtube.com/shorts/RsUVTrr3Dmc",
+    "audience_metrics": "not_measured",
+    "viral_potential": "creative_hypothesis_only",
+    "game_publication_url": "https://playmcp.io/g/g_4FzN0mD8",
+    "publication_verification": "user_provided_url"
+  },
+  {
+    "local_output": "playmcp-coffee-showdown/shorts/boys/Bob-Wins-Short.mp4",
+    "bytes": 4342138,
+    "sha256": "b5710ba03a880a3b080bd6e3a4f259e085f325e94060d34907eb509aa38caa17",
+    "id": "disco-coffee-shorts-boys",
+    "route": "footage-compilation",
+    "native_export": {
+      "local_output": "playmcp-coffee-showdown/shorts/boys/Picture-1080x1920.mp4",
+      "bytes": 3810838,
+      "sha256": "b61b3178c3c29435c91946bd5cc390b4818af283b170894ee5b20609ddfcabe2"
+    },
+    "thumbnail": {
+      "local_output": "playmcp-coffee-showdown/shorts/boys/Cover.png",
+      "bytes": 721926,
+      "sha256": "552db820cf67668a9d6d89fe2249460986b681b65908334da9cbc89aa8c805fa",
+      "format": "png",
+      "width": 1080,
+      "height": 1920
+    },
+    "thumbnail_provenance": "extracted_final_encoded_frame_0.4s",
+    "evidence": "experiments/2026-10-17/evidence/disco-coffee-shorts.txt",
+    "qa_scope": "20s1080x1920 H264/AAC48kHz,30fps600frames;manual portrait crops and simultaneous context panels from pinned actual rev12 gameplay;8cuts,large editorial captions,source-adjacent replay return;new Supertonic3F1 EN narration,re-edited owner music and authored non-tonal FX;full decode,encoded loudness/truepeak,voice/background separation,matching picture streams,20one-second plus4full-resolution visual samples,1080x1920RGB cover and270x480 reduction inspection.",
+    "evidence_checks": [
+      "SHORTS_MEDIA_PASS",
+      "VERTICAL_REFRAIN_SCOPE",
+      "REAL_GAMEPLAY_REFRAME"
+    ],
+    "human_listening": "pending_owner_review_of_new_jokes_and_mix",
+    "creative_acceptance": "pending_owner_review",
+    "publication_url": "https://youtube.com/shorts/lky20OJaAqo",
+    "audience_metrics": "not_measured",
+    "viral_potential": "creative_hypothesis_only",
+    "game_publication_url": "https://playmcp.io/g/g_4FzN0mD8",
+    "publication_verification": "user_provided_url"
+  }
+]

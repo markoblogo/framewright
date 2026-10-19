@@ -1,0 +1,25 @@
+Select **Remotion for the chart and native thumbnail, Supertonic3 F1 for Ukrainian speech, and FFmpeg as assembly owner**. This is a conditional plan; no downloads, rendering, provider calls, writes, checkpoint or publication occurred.
+
+The supplied `tools.json`, catalogue, recipes and review ledger record Remotion 4.0.535 paper-cut animation and native-still evidence, plus scoped Supertonic3 Ukrainian M1/F1 probes and F1 video integration. F1 has a slight owner preference; pauses and stress errors remain. These component results do not qualify this exact hybrid or establish chart-data accuracy. The shared studio workflow remains experimental planning.
+
+- **0–6 seconds:** retain an owner-selected source interval, preserving context and reading order. Record source ID, locator, in/out points and selection reason in the EDL. Exclude its old audio completely.
+- **6–12 seconds:** author the paper-cut chart in Remotion from approved data, with Ukrainian labels and speech. Assume narration occupies this block; measure it before locking animation cues. Use a hard cut to preserve exactly 6+6 seconds.
+- **Common handoff:** provisionally use 1920×1080, CFR 30 fps—180 frames per block—and 48 kHz audio. Confirm format before production. Pass silent clips to FFmpeg with explicit codec/container, colour space, timestamps and flattened backgrounds. Keep voice, original music and any SFX separate until mixing.
+
+Owner review must supply specific footage, chart sources, script and music, plus evidence covering intended use. Record footage origin separately from video/audio permissions; removing audio does not clear retained pictures. Check chart/data/font rights, Remotion eligibility, FFmpeg build terms, and Supertonic SDK/model restrictions. Retained model notes require explicit synthetic-speech disclosure. Music clearance must cover composition, recording and synchronization.
+
+Future preflight must inspect installed renderer guides/API, compatible pinned packages, exact model/config/style files and local dependencies. Retain Remotion’s downloaded-browser timeout history and supported existing-browser workaround; zero downloads makes absent prerequisites blocking.
+
+Intended outputs and their **planned, currently blocked** checks:
+
+| Output | Required verification |
+|---|---|
+| `final.mp4` | Decoded 12s/360 frames, format, seams, crop/readability, old-audio absence, sync, loudness/true peaks and listening |
+| Separate stem WAVs + manifest | Duration/sample rate, alignment, polarity/phase, stereo/mono cancellation, matched-level recombination against approved mix |
+| `captions.uk.srt` | UTF-8 Ukrainian, spoken-word accuracy, measured timing, reading speed, overlap and bounds |
+| `first-screen.png` | Identify frame/timecode; inspect dimensions, crop, legibility and consistency with opening |
+| New native `thumbnail.png` | Remotion-native provenance; independently inspect identity/rights, decoded dimensions, crop, full/reduced-size legibility, size/hash |
+| YouTube copy | Compare claims/title/CTA against named approved sources; retain unknowns, credits and synthetic-speech disclosure |
+| Source/resource/QA records | Sources, claims, EDL, rights evidence, versions/hashes, transformations, elapsed time, compute/storage/cost, failures and acceptance states |
+
+After owner review, a bounded future trial should test the new speech, chart and six-second seam: pass only with accurate labels, acceptable Ukrainian pronunciation, speech fitting its slot, stable timing and inspected native stills. Automated QA, human listening, owner acceptance and publication remain separate gates.

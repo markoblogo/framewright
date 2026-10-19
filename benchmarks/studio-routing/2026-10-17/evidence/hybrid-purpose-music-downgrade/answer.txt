@@ -1,0 +1,20 @@
+**No—the commercial video cannot be cleared for publication by labelling its music subplan “noncommercial.”** The actual intended use governs. Evidence supporting `noncommercial_only` confirms that restriction; it does not supply commercial permission.
+
+The supplied implementation explicitly closes this mismatch: [plan.py](router/scripts/plan.py:51) rejects differing music and production purposes with `music.intended_use must match production.intended_use`. Omitted music use inherits the production purpose. With both correctly set to commercial, [music.py](router/scripts/music.py:61) classifies this music as `commercial_not_permitted_by_record`. A standalone noncommercial compatibility result therefore cannot clear the overall commercial workflow.
+
+A conditional plan can still describe the production:
+
+- **Picture:** reuse the hypothetically owner-cleared footage for context, insert an authored diagram explaining the process, then return to footage for the closing message. Record source IDs, selection reasons, source-time intervals and claim references in one edit decision list. Video clearance and original soundtrack clearance remain separate; remove original audio unless its retained use is explicitly cleared.
+- **Diagram:** ManimGX 0.1.1 with the mandatory FFmpeg CFR/timestamp adapter. Supplied evidence covers a 20-second, 1080p30 labelled 2D workflow pilot. Native direct mux produced DTS warnings; normalization is part of the qualified route.
+- **English speech:** local Kokoro ONNX, with retained English synthesis evidence. Measure approved narration before locking picture timing.
+- **Assembly:** FFmpeg owns the common timeline, normalization and final mix. Its assembly features and this particular footage/diagram/voice combination still require integration checks.
+
+The offline commercial-rights search returned ManimGX + Kokoro as a proposed diagram/narration chain. That supports selection, not asset clearance or qualification of the complete hybrid. MIT/Apache tool notes remain subject to exact voice, font, model, codec and build conditions.
+
+Under **free local tools, no new assets**, the practical music option is a narration-only mix with the restricted track omitted. Retaining that track would require commercial permission covering composition, recording and synchronization—evidence not supplied here. Nothing has been omitted or changed in an actual artifact.
+
+Intended future artifacts are `explainer.mp4`, the diagram intermediate, narration WAV, and a provenance/edit manifest. No thumbnail or subtitle delivery was requested. “No new assets” is treated as prohibiting acquisition now; the requested diagram and speech remain planned outputs.
+
+All production checks are **planned or blocked**: source-to-copy verification, runtime/version/licence preflight, encoded duration/format/frame timing, diagram readability and crop, seams, speech pronunciation, sync, loudness, true peaks and human listening. A later authorized bounded integration test must pass these checks before acceptance.
+
+No usable media or runtime was supplied. No assets, files or checkpoint were created; nothing was installed, rendered, fetched or published. Public publication also remains unauthorized.

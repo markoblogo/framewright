@@ -1,0 +1,2441 @@
+{
+  "scope": "deterministic_cli_only",
+  "source_commit": "905c400967dda42fe1dd9d86b65dfc8c0b8511eb",
+  "cases": 12,
+  "passed": 11,
+  "results": [
+    {
+      "id": "recut-unknown-original-audio",
+      "passed": true,
+      "failures": [],
+      "exit_code": 0,
+      "report": {
+        "scenario": "repackaging",
+        "qualification": "experimental_planning_only",
+        "execution_authorized": false,
+        "publication_authorized": false,
+        "source_inspection": "not_performed",
+        "production_blockers": [],
+        "publication_blockers": [
+          "clip:audio: unknown rights for commercial; owner resolution required"
+        ],
+        "limits": {
+          "wall_minutes": 20,
+          "max_input_seconds": 90,
+          "max_output_seconds": 18,
+          "max_work_mb": 300,
+          "max_download_mb": 0,
+          "paid_calls": 0
+        },
+        "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+        "shared_stages": [
+          "source/rights review",
+          "facts/transcript/scenes",
+          "concept/storyboard",
+          "edit decisions",
+          "scene/layer tool plan",
+          "audio selection and mix",
+          "delivery QA"
+        ],
+        "edit_decisions": [
+          {
+            "source": "clip",
+            "in_seconds": 3,
+            "out_seconds": 9,
+            "reason": "Conditional owner-selected complete sentence"
+          }
+        ],
+        "acceptance": [
+          "Preserve quoted meaning and chronology",
+          "No reused old audio when remove/replace is selected",
+          "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+        ],
+        "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+        "outputs": {
+          "mp4": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "audio-stems": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "subtitles": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "first-screen": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "thumbnail": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "youtube-copy": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "provenance": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "technical-qa": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "time-resource-log": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          }
+        },
+        "route_plan": {
+          "schema_version": 1,
+          "status": "proposed",
+          "qualification": "planning_only",
+          "execution": "not_started",
+          "music": null,
+          "production": {
+            "scenario": "repackaging",
+            "qualification": "experimental_planning_only",
+            "execution_authorized": false,
+            "publication_authorized": false,
+            "source_inspection": "not_performed",
+            "production_blockers": [],
+            "publication_blockers": [
+              "clip:audio: unknown rights for commercial; owner resolution required"
+            ],
+            "limits": {
+              "wall_minutes": 20,
+              "max_input_seconds": 90,
+              "max_output_seconds": 18,
+              "max_work_mb": 300,
+              "max_download_mb": 0,
+              "paid_calls": 0
+            },
+            "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+            "shared_stages": [
+              "source/rights review",
+              "facts/transcript/scenes",
+              "concept/storyboard",
+              "edit decisions",
+              "scene/layer tool plan",
+              "audio selection and mix",
+              "delivery QA"
+            ],
+            "edit_decisions": [
+              {
+                "source": "clip",
+                "in_seconds": 3,
+                "out_seconds": 9,
+                "reason": "Conditional owner-selected complete sentence"
+              }
+            ],
+            "acceptance": [
+              "Preserve quoted meaning and chronology",
+              "No reused old audio when remove/replace is selected",
+              "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+            ],
+            "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+            "outputs": {
+              "mp4": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "audio-stems": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "subtitles": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "first-screen": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "thumbnail": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "youtube-copy": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "provenance": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "technical-qa": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "time-resource-log": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              }
+            }
+          },
+          "minimum_evidence": "tested",
+          "canvas": {
+            "width": 1920,
+            "height": 1080,
+            "fps": 30
+          },
+          "duration_frames": 360,
+          "blocks": [
+            {
+              "id": "story",
+              "input": "video",
+              "style": "",
+              "style_match": false,
+              "primary_tool": "ffmpeg",
+              "tools": [
+                "ffmpeg"
+              ],
+              "coverage": [
+                {
+                  "feature": "video-export",
+                  "tool": "ffmpeg",
+                  "evidence": "tested",
+                  "source": "ffmpeg",
+                  "note": ""
+                },
+                {
+                  "feature": "still-export",
+                  "tool": "ffmpeg",
+                  "evidence": "tested",
+                  "source": "ffmpeg",
+                  "note": ""
+                }
+              ],
+              "unmet": [],
+              "requires_feature_test": [],
+              "start_frame": 0,
+              "duration_frames": 360,
+              "overlap_frames": 0,
+              "known_limits": {
+                "ffmpeg": [
+                  "Stream copy is conditional on compatible containers/codecs; resizing, burning captions or frame-rate conversion requires re-encoding and final QA."
+                ]
+              },
+              "handoff": {
+                "canvas": {
+                  "width": 1920,
+                  "height": 1080,
+                  "fps": 30
+                },
+                "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+                "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+              }
+            }
+          ],
+          "assembly": {
+            "tool": "ffmpeg",
+            "evidence": "documented",
+            "qualification": "new multi-block combinations need an integration test; individual successes do not qualify a chain",
+            "steps": [
+              "normalise actual size/fps/colour/alpha and frame boundaries",
+              "assemble picture and a single master audio timeline",
+              "inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata",
+              "retain native exports, final hashes and per-block evidence"
+            ]
+          },
+          "notes": [
+            "No model evaluation, rendering or publication was performed by this planner.",
+            "Style matching does not qualify a new combination.",
+            "Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review."
+          ]
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "id": "recut-removed-original-audio",
+      "passed": true,
+      "failures": [],
+      "exit_code": 0,
+      "report": {
+        "scenario": "repackaging",
+        "qualification": "experimental_planning_only",
+        "execution_authorized": false,
+        "publication_authorized": false,
+        "source_inspection": "not_performed",
+        "production_blockers": [],
+        "publication_blockers": [],
+        "limits": {
+          "wall_minutes": 20,
+          "max_input_seconds": 90,
+          "max_output_seconds": 18,
+          "max_work_mb": 300,
+          "max_download_mb": 0,
+          "paid_calls": 0
+        },
+        "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+        "shared_stages": [
+          "source/rights review",
+          "facts/transcript/scenes",
+          "concept/storyboard",
+          "edit decisions",
+          "scene/layer tool plan",
+          "audio selection and mix",
+          "delivery QA"
+        ],
+        "edit_decisions": [
+          {
+            "source": "clip",
+            "in_seconds": 3,
+            "out_seconds": 9,
+            "reason": "Conditional owner-selected complete sentence"
+          }
+        ],
+        "acceptance": [
+          "Preserve quoted meaning and chronology",
+          "No reused old audio when remove/replace is selected",
+          "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+        ],
+        "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+        "outputs": {
+          "mp4": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "audio-stems": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "subtitles": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "first-screen": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "thumbnail": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "youtube-copy": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "provenance": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "technical-qa": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "time-resource-log": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          }
+        },
+        "route_plan": {
+          "schema_version": 1,
+          "status": "proposed",
+          "qualification": "planning_only",
+          "execution": "not_started",
+          "music": null,
+          "production": {
+            "scenario": "repackaging",
+            "qualification": "experimental_planning_only",
+            "execution_authorized": false,
+            "publication_authorized": false,
+            "source_inspection": "not_performed",
+            "production_blockers": [],
+            "publication_blockers": [],
+            "limits": {
+              "wall_minutes": 20,
+              "max_input_seconds": 90,
+              "max_output_seconds": 18,
+              "max_work_mb": 300,
+              "max_download_mb": 0,
+              "paid_calls": 0
+            },
+            "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+            "shared_stages": [
+              "source/rights review",
+              "facts/transcript/scenes",
+              "concept/storyboard",
+              "edit decisions",
+              "scene/layer tool plan",
+              "audio selection and mix",
+              "delivery QA"
+            ],
+            "edit_decisions": [
+              {
+                "source": "clip",
+                "in_seconds": 3,
+                "out_seconds": 9,
+                "reason": "Conditional owner-selected complete sentence"
+              }
+            ],
+            "acceptance": [
+              "Preserve quoted meaning and chronology",
+              "No reused old audio when remove/replace is selected",
+              "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+            ],
+            "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+            "outputs": {
+              "mp4": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "audio-stems": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "subtitles": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "first-screen": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "thumbnail": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "youtube-copy": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "provenance": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "technical-qa": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "time-resource-log": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              }
+            }
+          },
+          "minimum_evidence": "tested",
+          "canvas": {
+            "width": 1920,
+            "height": 1080,
+            "fps": 30
+          },
+          "duration_frames": 360,
+          "blocks": [
+            {
+              "id": "story",
+              "input": "video",
+              "style": "",
+              "style_match": false,
+              "primary_tool": "ffmpeg",
+              "tools": [
+                "ffmpeg"
+              ],
+              "coverage": [
+                {
+                  "feature": "video-export",
+                  "tool": "ffmpeg",
+                  "evidence": "tested",
+                  "source": "ffmpeg",
+                  "note": ""
+                },
+                {
+                  "feature": "still-export",
+                  "tool": "ffmpeg",
+                  "evidence": "tested",
+                  "source": "ffmpeg",
+                  "note": ""
+                }
+              ],
+              "unmet": [],
+              "requires_feature_test": [],
+              "start_frame": 0,
+              "duration_frames": 360,
+              "overlap_frames": 0,
+              "known_limits": {
+                "ffmpeg": [
+                  "Stream copy is conditional on compatible containers/codecs; resizing, burning captions or frame-rate conversion requires re-encoding and final QA."
+                ]
+              },
+              "handoff": {
+                "canvas": {
+                  "width": 1920,
+                  "height": 1080,
+                  "fps": 30
+                },
+                "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+                "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+              }
+            }
+          ],
+          "assembly": {
+            "tool": "ffmpeg",
+            "evidence": "documented",
+            "qualification": "new multi-block combinations need an integration test; individual successes do not qualify a chain",
+            "steps": [
+              "normalise actual size/fps/colour/alpha and frame boundaries",
+              "assemble picture and a single master audio timeline",
+              "inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata",
+              "retain native exports, final hashes and per-block evidence"
+            ]
+          },
+          "notes": [
+            "No model evaluation, rendering or publication was performed by this planner.",
+            "Style matching does not qualify a new combination.",
+            "Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review."
+          ]
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "id": "recut-explicit-live-ui-on-flat-footage",
+      "passed": true,
+      "failures": [],
+      "exit_code": 0,
+      "report": {
+        "scenario": "repackaging",
+        "qualification": "experimental_planning_only",
+        "execution_authorized": false,
+        "publication_authorized": false,
+        "source_inspection": "not_performed",
+        "production_blockers": [],
+        "publication_blockers": [],
+        "limits": {
+          "wall_minutes": 20,
+          "max_input_seconds": 90,
+          "max_output_seconds": 18,
+          "max_work_mb": 300,
+          "max_download_mb": 0,
+          "paid_calls": 0
+        },
+        "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+        "shared_stages": [
+          "source/rights review",
+          "facts/transcript/scenes",
+          "concept/storyboard",
+          "edit decisions",
+          "scene/layer tool plan",
+          "audio selection and mix",
+          "delivery QA"
+        ],
+        "edit_decisions": [
+          {
+            "source": "clip",
+            "in_seconds": 3,
+            "out_seconds": 9,
+            "reason": "Conditional owner-selected complete sentence"
+          }
+        ],
+        "acceptance": [
+          "Preserve quoted meaning and chronology",
+          "No reused old audio when remove/replace is selected",
+          "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+        ],
+        "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+        "outputs": {
+          "mp4": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "audio-stems": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "subtitles": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "first-screen": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "thumbnail": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "youtube-copy": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "provenance": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "technical-qa": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "time-resource-log": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          }
+        },
+        "route_plan": {
+          "schema_version": 1,
+          "status": "blocked",
+          "qualification": "planning_only",
+          "execution": "not_started",
+          "music": null,
+          "production": {
+            "scenario": "repackaging",
+            "qualification": "experimental_planning_only",
+            "execution_authorized": false,
+            "publication_authorized": false,
+            "source_inspection": "not_performed",
+            "production_blockers": [],
+            "publication_blockers": [],
+            "limits": {
+              "wall_minutes": 20,
+              "max_input_seconds": 90,
+              "max_output_seconds": 18,
+              "max_work_mb": 300,
+              "max_download_mb": 0,
+              "paid_calls": 0
+            },
+            "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+            "shared_stages": [
+              "source/rights review",
+              "facts/transcript/scenes",
+              "concept/storyboard",
+              "edit decisions",
+              "scene/layer tool plan",
+              "audio selection and mix",
+              "delivery QA"
+            ],
+            "edit_decisions": [
+              {
+                "source": "clip",
+                "in_seconds": 3,
+                "out_seconds": 9,
+                "reason": "Conditional owner-selected complete sentence"
+              }
+            ],
+            "acceptance": [
+              "Preserve quoted meaning and chronology",
+              "No reused old audio when remove/replace is selected",
+              "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+            ],
+            "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+            "outputs": {
+              "mp4": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "audio-stems": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "subtitles": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "first-screen": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "thumbnail": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "youtube-copy": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "provenance": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "technical-qa": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "time-resource-log": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              }
+            }
+          },
+          "minimum_evidence": "tested",
+          "canvas": {
+            "width": 1920,
+            "height": 1080,
+            "fps": 30
+          },
+          "duration_frames": 360,
+          "blocks": [
+            {
+              "id": "story",
+              "input": "video",
+              "style": "",
+              "style_match": false,
+              "primary_tool": "flute",
+              "tools": [],
+              "coverage": [],
+              "unmet": [
+                "video-export",
+                "still-export",
+                "input-compatible-primary"
+              ],
+              "requires_feature_test": [],
+              "start_frame": 0,
+              "duration_frames": 360,
+              "overlap_frames": 0,
+              "known_limits": {},
+              "handoff": {
+                "canvas": {
+                  "width": 1920,
+                  "height": 1080,
+                  "fps": 30
+                },
+                "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+                "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+              }
+            }
+          ],
+          "assembly": {
+            "tool": "ffmpeg",
+            "evidence": "documented",
+            "qualification": "new multi-block combinations need an integration test; individual successes do not qualify a chain",
+            "steps": [
+              "normalise actual size/fps/colour/alpha and frame boundaries",
+              "assemble picture and a single master audio timeline",
+              "inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata",
+              "retain native exports, final hashes and per-block evidence"
+            ]
+          },
+          "notes": [
+            "No model evaluation, rendering or publication was performed by this planner.",
+            "Style matching does not qualify a new combination.",
+            "Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review."
+          ]
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "id": "recut-candidate-not-auto-provider",
+      "passed": true,
+      "failures": [],
+      "exit_code": 2,
+      "report": null,
+      "stderr": "usage: workflow.py [-h] [--format {json,brief}] spec\nworkflow.py: error: preferred_tool must name a known picture/orchestration/finishing tool\n"
+    },
+    {
+      "id": "insight-unreviewed-fact",
+      "passed": true,
+      "failures": [],
+      "exit_code": 0,
+      "report": {
+        "scenario": "insight",
+        "qualification": "experimental_planning_only",
+        "execution_authorized": false,
+        "publication_authorized": false,
+        "source_inspection": "not_performed",
+        "production_blockers": [
+          "fact review: The prototype reports telemetry once per minute."
+        ],
+        "publication_blockers": [],
+        "limits": {
+          "wall_minutes": 20,
+          "max_input_seconds": 90,
+          "max_output_seconds": 18,
+          "max_work_mb": 300,
+          "max_download_mb": 0,
+          "paid_calls": 0
+        },
+        "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+        "shared_stages": [
+          "source/rights review",
+          "facts/transcript/scenes",
+          "concept/storyboard",
+          "edit decisions",
+          "scene/layer tool plan",
+          "audio selection and mix",
+          "delivery QA"
+        ],
+        "edit_decisions": [],
+        "acceptance": [
+          "Preserve quoted meaning and chronology",
+          "No reused old audio when remove/replace is selected",
+          "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+        ],
+        "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+        "outputs": {
+          "mp4": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "audio-stems": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "subtitles": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "first-screen": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "thumbnail": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "youtube-copy": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "provenance": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "technical-qa": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "time-resource-log": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          }
+        },
+        "route_plan": {
+          "schema_version": 1,
+          "status": "blocked",
+          "qualification": "planning_only",
+          "execution": "not_started",
+          "music": null,
+          "production": {
+            "scenario": "insight",
+            "qualification": "experimental_planning_only",
+            "execution_authorized": false,
+            "publication_authorized": false,
+            "source_inspection": "not_performed",
+            "production_blockers": [
+              "fact review: The prototype reports telemetry once per minute."
+            ],
+            "publication_blockers": [],
+            "limits": {
+              "wall_minutes": 20,
+              "max_input_seconds": 90,
+              "max_output_seconds": 18,
+              "max_work_mb": 300,
+              "max_download_mb": 0,
+              "paid_calls": 0
+            },
+            "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+            "shared_stages": [
+              "source/rights review",
+              "facts/transcript/scenes",
+              "concept/storyboard",
+              "edit decisions",
+              "scene/layer tool plan",
+              "audio selection and mix",
+              "delivery QA"
+            ],
+            "edit_decisions": [],
+            "acceptance": [
+              "Preserve quoted meaning and chronology",
+              "No reused old audio when remove/replace is selected",
+              "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+            ],
+            "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+            "outputs": {
+              "mp4": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "audio-stems": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "subtitles": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "first-screen": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "thumbnail": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "youtube-copy": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "provenance": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "technical-qa": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "time-resource-log": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              }
+            }
+          },
+          "minimum_evidence": "tested",
+          "canvas": {
+            "width": 1920,
+            "height": 1080,
+            "fps": 30
+          },
+          "duration_frames": 360,
+          "blocks": [
+            {
+              "id": "story",
+              "input": "brand",
+              "style": "",
+              "style_match": false,
+              "primary_tool": "remotion",
+              "tools": [
+                "remotion"
+              ],
+              "coverage": [
+                {
+                  "feature": "video-export",
+                  "tool": "remotion",
+                  "evidence": "tested",
+                  "source": "remotion",
+                  "note": ""
+                },
+                {
+                  "feature": "still-export",
+                  "tool": "remotion",
+                  "evidence": "tested",
+                  "source": "remotion",
+                  "note": ""
+                }
+              ],
+              "unmet": [],
+              "requires_feature_test": [],
+              "start_frame": 0,
+              "duration_frames": 360,
+              "overlap_frames": 0,
+              "known_limits": {
+                "remotion": [
+                  "Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately."
+                ]
+              },
+              "handoff": {
+                "canvas": {
+                  "width": 1920,
+                  "height": 1080,
+                  "fps": 30
+                },
+                "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+                "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+              }
+            }
+          ],
+          "assembly": {
+            "tool": "ffmpeg",
+            "evidence": "documented",
+            "qualification": "new multi-block combinations need an integration test; individual successes do not qualify a chain",
+            "steps": [
+              "normalise actual size/fps/colour/alpha and frame boundaries",
+              "assemble picture and a single master audio timeline",
+              "inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata",
+              "retain native exports, final hashes and per-block evidence"
+            ]
+          },
+          "notes": [
+            "No model evaluation, rendering or publication was performed by this planner.",
+            "Style matching does not qualify a new combination.",
+            "Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review."
+          ]
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "id": "insight-uk-voice-with-native-still",
+      "passed": true,
+      "failures": [],
+      "exit_code": 0,
+      "report": {
+        "scenario": "insight",
+        "qualification": "experimental_planning_only",
+        "execution_authorized": false,
+        "publication_authorized": false,
+        "source_inspection": "not_performed",
+        "production_blockers": [],
+        "publication_blockers": [],
+        "limits": {
+          "wall_minutes": 20,
+          "max_input_seconds": 90,
+          "max_output_seconds": 18,
+          "max_work_mb": 300,
+          "max_download_mb": 0,
+          "paid_calls": 0
+        },
+        "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+        "shared_stages": [
+          "source/rights review",
+          "facts/transcript/scenes",
+          "concept/storyboard",
+          "edit decisions",
+          "scene/layer tool plan",
+          "audio selection and mix",
+          "delivery QA"
+        ],
+        "edit_decisions": [],
+        "acceptance": [
+          "Preserve quoted meaning and chronology",
+          "No reused old audio when remove/replace is selected",
+          "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+        ],
+        "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+        "outputs": {
+          "mp4": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "audio-stems": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "subtitles": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "first-screen": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "thumbnail": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "youtube-copy": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "provenance": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "technical-qa": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "time-resource-log": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          }
+        },
+        "route_plan": {
+          "schema_version": 1,
+          "status": "proposed",
+          "qualification": "planning_only",
+          "execution": "not_started",
+          "music": null,
+          "production": {
+            "scenario": "insight",
+            "qualification": "experimental_planning_only",
+            "execution_authorized": false,
+            "publication_authorized": false,
+            "source_inspection": "not_performed",
+            "production_blockers": [],
+            "publication_blockers": [],
+            "limits": {
+              "wall_minutes": 20,
+              "max_input_seconds": 90,
+              "max_output_seconds": 18,
+              "max_work_mb": 300,
+              "max_download_mb": 0,
+              "paid_calls": 0
+            },
+            "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+            "shared_stages": [
+              "source/rights review",
+              "facts/transcript/scenes",
+              "concept/storyboard",
+              "edit decisions",
+              "scene/layer tool plan",
+              "audio selection and mix",
+              "delivery QA"
+            ],
+            "edit_decisions": [],
+            "acceptance": [
+              "Preserve quoted meaning and chronology",
+              "No reused old audio when remove/replace is selected",
+              "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+            ],
+            "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+            "outputs": {
+              "mp4": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "audio-stems": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "subtitles": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "first-screen": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "thumbnail": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "youtube-copy": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "provenance": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "technical-qa": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "time-resource-log": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              }
+            }
+          },
+          "minimum_evidence": "tested",
+          "canvas": {
+            "width": 1920,
+            "height": 1080,
+            "fps": 30
+          },
+          "duration_frames": 360,
+          "blocks": [
+            {
+              "id": "story",
+              "input": "brand",
+              "style": "",
+              "style_match": false,
+              "primary_tool": "remotion",
+              "tools": [
+                "remotion",
+                "supertonic3"
+              ],
+              "coverage": [
+                {
+                  "feature": "video-export",
+                  "tool": "remotion",
+                  "evidence": "tested",
+                  "source": "remotion",
+                  "note": ""
+                },
+                {
+                  "feature": "still-export",
+                  "tool": "remotion",
+                  "evidence": "tested",
+                  "source": "remotion",
+                  "note": ""
+                },
+                {
+                  "feature": "narration",
+                  "tool": "supertonic3",
+                  "evidence": "tested",
+                  "source": "supertonic3",
+                  "note": "M1/F1 short UK probes owner-accepted;defaultF1(slight subjective preference). First24s F1 video integration passed encoded checks,accepted intro reused,new title/CTA generated;final-film listening pending. Residual pause/stress errors known."
+                }
+              ],
+              "unmet": [],
+              "requires_feature_test": [],
+              "start_frame": 0,
+              "duration_frames": 360,
+              "overlap_frames": 0,
+              "known_limits": {
+                "remotion": [
+                  "Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately."
+                ],
+                "supertonic3": [
+                  "M1/F1 short-script probes and one24s F1 film integrated;longer/new scripts and other voices need QA. Final film owner listening remains pending.",
+                  "Owner reports residual pauses and2\u20133 stress errors;intonation good. F1 preference is slight and subjective.",
+                  "Other upstream-documented languages are not locally qualified by this profile. No singing,cloning or other stock voices tested.",
+                  "Model output requires explicit synthetic/AI-generated disclosure;licence restrictions still apply."
+                ]
+              },
+              "handoff": {
+                "canvas": {
+                  "width": 1920,
+                  "height": 1080,
+                  "fps": 30
+                },
+                "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+                "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+              }
+            }
+          ],
+          "assembly": {
+            "tool": "ffmpeg",
+            "evidence": "documented",
+            "qualification": "new multi-block combinations need an integration test; individual successes do not qualify a chain",
+            "steps": [
+              "normalise actual size/fps/colour/alpha and frame boundaries",
+              "assemble picture and a single master audio timeline",
+              "inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata",
+              "retain native exports, final hashes and per-block evidence"
+            ]
+          },
+          "notes": [
+            "No model evaluation, rendering or publication was performed by this planner.",
+            "Style matching does not qualify a new combination.",
+            "Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review."
+          ]
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "id": "insight-unqualified-diffusion-provider",
+      "passed": true,
+      "failures": [],
+      "exit_code": 2,
+      "report": null,
+      "stderr": "usage: workflow.py [-h] [--format {json,brief}] spec\nworkflow.py: error: preferred_tool must name a known picture/orchestration/finishing tool\n"
+    },
+    {
+      "id": "insight-vertical-staged-3d-evidence",
+      "passed": true,
+      "failures": [],
+      "exit_code": 0,
+      "report": {
+        "scenario": "insight",
+        "qualification": "experimental_planning_only",
+        "execution_authorized": false,
+        "publication_authorized": false,
+        "source_inspection": "not_performed",
+        "production_blockers": [],
+        "publication_blockers": [],
+        "limits": {
+          "wall_minutes": 20,
+          "max_input_seconds": 90,
+          "max_output_seconds": 18,
+          "max_work_mb": 300,
+          "max_download_mb": 0,
+          "paid_calls": 0
+        },
+        "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+        "shared_stages": [
+          "source/rights review",
+          "facts/transcript/scenes",
+          "concept/storyboard",
+          "edit decisions",
+          "scene/layer tool plan",
+          "audio selection and mix",
+          "delivery QA"
+        ],
+        "edit_decisions": [],
+        "acceptance": [
+          "Preserve quoted meaning and chronology",
+          "No reused old audio when remove/replace is selected",
+          "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+        ],
+        "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+        "outputs": {
+          "mp4": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "audio-stems": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "subtitles": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "first-screen": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "thumbnail": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "youtube-copy": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "provenance": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "technical-qa": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "time-resource-log": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          }
+        },
+        "route_plan": {
+          "schema_version": 1,
+          "status": "blocked",
+          "qualification": "planning_only",
+          "execution": "not_started",
+          "music": null,
+          "production": {
+            "scenario": "insight",
+            "qualification": "experimental_planning_only",
+            "execution_authorized": false,
+            "publication_authorized": false,
+            "source_inspection": "not_performed",
+            "production_blockers": [],
+            "publication_blockers": [],
+            "limits": {
+              "wall_minutes": 20,
+              "max_input_seconds": 90,
+              "max_output_seconds": 18,
+              "max_work_mb": 300,
+              "max_download_mb": 0,
+              "paid_calls": 0
+            },
+            "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+            "shared_stages": [
+              "source/rights review",
+              "facts/transcript/scenes",
+              "concept/storyboard",
+              "edit decisions",
+              "scene/layer tool plan",
+              "audio selection and mix",
+              "delivery QA"
+            ],
+            "edit_decisions": [],
+            "acceptance": [
+              "Preserve quoted meaning and chronology",
+              "No reused old audio when remove/replace is selected",
+              "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+            ],
+            "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+            "outputs": {
+              "mp4": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "audio-stems": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "subtitles": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "first-screen": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "thumbnail": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "youtube-copy": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "provenance": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "technical-qa": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "time-resource-log": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              }
+            }
+          },
+          "minimum_evidence": "tested",
+          "canvas": {
+            "width": 1080,
+            "height": 1920,
+            "fps": 30
+          },
+          "duration_frames": 360,
+          "blocks": [
+            {
+              "id": "story",
+              "input": "object",
+              "style": "",
+              "style_match": false,
+              "primary_tool": "three-scene",
+              "tools": [
+                "three-scene",
+                "remotion"
+              ],
+              "coverage": [
+                {
+                  "feature": "video-export",
+                  "tool": "remotion",
+                  "evidence": "tested",
+                  "source": "remotion",
+                  "note": ""
+                },
+                {
+                  "feature": "still-export",
+                  "tool": "remotion",
+                  "evidence": "tested",
+                  "source": "remotion",
+                  "note": ""
+                }
+              ],
+              "unmet": [
+                "staged-3d",
+                "vertical-format"
+              ],
+              "requires_feature_test": [],
+              "start_frame": 0,
+              "duration_frames": 360,
+              "overlap_frames": 0,
+              "known_limits": {
+                "three-scene": [
+                  "Authored geometry and staging are required; a book cover is not an automatic 3D reconstruction.",
+                  "Only the20s horizontal1920x1080/30fps pilot is tested; other canvases/fps downgrade feature evidence.",
+                  "No calibrated physics, historical reconstruction, live market data, arbitrary imported models, native still, transparency, vertical export or cross-GPU reproducibility qualified.",
+                  "Hyperframes owns rendering; no unrelated Anatomy/Flute/Remotion execution is implied. Kokoro and FFmpeg supply voice/audio/encoded stills as separate layers.",
+                  "New multi-tool combinations require encoded integration QA. Technical QA and owner preference do not prove agent routing or audience performance."
+                ],
+                "remotion": [
+                  "Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately."
+                ]
+              },
+              "handoff": {
+                "canvas": {
+                  "width": 1080,
+                  "height": 1920,
+                  "fps": 30
+                },
+                "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+                "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+              }
+            }
+          ],
+          "assembly": {
+            "tool": "ffmpeg",
+            "evidence": "documented",
+            "qualification": "new multi-block combinations need an integration test; individual successes do not qualify a chain",
+            "steps": [
+              "normalise actual size/fps/colour/alpha and frame boundaries",
+              "assemble picture and a single master audio timeline",
+              "inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata",
+              "retain native exports, final hashes and per-block evidence"
+            ]
+          },
+          "notes": [
+            "No model evaluation, rendering or publication was performed by this planner.",
+            "Style matching does not qualify a new combination.",
+            "Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review."
+          ]
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "id": "hybrid-conflicting-music-purpose",
+      "passed": true,
+      "failures": [],
+      "exit_code": 2,
+      "report": null,
+      "stderr": "usage: workflow.py [-h] [--format {json,brief}] spec\nworkflow.py: error: music.intended_use must match production.intended_use\n"
+    },
+    {
+      "id": "hybrid-complete-timeline-over-cap",
+      "passed": true,
+      "failures": [],
+      "exit_code": 0,
+      "report": {
+        "scenario": "hybrid",
+        "qualification": "experimental_planning_only",
+        "execution_authorized": false,
+        "publication_authorized": false,
+        "source_inspection": "not_performed",
+        "production_blockers": [
+          "planned complete timeline exceeds max_output_seconds"
+        ],
+        "publication_blockers": [],
+        "limits": {
+          "wall_minutes": 20,
+          "max_input_seconds": 90,
+          "max_output_seconds": 10,
+          "max_work_mb": 300,
+          "max_download_mb": 0,
+          "paid_calls": 0
+        },
+        "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+        "shared_stages": [
+          "source/rights review",
+          "facts/transcript/scenes",
+          "concept/storyboard",
+          "edit decisions",
+          "scene/layer tool plan",
+          "audio selection and mix",
+          "delivery QA"
+        ],
+        "edit_decisions": [
+          {
+            "source": "clip",
+            "in_seconds": 3,
+            "out_seconds": 9,
+            "reason": "Conditional owner-selected complete sentence"
+          }
+        ],
+        "acceptance": [
+          "Preserve quoted meaning and chronology",
+          "No reused old audio when remove/replace is selected",
+          "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+        ],
+        "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+        "outputs": {
+          "mp4": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "audio-stems": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "subtitles": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "first-screen": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "thumbnail": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "youtube-copy": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "provenance": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "technical-qa": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "time-resource-log": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          }
+        },
+        "route_plan": {
+          "schema_version": 1,
+          "status": "blocked",
+          "qualification": "planning_only",
+          "execution": "not_started",
+          "music": null,
+          "production": {
+            "scenario": "hybrid",
+            "qualification": "experimental_planning_only",
+            "execution_authorized": false,
+            "publication_authorized": false,
+            "source_inspection": "not_performed",
+            "production_blockers": [
+              "planned complete timeline exceeds max_output_seconds"
+            ],
+            "publication_blockers": [],
+            "limits": {
+              "wall_minutes": 20,
+              "max_input_seconds": 90,
+              "max_output_seconds": 10,
+              "max_work_mb": 300,
+              "max_download_mb": 0,
+              "paid_calls": 0
+            },
+            "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+            "shared_stages": [
+              "source/rights review",
+              "facts/transcript/scenes",
+              "concept/storyboard",
+              "edit decisions",
+              "scene/layer tool plan",
+              "audio selection and mix",
+              "delivery QA"
+            ],
+            "edit_decisions": [
+              {
+                "source": "clip",
+                "in_seconds": 3,
+                "out_seconds": 9,
+                "reason": "Conditional owner-selected complete sentence"
+              }
+            ],
+            "acceptance": [
+              "Preserve quoted meaning and chronology",
+              "No reused old audio when remove/replace is selected",
+              "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+            ],
+            "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+            "outputs": {
+              "mp4": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "audio-stems": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "subtitles": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "first-screen": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "thumbnail": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "youtube-copy": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "provenance": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "technical-qa": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "time-resource-log": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              }
+            }
+          },
+          "minimum_evidence": "tested",
+          "canvas": {
+            "width": 1920,
+            "height": 1080,
+            "fps": 30
+          },
+          "duration_frames": 360,
+          "blocks": [
+            {
+              "id": "story",
+              "input": "brand",
+              "style": "",
+              "style_match": false,
+              "primary_tool": "remotion",
+              "tools": [
+                "remotion"
+              ],
+              "coverage": [
+                {
+                  "feature": "video-export",
+                  "tool": "remotion",
+                  "evidence": "tested",
+                  "source": "remotion",
+                  "note": ""
+                },
+                {
+                  "feature": "still-export",
+                  "tool": "remotion",
+                  "evidence": "tested",
+                  "source": "remotion",
+                  "note": ""
+                }
+              ],
+              "unmet": [],
+              "requires_feature_test": [],
+              "start_frame": 0,
+              "duration_frames": 360,
+              "overlap_frames": 0,
+              "known_limits": {
+                "remotion": [
+                  "Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately."
+                ]
+              },
+              "handoff": {
+                "canvas": {
+                  "width": 1920,
+                  "height": 1080,
+                  "fps": 30
+                },
+                "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+                "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+              }
+            }
+          ],
+          "assembly": {
+            "tool": "ffmpeg",
+            "evidence": "documented",
+            "qualification": "new multi-block combinations need an integration test; individual successes do not qualify a chain",
+            "steps": [
+              "normalise actual size/fps/colour/alpha and frame boundaries",
+              "assemble picture and a single master audio timeline",
+              "inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata",
+              "retain native exports, final hashes and per-block evidence"
+            ]
+          },
+          "notes": [
+            "No model evaluation, rendering or publication was performed by this planner.",
+            "Style matching does not qualify a new combination.",
+            "Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review."
+          ]
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "id": "hybrid-denied-source-quotation",
+      "passed": true,
+      "failures": [],
+      "exit_code": 0,
+      "report": {
+        "scenario": "hybrid",
+        "qualification": "experimental_planning_only",
+        "execution_authorized": false,
+        "publication_authorized": false,
+        "source_inspection": "not_performed",
+        "production_blockers": [
+          "report: use denied; remove or resolve before execution"
+        ],
+        "publication_blockers": [
+          "report:text: denied rights for commercial; owner resolution required"
+        ],
+        "limits": {
+          "wall_minutes": 20,
+          "max_input_seconds": 90,
+          "max_output_seconds": 18,
+          "max_work_mb": 300,
+          "max_download_mb": 0,
+          "paid_calls": 0
+        },
+        "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+        "shared_stages": [
+          "source/rights review",
+          "facts/transcript/scenes",
+          "concept/storyboard",
+          "edit decisions",
+          "scene/layer tool plan",
+          "audio selection and mix",
+          "delivery QA"
+        ],
+        "edit_decisions": [
+          {
+            "source": "clip",
+            "in_seconds": 3,
+            "out_seconds": 9,
+            "reason": "Conditional owner-selected complete sentence"
+          }
+        ],
+        "acceptance": [
+          "Preserve quoted meaning and chronology",
+          "No reused old audio when remove/replace is selected",
+          "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+        ],
+        "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+        "outputs": {
+          "mp4": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "audio-stems": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "subtitles": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "first-screen": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "thumbnail": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "youtube-copy": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "provenance": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "technical-qa": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "time-resource-log": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          }
+        },
+        "route_plan": {
+          "schema_version": 1,
+          "status": "blocked",
+          "qualification": "planning_only",
+          "execution": "not_started",
+          "music": null,
+          "production": {
+            "scenario": "hybrid",
+            "qualification": "experimental_planning_only",
+            "execution_authorized": false,
+            "publication_authorized": false,
+            "source_inspection": "not_performed",
+            "production_blockers": [
+              "report: use denied; remove or resolve before execution"
+            ],
+            "publication_blockers": [
+              "report:text: denied rights for commercial; owner resolution required"
+            ],
+            "limits": {
+              "wall_minutes": 20,
+              "max_input_seconds": 90,
+              "max_output_seconds": 18,
+              "max_work_mb": 300,
+              "max_download_mb": 0,
+              "paid_calls": 0
+            },
+            "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+            "shared_stages": [
+              "source/rights review",
+              "facts/transcript/scenes",
+              "concept/storyboard",
+              "edit decisions",
+              "scene/layer tool plan",
+              "audio selection and mix",
+              "delivery QA"
+            ],
+            "edit_decisions": [
+              {
+                "source": "clip",
+                "in_seconds": 3,
+                "out_seconds": 9,
+                "reason": "Conditional owner-selected complete sentence"
+              }
+            ],
+            "acceptance": [
+              "Preserve quoted meaning and chronology",
+              "No reused old audio when remove/replace is selected",
+              "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+            ],
+            "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+            "outputs": {
+              "mp4": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "audio-stems": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "subtitles": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "first-screen": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "thumbnail": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "youtube-copy": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "provenance": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "technical-qa": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "time-resource-log": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              }
+            }
+          },
+          "minimum_evidence": "tested",
+          "canvas": {
+            "width": 1920,
+            "height": 1080,
+            "fps": 30
+          },
+          "duration_frames": 360,
+          "blocks": [
+            {
+              "id": "story",
+              "input": "brand",
+              "style": "",
+              "style_match": false,
+              "primary_tool": "remotion",
+              "tools": [
+                "remotion"
+              ],
+              "coverage": [
+                {
+                  "feature": "video-export",
+                  "tool": "remotion",
+                  "evidence": "tested",
+                  "source": "remotion",
+                  "note": ""
+                },
+                {
+                  "feature": "still-export",
+                  "tool": "remotion",
+                  "evidence": "tested",
+                  "source": "remotion",
+                  "note": ""
+                }
+              ],
+              "unmet": [],
+              "requires_feature_test": [],
+              "start_frame": 0,
+              "duration_frames": 360,
+              "overlap_frames": 0,
+              "known_limits": {
+                "remotion": [
+                  "Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately."
+                ]
+              },
+              "handoff": {
+                "canvas": {
+                  "width": 1920,
+                  "height": 1080,
+                  "fps": 30
+                },
+                "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+                "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+              }
+            }
+          ],
+          "assembly": {
+            "tool": "ffmpeg",
+            "evidence": "documented",
+            "qualification": "new multi-block combinations need an integration test; individual successes do not qualify a chain",
+            "steps": [
+              "normalise actual size/fps/colour/alpha and frame boundaries",
+              "assemble picture and a single master audio timeline",
+              "inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata",
+              "retain native exports, final hashes and per-block evidence"
+            ]
+          },
+          "notes": [
+            "No model evaluation, rendering or publication was performed by this planner.",
+            "Style matching does not qualify a new combination.",
+            "Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review."
+          ]
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "id": "hybrid-conditional-mixed-handoff",
+      "passed": false,
+      "failures": [
+        "status: expected 'proposed', got 'blocked'",
+        "Missing expected tools: {'supertonic3'}"
+      ],
+      "exit_code": 0,
+      "report": {
+        "scenario": "hybrid",
+        "qualification": "experimental_planning_only",
+        "execution_authorized": false,
+        "publication_authorized": false,
+        "source_inspection": "not_performed",
+        "production_blockers": [],
+        "publication_blockers": [],
+        "limits": {
+          "wall_minutes": 20,
+          "max_input_seconds": 90,
+          "max_output_seconds": 18,
+          "max_work_mb": 300,
+          "max_download_mb": 0,
+          "paid_calls": 0
+        },
+        "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+        "shared_stages": [
+          "source/rights review",
+          "facts/transcript/scenes",
+          "concept/storyboard",
+          "edit decisions",
+          "scene/layer tool plan",
+          "audio selection and mix",
+          "delivery QA"
+        ],
+        "edit_decisions": [
+          {
+            "source": "clip",
+            "in_seconds": 3,
+            "out_seconds": 9,
+            "reason": "Conditional owner-selected complete sentence"
+          }
+        ],
+        "acceptance": [
+          "Preserve quoted meaning and chronology",
+          "No reused old audio when remove/replace is selected",
+          "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+        ],
+        "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+        "outputs": {
+          "mp4": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "audio-stems": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "subtitles": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "first-screen": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "thumbnail": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "youtube-copy": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "provenance": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "technical-qa": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          },
+          "time-resource-log": {
+            "state": "planned",
+            "file": null,
+            "qa": "not_run"
+          }
+        },
+        "route_plan": {
+          "schema_version": 1,
+          "status": "blocked",
+          "qualification": "planning_only",
+          "execution": "not_started",
+          "music": {
+            "direction": "music-first",
+            "mode": "existing",
+            "provider": "existing",
+            "provider_choice": "existing_source",
+            "execution": "not_started",
+            "technical_status": "source_declared_not_decoded",
+            "timeline_owner": "locked_music",
+            "audio_role": "existing_music",
+            "source_reference": "conditional-score.wav",
+            "sources": {
+              "video": null,
+              "audio": "conditional-score.wav"
+            },
+            "cues": [],
+            "usage_status": "commercial_claim_recorded_requires_review",
+            "intended_use": "commercial",
+            "rights": {
+              "status": "commercial_granted",
+              "evidence": "SYNTHETIC: assume owner cleared this specific use; no real asset exists"
+            },
+            "publication_authorized": false,
+            "permission_gates": [],
+            "native_visuals": {
+              "requested": "external-renderer",
+              "feature": null,
+              "evidence": "not_selected",
+              "source": null,
+              "requires_paid_feature": false
+            },
+            "handoff": [
+              "freeze the actual approved audio version; retain source and download provenance",
+              "measure real duration; prompt length is not an exact edit contract",
+              "video-first: fit music to picture cues; music-first: fit cuts to verified musical sections",
+              "keep narration, sung vocals, music and SFX separate; do not substitute TTS for singing",
+              "classify exported video as song/lyric card, cover loop or generated scene before reuse",
+              "preserve required branding/provenance; normalise dimensions/fps without claiming new detail",
+              "verify encoded sync, lyrics by listening, loudness, peaks and crop; retain local hashes"
+            ],
+            "qualification": "planning_only; technical availability and usage rights are independent"
+          },
+          "production": {
+            "scenario": "hybrid",
+            "qualification": "experimental_planning_only",
+            "execution_authorized": false,
+            "publication_authorized": false,
+            "source_inspection": "not_performed",
+            "production_blockers": [],
+            "publication_blockers": [],
+            "limits": {
+              "wall_minutes": 20,
+              "max_input_seconds": 90,
+              "max_output_seconds": 18,
+              "max_work_mb": 300,
+              "max_download_mb": 0,
+              "paid_calls": 0
+            },
+            "budget_enforcement": "declarations_only; no runner executes or enforces these limits",
+            "shared_stages": [
+              "source/rights review",
+              "facts/transcript/scenes",
+              "concept/storyboard",
+              "edit decisions",
+              "scene/layer tool plan",
+              "audio selection and mix",
+              "delivery QA"
+            ],
+            "edit_decisions": [
+              {
+                "source": "clip",
+                "in_seconds": 3,
+                "out_seconds": 9,
+                "reason": "Conditional owner-selected complete sentence"
+              }
+            ],
+            "acceptance": [
+              "Preserve quoted meaning and chronology",
+              "No reused old audio when remove/replace is selected",
+              "Separate full-file video/audio/captions/thumbnail/copy QA before delivery"
+            ],
+            "integration_gate": "A/B/C remain untested end-to-end; owner confirmation and bounded experiment required",
+            "outputs": {
+              "mp4": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "audio-stems": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "subtitles": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "first-screen": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "thumbnail": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "youtube-copy": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "provenance": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "technical-qa": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              },
+              "time-resource-log": {
+                "state": "planned",
+                "file": null,
+                "qa": "not_run"
+              }
+            }
+          },
+          "minimum_evidence": "tested",
+          "canvas": {
+            "width": 1920,
+            "height": 1080,
+            "fps": 30
+          },
+          "duration_frames": 360,
+          "blocks": [
+            {
+              "id": "retained",
+              "input": "video",
+              "style": "",
+              "style_match": false,
+              "primary_tool": "ffmpeg",
+              "tools": [
+                "ffmpeg"
+              ],
+              "coverage": [
+                {
+                  "feature": "video-export",
+                  "tool": "ffmpeg",
+                  "evidence": "tested",
+                  "source": "ffmpeg",
+                  "note": ""
+                }
+              ],
+              "unmet": [],
+              "requires_feature_test": [],
+              "start_frame": 0,
+              "duration_frames": 180,
+              "overlap_frames": 0,
+              "known_limits": {
+                "ffmpeg": [
+                  "Stream copy is conditional on compatible containers/codecs; resizing, burning captions or frame-rate conversion requires re-encoding and final QA."
+                ]
+              },
+              "handoff": {
+                "canvas": {
+                  "width": 1920,
+                  "height": 1080,
+                  "fps": 30
+                },
+                "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+                "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+              }
+            },
+            {
+              "id": "explain",
+              "input": "brand",
+              "style": "",
+              "style_match": false,
+              "primary_tool": "remotion",
+              "tools": [
+                "remotion"
+              ],
+              "coverage": [
+                {
+                  "feature": "video-export",
+                  "tool": "remotion",
+                  "evidence": "tested",
+                  "source": "remotion",
+                  "note": ""
+                },
+                {
+                  "feature": "still-export",
+                  "tool": "remotion",
+                  "evidence": "tested",
+                  "source": "remotion",
+                  "note": ""
+                }
+              ],
+              "unmet": [
+                "narration"
+              ],
+              "requires_feature_test": [],
+              "start_frame": 180,
+              "duration_frames": 180,
+              "overlap_frames": 0,
+              "known_limits": {
+                "remotion": [
+                  "Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately."
+                ]
+              },
+              "handoff": {
+                "canvas": {
+                  "width": 1920,
+                  "height": 1080,
+                  "fps": 30
+                },
+                "picture": "local clip or image/SVG asset; validate actual codec/alpha/colour compatibility",
+                "audio": "separate narration/music/stems; declare trim, gain and ownership before common mix"
+              }
+            }
+          ],
+          "assembly": {
+            "tool": "ffmpeg",
+            "evidence": "documented",
+            "qualification": "new multi-block combinations need an integration test; individual successes do not qualify a chain",
+            "steps": [
+              "normalise actual size/fps/colour/alpha and frame boundaries",
+              "assemble picture and a single master audio timeline",
+              "inspect encoded transitions, sync, loudness, peaks, thumbnail and metadata",
+              "retain native exports, final hashes and per-block evidence"
+            ]
+          },
+          "notes": [
+            "No model evaluation, rendering or publication was performed by this planner.",
+            "Style matching does not qualify a new combination.",
+            "Paid availability is a planning constraint, not purchase authority; engine licences and total cost need separate review."
+          ]
+        }
+      },
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+**No—Diffusers/SDXL, Whisper and ACE-Step are not supported safe defaults for this brief.** The supplied evidence does not establish a complete hybrid workflow within **10 minutes, 250 MiB, CPU only, no downloads and no new accounts**. With no assets or runtime supplied, feasibility remains conditional.
+
+This comparison uses the supplied router profiles, music/studio guidance and relevant review-ledger records dated October 14–17, 2026. Those are retained findings; current upstream availability and terms were not checked online.
+
+| Tool | Evidence and suitability |
+|---|---|
+| **Diffusers + SDXL** | **Deferred; documentation only.** The retained SDXL checkpoint is 6,938,078,334 bytes; its FP16 UNet alone is 5,135,149,760 bytes. Neither fits a 250 MiB total storage allowance. CPU completion time and peak RAM are unknown. With no supplied weights and downloads prohibited, it cannot supply the illustration here. SDXL generates stills, not the finished hybrid film. |
+| **Whisper** | **Candidate; documentation only.** No local transcription, CPU timing/RAM or exact model-size qualification is retained. It is relevant only if speech transcription or captions are needed; it neither selects meaningful footage nor creates a score. The upstream tiny.en VRAM estimate is not a CPU measurement. |
+| **ACE-Step** | **Runtime incomplete.** A retained 10-second CPU music probe stopped after 350.22 seconds at a free-disk guard, with approximately 2.01 GiB sampled peak RSS and no deliverable WAV. That does not prove universal failure, but supplies no successful music-generation or end-to-end budget evidence. |
+
+For comparison, the lower-resource alternative is **existing footage + a newly authored vector/code illustration + a simple originally composed score**, assembled with already available local tools. FFmpeg has scoped tested finishing evidence; authored Remotion graphics and native instrumental audio also have scoped evidence. Neither establishes that your hypothetical combination meets the caps, and neither runtime is supplied here. Cloud illustration/music services conflict with the offline constraint.
+
+A cue-sheet-first approach could coordinate the illustration, footage edits and score without making transcription compulsory. A music-library search is irrelevant until an actual folder is explicitly chosen; no folder or track has been selected or scanned.
+
+Rights remain separate from technical feasibility. Footage origin does not establish video or audio reuse permission. Retained source audio needs its own clearance; an original score needs composition, recording and synchronization rights. Diffusers’ Apache licence differs from SDXL’s restricted Open RAIL++-M weights. Whisper’s MIT terms and ACE-Step’s recorded MIT terms do not clear input media or every dependency.
+
+I interpret 250 MiB conservatively as the total task storage allowance. If it means final export size only, model storage is a separate issue, but the offline and timing gaps remain. No files, checkpoints, installations, provider calls or renders were created; publication is unauthorized.

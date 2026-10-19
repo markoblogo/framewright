@@ -93,3 +93,12 @@ search tags/retained-rights classes in `arsenal-facets.json`. The Three.js compo
 ID aliases its staged adapter; new unique records require explicit indexing. The
 standalone package smoke checks this join. No new model evaluation, renderer trial
 or general reliability/rights-clearance qualification is established by this helper.
+
+## Maintain the discovery index
+
+Adding or removing a review-ledger/profile ID also requires an explicit entry in
+`arsenal-facets.json` (after aliases). Index the task and retained licence-note hash;
+never infer asset clearance or an executable provider from a manual record.
+Run `python3 -m unittest discover -s tests -p test_search.py -q` and refresh retained
+CLI examples when diagnostics change. A stale index fails discovery closed rather
+than silently omitting tools. The full offline gate also checks the installed ZIP.

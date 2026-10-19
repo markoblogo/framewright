@@ -117,3 +117,21 @@ propose revision/removal, and obtain acceptance before dropping a requested effe
 
 Routing behaviour scenarios are in [scenarios.json](references/scenarios.json).
 They are specifications, not evidence of an independent model evaluation.
+
+For continuing production, use [project memory](references/projects.md): resume
+an existing checkpoint before planning another one. Schema-2 observations bind
+technical QA, listening, creative decisions and publication to retained revisions.
+Keep explicit owner waits and rejected/stale receipts visible; never infer
+acceptance from a filename or completion from an observation. Manual projects
+cover existing game/virtual-set work without fabricating a router-qualified plan.
+
+For script/capture/edit coordination and reuse, use the same project's
+[composition and local kit](references/production.md). Bind real material versions,
+keep main/Short cuts distinct, and expose missing footage/rights/narration.
+A collected kit is a local handoff; never infer publication authority from it.
+
+Before promising audio/image/video evaluation or asking an operator to record, use
+[media review and recording rehearsal](references/media-review.md). Check actual
+session input support; level measurement/ASR/frame sampling never substitute for
+listening, motion or sync review. The local `capture_check.py` reads short clips;
+cloud/local multimodal candidates need separate bounded qualification and authority.
