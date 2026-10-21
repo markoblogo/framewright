@@ -104,6 +104,23 @@ class MediaPilotTest(unittest.TestCase):
         r=self.score(a)
         self.assertEqual(r['counts']['false_positive'],1);self.assertEqual(r['counts']['false_negative'],1)
 
+    def test_sync_matches_delayed_beep_onsets_and_whole_cue_windows(self):
+        for intervals in [[(2.65,2.8),(8.65,8.8)],[(2,2.8),(8,8.8)],[(2,3),(8,9)]]:
+            a=self.answers(True);row=next(c for c in a['cases'] if self.gold[c['id']]['recipe']=='sync')
+            for finding,(start,end) in zip(row['findings'],intervals):finding.update(start=start,end=end)
+            r=self.score(a)
+            self.assertEqual(r['counts']['true_positive'],6)
+            self.assertEqual(r['counts']['false_positive'],0);self.assertEqual(r['counts']['false_negative'],0)
+
+    def test_sync_rejects_wrong_windows_and_unspecific_whole_clip_claim(self):
+        a=self.answers(True);row=next(c for c in a['cases'] if self.gold[c['id']]['recipe']=='sync')
+        for finding,start in zip(row['findings'],[3,9]):finding.update(start=start,end=start+.15)
+        r=self.score(a)
+        self.assertEqual(r['counts']['false_positive'],2);self.assertEqual(r['counts']['false_negative'],2)
+        row['findings']=row['findings'][:1];row['findings'][0].update(start=2,end=9)
+        r=self.score(a)
+        self.assertEqual(r['counts']['false_positive'],1);self.assertEqual(r['counts']['false_negative'],2)
+
     def test_all_green_fails_defect_cases_and_reports_missed_events(self):
         r=self.score(self.answers())
         self.assertEqual(r['counts']['false_negative'],6)

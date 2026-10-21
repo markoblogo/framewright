@@ -122,8 +122,10 @@ coverage/timestamps, contradictory passed checks and source/gold changes. It rep
 - defective cases incorrectly given all-pass and clean controls correctly accepted;
 - per-case effective checks, matched/missed event timestamps and unsupported findings.
 
-Transient findings match the same category with start error ≤0.5s and temporal
-intersection-over-union ≥0.25. Persistent heading-legibility and missing-action findings may use a
+Transient findings other than A/V sync match the same category with start error
+≤0.5s and temporal intersection-over-union ≥0.25. A/V-sync findings may localise
+the cue comparison window or the delayed beep: overlap must cover at least half
+the shorter interval, and the finding may exceed the label duration by at most0.5s. Persistent heading-legibility and missing-action findings may use a
 representative overlapping interval. Matching is one-to-one; duplicate reports do
 not earn extra detections. A broad 2–9s sync claim does not replace two localised events.
 A supported observed rejection may identify a fault in partial footage; acceptance

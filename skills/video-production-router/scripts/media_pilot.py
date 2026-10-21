@@ -316,6 +316,10 @@ def match_event(finding,label):
     if finding['category']!=label['category']:return False
     overlap=max(0,min(finding['end'],label['end'])-max(finding['start'],label['start']))
     if finding['category'] in {'unreadable_text','missing_action'}:return overlap>0
+    if finding['category']=='av_sync':
+        finding_duration=finding['end']-finding['start'];label_duration=label['end']-label['start']
+        # Reviewers may localise either the comparison cue or the delayed beep.
+        return finding_duration<=label_duration+.5 and overlap/min(finding_duration,label_duration)>=.5
     union=max(finding['end'],label['end'])-min(finding['start'],label['start'])
     return abs(finding['start']-label['start'])<=.5 and overlap/union>=.25
 
@@ -361,7 +365,7 @@ def score(root,path):
             'model_evaluation':'supplied_model_answers' if answers['reviewer']['run_kind']=='model' else 'not_performed',
             'label_validation':manifest['label_validation'],'qualification':'diagnostic_only','publication_authorized':False,
             'counts':counts,'precision':precision,'recall_all_authored_events':counts['true_positive']/counts['total_gold_events'] if counts['total_gold_events'] else None,
-            'matching_rule':{'transient_start_tolerance_seconds':.5,'minimum_temporal_iou':.25,'persistent_category_any_overlap':['unreadable_text','missing_action'],'assignment':'one_to_one'},
+            'matching_rule':{'transient_start_tolerance_seconds':.5,'minimum_temporal_iou':.25,'persistent_category_any_overlap':['unreadable_text','missing_action'],'av_sync':{'minimum_overlap_of_shorter_interval':.5,'maximum_finding_duration_over_label_seconds':.5},'assignment':'one_to_one'},
             'cases':cases,'limits':['Authored labels await independent human validation, particularly normal-size text readability.',
                                    'Label-blinded packet only; public recipes are not an unseen/causal benchmark.',
                                    'Tones/graphics do not qualify natural footage, speech, languages or general creative judgment.',
