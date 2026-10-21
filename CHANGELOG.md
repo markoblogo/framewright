@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Block imported technical QA and delivery when visual, motion or sync review is
+  rejected or pending; keep decode measurements and creative preference distinct.
+  Score persistent missing-action findings against the full commanded-open period.
+
 - Record free Gemini UI trials: reject a batch response with unbound file IDs;
   retain one correct single-video freeze finding and a clean control separately
   from hallucinated speech on byte-verified tone-only audio. Keep the candidate

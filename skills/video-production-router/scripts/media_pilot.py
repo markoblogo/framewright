@@ -58,7 +58,7 @@ def recipes():
         ('clean',[],['Continuous reference']),
         ('freeze',[event('freeze',4,5.25)],['Authored whole-frame hold interrupts required movement']),
         ('black',[event('blackout',5,6)],['Authored black interval interrupts required view']),
-        ('missing',[event('missing_action',2,3)],['Door stays shut after required opening command']),
+        ('missing',[event('missing_action',2,8)],['Door stays shut after required opening command']),
         ('sync',[event('av_sync',2,3),event('av_sync',8,9)],['Both beeps delayed by 0.65 seconds']),
         ('tiny',[event('unreadable_text',0,10)],['Main heading reduced to 7px high at low contrast; human readability confirmation pending']),
         ('cut',[],['Allowed hard cut at 5 seconds; movement continues']),
@@ -315,7 +315,7 @@ def event_covered(label,coverage):
 def match_event(finding,label):
     if finding['category']!=label['category']:return False
     overlap=max(0,min(finding['end'],label['end'])-max(finding['start'],label['start']))
-    if finding['category']=='unreadable_text':return overlap>0
+    if finding['category'] in {'unreadable_text','missing_action'}:return overlap>0
     union=max(finding['end'],label['end'])-min(finding['start'],label['start'])
     return abs(finding['start']-label['start'])<=.5 and overlap/union>=.25
 
@@ -361,7 +361,7 @@ def score(root,path):
             'model_evaluation':'supplied_model_answers' if answers['reviewer']['run_kind']=='model' else 'not_performed',
             'label_validation':manifest['label_validation'],'qualification':'diagnostic_only','publication_authorized':False,
             'counts':counts,'precision':precision,'recall_all_authored_events':counts['true_positive']/counts['total_gold_events'] if counts['total_gold_events'] else None,
-            'matching_rule':{'transient_start_tolerance_seconds':.5,'minimum_temporal_iou':.25,'persistent_category_any_overlap':['unreadable_text'],'assignment':'one_to_one'},
+            'matching_rule':{'transient_start_tolerance_seconds':.5,'minimum_temporal_iou':.25,'persistent_category_any_overlap':['unreadable_text','missing_action'],'assignment':'one_to_one'},
             'cases':cases,'limits':['Authored labels await independent human validation, particularly normal-size text readability.',
                                    'Label-blinded packet only; public recipes are not an unseen/causal benchmark.',
                                    'Tones/graphics do not qualify natural footage, speech, languages or general creative judgment.',

@@ -436,7 +436,7 @@ def main():
                     for kind,result in MEDIA['receipts'](report).items():
                         row=JOURNAL['append'](data,args.subject,kind,result,args.actor,'supplied_report',
                             'Imported media report '+args.report+' sha256='+report_pin['sha256']+
-                            '; technical scope is metadata/decode only; review judgments are supplied, not independently verified by project CLI.',
+                            '; technical QA combines metadata/decode with applicable visual/motion/sync reviews; judgments are supplied, not independently verified by project CLI.',
                             'media-review:'+kind,[args.report])
                         event(data,'import_media_review',entry=row['id'],report=args.report)
                     invalidate(data,list(evidence_blockers(data,file_problems(data,path.parent))))

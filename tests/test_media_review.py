@@ -94,6 +94,51 @@ class MediaReviewTest(unittest.TestCase):
         d=json.loads(self.project.read_text());self.assertEqual(d['steps'][0]['state'],'planned')
         self.assertTrue(json.loads(self.cli('project.py','status',self.project,'--json').stdout)['observations']['stale'])
 
+    def audiovisual_source(self):
+        if not shutil.which('ffmpeg'):self.skipTest('Existing FFmpeg required')
+        video=self.root/'fixture.mkv'
+        subprocess.run(['ffmpeg','-v','error','-f','lavfi','-i','color=black:s=64x64:r=10:d=1',
+                        '-f','lavfi','-i','anullsrc=r=8000:cl=mono','-t','1',
+                        '-c:v','ffv1','-c:a','pcm_s16le',str(video)],check=True,capture_output=True)
+        self.source=video
+
+    def complete_av_observations(self):
+        obs=self.observation(method='audio_video',kind='content')
+        obs['reviews']=[dict(copy.deepcopy(obs['reviews'][0]),kind=kind)
+                        for kind in ['content','visual','motion','sync','listening']]
+        return obs
+
+    def test_playback_review_blocks_technical_qa_and_delivery(self):
+        self.audiovisual_source()
+        for kind in ['visual','motion','sync']:
+            for result in ['rejected','pending']:
+                with self.subTest(kind=kind,result=result):
+                    self.project=self.root/(kind+'-'+result+'.json')
+                    obs=self.complete_av_observations()
+                    next(row for row in obs['reviews'] if row['kind']==kind)['result']=result
+                    r=self.report(obs);self.assertEqual(r['technical']['result'],'pass')
+                    self.setup_project(r)
+                    self.cli('project.py','task',self.project,'qa:final-video','--label','Playback QA','--requires','voice')
+                    self.cli('project.py','task',self.project,'delivery','--label','Delivery','--after','qa:final-video')
+                    for step in ['qa:final-video','delivery']:
+                        self.cli('project.py','mark',self.project,step,'--state','done','--evidence','Before review')
+                    self.cli('project.py','review',self.project,'output:voice','--report','input:review','--actor','fixture')
+                    data=json.loads(self.project.read_text())
+                    technical=[x for x in data['journal'] if x['kind']=='technical'][-1]
+                    self.assertEqual(technical['result'],'fail' if result=='rejected' else 'pending')
+                    states={x['id']:x['state'] for x in data['steps']}
+                    self.assertEqual(states['qa:final-video'],'planned');self.assertEqual(states['delivery'],'planned')
+                    self.cli('project.py','mark',self.project,'qa:final-video','--state','done','--evidence','Must stay blocked',ok=False)
+
+    def test_content_preference_is_separate_from_technical_playback_qa(self):
+        self.audiovisual_source();obs=self.complete_av_observations()
+        next(row for row in obs['reviews'] if row['kind']=='content')['result']='rejected'
+        self.setup_project(self.report(obs))
+        self.cli('project.py','review',self.project,'output:voice','--report','input:review','--actor','fixture')
+        rows=json.loads(self.project.read_text())['journal']
+        self.assertEqual(next(x['result'] for x in rows if x['kind']=='technical'),'pass')
+        self.assertEqual(next(x['result'] for x in rows if x['kind']=='creative'),'rejected')
+
     def test_import_rejects_wrong_media_and_tampered_summary_without_project_changes(self):
         r=self.report();report=self.setup_project(r)
         for change in ['hash','summary']:

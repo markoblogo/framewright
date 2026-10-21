@@ -218,7 +218,10 @@ def build(path,observations=None):
 def receipts(report):
     validate(report)
     results=report['summary']['results'];creative=[v for k,v in results.items() if k!='listening']
-    rows={'technical':report['technical']['result'],
+    playback=[results[k] for k in ['visual','motion','sync'] if k in results]
+    technical=('fail' if report['technical']['result']=='fail' or 'rejected' in playback else
+               'pending' if 'pending' in playback else 'pass')
+    rows={'technical':technical,
           'creative':'rejected' if 'rejected' in creative else 'pending' if 'pending' in creative else 'accepted'}
     if report['source']['has_audio']:rows['listening']=results['listening']
     return rows
@@ -253,7 +256,7 @@ def markdown(report):
         lines.append('- '+cell(f"{f['kind']} {f['start']}–{f['end']}s [{f['severity']}]: {f['note']} → {f['action']}; reshoot requested: {f['reshoot']}"))
     lines+=['', 'Unresolved: '+cell(', '.join(report['summary']['unresolved']) or 'none recorded'),
             'Reshoot decisions: '+str(len(report['summary']['reshoot']))+' supplied requests; unreviewed areas remain unknown.',
-            '', 'Technical pass covers metadata and full decode only. Successful import does not finish project tasks.', '']
+            '', 'The local technical field covers metadata/full decode; the imported QA gate also requires applicable visual, motion and sync reviews. Import never finishes tasks.', '']
     return '\n'.join(lines)
 
 

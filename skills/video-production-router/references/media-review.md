@@ -80,8 +80,11 @@ local intake. Request destination-specific consent only if that route is needed.
 
 The [video-perception control kit](media-perception-pilot.md) generates eight original
 10-second controls, freezes separate reviewer/operator packets and scores supplied
-answers against authored events. It is tested infrastructure, not a completed model
-trial; independent human control review and actual provider execution remain pending.
+answers against authored events. Free Gemini provider execution has occurred: the
+first batch response was rejected, while a single-video follow-up found one freeze
+and returned no findings on a clean control; the audio-only smoke failed. No
+reviewer is qualified. Remaining visual controls and independent per-label human
+validation are pending.
 
 ## Next bounded perception pilot
 

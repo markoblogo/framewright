@@ -27,7 +27,7 @@ light/beep cues, opening/closing door and a card moving between 3s and 6s.
 | Continuous reference | No injected defect |
 | Interrupted movement | Whole-frame hold at 4–5.25s |
 | Black interval | Missing picture at 5–6s |
-| Missing action | Required door opening does not occur at 2–3s |
+| Missing action | Door remains shut throughout the commanded-open interval, 2–8s |
 | Cue mismatch | Beeps lag flashes by 0.65s; two events around 2–3s and 8–9s |
 | Weak heading | Main heading is 7px high at low contrast; normal-size readability requires human confirmation |
 | Allowed cut | One intentional hard cut at 5s; no injected defect |
@@ -123,7 +123,7 @@ coverage/timestamps, contradictory passed checks and source/gold changes. It rep
 - per-case effective checks, matched/missed event timestamps and unsupported findings.
 
 Transient findings match the same category with start error ≤0.5s and temporal
-intersection-over-union ≥0.25. Persistent heading-legibility findings may use a
+intersection-over-union ≥0.25. Persistent heading-legibility and missing-action findings may use a
 representative overlapping interval. Matching is one-to-one; duplicate reports do
 not earn extra detections. A broad 2–9s sync claim does not replace two localised events.
 A supported observed rejection may identify a fault in partial footage; acceptance
@@ -149,6 +149,12 @@ Use an actual ID from the task; the placeholder is not executable. Export record
 supplied reviewer/version, method, coverage, optional fps and findings. Unsupported
 review kinds stay absent/pending; the unrun template cannot export observations.
 A fault recommendation asks for inspection/correction, not an invented reshoot decision.
+New builds label the missing-action condition for the full commanded-open interval
+2–8s. Missing-action and unreadable-text findings match representative overlap,
+rather than transient start/IoU limits. Keep existing frozen suites unchanged and
+retain the scorer revision when comparing old results. Older suites whose
+missing-action gold ends at3s have an incomplete label for that condition: archive
+them unchanged and build a new suite before further missing-action comparisons.
 Retain raw response, graded result and JSON report privately. Import the report with
 `project.py review` as described in the unified-report guide; pin any additional
 raw evidence separately when recording a real trial. No project check is auto-finished,

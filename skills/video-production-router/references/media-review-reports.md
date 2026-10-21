@@ -115,6 +115,11 @@ rerun FFmpeg or call a reviewer. Imported receipts use **supplied_report** prove
 with separate technical, creative and (when applicable) listening results. The
 original reviewer details remain in the pinned report. Creative acceptance requires
 all applicable non-listening perceptual scopes; technical pass cannot fill them in.
+The imported technical QA receipt requires both successful local decode and accepted
+applicable visual, motion and sync reviews. A rejected playback scope makes this
+receipt fail; a pending scope keeps it pending, blocking linked QA/delivery tasks.
+The report's local `technical.result` still describes metadata/decode only. Content
+preference remains a separate creative receipt; listening remains separately gated.
 
 The command creates journal observations with `media-review:KIND` topics. Pending,
 rejected or stale evidence blocks relevant existing check tasks. Replacing media or

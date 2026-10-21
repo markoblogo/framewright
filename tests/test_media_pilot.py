@@ -91,6 +91,19 @@ class MediaPilotTest(unittest.TestCase):
         self.assertEqual(r['model_evaluation'],'not_performed')
         self.assertEqual(r['qualification'],'diagnostic_only')
 
+    def test_missing_action_matches_the_persistent_commanded_open_interval(self):
+        for start,end in [(2,8),(3,8),(2,3)]:
+            a=self.answers(True);row=next(c for c in a['cases'] if self.gold[c['id']]['recipe']=='missing')
+            row['findings'][0].update(start=start,end=end)
+            r=self.score(a)
+            self.assertEqual(r['counts']['true_positive'],6)
+            self.assertEqual(r['counts']['false_positive'],0)
+            self.assertEqual(r['counts']['false_negative'],0)
+        a=self.answers(True);row=next(c for c in a['cases'] if self.gold[c['id']]['recipe']=='missing')
+        row['findings'][0].update(start=8,end=10)
+        r=self.score(a)
+        self.assertEqual(r['counts']['false_positive'],1);self.assertEqual(r['counts']['false_negative'],1)
+
     def test_all_green_fails_defect_cases_and_reports_missed_events(self):
         r=self.score(self.answers())
         self.assertEqual(r['counts']['false_negative'],6)
