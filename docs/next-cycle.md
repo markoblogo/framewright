@@ -4,6 +4,13 @@ Updated 21 October 2026. This is a planning record, not a render queue or spendi
 authority. [Completed PlayMCP review](experiments/playmcp-service-review.md) ·
 [Experiment backlog](experiment-queue.md).
 
+## Execution order
+
+The owner explicitly set the order: finish repository cleanup, checks and reviewed
+PR publication first; then prepare Pocket OS capture. Marble/world and fiction
+work stays queued until that sequence is complete. Selecting Marble as the first
+world provider does not start its inventory or generation in this closeout.
+
 ## Production status and next inputs
 
 | Workstream | State | Next input or action |
