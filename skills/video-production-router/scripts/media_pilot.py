@@ -231,7 +231,10 @@ def verify(root):
         require(path.is_file() and path.stat().st_size<=25*1024*1024 and sha256(path)==expected,'Frozen source/gold hash mismatch: '+name)
     core={k:v for k,v in frozen['files'].items() if k!='reviewer/answers-template.json'}
     require(digest(core)==frozen['suite_sha256'],'Suite identity differs from frozen files')
-    manifest=read_json(root/'operator/suite.json');gold=read_json(root/'operator/gold.json');task=read_json(root/'reviewer/task.json')
+    def pinned_json(name):
+        require(name in frozen['files'],'Missing frozen metadata: '+name)
+        return read_json(root/name,frozen['files'][name])
+    manifest=pinned_json('operator/suite.json');gold=pinned_json('operator/gold.json');task=pinned_json('reviewer/task.json')
     require(manifest['schema_version']==1 and len(manifest['cases'])==8 and manifest['model_evaluation']=='not_performed' and manifest['label_validation']=='authored_not_human_verified','Invalid control manifest')
     ids=[c['id'] for c in manifest['cases']]
     require(len(set(ids))==8 and set(ids)==set(gold),'Control/gold case sets differ')

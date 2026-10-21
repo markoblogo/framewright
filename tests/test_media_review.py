@@ -2,6 +2,7 @@
 import copy
 import hashlib
 import json
+import runpy
 from pathlib import Path
 import shutil
 import subprocess
@@ -193,6 +194,35 @@ class MediaReviewTest(unittest.TestCase):
         self.setup_project(r)
         self.cli('project.py','review',self.project,'output:voice','--report','input:review','--actor','fixture')
         d=json.loads(self.project.read_text());self.assertTrue(any(x['kind']=='technical' and x['result']=='fail' for x in d['journal']))
+
+    def test_decode_failure_does_not_override_accepted_perceptual_reviews(self):
+        module=runpy.run_path(str(BASE/'media_review.py'))
+        obs=self.observation();obs['reviews'].append(dict(copy.deepcopy(obs['reviews'][0]),kind='content'))
+        r=self.report(obs)
+        r['technical'].update(result='fail',calibration=None,calibration_status='not_performed_decode_failed')
+        r['technical']['decode'].update(result='fail',error='Fixture decoder failure')
+        r['summary']=module['summarise'](r)
+        self.assertEqual(r['summary']['perceptual_result'],'accepted')
+        self.assertEqual(r['summary']['unresolved'],['technical'])
+        module['validate'](r)
+        self.assertEqual(module['receipts'](r)['technical'],'fail')
+
+    def test_calibration_status_must_match_decode_and_capture_limits(self):
+        module=runpy.run_path(str(BASE/'media_review.py'));base=self.report()
+        for decoded in ['pass','fail']:
+            for duration,size in [(1,base['source']['bytes']),(61,base['source']['bytes']),(1,100*1024*1024+1)]:
+                for status in ['performed','failed','outside_short_capture_limits','not_performed_decode_failed']:
+                    with self.subTest(decoded=decoded,duration=duration,size=size,status=status):
+                        r=copy.deepcopy(base);r['source'].update(duration_seconds=duration,bytes=size)
+                        r['technical'].update(result=decoded,calibration_status=status)
+                        r['technical']['decode'].update(result=decoded,error='' if decoded=='pass' else 'Fixture error',decoded_seconds=duration)
+                        if status!='performed':r['technical']['calibration']=None
+                        r['summary']=module['summarise'](r)
+                        allowed=({'not_performed_decode_failed'} if decoded=='fail' else
+                                 {'performed','failed'} if duration<=60 and size<=100*1024*1024 else {'outside_short_capture_limits'})
+                        if status in allowed:module['validate'](r)
+                        else:
+                            with self.assertRaises(ValueError):module['validate'](r)
 
     def test_source_size_cap_is_checked_before_external_tools(self):
         large=self.root/'too-large.wav'

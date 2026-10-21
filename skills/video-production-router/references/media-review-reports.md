@@ -23,7 +23,8 @@ python3 skills/video-production-router/scripts/media_review.py --read local/revi
 The first command measures metadata and decodes the file. For files within the
 existing 60-second / 100-MiB calibration limits, it also reuses `capture_check.py`:
 per-channel sample peaks/RMS, silence/near-full-scale guidance and sampled video
-luma. Longer files show that calibration was not performed. A technical pass means
+luma. Longer or larger files show that calibration was not performed. Saved reports must
+keep calibration status consistent with decode success and the short-capture limits. A technical pass means
 metadata, positive decoded duration/frame evidence and decode completed, not that loudness, focus, pronunciation or style passed.
 Calibration failure/limits and individual flags remain visible in the report.
 Stream metadata is retained. Decode timing substantially shorter than metadata is
@@ -118,7 +119,9 @@ all applicable non-listening perceptual scopes; technical pass cannot fill them 
 The imported technical QA receipt requires both successful local decode and accepted
 applicable visual, motion and sync reviews. A rejected playback scope makes this
 receipt fail; a pending scope keeps it pending, blocking linked QA/delivery tasks.
-The report's local `technical.result` still describes metadata/decode only. Content
+The report's local `technical.result` still describes metadata/decode only.
+Its `perceptual_result` reflects the applicable review judgments; a decode failure
+remains a separate technical blocker even when all supplied reviews are accepted. Content
 preference remains a separate creative receipt; listening remains separately gated.
 
 The command creates journal observations with `media-review:KIND` topics. Pending,

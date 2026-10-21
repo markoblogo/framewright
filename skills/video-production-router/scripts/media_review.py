@@ -111,7 +111,7 @@ def summarise(report):
     if multiple:unresolved.append('multiple_streams_review_separate_derivatives')
     if report['technical']['result']!='pass':unresolved.insert(0,'technical')
     return {'technical_result':report['technical']['result'],'results':results,
-            'perceptual_result':'rejected' if 'rejected' in results.values() else 'pending' if unresolved else 'accepted',
+            'perceptual_result':'rejected' if 'rejected' in results.values() else 'pending' if 'pending' in results.values() else 'accepted',
             'unresolved':unresolved,'findings':findings,'reshoot':[f for f in findings if f['reshoot']],
             'note':'Measurements, supplied review judgments and owner acceptance are separate; no publication authority.'}
 
@@ -143,7 +143,10 @@ def validate(report,pin=None):
         require(not source['has_video'] or (frames is not None and frames>0),'No decoded video-frame evidence')
     require(tech['result']==tech['decode']['result'] and isinstance(tech['decode']['error'],str),'Technical result must describe the retained decode result')
     require((tech['result']=='pass' and not tech['decode']['error']) or (tech['result']=='fail' and text(tech['decode']['error'])),'Decode result/error mismatch')
-    require(tech['calibration_status'] in {'performed','outside_short_capture_limits','not_performed_decode_failed','failed'},'Unknown calibration status')
+    short=source['duration_seconds']<=60 and source['bytes']<=100*1024*1024
+    allowed=({'not_performed_decode_failed'} if tech['result']=='fail' else
+             {'performed','failed'} if short else {'outside_short_capture_limits'})
+    require(tech['calibration_status'] in allowed,'Calibration status contradicts decode result or short-capture limits')
     if tech['calibration_status']=='performed':
         c=tech['calibration'];require(isinstance(c,dict) and c.get('sha256')==source['sha256'] and c.get('source_unchanged') is True and c.get('perceptual_review')=='not_performed','Calibration must match source and cannot claim perception')
         require(source['duration_seconds']<=60 and source['bytes']<=100*1024*1024,'Calibration exceeds short-capture limits')

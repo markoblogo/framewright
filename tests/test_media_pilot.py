@@ -2,6 +2,8 @@
 import copy
 import hashlib
 import json
+import runpy
+from unittest import mock
 from pathlib import Path
 import shutil
 import subprocess
@@ -58,6 +60,19 @@ class MediaPilotTest(unittest.TestCase):
         before=(self.suite/'freeze.json').read_bytes();self.call('build',self.suite,ok=False)
         self.assertEqual(before,(self.suite/'freeze.json').read_bytes())
         self.call('verify',self.suite)
+
+    def test_metadata_replaced_after_hash_verification_is_rejected(self):
+        verify=runpy.run_path(str(CLI))['verify'];scope=verify.__globals__;read=scope['read_json']
+        for name in ['operator/suite.json','operator/gold.json','reviewer/task.json']:
+            with self.subTest(name=name):
+                target=self.suite/name;before=target.read_bytes()
+                def replace_before_read(path,expected_sha256=None):
+                    if Path(path).resolve()==target.resolve():target.write_bytes(before+b' ')
+                    return read(path,expected_sha256)
+                try:
+                    with mock.patch.dict(scope,read_json=replace_before_read):
+                        with self.assertRaisesRegex(ValueError,'bytes changed'):verify(self.suite)
+                finally:target.write_bytes(before)
 
     def test_controls_use_browser_compatible_avc_and_aac(self):
         for case in self.manifest['cases']:
