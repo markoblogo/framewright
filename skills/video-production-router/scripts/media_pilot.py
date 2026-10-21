@@ -194,7 +194,7 @@ def build(output,seed=None):
             audio(wav,.65 if kind=='sync' else 0)
             args=['ffmpeg','-v','error','-nostdin','-f','rawvideo','-pixel_format','rgb24','-video_size',f'{WIDTH}x{HEIGHT}',
                   '-framerate',str(FPS),'-i',str(raw),'-i',str(wav),'-map','0:v:0','-map','1:a:0','-t',str(SECONDS),
-                  '-c:v','mpeg4','-q:v','3','-threads','2','-pix_fmt','yuv420p','-c:a','aac','-b:a','64k','-movflags','+faststart',str(target)]
+                  '-c:v','libx264','-preset','veryfast','-crf','18','-threads','2','-pix_fmt','yuv420p','-c:a','aac','-b:a','64k','-movflags','+faststart',str(target)]
             subprocess.run(args,check=True,capture_output=True,timeout=45)
             report=MEDIA['build'](target)
             require(report['technical']['result']=='pass','Encoded control did not complete technical decode')

@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+- Record free Gemini UI trials: reject a batch response with unbound file IDs;
+  retain one correct single-video freeze finding and a clean control separately
+  from hallucinated speech on byte-verified tone-only audio. Keep the candidate
+  unqualified and preserve the owner's free-only constraint.
+
+- Fix control-clip playback in browser players by encoding H.264/AAC; retain
+  codec regression checks and require a player smoke check alongside decoding.
+
 - Prepare eight original video-perception controls with separate reviewer/gold
   packets, frozen source hashes, encoded perturbation measurements and diagnostic
   grading for false alarms, missed events and false passes. Export supplied

@@ -14,9 +14,9 @@ and revision-bound journal import. This adds reporting, not a new perceptual mod
 | --- | --- | --- |
 | Audio levels, clipping, duration, channels | Local FFmpeg/ffprobe; `capture_check.py` below | Measurements, never listening or pronunciation acceptance |
 | Transcript/timing | Existing scoped mlx-whisper; language-qualified ASR only | EN pilot only; transcript is not acoustic listening. Toki Pona unqualified |
-| Actual voice/music delivery and sound | Native audio input if available; otherwise proposed Gemini audio understanding | Confirm bytes reached model. Cloud candidate documentation only; consent, account and budget required |
+| Actual voice/music delivery and sound | Native audio input if available; otherwise proposed Gemini audio understanding | Confirm bytes reached model. Video input left listening unknown; separate free tone-only WAV smoke hallucinated speech; no acoustic qualification |
 | Image composition, layout and legibility | Agent image input/view_image on native final and reduced view | Record actual image/hash/crop/resolution; failed image delivery means not reviewed |
-| Video action, cuts, continuity and sync | Real playback with audio, or proposed Gemini audio/video understanding | Record covered intervals and sampled fps. Frame sheets do not establish sound, motion or sync |
+| Video action, cuts, continuity and sync | Real playback with audio, or proposed Gemini audio/video understanding | Single-video follow-up found one freeze and clean control had no findings; five other authored events unassessed. Record coverage/fps; no continuous acceptance |
 | Local multimodal fallback | Qwen3-Omni candidate | No installation or Mac qualification; hardware/runtime/memory preflight first |
 
 Find the untested candidates with `search.py --task media-review --evidence any`.
@@ -91,3 +91,5 @@ human listening, including false passes. Then image layout/crop and short video
 motion/sync controls. New model or language requires a new scoped trial; never
 promote a general evaluator from one successful example. Qwen local trial follows
 resource review; do not download large weights on this Mac automatically.
+
+A [free Gemini UI pilot](../../../docs/experiments/gemini-media-review.md) was attempted on 21 October: response rejected, no production reviewer qualified.

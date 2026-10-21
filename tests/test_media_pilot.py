@@ -59,6 +59,18 @@ class MediaPilotTest(unittest.TestCase):
         self.assertEqual(before,(self.suite/'freeze.json').read_bytes())
         self.call('verify',self.suite)
 
+    def test_controls_use_browser_compatible_avc_and_aac(self):
+        for case in self.manifest['cases']:
+            path=self.suite/'reviewer'/case['file']
+            probe=subprocess.run(['ffprobe','-v','error','-show_streams','-of','json',str(path)],capture_output=True,text=True,check=True)
+            streams=json.loads(probe.stdout)['streams']
+            video=next(s for s in streams if s['codec_type']=='video')
+            audio=next(s for s in streams if s['codec_type']=='audio')
+            self.assertEqual(video['codec_name'],'h264',case['id'])
+            self.assertEqual(video['codec_tag_string'],'avc1')
+            self.assertEqual(video['pix_fmt'],'yuv420p')
+            self.assertEqual(audio['codec_name'],'aac')
+
     def test_encoded_perturbations_retain_the_authored_signals(self):
         qa=json.loads((self.suite/'operator/perturbation-qa.json').read_text())
         by_recipe={self.gold[k]['recipe']:v for k,v in qa['cases'].items()}

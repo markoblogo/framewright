@@ -64,7 +64,9 @@ arsenal profiles are added by this shortlist.
 
 ## Media perception and recording rehearsal
 
-[Workflow](../skills/video-production-router/references/media-review.md): local recording calibration and revision-bound unified reports are available. The [video-control pilot](../skills/video-production-router/references/media-perception-pilot.md) now supplies eight 10-second authored clips, separate reviewer/gold packets, encoded perturbation checks and a diagnostic scorer. No model has been tested on this kit; independent human control review remains pending. Next bounded candidates are Gemini on the prepared video controls and a separate known-script audio comparison, after destination/account/budget approval. Qwen3-Omni is a resource-gated local alternative. Neither is installed or qualified. Operator voice remains private.
+[Workflow](../skills/video-production-router/references/media-review.md): local recording calibration and revision-bound unified reports are available. The [video-control pilot](../skills/video-production-router/references/media-perception-pilot.md) provides eight authored 10-second clips, separate reviewer/gold packets, encoded perturbation checks and diagnostic scoring. Independent per-label human control validation remains pending.
+
+[Free Gemini UI trials](experiments/gemini-media-review.md) rejected the first batch for lost source IDs and inconsistent evidence. A changed single-video protocol found one freeze and returned no findings on one clean control. The separate audio-only test hallucinated speech on byte-verified tone-only input. Caller-bound response import works; no reviewer is qualified. Next: remaining single-video visual controls; audio requires a changed route rather than an unchanged retry. Free use only. Qwen3-Omni remains a resource-gated local alternative; owner voice stays private.
 
 ## Completed PlayMCP case records
 

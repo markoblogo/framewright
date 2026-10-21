@@ -8,7 +8,12 @@ voice upload, account connection, spending or publication is performed.
 
 The kit is prepared infrastructure. Generation, technical inspection and successful
 scorer tests do **not** qualify Gemini, Qwen3-Omni, Claude Video or another reviewer.
-An actual provider trial and independent human confirmation of controls remain pending.
+A [free Gemini UI batch](../../../docs/experiments/gemini-media-review.md) was attempted,
+but its response failed source-ID/evidence validation and left audio unknown.
+A changed-protocol single-video follow-up matched one freeze and returned no
+findings on one clean control; the separate audio-only smoke failed. Five other
+authored events remain unassessed. No provider is qualified; independent per-label
+human confirmation remains pending.
 
 ## Eight controls, six authored defect events
 
@@ -35,7 +40,13 @@ natural-footage controls need a separate labelled set and intended-use criteria.
 
 ## Build once into a new private directory
 
-Requires existing FFmpeg/ffprobe and Python standard library only. The directory
+Requires existing FFmpeg with the libx264 encoder, ffprobe and Python standard library only.
+Clips use H.264/AVC (`avc1`, yuv420p) plus AAC in fast-start MP4.
+The earlier MPEG-4 Part 2 (`mp4v`) kit decoded in FFmpeg but showed audio only
+in the built-in browser. A decode pass does not prove player compatibility: before
+requesting human review, play the new frozen packet in its intended player and
+confirm visible video dimensions and picture. If encoding changes, build a new
+suite and answer template; old source hashes and answers do not transfer. The directory
 must not exist; its parent must already exist. A failed build leaves an incomplete
 folder to inspect; no existing data is overwritten. Use a fresh directory to retry.
 

@@ -697,15 +697,16 @@
       "id": "gemini-media-review",
       "name": "Gemini media understanding",
       "url": "https://ai.google.dev/gemini-api/docs/audio",
-      "reviewed": "2026-10-18",
-      "review_basis": "Primary documentation only; no API/model run",
+      "reviewed": "2026-10-21",
+      "review_basis": "Primary documentation plus one free Google AI Studio Gemini3.8Flash eight-clip UI trial; response rejected, no API runtime qualification;changed-protocol follow-up: two single-video sessions plus one audio-only smoke, free UI",
       "upstream_revision": null,
       "disposition": "candidate",
-      "scope_and_findings": "Official documentation supports audio/image/video input analysis. Candidate for acoustic and temporal review; not connected or runtime-tested here; current session cannot consume audio. Language/TP and creative judgment unqualified.",
+      "scope_and_findings": "One fresh free UI prompt with eight original H.264/AAC clips, static12fps, no paid key/search/tools/gold. Returned8rows/7findings but input_file_N IDs lose verified source binding; several failed checks lack matching-scope evidence. Strict import rejected; no accuracy computed or semantic repair. All rows declare video-only and listening/sync unknown. Backend snapshot unexposed. No acoustic, continuous-motion, TP-language or general creative qualification. Follow-up with caller-bound identity/findings-only contract: freeze localized4–5.25s and clean control no findings; additional moving-timeline claim unsupported. Separate WAV-only prompt hallucinated female speech instead of two880Hz beeps, despite provider-player/source byte equality. New contract accepted;1matched authored event,5others unassessed. Candidate remains unqualified, audio route failed.",
       "licence_note": "Cloud service/model and data-use terms must be reviewed for selected account; no asset/voice upload permission inferred.",
-      "next_trial_or_retest_condition": "Owner-approved destination and bounded budget; known-sample modality check then human-labelled audio/image/video controls.",
+      "next_trial_or_retest_condition": "Free-only. Test remaining visual controls with one attachment per fresh session, caller-bound IDs, retained raw answers and explicit unknowns. Audio needs a changed provider/configuration with known positive and negative controls; do not repeat the unchanged failed audio route. No paid fallback or general autonomous acceptance.",
       "evidence": [
-        "skills/video-production-router/references/media-review.md"
+        "skills/video-production-router/references/media-review.md",
+        "docs/experiments/gemini-media-review.md"
       ]
     },
     {
