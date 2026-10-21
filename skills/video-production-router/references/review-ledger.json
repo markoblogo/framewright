@@ -249,7 +249,7 @@
       "review_basis": "observed local23s clean Supertonic EN trial,mlx-whisper0.4.3,tiny.en exact weights pinned",
       "upstream_revision": "796f5b53cab69a3d48a44233ce21aae889e94a08",
       "disposition": "supported_scoped",
-      "scope_and_findings": "23s clean EN word timestamps; raw2 substitutions/35words and one zero-duration interval; known-script correction required.23.60s,242267878B MLX peak allocation,1GiB cap. No general ASR/lyric alignment qualification. Follow-up retained tiny.en on owner English recording and pickups:354505978B peak under1GiB cap;proper-name/recognition errors require script comparison. Accepted voice edits and38caption cues retain source-time provenance;not pronunciation approval.",
+      "scope_and_findings": "23s clean EN word timestamps; raw2 substitutions/35words and one zero-duration interval; known-script correction required.23.60s,242267878B MLX peak allocation,1GiB cap. No general ASR/lyric alignment qualification. Follow-up retained tiny.en:original owner take peak354505978B,raw pickups299267982B,assembled-join check396922074B (MLX allocation counters,not RSS). Original/raw receipts retain1GiB limits;assembly receipt does not independently record its limit. Per-run values are retained in the linked2026-10-21 evidence;proper-name/recognition errors require script comparison. Accepted voice edits and38caption cues retain source-time provenance;not pronunciation approval.",
       "licence_note": "MIT code; inspect selected weights",
       "next_trial_or_retest_condition": "New speaker/language/noise or larger model is a new bounded trial; do not repeat this unchanged clean tiny.en probe.",
       "evidence": [

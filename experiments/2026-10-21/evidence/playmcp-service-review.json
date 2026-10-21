@@ -136,5 +136,54 @@
     "SIRTET12000+is a retained phase subtotal,not an itemised exact total.",
     "Native acoustic listening unavailable;owner accepted voice and preview separately.",
     "Optional animation-map helper unavailable without producer dependency;built-in keyframes and sampled seeks used instead."
-  ]
+  ],
+  "human_english_asr": {
+    "runtime": "mlx-whisper0.4.3;retained whisper-tiny.en weights",
+    "measurement_scope": "MLX reported peak allocated memory,not process RSS;raw speech and transcripts remain private",
+    "provenance": "Operator-retained run receipts copied into this evidence record;not a fresh rerun",
+    "runs": [
+      {
+        "run": "original_owner_take",
+        "date": "2026-10-19",
+        "private_receipt": "audio/asr-receipt.json",
+        "model": "mlx-whisper 0.4.3 / whisper-tiny.en retained local weights",
+        "language": "en",
+        "seconds": 12.12264195800526,
+        "peak_memory_bytes": 354505978,
+        "memory_limit_bytes": 1073741824,
+        "source_sha256": "82fd3d5c3077834c52bdb2761cf5699cc101283b7ecf72965ab7c405ddf0dbbb",
+        "cloud_upload": false,
+        "acoustic_listening": false
+      },
+      {
+        "run": "raw_pickups",
+        "date": "2026-10-21",
+        "private_receipt": "audio/pickups-20261021/asr-receipt.json",
+        "runtime": "retained mlx-whisper 0.4.3",
+        "model": "retained local whisper-tiny.en",
+        "language": "en",
+        "word_timestamps": true,
+        "initial_prompt": null,
+        "seconds": 7.299871583003551,
+        "peak_memory_bytes": 299267982,
+        "memory_limit_bytes": 1073741824,
+        "source_sha256": "c3463baeb0b547a06e7492acf32d8f5d061002a4978259e7721474207587d5a1",
+        "cloud_upload": false,
+        "model_download": false,
+        "acoustic_listening": false
+      },
+      {
+        "run": "assembled_voice_join_check",
+        "date": "2026-10-21",
+        "private_receipt": "audio/pickups-20261021/assembly-check-receipt.json",
+        "seconds": 7.704765250033233,
+        "peak_memory_bytes": 396922074,
+        "scope": "single local ASR check of changed sentence joins; not acoustic listening",
+        "initial_prompt": null,
+        "cloud_upload": false,
+        "model_download": false
+      }
+    ],
+    "limits": "Known-script/name corrections required;not acoustic listening or pronunciation approval"
+  }
 }
