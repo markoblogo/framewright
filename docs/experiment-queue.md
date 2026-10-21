@@ -1,6 +1,6 @@
 # Proposed experiment queue
 
-Updated 2026-10-20. This is a task-led backlog, not permission for unattended tests,
+Updated 2026-10-21. This is a task-led backlog, not permission for unattended tests,
 installs, model downloads, spending, account grants or public media uploads.
 Use an owner-selected subject with authorised sources. Discuss the subject and bounded brief before
 each actual new-tool experiment. [Research](tool-research.md) ·
@@ -8,16 +8,30 @@ each actual new-tool experiment. [Research](tool-research.md) ·
 
 ## Current owner priority
 
-Owner update,2026-10-19: audit/sanitise and release the software now; the overall
-PlayMCP review continues independently. Its first English owner take has local
-ASR/timing trials; short retakes are expected tomorrow. No review export yet.
-[Release audit](release-audit-2026-10-19.md) ·
-[Service review](experiments/playmcp-service-review.md).
+Owner update, 2026-10-21: close the completed PlayMCP production cycle through
+reviewed Git changes. The 150-second service review is delivered and has an
+owner-supplied [publication URL](https://youtu.be/NVeMJLidncU). Its blog article is
+a private draft, not a publication. SSI is **paused, not cancelled**, pending
+partner feedback; do not start its next render or integration while paused.
 
-The four-item intake is assessed. Jekyll Short is cancelled; its standalone game
-overview is deferred. Awwwards1.9.0 has only an adapted capture-component trial;
-full MCP and baseline comparison remain unqualified. World production is a later,
-provider/model-flexible direction. No automatic experiment or paid run follows a release.
+Next: prepare Pocket OS product/capture intake; select a YouTube Radar suggestion;
+plan a short-fiction adaptation using existing Marble / World Labs worlds first.
+The owner identified the service; source-story selection and asset inventory remain. These are
+planning tasks, not generation jobs. [Inputs and priorities](next-cycle.md) ·
+[Completed review and trial limits](experiments/playmcp-service-review.md).
+
+Jekyll Short remains cancelled; its standalone game overview stays deferred.
+Awwwards 1.9.0 has an expanded adapted capture-component trial, not full MCP/search
+qualification. Worlds remain provider/model-flexible; the next provider must be
+selected from actual scene needs and available owner assets. No automatic paid run.
+
+## World-production intake — 2026-10-21
+
+[Marble, Decart Oasis, Odyssey and Genie shortlist](world-production-intake.md):
+start with the owner's existing Marble worlds, then compare candidates on an
+approved fiction shot. The new names are intake only; no installation, provider
+account test, export qualification or paid generation has run. No new selectable
+arsenal profiles are added by this shortlist.
 
 ## New findings — assessed candidates,2026-10-19
 
@@ -26,7 +40,7 @@ provider/model-flexible direction. No automatic experiment or paid run follows a
 | Priority | Candidate | Bounded next experiment |
 | --- | --- | --- |
 | Completed / production SFX | [Openverse](https://api.openverse.org) | Owner accepted the successful SSI SFX trial on2026-10-20; tested search, per-item admission, download and manual montage use. Reuse retained effects; new assets still need licence/provenance and mix checks. [Evidence](experiments/ssi-logistics-illustrated.md) |
-| P2 | [Awwwards-mcp](https://github.com/INSANE0777/Awwwards-mcp) | One fixed-viewport PlayMCP page capture plus motion evidence;compare retained capture route,pin version,no self-update |
+| Partial / task-led follow-up | [Awwwards-mcp](https://github.com/INSANE0777/Awwwards-mcp) | Public-page capture component used in the completed review; full MCP/search/index and comparative performance remain unqualified. Expand only for a concrete capture need; pin version and avoid self-update |
 | P3 / access-gated | [Odyssey worlds](https://odyssey.systems/introducing-odyssey-3) | Later10–15s virtual-set recording with one camera/object action;record model provenance and confirm export,use scope and budget first |
 | P4 / optional | [genjutsu cast](https://genjutsu.athevon.dev/docs/cast) | One5–8s replayable chapter/game card;qualify deterministic timeline and encoded motion. Full paint/bunshin excluded from immediate video queue |
 

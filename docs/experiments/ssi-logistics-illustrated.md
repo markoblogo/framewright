@@ -85,6 +85,14 @@ remain untested. Partner selection and repeated-report automation remain pending
 Local fonts/logo are private demo assets; template transfer requires appropriate
 rights. No media, raw report or third-party code is committed.
 
+## Current pause — 2026-10-21
+
+The owner paused SSI production while partners consider the six demos. This is not
+cancellation. D and F remain the owner's preferences, not a partner selection.
+Keep all demos, source pins and admitted SFX. Resume only after an owner instruction
+or an owner-provided partner decision; then follow the handoff below. No new SSI
+render, data integration, recurring job or Telegram action starts during the pause.
+
 ## Reuse and handoff
 
 For 3D, tie travel, wheel rotation, loading and attached parts to one absolute

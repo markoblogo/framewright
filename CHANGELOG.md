@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- Close the PlayMCP service-review cycle with a 150-second owner-narrated export,
+  publication URL and scoped capture, transcription and audio-FX evidence.
+- Refresh the 24-export inventory and current production status; pause SSI pending
+  partner feedback and prepare Pocket OS, Radar and fiction/world-production intake.
+- Preserve historical model qualification and keep private media, account records,
+  unpublished prose and story manuscripts outside the repository.
+
 ## 0.3.1 — 2026-10-19 — experimental
 
 - Reopen linked checks and downstream delivery after repinning a file used by a

@@ -1,11 +1,12 @@
 # Personal studio: direction and production workflows
 
-Current status,2026-10-19: schema-2 production memory, scene/material/cut planning
-and local kits are implemented. Three PlayMCP games and the Jekyll virtual-set
-book promo have retained case evidence. The overall service review waits for
-owner retakes and continues independently of the software release.
-[Release audit and limits](release-audit-2026-10-19.md). The dated programme below
-preserves its original decisions; A/B/C media experiments remain unstarted.
+Current status, 2026-10-21: schema-2 production memory, scene/material/cut planning
+and local kits are implemented. Three PlayMCP games, the Jekyll virtual-set book
+promo and the owner-narrated service review have retained production evidence.
+The owner supplied the review's publication URL; remote playback is not independently
+verified. [Completed case](experiments/playmcp-service-review.md) ·
+[Next cycle and current pauses](next-cycle.md).
+The dated programme below preserves its original decisions; A/B/C remain unstarted.
 
 
 2026-10-17. Framewright is an open-source personal AI production toolkit for the
@@ -20,10 +21,12 @@ a bounded excerpt to the separate PlayMCP game. No new release.
 
 A separate [game-engine workflow](workflows/game-engines.md) covers playable
 games, game/engine video reviews and virtual sets for unrelated video stories.
-The published PlayMCP game and its locally delivered narrated overview are the
-first scoped case. The [overview publication URL](https://youtu.be/WLBxcM5JQ3U) is owner-supplied;final
-film owner review remains pending. The service
-review,other engines and virtual-set production require separate tests. This work does not start the deferred A/B/C source experiments below.
+Three PlayMCP games demonstrate these directions, with recorded game overviews,
+Shorts and a virtual-set book promo. The completed service review combines real
+site capture, owner narration and game footage. Tool qualification remains scoped
+to each [recorded case](experiments/playmcp-service-review.md); other engines and
+world-production providers need their own tests. This work does not start the
+deferred A/B/C source experiments below.
 
 ## Audit → minimum extension
 
