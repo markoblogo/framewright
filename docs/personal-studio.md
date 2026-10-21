@@ -32,7 +32,7 @@ deferred A/B/C source experiments below.
 
 | Need | Already available / reuse | Actual gap / decision |
 | --- | --- | --- |
-| Video inspection | FFprobe metadata, full FFmpeg decode recipes; PySceneDetect scoped hard-cut analysis | Cut detection is not semantic understanding; new source still needs transcript and human context review |
+| Video inspection | [Unified audio/video report and journal import](../skills/video-production-router/references/media-review-reports.md), local metadata/full decode, short-recording calibration; PySceneDetect scoped hard-cut analysis | Cut detection is not semantic understanding; new source still needs transcript and human context review |
 | Montage / multiple visual sources | Delivered MoviePy/FFmpeg compilation, source-audio disabling, timed overlays/crossfades | Reuse manual recipe. MoviePy remains discoverable but not an automatic planner provider |
 | New scenes / typography | Scoped Remotion, Hyperframes, Three.js, storyboard preparation | New styles/seams require a bounded integration test; no universal scene generator promised |
 | Voice / sound | Supertonic EN/UK, scoped Kokoro EN/FR; sound-layer and FFmpeg | Final listening, stress, sync, loudness remain output-specific; voice licence/model pins still apply |

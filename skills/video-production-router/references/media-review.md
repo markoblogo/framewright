@@ -4,6 +4,10 @@ Use this before promising to listen/watch and before the operator records a full
 Availability is a property of this session and input route, not just a model name.
 No API adapter, download, upload or paid call is supplied by this guide.
 
+For a saved unified audio/video report, use [media-review reports](media-review-reports.md):
+local metadata/decode, short-recording measurements, supplied timestamped observations
+and revision-bound journal import. This adds reporting, not a new perceptual model.
+
 ## Select a review route
 
 | Need | Route | Evidence boundary |

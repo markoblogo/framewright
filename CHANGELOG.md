@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Add local audio/video review reports combining metadata/full-decode evidence,
+  short-recording measurements and explicit timestamped review observations. Import
+  them into the existing journal with source/report revision dependencies; partial
+  or missing perceptual checks remain pending and tasks are never auto-completed.
+
 - Close the PlayMCP service-review cycle with a 150-second owner-narrated export,
   publication URL and scoped capture, transcription and audio-FX evidence.
 - Refresh the 24-export inventory and current production status; pause SSI pending
