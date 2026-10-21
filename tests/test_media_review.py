@@ -163,7 +163,9 @@ class MediaReviewTest(unittest.TestCase):
         self.assertEqual(r['technical']['result'],'pass')
         self.assertEqual(r['technical']['calibration_status'],'outside_short_capture_limits')
         self.assertIsNone(r['technical']['calibration'])
-        self.assertGreaterEqual(r['technical']['decode']['decoded_seconds'],60.99)
+        # Final progress timestamps vary across FFmpeg versions: the Linux
+        # runner reports 60.928s for this 61s WAV. Keep a bounded tolerance.
+        self.assertAlmostEqual(r['technical']['decode']['decoded_seconds'],61,delta=.25)
         self.assertEqual(r['technical']['streams'][0]['sample_rate'],'8000')
 
     def test_success_exit_without_decode_progress_never_passes(self):
