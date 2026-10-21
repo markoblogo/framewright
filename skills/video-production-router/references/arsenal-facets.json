@@ -452,6 +452,162 @@
       ],
       "rights_class": "conditional",
       "licence_note_sha256": "51cd7645489c2315c5a4fd1eebc96943222969e022fb149d7216461055fe5614"
+    },
+    "terminaltexteffects": {
+      "tasks": [
+        "video",
+        "graphics"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "b2cb330c4d9920491aca7d77b078854bac29edff0ad7c570fb858a9bd2d1fae3"
+    },
+    "three-ascii-effect": {
+      "tasks": [
+        "3d",
+        "video",
+        "graphics"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "286d3585889a8252a2cc7c3ade2d99aaae20ec96ab8d8d8d33487a099fccfdd4"
+    },
+    "chafa": {
+      "tasks": [
+        "graphics"
+      ],
+      "inputs": [
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "ce4bee0b227e3e8a521e135324306a93436c9d792bdc8f35af955164cdc4f2e9"
+    },
+    "asciinema-agg": {
+      "tasks": [
+        "video",
+        "screen-capture"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "9fddf36cb38c8fddfd9b0aca70985d1ffab05c19c9681a5158eed9872780ef9d"
+    },
+    "blender": {
+      "tasks": [
+        "3d",
+        "video",
+        "graphics"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "924f372f6ed289b4743100dd7cbdfc313ce43fae4377917e6fe2df30e5509608"
+    },
+    "three-postprocessing": {
+      "tasks": [
+        "3d",
+        "video",
+        "graphics"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "ae15449f97d146e3e029acd018b1ca6206536921851674780f3b8d193f392f80"
+    },
+    "motion-canvas": {
+      "tasks": [
+        "video",
+        "diagram"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "7d014204520340fa921672d8f284155fae6299f09446153c3fc5b4fc8c06b628"
+    },
+    "deepfilternet": {
+      "tasks": [
+        "audio"
+      ],
+      "inputs": [
+        "audio"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "1a4c98eda40f212b9c35d4dc52fbe0da83bc48e39e0935d48176a4ebe2527397"
+    },
+    "qwen3-tts": {
+      "tasks": [
+        "narration"
+      ],
+      "inputs": [
+        "text",
+        "audio"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "68678163ee5869c721efc6cce85f2da0cf1dc48b23fbaac0adf32d1b7038b453",
+      "declared_languages": [
+        "zh",
+        "en",
+        "ja",
+        "ko",
+        "de",
+        "fr",
+        "ru",
+        "pt",
+        "es",
+        "it"
+      ]
+    },
+    "chatterbox-turbo": {
+      "tasks": [
+        "narration"
+      ],
+      "inputs": [
+        "text",
+        "audio"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "2004d5d1fda43bc9ac5d8d082d47b69914eb0c3766530df82af8bf118e9ccfae",
+      "declared_languages": [
+        "en"
+      ]
+    },
+    "openvoice-v2": {
+      "tasks": [
+        "narration"
+      ],
+      "inputs": [
+        "text",
+        "audio"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "c4fafe5823b28592bcc6e8baf3db37d6b327217e48595c83fee609fb57b26cc6",
+      "declared_languages": [
+        "en",
+        "es",
+        "fr",
+        "zh",
+        "ja",
+        "ko"
+      ]
+    },
+    "elevenlabs-voice-cloning": {
+      "tasks": [
+        "narration"
+      ],
+      "inputs": [
+        "text",
+        "audio"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "b77aa9ea838f4ae8b6fa683631c9d23ca93650b474efbdb3db34fe390df26bf3"
     }
   }
 }

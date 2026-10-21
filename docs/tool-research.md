@@ -1,5 +1,7 @@
 # Tool review and test inventory
 
+Latest: [2026-10-21 ASCII, animation/VFX, owner-voice cloning and media-review research](research-review-2026-10-21.md). Twelve documentation-only candidates; no new runtime qualification.
+
 For the 2026-10-17 gap-led update (recuts,sourced stories,hybrid production and
 private audio),see [personal studio audit](personal-studio.md). It refreshes existing
 assembly/analysis decisions and retains Whisper/SDXL as candidate/deferred only.
