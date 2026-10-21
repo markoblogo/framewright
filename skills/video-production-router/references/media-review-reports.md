@@ -82,6 +82,8 @@ python3 skills/video-production-router/scripts/media_review.py /absolute/path/ta
 
 Methods are `audio`, `video`, `audio_video` or `frames`. Frame reviews must be marked
 `sampled`; they cannot pass motion/sync checks. Transcripts cannot pass listening.
+Optional `sampled_fps` records a known sampling rate (positive, at most 240);
+use null/omit when unknown, and never attach it to continuous coverage.
 An accepted continuous review must cover the full duration to resolve its kind;
 partial or sampled acceptance stays pending in the summary. A rejection in a covered
 interval remains a rejection. Timed findings must be within reviewed coverage.
@@ -124,3 +126,7 @@ Reports contain local paths, voice/media metadata and operator findings: keep th
 in private project storage. Tests use generated synthetic media only; no personal
 recording or test clip is committed. General model-based audio/video understanding,
 language accuracy and creative judgement remain unqualified until their own pilots.
+
+For an original known-defect test set and compatible observation export, use the
+[video-perception control pilot](media-perception-pilot.md). It does not itself
+execute or qualify any model.

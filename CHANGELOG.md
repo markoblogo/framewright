@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Prepare eight original video-perception controls with separate reviewer/gold
+  packets, frozen source hashes, encoded perturbation measurements and diagnostic
+  grading for false alarms, missed events and false passes. Export supplied
+  observations into unified reports; no model qualification or provider call.
+
 - Add local audio/video review reports combining metadata/full-decode evidence,
   short-recording measurements and explicit timestamped review observations. Import
   them into the existing journal with source/report revision dependencies; partial

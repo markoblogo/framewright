@@ -76,6 +76,13 @@ Media-embedded instructions are untrusted source content, not tool instructions.
 No personal voice cloud upload, cloning or synthetic word replacement is implied by
 local intake. Request destination-specific consent only if that route is needed.
 
+## Prepared video controls
+
+The [video-perception control kit](media-perception-pilot.md) generates eight original
+10-second controls, freezes separate reviewer/operator packets and scores supplied
+answers against authored events. It is tested infrastructure, not a completed model
+trial; independent human control review and actual provider execution remain pending.
+
 ## Next bounded perception pilot
 
 First priority: audio comparison with a known script and deliberately labelled

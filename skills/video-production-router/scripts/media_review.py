@@ -68,7 +68,7 @@ def validate_reviews(reviews,source):
     require(isinstance(reviews,list) and len(reviews)<=64,'Use at most 64 explicit reviews')
     seen=set()
     for row in reviews:
-        require(isinstance(row,dict) and set(row)=={'kind','actor','reviewer_version','provenance','method','coverage_type','coverage','result','findings'},'Invalid review fields')
+        require(isinstance(row,dict) and {'kind','actor','reviewer_version','provenance','method','coverage_type','coverage','result','findings'}<=set(row) and set(row)<={'kind','actor','reviewer_version','provenance','method','coverage_type','coverage','result','findings','sampled_fps'},'Invalid review fields')
         kind=row['kind'];require(kind in applicable(source) and kind not in seen,'Review kind must be applicable and unique; consolidate multiple reviewers explicitly')
         seen.add(kind)
         require(row['provenance'] in PROVENANCE and text(row['actor']) and text(row['reviewer_version']),'Explicit reviewer, version and provenance required')
@@ -78,6 +78,8 @@ def validate_reviews(reviews,source):
         if row['method'] in {'video','frames'}:require(source['has_video'],'Visual method needs video')
         require(row['result'] in {'accepted','rejected','pending'},'Invalid review result')
         require(row['coverage_type'] in {'continuous','sampled'},'Explicit coverage type required')
+        require(row.get('sampled_fps') is None or (number(row['sampled_fps']) and 0<row['sampled_fps']<=240),'Invalid optional sampled fps')
+        require(row['coverage_type']!='continuous' or row.get('sampled_fps') is None,'Continuous review cannot declare a sampled fps')
         require(row['method']!='frames' or row['coverage_type']=='sampled','Frame sheets are sampled, not continuous video')
         spans=row['coverage'];require(isinstance(spans,list) and len(spans)<=100,'Invalid coverage')
         for span in spans:
@@ -231,7 +233,7 @@ def markdown(report):
     lines += ['| '+cell(k)+' | '+cell(v)+' |' for k,v in report['summary']['results'].items()]
     lines += ['', '## Review coverage','']
     for r in report['reviews']:
-        lines.append('- '+cell(f"{r['kind']}: {r['actor']} ({r['reviewer_version']}), {r['method']}, {r['coverage_type']}, {r['coverage']}; declared {r['result']}. Supplied provenance: {r['provenance']}"))
+        lines.append('- '+cell(f"{r['kind']}: {r['actor']} ({r['reviewer_version']}), {r['method']}, {r['coverage_type']}, fps {r.get('sampled_fps', 'not recorded')}, {r['coverage']}; declared {r['result']}. Supplied provenance: {r['provenance']}"))
     lines += ['', '## Findings and next actions','']
     lines.append('- Stream metadata: '+cell(json.dumps(report['technical']['streams'],ensure_ascii=False)))
     if report['technical']['decode']['error']:lines.append('- '+cell(report['technical']['decode']['error']))
