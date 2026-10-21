@@ -1,0 +1,189 @@
+{
+  "sha256": "c7f7d1e2ae844d2df62225a7928378907b7559fe48d867bac23e3b01c2461839",
+  "bytes": 51916535,
+  "duration_seconds": 150.0,
+  "video": {
+    "codec_name": "h264",
+    "width": 1920,
+    "height": 1080,
+    "pix_fmt": "yuv420p",
+    "r_frame_rate": "30/1",
+    "nb_frames": "4500"
+  },
+  "audio": {
+    "codec_name": "aac",
+    "sample_rate": "48000",
+    "channels": 2
+  },
+  "full_decode": "pass",
+  "faststart": true,
+  "loudness": {
+    "input_i": "-15.05",
+    "input_tp": "-1.05",
+    "input_lra": "3.00",
+    "input_thresh": "-25.90",
+    "output_i": "-16.07",
+    "output_tp": "-2.00",
+    "output_lra": "2.80",
+    "output_thresh": "-26.88",
+    "normalization_type": "dynamic",
+    "target_offset": "0.07"
+  },
+  "sampled_frames": 45,
+  "visual_inspection": "45 decoded output frames inspected: all 28 shot midpoints plus 17 boundary/opening/ending samples; no blank/missing source or clipped headline found",
+  "source_preview_owner_accepted": true,
+  "encoded_owner_listening": "not separately requested or reported",
+  "caption_check": "38 non-overlapping cues within runtime; editorial script text aligned to raw ASR timestamps",
+  "cover_check": "1920x1080 JPEG321582B; native source check passed, full and320x180 viewed",
+  "date": "2026-10-21",
+  "status": "encoded_technical_and_sampled_visual_checks_pass",
+  "voice_sync": {
+    "scope": "Encoded mix versus accepted narration; music reduces correlation; +/-2samples tested at12kHz; not acoustic listening or pronunciation approval",
+    "windows": [
+      {
+        "range_seconds": [
+          0,
+          18
+        ],
+        "lag_samples_12khz": 0,
+        "correlation": 0.98269
+      },
+      {
+        "range_seconds": [
+          19,
+          31
+        ],
+        "lag_samples_12khz": 0,
+        "correlation": 0.98708
+      },
+      {
+        "range_seconds": [
+          32,
+          61
+        ],
+        "lag_samples_12khz": 0,
+        "correlation": 0.98511
+      },
+      {
+        "range_seconds": [
+          62,
+          82
+        ],
+        "lag_samples_12khz": 0,
+        "correlation": 0.98407
+      },
+      {
+        "range_seconds": [
+          83,
+          97
+        ],
+        "lag_samples_12khz": 0,
+        "correlation": 0.98057
+      },
+      {
+        "range_seconds": [
+          98,
+          119
+        ],
+        "lag_samples_12khz": 0,
+        "correlation": 0.98137
+      },
+      {
+        "range_seconds": [
+          120,
+          131
+        ],
+        "lag_samples_12khz": 0,
+        "correlation": 0.98592
+      },
+      {
+        "range_seconds": [
+          132,
+          148
+        ],
+        "lag_samples_12khz": 0,
+        "correlation": 0.98725
+      }
+    ]
+  },
+  "renderer": "Hyperframes0.8.183;screenshot capture;hardware GPU;two workers;254.5seconds",
+  "new_trial": {
+    "component": "@hyperframes/core0.8.183 spectral voiceover carve",
+    "scope": "Local existing-bed analysis,three spectral cuts and409-point gain envelope applied through native audio FX;encoded output decoded and measured. No provider/model call or acoustic-understanding claim.",
+    "strength": 0.4,
+    "max_cut_db": 8.4,
+    "gain_floor_db": -9.6
+  },
+  "capture": {
+    "tool": "Awwwards-mcp1.9.0 recordSiteMotion component",
+    "scope": "Expanded to real public Create,challenge,profile/feed pages;installed Chrome;all mouse clicks suppressed;no authenticated cookies/full MCP startup/search/index. Hyperframes native capture used for static plates. Different viewports/contracts prevent speed or quality superiority claims.",
+    "initial_failure": "Missing default browser-cache path;explicit retained browser helper path fixed retry.",
+    "native_account_attempt": "Tiny unusable Comet screenshot rejected;retained19Oct connection plate used and dated."
+  },
+  "caption_cues": 38,
+  "publication": {
+    "url": "https://youtu.be/NVeMJLidncU",
+    "verification": "user_provided_url",
+    "visibility": "unknown",
+    "reported_date": "2026-10-21",
+    "independent_playback": "not_verified",
+    "agent_uploaded": false
+  },
+  "new_playmcp_credits": 0,
+  "source_preview_acceptance": "owner_report;accepted before small evidence/shot-matching corrections;not an encoded-listening claim",
+  "limits": [
+    "No audience performance measured.",
+    "SIRTET12000+is a retained phase subtotal,not an itemised exact total.",
+    "Native acoustic listening unavailable;owner accepted voice and preview separately.",
+    "Optional animation-map helper unavailable without producer dependency;built-in keyframes and sampled seeks used instead."
+  ],
+  "human_english_asr": {
+    "runtime": "mlx-whisper0.4.3;retained whisper-tiny.en weights",
+    "measurement_scope": "MLX reported peak allocated memory,not process RSS;raw speech and transcripts remain private",
+    "provenance": "Operator-retained run receipts copied into this evidence record;not a fresh rerun",
+    "runs": [
+      {
+        "run": "original_owner_take",
+        "date": "2026-10-19",
+        "private_receipt": "audio/asr-receipt.json",
+        "model": "mlx-whisper 0.4.3 / whisper-tiny.en retained local weights",
+        "language": "en",
+        "seconds": 12.12264195800526,
+        "peak_memory_bytes": 354505978,
+        "memory_limit_bytes": 1073741824,
+        "source_sha256": "82fd3d5c3077834c52bdb2761cf5699cc101283b7ecf72965ab7c405ddf0dbbb",
+        "cloud_upload": false,
+        "acoustic_listening": false
+      },
+      {
+        "run": "raw_pickups",
+        "date": "2026-10-21",
+        "private_receipt": "audio/pickups-20261021/asr-receipt.json",
+        "runtime": "retained mlx-whisper 0.4.3",
+        "model": "retained local whisper-tiny.en",
+        "language": "en",
+        "word_timestamps": true,
+        "initial_prompt": null,
+        "seconds": 7.299871583003551,
+        "peak_memory_bytes": 299267982,
+        "memory_limit_bytes": 1073741824,
+        "source_sha256": "c3463baeb0b547a06e7492acf32d8f5d061002a4978259e7721474207587d5a1",
+        "cloud_upload": false,
+        "model_download": false,
+        "acoustic_listening": false
+      },
+      {
+        "run": "assembled_voice_join_check",
+        "date": "2026-10-21",
+        "private_receipt": "audio/pickups-20261021/assembly-check-receipt.json",
+        "seconds": 7.704765250033233,
+        "peak_memory_bytes": 396922074,
+        "scope": "single local ASR check of changed sentence joins; not acoustic listening",
+        "initial_prompt": null,
+        "cloud_upload": false,
+        "model_download": false
+      }
+    ],
+    "limits": "Known-script/name corrections required;not acoustic listening or pronunciation approval"
+  }
+}

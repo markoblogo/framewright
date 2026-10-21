@@ -1,0 +1,27 @@
+[
+  {
+    "id": "playmcp-service-review",
+    "route": "narrated-montage",
+    "local_output": "playmcp-service-review/delivery/PlayMCP-Review-1080p.mp4",
+    "bytes": 51916535,
+    "sha256": "c7f7d1e2ae844d2df62225a7928378907b7559fe48d867bac23e3b01c2461839",
+    "thumbnail": {
+      "local_output": "playmcp-service-review/cover/snapshots/frame-00-at-0s.png",
+      "bytes": 1001970,
+      "sha256": "2fb5be1a390111438b3edbd6f97ad35737981ef1676821e9407d4b89ba6aeb53",
+      "format": "png",
+      "width": 1920,
+      "height": 1080
+    },
+    "evidence": "experiments/2026-10-21/evidence/playmcp-service-review.json",
+    "qa_scope": "150s1080p30 H264/AAC;4500frames;full decode;45 decoded shot/cut samples;38 timed captions;native cover and reduced legibility;8-window narration zero-lag correlation0.98057–0.98725 with music;−15.05LUFS/−1.05dBTP;faststart.",
+    "human_listening": "owner_accepted_selected_voice_and_source_preview;no_separate_encoded_listening_claim",
+    "creative_acceptance": "owner_accepted_source_preview;small_evidence_matching_shot_corrections_documented",
+    "publication_url": "https://youtu.be/NVeMJLidncU",
+    "audience_metrics": "not_measured",
+    "production_credits_added": 0,
+    "publication_url_as_provided": "https://youtu.be/NVeMJLidncU",
+    "publication_verification": "user_provided_url",
+    "publication_visibility": "unknown"
+  }
+]

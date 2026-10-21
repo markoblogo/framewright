@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -12,17 +12,19 @@
       "id": "hyperframes",
       "name": "Hyperframes",
       "url": "https://github.com/heygen-com/hyperframes",
-      "reviewed": "2026-10-19",
-      "review_basis": "Prior delivered pilots plus scoped0.8.174 Jekyll book-promo final57s1080p30 render and encoded technical QA; owner accepted source preview.",
+      "reviewed": "2026-10-21",
+      "review_basis": "Prior delivered pilots plus scoped0.8.174 Jekyll book-promo final57s1080p30 render and encoded technical QA; owner accepted source preview.;follow-up0.8.183 service review150s1080p30 with owner voice and local core spectral carve",
       "upstream_revision": null,
       "disposition": "supported_scoped",
-      "scope_and_findings": "Six-scene HTML film with local video,real owner TP/offline EN mix,actual cover,UCSUR glyph mapping,separate native thumbnail. Source lint/runtime/layout22contrast pass;1710 encoded frames/full decode,23 scene/cut samples,seven subtitle cues,zero-lag audio correlation checked. Screenshot capture/hardware GPU/two workers. Copied third-party HTML outside composition scanning. Exact internal-footer correction retained;27 motion-helper hints not a clean motion score. No new encoded-owner listening or broad model-quality claim.",
+      "scope_and_findings": "Six-scene HTML film with local video,real owner TP/offline EN mix,actual cover,UCSUR glyph mapping,separate native thumbnail. Source lint/runtime/layout22contrast pass;1710 encoded frames/full decode,23 scene/cut samples,seven subtitle cues,zero-lag audio correlation checked. Screenshot capture/hardware GPU/two workers. Copied third-party HTML outside composition scanning. Exact internal-footer correction retained;27 motion-helper hints not a clean motion score. No new encoded-owner listening or broad model-quality claim. Follow-up:4500frame full decode,45 encoded samples,38 timed captions,150s kit. Local spectral voiceover carve with three cuts/409point envelope applied;encoded measurements pass. Owner accepted preview;no separate encoded-listening or semantic media-perception claim.",
       "licence_note": "Apache-2.0",
       "next_trial_or_retest_condition": "Existing tool profile and experiment records; no blanket retest.",
       "evidence": [
         "skills/video-production-router/references/tools.json",
         "docs/experiments/jekyll-toki-pona.md",
-        "experiments/2026-10-19/evidence/jekyll-book-promo.json"
+        "experiments/2026-10-19/evidence/jekyll-book-promo.json",
+        "experiments/2026-10-21/evidence/playmcp-service-review.json",
+        "docs/experiments/playmcp-service-review.md"
       ]
     },
     {
@@ -243,16 +245,18 @@
       "id": "mlx-whisper",
       "name": "mlx-whisper",
       "url": "https://github.com/ml-explore/mlx-examples",
-      "reviewed": "2026-10-18",
+      "reviewed": "2026-10-21",
       "review_basis": "observed local23s clean Supertonic EN trial,mlx-whisper0.4.3,tiny.en exact weights pinned",
       "upstream_revision": "796f5b53cab69a3d48a44233ce21aae889e94a08",
       "disposition": "supported_scoped",
-      "scope_and_findings": "23s clean EN word timestamps; raw2 substitutions/35words and one zero-duration interval; known-script correction required.23.60s,242267878B MLX peak allocation,1GiB cap. No general ASR/lyric alignment qualification.",
+      "scope_and_findings": "23s clean EN word timestamps; raw2 substitutions/35words and one zero-duration interval; known-script correction required.23.60s,242267878B MLX peak allocation,1GiB cap. No general ASR/lyric alignment qualification. Follow-up retained tiny.en:original owner take peak354505978B,raw pickups299267982B,assembled-join check396922074B (MLX allocation counters,not RSS). Original/raw receipts retain1GiB limits;assembly receipt does not independently record its limit. Per-run values are retained in the linked2026-10-21 evidence;proper-name/recognition errors require script comparison. Accepted voice edits and38caption cues retain source-time provenance;not pronunciation approval.",
       "licence_note": "MIT code; inspect selected weights",
       "next_trial_or_retest_condition": "New speaker/language/noise or larger model is a new bounded trial; do not repeat this unchanged clean tiny.en probe.",
       "evidence": [
         "experiments/2026-10-18/sirtet-videos.md",
-        "experiments/2026-10-18/evidence/sirtet-videos.json"
+        "experiments/2026-10-18/evidence/sirtet-videos.json",
+        "experiments/2026-10-21/evidence/playmcp-service-review.json",
+        "docs/experiments/playmcp-service-review.md"
       ]
     },
     {
@@ -740,17 +744,18 @@
       "id": "awwwards-mcp",
       "name": "Awwwards MCP",
       "url": "https://github.com/INSANE0777/Awwwards-mcp",
-      "reviewed": "2026-10-19",
+      "reviewed": "2026-10-21",
       "review_basis": "Primary docs plus actual isolated1.9.0 public-landing capture-component trial;default MCP workflow not executed",
       "upstream_revision": "npm1.9.0",
       "disposition": "partial",
-      "scope_and_findings": "Adapted upstream recordSiteMotion with injected installed-Chrome launcher/native FFmpeg and generic clicks suppressed:21.8s1440x900p25 VP9,full decode,12 sampled frames. Initial missing Playwright recorder-FFmpeg helper fixed with isolated official1.4MiB download.8-frame motion sheet;strip padding/event-clock limits retained. No MCP startup/search/index or same-fixture baseline comparison;not globally offline. Source clips need voice-led editorial pacing.",
+      "scope_and_findings": "Adapted upstream recordSiteMotion with injected installed-Chrome launcher/native FFmpeg and generic clicks suppressed:21.8s1440x900p25 VP9,full decode,12 sampled frames. Initial missing Playwright recorder-FFmpeg helper fixed with isolated official1.4MiB download.8-frame motion sheet;strip padding/event-clock limits retained. No MCP startup/search/index or same-fixture baseline comparison;not globally offline. Source clips need voice-led editorial pacing. Follow-up public Create/challenge/profile/feed component captures incorporated in150s review. Hyperframes supplies static plates;different viewport/output contracts mean no comparative speed/quality claim. Comet tiny screenshot rejected in favour of dated prior plate.",
       "licence_note": "MIT software licence confirmed;reference-site/CDN content is separately owned and not automatically reusable.",
       "next_trial_or_retest_condition": "Use verified source-time shots from this candidate;full MCP/default click or broad crawl remains unqualified. Test authenticated/account pages only through approved capture path,without secret links/cookie extraction.",
       "evidence": [
         "docs/research-intake-2026-10-19.md",
         "docs/research-review-2026-10-19.md",
-        "docs/experiments/playmcp-service-review.md"
+        "docs/experiments/playmcp-service-review.md",
+        "experiments/2026-10-21/evidence/playmcp-service-review.json"
       ]
     },
     {

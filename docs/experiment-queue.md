@@ -1,6 +1,6 @@
 # Proposed experiment queue
 
-Updated 2026-10-20. This is a task-led backlog, not permission for unattended tests,
+Updated 2026-10-21. This is a task-led backlog, not permission for unattended tests,
 installs, model downloads, spending, account grants or public media uploads.
 Use an owner-selected subject with authorised sources. Discuss the subject and bounded brief before
 each actual new-tool experiment. [Research](tool-research.md) ·
@@ -8,16 +8,30 @@ each actual new-tool experiment. [Research](tool-research.md) ·
 
 ## Current owner priority
 
-Owner update,2026-10-19: audit/sanitise and release the software now; the overall
-PlayMCP review continues independently. Its first English owner take has local
-ASR/timing trials; short retakes are expected tomorrow. No review export yet.
-[Release audit](release-audit-2026-10-19.md) ·
-[Service review](experiments/playmcp-service-review.md).
+Owner update, 2026-10-21: close the completed PlayMCP production cycle through
+reviewed Git changes. The 150-second service review is delivered and has an
+owner-supplied [publication URL](https://youtu.be/NVeMJLidncU). Its blog article is
+a private draft, not a publication. SSI is **paused, not cancelled**, pending
+partner feedback; do not start its next render or integration while paused.
 
-The four-item intake is assessed. Jekyll Short is cancelled; its standalone game
-overview is deferred. Awwwards1.9.0 has only an adapted capture-component trial;
-full MCP and baseline comparison remain unqualified. World production is a later,
-provider/model-flexible direction. No automatic experiment or paid run follows a release.
+Next: prepare Pocket OS product/capture intake; select a YouTube Radar suggestion;
+plan a short-fiction adaptation using existing Marble / World Labs worlds first.
+The owner identified the service; source-story selection and asset inventory remain. These are
+planning tasks, not generation jobs. [Inputs and priorities](next-cycle.md) ·
+[Completed review and trial limits](experiments/playmcp-service-review.md).
+
+Jekyll Short remains cancelled; its standalone game overview stays deferred.
+Awwwards 1.9.0 has an expanded adapted capture-component trial, not full MCP/search
+qualification. Worlds remain provider/model-flexible; the next provider must be
+selected from actual scene needs and available owner assets. No automatic paid run.
+
+## World-production intake — 2026-10-21
+
+[Marble, Decart Oasis, Odyssey and Genie shortlist](world-production-intake.md):
+start with the owner's existing Marble worlds, then compare candidates on an
+approved fiction shot. The new names are intake only; no installation, provider
+account test, export qualification or paid generation has run. No new selectable
+arsenal profiles are added by this shortlist.
 
 ## New findings — assessed candidates,2026-10-19
 
@@ -26,7 +40,7 @@ provider/model-flexible direction. No automatic experiment or paid run follows a
 | Priority | Candidate | Bounded next experiment |
 | --- | --- | --- |
 | Completed / production SFX | [Openverse](https://api.openverse.org) | Owner accepted the successful SSI SFX trial on2026-10-20; tested search, per-item admission, download and manual montage use. Reuse retained effects; new assets still need licence/provenance and mix checks. [Evidence](experiments/ssi-logistics-illustrated.md) |
-| P2 | [Awwwards-mcp](https://github.com/INSANE0777/Awwwards-mcp) | One fixed-viewport PlayMCP page capture plus motion evidence;compare retained capture route,pin version,no self-update |
+| Partial / task-led follow-up | [Awwwards-mcp](https://github.com/INSANE0777/Awwwards-mcp) | Public-page capture component used in the completed review; full MCP/search/index and comparative performance remain unqualified. Expand only for a concrete capture need; pin version and avoid self-update |
 | P3 / access-gated | [Odyssey worlds](https://odyssey.systems/introducing-odyssey-3) | Later10–15s virtual-set recording with one camera/object action;record model provenance and confirm export,use scope and budget first |
 | P4 / optional | [genjutsu cast](https://genjutsu.athevon.dev/docs/cast) | One5–8s replayable chapter/game card;qualify deterministic timeline and encoded motion. Full paint/bunshin excluded from immediate video queue |
 
@@ -34,7 +48,7 @@ provider/model-flexible direction. No automatic experiment or paid run follows a
 
 [Workflow](../skills/video-production-router/references/media-review.md): local recording calibration is available. Next bounded candidate is Gemini audio comparison, then image/video controls, after destination/account/budget approval. Qwen3-Omni is a resource-gated local alternative. Neither is installed or qualified. Operator voice remains private.
 
-## Active programme — PlayMCP
+## Completed PlayMCP case records
 
 [Disco Coffee Showdown](experiments/playmcp-coffee-showdown.md):game published
 as [g_4FzN0mD8](https://playmcp.io/g/g_4FzN0mD8),revision12. TAP OR HOLD removed;
@@ -44,20 +58,21 @@ rev12-specific owner playtest is not recorded. Total21294 of25000credits used.
 
 The [English game film](../experiments/2026-10-17/disco-coffee-game-overview.md) is delivered locally:88s,Supertonic narration,actual scripted gameplay,both endings,thumbnail and YouTube copy. [Owner-supplied YouTube](https://youtu.be/WLBxcM5JQ3U) recorded with user_provided_url provenance;owner listening/style review remains pending.
 Two additional [20-second vertical Shorts](../experiments/2026-10-17/disco-coffee-shorts.md),one per winning faction,are delivered locally with new comic English narration,covers and YouTube copy;[worm victory](https://youtube.com/shorts/RsUVTrr3Dmc) and [boys victory](https://youtube.com/shorts/lky20OJaAqo) owner-supplied URLs recorded with user_provided_url provenance;owner review/audience results remain separate,no extra PlayMCP credits.
-The separate English service review follows with owner voice,a site walkthrough
-and game-film excerpts. Current contest participation/status must be checked per game; a service walkthrough does not authorise new entries.
+The separate [English service review](experiments/playmcp-service-review.md) is
+completed with owner voice, a site walkthrough and game-film excerpts; its
+[owner-supplied publication URL](https://youtu.be/NVeMJLidncU) is recorded. Current contest participation/status must be checked per game; a service walkthrough does not authorise new entries.
 [Game-engine workflow](workflows/game-engines.md):game creation,reviews and
 virtual sets for unrelated films; other engines remain unqualified. The Jekyll
-local camera probe is separate from a delivered virtual-set film.
+local camera probe and delivered book film retain separate evidence.
 [Incoming-tool priorities](research-review-2026-10-17.md) follow this case.
 The personal-studio programme below remains planned infrastructure,not an active
 repackaging run. Earlier production-pause wording refers to the completed book stage.
 
-## Current book/virtual-set case — game published, films next
+## Completed book/virtual-set case — game and book film delivered
 
-[Jekyll / Hyde in Toki Pona](experiments/jekyll-toki-pona.md): [game published](https://playmcp.io/g/g_Zr0bwMnL), hosted revision14, desktop landscape. The owner then identified flow/embedded-control faults missed by those tests. The current fix retains single-Start narration/reactions/native-chrome safe area, adds29 rotating vocabulary words and mirrored six-second finales with automatic clean return/new deals; actual-page pointer paths verify both outcomes and replay. Current native reports are linked in the case record. Owner take2 is integrated and its voice/music mix accepted; both synthetic TP probes remain rejected. Revision14 billing is now reconciled:22,838/26,000 (prior22,606 +232),see service-review preproduction case. Owner accepted the game. The owner accepted the57s book-promo preview; [final local video and kit](../experiments/2026-10-19/outputs.json) are delivered with encoded QA. [Book promo YouTube](https://youtu.be/GPfkz36JWbI) is recorded from the owner with user_provided_url provenance; playback/visibility were not independently verified. Source-preview acceptance, encoded owner review and rights evidence remain distinct. Current order: new findings intake,overall PlayMCP review with owner voice,then audit/docs/release. Jekyll Short cancelled; standalone game overview deferred. No contest entry or release; native auto-share clip remains unreviewed.
+[Jekyll / Hyde in Toki Pona](experiments/jekyll-toki-pona.md): [game published](https://playmcp.io/g/g_Zr0bwMnL), hosted revision14, desktop landscape. The owner then identified flow/embedded-control faults missed by those tests. The current fix retains single-Start narration/reactions/native-chrome safe area, adds29 rotating vocabulary words and mirrored six-second finales with automatic clean return/new deals; actual-page pointer paths verify both outcomes and replay. Current native reports are linked in the case record. Owner take2 is integrated and its voice/music mix accepted; both synthetic TP probes remain rejected. Revision14 billing is now reconciled:22,838/26,000 (prior22,606 +232),see the completed service-review case. Owner accepted the game. The owner accepted the57s book-promo preview; [final local video and kit](../experiments/2026-10-19/outputs.json) are delivered with encoded QA. [Book promo YouTube](https://youtu.be/GPfkz36JWbI) is recorded from the owner with user_provided_url provenance; playback/visibility were not independently verified. Source-preview acceptance, encoded owner review and rights evidence remain distinct. Current order: close the reviewed Git stage, then prepare Pocket OS; SSI is paused and world/fiction trials remain queued. The overall service review is complete. Jekyll Short cancelled; standalone game overview deferred. No contest entry or release; native auto-share clip remains unreviewed.
 
-Current Jekyll continuation uses the schema-2 project linked in its case record;
+The retained Jekyll checkpoint uses the schema-2 project linked in its case record;
 completed owner-input/native checks and rejected TP probes are recorded there. No production is started
 by the project-memory implementation.
 

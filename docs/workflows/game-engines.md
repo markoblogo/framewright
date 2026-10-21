@@ -26,10 +26,18 @@ screen, thumbnail and YouTube copy with the game link. The owner supplied the
 site walkthrough, demonstrated functions and excerpts from the game film, with
 owner-recorded narration under the [voice workflow](owner-recorded-narration.md).
 
-The game film has an owner-supplied publication URL;final owner review remains separate.
-The service review remains planned; the [Jekyll book case](../experiments/jekyll-toki-pona.md) has a published desktop reading game and a local 2.5D repeatable-camera probe; its virtual-set book film is delivered with an owner-supplied YouTube URL. PlayMCP evidence does not qualify other engines, arbitrary
-mods, universal game creation or automatic gameplay capture. Other engine and
-modding candidates remain in the [research review](../research-review-2026-10-17.md).
+The Coffee film and completed [service review](../experiments/playmcp-service-review.md)
+have owner-supplied publication URLs. The review uses owner narration, real site
+capture, three game excerpts and cost cards. The [Jekyll book case](../experiments/jekyll-toki-pona.md)
+has a published desktop reading game, a local repeatable-camera probe and a book
+promo with an owner-supplied YouTube URL. Publication references do not establish
+audience results or new independent playback checks.
+
+PlayMCP evidence does not qualify other engines, arbitrary mods, universal game
+creation or automatic gameplay capture. A future fiction pilot will test original
+story scenes and world continuity; the [next-cycle intake](../next-cycle.md) keeps
+provider identity, existing assets and paid access unresolved until selected.
+Other candidates remain in the [research review](../research-review-2026-10-17.md).
 
 ## Reusable production contract
 

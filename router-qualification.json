@@ -86,7 +86,7 @@
   ],
   "note": "One complete protocol-v5 70/70 known70-case regression on the packet's historical decision sources;46/46 fresh matching blind controls. Added explicit stem phase/stereo-mono cancellation QA and corrected two conditional/semantic criteria before the run. Original three results:{'stems-rebuild': True, 'watercolor-loop': True, 'upgrade-history-rights': True}. Separate unchanged-answer replay2/2 is not included in70. Original v4 67/70 and13/18 first-exposure retained, not overwritten. No manual overrides, favourable answer stitching, unseen/causal claim, rendering, service qualification or new release. Model rubric70/70, complete evidence62/70: eight cases have started reads without terminal events; retained as INSUFFICIENT_EVIDENCE, no completion inferred or actor retried. The original three fixes all pass with complete traces.",
   "evaluated_status": "evaluated_with_gaps",
-  "current_source_change": "Adds resumable schema-2 projects, revision-bound evidence/decisions, scene/material/cut/local-kit bookkeeping, recording measurements and updated discovery records. Deterministic checks and retained component trials do not qualify current-source model routing or general autonomous production. The 2026-10-20 SSI handoff/Openverse SFX update changes discovery documentation and scoped manual-tool evidence only; current-source model routing remains unevaluated.",
+  "current_source_change": "Adds resumable schema-2 projects, revision-bound evidence/decisions, scene/material/cut/local-kit bookkeeping, recording measurements and updated discovery records. Deterministic checks and retained component trials do not qualify current-source model routing or general autonomous production. The 2026-10-20 SSI handoff/Openverse SFX update changes discovery documentation and scoped manual-tool evidence only; current-source model routing remains unevaluated. The 2026-10-21 PlayMCP closeout updates the decision ledger with the scoped Hyperframes0.8.183 render/audio-FX trial, correction-dependent human-English mlx-whisper runs and expanded partial Awwwards capture evidence. These documentation/evidence changes do not qualify current-source model routing.",
   "current_source_tree_sha256": {
     "skills/video-production-router/SKILL.md": "f6c44715bee49b9a9ba4ab43d1496595369f6ce3390500313658e1803413c91e",
     "skills/video-production-router/references/arsenal-facets.json": "f5716d1b5469e127db3bdbd353d2f0fddeac252a9ed09e8228d5f0ff3f973e9c",
@@ -101,7 +101,7 @@
     "skills/video-production-router/references/production.md": "7cee3668304433e82d4ca386bd25105d5efc22d8ee3dc2675efc94f8a602ed74",
     "skills/video-production-router/references/projects.md": "be4ed4e8d5a4f310989b9f5804fa3c25ddbdca29ec289d81930bf12392dc1886",
     "skills/video-production-router/references/recipes.md": "23309a3e8247f7a538b4da804df9d3c96b5266765a8526616aee8227fbbd00c0",
-    "skills/video-production-router/references/review-ledger.json": "d3a19b6123a44a23e342b7dddb22a799e2dffcfa783378da78e6bc4d70cf203f",
+    "skills/video-production-router/references/review-ledger.json": "8ea438500b54e74b0b5c59961b4eec3b998e1924d8ffb53a868b6f80a3a51fc2",
     "skills/video-production-router/references/scenarios.json": "45d9a2ae1de83716c324a9e946b68a6416093b659ed24b91104dab7bc7e5de75",
     "skills/video-production-router/references/selection.md": "1cbafbce7171f17aa70c1c28292594504847554b914a85463fd9a459854bf49c",
     "skills/video-production-router/references/storyboard.md": "cfdf95e56fada967d186fb2fa92263defcb52f9c645529be0865325140b1a713",
