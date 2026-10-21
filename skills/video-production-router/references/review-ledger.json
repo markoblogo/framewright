@@ -789,6 +789,186 @@
         "docs/research-intake-2026-10-19.md",
         "docs/research-review-2026-10-19.md"
       ]
+    },
+    {
+      "id": "terminaltexteffects",
+      "name": "TerminalTextEffects",
+      "url": "https://github.com/ChrisBuilds/terminaltexteffects",
+      "reviewed": "2026-10-21",
+      "review_basis": "Primary-source documentation and licence review only; no installation, model download, voice upload, generation or paid call",
+      "upstream_revision": "b75a7baefe89a25d22754bcefb7d5caae8809477",
+      "disposition": "candidate",
+      "scope_and_findings": "ASCII animated text-frame iterators; no native video export assumed. P1 Pocket OS title/transition.",
+      "licence_note": "MIT code; chosen fonts and source text require separate rights.",
+      "next_trial_or_retest_condition": "One fixed-grid 5–8s title, retained frame sequence, reproducibility and encoded legibility.",
+      "evidence": [
+        "docs/research-review-2026-10-21.md"
+      ]
+    },
+    {
+      "id": "three-ascii-effect",
+      "name": "Three.js AsciiEffect",
+      "url": "https://github.com/mrdoob/three.js",
+      "reviewed": "2026-10-21",
+      "review_basis": "Primary-source documentation and licence review only; no installation, model download, voice upload, generation or paid call",
+      "upstream_revision": "560f66427a4c3012e621fc9c6c1ec80b76a906ab",
+      "disposition": "candidate",
+      "scope_and_findings": "ASCII rendering addon with DOM output, a new component scope of existing Three.js, not tested here.",
+      "licence_note": "MIT Three.js/addon notices; chosen geometry, fonts and assets separately reviewed.",
+      "next_trial_or_retest_condition": "Same 5–8s 3D move, matched addon/core version, correct capture surface and time replay.",
+      "evidence": [
+        "docs/research-review-2026-10-21.md"
+      ]
+    },
+    {
+      "id": "chafa",
+      "name": "Chafa",
+      "url": "https://github.com/hpjansson/chafa",
+      "reviewed": "2026-10-21",
+      "review_basis": "Primary-source documentation and licence review only; no installation, model download, voice upload, generation or paid call",
+      "upstream_revision": "413b76e4ddefc3875b5220c68a328651f235d3ae",
+      "disposition": "candidate",
+      "scope_and_findings": "Image-to-terminal art; strict ASCII character set needs explicit verification.",
+      "licence_note": "LGPLv3+ library and CLI; input media/font rights separate.",
+      "next_trial_or_retest_condition": "One authorised photo to fixed-grid text art; evaluate silhouette and export.",
+      "evidence": [
+        "docs/research-review-2026-10-21.md"
+      ]
+    },
+    {
+      "id": "asciinema-agg",
+      "name": "asciinema agg",
+      "url": "https://github.com/asciinema/agg",
+      "reviewed": "2026-10-21",
+      "review_basis": "Primary-source documentation and licence review only; no installation, model download, voice upload, generation or paid call",
+      "upstream_revision": "aae34b012382536c8c01c753e4b609424642a06d",
+      "disposition": "candidate",
+      "scope_and_findings": "Local terminal cast to GIF; speed and idle caps may change timing.",
+      "licence_note": "GPLv3+ agg; recording-tool terms, displayed content and fonts separate.",
+      "next_trial_or_retest_condition": "Short retained local cast with explicit geometry/font/timing; no public upload.",
+      "evidence": [
+        "docs/research-review-2026-10-21.md"
+      ]
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "url": "https://github.com/blender/blender",
+      "reviewed": "2026-10-21",
+      "review_basis": "Primary-source documentation and licence review only; no installation, model download, voice upload, generation or paid call",
+      "upstream_revision": "2858241a2b1fa67e173d4af6b3ff4f7fbd5a9ec2",
+      "disposition": "candidate",
+      "scope_and_findings": "Camera/light/3D illustration candidate; no Mac cost or render-path trial.",
+      "licence_note": "GPLv3 application with file-specific notices; models, fonts and media separately cleared.",
+      "next_trial_or_retest_condition": "Original simple 5s illustrative device shot, resource cap and encoded checks.",
+      "evidence": [
+        "docs/research-review-2026-10-21.md"
+      ]
+    },
+    {
+      "id": "three-postprocessing",
+      "name": "Three.js postprocessing",
+      "url": "https://github.com/pmndrs/postprocessing",
+      "reviewed": "2026-10-21",
+      "review_basis": "Primary-source documentation and licence review only; no installation, model download, voice upload, generation or paid call",
+      "upstream_revision": "9cf03cff26615636a564d8bfddf765edb8917441",
+      "disposition": "candidate",
+      "scope_and_findings": "Bloom/noise/scanline/glitch and GPU ASCII effects; no integration qualification.",
+      "licence_note": "Zlib library plus retained original MIT notices; scene/media rights separate.",
+      "next_trial_or_retest_condition": "One restrained 5s CRT treatment; version compatibility, colour pipeline and time replay.",
+      "evidence": [
+        "docs/research-review-2026-10-21.md"
+      ]
+    },
+    {
+      "id": "motion-canvas",
+      "name": "Motion Canvas",
+      "url": "https://github.com/motion-canvas/motion-canvas",
+      "reviewed": "2026-10-21",
+      "review_basis": "Primary-source documentation and licence review only; no installation, model download, voice upload, generation or paid call",
+      "upstream_revision": "7b91435c301d530351dcf5ebb91dd139c002e405",
+      "disposition": "candidate",
+      "scope_and_findings": "Code-driven explanatory animation; browser/Vite/exporter path untested.",
+      "licence_note": "MIT core; exporter/dependencies/fonts/media separately reviewed.",
+      "next_trial_or_retest_condition": "One 6–8s diagram only for a concrete unmet need; qualify export and replay.",
+      "evidence": [
+        "docs/research-review-2026-10-21.md"
+      ]
+    },
+    {
+      "id": "deepfilternet",
+      "name": "DeepFilterNet",
+      "url": "https://github.com/Rikorose/DeepFilterNet",
+      "reviewed": "2026-10-21",
+      "review_basis": "Primary-source documentation and licence review only; no installation, model download, voice upload, generation or paid call",
+      "upstream_revision": "d375b2d8309e0935d165700c91da9de862a99c31",
+      "disposition": "candidate",
+      "scope_and_findings": "Speech denoising candidate, not acoustic judgment or pronunciation repair.",
+      "licence_note": "Code dual MIT/Apache-2.0; exact selected pretrained-weight terms unresolved in this review.",
+      "next_trial_or_retest_condition": "After weight/resource gate, noisy 10s sample A/B for noise, consonants and delay.",
+      "evidence": [
+        "docs/research-review-2026-10-21.md"
+      ]
+    },
+    {
+      "id": "qwen3-tts",
+      "name": "Qwen3-TTS owner voice cloning",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "reviewed": "2026-10-21",
+      "review_basis": "Primary-source documentation and licence review only; no installation, model download, voice upload, generation or paid call",
+      "upstream_revision": "022e286b98fbec7e1e916cb940cdf532cd9f488e",
+      "disposition": "candidate",
+      "scope_and_findings": "Base 0.6B reference-audio voice cloning; EN/RU/FR among ten declared languages. CustomVoice is a distinct preset scope. Mac fit untested.",
+      "licence_note": "Apache-2.0 code and reviewed Qwen3-TTS-12Hz-0.6B-Base model card; exact weights/runtime pin and owner reference scope required.",
+      "next_trial_or_retest_condition": "Resource check then agreed private owner reference and 8–12s known-script clone comparison.",
+      "evidence": [
+        "docs/research-review-2026-10-21.md"
+      ]
+    },
+    {
+      "id": "chatterbox-turbo",
+      "name": "Chatterbox Turbo voice cloning",
+      "url": "https://github.com/resemble-ai/chatterbox",
+      "reviewed": "2026-10-21",
+      "review_basis": "Primary-source documentation and licence review only; no installation, model download, voice upload, generation or paid call",
+      "upstream_revision": "5de7a54aa4e5e2baadb0182dde554908b48b85c2",
+      "disposition": "candidate",
+      "scope_and_findings": "English 350M reference-voice TTS with expressive tags; other family models separate.",
+      "licence_note": "MIT code and reviewed ResembleAI/chatterbox-turbo model card; retain watermark and owner voice scope; exact weights pin required.",
+      "next_trial_or_retest_condition": "Short owner-authorised English fixture; identity/naturalness/pronunciation and Mac resources.",
+      "evidence": [
+        "docs/research-review-2026-10-21.md"
+      ]
+    },
+    {
+      "id": "openvoice-v2",
+      "name": "OpenVoice V2 voice conversion",
+      "url": "https://github.com/myshell-ai/OpenVoice",
+      "reviewed": "2026-10-21",
+      "review_basis": "Primary-source documentation and licence review only; no installation, model download, voice upload, generation or paid call",
+      "upstream_revision": "74a1d147b17a8c3092dd5430504bd83ef6c7eb23",
+      "disposition": "candidate",
+      "scope_and_findings": "Reference tone-colour conversion after base TTS, not standalone single-model TTS; six native languages declared.",
+      "licence_note": "Authors license V1/V2 MIT for commercial/research use; exact converter and base TTS models/dependencies require separate check.",
+      "next_trial_or_retest_condition": "Only if first local clone is unsuitable; pin base/converter and compare one short owner fixture.",
+      "evidence": [
+        "docs/research-review-2026-10-21.md"
+      ]
+    },
+    {
+      "id": "elevenlabs-voice-cloning",
+      "name": "ElevenLabs Instant Voice Cloning",
+      "url": "https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning/instant-voice-cloning",
+      "reviewed": "2026-10-21",
+      "review_basis": "Official cloning/API/commercial-use documentation only; no account inspection, upload or paid call",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Cloud voice clone and voice-ID API; about 1–2min clear consistent reference recommended. Local-account languages, price and data settings uninspected.",
+      "licence_note": "Hosted service terms, not open weights: eligible paid non-Beta generation needed for commercial use under reviewed terms; exact account/model, destination-specific voice upload and budget require approval.",
+      "next_trial_or_retest_condition": "Optional cloud baseline after owner selects exact source files, approves destination and capped cost; same short fixture as local clone.",
+      "evidence": [
+        "docs/research-review-2026-10-21.md"
+      ]
     }
   ]
 }

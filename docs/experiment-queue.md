@@ -8,8 +8,9 @@ each actual new-tool experiment. [Research](tool-research.md) ·
 
 ## Current owner priority
 
-Owner update, 2026-10-21: close the completed PlayMCP production cycle through
-reviewed Git changes. The 150-second service review is delivered and has an
+The completed PlayMCP production cycle was closed through reviewed Git changes
+in [PR #40](https://github.com/markoblogo/framewright/pull/40), merged 2026-10-21;
+no new release. The 150-second service review is delivered and has an
 owner-supplied [publication URL](https://youtu.be/NVeMJLidncU). Its blog article is
 a private draft, not a publication. SSI is **paused, not cancelled**, pending
 partner feedback; do not start its next render or integration while paused.
@@ -24,6 +25,23 @@ Jekyll Short remains cancelled; its standalone game overview stays deferred.
 Awwwards 1.9.0 has an expanded adapted capture-component trial, not full MCP/search
 qualification. Worlds remain provider/model-flexible; the next provider must be
 selected from actual scene needs and available owner assets. No automatic paid run.
+
+## Pocket OS visuals, owner voice and media review — 2026-10-21
+
+[Primary-source assessment and bounded trials](research-review-2026-10-21.md).
+Twelve new candidate records; no installations, downloads, uploads or generation.
+
+| Order | Proposed trial | Pass boundary |
+| --- | --- | --- |
+| P1 / Pocket OS | TerminalTextEffects title versus Three.js AsciiEffect illustration | Same 5–8s brief; reproducible frames, actual encoded legibility; real UI stays readable |
+| P1 / owner voice, resource-gated | Qwen3-TTS Base local clone; Chatterbox Turbo/OpenVoice alternatives, ElevenLabs optional cloud comparator | Agreed private reference, exact model/terms, short new script and owner listening. No existing recording is implicitly selected or uploaded |
+| P1 / video perception, access-gated | Existing Gemini candidate on short known-defect controls; Qwen3-Omni local alternative | Action/timing/defect findings versus labels, false passes and human playback. Frame analysis, ASR and cut detection do not qualify continuous video quality |
+| P2 / storyboard-led | Blender camera/3D illustration; postprocessing CRT/VFX; optional Chafa/agg | One concrete shot each, existing assembler, rights/resources and encoded QA |
+| P3 / need-led | Motion Canvas diagram; DeepFilterNet only for noisy speech after weight terms check | Avoid duplicate renderers or unnecessary cleanup; preserve original audio |
+
+F5-TTS default reviewed noncommercial weights are excluded from monetised production;
+Natron is deferred. All new candidates require `--evidence any` for discovery;
+none enters tested routes. Detailed reasons and source pins are in the assessment.
 
 ## World-production intake — 2026-10-21
 
