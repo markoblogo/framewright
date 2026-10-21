@@ -13,6 +13,7 @@ import tempfile
 BASE = Path(__file__).resolve().parent
 JOURNAL = runpy.run_path(str(BASE / "journal.py"))
 PRODUCTION = runpy.run_path(str(BASE / "production.py"))
+MEDIA = runpy.run_path(str(BASE / "media_review.py"))
 
 
 def digest(value):
@@ -36,7 +37,7 @@ def file_record(path, root):
 
 
 def planning_sources():
-    paths = [BASE / name for name in ['plan.py', 'music.py', 'terms.py', 'workflow.py', 'project.py', 'journal.py', 'packet.py', 'production.py']]
+    paths = [BASE / name for name in ['plan.py', 'music.py', 'terms.py', 'workflow.py', 'project.py', 'journal.py', 'packet.py', 'production.py', 'media_review.py', 'capture_check.py']]
     paths.append(BASE.parent / 'references/tools.json')
     return {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 
@@ -313,6 +314,7 @@ def main():
     asset = commands.add_parser('asset');asset.add_argument('project',type=Path);asset.add_argument('identity');asset.add_argument('--kind',required=True)
     task = commands.add_parser('task');task.add_argument('project',type=Path);task.add_argument('identity');task.add_argument('--label',required=True);task.add_argument('--after',action='append',default=[]);task.add_argument('--requires',action='append',default=[]);task.add_argument('--waiting-for');task.add_argument('--note',default='');task.add_argument('--check-kind',choices=['technical','listening','creative','provider','publication'])
     observe = commands.add_parser('observe');observe.add_argument('project',type=Path);observe.add_argument('subject');observe.add_argument('--kind',choices=JOURNAL['RESULTS'],required=True);observe.add_argument('--result',required=True);observe.add_argument('--actor',required=True);observe.add_argument('--provenance',choices=sorted(JOURNAL['PROVENANCE']),required=True);observe.add_argument('--note',required=True);observe.add_argument('--topic');observe.add_argument('--depends-on',action='append',default=[]);observe.add_argument('--url');observe.add_argument('--visibility',choices=['public','unlisted','private','unknown']);observe.add_argument('--observed-at')
+    review = commands.add_parser('review');review.add_argument('project',type=Path);review.add_argument('subject');review.add_argument('--report',required=True,help='Retained input:/output: report ID');review.add_argument('--actor',required=True)
     log = commands.add_parser('journal');log.add_argument('project',type=Path);log.add_argument('--json',action='store_true')
     compose = commands.add_parser('compose');compose.add_argument('project',type=Path);compose.add_argument('spec',type=Path);compose.add_argument('--replace',action='store_true')
     board = commands.add_parser('board');board.add_argument('project',type=Path);board.add_argument('--json',action='store_true')
@@ -376,7 +378,7 @@ def main():
                 data = initial(json.loads(args.brief.read_text()))
             else:
                 data = load(path)
-                if args.command in {'asset','task','observe','compose'} and data['schema_version']!=2:
+                if args.command in {'asset','task','observe','compose','review'} and data['schema_version']!=2:
                     raise ValueError('Run migrate explicitly before using project memory')
                 if args.command=='compose':
                     compiled=PRODUCTION['compile_project'](data,json.loads(args.spec.read_text()))
@@ -418,6 +420,26 @@ def main():
                         'evidence':args.note,'waiting_for':args.waiting_for,'check_kind':args.check_kind,'optional':False,
                         'attestation':'operator_recorded_not_independently_verified'})
                     event(data,'add_task',step=args.identity)
+                elif args.command=='review':
+                    if args.report==args.subject or not args.actor.strip():
+                        raise ValueError('Use distinct retained media/report subjects and an explicit actor')
+                    media_pin=JOURNAL['pin'](data,args.subject)
+                    report_pin=JOURNAL['pin'](data,args.report)
+                    if media_pin is None or report_pin is None:
+                        raise ValueError('Media and report must be retained files')
+                    problems=file_problems(data,path.parent)
+                    if any(t in problems for t in [args.subject,args.report]):
+                        raise ValueError('Media/report bytes changed; retain the intended revisions explicitly')
+                    report=MEDIA['validate'](MEDIA['read_json'](path.parent/report_pin['path'],report_pin['sha256']),media_pin)
+                    if any(t in file_problems(data,path.parent) for t in [args.subject,args.report]):
+                        raise ValueError('Media/report changed while importing; repeat on stable files')
+                    for kind,result in MEDIA['receipts'](report).items():
+                        row=JOURNAL['append'](data,args.subject,kind,result,args.actor,'supplied_report',
+                            'Imported media report '+args.report+' sha256='+report_pin['sha256']+
+                            '; technical QA combines metadata/decode with applicable visual/motion/sync reviews; judgments are supplied, not independently verified by project CLI.',
+                            'media-review:'+kind,[args.report])
+                        event(data,'import_media_review',entry=row['id'],report=args.report)
+                    invalidate(data,list(evidence_blockers(data,file_problems(data,path.parent))))
                 elif args.command=='observe':
                     # An observation of changed/missing bytes cannot claim to describe the retained revision.
                     targets=[args.subject,*args.depends_on]

@@ -2,6 +2,28 @@
 
 ## Unreleased
 
+- Block imported technical QA and delivery when visual, motion or sync review is
+  rejected or pending; keep decode measurements and creative preference distinct.
+  Score persistent missing-action findings against the full commanded-open period.
+
+- Record free Gemini UI trials: reject a batch response with unbound file IDs;
+  retain one correct single-video freeze finding and a clean control separately
+  from hallucinated speech on byte-verified tone-only audio. Keep the candidate
+  unqualified and preserve the owner's free-only constraint.
+
+- Fix control-clip playback in browser players by encoding H.264/AAC; retain
+  codec regression checks and require a player smoke check alongside decoding.
+
+- Prepare eight original video-perception controls with separate reviewer/gold
+  packets, frozen source hashes, encoded perturbation measurements and diagnostic
+  grading for false alarms, missed events and false passes. Export supplied
+  observations into unified reports; no model qualification or provider call.
+
+- Add local audio/video review reports combining metadata/full-decode evidence,
+  short-recording measurements and explicit timestamped review observations. Import
+  them into the existing journal with source/report revision dependencies; partial
+  or missing perceptual checks remain pending and tasks are never auto-completed.
+
 - Close the PlayMCP service-review cycle with a 150-second owner-narrated export,
   publication URL and scoped capture, transcription and audio-FX evidence.
 - Refresh the 24-export inventory and current production status; pause SSI pending

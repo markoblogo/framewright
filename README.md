@@ -26,9 +26,10 @@ New genres and tool combinations need scoped evidence before qualification.
 | **[Find tools and combinations](skills/video-production-router/references/arsenal-search.md)** | Task/style/language/rights/evidence filters with scoped results |
 | **[Save and resume work](skills/video-production-router/references/projects.md)** | Goal, frozen plan, file pins, revision-bound decisions and next steps |
 | **[Connect scenes, reuse assets and collect a kit](skills/video-production-router/references/production.md)** | Shared materials, independent main/Short cuts and visible delivery checks |
+| **[Inspect audio/video and retain a review](skills/video-production-router/references/media-review-reports.md)** | Local technical report, supplied timestamped findings, unresolved checks and revision-bound journal import |
 | **[Render the reference film](docs/first-video.md)** | Open demo assets, pinned dependencies, exact commands and expected outputs |
 
-Before a full operator take, run the local [recording rehearsal check and media-review workflow](skills/video-production-router/references/media-review.md). Technical measurements, actual listening/viewing and owner acceptance remain separate; multimodal model candidates are documented, not connected or qualified.
+Before a full operator take, run the local [recording rehearsal check and media-review workflow](skills/video-production-router/references/media-review.md). Technical measurements, actual listening/viewing and owner acceptance remain separate. The [video-control pilot](skills/video-production-router/references/media-perception-pilot.md) provides frozen known-defect clips and diagnostic scoring. [Free Gemini UI trials](docs/experiments/gemini-media-review.md) produced a correct freeze finding and no findings on one clean control, but failed the separate audio check. No multimodal reviewer or automatic acceptance route is qualified.
 
 ## Try a production plan
 

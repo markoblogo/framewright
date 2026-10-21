@@ -131,7 +131,8 @@ keep main/Short cuts distinct, and expose missing footage/rights/narration.
 A collected kit is a local handoff; never infer publication authority from it.
 
 Before promising audio/image/video evaluation or asking an operator to record, use
-[media review and recording rehearsal](references/media-review.md). Check actual
+[media review and recording rehearsal](references/media-review.md). For a unified file report and project import, read
+[media-review reports](references/media-review-reports.md). Check actual
 session input support; level measurement/ASR/frame sampling never substitute for
 listening, motion or sync review. The local `capture_check.py` reads short clips;
 cloud/local multimodal candidates need separate bounded qualification and authority.
