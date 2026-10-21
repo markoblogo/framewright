@@ -224,6 +224,17 @@ class MediaReviewTest(unittest.TestCase):
                         else:
                             with self.assertRaises(ValueError):module['validate'](r)
 
+    def test_performed_calibration_requires_each_applicable_stream_measurement(self):
+        self.audiovisual_source();base=self.report()
+        for stream in ['audio','video']:
+            for missing in [False,True]:
+                with self.subTest(stream=stream,missing=missing):
+                    r=copy.deepcopy(base)
+                    if missing:r['technical']['calibration'].pop(stream)
+                    else:r['technical']['calibration'][stream]=None
+                    path=self.root/'invalid-calibration.json';path.write_text(json.dumps(r))
+                    self.cli('media_review.py','--read',path,ok=False)
+
     def test_source_size_cap_is_checked_before_external_tools(self):
         large=self.root/'too-large.wav'
         with large.open('wb') as stream:stream.truncate(1024*1024*1024+1)

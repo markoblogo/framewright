@@ -24,7 +24,8 @@ The first command measures metadata and decodes the file. For files within the
 existing 60-second / 100-MiB calibration limits, it also reuses `capture_check.py`:
 per-channel sample peaks/RMS, silence/near-full-scale guidance and sampled video
 luma. Longer or larger files show that calibration was not performed. Saved reports must
-keep calibration status consistent with decode success and the short-capture limits. A technical pass means
+keep calibration status consistent with decode success and the short-capture limits;
+a performed calibration must include measurements for every applicable stream. A technical pass means
 metadata, positive decoded duration/frame evidence and decode completed, not that loudness, focus, pronunciation or style passed.
 Calibration failure/limits and individual flags remain visible in the report.
 Stream metadata is retained. Decode timing substantially shorter than metadata is

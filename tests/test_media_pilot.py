@@ -136,6 +136,17 @@ class MediaPilotTest(unittest.TestCase):
         r=self.score(a)
         self.assertEqual(r['counts']['false_positive'],1);self.assertEqual(r['counts']['false_negative'],2)
 
+    def test_sampled_missed_sync_event_stays_unassessed(self):
+        for coverage_type in ['sampled','continuous']:
+            with self.subTest(coverage_type=coverage_type):
+                a=self.answers(True);row=next(c for c in a['cases'] if self.gold[c['id']]['recipe']=='sync')
+                row.update(coverage_type=coverage_type,sampled_fps=.5 if coverage_type=='sampled' else None)
+                row['findings']=row['findings'][:1]
+                r=self.score(a)
+                self.assertEqual(r['counts']['true_positive'],5)
+                self.assertEqual(r['counts']['false_negative'],int(coverage_type=='continuous'))
+                self.assertEqual(r['counts']['unassessed_events'],int(coverage_type=='sampled'))
+
     def test_all_green_fails_defect_cases_and_reports_missed_events(self):
         r=self.score(self.answers())
         self.assertEqual(r['counts']['false_negative'],6)

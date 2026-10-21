@@ -346,7 +346,7 @@ def score(root,path):
             return False
         for i in edges:assign(i,set())
         missed=[label for j,label in enumerate(labels) if j not in matched]
-        fn_labels=[label for label in missed if effective[label['kind']]!='unknown' and event_covered(label,row['coverage'])]
+        fn_labels=[label for label in missed if row['coverage_type']=='continuous' and effective[label['kind']]!='unknown' and event_covered(label,row['coverage'])]
         unassessed_labels=[label for label in missed if label not in fn_labels]
         fn=len(fn_labels);unassessed=len(unassessed_labels)
         fp=len(findings)-len(matched);sufficient=all(v!='unknown' for v in effective.values())

@@ -131,7 +131,9 @@ not earn extra detections. A broad 2–9s sync claim does not replace two locali
 A supported observed rejection may identify a fault in partial footage; acceptance
 requires supported, continuous full-clip coverage. Sampled/partial passes and
 unsupported modalities remain unknown. No missing evidence becomes a correct pass. An unreviewed event window stays
-unassessed even if another event of the same kind was rejected.
+unassessed even if another event of the same kind was rejected. Missed events
+within sampled coverage remain unassessed; only continuous coverage can establish
+a false negative for an event that was not reported.
 
 Precision is null when no supported findings exist. Recall uses **all six authored
 events**, so inspect unassessed counts alongside it. No scalar score or automatic

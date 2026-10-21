@@ -151,6 +151,7 @@ def validate(report,pin=None):
         c=tech['calibration'];require(isinstance(c,dict) and c.get('sha256')==source['sha256'] and c.get('source_unchanged') is True and c.get('perceptual_review')=='not_performed','Calibration must match source and cannot claim perception')
         require(source['duration_seconds']<=60 and source['bytes']<=100*1024*1024,'Calibration exceeds short-capture limits')
         for name in ['audio','video']:
+            if source['has_'+name]:require(isinstance(c.get(name),dict),'Performed calibration needs measurements for each source stream')
             require(c.get(name) is None or isinstance(c[name],dict),'Invalid calibration measurement type')
         if isinstance(c.get('audio'),dict):
             channels=c['audio'].get('channels')
