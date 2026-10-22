@@ -1,6 +1,6 @@
 # Next production cycle
 
-Updated 21 October 2026. This is a planning record, not a render queue or spending
+Updated 22 October 2026. This is a planning record, not a render queue or spending
 authority. [Completed PlayMCP review](experiments/playmcp-service-review.md) ·
 [Experiment backlog](experiment-queue.md).
 
@@ -10,18 +10,26 @@ The owner explicitly set the order: finish repository cleanup, checks and review
 PR publication first; then prepare Pocket OS capture. Marble/world and fiction
 work stays queued until that sequence is complete. Selecting Marble as the first
 world provider does not start its inventory or generation in this closeout.
+The subsequently commissioned English counterpart of the accepted SSI site Reels
+is a bounded adaptation within this closeout, not a resumption of weekly summaries.
 
 ## Production status and next inputs
 
 | Workstream | State | Next input or action |
 | --- | --- | --- |
 | PlayMCP review | Completed; owner supplied YouTube URL | Retain export/kit/publication evidence; private article draft awaits owner use |
-| SSI weekly summaries | Paused, not cancelled | Partner format/style decision or explicit owner instruction; preserve all six demos |
+| SSI website Reels | UK accepted by partners (owner report); EN delivered with owner preview acceptance | Await English partner feedback; publication unconfirmed |
+| SSI weekly summaries | Demos not accepted; paused, not cancelled | Separate partner specification, then owner resumption; preserve all six demos |
 | Pocket OS review | Capture intake next | Developer-thread product brief and evidence-based device/Mac shot list; owner captures hardware |
 | YouTube Radar-led video | Intake | One owner-selected recommendation, its dated evidence, audience and intended format |
 | LitRPG fiction/world pilot | Concept intake | Owner-selected short-story text or condensed adaptation; inventory existing Marble / World Labs worlds and reusable assets |
 
-SSI's owner favourites D/F are not partner approval. Once resumed, validate the
+On 22 October the owner reported that partners did not like the weekly-report
+experiments and will write a separate specification. Detailed reasons are unknown;
+do not infer the preferred style or start another speculative redesign. SSI's
+owner favourites D/F are not partner approval. This does not reject the separately
+delivered [website Reels](experiments/ssi-site-reels.md) or revoke the scoped
+Openverse SFX qualification. Once the specification arrives and work resumes, validate the
 chosen treatment on all three report parts and the aggregate, then transfer the
 template and full recurring production ownership to SSI. Framewright does not
 connect to SSI data or publish its Telegram reports in this pilot.

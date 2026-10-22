@@ -21,7 +21,8 @@ alternatives for Telegram. No separate covers, subtitles or publication copy.
 D/E/F followed owner feedback that the initial treatments were too similar and
 needed animated illustrations and sound. The owner praised the D preview and
 reported sending all six variants to partners on 2026-10-20; personal favourites
-are D and F. Partner style and delivery-format selection remain pending.
+are D and F. These are owner preferences only; partners later did not accept the
+weekly-report treatments (22 October owner report). A new specification is pending.
 
 HyperFrames 0.8.174, GSAP, Three.js r186 and local FFmpeg were used. Animation and
 cameras use deterministic absolute time; no paid generation or new model download.
@@ -81,17 +82,23 @@ and approved it for the tested production arsenal. Qualification covers SFX
 search, per-item licence/provenance admission, download and manual montage use.
 This is owner acceptance of the workflow, not independent model listening or
 blanket acceptance of every mix. Music discovery and automatic semantic placement
-remain untested. Partner selection and repeated-report automation remain pending.
+remain untested. Partner acceptance was not obtained; repeated-report automation
+remains unimplemented pending a separate specification and owner resumption.
 Local fonts/logo are private demo assets; template transfer requires appropriate
 rights. No media, raw report or third-party code is committed.
 
-## Current pause — 2026-10-21
+## Current pause — updated 2026-10-22
 
-The owner paused SSI production while partners consider the six demos. This is not
-cancellation. D and F remain the owner's preferences, not a partner selection.
-Keep all demos, source pins and admitted SFX. Resume only after an owner instruction
-or an owner-provided partner decision; then follow the handoff below. No new SSI
-render, data integration, recurring job or Telegram action starts during the pause.
+The owner paused weekly video production on 21 October. On 22 October the owner
+reported that partners did not like the experiments and will supply a separate
+specification. Detailed objections and the replacement format are unknown. This
+is not cancellation. D and F remain owner preferences, not a partner selection.
+Preserve all demos, source pins and admitted SFX; wait for the specification and
+owner resumption before another weekly render, integration or recurring publication.
+The successful Openverse workflow qualification remains distinct from acceptance
+of these creative treatments. The independently requested [site Reels](ssi-site-reels.md)
+was delivered and accepted by partners (owner report); a matching English version
+was requested. That separate commission does not resume this weekly branch.
 
 ## Reuse and handoff
 

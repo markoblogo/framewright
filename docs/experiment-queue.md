@@ -1,6 +1,6 @@
 # Proposed experiment queue
 
-Updated 2026-10-21. This is a task-led backlog, not permission for unattended tests,
+Updated 2026-10-22. This is a task-led backlog, not permission for unattended tests,
 installs, model downloads, spending, account grants or public media uploads.
 Use an owner-selected subject with authorised sources. Discuss the subject and bounded brief before
 each actual new-tool experiment. [Research](tool-research.md) ·
@@ -12,8 +12,13 @@ The completed PlayMCP production cycle was closed through reviewed Git changes
 in [PR #40](https://github.com/markoblogo/framewright/pull/40), merged 2026-10-21;
 no new release. The 150-second service review is delivered and has an
 owner-supplied [publication URL](https://youtu.be/NVeMJLidncU). Its blog article is
-a private draft, not a publication. SSI is **paused, not cancelled**, pending
-partner feedback; do not start its next render or integration while paused.
+a private draft, not a publication. SSI weekly demos were **not accepted** by
+partners (owner report, 22 October); they will supply a separate specification.
+That branch is **paused, not cancelled**; no new weekly render or integration.
+The separate [15s website Reels](experiments/ssi-site-reels.md) is delivered;
+owner accepted its preview and now reports partner acceptance. Its matching English
+version is delivered with owner preview acceptance; English partner acceptance and
+Instagram publication remain unconfirmed.
 
 Next: prepare Pocket OS product/capture intake; select a YouTube Radar suggestion;
 plan a short-fiction adaptation using existing Marble / World Labs worlds first.
@@ -43,13 +48,30 @@ F5-TTS default reviewed noncommercial weights are excluded from monetised produc
 Natron is deferred. All new candidates require `--evidence any` for discovery;
 none enters tested routes. Detailed reasons and source pins are in the assessment.
 
+## Local video generation intake — 2026-10-22
+
+[FreeVideo / VDN-H3 assessment](freevideo-intake.md): **P2, rights-blocked candidate**
+for directed fiction/book inserts, separate from interactive world models. Engine
+code is Apache 2.0; the model's Community License excludes the EU and restricts
+works/output use outside its territory. No local trial in France without an
+applicable separate grant. Mac support is experimental with M5-specific timings;
+the H200 capacity grid is not consumer 8 GB speed evidence. Current docs also include
+a community 8 GB/64 GB full-run result. Research-only discovery with `--evidence any`;
+no runtime provider or tested promotion.
+
 ## World-production intake — 2026-10-21
 
-[Marble, Decart Oasis, Odyssey and Genie shortlist](world-production-intake.md):
+[Marble, Decart Oasis, Odyssey, Genie and LingBot shortlist](world-production-intake.md):
 start with the owner's existing Marble worlds, then compare candidates on an
 approved fiction shot. The new names are intake only; no installation, provider
 account test, export qualification or paid generation has run. No new selectable
 arsenal profiles are added by this shortlist.
+
+Added 2026-10-22: **LingBot-World / Infinity (v2), P2 after Marble**, with separate
+v1 Apache 2.0 and v2 CC BY-NC-SA 4.0 rights paths. Review hosted access/output terms
+or CUDA resources before a private 5–10s directed-shot comparison. Monetised use
+of v2 is held pending compatible permission/terms; no trial or installation ran.
+[Assessment, sources and pass boundary](world-production-intake.md#lingbot-assessment--22-october-2026).
 
 ## New findings — assessed candidates,2026-10-19
 

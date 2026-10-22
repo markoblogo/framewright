@@ -608,6 +608,23 @@
       ],
       "rights_class": "conditional",
       "licence_note_sha256": "b77aa9ea838f4ae8b6fa683631c9d23ca93650b474efbdb3db34fe390df26bf3"
+    },
+    "lingbot-world": {
+      "tasks": [
+        "video",
+        "3d"
+      ],
+      "inputs": null,
+      "rights_class": "unknown",
+      "licence_note_sha256": "2f88c16884277dbce1bef4e157162a87232f3ac0af7aa8a3ca71d5de156246c3"
+    },
+    "freevideo-vdn-h3": {
+      "tasks": [
+        "video"
+      ],
+      "inputs": null,
+      "rights_class": "unknown",
+      "licence_note_sha256": "4de5071ef406a7589cd7a9bd0e6796f2e58a28c71eb5a76a1d42898b36a8f011"
     }
   }
 }

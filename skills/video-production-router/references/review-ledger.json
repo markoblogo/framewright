@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -25,6 +25,15 @@
         "experiments/2026-10-19/evidence/jekyll-book-promo.json",
         "experiments/2026-10-21/evidence/playmcp-service-review.json",
         "docs/experiments/playmcp-service-review.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-22",
+          "kind": "scoped_production_trial",
+          "version": "0.8.185",
+          "evidence": "docs/experiments/ssi-site-reels.md",
+          "outcome": "15s portrait real-site scroll with fixed Ukrainian captions. Padding and overlapping-video seam failures revised; one continuous stream, native/encoded sampled QA and audio measurements. Owner preview and owner-reported partner acceptance; no independent listening or public upload. Native capture and registry example are bounded partial trials. English adaptation delivered with owner preview acceptance, same caption styles and identical decoded PCM;English partner acceptance unconfirmed."
+        }
       ]
     },
     {
@@ -969,6 +978,36 @@
       "next_trial_or_retest_condition": "Optional cloud baseline after owner selects exact source files, approves destination and capped cost; same short fixture as local clone.",
       "evidence": [
         "docs/research-review-2026-10-21.md"
+      ]
+    },
+    {
+      "id": "lingbot-world",
+      "name": "LingBot-World / Infinity",
+      "url": "https://github.com/Robbyant/lingbot-world",
+      "reviewed": "2026-10-22",
+      "review_basis": "Pinned upstream code and licence documentation only; no install, account test or generation",
+      "upstream_revision": "a43bec7f8091c83e9b30b16b912f6fc906236fa6",
+      "disposition": "candidate",
+      "scope_and_findings": "P2 after owner Marble inventory. v1 and v2 are separate rights/runtime paths; directed generated video is not evidence of mesh export, stable geometry or repeatable characters. v2 reference examples use multiple CUDA GPUs; minimum memory, Mac support and hosted output terms unverified.",
+      "licence_note": "v1 Apache-2.0; v2 revision1895d300d8ac936401689b26389f51cbd36530eb CC-BY-NC-SA-4.0. Monetised v2 use held pending compatible permission/hosted output terms; licences do not automatically determine every generated output.",
+      "next_trial_or_retest_condition": "After Marble, approved5–10s reference/move/action fixture; resolve version, rights, access and resource ceiling first.",
+      "evidence": [
+        "docs/world-production-intake.md"
+      ]
+    },
+    {
+      "id": "freevideo-vdn-h3",
+      "name": "FreeVideo / VDN-H3",
+      "url": "https://github.com/FlashML-org/FreeVideo",
+      "reviewed": "2026-10-22",
+      "review_basis": "Pinned execution-planning/Mac documentation and retained model licence text hash; no runtime trial",
+      "upstream_revision": "0afd01e37e0a01e2e1eafc50f0c0967878b695ed",
+      "disposition": "rights_blocked",
+      "scope_and_findings": "P2 directed shot candidate, not interactive-world qualification. H200 capacity grid differs from consumer timing. Source reports include8GB VRAM/64GB RAM full603s run;8GB/16GB full-run performance unestablished. Mac guide is experimental with M5-specific timings.",
+      "licence_note": "Engine Apache-2.0; reviewed MiniMax H3 Community License excludes EU/UK/Korea/US and restricts works/outputs outside its territory. France use held without applicable separate grant; VPN is not a grant.",
+      "next_trial_or_retest_condition": "Retained applicable model-use permission, selected checkpoint/base/LoRA terms and actual Mac resources before any install/download or short directed-shot test.",
+      "evidence": [
+        "docs/freevideo-intake.md"
       ]
     }
   ]

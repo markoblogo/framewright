@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](docs/router-evaluation.md)
 [![Planning evidence: scoped](https://img.shields.io/badge/planning__evidence-scoped-526C73?style=flat-square)](docs/router-evaluation.md)
-[![24 recorded exports](https://img.shields.io/badge/recorded__exports-24-293F48?style=flat-square)](docs/experiments.md)
+[![26 recorded exports](https://img.shields.io/badge/recorded__exports-26-293F48?style=flat-square)](docs/experiments.md)
 
 **Framewright helps an AI agent plan and resume video production, reuse materials
 and prepare a reviewable local publication kit, using documented methods.**
@@ -82,7 +82,11 @@ three working examples, owner narration and recorded credit usage.
 [Game-engine workflow](docs/workflows/game-engines.md) ·
 [Agent skill](skills/game-engine-production/SKILL.md).
 
-**Next cycle:** SSI awaits partner feedback; Pocket OS capture preparation is next.
+**Next cycle:** the [SSI site Reels](docs/experiments/ssi-site-reels.md) is delivered
+and accepted by partners (owner report); the matching English version is delivered,
+with owner preview acceptance.
+Weekly-report demos were not accepted; that branch is paused pending a separate
+partner specification. Pocket OS capture preparation follows this closeout and adaptation.
 A YouTube Radar-led video and a short-fiction/world-production pilot are in intake.
 [Status, inputs and development priorities](docs/next-cycle.md).
 
@@ -110,6 +114,7 @@ Private author assets are not redistributed; use the open reference film to star
 | Object action and camera in a miniature world | Three.js → Hyperframes or authored Remotion | Recorded scenes; new geometry, physics and mixed seams unqualified |
 | Workflow diagram | ManimGX → FFmpeg | Recorded timing adapter; setup-budget overrun retained |
 | Live-site walkthrough | OpenScreen → FFmpeg | Manual recipe with capture/freeze workarounds; not an automatic planner provider |
+| Vertical site promo with fixed captions | Native browser frames → FFmpeg → HyperFrames | Two 15s SSI Reels (UK/EN); sampled QA retained; UK partner acceptance owner-reported |
 | Recut existing films | MoviePy + FFmpeg | Manual compilation recipe; automatic semantic selection unqualified |
 
 [Recipes](skills/video-production-router/references/recipes.md) ·
