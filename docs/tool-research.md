@@ -1,6 +1,12 @@
 # Tool review and test inventory
 
-Latest: [2026-10-21 ASCII, animation/VFX, owner-voice cloning and media-review research](research-review-2026-10-21.md). Twelve documentation-only candidates; no new runtime qualification.
+Latest intake: [2026-10-22 FreeVideo / VDN-H3](freevideo-intake.md), rights-blocked, research only; [world shortlist including LingBot](world-production-intake.md).
+
+Production follow-up: [SSI vertical site Reels](experiments/ssi-site-reels.md) records
+HyperFrames 0.8.185, native browser-frame capture and registry-inspired transitions.
+These have bounded artifact evidence; the two model candidates above remain untested.
+
+Previous batch: [2026-10-21 ASCII, animation/VFX, owner-voice cloning and media-review research](research-review-2026-10-21.md). Twelve documentation-only candidates; no new runtime qualification.
 
 For the 2026-10-17 gap-led update (recuts,sourced stories,hybrid production and
 private audio),see [personal studio audit](personal-studio.md). It refreshes existing

@@ -71,3 +71,11 @@ additional rendered export, model qualification or release.
 - [Operator recording calibration and media-review routing](../experiments/2026-10-18/media-review-intake.md): local technical probes; listening unavailable, model candidates untested.
 
 [PlayMCP service review](experiments/playmcp-service-review.md):150s owner-narrated real-site/three-game review,local YouTube kit,expanded partial capture-component trial and spectral voiceover-carve experiment. Preview accepted;technical export verified;publication separate.
+
+[SSI website Reels](experiments/ssi-site-reels.md): 15s vertical real-site scroll,
+stationary Ukrainian captions, retained instrumental/CC0 SFX and HyperFrames 0.8.185.
+Two additional recorded exports (UK/EN); encoded technical and sampled visual QA passed.
+Owner accepted both previews and reports UK partner acceptance; English partner acceptance
+is unconfirmed. Decoded English/Ukrainian soundtracks match exactly.
+Publication is unconfirmed.
+The separate weekly-report demos were not accepted and await a partner specification.

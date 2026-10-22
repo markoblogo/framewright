@@ -1,0 +1,207 @@
+{
+  "date": "2026-10-22",
+  "id": "ssi-site-reels-en",
+  "artifact": {
+    "local_output": "ssi-site-reels-en-20261022/delivery/SSI-Site-Reels-EN-15s.mp4",
+    "sha256": "d7d828095086dae670d5af91e4bdc0cffd6d65da211ab321889128e0b3636bce",
+    "bytes": 13569392
+  },
+  "format": {
+    "duration_seconds": 15.0,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 450,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_sample_rate": 48000,
+    "audio_channels": 2
+  },
+  "runtime": "HyperFrames 0.8.185; native DPR2 browser frames; FFmpeg assembly/mix; no model calls",
+  "capture": {
+    "viewport_css": [
+      540,
+      960
+    ],
+    "device_scale_factor": 2,
+    "method": "Successive actual public-page scroll positions captured as screenshots, not fabricated UI; screenshot animations suppressed and smooth-scroll disabled only for capture.",
+    "pages": [
+      {
+        "id": "home",
+        "url": "https://spike.1d3x.com/en",
+        "http_status": 200,
+        "recorded_at": "2026-10-22T13:42:14.192Z",
+        "seconds": 3.2,
+        "from": 80,
+        "to": 680,
+        "fps": 30,
+        "frames": 96
+      },
+      {
+        "id": "analytics",
+        "url": "https://spike.1d3x.com/en/analytics",
+        "http_status": 200,
+        "recorded_at": "2026-10-22T13:42:37.368Z",
+        "seconds": 4.2,
+        "from": 1250,
+        "to": 2700,
+        "fps": 30,
+        "frames": 126
+      },
+      {
+        "id": "about",
+        "url": "https://spike.1d3x.com/en/about",
+        "http_status": 200,
+        "recorded_at": "2026-10-22T13:42:52.357Z",
+        "seconds": 3.2,
+        "from": 180,
+        "to": 1950,
+        "fps": 30,
+        "frames": 96
+      },
+      {
+        "id": "context",
+        "url": "https://spike.1d3x.com/en/media-hub",
+        "http_status": 200,
+        "recorded_at": "2026-10-22T13:43:02.791Z",
+        "seconds": 2.7,
+        "from": 340,
+        "to": 2100,
+        "fps": 30,
+        "frames": 81
+      }
+    ]
+  },
+  "full_decode": "pass",
+  "caption_and_motion_samples": [
+    {
+      "scene": "home",
+      "times": [
+        1,
+        2
+      ],
+      "caption_mean_pixel_difference": 0.002,
+      "background_mean_pixel_difference": 40.824
+    },
+    {
+      "scene": "analytics",
+      "times": [
+        4,
+        5
+      ],
+      "caption_mean_pixel_difference": 0.006,
+      "background_mean_pixel_difference": 20.941
+    },
+    {
+      "scene": "about",
+      "times": [
+        8,
+        9
+      ],
+      "caption_mean_pixel_difference": 0.009,
+      "background_mean_pixel_difference": 27.072
+    },
+    {
+      "scene": "context",
+      "times": [
+        10.8,
+        11.7
+      ],
+      "caption_mean_pixel_difference": 0.075,
+      "background_mean_pixel_difference": 24.228
+    },
+    {
+      "scene": "cta",
+      "times": [
+        13.2,
+        14.2
+      ],
+      "caption_mean_pixel_difference": 0.002,
+      "background_mean_pixel_difference": 43.889
+    }
+  ],
+  "encoded_audio": {
+    "integrated_lufs": -17.32,
+    "true_peak_dbtp": -1.51,
+    "lra_lu": 2.0,
+    "mono_vs_stereo_rms_db": -0.008,
+    "decoded_pcm_identical_to_uk_final": true,
+    "decoded_pcm_sha256": "b3f4863b06e70a98258a81fa2fa3876474c4d07d97d6f8f63690cc0f31faa479",
+    "independent_listening": "not performed"
+  },
+  "visual_review": "Encoded contact sheet inspected: English pages and captions, Analytics present, no gray padding or blank source; preview phone/beat sheets and all four seam strips inspected.",
+  "hyperframes_checks": {
+    "lint": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0
+    },
+    "runtime": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0
+    },
+    "layout": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0
+    },
+    "contrast": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0
+    },
+    "craft": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0
+    }
+  },
+  "motion_check": {
+    "dedicated_checker_enabled": false,
+    "basis": "Five encoded hold comparisons plus preview seam/frame review; not continuous perceptual evaluation"
+  },
+  "audio_provenance": {
+    "music": "original SSI D instrumental authored procedurally2026-10-19; reused clean score, no narration or transport SFX",
+    "music_sha256": "a3bff6935804ee79b93fd13cd8b2951641bc65b14aabdd830034456f61b3cec3",
+    "sfx": {
+      "title": "whoosh_short_low.wav",
+      "creator": "DJT4NN3R",
+      "foreign_landing_url": "https://freesound.org/people/DJT4NN3R/sounds/449992",
+      "license": "cc0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "\"whoosh_short_low.wav\" by DJT4NN3R is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/.",
+      "bytes": 46020,
+      "sha256": "74d22d520cc1d0c5e6ded552bfb21773ce95453d60425b804d61dd66b9a9a6d2"
+    }
+  },
+  "failure_history": [],
+  "review": {
+    "owner_preview": "accepted; owner said ролик просмотрел - принято",
+    "partner_acceptance": "English requested after partner acceptance of Ukrainian film; English-specific partner acceptance unconfirmed",
+    "encoded_owner_listening": "not separately reported",
+    "publication": "not confirmed",
+    "audience_results": "not measured"
+  },
+  "cost": {
+    "model_calls": 0,
+    "paid_calls": 0,
+    "new_model_downloads": 0
+  },
+  "private_evidence": "Render/check logs, browser frames, native snapshots, encoded contact sheet and production checkpoint retained privately; no media or third-party code redistributed.",
+  "adaptation": {
+    "source_id": "ssi-site-reels",
+    "source_output_sha256": "9e706b95a7f68f5cafee128fe3c9f7bb18d187c6b4cf98d19bd1ea35052dde7d",
+    "preserved": "15s duration, scene boundaries0/3/7/10/12.5/15, caption layout/font, transition types/durations and soundtrack",
+    "changed": "Actual English site pages and captions",
+    "decoded_pcm_identical_to_uk_final": true,
+    "new_tool_trial": false,
+    "caption_geometry_check": {
+      "about": "style identical",
+      "analytics": "style identical",
+      "context": "style identical",
+      "prices": "style identical",
+      "visit": "style identical"
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "date": "2026-10-22",
+  "id": "ssi-site-reels",
+  "artifact": {
+    "local_output": "ssi-site-reels-20261022/delivery/SSI-Site-Reels-UK-15s.mp4",
+    "sha256": "9e706b95a7f68f5cafee128fe3c9f7bb18d187c6b4cf98d19bd1ea35052dde7d",
+    "bytes": 13378144
+  },
+  "format": {
+    "duration_seconds": 15.0,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 450,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_sample_rate": 48000,
+    "audio_channels": 2
+  },
+  "runtime": "HyperFrames 0.8.185; native DPR2 browser frames; FFmpeg assembly/mix; no model calls",
+  "capture": {
+    "viewport_css": [
+      540,
+      960
+    ],
+    "device_scale_factor": 2,
+    "method": "Successive actual public-page scroll positions captured as screenshots, not fabricated UI; screenshot animations suppressed and smooth-scroll disabled only for capture.",
+    "pages": [
+      {
+        "id": "analytics",
+        "url": "https://spike.1d3x.com/uk/analytics",
+        "http_status": 200,
+        "recorded_at": "2026-10-22T13:03:55.279Z",
+        "seconds": 4.2,
+        "from": 1250,
+        "to": 2700,
+        "fps": 30,
+        "frames": 126
+      },
+      {
+        "id": "about",
+        "url": "https://spike.1d3x.com/uk/about",
+        "http_status": 200,
+        "recorded_at": "2026-10-22T13:04:18.141Z",
+        "seconds": 3.2,
+        "from": 180,
+        "to": 1950,
+        "fps": 30,
+        "frames": 96
+      },
+      {
+        "id": "context",
+        "url": "https://spike.1d3x.com/uk/media-hub",
+        "http_status": 200,
+        "recorded_at": "2026-10-22T13:04:30.791Z",
+        "seconds": 2.7,
+        "from": 340,
+        "to": 2100,
+        "fps": 30,
+        "frames": 81
+      },
+      {
+        "id": "home",
+        "url": "https://spike.1d3x.com/uk",
+        "http_status": 200,
+        "recorded_at": "2026-10-22T13:10:56.398Z",
+        "seconds": 3.2,
+        "from": 80,
+        "to": 680,
+        "fps": 30,
+        "frames": 96
+      }
+    ]
+  },
+  "full_decode": "passed; all 450 frames, no decoder errors",
+  "caption_and_motion_samples": [
+    {
+      "scene": "home",
+      "times": [
+        1,
+        2
+      ],
+      "caption_mean_pixel_difference": 0.001,
+      "background_mean_pixel_difference": 33.114
+    },
+    {
+      "scene": "analytics",
+      "times": [
+        4,
+        5
+      ],
+      "caption_mean_pixel_difference": 0.006,
+      "background_mean_pixel_difference": 22.768
+    },
+    {
+      "scene": "about",
+      "times": [
+        8,
+        9
+      ],
+      "caption_mean_pixel_difference": 0.007,
+      "background_mean_pixel_difference": 32.206
+    },
+    {
+      "scene": "context",
+      "times": [
+        10.8,
+        11.7
+      ],
+      "caption_mean_pixel_difference": 0.083,
+      "background_mean_pixel_difference": 30.12
+    },
+    {
+      "scene": "cta",
+      "times": [
+        13.2,
+        14.2
+      ],
+      "caption_mean_pixel_difference": 0.013,
+      "background_mean_pixel_difference": 39.531
+    }
+  ],
+  "encoded_audio": {
+    "integrated_lufs": -17.32,
+    "true_peak_dbtp": -1.51,
+    "lra_lu": 2.0,
+    "mono_vs_stereo_rms_db": -0.008,
+    "independent_listening": "not performed"
+  },
+  "visual_review": "Encoded contact sheet inspected; no black/gray-padding fault. Preview phone, beats and all four seams inspected. Captions readable; actual Analytics present. Sampled review only.",
+  "hyperframes_checks": {
+    "lint": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0
+    },
+    "runtime": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0
+    },
+    "layout": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0
+    },
+    "contrast": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0
+    },
+    "craft": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0
+    }
+  },
+  "motion_check": {
+    "dedicated_checker_enabled": false,
+    "basis": "Five encoded hold comparisons plus preview seam/frame review; not continuous perceptual evaluation"
+  },
+  "audio_provenance": {
+    "music": "original SSI D instrumental authored procedurally2026-10-19; reused clean score, no narration or transport SFX",
+    "music_sha256": "a3bff6935804ee79b93fd13cd8b2951641bc65b14aabdd830034456f61b3cec3",
+    "sfx": {
+      "title": "whoosh_short_low.wav",
+      "creator": "DJT4NN3R",
+      "foreign_landing_url": "https://freesound.org/people/DJT4NN3R/sounds/449992",
+      "license": "cc0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "\"whoosh_short_low.wav\" by DJT4NN3R is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/.",
+      "bytes": 46020,
+      "sha256": "74d22d520cc1d0c5e6ded552bfb21773ce95453d60425b804d61dd66b9a9a6d2"
+    }
+  },
+  "failure_history": [
+    "Playwright recordVideo produced gray padding; rejected after visual review.",
+    "Overlapping per-scene videos generated extraction warnings at seams; replaced with one continuous background stream and separate caption layers.",
+    "Full registry showcase was not mounted; conceptual push transition adaptation uses FFmpeg smoothleft, not a full block qualification."
+  ],
+  "review": {
+    "owner_preview": "accepted; owner said ролик ок",
+    "partner_acceptance": "accepted, owner report 2026-10-22; requested same film with English site/captions",
+    "encoded_owner_listening": "not separately reported",
+    "publication": "not confirmed",
+    "audience_results": "not measured"
+  },
+  "cost": {
+    "model_calls": 0,
+    "paid_calls": 0,
+    "new_model_downloads": 0
+  },
+  "private_evidence": "Render/check logs, browser frames, native snapshots, encoded contact sheet and production checkpoint retained privately; no media or third-party code redistributed."
+}

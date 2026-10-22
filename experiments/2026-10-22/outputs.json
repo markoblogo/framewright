@@ -1,0 +1,36 @@
+[
+  {
+    "id": "ssi-site-reels",
+    "route": "short-teaser",
+    "local_output": "ssi-site-reels-20261022/delivery/SSI-Site-Reels-UK-15s.mp4",
+    "bytes": 13378144,
+    "sha256": "9e706b95a7f68f5cafee128fe3c9f7bb18d187c6b4cf98d19bd1ea35052dde7d",
+    "evidence": "experiments/2026-10-22/evidence/ssi-site-reels.json",
+    "qa_scope": "15s1080x1920p30 H264/AAC;450 frames;full decode;encoded contact sheet;preview phone/beats/four seams;five fixed-caption/background comparisons;−17.32 LUFS/−1.51 dBTP;mono/stereo RMS −0.008dB. No independent listening or continuous perceptual claim.",
+    "creative_acceptance": "owner accepted preview; partner accepted film per owner report on2026-10-22",
+    "publication_verification": "not_confirmed",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"partner_acceptance\"",
+      "\"failure_history\""
+    ]
+  },
+  {
+    "id": "ssi-site-reels-en",
+    "route": "short-teaser",
+    "local_output": "ssi-site-reels-en-20261022/delivery/SSI-Site-Reels-EN-15s.mp4",
+    "bytes": 13569392,
+    "sha256": "d7d828095086dae670d5af91e4bdc0cffd6d65da211ab321889128e0b3636bce",
+    "evidence": "experiments/2026-10-22/evidence/ssi-site-reels-en.json",
+    "qa_scope": "15s1080x1920p30 H264/AAC;450frames;full decode;encoded contact sheet;native phone/beats/four seam strips;five fixed-caption/background comparisons;−17.32LUFS/−1.51dBTP;decoded PCM identical to Ukrainian final. No independent listening.",
+    "creative_acceptance": "owner accepted English preview; English-specific partner approval unconfirmed",
+    "publication_verification": "not_confirmed",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"decoded_pcm_identical_to_uk_final\"",
+      "\"adaptation\""
+    ]
+  }
+]
