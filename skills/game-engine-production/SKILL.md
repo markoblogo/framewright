@@ -12,7 +12,8 @@ production contract in [the workflow](../../docs/workflows/game-engines.md).
 For PlayMCP, read the connected service's current guides and resume from the
 matching case or schema-2 checkpoint: [current Jekyll case](../../docs/experiments/jekyll-toki-pona.md),
 [Coffee Showdown](../../docs/experiments/playmcp-coffee-showdown.md) or
-[SIRTET](../../docs/experiments/sirtet.md). Use recorded
+[SIRTET](../../docs/experiments/sirtet.md) or
+[Möbius Walk](../../docs/experiments/dream-walk.md). Use recorded
 project/site/revision identities rather than starting a duplicate project. Match
 review evidence to the current build and storyboard. Keep approval quotes
 verbatim; changes requested by the owner are not approval of an unseen result.
@@ -21,7 +22,8 @@ for actions already covered.
 
 ## Scope-changing decisions
 
-- Game: verify controls through actual play and inspect each promised ending.
+- Game: verify controls through actual play and inspect each promised ending; for
+  intentionally endless play, test movement, pause, sound and repeated cycles without inventing a finale.
   A passing page-format check does not establish understandable mechanics.
 - Review: demonstrate the exact function being described. Keep commentary and
   real UI/gameplay provenance aligned; do not replace an unavailable demo with
@@ -154,3 +156,9 @@ footage/finals are absent. It does not authorise capture, rendering or hosting.
 A terminal state is not a complete ending test. Exercise both outcomes through the actual public player, wait without another input for the promised exit/reset, verify one native result with the correct win flag, then start a zero-score round. A face playing to its last frame is not evidence of a usable finale.
 
 For randomised educational rounds, retain a source-bound bank and contextual glosses, deal once per round, shuffle answer positions, and test with fixed seeds. Preserve narrative groups and the winning threshold. Prefer words actually answered recently rather than reserving unshown words; unavailable browser storage must fall back safely. Keep review/demo history separate from human history. Distinguish full source-paragraph vocabulary from words visible in the short reading excerpt. New speech prompts need their own text/hash/decode evidence; do not rerun rejected-language probes.
+
+## Ambient capture and publication records
+
+For a long background video, use the [bounded game-canvas recipe](../../docs/workflows/ambient-game-video.md). Retain filming-only timing changes and repeated-cycle disclosure. Version changed scripts when a host caches them. Native format pass, blind style advice, actual viewing/listening and owner approval are different evidence; never create score/targets or fake approval to satisfy an unrelated rubric.
+
+Deliver publication copy as direct TXT/Markdown files when requested, not inside ZIPs. Later owner-supplied video links are separate publication observations pinned to the retained master; they do not prove metrics, independent listening or uploaded-byte identity. Commit only sanitised receipts and asset hashes, never raw account output, balances, signed URLs, credentials or media.

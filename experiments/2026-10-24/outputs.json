@@ -1,0 +1,42 @@
+[
+  {
+    "local_output": "dream-walk-20261024/delivery/One-Minute-Dream-Walk-EN.mp4",
+    "bytes": 32720504,
+    "sha256": "f3a94c5f473e602f78e3b1324a529c1daebdd53e4d67de6ea8a5f9a3eaa7fa7d",
+    "id": "dream-walk-film",
+    "route": "narrated-montage",
+    "evidence": "experiments/2026-10-24/evidence/dream-walk.json",
+    "qa_scope": "60s1280x720p24;1440 frames;full decode;sampled source/encoded motion;−16.2LUFS/−1.47dBTP;mix correlation0.999822;no independent listening or continuous human motion review.",
+    "publication_url": "https://youtu.be/oyQXmJI4aK0",
+    "publication_verification": "owner_reported_url",
+    "publication_visibility": "unknown",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"fullDecode\"",
+      "\"loop_seam\"",
+      "\"cost\""
+    ],
+    "production_method": "cinematic-generated-film"
+  },
+  {
+    "local_output": "dream-walk-20261024/delivery/Mobius-Walk-20-Minute-Ambient.mp4",
+    "bytes": 488132555,
+    "sha256": "af05bdff75713d40f53a01b90a8fb7c7579390ef68b3b6dc2d0aa331300f59d1",
+    "id": "mobius-walk-ambient",
+    "route": "footage-compilation",
+    "evidence": "experiments/2026-10-24/evidence/dream-walk.json",
+    "qa_scope": "1200s1920x1080p30;36000 frames;full decode;two-minute game-canvas cycle repeated ten times;sampled loop boundary;−22.4LUFS/−1.5dBTP;no independent listening or continuous human review.",
+    "publication_url": "https://youtu.be/rfClK3jPHlw",
+    "publication_verification": "owner_reported_url",
+    "publication_visibility": "unknown",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"fullDecode\"",
+      "\"loop_seam\"",
+      "\"cost\""
+    ],
+    "production_method": "game-canvas-ambient"
+  }
+]

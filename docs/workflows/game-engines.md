@@ -92,3 +92,9 @@ main/Short edits. Catalogue items carry origin, revision and parent rights; loca
 kits keep final-file QA and publication separate. The original Jekyll planning trial created report-only drafts; later film
 delivery is recorded separately. Those drafts do not become accepted final kits
 retroactively, and neither stage qualifies another engine.
+
+## Endless play and ambient film
+
+[Möbius Walk](../experiments/dream-walk.md) adds a fourth PlayMCP game and one scoped Babylon.js canvas-capture chain. The [ambient-film recipe](ambient-game-video.md) separates a real recorded game from generated cinematic clips, closes a complete camera period and discloses loop repetition. It does not qualify a general world generator or every game engine.
+
+Native technical checks, genre/style advice and explicit owner approvals remain separate. A no-score endless game should be tested for movement, pause, sound, looping and intentional lack of arrival, without inventing new goals to satisfy a generic rhythm rubric. Capture evidence can disprove a static-camera finding; it cannot supply missing owner approval. Record distinct approval fields only with explicit matching owner answers.

@@ -3,7 +3,7 @@
 Produced 22 October 2026. Two local 15-second, 1080×1920p30 H.264/AAC exports for
 Instagram Reels: Ukrainian and its requested English counterpart, no narration. Owner accepted the Studio preview
 and later reported partner acceptance and a request for an otherwise identical
-English version. Instagram publication and audience results are unconfirmed.
+English version. The owner later reported English partner acceptance and supplied its Instagram URL; Ukrainian publication and all audience results remain unconfirmed.
 [Artifact record](../../experiments/2026-10-22/outputs.json) ·
 [Sanitised technical evidence](../../experiments/2026-10-22/evidence/ssi-site-reels.json).
 
@@ -71,8 +71,8 @@ cover, subtitle file or publication copy was requested or delivered.
 
 The owner reports partners accepted the Ukrainian Reels and requested the same
 edit with English site pages and English captions. The English counterpart is now
-delivered locally and its preview accepted by the owner. Separate English partner
-approval remains unconfirmed.
+delivered locally and its preview accepted by the owner. The owner subsequently
+reported English partner acceptance; its exact acceptance date is not established.
 
 The English version recaptures actual `/en`, `/en/analytics`, `/en/about` and
 `/en/media-hub` pages with the same scroll positions/durations, transition timing
@@ -90,3 +90,12 @@ The [six weekly-report demos](ssi-logistics-illustrated.md) were **not accepted*
 by partners and await a separate specification. Their detailed objections remain
 unknown. That workstream stays paused; it neither rejects this Reels nor revokes
 the earlier scoped Openverse SFX qualification.
+
+## English publication link — owner report recorded 24 October 2026
+
+[English SSI website Reels on Instagram](https://www.instagram.com/reel/DezcjZ0tXuz/).
+The owner supplied this URL and previously reported partner acceptance. The local
+production journal binds the publication observation to the retained English master.
+Independent web fetching returned a cache miss; exact upload time, public visibility,
+uploaded-byte identity and audience metrics are unknown. This does not resume the
+paused weekly-report workstream or establish publication of the Ukrainian version.

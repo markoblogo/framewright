@@ -1,0 +1,36 @@
+[
+  {
+    "local_output": "trend-shorts-20261023/delivery/Profit-vs-Cash-Flow-Short-EN.mp4",
+    "bytes": 6711968,
+    "sha256": "908fa1b441df22265b9415367423e3c9f5f2366af684af83dc3a118da30b50ee",
+    "id": "trend-short-profit-cash",
+    "route": "short-teaser",
+    "evidence": "experiments/2026-10-23/evidence/profit-cash.json",
+    "qa_scope": "29.1s1080x1920p30 H264/AAC; full decode; sampled encoded/native sheets; -15.62LUFS/-4.27dBTP; measured mix conformance, no independent listening.",
+    "publication_url": "https://youtube.com/shorts/-htT4oQiOpI",
+    "publication_verification": "owner_reported_url",
+    "publication_visibility": "unknown",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"publication\""
+    ]
+  },
+  {
+    "local_output": "trend-shorts-20261023/delivery/AI-Agent-Savepoint-Short-EN.mp4",
+    "bytes": 1772649,
+    "sha256": "857062b322a2e7dfa0a78542b5d21df7943b12fabe3a2679286991dbf696cf11",
+    "id": "trend-short-agent-savepoint",
+    "route": "short-teaser",
+    "evidence": "experiments/2026-10-23/evidence/agent-savepoint.json",
+    "qa_scope": "28.933333s1080x1920p30 H264/AAC; full decode; sampled encoded/native sheets; -15.29LUFS/-4.34dBTP; measured mix conformance, no independent listening.",
+    "publication_url": "https://youtube.com/shorts/H26QHE7NE9I",
+    "publication_verification": "owner_reported_url",
+    "publication_visibility": "unknown",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"publication\""
+    ]
+  }
+]

@@ -24,13 +24,16 @@
     "sha256": "d7d828095086dae670d5af91e4bdc0cffd6d65da211ab321889128e0b3636bce",
     "evidence": "experiments/2026-10-22/evidence/ssi-site-reels-en.json",
     "qa_scope": "15s1080x1920p30 H264/AAC;450frames;full decode;encoded contact sheet;native phone/beats/four seam strips;five fixed-caption/background comparisons;−17.32LUFS/−1.51dBTP;decoded PCM identical to Ukrainian final. No independent listening.",
-    "creative_acceptance": "owner accepted English preview; English-specific partner approval unconfirmed",
-    "publication_verification": "not_confirmed",
+    "creative_acceptance": "owner accepted English preview; owner subsequently reported English partner acceptance (date unknown)",
+    "publication_verification": "owner_reported_link; independent visibility and upload identity unverified",
     "audience_metrics": "not_measured",
     "evidence_checks": [
       "\"full_decode\"",
       "\"decoded_pcm_identical_to_uk_final\"",
       "\"adaptation\""
-    ]
+    ],
+    "publication_url": "https://www.instagram.com/reel/DezcjZ0tXuz/",
+    "publication_provenance": "owner_report",
+    "publication_recorded_on": "2026-10-24"
   }
 ]

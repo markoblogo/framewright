@@ -1,0 +1,180 @@
+{
+  "game": {
+    "gameId": "g_2xHcZuxx",
+    "gameUrl": "https://playmcp.io/g/g_2xHcZuxx",
+    "playUrl": "https://playmcp.io/s/s_xjrMeUAJ/",
+    "reviewUrl": "https://playmcp.io/s/s_xjrMeUAJ/review",
+    "status": "published",
+    "siteRev": 4,
+    "challenge": null,
+    "publicHttpChecks": [
+      {
+        "kind": "game",
+        "status": 200,
+        "url": "https://playmcp.io/g/g_2xHcZuxx",
+        "title": "Möbius Walk — A to B · PlayMCP",
+        "gameIdInHtml": true
+      },
+      {
+        "kind": "review",
+        "status": 200,
+        "url": "https://playmcp.io/s/s_xjrMeUAJ/review",
+        "title": "PlayMCP - Make music playable",
+        "gameIdInHtml": false
+      }
+    ]
+  },
+  "game_engine": {
+    "name": "Babylon.js",
+    "version": "9.32.0",
+    "source": "https://github.com/BabylonJS/Babylon.js",
+    "licence": "Apache-2.0",
+    "scope": "Original Mobius geometry and walk camera; canvas recording on this retained Mac/browser path only."
+  },
+  "generated_sources": {
+    "provider": "PlayMCP",
+    "jobs": [
+      "j_rclMiYhI",
+      "j_CqvctiR9",
+      "j_DSATbc8a",
+      "j_kgbENZ5g",
+      "j_9yWMsTH2",
+      "j_U6wsr2nU"
+    ],
+    "count": 6,
+    "seconds_each": 8,
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "camera": "fixed; living water, fog, light and plant movement",
+    "not_gameplay": true
+  },
+  "film": {
+    "full_decode": "pass",
+    "video": {
+      "codec_name": "h264",
+      "codec_type": "video",
+      "width": 1280,
+      "height": 720,
+      "r_frame_rate": "24/1",
+      "nb_frames": "1440"
+    },
+    "duration_seconds": 60,
+    "audio": {
+      "integrated_lufs": -16.2,
+      "true_peak_dbtp": -1.47,
+      "lra_lu": 8.7,
+      "mix_correlation_zero_lag": 0.9998222208013057,
+      "mono_vs_stereo_rms_db": -0.4549064040184021,
+      "independent_listening": "not_performed"
+    },
+    "source_motion_differences": [
+      41.213,
+      40.478,
+      12.484,
+      37.743,
+      33.824,
+      35.613
+    ],
+    "selected_thumbnail": {
+      "file": "delivery/One-Minute-Dream-Walk-Thumbnail.jpg",
+      "method": "Built-in generated typography/cover based on extracted garden frame",
+      "largeAnd320x180VisualReview": "passed",
+      "exactModel": "not reported by tool"
+    },
+    "independent_listening": "not_performed",
+    "continuous_human_review": "not_performed"
+  },
+  "ambient": {
+    "duration": 1200.0,
+    "video": {
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "30/1",
+      "nb_frames": "36000"
+    },
+    "audio": {
+      "codec_name": "aac",
+      "sample_rate": "48000",
+      "channels": 2
+    },
+    "fullDecode": "passed",
+    "picture": "Actual hosted game canvas, 120-second canonical filming pass repeated ten times. Camera and portal-ring timing made periodic only in the recording session; public game unchanged visually.",
+    "humanListening": "pending",
+    "continuousHumanMotionReview": "pending"
+  },
+  "ambient_audio": {
+    "integrated_lufs": -22.4,
+    "true_peak_dbtp": -1.5,
+    "lra_lu": 7.9
+  },
+  "loop_seam": {
+    "boundarySeconds": 120,
+    "meanPixelDifference0to255": {
+      "lastAdjacent": 7.706753472222222,
+      "loopSeam": 9.176869212962963,
+      "firstAdjacent": 7.742714120370371
+    },
+    "visualReview": "Representative encoded frames plus boundary contact sheet inspected; scene returns to the same framing, no black transition. No claim of full continuous human review."
+  },
+  "cost": {
+    "actualDebit": 30508,
+    "newPayments": 0,
+    "newSubscriptions": 0,
+    "localAmbientGenerationDebit": 0,
+    "scope": "Whole Mobius/game + two-video experiment, including native platform publication jobs; not a per-film price."
+  },
+  "owner_publications": [
+    {
+      "artifactId": "one-minute-dream-walk",
+      "localFile": "delivery/One-Minute-Dream-Walk-EN.mp4",
+      "sha256": "f3a94c5f473e602f78e3b1324a529c1daebdd53e4d67de6ea8a5f9a3eaa7fa7d",
+      "url": "https://youtu.be/oyQXmJI4aK0",
+      "status": "published",
+      "provenance": "owner_report",
+      "visibility": "unknown",
+      "uploadTime": null,
+      "independentVerification": "not performed",
+      "audienceMetrics": null
+    },
+    {
+      "artifactId": "mobius-walk-20-minute",
+      "localFile": "delivery/Mobius-Walk-20-Minute-Ambient.mp4",
+      "sha256": "af05bdff75713d40f53a01b90a8fb7c7579390ef68b3b6dc2d0aa331300f59d1",
+      "url": "https://youtu.be/rfClK3jPHlw",
+      "status": "published",
+      "provenance": "owner_report",
+      "visibility": "unknown",
+      "uploadTime": null,
+      "independentVerification": "not performed",
+      "audienceMetrics": null
+    }
+  ],
+  "sound_sources": [
+    {
+      "title": "Ambient Piano Music #4",
+      "creator": "benpm",
+      "licence": "CC BY 4.0",
+      "source": "https://freesound.org/people/benpm/sounds/320603/",
+      "edits": "loop/crossfade/mix"
+    },
+    {
+      "title": "Night close to a river, crickets and frogs, bird sometimes.",
+      "creator": "felix.blume",
+      "licence": "CC0 1.0",
+      "source": "https://freesound.org/people/felix.blume/sounds/466955/",
+      "edits": "loop/crossfade/mix"
+    }
+  ],
+  "scope_notes": [
+    "Owner played revision1; subsequent approval separately covered final episode and scenario/look, with exact recorded owner words and delegated=false.",
+    "Native final revision4 check passes; final judge CLEAN with nonblocking genre advice retained. Blind-review camera-static claim contradicted by downloaded moving footage.",
+    "Two storyboard windows describe the same unchanged walk, not new levels or timed unlocks.",
+    "Final JS uses a versioned filename to avoid a confirmed one-hour cache.",
+    "Automatic review rejected inferred scenario/look approvals; those calls were not run. Owner then explicitly confirmed both records.",
+    "No Marble footage, new subscription or new payment.",
+    "JPEG covers are pinned in private delivery manifests and visually inspected; no PNG-thumbnail schema claim.",
+    "Text kits are separate TXT files by owner preference; prior ZIPs are historical, not the required delivery form."
+  ]
+}

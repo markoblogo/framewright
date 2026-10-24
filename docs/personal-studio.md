@@ -1,11 +1,11 @@
 # Personal studio: direction and production workflows
 
-Current status, 2026-10-21: schema-2 production memory, scene/material/cut planning
-and local kits are implemented. Three PlayMCP games, the Jekyll virtual-set book
-promo and the owner-narrated service review have retained production evidence.
-The owner supplied the review's publication URL; remote playback is not independently
-verified. [Completed case](experiments/playmcp-service-review.md) ·
-[Next cycle and current pauses](next-cycle.md).
+Current status, 2026-10-24: schema-2 production memory, scene/material/cut planning
+and local kits are implemented. Four PlayMCP games, the Jekyll virtual-set book
+promo, the owner-narrated service review, two English Trends-led Shorts and two
+Dream Walk films have retained production evidence. New publication links are
+owner-supplied; audience results and independent final listening remain separate.
+[Latest cases](experiments/dream-walk.md) · [Current priorities](next-cycle.md).
 The dated programme below preserves its original decisions; A/B/C remain unstarted.
 
 
@@ -21,10 +21,11 @@ a bounded excerpt to the separate PlayMCP game. No new release.
 
 A separate [game-engine workflow](workflows/game-engines.md) covers playable
 games, game/engine video reviews and virtual sets for unrelated video stories.
-Three PlayMCP games demonstrate these directions, with recorded game overviews,
-Shorts and a virtual-set book promo. The completed service review combines real
+Four PlayMCP games demonstrate these directions, with recorded game overviews,
+Shorts, a virtual-set book promo and a long ambient game-canvas recording. The completed service review combines real
 site capture, owner narration and game footage. Tool qualification remains scoped
-to each [recorded case](experiments/playmcp-service-review.md); other engines and
+to each recorded case: the [service review](experiments/playmcp-service-review.md)
+and [Babylon/canvas capture](experiments/dream-walk.md). Other engines and
 world-production providers need their own tests. This work does not start the
 deferred A/B/C source experiments below.
 

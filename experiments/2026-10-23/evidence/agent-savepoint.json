@@ -1,0 +1,52 @@
+{
+  "id": "agent-savepoint",
+  "full_decode": "pass",
+  "video": {
+    "codec_name": "h264",
+    "codec_type": "video",
+    "width": 1080,
+    "height": 1920,
+    "r_frame_rate": "30/1",
+    "nb_frames": "868"
+  },
+  "duration_seconds": 28.933333,
+  "audio": {
+    "integrated_lufs": -15.29,
+    "true_peak_dbtp": -4.34,
+    "lra_lu": 3.9,
+    "mono_vs_stereo_rms_db": -0.0,
+    "mix_correlation": 0.9997717,
+    "mix_lag_samples_12khz": 0,
+    "independent_listening": "not_performed"
+  },
+  "subtitles": "Text taken from actual synthesis script; cue times measured per retained voice line,not word-level ASR.",
+  "sampled_visual_review": {
+    "result": "sampled_frames_reviewed",
+    "evidence": "encoded-contact.jpg; native review beat, phone and seam sheets; independent fresh review",
+    "continuous_playback_review": false
+  },
+  "creative_acceptance": "no additional acceptance inferred from publication",
+  "publication": {
+    "url": "https://youtube.com/shorts/H26QHE7NE9I",
+    "provenance": "owner_report",
+    "visibility": "unknown",
+    "audience_metrics": "not_measured"
+  },
+  "tte_trial": {
+    "tool": "TerminalTextEffects",
+    "version": "0.15.0",
+    "effect": "Decrypt",
+    "source": "https://github.com/ChrisBuilds/terminaltexteffects",
+    "licence": "MIT",
+    "seed": 20261023,
+    "library_frames": 619,
+    "visible_movie_seconds": 2.0,
+    "render_method": "Precompute plain terminal frames then replay by absolute timeline time, final hold; no terminal screen recording or runtime RNG. ANSI colours removed.",
+    "input": "GOAL / DECISIONS / FILES / NEXT STEP",
+    "frame_sha256": "e7551b687e38d15460a41eb67eacf73c06959d757e93d138cd01f0a5a2022883",
+    "license_files": [
+      "terminaltexteffects-0.15.0.dist-info/licenses/LICENSE"
+    ],
+    "scope": "One title/data reveal in one original Shorts; no broad terminal or ASCII 3D qualification."
+  }
+}

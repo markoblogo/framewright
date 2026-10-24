@@ -1,27 +1,27 @@
 # Next production cycle
 
-Updated 22 October 2026. This is a planning record, not a render queue or spending
+Updated 24 October 2026. This is a planning record, not a render queue or spending
 authority. [Completed PlayMCP review](experiments/playmcp-service-review.md) ·
 [Experiment backlog](experiment-queue.md).
 
 ## Execution order
 
-The owner explicitly set the order: finish repository cleanup, checks and reviewed
-PR publication first; then prepare Pocket OS capture. Marble/world and fiction
-work stays queued until that sequence is complete. Selecting Marble as the first
-world provider does not start its inventory or generation in this closeout.
-The subsequently commissioned English counterpart of the accepted SSI site Reels
-is a bounded adaptation within this closeout, not a resumption of weekly summaries.
+Current closeout: refresh evidence and documentation, run offline checks, commit
+and push the latest work. No new release, paid tool test or media publication is
+included. Pocket OS production can resume when the owner supplies usable device
+footage. The Trends/Dream Walk experiments are already delivered and have supplied
+publication links. Marble was explicitly deferred; it is not the next automatic job.
 
 ## Production status and next inputs
 
 | Workstream | State | Next input or action |
 | --- | --- | --- |
 | PlayMCP review | Completed; owner supplied YouTube URL | Retain export/kit/publication evidence; private article draft awaits owner use |
-| SSI website Reels | UK accepted by partners (owner report); EN delivered with owner preview acceptance | Await English partner feedback; publication unconfirmed |
+| SSI website Reels | Both languages accepted by partners; English Instagram URL supplied (owner reports) | Publication visibility and audience metrics independently unverified; Ukrainian publication unknown |
 | SSI weekly summaries | Demos not accepted; paused, not cancelled | Separate partner specification, then owner resumption; preserve all six demos |
-| Pocket OS review | Capture intake next | Developer-thread product brief and evidence-based device/Mac shot list; owner captures hardware |
-| YouTube Radar-led video | Intake | One owner-selected recommendation, its dated evidence, audience and intended format |
+| Pocket OS review | Shot plan ready; owner filming delayed by lighting/support | Developer-thread product brief and evidence-based device/Mac shot list; owner captures hardware |
+| YouTube Trends pilot | Two English Shorts plus 60s Dream Walk and 20min ambient film; owner supplied four YouTube URLs | Retain dated hypothesis/publication evidence; compare available metrics later without assuming success |
+| Möbius Walk | Fourth PlayMCP game published, final native format pass and clean judge | Reuse the scoped ambient-capture method; no automatic new build |
 | LitRPG fiction/world pilot | Concept intake | Owner-selected short-story text or condensed adaptation; inventory existing Marble / World Labs worlds and reusable assets |
 
 On 22 October the owner reported that partners did not like the weekly-report
@@ -82,15 +82,21 @@ The owner also proposed Decart Oasis, Odyssey and Google Genie. The
 access unknowns and shot-led comparison criteria. Oasis service and model pages
 are one candidate. These are untested intake items, not active generation jobs.
 
-## Product development through production
+## Nearest product improvements
 
-- Use an approved SSI format to define repeatable series templates and episode data;
-  implementation stays paused with SSI until the owner resumes that workstream.
-- Use Pocket OS to refine the real-device/Mac capture intake and recording-rehearsal workflow.
-- Use the selected Radar recommendation to retain the content hypothesis and later
-  observed results separately; do not manufacture performance or connect analytics here.
-- Use the fiction pilot to test world/character continuity and reusable scene assets.
+The project already has scene boards, material reuse, revision-bound observations
+and local bundle checks. Do not rebuild those foundations under new names. The
+next slices should close gaps demonstrated by these productions:
 
-Prioritise a useful scene and a clear pass condition for each new tool. Do not
-promote research candidates from a successful render alone. No new software release
-is created merely by closing these documentation and evidence changes.
+1. **Sanitised project-status projection.** Generate a small public summary from the existing journal/export pins: finished files, explicit acceptance, supplied publication links and unknown metrics. Make stale publication prose visible before commit. The current CLI can record the observations; the missing part is a reusable safe projection rather than another competing log.
+2. **Reusable capture adapter with loop QA.** Turn the bounded Babylon/canvas recipe into a versioned adapter: readiness, native controls/audio, clean recording, camera period and encoded seam checks. Start from the exact retained case and a synthetic/open fixture; do not claim arbitrary engines or automatic creative acceptance. Keep conventional and endless-game checks separate.
+3. **Content-hypothesis/outcome record.** Connect an owner-selected Trends/Radar suggestion, intended viewer, creative treatment and final master to later manually supplied metrics at comparable video ages. Start with the two published Shorts; missing retention/revenue stays unknown. No automatic channel connection or reach promise.
+4. **Production handoffs that can be rerun.** Use the first actual Pocket OS test take to verify the existing recording-rehearsal/capture intake, then produce one reproducible project handoff with versions, approved sources, shot/voice timings and exact rerun steps. SSI series automation remains deferred until its separate partner specification and owner resumption.
+
+Voice cloning, additional world providers and more general multimodal review stay
+in the research queue. Free Gemini UI probes did not pass the separate audio test;
+no automatic audio/video reviewer is qualified. Choose the next tool only when it
+solves a concrete missing shot or sound task, rather than expanding the catalogue.
+
+This is a proposed development order, not authorisation for implementations,
+installs, model downloads, account connections, spending or a new software release.

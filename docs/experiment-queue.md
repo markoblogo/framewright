@@ -1,6 +1,6 @@
 # Proposed experiment queue
 
-Updated 2026-10-22. This is a task-led backlog, not permission for unattended tests,
+Updated 2026-10-24. This is a task-led backlog, not permission for unattended tests,
 installs, model downloads, spending, account grants or public media uploads.
 Use an owner-selected subject with authorised sources. Discuss the subject and bounded brief before
 each actual new-tool experiment. [Research](tool-research.md) ·
@@ -8,23 +8,11 @@ each actual new-tool experiment. [Research](tool-research.md) ·
 
 ## Current owner priority
 
-The completed PlayMCP production cycle was closed through reviewed Git changes
-in [PR #40](https://github.com/markoblogo/framewright/pull/40), merged 2026-10-21;
-no new release. The 150-second service review is delivered and has an
-owner-supplied [publication URL](https://youtu.be/NVeMJLidncU). Its blog article is
-a private draft, not a publication. SSI weekly demos were **not accepted** by
-partners (owner report, 22 October); they will supply a separate specification.
-That branch is **paused, not cancelled**; no new weekly render or integration.
-The separate [15s website Reels](experiments/ssi-site-reels.md) is delivered;
-owner accepted its preview and now reports partner acceptance. Its matching English
-version is delivered with owner preview acceptance; English partner acceptance and
-Instagram publication remain unconfirmed.
+The PlayMCP service overview is complete with an [owner-supplied publication URL](https://youtu.be/NVeMJLidncU). The later [Möbius Walk case](experiments/dream-walk.md) adds a fourth published game, a generated 60s film and a 20-minute actual-game ambient video. Both films and the [two English Trends-led Shorts](experiments/trend-shorts-publication.md) have owner-supplied publication URLs; audience results remain unknown. These are completed production cases, not instructions to regenerate them.
 
-Next: prepare Pocket OS product/capture intake; select a YouTube Radar suggestion;
-plan a short-fiction adaptation using existing Marble / World Labs worlds first.
-The owner identified the service; source-story selection and asset inventory remain. These are
-planning tasks, not generation jobs. [Inputs and priorities](next-cycle.md) ·
-[Completed review and trial limits](experiments/playmcp-service-review.md).
+The separate [SSI website Reels](experiments/ssi-site-reels.md) has partner acceptance for both languages (owner report) and an owner-supplied English Instagram URL. Weekly-report demos were **not accepted**; that branch stays **paused, not cancelled**, awaiting the separate specification. No weekly render or integration is resumed.
+
+Pocket OS awaits suitable owner device footage. Marble was inspected for account access but not used for export/generation in Dream Walk; the owner deferred that experiment. Fiction/world production remains conditional on a source story, shot and authorised rights/budget. [Current inputs and product priorities](next-cycle.md).
 
 Jekyll Short remains cancelled; its standalone game overview stays deferred.
 Awwwards 1.9.0 has an expanded adapted capture-component trial, not full MCP/search
@@ -38,7 +26,7 @@ Twelve new candidate records; no installations, downloads, uploads or generation
 
 | Order | Proposed trial | Pass boundary |
 | --- | --- | --- |
-| P1 / Pocket OS | TerminalTextEffects title versus Three.js AsciiEffect illustration | Same 5–8s brief; reproducible frames, actual encoded legibility; real UI stays readable |
+| Bounded TTE trial complete / ASCII 3D pending | TerminalTextEffects Decrypt is retained in the agent Short; Three.js AsciiEffect remains untested | Reuse the verified text reveal when appropriate; test an ASCII 3D illustration only against a concrete Pocket OS shot, keeping real UI legible |
 | P1 / owner voice, resource-gated | Qwen3-TTS Base local clone; Chatterbox Turbo/OpenVoice alternatives, ElevenLabs optional cloud comparator | Agreed private reference, exact model/terms, short new script and owner listening. No existing recording is implicitly selected or uploaded |
 | P1 / video perception, access-gated | Existing Gemini candidate on short known-defect controls; Qwen3-Omni local alternative | Action/timing/defect findings versus labels, false passes and human playback. Frame analysis, ASR and cut detection do not qualify continuous video quality |
 | P2 / storyboard-led | Blender camera/3D illustration; postprocessing CRT/VFX; optional Chafa/agg | One concrete shot each, existing assembler, rights/resources and encoded QA |

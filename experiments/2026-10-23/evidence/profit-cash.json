@@ -1,0 +1,38 @@
+{
+  "id": "profit-cash",
+  "full_decode": "pass",
+  "video": {
+    "codec_name": "h264",
+    "codec_type": "video",
+    "width": 1080,
+    "height": 1920,
+    "r_frame_rate": "30/1",
+    "nb_frames": "873"
+  },
+  "duration_seconds": 29.1,
+  "audio": {
+    "integrated_lufs": -15.62,
+    "true_peak_dbtp": -4.27,
+    "lra_lu": 3.4,
+    "mono_vs_stereo_rms_db": -0.0,
+    "mix_correlation": 0.9998382,
+    "mix_lag_samples_12khz": 0,
+    "independent_listening": "not_performed"
+  },
+  "subtitles": "Text taken from actual synthesis script; cue times measured per retained voice line,not word-level ASR.",
+  "sampled_visual_review": {
+    "result": "sampled_frames_reviewed",
+    "evidence": "encoded-contact.jpg; native review beat, phone and seam sheets; independent fresh review",
+    "continuous_playback_review": false
+  },
+  "creative_acceptance": "no additional acceptance inferred from publication",
+  "publication": {
+    "url": "https://youtube.com/shorts/-htT4oQiOpI",
+    "provenance": "owner_report",
+    "visibility": "unknown",
+    "audience_metrics": "not_measured"
+  },
+  "retained_warnings": [
+    "Three DOM dead-stretch warnings and two informational seam-overlap findings; sampled canvas motion is present, not a continuous detector pass."
+  ]
+}

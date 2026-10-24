@@ -75,7 +75,17 @@ additional rendered export, model qualification or release.
 [SSI website Reels](experiments/ssi-site-reels.md): 15s vertical real-site scroll,
 stationary Ukrainian captions, retained instrumental/CC0 SFX and HyperFrames 0.8.185.
 Two additional recorded exports (UK/EN); encoded technical and sampled visual QA passed.
-Owner accepted both previews and reports UK partner acceptance; English partner acceptance
-is unconfirmed. Decoded English/Ukrainian soundtracks match exactly.
-Publication is unconfirmed.
+Owner accepted both previews and reports partner acceptance of both languages.
+English Instagram publication URL is owner-supplied; Ukrainian publication remains
+unconfirmed. Decoded English/Ukrainian soundtracks match exactly. Audience results
+are unknown.
 The separate weekly-report demos were not accepted and await a partner specification.
+
+[Two English Trends-led Shorts: publication links](experiments/trend-shorts-publication.md)
+now includes both actual final exports, bounded TerminalTextEffects evidence and
+owner-supplied YouTube links; audience performance remains unknown.
+
+[Möbius Walk and Dream Walk films](experiments/dream-walk.md): fourth published
+game, a generated 60s garden film and a twenty-minute real-game recording; scoped
+Babylon/canvas-loop evidence, explicit approvals and actual 30,508-credit total.
+These four new final artifacts bring the registry to 30 recorded exports.
