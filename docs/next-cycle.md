@@ -109,7 +109,7 @@ owner discussion after this software closeout, not an automatic render queue.
 ## Ready before the next production
 
 `project.py brief` combines existing facts into a short resumption view and labels
-its next action as a proposal. The README has one trial path and three results;
+its next action as a proposal. The README has one trial path and selected published results;
 full methods/evidence remain in the [production guide](production-guide.md).
 [Studio instructions](../skills/video-production-router/references/studio-workflows.md#representative-sample-when-it-reduces-risk)
 now describe conditional representative samples and minimal reuse measurements.
