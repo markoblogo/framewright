@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+- Add a short read-only working brief over existing project/journal state, with
+  accepted work, file/revision changes, waits, remaining checks and a separately
+  labelled proposed next step. No new tracking store or production execution.
+- Shorten the README entry path and preserve detailed methods/evidence in the
+  production guide. Document conditional sample-first production and minimal reuse
+  measurements for a future authorised job; no new video or benefit claim.
+
 - Generate journal-derived project summaries with current file/hash checks, latest
   revision-bound approvals/publications, explicit public allowlists and drift checks.
 - Add a local canvas-capture adapter with controller/audio proof, repeatable cycle

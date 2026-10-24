@@ -1,6 +1,7 @@
 # Working here
 
 - Read README.md, then only the selected recipe/evidence. Do not load all experiments.
+- On resuming an existing production, run `project.py brief PROJECT.json`; preserve explicit waits and distinguish its proposed next step from execution authority.
 - This is a methods/skills library, not a renderer or automatic publishing service.
 - Honour explicit tool choices. Prefer tested scope over tool novelty.
 - Keep failures, human preference, technical QA and publication separate.

@@ -62,6 +62,38 @@ verify identity, not audio quality. `delivery-materials` and `qa:delivery-materi
 require these files; manual QA evidence must address every output independently.
 Do not mark a delivery bundle verified merely because a list of filenames exists.
 
+### Representative sample when it reduces risk
+
+For a new visual treatment, client/recurring format or costly generation, use a
+representative 5–10-second sample before scaling production. Include the hardest
+typical material (dense text/figures, narration/picture relation or a difficult
+transition), not only an attractive opening. Retain audience, one main point, tone,
+must-show/avoid decisions and the owner's actual response in the existing project.
+The sample is made only within existing execution/spending authority.
+
+Reuse an already approved treatment. For a cheap, bounded short where a complete
+rough cut is faster to assess, show that instead. This is an adaptive production
+practice, not an extra mandatory approval or a new CLI blocker. Existing explicit
+owner approvals remain valid within their scope; never manufacture a new approval
+or reopen paused projects just to demonstrate the rule.
+
+### Measure reuse on the next authorised production
+
+Use the existing project history/decision notes, not another tracker. Separate
+initial template/setup cost from the repeated variant. Record only known values:
+
+| Field | What to record |
+| --- | --- |
+| Owner effort | Active minutes, if timed or supplied by the owner; otherwise unknown |
+| Repeated intake | Questions whose answers were already recorded; exclude genuinely new choices |
+| Rebuilds | Unnecessary rebuilds separately from requested creative revisions and required QA |
+| Reuse | Which material IDs, scene/cut structure and decisions were reused; what changed |
+
+Compare similar work and preserve different scopes. A successful render, correct
+journal or a localisation is not by itself measured time saved or better creative
+quality. Do not start a video or invent measurements to fill these fields. The next
+active brief is owner-selected; Pocket OS and SSI weekly remain paused.
+
 ## Private music/sound library
 
 No archive is scanned automatically. Later, choose an explicit local folder and

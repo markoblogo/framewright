@@ -35,6 +35,9 @@ python3 skills/video-production-router/scripts/project.py mark local/my-film/pro
 
 ## Continue after stopping
 
+Start with the short `project.py brief PROJECT.json`; use the detailed status below
+when needed. [Working brief contract](project-insights.md#start-a-session-with-a-working-brief).
+
 ```sh
 python3 skills/video-production-router/scripts/project.py resume local/my-film/project.json
 python3 skills/video-production-router/scripts/project.py status local/my-film/project.json --json

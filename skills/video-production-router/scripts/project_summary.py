@@ -81,3 +81,58 @@ def export(text, output, checkpoint, data, *, replace=False, check=False):
         return
     if output.exists() and not replace:raise ValueError('Summary exists; inspect and use --replace')
     with output.open('w' if replace else 'x') as stream:stream.write(text)
+
+
+def working_brief(data, status, files, limit=3):
+    """Combine existing resume/journal facts; never infer an approved creative action."""
+    latest={r['id'] for r in {(r['subject'],r['kind'],r['topic']):r for r in data.get('journal',[])}.values()}
+    accepted=[{k:r[k] for k in ('id','subject','kind','topic','note','provenance')} for r in status['observations']['effective']
+              if (r['kind']=='decision' or r['kind']=='creative') and r['result']=='accepted']
+    changes=[{'subject':f['subject'],'state':f['state']} for f in files['files'] if f['state'] not in {'current','declared'}]
+    unretained=[f['subject'] for f in files['files'] if f['state']=='declared']
+    rechecks=[{'receipt':r['id'],'subject':r['subject'],'kind':r['kind'],'reason':'stale_revision'} for r in status['observations']['stale'] if r['id'] in latest]
+    rechecks.extend({'receipt':r['id'],'subject':r['subject'],'kind':r['kind'],'reason':r['result']} for r in status['observations']['effective'] if r['kind'] in {'technical','listening','creative','provider'} and r['result'] in {'pending','fail','rejected'})
+    waiting=[{'task':k,**v} for k,v in status['waiting'].items()]
+    blockers=[{'task':k,'reason':v} for k,v in status['blocked'].items() if k not in status['waiting']]
+    revisions={}
+    for e in data['history']:
+        if e['action'] in {'retain_input','retain_output'} and e.get('previous'):
+            subject=('input:' if e['action']=='retain_input' else 'output:')+e['identity']
+            revisions.pop(subject,None);revisions[subject]={'subject':subject,'recorded_at':e['utc']}
+    recent=list(reversed(list(revisions.values())))
+    if changes:kind,label='file_review','Review changed, missing or unavailable retained files before production'
+    elif status['evidence_blockers']:kind,label='evidence_review','Review stale or unresolved checks before dependent work'
+    elif status['next_actions']:kind,label='ready_task',status['next_actions'][0]['label']
+    elif waiting:kind,label='waiting','Obtain the explicitly recorded input or decision; keep the wait in force'
+    elif blockers:kind,label='blocked','Resolve the recorded constraint before dependent production; no authority inferred'
+    elif rechecks:kind,label='evidence_review','Review the unresolved recorded checks; do not infer final acceptance'
+    else:kind,label='no_recorded_next_action','Agree the next task; no production action is currently recorded as ready'
+    sections={'accepted':accepted,'file_changes':changes,'recent_revisions':recent,'not_retained':unretained,'needs_recheck':rechecks,'waiting':waiting,'blockers':blockers,'ready_tasks':status['next_actions']}
+    return {'schema_version':1,'goal':status['project']['goal'] or 'not recorded','execution':'not_started',
+            **{k:v[:limit] for k,v in sections.items()},'counts':{k:len(v) for k,v in sections.items()},
+            'planning_sources_changed':status['planning_sources_changed'],
+            'proposed_next':{'kind':kind,'label':label,'task':status['next_actions'][0]['id'] if kind=='ready_task' else None,'status':'proposal_not_execution_authority'},
+            'note':'Local working brief from the same checkpoint. Recorded acceptance is not independent verification. Recent replacements are historical, not changes since a known session. Creative advice must be labelled separately; no work, approval or replan performed.'}
+
+
+def brief_markdown(view):
+    lines=['# Working brief','', 'Goal: '+cell(view['goal']),'']
+    for key,label in [('accepted','Accepted work'),('file_changes','Current file problems'),('recent_revisions','Most recent recorded replacements'),('not_retained','Declared, not retained'),('needs_recheck','Checks to review'),('waiting','Explicit waits'),('blockers','Recorded constraints'),('ready_tasks','Recorded ready tasks')]:
+        rows=view[key];total=view['counts'][key]
+        lines.append(label+' ('+str(total)+')'+(': showing '+str(len(rows)) if len(rows)<total else '')+':')
+        if not rows:lines.append('- None recorded')
+        for r in rows:
+            if key=='accepted':text=r['subject']+' / '+r['topic']+': '+r['note']+' ['+r['provenance']+']'
+            elif key=='file_changes':text=r['subject']+': '+r['state']
+            elif key=='recent_revisions':text=r['subject']+' at '+r['recorded_at']
+            elif key=='not_retained':text=r
+            elif key=='needs_recheck':text=r['subject']+' / '+r['kind']+': '+r['reason']
+            elif key=='blockers':text=r['task']+': '+str(r['reason'])
+            elif key=='waiting':text=r['party']+' — '+r['task']+': '+r['reason']
+            else:text=r['id']+': '+r['label']
+            lines.append('- '+cell(text))
+        lines.append('')
+    lines.extend(['Proposed next step (not approval): '+cell(view['proposed_next']['label']),''])
+    if view['planning_sources_changed']:lines.extend(['Tool sources changed; the frozen plan has been preserved.',''])
+    lines.extend([view['note'],''])
+    return '\n'.join(lines)

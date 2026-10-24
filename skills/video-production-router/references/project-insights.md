@@ -4,6 +4,40 @@ These commands extend the [same production checkpoint](projects.md). They do not
 create a second lifecycle, edit the frozen plan, connect analytics or upload media.
 Python standard library; file checks hash local bytes and can take time on large masters.
 
+## Start a session with a working brief
+
+```sh
+python3 skills/video-production-router/scripts/project.py brief local/film/project.json
+python3 skills/video-production-router/scripts/project.py brief local/film/project.json --json --limit 3
+```
+
+This is a short **local** view of the same resume/journal facts, not another log.
+It shows the recorded goal, latest non-stale accepted decisions/creative observations,
+current file problems, recent retained replacements, declared-but-unretained outputs,
+unresolved/stale checks, explicit waits, recorded constraints and ready tasks. Technical passes
+are not creative acceptance. An older acceptance never overrides a later rejection.
+Each list shows up to three items by default; `--limit 1..10` and totals expose omissions.
+
+Current problems are differences from retained bytes. Replacement history is labelled
+historical: no previous-session baseline or creative impact is invented. An approved
+file's new revision removes its old acceptance from the preserved-work list and
+surfaces the stale check. Existing task dependencies determine readiness. Explicit
+waits remain waits; the command cannot interpret a new task or permission from prose.
+
+The next step is a deterministic **proposal, not execution authority**: inspect file
+problems first, then blocking evidence, an already ready task, an explicit wait,
+a recorded constraint or unresolved checks. Creative suggestions must be labelled by the agent separately
+and recorded through the ordinary decision journal only when appropriate. The command
+never renders, approves, replans or writes the checkpoint. Its private notes are not
+safe public copy; use the allowlisted `summary --public` below for publication.
+
+On the existing two-Shorts project, a fresh brief preserves both master revisions,
+detects the changed retained review log, shows pending listening checks and
+explicit owner waits, and does not invent new production or audience results. The
+changed log is reported for inspection, not silently repinned or treated as a
+changed video. This verifies derivation only; reduced owner effort still needs a
+future authorised production/reuse trial.
+
 ## Generate current documentation
 
 ```sh

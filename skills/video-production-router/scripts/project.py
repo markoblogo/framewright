@@ -325,10 +325,18 @@ def main():
     idea = commands.add_parser('hypothesis');idea.add_argument('project',type=Path);idea.add_argument('spec',type=Path);idea.add_argument('--actor',required=True);idea.add_argument('--provenance',choices=sorted(JOURNAL['PROVENANCE']),required=True)
     metrics = commands.add_parser('outcome');metrics.add_argument('project',type=Path);metrics.add_argument('spec',type=Path);metrics.add_argument('--actor',required=True);metrics.add_argument('--provenance',choices=sorted(JOURNAL['PROVENANCE']),required=True)
     results = commands.add_parser('results');results.add_argument('project',type=Path);results.add_argument('--json',action='store_true');results.add_argument('--compare-age-hours',type=float);results.add_argument('--age-tolerance-hours',type=float,default=6)
+    briefing = commands.add_parser('brief');briefing.add_argument('project',type=Path);briefing.add_argument('--json',action='store_true');briefing.add_argument('--limit',type=int,choices=range(1,11),default=3)
     projection = commands.add_parser('summary');projection.add_argument('project',type=Path);projection.add_argument('--json',action='store_true');projection.add_argument('--public',action='store_true');projection.add_argument('--title');projection.add_argument('--include',action='append',default=[]);projection.add_argument('--output',type=Path);projection.add_argument('--replace',action='store_true');projection.add_argument('--check',action='store_true')
     args = parser.parse_args()
     try:
         path = args.project.resolve()
+        if args.command=='brief':
+            checkpoint_bytes=path.read_bytes();data=load(path);state=summary(data,path.parent)
+            module=runpy.run_path(str(BASE/'project_summary.py'))
+            files=module['project'](data,path.parent,state['file_problems'],JOURNAL,hashlib.sha256(checkpoint_bytes).hexdigest())
+            view=module['working_brief'](data,state,files,args.limit)
+            if path.read_bytes()!=checkpoint_bytes:raise ValueError('Project changed during brief generation; retry')
+            print(json.dumps(view,indent=2,ensure_ascii=False) if args.json else module['brief_markdown'](view));return
         if args.command=='results':
             data=load(path);view=CONTENT['report'](data,JOURNAL,file_problems(data,path.parent),args.compare_age_hours,args.age_tolerance_hours)
             print(json.dumps(view,indent=2,allow_nan=False) if args.json else CONTENT['markdown'](view));return

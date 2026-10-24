@@ -6,8 +6,8 @@ authority. [Completed PlayMCP review](experiments/playmcp-service-review.md) ·
 
 ## Execution order
 
-Current closeout: publish the journal-summary, engine-capture and content-outcome
-utilities with their tests and documentation. No new release, paid tool test or
+Current closeout: publish the short working brief and simpler product entry page
+on top of the completed journal-summary, engine-capture and outcome utilities. No new release, paid tool test or
 media publication is included. Pocket OS remains explicitly paused until the owner
 resumes it; supplying footage alone does not start production. The Trends/Dream Walk experiments are already delivered and have supplied
 publication links. Marble was explicitly deferred; it is not the next automatic job.
@@ -108,3 +108,13 @@ Pocket OS and SSI weekly production remain paused. Voice cloning, additional wor
 providers and general multimodal review remain research candidates. Free Gemini UI
 probes did not pass the separate audio test. The next production experiment is an
 owner discussion after this software closeout, not an automatic render queue.
+
+## Ready before the next production
+
+`project.py brief` combines existing facts into a short resumption view and labels
+its next action as a proposal. The README has one trial path and three results;
+full methods/evidence remain in the [production guide](production-guide.md).
+[Studio instructions](../skills/video-production-router/references/studio-workflows.md#representative-sample-when-it-reduces-risk)
+now describe conditional representative samples and minimal reuse measurements.
+These are preparation, not proof of reduced time or improved films. Discuss the
+next active video with the owner; do not resume either paused workstream.

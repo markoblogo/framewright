@@ -83,6 +83,11 @@ def build(root, output):
         resumed = subprocess.run([sys.executable, str(project_cli), 'resume', str(project), '--json'], check=True, capture_output=True, text=True)
         if json.loads(resumed.stdout)['ready'] != ['source-review', 'preflight']:
             raise ValueError('Standalone project checkpoint smoke check failed')
+        brief_view = subprocess.run([sys.executable,str(project_cli),'brief',str(project),'--json'],
+                                    check=True,capture_output=True,text=True)
+        working = json.loads(brief_view.stdout)
+        if working['proposed_next']['task']!='source-review' or working['execution']!='not_started':
+            raise ValueError('Standalone working brief smoke check failed')
         # The new memory/journal must work from the standalone ZIP as well.
         manual = target / 'manual-production.json'
         subprocess.run([sys.executable,str(project_cli),'create',str(manual),
