@@ -35,4 +35,3 @@ Original procedural footsteps, wind/tension textures and lantern handling were a
 ## Tags
 
 color grading, color psychology in film, visual storytelling, cinematic lighting, animation experiment, animated short film, forest animation, blue amber red, World Labs Marble, AI environment, sound design, Framewright, 2.5D animation
-
