@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-24",
+  "question": "Can an existing virtual-world plate and an independent actor support a three-state color/sound film?",
+  "scope": "fixed-camera2.5D, not exported world mesh/depth",
+  "final": {
+    "path": "final/The-Same-Forest-EN-42s.mp4",
+    "bytes": 13312499,
+    "sha256": "20feaa8c28439e172ca6bf6b7179185334ba36e7d6a6b3d6b95e95f3c5be92b7"
+  },
+  "native_export": {
+    "path": "render/take-10-final/film.mp4",
+    "bytes": 11940521,
+    "sha256": "b520a48af50863de0bcd4db21f56683740ca642d32393c6ea5230711a087dcc6"
+  },
+  "thumbnail": {
+    "path": "final/Thumbnail-EN.jpg",
+    "bytes": 85894,
+    "sha256": "e042dc725afe1e504ebdef09a984e539230a77780cc5337165063cbd2b193a07",
+    "width": 1280,
+    "height": 720,
+    "format": "jpeg",
+    "provenance": "native scene render, viewed full and320px; outside PNG-only registry thumbnail contract"
+  },
+  "format": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 1260,
+    "seconds": 42,
+    "video": "H.264",
+    "audio": "AAC stereo48kHz"
+  },
+  "full_decode": "pass",
+  "integrated_lufs": -18.55,
+  "true_peak_dbtp": -1.99,
+  "audio_master_correlation_at_zero_offset": 0.9999842595501489,
+  "stem_recombination_max_error": 2.384185791015625e-07,
+  "final_mono_rms_delta_db": -2.600618877031682,
+  "creative_history": [
+    "8s rejected for darkness",
+    "12s color/background/traveler accepted, straight walk noted as monotonous",
+    "12s music accepted; cold/warm separation still weak",
+    "42s brighter amber, stopped/turned lantern action and title/end cards delivered"
+  ],
+  "audio_correction": "Final lower-register layer now resamples44.1kHz source to48kHz before rate shift; avoids unintended tempo error. Previous full assembly retained in revisions/final-audio-rate-correction/. Accepted12s source unchanged.",
+  "owner_listening": "12s direction accepted; no separate final42s listening attestation inferred from publication",
+  "publication": {
+    "url": "https://youtu.be/wHOpypqPyCs",
+    "owner_report": "published",
+    "watch_page_observed": {
+      "title": "How Color Changes a Scene | One Forest, Three Feelings",
+      "seconds": 42
+    },
+    "visibility": "owner-reported public; public versus unlisted not independently established",
+    "monetization": "unknown",
+    "metrics": "not measured",
+    "upload_bytes_match": "not independently established"
+  },
+  "rights": "Owner confirms Free-generation Marble source. Commercial permission unresolved; public watch page is not a licence grant. Applicable historical terms not retained.",
+  "metrics": "not measured",
+  "new_paid_calls": 0,
+  "repeatability": "Local original recorder succeeded; sanitised example wrappers are asset-dependent and syntax-checked, not clean-machine replay"
+}

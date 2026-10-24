@@ -6,11 +6,7 @@ authority. [Completed PlayMCP review](experiments/playmcp-service-review.md) ·
 
 ## Execution order
 
-Current closeout: publish the short working brief and simpler product entry page
-on top of the completed journal-summary, engine-capture and outcome utilities. No new release, paid tool test or
-media publication is included. Pocket OS remains explicitly paused until the owner
-resumes it; supplying footage alone does not start production. The Trends/Dream Walk experiments are already delivered and have supplied
-publication links. Marble was explicitly deferred; it is not the next automatic job.
+Current closeout records the published [42s Marble color study](experiments/marble-compositing.md), sanitised author-project source and publication evidence through a checked PR; no new release. Working briefs, journal summaries, engine capture and outcome utilities are already implemented. Pocket OS and SSI weekly remain explicitly paused; supplied footage or a new idea does not automatically resume them. The next active production needs an owner-selected brief.
 
 ## Production status and next inputs
 
@@ -22,7 +18,8 @@ publication links. Marble was explicitly deferred; it is not the next automatic 
 | Pocket OS review | Explicitly paused; shot plan retained | Owner resumption and usable device footage; no automatic filming/development |
 | YouTube Trends pilot | Two English Shorts plus 60s Dream Walk and 20min ambient film; owner supplied four YouTube URLs | Retain dated hypothesis/publication evidence; compare available metrics later without assuming success |
 | Möbius Walk | Fourth PlayMCP game published, final native format pass and clean judge | Reuse the scoped ambient-capture method; no automatic new build |
-| LitRPG fiction/world pilot | Concept intake | Owner-selected short-story text or condensed adaptation; inventory existing Marble / World Labs worlds and reusable assets |
+| The Same Forest | Published 42s local color/sound study; watch title/duration observed | Preserve source/QA/publication; audience metrics, commercial clearance and final-master listening remain distinct |
+| LitRPG fiction/world pilot | Separate next step; fixed-plate trial completed | Owner-selected story excerpt and a two-shot continuity/interaction pilot before a 3min adaptation |
 
 On 22 October the owner reported that partners did not like the weekly-report
 experiments and will write a separate specification. Detailed reasons are unknown;
@@ -112,9 +109,18 @@ owner discussion after this software closeout, not an automatic render queue.
 ## Ready before the next production
 
 `project.py brief` combines existing facts into a short resumption view and labels
-its next action as a proposal. The README has one trial path and three results;
+its next action as a proposal. The README has one trial path and selected published results;
 full methods/evidence remain in the [production guide](production-guide.md).
 [Studio instructions](../skills/video-production-router/references/studio-workflows.md#representative-sample-when-it-reduces-risk)
 now describe conditional representative samples and minimal reuse measurements.
 These are preparation, not proof of reduced time or improved films. Discuss the
 next active video with the owner; do not resume either paused workstream.
+
+## After the published color-study pass
+
+1. **Product:** make the representative-shot handoff easier to reuse: asset/rights manifest, picture/sound cue sheet, dependency-bound QA and publication receipt in the existing project journal. Start with the preserved example; do not add a parallel tracker or claim a generic world connector.
+2. **Next production proof:**20–30s, two shots, one recurring character and one visible interaction with the environment. Test consistent scale/light/grounding, a real occlusion and a matching sound cue. A simpler result with continuity is more useful than immediately extending to3min.
+3. **Creative route:** a compact Good Dog excerpt if supplied, or a separate original mini-scene. Approve its world/character rights and camera needs first; no new generation/provider purchase is implied.
+4. **Results:** add dated owner-supplied analytics for the published Trends films to existing outcome utilities. Compare only compatible upload-age/windows; distinguish unknown monetization from zero revenue. No automatic monitoring or channel access is added.
+
+MN7R/CoqPi promos remain possible owner-selected work. Pocket OS and SSI weekly pauses persist. This list proposes next steps; it does not execute them.

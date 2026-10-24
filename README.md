@@ -13,16 +13,17 @@ and continue the next session without reconstructing the project from chat histo
 Framewright helps the agent plan scenes, choose tools, reuse footage, check outputs
 and prepare a local publication kit. The agent runs selected tools in your environment.
 
-## Three results
+## Selected results
 
 | Production | What it demonstrates | Watch / evidence |
 | --- | --- | --- |
+| The Same Forest | An existing virtual-world plate, independent character and three coordinated color/sound states | [42s film](https://youtu.be/wHOpypqPyCs) · [Case and original source](docs/experiments/marble-compositing.md) |
 | SSI website Reels, Ukrainian and English | Real pages scrolling beneath fixed captions; an accepted edit reused for another language | [English Reels](https://www.instagram.com/reel/DezcjZ0tXuz/) · [Case](docs/experiments/ssi-site-reels.md) |
 | Jekyll & Hyde book promo | A playable learning game used as a set for a book video, with owner-recorded Toki Pona narration | [Book promo](https://youtu.be/GPfkz36JWbI) · [Case](docs/experiments/jekyll-toki-pona.md) |
 | Dream Walk films | A generated 60s cinematic film and a separate 20min ambient recording from an actual game canvas | [60s film](https://youtu.be/oyQXmJI4aK0) · [20min game capture](https://youtu.be/rfClK3jPHlw) · [Case](docs/experiments/dream-walk.md) |
 
-Publication links and partner acceptance are owner-reported. The repository records
-[30 final exports](docs/experiments.md); production evidence, human acceptance and
+Publication links and partner acceptance are owner-reported; the new forest film’s watch-page title/duration were also observed. The repository records
+[31 final exports](docs/experiments.md); production evidence, human acceptance and
 audience results remain separate. Faster production and better retention are goals,
 not established comparative results.
 

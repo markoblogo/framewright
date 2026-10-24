@@ -1,5 +1,7 @@
 # Grow the lab without growing unsupported claims
 
+[The Same Forest](experiments/marble-compositing.md): published 42s virtual-world plate/independent-character film, coordinated color/sound, original asset-dependent source and retained failures. Bounded QA and publication recorded; general3D integration, audience results and commercial rights remain unqualified.
+
 [Journal summary, engine adapter and content outcomes](experiments/production-memory-adapters.md):
 CLI regressions and a real Shorts checkpoint; original browser/audio loop fixture
 and native Möbius capture. Numeric seam warning retained; no new production export,
@@ -93,4 +95,4 @@ owner-supplied YouTube links; audience performance remains unknown.
 [Möbius Walk and Dream Walk films](experiments/dream-walk.md): fourth published
 game, a generated 60s garden film and a twenty-minute real-game recording; scoped
 Babylon/canvas-loop evidence, explicit approvals and actual 30,508-credit total.
-These four new final artifacts bring the registry to 30 recorded exports.
+Those four artifacts brought the registry to 30 recorded exports. The later 42s Marble color study brings the current total to **31**.

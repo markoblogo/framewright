@@ -6,7 +6,7 @@
     "id": "dream-walk-film",
     "route": "narrated-montage",
     "evidence": "experiments/2026-10-24/evidence/dream-walk.json",
-    "qa_scope": "60s1280x720p24;1440 frames;full decode;sampled source/encoded motion;−16.2LUFS/−1.47dBTP;mix correlation0.999822;no independent listening or continuous human motion review.",
+    "qa_scope": "60s1280x720p24;1440 frames;full decode;sampled source/encoded motion;\u221216.2LUFS/\u22121.47dBTP;mix correlation0.999822;no independent listening or continuous human motion review.",
     "publication_url": "https://youtu.be/oyQXmJI4aK0",
     "publication_verification": "owner_reported_url",
     "publication_visibility": "unknown",
@@ -26,7 +26,7 @@
     "id": "mobius-walk-ambient",
     "route": "footage-compilation",
     "evidence": "experiments/2026-10-24/evidence/dream-walk.json",
-    "qa_scope": "1200s1920x1080p30;36000 frames;full decode;two-minute game-canvas cycle repeated ten times;sampled loop boundary;−22.4LUFS/−1.5dBTP;no independent listening or continuous human review.",
+    "qa_scope": "1200s1920x1080p30;36000 frames;full decode;two-minute game-canvas cycle repeated ten times;sampled loop boundary;\u221222.4LUFS/\u22121.5dBTP;no independent listening or continuous human review.",
     "publication_url": "https://youtu.be/rfClK3jPHlw",
     "publication_verification": "owner_reported_url",
     "publication_visibility": "unknown",
@@ -38,5 +38,30 @@
       "\"cost\""
     ],
     "production_method": "game-canvas-ambient"
+  },
+  {
+    "local_output": "color-scene-20261024/final/The-Same-Forest-EN-42s.mp4",
+    "bytes": 13312499,
+    "sha256": "20feaa8c28439e172ca6bf6b7179185334ba36e7d6a6b3d6b95e95f3c5be92b7",
+    "id": "marble-color-study",
+    "route": "staged-3d-scene",
+    "production_method": "locked-plate2.5d-character-composite",
+    "native_export": {
+      "local_output": "color-scene-20261024/render/take-10-final/film.mp4",
+      "bytes": 11940521,
+      "sha256": "b520a48af50863de0bcd4db21f56683740ca642d32393c6ea5230711a087dcc6"
+    },
+    "evidence": "experiments/2026-10-24/evidence/marble-color-study.json",
+    "qa_scope": "42s1080p30/1260frames/full decode; six encoded samples and native JPEG cover viewed; -18.55LUFS/-1.99dBTP; short music accepted, no separate final-master listening attestation. Fixed-plate2.5D only.",
+    "publication_url": "https://youtu.be/wHOpypqPyCs",
+    "publication_verification": "owner-reported; watch-page title/duration observed",
+    "publication_visibility": "unknown_public_vs_unlisted",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"audio_correction\"",
+      "\"rights\"",
+      "\"new_paid_calls\""
+    ]
   }
 ]

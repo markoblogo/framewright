@@ -625,6 +625,15 @@
       "inputs": null,
       "rights_class": "unknown",
       "licence_note_sha256": "4de5071ef406a7589cd7a9bd0e6796f2e58a28c71eb5a76a1d42898b36a8f011"
+    },
+    "marble-studio-compositing": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": null,
+      "rights_class": "conditional",
+      "licence_note_sha256": "a9366e5470c88218bc2161ba4f71e2b64327dca6c403f5af658b7b8b9a29ef70"
     }
   }
 }

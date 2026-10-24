@@ -12,7 +12,7 @@ The PlayMCP service overview is complete with an [owner-supplied publication URL
 
 The separate [SSI website Reels](experiments/ssi-site-reels.md) has partner acceptance for both languages (owner report) and an owner-supplied English Instagram URL. Weekly-report demos were **not accepted**; that branch stays **paused, not cancelled**, awaiting the separate specification. No weekly render or integration is resumed.
 
-Pocket OS awaits suitable owner device footage. Marble was inspected for account access but not used for export/generation in Dream Walk; the owner deferred that experiment. Fiction/world production remains conditional on a source story, shot and authorised rights/budget. [Current inputs and product priorities](next-cycle.md).
+Pocket OS awaits suitable owner device footage. Dream Walk did not use Marble. The later [Marble color-study film](experiments/marble-compositing.md) is now published:42s fixed plate, independent character, coordinated color/sound and an asset-dependent original example. Moving-camera/depth integration, multi-shot continuity, audience results and commercial rights remain unqualified. No new paid generation ran. Good Dog production still needs the owner-selected source story and a bounded shot plan. [Current priorities](next-cycle.md).
 
 Jekyll Short remains cancelled; its standalone game overview stays deferred.
 Awwwards 1.9.0 has an expanded adapted capture-component trial, not full MCP/search
