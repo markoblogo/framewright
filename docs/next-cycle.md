@@ -6,10 +6,10 @@ authority. [Completed PlayMCP review](experiments/playmcp-service-review.md) ·
 
 ## Execution order
 
-Current closeout: refresh evidence and documentation, run offline checks, commit
-and push the latest work. No new release, paid tool test or media publication is
-included. Pocket OS production can resume when the owner supplies usable device
-footage. The Trends/Dream Walk experiments are already delivered and have supplied
+Current closeout: publish the journal-summary, engine-capture and content-outcome
+utilities with their tests and documentation. No new release, paid tool test or
+media publication is included. Pocket OS remains explicitly paused until the owner
+resumes it; supplying footage alone does not start production. The Trends/Dream Walk experiments are already delivered and have supplied
 publication links. Marble was explicitly deferred; it is not the next automatic job.
 
 ## Production status and next inputs
@@ -19,7 +19,7 @@ publication links. Marble was explicitly deferred; it is not the next automatic 
 | PlayMCP review | Completed; owner supplied YouTube URL | Retain export/kit/publication evidence; private article draft awaits owner use |
 | SSI website Reels | Both languages accepted by partners; English Instagram URL supplied (owner reports) | Publication visibility and audience metrics independently unverified; Ukrainian publication unknown |
 | SSI weekly summaries | Demos not accepted; paused, not cancelled | Separate partner specification, then owner resumption; preserve all six demos |
-| Pocket OS review | Shot plan ready; owner filming delayed by lighting/support | Developer-thread product brief and evidence-based device/Mac shot list; owner captures hardware |
+| Pocket OS review | Explicitly paused; shot plan retained | Owner resumption and usable device footage; no automatic filming/development |
 | YouTube Trends pilot | Two English Shorts plus 60s Dream Walk and 20min ambient film; owner supplied four YouTube URLs | Retain dated hypothesis/publication evidence; compare available metrics later without assuming success |
 | Möbius Walk | Fourth PlayMCP game published, final native format pass and clean judge | Reuse the scoped ambient-capture method; no automatic new build |
 | LitRPG fiction/world pilot | Concept intake | Owner-selected short-story text or condensed adaptation; inventory existing Marble / World Labs worlds and reusable assets |
@@ -82,21 +82,29 @@ The owner also proposed Decart Oasis, Odyssey and Google Genie. The
 access unknowns and shot-led comparison criteria. Oasis service and model pages
 are one candidate. These are untested intake items, not active generation jobs.
 
-## Nearest product improvements
+## Implemented product slices and next evidence
 
-The project already has scene boards, material reuse, revision-bound observations
-and local bundle checks. Do not rebuild those foundations under new names. The
-next slices should close gaps demonstrated by these productions:
+1. **Journal-derived summary:** `project.py summary` checks current retained files,
+   latest approvals and per-upload publication receipts. Public mode has explicit
+   allowlists and drift checking. Applied to the real Shorts checkpoint; no second
+   project log or automatic rewriting of human prose.
+2. **Reusable engine capture:** offline config validation, explicit local execution,
+   native/custom controller and audio proof, encoded motion/full-decode checks,
+   canonical timing hook and measured loop seams. Original fixture and native
+   Möbius excerpt passed their bounded tests; the non-loop excerpt's seam warning
+   is retained. Other engines and long-run reliability need their own tests.
+3. **Hypothesis and outcomes:** source-pinned ideas link to exact master/upload
+   revisions and supplied analytics snapshots. Null/zero, upload age, retention,
+   currencies, monetization and stale dependencies are explicit. Both real Shorts
+   now have retrospective records; no audience metrics have been supplied.
 
-1. **Sanitised project-status projection.** Generate a small public summary from the existing journal/export pins: finished files, explicit acceptance, supplied publication links and unknown metrics. Make stale publication prose visible before commit. The current CLI can record the observations; the missing part is a reusable safe projection rather than another competing log.
-2. **Reusable capture adapter with loop QA.** Turn the bounded Babylon/canvas recipe into a versioned adapter: readiness, native controls/audio, clean recording, camera period and encoded seam checks. Start from the exact retained case and a synthetic/open fixture; do not claim arbitrary engines or automatic creative acceptance. Keep conventional and endless-game checks separate.
-3. **Content-hypothesis/outcome record.** Connect an owner-selected Trends/Radar suggestion, intended viewer, creative treatment and final master to later manually supplied metrics at comparable video ages. Start with the two published Shorts; missing retention/revenue stays unknown. No automatic channel connection or reach promise.
-4. **Production handoffs that can be rerun.** Use the first actual Pocket OS test take to verify the existing recording-rehearsal/capture intake, then produce one reproducible project handoff with versions, approved sources, shot/voice timings and exact rerun steps. SSI series automation remains deferred until its separate partner specification and owner resumption.
+[Usage and real evidence](experiments/production-memory-adapters.md). Next useful
+inputs are actual dated Shorts analytics (including actual upload time and metric
+window), one selected production brief and an engine-specific missing-shot need.
+Use those to test decisions; adding more providers is not itself product progress.
+Do not connect analytics, start scheduled polling or infer audience success.
 
-Voice cloning, additional world providers and more general multimodal review stay
-in the research queue. Free Gemini UI probes did not pass the separate audio test;
-no automatic audio/video reviewer is qualified. Choose the next tool only when it
-solves a concrete missing shot or sound task, rather than expanding the catalogue.
-
-This is a proposed development order, not authorisation for implementations,
-installs, model downloads, account connections, spending or a new software release.
+Pocket OS and SSI weekly production remain paused. Voice cloning, additional world
+providers and general multimodal review remain research candidates. Free Gemini UI
+probes did not pass the separate audio test. The next production experiment is an
+owner discussion after this software closeout, not an automatic render queue.

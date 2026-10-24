@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><title>Original canvas capture fixture</title>
+<style>body{margin:0;background:#172533}canvas{width:100vw;height:100vh}</style><canvas></canvas>
+<script>
+const canvas=document.querySelector('canvas');canvas.width=innerWidth;canvas.height=innerHeight;
+const g=canvas.getContext('2d');let t=0,playing=false,muted=false,bot=false,last=performance.now();
+const audio=new AudioContext(),gain=audio.createGain(),dest=audio.createMediaStreamDestination(),osc=audio.createOscillator();
+osc.frequency.value=220;gain.gain.value=.08;osc.connect(gain);gain.connect(dest);osc.start();
+function frame(now){if(playing)t+=(now-last)/1000;last=now;g.fillStyle='#172533';g.fillRect(0,0,canvas.width,canvas.height);g.fillStyle='#75d9bd';g.beginPath();g.arc(canvas.width/2+Math.sin(t*Math.PI)*canvas.width*.3,canvas.height/2,40,0,7);g.fill();requestAnimationFrame(frame);}requestAnimationFrame(frame);
+window.FramewrightCapture={state:()=>({t,playing,muted,bot,ready:true}),play:async()=>{playing=true;await audio.resume();},pause:()=>{playing=false;},seek:s=>{t=s;},mute:b=>{muted=b;gain.gain.value=b?0:.08;},setBot:b=>{bot=b;},getAudioStream:()=>dest.stream,setCaptureTime:(s,period)=>{t=s/period*2;}};
+</script>

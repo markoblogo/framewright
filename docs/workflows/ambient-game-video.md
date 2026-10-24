@@ -13,3 +13,11 @@ Use this when the requested output is background viewing rather than a gameplay 
 Provide the MP4, separate cover and plain-text publication copy with source/attribution, the published game link and a clear repeated-cycle disclosure. Add SRT only when there is speech. Use the existing project journal and file pins; do not create a second competing lifecycle. A public video link is a later owner-report publication receipt, not an automatic creative/listening pass.
 
 The current proof covers one 1080p30 Babylon/browser recording and FFmpeg assembly. It does not establish mobile recording, arbitrary worlds, seamless procedural audio, an automatic genre-aware reviewer or a new runtime planner provider. Capture failures and service advice stay linked to the case rather than being erased by the final export.
+
+## Reusable implementation
+
+The [local capture adapter](../../skills/video-production-router/references/engine-capture.md)
+now implements the bounded scene/control/audio/record/repeat/check sequence. The
+original Möbius filming recipe remains the source for its own canonical camera
+period; an adapter cannot infer that period from arbitrary gameplay. See the
+[fixture/native trial and retained seam warning](../experiments/production-memory-adapters.md).

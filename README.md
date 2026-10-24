@@ -14,8 +14,8 @@ asset provenance and local quality checks—from a brief to a publication kit.**
 Built as a personal AI video studio for YouTube, ABVX and other projects; open
 source, with quality and saved production time as the priority.
 
-Framewright provides instructions and planning checks; your agent executes the
-selected tools in your environment. Choose tools per scene and layer, with evidence,
+Framewright provides instructions, planning checks and local production utilities;
+your agent selects and runs the tools in your environment. Choose tools per scene and layer, with evidence,
 known limitations and output checks visible before production.
 Books and software promos were the first cases. Current work includes software
 walkthroughs, bilingual site Reels, illustrated Shorts, game reviews, generated
@@ -43,6 +43,8 @@ stay outside Git. YouTube copy is delivered as direct text files, without ZIPs.
 | **[Find tools and combinations](skills/video-production-router/references/arsenal-search.md)** | Task/style/language/rights/evidence filters with scoped results |
 | **[Save and resume work](skills/video-production-router/references/projects.md)** | Goal, frozen plan, file pins, revision-bound decisions and next steps |
 | **[Connect scenes, reuse assets and collect a kit](skills/video-production-router/references/production.md)** | Shared materials, independent main/Short cuts and visible delivery checks |
+| **[Generate status and link content outcomes](skills/video-production-router/references/project-insights.md)** | Journal-derived file/approval/publication summaries; source-pinned hypotheses and supplied views, retention and revenue |
+| **[Record a controllable engine scene](skills/video-production-router/references/engine-capture.md)** | Local canvas capture, real audio/control checks, repeatable cycles and measured seam warnings |
 | **[Inspect audio/video and retain a review](skills/video-production-router/references/media-review-reports.md)** | Local technical report, supplied timestamped findings, unresolved checks and revision-bound journal import |
 | **[Render the reference film](docs/first-video.md)** | Open demo assets, pinned dependencies, exact commands and expected outputs |
 
@@ -104,15 +106,34 @@ three working examples, owner narration and recorded credit usage.
 owner-supplied publication URLs. The English SSI website Reels is also published
 per owner report; both language versions were accepted by partners. Weekly-report
 demos were not accepted and remain paused pending a separate partner specification.
-Pocket OS awaits usable owner device footage. Marble and fiction remain deferred;
+Pocket OS production is explicitly paused; its device shot plan is retained. Marble and fiction remain deferred;
 no new world generation starts from this documentation update.
 [Current status and product priorities](docs/next-cycle.md).
 
 A separate [SSI OAuth demo](docs/experiments/ssi-oauth-field-report.md) records
 another agent using Framewright for real-screen evidence video; its temporary
 unlisted upload and playback are owner-confirmed, Google approval is pending.
-Babylon capture is qualified only for the retained Möbius case; other engines
-and general autonomous production remain unqualified.
+The reusable [capture adapter](skills/video-production-router/references/engine-capture.md)
+passed an original canvas/audio fixture and a native Möbius excerpt; the excerpt
+correctly retains a loop-seam warning. Other engines and general autonomous
+production remain unqualified.
+
+## Keep production state current
+
+Generate a summary from the existing journal and current file hashes:
+
+```sh
+python3 skills/video-production-router/scripts/project.py summary local/my-film/project.json
+```
+
+For public documentation, explicitly select safe subjects with `--public --title`
+and `--include`; `--check --output` detects a stale generated page. No raw private
+notes, paths or visibility-unknown links are exported. Record a Trends/Radar
+hypothesis before retaining a master when possible, then attach manually supplied
+analytics to the exact upload revision. Missing retention/revenue stays unknown;
+comparable-age reports do not claim causality or connect channel accounts.
+[Commands and limits](skills/video-production-router/references/project-insights.md) ·
+[Real project and capture tests](docs/experiments/production-memory-adapters.md).
 
 ## One concrete result
 
@@ -183,7 +204,7 @@ filters capabilities and grants no spending authority.
 
 Run `python3 scripts/check.py --scope docs` for offline validation; no model/render.
 [Checking policy](docs/checking-policy.md) · [Record an experiment](docs/experiments.md) ·
-[Research queue](docs/experiment-queue.md) · [Current product priorities](docs/next-cycle.md#nearest-product-improvements) · [Historical v0.3.1 audit](docs/release-audit-2026-10-19.md).
+[Research queue](docs/experiment-queue.md) · [Current product priorities](docs/next-cycle.md#implemented-product-slices-and-next-evidence) · [Historical v0.3.1 audit](docs/release-audit-2026-10-19.md).
 The new case records are on main; this update creates no new software release.
 
 The MIT licence covers original repository materials. Tools, models, music and art

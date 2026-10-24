@@ -23,7 +23,7 @@ def build(root, output):
     output.mkdir(parents=True, exist_ok=True)
     skill = root / 'skills/video-production-router'
     files = [skill / 'SKILL.md']
-    for folder, suffixes in [('references', {'.json', '.md'}), ('scripts', {'.py'})]:
+    for folder, suffixes in [('references', {'.json', '.md'}), ('scripts', {'.py', '.cjs'})]:
         files.extend(p for p in (skill / folder).iterdir() if p.is_file() and p.suffix in suffixes)
     if any(p.is_symlink() for p in files):
         raise ValueError('Do not package symlinked source')

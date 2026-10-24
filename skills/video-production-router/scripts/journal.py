@@ -12,6 +12,7 @@ RESULTS = {
     'decision': {'accepted', 'rejected', 'deferred', 'proposed'},
     'publication': {'published', 'removed', 'pending'},
     'provider': {'approved', 'rejected', 'pending'},
+    'metrics': {'recorded'},
 }
 PROVENANCE = {'owner_report', 'operator_observation', 'supplied_report', 'independent_check', 'administrative_change'}
 

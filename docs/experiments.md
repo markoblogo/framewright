@@ -1,5 +1,10 @@
 # Grow the lab without growing unsupported claims
 
+[Journal summary, engine adapter and content outcomes](experiments/production-memory-adapters.md):
+CLI regressions and a real Shorts checkpoint; original browser/audio loop fixture
+and native Möbius capture. Numeric seam warning retained; no new production export,
+audience result, paid generation or release.
+
 Add a tool when there is a concrete task or comparison to investigate; a bookmark
 alone may remain a candidate. Do not install or launch everything in the catalogue.
 

@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+- Generate journal-derived project summaries with current file/hash checks, latest
+  revision-bound approvals/publications, explicit public allowlists and drift checks.
+- Add a local canvas-capture adapter with controller/audio proof, repeatable cycle
+  hooks, full-decode/motion and numeric seam checks. Test original canvas/audio and
+  native PlayMCP scopes; retain warnings and keep creative/listening acceptance separate.
+- Link source-pinned content hypotheses to exact master/upload receipts and
+  append-only supplied outcomes: views, retention, monetization/revenue, explicit
+  currency/window/upload age and stale evidence. Backfill the two Shorts honestly
+  as retrospective; audience metrics remain unknown. No analytics grants or release.
+
 - Block imported technical QA and delivery when visual, motion or sync review is
   rejected or pending; keep decode measurements and creative preference distinct.
   Score persistent missing-action findings against the full commanded-open period.
@@ -26,7 +36,7 @@
 
 - Close the PlayMCP service-review cycle with a 150-second owner-narrated export,
   publication URL and scoped capture, transcription and audio-FX evidence.
-- Refresh the 24-export inventory and current production status; pause SSI pending
+- Refresh the 30-export inventory and current production status; pause SSI pending
   partner feedback and prepare Pocket OS, Radar and fiction/world-production intake.
 - Preserve historical model qualification and keep private media, account records,
   unpublished prose and story manuscripts outside the repository.

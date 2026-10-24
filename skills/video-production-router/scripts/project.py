@@ -13,6 +13,7 @@ import tempfile
 BASE = Path(__file__).resolve().parent
 JOURNAL = runpy.run_path(str(BASE / "journal.py"))
 PRODUCTION = runpy.run_path(str(BASE / "production.py"))
+CONTENT = runpy.run_path(str(BASE / 'content.py'))
 MEDIA = runpy.run_path(str(BASE / "media_review.py"))
 
 
@@ -37,7 +38,7 @@ def file_record(path, root):
 
 
 def planning_sources():
-    paths = [BASE / name for name in ['plan.py', 'music.py', 'terms.py', 'workflow.py', 'project.py', 'journal.py', 'packet.py', 'production.py', 'media_review.py', 'capture_check.py']]
+    paths = [BASE / name for name in ['plan.py', 'music.py', 'terms.py', 'workflow.py', 'project.py', 'journal.py', 'packet.py', 'production.py', 'media_review.py', 'capture_check.py', 'project_summary.py', 'content.py', 'engine_capture.py', 'engine_capture.cjs']]
     paths.append(BASE.parent / 'references/tools.json')
     return {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 
@@ -133,6 +134,7 @@ def load(path):
     if data['schema_version']==2:
         JOURNAL['validate'](data)
         PRODUCTION['validate_stored'](data)
+        CONTENT['validate_stored'](data,digest)
     return data
 
 
@@ -155,6 +157,7 @@ def save(path, data):
         data['journal_sha256']=digest(data['journal'])
         JOURNAL['validate'](data)
         PRODUCTION['validate_stored'](data)
+        CONTENT['validate_stored'](data,digest)
     temporary = None
     try:
         with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=path.parent,
@@ -319,9 +322,27 @@ def main():
     compose = commands.add_parser('compose');compose.add_argument('project',type=Path);compose.add_argument('spec',type=Path);compose.add_argument('--replace',action='store_true')
     board = commands.add_parser('board');board.add_argument('project',type=Path);board.add_argument('--json',action='store_true')
     bundle = commands.add_parser('bundle');bundle.add_argument('project',type=Path);bundle.add_argument('variant');bundle.add_argument('--output',type=Path,required=True);bundle.add_argument('--draft',action='store_true')
+    idea = commands.add_parser('hypothesis');idea.add_argument('project',type=Path);idea.add_argument('spec',type=Path);idea.add_argument('--actor',required=True);idea.add_argument('--provenance',choices=sorted(JOURNAL['PROVENANCE']),required=True)
+    metrics = commands.add_parser('outcome');metrics.add_argument('project',type=Path);metrics.add_argument('spec',type=Path);metrics.add_argument('--actor',required=True);metrics.add_argument('--provenance',choices=sorted(JOURNAL['PROVENANCE']),required=True)
+    results = commands.add_parser('results');results.add_argument('project',type=Path);results.add_argument('--json',action='store_true');results.add_argument('--compare-age-hours',type=float);results.add_argument('--age-tolerance-hours',type=float,default=6)
+    projection = commands.add_parser('summary');projection.add_argument('project',type=Path);projection.add_argument('--json',action='store_true');projection.add_argument('--public',action='store_true');projection.add_argument('--title');projection.add_argument('--include',action='append',default=[]);projection.add_argument('--output',type=Path);projection.add_argument('--replace',action='store_true');projection.add_argument('--check',action='store_true')
     args = parser.parse_args()
     try:
         path = args.project.resolve()
+        if args.command=='results':
+            data=load(path);view=CONTENT['report'](data,JOURNAL,file_problems(data,path.parent),args.compare_age_hours,args.age_tolerance_hours)
+            print(json.dumps(view,indent=2,allow_nan=False) if args.json else CONTENT['markdown'](view));return
+        if args.command=='summary':
+            checkpoint_bytes=path.read_bytes()
+            data=load(path);module=runpy.run_path(str(BASE/'project_summary.py'))
+            view=module['project'](data,path.parent,file_problems(data,path.parent),JOURNAL,
+                hashlib.sha256(checkpoint_bytes).hexdigest(),public=args.public,title=args.title,include=args.include)
+            if path.read_bytes()!=checkpoint_bytes:raise ValueError('Project changed during summary generation; retry')
+            text=json.dumps(view,indent=2,ensure_ascii=False)+'\n' if args.json else module['markdown'](view)
+            if args.output:module['export'](text,args.output,path,data,replace=args.replace,check=args.check)
+            elif args.check:raise ValueError('--check requires --output')
+            else:print(text,end='')
+            return
         if args.command=='bundle':
             with locked(path):
                 data=load(path);problems=file_problems(data,path.parent)
@@ -378,9 +399,17 @@ def main():
                 data = initial(json.loads(args.brief.read_text()))
             else:
                 data = load(path)
-                if args.command in {'asset','task','observe','compose','review'} and data['schema_version']!=2:
+                if args.command in {'asset','task','observe','compose','review','hypothesis','outcome'} and data['schema_version']!=2:
                     raise ValueError('Run migrate explicitly before using project memory')
-                if args.command=='compose':
+                if args.command=='hypothesis':
+                    changed=CONTENT['hypothesis'](data,json.loads(args.spec.read_text()),args.actor,args.provenance,JOURNAL,file_problems(data,path.parent))
+                    if not changed:print('Hypothesis unchanged');return
+                    data['content_sha256']=digest(data['content']);event(data,'content_hypothesis',identity=data['content']['hypotheses'][-1]['id'])
+                elif args.command=='outcome':
+                    changed=CONTENT['outcome'](data,json.loads(args.spec.read_text()),args.actor,args.provenance,JOURNAL,file_problems(data,path.parent))
+                    if not changed:print('Outcome unchanged');return
+                    data['content_sha256']=digest(data['content']);event(data,'content_outcome',identity=data['content']['snapshots'][-1]['id'])
+                elif args.command=='compose':
                     compiled=PRODUCTION['compile_project'](data,json.loads(args.spec.read_text()))
                     if data.get('production')==compiled:
                         print('Composition unchanged');return

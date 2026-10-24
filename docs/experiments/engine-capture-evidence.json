@@ -1,0 +1,113 @@
+{
+  "contract-fixture": {
+    "execution": "recorded",
+    "automatic_model_calls": 0,
+    "provider_credits": 0,
+    "loop": {
+      "decoded_fps": 24,
+      "decoded_samples": 48,
+      "motion_detected": true,
+      "seam_luma_mae": 2.525607638888889,
+      "adjacent_luma_mae": 1.7996361554373523,
+      "visual_seam": "pass",
+      "scope": "Numeric luma screen only; no visual or listening acceptance inferred",
+      "audio_seam": "pass",
+      "audio_rms": 0.07931248195602876,
+      "audio_boundary_jump": 0.0001144928310168325,
+      "audio_adjacent_p99": 0.013027799315750599
+    },
+    "source_sha256": "da3dfd86e78faa9ceed821be1fce99920f9e2483cc01172a40ce7430ada3de95",
+    "cycle_sha256": "13c772ccf84490cfe3cd8bd78b406086c83d0476bd580e9139ca0bdca5bbdc61",
+    "output_sha256": "bea81525289271a5691ca8de4a233867ff2932f8e34b01749a5134b69a2424e0",
+    "output_seconds": 6.043,
+    "full_decode": "pass",
+    "creative_acceptance": "not_performed",
+    "listening_acceptance": "not_performed",
+    "publication": "not_performed",
+    "browser": {
+      "adapter": "contract",
+      "controls": {
+        "paused_time_held": true,
+        "seek_verified": true,
+        "bot_verified": true,
+        "resume_verified": true
+      },
+      "audio": {
+        "policy": "game",
+        "proof": "measured_capture_bus",
+        "rms": {
+          "audible": 0.05662340655329975,
+          "muted": 0,
+          "restored": 0.056513901910948974
+        }
+      },
+      "recording": {
+        "mime": "video/webm;codecs=vp9,opus",
+        "wall_seconds": 2.012
+      },
+      "errors": []
+    }
+  },
+  "playmcp-native": {
+    "execution": "recorded",
+    "automatic_model_calls": 0,
+    "provider_credits": 0,
+    "loop": {
+      "decoded_fps": 24,
+      "decoded_samples": 96,
+      "motion_detected": true,
+      "seam_luma_mae": 27.09809027777778,
+      "adjacent_luma_mae": 4.009338450292398,
+      "visual_seam": "warn",
+      "scope": "Numeric luma screen only; no visual or listening acceptance inferred",
+      "audio_seam": "pass",
+      "audio_rms": 0.01357564300958134,
+      "audio_boundary_jump": 9.143780789599987e-05,
+      "audio_adjacent_p99": 0.0356000866740942
+    },
+    "source_sha256": "ce4532197c366f99adefaf4f4c74d8cdad88b62d49797ae04433ac5e125ac560",
+    "cycle_sha256": "c19bb9122c11ceb717d9e88e7097bd582ac055c290dfd3b6bb5f2c92dd109041",
+    "output_sha256": "c19bb9122c11ceb717d9e88e7097bd582ac055c290dfd3b6bb5f2c92dd109041",
+    "output_seconds": 4.0,
+    "full_decode": "pass",
+    "creative_acceptance": "not_performed",
+    "listening_acceptance": "not_performed",
+    "publication": "not_performed",
+    "browser": {
+      "adapter": "playmcp",
+      "controls": {
+        "paused_time_held": true,
+        "seek_verified": true,
+        "bot_verified": true,
+        "resume_verified": true
+      },
+      "audio": {
+        "policy": "game",
+        "proof": "measured_capture_bus",
+        "rms": {
+          "audible": 0.019866910553711762,
+          "muted": 0,
+          "restored": 0.012482897401277806
+        }
+      },
+      "recording": {
+        "mime": "video/webm;codecs=vp9,opus",
+        "wall_seconds": 4.014199999999255
+      },
+      "errors": []
+    }
+  },
+  "scope": {
+    "contract-fixture": "Original 640x360/24fps canvas; 2-second source repeated three times with original oscillator audio.",
+    "playmcp-native": "Actual published Mobius Walk; 4-second excerpt at seek=10, 640x360/24fps, native game audio. Not a canonical loop; visual seam warning retained.",
+    "failed_attempt": "First native browser attempt exited before controls were recorded; retry passed. Initial generic WebM duration lookup failed because MediaRecorder omits duration metadata; encoded packet timestamps now cover that case. No hosted game changes or credits."
+  },
+  "runtime": {
+    "python": "3.14.5",
+    "node": "v22.14.0",
+    "puppeteer_core": "25.14.0",
+    "chrome": "155.0.8059.86",
+    "ffmpeg": "ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers",
+    "platform": "Darwin arm64"
+  }
+}

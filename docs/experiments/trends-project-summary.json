@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "title": "Trends Shorts: journal-derived status",
+  "checkpoint_sha256": "636ef4534ec87d57a341a7bce7987c3ae245f364828d006ff015d81eec6e1f98",
+  "journal_sha256": "b32ae9f0a20c0536c96a642be16c3a5bec07f51fdab3f308b8e9c004e8b343ca",
+  "scope": "explicit_public_selection",
+  "files": [
+    {
+      "subject": "output:profit-cash:master",
+      "state": "current",
+      "sha256": "908fa1b441df22265b9415367423e3c9f5f2366af684af83dc3a118da30b50ee",
+      "observations": [
+        {
+          "id": "e000002",
+          "kind": "technical",
+          "result": "pass",
+          "provenance": "operator_observation",
+          "recorded_at": "2026-10-23T22:10:40.005867+00:00",
+          "stale": false
+        },
+        {
+          "id": "e000003",
+          "kind": "listening",
+          "result": "pending",
+          "provenance": "operator_observation",
+          "recorded_at": "2026-10-23T22:10:40.519235+00:00",
+          "stale": false
+        },
+        {
+          "id": "e000007",
+          "kind": "publication",
+          "result": "published",
+          "provenance": "owner_report",
+          "recorded_at": "2026-10-23T23:54:02.656265+00:00",
+          "stale": false,
+          "visibility": "unknown"
+        }
+      ]
+    },
+    {
+      "subject": "output:agent-savepoint:master",
+      "state": "current",
+      "sha256": "857062b322a2e7dfa0a78542b5d21df7943b12fabe3a2679286991dbf696cf11",
+      "observations": [
+        {
+          "id": "e000004",
+          "kind": "technical",
+          "result": "pass",
+          "provenance": "operator_observation",
+          "recorded_at": "2026-10-23T22:10:43.681368+00:00",
+          "stale": false
+        },
+        {
+          "id": "e000005",
+          "kind": "listening",
+          "result": "pending",
+          "provenance": "operator_observation",
+          "recorded_at": "2026-10-23T22:10:44.070066+00:00",
+          "stale": false
+        },
+        {
+          "id": "e000008",
+          "kind": "publication",
+          "result": "published",
+          "provenance": "owner_report",
+          "recorded_at": "2026-10-23T23:54:02.777086+00:00",
+          "stale": false,
+          "visibility": "unknown"
+        }
+      ]
+    },
+    {
+      "subject": "output:trends-selection",
+      "state": "current",
+      "sha256": "e764d4e1939842e318f0f9e2a8516eca42d52102bbb4f6845f6640200fbbdb7c",
+      "observations": []
+    }
+  ],
+  "project_decisions": [],
+  "note": "Derived from retained revisions and recorded observations. Unknown is not approval; publication is separately recorded, not independently verified."
+}

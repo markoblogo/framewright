@@ -191,3 +191,12 @@ Replacing a retained output also reopens checks whose latest receipt pins that
 output through `--depends-on`, and their downstream tasks. Authoring tasks that
 do not require the replaced output remain done. A fresh scoped receipt is needed
 before the reopened check and delivery can be marked done again.
+
+## Derived documentation and content results
+
+Use [project insights](project-insights.md) to generate safe status from this same
+journal (`summary`), retain source-pinned hypotheses (`hypothesis`) and bind supplied
+analytics to exact publication/master revisions (`outcome`, `results`). No competing
+checkpoint, analytics account access or automatic upload is introduced.
+For real canvas footage, [engine capture](engine-capture.md) records a bounded local
+session and a separate technical report; retain its files/checks here afterwards.

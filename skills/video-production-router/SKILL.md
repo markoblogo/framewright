@@ -136,3 +136,11 @@ Before promising audio/image/video evaluation or asking an operator to record, u
 session input support; level measurement/ASR/frame sampling never substitute for
 listening, motion or sync review. The local `capture_check.py` reads short clips;
 cloud/local multimodal candidates need separate bounded qualification and authority.
+
+For current project documentation and Trends/Radar follow-up, use
+[derived status and content outcomes](references/project-insights.md). Project a
+selected safe public summary instead of copying private checkpoint notes. Record
+retrospective ideas honestly; missing views/retention/revenue remain unknown.
+For an already controllable canvas scene, use the [local capture adapter](references/engine-capture.md).
+Validate offline first, then execute only with authority for that scene and local
+browser. Preserve seam warnings and separate technical, listening and creative checks.
