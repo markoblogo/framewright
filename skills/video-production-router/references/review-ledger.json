@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-22",
+  "updated": "2026-10-24",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -1008,6 +1008,47 @@
       "next_trial_or_retest_condition": "Retained applicable model-use permission, selected checkpoint/base/LoRA terms and actual Mac resources before any install/download or short directed-shot test.",
       "evidence": [
         "docs/freevideo-intake.md"
+      ]
+    },
+    {
+      "id": "marble-studio-compositing",
+      "name": "Marble Studio — existing-world compositing trial",
+      "url": "https://marble.worldlabs.ai/",
+      "reviewed": "2026-10-24",
+      "review_basis": "Observed owner worlds, native Studio import/private project/export and local original actor compositing; no paid generation",
+      "upstream_revision": null,
+      "disposition": "partial",
+      "scope_and_findings": "Existing Marble1.0 Studio export plus original independent Three.js r186 actor, locked-plate2.5D grade/sound and deterministic frame rendering. Published42s film with1260frames/full decode, native cover and local YouTube kit. Retained dark/first-frame/real-time timing failures; no mesh/depth/moving-camera or multi-shot continuity qualification.",
+      "licence_note": "Owner confirms Free-generation source. Current personal/non-commercial conditions checked; historical permissions and commercial clearance unresolved. Public film/watch page, edits and disabled monetization do not establish provider permission. Original example code only is MIT; media/vendor runtime excluded.",
+      "next_trial_or_retest_condition": "Owner-selected two-shot interaction/continuity pilot with explicit source rights and camera needs; supplied compatible analytics for audience outcomes. No automatic world generation or paid upgrade.",
+      "evidence": [
+        "docs/experiments/marble-compositing.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-24",
+          "kind": "owner_directed_private_revision",
+          "evidence": "docs/experiments/marble-compositing.md",
+          "outcome": "Owner rejected dark8s sample. Revised12s tighter open-angle forest, soft-toe color states and larger temporary actor; decoded3s native Ultra source selected after blocky first-frame attempt. Failed real-time duration attempts retained; separate original deterministic JPEG94 frame render:360frames/1080p30/full decode. Owner viewing and final character/rights pending; no new paid generation or publication."
+        },
+        {
+          "date": "2026-10-24",
+          "kind": "private_video_first_sound_acting",
+          "evidence": "docs/experiments/marble-compositing.md",
+          "outcome": "Owner accepts v2 color/look, requests music and action variation. V3 uses retained CC BY piano and CC0 ambience plus original effects; synchronized three-state arrangements and stop/lantern acting. Final12s/360frames full decode pass; -19.69LUFS,-3.29dBTP; owner listening pending. No paid calls or publication; unchanged partial qualification."
+        },
+        {
+          "date": "2026-10-24",
+          "kind": "local_film_finishing",
+          "evidence": "docs/experiments/marble-compositing.md",
+          "outcome": "Owner accepts short-sample music; stronger amber contrast and42s local film with title/end cards, native cover and unarchived English YouTube package.1260frames/full decode,-18.55LUFS,-1.99dBTP; longer master owner review pending. Owner confirms Free source; commercial rights unresolved; no upload/release/paid calls. Partial qualification unchanged. Final lower-register source-rate correction verified after remux; accepted short file unchanged."
+        },
+        {
+          "date": "2026-10-24",
+          "kind": "owner_publication_and_source_handoff",
+          "evidence": "docs/experiments/marble-compositing.md",
+          "outcome": "Owner supplied https://youtu.be/wHOpypqPyCs; expected title and42s watch player independently observed. Original asset-dependent scene/capture/sound source sanitised for Git. Publication does not attest commercial rights, final-master listening or audience results; partial qualification retained."
+        }
       ]
     }
   ]

@@ -7,12 +7,13 @@ this guide preserves detailed methods, installation and evidence boundaries.
 
 | Result | What was actually produced | Evidence |
 | --- | --- | --- |
+| The Same Forest |42s fixed-world-plate film with independent actor, three color/sound states and native cover | [Case](experiments/marble-compositing.md) · [Original source](../examples/marble-color-study/README.md) · [Film](https://youtu.be/wHOpypqPyCs) |
 | Two English Trends-led Shorts | Original 3D/SVG illustrations, English voice, separate edits/covers/TXT copy; bounded deterministic ASCII text reveal | [Case and owner-supplied YouTube links](experiments/trend-shorts-publication.md) |
 | Dream Walk cinematic film | Six generated moving garden shots, English voice and sound; 60s landscape film | [Film, cost and QA](experiments/dream-walk.md) · [Owner-supplied video](https://youtu.be/oyQXmJI4aK0) |
 | Möbius Walk ambient video | Actual Babylon.js game canvas; disclosed two-minute autoplay cycle extended to 20 minutes | [Capture method](workflows/ambient-game-video.md) · [Owner-supplied video](https://youtu.be/rfClK3jPHlw) |
 | SSI website Reels, Ukrainian/English | Real site pages scroll beneath stationary captions; both accepted by partners per owner report | [Case](experiments/ssi-site-reels.md) · [Owner-supplied English Instagram link](https://www.instagram.com/reel/DezcjZ0tXuz/) |
 
-**30 recorded final exports** are pinned by size/hash. Publication links, technical
+**31 recorded final exports** are pinned by size/hash. Publication links, technical
 QA, owner acceptance and audience results are separate evidence; views/retention
 are not yet measured for these new cases. Full media and private source assets
 stay outside Git. YouTube copy is delivered as direct text files, without ZIPs.

@@ -1,0 +1,6 @@
+"Ambient Piano Music #4" by benpm is licensed under CC BY 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/.
+"Night close to a river, crickets and frogs, bird sometimes." by felix.blume is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/.
+
+Adaptations for this film experiment: piano excerpt16–58s, filtering, octave-down/time-preserved derivative, reverberant layers and continuous mood automation. Night field recording excerpt8–50s used as stylised ambience; not recorded in this virtual world. Footsteps, low tension textures and lantern foley are original procedural sound design.
+
+Environment: existing owner-created Marble 1.0 forest. World Labs output licence: personal/non-commercial source; no commercial clearance asserted. Independent procedural character, animation and compositing: Framewright workflow using Three.js r186 (MIT), Canvas and FFmpeg.
