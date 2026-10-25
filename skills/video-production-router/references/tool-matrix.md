@@ -36,7 +36,7 @@ Seven documented tone presets shape story, rhythm and typography; default is pla
 **Style directions:** editorial, montage, kinetic, minimal, playful.
 HTML/CSS/SVG/Canvas plus seekable motion. The book-test editorial look was our direction, not an engine restriction.
 
-**Tested version/scope:** 0.8.157 in retained pilots
+**Tested version/scope:** 0.8.157 original pilots;0.8.185 SSI site/report films (scoped records)
 
 **Licence:** Apache-2.0 for CLI; check current runtime, asset, cloud/provider terms
 
@@ -48,9 +48,9 @@ HTML/CSS/SVG/Canvas plus seekable motion. The book-test editorial look was our d
 | `scene-timeline` | tested | Observed scope: asciitheme, ami, jeanne-fr, good-dogs-en, good-dogs-teaser [Source](https://hyperframes.heygen.com/concepts/compositions) |
 | `transitions` | tested | Observed scope: asciitheme, ami, jeanne-fr, good-dogs-en, good-dogs-teaser [Source](https://hyperframes.heygen.com/concepts/compositions) |
 | `still-export` | documented | Upstream claim; not locally qualified [Source](https://hyperframes.heygen.com/concepts/compositions) |
-| `native-audio` | documented | Upstream claim; not locally qualified [Source](https://hyperframes.heygen.com/concepts/compositions) |
+| `native-audio` | tested | Three SSI1080x1920/30fps English voice-only films; full encoded decode and source/voice timing checks. Partner acceptance owner-reported; recurring automation unqualified. [Source](https://hyperframes.heygen.com/concepts/compositions) |
 | `captions` | documented | Upstream claim; not locally qualified [Source](https://hyperframes.heygen.com/concepts/compositions) |
-| `vertical-format` | documented | Upstream claim; not locally qualified [Source](https://hyperframes.heygen.com/concepts/compositions) |
+| `vertical-format` | documented | Three manually authored SSI1080x1920/30fps films have retained scoped evidence. This does not qualify arbitrary vertical-format planner requests or new staged-3D/canvas combinations; feature-test gate remains. [Source](https://hyperframes.heygen.com/concepts/compositions) |
 | `svg-overlay` | documented | Upstream claim; not locally qualified [Source](https://hyperframes.heygen.com/concepts/compositions) |
 | `shader-transitions` | documented | Upstream claim; not locally qualified [Source](https://hyperframes.heygen.com/packages/shader-transitions) |
 | `color-grade` | documented | Upstream claim; not locally qualified [Source](https://hyperframes.heygen.com/reference/color-grading) |
@@ -205,12 +205,12 @@ Finishing/transcoding/filter primitives, not a project-specific visual direction
 | --- | --- | --- |
 | `video-export` | tested | Observed scope: coqpi-flute, framewright-remotion, jeanne-fr, good-dogs-en [Source](https://ffmpeg.org/ffmpeg-filters.html) |
 | `still-export` | tested | Observed scope: coqpi-flute, framewright-remotion, jeanne-fr, good-dogs-en [Source](https://ffmpeg.org/ffmpeg-filters.html) |
-| `media-mux` | tested | Observed scope: coqpi-flute, framewright-remotion, jeanne-fr, good-dogs-en [Source](https://ffmpeg.org/ffmpeg-filters.html) |
-| `normalization` | tested | Observed scope: coqpi-flute, framewright-remotion, jeanne-fr, good-dogs-en [Source](https://ffmpeg.org/ffmpeg-filters.html) |
-| `concat` | documented | Upstream claim; not locally qualified [Source](https://ffmpeg.org/ffmpeg-filters.html) |
+| `media-mux` | tested |  One Random Life118s: selected screenshots/native frames, gentlezoom, concat/mux, encoded loudness and full decode; continuous-motion/listening not inferred. [Source](https://ffmpeg.org/ffmpeg-filters.html) |
+| `normalization` | tested |  One Random Life118s: selected screenshots/native frames, gentlezoom, concat/mux, encoded loudness and full decode; continuous-motion/listening not inferred. [Source](https://ffmpeg.org/ffmpeg-filters.html) |
+| `concat` | tested |  One Random Life118s: selected screenshots/native frames, gentlezoom, concat/mux, encoded loudness and full decode; continuous-motion/listening not inferred. [Source](https://ffmpeg.org/ffmpeg-filters.html) |
 | `captions` | documented | Upstream claim; not locally qualified [Source](https://ffmpeg.org/ffmpeg-filters.html) |
 | `transitions` | documented | Upstream claim; not locally qualified [Source](https://ffmpeg.org/ffmpeg-filters.html) |
-| `image-pan-zoom` | documented | Upstream claim; not locally qualified [Source](https://ffmpeg.org/ffmpeg-filters.html) |
+| `image-pan-zoom` | tested |  One Random Life118s: selected screenshots/native frames, gentlezoom, concat/mux, encoded loudness and full decode; continuous-motion/listening not inferred. [Source](https://ffmpeg.org/ffmpeg-filters.html) |
 | `color-grade` | documented | Upstream claim; not locally qualified [Source](https://ffmpeg.org/ffmpeg-filters.html) |
 | `speed-ramp` | documented | Upstream claim; not locally qualified [Source](https://ffmpeg.org/ffmpeg-filters.html) |
 
@@ -355,7 +355,7 @@ Exact Ukrainian female voice; one short promotional script,not singing or cloned
 
 **Limits:** Owner reports broken rhythm,unnecessary pauses,stress/intonation errors in this exact version. Retained as low-quality explicit fallback to Supertonic3;never silently substitute. Existing film unchanged;do not generalize to all Piper voices. No EN/FR,singing,voice cloning or arbitrary Piper voices qualified. ONNXRuntime emitted telemetry/cache-ID persistence warnings;no external voice API called;network traffic not independently audited. One script/voice integration,not general language quality;native Remotion raster repeat differed slightly and full-export browser workarounds were required.
 
-## Supertonic3 — owner-recommended Ukrainian voice
+## Supertonic3 — local stock narration (UK/EN scoped)
 
 **Role:** voice. **Inputs:** .
 
@@ -368,9 +368,9 @@ Local stockM1/F1;owner slight preferenceF1 after same-text Ukrainian probe. Natu
 
 | Feature | Evidence | Scope / source |
 | --- | --- | --- |
-| `narration` | tested | M1/F1 short UK probes owner-accepted;defaultF1(slight subjective preference). First24s F1 video integration passed encoded checks,accepted intro reused,new title/CTA generated;final-film listening pending. Residual pause/stress errors known. [Source](https://huggingface.co/Supertone/supertonic-3) |
+| `narration` | tested | M1/F1 short UK probes owner-accepted;defaultF1(slight subjective preference). First24s F1 video integration passed encoded checks,accepted intro reused,new title/CTA generated;final-film listening pending. Residual pause/stress errors known. M1 English:3SSI report films plus10phrases in118s One Random Life; retained measured timing/encoded QA. SSI partner acceptance owner-reported; no new independent listening or general English quality claim. Earlier Contract Execution Officer English F1 voice was owner-accepted for that film; this preserves a separate F1 English reference rather than inferring it from M1. [Source](https://huggingface.co/Supertone/supertonic-3) |
 
-**Limits:** M1/F1 short-script probes and one24s F1 film integrated;longer/new scripts and other voices need QA. Final film owner listening remains pending. Owner reports residual pauses and2–3 stress errors;intonation good. F1 preference is slight and subjective. Other upstream-documented languages are not locally qualified by this profile. No singing,cloning or other stock voices tested. Model output requires explicit synthetic/AI-generated disclosure;licence restrictions still apply.
+**Limits:** M1/F1 short-script probes and one24s F1 film integrated;longer/new scripts and other voices need QA. Final film owner listening remains pending. Additional M1 English report/life-review integrations have scoped encoded/timing evidence; new final-listening judgments remain separate. Owner reports residual pauses and2–3 stress errors;intonation good. F1 preference is slight and subjective. Languages beyond the recorded UK/EN scopes are not locally qualified by this profile. No singing,cloning or other stock voices tested. Model output requires explicit synthetic/AI-generated disclosure;licence restrictions still apply.
 
 ## PySceneDetect
 

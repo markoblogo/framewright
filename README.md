@@ -21,13 +21,14 @@ and prepare a local publication kit. The agent runs selected tools in your envir
 | Seals of Good Intentions | Six photographs staged as a cinematic set, source-preserving calligraphy, reusable camera plan and revised soundtrack | [30s film](https://youtu.be/6c3JXdIiosg) · [Case](docs/experiments/photo-series-cinema.md) |
 | The Same Forest | An existing virtual-world plate, independent character and three coordinated color/sound states | [42s film](https://youtu.be/wHOpypqPyCs) · [Case and original source](docs/experiments/marble-compositing.md) |
 | Nantes illustrated journey | Real mapped road geometry, animated landmark illustrations and a French guide | [82s film](https://youtu.be/kh-MTl8K5pE) · [Case](docs/experiments/nantes-pixel-journey.md) |
-| SSI report series | Three English voice-only films reuse one pinned brand profile; delivered, partner feedback pending | [Case](docs/experiments/ssi-brand-profiles.md) |
+| One Random Life | A complete browser-life playthrough condensed to 118s, with fictional age portraits and OCR source retrieval | [Film](https://youtu.be/bNpRyDZsCHg) · [Case](docs/experiments/one-random-life.md) |
+| SSI report series | Three English voice-only films reuse one pinned brand profile; partner acceptance/publication owner-reported; source handoff to SSI in progress | [Case](docs/experiments/ssi-brand-profiles.md) |
 | SSI website Reels, Ukrainian and English | Real pages scrolling beneath fixed captions; an accepted edit reused for another language | [English Reels](https://www.instagram.com/reel/DezcjZ0tXuz/) · [Case](docs/experiments/ssi-site-reels.md) |
 | Jekyll & Hyde book promo | A playable learning game used as a set for a book video, with owner-recorded Toki Pona narration | [Book promo](https://youtu.be/GPfkz36JWbI) · [Case](docs/experiments/jekyll-toki-pona.md) |
 | Dream Walk films | A generated 60s cinematic film and a separate 20min ambient recording from an actual game canvas | [60s film](https://youtu.be/oyQXmJI4aK0) · [20min game capture](https://youtu.be/rfClK3jPHlw) · [Case](docs/experiments/dream-walk.md) |
 
 Publication links and partner acceptance are owner-reported; the forest film’s watch-page title/duration were also observed. The repository records
-[37 final exports](docs/experiments.md); production evidence, human acceptance and
+[38 final exports](docs/experiments.md); production evidence, human acceptance and
 audience results remain separate. Faster production and better retention are goals,
 not established comparative results.
 
@@ -55,6 +56,8 @@ An [accepted-film template](skills/video-production-router/references/templates.
 
 A [brand profile](skills/video-production-router/references/branding.md) pins a selected logo, font, palette and layout/motion rules, then exports the same assets and CSS variables for another production. Source changes are detected; new films retain their own content, rights and approval checks. [SSI three-part profile trial](docs/experiments/ssi-brand-profiles.md).
 
+For production owned by another project, use the [external-project handoff](docs/external-project-handoff.md): accepted sources, typed inputs, measured voice timing, checks and receiving-project scheduling. The SSI transfer is underway; scheduled delivery is not yet verified.
+
 [Source-editing example](examples/editing/source-plan.json) · [Template design](examples/templates/design.json) · [Template values](examples/templates/values.json) · [Curated prompt experiments](docs/research/prompt-library/README.md).
 
 ## Continue after an input changes
@@ -80,7 +83,7 @@ their own authority. Tools/models/media have separate terms; private assets stay
 [Production guide](docs/production-guide.md) · [Project and scene workflow](skills/video-production-router/references/production.md) ·
 [Experiments and limits](docs/experiments.md) · [Current priorities](docs/next-cycle.md) ·
 [Research queue](docs/experiment-queue.md) · [Contributing checks](docs/checking-policy.md) ·
-[Latest closeout audit](docs/maintenance-2026-10-25.md).
+[Latest closeout audit](docs/closeout-2026-10-25.md).
 
 MIT for original repository materials. Main includes work after the latest tagged
 release; this update creates no new release. [ABVX ecosystem](docs/ecosystem.md).

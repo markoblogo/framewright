@@ -6,11 +6,14 @@ authority. [Completed PlayMCP review](experiments/playmcp-service-review.md) ·
 
 ## Execution order
 
-Current closeout audits and publishes the local brand-profile helper, the delivered
-SSI series, the Nantes route-film evidence and research updates. No new release.
+The brand-profile/Nantes closeout was pushed without a release. Current local
+work closes the English [1 in 8 Billion review](experiments/one-random-life.md),
+with an owner-supplied YouTube URL, and transfers SSI production sources. No release.
 
-1. **SSI:** three English voice-only report films are delivered. Wait for partner
-   comments or publication links; preserve the requested longer reading holds.
+1. **SSI:** three English voice-only report films are accepted/published per owner
+   report; Story URLs and accepted renderer templates are retained. The owner
+   authorized direct handoff; integration is running in SSI. Wait for its outcome
+   here; do not duplicate implementation or claim the schedule is active.
 2. **MN7R:** next proposed production is a real-interface Instagram promo, building
    on the accepted SSI site-scroll approach. Agree a bounded brief before capture.
 3. **Nantes green line:** a separate proposed walking tour with named landmarks;
@@ -34,7 +37,8 @@ Next use one fitting method from the [curated prompt queue](research/prompt-libr
 | --- | --- | --- |
 | PlayMCP review | Completed; owner supplied YouTube URL | Retain export/kit/publication evidence; private article draft awaits owner use |
 | SSI website Reels | Both languages accepted by partners; English Instagram URL supplied (owner reports) | Publication visibility and audience metrics independently unverified; Ukrainian publication unknown |
-| SSI weekly summaries | Three revised English voice-only films delivered; owner sent to partner | Await comments/publication links; preserve six earlier rejected demos separately |
+| SSI weekly summaries | Three revised films accepted/published per owner; Story URLs recorded | Source package transferred; SSI implementation in progress; await owner result |
+| One Random Life | 118s film and full English kit; YouTube link owner-supplied | Preserve bounded OCR/portrait evidence; audience metrics and independent playback unknown |
 | Pocket OS review | Explicitly paused; shot plan retained | Owner resumption and usable device footage; no automatic filming/development |
 | YouTube Trends pilot | Two English Shorts plus 60s Dream Walk and 20min ambient film; owner supplied four YouTube URLs | Retain dated hypothesis/publication evidence; compare available metrics later without assuming success |
 | Möbius Walk | Fourth PlayMCP game published, final native format pass and clean judge | Reuse the scoped ambient-capture method; no automatic new build |
@@ -45,8 +49,9 @@ Next use one fitting method from the [curated prompt queue](research/prompt-libr
 The six earlier illustrative weekly demos were rejected. The later partner brief
 and two presentation references resumed SSI work; the enlarged Part I layout was
 accepted before partners requested voice-only audio and longer holds. All three
-revised masters are now delivered. Final-version partner acceptance/publication
-remain pending. The owner finds the pacing slow but retained the partner request.
+revised masters are now delivered; the owner subsequently reported partner
+acceptance and supplied three Instagram Story publication URLs. Playback,
+visibility and uploaded-byte identity are independently unverified. The owner finds the pacing slow but retained the partner request.
 [Brand-profile trial and limitations](experiments/ssi-brand-profiles.md).
 
 Framewright does not connect to SSI data or publish Telegram reports. Once format
@@ -125,7 +130,7 @@ window), one selected production brief and an engine-specific missing-shot need.
 Use those to test decisions; adding more providers is not itself product progress.
 Do not connect analytics, start scheduled polling or infer audience success.
 
-Pocket OS remains paused; the delivered SSI series awaits partner feedback. Voice cloning, additional world
+Pocket OS remains paused; the SSI series is accepted/published per owner report. Voice cloning, additional world
 providers and general multimodal review remain research candidates. Free Gemini UI
 probes did not pass the separate audio test. The next production experiment is an
 owner discussion after this software closeout, not an automatic render queue.
@@ -138,7 +143,7 @@ full methods/evidence remain in the [production guide](production-guide.md).
 [Studio instructions](../skills/video-production-router/references/studio-workflows.md#representative-sample-when-it-reduces-risk)
 now describe conditional representative samples and minimal reuse measurements.
 These are preparation, not proof of reduced time or improved films. Discuss the
-next active video with the owner; preserve Pocket OS pause and the SSI feedback wait.
+next active video with the owner; preserve Pocket OS pause and the separate SSI integration boundary.
 
 ## After the published color-study pass
 
@@ -147,4 +152,4 @@ next active video with the owner; preserve Pocket OS pause and the SSI feedback 
 3. **Creative route:** a compact Good Dog excerpt if supplied, or a separate original mini-scene. Approve its world/character rights and camera needs first; no new generation/provider purchase is implied.
 4. **Results:** add dated owner-supplied analytics for the published Trends films to existing outcome utilities. Compare only compatible upload-age/windows; distinguish unknown monetization from zero revenue. No automatic monitoring or channel access is added.
 
-The current execution order above takes precedence over these earlier options. Pocket OS remains paused and SSI awaits feedback. This list does not execute new productions.
+The current execution order above takes precedence over these earlier options. Pocket OS remains paused; accepted SSI templates are retained. This list does not execute new productions.

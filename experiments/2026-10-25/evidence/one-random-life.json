@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-25",
+  "scope": "English first-draw browser-life review with fictional portrait stages; owner-reported YouTube publication",
+  "final": {
+    "local_output": "one-in-eight-billion-20261025/delivery/One-Random-Life-1-in-8-Billion-EN.mp4",
+    "sha256": "a5d51bc26687c1814ca8b277eac5a8f6282192a396698cd081491c8dd81f21c2",
+    "bytes": 24655749
+  },
+  "full_decode": {
+    "result": "pass",
+    "error": "",
+    "decoded_seconds": 118.0,
+    "video_frames": 2832
+  },
+  "streams": [
+    {
+      "index": 0,
+      "codec_name": "h264",
+      "codec_type": "video",
+      "width": 1920,
+      "height": 1080,
+      "avg_frame_rate": "24/1",
+      "disposition": {
+        "attached_pic": 0
+      }
+    },
+    {
+      "index": 1,
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "avg_frame_rate": "0/0",
+      "disposition": {
+        "attached_pic": 0
+      }
+    }
+  ],
+  "audio": {
+    "integrated_lufs": -16.2,
+    "true_peak_dbtp": -1.27,
+    "lra_lu": 9.1,
+    "measurement": "Encoded AAC track measured by FFmpeg loudnorm; not a listening verdict"
+  },
+  "source": {
+    "home": "https://1in8b.life/en/",
+    "about": "https://1in8b.life/en/about/",
+    "terms": "https://1in8b.life/en/terms/",
+    "version_observed": "0.8.39 beta",
+    "data_audit": "Not independently audited;172-country coverage attributed to creators",
+    "capture": "4047 native frames and62 screenshot/AX bookmarks in bounded screencast bursts; not continuous session recording",
+    "playthrough": "One first draw, manual choices, native16x speed; no rerolls or save/code modification"
+  },
+  "fictional_story": {
+    "name": "Anita Gautam",
+    "birth": 2026,
+    "death": 2111,
+    "age": 85,
+    "origin": "Rural Odisha, India",
+    "ending": "Complications of diabetes; one child and one grandchild"
+  },
+  "portraits": {
+    "count": 5,
+    "stages": [
+      6,
+      18,
+      40,
+      70,
+      85
+    ],
+    "method": "Built-in image generation with identity reference and age variants; illustrative labels in film",
+    "provider_calls_including_cover": 6,
+    "provider_cost": "not reported",
+    "real_person_photos": false,
+    "owner_requested": true
+  },
+  "ocr_trial": {
+    "tool": "tesseract 5.5.1",
+    "initial_phrases_matched": 9,
+    "initial_total": 11,
+    "failure": "Two school phrases missed in a transient capture",
+    "follow_up": "Neighboring settled frames recovered both; frame585 used. Frame1470 retrieved pneumonia/recovery/bedside. Initial9/11 retained.",
+    "qualification": "Exact English source-phrase retrieval only; not semantic or continuous video review"
+  },
+  "rights": {
+    "game_video": "Official About/Terms expressly permit videos, including monetized, credit included",
+    "portraits": "Original fictional AI illustrations, not real photos or game assets",
+    "music": "Original local sample-free piano/pad score",
+    "voice": "Cached local Supertonic3 M1 English"
+  },
+  "failures": [
+    "Background browser capture pump failed; synchronous bounded bursts substituted",
+    "Transitional UI was tiny despite unchanged image dimensions; stable native frames selected",
+    "University crop clipped heading; moved upward",
+    "Chronology58-to57 flashback corrected; home47 and spouse58 record inserted; two voice phrases regenerated"
+  ],
+  "review": {
+    "technical": "118s2832frames full decode passed; encoded -16.20LUFS/-1.27dBTP",
+    "sampled_visual": "23 encoded samples and full/reduced cover inspected by operator",
+    "owner_creative": "pending",
+    "final_listening": "pending",
+    "subtitle_alignment": "Proportional chunks; optional timing review pending",
+    "publication": "Owner supplied YouTube URL; visibility, playback and uploaded bytes independently unverified",
+    "audience_metrics": "not measured"
+  },
+  "reusable_lesson": "Bind each narrated fact to a captured decision/result; require stable visible pixels as well as accessible text; keep portrait continuity, measurement, listening and owner acceptance separate.",
+  "publication": {
+    "url": "https://youtu.be/bNpRyDZsCHg",
+    "verification": "owner_report",
+    "visibility": "unknown",
+    "uploaded_bytes": "not_verified"
+  },
+  "publication_copy": {
+    "youtube": "English title/description/tags in separate files and one complete combined package",
+    "substack": "Short English Note accepted by owner; no Substack publication URL supplied"
+  }
+}

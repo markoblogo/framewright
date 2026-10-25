@@ -109,15 +109,19 @@
     "route": "authored-react-film",
     "production_method": "profile-driven-report-slides-with-local-english-commentary",
     "evidence": "experiments/2026-10-25/evidence/ssi-brand-series.json",
-    "qa_scope": "40.0s1080x1920p30/full decode; shared brand bundle; English voice only, no music/SFX; measured post-voice reading hold. Delivered to partner per owner; revised-master acceptance and publication pending.",
-    "publication_visibility": "not_reported",
+    "qa_scope": "40.0s1080x1920p30/full decode; shared brand bundle; English voice only, no music/SFX; measured post-voice reading hold. Owner reports revised master accepted by partners and published; Story URL supplied, playback/visibility/uploaded bytes independently unverified.",
+    "publication_visibility": "unknown",
     "audience_metrics": "not_measured",
     "evidence_checks": [
       "\"full_decode\"",
       "\"brand_reuse\"",
       "\"partner_feedback\"",
       "\"rights\""
-    ]
+    ],
+    "publication_url": "https://www.instagram.com/stories/spikebrokers/4015941449573072428/",
+    "publication_verification": "owner_reported_partner_acceptance_and_publication",
+    "publication_surface": "Instagram Story",
+    "publication_mapping": "supplied part order, not independently compared"
   },
   {
     "local_output": "ssi-report-series-20261025/delivery/SSI-02-Grains-EN-VoiceOnly.mp4",
@@ -127,15 +131,19 @@
     "route": "authored-react-film",
     "production_method": "profile-driven-report-slides-with-local-english-commentary",
     "evidence": "experiments/2026-10-25/evidence/ssi-brand-series.json",
-    "qa_scope": "56.6s1080x1920p30/full decode; shared brand bundle; English voice only, no music/SFX; measured post-voice reading hold. Delivered to partner per owner; revised-master acceptance and publication pending.",
-    "publication_visibility": "not_reported",
+    "qa_scope": "56.6s1080x1920p30/full decode; shared brand bundle; English voice only, no music/SFX; measured post-voice reading hold. Owner reports revised master accepted by partners and published; Story URL supplied, playback/visibility/uploaded bytes independently unverified.",
+    "publication_visibility": "unknown",
     "audience_metrics": "not_measured",
     "evidence_checks": [
       "\"full_decode\"",
       "\"brand_reuse\"",
       "\"partner_feedback\"",
       "\"rights\""
-    ]
+    ],
+    "publication_url": "https://www.instagram.com/stories/spikebrokers/4015941570192817866/",
+    "publication_verification": "owner_reported_partner_acceptance_and_publication",
+    "publication_surface": "Instagram Story",
+    "publication_mapping": "supplied part order, not independently compared"
   },
   {
     "local_output": "ssi-report-series-20261025/delivery/SSI-03-Oilseeds-EN-VoiceOnly.mp4",
@@ -145,14 +153,45 @@
     "route": "authored-react-film",
     "production_method": "profile-driven-report-slides-with-local-english-commentary",
     "evidence": "experiments/2026-10-25/evidence/ssi-brand-series.json",
-    "qa_scope": "79.4s1080x1920p30/full decode; shared brand bundle; English voice only, no music/SFX; measured post-voice reading hold. Delivered to partner per owner; revised-master acceptance and publication pending.",
-    "publication_visibility": "not_reported",
+    "qa_scope": "79.4s1080x1920p30/full decode; shared brand bundle; English voice only, no music/SFX; measured post-voice reading hold. Owner reports revised master accepted by partners and published; Story URL supplied, playback/visibility/uploaded bytes independently unverified.",
+    "publication_visibility": "unknown",
     "audience_metrics": "not_measured",
     "evidence_checks": [
       "\"full_decode\"",
       "\"brand_reuse\"",
       "\"partner_feedback\"",
       "\"rights\""
-    ]
+    ],
+    "publication_url": "https://www.instagram.com/stories/spikebrokers/4015941679731245298/",
+    "publication_verification": "owner_reported_partner_acceptance_and_publication",
+    "publication_surface": "Instagram Story",
+    "publication_mapping": "supplied part order, not independently compared"
+  },
+  {
+    "local_output": "one-in-eight-billion-20261025/delivery/One-Random-Life-1-in-8-Billion-EN.mp4",
+    "sha256": "a5d51bc26687c1814ca8b277eac5a8f6282192a396698cd081491c8dd81f21c2",
+    "bytes": 24655749,
+    "id": "one-random-life",
+    "route": "footage-compilation",
+    "production_method": "native-browser-capture-editorial-with-fictional-age-portraits",
+    "evidence": "experiments/2026-10-25/evidence/one-random-life.json",
+    "qa_scope": "118s1080p24/2832frames full decode; -16.20LUFS/-1.27dBTP;23 sampled encoded frames;5 fictional portrait stages;9/11 initial OCR phrase trial plus settled-frame follow-up. Owner creative/listening pending; YouTube publication owner-reported; playback/visibility/uploaded bytes and audience results unverified.",
+    "thumbnail": {
+      "local_output": "one-in-eight-billion-20261025/delivery/Thumbnail.png",
+      "sha256": "206c6b7c33c5ce8d77bcca8d57935edfa4bbab1677e78a581a40d3fea0d897ad",
+      "bytes": 1506633,
+      "format": "png",
+      "width": 1280,
+      "height": 720
+    },
+    "publication_verification": "owner_reported_url",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"rights\"",
+      "\"failures\""
+    ],
+    "publication_url": "https://youtu.be/bNpRyDZsCHg",
+    "publication_visibility": "unknown"
   }
 ]

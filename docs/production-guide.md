@@ -97,7 +97,9 @@ three working examples, owner narration and recorded credit usage.
 owner-supplied publication URLs. The English SSI website Reels is also published
 per owner report; both language versions were accepted by partners. The earlier weekly-report demos were not accepted. A later partner brief resumed
 the work: [three voice-only report films](experiments/ssi-brand-profiles.md) are
-delivered and awaiting partner feedback; no recurring SSI integration is deployed.
+accepted/published per owner report. Sources and algorithms were transferred to SSI;
+its integration is in progress, not a verified scheduled deployment.
+[Receiving-project contract](external-project-handoff.md).
 Pocket OS production is explicitly paused; its device shot plan is retained. The
 [Nantes illustrated journey](experiments/nantes-pixel-journey.md) has an owner-supplied
 publication URL. Further world/fiction production remains deferred;
@@ -151,6 +153,7 @@ Private author assets are not redistributed; use the open reference film to star
 | Vertical site promo with fixed captions | Native browser frames → FFmpeg → HyperFrames | Two 15s SSI Reels (UK/EN); sampled QA retained; both partner acceptances owner-reported |
 | Ambient video from a game | Babylon.js canvas → FFmpeg | One 120s canonical cycle extended to 20min; timing/repetition disclosed, sampled seam QA |
 | Generated cinematic mini-film | PlayMCP clips → FFmpeg + Supertonic | One six-shot 60s garden film; fixed-camera moving scenes, no persistent-world claim |
+| Complete browser playthrough → compact review | Native browser capture/AX event ledger → Tesseract OCR → portraits → Supertonic → FFmpeg | One 118s first-draw life; bounded phrase retrieval, not semantic video review |
 | Recut existing films | MoviePy + FFmpeg | Manual compilation recipe; automatic semantic selection unqualified |
 
 [Recipes](../skills/video-production-router/references/recipes.md) ·

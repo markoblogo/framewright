@@ -209,13 +209,13 @@
   "partner_feedback": {
     "accepted": "Earlier enlarged Part I visual style, owner report",
     "requested": "Remove music; retain English words/commentary; extend data holds by about two seconds",
-    "latest": "Owner sent all three revised films to partner; awaiting comments",
+    "latest": "Owner reports all three revised films accepted by partners and published; supplied Story URLs mapped in report-part order.",
     "owner_preference": "Owner finds revised pace too slow but retained partner-requested pacing; not partner rejection"
   },
   "review": {
     "technical": "Retained full-decode passes bound to matching master hashes",
-    "creative_listening": "Revised masters pending separate acceptance",
-    "publication": "No link supplied or publication verified"
+    "creative_listening": "Partner acceptance owner-reported; no independent final listening attestation",
+    "publication": "Owner-supplied Instagram Story URLs; visibility, playback and uploaded-byte identity unverified"
   },
   "failures": [
     "Earlier six illustrative demos were not accepted; retained as superseded style experiments",
@@ -223,5 +223,45 @@
     "First website capture had grey padding; replaced by actual page-frame capture",
     "Initial long render failed disk-margin check; lower-memory single-worker retry completed"
   ],
-  "paid_generation_calls": 0
+  "paid_generation_calls": 0,
+  "publication": [
+    {
+      "part": "logistics",
+      "url": "https://www.instagram.com/stories/spikebrokers/4015941449573072428/",
+      "surface": "Instagram Story",
+      "verification": "owner_report",
+      "visibility": "unknown"
+    },
+    {
+      "part": "grains",
+      "url": "https://www.instagram.com/stories/spikebrokers/4015941570192817866/",
+      "surface": "Instagram Story",
+      "verification": "owner_report",
+      "visibility": "unknown"
+    },
+    {
+      "part": "oilseeds",
+      "url": "https://www.instagram.com/stories/spikebrokers/4015941679731245298/",
+      "surface": "Instagram Story",
+      "verification": "owner_report",
+      "visibility": "unknown"
+    }
+  ],
+  "template_retention": {
+    "id": "ssi-weekly-template-v1",
+    "status": "Accepted renderer baselines, shared assets, source hashes, three accepted-film design contracts and baseline content/cue records retained locally",
+    "controls": "short/long/missing-optional-media packets validate; render controls unperformed",
+    "automation": "not_deployed_in_SSI",
+    "new_variant_approval_inherited": false
+  },
+  "integration_handoff": {
+    "status": "in_progress_in_SSI_per_owner",
+    "evidence": "experiments/2026-10-25/evidence/ssi-weekly-handoff.json",
+    "schedule_activation": "not_verified",
+    "languages": {
+      "report": "uk",
+      "video": "en"
+    },
+    "delivery": "text I/video I/text II/video II/text III/video III"
+  }
 }

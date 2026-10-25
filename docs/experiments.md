@@ -88,7 +88,7 @@ unconfirmed. Decoded English/Ukrainian soundtracks match exactly. Audience resul
 are unknown.
 The earlier weekly-report demos were not accepted. A later supplied partner brief
 led to the [three-part voice-only report series](experiments/ssi-brand-profiles.md):
-delivered, partner comments pending; no SSI integration or publication inferred.
+accepted/published per owner report; renderer templates retained; no SSI integration or publication inferred.
 
 [Two English Trends-led Shorts: publication links](experiments/trend-shorts-publication.md)
 now includes both actual final exports, bounded TerminalTextEffects evidence and
@@ -108,5 +108,14 @@ film using actual mapped geometry, Pixel Path road capture and original landmark
 illustrations. Full decode and four paired-frame checks; owner-reported YouTube
 publication, final listening and audience outcomes remain unqualified. Together
 with the three [SSI profile-driven report films](experiments/ssi-brand-profiles.md),
-the current registry contains **37 final exports**. Revisions of one film do not
+that checkpoint contains **37 final exports**. Revisions of one film do not
 count as new productions; local delivery is separate from publication.
+
+[One Random Life](experiments/one-random-life.md):118s English browser-life review,
+one first-draw playthrough, five fictional portrait stages and bounded Tesseract
+source retrieval. Encoded technical and sampled visual checks completed; owner
+creative/listening review pending. This brings the registry to **38 final exports**;
+[YouTube publication](https://youtu.be/bNpRyDZsCHg) is owner-reported; playback and audience outcomes are unverified.
+
+The SSI series now has a [receiving-project source handoff](external-project-handoff.md).
+It creates no additional film/export count. Integration remains in progress in SSI.

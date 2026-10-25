@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-25",
+  "scope": "Source/algorithm transfer to SSI; no implementation or live posting in Framewright",
+  "package": {
+    "id": "ssi-receiving-handoff-v1",
+    "manifest_sha256": "2ca07391514052dad42ee859a851573f9fde18b994987d1708c6ed8c6cb1a14b",
+    "files": 115,
+    "total_bytes": 63717703,
+    "integrity": "115 files checked without mismatch before transfer",
+    "contents": [
+      "three accepted masters",
+      "accepted renderer/brand/voice baselines",
+      "design contracts and boundary packets",
+      "original typed input schema",
+      "algorithm/runtime/QA/delivery instructions"
+    ],
+    "private_media_committed": false
+  },
+  "authority": "Owner explicitly authorized direct contact with SSI and clarified Ukrainian reports/English videos in three paired deliveries",
+  "delivery_order": [
+    "uk report I",
+    "en video I",
+    "uk report II",
+    "en video II",
+    "uk report III",
+    "en video III"
+  ],
+  "transfer": "App messaging returned the matched destination thread ID; receiver acknowledged and began local compatibility work",
+  "status": "integration_in_progress_per_owner",
+  "verified_here": [
+    "package file integrity",
+    "source/contract handoff",
+    "no live channel send from Framewright"
+  ],
+  "pending_from_receiver": [
+    "typed report-to-scene adapter",
+    "new voice/chart retiming",
+    "historical/boundary render controls",
+    "scheduled worker/storage readiness",
+    "six-item ordered idempotent delivery tests",
+    "activation and actual scheduled delivery receipts"
+  ],
+  "boundaries": [
+    "Earlier no-out-of-schedule-generation/publication instruction preserved",
+    "No second Framewright scheduler",
+    "Existing SSI quality hold and production activation remain receiving-project concerns",
+    "No new paid service or voice clone authorized"
+  ]
+}

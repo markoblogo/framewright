@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-25",
+  "scope": "documentation_registry_evidence_and_handoff_closeout",
+  "offline_checks": {
+    "result": "pass",
+    "entrypoint": "python3 scripts/check.py --scope docs",
+    "unit_tests": 337,
+    "unit_seconds": 161.165,
+    "skipped": 1,
+    "router_and_storyboard_packets": "integrity_checks_pass_not_model_evaluation",
+    "records_links_catalogue": "10 methods,38 outputs,17scenario specifications",
+    "generated_tool_matrix": "matches_registry",
+    "standalone_package_smoke": "pass_temporary_only"
+  },
+  "retained_attempts": [
+    {
+      "attempt": "initial_full_entrypoint",
+      "result": "incomplete/no_unit_summary",
+      "pass_inferred": false
+    },
+    {
+      "attempt": "verbose_unit_run",
+      "result": "failed",
+      "tests": 337,
+      "failures": 3,
+      "skipped": 1,
+      "causes": [
+        "vertical-format advertised too broadly",
+        "staged-3D gate lost the vertical requirement",
+        "retained search example drifted"
+      ]
+    },
+    {
+      "attempt": "focused_recovery",
+      "result": "pass",
+      "tests": 3,
+      "fixes": [
+        "restored documented-only general vertical gate with scoped SSI note",
+        "regenerated current search example"
+      ],
+      "tests_weakened": false
+    }
+  ],
+  "public_hygiene": {
+    "changed_files_scanned": 24,
+    "detected_private_paths_or_key_patterns": 0,
+    "media_models_archives_in_change_set": 0,
+    "scope": "Changed files only; not a universal secret guarantee"
+  },
+  "tool_scope": [
+    "Tesseract OCR distinct from Tesseract Converter",
+    "Built-in fictional portrait generation recorded,backend/cost not reported",
+    "M1 English and earlier accepted F1 English references retained separately",
+    "Native capture background-pump failure retained",
+    "SSI vertical/audio evidence stays bounded; general vertical gate preserved"
+  ],
+  "automatic_model_calls": 0,
+  "new_media_renders": 0,
+  "release_created": false,
+  "version_changed": false,
+  "ssi_scheduled_delivery": "not_verified_integration_in_progress_per_owner",
+  "log_sha256": "1bdb760792c8f06b6d1c287642606c6aaebdafb93ac9fa30b06e5443c0d9443b"
+}

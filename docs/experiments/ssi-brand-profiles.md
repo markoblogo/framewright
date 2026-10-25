@@ -7,8 +7,8 @@ The owner supplied two SPIKE Brokers decks and a three-part weekly report. Partn
 preferred a presentation-led report with main figures and narration over the older
 illustrated transport experiments. They accepted the enlarged Part I visual style,
 then requested removal of background music and about two additional seconds before
-slide changes. Approval is owner-reported. Revised audio/pacing and Parts II/III still
-need their own review.
+slide changes. Approval is owner-reported. The owner later reported acceptance/publication of all three revised films;
+independent final listening remains unrecorded.
 
 ## Reusable profile
 
@@ -61,10 +61,10 @@ yet a deployed weekly-report generator and does not connect to SSI data or Teleg
 
 ## Delivery and closeout
 
-The owner sent all three revised voice-only masters to the partner. Further
-comments and publication links are pending. The owner considers the revised pace
+The owner sent all three revised voice-only masters to the partner, then reported
+all three accepted and published. The supplied URLs point to Stories. The owner considers the revised pace
 too slow but preserved the partner's requested reading holds; this is not a partner
-rejection. No further redesign or recurring automation starts while feedback is pending.
+rejection. The later explicit owner instruction authorizes transfer to SSI; acceptance alone did not start recurring automation.
 
 [Final hashes, decode reports and feedback status](../../experiments/2026-10-25/evidence/ssi-brand-series.json)
 retain the same profile/CSS/logo across all three bundles. Closeout checked the
@@ -77,3 +77,39 @@ Audit found that `settled_hold_seconds`, already present in the retained SSI
 profile and documented contract, was rejected by the helper. A public-CLI regression
 failed before the fix and passes afterward; zero-to-ten-second holds now validate
 and export to CSS. Other unknown fields and invalid values remain rejected.
+
+## Accepted baseline retained for weekly reuse
+
+- [Part I — logistics](https://www.instagram.com/stories/spikebrokers/4015941449573072428/)
+- [Part II — grains](https://www.instagram.com/stories/spikebrokers/4015941570192817866/)
+- [Part III — oilseeds](https://www.instagram.com/stories/spikebrokers/4015941679731245298/)
+
+Mapping follows the supplied part order; Story content/playback, visibility and
+uploaded bytes were not independently checked. Permanent Reel URLs were not supplied.
+Stories may expire; retained local masters and templates do not depend on them.
+
+A private, unarchived `ssi-weekly-template-v1` handoff retains all three accepted
+HyperFrames renderer baselines, CONTENT records, original brand bundles, example
+voice tracks, cue sheets and a source-file hash manifest. Three accepted-film
+design contracts were extracted against the exact accepted video pins. Short, long
+and missing-optional-media boundary packets passed data validation; their render
+controls and general automatic chart retargeting remain unperformed. This is an
+accepted-source template handoff, not a deployed weekly generator.
+
+For each week, replace dates, source periods, numbers/chart geometry and narration;
+measure the new speech and preserve at least two seconds of settled data after it.
+The optional actual English-site ending stays separate from data. New variants
+inherit no content, voice, layout or publication approval. Recurring generation,
+scheduling and posting belong in SSI. The owner authorized direct transfer; the
+receiving SSI project is implementing it. Schedule activation is not yet verified.
+
+## Receiving-project handoff
+
+The private 115-file package includes accepted masters, exact renderer baselines,
+brand/voice assets, algorithms, a typed input contract and QA/delivery instructions.
+Its file integrity passed before authorized direct transfer. The owner confirms
+SSI work is in progress and will report the outcome. Reports remain Ukrainian;
+videos are English, sent as three ordered text/video pairs from the same frozen
+report. No Framewright scheduler, new live report or channel send was created.
+[Reusable handoff procedure](../external-project-handoff.md) ·
+[Sanitized receipt and pending checks](../../experiments/2026-10-25/evidence/ssi-weekly-handoff.json).

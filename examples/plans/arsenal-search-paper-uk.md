@@ -12,17 +12,17 @@ No single tool covers all requested filters/features;matching chains follow.
 
 ### remotion \+ supertonic3
 
-Integration check required. Related component records: agro-uk-paper-piper, framewright-remotion, spot-market-uk-lcd.
+Integration check required. Related component records: agro-uk-paper-piper, contract-execution-prompt-motion, framewright-remotion, one-random-life, spot-market-uk-lcd, ssi-weekly-grains-voice-only, ssi-weekly-logistics-voice-only, ssi-weekly-oilseeds-voice-only.
 Component capabilities:
 - video-export\: remotion \(tested\) — 
 - paper-cut-regroup\: remotion \(tested\) — Authored90-kernel field→route→contract motion,paper truck/stamp/book reveal in24s1080p30 UK promo;not physics or automatic scene generation. Native pixel-repeat discrepancy retained.
-- narration\: supertonic3 \(tested\) — M1/F1 short UK probes owner-accepted;defaultF1\(slight subjective preference\). First24s F1 video integration passed encoded checks,accepted intro reused,new title/CTA generated;final-film listening pending. Residual pause/stress errors known.
+- narration\: supertonic3 \(tested\) — M1/F1 short UK probes owner-accepted;defaultF1\(slight subjective preference\). First24s F1 video integration passed encoded checks,accepted intro reused,new title/CTA generated;final-film listening pending. Residual pause/stress errors known. M1 English\:3SSI report films plus10phrases in118s One Random Life; retained measured timing/encoded QA. SSI partner acceptance owner-reported; no new independent listening or general English quality claim. Earlier Contract Execution Officer English F1 voice was owner-accepted for that film; this preserves a separate F1 English reference rather than inferring it from M1.
 - still-export\: remotion \(tested\) — 
 - remotion\: Explicit Chromium and 120s load allowance used for full film; cold default browser failed twice, later still passed. 3D/captions/extra transition packages are documented, not locally tested. Dev audit repair retained separately.
 - remotion rights\: Remotion Free/Company licence; individual/small-team eligibility and paid features need separate checking
-- supertonic3\: M1/F1 short-script probes and one24s F1 film integrated;longer/new scripts and other voices need QA. Final film owner listening remains pending.
+- supertonic3\: M1/F1 short-script probes and one24s F1 film integrated;longer/new scripts and other voices need QA. Final film owner listening remains pending. Additional M1 English report/life-review integrations have scoped encoded/timing evidence; new final-listening judgments remain separate.
 - supertonic3\: Owner reports residual pauses and2–3 stress errors;intonation good. F1 preference is slight and subjective.
-- supertonic3\: Other upstream-documented languages are not locally qualified by this profile. No singing,cloning or other stock voices tested.
+- supertonic3\: Languages beyond the recorded UK/EN scopes are not locally qualified by this profile. No singing,cloning or other stock voices tested.
 - supertonic3\: Model output requires explicit synthetic/AI-generated disclosure;licence restrictions still apply.
 - supertonic3 rights\: SDKMIT;weightsBigScienceOpenRAIL-M,including explicit machine-generated-content disclosure;no cloning or redistribution.
 
@@ -58,15 +58,15 @@ Component capabilities:
     }
   },
   "excluded_summary": {
-    "task does not match": 41,
-    "style not indexed for this tool": 64,
-    "input kind does not match or is unindexed": 54,
+    "task does not match": 43,
+    "style not indexed for this tool": 66,
+    "input kind does not match or is unindexed": 56,
     "task evidence below requested level": 50,
-    "requested speech language not indexed at this evidence level": 63,
-    "feature unavailable or below level: video-export": 58,
-    "feature unavailable or below level: paper-cut-regroup": 64,
-    "feature unavailable or below level: narration": 63,
-    "feature unavailable or below level: still-export": 63,
+    "requested speech language not indexed at this evidence level": 65,
+    "feature unavailable or below level: video-export": 60,
+    "feature unavailable or below level: paper-cut-regroup": 66,
+    "feature unavailable or below level: narration": 65,
+    "feature unavailable or below level: still-export": 65,
     "retained rights classification excluded or unknown for requested use": 19,
     "low-quality explicit fallback;enable --include-fallbacks to inspect": 1
   },

@@ -33,6 +33,13 @@
           "version": "0.8.185",
           "evidence": "docs/experiments/ssi-site-reels.md",
           "outcome": "15s portrait real-site scroll with fixed Ukrainian captions. Padding and overlapping-video seam failures revised; one continuous stream, native/encoded sampled QA and audio measurements. Owner preview and owner-reported partner acceptance; no independent listening or public upload. Native capture and registry example are bounded partial trials. English adaptation delivered with owner preview acceptance, same caption styles and identical decoded PCM;English partner acceptance unconfirmed."
+        },
+        {
+          "date": "2026-10-25",
+          "kind": "scoped_production_trial",
+          "version": "0.8.185",
+          "evidence": "docs/experiments/ssi-brand-profiles.md",
+          "outcome": "Three English voice-only1080x1920/30fps films40.0/56.6/79.4s reuse pinned branding; encoded decode and settled holds recorded. Partner acceptance/publication owner-reported. Two-worker oilseeds disk-margin failure retained; single-worker streaming succeeded. Accepted-source transfer is not receiving-runtime or scheduled-delivery qualification."
         }
       ]
     },
@@ -62,6 +69,12 @@
           "kind": "scoped_production_trial",
           "evidence": "docs/experiments/photo-series-cinema.md",
           "outcome": "30s1080p24/720frames full decode; audio replacement by picture stream copy; video hashes and packet timing identical; encoded/master audio correlation .999807; extracted-frame PNG cover checked separately."
+        },
+        {
+          "date": "2026-10-25",
+          "kind": "scoped_production_trial",
+          "evidence": "docs/experiments/one-random-life.md",
+          "outcome": "118s1080p24/2832frames full decode; gentle still zoom, selected native frames, concat/mux and original score/voice mix. Encoded -16.20LUFS/-1.27dBTP;23sampled frames. Listening and continuous motion review not inferred."
         }
       ]
     },
@@ -610,6 +623,14 @@
         "experiments/2026-10-15/spot-market-uk-voice-probe.md",
         "experiments/2026-10-15/spot-market-uk-lcd.md",
         "experiments/2026-10-15/contract-execution-prompt-motion.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-25",
+          "kind": "scoped_production_trial",
+          "evidence": "docs/production-tools-2026-10-25.md",
+          "outcome": "StockM1 English used in3SSI report films and10phrases/96.97spoken seconds in118s One Random Life. New voice measured and picture retimed; old narration retained only where text unchanged. SSI partner acceptance owner-reported; independent final listening remains unrecorded. No voice clone/cloud fallback. Synthetic voice disclosed."
+        }
       ]
     },
     {
@@ -1117,6 +1138,38 @@
       "evidence": [
         "docs/research/video-guided-rig-animation.md",
         "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "tesseract-ocr",
+      "name": "Tesseract OCR engine",
+      "url": "https://github.com/tesseract-ocr/tesseract",
+      "reviewed": "2026-10-25",
+      "review_basis": "Installed5.5.1 English exact-phrase source retrieval in One Random Life; upstream identity/licence checked",
+      "upstream_revision": "local5.5.1",
+      "disposition": "supported_scoped",
+      "scope_and_findings": "9/11 expected phrases across5screenshots initially;2school phrases missed in a transient capture. Neighboring-frame follow-up found settled text; frame585 used. Frame1470 retrieved pneumonia/recovery/bedside. Not Tesseract Converter; no semantic/general video review or independent11/11 claim.",
+      "licence_note": "Apache-2.0 engine; source-image rights and traineddata licence remain separate.",
+      "next_trial_or_retest_condition": "Only another concrete retrieval need with its own retained labels; no unchanged rerun for a better score.",
+      "evidence": [
+        "docs/experiments/one-random-life.md",
+        "experiments/2026-10-25/evidence/one-random-life.json"
+      ]
+    },
+    {
+      "id": "codex-imagegen",
+      "name": "Built-in Codex image generation",
+      "url": "https://developers.openai.com/api/docs/guides/image-generation",
+      "reviewed": "2026-10-25",
+      "review_basis": "Actual built-in image tool:5fictional age-stage portraits plus text-bearing cover, with reference images and human sampled inspection",
+      "upstream_revision": null,
+      "disposition": "supported_scoped",
+      "scope_and_findings": "Reference18 anchors fictional identity across6/18/40/70/85. Labelled portrait inserts/montages and1280x720 text cover checked full and320px. No video generation, lip sync, geometric identity guarantee or general character-consistency benchmark. API guide is background documentation, not evidence that an API/particular model was used. Exact backend model and cost were not reported.",
+      "licence_note": "Generation service terms and reference permissions apply; no fixed backend-model, cost or universal asset-clearance claim.",
+      "next_trial_or_retest_condition": "Use for a concrete authorised picture need; verify references and inspect resulting identity/text/crop.",
+      "evidence": [
+        "docs/experiments/one-random-life.md",
+        "experiments/2026-10-25/evidence/one-random-life.json"
       ]
     }
   ]

@@ -657,6 +657,28 @@
       ],
       "rights_class": "conditional",
       "licence_note_sha256": "426e3fbd40a7dbe1bdfce7334f20ea9117c285c2e7508465f79f5fed15b68508"
+    },
+    "tesseract-ocr": {
+      "tasks": [
+        "image",
+        "editing"
+      ],
+      "inputs": [
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "0e67fae8aaf8be27980c830329221950d2f7b8f4cee45ffdf0b716b4307a19ed"
+    },
+    "codex-imagegen": {
+      "tasks": [
+        "image"
+      ],
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "31057b256836be836e7bbf18be8a773afeb4a4da3a4e22a23b696fcfbc530aee"
     }
   }
 }

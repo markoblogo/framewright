@@ -91,3 +91,8 @@ private account configuration or silently copy media rights. SSI or another prod
 owns its data integration, scheduling and publication; Framewright prepares a local
 contract and evidence. Each new variant receives its own source/fact, media, voice,
 layout and final-export review through the existing production workflow.
+
+The [external-project handoff](../../../docs/external-project-handoff.md) records
+accepted source transfer, snapshot-bound language/data contracts, measured voice
+retiming and receiving-project scheduling/delivery checks. The SSI example is an
+in-progress transfer, not a deployed generic weekly generator.
