@@ -1,10 +1,22 @@
 # Proposed experiment queue
 
-Updated 2026-10-24. This is a task-led backlog, not permission for unattended tests,
+Updated 2026-10-25. This is a task-led backlog, not permission for unattended tests,
 installs, model downloads, spending, account grants or public media uploads.
 Use an owner-selected subject with authorised sources. Discuss the subject and bounded brief before
 each actual new-tool experiment. [Research](tool-research.md) ·
 [Decision ledger](../skills/video-production-router/references/review-ledger.json).
+
+## Short narrative book/project promos — prepared,2026-10-25
+
+[Original module](../skills/video-production-router/references/narrative-promos.md) informed by the owner-supplied mobile-ads archive, without vendoring or installation. Available: causal shot/cue handoff and a16s plan-only composition; no new film or performance evidence. Next agreed production can test one cleared book/project in15–20s: visible setup/change/consequence, cross-shot identity/prop continuity, event-aligned audio and source-backed final artwork/CTA. Compare against its approved plan, preserve rejected takes and get owner review. Select actual sources/rights/tools/budget before execution; no automatic render or model trial.
+
+## Video-guided editable rig animation — 2026-10-25
+
+[Research and staged trial](research/video-guided-rig-animation.md): owner-supplied shark demo; Tripo mesh/rig → procedural Blender actions → generated video as motion reference → constrained editable 3D action. Source MP4 sampled and decoded, not reproduced. Exact reconstruction and the claimed 45 minutes / 7% quota remain unverified. P1 local procedural baseline/known-animation control; P2 one short generated action only after provider/upload/budget approval. Require original/cleared rig, saved action, reference-view agreement, second-view plausibility, skin/occlusion/loop/continuity QA and separate costs. The exact MCP and “Omni 1.1” identities remain unresolved. No install, upload or generation now.
+
+## Game-development skills for film — documentation review, 2026-10-25
+
+[Assessment and primary-source shortlist](research/gamedev-agent-skills.md). Candidate agent instructions, not tested film tools. First priority: selective Three.js GLB/skinned animation plus coherent asset families and film-cue audio. Next: Godot timed scenes; Unreal Niagara only for a shot that needs its effects. Proposed bounded trial: 15–20s, one licensed character action across two shots, deterministic capture, continuity/contact/occlusion and encoded sound/picture QA. Select subject/assets before running; no full-pack installation or engine migration. This does not resume Pocket OS or SSI weekly work.
 
 ## Current owner priority
 
@@ -267,3 +279,15 @@ PySceneDetect0.7.2 is now indexed in the decision ledger and tool registry. Its
 `hard-cut-detection` companion requires existing video;the retained Burgers trial
 recovered4/4 authored cuts in one15s1080p30 film. This is a backfill,not a new run
 or a general scene-understanding claim. See [evidence](../experiments/2026-10-15/burgers-cue-analysis.md).
+
+## Curated prompt library — 2026-10-25
+
+[Eight scoped cards](research/prompt-library/README.md): five attributed MIT-repository prompts for code animation and three original adaptations of One Prompt Design art directions. All queued, not tested. Use one fitting card during an authorised production, recording adaptations, technical checks and owner review; no automatic generation or provider spending. Original gallery media are not copied.
+
+## Recorded-source editing — 2026-10-25
+
+[Guide review and implementation](research/ai-editing-guide.md): source inspection, source/output time maps and join-review packs implemented locally; deterministic synthetic checks only. Next authorised footage production: one 30–60s own recording, independently check word edges, preserved meaning, actual cut continuity and final subtitle timing. Existing paused productions remain paused. No ASR/provider install or new production is scheduled by this entry.
+
+## Revisions and template contracts — 2026-10-25
+
+[Precise revisions](../skills/video-production-router/references/revisions.md) and [accepted-film templates](../skills/video-production-router/references/templates.md) extend the existing journal. Follow up during a relevant production: verify an actual correction and all preservation requirements; render the three template controls with the selected renderer. CLI fixture passes alone do not establish editorial or visual quality. Pocket OS/SSI pauses persist.

@@ -1,12 +1,20 @@
 # Next production cycle
 
-Updated 24 October 2026. This is a planning record, not a render queue or spending
+Updated 25 October 2026. This is a planning record, not a render queue or spending
 authority. [Completed PlayMCP review](experiments/playmcp-service-review.md) ·
 [Experiment backlog](experiment-queue.md).
 
 ## Execution order
 
-Current closeout records the published [42s Marble color study](experiments/marble-compositing.md), sanitised author-project source and publication evidence through a checked PR; no new release. Working briefs, journal summaries, engine capture and outcome utilities are already implemented. Pocket OS and SSI weekly remain explicitly paused; supplied footage or a new idea does not automatically resume them. The next active production needs an owner-selected brief.
+Current closeout publishes the accumulated photo-series and character-animation evidence, curated research and original local editing/revision/template helpers. No new release is planned by this checkpoint. Pocket OS and SSI weekly remain explicitly paused; new files or an idea do not automatically resume them.
+
+## Completed production and prepared methods — 25 October 2026
+
+The [photo-series cinema film](experiments/photo-series-cinema.md) and [corrected 30s dog/light miniature](experiments/little-light.md) have owner-reported YouTube links. The latter retains the rejected first ending and the accepted correction: distant impact, gradual illumination, actual travel into glow and synchronized music change. Text-cover preparation is recorded independently of whether that exact cover was applied to the upload. Neither publication establishes audience performance.
+
+The [editing module](../skills/video-production-router/references/editing.md) now adds local source inspection, cut-only time maps, cue retiming and join-review proxies. [Revisions](../skills/video-production-router/references/revisions.md) preserve concrete requests and version-bound verification. [Templates](../skills/video-production-router/references/templates.md) prepare independent content/layout packets from an accepted baseline. Synthetic checks are retained; natural-speech editing and renderer-specific template quality still need a relevant authorised production.
+
+Next use one fitting method from the [curated prompt queue](research/prompt-library/README.md) during a chosen production. [Game-engine skills](research/gamedev-agent-skills.md) and [video-guided rig animation](research/video-guided-rig-animation.md) remain research candidates within their recorded limits. No new generation, account action or upload is authorised by this planning record.
 
 ## Production status and next inputs
 

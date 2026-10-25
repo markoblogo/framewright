@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -56,6 +56,12 @@
           "kind": "documentation_only",
           "evidence": "docs/personal-studio.md",
           "outcome": "Reuse recorded scope; new tasks/combinations untested; no install/upgrade/runtime promotion"
+        },
+        {
+          "date": "2026-10-25",
+          "kind": "scoped_production_trial",
+          "evidence": "docs/experiments/photo-series-cinema.md",
+          "outcome": "30s1080p24/720frames full decode; audio replacement by picture stream copy; video hashes and packet timing identical; encoded/master audio correlation .999807; extracted-frame PNG cover checked separately."
         }
       ]
     },
@@ -187,6 +193,20 @@
       "next_trial_or_retest_condition": "Reuse tested adapter; ASCII treatment, new geometry/import or formats are new scoped experiments.",
       "evidence": [
         "experiments/2026-10-15/spot-market-3d-miniature.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-25",
+          "kind": "scoped_production_trial",
+          "evidence": "docs/experiments/photo-series-cinema.md",
+          "outcome": "Accepted 30s photo-layered shallow3D set; original ink on moving paper; absolute-time five-shot camera sampler; 10 data/seek tests and two same-environment frame hashes. Not general photogrammetry or automatic segmentation."
+        },
+        {
+          "date": "2026-10-25",
+          "kind": "bounded_character_action_trial",
+          "evidence": "docs/research/gamedev-agent-skills.md",
+          "outcome": "Actual CC0 skinned dog glTF/12clips; authored local blend/head/contact cue and10s deterministic capture. Owner requested faster pacing;8s scene-retimed revision passes192frame/full-decode/audio/seek checks. New revision owner review and multi-shot continuity pending; not video-guided reconstruction or final export."
+        }
       ]
     },
     {
@@ -748,6 +768,14 @@
         "docs/research-intake-2026-10-19.md",
         "docs/research-review-2026-10-19.md",
         "docs/experiments/ssi-logistics-illustrated.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-25",
+          "kind": "scoped_production_trial",
+          "evidence": "docs/experiments/photo-series-cinema.md",
+          "outcome": "One Asian-ambient search; bounded CC0 Freesound preview download and verbatim attribution; owner accepted revised bell-toned electronic soundtrack. Existing piano rejected for fit; not a traditional-instrument claim."
+        }
       ]
     },
     {
@@ -873,6 +901,14 @@
       "next_trial_or_retest_condition": "Original simple 5s illustrative device shot, resource cap and encoded checks.",
       "evidence": [
         "docs/research-review-2026-10-21.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-25",
+          "kind": "documentation_and_external_demo_review",
+          "evidence": "docs/research/video-guided-rig-animation.md",
+          "outcome": "Owner-supplied external rigged-shark demo sampled; no local Blender/MCP trial. Proposed procedural baseline and video-guided constrained action, not exact MP4 motion capture. Existing resource/capture gates remain."
+        }
       ]
     },
     {
@@ -1049,6 +1085,38 @@
           "evidence": "docs/experiments/marble-compositing.md",
           "outcome": "Owner supplied https://youtu.be/wHOpypqPyCs; expected title and42s watch player independently observed. Original asset-dependent scene/capture/sound source sanitised for Git. Publication does not attest commercial rights, final-master listening or audience results; partial qualification retained."
         }
+      ]
+    },
+    {
+      "id": "gamedev-agent-skills",
+      "name": "Awesome GameDev Agent Skills",
+      "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+      "reviewed": "2026-10-25",
+      "review_basis": "Primary README, selected skill bodies, router, version-support and NOTICE; documentation-only film-use assessment",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Potential selective instructions for GLB/skinned actors, coherent asset families, film-cue audio, Godot animation/shaders and later Niagara. Not installed or tested. Gameplay cameras are not a cinematic capture pipeline; preserve current engine pin. README76/About74 discrepancy retained.",
+      "licence_note": "Apache-2.0 with NOTICE; scene/model/animation/engine rights separate",
+      "next_trial_or_retest_condition": "Owner-selected 15–20s two-shot action; pin selected upstream files, licensed GLB/clips, deterministic seek/capture and contact/occlusion/continuity/sound checks; no whole-pack auto-install.",
+      "evidence": [
+        "docs/research/gamedev-agent-skills.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "video-guided-rig-animation",
+      "name": "Video-guided editable rig animation (Tripo / Blender / reference video)",
+      "url": "https://developers.tripo3d.com/en/docs/animations-rig",
+      "reviewed": "2026-10-25",
+      "review_basis": "Primary component docs plus owner-supplied third-party shark MP4: full decode and sampled visual inspection, not reproduction",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Procedural loop plus generated acting reference fitted/reauthored onto a reusable rig. Marker green screen is not exact motion capture. Tripo preset retargeting is not MP4-to-rig. Exact bridge/agent/video-model identity unresolved; claimed time/quota unverified.",
+      "licence_note": "Blender/bridge code and Tripo/video/model/rig/clip rights are separate; provider/account terms and source-media clearance unresolved.",
+      "next_trial_or_retest_condition": "Local original or licensed rig baseline and known-animation positive control; then one 4–6s generated reference under explicit provider/upload/budget authority; bake/reload action, reference+alternate views and encoded QA.",
+      "evidence": [
+        "docs/research/video-guided-rig-animation.md",
+        "docs/experiment-queue.md"
       ]
     }
   ]

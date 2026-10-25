@@ -1,0 +1,84 @@
+[
+  {
+    "local_output": "good-intentions-20261025/delivery/Pokras-Lampas-Seals-of-Good-Intentions-30s.mp4",
+    "bytes": 87572324,
+    "sha256": "bb73517c316a2ee419693e20da867a310a5f5d2a8bc60fa8c56653ff82025770",
+    "id": "photo-series-cinema",
+    "route": "staged-3d-scene",
+    "production_method": "authored-photo-layered-shallow3d",
+    "evidence": "experiments/2026-10-25/evidence/photo-series-cinema.json",
+    "qa_scope": "30s1080p24/720frames/full decode; source-protected artwork; exact picture stream/timing across sound revision; -22.04LUFS/-8.59dBTP; owner picture/v2-music accepted; owner-reported corrected publication URL; uploaded bytes not verified.",
+    "thumbnail": {
+      "local_output": "good-intentions-20261025/delivery/Thumbnail.png",
+      "bytes": 1289213,
+      "sha256": "37fc60771eaefef1c4b2160136bd1c7d72b069b3db31fe85aedfe43e60a45bd5",
+      "format": "png",
+      "width": 1280,
+      "height": 720
+    },
+    "publication_verification": "owner_reported_replacement_url",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"owner_acceptance\"",
+      "\"rights\"",
+      "\"picture_packet_timing_identical\""
+    ],
+    "publication_visibility": "unknown",
+    "publication_history": [
+      {
+        "url": "https://youtu.be/9xrzfOAJ9gs",
+        "status": "owner_withdrew_during_reupload",
+        "date": "2026-10-25"
+      }
+    ],
+    "publication_url": "https://youtu.be/6c3JXdIiosg"
+  },
+  {
+    "local_output": "little-light-20261025/delivery-v3/A-Dog-Follows-a-Falling-Light-30s.mp4",
+    "bytes": 26562149,
+    "sha256": "b9f9792b8e53ebe3bc8dab55cd3218874c4e6b7b2a8f2b059a379f56a60b9548",
+    "id": "little-light",
+    "route": "staged-3d-scene",
+    "production_method": "authored-skinned-animal-multi-shot-scene",
+    "evidence": "experiments/2026-10-25/evidence/little-light.json",
+    "qa_scope": "Corrected30s1080p24/720frames/full decode; exact repeat96/576; single distant impact21.3s, gradual forest bloom,9.757m run into glow;128BPM music boundary;\u221222.47LUFS/\u22122dBTP.8s sample accepted; corrected full30s accepted by owner. Owner supplied publication URL; uploaded bytes not verified.",
+    "thumbnail": {
+      "local_output": "little-light-20261025/delivery-v3/Thumbnail.png",
+      "source_time": 5.5,
+      "width": 1280,
+      "height": 720,
+      "bytes": 838460,
+      "sha256": "b7fe5e6d7ae52d9c76f1c75a4a4dc967ab392b45bde618e81277f3dbf2dd19ea",
+      "headline": "FOLLOW THE LIGHT",
+      "method": "built-in imagegen typography edit of encoded-frame cover; FFmpeg size normalisation",
+      "viewed_full_and_320px": true,
+      "owner_acceptance": "pending cover review; MP4 remains accepted",
+      "format": "png"
+    },
+    "publication_verification": "owner_reported_url",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"owner_acceptance\"",
+      "\"rights\"",
+      "\"failures\""
+    ],
+    "revision_history": [
+      {
+        "revision": "20s before owner-requested extension",
+        "local_output": "little-light-20261025/delivery/A-Dog-Finds-a-Little-Light-20s.mp4",
+        "bytes": 23193883,
+        "sha256": "74009c20b0903caff0017309ad26567414be37e1e7249e3f9540f96533728cf5"
+      },
+      {
+        "revision": "First30s ending rejected by owner",
+        "local_output": "little-light-20261025/delivery-v2/A-Dog-Finds-a-Little-Light-30s.mp4",
+        "bytes": 32207328,
+        "sha256": "fa4f82f59c2e8d88a4812c7ed467bdbee71856bd69ba4206418aa334f2d402ae"
+      }
+    ],
+    "publication_url": "https://youtu.be/B4zdWfFIkNE",
+    "publication_visibility": "unknown"
+  }
+]

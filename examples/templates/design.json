@@ -1,0 +1,69 @@
+{
+  "id": "project-summary-v1",
+  "renderer": "Existing selected renderer; consume the JSON packet explicitly",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 24
+  },
+  "style": {
+    "palette": [
+      "#172d38",
+      "#f5f0e5",
+      "#de9d4b"
+    ],
+    "font": "Project-approved local font",
+    "spacing": "Room for one point and one illustration"
+  },
+  "fields": {
+    "headline": {
+      "type": "text",
+      "required": true,
+      "max_chars": 96,
+      "long_after": 28,
+      "example": "One useful result"
+    },
+    "narration": {
+      "type": "text",
+      "required": true,
+      "max_chars": 240,
+      "long_after": 100,
+      "example": "Explain the result and what the viewer can do next."
+    },
+    "figure": {
+      "type": "number",
+      "required": true,
+      "minimum": 0,
+      "maximum": 1000000,
+      "example": 42
+    },
+    "illustration": {
+      "type": "media",
+      "kind": "image",
+      "required": false,
+      "fallback": "omit"
+    },
+    "voice": {
+      "type": "media",
+      "kind": "audio",
+      "required": false,
+      "fallback": "silence"
+    }
+  },
+  "scenes": [
+    {
+      "id": "result",
+      "duration_seconds": 6,
+      "bindings": {
+        "title": "headline",
+        "voice_text": "narration",
+        "metric": "figure",
+        "picture": "illustration",
+        "audio": "voice"
+      },
+      "layout": "title-picture",
+      "long_text_layout": "expanded-copy",
+      "missing_media_layout": "type-and-figure"
+    }
+  ]
+}

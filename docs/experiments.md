@@ -95,4 +95,8 @@ owner-supplied YouTube links; audience performance remains unknown.
 [Möbius Walk and Dream Walk films](experiments/dream-walk.md): fourth published
 game, a generated 60s garden film and a twenty-minute real-game recording; scoped
 Babylon/canvas-loop evidence, explicit approvals and actual 30,508-credit total.
-Those four artifacts brought the registry to 30 recorded exports. The later 42s Marble color study brings the current total to **31**.
+Those four artifacts brought the registry to 30 recorded exports. The later 42s Marble color study brought the total to 31; the accepted photo-series art film brought the total to32; the later20s Little Light film brings the current total to **33**.
+
+[Photo-series cinema](experiments/photo-series-cinema.md): an accepted 30s 16:9 film from six photographs; shallow3D paper, protected source ink, extracted camera component, exact picture preservation through a music revision, and an unarchived English YouTube kit. The corrected [publication URL](https://youtu.be/6c3JXdIiosg) is owner-reported. Audience results remain unknown.
+
+[Little Light](experiments/little-light.md):30s multi-shot rigged dog animation, accepted8s pacing trial, original local light/sound, corrected distant-impact/forest-bloom/run ending with synchronised music change, English kit; corrected30s accepted by owner; [publication URL](https://youtu.be/B4zdWfFIkNE) supplied by owner.

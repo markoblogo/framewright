@@ -1,0 +1,11 @@
+{
+  "sources": [
+    {"id": "take-1", "path": "originals/take-1.mp4", "transcript": [], "observations": []},
+    {"id": "screen-1", "path": "originals/screen-1.mp4", "transcript": [], "observations": []}
+  ],
+  "edits": [
+    {"source": "take-1", "in_seconds": 0, "out_seconds": 3, "reason": "Proposed opening; verify the actual phrase and action"},
+    {"source": "screen-1", "in_seconds": 2, "out_seconds": 6, "reason": "Proposed action and result; verify continuity"},
+    {"source": "take-1", "in_seconds": 6, "out_seconds": 9, "reason": "Proposed conclusion; preserve qualifications"}
+  ]
+}

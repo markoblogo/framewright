@@ -4,6 +4,10 @@ For repackaging an existing film, sourced insight stories and hybrid production.
 These helpers extend the existing router/checkpoint, not a new editor. Current
 qualification is **experimental planning only**; no A/B/C film has been produced.
 
+For local recorded takes, the optional [editing module](editing.md) adds actual
+file inspection, source/output cut maps, retimed cues and bounded join-review
+media. It is a sidecar to this intake, not another project ledger.
+
 ## Conditional intake → existing production checkpoint
 
 In a checkout, inspect `examples/workflows/repackaging.json`, `insight.json` or

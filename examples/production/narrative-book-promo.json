@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "materials": [
+    {
+      "id": "book-source",
+      "kind": "text",
+      "subject": null,
+      "origin": "Approved synopsis and publication facts still needed",
+      "rights": {
+        "status": "unknown",
+        "basis": "Plan-only example; no actual source files or reuse permissions checked",
+        "uses": [],
+        "attribution": "",
+        "restrictions": []
+      }
+    },
+    {
+      "id": "book-art",
+      "kind": "image",
+      "subject": null,
+      "origin": "Owner-cleared exact cover and art still needed",
+      "rights": {
+        "status": "unknown",
+        "basis": "Plan-only example; no actual source files or reuse permissions checked",
+        "uses": [],
+        "attribution": "",
+        "restrictions": []
+      }
+    },
+    {
+      "id": "closed-book",
+      "kind": "video",
+      "subject": null,
+      "origin": "Planned symbolic closed-book shot; not recorded or generated",
+      "rights": {
+        "status": "unknown",
+        "basis": "Plan-only example; no actual source files or reuse permissions checked",
+        "uses": [],
+        "attribution": "",
+        "restrictions": []
+      }
+    },
+    {
+      "id": "opening-book",
+      "kind": "video",
+      "subject": null,
+      "origin": "Planned symbolic opening action; not recorded or generated",
+      "rights": {
+        "status": "unknown",
+        "basis": "Plan-only example; no actual source files or reuse permissions checked",
+        "uses": [],
+        "attribution": "",
+        "restrictions": []
+      }
+    },
+    {
+      "id": "story-world",
+      "kind": "video",
+      "subject": null,
+      "origin": "Planned interpretive world insert; not a claimed canonical plot scene",
+      "rights": {
+        "status": "unknown",
+        "basis": "Plan-only example; no actual source files or reuse permissions checked",
+        "uses": [],
+        "attribution": "",
+        "restrictions": []
+      }
+    },
+    {
+      "id": "book-endcard",
+      "kind": "video",
+      "subject": null,
+      "origin": "Planned actual-cover end card with approved title/CTA",
+      "rights": {
+        "status": "unknown",
+        "basis": "Plan-only example; no actual source files or reuse permissions checked",
+        "uses": [],
+        "attribution": "",
+        "restrictions": []
+      }
+    },
+    {
+      "id": "score",
+      "kind": "audio",
+      "subject": null,
+      "origin": "Planned sound bed/cue at opening event; no audio produced",
+      "rights": {
+        "status": "unknown",
+        "basis": "Plan-only example; no actual source files or reuse permissions checked",
+        "uses": [],
+        "attribution": "",
+        "restrictions": []
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "id": "anomaly",
+      "tell": "Invite curiosity with a symbolic book image",
+      "show": "A narrow light leaks from a closed book; single slow push",
+      "materials": [
+        "closed-book",
+        "book-source",
+        "book-art"
+      ],
+      "narration": {
+        "text": "",
+        "material": null
+      },
+      "missing": [
+        "Select an actual book and approved synopsis/art",
+        "Review interpretation and continuity",
+        "Produce and inspect this shot; no asset or rights claim is cleared"
+      ]
+    },
+    {
+      "id": "discovery",
+      "tell": "Show the consequence of opening the book",
+      "show": "The same hand opens the same book; light spills into the room",
+      "materials": [
+        "opening-book",
+        "book-source",
+        "book-art"
+      ],
+      "narration": {
+        "text": "",
+        "material": null
+      },
+      "missing": [
+        "Select an actual book and approved synopsis/art",
+        "Review interpretation and continuity",
+        "Produce and inspect this shot; no asset or rights claim is cleared"
+      ]
+    },
+    {
+      "id": "world",
+      "tell": "Offer an interpretive glimpse of the story atmosphere",
+      "show": "Cut to one landscape matching the approved synopsis mood",
+      "materials": [
+        "story-world",
+        "book-source",
+        "book-art"
+      ],
+      "narration": {
+        "text": "",
+        "material": null
+      },
+      "missing": [
+        "Select an actual book and approved synopsis/art",
+        "Review interpretation and continuity",
+        "Produce and inspect this shot; no asset or rights claim is cleared"
+      ]
+    },
+    {
+      "id": "invitation",
+      "tell": "Connect the impression to the actual book",
+      "show": "Show the exact supplied cover and approved title/CTA",
+      "materials": [
+        "book-endcard",
+        "book-source",
+        "book-art"
+      ],
+      "narration": {
+        "text": "",
+        "material": null
+      },
+      "missing": [
+        "Select an actual book and approved synopsis/art",
+        "Review interpretation and continuity",
+        "Produce and inspect this shot; no asset or rights claim is cleared"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "book-promo",
+      "kind": "main",
+      "canvas": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 24
+      },
+      "edits": [
+        {
+          "scene": "anomaly",
+          "material": "closed-book",
+          "duration_seconds": 2.5,
+          "framing": "Wide book, clear silhouette; no invented cover lettering"
+        },
+        {
+          "scene": "discovery",
+          "material": "opening-book",
+          "duration_seconds": 4.5,
+          "framing": "Closer action; retain book orientation and hand identity; light/sound change at the opening"
+        },
+        {
+          "scene": "world",
+          "material": "story-world",
+          "duration_seconds": 5,
+          "framing": "Wider reveal; new symbolic staging, not a quote or verified plot event"
+        },
+        {
+          "scene": "invitation",
+          "material": "book-endcard",
+          "duration_seconds": 4,
+          "framing": "Readable cover/title; hold long enough for the intended text"
+        }
+      ],
+      "music": "score",
+      "tasks": [],
+      "delivery": {
+        "video": null,
+        "thumbnail": null,
+        "subtitles": null,
+        "title": null,
+        "description": null
+      }
+    }
+  ]
+}

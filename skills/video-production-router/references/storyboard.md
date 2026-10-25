@@ -64,3 +64,7 @@ requested and authorised. Storyboarding itself does not install, generate clips,
 render, download, buy credits or publish. A text plan has no MP4, decoded-media QA,
 measured render cost or audience result. A successful shot/tool does not qualify
 the whole composite film. Skip unneeded layers rather than extending the task.
+
+For a short story-led book/project promotion, use the optional
+[narrative-promo module](narrative-promos.md). It adds a causal/action and cue
+handoff to this same contract; it is not a new renderer or execution grant.

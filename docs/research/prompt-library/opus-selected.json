@@ -1,0 +1,72 @@
+[
+  {
+    "id": "twoclipping-402193",
+    "title": "Beat-driven continuous morph",
+    "author": "twoclipping",
+    "original_post": "https://x.com/twoclipping/status/2103273003555402193",
+    "source": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/data/videos.json",
+    "source_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+    "retrieved": "2026-10-25",
+    "upstream_prompt_partial": false,
+    "prompt": "<inputs>\nAsk me for: 8 to 12 UI states I want the shape to become (e.g. button, loader, player, slider, toggle, tabs, chart, command palette, toast), pure black and white or one accent color, and a royalty-free song around 120 BPM (e.g. Mixkit, free for commercial use).\n</inputs>\n\n<direction>\nDribbble-level UI motion. One shape, never cut: every state is the same element morphing its size, radius and color while its content swaps with a short blur. A cursor drives every change with real clicks and drags. Light warm-gray canvas, black and white components, one clean UI font (Geist). Springs everywhere, a tiny overshoot at most. The camera zooms so each state fills the frame. The last frame is the first frame, so it loops.\nBanned: bouncy easing, particle bursts, glows, gradients on UI chrome, mismatched icon strokes, dead time, anything that looks like a template.\n</direction>\n\n<structure>\n120 BPM, 7 bars, something happens on every beat.\nButton → loader → check → dynamic island → music player with a play/pause morph → scrub the progress bar → it becomes a volume slider that stretches when dragged past max → a toggle flips on the beat → the knob becomes a liquid tab indicator → the tabs open into a chart that draws itself, with a tooltip on hover → it collapses into ⌘K → type to filter → enter → toast → back to the button.\n</structure>\n\n<build>\n1. One HTML file, square 1440x1440. Every style is computed from time inside seek(t): no CSS transitions, no timers, no state carried between frames.\n2. Springs are closed-form step responses. A value that changes target many times is the sum of one spring per change, so it stays a pure function of time.\n3. The tab indicator's two edges ride different springs, so the leading edge stretches ahead of the trailing one. Same trick for the toggle knob.\n4. Drags are direct manipulation: while the cursor is held, the value is computed from its position. On release it springs back from wherever it was.\n5. Analyze the song with numpy for the beat grid and start on a downbeat. Place every UI sound by its measured peak.\n6. Render with Playwright: 4 subframes per frame, blended with ffmpeg tmix for motion blur at 60fps.\n7. Render one frame per beat before the full render. Fix anything off the grid, cramped or hard to read.\n</build>\n\n<gotchas>\nNever put will-change on anything the camera scales or the text renders blurry. Text that swaps inside a morphing container needs its own enter and exit timing or it overlaps. Make the last frame identical to the first, cursor position and speed included, or the loop stutters.\n</gotchas>\n\n<start>\nAsk me for the inputs, then show me the state list on the beat grid before you write any code.\n</start>",
+    "status": "queued_not_tested",
+    "use_case": "MN7R or CoqPi concept promo; distinguish illustration from real UI.",
+    "adaptation_and_acceptance": "Verify random seek repeatability, text legibility and position/velocity at loop seam. Use approved music; do not assume a whole music library is cleared."
+  },
+  {
+    "id": "lexnlin-241739",
+    "title": "Procedural architectural exploration",
+    "author": "LexnLin",
+    "original_post": "https://x.com/LexnLin/status/2103194052850241739",
+    "source": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/data/videos.json",
+    "source_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+    "retrieved": "2026-10-25",
+    "upstream_prompt_partial": false,
+    "prompt": "Create a cinematic browser-based 3D world that can be explored freely with a camera, focused on breathtaking landscapes and extraordinary original architecture. Fill the world with huge strange buildings, monumental structures, surreal ruins, cliffs, valleys, forests, water, and unusual ultra-detailed forms that feel mysterious and awe-inspiring. This is not a game and not combat-focused, the goal is pure exploration, atmosphere, composition, and visual discovery. Make the world feel epic, highly detailed, and completely original, with architecture that looks weird, ambitious, and unforgettable.",
+    "status": "queued_not_tested",
+    "use_case": "Original fiction environments and future world/character compositing.",
+    "adaptation_and_acceptance": "Limit first test to one location, two camera shots and 10 seconds; verify scale, foreground occlusion and render cost. Broad prompt is direction, not an executable specification."
+  },
+  {
+    "id": "x4b47x-034026",
+    "title": "Paper shadow theatre",
+    "author": "x4b47x",
+    "original_post": "https://x.com/x4b47x/status/2103019799614034026",
+    "source": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/data/videos.json",
+    "source_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+    "retrieved": "2026-10-25",
+    "upstream_prompt_partial": false,
+    "prompt": "Create a pure javascript animation. 30-60s, vertical 9:16, paper cut-out shadow theatre style with gentle, fitting audio (made in code) on the topic: What makes a place feel like home?",
+    "status": "queued_not_tested",
+    "use_case": "Book microfiction and Good Dog staging.",
+    "adaptation_and_acceptance": "Try 10–15 seconds in 16:9; verify silhouette readability, depth and causal action. Original prompt needs an explicit shot plan."
+  },
+  {
+    "id": "woojinrad-455731",
+    "title": "Article to illustrated narrative",
+    "author": "woojinrad",
+    "original_post": "https://x.com/woojinrad/status/2106083299462455731",
+    "source": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/data/videos.json",
+    "source_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+    "retrieved": "2026-10-25",
+    "upstream_prompt_partial": false,
+    "prompt": "Read the attached article and make a 25-second animated explainer (1080×1350, 24 fps) in a colored-pencil storybook style, drawn entirely in JavaScript on an HTML canvas, with a soundtrack synthesized using the Web Audio API. Pick 3 main ideas, give each a short caption taken from the text, and use one simple original character. Show me the storyboard first, then render it to MP4.",
+    "status": "queued_not_tested",
+    "use_case": "Book essay or source-grounded project explainer.",
+    "adaptation_and_acceptance": "Trace every claim to the approved source; verify character continuity and three distinct ideas. Adapt aspect ratio to brief."
+  },
+  {
+    "id": "notdwd-766641",
+    "title": "Filmstrip and timed physical action",
+    "author": "notdwd",
+    "original_post": "https://x.com/notdwd/status/2105031774904766641",
+    "source": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/data/videos.json",
+    "source_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+    "retrieved": "2026-10-25",
+    "upstream_prompt_partial": false,
+    "prompt": "Make a 12s motion video in code (1920x1080, 30fps, one HTML file drawing every frame from a single seek(t) function, rendered with Playwright + ffmpeg, with original synthesized sound).\n\nStory: a dark prompt pill on an off-white page types \"make a launch video\" with a real keystroke rhythm → enter, the button flashes orange and the pill slides up → a 12-frame filmstrip stamps in left to right, one frame per beat at 120 BPM; each frame shows one pose of an orange ball's bounce (squash on contact, stretch mid-air, real arcs) → a playhead sweeps the strip while a big viewer above plays the poses as a flipbook, twice, faster the second time → the strip slides away, \"every frame is code.\" fills the screen, and the ball arcs over and lands as the period.\n\nRules: arrive fast, land soft (cover 12–19% of the remaining distance per frame); nothing ever freezes (slow push on every hold); stagger 2–4 frames; blur only on fast moves; big and readable on a phone; off-white, ink and one orange only. Sound: a tick per key, a click on enter, a rising note per frame stamp, a thump when the ball lands.\n\nShow me 5 stills first (typing, strip half-built, flipbook, headline, last frame), critique them like a harsh motion director, fix the 3 worst problems, then render.",
+    "status": "queued_not_tested",
+    "use_case": "Framewright process demonstration or project promo.",
+    "adaptation_and_acceptance": "Verify bounce contacts, sound alignment and seek stability. Replace frame-dependent easing with time-based curves; keep captured text readable."
+  }
+]

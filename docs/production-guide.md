@@ -3,6 +3,8 @@
 [Product overview](../README.md). Read only the section relevant to your task;
 this guide preserves detailed methods, installation and evidence boundaries.
 
+[Photo-series cinema workflow](workflows/photo-series-cinema.md): a private30s layered camera/sound trial and a reusable camera-plan component; owner accepted picture and revised music; local YouTube kit prepared.
+
 ## Recent production
 
 | Result | What was actually produced | Evidence |
@@ -13,7 +15,7 @@ this guide preserves detailed methods, installation and evidence boundaries.
 | Möbius Walk ambient video | Actual Babylon.js game canvas; disclosed two-minute autoplay cycle extended to 20 minutes | [Capture method](workflows/ambient-game-video.md) · [Owner-supplied video](https://youtu.be/rfClK3jPHlw) |
 | SSI website Reels, Ukrainian/English | Real site pages scroll beneath stationary captions; both accepted by partners per owner report | [Case](experiments/ssi-site-reels.md) · [Owner-supplied English Instagram link](https://www.instagram.com/reel/DezcjZ0tXuz/) |
 
-**31 recorded final exports** are pinned by size/hash. Publication links, technical
+**33 recorded final exports** are pinned by size/hash. Publication links, technical
 QA, owner acceptance and audience results are separate evidence; views/retention
 are not yet measured for these new cases. Full media and private source assets
 stay outside Git. YouTube copy is delivered as direct text files, without ZIPs.
@@ -66,6 +68,14 @@ share source/rights, facts, edit decisions and delivery gates. A private audio c
 indexes owner-selected folders;[first2-track bank use](workflows/private-music-bank.md)
 is recorded separately. A/B/C remain infrastructure only;no new A/B/C films or models tested.
 For another project’s recurring videos, use the [demo-to-template production handoff](../skills/video-production-router/references/studio-workflows.md#production-handoff-to-another-project): validate the format here, then transfer production and publication ownership to that project.
+
+## Short narrative promos
+
+The optional [narrative-promo module](../skills/video-production-router/references/narrative-promos.md) prepares short book/project films through visible action, cause/consequence, shot continuity and event-linked sound. It feeds the existing scene/material/variant project, then the selected renderer and QA. A [16s plan-only example](../examples/production/narrative-book-promo.json) is available; actual book sources, media and rights remain missing. This is documented preparation, not a new tested renderer or production result.
+
+## Owner workspace packaging preference
+
+For this owner’s YouTube videos, prepare covers with short, readable text by default, in the video’s language. Inspect at full size and thumbnail size; keep the subject visible. Use a text-free cover only when explicitly requested or agreed. This is an owner preference, not a universal claim about thumbnail performance.
 
 ## Games and game engines
 
@@ -191,3 +201,13 @@ The new case records are on main; this update creates no new software release.
 The MIT licence covers original repository materials. Tools, models, music and art
 have their own terms. Large media remain outside Git. [ABVX ecosystem](ecosystem.md) ·
 [Project page](https://abvx.xyz/work/framewright).
+
+## Edit recorded sources
+
+The [editing module](../skills/video-production-router/references/editing.md) inspects explicitly selected local files, keeps source/output ranges for cut-only edits, retimes supplied subtitles/overlays and prepares playable clips around joins. Start from the [source-plan example](../examples/editing/source-plan.json). It needs existing FFmpeg/ffprobe, makes no model/ASR calls and leaves listening/meaning/visual approval pending. See the [guide review and limits](research/ai-editing-guide.md).
+
+## Correct one area; prepare a series
+
+[Revision requests](../skills/video-production-router/references/revisions.md) bind the defect, desired change and preservation requirements to the original export, compare corrected media in context, then retain the actual verification in the existing journal. Replaced files make that decision stale.
+
+[Template contracts](../skills/video-production-router/references/templates.md) start from a current accepted video and an explicit design specification, separate fixed style from new content and prepare short/long/missing-media test packets. They do not reverse-engineer renderer code or inherit approval for new variants. See [example design](../examples/templates/design.json) and [values](../examples/templates/values.json).

@@ -1,0 +1,103 @@
+{
+  "scope": "Owner-accepted corrected30s authored rigged-animal film; local publication kit prepared",
+  "final": {
+    "local_output": "little-light-20261025/delivery-v3/A-Dog-Follows-a-Falling-Light-30s.mp4",
+    "bytes": 26562149,
+    "sha256": "b9f9792b8e53ebe3bc8dab55cd3218874c4e6b7b2a8f2b059a379f56a60b9548"
+  },
+  "video": {
+    "seconds": 30,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "frames": 720
+  },
+  "full_decode": "pass",
+  "audio": {
+    "lufs": -22.47,
+    "true_peak_dbtp": -2.0,
+    "aac_master_zero_offset_correlation": 0.9999763406099796,
+    "final_listening": "Owner accepted film3; no detailed listening score measured",
+    "impact_and_music_boundary_seconds": 21.3,
+    "after_impact_bpm": 128
+  },
+  "reseek": [
+    {
+      "frame": 96,
+      "identical": true
+    },
+    {
+      "frame": 576,
+      "identical": true
+    }
+  ],
+  "owner_acceptance": "Owner viewed corrected30s film3 and said: то что надо. Earlier8s trial accepted; previous30s ending rejected.",
+  "thumbnail": {
+    "local_output": "little-light-20261025/delivery-v3/Thumbnail.png",
+    "source_time": 5.5,
+    "width": 1280,
+    "height": 720,
+    "bytes": 838460,
+    "sha256": "b7fe5e6d7ae52d9c76f1c75a4a4dc967ab392b45bde618e81277f3dbf2dd19ea",
+    "headline": "FOLLOW THE LIGHT",
+    "method": "built-in imagegen typography edit of encoded-frame cover; FFmpeg size normalisation",
+    "viewed_full_and_320px": true,
+    "owner_acceptance": "pending cover review; MP4 remains accepted"
+  },
+  "rights": "Quaternius dog/12clips CC0;Three.js MIT; original environment/procedural sound",
+  "paid_generation_calls": 0,
+  "publication": {
+    "url": "https://youtu.be/B4zdWfFIkNE",
+    "provenance": "owner_report",
+    "reported_date": "2026-10-25",
+    "verification": "owner_reported_url",
+    "visibility": "unknown",
+    "uploaded_bytes": "not_verified",
+    "thumbnail_applied": "not_verified"
+  },
+  "audience_metrics": "unknown",
+  "failures": [
+    "initial launch restrictions",
+    "wrong pitch sign",
+    "full Eating pose too deep",
+    "root stopping and trail revised",
+    "owner requested faster10s pacing,8s version accepted",
+    "Owner rejected first30s ending: unexplained nearby orb and apparent running in place",
+    "film-03 failed exact reseek: mixer cache/additive pose drift; replaced with absolute clip-track sampling",
+    "film-04 retained6-pixel contour drift from changing material mode; consistent transparency mode fixes film-05"
+  ],
+  "unqualified": [
+    "arbitrary rig retargeting",
+    "Blender MCP",
+    "video-to-rig reconstruction",
+    "exporting newly baked combined action",
+    "photorealism"
+  ],
+  "previous_final": {
+    "local_output": "little-light-20261025/delivery/A-Dog-Finds-a-Little-Light-20s.mp4",
+    "bytes": 23193883,
+    "sha256": "74009c20b0903caff0017309ad26567414be37e1e7249e3f9540f96533728cf5"
+  },
+  "revision": "Single distant impact21.3s, slow forest bloom,9.757m run into glow,128BPM music boundary; exact repeat-frame QA after absolute pose sampling and consistent dog material mode.",
+  "previous_final_v2": {
+    "local_output": "little-light-20261025/delivery-v2/A-Dog-Finds-a-Little-Light-30s.mp4",
+    "bytes": 32207328,
+    "sha256": "fa4f82f59c2e8d88a4812c7ed467bdbee71856bd69ba4206418aa334f2d402ae"
+  },
+  "movement": {
+    "path_length_metres": 9.757198461583746,
+    "travel_seconds": 4.8,
+    "fixed_camera": true,
+    "invisible_after_seconds": 27.15,
+    "source_telemetry": "evidence/impact-inspection.json"
+  },
+  "previous_text_free_thumbnail": {
+    "source_time": 5.5,
+    "width": 1280,
+    "height": 720,
+    "bytes": 530142,
+    "sha256": "5fd8dffc31977f56fce5e0880547d9b13abfd8349854a99ef88ca55a92b7738f",
+    "viewed_full_and_320px": true,
+    "local_output": "little-light-20261025/delivery-v3/Thumbnail.png"
+  }
+}

@@ -145,6 +145,11 @@ def build(root, output):
             raise ValueError('Standalone studio workflow gates failed')
         subprocess.run([sys.executable, str(target / 'video-production-router/scripts/library.py'), '--help'],
                        check=True, capture_output=True, text=True)
+        subprocess.run([sys.executable, str(target / 'video-production-router/scripts/editing.py'), '--help'],
+                       check=True, capture_output=True, text=True)
+        for script in ['revisions.py', 'templates.py']:
+            subprocess.run([sys.executable, str(target / 'video-production-router/scripts'/script), '--help'],
+                           check=True, capture_output=True, text=True)
     print(f'PASS: standalone package {archive.name}; SHA-256 {digest}')
     return archive
 

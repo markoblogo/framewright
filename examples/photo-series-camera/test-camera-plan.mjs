@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import {validateCameraPlan,sampleCamera} from './camera-plan.mjs';
+const original=JSON.parse(fs.readFileSync(new URL('./camera-plan.json',import.meta.url)));const copy=()=>structuredClone(original);
+test('real30s plan has exact coverage and end-exclusive cuts',()=>{validateCameraPlan(original);assert.equal(sampleCamera(original,7).id,'ink-detail');assert.equal(sampleCamera(original,13).id,'paper-ends');assert.equal(sampleCamera(original,25).id,'retreat');});
+test('seek/reseek and endpoints are absolute',()=>{const a=sampleCamera(original,9);sampleCamera(original,25);assert.deepEqual(sampleCamera(original,9),a);assert.deepEqual(sampleCamera(original,-1).position,original.shots[0].from);assert.deepEqual(sampleCamera(original,31).position,original.shots.at(-1).to);});
+for(const [name,mutate] of [['gap',p=>p.shots[1].start+=.1],['overlap',p=>p.shots[1].start-=.1],['zero duration',p=>p.shots[0].end=0],['wrong total',p=>p.seconds=31],['nonfinite position',p=>p.shots[0].from[0]=NaN],['duplicate ID',p=>p.shots[1].id=p.shots[0].id],['invalid lens',p=>p.shots[0].fov=180]])test('reject '+name,()=>{const p=copy();mutate(p);assert.throws(()=>validateCameraPlan(p));});
+test('reject nonfinite query',()=>assert.throws(()=>sampleCamera(original,NaN)));

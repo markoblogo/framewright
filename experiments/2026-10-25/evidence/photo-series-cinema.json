@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-25",
+  "scope": "single owner-accepted 30s photo-series art film; not automatic arbitrary-photo reconstruction",
+  "final": {
+    "local_output": "good-intentions-20261025/delivery/Pokras-Lampas-Seals-of-Good-Intentions-30s.mp4",
+    "bytes": 87572324,
+    "sha256": "bb73517c316a2ee419693e20da867a310a5f5d2a8bc60fa8c56653ff82025770"
+  },
+  "full_decode": "pass",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "24/1",
+    "frames": "720"
+  },
+  "audio": {
+    "sample_rate": "48000",
+    "channels": 2,
+    "integrated_lufs": -22.04,
+    "true_peak_dbtp": -8.59,
+    "aac_master_zero_offset_correlation": 0.9998067999491633
+  },
+  "accepted_picture_hash": "SHA256=63d034f78569a7c5d8cb7b0a733297f4a4ea7c2d919a25344e8b7d85bd9f839b",
+  "picture_packet_timing_identical": true,
+  "owner_acceptance": {
+    "picture": "accepted on v1, exact picture retained",
+    "v2_music": "accepted explicitly after listening",
+    "new_cover_copy": "prepared, not separately owner-approved"
+  },
+  "thumbnail": {
+    "local_output": "good-intentions-20261025/delivery/Thumbnail.png",
+    "bytes": 1289213,
+    "sha256": "37fc60771eaefef1c4b2160136bd1c7d72b069b3db31fe85aedfe43e60a45bd5",
+    "source": "encoded final at 21.500s",
+    "width": 1280,
+    "height": 720,
+    "viewed_full_and_320px": true
+  },
+  "camera_component": {
+    "native_frames_matched": [
+      216,
+      516
+    ],
+    "narrow_tests": 10,
+    "cross_gpu_generalisation": "not_established"
+  },
+  "rights": {
+    "artwork_photo_publication": "not_independently_established",
+    "music": "CC01.0, nemaavla, Lotus music.wav",
+    "field_recording": "CC01.0, felix.blume",
+    "generated_environment": "one built-in ImageGen edit; original calligraphy kept separate"
+  },
+  "new_paid_video_audio_jobs": 0,
+  "generation_entitlement_cost": "not_measured",
+  "publication": "owner_reported_replacement_url",
+  "audience_metrics": "not_measured",
+  "retained_failures": [
+    "ink-edge contour and unsigned arithmetic",
+    "dark linear output",
+    "macro plane side gaps",
+    "owner rejected generic piano"
+  ],
+  "publication_verification": {
+    "source": "owner supplied correct replacement URL on 2026-10-25",
+    "visibility": "unknown",
+    "watch_page": "not_independently_checked",
+    "uploaded_byte_identity": "not_verified",
+    "monetization": "unknown"
+  },
+  "publication_history": [
+    {
+      "url": "https://youtu.be/9xrzfOAJ9gs",
+      "status": "owner_withdrew_during_reupload",
+      "date": "2026-10-25"
+    }
+  ],
+  "publication_url": "https://youtu.be/6c3JXdIiosg"
+}

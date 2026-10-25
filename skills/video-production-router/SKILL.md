@@ -20,6 +20,14 @@ separate from video/audio rights; remove unknown source audio when required and
 block publication until retained rights are resolved. Never infer a reuse grant from
 Telegram/X availability. New combinations remain unqualified until a bounded trial.
 
+For recorded speech, multiple takes or screencast recuts, read the optional
+[editing module](references/editing.md): source inspection, cut-only time maps,
+subtitle/overlay retiming and playable join-review packs. It uses the existing
+project and selected assembler; generated review media do not approve content.
+For a concrete correction, read [revisions](references/revisions.md). For an accepted
+film becoming a series, read [template contracts](references/templates.md). Both
+reuse the journal; rendering and per-variant approval remain separate.
+
 1. Use the brief's product, available assets, audience/language, format, narration,
    cost/account constraints and intended deliverables. Ask only for missing facts
    that materially affect the choice. For a production plan or execution blocked
@@ -49,6 +57,9 @@ Telegram/X availability. New combinations remain unqualified until a bounded tri
    [storyboard adapter](references/storyboard.md) and establish its shot/continuity
    handoff before production. Skip it for comparison, finishing, recuts or a single
    shot; it is a preparation layer, not a renderer or permission to generate clips.
+   For short story-led book/project promos, use the optional
+   [narrative-promo module](references/narrative-promos.md) for causal beats,
+   reference roles and event-linked sound; it does not change the selected renderer.
    Then read [the catalogue](references/catalog.json), then only the matching section
    of [the recipes](references/recipes.md). Recommend a default with one sentence
    of evidence and relevant limits. If the user only asks to compare, stop there.

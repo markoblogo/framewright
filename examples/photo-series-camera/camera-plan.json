@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "seconds": 30,
+  "transition": "authored cuts; no slide dissolves",
+  "shots": [
+    {
+      "id": "approach",
+      "start": 0,
+      "end": 7,
+      "scene": "wide",
+      "fov": 36,
+      "from": [
+        0.75,
+        0.65,
+        10.5
+      ],
+      "to": [
+        -0.25,
+        0.15,
+        8
+      ],
+      "look_from": [
+        -0.03,
+        0.15,
+        0
+      ],
+      "look_to": [
+        -0.03,
+        -0.35,
+        0
+      ]
+    },
+    {
+      "id": "ink-detail",
+      "start": 7,
+      "end": 13,
+      "scene": "detail",
+      "fov": 32,
+      "from": [
+        -0.26,
+        0.9,
+        5.9
+      ],
+      "to": [
+        0.22,
+        0.2,
+        5.9
+      ],
+      "look_from": [
+        0,
+        0.8,
+        0
+      ],
+      "look_to": [
+        0,
+        0.15,
+        0
+      ]
+    },
+    {
+      "id": "paper-ends",
+      "start": 13,
+      "end": 19,
+      "scene": "wide",
+      "fov": 36,
+      "from": [
+        -0.62,
+        -1.85,
+        4.35
+      ],
+      "to": [
+        0.25,
+        -1.85,
+        4.35
+      ],
+      "look_from": [
+        0.03,
+        -1.65,
+        0.015
+      ],
+      "look_to": [
+        0.03,
+        -1.95,
+        0.015
+      ]
+    },
+    {
+      "id": "front",
+      "start": 19,
+      "end": 25,
+      "scene": "wide",
+      "fov": 36,
+      "from": [
+        0.45,
+        -0.1,
+        7.1
+      ],
+      "to": [
+        -0.35,
+        -0.1,
+        7.1
+      ],
+      "look_from": [
+        0,
+        -0.5,
+        0
+      ],
+      "look_to": [
+        0,
+        -0.5,
+        0
+      ]
+    },
+    {
+      "id": "retreat",
+      "start": 25,
+      "end": 30,
+      "scene": "wide",
+      "fov": 36,
+      "from": [
+        -0.35,
+        0.1,
+        8.2
+      ],
+      "to": [
+        0.55,
+        0.6,
+        10.6
+      ],
+      "look_from": [
+        0,
+        -0.3,
+        0
+      ],
+      "look_to": [
+        0,
+        0.15,
+        0
+      ]
+    }
+  ]
+}

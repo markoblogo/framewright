@@ -634,6 +634,29 @@
       "inputs": null,
       "rights_class": "conditional",
       "licence_note_sha256": "a9366e5470c88218bc2161ba4f71e2b64327dca6c403f5af658b7b8b9a29ef70"
+    },
+    "gamedev-agent-skills": {
+      "tasks": [
+        "3d",
+        "video",
+        "audio"
+      ],
+      "inputs": null,
+      "rights_class": "conditional",
+      "licence_note_sha256": "14311a1ff67db3ba83cb975f22d2c2c9ea7fbed8997dce80c141c0e056303ca3"
+    },
+    "video-guided-rig-animation": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "3d",
+        "video",
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "426e3fbd40a7dbe1bdfce7334f20ea9117c285c2e7508465f79f5fed15b68508"
     }
   }
 }
