@@ -42,7 +42,7 @@
     "route": "staged-3d-scene",
     "production_method": "authored-skinned-animal-multi-shot-scene",
     "evidence": "experiments/2026-10-25/evidence/little-light.json",
-    "qa_scope": "Corrected30s1080p24/720frames/full decode; exact repeat96/576; single distant impact21.3s, gradual forest bloom,9.757m run into glow;128BPM music boundary;\u221222.47LUFS/\u22122dBTP.8s sample accepted; corrected full30s accepted by owner. Owner supplied publication URL; uploaded bytes not verified.",
+    "qa_scope": "Corrected30s1080p24/720frames/full decode; exact repeat96/576; single distant impact21.3s, gradual forest bloom,9.757m run into glow;128BPM music boundary;−22.47LUFS/−2dBTP.8s sample accepted; corrected full30s accepted by owner. Owner supplied publication URL; uploaded bytes not verified.",
     "thumbnail": {
       "local_output": "little-light-20261025/delivery-v3/Thumbnail.png",
       "source_time": 5.5,
@@ -80,5 +80,79 @@
     ],
     "publication_url": "https://youtu.be/B4zdWfFIkNE",
     "publication_visibility": "unknown"
+  },
+  {
+    "local_output": "nantes-airport-drive-20261025/exports/Nantes-Pixel-Journey-FR.mp4",
+    "sha256": "6dfb2a33ee4d31a45d3d645035b2e5c27664726b253eed84414fe5aa097efa4d",
+    "bytes": 41591564,
+    "id": "nantes-pixel-journey",
+    "route": "staged-3d-scene",
+    "production_method": "mapped-pseudo3d-road-and-original-landmark-illustrations",
+    "evidence": "experiments/2026-10-25/evidence/nantes-pixel-journey.json",
+    "qa_scope": "82s1080p24/1968frames/full decode; four paired capture frames; French guide and separate original score. Final listening/creative approval pending; publication owner-reported, uploaded bytes/visibility unknown.",
+    "publication_url": "https://youtu.be/kh-MTl8K5pE",
+    "publication_verification": "owner_reported_url",
+    "publication_visibility": "unknown",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"repeatability\"",
+      "\"rights\"",
+      "\"failures\""
+    ]
+  },
+  {
+    "local_output": "ssi-report-series-20261025/delivery/SSI-01-Logistics-EN-VoiceOnly.mp4",
+    "sha256": "232ada9e975ef5190f6bedc62186a55b41665bcecf6311407e990b2f14dd56ef",
+    "bytes": 1439766,
+    "id": "ssi-weekly-logistics-voice-only",
+    "route": "authored-react-film",
+    "production_method": "profile-driven-report-slides-with-local-english-commentary",
+    "evidence": "experiments/2026-10-25/evidence/ssi-brand-series.json",
+    "qa_scope": "40.0s1080x1920p30/full decode; shared brand bundle; English voice only, no music/SFX; measured post-voice reading hold. Delivered to partner per owner; revised-master acceptance and publication pending.",
+    "publication_visibility": "not_reported",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"brand_reuse\"",
+      "\"partner_feedback\"",
+      "\"rights\""
+    ]
+  },
+  {
+    "local_output": "ssi-report-series-20261025/delivery/SSI-02-Grains-EN-VoiceOnly.mp4",
+    "sha256": "531ee04e6c14cae18b8c763d4ea8db177b91a390038067e6cfd287faa37e1e08",
+    "bytes": 2838987,
+    "id": "ssi-weekly-grains-voice-only",
+    "route": "authored-react-film",
+    "production_method": "profile-driven-report-slides-with-local-english-commentary",
+    "evidence": "experiments/2026-10-25/evidence/ssi-brand-series.json",
+    "qa_scope": "56.6s1080x1920p30/full decode; shared brand bundle; English voice only, no music/SFX; measured post-voice reading hold. Delivered to partner per owner; revised-master acceptance and publication pending.",
+    "publication_visibility": "not_reported",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"brand_reuse\"",
+      "\"partner_feedback\"",
+      "\"rights\""
+    ]
+  },
+  {
+    "local_output": "ssi-report-series-20261025/delivery/SSI-03-Oilseeds-EN-VoiceOnly.mp4",
+    "sha256": "8719458880ea95bb7c02004aa486878331da6205af0f96e572d3a48a2a7c6e2a",
+    "bytes": 3825294,
+    "id": "ssi-weekly-oilseeds-voice-only",
+    "route": "authored-react-film",
+    "production_method": "profile-driven-report-slides-with-local-english-commentary",
+    "evidence": "experiments/2026-10-25/evidence/ssi-brand-series.json",
+    "qa_scope": "79.4s1080x1920p30/full decode; shared brand bundle; English voice only, no music/SFX; measured post-voice reading hold. Delivered to partner per owner; revised-master acceptance and publication pending.",
+    "publication_visibility": "not_reported",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"brand_reuse\"",
+      "\"partner_feedback\"",
+      "\"rights\""
+    ]
   }
 ]

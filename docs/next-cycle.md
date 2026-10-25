@@ -6,7 +6,19 @@ authority. [Completed PlayMCP review](experiments/playmcp-service-review.md) ·
 
 ## Execution order
 
-Current closeout publishes the accumulated photo-series and character-animation evidence, curated research and original local editing/revision/template helpers. No new release is planned by this checkpoint. Pocket OS and SSI weekly remain explicitly paused; new files or an idea do not automatically resume them.
+Current closeout audits and publishes the local brand-profile helper, the delivered
+SSI series, the Nantes route-film evidence and research updates. No new release.
+
+1. **SSI:** three English voice-only report films are delivered. Wait for partner
+   comments or publication links; preserve the requested longer reading holds.
+2. **MN7R:** next proposed production is a real-interface Instagram promo, building
+   on the accepted SSI site-scroll approach. Agree a bounded brief before capture.
+3. **Nantes green line:** a separate proposed walking tour with named landmarks;
+   the airport car/taxi film is already delivered with an owner-supplied YouTube URL.
+4. **Good Dog:** use an owner-selected story excerpt and a short continuity/interaction
+   pilot before a three-minute adaptation. Spline remains a queued candidate.
+5. **Pocket OS:** remains explicitly paused pending owner resumption/device footage.
+   CoqPi and other promos stay deferred. No automatic production follows this list.
 
 ## Completed production and prepared methods — 25 October 2026
 
@@ -22,22 +34,26 @@ Next use one fitting method from the [curated prompt queue](research/prompt-libr
 | --- | --- | --- |
 | PlayMCP review | Completed; owner supplied YouTube URL | Retain export/kit/publication evidence; private article draft awaits owner use |
 | SSI website Reels | Both languages accepted by partners; English Instagram URL supplied (owner reports) | Publication visibility and audience metrics independently unverified; Ukrainian publication unknown |
-| SSI weekly summaries | Demos not accepted; paused, not cancelled | Separate partner specification, then owner resumption; preserve all six demos |
+| SSI weekly summaries | Three revised English voice-only films delivered; owner sent to partner | Await comments/publication links; preserve six earlier rejected demos separately |
 | Pocket OS review | Explicitly paused; shot plan retained | Owner resumption and usable device footage; no automatic filming/development |
 | YouTube Trends pilot | Two English Shorts plus 60s Dream Walk and 20min ambient film; owner supplied four YouTube URLs | Retain dated hypothesis/publication evidence; compare available metrics later without assuming success |
 | Möbius Walk | Fourth PlayMCP game published, final native format pass and clean judge | Reuse the scoped ambient-capture method; no automatic new build |
 | The Same Forest | Published 42s local color/sound study; watch title/duration observed | Preserve source/QA/publication; audience metrics, commercial clearance and final-master listening remain distinct |
+| Nantes illustrated journey | 82s French car/taxi film; owner-supplied YouTube URL | Retain QA; green-line walking tour is a separate proposed production |
 | LitRPG fiction/world pilot | Separate next step; fixed-plate trial completed | Owner-selected story excerpt and a two-shot continuity/interaction pilot before a 3min adaptation |
 
-On 22 October the owner reported that partners did not like the weekly-report
-experiments and will write a separate specification. Detailed reasons are unknown;
-do not infer the preferred style or start another speculative redesign. SSI's
-owner favourites D/F are not partner approval. This does not reject the separately
-delivered [website Reels](experiments/ssi-site-reels.md) or revoke the scoped
-Openverse SFX qualification. Once the specification arrives and work resumes, validate the
-chosen treatment on all three report parts and the aggregate, then transfer the
-template and full recurring production ownership to SSI. Framewright does not
-connect to SSI data or publish its Telegram reports in this pilot.
+The six earlier illustrative weekly demos were rejected. The later partner brief
+and two presentation references resumed SSI work; the enlarged Part I layout was
+accepted before partners requested voice-only audio and longer holds. All three
+revised masters are now delivered. Final-version partner acceptance/publication
+remain pending. The owner finds the pacing slow but retained the partner request.
+[Brand-profile trial and limitations](experiments/ssi-brand-profiles.md).
+
+Framewright does not connect to SSI data or publish Telegram reports. Once format
+and handoff are agreed, recurring report/video generation and distribution belong
+in SSI. The separate accepted website Reels and scoped Openverse qualification
+remain valid. Do not restart either report rendering or a rejected style trial
+without new feedback and owner direction.
 
 ## Pocket OS developer handoff
 
@@ -109,7 +125,7 @@ window), one selected production brief and an engine-specific missing-shot need.
 Use those to test decisions; adding more providers is not itself product progress.
 Do not connect analytics, start scheduled polling or infer audience success.
 
-Pocket OS and SSI weekly production remain paused. Voice cloning, additional world
+Pocket OS remains paused; the delivered SSI series awaits partner feedback. Voice cloning, additional world
 providers and general multimodal review remain research candidates. Free Gemini UI
 probes did not pass the separate audio test. The next production experiment is an
 owner discussion after this software closeout, not an automatic render queue.
@@ -122,7 +138,7 @@ full methods/evidence remain in the [production guide](production-guide.md).
 [Studio instructions](../skills/video-production-router/references/studio-workflows.md#representative-sample-when-it-reduces-risk)
 now describe conditional representative samples and minimal reuse measurements.
 These are preparation, not proof of reduced time or improved films. Discuss the
-next active video with the owner; do not resume either paused workstream.
+next active video with the owner; preserve Pocket OS pause and the SSI feedback wait.
 
 ## After the published color-study pass
 
@@ -131,4 +147,4 @@ next active video with the owner; do not resume either paused workstream.
 3. **Creative route:** a compact Good Dog excerpt if supplied, or a separate original mini-scene. Approve its world/character rights and camera needs first; no new generation/provider purchase is implied.
 4. **Results:** add dated owner-supplied analytics for the published Trends films to existing outcome utilities. Compare only compatible upload-age/windows; distinguish unknown monetization from zero revenue. No automatic monitoring or channel access is added.
 
-MN7R/CoqPi promos remain possible owner-selected work. Pocket OS and SSI weekly pauses persist. This list proposes next steps; it does not execute them.
+The current execution order above takes precedence over these earlier options. Pocket OS remains paused and SSI awaits feedback. This list does not execute new productions.

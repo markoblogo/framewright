@@ -1,0 +1,227 @@
+{
+  "date": "2026-10-25",
+  "scope": "Three local report-film adaptations using the same explicit profile; no SSI data or Telegram integration",
+  "cases": [
+    {
+      "part": "logistics",
+      "final": {
+        "local_output": "ssi-report-series-20261025/delivery/SSI-01-Logistics-EN-VoiceOnly.mp4",
+        "sha256": "232ada9e975ef5190f6bedc62186a55b41665bcecf6311407e990b2f14dd56ef",
+        "bytes": 1439766
+      },
+      "full_decode": {
+        "result": "pass",
+        "error": "",
+        "decoded_seconds": 40.0,
+        "video_frames": 1200
+      },
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1080,
+          "height": 1920,
+          "avg_frame_rate": "30/1",
+          "disposition": {
+            "attached_pic": 0
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "avg_frame_rate": "0/0",
+          "disposition": {
+            "attached_pic": 0
+          }
+        }
+      ],
+      "timing_audio": {
+        "part": "logistics",
+        "duration": 40.0,
+        "data_slides": 5,
+        "music": false,
+        "sfx": false,
+        "minimum_post_voice_hold": 2.080375,
+        "full_data_settled_to_cut_seconds": 4.82,
+        "master_voice_only": true
+      },
+      "sampled_native_checks": {
+        "ok": true,
+        "strict": false,
+        "motion_enabled": false,
+        "scope": "Retained source-composition checks; not continuous encoded motion or listening qualification"
+      }
+    },
+    {
+      "part": "grains",
+      "final": {
+        "local_output": "ssi-report-series-20261025/delivery/SSI-02-Grains-EN-VoiceOnly.mp4",
+        "sha256": "531ee04e6c14cae18b8c763d4ea8db177b91a390038067e6cfd287faa37e1e08",
+        "bytes": 2838987
+      },
+      "full_decode": {
+        "result": "pass",
+        "error": "",
+        "decoded_seconds": 56.6,
+        "video_frames": 1698
+      },
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1080,
+          "height": 1920,
+          "avg_frame_rate": "30/1",
+          "disposition": {
+            "attached_pic": 0
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "avg_frame_rate": "0/0",
+          "disposition": {
+            "attached_pic": 0
+          }
+        }
+      ],
+      "timing_audio": {
+        "part": "grains",
+        "duration": 56.6,
+        "data_slides": 7,
+        "music": false,
+        "sfx": false,
+        "minimum_post_voice_hold": 3.9449791666666663,
+        "full_data_settled_to_cut_seconds": 4.82,
+        "master_voice_only": true
+      },
+      "sampled_native_checks": {
+        "ok": true,
+        "strict": false,
+        "motion_enabled": false,
+        "scope": "Retained source-composition checks; not continuous encoded motion or listening qualification"
+      }
+    },
+    {
+      "part": "oilseeds",
+      "final": {
+        "local_output": "ssi-report-series-20261025/delivery/SSI-03-Oilseeds-EN-VoiceOnly.mp4",
+        "sha256": "8719458880ea95bb7c02004aa486878331da6205af0f96e572d3a48a2a7c6e2a",
+        "bytes": 3825294
+      },
+      "full_decode": {
+        "result": "pass",
+        "error": "",
+        "decoded_seconds": 79.4,
+        "video_frames": 2382
+      },
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1080,
+          "height": 1920,
+          "avg_frame_rate": "30/1",
+          "disposition": {
+            "attached_pic": 0
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "avg_frame_rate": "0/0",
+          "disposition": {
+            "attached_pic": 0
+          }
+        }
+      ],
+      "timing_audio": {
+        "part": "oilseeds",
+        "duration": 79.4,
+        "data_slides": 10,
+        "music": false,
+        "sfx": false,
+        "minimum_post_voice_hold": 2.357520833333332,
+        "full_data_settled_to_cut_seconds": 4.82,
+        "master_voice_only": true
+      },
+      "sampled_native_checks": {
+        "ok": true,
+        "strict": false,
+        "motion_enabled": false,
+        "scope": "Retained source-composition checks; not continuous encoded motion or listening qualification"
+      }
+    }
+  ],
+  "brand_reuse": {
+    "same_profile_all_three": true,
+    "same_css_and_logo": true,
+    "cases": [
+      {
+        "part": "logistics",
+        "profile_sha256": "24583f8c034263a7d4a47f28371fbd20b38534af6f1be01aa25ddd50f9c4ab7a",
+        "css_sha256": "fbbf51dcbcb18b116460effc067b65b05e744ad0481980e108c41628c442690c",
+        "logo_sha256": "8971a8adc1d28a9a4dd6a11256c04c1e5a980225ac227168fe321614ac190bdc",
+        "source_paths_in_export": false
+      },
+      {
+        "part": "grains",
+        "profile_sha256": "24583f8c034263a7d4a47f28371fbd20b38534af6f1be01aa25ddd50f9c4ab7a",
+        "css_sha256": "fbbf51dcbcb18b116460effc067b65b05e744ad0481980e108c41628c442690c",
+        "logo_sha256": "8971a8adc1d28a9a4dd6a11256c04c1e5a980225ac227168fe321614ac190bdc",
+        "source_paths_in_export": false
+      },
+      {
+        "part": "oilseeds",
+        "profile_sha256": "24583f8c034263a7d4a47f28371fbd20b38534af6f1be01aa25ddd50f9c4ab7a",
+        "css_sha256": "fbbf51dcbcb18b116460effc067b65b05e744ad0481980e108c41628c442690c",
+        "logo_sha256": "8971a8adc1d28a9a4dd6a11256c04c1e5a980225ac227168fe321614ac190bdc",
+        "source_paths_in_export": false
+      }
+    ]
+  },
+  "retained_bundle_integrity": "All three CSS/logo/font/licence hashes checked during closeout",
+  "source_archival_status": {
+    "missing_original_reference_basenames": [
+      "ЕURO GRAIN 2024 UPD (2).pptx",
+      "Spike & Agribusiness.pptx"
+    ],
+    "effect": "New export from private profile stays blocked until matching reference bytes are restored or a new explicit profile revision is frozen; existing bundles and masters remain retained"
+  },
+  "rights": {
+    "logo": "Owner supplied original logo and requested inclusion in SSI films",
+    "font": "Commissioner with retained SIL OFL",
+    "decks": "Private style references; not redistributed; no old statistics reused",
+    "report": "Owner-supplied report; underlying market facts not independently audited"
+  },
+  "partner_feedback": {
+    "accepted": "Earlier enlarged Part I visual style, owner report",
+    "requested": "Remove music; retain English words/commentary; extend data holds by about two seconds",
+    "latest": "Owner sent all three revised films to partner; awaiting comments",
+    "owner_preference": "Owner finds revised pace too slow but retained partner-requested pacing; not partner rejection"
+  },
+  "review": {
+    "technical": "Retained full-decode passes bound to matching master hashes",
+    "creative_listening": "Revised masters pending separate acceptance",
+    "publication": "No link supplied or publication verified"
+  },
+  "failures": [
+    "Earlier six illustrative demos were not accepted; retained as superseded style experiments",
+    "Long rapeseed label collided with a figure; shortened while preserving meaning",
+    "First website capture had grey padding; replaced by actual page-frame capture",
+    "Initial long render failed disk-margin check; lower-memory single-worker retry completed"
+  ],
+  "paid_generation_calls": 0
+}

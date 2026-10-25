@@ -41,6 +41,15 @@ A documented feature, code licence and model/media licence are separate claims.
 | [claude-video / Watch](https://github.com/bradautomates/claude-video) | **candidate**: Documented Agent Skills/Codex path, sampled frames plus transcript; this is not proof of continuous video/audio understanding. | Existing local10–15s owned MP4; inspect planned paths/dependencies/cloud fallback first. Compare known visual events and transcript, no automatic installs/uploads. |
 | [Prompt Motion](https://prompt-motion.com/) | **reference_only**: Public catalogue, prompts/skills and customizer; creator-owned material. Improved prompt may be Untested while original has a video. | Brief → metadata filters → shortlist → finalist → original bounded prompt adaptation → agreed render/QA. Current trial stops at prompt. |
 
+## Latest additions — 25 October 2026
+
+- [Pixel Path Nantes case](experiments/nantes-pixel-journey.md): one mapped-route
+  film, not a generic travel capture adapter; private source modifications retained.
+- [Reusable brand profiles](../skills/video-production-router/references/branding.md):
+  local pinned-reference/CSS helper with three SSI report-film adaptations.
+- [Spline](experiment-queue.md#spline-editable-3d-sets--p1-candidate-2026-10-25):
+  documentation-reviewed candidate for editable 3D sets; not connected or tested.
+
 ## Source pinning and rights
 
 The ledger retains immutable revisions for newly inspected GitHub candidates;

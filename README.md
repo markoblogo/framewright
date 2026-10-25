@@ -20,12 +20,14 @@ and prepare a local publication kit. The agent runs selected tools in your envir
 | A Dog Follows a Falling Light | An animated rig, deterministic camera/pose reconstruction, a motivated light event and actual travel into the ending | [30s film](https://youtu.be/B4zdWfFIkNE) · [Case](docs/experiments/little-light.md) |
 | Seals of Good Intentions | Six photographs staged as a cinematic set, source-preserving calligraphy, reusable camera plan and revised soundtrack | [30s film](https://youtu.be/6c3JXdIiosg) · [Case](docs/experiments/photo-series-cinema.md) |
 | The Same Forest | An existing virtual-world plate, independent character and three coordinated color/sound states | [42s film](https://youtu.be/wHOpypqPyCs) · [Case and original source](docs/experiments/marble-compositing.md) |
+| Nantes illustrated journey | Real mapped road geometry, animated landmark illustrations and a French guide | [82s film](https://youtu.be/kh-MTl8K5pE) · [Case](docs/experiments/nantes-pixel-journey.md) |
+| SSI report series | Three English voice-only films reuse one pinned brand profile; delivered, partner feedback pending | [Case](docs/experiments/ssi-brand-profiles.md) |
 | SSI website Reels, Ukrainian and English | Real pages scrolling beneath fixed captions; an accepted edit reused for another language | [English Reels](https://www.instagram.com/reel/DezcjZ0tXuz/) · [Case](docs/experiments/ssi-site-reels.md) |
 | Jekyll & Hyde book promo | A playable learning game used as a set for a book video, with owner-recorded Toki Pona narration | [Book promo](https://youtu.be/GPfkz36JWbI) · [Case](docs/experiments/jekyll-toki-pona.md) |
 | Dream Walk films | A generated 60s cinematic film and a separate 20min ambient recording from an actual game canvas | [60s film](https://youtu.be/oyQXmJI4aK0) · [20min game capture](https://youtu.be/rfClK3jPHlw) · [Case](docs/experiments/dream-walk.md) |
 
 Publication links and partner acceptance are owner-reported; the forest film’s watch-page title/duration were also observed. The repository records
-[33 final exports](docs/experiments.md); production evidence, human acceptance and
+[37 final exports](docs/experiments.md); production evidence, human acceptance and
 audience results remain separate. Faster production and better retention are goals,
 not established comparative results.
 
@@ -51,6 +53,8 @@ A [precise revision](skills/video-production-router/references/revisions.md) rec
 
 An [accepted-film template](skills/video-production-router/references/templates.md) separates fixed design from typed text, numbers, media and voice inputs. It prepares three content checks: short text, long text and absent optional media. These are renderer-independent packets; render and review the cases before using the template for a series. New variants receive their own approvals.
 
+A [brand profile](skills/video-production-router/references/branding.md) pins a selected logo, font, palette and layout/motion rules, then exports the same assets and CSS variables for another production. Source changes are detected; new films retain their own content, rights and approval checks. [SSI three-part profile trial](docs/experiments/ssi-brand-profiles.md).
+
 [Source-editing example](examples/editing/source-plan.json) · [Template design](examples/templates/design.json) · [Template values](examples/templates/values.json) · [Curated prompt experiments](docs/research/prompt-library/README.md).
 
 ## Continue after an input changes
@@ -75,7 +79,8 @@ their own authority. Tools/models/media have separate terms; private assets stay
 
 [Production guide](docs/production-guide.md) · [Project and scene workflow](skills/video-production-router/references/production.md) ·
 [Experiments and limits](docs/experiments.md) · [Current priorities](docs/next-cycle.md) ·
-[Research queue](docs/experiment-queue.md) · [Contributing checks](docs/checking-policy.md).
+[Research queue](docs/experiment-queue.md) · [Contributing checks](docs/checking-policy.md) ·
+[Latest closeout audit](docs/maintenance-2026-10-25.md).
 
 MIT for original repository materials. Main includes work after the latest tagged
 release; this update creates no new release. [ABVX ecosystem](docs/ecosystem.md).

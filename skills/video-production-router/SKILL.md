@@ -24,6 +24,7 @@ For recorded speech, multiple takes or screencast recuts, read the optional
 [editing module](references/editing.md): source inspection, cut-only time maps,
 subtitle/overlay retiming and playable join-review packs. It uses the existing
 project and selected assembler; generated review media do not approve content.
+For repeated company/deck styling, read [brand profiles](references/branding.md): freeze selected assets/tokens, export the same profile, and check each rendered variant. Profiles do not inherit film approval.
 For a concrete correction, read [revisions](references/revisions.md). For an accepted
 film becoming a series, read [template contracts](references/templates.md). Both
 reuse the journal; rendering and per-variant approval remain separate.

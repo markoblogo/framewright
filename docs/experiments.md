@@ -86,7 +86,9 @@ Owner accepted both previews and reports partner acceptance of both languages.
 English Instagram publication URL is owner-supplied; Ukrainian publication remains
 unconfirmed. Decoded English/Ukrainian soundtracks match exactly. Audience results
 are unknown.
-The separate weekly-report demos were not accepted and await a partner specification.
+The earlier weekly-report demos were not accepted. A later supplied partner brief
+led to the [three-part voice-only report series](experiments/ssi-brand-profiles.md):
+delivered, partner comments pending; no SSI integration or publication inferred.
 
 [Two English Trends-led Shorts: publication links](experiments/trend-shorts-publication.md)
 now includes both actual final exports, bounded TerminalTextEffects evidence and
@@ -95,8 +97,16 @@ owner-supplied YouTube links; audience performance remains unknown.
 [Möbius Walk and Dream Walk films](experiments/dream-walk.md): fourth published
 game, a generated 60s garden film and a twenty-minute real-game recording; scoped
 Babylon/canvas-loop evidence, explicit approvals and actual 30,508-credit total.
-Those four artifacts brought the registry to 30 recorded exports. The later 42s Marble color study brought the total to 31; the accepted photo-series art film brought the total to32; the later20s Little Light film brings the current total to **33**.
+Those four artifacts brought the registry to 30 recorded exports. The later 42s Marble color study brought the total to 31; the accepted photo-series art film brought the total to 32; the later Little Light film brought that checkpoint to 33. Its corrected 30-second master is a revision of the same production.
 
 [Photo-series cinema](experiments/photo-series-cinema.md): an accepted 30s 16:9 film from six photographs; shallow3D paper, protected source ink, extracted camera component, exact picture preservation through a music revision, and an unarchived English YouTube kit. The corrected [publication URL](https://youtu.be/6c3JXdIiosg) is owner-reported. Audience results remain unknown.
 
 [Little Light](experiments/little-light.md):30s multi-shot rigged dog animation, accepted8s pacing trial, original local light/sound, corrected distant-impact/forest-bloom/run ending with synchronised music change, English kit; corrected30s accepted by owner; [publication URL](https://youtu.be/B4zdWfFIkNE) supplied by owner.
+
+[Nantes illustrated journey](experiments/nantes-pixel-journey.md): 82-second French
+film using actual mapped geometry, Pixel Path road capture and original landmark
+illustrations. Full decode and four paired-frame checks; owner-reported YouTube
+publication, final listening and audience outcomes remain unqualified. Together
+with the three [SSI profile-driven report films](experiments/ssi-brand-profiles.md),
+the current registry contains **37 final exports**. Revisions of one film do not
+count as new productions; local delivery is separate from publication.

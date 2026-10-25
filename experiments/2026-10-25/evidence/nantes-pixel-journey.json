@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-25",
+  "scope": "One 82-second illustrated car/taxi route, not photographic footage or a general navigation adapter",
+  "final": {
+    "local_output": "nantes-airport-drive-20261025/exports/Nantes-Pixel-Journey-FR.mp4",
+    "sha256": "6dfb2a33ee4d31a45d3d645035b2e5c27664726b253eed84414fe5aa097efa4d",
+    "bytes": 41591564
+  },
+  "full_decode": {
+    "result": "pass",
+    "error": "",
+    "decoded_seconds": 82.0,
+    "video_frames": 1968
+  },
+  "streams": [
+    {
+      "index": 0,
+      "codec_name": "h264",
+      "codec_type": "video",
+      "width": 1920,
+      "height": 1080,
+      "avg_frame_rate": "24/1",
+      "disposition": {
+        "attached_pic": 0
+      },
+      "side_data_list": [
+        {}
+      ]
+    },
+    {
+      "index": 1,
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "avg_frame_rate": "0/0",
+      "disposition": {
+        "attached_pic": 0
+      }
+    }
+  ],
+  "capture": {
+    "method": "Absolute-time whole-page capture; native Pixel Path road plus original illustrated bookends",
+    "fps": 24,
+    "frames": 1968,
+    "repeatability": [
+      {
+        "t": 25,
+        "identical": true,
+        "sha256": "4c65d16a9d80c9b694d8c92ee61d482e59e0e3a0dc1deb4d40afec41e2880fe3"
+      },
+      {
+        "t": 50,
+        "identical": true,
+        "sha256": "744087b77922ac16f9e17de4f99f9e09341ae7f9f154202e8193a617aceed091"
+      },
+      {
+        "t": 64,
+        "identical": true,
+        "sha256": "d63a5742b7ad6ce1b2eb18ff70b4c93af66988391849874a90f9ecb65a0866e7"
+      },
+      {
+        "t": 73,
+        "identical": true,
+        "sha256": "3521452c9f46e9ebd2a5ca6e2d1937bf390ec731510e419a0097dd175b04cbad"
+      }
+    ],
+    "scope": "Four paired frames on the retained run, not engine-wide determinism"
+  },
+  "upstream": {
+    "url": "https://github.com/jonwheatley/pixel-path",
+    "revision": "74341a96bb81e95aa62137b435512c91d7355301",
+    "code_license": "MIT",
+    "upstream_skill_installed": false
+  },
+  "route": {
+    "origin": "Mapped terminal taxi rank",
+    "destination": "Tour LU",
+    "length_m": 11105,
+    "scope": "Selected route excerpts; no real travel time or current road-restriction claim"
+  },
+  "audio": {
+    "guide": "Seven local Supertonic3 French phrases",
+    "score": "Original 94 BPM D-dorian, Breton-inspired; no traditional-tune authenticity claim",
+    "stems_separate": true,
+    "normalization_pre_aac": {
+      "integrated_lufs": -17.13,
+      "true_peak_dbtp": -1.5
+    },
+    "encoded_loudness_remeasured": false,
+    "final_listening": "pending"
+  },
+  "rights": {
+    "maps": "OpenStreetMap contributors, ODbL; attribution included in picture",
+    "harp": {
+      "title": "Celtic Harp C5.wav",
+      "creator": "tarane468",
+      "license": "cc0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "foreign_landing_url": "https://freesound.org/people/tarane468/sounds/347626"
+    },
+    "illustrated_bookends": "Original authored illustrations; source likeness not photoreal reconstruction"
+  },
+  "failures": [
+    "Rejected airport-centroid route; replaced with terminal taxi-rank anchor",
+    "Overpass unavailable; retained real OSM main-API extracts used",
+    "Unnamed landmarks required a guard in the private art-plan adapter",
+    "Initial reproducibility attempt failed; subsequent paired-frame run retained"
+  ],
+  "owner_review": {
+    "picture": "not separately recorded",
+    "listening": "not separately recorded"
+  },
+  "publication": {
+    "url": "https://youtu.be/kh-MTl8K5pE",
+    "verification": "owner_reported_url",
+    "visibility": "unknown",
+    "uploaded_byte_identity": "not_verified",
+    "audience_metrics": "not_measured"
+  },
+  "paid_generation_calls": 0
+}

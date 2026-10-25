@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-25",
+  "scope": "Local brand-reading-hold CLI regression and full offline closeout checks",
+  "audited_base_commit": "9a5d458f57a476484135a3880abc5aeece6e3a5d",
+  "targeted": {
+    "same_command_sha256": "4aab4b4e46be91c4ae2d16261e3d4ee55a5715ba77fac8e178d45d7b366f6dec",
+    "before_exit": 1,
+    "before_symptom": "Invalid motion fields when optional settled_hold_seconds is present",
+    "after_exit": 0,
+    "tests": 6,
+    "scope": "Public CLI with synthetic local files; not visual logo/font validation"
+  },
+  "broader": {
+    "command": [
+      "python3",
+      "scripts/check.py"
+    ],
+    "exit_code": 0,
+    "tests_run": 337,
+    "skipped": 1,
+    "assertion_failures": 0,
+    "checks": [
+      "router/storyboard retained packet integrity",
+      "37 export records and local documentation links",
+      "generated tool-reference consistency",
+      "temporary standalone package smoke"
+    ],
+    "automatic_model_calls": 0,
+    "software_release_created": false
+  },
+  "sanitization": {
+    "scope": "Changed text files and Git-tracked media/model extensions",
+    "private_absolute_paths_detected": 0,
+    "credential_patterns_detected": 0,
+    "media_or_models_added": false,
+    "raw_logs_published": false
+  },
+  "limitations": [
+    "Current model routing remains not_evaluated_current_source",
+    "No new media production, listening review, account action or upload",
+    "First full-check capture timed out at 120 seconds; passing run is separate"
+  ]
+}
