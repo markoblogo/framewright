@@ -2,51 +2,39 @@
 
 ## Unreleased
 
-- Add a short read-only working brief over existing project/journal state, with
-  accepted work, file/revision changes, waits, remaining checks and a separately
-  labelled proposed next step. No new tracking store or production execution.
-- Shorten the README entry path and preserve detailed methods/evidence in the
-  production guide. Document conditional sample-first production and minimal reuse
-  measurements for a future authorised job; no new video or benefit claim.
+## 0.4.0 — 2026-10-26 — experimental
 
-- Generate journal-derived project summaries with current file/hash checks, latest
-  revision-bound approvals/publications, explicit public allowlists and drift checks.
-- Add a local canvas-capture adapter with controller/audio proof, repeatable cycle
-  hooks, full-decode/motion and numeric seam checks. Test original canvas/audio and
-  native PlayMCP scopes; retain warnings and keep creative/listening acceptance separate.
-- Link source-pinned content hypotheses to exact master/upload receipts and
-  append-only supplied outcomes: views, retention, monetization/revenue, explicit
-  currency/window/upload age and stale evidence. Backfill the two Shorts honestly
-  as retrospective; audience metrics remain unknown. No analytics grants or release.
-
-- Block imported technical QA and delivery when visual, motion or sync review is
-  rejected or pending; keep decode measurements and creative preference distinct.
-  Score persistent missing-action findings against the full commanded-open period.
-
-- Record free Gemini UI trials: reject a batch response with unbound file IDs;
-  retain one correct single-video freeze finding and a clean control separately
-  from hallucinated speech on byte-verified tone-only audio. Keep the candidate
-  unqualified and preserve the owner's free-only constraint.
-
-- Fix control-clip playback in browser players by encoding H.264/AAC; retain
-  codec regression checks and require a player smoke check alongside decoding.
-
-- Prepare eight original video-perception controls with separate reviewer/gold
-  packets, frozen source hashes, encoded perturbation measurements and diagnostic
-  grading for false alarms, missed events and false passes. Export supplied
-  observations into unified reports; no model qualification or provider call.
-
-- Add local audio/video review reports combining metadata/full-decode evidence,
-  short-recording measurements and explicit timestamped review observations. Import
-  them into the existing journal with source/report revision dependencies; partial
-  or missing perceptual checks remain pending and tasks are never auto-completed.
-
-- Close the PlayMCP service-review cycle with a 150-second owner-narrated export,
-  publication URL and scoped capture, transcription and audio-FX evidence.
-- Refresh the 30-export inventory and current production status; pause SSI pending
-  partner feedback and prepare Pocket OS, Radar and fiction/world-production intake.
-- Preserve historical model qualification and keep private media, account records,
-  unpublished prose and story manuscripts outside the repository.
+- Add a local experiment workbench: source-pinned A/B cards, copied review packs,
+  explicit criteria/time/cost, dependency drift and manual owner acceptance. Separate
+  readiness reports check declared programs/resources/rights/cost without installing
+  tools or running models. No automatic catalogue promotion.
+- Add bounded saved-shot Blender execution: explicit trusted executable, dry run,
+  one-control revisions, selected absolute frame ranges, restored camera/action/light,
+  sample-aligned audio and decode/state receipts. The internal 4.5.15 LTS CPU fixture
+  matched 36 repeated and 12 subrange source frames; other rigs/GPU/builds remain unqualified.
+- Prepare immutable character/environment passports, source pins and exact-version
+  shot bindings. Missing, stale or unapproved declared passports block execution;
+  no automatic visual-identity or rights verification.
+- Include reusable source-editing, precise-revision, accepted-film template and brand
+  workflows introduced since 0.3.1. Retain journal-derived summaries/working briefs,
+  bounded canvas capture and source-pinned idea/master/upload/outcome records.
+- Retain scoped audio/video inspection, eight original perception controls, H.264/AAC
+  player correction and receipt-gated QA. Free Gemini probes remain unqualified,
+  including hallucinated speech on tone-only audio; no new model benchmark.
+- Record 40 final video exports, owner-supplied publication links, the green-line
+  tour, Rokehan manga sample, two-host workflow lesson and SSI source/template handoff.
+  DJV session persistence is partial; black-frame gaps and facial-motion defects stay visible.
+  SSI reports integration deployed; first actual scheduled production remains pending.
+- Add a method-first book workbench: 10-chapter outline, three worked cases, dual
+  routes with Framewright and without it, reusable forms and 10 mapped evidence gaps.
+  Reader reproduction and chapter/illustration approval remain incomplete.
+- Prepare weekly English studio-post drafts with ABVX metadata, 1–3 published-video
+  examples, required generated cover/alt text, owner-provided blog URLs and book-source
+  links. The owner's Codex heartbeat is configured locally; installing the repository
+  does not install a scheduler or publish posts.
+- Expand the reviewed research queue, preserve source/licence/resource gates and
+  keep untested candidates outside automatic provider qualification. Private media,
+  original artwork, models, app distributions, recordings and account state stay out of Git.
 
 ## 0.3.1 — 2026-10-19 — experimental
 

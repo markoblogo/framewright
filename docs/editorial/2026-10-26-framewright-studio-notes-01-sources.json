@@ -1,0 +1,127 @@
+{
+  "schema": "framewright-editorial-sources-v1",
+  "date": "2026-10-26",
+  "issue": "studio-notes-01",
+  "article": "docs/editorial/2026-10-26-framewright-studio-notes-01.md",
+  "article_sha256": "9ecd76ca5412b12c2c666e039ac16e92f1a20b120ac5bc99a305ed042e2edcf6",
+  "source_sha256": {
+    "README.md": "0ebebb91ef23a81ee377d61ae4b05556635cb6e5805d585365c915218fa79bd5",
+    "docs/experiments/photo-series-cinema.md": "df5ca513722d57286f575218e99257277288f61a5610f7c4b2f59496e029c164",
+    "docs/experiments/little-light.md": "f6020a660dc5571cf22084ba4aa598c2b0288a5ada752eb621df122cb65a0b0e",
+    "docs/experiments/framewright-micro-lesson.md": "d02907a36d9efb92f61962c9d57012b15fc226ca08cdbc30a1f2e0f55c5cd09c",
+    "docs/experiments/experiment-workbench.md": "3650363e12811f5ae232692b43045d6f1ff60504249b0eeaad265bfc3bbaa4d6",
+    "docs/experiments/blender-shot-replay.md": "29fd9b237fbfcb2f2c08e607f329ccba7202178c85a35a029a26bb281df7f941",
+    "experiments/2026-10-26/evidence/blender-shot-replay.json": "91feeeeed99c73236c566acdf2ea4f08adf5527c724ffea001d519a8ffc249df"
+  },
+  "youtube_examples": [
+    {
+      "url": "https://youtu.be/6c3JXdIiosg",
+      "case": "docs/experiments/photo-series-cinema.md",
+      "publication_provenance": "owner_supplied_url",
+      "independent_visibility": "not_verified",
+      "web_fetch": "cache_miss_2026-10-26"
+    },
+    {
+      "url": "https://youtu.be/B4zdWfFIkNE",
+      "case": "docs/experiments/little-light.md",
+      "publication_provenance": "owner_supplied_url",
+      "independent_visibility": "not_verified",
+      "web_fetch": "cache_miss_2026-10-26"
+    },
+    {
+      "url": "https://youtu.be/n1wuySSYQcQ",
+      "case": "docs/experiments/framewright-micro-lesson.md",
+      "publication_provenance": "owner_supplied_url",
+      "independent_visibility": "not_verified",
+      "web_fetch": "cache_miss_2026-10-26"
+    }
+  ],
+  "claims": [
+    {
+      "topic": "Photo film, calligraphy protection, rejected piano and accepted revised mix",
+      "source": "docs/experiments/photo-series-cinema.md",
+      "scope": "One accepted30s film; third-party image rights remain separately unresolved"
+    },
+    {
+      "topic": "Dog ending correction, actual travel and repeat-state issue",
+      "source": "docs/experiments/little-light.md",
+      "scope": "One original Three.js scene; not general rig/motion qualification"
+    },
+    {
+      "topic": "Blender36 repeat and12 matching subrange frames, preserved state/PCM, second camera setup",
+      "source": "experiments/2026-10-26/evidence/blender-shot-replay.json",
+      "scope": "One tiny CPU fixture, one build/Mac; no natural-motion or audience evidence"
+    },
+    {
+      "topic": "Trial cards and versioned passport preparation",
+      "source": "docs/experiments/blender-shot-replay.md",
+      "scope": "Local development, owner/production review pending; no automatic visual identity check"
+    },
+    {
+      "topic": "Lesson accepted with jerky presenter facial animation",
+      "source": "docs/experiments/framewright-micro-lesson.md",
+      "scope": "Owner preference separate from technical QA/publication"
+    }
+  ],
+  "metadata": {
+    "language": "en",
+    "collection": "Framewright Studio Notes",
+    "collection_status": "proposed_not_cms_verified",
+    "format": "ABVX fields supplied by owner",
+    "radar_tags_only": true
+  },
+  "blog_publication": {
+    "status": "draft_prepared",
+    "url": null,
+    "cms_mutated": false
+  },
+  "external_checks": {
+    "github_repository": "public page observed2026-10-26; cached README lags local development",
+    "youtube_playback": "not_performed"
+  },
+  "private_source_handling": "No private email body, journals, media or local absolute paths copied into article",
+  "verification": {
+    "metadata_fields": "complete",
+    "language": "en",
+    "body_word_count": 807,
+    "youtube_links": 3,
+    "seo_title_characters": 58,
+    "meta_description_characters": 148,
+    "local_document_links": "pass",
+    "blog_publication": "not_performed",
+    "cover_file": "present",
+    "cover_metadata": "complete",
+    "cover_review": "Full-size exact text and320px headline readability inspected; owner approval pending"
+  },
+  "cover": {
+    "file": "framewright-studio-notes-01-cover.png",
+    "sha256": "68bdae937ce9a4cee5a57d29dd9d054a4912a5b1a378b216667204083f5507c1",
+    "bytes": 1811615,
+    "width": 1672,
+    "height": 941,
+    "format": "PNG",
+    "aspect": "approximately16:9",
+    "alt": "A cinematic miniature studio with a camera, repeated arch-and-sphere scenes and amber lighting, beside the headline Making AI Video Production Repeatable.",
+    "headline": "MAKING AI VIDEO PRODUCTION REPEATABLE",
+    "series_label": "FRAMEWRIGHT STUDIO NOTES 01",
+    "creation": "built-in image_gen; original generated editorial illustration",
+    "software_screenshot": false,
+    "input_images": [],
+    "paid_api_calls": 0,
+    "entitlement_cost": "not_measured",
+    "prompt_file": "cover-prompt.txt",
+    "storage": "private publication workspace outside Git",
+    "text_accuracy_review": "pass",
+    "full_size_visual_review": "pass",
+    "reduced_readability_review": "pass_at320px_headline",
+    "owner_approval": "pending",
+    "cms_upload": "not_performed"
+  },
+  "prepared_revisions": [
+    {
+      "date": "2026-10-26",
+      "prior_sha256": "1f62217c10f474a1e8c26797c5c35460993022a4eba5467d129a0f829bdb7947",
+      "reason": "Align development-cycle wording and README source with authorised v0.4.0 release preparation; blog remains unpublished"
+    }
+  ]
+}

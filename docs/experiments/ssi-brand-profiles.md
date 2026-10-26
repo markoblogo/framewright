@@ -93,23 +93,45 @@ HyperFrames renderer baselines, CONTENT records, original brand bundles, example
 voice tracks, cue sheets and a source-file hash manifest. Three accepted-film
 design contracts were extracted against the exact accepted video pins. Short, long
 and missing-optional-media boundary packets passed data validation; their render
-controls and general automatic chart retargeting remain unperformed. This is an
-accepted-source template handoff, not a deployed weekly generator.
+controls and general automatic chart retargeting remain unperformed. At transfer time this was an
+accepted-source template handoff, not evidence of a deployed weekly generator.
 
 For each week, replace dates, source periods, numbers/chart geometry and narration;
 measure the new speech and preserve at least two seconds of settled data after it.
 The optional actual English-site ending stays separate from data. New variants
 inherit no content, voice, layout or publication approval. Recurring generation,
 scheduling and posting belong in SSI. The owner authorized direct transfer; the
-receiving SSI project is implementing it. Schedule activation is not yet verified.
+receiving SSI project now reports deployment at `fc8360e`. Actual scheduled delivery is not yet observed here.
 
 ## Receiving-project handoff
 
 The private 115-file package includes accepted masters, exact renderer baselines,
 brand/voice assets, algorithms, a typed input contract and QA/delivery instructions.
 Its file integrity passed before authorized direct transfer. The owner confirms
-SSI work is in progress and will report the outcome. Reports remain Ukrainian;
+SSI has completed integration and production deployment per its supplied report. Reports remain Ukrainian;
 videos are English, sent as three ordered text/video pairs from the same frozen
 report. No Framewright scheduler, new live report or channel send was created.
 [Reusable handoff procedure](../external-project-handoff.md) ·
 [Sanitized receipt and pending checks](../../experiments/2026-10-25/evidence/ssi-weekly-handoff.json).
+
+## Receiving-project deployment report — 26 October 2026
+
+The owner supplied SSI’s closeout for `fc8360e`: commit, push and production deploy
+completed; [CI](https://github.com/markoblogo/index/actions/runs/40241753803) green
+with 505 tests, four video-scene checks, typecheck and build. Receipt comparison,
+units/bases/dates checks and hang risks were addressed. The Mac handler is installed;
+SSI reports production access to the private group without a browser session.
+These are **receiver-reported facts**, not an independent Framewright deployment
+or test run. [Retained report](../../experiments/2026-10-26/evidence/ssi-integration-receiver-report.json).
+
+First planned operation: **1 November 2026**, preparation after the Mac is available,
+delivery after **09:00 Europe/Kyiv** only when all outputs are ready. One frozen
+Ukrainian report supplies three English films using fresh Supertonic-3 M1 speech.
+Three ordered text/video pairs go to the private group with server receipts and
+duplicate protection. Preserve two seconds after both speech and data settling.
+The public Telegram channel is not automatically changed.
+
+The reported closeout generated no new reports, speech or videos and sent no
+messages. The first actual scheduled run, fresh listening/editorial review and
+six confirmed delivery receipts remain pending. Do not treat the deployment
+report as successful weekly production or add a Framewright scheduler.

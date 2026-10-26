@@ -1,0 +1,140 @@
+{
+  "schema": "framewright-editorial-series-v1",
+  "series": "Framewright Studio Notes",
+  "language": "en",
+  "cadence": {
+    "frequency": "weekly",
+    "weekday": "Monday",
+    "time": "10:00",
+    "timezone": "Europe/Paris",
+    "next_planned_date": "2026-11-02",
+    "scheduler": "Codex thread heartbeat"
+  },
+  "publication_policy": "draft_only_owner_publishes",
+  "book_milestone": "docs/book-milestone.md",
+  "issues": [
+    {
+      "id": "studio-notes-01",
+      "date": "2026-10-26",
+      "post": "docs/editorial/2026-10-26-framewright-studio-notes-01.md",
+      "sources": "docs/editorial/2026-10-26-framewright-studio-notes-01-sources.json",
+      "sha256": "9ecd76ca5412b12c2c666e039ac16e92f1a20b120ac5bc99a305ed042e2edcf6",
+      "state": "draft_prepared",
+      "blog_url": null,
+      "youtube_urls": [
+        "https://youtu.be/6c3JXdIiosg",
+        "https://youtu.be/B4zdWfFIkNE",
+        "https://youtu.be/n1wuySSYQcQ"
+      ],
+      "covered_capabilities": [
+        "photo-series-cinema",
+        "causal-animation-revision",
+        "experiment-workbench",
+        "blender-shot-replay",
+        "continuity-passport-preparation"
+      ],
+      "baseline_git_head": "cc67a23758b667d76d114f608ee9282d974fd464",
+      "source_sha256": {
+        "README.md": "0ebebb91ef23a81ee377d61ae4b05556635cb6e5805d585365c915218fa79bd5",
+        "docs/experiments/photo-series-cinema.md": "df5ca513722d57286f575218e99257277288f61a5610f7c4b2f59496e029c164",
+        "docs/experiments/little-light.md": "f6020a660dc5571cf22084ba4aa598c2b0288a5ada752eb621df122cb65a0b0e",
+        "docs/experiments/framewright-micro-lesson.md": "d02907a36d9efb92f61962c9d57012b15fc226ca08cdbc30a1f2e0f55c5cd09c",
+        "docs/experiments/experiment-workbench.md": "3650363e12811f5ae232692b43045d6f1ff60504249b0eeaad265bfc3bbaa4d6",
+        "docs/experiments/blender-shot-replay.md": "29fd9b237fbfcb2f2c08e607f329ccba7202178c85a35a029a26bb281df7f941",
+        "experiments/2026-10-26/evidence/blender-shot-replay.json": "91feeeeed99c73236c566acdf2ea4f08adf5527c724ffea001d519a8ffc249df"
+      },
+      "cover": {
+        "file": "framewright-studio-notes-01-cover.png",
+        "sha256": "68bdae937ce9a4cee5a57d29dd9d054a4912a5b1a378b216667204083f5507c1",
+        "bytes": 1811615,
+        "width": 1672,
+        "height": 941,
+        "format": "PNG",
+        "aspect": "approximately16:9",
+        "alt": "A cinematic miniature studio with a camera, repeated arch-and-sphere scenes and amber lighting, beside the headline Making AI Video Production Repeatable.",
+        "headline": "MAKING AI VIDEO PRODUCTION REPEATABLE",
+        "series_label": "FRAMEWRIGHT STUDIO NOTES 01",
+        "creation": "built-in image_gen; original generated editorial illustration",
+        "software_screenshot": false,
+        "input_images": [],
+        "paid_api_calls": 0,
+        "entitlement_cost": "not_measured",
+        "prompt_file": "cover-prompt.txt",
+        "storage": "private publication workspace outside Git",
+        "text_accuracy_review": "pass",
+        "full_size_visual_review": "pass",
+        "reduced_readability_review": "pass_at320px_headline",
+        "owner_approval": "pending",
+        "cms_upload": "not_performed"
+      },
+      "book_source": {
+        "status": "candidate_material",
+        "intended_reuse": [
+          "workflow_explanation",
+          "worked_case",
+          "revision_lesson"
+        ],
+        "chapter_approval": "not_given",
+        "chapters": [
+          "C02",
+          "C04",
+          "C06",
+          "C08"
+        ],
+        "cases": [
+          "P01",
+          "P02"
+        ],
+        "gaps": [
+          "G01",
+          "G02",
+          "G03",
+          "G04",
+          "G05"
+        ]
+      }
+    }
+  ],
+  "automation": {
+    "status": "ACTIVE",
+    "id": "framewright-weekly-english-studio-post",
+    "kind": "heartbeat",
+    "configuration_verified": "2026-10-26",
+    "actual_first_wake": "not_observed",
+    "cover_requirement_updated": "2026-10-26"
+  },
+  "required_deliverables": [
+    "english_post",
+    "abvx_metadata",
+    "one_to_three_youtube_examples",
+    "generated_cover",
+    "cover_alt",
+    "source_receipt"
+  ],
+  "publication_intake": {
+    "source": "owner_supplied_blog_url_after_publication",
+    "provenance": "owner_provided_url",
+    "record_on": "matching_existing_issue",
+    "record_received_date": true,
+    "independent_visibility": "separate_check",
+    "text_and_cover_identity": "do_not_infer_from_url",
+    "preserve_prior_observations": true
+  },
+  "book_source_policy": {
+    "all_editions_are_candidate_material": true,
+    "method_independent_of_framewright": true,
+    "before_chapter_reuse": [
+      "verify_facts",
+      "deduplicate",
+      "adapt_for_reader",
+      "clear_quotation_and_illustration_rights"
+    ],
+    "publication_is_chapter_approval": false,
+    "routes": [
+      "with_framewright",
+      "without_framewright"
+    ],
+    "working_materials": "docs/book/index.json",
+    "chapter_maintenance": "Update outline/case/gap notes from observed work; full manuscript drafting not automated"
+  }
+}

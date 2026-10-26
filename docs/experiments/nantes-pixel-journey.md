@@ -40,4 +40,4 @@ redistributed. No paid generation ran.
 
 Publication is owner-reported. Public/unlisted visibility, uploaded-byte identity,
 platform metadata and audience performance have not been independently verified.
-The proposed Nantes green-line walking film remains a separate, unstarted production.
+The separate [Nantes green-line walking film](nantes-green-line.md) now has a locally rendered, owner-accepted first preview and a requested pixel-clarity revision.

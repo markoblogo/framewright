@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-26",
+  "tool": "DJV",
+  "version": "3.7.5",
+  "platform": "macOS arm64",
+  "upstream_revision": "4d90982b4085adf4d150f1bf0b0b4a5490b023d5",
+  "result": "partial_success_with_gaps",
+  "production_disposition": "candidate_pending_retests",
+  "sources": [
+    {
+      "id": "v2",
+      "original": "nantes-green-line-20261025/Nantes-Ligne-Verte.mp4",
+      "copy": "media/nantes-v2.mp4",
+      "sha256": "dc496a477c6de3e9a091a1ba6a1e3ca2bb16a42cc317c7aabdc6970f3a2147b4",
+      "bytes": 60226640
+    },
+    {
+      "id": "v1",
+      "original": "nantes-green-line-20261025/Nantes-Ligne-Verte-preview.mp4",
+      "copy": "media/nantes-v1.mp4",
+      "sha256": "b9fd0130887860c5f8701475ae5aa24c5bac52700fe31dbf9ff4ebc9d8534d98",
+      "bytes": 47023376
+    }
+  ],
+  "timeline": {
+    "width": 1920,
+    "height": 1080,
+    "rate": 24,
+    "seconds": 100,
+    "audio": "AAC stereo 48kHz; listening not performed"
+  },
+  "passed": [
+    "Visible native A/B comparison at frame 72 (3s), A=v2/B=v1",
+    "Three anchored notes (two single-frame, one range) and one source-bound drawing",
+    "Frame/Next 72 to 73; Review/NextFrame 72 to 216; drawing absent on adjacent frame",
+    "Native save, reopen and relocation with relative media links; notes, drawing, A/B settings and custom metadata survive",
+    "Approved originals and review copies retain their source hashes",
+    "FFV1 RGB/PCM 0-30s review proxy displays map frame 240 in A/B"
+  ],
+  "gaps": [
+    "H.264 native captures at frames 240 and 612 black despite valid frame metadata; fixed zoom only resolves some captures",
+    "FFV1 review proxy displays frame 240 but frame 612 remains black; not a proven general workaround",
+    "Direct startup screenshot can precede visible media; success exit/metadata are insufficient evidence",
+    "Native Open dialog could not select some resaved sessions; positional .djvr CLI reopening worked",
+    "Full continuous playback, focused listening, perceptual AV sync and calibrated colour not tested"
+  ],
+  "retests": {
+    "owner_decision": "Repeat on the next one or two authorised productions before production promotion",
+    "cases": [
+      "Original export: compare first/middle/last nonblack frames and adjacent frames; verify A and B visually, not only metadata",
+      "If seeking fails, retain failure; test one intermediate with explicit timing map; do not certify it from exit status",
+      "Play a short passage, listen for intelligibility and AV alignment, save/reopen/relocate, verify anchors/settings/source hashes"
+    ],
+    "promotion": "Only after reliable picture access, persistence and owner review in repeated real use. Restrict qualification to demonstrated scope."
+  },
+  "scope_exclusions": [
+    "No film edit, new export, upload, publication, paid call, new install, commit or release",
+    "No automatic semantic video review, audio/image-only qualification or owner creative approval"
+  ],
+  "evidence": {
+    "Nantes-Green-Line.djvr": {
+      "sha256": "80481d8fad359a26d206f9ce4fabdda4192b96408907f74de61a18d0d53b0da9",
+      "bytes": 13903
+    },
+    "review-notes.json": {
+      "sha256": "614bbf1b067e2c236ae0674778a2cb5abf7a25dc14bf4648e38e37076a03fe3d",
+      "bytes": 2095
+    },
+    "evidence/session-preservation.json": {
+      "sha256": "97da1cf7883ad99f29ab274783ecb2cce1431e4d426a9476de1bdb4e9c21f8d0",
+      "bytes": 695
+    },
+    "evidence/navigation.json": {
+      "sha256": "70d9aa221d061b41b7ed925377f83e57660a03fd0b38222beefb8d4325116d08",
+      "bytes": 249
+    },
+    "evidence/stable/pixels.png": {
+      "sha256": "2d0c0059c44b2ae5e37644072336d0862bb1f6f6df13d0ac129ad67e3c49297c",
+      "bytes": 387593
+    },
+    "evidence/stable/step73.png": {
+      "sha256": "4190c511eaa06631cf59f7dfd565e773b91d093633b39590933d5bfe1011e009",
+      "bytes": 377488
+    },
+    "evidence/proxy/map.png": {
+      "sha256": "96fe15624dcceeb586c990ff934f72ac81935ee1c5401ef9caadc2fc25721bf2",
+      "bytes": 518853
+    },
+    "evidence/proxy/detail.png": {
+      "sha256": "680ca986751b48507ad2bd6f89fe94c857c2f7d93663a0430d7e7db4e4e227f4",
+      "bytes": 246591
+    },
+    "evidence/source-detail.png": {
+      "sha256": "e609a0ef290cb86af45e41f0c8e23d647cda7110236f321abca10b032a937567",
+      "bytes": 3787543
+    }
+  }
+}

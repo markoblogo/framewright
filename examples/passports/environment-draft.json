@@ -1,0 +1,15 @@
+{
+  "id": "future-set",
+  "version": "v1",
+  "kind": "environment",
+  "name": "Unselected future production environment",
+  "references": [],
+  "dimensions_m": null,
+  "materials": [],
+  "constraints": [],
+  "environment": {
+    "layout": "",
+    "lighting": "",
+    "anchors": []
+  }
+}

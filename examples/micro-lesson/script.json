@@ -1,0 +1,135 @@
+[
+  {
+    "id": "t01",
+    "speaker": "A",
+    "voice": "F1",
+    "text": "Can an AI agent turn one sentence into a finished video?",
+    "section": "hook"
+  },
+  {
+    "id": "t02",
+    "speaker": "B",
+    "voice": "M1",
+    "text": "It can help. The useful part is the production process. Here is how we use Framewright to keep that process organised.",
+    "section": "hook"
+  },
+  {
+    "id": "t03",
+    "speaker": "A",
+    "voice": "F1",
+    "text": "What happens before anyone starts rendering?",
+    "section": "brief"
+  },
+  {
+    "id": "t04",
+    "speaker": "B",
+    "voice": "M1",
+    "text": "We turn the idea into a brief: the audience, format, length, available material, and the job of each scene.",
+    "section": "brief"
+  },
+  {
+    "id": "t05",
+    "speaker": "A",
+    "voice": "F1",
+    "text": "Does it just pick the newest tool?",
+    "section": "tools"
+  },
+  {
+    "id": "t06",
+    "speaker": "B",
+    "voice": "M1",
+    "text": "It checks tools against the task and recorded tests. For this dog story, we combined an animated model, a three-dimensional forest, camera moves, and timed sound.",
+    "section": "dog"
+  },
+  {
+    "id": "t07",
+    "speaker": "A",
+    "voice": "F1",
+    "text": "Could a game become material for a video?",
+    "section": "game"
+  },
+  {
+    "id": "t08",
+    "speaker": "B",
+    "voice": "M1",
+    "text": "Yes. Our Jekyll and Hyde game became a filming location for a book promo. The game supplied footage for another creative project.",
+    "section": "game"
+  },
+  {
+    "id": "t09",
+    "speaker": "A",
+    "voice": "F1",
+    "text": "Where does narration fit?",
+    "section": "scene"
+  },
+  {
+    "id": "t10",
+    "speaker": "B",
+    "voice": "M1",
+    "text": "Each scene connects what we say, what we show, the source material, and anything still missing. Measure the recorded speech, then build the timing around it.",
+    "section": "scene"
+  },
+  {
+    "id": "t11",
+    "speaker": "A",
+    "voice": "F1",
+    "text": "If the exported file plays, are we done?",
+    "section": "checks"
+  },
+  {
+    "id": "t12",
+    "speaker": "B",
+    "voice": "M1",
+    "text": "Not yet. Decode the export, inspect the pictures, and listen. Technical checks, creative approval, and publication are separate records.",
+    "section": "checks"
+  },
+  {
+    "id": "t13",
+    "speaker": "A",
+    "voice": "F1",
+    "text": "What if a scene is too dark?",
+    "section": "revision"
+  },
+  {
+    "id": "t14",
+    "speaker": "B",
+    "voice": "M1",
+    "text": "Keep the original. Make that section lighter, keeping the camera and timing. Compare the versions and record the result. We did exactly that with our manga-style city test.",
+    "section": "revision"
+  },
+  {
+    "id": "t15",
+    "speaker": "A",
+    "voice": "F1",
+    "text": "And when we return tomorrow?",
+    "section": "memory"
+  },
+  {
+    "id": "t16",
+    "speaker": "B",
+    "voice": "M1",
+    "text": "The project keeps file versions, decisions, and open checks. We can reuse cleared material and prepare the video, thumbnail, captions, and publication text.",
+    "section": "memory"
+  },
+  {
+    "id": "t17",
+    "speaker": "A",
+    "voice": "F1",
+    "text": "Give me one thing to try.",
+    "section": "practice"
+  },
+  {
+    "id": "t18",
+    "speaker": "B",
+    "voice": "M1",
+    "text": "Pick one idea. Write three scenes: what you will say, what viewers will see, and where each asset comes from. That is your starting shot list.",
+    "section": "practice"
+  },
+  {
+    "id": "t19",
+    "speaker": "A",
+    "voice": "F1",
+    "text": "Make the video. Keep the evidence.",
+    "section": "close"
+  }
+]

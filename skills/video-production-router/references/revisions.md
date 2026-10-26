@@ -1,5 +1,9 @@
 # Precise revisions and comparison
 
+For native A/B frame notes and portable sessions, see the provisional
+[DJV procedure](djv-review.md). Persistence passed a real trial; picture-access
+gaps require retests on the next one or two productions before promotion.
+
 Use after a concrete defect has been identified. This extends the existing project
 journal; it does not create another approval database. `revisions.py` uses Python 3,
 existing FFmpeg/ffprobe and the [editing helpers](editing.md). No model, installer,

@@ -1,0 +1,337 @@
+{
+  "id": "framewright-micro-lesson",
+  "date": "2026-10-26",
+  "result": "technical_pass_owner_accepted_with_facial_animation_limit",
+  "format": "120s1920x1080p24,2880frames,H264/AAC stereo48kHz",
+  "full_decode": {
+    "result": "pass",
+    "error": "",
+    "decoded_seconds": 120.0,
+    "video_frames": 2880
+  },
+  "picture_reseek": [
+    {
+      "frame": 744,
+      "identical": true
+    },
+    {
+      "frame": 2064,
+      "identical": true
+    }
+  ],
+  "runtime_errors": [],
+  "audio": {
+    "voices": [
+      "Supertonic3 F1",
+      "Supertonic3 M1"
+    ],
+    "model_revision": "3cadd1ee6394adea1bd021217a0e650ede09a323",
+    "local_cached": true,
+    "integrated_lufs": -16.24,
+    "true_peak_dbtp": -1.35,
+    "lra_lu": 3.7,
+    "final_mix_asr": {
+      "expected_normalized_tokens": 280,
+      "actual_normalized_tokens": 280,
+      "exact_match": true,
+      "model": "retained mlx-whisper/tiny.en",
+      "scope": "Script mismatch screening only; punctuation/brand spelling/hyphens normalised. Not acoustic listening or pronunciation certification."
+    },
+    "music": "Original local procedural score; example source audio discarded",
+    "listening": "owner_report: baseline speech/mix good; v2 AAC packets and timing unchanged. No independent agent listening."
+  },
+  "captions": {
+    "cues": 40,
+    "formats": [
+      "SRT",
+      "VTT"
+    ],
+    "method": "Expected text to local ASR word anchors, constrained by measured PCM turns",
+    "perceptual_sync": "pending owner; sampled timeline/cue checks only"
+  },
+  "thumbnail": {
+    "dimensions": [
+      1280,
+      720
+    ],
+    "formats": [
+      "PNG",
+      "JPG"
+    ],
+    "text": "IDEA TO FINISHED VIDEO",
+    "provenance": "New native composition from a real source-film frame plus original type/mark",
+    "review": "Inspected full and320x180: readable text, main dog/light crop visible"
+  },
+  "visual_review": "Representative encoded dog/game/Nantes/close images and storyboard contact inspected; game header-label overlap removed before delivery. Whole continuous viewer preference pending owner.",
+  "claudemy": {
+    "upstream": "https://github.com/assafkip/claudemy",
+    "revision": "438a6288fa74a2edad2cc86416d28308cb02ee1a",
+    "licence": "MIT",
+    "used": "Original adaptation of dialogue/one-action/source-card/pilot structure; no upstream plugin or scripts installed/copied/executed",
+    "changes": [
+      "One own-product lesson instead of a12-lesson20-40-page web course",
+      "Claim\u2192current primary document map replaces URL-presence-only proxy",
+      "Local Supertonic F1/M1 instead of ElevenLabs or macOS say",
+      "Real example video and original Canvas diagrams added",
+      "Source rights and output/listening/owner approval tracked independently"
+    ],
+    "qualification": "Claudemy-inspired studio recipe only, not native Claude Code plugin, web scraper or ElevenLabs dialogue qualification"
+  },
+  "source_scope": "Current first-party Framewright docs and retained real productions; claim-map retained. No factuality inferred from URL presence or source counts.",
+  "rights": "Owner-authorised examples; QuaterniusCC0 animal, original set/score; PlayMCP-produced owner book-game footage; Rokehan outputs used within a work with visible OSM/OpenMapTiles/Terrain Tiles credit. Source audio dropped. Local Supertonic OpenRAIL-M use; no cloned person. Model/media not distributed in Git.",
+  "files": [
+    {
+      "file": "Framewright-Idea-to-Video-EN.mp4",
+      "bytes": 26103660,
+      "sha256": "2005b00f6b64a91c33b01d93512ec4ce42f7121fcbe8605b5c206beee2cb3b33"
+    },
+    {
+      "file": "youtube/thumbnail.png",
+      "bytes": 265418,
+      "sha256": "b35cd178a0919cd0823fd971320a6aa7d8dfcec36f25be89ba635a948e44c4b3"
+    },
+    {
+      "file": "youtube/thumbnail.jpg",
+      "bytes": 122343,
+      "sha256": "72ec20f693d244bf414151e9cd9585e692f2a4c4d3de1c04399a8f345b6b9762"
+    },
+    {
+      "file": "youtube/captions.en.srt",
+      "bytes": 3003,
+      "sha256": "98d3eebe6d42dd28ec8e2c02abdf3e1853d87e32b3b0d8595d3c0c87007c841d"
+    },
+    {
+      "file": "youtube/title.txt",
+      "bytes": 59,
+      "sha256": "e52954a7c8c70db0023efad0506e6e25827147cb7cdf3ef2e023030acad1e5f0"
+    },
+    {
+      "file": "youtube/description.txt",
+      "bytes": 2326,
+      "sha256": "b1e8370eb0f6ba83bbbd8ce74995da377c723d033062d77accbbff344ec04a93"
+    },
+    {
+      "file": "youtube/tags.txt",
+      "bytes": 318,
+      "sha256": "cf555d3597f2c8f71ecda718d1791e39025aa91c1704e00e121204f2f6505a94"
+    },
+    {
+      "file": "claim-map.json",
+      "bytes": 7806,
+      "sha256": "4ef56b28bbfe5d47fc39486b2cd4cc8cefe3ca0bb2d106c61ad6ff2f964fe60f"
+    },
+    {
+      "file": "script.json",
+      "bytes": 3623,
+      "sha256": "f737c8d89dba9bbc653cb6b20eb2ae45c17fd74bfde820ae21508a60599bad56"
+    },
+    {
+      "file": "scene.js",
+      "bytes": 10537,
+      "sha256": "237288d98b6a9ff4b3d3c87e2e50522ead352556ff0ad5a2bdc051d9a46d626c"
+    },
+    {
+      "file": "timeline.json",
+      "bytes": 10421,
+      "sha256": "ff142111d78135c1f1de9d8cd09496abc4ea3706e58856a90b2cc03fb2f18a1a"
+    }
+  ],
+  "owner_acceptance": "Owner accepts v2 for publication; speech/meaning good. Mouth timing adequate but facial expressions jerky/artificial. No upload/public URL reported.",
+  "publication": {
+    "status": "owner_reported_published",
+    "url": "https://youtu.be/n1wuySSYQcQ",
+    "visibility": "unknown",
+    "uploaded_byte_identity": "not_independently_verified",
+    "playback": "not_independently_verified",
+    "web_access_attempt": "cache_miss; not availability evidence",
+    "audience_metrics": "not_measured"
+  },
+  "audience_results": "not_measured",
+  "costs": {
+    "paid_service_api_calls": 0,
+    "new_installs": 0,
+    "cloud_tts_upload": false,
+    "builtin_image_generation_calls": 2,
+    "builtin_generation_cost": "not_reported"
+  },
+  "limits": [
+    "Original Claudemy-inspired adapter; native plugin/scraper/ElevenLabs not run",
+    "No learning-outcome, speedup, retention or monetisation claim",
+    "No continuous independent listening; owner review pending",
+    "Current private docs may precede published main; public source links do not pin local revision by themselves"
+  ],
+  "revisions": [
+    {
+      "date": "2026-10-26",
+      "revision": "opening-presenters-v2",
+      "owner_feedback": "Speech and meaning good; introduce animated photo characters briefly at start so voices have personalities.",
+      "scope": [
+        0,
+        9
+      ],
+      "actual_visibility": [
+        0.12,
+        8.95
+      ],
+      "assets": {
+        "questioner": {
+          "file": "assets/host-questioner-atlas.png",
+          "sha256": "7548e63e3ef355a697733f3830751665a6f47cac7c8e8f46dcc8091621a8ce12",
+          "size": [
+            1536,
+            1024
+          ],
+          "grid": [
+            3,
+            2
+          ],
+          "tile": [
+            512,
+            512
+          ],
+          "closed_open_difference": 3.2185872395833335,
+          "generator": "Built-in image_gen; exact backend model/cost not reported",
+          "identity": "Entirely fictional adult; no supplied personal photograph or voice clone",
+          "poses": [
+            "closed",
+            "small-open",
+            "ah",
+            "ee",
+            "blink",
+            "half-smile"
+          ]
+        },
+        "maker": {
+          "file": "assets/host-maker-atlas.png",
+          "sha256": "f09dc34284c566f1769e87440e89fe5b4c808334f99ddccd49a38c2bef771a9e",
+          "size": [
+            1536,
+            1024
+          ],
+          "grid": [
+            3,
+            2
+          ],
+          "tile": [
+            512,
+            512
+          ],
+          "closed_open_difference": 3.7451171875,
+          "generator": "Built-in image_gen; exact backend model/cost not reported",
+          "identity": "Entirely fictional adult; no supplied personal photograph or voice clone",
+          "poses": [
+            "closed",
+            "small-open",
+            "ah",
+            "ee",
+            "blink",
+            "half-smile"
+          ]
+        }
+      },
+      "animation": "Generated six-pose fictional photographic atlases drawn/crossfaded in two picture-in-picture cards; actual PCM envelope drives mouth choice; blink and subtle breathing; border identifies active speaker. Not phoneme-accurate lip sync or generated video.",
+      "full_decode": {
+        "result": "pass",
+        "error": "",
+        "decoded_seconds": 120.0,
+        "video_frames": 2880
+      },
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "avg_frame_rate": "24/1",
+          "disposition": {
+            "attached_pic": 0
+          },
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "avg_frame_rate": "0/0",
+          "disposition": {
+            "attached_pic": 0
+          }
+        }
+      ],
+      "preservation": {
+        "audio_packet_hashes": {
+          "baseline": "SHA256=eb336d5612627b5d3297db44287f44ff0aaea8299d5a74674debbb10e4ee7408",
+          "revised": "SHA256=eb336d5612627b5d3297db44287f44ff0aaea8299d5a74674debbb10e4ee7408"
+        },
+        "audio_packets_identical": true,
+        "audio_timing": {
+          "baseline": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "time_base": "1/48000",
+                "start_time": "0.000000",
+                "duration": "120.000000"
+              }
+            ]
+          },
+          "revised": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "time_base": "1/48000",
+                "start_time": "0.000000",
+                "duration": "120.000000"
+              }
+            ]
+          }
+        },
+        "audio_timing_identical": true,
+        "body_control_frames": {
+          "744": true,
+          "2064": true
+        },
+        "script_unchanged_sha256": "f737c8d89dba9bbc653cb6b20eb2ae45c17fd74bfde820ae21508a60599bad56",
+        "subtitles_unchanged_sha256": "98d3eebe6d42dd28ec8e2c02abdf3e1853d87e32b3b0d8595d3c0c87007c841d",
+        "picture_scope": "Presenter cards only t0.12\u20138.95; ordinary render path untouched after9s. Actual source-frame controls at31/86s match, not an every-frame encoded-pixel identity claim."
+      },
+      "video": {
+        "file": "Framewright-Idea-to-Video-EN-v2.mp4",
+        "sha256": "8f435f88bc9614a73fec4fe51704dd610b1a812ae4a9b7dc47803920001a771d",
+        "bytes": 27069875
+      },
+      "source_sha256": "3bae2506ae16cd047695487be84a80cb7acedf7d7776aebac00ae5ce4902e14d",
+      "visual_review": "Generated atlases inspected for same-person pose consistency; native introduction frames2/5/7s show visible subjects, active-speaker borders and differing mouth states; new full-motion preference pending owner.",
+      "voice_and_meaning_acceptance": "owner_report on baseline; exact audio packets/timing preserved",
+      "creative_acceptance": "owner_accepted_for_current_publication_with_expression_limit",
+      "publication": false,
+      "generation": {
+        "built_in_imagegen_calls": 2,
+        "exact_backend": "not_reported",
+        "monetary_cost": "not_reported",
+        "new_personal_photo_uploads": 0,
+        "paid_video_calls": 0,
+        "installs": 0
+      },
+      "limits": [
+        "Audio-envelope mouth animation, not phoneme/viseme inference from the actual recorded sounds",
+        "No claim of human actor recordings or cloned real people",
+        "Scene controls31/86s byte-identical in pre-encode captures, not every-frame final encoded identity"
+      ],
+      "owner_feedback_after_review": "Mouth opens on time but facial animation is jerky/artificial; improve on next similar cases. Current export accepted."
+    }
+  ],
+  "current_delivery": {
+    "file": "Framewright-Idea-to-Video-EN-v2.mp4",
+    "sha256": "8f435f88bc9614a73fec4fe51704dd610b1a812ae4a9b7dc47803920001a771d",
+    "bytes": 27069875
+  },
+  "next_trial": "Before next similar production, compare an8\u201312s talking sample for smooth mouth transitions, independent eye/brow/head motion and naturalness. Current six-pose/envelope method is an accepted one-off with a known naturalness defect, not a qualified natural-avatar engine."
+}

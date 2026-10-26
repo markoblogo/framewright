@@ -11,6 +11,19 @@ and compatible proposed chains,read [search](references/arsenal-search.md) and u
 Search/comparison alone never authorises execution. This skill selects and records;
 it does not replace rendering skills or confer permission to publish.
 
+For a bounded new-method comparison or environment preflight, read
+[experiment workbench and readiness](references/trials-and-readiness.md). Use
+`environment.py` for explicit prerequisite snapshots and `trials.py` for source-pinned
+A/B cards in the existing journal. Keep manual observations, owner acceptance and
+proposed scoped catalogue updates separate; no automatic promotion or execution.
+
+For an authorised saved-Blender-shot correction or recurring character/set definition,
+read [shots and passports](references/shots-and-passports.md). `shots.py` restores a
+pinned scene and renders only an explicit local range after `--execute`; `passports.py`
+retains exact-version definitions and manual approval. This bounded adapter does not
+qualify arbitrary scenes, automatic identity checks or publication.
+
+
 For recuts, sourced insight stories, hybrid films or private music libraries, read
 [shared studio intake](references/studio-workflows.md). Reuse one source/claim/EDL
 contract; `workflow.py` adds experimental confirmation/delivery gates to the existing
@@ -24,6 +37,7 @@ For recorded speech, multiple takes or screencast recuts, read the optional
 [editing module](references/editing.md): source inspection, cut-only time maps,
 subtitle/overlay retiming and playable join-review packs. It uses the existing
 project and selected assembler; generated review media do not approve content.
+For short educational films, read [micro-lessons](references/micro-lessons.md): source-backed dialogue, real examples and one practical action, with a pilot before a series.
 For repeated company/deck styling, read [brand profiles](references/branding.md): freeze selected assets/tokens, export the same profile, and check each rendered variant. Profiles do not inherit film approval.
 For a concrete correction, read [revisions](references/revisions.md). For an accepted
 film becoming a series, read [template contracts](references/templates.md). Both

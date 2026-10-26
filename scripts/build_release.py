@@ -67,6 +67,9 @@ def build(root, output):
                     if destination not in names:
                         raise ValueError('Broken installed documentation link: ' + name + ': ' + link)
             z.extractall(target)
+        for name in ['environment.py', 'trials.py', 'passports.py', 'shots.py']:
+            subprocess.run([sys.executable, str(target / 'video-production-router/scripts' / name), '--help'],
+                           check=True, capture_output=True, text=True)
         brief = target / 'brief.json'
         brief.write_text(json.dumps({'blocks': [{'id': 'ui', 'input': 'react-ui', 'preferred_tool': 'flute', 'deliverables': ['video-export', 'still-export']}], 'music': {'direction': 'music-first', 'audio_source': 'authorised-demo.wav'}}))
         run = subprocess.run([sys.executable, str(target / 'video-production-router/scripts/plan.py'), str(brief)], check=True, capture_output=True, text=True)
