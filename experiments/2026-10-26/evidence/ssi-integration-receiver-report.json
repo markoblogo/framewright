@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-26",
+  "provenance": "owner_supplied_receiving_project_report",
+  "independently_verified_in_framewright": false,
+  "receiving_project": "SSI / markoblogo/index",
+  "reported_revision": "fc8360e",
+  "reported_status": "committed_pushed_and_production_deployed",
+  "reported_ci": {
+    "url": "https://github.com/markoblogo/index/actions/runs/40241753803",
+    "status": "green_per_supplied_report",
+    "tests": 505,
+    "video_scene_checks": 4,
+    "typecheck": "passed_per_report",
+    "build": "passed_per_report"
+  },
+  "reported_changes": [
+    "receipt comparison fixes",
+    "units/bases/dates validation",
+    "hang-risk fixes",
+    "Mac handler installed",
+    "production access to private Telegram group confirmed without browser session"
+  ],
+  "workflow": {
+    "source": "one frozen weekly report",
+    "report_language": "Ukrainian",
+    "video_language": "English",
+    "voice": "fresh local Supertonic-3 M1",
+    "video_count": 3,
+    "design": "transferred accepted Framewright templates",
+    "reading_hold_seconds": 2,
+    "reading_hold_applies_after": [
+      "speech ends",
+      "data animation settles"
+    ],
+    "all_files_ready_before_delivery": true,
+    "delivery_order": [
+      "UK report I",
+      "EN video I",
+      "UK report II",
+      "EN video II",
+      "UK report III",
+      "EN video III"
+    ],
+    "destination": "private Telegram group",
+    "public_channel_automatic_changes": false,
+    "receipts": "server-side per-item receipts and duplicate protection, per receiver report"
+  },
+  "schedule": {
+    "planned_first_date": "2026-11-01",
+    "timezone": "Europe/Kyiv",
+    "prepare": "after Mac becomes available",
+    "send_not_before_local": "09:00",
+    "send_condition": "all required outputs pass readiness checks"
+  },
+  "not_executed_in_reported_closeout": [
+    "new report generation",
+    "new narration generation",
+    "new video generation",
+    "Telegram messages"
+  ],
+  "pending": [
+    "actual first scheduled run",
+    "new audio listening and pronunciation review",
+    "editorial and visual quality of generated weekly videos",
+    "actual ordered delivery receipts for all six items"
+  ],
+  "boundaries": [
+    "Framewright records the handoff outcome; SSI owns recurring operations",
+    "no additional Framewright scheduler or generation started",
+    "deployment/CI report does not establish scheduled delivery or perceptual quality"
+  ]
+}

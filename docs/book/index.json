@@ -1,0 +1,270 @@
+{
+  "schema": "framewright-book-materials-v1",
+  "updated": "2026-10-26",
+  "language_of_working_docs": "ru",
+  "book_language": "not_decided",
+  "scope": "Video-production methods with Framewright and without it; parallel routes, same outcome criteria",
+  "manuscript_status": "not_started",
+  "outline_status": "working_draft_v0.1",
+  "outline": "docs/book/outline.md",
+  "case_template": "docs/book/templates.md",
+  "coverage_map": "docs/book/coverage.md",
+  "milestone": "docs/book-milestone.md",
+  "chapters": [
+    {
+      "id": "C01",
+      "title": "Бриф и критерий готовности",
+      "cases": [
+        "P01",
+        "P03"
+      ],
+      "gaps": [
+        "G01"
+      ],
+      "chapter_status": "outline_only"
+    },
+    {
+      "id": "C02",
+      "title": "Источники и память проекта",
+      "cases": [
+        "P01",
+        "P03"
+      ],
+      "gaps": [
+        "G01"
+      ],
+      "chapter_status": "outline_only"
+    },
+    {
+      "id": "C03",
+      "title": "Сцены и управление",
+      "cases": [
+        "P01",
+        "P02"
+      ],
+      "gaps": [
+        "G03"
+      ],
+      "chapter_status": "outline_only"
+    },
+    {
+      "id": "C04",
+      "title": "Исходная съёмка и фотографии",
+      "cases": [
+        "P01"
+      ],
+      "gaps": [
+        "G01",
+        "G02"
+      ],
+      "chapter_status": "outline_only"
+    },
+    {
+      "id": "C05",
+      "title": "Генерация, миры и площадки",
+      "cases": [],
+      "gaps": [
+        "G04",
+        "G06"
+      ],
+      "chapter_status": "outline_only"
+    },
+    {
+      "id": "C06",
+      "title": "Персонажи и окружение",
+      "cases": [
+        "P02"
+      ],
+      "gaps": [
+        "G04",
+        "G05",
+        "G06"
+      ],
+      "chapter_status": "outline_only"
+    },
+    {
+      "id": "C07",
+      "title": "Голос, музыка и звук",
+      "cases": [
+        "P01",
+        "P02",
+        "P03"
+      ],
+      "gaps": [
+        "G07"
+      ],
+      "chapter_status": "outline_only"
+    },
+    {
+      "id": "C08",
+      "title": "Проверка и точечные правки",
+      "cases": [
+        "P01",
+        "P02"
+      ],
+      "gaps": [
+        "G01",
+        "G03",
+        "G08"
+      ],
+      "chapter_status": "outline_only"
+    },
+    {
+      "id": "C09",
+      "title": "Серия и передача",
+      "cases": [
+        "P03"
+      ],
+      "gaps": [
+        "G09"
+      ],
+      "chapter_status": "outline_only"
+    },
+    {
+      "id": "C10",
+      "title": "Публикация и обратная связь",
+      "cases": [
+        "P01",
+        "P03"
+      ],
+      "gaps": [
+        "G10"
+      ],
+      "chapter_status": "outline_only"
+    }
+  ],
+  "cases": [
+    {
+      "id": "P01",
+      "file": "docs/book/cases/photo-film.md",
+      "primary_evidence": "docs/experiments/photo-series-cinema.md",
+      "supporting_workflow": "docs/workflows/photo-series-cinema.md",
+      "documentation_status": "worked_case_draft",
+      "with_framewright": "actual_method_documented_current_helpers_distinguished",
+      "without_framewright": "written_not_reproduced",
+      "new_reader_exercise": "planned_not_executed",
+      "source_media": "private_not_distributed",
+      "illustration_rights": "requires_item_review",
+      "chapter_approval": "not_given"
+    },
+    {
+      "id": "P02",
+      "file": "docs/book/cases/dog-and-light.md",
+      "primary_evidence": "docs/experiments/little-light.md",
+      "supporting_workflow": null,
+      "documentation_status": "worked_case_draft",
+      "with_framewright": "actual_method_documented_current_helpers_distinguished",
+      "without_framewright": "written_not_reproduced",
+      "new_reader_exercise": "planned_not_executed",
+      "source_media": "private_not_distributed",
+      "illustration_rights": "requires_item_review",
+      "chapter_approval": "not_given"
+    },
+    {
+      "id": "P03",
+      "file": "docs/book/cases/ssi-series.md",
+      "primary_evidence": "docs/experiments/ssi-brand-profiles.md",
+      "supporting_workflow": "docs/external-project-handoff.md",
+      "documentation_status": "worked_case_draft",
+      "with_framewright": "actual_method_documented_current_helpers_distinguished",
+      "without_framewright": "written_not_reproduced",
+      "new_reader_exercise": "planned_not_executed",
+      "source_media": "private_not_distributed",
+      "illustration_rights": "requires_item_review",
+      "chapter_approval": "not_given"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "G01",
+      "status": "open",
+      "execution_authority": "not_granted_by_documentation",
+      "details": "docs/book/coverage.md"
+    },
+    {
+      "id": "G02",
+      "status": "open",
+      "execution_authority": "not_granted_by_documentation",
+      "details": "docs/book/coverage.md"
+    },
+    {
+      "id": "G03",
+      "status": "open",
+      "execution_authority": "not_granted_by_documentation",
+      "details": "docs/book/coverage.md"
+    },
+    {
+      "id": "G04",
+      "status": "open",
+      "execution_authority": "not_granted_by_documentation",
+      "details": "docs/book/coverage.md"
+    },
+    {
+      "id": "G05",
+      "status": "open",
+      "execution_authority": "not_granted_by_documentation",
+      "details": "docs/book/coverage.md"
+    },
+    {
+      "id": "G06",
+      "status": "open",
+      "execution_authority": "not_granted_by_documentation",
+      "details": "docs/book/coverage.md"
+    },
+    {
+      "id": "G07",
+      "status": "open",
+      "execution_authority": "not_granted_by_documentation",
+      "details": "docs/book/coverage.md"
+    },
+    {
+      "id": "G08",
+      "status": "open",
+      "execution_authority": "not_granted_by_documentation",
+      "details": "docs/book/coverage.md"
+    },
+    {
+      "id": "G09",
+      "status": "open",
+      "execution_authority": "not_granted_by_documentation",
+      "details": "docs/book/coverage.md"
+    },
+    {
+      "id": "G10",
+      "status": "open",
+      "execution_authority": "not_granted_by_documentation",
+      "details": "docs/book/coverage.md"
+    }
+  ],
+  "source_sha256": {
+    "docs/experiments/photo-series-cinema.md": "df5ca513722d57286f575218e99257277288f61a5610f7c4b2f59496e029c164",
+    "docs/experiments/little-light.md": "f6020a660dc5571cf22084ba4aa598c2b0288a5ada752eb621df122cb65a0b0e",
+    "docs/experiments/ssi-brand-profiles.md": "f95d43148d194dfec667b740422a809503fbe595e08d150d8559ef9ed90500da",
+    "docs/workflows/photo-series-cinema.md": "646cb1a2fd559cf99ea2f6e371face3ad85ab08a886690c09d88b5d118f48fe6",
+    "docs/external-project-handoff.md": "5be7f0f78a7b281fc7943446b55c1eece011f27ee22fcd9d25f3521f181905b7",
+    "docs/experiments/blender-shot-replay.md": "29fd9b237fbfcb2f2c08e607f329ccba7202178c85a35a029a26bb281df7f941",
+    "docs/experiments/framewright-micro-lesson.md": "d02907a36d9efb92f61962c9d57012b15fc226ca08cdbc30a1f2e0f55c5cd09c",
+    "docs/experiments/marble-compositing.md": "f663a089558b6d70941561de0699a0a18d4116488df95254a6b595883cc18f11",
+    "docs/experiments/jekyll-toki-pona.md": "6393dd387f7c23e6d4ff2bd75a4fdbce03f0900e09b4300285df97f0912a7201",
+    "docs/experiments/production-memory-adapters.md": "c83a351ab1c2dc9ccd4149fc9a82d0e36d9690f8bb9f02a153ae540a33fc429d"
+  },
+  "editorial_source_index": "docs/editorial/series.json",
+  "post_reuse_requires": [
+    "fact_check",
+    "deduplication",
+    "two_route_explanation",
+    "illustration_and_quotation_review"
+  ],
+  "publication_is_book_approval": false,
+  "no_readiness_percentage": true,
+  "documentation_checks": {
+    "date": "2026-10-26",
+    "local_links": "pass",
+    "source_hashes": "pass",
+    "chapter_case_gap_references": "pass",
+    "case_count": 3,
+    "chapter_count": 10,
+    "gap_count": 10,
+    "new_reader_reproductions": 0
+  }
+}

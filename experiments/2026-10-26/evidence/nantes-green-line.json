@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-26",
+  "scope": "100s illustrated Nantes green-line excerpts with the entire official route on each map overview",
+  "final": {
+    "local_output": "nantes-green-line-20261025/Nantes-Ligne-Verte.mp4",
+    "sha256": "dc496a477c6de3e9a091a1ba6a1e3ca2bb16a42cc317c7aabdc6970f3a2147b4",
+    "bytes": 60226640
+  },
+  "full_decode": {
+    "result": "pass",
+    "error": "",
+    "decoded_seconds": 100.0,
+    "video_frames": 2400
+  },
+  "streams": [
+    {
+      "index": 0,
+      "codec_name": "h264",
+      "codec_type": "video",
+      "width": 1920,
+      "height": 1080,
+      "avg_frame_rate": "24/1",
+      "disposition": {
+        "attached_pic": 0
+      }
+    },
+    {
+      "index": 1,
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "avg_frame_rate": "0/0",
+      "disposition": {
+        "attached_pic": 0
+      }
+    }
+  ],
+  "route_coverage": {
+    "result": "pass",
+    "official_lines": 13,
+    "official_vertices": 371,
+    "film_lines": 13,
+    "all_geometry_retained": true,
+    "all_vertices_inside_map_area": true,
+    "source_sha256": "4575092efd7a52bcb5859f36f73d6fc31990ad35b92bbd20fcaba6d919809537",
+    "scope": "Coverage and projection of the downloaded official source, not completeness of third-party OSM relation or an assertion about later route changes."
+  },
+  "replay": {
+    "result": "pass",
+    "scope": "Same browser instance, 3D canvas and postprocessing, not DOM or encoded audio",
+    "sequences": [
+      [
+        19,
+        10,
+        19
+      ],
+      [
+        25.5,
+        78,
+        25.5
+      ]
+    ],
+    "exact_matches": [
+      true,
+      true
+    ],
+    "hashes": [
+      "be299e009731ae364e0db1f4914285fc548c6dc38c4826cef45427fd0c4add4f",
+      "be299e009731ae364e0db1f4914285fc548c6dc38c4826cef45427fd0c4add4f",
+      "bfef25802225068a52e8dc5b02c2508c313e47888c5c122d0f1a5e0adc2852ab",
+      "bfef25802225068a52e8dc5b02c2508c313e47888c5c122d0f1a5e0adc2852ab"
+    ],
+    "hash_representation": "SHA256 of browser canvas PNG data URL string",
+    "evidence_method": "Self-test in owned local test page, report visibly observed through browser UI",
+    "bundle_sha256": "0deb6c4d8af4404451b4b0df3faecf69c385640088eb13f4a6b1d7ea364c0ffa"
+  },
+  "clarity_revision": {
+    "from_world_pixel_size": 8,
+    "to_world_pixel_size": 4,
+    "bloom_from": 0.32,
+    "bloom_to": 0.12,
+    "facade_sampling": "nearest",
+    "video_quality": "delivery",
+    "unchanged_audio_packets": true
+  },
+  "owner_acceptance": {
+    "v1": "Overall edit accepted; pixel image reported muddy",
+    "v1_sha256": "b9fd0130887860c5f8701475ae5aa24c5bac52700fe31dbf9ff4ebc9d8534d98",
+    "v2": "Pixel-clarity recheck pending; accepted edit/sound retained"
+  },
+  "native_composition_check": true,
+  "costs": {
+    "new_paid_provider_calls": 0,
+    "builtin_image_generation_cost": "not exposed",
+    "local_render_v1_seconds": 210.6,
+    "local_render_v2_seconds": 352.8
+  },
+  "publication": {
+    "url": "https://youtu.be/IQ3CdzPzFHw",
+    "provenance": "owner_report",
+    "reported_at": "2026-10-26",
+    "visibility": "unknown",
+    "uploaded_byte_identity": "not_independently_verified",
+    "playback": "not_independently_verified",
+    "audience_results": "not_measured"
+  },
+  "audience_results": "unknown"
+}

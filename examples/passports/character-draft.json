@@ -1,0 +1,37 @@
+{
+  "id": "future-hero",
+  "version": "v1",
+  "kind": "character",
+  "name": "Unselected future production character",
+  "references": [],
+  "dimensions_m": null,
+  "materials": [],
+  "constraints": [],
+  "character": {
+    "proportions": "",
+    "clothing": "",
+    "palette": [],
+    "rig": {
+      "required": true,
+      "subject": null,
+      "note": "Select and inspect the production rig with approved geometry"
+    },
+    "actions": [
+      {
+        "id": "idle",
+        "subject": null,
+        "note": "Retain cleared action and inspect deformation/contact/real travel"
+      },
+      {
+        "id": "walk",
+        "subject": null,
+        "note": "Retain cleared action and inspect deformation/contact/real travel"
+      },
+      {
+        "id": "run",
+        "subject": null,
+        "note": "Retain cleared action and inspect deformation/contact/real travel"
+      }
+    ]
+  }
+}

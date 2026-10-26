@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-26",
+  "tool": "DJV",
+  "version": "3.7.5",
+  "bundle_id": "com.grizzlypeak3d.djv",
+  "installation": "Homebrew cask djv; install exit 0; app bundle present",
+  "architecture": "arm64",
+  "source_url": "https://github.com/grizzlypeak3d/DJV/releases/download/3.7.5/DJV-3.7.5-macOS-arm64.dmg",
+  "cask_sha256": "158662e69207ea80c4c549cc0267dc25197a68caaf4a14550491048b63d0fb83",
+  "download_sha256": "158662e69207ea80c4c549cc0267dc25197a68caaf4a14550491048b63d0fb83",
+  "binary_sha256": "c490878504de0e19f195957bd5ea4a6a06a0a14a00da3bd2a04d5da682226ad5",
+  "launch": "DJV 3.7.5 window observed through computer-use tool; first-run Setup at FFmpeg page",
+  "ffmpeg_detected_in_setup": "/opt/homebrew/bin/ffmpeg",
+  "media_opened": false,
+  "real_review_trial": "queued, not executed",
+  "production_qualification": "not established",
+  "first_launch_screenshot_sha256": "2159623f24d144bf99760138105d7f9c51aa0690f46dc94e1e7f3d42a27dc12f",
+  "notes": [
+    "Initial restricted metadata request failed DNS; succeeded through authorised network access.",
+    "Homebrew automatic cleanup occurred after installation; original output retained privately. No cleanup task was requested.",
+    "No security-warning bypass, account grant, media upload, paid service or Vantage install.",
+    "Startup/setup observation does not qualify codecs, sync, color, review-session persistence or Python/CLI automation."
+  ],
+  "download_digest_matches_cask": true
+}

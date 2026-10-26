@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-26",
+  "id": "rokehan-nantes-manga",
+  "result": "technical_pass_owner_accepted_v2",
+  "upstream": "Rokehan Location Scout beta; no numbered application version exposed",
+  "geometry_origin": "Native GLB saved using public export button. No upstream program or shader extracted.",
+  "native_export": {
+    "mesh_definitions": 40,
+    "mesh_instances_loaded": 431,
+    "sum_vertices_per_mesh_instance": 9040543,
+    "camera_exported": false,
+    "manga_shader_exported": false
+  },
+  "runtime": {
+    "three": "0.186.0",
+    "chrome": "155.0.8059.86",
+    "ffmpeg": "8.0.1",
+    "blender": "not installed; not tested"
+  },
+  "source_pins": {
+    "assets/nantes.glb": {
+      "bytes": 75960148,
+      "sha256": "35f7f76c30c77f5a6c449ce2bfcba652d81af5d1794852ffc428d95a966c9fc1"
+    },
+    "assets/native-manga.png": {
+      "bytes": 1610854,
+      "sha256": "4c6c7cce2333d1396cf5995b0048f745dd4358bf0c1d8a9095344cf40565895e"
+    }
+  },
+  "output": {
+    "file": "manga-test.mp4",
+    "sha256": "7f597c5df8142867d5be5eb8248afd0e5d84694f2ee1fe46af28cf5220d5b332",
+    "bytes": 105917232,
+    "seconds": 15,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "frames": 360,
+    "audio": "intentionally absent; visual-only sample"
+  },
+  "method": "Native exported geometry + original local depth/normal edge and halftone shader; 7.5s overhead orbit/dolly then7.5s street dolly; deterministic time, FFmpeg encode",
+  "checks": {
+    "full_decode": "pass:15s/360frames",
+    "runtime_errors": [],
+    "reseek": [
+      {
+        "frame": 72,
+        "identical": true
+      },
+      {
+        "frame": 240,
+        "identical": true
+      }
+    ],
+    "render_elapsed_seconds": 35.647,
+    "temporal": {
+      "frames_with_luma": 360,
+      "luma_min": 116.262,
+      "luma_max": 163.506,
+      "max_adjacent_mean_luma_delta": 43.53599999999999,
+      "max_change_after_frame": 179,
+      "planned_cut_before_frame": 180,
+      "black_events": [],
+      "freeze_events": [],
+      "interpretation": "Measurements screen for full-frame blackout/freeze/luma jumps. No claim of perceptual absence of line shimmer, flashes or motion discomfort."
+    },
+    "sampled_encoded_picture": "Inspected frames72,180,359: 3D parallax, architecture contours and credit/title visible; no unintended black viewport. Native PNG inspected separately.",
+    "source_integrity": "pass: original GLB digest unchanged"
+  },
+  "limits": [
+    "Not native Rokehan video export; its shader/lights/camera are not in GLB",
+    "Geometry fidelity and guessed building heights not validated against real Nantes",
+    "Local line/halftone style differs from native PNG; fine details/foliage may shimmer. Whole-motion aesthetic/comfort acceptance pending owner",
+    "People/vehicles static, no character rig test, no audio/listening or Blender import test",
+    "Service automatically enabled low-spec display. Offline frame rendering is not evidence of realtime FPS",
+    "Private model remains outside Git; do not redistribute as an asset pack"
+  ],
+  "authorised_cost": {
+    "paid_calls": 0,
+    "installs": 0,
+    "uploads": 0,
+    "publication": false
+  },
+  "owner_acceptance": {
+    "revision": "street-brightness-v2",
+    "provenance": "owner_report",
+    "message": "\u0434\u0430 \u043e\u043a",
+    "scope": "15-second silent Nantes manga test with lighter street; no publication or generalisation"
+  },
+  "public_url": null,
+  "revisions": [
+    {
+      "date": "2026-10-26",
+      "revision": "street-brightness-v2",
+      "owner_feedback": "Likes manga test; street scene too dark.",
+      "interval": [
+        7.5,
+        15
+      ],
+      "change": "Street-only lift: mix grayscale toward white by0.23 before halftone; unchanged edge shader, camera, timing and title/credits.",
+      "baseline_sha256": "7f597c5df8142867d5be5eb8248afd0e5d84694f2ee1fe46af28cf5220d5b332",
+      "revised_sha256": "abeb4e1ff2d33d18047cdd8f989ffae2cc047547146f730e26746ab7ad28b078",
+      "source_sha256": "8d3563a9a8480bd20210e127721503d0708a0dee456b2c752a4ade01d513bf88",
+      "technical": {
+        "result": "pass",
+        "decode": {
+          "result": "pass",
+          "error": "",
+          "decoded_seconds": 15.0,
+          "video_frames": 360
+        },
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "24/1",
+            "disposition": {
+              "attached_pic": 0
+            },
+            "side_data_list": [
+              {}
+            ]
+          }
+        ],
+        "calibration": null,
+        "calibration_status": "outside_short_capture_limits"
+      },
+      "preservation": {
+        "first_shot_checked_frames": {
+          "0": true,
+          "72": true,
+          "179": true
+        },
+        "camera_samples_identical": true,
+        "duration_frames_identical": true,
+        "new_reseek": [
+          {
+            "frame": 72,
+            "identical": true
+          },
+          {
+            "frame": 240,
+            "identical": true
+          }
+        ],
+        "runtime_errors": []
+      },
+      "sampled_visual": "Street facades/shadows visibly lighter; contours, windows and credit remain present in inspected frame240.",
+      "creative_acceptance": "owner_accepted",
+      "publication": false
+    }
+  ],
+  "owner_feedback": "Owner liked manga direction, requested lighter street, then accepted v2."
+}

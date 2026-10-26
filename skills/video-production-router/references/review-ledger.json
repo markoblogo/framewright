@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -916,12 +916,13 @@
       "reviewed": "2026-10-21",
       "review_basis": "Primary-source documentation and licence review only; no installation, model download, voice upload, generation or paid call",
       "upstream_revision": "2858241a2b1fa67e173d4af6b3ff4f7fbd5a9ec2",
-      "disposition": "candidate",
-      "scope_and_findings": "Camera/light/3D illustration candidate; no Mac cost or render-path trial.",
+      "disposition": "partial",
+      "scope_and_findings": "Internal original480x27012fps Cycles CPU saved-scene fixture passed repeat/range/light/camera/PCM checks on one build/Mac. Draft versioned passports prepared, no real hero/set approved. Owner review and real-production continuity pending; reference custom application remains untested.",
       "licence_note": "GPLv3 application with file-specific notices; models, fonts and media separately cleared.",
-      "next_trial_or_retest_condition": "Original simple 5s illustrative device shot, resource cap and encoded checks.",
+      "next_trial_or_retest_condition": "Review retained A/B evidence, then test one owner-approved recurring asset and bounded production correction with adjacent context. No arbitrary rig/physics/face/GPU/cross-build qualification; no automatic unchanged rerun.",
       "evidence": [
-        "docs/research-review-2026-10-21.md"
+        "docs/research-review-2026-10-21.md",
+        "docs/experiments/blender-shot-replay.md"
       ],
       "followup_reviews": [
         {
@@ -929,6 +930,12 @@
           "kind": "documentation_and_external_demo_review",
           "evidence": "docs/research/video-guided-rig-animation.md",
           "outcome": "Owner-supplied external rigged-shark demo sampled; no local Blender/MCP trial. Proposed procedural baseline and video-guided constrained action, not exact MP4 motion capture. Existing resource/capture gates remain."
+        },
+        {
+          "date": "2026-10-26",
+          "kind": "internal_original_fixture_cpu_render",
+          "evidence": "docs/experiments/blender-shot-replay.md",
+          "outcome": "Blender4.5.15 LTS ARM64:36 identical repeated source frames,12 matching independently rendered range frames, two camera setups,12 changed light-patch frames with camera/action and PCM preserved. Restricted-process native startup failed; normal native access passed. No cinematic/owner/listening acceptance, complex rig or automatic catalogue qualification."
         }
       ]
     },
@@ -945,6 +952,14 @@
       "next_trial_or_retest_condition": "One restrained 5s CRT treatment; version compatibility, colour pipeline and time replay.",
       "evidence": [
         "docs/research-review-2026-10-21.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-26",
+          "kind": "bounded_pixelation_bloom_trial",
+          "evidence": "docs/experiments/nantes-green-line.md",
+          "outcome": "postprocessing 6.39.5 with Three.js 0.186.0 rendered a 100s illustrated film; same-instance canvas replay matched two hash pairs. Owner accepted overall v1 but requested clearer pixels. V2 uses 4px rather than 8px world grid and less bloom. CRT, arbitrary effects, cross-device replay and audience results remain unqualified. Earlier incompatible 6.39.2 peer pairing retained as a failure."
+        }
       ]
     },
     {
@@ -1170,6 +1185,549 @@
       "evidence": [
         "docs/experiments/one-random-life.md",
         "experiments/2026-10-25/evidence/one-random-life.json"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-26",
+          "scope": "Two fictional6-pose photographic presenter atlases used in local2D opening animation",
+          "finding": "Still identity/pose consistency inspected;120s film v2 decoded with original audio preserved. Mouth poses follow PCM envelope, not phonemes. Intro full-motion owner feedback pending; no general lip-sync/video-generation qualification.",
+          "evidence": [
+            "docs/experiments/framewright-micro-lesson.md",
+            "experiments/2026-10-26/evidence/framewright-micro-lesson.json"
+          ]
+        },
+        {
+          "date": "2026-10-26",
+          "scope": "Owner feedback on photographic-presenter animation",
+          "finding": "Current film accepted for publication; mouth timing adequate, facial expressions jerky/artificial. Static imagegen atlas utility does not establish natural motion. Next similar production needs a short improved-motion trial.",
+          "evidence": [
+            "docs/experiments/framewright-micro-lesson.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "djv",
+      "name": "DJV",
+      "url": "https://github.com/grizzlypeak3d/DJV",
+      "reviewed": "2026-10-26",
+      "review_basis": "Version-pinned native A/B comparison, authored frame/range notes and drawing, save/reopen/relocation, source hashes and retained failures on real Nantes exports",
+      "upstream_revision": "4d90982b4085adf4d150f1bf0b0b4a5490b023d5",
+      "disposition": "candidate",
+      "scope_and_findings": "Partial success: visible A/B at frame72; three notes/one source drawing, adjacent-frame/navigation checks, native save/reopen/relocation and unchanged master hashes. Other native captures black despite valid metadata; FFV1 proxy helps at240 but not612. Listening, sync, calibrated colour and full playback unqualified. Candidate, no production promotion.",
+      "licence_note": "BSD-3-Clause application. Bundled codecs/plugins have separate licences; actual decoder support remains to be tested.",
+      "next_trial_or_retest_condition": "Owner requests repeat tests on the next one or two authorised productions: first/middle/last pictures in both revisions, short playback/listening, adjacent-frame anchors, save/reopen/relocation and source integrity; owner review before narrowly scoped production admission.",
+      "evidence": [
+        "docs/research/djv-vantage.md",
+        "experiments/2026-10-26/evidence/djv-installation.json",
+        "docs/experiments/djv-review.md",
+        "experiments/2026-10-26/evidence/djv-green-line-review.json"
+      ]
+    },
+    {
+      "id": "chaos-vantage",
+      "name": "Chaos Vantage",
+      "url": "https://www.chaos.com/vantage",
+      "reviewed": "2026-10-26",
+      "review_basis": "Official 3.4.0 release notes, features and system requirements; explicit owner decision to retain only as a future Windows reference",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "NOT PLANNED for current testing or production. Requirements: Windows x86-64/AVX2, discrete DXR GPU and Vantage licence; current Mac workflow has no compatible environment. Potential future virtual sets, splat relighting and camera/effect work are documentation only. No Windows/cloud provisioning, install, purchase or current routing. Marble/rig/agent integration unverified.",
+      "licence_note": "Commercial proprietary application requiring a Vantage licence; separate scene, asset and service terms apply. No licence purchased or eligibility established.",
+      "next_trial_or_retest_condition": "No trial queued. Reconsider only if owner/future operator deliberately adopts a compatible Windows environment and explicitly approves licence/resources and a bounded task.",
+      "evidence": [
+        "docs/research/djv-vantage.md"
+      ]
+    },
+    {
+      "id": "rokehan-location-scout",
+      "name": "Rokehan / Location Scout",
+      "url": "https://tools.oyasumi-gamedev.com/rokehan/",
+      "reviewed": "2026-10-26",
+      "review_basis": "Native public-UI GLB/PNG export; actual model import and original local manga finishing; two-angle15s encode with full decode/reseek and representative encoded-image inspection",
+      "upstream_revision": null,
+      "disposition": "tested_scoped",
+      "scope_and_findings": "One Nantes quarter:40mesh definitions/431loaded instances; native manga PNG inspected. Native GLB carries colour geometry, no camera/manga shader. Existing Three.js0.186 produces two timed views with original local line/halftone finishing.1080p24/15s/360frames decode and reseek pass; owner accepted lighter-street v2 after requested brightness correction. Fine-line temporal behaviour needs per-shot checks. No Blender, character animation, geographic accuracy or real-time FPS qualification.",
+      "licence_note": "Service terms allow output within works including commercial video with map-data attribution; prohibit standalone/lightly modified asset redistribution and upstream-code extraction. OSM/ODbL and other third-party data rights remain independent. Exported model/media private, not vendored.",
+      "next_trial_or_retest_condition": "Reuse only the demonstrated native GLB/PNG→existing Three.js manga-finish→1080p24 encode route, with per-shot checks. Owner accepted Nantes v2. New locations, character integration or Blender import require a separate bounded authorised trial; preserve attribution and keep model assets private.",
+      "evidence": [
+        "docs/experiments/rokehan-manga.md",
+        "experiments/2026-10-26/evidence/rokehan-manga.json",
+        "skills/video-production-router/references/location-scout.md"
+      ]
+    },
+    {
+      "id": "claudemy",
+      "name": "Claudemy",
+      "url": "https://github.com/assafkip/claudemy",
+      "reviewed": "2026-10-26",
+      "review_basis": "Static source review plus original dialogue/source-card/one-action format adaptation in a real Framewright film; no native plugin or script execution",
+      "upstream_revision": "438a6288fa74a2edad2cc86416d28308cb02ee1a",
+      "disposition": "component_used",
+      "scope_and_findings": "Adapted format yielded one120s English film with local SupertonicF1/M1, real clips, original Canvas diagrams, source map, captions and text cover. Decode/reseek and final mixed-sound ASR280/280normalised tokens pass; owner listening/creative acceptance pending. Native source checker only tests URL presence, not entailment. No native scraper, agent team, ElevenLabs or turnkey Codex qualification. Follow-up: owner accepted baseline speech/meaning; generated fictional photo-presenter intro added locally, with unchanged AAC packets/timing and a separate pending intro review. Owner now accepts v2 for publication; explicitly finds jerky/artificial facial expressions although mouth timing is adequate. Natural-avatar animation unqualified.",
+      "licence_note": "MIT skill. Native premium speech uses separate ElevenLabs terms/credits; fallback macOS voices. Current adaptation uses retained local Supertonic OpenRAIL-M plus original/cleared media and does not execute upstream code. Source-page content rights remain separate.",
+      "next_trial_or_retest_condition": "For next similar production, compare8–12s talking samples to improve facial smoothness and independent eye/brow/head motion before a full film. Current lesson accepted for publication with this limitation. Native Claudemy plugin remains separately untested.",
+      "evidence": [
+        "docs/experiments/framewright-micro-lesson.md",
+        "experiments/2026-10-26/evidence/framewright-micro-lesson.json",
+        "skills/video-production-router/references/micro-lessons.md"
+      ]
+    },
+    {
+      "id": "fglibs",
+      "name": "F*cking Good Libraries",
+      "url": "https://fglibs.com/",
+      "reviewed": "2026-10-26",
+      "review_basis": "Read-only catalogue, About and MCP connection dialog review; no MCP connection or runtime test",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "Useful discovery source for visual libraries/components/skills by intended effect; advertised MCP endpoint https://fglibs.com/mcp. No schemas, auth, pricing, limits or search quality qualification; not a renderer.",
+      "licence_note": "Catalogue/service terms and MCP data/account conditions remain unverified. Listing an item grants no rights to its code, demo assets or catalogue content; follow the upstream licence.",
+      "next_trial_or_retest_condition": "Three generic non-sensitive discovery requests against manual shortlist; inspect MCP schemas/access conditions before a separately authorised connection. Preserve sources and irrelevant results.",
+      "evidence": [
+        "docs/research/fglibs.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "emerging-images",
+      "name": "Emerging Images / Codrops",
+      "url": "https://github.com/akella/CodropsEmergingImages",
+      "reviewed": "2026-10-26",
+      "review_basis": "Read-only catalogue detail and upstream README/licence metadata review; no source execution",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "WebGL image emergence effects; candidate for photo-series/book-art reveals. Runtime compatibility, deterministic timing and source-detail preservation untested.",
+      "licence_note": "Upstream identifies MIT code; generated demo images, fonts and dependencies require separate clearance. Use an authorised original image; pin exact source and licence before trial.",
+      "next_trial_or_retest_condition": "P1: 6–8s1080p reveal with two variants; compare repeated/out-of-order seeks, source detail, encoded transitions/black frames and owner acceptance.",
+      "evidence": [
+        "docs/research/fglibs.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "paper-crumple",
+      "name": "Paper Crumple Demo",
+      "url": "https://github.com/item-develop/paper-crumple-demo",
+      "reviewed": "2026-10-26",
+      "review_basis": "Read-only catalogue detail and upstream README/licence metadata review; no source execution",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Houdini Vellum animation baked as VAT, played in Three.js with cannon-es interaction. Candidate for paper/card/letter reveals; local Houdini authoring and deterministic physics/capture untested.",
+      "licence_note": "Upstream identifies MIT; confirm selected VAT exports, dependencies and design assets at pinned commit. Use original paper design and retain applicable notices; no upstream assets vendored.",
+      "next_trial_or_retest_condition": "P2: 6–8s unfold into an original readable card; deterministic VAT/camera and frozen/seeded/baked physics, no clipping, encoded QA and owner review.",
+      "evidence": [
+        "docs/research/fglibs.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "evilcharts",
+      "name": "EvilCharts",
+      "url": "https://github.com/legions-developer/evilcharts",
+      "reviewed": "2026-10-26",
+      "review_basis": "Read-only catalogue detail and upstream README/licence metadata review; no source execution",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Animated chart UI components using React/Next.js, shadcn and Recharts. Candidate for report/explainer shots; data correctness, mobile readability and exact-time video export untested.",
+      "licence_note": "Upstream identifies MIT; selected components, fonts, dependencies and input-data rights remain separately reviewable at pinned revision.",
+      "next_trial_or_retest_condition": "P2 need-led: one8–10s synthetic chart plus two-second reading hold; verify values/units, mobile labels, seek/capture reproducibility and no hover dependency. Do not modify accepted SSI templates.",
+      "evidence": [
+        "docs/research/fglibs.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "ingetrazo",
+      "name": "IngeTrazo",
+      "url": "https://ingetrazo.com/en/",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "review_basis": "Read-only official site, upstream README and AI/scenes/export manuals; no installation, MCP connection, source execution or rendering",
+      "scope_and_findings": "Editable architectural modeler; documented Mac Apple Silicon, local MCP Python/model-query/screenshot/undo, eye-level walkthrough, saved views and GLB export. Candidate set-authoring layer for existing Three.js capture. Our Mac/Codex compatibility, exported material/scale/hierarchy fidelity, animation and native video export untested; saved views are not timed animation evidence. 0.x API/file-format changes possible.",
+      "licence_note": "GPL-3.0-or-later application; code licence is separate from assets/output. Library items have mixed CC0, CC BY and Free Art License terms; map/terrain rights independent. Begin with original geometry/materials, pin exact release/licences and do not vendor upstream assets/code.",
+      "next_trial_or_retest_condition": "P2: pin build/source and agree local execution/access scope; one original room/door/window, reversible MCP edit and save/reopen, GLB export, 10s1080p existing-renderer camera pass. Verify scale/axes/openings/materials/hierarchy, deterministic seek/capture, encoded decode and owner review. Queue retention does not authorise installation, OS-protection bypass, paid calls or Good Dog production.",
+      "evidence": [
+        "docs/research/ingetrazo.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "xcavity",
+      "name": "xCavity",
+      "url": "https://cl0ne2k.gumroad.com/l/xcavity",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "review_basis": "Read-only author Gumroad listing and Autodesk system requirements; explicit owner decision to retain only as a Windows reference",
+      "scope_and_findings": "NOT PLANNED for current testing or production. Author advertises Nitrous viewport cavity/MatCaps/face orientation/SSR/SSGI for 3ds Max2023–2027. Current Mac workflow lacks compatible host/environment. Author lists scalar-only SSR material data and disabled hardware instancing; SSGI disables consolidation. Buyer freeze/negative-scale reports not independently verified. Native final-render, exported effect transfer, capture quality and performance untested.",
+      "licence_note": "Commercial paid plugin; listing advertised $15 on 2026-10-26. Exact plugin licence/output terms unverified; requires separately licensed 3ds Max on compatible Windows. No purchase, installation or commercial clearance.",
+      "next_trial_or_retest_condition": "No trial queued. Reconsider only after an explicit future compatible Windows and licensed 3ds Max decision, plugin terms review and owner-selected bounded viewport-capture task.",
+      "evidence": [
+        "docs/tool-research.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "easy-autoloops",
+      "name": "Easy AutoLoops",
+      "url": "https://lod3ds.gumroad.com/l/EasyAutoLoops",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "review_basis": "Read-only author Gumroad listing; explicit owner decision to retain reference-only status, no local execution",
+      "scope_and_findings": "NOT PLANNED for current testing or production. Author advertises C++ modifier for 3ds Max2022–2027: support loops/chamfer, angle detection, N-gon handling, adaptive width and TurboSmooth preview. Mesh topology tool, not animation loops. Potential indirect hard-surface prop/architecture preparation; Mac workflow lacks compatible host. Performance, topology robustness and export fidelity untested.",
+      "licence_note": "Author listing advertises $0+ on 2026-10-26; exact plugin licence, redistribution and output terms unverified. Free price is not open-source clearance. Separately licensed compatible Windows/3ds Max host required; no acquisition or installation performed.",
+      "next_trial_or_retest_condition": "No trial queued. Reconsider only after explicit compatible Windows/licensed 3ds Max adoption, plugin terms review and owner-selected hard-surface modeling task.",
+      "evidence": [
+        "docs/tool-research.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "zbrush",
+      "name": "ZBrush",
+      "url": "https://www.maxon.net/en/zbrush",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "deferred",
+      "review_basis": "Read-only Maxon2027.0.0/2027.0.1 release notes and UV/Selection Sets/Python documentation; owner-approved deferral, no local runtime test",
+      "scope_and_findings": "Deferred for unique Good Dog characters, future book adaptations or specific sculptural details. Separate paid sculpting package premature for nearest videos. Documented Mac/Apple Silicon support, desktop UV Editor and Selection Sets for masks/Polygroups/Polypaint/UVs/morph targets. Python is a ZScript-command bridge, not direct internal mesh access. Automation, MCP integration, downstream export/rigging, facial animation and lip sync unqualified; morph states do not establish natural talking animation.",
+      "licence_note": "Commercial proprietary paid sculpting package; exact current plan, version eligibility and asset/export terms require review before any future trial. No subscription, trial activation or installation authorised by deferred retention; asset rights remain separate.",
+      "next_trial_or_retest_condition": "No active trial. Reconsider only for a concrete owner-selected unique character/sculptural detail and a bounded asset-to-animation/render handoff, after exact version, licence, resources and local execution scope review. Do not start Good Dog or install/subscribe from this retained decision.",
+      "evidence": [
+        "docs/tool-research.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "redshift",
+      "name": "Redshift",
+      "url": "https://www.maxon.net/en/redshift",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "deferred",
+      "review_basis": "Read-only official2027.0 overview, open2027.0.0/2027.0.1 technical notes and product documentation; supplied forum requires login; owner-approved deferral, no local runtime",
+      "scope_and_findings": "Deferred until a concrete shot needs realistic fur, complex lighting or materials. Vendor documents procedural fur/textiles, GPU memory changes, C4D preview and Redshift Live improvements, compositing passes and Mac/Apple M support.2027.0.1 fixes memory retention, stuck renders, USD/fur issues; known Archicad displacement-scale issue remains. No local performance, motion quality, host integration, agent control or transfer qualification; fur rendering does not create character animation. Paid renderer/host adoption premature for nearest videos.",
+      "licence_note": "Commercial proprietary renderer with host/plan-dependent entitlement. Exact renderer/compatible-host licence, version and asset rights require review before a concrete comparison. No subscription, trial activation, installation or paid rendering authorised by deferred retention.",
+      "next_trial_or_retest_condition": "No active trial. For a concrete owner-selected shot, review exact host/renderer/licence/resources and compare a short matched fragment against available rendering on visual quality, render/setup time and total cost. Inspect encoded temporal quality and compositing handoff with owner review. No purchase or paid comparison authorised by retention.",
+      "evidence": [
+        "docs/tool-research.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "plasticity",
+      "name": "Plasticity",
+      "url": "https://www.plasticity.xyz/",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "deferred",
+      "review_basis": "Read-only official26.2 release notes, licence/product and Blender Bridge documentation; owner-approved deferral, no local execution",
+      "scope_and_findings": "Deferred for a concrete product shot needing precise complex surfaces. Documented Mac/M-series modeling, reusable Assets, Studio constraints/Project Align and Blender Bridge live mesh updates.26.2 constraints are not saved with files; Gaussian Shader is curvature analysis, not splatting. Scene/material/modifier preservation is documented but untested here. No local host compatibility, agent control, transfer fidelity, animation or final-video qualification. Separate modeler adoption premature for nearest videos.",
+      "licence_note": "Commercial proprietary perpetual Indie/Studio licences with plan-dependent features and 12 months of updates; $175/$299 plus taxes listed2026-10-26. Free Starter/trial restricts export and prohibits commercial use. Recheck exact current plan, bridge and selected asset terms before future use; no purchase, activation or installation authorised by deferred retention.",
+      "next_trial_or_retest_condition": "No active trial. When a concrete shot warrants it, review exact licence/resources and pin application/bridge/Blender versions. One original device with a geometry update into a configured Blender scene; verify scale/normals/materials/identity/modifiers/camera/light and save/reopen, then inspect short encoded before/after and effort/cost with owner review. No purchase or Pocket OS production authorised by retention.",
+      "evidence": [
+        "docs/tool-research.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "uv-unfoldr",
+      "name": "UV Unfoldr",
+      "url": "https://sargisstg.gumroad.com/l/uv-unfoldr",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "review_basis": "Read-only author Gumroad listing(version1.0.0); explicit owner decision for reference-only Windows status, no local execution",
+      "scope_and_findings": "NOT PLANNED for current testing or production. Windows/3ds Max2022–2027 UV editing plugin: unfold/optimize brushes, checker, packing, texel density and UV sets. Author says it uses standard Unwrap UVW and scenes open without the plugin; portability untested. Indirect prop/device/set texturing role, not animation or video generation. Quality/performance/export unqualified.",
+      "licence_note": "Paid proprietary plugin; $39 list/$29.25 launch offer observed2026-10-26, not a future quote. Exact plugin/output and asset terms unverified; separately licensed compatible Windows/3ds Max host required. No purchase or installation; reference retention grants no execution authority.",
+      "next_trial_or_retest_condition": "No active trial. Return only if an explicitly adopted Windows/3ds Max production has a concrete UV-unwrapping problem; review exact licence/version/resources and choose a bounded asset test then. Do not buy a separate stack for this task now.",
+      "evidence": [
+        "docs/tool-research.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "google-playground",
+      "name": "Google Playground",
+      "url": "https://labs.google/playground",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "review_basis": "Read-only official Labs overview, Playground Help Center and service terms; owner-approved access-gated future trial, no account/runtime execution",
+      "scope_and_findings": "Conversational browser-game creation with documented HTML/JS/CSS/generated-asset export, private drafts, explicit publishing and early multiplayer. Help lists US/18+, phased creation rollout and limited weekly free tokens; owner France/account access unknown. Reference PNG/JPG transformed, not embedded unchanged; no video upload. Local/offline export fidelity, capture hooks, external-agent API/MCP, cost and output quality untested; no automatic provider integration.",
+      "licence_note": "Google-hosted experimental service: exact account/region/plan and current terms must be checked. Google does not claim Your Games ownership but retains rights in supplied assets/features; source ZIP export is not blanket commercial/media clearance. No account grant, purchase, upload or generation authorised by candidate retention.",
+      "next_trial_or_retest_condition": "First check availability; then separately authorised small original scene, one focused edit, export inspection, local launch and10–15s controlled capture. Compare matched output scope with PlayMCP on quality, controllability, actual token/plan/setup cost and reuse. Check rights/dependencies, deterministic control and encoded picture/audio with owner review; keep private unless publication authorised.",
+      "evidence": [
+        "docs/tool-research.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "playcanvas",
+      "name": "PlayCanvas Engine",
+      "url": "https://developer.playcanvas.com/user-manual/engine/",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "review_basis": "Read-only official announcement, Engine/MCP/Snap documentation and skills repository; owner-selected staged queue, no execution",
+      "scope_and_findings": "Active bounded local scene candidate: character/action/camera/sound and15–20s repeatable capture. MIT browser engine documents WebGPU/WebGL2, glTF, animation/physics/sound and splats. No local runtime/capture qualification; world integration separately untested.",
+      "licence_note": "MIT engine; exact pinned dependency licences and each character/model/texture/sound right remain separate. Local Engine does not require hosted Editor. No upstream assets/code vendored; no paid account or install authority from queue retention.",
+      "next_trial_or_retest_condition": "First owner-selected bounded local scene: pin versions/assets, reset/seed/time controls, repeatable and out-of-order capture, encoded decode/motion/audio/sync and owner review. Compare matched output with existing Three.js; no automatic wider migration.",
+      "evidence": [
+        "docs/research/playcanvas.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "playcanvas-editor-mcp",
+      "name": "PlayCanvas Editor MCP",
+      "url": "https://developer.playcanvas.com/user-manual/editor/mcp-server/",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "review_basis": "Read-only official announcement, Engine/MCP/Snap documentation and skills repository; owner-selected staged queue, no execution",
+      "scope_and_findings": "Conditional second stage only if useful after local trial. Official Codex-compatible MCP documents live Editor edits, checkpoints and runtime inspection/input. No connection or account/runtime qualification; mutations affect live project.",
+      "licence_note": "Hosted Editor account/visibility/plan terms apply; documentation says private projects require a paid plan. Review pinned MCP package and selected project/access. Local engine MIT does not clear hosted account/asset terms or destructive actions.",
+      "next_trial_or_retest_condition": "Only if useful after local capture: review account/plan/project/visibility and exact access, read-only identify, checkpoint, one bounded edit preserving camera/timing, inspect Editor and runtime. Requires separate access authority; local pass does not qualify MCP.",
+      "evidence": [
+        "docs/research/playcanvas.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "snapchat-web-lenses",
+      "name": "Snapchat Web Lenses",
+      "url": "https://developers.snap.com/web-lenses/requirements",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "deferred",
+      "review_basis": "Read-only official announcement, Engine/MCP/Snap documentation and skills repository; owner-selected staged queue, no execution",
+      "scope_and_findings": "Separate future publication experiment, not part of local PlayCanvas capture. Beta portrait9:16 packaged static web apps, current ZIP8MB/index1MB limits; ordinary network/camera/microphone unavailable per announcement. No package/upload/moderation or device API tested; desktop stubs not live proof.",
+      "licence_note": "Snap creator/SDK/platform and asset/output terms require current review; distribution and possible monetization have separate eligibility/authority. Engine MIT does not clear Bitmoji/third-party assets or authorise uploads.",
+      "next_trial_or_retest_condition": "Future only: choose suitable small game and confirm then-current beta requirements, creator/asset terms and device QA. Publication/moderation/audience/monetization remain separate steps requiring authority and evidence. No current upload.",
+      "evidence": [
+        "docs/research/playcanvas.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "canva-craft",
+      "name": "Canva Craft",
+      "url": "https://www.canva.com/newsroom/news/canva-craft/",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "review_basis": "Read-only Canva announcement, official generation API references and available connector schema; owner-selected bounded comparison, no generation",
+      "scope_and_findings": "Design-oriented image model, vendor-documented up to2K/text/composition and Magic Layers suitability. API permits craft_v1_2k pin and spends AI credits; inspected connector lacks model selector, so connector output alone does not establish Craft identity. Announcement lists Craft MCP as coming soon. No image quality, edit preservation, layer decomposition/export, animation or audience result qualified; rankings not local evidence.",
+      "licence_note": "Canva proprietary hosted model/service; exact current account limits, credit cost and service/asset/output terms require review. Preview API uses user AI credits and asset-write authority; Magic Layers and export may have separate access/plan limits. No generation, upload or spend authorised by candidate retention; third-party input rights independent.",
+      "next_trial_or_retest_condition": "Confirm actual model and available allowance first. Choose original concept/exact English title: one16:9 cover, full/reduced readability check, one preserved-composition revision; separately inspect Magic Layers and a short encoded animation. Compare matched current method on quality/controllability/time/cost, retain actual credits/model evidence and owner review. No silent model fallback or execution from retention.",
+      "evidence": [
+        "docs/tool-research.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "corridorkey-2",
+      "name": "CorridorKey 2.0",
+      "url": "https://github.com/nikopueringer/CorridorKey2.0",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "review_basis": "Read-only official repository/model card, licence/third-party notices and separate commercial-product requirements; owner-selected comparison, no runtime execution",
+      "scope_and_findings": "Temporal keying with alpha/foreground, hints, despill and ProRes4444/EXR documented. Public package requires NVIDIA RTX30+/CUDA,4GB VRAM up to1440p/6GB4K and about5GB weights; native Apple Silicon unconfirmed for that package. Separate paid product lists M-series/macOS14+. Both routes untested. No matte fidelity, temporal quality, speed, host integration or product-integration qualification; existing native alpha should be preserved.",
+      "licence_note": "Custom Corridor Key Licence, CC BY-NC-SA plus overriding additional terms: commercial footage/output use explicitly permitted; repackaging/resale, paid inference and commercial-software integration restricted, derivatives and large organisations have additional conditions. Separate foundation-model licences and paid-product terms apply. Review exact chosen use; no code/weights vendored or blanket commercial-integration clearance.",
+      "next_trial_or_retest_condition": "Choose/verify available route, exact code/weights or paid build, resources/terms and cleared source first. One5–8s moving/difficult-edge clip versus conventional chroma key, composite on light/dark/target backgrounds. Inspect halos/detail/spill/flicker, alpha/colour handoff, encoded timing/playback, actual time/cost and owner review. No purchase/download/upload/inference authorised by queue retention.",
+      "evidence": [
+        "docs/research/corridorkey.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "tripo-rigging-animation",
+      "name": "Tripo Rigging & Animation",
+      "url": "https://www.tripo3d.ai/blog/rigging-animation",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "review_basis": "Read-only official rigging/animation article, feature/pricing and developer pages; owner-selected bounded queue, no generation or export execution",
+      "scope_and_findings": "Active direct humanoid rig/action candidate: body/hand bones, five presets,1–10s Text to Motion and up to5segments documented. Humanoids T/A-pose and<=100ktriangles; nonhumanoids separatev2.5 without engine presets. No rig deformation, root travel, contacts/joins, export/reuse or two-view quality tested. Studio/API parity unknown; facial/lip-sync and dog support not inferred. Distinct from earlier shark/video-guided reconstruction candidate.",
+      "licence_note": "Proprietary cloud service; current Studio Free listing public/noncommercial, paid plans private/commercial; API plans/terms separate. Review chosen interface, model/input/output/privacy/animation rights and actual credits before upload/generation. Article quotes20credits rig/20motion, not an approved total budget; no account/upload/spend authority from retention.",
+      "next_trial_or_retest_condition": "Choose cleared simple humanoid, interface and action, review privacy/rights/plan and actual quotes. Rig→5–8s motion→actual FBX/GLB import→two-camera playback, inspect deformation/foot sliding/root motion/action joins and save/reload/reuse. Technical QA and owner review separate. Dog for Good Dog later separate stage; no upload/spend/install or production from queue retention.",
+      "evidence": [
+        "docs/research/tripo-rigging-animation.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "hy-nomas",
+      "name": "Tencent Hy-Nomas",
+      "url": "https://github.com/Tencent-Hunyuan/Hy-Nomas",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "review_basis": "Read-only official repository, runtime guide and licence; owner-selected bounded future trial, no inference or hosted access test",
+      "scope_and_findings": "Interactive segment-based video-world generation with multi-turn prompts and camera conditioning. Linux/NVIDIA offline RTX 4090 low-memory path documented, not native Mac or real-time RTX 4090 validation. Tested resident streaming profile eight B200s, native horizon120s; geometry/colour/prompt drift possible. Text-start runtime without exposed image initialization; editable mesh/rig/splat export and persistent world not established. Potential atmospheric footage, not qualified character continuity or full film.",
+      "licence_note": "Tencent-released code, parameters and weights under Apache-2.0; third-party components retain original terms. Check exact pinned dependencies and hosted service terms, source/output rights and export access before a trial. Queue retention grants no install, model download, rental, account upload, spending or publication authority.",
+      "next_trial_or_retest_condition": "First verify accessible launch route/export/terms/resources/budget and pin build. Original world ->5s movement ->one action or camera change ->another5-10s. Inspect spatial continuity, character preservation, control, quality, time and full cost; retain complete encoded clip/config/commands, technical QA and owner review separately. No execution from retention.",
+      "evidence": [
+        "docs/research/hy-nomas.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "jake-denham-blender-max-project",
+      "name": "Jake Denham Blender / Max-style personal project",
+      "url": "https://youtu.be/74TsKdNWEaA",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "review_basis": "Author video description and selected demo segments inspected; owner-selected documentation retention, no executable trial",
+      "scope_and_findings": "Author video/description shows Blender-based Max-style workflow, scene tabs and AI/asset integrations; personal project explicitly unavailable for download or sale. Startup and 23/23 .max scene claims are author-bounded, not general render speed, plugin compatibility or Mac support. Observe until build and terms exist; no full custom interface planned.",
+      "licence_note": "No released source/build licence established. Public video does not permit copying implementation or establish a usable Mac product. Recheck actual build, distribution and usage terms before future installation or testing; independent Blender, renderer, plugin, service and asset terms apply.",
+      "next_trial_or_retest_condition": "Observe until actual build and usage terms appear; then assess platform, source/provenance, resources and licence. No current trial/install, cloning of UI, purchase or publication authorised.",
+      "evidence": [
+        "docs/research/blender-repeatable-stage.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "blender-repeatable-stage",
+      "name": "Blender repeatable scene / action / camera / light approach",
+      "url": "https://youtu.be/74TsKdNWEaA",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "partial",
+      "review_basis": "Author video description and selected demo segments inspected; owner-selected documentation retention, no executable trial",
+      "scope_and_findings": "Internal original480x27012fps Cycles CPU saved-scene fixture passed repeat/range/light/camera/PCM checks on one build/Mac. Draft versioned passports prepared, no real hero/set approved. Owner review and real-production continuity pending; reference custom application remains untested.",
+      "licence_note": "Independent workflow specification, no copied upstream code or media. Review actual Blender/add-on/renderer licences plus source assets, services and output rights before execution; no rights inherited from reference video. No cloud calls, spending, upload, install or publication authorised by queue retention.",
+      "next_trial_or_retest_condition": "Review retained A/B evidence, then test one owner-approved recurring asset and bounded production correction with adjacent context. No arbitrary rig/physics/face/GPU/cross-build qualification; no automatic unchanged rerun.",
+      "evidence": [
+        "docs/research/blender-repeatable-stage.md",
+        "docs/experiment-queue.md",
+        "docs/experiments/blender-shot-replay.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-26",
+          "kind": "internal_original_fixture_cpu_render",
+          "evidence": "docs/experiments/blender-shot-replay.md",
+          "outcome": "Blender4.5.15 LTS ARM64:36 identical repeated source frames,12 matching independently rendered range frames, two camera setups,12 changed light-patch frames with camera/action and PCM preserved. Restricted-process native startup failed; normal native access passed. No cinematic/owner/listening acceptance, complex rig or automatic catalogue qualification."
+        }
+      ]
+    },
+    {
+      "id": "event-driven-narration",
+      "name": "Event-driven narration method",
+      "url": "https://www.youtube.com/watch?v=eA9_Q6d2H-g",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "review_basis": "Developer-video transcript and official THE FINALS PRIME TIME notes reviewed; owner-selected bounded method trial, no execution",
+      "scope_and_findings": "Selected game events drive contextual commentary mixed with prepared lines in reference game. Retain independent post-capture method: timestamped verified event ->short line ->one cleared voice ->timeline placement. Reference materials expose no separate reusable Embark tool/API; no general video understanding, live latency or voice-copy rights inferred. Existing project journal/timeline reused, no executable provider added.",
+      "licence_note": "Independent narration workflow inspired by public developer explanation; no reusable Embark tool/API or licence to game voices/code/assets established by inspected materials. Use authorised footage and a cleared voice/TTS route, with separate source/output/service rights and cost checks. Retention grants no generation, cloning, upload, spending or publication authority.",
+      "next_trial_or_retest_condition": "Choose authorised30-45s clip with three verified events and one cleared voice. Check factual accuracy, timing against encoded picture, pronunciation/naturalness and absence of unnecessary chatter. Retain event evidence, line/audio placement, source/output revisions, settings, manual effort and cost; owner preference separate. Start offline after capture; live mode needs separate test.",
+      "evidence": [
+        "docs/research/event-driven-narration.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "rhubarb-lip-sync",
+      "name": "Rhubarb Lip Sync",
+      "url": "https://github.com/DanielSWolf/rhubarb-lip-sync",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "review_basis": "Read-only official repository/docs/licence and current Framewright evidence/queue review; owner-authorised research retention, no runtime trial",
+      "scope_and_findings": "CLI produces editable timed mouth-shape cues from existing WAV/Ogg, with script hints and JSON export; macOS documented, exact Apple Silicon binary/runtime unverified. Stylised mouth timing only; no natural photoreal face, eye/head animation or full expression qualification.",
+      "licence_note": "MIT tool with separately listed dependencies; confirm selected build and preserve notices if redistributed. Speech, voice, character art and output rights independent. No upstream code copied or install/download/generation authority from retention.",
+      "next_trial_or_retest_condition": "P1:8-12s cleared English take plus original stylised mouth shapes; compare raw cues and smoothed mapping with independent eye/head motion. Check closures, rests, excess switching, audio sync and owner naturalness judgement; save cues/settings/manual edits. Photo-realism remains unqualified.",
+      "evidence": [
+        "docs/research/arsenal-gaps-2026-10-26.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "blender-tracked-compositing",
+      "name": "Blender camera tracking and Cycles contact integration",
+      "url": "https://www.blender.org/features/rendering/",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "review_basis": "Read-only official repository/docs/licence and current Framewright evidence/queue review; owner-authorised research retention, no runtime trial",
+      "scope_and_findings": "New scope of existing Blender candidate: camera/object/planar tracking, scene orientation and Cycles shadow catcher/holdout passes documented. No installed-version, camera solve, alpha/shadow or moving-plate integration test here. Generated-video geometry drift is not a valid calibrated scene assumption.",
+      "licence_note": "Blender software licence and any add-ons/distribution obligations separate from source plate, asset and renderer/output rights. Review selected pinned build and cleared original footage/assets; no installation or rendering from research retention.",
+      "next_trial_or_retest_condition": "P1 after repeatable-stage test:5-8s original real textured camera move with parallax ->tracked camera/ground/scale ->one simple CG object and contact shadow. Inspect solve diagnostics, full encoded stability, contact/occlusion/lens/edges and manual repair; retain tracks/camera/plate/settings. No generic generated-world reconstruction qualification.",
+      "evidence": [
+        "docs/research/arsenal-gaps-2026-10-26.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "rokoko-blender-retargeting",
+      "name": "Rokoko Blender local animation retargeting",
+      "url": "https://github.com/Rokoko/rokoko-studio-live-blender",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "review_basis": "Read-only official repository/docs/licence and current Framewright evidence/queue review; owner-authorised research retention, no runtime trial",
+      "scope_and_findings": "Plugin documents armature mapping/reference pose/scale retargeting. First scope existing local humanoid action, not cloud capture or Studio livestream. Current Blender compatibility, login requirements, actual local entitlement, root motion/contact quality and export reuse untested. Humanoid result cannot qualify dogs/faces.",
+      "licence_note": "README MIT badge conflicts with actual LICENSE.md containing LGPLv3; pin/review actual source terms before install/distribution and do not copy vendor code into Framewright. Studio/cloud plans, rig and motion licences independent; no plan or account entitlement inferred from plugin docs.",
+      "next_trial_or_retest_condition": "P1 with cleared humanoid rigs/action and verified local route:5-8s action ->different rig ->bake ->two camera views ->save/reopen/export. Check mapping/scale, elbows/knees, root travel, feet and reuse/manual correction. No purchased mocap, account grant, streaming or generation authorised.",
+      "evidence": [
+        "docs/research/arsenal-gaps-2026-10-26.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "sam2-video-masks",
+      "name": "Meta SAM 2 video masks",
+      "url": "https://github.com/facebookresearch/sam2",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "review_basis": "Read-only official repository/docs/licence and current Framewright evidence/queue review; owner-authorised research retention, no runtime trial",
+      "scope_and_findings": "Promptable video/image segmentation with checkpoint/code Apache2.0; official install primarily Linux/PyTorch/CUDA. Optional CUDA postprocessor can be skipped, not proof of Mac video speed/correctness. First launch/resources gate remains open. Segmentation is not full alpha matting for fur/transparency/blur.",
+      "licence_note": "SAM2 checkpoints/demo/training code Apache2.0; fonts and third-party components separate. Pin exact code/checkpoint, review demo/service terms if chosen and independent input/output rights. No model download, upload, paid alternate or inference authorised by retention.",
+      "next_trial_or_retest_condition": "P2 after viable route/memory/cost check:5-8s cleared moving subject with brief occlusion ->prompt/propagate masks ->one correction ->light/dark/target backgrounds. Compare selected manual reference masks, inspect temporal ID/edge/flicker/loss and correction time; full encoded review. Native-alpha renders bypass this.",
+      "evidence": [
+        "docs/research/arsenal-gaps-2026-10-26.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "opencolorio-handoff",
+      "name": "OpenColorIO and Blender color handoff",
+      "url": "https://github.com/AcademySoftwareFoundation/OpenColorIO",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "review_basis": "Read-only official repository/docs/licence and current Framewright evidence/queue review; owner-authorised research retention, no runtime trial",
+      "scope_and_findings": "Color framework with ACES interoperability and macOS target; Blender5.0 docs describe working spaces/ACES views. Not automatic grading or lighting match. Current build/config/application handoff untested; start explicit SDR pipeline, no assumed HDR migration or cross-display identity.",
+      "licence_note": "OpenColorIO BSD3-Clause; selected configs/LUTs, Blender, other applications and source assets have independent terms. Pin versions/config hashes. No new install, copied upstream implementation or rendering authorised by candidate retention.",
+      "next_trial_or_retest_condition": "P2 on next composite:known sRGB plate +linear CG +neutral/color patch ->explicit input/working/view/output transforms ->SDR encode ->second-player inspection. Check no double display transform, clipping/neutral shifts, alpha fringes and range/transfer tags; retain settings. Not calibration/automatic creative color matching.",
+      "evidence": [
+        "docs/research/arsenal-gaps-2026-10-26.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "reaper-reascript",
+      "name": "REAPER and ReaScript editable audio workflow",
+      "url": "https://www.reaper.fm/sdk/reascript/reascript.php",
+      "reviewed": "2026-10-26",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "review_basis": "Read-only official repository/docs/licence and current Framewright evidence/queue review; owner-authorised research retention, no runtime trial",
+      "scope_and_findings": "DAW action/API automation via embedded Lua/EEL documented; Universal Mac Intel/ARM64 and60day full evaluation listed. Current installed licence/evaluation eligibility not checked. Complement existing FFmpeg mix with editable markers/stems/automation, not another video renderer.",
+      "licence_note": "Proprietary REAPER with time-limited evaluation and paid discounted/commercial licences under eligibility rules; not perpetual free. Confirm current terms/evaluation before install and do not infer discounted eligibility. Scripts/plugins/sound assets/voices have independent rights; no purchase or install authorised.",
+      "next_trial_or_retest_condition": "P2 need/evaluation gated:15-20s one cleared voice/ambience/three existing SFX ->markers/ducking/fades/stems ->one cue revision ->save/reopen/render. Compare sync/intelligibility/tails/loudness/true peak/clipping and revision effort with retained FFmpeg workflow; owner listening separate. No new plugins, library downloads or paid services required as assumptions.",
+      "evidence": [
+        "docs/research/arsenal-gaps-2026-10-26.md",
+        "docs/experiment-queue.md"
       ]
     }
   ]

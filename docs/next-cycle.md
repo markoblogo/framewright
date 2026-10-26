@@ -1,23 +1,59 @@
 # Next production cycle
 
-Updated 25 October 2026. This is a planning record, not a render queue or spending
+Updated 26 October 2026. This is a planning record, not a render queue or spending
 authority. [Completed PlayMCP review](experiments/playmcp-service-review.md) ·
 [Experiment backlog](experiment-queue.md).
 
+## Newly implemented preparation
+
+The [experiment workbench and readiness helpers](experiments/experiment-workbench.md)
+now provide bounded source-pinned A/B cards, local review packs, separate time/cost
+and manual checks, current-dependency status and a proposed scoped-admission result.
+Local prerequisite snapshots distinguish installed resources from runtime/export
+success, rights, cost and authority. Synthetic controls and an isolated replay of
+saved micro-lesson outputs exercised the workflow; no new tool was production-tested.
+Use these on the next owner-selected queued trial; the order and pauses below remain.
+
+The [internal Blender probe](experiments/blender-shot-replay.md) now demonstrates
+same-build saved-shot repetition, a matching range, two views and a one-light edit
+with preserved PCM timing. Reusable shot controls and draft versioned passports are
+implemented. Actual recurring hero/set approval and real-production continuity review
+remain pending; this does not restart paused films or add a final export.
+
 ## Execution order
 
-The brand-profile/Nantes closeout was pushed without a release. Current local
-work closes the English [1 in 8 Billion review](experiments/one-random-life.md),
-with an owner-supplied YouTube URL, and transfers SSI production sources. No release.
+### Parallel editorial work and book milestone
+
+Owner decision26October2026: [BOOK-01](book-milestone.md) tracks readiness to begin
+a **method-first book about AI-assisted video production**, applicable with or
+without Framewright. It is not a product manual. Status: collecting evidence;
+reader reproduction and cleared source/illustration packets pending. [Working book
+base](book/README.md):10-chapter outline, three worked cases and a chapter→case→gap
+map are prepared. Each method has parallel routes with Framewright and without it;
+update them during future authorised production rather than creating a new render queue.
+
+[Weekly English studio posts](editorial/README.md) turn actual project progress into
+blog drafts with complete ABVX metadata, a generated text-bearing cover/alt text and1–3 relevant published YouTube examples.
+First edition prepared26October; default recurring draft time Monday10:00 Europe/Paris.
+The owner publishes and supplies blog links for recording against each edition.
+Posts also accumulate as source material for the book; the weekly pass reviews
+readiness without treating publication counts as a score.
+
+The v0.4.0 experimental release groups the accumulated production records,
+workbench/readiness utilities, saved-shot/passport helpers and book/editorial
+preparation. [Release audit](release-audit-2026-10-26.md). It does not start another
+film, activate SSI production or add a repository-installed weekly scheduler.
 
 1. **SSI:** three English voice-only report films are accepted/published per owner
    report; Story URLs and accepted renderer templates are retained. The owner
-   authorized direct handoff; integration is running in SSI. Wait for its outcome
-   here; do not duplicate implementation or claim the schedule is active.
+   authorized direct handoff; SSI reports integration deployed at `fc8360e`. First
+   planned run is 1 November 2026 after 09:00 Kyiv, gated on Mac availability and
+   complete readiness. Await actual delivery and fresh listening/editorial results;
+   do not duplicate SSI operations.
 2. **MN7R:** next proposed production is a real-interface Instagram promo, building
    on the accepted SSI site-scroll approach. Agree a bounded brief before capture.
-3. **Nantes green line:** a separate proposed walking tour with named landmarks;
-   the airport car/taxi film is already delivered with an owner-supplied YouTube URL.
+3. **Nantes green line:** [100s film](https://youtu.be/IQ3CdzPzFHw) published per owner;
+   sources, full-route map and QA retained. Audience results remain unknown.
 4. **Good Dog:** use an owner-selected story excerpt and a short continuity/interaction
    pilot before a three-minute adaptation. Spline remains a queued candidate.
 5. **Pocket OS:** remains explicitly paused pending owner resumption/device footage.
@@ -37,13 +73,13 @@ Next use one fitting method from the [curated prompt queue](research/prompt-libr
 | --- | --- | --- |
 | PlayMCP review | Completed; owner supplied YouTube URL | Retain export/kit/publication evidence; private article draft awaits owner use |
 | SSI website Reels | Both languages accepted by partners; English Instagram URL supplied (owner reports) | Publication visibility and audience metrics independently unverified; Ukrainian publication unknown |
-| SSI weekly summaries | Three revised films accepted/published per owner; Story URLs recorded | Source package transferred; SSI implementation in progress; await owner result |
+| SSI weekly summaries | Three revised films accepted/published per owner; Story URLs recorded | Receiver reports fc8360e deployed; first scheduled run 1 Nov, actual delivery/quality pending |
 | One Random Life | 118s film and full English kit; YouTube link owner-supplied | Preserve bounded OCR/portrait evidence; audience metrics and independent playback unknown |
 | Pocket OS review | Explicitly paused; shot plan retained | Owner resumption and usable device footage; no automatic filming/development |
 | YouTube Trends pilot | Two English Shorts plus 60s Dream Walk and 20min ambient film; owner supplied four YouTube URLs | Retain dated hypothesis/publication evidence; compare available metrics later without assuming success |
 | Möbius Walk | Fourth PlayMCP game published, final native format pass and clean judge | Reuse the scoped ambient-capture method; no automatic new build |
 | The Same Forest | Published 42s local color/sound study; watch title/duration observed | Preserve source/QA/publication; audience metrics, commercial clearance and final-master listening remain distinct |
-| Nantes illustrated journey | 82s French car/taxi film; owner-supplied YouTube URL | Retain QA; green-line walking tour is a separate proposed production |
+| Nantes illustrated journey | 82s French car/taxi film; owner-supplied YouTube URL | Retain QA; the separate green-line walking tour also has an owner-provided publication URL |
 | LitRPG fiction/world pilot | Separate next step; fixed-plate trial completed | Owner-selected story excerpt and a two-shot continuity/interaction pilot before a 3min adaptation |
 
 The six earlier illustrative weekly demos were rejected. The later partner brief

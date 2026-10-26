@@ -1,0 +1,50 @@
+[
+  {
+    "local_output": "nantes-green-line-20261025/Nantes-Ligne-Verte.mp4",
+    "sha256": "dc496a477c6de3e9a091a1ba6a1e3ca2bb16a42cc317c7aabdc6970f3a2147b4",
+    "bytes": 60226640,
+    "id": "nantes-green-line-walk",
+    "route": "staged-3d-scene",
+    "production_method": "source-driven-selected-eye-level-walk-with-full-official-map-and-pixel-detail-transitions",
+    "evidence": "experiments/2026-10-26/evidence/nantes-green-line.json",
+    "qa_scope": "100s1920x1080p24/2400frames fully decoded. All 13 official route lines / 371 vertices retained on each overview. Two same-instance canvas replay hash pairs match. Overall v1 owner-accepted; sharper v2 delivered for pixel-clarity recheck. AAC packet hash unchanged. YouTube publication URL owner-reported; visibility, uploaded bytes, playback and audience results unverified.",
+    "publication_verification": "owner_reported_url",
+    "publication_visibility": "unknown",
+    "audience_metrics": "not_measured",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"route_coverage\"",
+      "\"replay\"",
+      "\"owner_acceptance\""
+    ],
+    "publication_url": "https://youtu.be/IQ3CdzPzFHw"
+  },
+  {
+    "id": "framewright-micro-lesson",
+    "route": "narrated-montage",
+    "production_method": "original-canvas-two-host-micro-lesson-with-real-footage-and-local-supertonic",
+    "local_output": "framewright-micro-lesson-20261026/Framewright-Idea-to-Video-EN-v2.mp4",
+    "sha256": "8f435f88bc9614a73fec4fe51704dd610b1a812ae4a9b7dc47803920001a771d",
+    "bytes": 27069875,
+    "evidence": "experiments/2026-10-26/evidence/framewright-micro-lesson.json",
+    "qa_scope": "120s1080p24/2880frames full decode; two local voices, final mixed-sound ASR280/280normalised tokens; repeated picture seeks; representative encoded imagery and full/reduced text cover inspected.40subtitle cues and loose YouTube kit. Listening/owner creative approval and publication pending. Claudemy-inspired format adaptation, not native plugin qualification. Revision2 adds fictional photographic presenters at0.12\u20138.95s;120s full decode, original approved AAC packet digest/timing retained, body source-frame controls31/86s identical. Owner baseline speech/meaning accepted; new intro review pending. Not phoneme-accurate lip sync. Owner subsequently accepts v2 for publication, explicitly reporting jerky/artificial facial expressions despite adequate mouth timing. Retest/improve naturalness before next similar production; no publication URL. Owner later supplied YouTube publication URL; uploaded bytes, visibility/playback and audience metrics unverified.",
+    "thumbnail": {
+      "local_output": "framewright-micro-lesson-20261026/youtube/thumbnail.png",
+      "sha256": "b35cd178a0919cd0823fd971320a6aa7d8dfcec36f25be89ba635a948e44c4b3",
+      "bytes": 265418,
+      "format": "png",
+      "width": 1280,
+      "height": 720
+    },
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"captions\"",
+      "\"thumbnail\"",
+      "\"owner_acceptance\""
+    ],
+    "publication_verification": "owner_reported_url",
+    "publication_visibility": "unknown",
+    "audience_metrics": "not_measured",
+    "publication_url": "https://youtu.be/n1wuySSYQcQ"
+  }
+]

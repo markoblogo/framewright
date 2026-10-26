@@ -5,6 +5,17 @@ this guide preserves detailed methods, installation and evidence boundaries.
 
 [Photo-series cinema workflow](workflows/photo-series-cinema.md): a private30s layered camera/sound trial and a reusable camera-plan component; owner accepted picture and revised music; local YouTube kit prepared.
 
+[Experiment workbench and readiness](../skills/video-production-router/references/trials-and-readiness.md):
+local prerequisite snapshots and source-pinned A/B cards with existing-file review
+packs; [synthetic and saved-case validation](experiments/experiment-workbench.md).
+Software validation, not another video export or automatic tool qualification.
+
+[Saved shots and passports](../skills/video-production-router/references/shots-and-passports.md):
+explicit local Blender range rendering, one-control revisions and versioned character/
+environment bindings. [Internal CPU proof and limitations](experiments/blender-shot-replay.md);
+actual canonical assets and natural animation remain for owner-led production.
+
+
 ## Recent production
 
 | Result | What was actually produced | Evidence |
@@ -15,7 +26,7 @@ this guide preserves detailed methods, installation and evidence boundaries.
 | Möbius Walk ambient video | Actual Babylon.js game canvas; disclosed two-minute autoplay cycle extended to 20 minutes | [Capture method](workflows/ambient-game-video.md) · [Owner-supplied video](https://youtu.be/rfClK3jPHlw) |
 | SSI website Reels, Ukrainian/English | Real site pages scroll beneath stationary captions; both accepted by partners per owner report | [Case](experiments/ssi-site-reels.md) · [Owner-supplied English Instagram link](https://www.instagram.com/reel/DezcjZ0tXuz/) |
 
-**37 recorded final exports** are pinned by size/hash. Publication links, technical
+**40 recorded final exports** are pinned by size/hash. Publication links, technical
 QA, owner acceptance and audience results are separate evidence; views/retention
 are not yet measured for these new cases. Full media and private source assets
 stay outside Git. YouTube copy is delivered as direct text files, without ZIPs.
@@ -201,8 +212,9 @@ filters capabilities and grants no spending authority.
 
 Run `python3 scripts/check.py --scope docs` for offline validation; no model/render.
 [Checking policy](checking-policy.md) · [Record an experiment](experiments.md) ·
-[Research queue](experiment-queue.md) · [Current product priorities](next-cycle.md#implemented-product-slices-and-next-evidence) · [Historical v0.3.1 audit](release-audit-2026-10-19.md).
-The new case records are on main; this update creates no new software release.
+[Research queue](experiment-queue.md) · [Current product priorities](next-cycle.md#implemented-product-slices-and-next-evidence) · [Current v0.4.0 audit](release-audit-2026-10-26.md) · [Historical v0.3.1 audit](release-audit-2026-10-19.md).
+The v0.4.0 experimental prerelease groups these methods and current case records;
+its standalone archive excludes production media and external application runtimes.
 
 The MIT licence covers original repository materials. Tools, models, music and art
 have their own terms. Large media remain outside Git. [ABVX ecosystem](ecosystem.md) ·

@@ -51,6 +51,10 @@ Never mix report revisions, send old videos or silently fall back to text-only.
 The private SSI package contains 115 hash-checked files, including three accepted
 masters and renderer baselines. Only a sanitized manifest summary and this original
 input schema are in Git. The owner authorized direct transfer, the SSI chat began
-integration and the owner confirms work is ongoing. Receiving-adapter tests, worker
-readiness and scheduled Telegram delivery remain pending evidence from SSI.
+integration. The later [receiver report](../experiments/2026-10-26/evidence/ssi-integration-receiver-report.json)
+records production deployment at `fc8360e`, green CI, an installed Mac handler and
+private-group access, all supplied by the owner rather than independently verified
+here. The first run is planned for 1 November 2026, after 09:00 Kyiv and complete
+readiness. Actual six-item delivery receipts and fresh listening/editorial quality
+remain pending. No generation or send ran in that reported closeout.
 [SSI handoff evidence](../experiments/2026-10-25/evidence/ssi-weekly-handoff.json).

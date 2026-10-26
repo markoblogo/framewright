@@ -679,6 +679,374 @@
       ],
       "rights_class": "conditional",
       "licence_note_sha256": "31057b256836be836e7bbf18be8a773afeb4a4da3a4e22a23b696fcfbc530aee"
+    },
+    "djv": {
+      "tasks": [
+        "media-review",
+        "editing"
+      ],
+      "inputs": [
+        "video",
+        "image",
+        "audio"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "0bac987677f28de0c12acfa83c19ed2ea4442f37812da8a9710538efedae4827"
+    },
+    "chaos-vantage": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "0f916cca76203103a68bf2283b11e31459f6bf2f2bda020ce766ec11dfa4b9f3"
+    },
+    "rokehan-location-scout": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "63849b2335e7901d02d0fe13ac19413b61d131d073006526f392579817f3d541"
+    },
+    "claudemy": {
+      "tasks": [
+        "research",
+        "script",
+        "audio"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "e970b08302ba8ea5654b1c6bf63638a075f2dcb9edb494f9806d7fb6f2b9dfae"
+    },
+    "fglibs": {
+      "tasks": [
+        "research"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "adde8e0003d9ead37c3d8cf875d4ec59aa5f84b3ef1472586a919eca3cf1e5f9"
+    },
+    "emerging-images": {
+      "tasks": [
+        "graphics",
+        "video"
+      ],
+      "inputs": [
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "e8611bd3ddd33fc06f805fe5fc56fdb0b2af3381d3c1a5efbee968c814979f48"
+    },
+    "paper-crumple": {
+      "tasks": [
+        "3d",
+        "graphics",
+        "video"
+      ],
+      "inputs": [
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "41921e5c0774fbdaa0cbdf92140c785c61685f55d16be2e4f1739a66e4ceee2a"
+    },
+    "evilcharts": {
+      "tasks": [
+        "diagram",
+        "graphics",
+        "video"
+      ],
+      "inputs": [
+        "data"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "64f8b0dab825089627aa0e5b965ed860053cace8feab049d76673dd14de50d5a"
+    },
+    "ingetrazo": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "text",
+        "image",
+        "3d-model"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "7e08e006eb2c905f2eb40b44fedd2cabc95f9af0191cab48ca87b90bca8802b9"
+    },
+    "xcavity": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "4c7f0d734bfd380dba2b2a524998b01b6fe123b409a07b01b03ead65464ac59c"
+    },
+    "easy-autoloops": {
+      "tasks": [
+        "3d"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "0831f5b06e8506793f26c739c1ba5a2850cc3738f14b5156a5c6f1313e73856d"
+    },
+    "zbrush": {
+      "tasks": [
+        "3d"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "c11b95768acfbb292198b9a3f4c31b652fe9352717188aafc4b5528523d778d2"
+    },
+    "redshift": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "3964a4544c42fcc92ea778218195bd7e057036836e03afc94c7db816726eb886"
+    },
+    "plasticity": {
+      "tasks": [
+        "3d"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "080a414cf21a82a1d38949c76f41beb165fd4f2fb6b63d1f762d100c501d9d03"
+    },
+    "uv-unfoldr": {
+      "tasks": [
+        "3d"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "9a757d6b98b8e7364e751a9db6a5473796486dfd3ad786c22c3b9997783886ba"
+    },
+    "google-playground": {
+      "tasks": [
+        "3d",
+        "video",
+        "software"
+      ],
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "accaea32299d85f1e2908adc357f875e6291ee974e112cf342d0e0be4879d362"
+    },
+    "playcanvas": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "3d",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "0a2e017895c51f54191cc235e0f446da5d5e6363afecad805abad0bc49c16f1f"
+    },
+    "playcanvas-editor-mcp": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "3d",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "fc45cb0011b69e1358760199da288d7fc2dad4752f66c39fb53593359193b684"
+    },
+    "snapchat-web-lenses": {
+      "tasks": [
+        "distribution"
+      ],
+      "inputs": [
+        "web-build"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "30ee62e6a90376c30b7538ff2a44b0065e8fb57d4a8f2d40c2ebe698f6155d47"
+    },
+    "canva-craft": {
+      "tasks": [
+        "graphics",
+        "illustration"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "4240fa417ff50ed95835b08a8f2d9b89d480e61905cb17ffb0beb66f9b667d28"
+    },
+    "corridorkey-2": {
+      "tasks": [
+        "editing",
+        "video"
+      ],
+      "inputs": [
+        "video"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "8d2581e51a43406400c496791e405775db21783e8f8a86dc31f5e34d49142e3a"
+    },
+    "tripo-rigging-animation": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "3d",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "5ac1b99457a6997a51dad9e1fb5c3db3dfdaecf37132e0d91583324ce3eb7bc7"
+    },
+    "hy-nomas": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "cc1dd3ceb1f96ef29c5104603553eaf05829d43299853f13b56cd04aa0639ce1"
+    },
+    "jake-denham-blender-max-project": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "9305a79ed23bfb9a204346e73bdbdcd866446bb42a72479193493ed9b2303507"
+    },
+    "blender-repeatable-stage": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "ccb478dc49c42afa224e261ab3b48e22787a23e961074fe416075da175c60462"
+    },
+    "event-driven-narration": {
+      "tasks": [
+        "audio",
+        "video"
+      ],
+      "inputs": [
+        "video",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "fa95376390c40df2dcad1705246066b4ded7dbdf1e19090756d10101aa4747e8"
+    },
+    "rhubarb-lip-sync": {
+      "tasks": [
+        "audio",
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "audio",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "90e0858dc7d986655444c3d9e5ea41939ce43ac67695eec3a8e4fe1ee3456c6e"
+    },
+    "blender-tracked-compositing": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "video",
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "394cdf2f4ab0b428d34961a4a3287d3597eafd0d299cba7cf811a363a435c4d8"
+    },
+    "rokoko-blender-retargeting": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "9d2a71ab4c34522e3582fd3c2c3a97a98b3f62092765f8376f106da28e862fec"
+    },
+    "sam2-video-masks": {
+      "tasks": [
+        "image",
+        "video",
+        "editing"
+      ],
+      "inputs": [
+        "image",
+        "video"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "fb656c8b36aa422d3da516884c9356357fa49ee11d5db4d4dabe85d657dc9fa1"
+    },
+    "opencolorio-handoff": {
+      "tasks": [
+        "image",
+        "video",
+        "editing"
+      ],
+      "inputs": [
+        "image",
+        "video",
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "a38675b442e18e7fa6fe689d18f961e1243c5eb4cc0f252a8bd6e44c7d9c5486"
+    },
+    "reaper-reascript": {
+      "tasks": [
+        "audio",
+        "editing"
+      ],
+      "inputs": [
+        "audio",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "c7dabb70bb5d24729fdf80ea3d830a7d2acb79d05407a852b27a3664aa42cd8a"
     }
   }
 }

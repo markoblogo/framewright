@@ -26,3 +26,15 @@ node_modules/
 *.mkv
 *.safetensors
 *.npz
+
+# Native production scenes/assets and portable application distributions stay private.
+*.blend
+*.blend1
+*.blend2
+*.glb
+*.gltf
+*.fbx
+*.abc
+*.usdz
+*.dmg
+*.app/

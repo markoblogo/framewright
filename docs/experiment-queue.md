@@ -1,10 +1,274 @@
 # Proposed experiment queue
 
-Updated 2026-10-25. This is a task-led backlog, not permission for unattended tests,
+Updated 2026-10-26. This is a task-led backlog, not permission for unattended tests,
 installs, model downloads, spending, account grants or public media uploads.
 Use an owner-selected subject with authorised sources. Discuss the subject and bounded brief before
 each actual new-tool experiment. [Research](tool-research.md) ·
 [Decision ledger](../skills/video-production-router/references/review-ledger.json).
+
+## Book examples supplied by future trials — planning links only
+
+[Chapter/case/gap map](book/coverage.md) links the existing queue to a method-first
+video-production book. Record one useful lesson from a fitting authorised trial,
+showing parallel routes with Framewright and without it. Keep negative results and
+unknowns; update the original experiment before its teaching adaptation. This does
+not reorder priorities, resume paused productions, authorise a trial or require every
+queued tool to be tested before a chapter can be written.
+
+## Workbench for future trials — implemented, 2026-10-26
+
+Use [experiment cards and readiness](../skills/video-production-router/references/trials-and-readiness.md)
+to freeze a question/common sources, collect A/B artifacts, record checks/time/cost
+and retain current owner review. [Software validation](experiments/experiment-workbench.md)
+covers synthetic controls and saved micro-lesson replay; it does not qualify any
+queued generator, model or renderer. Select the actual subject/environment before
+execution and preserve existing production pauses; no automatic trial starts.
+
+## Arsenal gap review — six bounded additions, 2026-10-26
+
+[Assessment, primary sources, platform/rights gates and pass boundaries](research/arsenal-gaps-2026-10-26.md).
+This batch fills integration/control gaps rather than adding generic generators;
+priorities rank only these tests and do not restart paused production.
+
+| Priority | Candidate | First trial |
+| --- | --- | --- |
+| P1 | Rhubarb Lip Sync | 8–12s original stylised speaker; editable mouth cues, smooth transitions and separate eyes/head; photoreal expression remains unqualified |
+| P1 after Blender stage | Blender tracking + Cycles contact integration | 5–8s real camera plate → solved camera/floor → object/contact shadow; inspect stability, lens/scale and occlusion |
+| P1, humanoid prerequisite | Rokoko local retargeting | 5–8s cleared action → different rig → two views → save/reopen/export; inspect feet/root/joints; verify plugin/local access and licence conflict first |
+| P2, resource gated | SAM 2 video masks | 5–8s motion/occlusion → masks/correction → three backgrounds; segmentation does not qualify fur/transparent alpha matting; Mac route unverified |
+| P2 with composite | OpenColorIO / Blender color handoff | Known plate + linear CG + test patches → explicit transforms → SDR encode; inspect double transforms, edges and player differences |
+| P2, evaluation/need gated | REAPER + ReaScript | 15–20s voice/ambience/three effects → editable mix/stems → cue revision; compare existing FFmpeg workflow, confirm evaluation/licence |
+
+All are research-only candidates, not tested providers. Reuse existing project and
+evidence records; select cleared sources, exact build and bounded cost before trials.
+No installation, model download, account grant, upload, spending or production run
+authorised here. Existing facial/dog/world/video-review gaps remain open.
+
+## Event-driven narration — queued method candidate, 2026-10-26
+
+Owner-selected [trial](research/event-driven-narration.md): **30–45s recording,
+three events, one voice**. Check factual accuracy, event/speech timing, naturalness
+and absence of unnecessary chatter. Start with verified events after recording;
+reuse the existing journal/timeline and retain source evidence and speech placement.
+
+Reference: THE FINALS Dynamic Commentary; inspected materials provide no separate
+available Embark tool/API. This does not establish general-purpose video recognition
+or qualify real-time narration. Use a cleared voice; no copying the game's voice.
+Subject remains unselected; no generation, account grant, spending, upload or
+publication authorised by retention.
+
+## Blender repeatable stage — internal technical probe; production review pending, 2026-10-26
+
+Owner-selected [short test](research/blender-repeatable-stage.md): **scene → action
+→ two cameras → lighting edit → render again without rebuilding the scene**.
+Retain editable setup/settings and compare camera coverage, preserved geometry/action,
+intended lighting change, encoded quality, repeatability, time and manual effort.
+[Internal fixture completed](experiments/blender-shot-replay.md): official4.5.15 LTS,
+CPU, saved scene/action, two views,36 repeat and12 matching range frames, one-light
+edit and unchanged PCM clock. Actual source files stayed unchanged; A/B pack awaits
+owner review. Reusable shot controls/passport drafts are implemented. Next test:
+one real approved asset, production-range correction and continuity/listening review.
+
+Separately retain Jake Denham's Blender/Max-style project under observation until a
+build and usage terms appear. The approach test does not depend on that project or
+qualify its .max import, plugins, performance or Mac support. A full custom interface
+is premature; no installation, generation, rendering, spending or publication from
+this retention. [Source video](https://youtu.be/74TsKdNWEaA).
+
+## Hy-Nomas world video — launch-route-gated candidate, 2026-10-26
+
+Owner-selected [first trial](research/hy-nomas.md), **after checking an accessible
+launch route**: original world → 5s movement → one action or camera change → another
+5–10s. Check spatial continuity, character preservation, controllability, quality,
+time and total cost; retain source/config/commands and complete encoded output.
+
+Linux/NVIDIA documented; native Mac support unconfirmed. Offline RTX 4090 support
+does not qualify real-time streaming; tested resident interactive profile uses
+eight B200s. Generated frames do not establish editable/persistent 3D geometry or
+stable long-form continuity. Confirm export, rights and budget before execution.
+No installation, weight download, rental, account grant, generation or publication
+authorised by queue retention; no provider added to production routing.
+
+## Tripo rig and motion — active bounded candidate, 2026-10-26
+
+Owner-selected [direct rig/action test](research/tripo-rigging-animation.md): one
+cleared character → rig → 5–8s motion → export → playback from two cameras.
+Check deformation, foot sliding, actual root travel, action joins and action reuse
+after save/reload. Retain exported bones/skin/clip/materials and encoded motion QA,
+then owner review; no regeneration merely to change the camera.
+
+Start with a simple humanoid; a dog for Good Dog is a **separate subsequent stage**.
+Facial generation and lip sync unconfirmed. Verify chosen interface, topology/pose,
+upload rights/privacy, plan and actual per-step credit quote before a future run;
+Studio/API entitlements differ. No upload, paid generation, installation or production
+authorised by queue retention. This is distinct from the earlier shark/video-guided
+motion-reconstruction research and does not establish that workflow.
+
+## CorridorKey 2.0 keying — execution-route-gated candidate, 2026-10-26
+
+Owner-selected [bounded comparison](research/corridorkey.md), after choosing an
+available launch route: **one 5–8s fragment with motion/difficult edges → ordinary
+chroma-key comparison → light, dark and intended target backgrounds**. Check halos,
+lost detail, coloured edges/spill, flicker, processing time and full cost. Retain
+exact source/settings and encoded playback; technical QA and owner review separately.
+
+Public inference package currently requires NVIDIA/CUDA; separate paid product lists
+M-series Mac/macOS 14+. Neither is tested here. Confirm build/resources/licence before
+execution; commercial video output permission is separate from commercial software
+integration restrictions. No installation, purchase, weight download, upload or
+inference authorised by retention. Native-alpha renders need no extra keying pass.
+
+## Canva Craft cover and layers — bounded comparison candidate, 2026-10-26
+
+Owner-selected: one 16:9 cover with an exact English title → readability at reduced
+size → one focused revision → **separate** Magic Layers and short-animation checks.
+Compare with our current method on quality, controllability, time and cost; retain
+actual model, prompts, output revisions, usage and owner preference separately.
+
+First confirm the concrete model and available limit. API supports `craft_v1_2k`;
+the inspected Canva connector has no model selector, so its output alone cannot be
+attributed to Craft. Do not silently substitute another generator. Generation spends
+user AI credits; no trial, paid call, upload or account grant authorised by retention.
+Subject/title remain unselected. [Assessment and criteria](tool-research.md#canva-craft--bounded-comparison-candidate-2026-10-26).
+
+## PlayCanvas controlled scenes — active bounded candidate, 2026-10-26
+
+Owner-selected [three-stage test plan](research/playcanvas.md), without changing
+the agreed production order:
+
+1. **First:** local character + action + camera + sound → 15–20s repeatable recording.
+   Pin versions/assets, verify reset/seed/time controls and encoded motion/audio/sync;
+   compare with existing Three.js on matched scope, effort and result, then owner review.
+2. **If useful afterward:** Editor through MCP; independently review account/plan/
+   visibility, checkpoint and verify one bounded live edit. Local success does not
+   qualify the hosted Editor or its MCP access.
+3. **Separate future experiment:** Snapchat Web Lens packaging/publication. No upload
+   now; its portrait/size/runtime constraints do not apply to ordinary Engine films.
+
+All stages untested. No installation, account grant, paid usage or public submission
+is authorised by queue retention. Gaussian-splat worlds remain a later separate test.
+
+## Google Playground game-to-video — access-gated candidate, 2026-10-26
+
+Owner-selected trial, **after checking availability**: small original scene → one
+focused edit → source/asset export → local launch → 10–15s controlled recording.
+Compare with PlayMCP on quality, controllability, cost and ease of reuse. Record
+actual token/plan costs and editing effort; historical cases are not a matched test.
+
+Official help currently lists US/18+ and phased creation access; owner's account/
+France availability and exact free quota remain unverified. PNG/JPG references are
+stylised, not preserved exactly; no video upload. Inspect export rights/dependencies
+and local launch before capture; retain technical QA and owner review separately.
+No generation, account grant, paid plan or publication run is authorised by retention.
+[Assessment and pass conditions](tool-research.md#google-playground--access-gated-candidate-2026-10-26).
+
+## IngeTrazo editable filming sets — P2 candidate, 2026-10-26
+
+Owner-selected [assessment and bounded test](research/ingetrazo.md). Proposed role:
+agent-created architectural sets for book/fiction videos, exported to our existing
+Three.js capture workflow. Documentation describes Mac Apple Silicon, a local MCP
+bridge, editable geometry, named views and GLB export; none tested here.
+
+Trial: one original room with a door/window → reversible MCP edit and save/reopen →
+GLB export → 10s1080p camera pass. Check dimensions, orientation, openings, materials,
+hierarchy, repeatable capture and encoded picture, then owner review. Pin release,
+inspect local Python execution/access and selected asset licences before running.
+Queue retention authorises no installation, security-setting changes, paid calls or
+new production. Native animation/video export and wider scene fidelity stay unknown.
+
+## FGLibs and reusable visual effects — queued, 2026-10-26
+
+Owner-selected [assessment and pass conditions](research/fglibs.md). **FGLibs** is
+retained as a useful discovery source: describe the desired effect, inspect candidates
+and follow their primary sources before building from scratch. Its advertised MCP
+endpoint is not connected or tested. A small generic-query search comparison is queued.
+
+| Priority | Tool / technique | Bounded trial |
+| --- | --- | --- |
+| P1 | Emerging Images / shader image emergence | 6–8s photo/book-art reveal; preserve source detail and test deterministic seek/encoded picture. |
+| P2 | Paper Crumple / baked 3D paper unfolding | 6–8s original card reveal; verify VAT playback, readable end hold and physics reproducibility. |
+| P2, need-led | EvilCharts / animated data explanation | 8–10s synthetic chart and two-second reading hold; verify data, labels and timed export. |
+
+All are documentation-reviewed candidates. Pin upstream revisions and clear selected
+assets/dependencies before trials; no install, render, account grant, paid call or
+automatic provider promotion is authorised by queue retention. Reuse the existing
+capture workflow. SSI's accepted templates and paused work remain unchanged.
+
+## Claudemy-inspired micro-lesson — accepted; facial naturalness follow-up,2026-10-26
+
+One120-second English Framewright workflow film: local two-host speech, actual
+production footage, original diagrams, source card and full loose YouTube kit.
+Decode/reseek and final mixed-sound script screening passed. Owner accepted baseline
+speech/meaning and v2 for publication, noting jerky/artificial facial expressions
+despite adequate mouth timing. Before another similar production: an8–12s smoother
+talking-head comparison, then owner review. [Publication](https://youtu.be/n1wuySSYQcQ)
+is owner-reported; visibility/playback and audience results unverified. This tests an original format
+adapter, not native Claude Code plugin/scraper or ElevenLabs. Resolve the facial-naturalness limitation in a short sample before expanding a series. [Case](experiments/framewright-micro-lesson.md) ·
+[Recipe](../skills/video-production-router/references/micro-lessons.md).
+
+## Rokehan mapped manga sets — accepted scoped trial,2026-10-26
+
+One Nantes near300m GLB and native manga PNG exported; existing Three.js recreated
+manga finishing for two deterministic camera views in a15s1080p24 silent test.
+Technical decode/reseek passed; owner accepted v2 after a street-brightness revision.
+Use this bounded export→local manga finish workflow; new locations, fine-line temporal
+behaviour, Blender and character animation need their own checks. Native shader/camera do not export.
+[Result](experiments/rokehan-manga.md) · [Procedure](../skills/video-production-router/references/location-scout.md).
+No asset redistribution; retain map/elevation attribution and private source pins.
+
+## DJV review sessions — partial trial; retest next 1–2 productions, 2026-10-26
+
+DJV3.7.5 A/B frame72 comparison, three notes/one drawing, native save/reopen and
+relocation passed; source hashes unchanged. Arbitrary-frame native captures still
+show black pictures at some positions despite valid metadata; FFV1 only partially
+helps. Keep **candidate, not production-qualified**. Owner requests retests on the
+next one or two authorised productions: verify actual first/middle/last pictures,
+short playback/listening, adjacent-frame anchors and persistence. Obtain owner
+review before scoped promotion. [Results](experiments/djv-review.md) ·
+[Provisional procedure](../skills/video-production-router/references/djv-review.md).
+
+Chaos Vantage remains **reference only**, outside the active test queue: no
+Windows/DXR environment, no test or current use planned. Reconsider only after an
+explicit future environment/licence decision. [Research](research/djv-vantage.md).
+
+**xCavity** is also **reference only**, outside the active test queue: a paid
+3ds Max/Nitrous viewport plugin with no current Mac workflow, installation, purchase
+or test/use plan. Reconsider only after an explicit future Windows/3ds Max decision
+and a concrete task. [Assessment](tool-research.md#xcavity--windows-reference-only-2026-10-26).
+
+**Easy AutoLoops** is **reference only**, outside the active test queue. It is a
+3ds Max hard-surface topology/chamfer modifier, not an animation-loop tool. No current
+Mac installation, acquisition or test/use plan. Revisit only after an explicit
+Windows/3ds Max decision and concrete modeling need.
+[Assessment](tool-research.md#easy-autoloops--windows-reference-only-2026-10-26).
+
+**ZBrush** is a **deferred candidate for Good Dog characters and future book
+adaptations**, outside the active test queue. Revisit only when a concrete unique
+character or sculptural detail is needed. Adding a separate paid sculpting package
+for the nearest videos is premature; no installation, subscription or trial planned.
+macOS is supported; agent automation, asset handoff and facial animation remain
+untested. [Assessment](tool-research.md#zbrush--deferred-characterdetail-candidate-2026-10-26).
+
+**Redshift** is **deferred**, outside the active test queue, until a concrete shot
+requires realistic fur, complex lighting or materials. Then compare a short fragment
+against our available renderer on quality, time and total cost. Acquiring/learning
+a paid renderer plus compatible host now is premature; no install, subscription or
+test planned. Mac support is documented; actual host compatibility and performance
+remain untested. [Assessment](tool-research.md#redshift--deferred-shot-driven-rendering-candidate-2026-10-26).
+
+**Plasticity** is **deferred**, outside the active test queue, until a concrete
+product shot needs precise complex surfaces. Future first test: one original small
+device → configured Blender scene → upstream geometry edit/live refresh, checking
+that camera, materials, lighting and modifiers survive. No separate modeler purchase
+for nearest videos; no installation/test planned. Constraints in 26.2 are not saved
+with the file; free trial is not cleared for commercial production.
+[Assessment](tool-research.md#plasticity--deferred-product-shot-candidate-2026-10-26).
+
+**UV Unfoldr** is **reference only**, outside the active test queue. Return only
+if production uses Windows/3ds Max and needs to solve a concrete UV-unwrapping problem.
+No current test, installation or purchase planned; acquiring a separate software
+stack for this task is unnecessary.
+[Assessment](tool-research.md#uv-unfoldr--windows-reference-only-2026-10-26).
 
 ## Spline editable 3D sets — P1 candidate, 2026-10-25
 
@@ -28,11 +292,21 @@ Owner requested retention for testing after a documentation review. **Not tested
 
 [Assessment and primary-source shortlist](research/gamedev-agent-skills.md). Candidate agent instructions, not tested film tools. First priority: selective Three.js GLB/skinned animation plus coherent asset families and film-cue audio. Next: Godot timed scenes; Unreal Niagara only for a shot that needs its effects. Proposed bounded trial: 15–20s, one licensed character action across two shots, deterministic capture, continuity/contact/occlusion and encoded sound/picture QA. Select subject/assets before running; no full-pack installation or engine migration. This does not resume Pocket OS or SSI weekly work.
 
+## Nantes green-line production — bounded trial, 2026-10-26
+
+The owner selected this before MN7R. [Case](experiments/nantes-green-line.md):
+100s illustrated walk, complete official route map, local French voice/music and
+brief generated landmark details. Overall first preview accepted; smaller world
+pixels and less bloom address the clarity comment. Pixelation/Bloom replay passed
+for two canvas states. Broader CRT/VFX, exact city geometry and audience outcomes
+remain unqualified. The architectural-exploration reference was adapted without
+copying upstream code. No new paid provider/account; [YouTube publication](https://youtu.be/IQ3CdzPzFHw) is owner-reported, with playback, visibility and audience results unverified.
+
 ## Current owner priority
 
 The PlayMCP service overview is complete with an [owner-supplied publication URL](https://youtu.be/NVeMJLidncU). The later [Möbius Walk case](experiments/dream-walk.md) adds a fourth published game, a generated 60s film and a 20-minute actual-game ambient video. Both films and the [two English Trends-led Shorts](experiments/trend-shorts-publication.md) have owner-supplied publication URLs; audience results remain unknown. These are completed production cases, not instructions to regenerate them.
 
-The separate [SSI website Reels](experiments/ssi-site-reels.md) has partner acceptance for both languages (owner report) and an owner-supplied English Instagram URL. Earlier weekly-report demos were **not accepted**. The later supplied partner brief resumed work: [three voice-only report films](experiments/ssi-brand-profiles.md) have been delivered; partner acceptance and Instagram Story publication are now owner-reported; accepted renderer templates are retained. The owner subsequently authorized direct source/algorithm handoff. SSI integration is in progress; await the owner’s outcome here, without a duplicate workflow.
+The separate [SSI website Reels](experiments/ssi-site-reels.md) has partner acceptance for both languages (owner report) and an owner-supplied English Instagram URL. Earlier weekly-report demos were **not accepted**. The later supplied partner brief resumed work: [three voice-only report films](experiments/ssi-brand-profiles.md) have been delivered; partner acceptance and Instagram Story publication are now owner-reported; accepted renderer templates are retained. The owner subsequently authorized direct source/algorithm handoff. SSI reports production integration deployed at `fc8360e`; first planned run is 1 November 2026 after 09:00 Kyiv when all files are ready. Actual delivery receipts and fresh listening/editorial quality remain pending; do not duplicate its workflow.
 
 Pocket OS awaits suitable owner device footage. Dream Walk did not use Marble. The later [Marble color-study film](experiments/marble-compositing.md) is now published:42s fixed plate, independent character, coordinated color/sound and an asset-dependent original example. Moving-camera/depth integration, multi-shot continuity, audience results and commercial rights remain unqualified. No new paid generation ran. Good Dog production still needs the owner-selected source story and a bounded shot plan. [Current priorities](next-cycle.md).
 

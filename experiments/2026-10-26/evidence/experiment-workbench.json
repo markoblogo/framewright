@@ -1,0 +1,71 @@
+{
+  "schema": "framewright-workbench-validation-v1",
+  "date": "2026-10-26",
+  "synthetic": {
+    "state": "ready_for_owner_review",
+    "eligible_for_manual_scoped_update": false,
+    "scope": "Text fixture only, not media quality"
+  },
+  "saved_case": {
+    "source": "Existing micro-lesson v1/v2 masters and supplied production receipt",
+    "isolated_checkpoint_copy": true,
+    "original_checkpoint_unchanged": true,
+    "prior_journal_prefix_preserved": true,
+    "state": "needs_review",
+    "eligible_for_manual_scoped_update": false,
+    "blockers": [
+      "baseline: environment snapshot absent",
+      "baseline: facial-naturalness pending",
+      "baseline: elapsed time unknown",
+      "baseline: actual cost unknown",
+      "candidate: environment snapshot absent",
+      "candidate: facial-naturalness fail",
+      "candidate: elapsed time unknown",
+      "candidate: actual cost unknown",
+      "Current owner-reported trial-review acceptance required"
+    ],
+    "new_media_production": false,
+    "new_listening_or_visual_quality_review": false
+  },
+  "environment": {
+    "technical_status": "unknown",
+    "version_queries": [
+      {
+        "program": "python3",
+        "arguments": [
+          "--version"
+        ]
+      },
+      {
+        "program": "ffmpeg",
+        "arguments": [
+          "-version"
+        ]
+      }
+    ],
+    "unperformed_export_remains_unknown": true,
+    "models_loaded": 0,
+    "external_calls": 0
+  },
+  "publication": false,
+  "release": false,
+  "offline_validation": {
+    "unit_suite": {
+      "ran": 350,
+      "skipped": 1,
+      "failures": 0,
+      "new_feature_tests": 13
+    },
+    "qualification_regressions_after_inventory_refresh": {
+      "ran": 25,
+      "failures": 0
+    },
+    "router_and_storyboard_evidence_integrity": "pass",
+    "current_source_model_evaluation": "not_performed",
+    "current_source_status": "not_evaluated_current_source",
+    "documentation_and_links": "pass",
+    "generated_reference": "pass",
+    "standalone_package_and_helper_help": "pass",
+    "aggregate_run_note": "Full unit suite passed. Aggregate runner then detected stale current-source fingerprints; refreshed only unqualified inventory and reran remaining stages plus qualification regressions successfully. Historical evaluated packet unchanged."
+  }
+}

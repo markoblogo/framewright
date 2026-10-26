@@ -1,0 +1,42 @@
+{
+  "schema": "framewright-release-preflight-v1",
+  "version": "0.4.0",
+  "date": "2026-10-26",
+  "release_kind": "experimental_prerelease",
+  "baseline": "cc67a23758b667d76d114f608ee9282d974fd464",
+  "branch": "codex/v0.4.0-workbench-release",
+  "local_validation": {
+    "command": "python3 scripts/check.py --scope capture",
+    "unit_tests": 360,
+    "failures": 0,
+    "skipped": 1,
+    "elapsed_test_seconds": 186.934,
+    "router_storyboard_evidence_integrity": "pass",
+    "current_source_status": "not_evaluated_current_source",
+    "model_calls": 0,
+    "documentation_catalogue_links": "pass",
+    "generated_tool_reference": "pass",
+    "standalone_package": "pass",
+    "new_helper_help": [
+      "environment.py",
+      "trials.py",
+      "passports.py",
+      "shots.py"
+    ]
+  },
+  "hygiene": {
+    "new_binary_files": 0,
+    "targeted_credential_or_owner_path_findings": 0,
+    "private_production_assets_included": false,
+    "account_local_automation_packaged": false
+  },
+  "book": {
+    "chapters": 10,
+    "worked_case_documents": 3,
+    "open_evidence_gaps": 10,
+    "new_reader_reproductions": 0,
+    "full_manuscript": "not_started"
+  },
+  "remote_verification": "Performed after push/CI/review; final target and downloadable hashes recorded in GitHub release notes, not inferred from local preflight",
+  "scope_limit": "No new model qualification, production render, public-video upload, SSI activation or audience benefit claimed"
+}

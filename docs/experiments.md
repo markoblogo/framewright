@@ -1,5 +1,26 @@
 # Grow the lab without growing unsupported claims
 
+[Internal Blender replay](experiments/blender-shot-replay.md): saved original scene,
+36 equal repeated frames,12 matching subrange frames, two camera setups, one-light
+range edit and sample-aligned PCM. Portable4.5.15 LTS/CPU on one Mac; restricted
+startup failure retained. Passport definitions prepared for later production;
+no approved hero/set, final export or automatic tool promotion.
+
+[Two-host Framewright lesson](experiments/framewright-micro-lesson.md):120s English
+film, real production examples, localF1/M1 dialogue, original diagrams, claim map
+and full loose YouTube kit. Technical checks pass; owner accepted speech/meaning,
+and v2 for publication, noting artificial/jerky facial animation for a future short retest.
+[YouTube publication](https://youtu.be/n1wuySSYQcQ) is owner-reported; visibility/playback and audience results unverified.
+Claudemy-inspired adapter; native plugin not executed.
+
+[Rokehan manga test](experiments/rokehan-manga.md): native Nantes GLB/PNG, two3D
+camera views and original local manga finishing in a15s silent sample. Decode and
+reseek passed; owner accepted lighter-street v2. Native shader/camera do not transfer.
+
+[DJV review trial](experiments/djv-review.md): visible A/B frame comparison, anchored
+notes/drawing and native session persistence/relocation verified; arbitrary-frame
+black captures retained. Candidate pending retests on the next one or two productions.
+
 [The Same Forest](experiments/marble-compositing.md): published 42s virtual-world plate/independent-character film, coordinated color/sound, original asset-dependent source and retained failures. Bounded QA and publication recorded; general3D integration, audience results and commercial rights remain unqualified.
 
 [Journal summary, engine adapter and content outcomes](experiments/production-memory-adapters.md):
@@ -21,6 +42,12 @@ alone may remain a candidate. Do not install or launch everything in the catalog
    publication and audience performance as independent facts. Unknown stays unknown.
 5. Update tested_scope only for demonstrated capability. Commit concise evidence
    and attribution. Update router scenarios when a new tool changes routing choices.
+
+For owner-authorised book preparation, follow the [case intake](book/README.md) after
+the original record is written: goal/process/failure/correction/result, routes with
+Framewright and without it, observed versus proposed instruction, chapter/gap links
+and separate illustration rights. Update [the book index](book/index.json), not a
+duplicate production journal. Documentation alone never qualifies the new route.
 
 For composite workflows, record each tool's role and the artifact contract between
 steps. Check the final assembled file; standalone success does not qualify a new
@@ -119,3 +146,10 @@ creative/listening review pending. This brings the registry to **38 final export
 
 The SSI series now has a [receiving-project source handoff](external-project-handoff.md).
 It creates no additional film/export count. Integration remains in progress in SSI.
+
+[Nantes green-line walk](experiments/nantes-green-line.md): a 100s eye-level illustrated
+film with the whole official route on overview maps, timed pixel/detail transitions
+and a French guide. Overall first preview accepted; a pixel-clarity revision and
+its separate delivery checks are recorded. This brings the registry to **39 final
+exports**; v1/v2 are one production. [YouTube publication](https://youtu.be/IQ3CdzPzFHw)
+is owner-reported; visibility, playback and audience results remain unverified.

@@ -1,0 +1,116 @@
+{
+  "schema": "framewright-blender-probe-v2",
+  "date": "2026-10-26",
+  "blender": "Blender 4.5.15 LTS",
+  "scope": "One original36frame480x27012fps Cycles CPU fixture, same machine/build",
+  "repeated_source_frames_equal": 36,
+  "subrange_source_frames_equal": 12,
+  "patched_frames_changed": 12,
+  "repeated_pcm_equal": true,
+  "subrange_pcm_sample_aligned": true,
+  "light_patch_preserves_pcm": true,
+  "camera_action_state_preserved": true,
+  "original_inputs_unchanged": true,
+  "camera_setups_checked": 2,
+  "alternate_camera_preserves_pcm": true,
+  "elapsed_seconds": {
+    "full-a": 56.97178295798949,
+    "full-b": 40.73663095801021,
+    "subset": 14.705443458020454,
+    "light-patch": 14.631412082992028,
+    "camera-b": 15.716125540988287
+  },
+  "technical_checks": {
+    "full-a": {
+      "full_decode": "pass",
+      "frame_count": "pass",
+      "dimensions": "pass",
+      "audio_policy": "pass"
+    },
+    "full-b": {
+      "full_decode": "pass",
+      "frame_count": "pass",
+      "dimensions": "pass",
+      "audio_policy": "pass"
+    },
+    "subset": {
+      "full_decode": "pass",
+      "frame_count": "pass",
+      "dimensions": "pass",
+      "audio_policy": "pass"
+    },
+    "light-patch": {
+      "full_decode": "pass",
+      "frame_count": "pass",
+      "dimensions": "pass",
+      "audio_policy": "pass"
+    },
+    "camera-b": {
+      "full_decode": "pass",
+      "frame_count": "pass",
+      "dimensions": "pass",
+      "audio_policy": "pass"
+    }
+  },
+  "source_hashes": {
+    "stage.blend": "2f181ed9611abc89ba2f37441778a992060c1d1b026ece4346b12db7a0ef8f91",
+    "sound.wav": "66d5d963bb4aad829a31ba8edc0fbeeaf30a0e21a90979a40c3df06c8e215f39",
+    "shot-v1.json": "9317e000cdb51eeba3d51e5852c4e0d085fb2a9b391e0bc582f642c6c450af2f"
+  },
+  "visual_identity_checked": false,
+  "creative_acceptance": false,
+  "listening_acceptance": false,
+  "external_publication": false,
+  "paid_calls": 0,
+  "distribution": {
+    "official_url": "https://download.blender.org/release/Blender4.5/blender-4.5.15-macos-arm64.dmg",
+    "sha256": "bfbc0bda099d1ab7aef0992a584f872f58bed9bb491210ad45f9ca071aa2e688",
+    "build_hash": "5afeabba6097",
+    "platform": "macOS ARM64"
+  },
+  "startup": {
+    "restricted_process": "failed_before_scene_load_metal_backend_initialisation",
+    "normal_native_process": "passed"
+  },
+  "operator_picture_inspection": {
+    "frames": "frame18, base/light-patch/camera-b",
+    "result": "Visible original arch and sphere; light and camera differences observed",
+    "scope": "Sparse still inspection, not human playback/listening approval"
+  },
+  "workbench": {
+    "state": "ready_for_owner_review",
+    "qualification": "not_promoted",
+    "owner_acceptance_recorded": false
+  },
+  "cost_scope": "Zero provider charges; excludes machine time, electricity and operator effort",
+  "passport_preparation": {
+    "character_v1": "incomplete",
+    "environment_v1": "incomplete",
+    "real_character_or_set_approved": false
+  },
+  "offline_validation": {
+    "full_suite_before_final_audio_clock_adjustment": {
+      "ran": 359,
+      "skipped": 1,
+      "failures": 0
+    },
+    "focused_shot_tests_after_adjustment": {
+      "ran": 7,
+      "failures": 0
+    },
+    "router_qualification_regressions_after_inventory_refresh": {
+      "ran": 25,
+      "failures": 0
+    },
+    "router_evaluation_regressions": {
+      "ran": 18,
+      "failures": 0
+    },
+    "documentation_and_links": "pass",
+    "generated_reference": "pass",
+    "standalone_package_and_helper_help": "pass",
+    "current_source_model_evaluation": "not_performed",
+    "current_source_status": "not_evaluated_current_source",
+    "package_scope": "Temporary portability test only; no release"
+  }
+}
