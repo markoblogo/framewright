@@ -83,7 +83,7 @@ def canonical(path,checked,o,pins):
                 if m is None:raise ValueError('Unknown or changed source media;basename/metadata is not identity')
                 pins[str(f)]=record;refs[str(f)]=m['id'];start=frame(span.start_time,rate)
                 stream=m['probe'][kind]
-                if not stream or start+duration>O['available_frames'](stream,rate):raise ValueError('Returned range exceeds retained source')
+                if start+duration>O['checked_stream_frames'](stream,kind,rate):raise ValueError('Returned range exceeds retained source')
                 items.append({'material':m['id'],'sha256':m['sha256'],'at':cursor,'in':start,'duration':duration,'enabled':bool(tr.enabled and item.enabled)})
             cursor+=duration
         rows[tr.name]={'kind':kind,'items':items,'extent':cursor,'enabled':bool(tr.enabled)}
@@ -157,7 +157,7 @@ def stage(project,report_path,rid,subjects,render_subject,output):
         pictures=[checked['media'][c['material']] for t in picture_tracks for c in t['items']]
         if picture_tracks and not pictures:raise ValueError('Picture tracks need a retained picture-format reference')
         stream=meta['video'] if picture_tracks else meta['audio']
-        if not stream or O['available_frames'](stream,rate)!=total:raise ValueError('Rendered candidate extent does not match returned cut')
+        if O['checked_stream_frames'](stream,'video' if picture_tracks else 'audio',rate)!=total:raise ValueError('Rendered candidate extent does not match returned cut')
         if picture_tracks:
             v=meta['video'];base=pictures[0]['probe']['video']
             if (v['width'],v['height'])!=(base['width'],base['height']) or O['Fraction'](v['avg_frame_rate'])!=rate or O['Fraction'](v['r_frame_rate'])!=rate:raise ValueError('Rendered candidate format does not match bounded profile')

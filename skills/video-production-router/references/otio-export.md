@@ -137,3 +137,8 @@ composition rewrite, final-version switch or bidirectional approval synchronizat
 
 Returned Track/Stack composition source ranges are rejected in this bounded profile;
 flatten them into explicit child-clip ranges before comparison. They are not ignored.
+
+Every stream selected by a returned clip is revalidated for zero origin and
+common-CFR picture rate, even if the original export used only another stream
+from that file. Source frame counts cannot stand in for timeline frames at
+a different rate. Candidate-render streams follow the same profile checks.

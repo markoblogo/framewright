@@ -102,6 +102,34 @@ class OtioReturnTest(unittest.TestCase):
         if render:flags+=['--render-subject','output:render']
         return self.cli(*flags,ok=ok)
 
+    def test_newly_selected_picture_stream_must_match_return_profile(self):
+        for rate,offset in [(60,0),(30,1),(30,0)]:
+            with self.subTest(rate=rate,offset=offset):
+                av=self.root/f'voice-{rate}-{offset}.mp4'
+                subprocess.run(['ffmpeg','-v','error','-f','lavfi','-i',f'color=c=blue:s=64x64:r={rate}:d=2',
+                    '-i',str(self.root/'voice.wav'),'-vf',f'setpts=PTS+{offset}/TB','-fps_mode','passthrough',
+                    '-c:v','libx264','-threads','1','-c:a','aac',str(av)],check=True,capture_output=True)
+                probe=self.exp['E']['probe'](av)
+                self.assertEqual(float(probe['video'].get('start_time',0)),offset)
+                self.assertEqual(float(probe['audio'].get('start_time',0)),0)
+                picture=self.root/f'picture-{rate}-{offset}.mp4'
+                subprocess.run(['ffmpeg','-v','error','-f','lavfi','-i','color=c=red:s=64x64:r=30:d=3',
+                    '-c:v','libx264','-threads','1',str(picture)],check=True,capture_output=True)
+                self.data['media'][0].update(path=av.name,sha256=self.exp['E']['file_hash'](av))
+                self.data['media']=[m for m in self.data['media'] if m['id']!='picture']
+                self.data['media'].append({'id':'picture','path':picture.name,'sha256':self.exp['E']['file_hash'](picture)})
+                self.data['tracks']=[t for t in self.data['tracks'] if t['id']!='Picture']
+                self.data['tracks'].append({'id':'Picture','kind':'video','items':[
+                    {'id':'p','type':'clip','media':'picture','in_frames':0,'duration_frames':90}]})
+                self.spec.write_text(json.dumps(self.data));self.before.unlink()
+                self.exp['export'](self.spec,self.before)
+                self.timeline=self.o.adapters.read_from_file(str(self.before))
+                clip=self.timeline.tracks[2][0];clip.media_reference.target_url=av.name
+                duration=60 if offset or rate==30 else 90
+                clip.source_range=self.o.opentime.TimeRange(self.o.opentime.RationalTime(0,30),self.o.opentime.RationalTime(duration,30))
+                self.save_after();self.report.unlink(missing_ok=True)
+                self.inspect(ok=rate==30 and offset==0)
+
     def test_stage_audio_only_cut_can_reuse_audio_from_av_source(self):
         video=self.root/'voice.mp4'
         subprocess.run(['ffmpeg','-v','error','-f','lavfi','-i','color=c=blue:s=64x64:r=30:d=2',

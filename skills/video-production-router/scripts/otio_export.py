@@ -27,6 +27,15 @@ def available_frames(stream,rate):
     raise ValueError('Exact stream extent unavailable; provide a timed encoded intermediate')
 
 
+def checked_stream_frames(stream,kind,rate):
+    if not stream:raise ValueError('Source lacks requested stream kind')
+    if float(stream.get('start_time',0))!=0:raise ValueError('Bake nonzero stream origins first')
+    if kind=='video' and (Fraction(stream.get('avg_frame_rate','0/1'))!=rate or
+                         Fraction(stream.get('r_frame_rate','0/1'))!=rate):
+        raise ValueError('Bake mismatched/VFR video to the timeline frame rate first')
+    return available_frames(stream,rate)
+
+
 def inspect_spec(path):
     path=path.resolve(strict=True);pin=E['file_hash'](path);spec=E['load'](path)
     keys(spec,{'schema','name','rate','duration_frames','media','tracks','project_id','variant_id','declared_baked_features'})
@@ -66,13 +75,7 @@ def inspect_spec(path):
             if item.get('type')!='clip' or item.get('media') not in media:raise ValueError('Clip must bind retained media')
             start=integer(item.get('in_frames'),'source in');info=media[item['media']]['probe']
             stream=info[track['kind']]
-            if not stream:raise ValueError('Source lacks requested stream kind')
-            if float(stream.get('start_time',0))!=0:raise ValueError('Bake nonzero stream origins first')
-            if track['kind']=='video':
-                # First bounded profile: common CFR, zero-based encoded intermediates.
-                if Fraction(stream.get('avg_frame_rate','0/1'))!=rate or Fraction(stream.get('r_frame_rate','0/1'))!=rate:
-                    raise ValueError('Bake mismatched/VFR video to the timeline frame rate first')
-            if start+duration>available_frames(stream,rate):raise ValueError('Source range exceeds retained media')
+            if start+duration>checked_stream_frames(stream,track['kind'],rate):raise ValueError('Source range exceeds retained media')
         if length!=total:raise ValueError('Every track must cover declared duration; use explicit gaps')
     baked=spec.get('declared_baked_features',[])
     if not isinstance(baked,list) or any(not isinstance(x,str) or not x.strip() for x in baked):raise ValueError('Baked features must be explicit text entries')

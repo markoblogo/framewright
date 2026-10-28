@@ -50,3 +50,13 @@ native OTIO environment (one conditional skip), plus the complete offline integr
 link, reference and packaging checks. Its GitHub runs passed 470 tests with 16
 optional-dependency skips. The additional audio-only regression is verified in the
 native OTIO suite and follow-up CI; current-source model qualification stays unset.
+
+## Third review
+
+A retained AV file used only for audio had not yet had its picture stream checked
+against the cut profile. The returned cut could select its 60fps video on a 30fps
+timeline and use source frame counts as if they were timeline frames. Native
+controls reproduce both mismatched rate and nonzero video origin while confirming
+the original audio remains valid. A shared stream check now applies zero-origin
+and common-CFR requirements before frame bounds in export, return comparison and
+candidate intake. The compatible 30fps/zero-origin control remains accepted.
