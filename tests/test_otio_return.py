@@ -102,6 +102,20 @@ class OtioReturnTest(unittest.TestCase):
         if render:flags+=['--render-subject','output:render']
         return self.cli(*flags,ok=ok)
 
+    def test_stage_audio_only_cut_can_reuse_audio_from_av_source(self):
+        video=self.root/'voice.mp4'
+        subprocess.run(['ffmpeg','-v','error','-f','lavfi','-i','color=c=blue:s=64x64:r=30:d=2',
+            '-i',str(self.root/'voice.wav'),'-c:v','libx264','-threads','1','-c:a','aac',
+            '-shortest',str(video)],check=True,capture_output=True)
+        self.data['media'][0].update(path=video.name,sha256=self.exp['E']['file_hash'](video))
+        self.spec.write_text(json.dumps(self.data));self.before.unlink()
+        self.exp['export'](self.spec,self.before)
+        self.timeline=self.o.adapters.read_from_file(str(self.before))
+        self.trim();self.inspect();self.make_project();self.stage()
+        packet=json.loads(self.packet.read_text())
+        self.assertEqual(packet['review_requirements'],['technical','listening','creative'])
+        self.assertFalse(packet['approval_inherited'])
+
     def test_stage_preserves_baseline_and_wait_and_creates_only_pending_new_reviews(self):
         self.trim();self.inspect();old=self.make_project();self.stage();data=json.loads(self.project.read_text())
         self.assertEqual(data['artifacts']['before'],old['artifacts']['before'])

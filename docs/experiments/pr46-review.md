@@ -36,3 +36,17 @@ Each correction retains private before/after logs. OTIO controls use the already
 installed optional native library, not a skipped substitute. Final full checks and
 follow-up review are recorded in the PR after the fix commit. Historical model
 qualification is unchanged; no new model-evaluation result is asserted.
+
+## Second review
+
+A further native OTIO control reproduced rejection of a valid audio-only render
+when its sound came from an audiovisual source. Required stream kinds now come
+from timeline tracks, not unused streams in the media inventory; a picture-format
+reference is selected from media actually used on picture tracks. A picture track
+without a usable reference fails explicitly.
+
+The first fix commit `07fe558` passed all 470 tests locally with the existing
+native OTIO environment (one conditional skip), plus the complete offline integrity,
+link, reference and packaging checks. Its GitHub runs passed 470 tests with 16
+optional-dependency skips. The additional audio-only regression is verified in the
+native OTIO suite and follow-up CI; current-source model qualification stays unset.

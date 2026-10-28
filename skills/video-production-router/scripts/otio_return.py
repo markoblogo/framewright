@@ -153,10 +153,12 @@ def stage(project,report_path,rid,subjects,render_subject,output):
         if fresh!=report:raise ValueError('Report changed or no longer matches current source revisions')
         if pin(report_path)!=report_pin:raise ValueError('Report changed during intake')
         meta=E['probe'](render);checked=O['inspect_spec'](paths['spec']);rate=report['after']['rate'];total=report['after']['frames']
-        pictures=[m for m in checked['media'].values() if m['probe']['video']]
-        stream=meta['video'] if pictures else meta['audio']
+        picture_tracks=[t for t in report['after']['tracks'].values() if t['kind']=='video']
+        pictures=[checked['media'][c['material']] for t in picture_tracks for c in t['items']]
+        if picture_tracks and not pictures:raise ValueError('Picture tracks need a retained picture-format reference')
+        stream=meta['video'] if picture_tracks else meta['audio']
         if not stream or O['available_frames'](stream,rate)!=total:raise ValueError('Rendered candidate extent does not match returned cut')
-        if pictures:
+        if picture_tracks:
             v=meta['video'];base=pictures[0]['probe']['video']
             if (v['width'],v['height'])!=(base['width'],base['height']) or O['Fraction'](v['avg_frame_rate'])!=rate or O['Fraction'](v['r_frame_rate'])!=rate:raise ValueError('Rendered candidate format does not match bounded profile')
         if any(t['kind']=='audio' for t in report['after']['tracks'].values()) and not meta['audio']:raise ValueError('Returned audio tracks require a rendered audio stream')

@@ -2,7 +2,8 @@
 
 ## Unreleased
 
-- Reject unsupported OTIO composition trims, retain manifest-relative model paths,
+- Select returned-render streams from actual timeline tracks, reject unsupported
+  OTIO composition trims, retain manifest-relative model paths,
   and prevent corrected settlements from exceeding existing refund bounds. Local
   inspection/proxy workers inherit exclusion and their own deadline; interruption
   stops the owned process group before the executor releases its lock.
