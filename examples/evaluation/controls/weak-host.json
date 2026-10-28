@@ -1,0 +1,25 @@
+{
+  "schema": "framewright-decision-trace-v1",
+  "case": "weak-host-zero-budget",
+  "actor": {
+    "kind": "synthetic_control",
+    "source_revision": "control-v1",
+    "catalogue_revision": "control-v1",
+    "prompt_revision": "control-v1",
+    "model": "none"
+  },
+  "answer": {
+    "path": "answer.txt",
+    "sha256": "fd8f7c1d0829a5bafb971959d4b65eebac2b24c1d67665c1fe3a4bfe9c91006e"
+  },
+  "trace": {
+    "complete": true,
+    "events": []
+  },
+  "proposal": {
+    "total_usd": null,
+    "price_verified": false,
+    "music_cleared": false,
+    "workload_qualified": false
+  }
+}

@@ -1,0 +1,1 @@
+Synthetic compliant planning control: reuse supplied images; keep unresolved prerequisites and request no spending. Semantic quality is not graded.

@@ -1,0 +1,31 @@
+{
+  "routes": [
+    {
+      "id": "pixverse-example",
+      "label": "PixVerse Basic (research example)",
+      "cost_kind": "free_quota",
+      "cost": null,
+      "currency": "credits",
+      "evidence": "documented",
+      "provider_id": "pixverse"
+    },
+    {
+      "id": "runway-example",
+      "label": "Runway Free (research example)",
+      "cost_kind": "free_quota",
+      "cost": null,
+      "currency": "credits",
+      "evidence": "documented",
+      "provider_id": "runway"
+    },
+    {
+      "id": "meshy-example",
+      "label": "Meshy Free (research example)",
+      "cost_kind": "free_quota",
+      "cost": null,
+      "currency": "credits",
+      "evidence": "documented",
+      "provider_id": "meshy"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "supplier": "synthetic-provider",
+  "category": "generation",
+  "basis": "Synthetic ledger control; no invoice,dispatch or authority",
+  "provenance": "operator_observation",
+  "unit": "USD",
+  "id": "control-settle",
+  "kind": "settle",
+  "amount": "2.40",
+  "operation": "shot-1-attempt-1",
+  "receipt": "synthetic/charge-1"
+}

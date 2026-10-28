@@ -2,6 +2,50 @@
 
 ## Unreleased
 
+- Select returned-render streams from actual timeline tracks, reject unsupported
+  OTIO composition trims, retain manifest-relative model paths,
+  and prevent corrected settlements from exceeding existing refund bounds. Local
+  inspection/proxy workers inherit exclusion and their own deadline; interruption
+  stops the owned process group before the executor releases its lock.
+
+- Add private producer intake and comparable source-aware routes, with persisted
+  free-only preferences and dated platform/cost conditions. Unknown access, prices
+  and workload fit stay explicit; proposals do not authorise execution.
+- Add source-pinned lexical retrieval, raw local-ASR import and multi-source edit
+  proposals, plus read-only completion diagnosis. Retain recognition misses and
+  missing-material reports separately from creative acceptance.
+- Record the MN7R promotion, published local-3D film and scoped creative-tool
+  trials; update the experiment queue, book coverage and ecosystem references.
+- Keep the per-user local executor lock stable across different temporary-storage
+  settings, preserving sequential execution when scratch files move to another disk.
+
+- Connect selected intake routes to pinned local-action admission: fresh sources,
+  requirements, cost/argument/output checks, durable intent and fixed output
+  postconditions. Unknown conditions block instead of implying readiness.
+  No complete-route renderer,paid dispatcher or automatic acceptance added.
+
+- Add optional RESOURCE-01 host/owned-worker sampling, COST-01 project cost events,
+  STATE-01 durable local executor intent/reconciliation and EVAL-01 offline decision
+  assertions. Preserve unknown/partial evidence, separate units and explicit retries;
+  no provider calls, paid-dispatch enforcement or model qualification added.
+
+- Complete the MN7R returned-cut review: bind current technical evidence and
+  explicit owner listening/creative acceptance to B, then record final selection
+  without replacing A or authorising publication. No generic auto-promotion added.
+
+- Add optional safe OTIO return: read-only pinned cut comparison and explicit
+  candidate staging with separate pending technical/listening/creative checks.
+  Preserve baseline approvals and waits; reject unsupported or stale inputs.
+
+- Add optional pinned OTIO cut export and a scoped native Kdenlive26.08.2 handoff
+  trial: exact import,15-frame all-track edit,OTIO re-export and actual MP4 render.
+  Keep custom-ID loss,absolute native paths,baked effects and listening limits explicit.
+
+- Plan production-linked reuse/new-session measurements, first-film onboarding and
+  bounded current-agent action checks (RV01–RV03), linked to book evidence gaps.
+  Correct the stale SSI pause in studio instructions. Planning only; no new trial,
+  benchmark, model call or release.
+
 ## 0.4.0 — 2026-10-26 — experimental
 
 - Add a local experiment workbench: source-pinned A/B cards, copied review packs,
@@ -127,3 +171,9 @@ Router status remains **structural_only**. Planner regression tests are not an
 independent model evaluation. Reference sources are public; clean-machine re-render
 after the lint dependency repair, measured time/cost and new mixed-chain execution
 are not claimed. The next experiment is agent behaviour against the frozen scenarios.
+
+### Local MN7R production evidence —26October2026
+
+-114s English overview/YouTube kit and36s voice-only Reels exported and technically checked; owner final review pending, no upload.
+- Motion Canvas native/range render and owner-accepted local English voice-clone probe recorded; privacy/legibility corrections retain outside-range source hashes.
+- Spline native scene authoring partial, video export plan-gated; Blender fallback identified. Canva Craft not executed. No new release or model qualification.

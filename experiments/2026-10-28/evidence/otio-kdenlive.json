@@ -1,0 +1,104 @@
+{
+  "schema": "framewright-native-editor-trial-v1",
+  "date": "2026-10-28",
+  "experiment": "OTIO-01-KDENLIVE",
+  "source": "Accepted SOURCE-01-MULTI MN7R draft;original film/handoff unchanged",
+  "versions": {
+    "kdenlive": "26.08.2 rev.d4e87e4",
+    "mlt": "7.43.0",
+    "otio_inspector": "0.18.1",
+    "bundled_editor_otio": "not_measured"
+  },
+  "authority": "Owner requested native editor import/edit/re-export;explicitly authorised AppleScript for Kdenlive only",
+  "installation": {
+    "platform": "macOS Apple Silicon",
+    "official_dmg_sha256": "ffcbff6d6e6651fe7a7cd2b00cb7304c8ef049da8287c389dbda146d5e8928ac",
+    "official_checksum_matched": true,
+    "storage": "external drive",
+    "paid_calls": 0
+  },
+  "workflow": [
+    "Native File > OpenTimelineIO Import",
+    "Save native-before.kdenlive and native-before.otio",
+    "Set project-monitor zone0..14inclusive and Extract Timeline Zone on all unlocked tracks",
+    "Save native-after.kdenlive and native-after.otio",
+    "Native GUI Render to File:MP4-H264/AAC,full project,2encoder threads,no parallel processing"
+  ],
+  "edit": {
+    "before_frames": 1279,
+    "after_frames": 1264,
+    "rate": 30,
+    "operation": "Remove first15frames/0.5s from all tracks;all later relative alignment preserved"
+  },
+  "conformance": {
+    "before_picture_audio_ranges_match": true,
+    "before_frames_match": true,
+    "after_picture_audio_ranges_match": true,
+    "after_frames_match": true
+  },
+  "render_check": {
+    "native_render": "Kdenlive26.08.2/MLT7.43.0,GUI Render to File,MP4-H264/AAC,two encoder threads,no parallel processing",
+    "video": {
+      "frames": 1264,
+      "rate": 30,
+      "size": [
+        1920,
+        1080
+      ],
+      "full_video_decode_and_ssim_frames": 1264,
+      "ssim_mean": 0.9979791044303797,
+      "ssim_min": 0.989947,
+      "reference": "Accepted film with first15frames removed;frames compared by ordinal with explicit30fps clocks;lossy re-encode means pixel identity is not expected"
+    },
+    "audio": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "full_audio_decode": "pass",
+      "mono_8khz_lag_screen_ms": 0.0,
+      "correlation_at_best_lag": 0.9999311786062525,
+      "rms_ratio": 0.9989607022394107,
+      "scope": "Numeric timing/mix screen,not focused listening or perceptual AV sync"
+    },
+    "original_handoff_manifest_unchanged": true,
+    "render_sha256": "36371b00db735fd9fd185352d78041f85a415af1bb24bf22c49f71b28ed4e548",
+    "publication_authorized": false
+  },
+  "observations": {
+    "native_ui": "Imported picture/waveforms/three tracks inspected in actual Kdenlive screenshot",
+    "encoded_samples": [
+      0,
+      59,
+      60,
+      315,
+      975,
+      1225
+    ],
+    "encoded_samples_inspected": true,
+    "native_reexport_metadata": "Framewright custom metadata/clip IDs not retained;native export replaces relative URLs with absolute local paths",
+    "gaps": "Native export omits trailing voice gap;clip ranges and timeline duration remain correct",
+    "portable_handoff": "Separate path-only OTIO repack + copied media verified against source hashes;raw native export preserved",
+    "human_assistance": "Owner reported saving during native-before OTIO dialog;do not claim fully unattended UI operation"
+  },
+  "retained_issues": [
+    "CUA repeatedly returned Invalid app;owner authorised AppleScript fallback. AXRaise/focus was required before keyboard confirmation.",
+    "--setup-report exits normally after writing components;its absence of a GUI is not an application startup failure.",
+    "Initial SSIM comparison produced78/45partial rows with reset/nonmonotonic comparator clocks. Explicit ordinal30fps clocks plus -reinit_filter0 produced1264rows and zero nonmonotonic warnings. Earlier comparison logs retained;not native-render failures."
+  ],
+  "not_qualified": [
+    "Focused full listening/perceptual AV sync",
+    "Calibrated colour fidelity",
+    "Other editors,rates,effects,editable titles or bidirectional journal sync",
+    "Automatic preservation of external custom metadata/approval IDs",
+    "Unattended GUI automation"
+  ],
+  "artifacts": {
+    "native-before.kdenlive": "5463426fd51585594b7968578366fe564f977bce66ef02bb6d82ec23634b84a1",
+    "native-after.kdenlive": "4d315aa680b1c951da131e0cf2a6523fc0284f8d92ef10ebd2de2fa2aecf0676",
+    "native-before.otio": "1b37cda0740a5b3398498fc2802eab7195ded9f1fbfb5f6a9ec022ba9934834b",
+    "native-after.otio": "09a3e6e0e52a94ad525353958787c9b89d3fdd333b99ae8a2bea7ec0b34bbe37",
+    "native-after.mp4": "36371b00db735fd9fd185352d78041f85a415af1bb24bf22c49f71b28ed4e548",
+    "Handoff/Monitor-edited.otio": "4ddcbf292bfe607b2bd9f04c3decca7a63fe60771f003c003887a3a4466302d5",
+    "Handoff/handoff-receipt.json": "6afa55994e9bc4f6c41e60be7637ed919c6fb75499432272ca9fec967acb0bfa"
+  },
+  "publication_authorized": false
+}

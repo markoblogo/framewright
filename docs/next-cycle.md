@@ -1,10 +1,92 @@
 # Next production cycle
 
-Updated 26 October 2026. This is a planning record, not a render queue or spending
+Updated 28 October 2026. This is a planning record, not a render queue or spending
 authority. [Completed PlayMCP review](experiments/playmcp-service-review.md) ·
 [Experiment backlog](experiment-queue.md).
 
+**Current product order,28 October:** [studio foundations](experiments/studio-foundations.md)
+now implement optional resource observation and cost evidence first, followed by
+local executor recovery and offline decision assertions. [ROUTE-01](experiments/route-admission.md) now binds an intake route's local inspection/
+review action to exact inputs/settings, requirements, limits and expected output.
+Whole-route rendering, priced external dispatch and additional adapters remain
+separate; do not infer hardware fit, prices or authority.
+No production is currently selected. When a production test is needed, the owner
+permits an original coherent YouTube-suitable film designed around fitting queued
+methods, as in recent trials. Technical demonstrations alone are not the final
+creative goal; public upload remains separate. Pocket OS stays paused.
+
+28 October: the offline intake can compare bounded picture/voice/finishing recipes,
+with local software cost facets, language-scoped evidence, quota trials and unresolved
+licence eligibility. See [usage and comparison](../examples/intake/README.md).
+Next: compare one owner-selected production brief against the actual machine and
+available sources, then retain estimated versus observed effort/cost after selection.
+
+27 October: the owner-defined [producer-agency roadmap](producer-agency-roadmap.md)
+sets a staged direction for environment and preferences, evidenced free/quota/paid
+routes, controlled execution and optional community-contributed experiments.
+It does not change existing production pauses or authorize sharing/paid calls.
+
 ## Newly implemented preparation
+
+[SOURCE-01 partial trial](experiments/source-first-playmcp.md) used retained PlayMCP
+sources and new local lexical retrieval to propose a 34.3s recut, accepted by the owner
+on 28 October. No separate final export or dedicated join-listening check performed;
+The [MN7R follow-up](experiments/source-asr-mn7r.md) now covers raw local ASR import
+and retrieval with an observed recognition-induced false miss. Semantic search,
+full-motion understanding and StoryToolkitAI remain untested; listening is pending.
+
+The [multi-source MN7R trial](experiments/source-multicut-mn7r.md) now links results
+to a concrete edit map and required/conditional gap report. Existing helpers suffice;
+the owner agreed to its order and authorised assembly. The42.633s internal draft
+now has portrait layouts, clean-voice/music mixing, an end card and encoded join
+previews. Owner accepted draftv2 and its sound on28 October;the bounded cycle is
+complete through an accepted internal draft. Independent motion/privacy validation
+and any publication remain separate.
+
+[RESOURCE-01](research/psutil-machine-observations-2026-10-28.md) now provides optional
+available-memory and owned-process observations over existing environment/executor
+reports, with actual bounded Mac root sampling and partial child/swap coverage.
+Admission integration and GPU/model/codec fit remain separate.
+
+[COST-01](research/litellm-project-costs-2026-10-28.md) now records project cost events,
+exact-decimal reservations, receipt deduplication and unresolved exposure in the
+existing checkpoint. Synthetic controls pass; paid-dispatch admission and real billing
+reconciliation remain untested. LiteLLM is an optional later import adapter.
+
+[EVAL-01](research/promptfoo-production-decisions-2026-10-28.md) now has offline action
+assertions and synthetic compliant/violating controls for six production contracts.
+Actual agent/semantic evaluation remains unrun; Promptfoo is optional and untested.
+No historical router qualification is promoted by assertion tests.
+
+[STATE-01](research/langgraph-state-and-approvals-2026-10-28.md) now persists local
+executor intent before dispatch, surfaces unresolved recovery in status/brief/blockers,
+and requires explicit reconciliation/retry. Existing review waits remain authoritative.
+The full pilot/replan loop and ambiguous external-provider effects need further tests;
+LangGraph remains an optional untested comparison, not an adopted orchestrator.
+
+[COMFY-01](research/comfyui-workflow-executor-2026-10-28.md) is a planned bounded
+generative-execution adapter using existing trial/readiness and host locking.
+Choose a useful small graph only when reuse/staging does not meet the brief;
+per-workflow resource/rights checks and failure handling are acceptance requirements.
+
+[SOURCE-01](research/storytoolkitai-source-first-2026-10-28.md) prioritises reuse on
+the next source-rich production: inspect, find specific intervals, propose a structure
+and identify actual missing material before generation. Current production choices
+and pauses remain authoritative; runtime/tool testing is still pending.
+
+[PREVIS-01](research/storyboarder-previsualization-2026-10-28.md) is queued for a
+fitting story-led scene: compare three cheap staging alternatives before final
+production. It complements PROD-01/OTIO-01 and does not reorder authorised work.
+
+[PROD-01](experiments/completion-diagnosis.md) now provides internally tested read-only
+completion diagnosis. [OTIO-01](experiments/otio-mn7r-handoff.md) now exports a
+bounded common-CFR cut with official-library readback and three native DJV picture
+checks; a same-day Kdenlive26.08.2 import/edit/re-export/render trial now passed.
+Metadata/ID loss and other-editor support remain explicit limits. The returned MN7R
+B cut now has its own technical and owner listening/creative acceptance and an
+explicit final choice; other returned cuts still need their own reviews.
+Current scene/material/task/receipt entities
+remain authoritative. Kitsu/Zou supplies a model reference, not a required service.
 
 The [experiment workbench and readiness helpers](experiments/experiment-workbench.md)
 now provide bounded source-pinned A/B cards, local review packs, separate time/cost
@@ -19,6 +101,15 @@ same-build saved-shot repetition, a matching range, two views and a one-light ed
 with preserved PCM timing. Reusable shot controls and draft versioned passports are
 implemented. Actual recurring hero/set approval and real-production continuity review
 remain pending; this does not restart paused films or add a final export.
+
+## Post-release production validation — planned,26October2026
+
+Owner-selected [work blocks](post-release-validation.md): **RV01** measured second
+film/range correction/new-session continuation; **RV02** update the existing public
+first-film route and expose first/continue/next paths; **RV03** a bounded fresh
+agent-action check using retained traces. Select one fitting block with the next
+authorised production. Record operator/context/overhead/reuse separately and link
+results to book cases; no automatic benchmark, new film or spending starts here.
 
 ## Execution order
 
@@ -50,12 +141,11 @@ film, activate SSI production or add a repository-installed weekly scheduler.
    planned run is 1 November 2026 after 09:00 Kyiv, gated on Mac availability and
    complete readiness. Await actual delivery and fresh listening/editorial results;
    do not duplicate SSI operations.
-2. **MN7R:** next proposed production is a real-interface Instagram promo, building
-   on the accepted SSI site-scroll approach. Agree a bounded brief before capture.
+2. **MN7R:** [114s overview and36s voice-only Reels](experiments/mn7r-promo.md) are locally exported and technically checked; owner supplied the [overview YouTube link](https://youtu.be/kcFco2HbFCY); independent playback and full-master review remain unverified. The vertical voice-only file has no supplied publication link.
 3. **Nantes green line:** [100s film](https://youtu.be/IQ3CdzPzFHw) published per owner;
    sources, full-route map and QA retained. Audience results remain unknown.
 4. **Good Dog:** use an owner-selected story excerpt and a short continuity/interaction
-   pilot before a three-minute adaptation. Spline remains a queued candidate.
+   pilot before a three-minute adaptation. Spline scene authoring is partially tested; native video export remains plan-gated.
 5. **Pocket OS:** remains explicitly paused pending owner resumption/device footage.
    CoqPi and other promos stay deferred. No automatic production follows this list.
 
@@ -189,3 +279,11 @@ next active video with the owner; preserve Pocket OS pause and the separate SSI 
 4. **Results:** add dated owner-supplied analytics for the published Trends films to existing outcome utilities. Compare only compatible upload-age/windows; distinguish unknown monetization from zero revenue. No automatic monitoring or channel access is added.
 
 The current execution order above takes precedence over these earlier options. Pocket OS remains paused; accepted SSI templates are retained. This list does not execute new productions.
+
+[OTIO-02 safe return](experiments/otio-mn7r-handoff.md#safe-return-follow-up-otio-02)
+now compares real editor exports and stages a separate candidate in the existing
+journal. Source/hash drift and unsupported cut features block intake. The MN7R B
+candidate has now passed its separate technical and owner listening/creative
+reviews and was explicitly selected as final. Other candidates still require
+their own reviews; composition adaptation and automatic editor-to-journal
+synchronization are not implemented by this trial.

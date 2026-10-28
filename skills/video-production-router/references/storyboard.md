@@ -1,5 +1,10 @@
 # Storyboard before new multi-shot production
 
+Planned visual extension: [PREVIS-01 staging alternatives](../../../docs/research/storyboarder-previsualization-2026-10-28.md)
+uses three rough camera/composition variants of the same story beat, a revision-bound
+choice and a short animatic. It extends this contract; visual previews are not yet
+an implemented automatic function and Storyboarder is not a required dependency.
+
 Use this original Framewright adapter when creating a new film from a brief and
 no useful shot plan exists. A short launch can use a compact shot table; a complex
 film may need per-shot prompts. Do not impose a full storyboard on comparison,

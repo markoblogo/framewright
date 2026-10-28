@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-26",
+  "updated": "2026-10-28",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -287,18 +287,19 @@
       "id": "mlx-whisper",
       "name": "mlx-whisper",
       "url": "https://github.com/ml-explore/mlx-examples",
-      "reviewed": "2026-10-21",
+      "reviewed": "2026-10-28",
       "review_basis": "observed local23s clean Supertonic EN trial,mlx-whisper0.4.3,tiny.en exact weights pinned",
       "upstream_revision": "796f5b53cab69a3d48a44233ce21aae889e94a08",
       "disposition": "supported_scoped",
-      "scope_and_findings": "23s clean EN word timestamps; raw2 substitutions/35words and one zero-duration interval; known-script correction required.23.60s,242267878B MLX peak allocation,1GiB cap. No general ASR/lyric alignment qualification. Follow-up retained tiny.en:original owner take peak354505978B,raw pickups299267982B,assembled-join check396922074B (MLX allocation counters,not RSS). Original/raw receipts retain1GiB limits;assembly receipt does not independently record its limit. Per-run values are retained in the linked2026-10-21 evidence;proper-name/recognition errors require script comparison. Accepted voice edits and38caption cues retain source-time provenance;not pronunciation approval.",
+      "scope_and_findings": "23s clean EN word timestamps; raw2 substitutions/35words and one zero-duration interval; known-script correction required.23.60s,242267878B MLX peak allocation,1GiB cap. No general ASR/lyric alignment qualification. Follow-up retained tiny.en:original owner take peak354505978B,raw pickups299267982B,assembled-join check396922074B (MLX allocation counters,not RSS). Original/raw receipts retain1GiB limits;assembly receipt does not independently record its limit. Per-run values are retained in the linked2026-10-21 evidence;proper-name/recognition errors require script comparison. Accepted voice edits and38caption cues retain source-time provenance;not pronunciation approval. SOURCE-01 follow-up: retained tiny.en/0.4.3 on complete 36s MN7R voice-only video; 20.022s,308803674B MLX peak allocation;4/5 reference-present lexical queries returned candidates, bids/beads false miss; raw import tested, no independent listening or general ASR qualification.",
       "licence_note": "MIT code; inspect selected weights",
       "next_trial_or_retest_condition": "New speaker/language/noise or larger model is a new bounded trial; do not repeat this unchanged clean tiny.en probe.",
       "evidence": [
         "experiments/2026-10-18/sirtet-videos.md",
         "experiments/2026-10-18/evidence/sirtet-videos.json",
         "experiments/2026-10-21/evidence/playmcp-service-review.json",
-        "docs/experiments/playmcp-service-review.md"
+        "docs/experiments/playmcp-service-review.md",
+        "docs/experiments/source-asr-mn7r.md"
       ]
     },
     {
@@ -389,7 +390,8 @@
       "licence_note": "Remotion Free/Company licence; individual/small-team eligibility and paid features need separate checking",
       "next_trial_or_retest_condition": "Inspect the existing profile and evidence first; test only the specific changed or missing requirement.",
       "evidence": [
-        "skills/video-production-router/references/tools.json"
+        "skills/video-production-router/references/tools.json",
+        "docs/research/remotion-conditional-licence-2026-10-28.md"
       ]
     },
     {
@@ -966,15 +968,24 @@
       "id": "motion-canvas",
       "name": "Motion Canvas",
       "url": "https://github.com/motion-canvas/motion-canvas",
-      "reviewed": "2026-10-21",
+      "reviewed": "2026-10-26",
       "review_basis": "Primary-source documentation and licence review only; no installation, model download, voice upload, generation or paid call",
       "upstream_revision": "7b91435c301d530351dcf5ebb91dd139c002e405",
-      "disposition": "candidate",
-      "scope_and_findings": "Code-driven explanatory animation; browser/Vite/exporter path untested.",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "3.17.2 native Renderer/ImageExporter main114s1080p30, separate36s portrait and text cover. Range-only QA rerenders preserved outside-range source hashes; FFmpeg masters decoded. Full owner review pending; no broad renderer/efficiency qualification.",
       "licence_note": "MIT core; exporter/dependencies/fonts/media separately reviewed.",
-      "next_trial_or_retest_condition": "One 6–8s diagram only for a concrete unmet need; qualify export and replay.",
+      "next_trial_or_retest_condition": "Reuse one saved original composition; verify replay, dependency/API changes and full final owner review.",
       "evidence": [
-        "docs/research-review-2026-10-21.md"
+        "docs/research-review-2026-10-21.md",
+        "docs/experiments/mn7r-promo.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-26",
+          "kind": "mn7r_production_trial",
+          "evidence": "docs/experiments/mn7r-promo.md",
+          "outcome": "3.17.2 native Renderer/ImageExporter main114s1080p30, separate36s portrait and text cover. Range-only QA rerenders preserved outside-range source hashes; FFmpeg masters decoded. Full owner review pending; no broad renderer/efficiency qualification."
+        }
       ]
     },
     {
@@ -996,15 +1007,24 @@
       "id": "qwen3-tts",
       "name": "Qwen3-TTS owner voice cloning",
       "url": "https://github.com/QwenLM/Qwen3-TTS",
-      "reviewed": "2026-10-21",
+      "reviewed": "2026-10-26",
       "review_basis": "Primary-source documentation and licence review only; no installation, model download, voice upload, generation or paid call",
       "upstream_revision": "022e286b98fbec7e1e916cb940cdf532cd9f488e",
-      "disposition": "candidate",
-      "scope_and_findings": "Base 0.6B reference-audio voice cloning; EN/RU/FR among ten declared languages. CustomVoice is a distinct preset scope. Mac fit untested.",
+      "disposition": "owner_accepted_scoped_voice",
+      "scope_and_findings": "Owner-authorised local English Base0.6B MLX clone on M4/16GB; short probe owner-accepted, longer main/Reels narration rendered and measured. Full master listening pending. Private6.86s reference never uploaded; other voices/languages untested.",
       "licence_note": "Apache-2.0 code and reviewed Qwen3-TTS-12Hz-0.6B-Base model card; exact weights/runtime pin and owner reference scope required.",
-      "next_trial_or_retest_condition": "Resource check then agreed private owner reference and 8–12s known-script clone comparison.",
+      "next_trial_or_retest_condition": "Review complete masters first; later one different English passage for pronunciation/identity and measured resources. No blanket multilingual qualification.",
       "evidence": [
-        "docs/research-review-2026-10-21.md"
+        "docs/research-review-2026-10-21.md",
+        "docs/experiments/mn7r-promo.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-26",
+          "kind": "mn7r_production_trial",
+          "evidence": "docs/experiments/mn7r-promo.md",
+          "outcome": "Owner-authorised local English Base0.6B MLX clone on M4/16GB; short probe owner-accepted, longer main/Reels narration rendered and measured. Full master listening pending. Private6.86s reference never uploaded; other voices/languages untested."
+        }
       ]
     },
     {
@@ -1210,18 +1230,19 @@
       "id": "djv",
       "name": "DJV",
       "url": "https://github.com/grizzlypeak3d/DJV",
-      "reviewed": "2026-10-26",
+      "reviewed": "2026-10-28",
       "review_basis": "Version-pinned native A/B comparison, authored frame/range notes and drawing, save/reopen/relocation, source hashes and retained failures on real Nantes exports",
       "upstream_revision": "4d90982b4085adf4d150f1bf0b0b4a5490b023d5",
       "disposition": "candidate",
-      "scope_and_findings": "Partial success: visible A/B at frame72; three notes/one source drawing, adjacent-frame/navigation checks, native save/reopen/relocation and unchanged master hashes. Other native captures black despite valid metadata; FFV1 proxy helps at240 but not612. Listening, sync, calibrated colour and full playback unqualified. Candidate, no production promotion.",
+      "scope_and_findings": "Partial success: visible A/B at frame72; three notes/one source drawing, adjacent-frame/navigation checks, native save/reopen/relocation and unchanged master hashes. Other native captures black despite valid metadata; FFV1 proxy helps at240 but not612. Listening, sync, calibrated colour and full playback unqualified. Candidate, no production promotion. OTIO follow-up: fixed-zoom manifest natively showed frames330/990/1240 of the MN7R timeline; initial null View/Frame black capture retained. No continuous listening/full-editor qualification.",
       "licence_note": "BSD-3-Clause application. Bundled codecs/plugins have separate licences; actual decoder support remains to be tested.",
       "next_trial_or_retest_condition": "Owner requests repeat tests on the next one or two authorised productions: first/middle/last pictures in both revisions, short playback/listening, adjacent-frame anchors, save/reopen/relocation and source integrity; owner review before narrowly scoped production admission.",
       "evidence": [
         "docs/research/djv-vantage.md",
         "experiments/2026-10-26/evidence/djv-installation.json",
         "docs/experiments/djv-review.md",
-        "experiments/2026-10-26/evidence/djv-green-line-review.json"
+        "experiments/2026-10-26/evidence/djv-green-line-review.json",
+        "docs/experiments/otio-mn7r-handoff.md"
       ]
     },
     {
@@ -1521,12 +1542,21 @@
       "upstream_revision": null,
       "disposition": "candidate",
       "review_basis": "Read-only Canva announcement, official generation API references and available connector schema; owner-selected bounded comparison, no generation",
-      "scope_and_findings": "Design-oriented image model, vendor-documented up to2K/text/composition and Magic Layers suitability. API permits craft_v1_2k pin and spends AI credits; inspected connector lacks model selector, so connector output alone does not establish Craft identity. Announcement lists Craft MCP as coming soon. No image quality, edit preservation, layer decomposition/export, animation or audience result qualified; rankings not local evidence.",
+      "scope_and_findings": "MN7R comparison not run: connected generation tool lacks exact model selector and available allowance was unconfirmed. Native canvas text cover used instead; no generation or spend. Prior documentation-only findings remain valid.",
       "licence_note": "Canva proprietary hosted model/service; exact current account limits, credit cost and service/asset/output terms require review. Preview API uses user AI credits and asset-write authority; Magic Layers and export may have separate access/plan limits. No generation, upload or spend authorised by candidate retention; third-party input rights independent.",
-      "next_trial_or_retest_condition": "Confirm actual model and available allowance first. Choose original concept/exact English title: one16:9 cover, full/reduced readability check, one preserved-composition revision; separately inspect Magic Layers and a short encoded animation. Compare matched current method on quality/controllability/time/cost, retain actual credits/model evidence and owner review. No silent model fallback or execution from retention.",
+      "next_trial_or_retest_condition": "Confirm exact Craft model/allowance before the already queued original-cover comparison; no generic-model fallback.",
       "evidence": [
         "docs/tool-research.md",
-        "docs/experiment-queue.md"
+        "docs/experiment-queue.md",
+        "docs/experiments/mn7r-promo.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-10-26",
+          "kind": "mn7r_production_trial",
+          "evidence": "docs/experiments/mn7r-promo.md",
+          "outcome": "MN7R comparison not run: connected generation tool lacks exact model selector and available allowance was unconfirmed. Native canvas text cover used instead; no generation or spend. Prior documentation-only findings remain valid."
+        }
       ]
     },
     {
@@ -1728,6 +1758,229 @@
       "evidence": [
         "docs/research/arsenal-gaps-2026-10-26.md",
         "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "spline",
+      "name": "Spline native MCP scene authoring",
+      "url": "https://docs.spline.design/generate/plugins/chatgpt",
+      "reviewed": "2026-10-26",
+      "upstream_revision": "native MCP server0.1.0",
+      "disposition": "partial",
+      "review_basis": "Owner-authorised installed native app/MCP trial; original editable24-object scene, geometry/text correction and preview. Native video export gate observed.",
+      "scope_and_findings": "Native connection and scene authoring worked. Cloud OAuth not completed. Video export requires upgrade; no purchase/public export. Final9s intro recreated originally in Blender, not a Spline export or capture qualification.",
+      "licence_note": "Proprietary app/service; original authored geometry. Native Video upgrade gate retained; no subscription/payment or public publishing. Current export permission must be checked before another capture trial.",
+      "next_trial_or_retest_condition": "Only after a permitted native export/capture route is established: verify10-15s real motion, camera/light and saved-file reuse. No subscription implied.",
+      "evidence": [
+        "docs/experiments/mn7r-promo.md",
+        "experiments/2026-10-26/evidence/mn7r-promo.json"
+      ]
+    },
+    {
+      "id": "pixverse",
+      "name": "PixVerse Basic",
+      "url": "https://pixverse.ai/en/ai-info-page",
+      "reviewed": "2026-10-27",
+      "review_basis": "Provider terms documentation; no runtime test",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "Operation prices vary; daily credits may not cover a selected generation. API billing differs.",
+      "licence_note": "Dated free-plan research; current commercial, asset, and account terms require separate review.",
+      "next_trial_or_retest_condition": "Verify current account, selected operation, terms and asset rights before a bounded trial.",
+      "evidence": [
+        "docs/research/online-free-quota-services-2026-10-27.md"
+      ]
+    },
+    {
+      "id": "runway",
+      "name": "Runway Free",
+      "url": "https://help.runwayml.com/hc/en-us/articles/50404627334547-Free-plan-details",
+      "reviewed": "2026-10-27",
+      "review_basis": "Provider terms documentation; no runtime test",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "One-time allowance, not a daily or monthly refill; operation costs and eligibility vary.",
+      "licence_note": "Dated free-plan research; current commercial, asset, and account terms require separate review.",
+      "next_trial_or_retest_condition": "Verify current account, selected operation, terms and asset rights before a bounded trial.",
+      "evidence": [
+        "docs/research/online-free-quota-services-2026-10-27.md"
+      ]
+    },
+    {
+      "id": "meshy",
+      "name": "Meshy Free",
+      "url": "https://docs.meshy.ai/en/webapp/pricing",
+      "reviewed": "2026-10-27",
+      "review_basis": "Provider terms documentation; no runtime test",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "Specific operation costs, animation availability and export require verification.",
+      "licence_note": "Dated free-plan research; current commercial, asset, and account terms require separate review.",
+      "next_trial_or_retest_condition": "Verify current account, selected operation, terms and asset rights before a bounded trial.",
+      "evidence": [
+        "docs/research/online-free-quota-services-2026-10-27.md"
+      ]
+    },
+    {
+      "id": "opentimelineio",
+      "name": "OpenTimelineIO",
+      "url": "https://github.com/AcademySoftwareFoundation/OpenTimelineIO",
+      "reviewed": "2026-10-28",
+      "review_basis": "Official documentation plus native0.18.1 MN7R export/readback and bounded DJV3.7.5 trial",
+      "upstream_revision": "0.18.1",
+      "disposition": "supported_scoped",
+      "scope_and_findings": "Optional common integer-CFR cut exporter: exact1279-frame three-track MN7R handoff, pinned relative media, explicit gaps, native round-trip, full baked-picture hash parity and exact audio-stem recombination. Three native DJV samples inspected. Titles/crop/holds/audio processing baked. Full editing-application import, re-edit/render and continuous native listening remain untested. Same-day Kdenlive26.08.2 native import/edit/re-export/render passed:1279→1264frames,exact expected clip ranges,SSIMmean0.997979,numeric audio best lag0ms. Consumer drops Framewright IDs/metadata and explicit trailing voice gap;exports absolute URLs. Separate portable repack pinned. Full listening/other editors remain unqualified. OTIO-02 bounded return comparator/staging tested:actual unchanged/15-frame editor cuts,9source hashes,old journal records preserved,new candidate reviews pending. No automatic composition/final switch or approval inheritance.",
+      "licence_note": "Apache-2.0 core; adapter, editor and media terms require separate review.",
+      "next_trial_or_retest_condition": "For a selected production:review the returned rendered candidate and explicitly select/adapt the final composition. Renamed/new tracks,unknown sources,effects/rates and full bidirectional synchronization need separate work.",
+      "evidence": [
+        "docs/research/otio-kitsu-production-model-2026-10-28.md",
+        "docs/experiments/otio-mn7r-handoff.md",
+        "experiments/2026-10-28/evidence/otio-mn7r.json",
+        "skills/video-production-router/references/otio-export.md",
+        "experiments/2026-10-28/evidence/otio-kdenlive.json",
+        "experiments/2026-10-28/evidence/otio-return.json"
+      ]
+    },
+    {
+      "id": "kitsu-zou",
+      "name": "Kitsu / Zou production model",
+      "url": "https://github.com/cgwire/zou",
+      "reviewed": "2026-10-28",
+      "review_basis": "Official repository and developer documentation; research only",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "Model reference only: projects/shots/assets/tasks, output preview revisions and events; Gazu API integration deferred to concrete team need.",
+      "licence_note": "Kitsu and Zou repositories identify AGPL-3.0; any later code reuse or integration needs a separate licence assessment.",
+      "next_trial_or_retest_condition": "PROD-01: extend existing journal-based blocker diagnosis; no server setup or mandatory dependency.",
+      "evidence": [
+        "docs/research/otio-kitsu-production-model-2026-10-28.md"
+      ]
+    },
+    {
+      "id": "wonderunit-storyboarder",
+      "name": "Storyboarder / Shot Generator (Wonder Unit)",
+      "url": "https://github.com/wonderunit/storyboarder",
+      "reviewed": "2026-10-28",
+      "review_basis": "Official README, product overview and source package/camera directory; documentation only",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "Method reference for rough boards, Fountain and parameterised staging. PREVIS-01 extends existing Framewright storyboards with three alternatives and a revision-bound choice. Product page/source version mismatch; no usable Mac build or runtime qualified.",
+      "licence_note": "Vendor free/open-source description alongside a custom installer EULA; embedding, redistribution, bundled assets and shared pose/settings terms require separate verification.",
+      "next_trial_or_retest_condition": "One cleared scene, three low-resolution boards using existing local tools, owner selection and rough animatic; separate compatibility/terms gate for Storyboarder runtime.",
+      "evidence": [
+        "docs/research/storyboarder-previsualization-2026-10-28.md"
+      ]
+    },
+    {
+      "id": "storytoolkitai",
+      "name": "StoryToolkitAI — source-first editing",
+      "url": "https://github.com/octimot/StoryToolkitAI",
+      "reviewed": "2026-10-28",
+      "review_basis": "Official README, FEATURES and INSTALLATION; documentation only",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "Local transcription/index/search and EDL/XML/Fountain story exports described. Standalone operation separate from Resolve Studio18+ API integration; release/source feature parity and local runtime unverified. SOURCE-01 extends existing source pins, transcripts/observations and edit maps.",
+      "licence_note": "GPL-3.0 repository; exact build, models, dependencies, source assets and optional cloud/provider terms require separate review.",
+      "next_trial_or_retest_condition": "Owner-authorised small mixed source folder; exact-range retrieval, absent query, find/adapt/create structure and source-change invalidation; optional separate standalone runtime comparison.",
+      "evidence": [
+        "docs/research/storytoolkitai-source-first-2026-10-28.md",
+        "docs/experiments/source-first-playmcp.md",
+        "docs/experiments/source-asr-mn7r.md",
+        "docs/experiments/source-multicut-mn7r.md"
+      ]
+    },
+    {
+      "id": "comfyui",
+      "name": "ComfyUI — admitted workflow executor",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "reviewed": "2026-10-28",
+      "review_basis": "Official core README, system requirements and server API routes/messages; documentation only",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "Optional per-task graph execution, not studio orchestration. COMFY-01 draft card/adapter extends existing trials, readiness and sequential locks. Apple Silicon support is documented; exact workflow/model/resource feasibility and output untested.",
+      "licence_note": "GPL-3.0 core; model/custom-node/asset licences and optional paid partner or cloud terms are independent.",
+      "next_trial_or_retest_condition": "Concrete useful small local still workflow, built-in nodes, pinned weights and measured resources; preflight/missing model, success, failure and cancellation. No automatic custom-node installs or cloud fallback.",
+      "evidence": [
+        "docs/research/comfyui-workflow-executor-2026-10-28.md"
+      ]
+    },
+    {
+      "id": "langgraph",
+      "name": "LangGraph — state and approval patterns",
+      "url": "https://github.com/langchain-ai/langgraph",
+      "reviewed": "2026-10-28",
+      "review_basis": "Official repository, persistence and interrupts documentation; documentation only",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "STATE-01 pattern reference for explicit pilot/review/revision/replanning and recovery over existing journal authority. Interrupted nodes restart; persistence does not guarantee exactly-once external operations. No graph/package/runtime qualification or required dependency.",
+      "licence_note": "MIT core; exact version/dependencies, optional hosted products and model/provider operations have separate conditions.",
+      "next_trial_or_retest_condition": "Existing executor plus local fixtures/fake operations first; acceptance/revision/rejection, waits, stale approvals, duplicate resume and crash ambiguity. Optional isolated LangGraph comparison with durable local checkpoint if justified.",
+      "evidence": [
+        "docs/research/langgraph-state-and-approvals-2026-10-28.md"
+      ]
+    },
+    {
+      "id": "promptfoo",
+      "name": "Promptfoo — production-decision evaluation",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "reviewed": "2026-10-28",
+      "review_basis": "Official intro, repository and LangGraph evaluation guide; documentation only",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "EVAL-01 optional harness/report adapter over existing router evaluation records; six original synthetic scenario contracts saved, not executed. Structural checks, calibrated model rubrics, complete action evidence and production quality remain distinct.",
+      "licence_note": "MIT core; selected providers/models, hosted features and external grader operations have separate terms and costs.",
+      "next_trial_or_retest_condition": "Map six cases to existing benchmark; offline compliant/violating controls, then optional pinned adapter. Actual actor/grader runs require selected scope/provider and explicit limits; free-only policy applies.",
+      "evidence": [
+        "docs/research/promptfoo-production-decisions-2026-10-28.md"
+      ]
+    },
+    {
+      "id": "litellm",
+      "name": "LiteLLM — model spend evidence",
+      "url": "https://github.com/BerriAI/litellm",
+      "reviewed": "2026-10-28",
+      "review_basis": "Official spend tracking, tag budgets and repository licence; documentation only",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "COST-01 optional model-spend evidence adapter within a separate project-wide production cost record. Calculated cost is not reconciled billing; tag budgets document Postgres prerequisite and exact feature/edition needs review. No install, import, model call, financial cap or runtime qualification.",
+      "licence_note": "Repository licence: MIT outside separately licensed enterprise content; exact features/edition, infrastructure and model/provider terms require verification.",
+      "next_trial_or_retest_condition": "Local/synthetic mixed model/non-model records, duplicate imports/tags, retries, unresolved exposure, units and reconciliation; optional pinned adapter only after exact feature/storage/edition review.",
+      "evidence": [
+        "docs/research/litellm-project-costs-2026-10-28.md"
+      ]
+    },
+    {
+      "id": "psutil",
+      "name": "psutil — host/process observations",
+      "url": "https://github.com/giampaolo/psutil",
+      "reviewed": "2026-10-28",
+      "review_basis": "Official API plus psutil7.2.0 actual macOS arm64 owned-child/root observations and synthetic boundary tests",
+      "upstream_revision": "7.2.0",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Optional bounded host/owned-worker observations implemented. Native1.2s synthetic child:11 samples, root sampled RSS peak18006016bytes, available RAM observed. Restricted child enumeration and swap remain partial/unavailable; root-only fallback and missing-library/PID-identity controls retained. No arbitrary render/model/GPU/codec fit, high-water memory guarantee, automatic installation or unrelated-process inspection.",
+      "licence_note": "BSD-3-Clause repository; verify pinned distribution and dependencies. Telemetry does not clear production assets or qualify model execution.",
+      "next_trial_or_retest_condition": "Observe a selected actual render with explicit owned-child coverage and stable settings; keep resource observations separate from quality, fit, rights and authority. No blanket retest or paid integration.",
+      "evidence": [
+        "docs/research/psutil-machine-observations-2026-10-28.md",
+        "docs/experiments/studio-foundations.md",
+        "experiments/2026-10-28/evidence/studio-foundations.json"
+      ]
+    },
+    {
+      "id": "kdenlive",
+      "name": "Kdenlive",
+      "url": "https://kdenlive.org/",
+      "reviewed": "2026-10-28",
+      "review_basis": "Official native OTIO documentation and actual26.08.2 Mac arm64 native import/edit/re-export/MP4 render trial",
+      "upstream_revision": "26.08.2-d4e87e4",
+      "disposition": "supported_scoped",
+      "scope_and_findings": "OTIO1279frame common-CFR three-track MN7R cut imported with local media. Native all-track15frame extraction produced expected1264frame edit;OTIO clip-range comparison and actual1080p30/H264-AAC render passed. SSIMmean0.997979,min0.989947;numeric audio lag0ms/corr0.999931. Absolute exported URLs,custom-ID loss and omitted trailing voice gap require external manifest/journal. Two encoder threads,no parallel processing. Owner-authorised AppleScript fallback and one owner-assisted save;unattended automation,full listening,calibrated colour and arbitrary effects/rates unqualified.",
+      "licence_note": "GPL-3.0 application; bundled codecs/runtime and media rights have separate terms. No paid licence or cloud service used for this trial.",
+      "next_trial_or_retest_condition": "Reuse scoped straight-cut workflow when needed;test focused listening,other effects/rates or automation only on an authorised matching task. Preserve external identities/approval boundary.",
+      "evidence": [
+        "docs/experiments/otio-mn7r-handoff.md",
+        "experiments/2026-10-28/evidence/otio-kdenlive.json",
+        "skills/video-production-router/references/otio-export.md"
       ]
     }
   ]

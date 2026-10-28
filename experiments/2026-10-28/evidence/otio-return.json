@@ -1,0 +1,117 @@
+{
+  "schema": "framewright-otio-return-trial-v1",
+  "date": "2026-10-28",
+  "method": "OTIO-02: inspect then explicitly stage an external-editor candidate in existing journal",
+  "native_library": "OpenTimelineIO0.18.1/Python3.12",
+  "existing_source": "SOURCE-01-MULTI accepted MN7R draft and actual Kdenlive26.08.2 exports",
+  "unchanged_editor_cut": {
+    "timeline_changed": false,
+    "metadata_different": true,
+    "trailing_voice_gap": "implicit silence correctly equated"
+  },
+  "edited_cut": {
+    "before_frames": 1279,
+    "after_frames": 1264,
+    "rate": 30,
+    "duration_delta_frames": -15,
+    "verified_returned_media_files": 9,
+    "changed_ranges": [
+      {
+        "track": "Picture",
+        "kind": "video",
+        "ranges": [
+          {
+            "start": 0,
+            "end": 1279
+          }
+        ]
+      },
+      {
+        "track": "Voice",
+        "kind": "audio",
+        "ranges": [
+          {
+            "start": 60,
+            "end": 1219
+          }
+        ]
+      },
+      {
+        "track": "Music",
+        "kind": "audio",
+        "ranges": [
+          {
+            "start": 0,
+            "end": 1279
+          }
+        ]
+      }
+    ],
+    "range_coordinate_system": "Absolute before/after timeline frames;an intro removal shifts subsequent mappings,not just the removed interval"
+  },
+  "stage": {
+    "old_journal_entries_preserved": 34,
+    "all_old_steps_unchanged": true,
+    "all_old_artifact_pins_unchanged": true,
+    "new_reviews": [
+      {
+        "kind": "technical",
+        "result": "pending"
+      },
+      {
+        "kind": "listening",
+        "result": "pending"
+      },
+      {
+        "kind": "creative",
+        "result": "pending"
+      }
+    ],
+    "approval_inherited": false,
+    "publication_authorized": false
+  },
+  "software_tests": {
+    "native_otio_combined": {
+      "run": 23,
+      "passed": 23
+    },
+    "return_module": {
+      "run": 14,
+      "native_cases": 12,
+      "stdlib_interval_cases": 2
+    },
+    "without_optional_library": {
+      "run": 14,
+      "passed": 2,
+      "skipped": 12
+    },
+    "related_project_journal_regressions": {
+      "run": 19,
+      "passed": 19
+    }
+  },
+  "negative_cases": [
+    "Unknown/changed/remote/escaping/symlinked media",
+    "Effects,retiming,fractional or out-of-range source timings",
+    "Changed track mapping and disabled baseline",
+    "Tampered/stale report,missing/wrong-duration render",
+    "Duplicate intake/task IDs",
+    "Source receipt repin reopens a completed candidate check"
+  ],
+  "limits": [
+    "Common integer-CFR straight cuts,at most one picture track and unchanged explicit track-name/kind mapping",
+    "Only previously retained source hashes;new sources require separate curation",
+    "Opaque metadata is not interpreted;range sameness is not render conformance",
+    "Rendered-file association checks format/extent only;technical,listening and creative reviews stay pending",
+    "Candidate packet is not automatic composition replacement,final selection or editor/journal approval synchronisation"
+  ],
+  "new_render_calls": 0,
+  "model_calls": 0,
+  "paid_calls": 0,
+  "private_artifact_hashes": {
+    "unchanged_report": "f1e4e1c7f79870fc34def29ef991bd1d2d0c7f7ab79b6c53869d7a83587a1305",
+    "edited_report": "dccfce6b988736729719b16b24457f3e1a54af7e1429cca32c686fce68f84293",
+    "candidate_packet": "0a42aab7a8aebaeff0752cc620f4284603ff1c9d052e06387816eabdb0023c13"
+  },
+  "actual_report_recomputed_with_final_helper": "identical"
+}

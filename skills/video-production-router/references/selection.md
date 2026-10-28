@@ -20,6 +20,10 @@ For a process explained by object action/camera, `three-scene` offers the scoped
 `staged-3d-scene` route. Its feature/style activation prevents generic export
 requests from silently acquiring3D work. It needs authored geometry/staging.
 
+## Owner workspace cost and platform preference
+
+Prioritise free/open-source options that work on the available Mac and satisfy the scene quality. Free proprietary options may also qualify. Record paid and other-platform options as reserves, not automatic test choices. No new paid exploratory calls by default. Already-owned apps and active paid subscriptions may be tested within their entitlement after checking per-use charges and rights. A truly necessary paid effect for an actual production needs an explicit production budget and cost/rights quote; run only a minimal bounded trial inside that budget before scaling. Treat this as agent guidance, not a hard-coded spending guard.
+
 ## Evidence and capabilities
 
 Read [tool-matrix.md](tool-matrix.md) for the concise inventory; load matching profiles

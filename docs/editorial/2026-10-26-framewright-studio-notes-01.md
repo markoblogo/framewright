@@ -79,3 +79,8 @@ I am collecting this experience for a future practical book about working with A
 The next useful step is to apply the saved-shot and continuity work to a real recurring character and environment. That will test how well these preparations survive an actual film.
 
 [Explore Framewright on GitHub](https://github.com/markoblogo/framewright)
+
+
+## Publication record
+
+Owner supplied the [published post URL](https://abvx.xyz/writing/ai-video-production-repeatable-workflows-framewright-01) on 26 October 2026. Provenance: `owner_provided_url`. The web fetch was inaccessible; remote visibility, published text and cover identity were not independently verified. This post remains candidate source material for the book.

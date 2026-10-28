@@ -6,6 +6,32 @@ Python standard library; file checks hash local bytes and can take time on large
 
 ## Start a session with a working brief
 
+Completion diagnosis uses the same records:
+
+```sh
+python3 skills/video-production-router/scripts/project.py blockers local/film/project.json
+python3 skills/video-production-router/scripts/project.py blockers local/film/project.json --json
+```
+
+It reports required open work, dependencies, missing/changed files, linked absent,
+pending/rejected/stale reviews, explicit waits and declared variant requirements.
+Rows include task/subject, current hash, the exact receipt and its original dependency
+pins when present, source history indices, affected downstream tasks and scene/material/
+variant context where mapped. File problems block readiness globally in the existing
+CLI; source dependencies absent from the journal are not inferred from media contents.
+
+Optional tasks, unmapped observations and changed planning sources are followups,
+not newly invented mandatory gates. A manually completed check without a matching
+observation is explicitly reported as missing evidence. No-recorded-blockers does
+not establish rights, creative approval, publication readiness or permission to run.
+Empty projects report undefined completion scope. Output is local/private; raw notes,
+actors and paths in retained pins must be reviewed before sharing.
+
+The default text limits each section to five rows (`--limit 1..20`); counts and JSON
+expose omissions. `brief` includes the completion status/count. This read-only command
+does not mark tasks, remove waits, approve versions or write the checkpoint.
+[Internal validation and example](../../../docs/experiments/completion-diagnosis.md).
+
 ```sh
 python3 skills/video-production-router/scripts/project.py brief local/film/project.json
 python3 skills/video-production-router/scripts/project.py brief local/film/project.json --json --limit 3

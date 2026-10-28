@@ -1,0 +1,92 @@
+{
+  "schema": "framewright-route-admission-trial-v1",
+  "date": "2026-10-28",
+  "scope": "Selected intake stage to one supported local action;not a whole-route renderer",
+  "supported_actions": [
+    "local-media-review",
+    "review-clip"
+  ],
+  "checks": [
+    "Pinned comparison/source/environment/contract",
+    "Exact task/output/tool/arguments and adapter implementation",
+    "Fresh declared environment,rights and known-zero local fee/unit",
+    "Actual timed source and selected interval",
+    "Worker timeout and expected output kind/format/bytes before retention",
+    "Actual temporary volume disk floor as well as project disk"
+  ],
+  "cost_scope": "Known zero local software provider fee only;unknown/positive provider costs have no dispatcher",
+  "acceptance": "Produced remains review_pending; no approval inherited",
+  "negative_controls": [
+    "Source or argument drift",
+    "Unmet/unknown prerequisite or available RAM",
+    "Unknown fee/rights",
+    "Unsupported selected stage",
+    "Invalid limits/output mapping",
+    "Contract repin alone",
+    "Output-size failure",
+    "Already-produced output redispatch",
+    "Scratch shortage with sufficient project-volume free space"
+  ],
+  "learned_corrections": [
+    "Blocked unknown fee evidence remains null,not zero",
+    "Read-only admission also rejects occupied output"
+  ],
+  "verification": {
+    "status": "passed_bounded_local_scope",
+    "initial_full_suite": {
+      "run": 461,
+      "skipped": 15,
+      "failures": 1,
+      "failure": "Retained search-example exclusion count stale after prior psutil scope update;regenerated using unchanged exact query"
+    },
+    "focused_initial_admission": {
+      "run": 9,
+      "result": "pass_before_later_output/redispatch assertions"
+    },
+    "system_disk_incident": {
+      "full_suite_run": 461,
+      "errors": 27,
+      "failures": 1,
+      "skipped": 15,
+      "cause_observed": "No space left on system temporary volume",
+      "system_free_gib_observed_after_run": 0.24,
+      "external_free_gib_observed": 354.0,
+      "resolution": "Explicit external TMPDIR for checks; no user-data/cache deletion"
+    },
+    "focused_final_admission": {
+      "run": 12,
+      "result": "pass",
+      "temporary_volume": "explicit external Work folder"
+    },
+    "final_offline_pipeline": {
+      "run": 463,
+      "skipped_optional_dependency_cases": 15,
+      "result": "pass",
+      "router_storyboard_evidence_integrity": "pass_historical_qualification_preserved",
+      "local_links": "pass",
+      "generated_tool_reference": "pass",
+      "temporary_package_smoke": "pass",
+      "new_release": false
+    },
+    "walkthrough": {
+      "preparation": "complete_new_private_external_project",
+      "fresh_preflight": "admitted_local_action",
+      "source": "Original one-second synthetic silence",
+      "expected_output": {
+        "identity": "report",
+        "kind": "review-report",
+        "format": "json",
+        "max_bytes": 1048576
+      },
+      "execution": "review_pending",
+      "produced_file_retained": true,
+      "task_automatically_done": false,
+      "approval_inherited": false
+    }
+  },
+  "model_calls": 0,
+  "paid_calls": 0,
+  "new_production": false,
+  "public_uploads": 0,
+  "release_created": false
+}

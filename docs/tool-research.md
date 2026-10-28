@@ -1,5 +1,31 @@
 # Tool review and test inventory
 
+[Remotion licence clarification — 28 October 2026](research/remotion-conditional-licence-2026-10-28.md): already-used renderer, custom source-available licence; user/entity/use/version eligibility stays separate from technical evidence. Unverified eligibility remains cost-unknown and excluded from free-only offers.
+
+[psutil machine/process observations — 28 October 2026](research/psutil-machine-observations-2026-10-28.md): RESOURCE-01 optional adapter for available RAM and bounded owned-process sampling. Detected, requirement-checked and unknown facts remain distinct; GPU/model/codec fit needs other adapters. No installation or sampling trial.
+
+[LiteLLM and project-wide costs — 28 October 2026](research/litellm-project-costs-2026-10-28.md): COST-01 separates authorised limits, estimates, reservations, usage/calculated charges and reconciled bills; model gateway evidence is only one category. Optional adapter, feature/edition/Postgres checks pending; no install or spend.
+
+[Promptfoo and production-decision regression — 28 October 2026](research/promptfoo-production-decisions-2026-10-28.md): EVAL-01 adds six draft scenario contracts to the existing router evaluation approach. Optional harness/report adapter, not a new qualification claim; no install, actor/grader call or evaluation run.
+
+[LangGraph state/approval/recovery patterns — 28 October 2026](research/langgraph-state-and-approvals-2026-10-28.md): STATE-01 model reference and optional comparison with the current executor. Revision-bound pauses, branches and external-operation reconciliation; no mandatory framework dependency or runtime qualification.
+
+[ComfyUI bounded workflow executor — 28 October 2026](research/comfyui-workflow-executor-2026-10-28.md): COMFY-01 adapter/card candidate reusing trial/readiness and sequential execution; per-graph/model/environment admission and failure handling. Core availability does not qualify video workflows. No install or inference.
+
+[StoryToolkitAI and source-first assembly — 28 October 2026](research/storytoolkitai-source-first-2026-10-28.md): SOURCE-01 searches authorised retained sources before new creation; extends current transcript/observation/edit-map workflows. Standalone runtime candidate, GPL-3.0, exact build/model/resource checks pending; Resolve integration requires Studio.
+
+[Storyboarder and staging alternatives — 28 October 2026](research/storyboarder-previsualization-2026-10-28.md): method reference and PREVIS-01 internal candidate; extends existing storyboards and saved shot controls. Three low-cost staging variants → revision-bound choice → rough animatic. Runtime, licence and Mac compatibility unverified.
+
+[OTIO editorial interchange and Kitsu/Zou production model — 28 October 2026](research/otio-kitsu-production-model-2026-10-28.md): accepted OTIO export direction, bounded editor handoff trial, and journal-based completion diagnosis. Kitsu/Zou remains a model reference and optional future team integration; no install or runtime test.
+
+[Online generation, speech, editing and 3D services — 27 October 2026](research/online-free-quota-services-2026-10-27.md): dated official free-plan observations, rights gates and conditional tests; no accounts or generation.
+
+[Mac-native and free production applications — 27 October 2026](research/mac-native-free-production-2026-10-27.md): primary-source classification, local path inventory and sequential future tests; none run.
+
+[GLEA, Devault ASCII, Krea plugins and InShot — 27 October 2026](research/creative-editors-ascii-krea-inshot-2026-10-27.md): free-editor and ASCII candidates, conditional Krea host integrations, and Android/Mac InShot options. Research only; conflicting vendor plan/rights statements and unverified device compatibility are retained.
+
+[Motion-studio library shortlist — 26 October 2026](research/motion-studio-libraries-2026-10-26.md): 20 tools compared with existing evidence, with bounded Mac-first tests and licence/version gates. Research does not qualify new tools.
+
 [Arsenal gap review — 26 October 2026](research/arsenal-gaps-2026-10-26.md): six
 bounded candidates added after comparing retained evidence with the existing queue:
 Rhubarb mouth cues, Blender tracked compositing, Rokoko local retargeting, SAM 2
@@ -389,3 +415,5 @@ capability matrix. `hard-cut-detection` accepts existing video,not artwork alone
 Four authored cuts recovered exactly in one15s1080p30 fixture;other transitions,
 formats and blind footage remain unqualified. No new runtime/upstream audit.
 [Trial and dependency/licence evidence](../experiments/2026-10-15/burgers-cue-analysis.md).
+
+- [Ecosystem and orchestration assessment](research/ecosystem-orchestration-2026-10-27.md) — includes Pomerado as a conditional read-only integration candidate.

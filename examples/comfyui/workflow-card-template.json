@@ -1,0 +1,21 @@
+{
+  "template": "framewright-comfy-workflow-card-draft-v1",
+  "status": "planning_only_not_executable",
+  "task": null,
+  "graph": {"api_prompt_path": null, "sha256": null, "allowed_overrides": []},
+  "inputs": [],
+  "expected_outputs": [],
+  "runtime": {"core_revision": null, "python": null, "torch": null, "backend": null},
+  "models": [],
+  "custom_nodes": [],
+  "environment": {"os": null, "architecture": null, "memory_gib": null, "free_disk_gib": null, "backend_evidence": null},
+  "test_parameters": {"seed": null, "width": null, "height": null, "frames": null, "batch": 1, "precision": null, "offloading": null},
+  "limits": {"timeout_seconds": null, "resource_margin_basis": null, "hosted_calls_allowed": false},
+  "observed": {"elapsed_seconds": null, "peak_memory_gib": null, "peak_disk_gib": null, "measurement_method": null, "cache_use": null},
+  "runs": [],
+  "known_failures": [],
+  "rights": {"core": "GPL-3.0; verify pinned revision", "models": "unreviewed", "nodes": "unreviewed", "assets": "unreviewed"},
+  "technical_review": "not_performed",
+  "human_review": "not_performed",
+  "execution_authorized": false
+}

@@ -92,11 +92,17 @@ initial template/setup cost from the repeated variant. Record only known values:
 | Repeated intake | Questions whose answers were already recorded; exclude genuinely new choices |
 | Rebuilds | Unnecessary rebuilds separately from requested creative revisions and required QA |
 | Reuse | Which material IDs, scene/cut structure and decisions were reused; what changed |
+| Context recovery | Time from a new session to its first correct next action |
+| Workflow overhead | Operator effort on recording/checking separately from template setup, rendering and waiting |
 
 Compare similar work and preserve different scopes. A successful render, correct
 journal or a localisation is not by itself measured time saved or better creative
 quality. Do not start a video or invent measurements to fill these fields. The next
-active brief is owner-selected; Pocket OS and SSI weekly remain paused.
+active brief is owner-selected. [RV01–RV03](../../../docs/post-release-validation.md)
+define the next production-linked comparisons, not a new tracker or execution grant.
+Pocket OS remains paused. SSI reports accepted templates and deployed integration;
+its first scheduled operation is pending in the receiving project, not paused here.
+Use the [current plan](../../../docs/next-cycle.md) and do not duplicate SSI operations.
 
 ## Private music/sound library
 

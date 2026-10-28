@@ -9,6 +9,7 @@ import os
 from pathlib import Path
 import platform
 import re
+import runpy
 import shutil
 import subprocess
 
@@ -109,11 +110,13 @@ def technical_status(checks):
     return 'ready'
 
 
-def inspect(spec, root, probe_versions=False, probe_hardware=False):
+def inspect(spec, root, probe_versions=False, probe_hardware=False, observe_resources=False):
     validate(spec)
     checks=[];probes=[]
     system={'platform':platform.system(),'architecture':platform.machine(),
             'memory_gib':memory_gib(),'free_disk_gib':shutil.disk_usage(root).free/2**30}
+    if observe_resources:
+        system['resource_observation']=runpy.run_path(str(Path(__file__).with_name('resources.py')))['snapshot']([root])
     def check(ident,status,note):checks.append({'id':ident,'status':status,'note':note})
     for name,key in [('platforms','platform'),('architectures','architecture')]:
         check(key,'pass' if not spec[name] or system[key] in spec[name] else 'fail',
@@ -222,10 +225,11 @@ def main():
     p.add_argument('--output',type=Path);p.add_argument('--probe-versions',action='store_true',
         help='Execute only fixed version queries for selected trusted installed programs; never accepts arbitrary commands')
     p.add_argument('--probe-hardware',action='store_true',help='Run fixed local GPU driver/system queries; never load a model')
+    p.add_argument('--observe-resources',action='store_true',help='Observe available memory/swap with optional psutil; never install it')
     a=p.parse_args()
     try:
         raw=a.manifest.read_bytes();spec=json.loads(raw)
-        report=inspect(spec,a.manifest.resolve().parent,a.probe_versions,a.probe_hardware)
+        report=inspect(spec,a.manifest.resolve().parent,a.probe_versions,a.probe_hardware,a.observe_resources)
         report['manifest_sha256']=hashlib.sha256(raw).hexdigest()
         if a.manifest.read_bytes()!=raw:raise ValueError('Manifest changed during inspection')
         rendered=json.dumps(report,indent=2,allow_nan=False)+'\n'
