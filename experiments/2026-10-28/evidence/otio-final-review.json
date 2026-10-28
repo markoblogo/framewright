@@ -1,0 +1,57 @@
+{
+  "schema": "framewright-otio-final-review-trial-v1",
+  "date": "2026-10-28",
+  "method": "Separate returned-cut reviews and explicit revision-bound final choice in existing journal",
+  "candidate": {
+    "selected_variant": "B",
+    "frames": 1264,
+    "rate": 30,
+    "seconds": 42.13333333333333,
+    "sha256": "36371b00db735fd9fd185352d78041f85a415af1bb24bf22c49f71b28ed4e548",
+    "edit": "Remove first 15 frames on all tracks"
+  },
+  "technical": {
+    "result": "pass",
+    "current_hash_reverified": true,
+    "exact_expected_editor_ranges": true,
+    "full_decode_frames": 1264,
+    "ssim_mean": 0.9979791044303797,
+    "numeric_mono_best_lag_ms": 0,
+    "loudness_input_lufs": -17.25,
+    "true_peak_input_dbtp": -3.45,
+    "loudness_range_lu": 5.8,
+    "source_changed_by_measurement": false
+  },
+  "owner_reviews": {
+    "listening": "accepted",
+    "creative": "accepted",
+    "provenance": "owner_report",
+    "prompt_scope": "Watch B in full with sound,then explicitly select final",
+    "reply_translation": "B \u201442.13s; image and sound accepted"
+  },
+  "final_selection": {
+    "result": "B explicitly selected",
+    "topic": "final-cut",
+    "baseline_preserved": true,
+    "all_prior_artifact_pins_unchanged": true,
+    "approval_inherited": false,
+    "public_upload_authorized": false
+  },
+  "checkpoint": {
+    "file_changes": 0,
+    "needs_recheck": 0,
+    "waiting": 0,
+    "blockers": 0,
+    "completion_status": "no_recorded_blockers"
+  },
+  "limits": [
+    "Owner report is not independent listening or audience validation",
+    "Numeric mono lag screening is not perceptual AV sync judgment",
+    "Six sampled frames are not continuous watching or calibrated-colour qualification",
+    "Manual exact-revision decision,not generic final-promotion/composition-import automation"
+  ],
+  "new_render_calls": 0,
+  "model_calls": 0,
+  "paid_calls": 0,
+  "public_uploads": 0
+}

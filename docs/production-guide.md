@@ -16,6 +16,29 @@ environment bindings. [Internal CPU proof and limitations](experiments/blender-s
 actual canonical assets and natural animation remain for owner-led production.
 
 
+## Owner preference: free, open source and macOS first
+
+Remotion is an already-used optional renderer with a custom source-available licence,
+not a permissive OSS tool. Free-use eligibility depends on the user/entity and use;
+until checked, intake keeps its cost unknown and excludes it from free-only offers.
+[Dated licence review](research/remotion-conditional-licence-2026-10-28.md).
+
+Prefer free and open-source tools that run on the available Mac, while judging their
+actual quality and suitability for the shot. Free proprietary tools can also be used
+when their terms and limits fit. Record paid, Windows-only and otherwise unavailable
+options in the reference catalogue as reserves; their inclusion does not schedule a test.
+
+Exploratory testing should not incur new paid charges. Existing owner-paid subscriptions
+or previously purchased software may be used within their available entitlement, after
+checking terms and any per-use cost. If a specific production genuinely needs an effect
+unavailable through the viable free routes, identify the tool, exact cost and output
+rights and present a budget. Only when that production has an explicitly approved
+budget may a minimum-cost bounded trial proceed within it; evaluate the result before
+scaling. A queued tool, prior spending on another project, a free account or an
+installation does not authorise a new purchase, subscription or paid call. The owner
+chooses exceptions. This is a selection and planning policy, not an implemented spending
+limiter; the current planner's allow_paid flag is a shortlist option only.
+
 ## Recent production
 
 | Result | What was actually produced | Evidence |

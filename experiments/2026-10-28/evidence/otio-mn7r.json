@@ -1,0 +1,84 @@
+{
+  "schema": "framewright-otio-trial-v1",
+  "date": "2026-10-28",
+  "experiment": "OTIO-01",
+  "source": "Owner-accepted MN7R source-first draft v2",
+  "profile": "Common integer CFR / straight cuts / explicit gaps / package-relative retained media",
+  "versions": {
+    "opentimelineio": "0.18.1",
+    "python": "3.12",
+    "djv": "3.7.5"
+  },
+  "timeline": {
+    "frames": 1279,
+    "rate": 30,
+    "seconds": 42.63333333333333,
+    "picture_clips": 7,
+    "voice_clips": 5,
+    "voice_gaps": 2,
+    "music_clips": 1,
+    "media_files": 9
+  },
+  "checks": {
+    "official_library_roundtrip": "pass: IDs, order, ranges, offsets, durations, relative URLs and material pins",
+    "picture": {
+      "method": "Full decoded frame MD5 sequence,source order read from actual OTIO via official library",
+      "reference": "MN7R-Source-First-Draft-v2-1080p.mp4",
+      "frames": 1279,
+      "all_frame_hashes_equal": true,
+      "scope": "Packaged baked picture versus accepted draft;not an external editor render or calibrated-colour test"
+    },
+    "audio": {
+      "sample_format": "signed32bit representation of PCM24",
+      "sample_rate": 48000,
+      "channels": 2,
+      "samples_per_channel": 2046400,
+      "voice_plus_bed_equals_accepted_mix_pcm": true,
+      "accepted_mix_sha256": "f51e7284d380ee3407f0c541f745aeba1b389549196a6e8433e01bb23933cdc7",
+      "voice_sha256": "979bded377858d6b98ba2f770bfed3302a02eee310a787789078408c835e7ee7",
+      "bed_sha256": "c0bd8296452b9de400f59845eb9e98d817bd37abeb2e774317cb2e4fc7235004",
+      "new_generation_calls": 0
+    },
+    "native_djv_samples": {
+      "frames": [
+        330,
+        990,
+        1240
+      ],
+      "images_inspected": true,
+      "result": "Nonblack correct offer-table, portrait-layout and endcard pictures from actual OTIO; fixed zoom capture manifest",
+      "full_playback_listening": "not_tested"
+    },
+    "negative_controls": [
+      {
+        "control": "missing",
+        "status": "rejected",
+        "output_created": false
+      },
+      {
+        "control": "replaced",
+        "status": "rejected",
+        "output_created": false
+      }
+    ]
+  },
+  "retained_failures": [
+    "Rounded format duration falsely rejected final audio frame; exact stream clock now used and regression covered.",
+    "Initial DJV command capture was black with null View/Frame error; fixed zoom/centre capture manifest succeeded on three inspected samples. Initial failure preserved."
+  ],
+  "limits": [
+    "Baked picture includes typography, reframing, source boundary holds and fades.",
+    "Voice normalization and music ducking/fades are baked into separate retained audio.",
+    "No full editing-application import or re-edit/render tested.",
+    "No continuous DJV listening, perceptual AV-sync or calibrated-colour qualification.",
+    "Exporter receipt render_parity/editor_import stay not_tested; trial-specific picture/stem checks are separate."
+  ],
+  "new_generation_calls": 0,
+  "paid_calls": 0,
+  "publication_authorized": false,
+  "artifacts": {
+    "otio_sha256": "a5b4f66ab7f046b264acc13dfe22a0d47b0ca2e23aa47f3b16c083379b76fbea",
+    "spec_sha256": "f0b620910ceab32184d7f3cff9e0d77383a167ca849ae169be133caf1eb60d11",
+    "receipt_sha256": "c0eb772b9f6ec2709af6f14b3a1dba536153d2c0148f1790210f7e77e9952da7"
+  }
+}

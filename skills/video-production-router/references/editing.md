@@ -1,5 +1,40 @@
 # Editing from source recordings
 
+SOURCE-01 now has a [bounded lexical retrieval pilot](../../../docs/experiments/source-first-playmcp.md)
+over revision-bound supplied transcripts and visual observations. It does not
+perform new ASR, semantic search or automated media understanding. StoryToolkitAI
+runtime remains untested. Proposed edits still use this workflow's ordinary map.
+
+The [MN7R ASR follow-up](../../../docs/experiments/source-asr-mn7r.md) separately
+ran retained local mlx-whisper weights and imported the raw result. The indexer
+itself still makes no model calls.
+
+```sh
+python3 skills/video-production-router/scripts/source_search.py index local/source-plan.json --output local/source-index.json
+python3 skills/video-production-router/scripts/source_search.py search local/source-index.json --kind transcript --query 'connect agent' --output local/speech-hits.json
+```
+
+Each source requires `annotation_provenance` with nonempty `method` and `scope`.
+Timed media reuse the source schema below. Explicit `kind: image` accepts observations
+with unique `id` and `text` only; no invented time or speech. Optional `evidence_files`
+records sidecar path/hash pairs. The index pins the specification and all supplied
+source/sidecar bytes. Search refuses changed inputs or index contents; rebuild and
+review selections explicitly. Outputs are new files, never overwritten.
+
+All query tokens must occur in one annotation. Matches retain their evidence channel,
+range/still ID and provenance; they are candidates, not verified actions or facts.
+No negation, synonym or semantic interpretation is performed. A miss means only
+`not_found_in_index`. Human viewing/listening and selection remain separate.
+
+For several sources, follow the [MN7R proposal-stage trial](../../../docs/experiments/source-multicut-mn7r.md):
+use one coherent goal, keep source ID plus cue ID/hash on every selection, retain
+context handles and validate the ordinary cut map. Record existing reusable media,
+required adaptations and conditional new-material gaps separately. A still-card
+hold or future adaptation is not part of the cut-only video's measured duration.
+Search other retained sources before commissioning a missing shot. An annotation
+miss alone does not justify generation. Proposed structure is agent-authored;
+source identity/ranges are mechanically checked, not semantic understanding.
+
 Use for owner recordings, multiple takes, screencasts and source-based recuts. This
 optional module extends the existing [studio workflow](studio-workflows.md) and
 [production checkpoint](projects.md); it is not another project ledger or renderer.
@@ -26,6 +61,24 @@ rotation and absent streams before choosing a working format. Originals stay int
 
 Use authorised ASR separately if needed; retain its provider/model and original
 output. Supply corrected or uncorrected transcript explicitly in the source entry:
+
+For a complete original-source local Whisper run, `import-whisper` converts raw
+segments without correcting words or altering/clamping times:
+
+```sh
+python3 skills/video-production-router/scripts/source_search.py import-whisper local/original.mp4 --transcript local/asr-raw.json --receipt local/asr-receipt.json --source-id original --output local/source-plan.json
+```
+
+The receipt requires `schema: framewright-local-whisper-receipt-v1`, matching
+`source_sha256` and `transcript_sha256`, `timing_origin: source_playback_zero`, and
+`model` with `package`, `version`, and nonempty `weights` identities. Keep the run's
+parameters/resource observations in that same receipt. It is an operator-supplied
+attestation, not independent proof of model execution or authenticity. Imports pin
+raw output and receipt as sidecars and reject missing/invalid/empty/out-of-source
+segments. An excerpt or offset stream needs explicit timing mapping first.
+ASR segments give candidate ranges, not verified word-accurate cut boundaries.
+Recognition errors can cause false misses; review a broader query and source audio
+before declaring material absent. Corrected transcripts must be separately versioned.
 
 ```json
 {
@@ -150,3 +203,9 @@ editorial production trial or a new qualification of model-based perception.
 ## Continue with revisions and series
 
 Use [precise revisions](revisions.md) for a source-pinned defect/change/preservation request, playable before/after context and a checked journal decision. Use [accepted-film templates](templates.md) to freeze explicit design separately from typed content and prepare three boundary-case packets. Data validation is not visual review or final-film approval.
+
+## External editorial handoff
+
+For an authorised retained cut, use the optional [OTIO exporter](otio-export.md).
+It requires explicit frame ranges and packaged pinned media; unsupported effects
+stay explicitly baked. Native readback and consumer checks remain separate.

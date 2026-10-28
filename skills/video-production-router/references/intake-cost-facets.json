@@ -1,0 +1,66 @@
+{
+  "schema": "framewright-intake-cost-facets-v1",
+  "scope": "Small discovery slice; free software is not proof of installed access or total project cost.",
+  "tools": {
+    "ffmpeg": {
+      "kind": "free_local",
+      "basis": "free software; build and use rights require review"
+    },
+    "blender": {
+      "kind": "free_local",
+      "basis": "free software; installed version and asset rights require review"
+    },
+    "pixverse": {
+      "kind": "free_quota",
+      "provider_id": "pixverse"
+    },
+    "runway": {
+      "kind": "free_quota",
+      "provider_id": "runway"
+    },
+    "meshy": {
+      "kind": "free_quota",
+      "provider_id": "meshy"
+    },
+    "kokoro": {
+      "kind": "free_local",
+      "basis": "Local ONNX wrapper and model; specific voice and source rights require review.",
+      "source": "skills/video-production-router/references/tools.json",
+      "evidence_basis": "retained licence notes, not a fresh upstream or installation check"
+    },
+    "mlx-audio": {
+      "kind": "free_local",
+      "basis": "Local runtime; only retained Kokoro model scope, other model terms not inferred.",
+      "source": "skills/video-production-router/references/tools.json",
+      "evidence_basis": "retained licence notes, not a fresh upstream or installation check"
+    },
+    "supertonic3": {
+      "kind": "free_local",
+      "basis": "Local SDK and stock weights; model use restrictions and synthetic-content disclosure remain.",
+      "source": "skills/video-production-router/references/tools.json",
+      "evidence_basis": "retained licence notes, not a fresh upstream or installation check"
+    },
+    "piper": {
+      "kind": "free_local",
+      "basis": "Local synthesis; engine and individual voice licences differ; default weak-voice fallback excluded.",
+      "source": "skills/video-production-router/references/tools.json",
+      "evidence_basis": "retained licence notes, not a fresh upstream or installation check"
+    },
+    "hyperframes": {
+      "kind": "free_local",
+      "basis": "Local CLI runtime; optional cloud or AI assets and external services not included.",
+      "source": "skills/video-production-router/references/tools.json",
+      "evidence_basis": "retained licence notes, not a fresh upstream or installation check"
+    },
+    "remotion": {
+      "kind": "unknown",
+      "basis": "Free/Company eligibility and paid features depend on user and operation; quote or eligibility check needed.",
+      "source": "skills/video-production-router/references/tools.json",
+      "licence_family": "custom_source_available",
+      "eligibility": "unverified",
+      "eligibility_checked_on": null,
+      "terms_reviewed_on": "2026-10-28",
+      "terms_source": "https://www.remotion.dev/docs/license/pricing"
+    }
+  }
+}

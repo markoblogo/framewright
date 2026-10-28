@@ -11,11 +11,23 @@ and compatible proposed chains,read [search](references/arsenal-search.md) and u
 Search/comparison alone never authorises execution. This skill selects and records;
 it does not replace rendering skills or confer permission to publish.
 
+For a new owner-selected production, check the [post-release work blocks](../../docs/post-release-validation.md)
+and choose one fitting reuse/onboarding/agent-action question when useful. Do not
+make every film run all blocks or start a separate benchmark/budget automatically.
+
 For a bounded new-method comparison or environment preflight, read
 [experiment workbench and readiness](references/trials-and-readiness.md). Use
 `environment.py` for explicit prerequisite snapshots and `trials.py` for source-pinned
 A/B cards in the existing journal. Keep manual observations, owner acceptance and
 proposed scoped catalogue updates separate; no automatic promotion or execution.
+
+For optional host/owned-worker measurements, project costs, interrupted local runs
+or offline action assertions, read [studio foundations](references/studio-foundations.md).
+An unresolved intent blocks repeating that task; reconcile actual evidence first.
+Ledger caps and resource snapshots are not execution authority or provider guarantees.
+For a selected route's local action, read [route admission](references/route-admission.md):
+bind exact inputs/settings/requirements/limits and let the executor recheck that
+selection. Intake suggestions alone do not dispatch or qualify the whole route.
 
 For an authorised saved-Blender-shot correction or recurring character/set definition,
 read [shots and passports](references/shots-and-passports.md). `shots.py` restores a
@@ -39,6 +51,7 @@ subtitle/overlay retiming and playable join-review packs. It uses the existing
 project and selected assembler; generated review media do not approve content.
 For short educational films, read [micro-lessons](references/micro-lessons.md): source-backed dialogue, real examples and one practical action, with a pilot before a series.
 For repeated company/deck styling, read [brand profiles](references/branding.md): freeze selected assets/tokens, export the same profile, and check each rendered variant. Profiles do not inherit film approval.
+For an authorised editorial export or returned cut, read [OTIO handoff/return](references/otio-export.md): compare pinned sources/ranges, then explicitly stage a new candidate with pending checks; never inherit approval or replace the final film automatically.
 For a concrete correction, read [revisions](references/revisions.md). For an accepted
 film becoming a series, read [template contracts](references/templates.md). Both
 reuse the journal; rendering and per-variant approval remain separate.

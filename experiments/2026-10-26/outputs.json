@@ -27,7 +27,7 @@
     "sha256": "8f435f88bc9614a73fec4fe51704dd610b1a812ae4a9b7dc47803920001a771d",
     "bytes": 27069875,
     "evidence": "experiments/2026-10-26/evidence/framewright-micro-lesson.json",
-    "qa_scope": "120s1080p24/2880frames full decode; two local voices, final mixed-sound ASR280/280normalised tokens; repeated picture seeks; representative encoded imagery and full/reduced text cover inspected.40subtitle cues and loose YouTube kit. Listening/owner creative approval and publication pending. Claudemy-inspired format adaptation, not native plugin qualification. Revision2 adds fictional photographic presenters at0.12\u20138.95s;120s full decode, original approved AAC packet digest/timing retained, body source-frame controls31/86s identical. Owner baseline speech/meaning accepted; new intro review pending. Not phoneme-accurate lip sync. Owner subsequently accepts v2 for publication, explicitly reporting jerky/artificial facial expressions despite adequate mouth timing. Retest/improve naturalness before next similar production; no publication URL. Owner later supplied YouTube publication URL; uploaded bytes, visibility/playback and audience metrics unverified.",
+    "qa_scope": "120s1080p24/2880frames full decode; two local voices, final mixed-sound ASR280/280normalised tokens; repeated picture seeks; representative encoded imagery and full/reduced text cover inspected.40subtitle cues and loose YouTube kit. Listening/owner creative approval and publication pending. Claudemy-inspired format adaptation, not native plugin qualification. Revision2 adds fictional photographic presenters at0.12–8.95s;120s full decode, original approved AAC packet digest/timing retained, body source-frame controls31/86s identical. Owner baseline speech/meaning accepted; new intro review pending. Not phoneme-accurate lip sync. Owner subsequently accepts v2 for publication, explicitly reporting jerky/artificial facial expressions despite adequate mouth timing. Retest/improve naturalness before next similar production; no publication URL. Owner later supplied YouTube publication URL; uploaded bytes, visibility/playback and audience metrics unverified.",
     "thumbnail": {
       "local_output": "framewright-micro-lesson-20261026/youtube/thumbnail.png",
       "sha256": "b35cd178a0919cd0823fd971320a6aa7d8dfcec36f25be89ba635a948e44c4b3",
@@ -46,5 +46,49 @@
     "publication_visibility": "unknown",
     "audience_metrics": "not_measured",
     "publication_url": "https://youtu.be/n1wuySSYQcQ"
+  },
+  {
+    "id": "mn7r-overview",
+    "route": "narrated-montage",
+    "production_method": "native-motion-canvas-real-redacted-product-plates-local-owner-voice-and-original-blender-intro",
+    "local_output": "mn7r-film-20261026/delivery/MN7R-Overview-EN-1080p.mp4",
+    "sha256": "8e636d9cf49088571c282b94ce80addb0d7583807a094328436c67d0f88cd3f7",
+    "bytes": 37084641,
+    "evidence": "experiments/2026-10-26/evidence/mn7r-promo.json",
+    "qa_scope": "114s1920x1080p30 horizontal with original music/SFX, text cover, English YouTube kit and30SRT cues. Full decode, bounded picture/redaction and sound-level checks pass. Owner accepted short clone probe; full master listening/creative review pending. No upload or audience evidence. Owner pronunciation correction applied: MN7R spoken as Monitor. Encoded picture packet hashes unchanged; fresh decode/levels passed, complete listening/creative review pending. Owner supplied the YouTube URL; playback, visibility and uploaded-file identity not independently verified.",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"thumbnail\"",
+      "\"owner_acceptance\"",
+      "\"precise_revisions\""
+    ],
+    "thumbnail": {
+      "local_output": "mn7r-film-20261026/film/output/still/project-cover/000015.png",
+      "sha256": "f5731b4359fbfc4dc3a21d66dcc86a0a40a8543cf1f40e5d2217c229230bc3ce",
+      "bytes": 1266994,
+      "format": "png",
+      "width": 1920,
+      "height": 1080
+    },
+    "publication_url": "https://youtu.be/kcFco2HbFCY",
+    "publication_verification": "owner_reported_url",
+    "publication_visibility": "unknown",
+    "audience_metrics": "not_measured"
+  },
+  {
+    "id": "mn7r-reels",
+    "route": "narrated-montage",
+    "production_method": "native-motion-canvas-real-redacted-product-plates-local-owner-voice-and-original-blender-intro",
+    "local_output": "mn7r-film-20261026/delivery/MN7R-Reels-EN-36s-NoMusic.mp4",
+    "sha256": "9693020cb94fd255e37ab510a7d587505e4113470b935edd2426a6f47273495b",
+    "bytes": 8340378,
+    "evidence": "experiments/2026-10-26/evidence/mn7r-promo.json",
+    "qa_scope": "36s1080x1920p30 independent portrait edit, voice only; vertical deliverable is video only. Full decode, bounded picture/redaction and sound-level checks pass. Owner accepted short clone probe; full master listening/creative review pending. No upload or audience evidence. Owner pronunciation correction applied: MN7R spoken as Monitor. Encoded picture packet hashes unchanged; fresh decode/levels passed, complete listening/creative review pending.",
+    "evidence_checks": [
+      "\"full_decode\"",
+      "\"thumbnail\"",
+      "\"owner_acceptance\"",
+      "\"precise_revisions\""
+    ]
   }
 ]

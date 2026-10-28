@@ -39,3 +39,28 @@ One built-in ImageGen environment edit ran; its entitlement cost was not indepen
 ## Next useful proof
 
 Apply the same source audit → protected layers → staged camera plan → coordinated sound → separate picture/audio approval → local handoff to a materially different photo series. Retain its own geometry, continuity and rights checks. This accepted case supports a scoped production method, not automatic cinematic quality from any photographs.
+
+## Follow-up: photo-to-film breakdown and executor trial
+
+On 27 October 2026 the owner accepted a 131.875-second English breakdown of this
+case and supplied its [YouTube link](https://youtu.be/JDjvazj9zb4). Publication is
+owner-reported; uploaded-byte identity, rights and audience response remain separate.
+The first sequential-executor production trial decoded the retained 30-second source
+and saved a technical report in the local project journal. It did not edit the video
+or determine artistic quality: montage was performed separately and the owner reviewed
+it. The practical gap is explicit task/output setup and carrying the report into the
+next decision; any editor adapter remains untested.
+
+On 27 October a later local executor trial created a four-second review proxy from
+the breakdown's retained master (requested 42–44 s, with one second of context on
+each side). The file decoded and one frame was inspected; listening and owner review
+are pending. The source and proxy are separately pinned; this demonstrates bounded
+preview creation, not an edited correction or automatic artistic evaluation.
+
+The subsequent sequential-executor comparison trial used the original piano version
+and accepted soundtrack revision as distinct retained sources. It prepared 9–13 s
+before/after clips around the 10–12 s request, source-pinned report and keyframes.
+Both files decoded and matching keyframes were visually inspected; no new listening
+or preservation approval was recorded. The existing revision tool performed the
+comparison under the executor's project and host locks. This is a real-source
+integration trial, not an automatic judgment or a new film release.

@@ -1,0 +1,27 @@
+{
+  "id": "local-review-v1",
+  "route_subject": "output:routes",
+  "route_id": "local-montage",
+  "stage_role": "finishing",
+  "environment_subject": "output:requirements",
+  "step": "inspect",
+  "tool": "local-media-review",
+  "source": "input:source",
+  "output": "report",
+  "arguments": {
+    "start": null,
+    "end": null,
+    "context": 1.0,
+    "request": null,
+    "after_start": null,
+    "after_end": null,
+    "observe_resources": false
+  },
+  "limits": {
+    "worker_seconds": 30,
+    "max_output_bytes": 1048576,
+    "min_available_memory_gib": null,
+    "provider_fee_max": "0",
+    "unit": "USD"
+  }
+}

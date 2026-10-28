@@ -31,9 +31,13 @@ Watch the [two-minute Framewright workflow lesson](https://youtu.be/n1wuySSYQcQ)
 | Dream Walk films | A generated 60s cinematic film and a separate 20min ambient recording from an actual game canvas | [60s film](https://youtu.be/oyQXmJI4aK0) · [20min game capture](https://youtu.be/rfClK3jPHlw) · [Case](docs/experiments/dream-walk.md) |
 
 Publication links and partner acceptance are owner-reported; the forest film’s watch-page title/duration were also observed. The repository records
-[40 final exports](docs/experiments.md); production evidence, human acceptance and
+[42 final exports](docs/experiments.md); production evidence, human acceptance and
 audience results remain separate. Faster production and better retention are goals,
 not established comparative results.
+
+[MN7R production trial](docs/experiments/mn7r-promo.md): native Motion Canvas, locally authorised own-voice cloning and separate horizontal/portrait edits; technical checks passed, [overview publication link](https://youtu.be/kcFco2HbFCY) owner-reported; complete owner review and independent playback remain unverified. Spline authoring is partial with a native export gate; Canva Craft was not run.
+
+For this workspace, prefer **free and open-source tools on macOS**. Paid and other-platform tools are reference reserves; a specific production may use a minimal paid trial only within its approved budget. Existing paid subscriptions and purchased apps are considered separately. [Selection policy](docs/production-guide.md#owner-preference-free-open-source-and-macos-first).
 
 ## Try one production plan
 
@@ -56,6 +60,20 @@ For short story-led book and project promos, the optional [narrative module](ski
 For recorded takes and screencasts, the [editing module](skills/video-production-router/references/editing.md) adds local source inspection, cut-only time maps, subtitle retiming and short review clips around joins. The helper is covered by synthetic CLI tests; editorial quality on a real recording remains to be assessed.
 
 ## Test a method before production
+
+The [selected-route admission](skills/video-production-router/references/route-admission.md)
+bridge pins one local action to an actual intake route/stage, its sources, requirements,
+limits and expected file. Bound tasks recheck before dispatch and validate output
+before retention. It currently supports inspection/review proxies, not a full recipe
+or paid provider. [Original-fixture walkthrough](examples/admission/prepare_demo.py).
+
+
+The optional [studio foundations](skills/video-production-router/references/studio-foundations.md)
+add bounded host/owned-worker observations, an exact-decimal project cost ledger,
+durable local-executor intents with explicit recovery/retry, and six offline
+production-decision assertion contracts. [Internal controls](docs/experiments/studio-foundations.md)
+keep unavailable metrics, unknown costs and incomplete traces explicit. These are
+not automatic host-fit, paid-dispatch enforcement or model qualification.
 
 The [experiment workbench](skills/video-production-router/references/trials-and-readiness.md)
 pins a bounded question and common sources, collects existing A/B outputs, records
@@ -86,6 +104,14 @@ For production owned by another project, use the [external-project handoff](docs
 
 [Source-editing example](examples/editing/source-plan.json) · [Template design](examples/templates/design.json) · [Template values](examples/templates/values.json) · [Curated prompt experiments](docs/research/prompt-library/README.md).
 
+The optional [safe OTIO return](skills/video-production-router/references/otio-export.md#safe-return-from-an-external-editor)
+compares retained media/ranges and explicitly stages a returned edit as a new
+candidate. It preserves the original and creates pending technical, listening and
+creative checks; editor metadata cannot transfer approval or replace the final film.
+The [MN7R review follow-up](docs/experiments/otio-mn7r-handoff.md#review-and-explicit-final-choice)
+closed those checks separately and records the owner's explicit choice of the
+42.13s B cut, preserving the accepted original and without a public upload.
+
 ## Continue after an input changes
 
 Retain the intended revision in the existing project. Its dependent checks become
@@ -99,7 +125,80 @@ The brief shows current accepted work, file problems, recorded replacements,
 unresolved checks and explicit waits. It proposes a next step without approving
 or executing it. [Commands and a real project example](skills/video-production-router/references/project-insights.md#start-a-session-with-a-working-brief).
 
+The optional [sequential executor](skills/video-production-router/references/projects.md#one-explicit-local-execution)
+can explicitly run one local media inspection, create a contextual review clip,
+or prepare a before/after comparison for a ready step. It retains the output and
+stops for human review; it does not run arbitrary commands or publish work.
+
 ## Scope and further reading
+
+[Source-first partial pilot](docs/experiments/source-first-playmcp.md) finds timed
+candidates in supplied transcripts/observations, detects changed inputs and proposes
+a recut from retained PlayMCP media. It is lexical retrieval, not automatic media understanding.
+The [local-ASR follow-up](docs/experiments/source-asr-mn7r.md) feeds raw recognised
+speech into that index; a measured false miss keeps source review necessary.
+The [multi-source trial](docs/experiments/source-multicut-mn7r.md) links found passages
+to an edit proposal and distinguishes adaptation from missing new material.
+Its authorised internal draft also exercises portrait adaptation, existing clean
+voice/music reuse and separate review clips extracted around the actual encoded joins.
+The optional [OTIO handoff](docs/experiments/otio-mn7r-handoff.md) preserves that
+1279-frame cut and separate audio tracks, with native-library round-trip and three
+DJV picture checks. A [Kdenlive follow-up](docs/experiments/otio-mn7r-handoff.md#same-day-follow-up-actual-kdenlive-import-edit-and-render)
+now passes native import, a15-frame edit, OTIO re-export and MP4 render; metadata/ID
+loss and other-editor limits are retained. The returned B cut subsequently passed
+its own technical check and owner listening/creative review; final choice is
+recorded separately from intake and publication.
+
+[Completion diagnosis](docs/experiments/completion-diagnosis.md) explains current
+project blockers using tasks, exact review revisions, waits and variant requirements.
+Run `project.py blockers PROJECT.json`; it reads the journal without executing work.
+
+[Remotion licence classification](docs/research/remotion-conditional-licence-2026-10-28.md):
+technical production evidence is retained; its custom licence requires user/use
+eligibility checking before inclusion in a free route.
+
+[Planned resource observations](docs/research/psutil-machine-observations-2026-10-28.md)
+adds optional psutil measurements to existing host/readiness reports, with explicit
+detected/checked/unknown distinctions. The adapter has not been implemented or tested.
+
+[Planned project cost journal](docs/research/litellm-project-costs-2026-10-28.md)
+separates approved budgets from observed/reconciled costs across production categories.
+LiteLLM is an optional model-spend adapter candidate; enforcement is not implemented.
+
+[Planned production-decision regression](docs/research/promptfoo-production-decisions-2026-10-28.md)
+adds six source/resource/permission-sensitive cases to the existing router evaluation
+approach; Promptfoo remains an untested adapter candidate.
+
+[Planned state and approval loop](docs/research/langgraph-state-and-approvals-2026-10-28.md)
+extends the current journal/executor with explicit branching and recovery tests.
+LangGraph is a model reference and optional comparison candidate; no dependency added.
+
+[Planned ComfyUI execution adapter](docs/research/comfyui-workflow-executor-2026-10-28.md)
+admits individual versioned workflows with model/resource checks and bounded failure
+handling. It remains unimplemented; ComfyUI is an optional task executor.
+
+[Planned source-first story assembly](docs/research/storytoolkitai-source-first-2026-10-28.md)
+extends the existing media catalogue and source-editing workflow with find/adapt/create
+choices and evidence-backed fragment selection; StoryToolkitAI is an untested candidate.
+
+[Editorial handoff and production diagnosis](docs/research/otio-kitsu-production-model-2026-10-28.md)
+connects an OTIO draft-cut export with the existing scene/material journal and
+version-bound reviews. A bounded OTIO exporter and read-only diagnosis are available; Kitsu/Zou
+is an architectural reference and optional future team integration.
+
+[Planned staging alternatives](docs/research/storyboarder-previsualization-2026-10-28.md)
+extends the existing storyboard workflow with three rough composition/camera choices,
+a revision-bound selection and an animatic; Storyboarder is a method reference.
+
+The [producer-agency roadmap](docs/producer-agency-roadmap.md) describes profile-aware
+planning, free/quota/paid alternatives and optional community evidence. An
+[offline intake prototype](examples/intake/README.md) records local option preferences
+and filters supplied examples. An optional small dated provider-terms catalogue can
+annotate explicitly selected examples. Task-based discovery also returns scoped
+catalogue candidates using a small cost classification. A route comparison covers
+picture, optional language-aware narration and finishing, with scoped evidence and
+unresolved costs/access/integration. It remains a planning prototype; total production
+budgets and turnaround times require further evidence.
 
 [Weekly English Studio Notes](docs/editorial/README.md) connect project development
 to actual video examples, with ABVX metadata and a generated cover for every draft. A separate [book-readiness milestone](docs/book-milestone.md)
@@ -119,3 +218,11 @@ their own authority. Tools/models/media have separate terms; private assets stay
 
 MIT for original repository materials. v0.4.0 is an experimental prerelease. The [release audit](docs/release-audit-2026-10-26.md)
 records package/check scope; current-source model routing is not newly evaluated. [ABVX ecosystem](docs/ecosystem.md).
+
+## Ecosystem references
+
+The executor applies explicit task and checkpoint ideas also used by [SET](https://github.com/markoblogo/SET)
+and the behavior-first testing workflow in [ABVX agent skills](https://github.com/markoblogo/abvx-agent-skills).
+These are references, not runtime dependencies. [AGENTS.md Generator](https://github.com/markoblogo/AGENTS.md_generator)
+is an optional source of repository-instruction practices; [ID](https://github.com/markoblogo/ID)
+and [Pomerado](https://github.com/Pomerado/pomerado) remain conditional candidates, not integrated components.

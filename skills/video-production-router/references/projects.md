@@ -1,5 +1,56 @@
 # Save and resume a production project
 
+## One explicit local execution
+
+The optional `executor.py` adds a bounded step to this journal. Register the source,
+an output of kind `review-report`, and a task that requires that output. Preview
+first, then explicitly execute exactly one local media inspection:
+
+```sh
+python3 skills/video-production-router/scripts/executor.py local/my-film/project.json --step inspect --source input:source --output report
+python3 skills/video-production-router/scripts/executor.py local/my-film/project.json --step inspect --source input:source --output report --execute
+```
+
+The step must be ready, dependencies and retained files valid, and the output
+unoccupied. To create a single contextual review clip, declare a `review-preview`
+output required by the ready step and run:
+
+```sh
+python3 skills/video-production-router/scripts/executor.py local/my-film/project.json --step review-clip --source output:film --output clip --tool review-clip --start 42 --end 44 --context 1
+python3 skills/video-production-router/scripts/executor.py local/my-film/project.json --step review-clip --source output:film --output clip --tool review-clip --start 42 --end 44 --context 1 --execute
+```
+
+Context is 0.1–5 seconds on each side; the requested interval plus context is at
+most 30 seconds. Edges are clamped to the source. The worker uses the existing
+editing proxy (640×360, 24 fps), adds silence when the source has no audio, and
+fully decodes the result. It records the actual bounds and exact source revision;
+the linked pending decision becomes stale when that source is replaced. This is
+a review proxy, not a corrected edit or an approval of the source/master.
+
+To compare an existing correction, first retain distinct before and after files
+and create a pinned revision request as described in [precise revisions](revisions.md).
+Declare a `revision-comparison` output required by the ready step, then preview and
+run the existing comparison helper through the executor:
+
+```sh
+python3 skills/video-production-router/scripts/executor.py local/my-film/project.json --step compare --source output:after --output comparison --tool revision-comparison --request output:revision:caption-position --context 1
+python3 skills/video-production-router/scripts/executor.py local/my-film/project.json --step compare --source output:after --output comparison --tool revision-comparison --request output:revision:caption-position --context 1 --execute
+```
+
+The resulting report and `review.md` link both review clips and, for video, their
+keyframes. An optional pair `--after-start` and `--after-end` maps an interval that
+moved. Source, request, comparison and previews are pinned in the journal; replacing
+any dependency makes the pending decision stale. Decode success does not establish
+that the requested change or preservation requirements passed. Record their actual
+checks using `revisions.py review`; neither this nor comparison approves the film.
+
+Only these three fixed local actions are permitted. The executor does not accept
+arbitrary commands or authorize remote calls, paid actions or publication.
+Cooperating invocations take one nonblocking host lock and the project lock. A run
+retains its output and records an event, but leaves the step planned for a human
+to inspect and mark. Failed executions record a failure; decode does not establish
+creative or listening quality. The lock cannot constrain unrelated applications.
+
 `project.py` stores a local brief, frozen plan, readable packet, file pins, manual
 step states and history. `resume` shows where to continue; it never runs production.
 Python standard library; checkpoint writes/locking are tested on macOS and Linux.
@@ -203,3 +254,19 @@ analytics to exact publication/master revisions (`outcome`, `results`). No compe
 checkpoint, analytics account access or automatic upload is introduced.
 For real canvas footage, [engine capture](engine-capture.md) records a bounded local
 session and a separate technical report; retain its files/checks here afterwards.
+
+
+## Optional resource, cost and recovery evidence
+
+[Studio foundations](studio-foundations.md) extend this same checkpoint with
+optional host/owned-worker observations, exact-decimal cost events and durable
+executor intents. `status --json` includes recorded costs and unresolved attempts;
+`brief`/completion diagnosis expose recovery rather than proposing a blind retry.
+Reconcile actual outcome with retained evidence; select `--retry-of` explicitly.
+No provider enforcement, automatic approval, paid call or extra database is implied.
+
+
+For a route-bound task use [selected-route admission](route-admission.md). The
+executor automatically enforces its current source/settings/requirements/output
+binding; no extra opt-in flag can bypass an existing selection. Only the declared
+local action is covered, and produced media still require separate review.

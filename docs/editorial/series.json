@@ -19,8 +19,8 @@
       "post": "docs/editorial/2026-10-26-framewright-studio-notes-01.md",
       "sources": "docs/editorial/2026-10-26-framewright-studio-notes-01-sources.json",
       "sha256": "9ecd76ca5412b12c2c666e039ac16e92f1a20b120ac5bc99a305ed042e2edcf6",
-      "state": "draft_prepared",
-      "blog_url": null,
+      "state": "published_owner_report",
+      "blog_url": "https://abvx.xyz/writing/ai-video-production-repeatable-workflows-framewright-01",
       "youtube_urls": [
         "https://youtu.be/6c3JXdIiosg",
         "https://youtu.be/B4zdWfFIkNE",
@@ -92,7 +92,17 @@
           "G04",
           "G05"
         ]
-      }
+      },
+      "publication_observations": [
+        {
+          "received_date": "2026-10-26",
+          "provenance": "owner_provided_url",
+          "url": "https://abvx.xyz/writing/ai-video-production-repeatable-workflows-framewright-01",
+          "independent_visibility": "access_failed_web_tool",
+          "text_and_cover_identity": "not_independently_verified"
+        }
+      ],
+      "current_document_sha256": "218305d1f87b85395c625dd52579b3947405c82abb130924286f45cb8510dfaa"
     }
   ],
   "automation": {

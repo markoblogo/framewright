@@ -1047,6 +1047,133 @@
       ],
       "rights_class": "conditional",
       "licence_note_sha256": "c7dabb70bb5d24729fdf80ea3d830a7d2acb79d05407a852b27a3664aa42cd8a"
+    },
+    "spline": {
+      "tasks": [
+        "3d",
+        "video",
+        "graphics"
+      ],
+      "inputs": [
+        "text",
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "9ec67db9f3299e32024fdacdeed938597bc3708053aa88e627e0b7c4f37d5cac"
+    },
+    "pixverse": {
+      "tasks": [
+        "video"
+      ],
+      "inputs": null,
+      "rights_class": "unknown",
+      "licence_note_sha256": "2009b96543f0f327a435cab83f28785a6fac44d22df100cdfeadb834267d63e2"
+    },
+    "runway": {
+      "tasks": [
+        "video"
+      ],
+      "inputs": null,
+      "rights_class": "unknown",
+      "licence_note_sha256": "2009b96543f0f327a435cab83f28785a6fac44d22df100cdfeadb834267d63e2"
+    },
+    "meshy": {
+      "tasks": [
+        "3d"
+      ],
+      "inputs": null,
+      "rights_class": "unknown",
+      "licence_note_sha256": "2009b96543f0f327a435cab83f28785a6fac44d22df100cdfeadb834267d63e2"
+    },
+    "opentimelineio": {
+      "tasks": [
+        "editing"
+      ],
+      "inputs": null,
+      "rights_class": "unknown",
+      "licence_note_sha256": "916ae4a485f4b115cf7d028ce6053a3a89f1ce8ddfe3d6fbf474994b4c634634"
+    },
+    "kitsu-zou": {
+      "tasks": [
+        "production-tracking"
+      ],
+      "inputs": null,
+      "rights_class": "unknown",
+      "licence_note_sha256": "7c3612fc273115b766f5217e97cb16b4694e0e41c4ab20bd3a5aca471278839b"
+    },
+    "wonderunit-storyboarder": {
+      "tasks": [
+        "storyboard"
+      ],
+      "inputs": null,
+      "rights_class": "unknown",
+      "licence_note_sha256": "469c308b039a4a755597117db33819fc1db486c23bcf701dac7f247b9c9edc3f"
+    },
+    "storytoolkitai": {
+      "tasks": [
+        "editing",
+        "analysis"
+      ],
+      "inputs": null,
+      "rights_class": "unknown",
+      "licence_note_sha256": "d88d84ad7bad6692a5f0daf952b51ca572014a42102eff68f2a4977fafd8da86"
+    },
+    "comfyui": {
+      "tasks": [
+        "illustration",
+        "video",
+        "audio",
+        "3d"
+      ],
+      "inputs": null,
+      "rights_class": "unknown",
+      "licence_note_sha256": "94b74b106a9fdc7a06d5ff10cb2c50fb07146ea23132d7aa737ea6edf5fec02e"
+    },
+    "langgraph": {
+      "tasks": [
+        "production-tracking"
+      ],
+      "inputs": null,
+      "rights_class": "unknown",
+      "licence_note_sha256": "b4d96d9632f0c492d4f1f223354cdd3e1f46e41f17c79678e5787043a650164a"
+    },
+    "promptfoo": {
+      "tasks": [
+        "analysis",
+        "production-tracking"
+      ],
+      "inputs": null,
+      "rights_class": "unknown",
+      "licence_note_sha256": "133dcfcb7b587937b6da32238181da862367949cee3484844f24fe0b918f1c46"
+    },
+    "litellm": {
+      "tasks": [
+        "production-tracking"
+      ],
+      "inputs": null,
+      "rights_class": "unknown",
+      "licence_note_sha256": "8577789b824f9d168524cd2ecc882359acdb245e360c95932759dafb02872dd6"
+    },
+    "psutil": {
+      "tasks": [
+        "analysis",
+        "production-tracking"
+      ],
+      "inputs": null,
+      "rights_class": "unknown",
+      "licence_note_sha256": "c25f621208902fdd644ca5ed1d10b96680969b973a0c2d17c1fa86b704362797"
+    },
+    "kdenlive": {
+      "tasks": [
+        "editing",
+        "video"
+      ],
+      "inputs": [
+        "video",
+        "audio"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "0370d15bd259360daa9b1a541fa81d5a822b1bb47c1090b816356b84ed34824e"
     }
   }
 }

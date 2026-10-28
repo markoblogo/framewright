@@ -1,10 +1,149 @@
 # Proposed experiment queue
 
+## RESOURCE-01 — host and process observations, planned 28 October
+
+[psutil scope and acceptance criteria](research/psutil-machine-observations-2026-10-28.md).
+Extend existing environment/intake snapshots with available RAM and a bounded
+executor-owned process sampler. Test a tiny child workload plus missing library,
+denied metrics, process exit/identity and partial coverage. Mark sampled peaks and
+unknowns honestly; no arbitrary process control, full host-fit verdict or model run.
+
+## COST-01 — project-wide cost evidence, planned 28 October
+
+[Contract, event draft and acceptance cases](research/litellm-project-costs-2026-10-28.md).
+First use synthetic/local receipts: model and non-model costs, duplicate import,
+multiple tags, retries, unknown charge, late settlement, refund and mixed units.
+Separate approval/estimate/reservation/observed/reconciled amounts. LiteLLM is an
+optional adapter after exact feature/edition/storage review; no gateway, database,
+paid provider or enforced project cap implemented by this research.
+
+## EVAL-01 — production-decision regression, planned 28 October
+
+[Six scenarios and evidence contract](research/promptfoo-production-decisions-2026-10-28.md).
+Weak host/free-only, no installs, no external transfer, retry budget, missing music
+rights and picture revision with frozen voice. Map to existing router cases, test
+offline assertion controls, then optionally compare a pinned Promptfoo adapter.
+Actual model evaluation follows the existing separately authorised bounded-run
+policy; missing traces remain insufficient evidence. No Promptfoo install or run.
+
+## STATE-01 — pilot/review/recovery loop, planned 28 October
+
+[Transition contract and acceptance cases](research/langgraph-state-and-approvals-2026-10-28.md).
+First use the current journal/executor with local fixtures and fake external effects:
+accepted / revision / route rejected, deferred review, stale input, repeated resume,
+restart and ambiguous submission. Assert no duplicate send or restored stale approval.
+Then optionally compare a minimal pinned LangGraph/local durable-checkpoint route;
+adopt only if measurable recovery/branching value justifies the dependency.
+No package installation, hosted service, model call or production migration performed.
+
+## COMFY-01 — one admitted local workflow, planned 28 October
+
+[Contract and draft card](research/comfyui-workflow-executor-2026-10-28.md).
+For a concrete generation need, choose one modest still-image graph with built-in
+nodes, exact approved weights, measured host resources and bounded settings.
+Test preflight refusal, successful output and controlled failure/cancellation;
+unknown submission must not trigger blind retries. No bulk custom-node installs,
+cloud fallback or video qualification inferred. Current executor adapter is not implemented.
+
+## SOURCE-01 — find / adapt / create, planned 28 October
+
+[Partial PlayMCP-source trial completed](experiments/source-first-playmcp.md): five
+sources, lexical speech/visual hits, honest misses, stale copied-source refusal and
+a proposed 34.3s recut accepted by the owner on 28 October. Semantic retrieval/automatic media
+understanding and StoryToolkitAI runtime remain pending; no new final film exported.
+
+[Raw-ASR MN7R follow-up](experiments/source-asr-mn7r.md): existing local tiny.en
+transcribed a different 36s film in 20.022s. Four of five reference-present queries
+yielded candidate segments; `bids` → `beads` caused a false miss. One absent-script
+query returned none. Raw import is reusable; listening and precise timing remain
+pending. No new StoryToolkitAI runtime qualification.
+
+[Multi-source follow-up](experiments/source-multicut-mn7r.md) exercises4 MN7R files,
+9 queries and a42.64s proposal:40.64s from3 videos plus a planned2s card. Three
+adaptations remain; no new capture/generation needed for this feature-summary
+concept. Two conditional annotation misses remain distinct from required material.
+At the proposal stage, owner review, mix/reframe and encoded QA remained pending.
+
+**Authorised draft follow-up:** owner agreed to the order, then requested assembly.
+The42.633s internal encode adds portrait insets, a continuous existing score under
+clean voice and an address end card. Sampled joins exposed old source fades;
+picture-only holds repair them with unchanged encoded audio. Encoded QA is retained
+per version. Owner accepted draftv2 and its mixed sound on28 October;the bounded
+trial is complete through an accepted internal draft. Independent motion/privacy
+review and any publication remain separate.
+
+[Source-first workflow and acceptance criteria](research/storytoolkitai-source-first-2026-10-28.md).
+On the next source-rich brief, prefer this bounded reuse trial before complex
+character generation: screen recording + spoken take + images → revision-bound
+content evidence → three retrieval queries including an absent request → 30–45s
+source-backed story proposal. Verify exact ranges and source-replacement invalidation.
+Use current local tools first; StoryToolkitAI standalone comparison is separately
+gated by build/model/resources. No paid Resolve/cloud assistant required. No StoryToolkitAI runtime trial run.
+
+## PREVIS-01 — staging alternatives, planned 28 October
+
+[Storyboarder method review and acceptance criteria](research/storyboarder-previsualization-2026-10-28.md).
+One authorised scene → three labelled low-resolution staging boards from saved
+camera/composition settings → owner choice bound to a revision → short rough animatic.
+Use current local tools sequentially; no paid generation or upstream code import.
+Original robot parcel/reveal is a fitting optional subject. Storyboarder installation
+is a separate compatibility/licence-gated trial, not required for the method test.
+
+## Editorial handoff and production diagnosis — planned, 28 October
+
+[Research, mapping and acceptance criteria](research/otio-kitsu-production-model-2026-10-28.md).
+**PROD-01:** [read-only diagnosis implemented and internally tested](experiments/completion-diagnosis.md)
+using existing mappings; real-production usefulness and any missing task/scene links
+remain to assess on the next owner-selected project.
+**OTIO-01:** [bounded MN7R export passed](experiments/otio-mn7r-handoff.md):
+1279frames/30fps, seven picture clips, separate voice/music, official0.18.1
+round-trip, picture/stem parity, missing/replaced controls and three native DJV
+samples. Baked effects stay explicit. The same-day Kdenlive26.08.2 follow-up
+passed native import,15-frame extraction,OTIO re-export and1264-frame MP4 render.
+Custom IDs are dropped; native URLs become absolute. Full listening, other editors
+and bidirectional journal handling remain unqualified. Kitsu/Zou service integration stays deferred
+until a concrete team workflow; no mandatory dependency or copied upstream code.
+
+## Creative editor / ASCII / Android trials — candidates, 27 October
+
+[Research and gates](research/creative-editors-ascii-krea-inshot-2026-10-27.md).
+[Partial pilot](experiments/creative-tools-pilot-2026-10-27.md): Devault sample
+exported at 720p; GLEA installed, but its 1080p render failed. Neither is broadly
+production-qualified. Android Studio was copied to external storage; emulator and
+InShot have not been set up or tested. Remaining trials are deferred.
+
+1. **Devault ASCII:** after Pocket OS resumes, test 5–10 seconds of cleared device footage against existing ASCII tools; compare legibility, motion and 1080p export. Browser-local processing is a vendor claim; a free account is required for export.
+2. **GLEA free editor:** a 15–20 second editable project → one revision → save/reopen → export. Resolve conflicting free-vs-PRO statements before any agent trial; do not buy a plan.
+3. **InShot via physical Android:** compare a short synthetic edit through free/open-source scrcpy with actual Android export and transfer. Device connection, debugging permission and premium entitlement are unverified; an emulator is a separate fallback.
+4. **Krea:** one synthetic Blender material/lighting reference only after confirming Blender 5.2+, account, free allowance, model terms and publication rights. Adobe hosts and Resolve Studio remain paid-host reserves; do not equate web access with a tested plugin.
+
+**27 October — Good Dog preparation:** [The Last Delivery](experiments/last-delivery.md)
+provides a humanoid walk and continuity case, not a validated quadruped workflow.
+For a future authorised production, test a cleared dog rig walking, stopping and
+turning against a visible floor from two cameras. Review foot contact, sliding,
+occlusion, scale and consistency before using the result in a story; retain failures.
+
+**26October MN7R update:** [two local masters](experiments/mn7r-promo.md) completed with native Motion Canvas and a locally cloned owner voice. Full film review pending. Spline MCP scene authoring worked; native video export is plan-gated, so original Blender geometry supplied the intro. Canva Craft remains untested pending exact model/allowance. Existing queued trials below keep their unmet gates; this record does not start another film.
+
 Updated 2026-10-26. This is a task-led backlog, not permission for unattended tests,
 installs, model downloads, spending, account grants or public media uploads.
 Use an owner-selected subject with authorised sources. Discuss the subject and bounded brief before
 each actual new-tool experiment. [Research](tool-research.md) ·
 [Decision ledger](../skills/video-production-router/references/review-ledger.json).
+
+**Owner selection policy:** prioritise free/open-source Mac tools. Paid and other-platform candidates remain reference reserves. New paid exploratory trials are not the default; use existing paid entitlements within their limits, or a minimal paid trial only for a concrete production need with an explicitly approved production budget. [Details](production-guide.md#owner-preference-free-open-source-and-macos-first).
+
+## Motion-studio library shortlist — planned, 2026-10-26
+
+[Assessment of all 20 tools and five bounded trials](research/motion-studio-libraries-2026-10-26.md). First choose a fitting production: rigged character/contact; PixiJS and 2D physics; animated glTF optimisation; local speech/caption comparison; or an editor/capture/motion comparison. Remotion, HyperFrames, FFmpeg and Three.js already have documented production use; Chatterbox is already queued. No research-only item is promoted to tested. No paid exploratory trial.
+
+## Post-release reuse and agent-action validation — planned
+
+[RV01–RV03](post-release-validation.md) are production-linked work blocks: measure
+reuse on the next fitting film, improve the existing open getting-started example,
+then test bounded agent actions. Prefer these questions when selecting a useful
+trial; no queue reorder, model budget or new production is implied. Outcomes also
+feed the book's G01/G03/G09 evidence gaps.
 
 ## Book examples supplied by future trials — planning links only
 
@@ -584,3 +723,51 @@ or a general scene-understanding claim. See [evidence](../experiments/2026-10-15
 engine, not the separately tested Tesseract Converter. Fictional portrait continuity,
 local M1 speech and FFmpeg assembly are recorded for this film; no broad perception
 or unattended production qualification. [Tool scope update](production-tools-2026-10-25.md).
+
+- **Pomerado:** conditional read-only synthetic-page integration test after verifying a free authorized model path; review generated code and permissions. See [assessment](research/ecosystem-orchestration-2026-10-27.md).
+
+## Mac-native and free applications — research intake, 27 October
+
+[Assessment and precise probes](research/mac-native-free-production-2026-10-27.md). Run **one at a time**, on an owner-selected production need; no installs or tests now. Prioritize QuickTime/Screenshot capture, then a bounded voice cleanup in Audacity or GarageBand, then one short iMovie or Shotcut edit. OBS and Shutter Encoder depend on a suitable capture/export need; Kdenlive and HandBrake are alternatives, and DaVinci Resolve Free is resource-gated. Existing FFmpeg/OpenScreen remain established only within their recorded scopes. Presence in an app folder is not a successful test, and GUI availability is not agent automation.
+
+## Online free and quota services — research intake, 27 October
+
+[Official-source terms, rights and candidate tests](research/online-free-quota-services-2026-10-27.md). Select a relevant production and run one provider at a time after checking exact free entitlement, terms, source permissions and upload approval. Prioritize a brief speech-cleanup/voice comparison, then a bounded PixVerse clip when the actual daily quota covers it, then a Meshy asset and separate Mixamo humanoid test. Tripo/Suno/ElevenLabs connect to existing research; Pika is paid/limited reference, not recurring free generation. Quotas are dated observations, not schedules or confirmed balances; no test, download, account creation, model call or spend is authorized by this entry.
+
+## OTIO-02 return intake — scoped pass,28 October
+
+[Real-source return test](experiments/otio-mn7r-handoff.md#safe-return-follow-up-otio-02):
+unchanged native export recognized;−15frame edit and9media hashes verified;
+explicit candidate staging preserved all old journal/step/output records. Three
+new reviews stay pending.14 new software cases,23 with exporter pass in native
+environment. No new render. Broader mappings/effects,actual returned-film review,
+final selection and composition adaptation remain future owner-selected work.
+
+
+## Studio foundations — bounded implementation,28 October
+
+[RESOURCE/COST/STATE/EVAL trial](experiments/studio-foundations.md): optional host and
+owned-worker observations, project cost evidence/reservations, durable local intent
+and explicit recovery, and six offline decision-assertion contracts. Actual root
+observation on this Mac is retained with partial child-tree/swap coverage. Cost and
+recovery controls are synthetic/local; there is no paid dispatcher, external API
+recovery or new model qualification. Optional psutil is not auto-installed.
+
+Next product integration: bind one selected route's requirements/limits/expected
+outputs to the existing executor. Next production, when needed, should be a coherent
+original YouTube-suitable film whose story fits the chosen tests, not a disconnected
+tool demo. No production or public upload starts from this record.
+
+The OTIO returned B candidate has since passed its technical and owner listening/
+creative checks and was explicitly selected as final. The pending gates described
+in the preceding intake checkpoint are historical, not current blockers for B.
+
+
+## ROUTE-01 local admission —28 October
+
+[Route bridge](experiments/route-admission.md) binds an actual selected intake stage
+to one supported local inspection/proxy action. Fresh pins,requirements,cost/limits
+and expected results are checked; intake,execution and acceptance stay separate.
+Other renderers,whole-route dispatch and paid/external execution remain unimplemented.
+A controlled saved-shot renderer is the next fitting adapter; use an original coherent
+YouTube-suitable film when production evidence is needed. No film starts here.

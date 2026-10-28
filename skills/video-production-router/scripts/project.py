@@ -14,6 +14,9 @@ BASE = Path(__file__).resolve().parent
 JOURNAL = runpy.run_path(str(BASE / "journal.py"))
 PRODUCTION = runpy.run_path(str(BASE / "production.py"))
 CONTENT = runpy.run_path(str(BASE / 'content.py'))
+COSTS = runpy.run_path(str(BASE / 'costs.py'))
+EXECUTOR_STATE = runpy.run_path(str(BASE / 'executor_state.py'))
+ADMISSION = runpy.run_path(str(BASE / 'admission.py'))
 MEDIA = runpy.run_path(str(BASE / "media_review.py"))
 
 
@@ -40,6 +43,7 @@ def file_record(path, root):
 def planning_sources():
     paths = [BASE / name for name in ['plan.py', 'music.py', 'terms.py', 'workflow.py', 'project.py', 'journal.py', 'packet.py', 'production.py', 'media_review.py', 'capture_check.py', 'project_summary.py', 'content.py', 'engine_capture.py', 'engine_capture.cjs', 'editing.py', 'revisions.py', 'templates.py', 'environment.py', 'trials.py', 'passports.py', 'shots.py', 'blender_shot_worker.py']]
     paths.append(BASE.parent / 'references/tools.json')
+    paths.extend(BASE / name for name in ['project_blockers.py','resources.py','costs.py','executor.py','executor_state.py','decision_checks.py','admission.py'])
     return {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 
 
@@ -135,6 +139,8 @@ def load(path):
         JOURNAL['validate'](data)
         PRODUCTION['validate_stored'](data)
         CONTENT['validate_stored'](data,digest)
+        COSTS['validate_stored'](data)
+        ADMISSION['validate_stored'](data)
     return data
 
 
@@ -158,6 +164,8 @@ def save(path, data):
         JOURNAL['validate'](data)
         PRODUCTION['validate_stored'](data)
         CONTENT['validate_stored'](data,digest)
+        COSTS['validate_stored'](data)
+        ADMISSION['validate_stored'](data)
     temporary = None
     try:
         with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=path.parent,
@@ -287,10 +295,14 @@ def summary(data, root):
     steps = {s['id']:s for s in data['steps']}
     problems = file_problems(data, root)
     gates=evidence_blockers(data,problems)
-    ready = [s['id'] for s in data['steps'] if s['state']=='planned' and s['id'] not in gates and
+    unresolved=[r for r in EXECUTOR_STATE['attempts'](data) if r['state']=='unresolved']
+    recovery_steps={r['step'] for r in unresolved}
+    ready = [s['id'] for s in data['steps'] if s['state']=='planned' and s['id'] not in gates and s['id'] not in recovery_steps and
              all(steps[d]['state']=='done' for d in s['depends_on'])] if not problems else []
     return {'project': data.get('project', {'goal': '', 'context': ''}), 'schema_version': data['schema_version'],
             'execution': 'not_started_by_project_cli', 'ready': ready,
+            'costs': COSTS['report'](data) if 'costs' in data else None,
+            'unresolved_attempts': [{'attempt':r['attempt'],'step':r['step'],'request_sha256':r['request_sha256']} for r in unresolved],
             'next_actions': [{'id':i,'label':steps[i]['label']} for i in ready],
             'waiting': {s['id']:{'party':s['waiting_for'],'reason':s['evidence']} for s in data['steps'] if s['state']=='blocked' and s.get('waiting_for')},
             'observations': JOURNAL['project'](data,problems), 'evidence_blockers':gates,
@@ -326,15 +338,25 @@ def main():
     metrics = commands.add_parser('outcome');metrics.add_argument('project',type=Path);metrics.add_argument('spec',type=Path);metrics.add_argument('--actor',required=True);metrics.add_argument('--provenance',choices=sorted(JOURNAL['PROVENANCE']),required=True)
     results = commands.add_parser('results');results.add_argument('project',type=Path);results.add_argument('--json',action='store_true');results.add_argument('--compare-age-hours',type=float);results.add_argument('--age-tolerance-hours',type=float,default=6)
     briefing = commands.add_parser('brief');briefing.add_argument('project',type=Path);briefing.add_argument('--json',action='store_true');briefing.add_argument('--limit',type=int,choices=range(1,11),default=3)
+    blockers = commands.add_parser('blockers');blockers.add_argument('project',type=Path);blockers.add_argument('--json',action='store_true');blockers.add_argument('--limit',type=int,choices=range(1,21),default=5)
     projection = commands.add_parser('summary');projection.add_argument('project',type=Path);projection.add_argument('--json',action='store_true');projection.add_argument('--public',action='store_true');projection.add_argument('--title');projection.add_argument('--include',action='append',default=[]);projection.add_argument('--output',type=Path);projection.add_argument('--replace',action='store_true');projection.add_argument('--check',action='store_true')
     args = parser.parse_args()
     try:
         path = args.project.resolve()
+        if args.command=='blockers':
+            checkpoint_bytes=path.read_bytes();data=load(path);state=summary(data,path.parent)
+            module=runpy.run_path(str(BASE/'project_blockers.py'))
+            view=module['diagnose'](data,state,check_kind)
+            view['checkpoint_sha256']=hashlib.sha256(checkpoint_bytes).hexdigest()
+            if path.read_bytes()!=checkpoint_bytes:raise ValueError('Project changed during diagnosis; retry')
+            print(json.dumps(view,indent=2,ensure_ascii=False) if args.json else module['markdown'](view,args.limit));return
         if args.command=='brief':
             checkpoint_bytes=path.read_bytes();data=load(path);state=summary(data,path.parent)
             module=runpy.run_path(str(BASE/'project_summary.py'))
             files=module['project'](data,path.parent,state['file_problems'],JOURNAL,hashlib.sha256(checkpoint_bytes).hexdigest())
             view=module['working_brief'](data,state,files,args.limit)
+            diagnosis=runpy.run_path(str(BASE/'project_blockers.py'))['diagnose'](data,state,check_kind)
+            view['completion']={'status':diagnosis['status'],**diagnosis['counts']}
             if path.read_bytes()!=checkpoint_bytes:raise ValueError('Project changed during brief generation; retry')
             print(json.dumps(view,indent=2,ensure_ascii=False) if args.json else module['brief_markdown'](view));return
         if args.command=='results':

@@ -1,0 +1,51 @@
+{
+  "schema": "framewright-provider-terms-v1",
+  "scope": "Dated research snapshots, not verified account access, quote, production qualification or rights clearance. Recheck before use.",
+  "providers": {
+    "pixverse": {
+      "name": "PixVerse Basic",
+      "cost_kind": "free_quota",
+      "quota": {
+        "initial_credits": 60,
+        "recurring_credits": 30,
+        "interval": "daily",
+        "reset": "00:00 UTC",
+        "expiry": "end of UTC day"
+      },
+      "limitations": "Operation prices vary; daily credits may not cover a selected generation. API billing differs.",
+      "rights": "Commercial and asset rights require current plan and terms review.",
+      "source": "https://pixverse.ai/en/ai-info-page",
+      "observed_on": "2026-10-27"
+    },
+    "runway": {
+      "name": "Runway Free",
+      "cost_kind": "free_quota",
+      "quota": {
+        "initial_credits": 125,
+        "recurring_credits": 0,
+        "interval": "none",
+        "reset": null,
+        "expiry": null
+      },
+      "limitations": "One-time allowance, not a daily or monthly refill; operation costs and eligibility vary.",
+      "rights": "Verify current output and source rights.",
+      "source": "https://help.runwayml.com/hc/en-us/articles/50404627334547-Free-plan-details",
+      "observed_on": "2026-10-27"
+    },
+    "meshy": {
+      "name": "Meshy Free",
+      "cost_kind": "free_quota",
+      "quota": {
+        "initial_credits": null,
+        "recurring_credits": 100,
+        "interval": "monthly",
+        "reset": "first day at 00:00 UTC",
+        "expiry": null
+      },
+      "limitations": "Specific operation costs, animation availability and export require verification.",
+      "rights": "Free model licence reported CC BY 4.0, attribution required; verify current terms and source rights.",
+      "source": "https://docs.meshy.ai/en/webapp/pricing",
+      "observed_on": "2026-10-27"
+    }
+  }
+}

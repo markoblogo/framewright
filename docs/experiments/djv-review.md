@@ -47,3 +47,12 @@ Repeat on the next one or two productions: actual A/B first/middle/last frames,
 adjacent-frame navigation, a played/listened passage, save/reopen/relocation,
 anchor/source integrity and explicit owner review. Keep failures; promote only
 repeatedly demonstrated scope. [Reusable procedure](../../skills/video-production-router/references/djv-review.md).
+
+## 28 October: scoped OTIO follow-up
+
+[MN7R handoff](otio-mn7r-handoff.md) natively opened the actual1279-frame OTIO in
+DJV3.7.5. Fixed-zoom/centre manifest captures at330,990,1240 showed correct offers,
+portrait adaptation and endcard pictures. Initial command capture remained black
+with a null View/Frame error and is retained. These three successful samples add
+OTIO picture evidence; they do not complete full playback/listening, A/B session
+retest or production qualification. No FFmpeg extraction was counted as DJV output.

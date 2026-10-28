@@ -1,0 +1,238 @@
+{
+  "date": "2026-10-26",
+  "case": "mn7r-promo",
+  "state": "local_exports_technical_pass_owner_final_review_pending",
+  "authority": "Owner authorised internal product filming with client/sensitive fields concealed; accepted short own-voice local clone probe. Horizontal YouTube kit; vertical video only, no music.",
+  "full_decode": {
+    "MN7R-Reels-EN-36s-NoMusic.mp4": {
+      "sha256": "9693020cb94fd255e37ab510a7d587505e4113470b935edd2426a6f47273495b",
+      "bytes": 8340378,
+      "decode_exit": 0,
+      "duration": "36.000000",
+      "video": {
+        "codec_name": "h264",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1",
+        "pix_fmt": "yuvj420p",
+        "color_space": "bt709"
+      },
+      "loudness_LUFS": "-16.70",
+      "true_peak_dBTP": "-4.29",
+      "black_intervals_over_0_5s": []
+    },
+    "MN7R-Overview-EN-1080p.mp4": {
+      "sha256": "8e636d9cf49088571c282b94ce80addb0d7583807a094328436c67d0f88cd3f7",
+      "bytes": 37084641,
+      "decode_exit": 0,
+      "duration": "114.000000",
+      "video": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "pix_fmt": "yuvj420p",
+        "color_space": "bt709"
+      },
+      "loudness_LUFS": "-16.11",
+      "true_peak_dBTP": "-2.24",
+      "black_intervals_over_0_5s": []
+    }
+  },
+  "captions": {
+    "cues": 30,
+    "source": "Original English script with local ASR-assisted timing",
+    "bounds": "monotonic, nonoverlapping, within master",
+    "pronunciation": "not certified by ASR"
+  },
+  "thumbnail": {
+    "sha256": "09cd0b596b6cd4c46800877c5de30f60454386a3f695297567ad9dc9352bf3fc",
+    "bytes": 138795,
+    "width": 1920,
+    "height": 1080,
+    "format": "jpg",
+    "operator_review": "Full and 320px text readability checked"
+  },
+  "kit": {
+    "YouTube-EN.md": {
+      "sha256": "1ddb3c4a3afb82e51812a8a28e367d254f9ae276d95a33717e37dc9210598134",
+      "bytes": 2336
+    },
+    "MN7R-Reels-EN-36s-NoMusic.mp4": {
+      "sha256": "9693020cb94fd255e37ab510a7d587505e4113470b935edd2426a6f47273495b",
+      "bytes": 8340378
+    },
+    "MN7R-Overview-EN.srt": {
+      "sha256": "207515dd45d3e9c1dd5a8b4d8f9b495a4f01046ba23bc49ada644028b275cfc3",
+      "bytes": 2439
+    },
+    "MN7R-YouTube-Thumbnail.jpg": {
+      "sha256": "09cd0b596b6cd4c46800877c5de30f60454386a3f695297567ad9dc9352bf3fc",
+      "bytes": 138795
+    },
+    "MN7R-Overview-EN-1080p.mp4": {
+      "sha256": "8e636d9cf49088571c282b94ce80addb0d7583807a094328436c67d0f88cd3f7",
+      "bytes": 37084641
+    }
+  },
+  "picture_review": "12 main and 7 portrait encoded samples; corrected masks and title cover inspected. Not a claim of exhaustive human playback.",
+  "sound": {
+    "main": "Original procedural music/SFX plus local authorised owner clone",
+    "reels": "Voice only; no music or transition SFX mixed",
+    "external_reference_audio_uploads": 0,
+    "final_human_listening": "pending"
+  },
+  "native_render": {
+    "tool": "Motion Canvas",
+    "version": "3.17.2",
+    "vite": "5.4.21",
+    "typescript": "5.9.3",
+    "main_source_frames": 3421,
+    "reels_source_frames": 1081,
+    "exporter": "native Renderer/ImageExporter JPEG then FFmpeg H264/AAC",
+    "not_used": [
+      "HyperFrames renderer",
+      "Canva generation",
+      "Spline video export"
+    ]
+  },
+  "voice": {
+    "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16",
+    "revision": "1eccf1cb2519b5a4e8a95b5f0544f3303568164f",
+    "runtime": {
+      "mlx_audio": "0.6.2"
+    },
+    "reference_seconds": 6.86,
+    "reference_retention": "Private owner recording, not distributed",
+    "reference_language": "English",
+    "probe_acceptance": "owner_reported_accepted",
+    "host": "MacBook Air M4, 16GB RAM",
+    "peak_memory": "not_measured",
+    "voice_quality_other_languages": "not_tested",
+    "brand_pronunciation": "MN7R is spoken as Monitor; written brand/real mn7r.com URLs remain intact."
+  },
+  "spline": {
+    "state": "partial",
+    "server": "native Spline MCP 0.1.0",
+    "objects": 24,
+    "scene": "Original three-card offer/match/execution scene",
+    "editable_owner_file_retained": true,
+    "native_video_export": "Upgrade to export gate observed; no purchase",
+    "fallback": "Original geometry rebuilt in Blender 4.5.15 LTS, EEVEE Next; 9s 216-frame intro",
+    "cloud_mcp_auth": "not completed; native authorised app path used",
+    "video_capture_qualification": "not established"
+  },
+  "canva_craft": {
+    "state": "not_run",
+    "reason": "Connected image tool does not expose exact model selector; allowance unconfirmed"
+  },
+  "precise_revisions": {
+    "defect": "Boss analytics source retained broker aliases and private aggregate operational figures",
+    "change": "Hide the top metric values and broker/date axis labels before public handoff",
+    "preserve": "All narration, timing, other scenes, picture treatment and soundtrack",
+    "range_seconds": [
+      55.4,
+      67.4
+    ],
+    "requested_by": "operator QA under owner-approved redaction requirement",
+    "unnecessary_whole_film_rebuilds": 0,
+    "native_renderer": "Motion Canvas range export; retained unaffected frames",
+    "review": "operator corrected encoded-context inspection passed; owner review pending",
+    "native_frames_replaced": 362,
+    "native_frame_range": [
+      "001662",
+      "002023"
+    ],
+    "unaffected_frames": 3059,
+    "unaffected_frames_before_sha256": "b0b8d30a4f2c04ead0ebaf01841571c27d94f378893f91933b771d1411164c4b",
+    "unaffected_frames_after_sha256": "b0b8d30a4f2c04ead0ebaf01841571c27d94f378893f91933b771d1411164c4b",
+    "unchanged_scope_check": "pass",
+    "second_QA_correction": {
+      "defect": "Initial coarse masking obscured too much of the Light layout and the Ambient audio control",
+      "change": "Use tightly bounded masks over client aliases, broker prefixes and owner name; keep controls, anonymous market fields and action buttons readable",
+      "ranges_seconds": [
+        [
+          9.2,
+          32.15
+        ],
+        [
+          67.39,
+          87.86
+        ]
+      ],
+      "preserve": "Speech, music, timing, all other scenes, client anonymity",
+      "authority": "Owner explicitly allowed all internal filming with client names and sensitive items obscured",
+      "review": "operator encoded contact/still inspection passed; owner review pending",
+      "native_frames_replaced": 1305,
+      "unaffected_frames": 2116,
+      "unaffected_before_sha256": "2c0b0c87077e7bd25d80f82499296f244f485b2d56ad0da1fb9ded0f9b9f92fd",
+      "unaffected_after_sha256": "2c0b0c87077e7bd25d80f82499296f244f485b2d56ad0da1fb9ded0f9b9f92fd",
+      "unchanged_scope_check": "pass"
+    }
+  },
+  "RV01": {
+    "state": "partial",
+    "demonstrated": "Native range-only visual QA corrections with unchanged outside-range frame hashes and existing voice/music timeline",
+    "not_demonstrated": [
+      "Comparable second episode",
+      "Fresh independent agent resume test",
+      "Measured active author time",
+      "Framewright versus ordinary-folder efficiency comparison"
+    ]
+  },
+  "failures": [
+    "Restricted GPU process could not access Metal; approved local GPU run worked",
+    "Native Spline video export gated by plan; no silent export qualification",
+    "Initial coarse masks obscured useful controls; tightened locally",
+    "Contact-sheet extraction attempted before encode completion; retried only after completion"
+  ],
+  "owner_acceptance": {
+    "short_voice_probe": "accepted",
+    "complete_main": "pending",
+    "complete_reels": "pending"
+  },
+  "publication": {
+    "main": {
+      "url": "https://youtu.be/kcFco2HbFCY",
+      "status": "owner_reported",
+      "visibility": "unknown",
+      "independent_watch_page": "fetch_failed_cache_miss",
+      "uploaded_file_identity": "not_verified"
+    },
+    "reels": "no_publication_link_supplied",
+    "audience_metrics": "not_measured"
+  },
+  "privacy": "Only sanitised screenshots enter render/review directories. Raw captures, voice reference, models, local checkpoint and app/OAuth state stay private; no copied upstream code in Git.",
+  "brand_pronunciation_revision": {
+    "requested_by": "owner",
+    "request": "MN7R is pronounced Monitor, not M N seven R",
+    "visuals": "unchanged encoded H264 packets",
+    "main_audio_ranges": [
+      [
+        9.2,
+        22.31
+      ],
+      [
+        105.03999999999999,
+        113.99
+      ]
+    ],
+    "main_outside_ranges_pcm_sha256_before": "f3de1f6c1300a585224c4cc7da54a77bdaa5afd80068a069af86df4957622a93",
+    "main_outside_ranges_pcm_sha256_after": "f3de1f6c1300a585224c4cc7da54a77bdaa5afd80068a069af86df4957622a93",
+    "reels_raw_source_sentence_boundary": 26.18,
+    "reels_replaced_from_master_seconds": 29.488895833333334,
+    "music": "Existing main score retained; music blend rebuilt only inside two changed scene windows. Outside audio PCM preserved; Reels remains voice only.",
+    "files": {
+      "MN7R-Overview-EN-1080p.mp4": {
+        "video_packets_before": "SHA256=3bca0e8685e3d0b803f269db9f336001261da8a8b297123aae00e769ef5a9eb3",
+        "video_packets_after": "SHA256=3bca0e8685e3d0b803f269db9f336001261da8a8b297123aae00e769ef5a9eb3",
+        "sha256": "8e636d9cf49088571c282b94ce80addb0d7583807a094328436c67d0f88cd3f7"
+      },
+      "MN7R-Reels-EN-36s-NoMusic.mp4": {
+        "video_packets_before": "SHA256=646dc3ee48a3d9aff4e46268332652174dfcd33b19f3600bc5b844c370ea20ec",
+        "video_packets_after": "SHA256=646dc3ee48a3d9aff4e46268332652174dfcd33b19f3600bc5b844c370ea20ec",
+        "sha256": "9693020cb94fd255e37ab510a7d587505e4113470b935edd2426a6f47273495b"
+      }
+    }
+  }
+}

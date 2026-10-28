@@ -1,5 +1,21 @@
 # Grow the lab without growing unsupported claims
 
+[Selected-route admission](experiments/route-admission.md): exact retained route,
+source,requirements,limits and output contract before one local inspection/proxy;
+whole-route/paid dispatch remain outside scope.
+
+[Studio foundations](experiments/studio-foundations.md): optional bounded resource
+observations, project cost events, local recovery and decision assertions; native
+short process probe plus synthetic controls, without new production/model calls.
+
+[The Last Delivery](experiments/last-delivery.md): local Blender robot walk, prop
+and continuity corrections, two-character meeting and a 33-second accepted cut.
+[YouTube link](https://youtu.be/GY5UhZVQG14) is owner-reported; playback and uploaded
+file identity are unverified. Foot contact, expressive acting and scene continuity
+remain bounded follow-up work for Good Dog.
+
+[MN7R overview and Reels](experiments/mn7r-promo.md):114s horizontal YouTube kit and36s voice-only portrait, real redacted product screens, native Motion Canvas and local owner-clone narration. Short clone probe accepted; full films technically checked. The [overview YouTube link](https://youtu.be/kcFco2HbFCY) is owner-reported; full-master review and independent playback remain unverified. Spline authoring partial/export-gated; Canva Craft not run. Registry now contains42 final exports; acceptance/publication remain separate.
+
 [Internal Blender replay](experiments/blender-shot-replay.md): saved original scene,
 36 equal repeated frames,12 matching subrange frames, two camera setups, one-light
 range edit and sample-aligned PCM. Portable4.5.15 LTS/CPU on one Mac; restricted
@@ -153,3 +169,5 @@ and a French guide. Overall first preview accepted; a pixel-clarity revision and
 its separate delivery checks are recorded. This brings the registry to **39 final
 exports**; v1/v2 are one production. [YouTube publication](https://youtu.be/IQ3CdzPzFHw)
 is owner-reported; visibility, playback and audience results remain unverified.
+
+- [Creative tools pilot, 27 October 2026](experiments/creative-tools-pilot-2026-10-27.md) — Devault sample export; GLEA render failure; Android and Krea pending.

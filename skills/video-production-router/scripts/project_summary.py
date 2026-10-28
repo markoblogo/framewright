@@ -94,6 +94,7 @@ def working_brief(data, status, files, limit=3):
     rechecks.extend({'receipt':r['id'],'subject':r['subject'],'kind':r['kind'],'reason':r['result']} for r in status['observations']['effective'] if r['kind'] in {'technical','listening','creative','provider'} and r['result'] in {'pending','fail','rejected'})
     waiting=[{'task':k,**v} for k,v in status['waiting'].items()]
     blockers=[{'task':k,'reason':v} for k,v in status['blocked'].items() if k not in status['waiting']]
+    blockers.extend({'task':r['step'],'reason':'Unresolved executor attempt '+r['attempt']} for r in status.get('unresolved_attempts',[]))
     revisions={}
     for e in data['history']:
         if e['action'] in {'retain_input','retain_output'} and e.get('previous'):
@@ -102,6 +103,7 @@ def working_brief(data, status, files, limit=3):
     recent=list(reversed(list(revisions.values())))
     if changes:kind,label='file_review','Review changed, missing or unavailable retained files before production'
     elif status['evidence_blockers']:kind,label='evidence_review','Review stale or unresolved checks before dependent work'
+    elif status.get('unresolved_attempts'):kind,label='operation_recovery','Reconcile the interrupted executor attempt before repeating work'
     elif status['next_actions']:kind,label='ready_task',status['next_actions'][0]['label']
     elif waiting:kind,label='waiting','Obtain the explicitly recorded input or decision; keep the wait in force'
     elif blockers:kind,label='blocked','Resolve the recorded constraint before dependent production; no authority inferred'
@@ -117,6 +119,8 @@ def working_brief(data, status, files, limit=3):
 
 def brief_markdown(view):
     lines=['# Working brief','', 'Goal: '+cell(view['goal']),'']
+    if view.get('completion'):
+        lines+=['Completion diagnosis: '+cell(view['completion']['status'])+'; '+str(view['completion']['blockers'])+' blockers. Use project.py blockers PROJECT for reasons.','']
     for key,label in [('accepted','Accepted work'),('file_changes','Current file problems'),('recent_revisions','Most recent recorded replacements'),('not_retained','Declared, not retained'),('needs_recheck','Checks to review'),('waiting','Explicit waits'),('blockers','Recorded constraints'),('ready_tasks','Recorded ready tasks')]:
         rows=view[key];total=view['counts'][key]
         lines.append(label+' ('+str(total)+')'+(': showing '+str(len(rows)) if len(rows)<total else '')+':')

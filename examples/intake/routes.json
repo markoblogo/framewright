@@ -1,0 +1,5 @@
+{"routes":[
+ {"id":"local-example","label":"Local tools (example; not automatically selected)","cost_kind":"free_local","cost":0,"currency":"USD","evidence":"tested_scoped"},
+ {"id":"quota-example","label":"Free-quota provider (terms and access unknown)","cost_kind":"free_quota","cost":null,"currency":"credits","evidence":"unknown"},
+ {"id":"paid-example","label":"Paid generation (quote required)","cost_kind":"paid","cost":null,"currency":"USD","evidence":"unknown"}
+]}

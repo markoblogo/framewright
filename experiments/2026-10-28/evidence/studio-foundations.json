@@ -1,0 +1,81 @@
+{
+  "schema": "framewright-studio-foundations-trial-v1",
+  "date": "2026-10-28",
+  "scope": "Local synthetic controls and one bounded native resource probe; no new film or agent evaluation",
+  "resources": {
+    "optional_backend": "psutil",
+    "version": "7.2.0",
+    "native_platform": "Darwin",
+    "native_architecture": "arm64",
+    "worker_samples": 11,
+    "worker_sampled_peak_rss_bytes": 18006016,
+    "memory_status": "observed",
+    "partial_coverage": true,
+    "coverage_limits": [
+      "Child tree unavailable; root-only coverage"
+    ],
+    "workload_qualified": false
+  },
+  "costs": {
+    "status": "synthetic_controls_passed",
+    "exact_decimal": true,
+    "supplier_receipt_dedup": true,
+    "mixed_units_separate": true,
+    "unknown_exposure_preserved": true,
+    "paid_executor_enforcement": false,
+    "litellm_tested": false
+  },
+  "recovery": {
+    "status": "local_intent_reconciliation_controls_passed",
+    "durable_intent_before_dispatch": true,
+    "explicit_retry_required": true,
+    "changed_retry_rejected": true,
+    "external_api_recovery_tested": false,
+    "langgraph_adopted": false
+  },
+  "decisions": {
+    "status": "assertion_controls_only",
+    "contracts": 6,
+    "semantic_review": "pending",
+    "model_qualified": false,
+    "promptfoo_tested": false,
+    "control_matrix": {
+      "compliant": 6,
+      "violating": 6,
+      "incomplete": 6,
+      "all_expected_assertion_outcomes_matched": true
+    }
+  },
+  "offline_checks": {
+    "unit_suite": {
+      "run": 451,
+      "skipped_optional_dependency_cases": 15,
+      "result": "pass"
+    },
+    "focused_affected_cases": {
+      "run": 48,
+      "result": "pass"
+    },
+    "router_storyboard_evidence_integrity": "pass_after_current_unqualified_source_fingerprint_refresh",
+    "initial_followup_failure": "Stale current_source_tree_sha256 after new source files; historical evaluated packets untouched",
+    "local_links": "pass",
+    "generated_tool_reference": "pass",
+    "temporary_package_smoke": "pass",
+    "release_created": false
+  },
+  "model_calls": 0,
+  "paid_calls": 0,
+  "new_production": false,
+  "public_uploads": 0,
+  "release_created": false,
+  "cli_trial": {
+    "same_project_costs_and_executor": true,
+    "synthetic_remaining_usd": "2.60",
+    "duplicate_receipt_import": "no_op",
+    "worker_resource_status": "observed",
+    "worker_sample_count": 1,
+    "terminal_state": "produced",
+    "acceptance_state": "review_pending",
+    "source": "Original one-second synthetic silence;not a creative production"
+  }
+}
