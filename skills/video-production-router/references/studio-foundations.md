@@ -121,3 +121,11 @@ The cooperating local POSIX executors share one per-user lock under `/tmp`,
 independent of TMPDIR. Moving scratch files to another volume does not permit
 a concurrent executor. This remains an advisory lock for these local commands,
 not coordination with unrelated tools or remote machines.
+
+Inspection/proxy workers inherit the open lock and a parent-independent deadline.
+TERM/HUP/INT interruption stops and reaps their owned group; abrupt executor loss
+leaves its durable intent unresolved and exclusion held until the worker exits.
+This worker-supervision scope does not add a remote queue or managed worker for
+the synchronous revision-comparison helper. Corrected settlements must also
+cover all existing adjustments; negative net billing evidence is rejected until
+explicit reconciliation, rather than inflating the available ledger balance.

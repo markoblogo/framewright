@@ -92,3 +92,7 @@ Future adapters need their own executable/format/resource/rights/cost contracts 
 trials. Paid/external actions additionally need authority, reservations, provider
 job identity/reconciliation and ambiguity handling. This implementation does not
 supply a transport sandbox, remote idempotency or a general generation scheduler.
+
+Relative model paths preserve the retained manifest directory; output disk checks
+still use the project volume. Inspection/proxy workers inherit the host lock and
+a process-group deadline, including when the executor itself exits abruptly.

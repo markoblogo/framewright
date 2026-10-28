@@ -121,6 +121,22 @@ class RouteAdmissionTest(unittest.TestCase):
   self.assertFalse(any(e['action']=='executor_intent' for e in data['history']))
   self.assertIsNone(data['artifacts']['report']['file'])
 
+ def test_relative_models_keep_the_retained_manifest_directory(self):
+  import hashlib
+  folder=self.root/'manifests';folder.mkdir()
+  weights=folder/'weights.bin';weights.write_bytes(b'original prerequisite')
+  self.env['models']=[{'id':'fixture','path':'weights.bin','sha256':hashlib.sha256(weights.read_bytes()).hexdigest()}]
+  manifest=folder/'requirements.json';manifest.write_text(json.dumps(self.env))
+  self.call('project.py','retain',self.project,'requirements',manifest,'--replace')
+  self.select()
+  result=json.loads(self.call('admission.py','check',self.project,'--step','inspect').stdout)
+  self.assertEqual(result['result'],'admitted_local_action')
+  weights.unlink()
+  (self.root/'weights.bin').write_bytes(b'original prerequisite')
+  result=json.loads(self.call('admission.py','check',self.project,'--step','inspect').stdout)
+  self.assertEqual(result['result'],'blocked')
+  self.assertFalse(self.intents())
+
  def test_scratch_volume_failure_is_visible_even_when_working_volume_fits(self):
   import runpy
   from types import SimpleNamespace

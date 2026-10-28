@@ -139,22 +139,24 @@ def run(args):
             try:
                 with tempfile.TemporaryDirectory(prefix='.executor-', dir=project.parent) as temporary:
                     temp_output = Path(temporary) / 'preview.mp4'
-                    if args.tool == 'local-media-review':
-                        command = [sys.executable, str(BASE / 'media_review.py'), str(source)]
-                    else:
-                        command = [sys.executable, str(BASE / 'executor_clip_worker.py'), str(source),
-                                   str(temp_output), str(args.start), str(args.end), str(args.context)]
+                    seconds = gate['limits']['worker_seconds'] if gate else 180
+                    arguments = [str(source)] if args.tool == 'local-media-review' else [
+                        str(source), str(temp_output), str(args.start), str(args.end), str(args.context)]
+                    command = [sys.executable, str(BASE / 'executor_worker.py'), str(fd),
+                               str(seconds), args.tool, *arguments]
                     child = subprocess.Popen(command,
                                              stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
-                                             start_new_session=True)
+                                             start_new_session=True, pass_fds=(fd,))
                     if args.observe_resources:
                         sampler = RESOURCES['OwnedSampler'](child.pid).start()
                     try:
                         stdout, stderr = child.communicate(timeout=gate['limits']['worker_seconds'] if gate else 180)
-                    except subprocess.TimeoutExpired:
-                        os.killpg(child.pid, signal.SIGKILL)
+                    except BaseException:
+                        # Termination, Ctrl-C and timeouts must not leave a detached worker.
+                        try: os.killpg(child.pid, signal.SIGKILL)
+                        except ProcessLookupError: pass
                         child.communicate()
-                        raise ValueError('Inspection timed out; its process group was stopped')
+                        raise
                     finally:
                         if sampler: resources['worker'] = sampler.finish()
                     if child.returncode:
@@ -226,6 +228,10 @@ def main():
     parser.add_argument('--observe-resources', action='store_true', help='Optional owned-worker sampling; no auto-install or host-fit claim')
     parser.add_argument('--execute', action='store_true', help='Explicitly run this one local inspection')
     args = parser.parse_args()
+    def interrupted(signum, _frame):
+        raise ValueError('Execution interrupted by signal ' + str(signum))
+    for signum in (signal.SIGTERM, signal.SIGHUP, signal.SIGINT):
+        signal.signal(signum, interrupted)
     try:
         print(json.dumps(run(args), indent=2))
     except (OSError, ValueError, KeyError) as exc:

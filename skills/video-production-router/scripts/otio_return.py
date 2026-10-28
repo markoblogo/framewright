@@ -49,6 +49,7 @@ def canonical(path,checked,o,pins):
     t=o.adapters.read_from_file(str(path),adapter_name='otio_json');rate=checked['spec']['rate']
     if not isinstance(t,o.schema.Timeline):raise ValueError('Expected one Timeline')
     if t.global_start_time is not None and frame(t.global_start_time,rate)!=0:raise ValueError('Nonzero global timecode unsupported')
+    if t.tracks.source_range is not None:raise ValueError('Stack source ranges unsupported; flatten explicitly first')
     if t.tracks.effects:raise ValueError('Stack effects unsupported; bake explicitly first')
     if not t.tracks.enabled:raise ValueError('Disabled stack unsupported')
     expected={x['id']:x['kind'] for x in checked['spec']['tracks']}
@@ -60,6 +61,7 @@ def canonical(path,checked,o,pins):
     for tr in t.tracks:
         kind='video' if tr.kind==o.schema.TrackKind.Video else 'audio' if tr.kind==o.schema.TrackKind.Audio else None
         if tr.name not in expected or expected[tr.name]!=kind or tr.name in rows:raise ValueError('Track names/kinds require explicit unambiguous mapping')
+        if tr.source_range is not None:raise ValueError('Track source ranges unsupported; flatten explicitly first')
         if tr.effects or len(tr)>10000:raise ValueError('Track effects/oversized edit unsupported')
         items=[];cursor=0
         for item in tr:

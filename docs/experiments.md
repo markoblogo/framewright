@@ -171,3 +171,7 @@ exports**; v1/v2 are one production. [YouTube publication](https://youtu.be/IQ3C
 is owner-reported; visibility, playback and audience results remain unverified.
 
 - [Creative tools pilot, 27 October 2026](experiments/creative-tools-pilot-2026-10-27.md) — Devault sample export; GLEA render failure; Android and Krea pending.
+
+[PR #46 checks and review corrections](experiments/pr46-review.md) records the
+packaging boundary and fixes for OTIO trims, settlement corrections, model paths
+and interrupted local workers.

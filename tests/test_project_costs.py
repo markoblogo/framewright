@@ -54,6 +54,17 @@ class ProjectCostsTest(unittest.TestCase):
   with self.assertRaises(ValueError):self.add('settle','2',receipt='supplier/one')
   with self.assertRaises(ValueError):self.add('adjust','-2',receipt='refund/too-much')
 
+ def test_corrected_settlement_cannot_make_existing_refunds_negative(self):
+  self.add('limit','10');self.add('settle','4',receipt='bill/original')
+  self.add('adjust','-3',receipt='bill/refund')
+  before=json.dumps(self.data,sort_keys=True)
+  with self.assertRaises(ValueError):self.add('settle','2',receipt='bill/correction')
+  self.assertEqual(json.dumps(self.data,sort_keys=True),before)
+  self.assertEqual(self.report()['units']['USD']['remaining'],'9')
+  self.add('settle','3',receipt='bill/correct-valid')
+  self.assertEqual(self.report()['units']['USD']['known_exposure'],'0')
+  self.assertEqual(self.report()['units']['USD']['remaining'],'10')
+
  def test_units_unknowns_and_hash_validation(self):
   self.add('limit','10');self.add('estimate',None);self.add('usage',None)
   self.add('limit','100',unit='credits');self.add('settle','25',unit='credits',op='other',receipt='credit/one')

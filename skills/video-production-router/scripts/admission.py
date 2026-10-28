@@ -28,7 +28,7 @@ ARGUMENTS={'start','end','context','request','after_start','after_end','observe_
 def digest(value):return hashlib.sha256(json.dumps(value,sort_keys=True,ensure_ascii=True).encode()).hexdigest()
 
 def implementation():
- paths=[BASE/n for n in ['admission.py','executor.py','executor_clip_worker.py','environment.py','resources.py','costs.py','editing.py','media_review.py']]
+ paths=[BASE/n for n in ['admission.py','executor.py','executor_worker.py','executor_clip_worker.py','environment.py','resources.py','costs.py','editing.py','media_review.py']]
  paths.append(BASE.parent/'references/intake-cost-facets.json')
  return {p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 
@@ -131,7 +131,9 @@ def check(data,project,step,P,invocation=None):
  if step not in state['ready']:blockers.append('Task dependencies,waits,evidence or unresolved attempt block execution')
  # Do not inspect different/new requirements or source after an earlier pin mismatch.
  if not blockers:
-  env,_=read_subject(data,root,spec['environment_subject'],P)
+  env,env_pin=read_subject(data,root,spec['environment_subject'],P)
+  manifest_root=(root/env_pin['path']).resolve(strict=True).parent
+  env={**env,'models':[{**m,'path':str(manifest_root/m['path'])} for m in env['models']]}
   snapshot=ENV['inspect'](env,root,probe_versions=True,observe_resources=True)
   evidence['environment']=snapshot
   if snapshot['technical_status']!='ready':blockers.append('Declared runtime prerequisites are not confirmed')

@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Reject unsupported OTIO composition trims, retain manifest-relative model paths,
+  and prevent corrected settlements from exceeding existing refund bounds. Local
+  inspection/proxy workers inherit exclusion and their own deadline; interruption
+  stops the owned process group before the executor releases its lock.
+
 - Add private producer intake and comparable source-aware routes, with persisted
   free-only preferences and dated platform/cost conditions. Unknown access, prices
   and workload fit stay explicit; proposals do not authorise execution.

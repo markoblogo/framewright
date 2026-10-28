@@ -134,3 +134,6 @@ journal save; validation failures are tested not to mutate the project. A filesy
 failure after packet writing can leave an unregistered packet; that file is not a
 completed intake/approval, and a retry needs a fresh path. No automatic overwrite,
 composition rewrite, final-version switch or bidirectional approval synchronization.
+
+Returned Track/Stack composition source ranges are rejected in this bounded profile;
+flatten them into explicit child-clip ranges before comparison. They are not ignored.

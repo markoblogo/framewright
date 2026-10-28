@@ -124,6 +124,9 @@ def _record(data,event,P):
   if any(r['kind'] in {'reserve','settle','release'} for r in prior):raise ValueError('Use a new attempt; do not reuse an existing reservation')
   remaining=report(data)['units'].get(e['unit'],{}).get('remaining')
   if remaining is None or amount(e['amount'])>Decimal(remaining):raise ValueError('Missing/unknown/insufficient recorded budget; reservation refused')
+ if e['kind']=='settle':
+  refunds=sum((amount(r['amount'],True) for r in prior if r['kind']=='adjust'),Decimal(0))
+  if amount(e['amount'])+refunds<0:raise ValueError('Corrected settlement is below existing refunds; reconcile adjustments first')
  if e['kind']=='adjust':
   settlements=[r for r in prior if r['kind']=='settle']
   if not settlements:raise ValueError('Adjustment requires a reconciled operation')

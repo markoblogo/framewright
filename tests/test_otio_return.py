@@ -73,6 +73,15 @@ class OtioReturnTest(unittest.TestCase):
         self.timeline.tracks.append(self.o.schema.Track(name='Extra',kind=self.o.schema.TrackKind.Audio));self.save_after();self.inspect(ok=False)
         self.assertFalse(self.report.exists())
 
+    def test_composition_level_trims_are_rejected_before_comparison(self):
+        track=self.timeline.tracks[0]
+        span=self.o.opentime.TimeRange(self.o.opentime.RationalTime(15,30),self.o.opentime.RationalTime(60,30))
+        track.source_range=span;self.save_after()
+        self.inspect(ok=False);self.assertFalse(self.report.exists())
+        track.source_range=None
+        self.timeline.tracks.source_range=span;self.save_after()
+        self.inspect(ok=False);self.assertFalse(self.report.exists())
+
     def project_cli(self,*args):
         r=subprocess.run([sys.executable,str(BASE/'project.py'),*map(str,args)],capture_output=True,text=True,timeout=30)
         self.assertEqual(r.returncode,0,r.stderr);return r

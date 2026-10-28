@@ -2,6 +2,8 @@
 import json
 import fcntl
 import os
+import signal
+import time
 from pathlib import Path
 import subprocess
 import sys
@@ -146,6 +148,70 @@ class ExecutorTest(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn('Another Framewright executor is running', result.stderr)
         self.assertEqual(before, self.project.read_bytes())
+
+    def interrupted_worker(self, signum):
+        import runpy
+        state = runpy.run_path(str(EXECUTOR.with_name('executor_state.py')))
+        folder = self.root / 'tools'; folder.mkdir()
+        marker = self.root / 'worker.json'
+        fake = folder / 'ffmpeg'
+        fake.write_text('#!' + sys.executable + '\nimport json,os,time\n'
+                        'from pathlib import Path\n'
+                        'Path(os.environ["FW_FIXTURE_PID"]).write_text(json.dumps({"pid":os.getpid(),"group":os.getpgrp()}))\n'
+                        'for _ in range(400):\n Path(os.environ["FW_FIXTURE_PID"]).with_suffix(".alive").touch();time.sleep(.05)\n')
+        fake.chmod(0o700)
+        command = [sys.executable, str(EXECUTOR), str(self.project), '--step', 'inspect',
+                   '--source', 'input:source', '--output', 'report', '--execute']
+        parent = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
+            env={**os.environ, 'PATH':str(folder)+os.pathsep+os.environ['PATH'], 'FW_FIXTURE_PID':str(marker)})
+        group = None
+        try:
+            deadline = time.monotonic()+15
+            while not marker.exists() and time.monotonic()<deadline and parent.poll() is None:time.sleep(.05)
+            self.assertTrue(marker.exists(), 'Owned fixture never reached inspection')
+            row=json.loads(marker.read_text());group=row['group']
+            parent.send_signal(signum);parent.wait(timeout=10)
+            with state['host_lock_path']().open('a') as lock:
+                if signum==signal.SIGKILL:
+                    with self.assertRaises(BlockingIOError):fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+                else:
+                    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+                    alive=marker.with_suffix('.alive')
+                    before=alive.stat().st_mtime_ns
+                    time.sleep(.2)
+                    self.assertEqual(alive.stat().st_mtime_ns,before,'Owned grandchild survived executor termination')
+            data=json.loads(self.project.read_text())
+            self.assertIsNone(data['artifacts']['report']['file'])
+        finally:
+            if group:
+                try:os.killpg(group,signal.SIGKILL)
+                except ProcessLookupError:pass
+            if parent.poll() is None:parent.kill()
+            parent.communicate(timeout=10)
+
+    def test_sigterm_stops_owned_group_before_releasing_host_lock(self):
+        self.interrupted_worker(signal.SIGTERM)
+
+    def test_sigkill_keeps_host_lock_with_the_surviving_worker(self):
+        self.interrupted_worker(signal.SIGKILL)
+
+    def test_inherited_worker_deadline_survives_without_executor_supervision(self):
+        import runpy
+        state=runpy.run_path(str(EXECUTOR.with_name('executor_state.py')))
+        launcher=self.root/'executor_worker.py'
+        launcher.write_bytes(EXECUTOR.with_name('executor_worker.py').read_bytes())
+        launcher.with_name('media_review.py').write_text('import time\ntime.sleep(20)\n')
+        with state['host_lock_path']().open('a') as lock:
+            fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+            worker=subprocess.Popen([sys.executable,str(launcher),str(lock.fileno()),'1','local-media-review'],
+                pass_fds=(lock.fileno(),),start_new_session=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+        try:
+            worker.communicate(timeout=5)
+            self.assertEqual(worker.returncode,-signal.SIGKILL)
+            with state['host_lock_path']().open('a') as lock:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+        finally:
+            if worker.poll() is None:os.killpg(worker.pid,signal.SIGKILL)
+            worker.communicate(timeout=5)
 
     def test_video_review_clip_is_bounded_and_requires_human_review(self):
         video = self.root / 'source.mp4'
