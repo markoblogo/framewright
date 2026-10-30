@@ -1,0 +1,22 @@
+{
+  "id": "last-seed-wide-glazing-v7",
+  "checks": {
+    "full_decode": true,
+    "frame_hashes": true,
+    "duration_3s": true,
+    "frames72": true,
+    "format720p24": true,
+    "intentional_silence": true
+  },
+  "camera_unchanged_72samples": true,
+  "source_sha256": "f716235a0c2fe4c452c7b2f4d65f450c7718b35bdc9c80a39cf2deb90795d4db",
+  "output_sha256": "513a0f065f5d2947e5f14f84303b577ea64a1438ba65961da31f7e06512a82be",
+  "render_seconds": 114.1692522909998,
+  "scope": "Owner-requested translucent roof/side/rear glass and faint outside silhouettes; front entry open",
+  "render_samples": 16,
+  "exterior": "Original tree silhouettes and distant relief behind pane geometry",
+  "dawn_v2": "owner_accepted_unchanged",
+  "creative_acceptance": "pending",
+  "executor_admission": false,
+  "limitation": "Real alpha transparency with original exterior geometry; not physical refractive glass. Dawn transition through revised set not yet checked."
+}

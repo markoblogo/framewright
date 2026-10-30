@@ -31,8 +31,8 @@ unknown-cost tools (the count is shown). Many legitimate free tools remain uncla
 The narration shortlist honours the brief language at its retained evidence level.
 
 `routes` compares bounded recipes for picture, optional voice and finishing. It reuses
-the shortlist and cost facets: local authored motion, supplied-media montage, quota
-generation and conditional-licence authoring. The last is omitted in free-only mode.
+the shortlist and cost facets: a prepared saved Blender shot, local authored motion,
+supplied-media montage, quota generation and conditional-licence authoring. The last is omitted in free-only mode.
 See the [retained comparison](route-comparison.md). These are comparable stage plans,
 not promises of identical visuals or completed creative production.
 
@@ -51,3 +51,19 @@ A selected proposal can now bind **one supported local action** through
 [route admission](../../skills/video-production-router/references/route-admission.md).
 The original comparison stays planning-only; selection does not execute other stages,
 qualify a chain, verify a provider quote or grant publication.
+
+## One readable producer proposal (R02)
+
+```sh
+python3 skills/video-production-router/scripts/intake.py brief /tmp/framewright-profile.json examples/intake/comparison-brief.json --format markdown
+# Optional: --source-index /private/path/index.json --project /private/path/project.json
+```
+
+Retained outputs for the same brief: [free-only](producer-brief-free-only.md) and
+[both options](producer-brief-both.md). The output explains task, scene purposes,
+materials, route tradeoffs, constraints and next action. Generic scene purposes are
+proposed, not approved; the example has no supplied source index. Optional explicit
+scene queries reuse revision-checked lexical search. Project waits and file problems
+remain visible. Human work, small-pilot and fallback suggestions are not execution
+authority. See the [input contract](../../skills/video-production-router/references/producer-brief.md)
+and [internal evidence](../../docs/experiments/r02-producer-brief.md).

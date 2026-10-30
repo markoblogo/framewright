@@ -13,7 +13,7 @@ BASE=ROOT/'skills/video-production-router/scripts'
 class RouteAdmissionTest(unittest.TestCase):
  def setUp(self):
   self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup)
-  self.root=Path(self.tmp.name);self.project=self.root/'project.json'
+  self.root=Path(self.tmp.name).resolve();self.project=self.root/'project.json'
   self.call('project.py','create',self.project,'--goal','Synthetic route gate','--note','No film')
   self.source=self.root/'tone.wav'
   with wave.open(str(self.source),'wb') as f:f.setnchannels(1);f.setsampwidth(2);f.setframerate(8000);f.writeframes(b'\0\0'*8000)

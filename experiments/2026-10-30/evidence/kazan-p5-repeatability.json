@@ -1,0 +1,16 @@
+{
+  "samples": [
+    {
+      "frame": "frame-00-at-21s.png",
+      "decoded_pixels_identical": true,
+      "pixel_sha256": "68165452482aeddf9ba9f09204bef1480d2651b9782a72976cd2de1c0be6353d"
+    },
+    {
+      "frame": "frame-01-at-23s.png",
+      "decoded_pixels_identical": true,
+      "pixel_sha256": "0bc24a4ffc4140a78d8cd7bf9f30abbb21147a7db16dbf1b8a12fd57f0ab6b42"
+    }
+  ],
+  "motion_between_samples": true,
+  "scope": "two absolute-time samples, separate snapshot invocations, this Mac/Chrome only"
+}

@@ -27,6 +27,11 @@ fully decodes the result. It records the actual bounds and exact source revision
 the linked pending decision becomes stale when that source is replaced. This is
 a review proxy, not a corrected edit or an approval of the source/master.
 
+For an existing saved Blender shot, use the [R01 route binding](route-admission.md#saved-blender-shot-r01),
+a declared `shot-preview` output and `--tool saved-blender-shot`. Here `--start/end`
+are exact zero-based, end-exclusive frames. Selected admission is mandatory; the
+render, state, PCM and receipt remain review-pending.
+
 To compare an existing correction, first retain distinct before and after files
 and create a pinned revision request as described in [precise revisions](revisions.md).
 Declare a `revision-comparison` output required by the ready step, then preview and

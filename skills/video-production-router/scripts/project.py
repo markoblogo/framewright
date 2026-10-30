@@ -43,7 +43,7 @@ def file_record(path, root):
 def planning_sources():
     paths = [BASE / name for name in ['plan.py', 'music.py', 'terms.py', 'workflow.py', 'project.py', 'journal.py', 'packet.py', 'production.py', 'media_review.py', 'capture_check.py', 'project_summary.py', 'content.py', 'engine_capture.py', 'engine_capture.cjs', 'editing.py', 'revisions.py', 'templates.py', 'environment.py', 'trials.py', 'passports.py', 'shots.py', 'blender_shot_worker.py']]
     paths.append(BASE.parent / 'references/tools.json')
-    paths.extend(BASE / name for name in ['project_blockers.py','resources.py','costs.py','executor.py','executor_worker.py','executor_state.py','decision_checks.py','admission.py'])
+    paths.extend(BASE / name for name in ['project_blockers.py','resources.py','costs.py','executor.py','executor_worker.py','executor_shot.py','executor_state.py','decision_checks.py','admission.py'])
     return {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 
 

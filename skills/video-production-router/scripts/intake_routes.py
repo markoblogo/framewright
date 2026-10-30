@@ -2,6 +2,9 @@
 import json
 
 RECIPES=[
+    ('local-saved-shot','Pinned local Blender shot','blender',
+     'Restore an existing trusted scene, render a bounded frame range, then finish locally.',
+     'Requires a prepared saved-shot card and installed Blender; scene creation and full-film approval are separate.'),
     ('local-authored','Locally authored motion','hyperframes',
      'Author layout, camera-like movement and graphics from supplied materials.',
      'Authoring work required; not photorealistic generative motion.'),

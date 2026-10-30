@@ -136,6 +136,7 @@ def main():
     a=sub.add_parser('propose');a.add_argument('profile',type=Path);a.add_argument('brief',type=Path);a.add_argument('routes',type=Path);a.add_argument('--catalog',type=Path)
     a=sub.add_parser('recommend');a.add_argument('profile',type=Path);a.add_argument('brief',type=Path);a.add_argument('--task',required=True)
     a=sub.add_parser('routes');a.add_argument('profile',type=Path);a.add_argument('brief',type=Path);a.add_argument('--format',choices=['json','markdown'],default='json')
+    a=sub.add_parser('brief');a.add_argument('profile',type=Path);a.add_argument('brief',type=Path);a.add_argument('--source-index',type=Path);a.add_argument('--project',type=Path);a.add_argument('--format',choices=['json','markdown'],default='json')
     args=parser.parse_args()
     try:
         if args.command=='init':
@@ -156,6 +157,10 @@ def main():
                     'internet_speed':'not_measured','subscriptions':'not_inspected','network_calls':0,
                     'scope':'Snapshot; total memory and free disk do not prove runtime capability.'}
         elif args.command=='recommend':result=recommend(profile(args.profile),read(args.brief),args.task)
+        elif args.command=='brief':
+            producer=runpy.run_path(str(BASE/'producer_brief.py'))
+            result=producer['build'](profile(args.profile),read(args.brief),recommend,args.source_index,args.project)
+            if args.format=='markdown':print(producer['markdown'](result));return
         elif args.command=='routes':
             routing=runpy.run_path(str(BASE/'intake_routes.py'))
             result=routing['compare'](profile(args.profile),read(args.brief),recommend)

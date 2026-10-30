@@ -1,5 +1,7 @@
 # Tool review and test inventory
 
+[Real-space reconstruction — 28 October 2026](research/reality-capture-2026-10-28.md): Echo-3 and Polycam are conditional phone/web candidates; Postshot and Splatframes are Windows reserves; Nerfstudio is an OSS compute-gated reserve. RECON-01 proposes capture → reusable scene → revised camera render. No runtime test or free Mac route qualified.
+
 [Remotion licence clarification — 28 October 2026](research/remotion-conditional-licence-2026-10-28.md): already-used renderer, custom source-available licence; user/entity/use/version eligibility stays separate from technical evidence. Unverified eligibility remains cost-unknown and excluded from free-only offers.
 
 [psutil machine/process observations — 28 October 2026](research/psutil-machine-observations-2026-10-28.md): RESOURCE-01 optional adapter for available RAM and bounded owned-process sampling. Detected, requirement-checked and unknown facts remain distinct; GPU/model/codec fit needs other adapters. No installation or sampling trial.
@@ -417,3 +419,7 @@ formats and blind footage remain unqualified. No new runtime/upstream audit.
 [Trial and dependency/licence evidence](../experiments/2026-10-15/burgers-cue-analysis.md).
 
 - [Ecosystem and orchestration assessment](research/ecosystem-orchestration-2026-10-27.md) — includes Pomerado as a conditional read-only integration candidate.
+
+## Agent video toolkits —30October2026
+
+[OpenMontage, ffmpeg-skill and the video-skills catalogue](research/agent-video-toolkits-2026-10-30.md): architectural reference/external trial, bounded local-adapter candidate, and discovery source respectively. Queue IDs and adoption limits are recorded; none is installed or production-qualified by this review.

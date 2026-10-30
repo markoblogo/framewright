@@ -17,7 +17,7 @@ BASE=Path(__file__).resolve().parent
 ENV=runpy.run_path(str(BASE/'environment.py'))
 RES=runpy.run_path(str(BASE/'resources.py'))
 COST=runpy.run_path(str(BASE/'costs.py'))
-TOOLS={'local-media-review':'review-report','review-clip':'review-preview'}
+TOOLS={'local-media-review':'review-report','review-clip':'review-preview','saved-blender-shot':'shot-preview'}
 
 def expected_output(spec):
  return {'identity':spec['output'],'kind':TOOLS[spec['tool']],
@@ -28,7 +28,7 @@ ARGUMENTS={'start','end','context','request','after_start','after_end','observe_
 def digest(value):return hashlib.sha256(json.dumps(value,sort_keys=True,ensure_ascii=True).encode()).hexdigest()
 
 def implementation():
- paths=[BASE/n for n in ['admission.py','executor.py','executor_worker.py','executor_clip_worker.py','environment.py','resources.py','costs.py','editing.py','media_review.py']]
+ paths=[BASE/n for n in ['admission.py','executor.py','executor_worker.py','executor_clip_worker.py','executor_shot.py','shots.py','blender_shot_worker.py','trials.py','passports.py','environment.py','resources.py','costs.py','editing.py','media_review.py']]
  paths.append(BASE.parent/'references/intake-cost-facets.json')
  return {p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 
@@ -54,12 +54,16 @@ def validate_spec(spec):
  if not isinstance(spec['id'],str) or not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]{0,63}',spec['id']):raise ValueError('Use a short new selection ID')
  for key in fields-{'arguments','limits','id'}:
   if not isinstance(spec[key],str) or not spec[key].strip():raise ValueError('Selection needs '+key)
- if spec['tool'] not in TOOLS:raise ValueError('Selected-route execution currently supports local inspection/review-clip only')
+ if spec['tool'] not in TOOLS:raise ValueError('Select an allowlisted local inspection, review-clip or saved-blender-shot adapter')
  args=spec['arguments']
  if not isinstance(args,dict) or set(args)!=ARGUMENTS or type(args['observe_resources'])!=bool:raise ValueError('Bind all supported local arguments explicitly')
  if any(args[k] is not None for k in ['request','after_start','after_end']):raise ValueError('Revision-comparison selection is not implemented')
  if type(args['context']) not in (int,float) or not math.isfinite(args['context']) or not .1<=args['context']<=5:raise ValueError('Context must be0.1–5seconds')
- if spec['tool']=='review-clip':
+ if spec['tool']=='saved-blender-shot':
+  a,b=args['start'],args['end']
+  if any(type(n) not in (int,float) or not math.isfinite(n) or not float(n).is_integer() for n in [a,b]) or a<0 or b<=a or b-a>240:raise ValueError('Bind an integer frame range of at most240frames')
+  if args['context']!=1:raise ValueError('Saved-shot uses exact frames; no review context')
+ elif spec['tool']=='review-clip':
   a,b=args['start'],args['end']
   if any(type(n) not in (int,float) or not math.isfinite(n) for n in [a,b]) or a<0 or b<=a or b-a+2*args['context']>30:raise ValueError('Bind a valid bounded review interval')
  elif args['start'] is not None or args['end'] is not None:raise ValueError('Inspection does not take an interval')
@@ -84,14 +88,24 @@ def select(data,project,spec,output,P):
  routes=[r for r in comparison['routes'] if r['id']==spec['route_id']]
  if len(routes)!=1:raise ValueError('Choose one route actually present in the comparison')
  stages=[s for s in routes[0]['stages'] if s['role']==spec['stage_role']]
- if len(stages)!=1 or stages[0]['tool']!='ffmpeg' or not stages[0].get('candidate') or stages[0]['candidate'].get('id')!='ffmpeg' or stages[0]['candidate'].get('cost_kind')!='free_local':raise ValueError('No selected-stage local FFmpeg adapter; no silent tool/provider substitution')
+ tool='blender' if spec['tool']=='saved-blender-shot' else 'ffmpeg'
+ if len(stages)!=1 or stages[0]['tool']!=tool or not stages[0].get('candidate') or stages[0]['candidate'].get('id')!=tool or stages[0]['candidate'].get('cost_kind')!='free_local':raise ValueError('No matching selected-stage local adapter; no silent tool/provider substitution')
  if comparison.get('selection_policy') not in {'free-only','both'}:raise ValueError('Retain the selection policy')
  env,env_pin=read_subject(data,project.parent,spec['environment_subject'],P);ENV['validate'](env)
- if not {'ffmpeg','ffprobe'}<={p['name'] for p in env['programs']}:raise ValueError('Declare ffmpeg and ffprobe prerequisites')
+ required={'ffmpeg','ffprobe'}|({'blender'} if tool=='blender' else set())
+ if not required<={p['name'] for p in env['programs']}:raise ValueError('Declare ffmpeg and ffprobe prerequisites')
  source_pin=P['JOURNAL']['pin'](data,spec['source'])
+ if source_pin is None:raise ValueError('Retain the selected source')
+ shot=None;executables=None
+ if tool=='blender':
+  helper=runpy.run_path(str(BASE/'executor_shot.py'))
+  shot=helper['preflight'](data,project,spec['source'],spec['arguments']['start'],spec['arguments']['end'])
+  executables=helper['runtime']()
  identity='admission:'+spec['id']
  if identity in data['artifacts'] or spec['step'] in data.get('execution_routes',{}):raise ValueError('Task already selected; use a new reviewed task/selection ID')
  contract={'schema':'framewright-execution-selection-v1','selection':spec,'pins':{spec['route_subject']:route_pin,spec['environment_subject']:env_pin,spec['source']:source_pin},'implementation':implementation(),'expected_output':expected_output(spec),'scope':'One local action associated with the selected stage; not execution/qualification of the whole recipe','publication_authorized':False}
+ if shot:
+  contract['pins'].update(shot['pins']);contract['shot']=shot;contract['executables']=executables
  if output.exists():raise ValueError('Use a new selection output file')
  # A pinned output may not alias another already-retained artifact/input.
  protected=[(project.parent/p['path']).resolve() for p in [*data['inputs'].values(),*[a['file'] for a in data['artifacts'].values() if a['file']]]]
@@ -124,6 +138,13 @@ def check(data,project,step,P,invocation=None):
  for subject,pin in contract['pins'].items():
   if P['JOURNAL']['pin'](data,subject)!=pin or P['file_record']((root/pin['path']),root)!=pin:blockers.append('Revision changed: '+subject)
  if implementation()!=contract['implementation']:blockers.append('Selected adapter/cost-classification implementation changed')
+ if spec['tool']=='saved-blender-shot' and not blockers:
+  helper=runpy.run_path(str(BASE/'executor_shot.py'))
+  try:
+   shot=helper['preflight'](data,project,spec['source'],spec['arguments']['start'],spec['arguments']['end'])
+   if shot!=contract.get('shot') or helper['runtime']()!=contract.get('executables'):blockers.append('Saved shot or selected executables changed')
+   evidence['shot']=shot;evidence['executables']=contract['executables']
+  except (OSError,ValueError):blockers.append('Saved-shot preflight failed')
  if invocation:
   wanted={k:spec[k] for k in ['step','tool','source','output']};wanted.update(spec['arguments'])
   if any(getattr(invocation,k)!=v for k,v in wanted.items()):blockers.append('Invocation differs from selected arguments/tool/source/output')
@@ -139,7 +160,7 @@ def check(data,project,step,P,invocation=None):
   if snapshot['technical_status']!='ready':blockers.append('Declared runtime prerequisites are not confirmed')
   if snapshot['rights']['status']!='allowed':blockers.append('Source-use rights remain unresolved/restricted')
   fee=snapshot['cost'];facets=json.loads((BASE.parent/'references/intake-cost-facets.json').read_text())
-  known_zero=facets['tools']['ffmpeg']['kind']=='free_local' and fee['status']=='free_local' and fee['amount']==0 and fee['currency']==spec['limits']['unit']
+  known_zero=all(facets['tools'][t]['kind']=='free_local' for t in (['ffmpeg','blender'] if spec['tool']=='saved-blender-shot' else ['ffmpeg'])) and fee['status']=='free_local' and fee['amount']==0 and fee['currency']==spec['limits']['unit']
   if not known_zero:blockers.append('Only confirmed local software fee zero in the same unit is admitted;no paid dispatcher')
   evidence['cost']={'local_provider_fee':'0' if known_zero else None,'unit':spec['limits']['unit'],'limit':spec['limits']['provider_fee_max'],'project':COST['report'](data),'scope':'Local software fee only; no paid reservation/dispatch,labour or whole-route total inferred'}
   wanted=spec['limits']['min_available_memory_gib'];available=snapshot['system']['resource_observation']['memory']['available_bytes']
@@ -154,7 +175,7 @@ def check(data,project,step,P,invocation=None):
   except OSError:
    evidence['scratch']={'path':str(scratch),'free_bytes':None,'status':'unavailable'}
    blockers.append('Scratch volume free space unavailable')
-  if not blockers:
+  if not blockers and spec['tool']!='saved-blender-shot':
    source=(root/contract['pins'][spec['source']]['path']).resolve(strict=True)
    try:
     raw=subprocess.run(['ffprobe','-v','error','-protocol_whitelist','file,pipe','-show_format','-show_streams','-of','json',str(source)],capture_output=True,text=True,timeout=10,check=True)
@@ -175,12 +196,30 @@ def validate_output(gate,path,report):
   raw=json.loads(path.read_text())
   if raw!=report or raw.get('type')!='media-review':raise ValueError('Produced JSON is not the expected inspection report')
  else:
+  if gate['evidence'].get('shot'):
+   return validate_shot_output(gate,path,report)
   result=subprocess.run(['ffprobe','-v','error','-show_format','-show_streams','-of','json',str(path)],capture_output=True,text=True,timeout=10,check=True)
   raw=json.loads(result.stdout);video=next((s for s in raw['streams'] if s.get('codec_type')=='video'),None)
   if not video or video.get('codec_name')!='h264' or (video.get('width'),video.get('height'))!=(640,360) or Fraction(video.get('avg_frame_rate','0/1'))!=24:raise ValueError('Review proxy differs from fixed local adapter format')
   duration=float(raw['format']['duration'])
   if 'mp4' not in raw['format'].get('format_name','') or not math.isfinite(duration) or abs(duration-report['duration'])>2/24+.01:raise ValueError('Review proxy container/duration differs from declared interval')
 
+
+
+def validate_shot_output(gate,path,report):
+ helper=runpy.run_path(str(BASE/'executor_shot.py'));shot=gate['evidence']['shot'];tools=gate['evidence']['executables']
+ if helper['folder_bytes'](path.parent)>gate['limits']['max_output_bytes']:raise ValueError('Render bundle exceeds selected byte allowance')
+ canvas=shot['canvas'];frames=shot['frames'];count=frames['end']-frames['start']
+ raw=json.loads(subprocess.run([tools['ffprobe']['path'],'-v','error','-count_frames','-show_format','-show_streams','-of','json',str(path)],capture_output=True,text=True,timeout=10,check=True).stdout)
+ videos=[s for s in raw['streams'] if s.get('codec_type')=='video'];audio=[s for s in raw['streams'] if s.get('codec_type')=='audio']
+ if len(videos)!=1:raise ValueError('Expected one picture stream')
+ v=videos[0]
+ if (v.get('width'),v.get('height'))!=(canvas['width'],canvas['height']) or v.get('codec_name')!='h264' or Fraction(v.get('avg_frame_rate','0/1'))!=canvas['fps'] or int(v.get('nb_read_frames',0))!=count:raise ValueError('Rendered picture differs from saved-shot contract')
+ if len(audio)!=int(shot['audio']):raise ValueError('Rendered audio differs from saved-shot contract')
+ if report.get('schema')!='framewright-shot-render-v1' or report.get('frames')!=frames or report.get('creative_review')!='pending' or report.get('publication_authorized') is not False:raise ValueError('Invalid saved-shot receipt/review state')
+ duration=float(raw['format'].get('duration','nan'))
+ if 'mp4' not in raw['format'].get('format_name','') or not math.isfinite(duration) or abs(duration-count/canvas['fps'])>2/canvas['fps']+.01:raise ValueError('Rendered duration/container differs')
+ subprocess.run([tools['ffmpeg']['path'],'-v','error','-protocol_whitelist','file,pipe','-i',str(path),'-f','null','-'],capture_output=True,timeout=30,check=True)
 
 def main():
  p=argparse.ArgumentParser(description=__doc__);sub=p.add_subparsers(dest='command',required=True)

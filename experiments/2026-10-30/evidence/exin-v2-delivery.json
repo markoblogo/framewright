@@ -1,0 +1,24 @@
+{
+  "revision": 2,
+  "video_sha256": "40437f5dbc6e081f17876b95fb7c840efafddd5a733fe031c152d5929e170e90",
+  "frames": 3133,
+  "duration": "104.433333",
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": "30/1",
+  "audio_channels": 2,
+  "sample_rate": "48000",
+  "full_decode": "pass",
+  "creative_acceptance": "pending",
+  "publication": "pending",
+  "new_photo_range": [
+    27.788,
+    36.888
+  ],
+  "new_video_range": [
+    78.1,
+    83.5666666667
+  ]
+}

@@ -2,7 +2,7 @@
 
 ![Framewright — craft the cut, keep the evidence](assets/framewright-cover.png)
 
-[![Version: 0.4.0](https://img.shields.io/badge/version-0.4.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.4.0)
+[![Version: 0.5.0](https://img.shields.io/badge/version-0.5.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.5.0)
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](docs/router-evaluation.md)
 
@@ -19,6 +19,11 @@ Watch the [two-minute Framewright workflow lesson](https://youtu.be/n1wuySSYQcQ)
 
 | Production | What it demonstrates | Watch / evidence |
 | --- | --- | --- |
+| Afterimage — Venice2019 | Source photos/GIF, original voice/score, shader links and scene-aware GIF processing; encoded delivery checked, publication owner-reported | [Film](https://youtu.be/umOUUPFrG4c) · [Case](docs/experiments/venice-afterimage.md) |
+| A Roof Rewritten — Kazan | Supplied photo/video art film, original English narration/score and bounded p5.js interlude; accepted, publication owner-reported | [Film](https://youtu.be/QqJ2J9RGOfo) · [Case](docs/experiments/kazan-rooftop.md) |
+| TIME _ CAPSULE | Photo/video art film, animated stock projector and original instrumental score; technical delivery checked, publication owner-reported | [Film](https://youtu.be/uyzSYiktQb0) · [Case](docs/experiments/time-capsule.md) |
+| Exin AI-agent experiment explainer | Source-photo camera/annotations with PixiJS, English narration and explicit human-oversight/outcome attribution; preview accepted, publication owner-reported | [104s film, revised](https://youtu.be/0wvAwUAZEFo) · [Case](docs/experiments/exin-agent-explainer.md) |
+| The Last Seed | Original48.5s Blender short: grooved seed, mounted roof drive, varied rain contact and dramatic score; picture/sound accepted, publication owner-reported | [Film](https://youtu.be/ZQTORLBw9Zs) · [Case](docs/experiments/last-seed-recovery.md) |
 | A Dog Follows a Falling Light | An animated rig, deterministic camera/pose reconstruction, a motivated light event and actual travel into the ending | [30s film](https://youtu.be/B4zdWfFIkNE) · [Case](docs/experiments/little-light.md) |
 | Seals of Good Intentions | Six photographs staged as a cinematic set, source-preserving calligraphy, reusable camera plan and revised soundtrack | [30s film](https://youtu.be/6c3JXdIiosg) · [Case](docs/experiments/photo-series-cinema.md) |
 | The Same Forest | An existing virtual-world plate, independent character and three coordinated color/sound states | [42s film](https://youtu.be/wHOpypqPyCs) · [Case and original source](docs/experiments/marble-compositing.md) |
@@ -31,13 +36,15 @@ Watch the [two-minute Framewright workflow lesson](https://youtu.be/n1wuySSYQcQ)
 | Dream Walk films | A generated 60s cinematic film and a separate 20min ambient recording from an actual game canvas | [60s film](https://youtu.be/oyQXmJI4aK0) · [20min game capture](https://youtu.be/rfClK3jPHlw) · [Case](docs/experiments/dream-walk.md) |
 
 Publication links and partner acceptance are owner-reported; the forest film’s watch-page title/duration were also observed. The repository records
-[42 final exports](docs/experiments.md); production evidence, human acceptance and
+[production experiments and catalogued exports](docs/experiments.md); production evidence, human acceptance and
 audience results remain separate. Faster production and better retention are goals,
 not established comparative results.
 
 [MN7R production trial](docs/experiments/mn7r-promo.md): native Motion Canvas, locally authorised own-voice cloning and separate horizontal/portrait edits; technical checks passed, [overview publication link](https://youtu.be/kcFco2HbFCY) owner-reported; complete owner review and independent playback remain unverified. Spline authoring is partial with a native export gate; Canva Craft was not run.
 
 For this workspace, prefer **free and open-source tools on macOS**. Paid and other-platform tools are reference reserves; a specific production may use a minimal paid trial only within its approved budget. Existing paid subscriptions and purchased apps are considered separately. [Selection policy](docs/production-guide.md#owner-preference-free-open-source-and-macos-first).
+
+The [0.5.0 closeout](docs/release-audit-2026-10-30.md) records bounded execution and proposal improvements, recent films and remaining recovery limits. [29–30October progress and next steps](docs/product-progress-2026-10-29-30.md).
 
 ## Try one production plan
 
@@ -64,8 +71,8 @@ For recorded takes and screencasts, the [editing module](skills/video-production
 The [selected-route admission](skills/video-production-router/references/route-admission.md)
 bridge pins one local action to an actual intake route/stage, its sources, requirements,
 limits and expected file. Bound tasks recheck before dispatch and validate output
-before retention. It currently supports inspection/review proxies, not a full recipe
-or paid provider. [Original-fixture walkthrough](examples/admission/prepare_demo.py).
+before retention. It supports inspection/review proxies and a bounded saved Blender shot, with
+checked outputs left for human review; whole recipes and paid dispatch remain separate. [Original-fixture walkthrough](examples/admission/prepare_demo.py).
 
 
 The optional [studio foundations](skills/video-production-router/references/studio-foundations.md)
@@ -127,7 +134,7 @@ or executing it. [Commands and a real project example](skills/video-production-r
 
 The optional [sequential executor](skills/video-production-router/references/projects.md#one-explicit-local-execution)
 can explicitly run one local media inspection, create a contextual review clip,
-or prepare a before/after comparison for a ready step. It retains the output and
+prepare a before/after comparison, or render a selected saved Blender shot for a ready step. It retains the output and
 stops for human review; it does not run arbitrary commands or publish work.
 
 ## Scope and further reading
@@ -190,7 +197,19 @@ is an architectural reference and optional future team integration.
 extends the existing storyboard workflow with three rough composition/camera choices,
 a revision-bound selection and an animatic; Storyboarder is a method reference.
 
-The [producer-agency roadmap](docs/producer-agency-roadmap.md) describes profile-aware
+The [global roadmap](docs/roadmap.md) connects strategic milestones, product tasks,
+production opportunities and tool experiments. It defines how new ideas enter the
+plan without displacing active work. [R01](docs/experiments/r01-saved-shot-executor.md)
+connects saved-shot admission and execution. [R02](docs/experiments/r02-producer-brief.md)
+now combines task, materials, scene purposes, routes, constraints and next action
+in one read-only proposal. R03 now has an owner-accepted48.5s film,
+[The Last Seed](docs/experiments/last-seed-recovery.md), with targeted surface,
+mechanism, rain and soundtrack corrections and a local YouTube kit. The delivered
+copy is identical to accepted v4; native draft-quality limits remain documented.
+Fresh-session recovery and the manual Eevee/executor boundary remain open.
+Release gates follow completed capability milestones and require an owner decision.
+
+The [producer-agency design](docs/producer-agency-roadmap.md) describes profile-aware
 planning, free/quota/paid alternatives and optional community evidence. An
 [offline intake prototype](examples/intake/README.md) records local option preferences
 and filters supplied examples. An optional small dated provider-terms catalogue can
@@ -198,7 +217,10 @@ annotate explicitly selected examples. Task-based discovery also returns scoped
 catalogue candidates using a small cost classification. A route comparison covers
 picture, optional language-aware narration and finishing, with scoped evidence and
 unresolved costs/access/integration. It remains a planning prototype; total production
-budgets and turnaround times require further evidence.
+budgets and turnaround times require further evidence. Use `intake.py brief` for
+the [unified proposal](skills/video-production-router/references/producer-brief.md),
+optionally attaching a retained source index and project journal. Explicit preferences,
+missing materials and current blockers remain visible; no work starts automatically.
 
 [Weekly English Studio Notes](docs/editorial/README.md) connect project development
 to actual video examples, with ABVX metadata and a generated cover for every draft. A separate [book-readiness milestone](docs/book-milestone.md)
@@ -214,9 +236,9 @@ their own authority. Tools/models/media have separate terms; private assets stay
 [Production guide](docs/production-guide.md) · [Project and scene workflow](skills/video-production-router/references/production.md) ·
 [Experiments and limits](docs/experiments.md) · [Current priorities](docs/next-cycle.md) ·
 [Research queue](docs/experiment-queue.md) · [Contributing checks](docs/checking-policy.md) ·
-[Current release audit](docs/release-audit-2026-10-26.md) · [Earlier production closeout](docs/closeout-2026-10-25.md).
+[Current release audit](docs/release-audit-2026-10-30.md) · [Earlier production closeout](docs/closeout-2026-10-25.md).
 
-MIT for original repository materials. v0.4.0 is an experimental prerelease. The [release audit](docs/release-audit-2026-10-26.md)
+MIT for original repository materials. v0.5.0 is an experimental prerelease. The [release audit](docs/release-audit-2026-10-30.md)
 records package/check scope; current-source model routing is not newly evaluated. [ABVX ecosystem](docs/ecosystem.md).
 
 ## Ecosystem references

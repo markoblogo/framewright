@@ -1,6 +1,21 @@
 # Changelog
 
-## Unreleased
+## 0.5.0 — 2026-10-30 — experimental
+
+- Bind saved Blender shots to selected-route admission and sequential execution:
+  pinned scene/control/runtime, bounded frames, checked receipts and human review.
+  Internal CPU fixture verifies repeat/subrange/light-only behavior; full-film
+  manual Eevee production remains outside the admitted adapter.
+- Add one readable producer brief joining the task, materials, scene purpose,
+  routes, constraints and next step; free-only choice and unknowns stay explicit.
+- Retain The Last Seed's pilot-to-accepted-film corrections and four sourced
+  production cases: Exin explainer, Time Capsule, Kazan rooftop and Venice2019.
+  Record scoped Tone.js, p5.js and shader trials without broad qualification.
+- Add milestone/release gates, tool-adoption plans and fresh-process recovery
+  evidence. REL-A remains partial; this owner-authorized prerelease consolidates
+  useful bounded work and does not certify an autonomous end-to-end studio.
+
+### Earlier changes since 0.4.0
 
 - Select returned-render streams from actual timeline tracks, reject unsupported
   OTIO composition trims, retain manifest-relative model paths,

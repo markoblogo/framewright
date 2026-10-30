@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-30",
+  "preview_owner_acceptance": "accepted2026-10-30",
+  "duration_seconds": 104.433333,
+  "checks": {
+    "full_decode": true,
+    "frames3133": true,
+    "under2minutes": true,
+    "duration_matches_plan": true,
+    "1920x1080": true,
+    "fps30": true,
+    "audio_present": true
+  },
+  "output_sha256": "0de54c1e44b24f57526aa87ba62367a8d289895ae29a3272c58268d4cc5d467a",
+  "renderer_elapsed_seconds": 328.959,
+  "worker_count": 1,
+  "pixi_repeatability": {
+    "library": "PixiJS8.6.6",
+    "scope": "source-photo crops/annotation seeking inside HF0.8.183",
+    "separate_cli_snapshot_runs": 2,
+    "sample_count": 4,
+    "decoded_pixel_matches": {
+      "frame-00-at-2s.png": true,
+      "frame-01-at-54s.png": true,
+      "frame-02-at-81s.png": true,
+      "frame-03-at-101.3s.png": true
+    },
+    "not_tested": [
+      "other GPUs",
+      "3D reconstruction",
+      "Matter.js",
+      "character animation",
+      "photographic depth inference"
+    ],
+    "creative_review": "pending",
+    "all_sampled_frames_match": true
+  },
+  "source_attribution": "https://x.com/ocanasantero/status/2115442964574908902",
+  "scientific_validation": "author-report explainer; efficacy not established",
+  "publication": {
+    "url": "https://youtu.be/tgMU4DCjohk",
+    "provenance": "owner_report",
+    "visibility": "unknown"
+  },
+  "encoded_lufs": -17.19,
+  "encoded_true_peak_dbtp": -1.62,
+  "frame_samples": [
+    2,
+    54,
+    101
+  ],
+  "future_feedback": "INSIGHT-ILLUSTRATION-01; accepted film unchanged"
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Execute one explicitly authorised local media inspection or review clip."""
+"""Execute one explicitly authorised bounded local action; stop for review."""
 import argparse
 import fcntl
 import json
@@ -20,6 +20,7 @@ R = runpy.run_path(str(BASE / 'revisions.py'))
 RESOURCES = runpy.run_path(str(BASE / 'resources.py'))
 STATE = runpy.run_path(str(BASE / 'executor_state.py'))
 ADMISSION = runpy.run_path(str(BASE / 'admission.py'))
+SHOT = runpy.run_path(str(BASE / 'executor_shot.py'))
 
 
 def run(args):
@@ -40,6 +41,9 @@ def run(args):
                 args.start < 0 or args.end <= args.start or not 0.1 <= args.context <= 5 or
                 args.end - args.start + 2 * args.context > 30):
             raise ValueError('Use a finite positive interval, 0.1–5s context and at most 30s total')
+    elif args.tool == 'saved-blender-shot':
+        if any(type(n) not in (int,float) or not math.isfinite(n) or not float(n).is_integer() for n in (args.start,args.end)) or not 0 <= args.start < args.end or args.end-args.start>240 or args.context!=1:
+            raise ValueError('Saved-shot requires exact integer frame bounds, at most240frames')
     elif args.start is not None or args.end is not None:
         raise ValueError('Interval arguments apply only to review-clip')
     project = args.project.resolve(strict=True)
@@ -54,7 +58,7 @@ def run(args):
         if args.output not in step['required_outputs']:
             raise ValueError('Output must be required by the selected step')
         expected = {'local-media-review': 'review-report', 'review-clip': 'review-preview',
-                    'revision-comparison': 'revision-comparison'}[args.tool]
+                    'revision-comparison': 'revision-comparison', 'saved-blender-shot':'shot-preview'}[args.tool]
         if data['artifacts'][args.output]['kind'] != expected:
             raise ValueError(args.tool + ' requires output kind ' + expected)
         if data['artifacts'][args.output]['file'] is not None:
@@ -74,6 +78,8 @@ def run(args):
                 raise ValueError('Request subject does not match its retained identity')
             if request['baseline_subject'] == args.source:
                 raise ValueError('Retain corrected media under a distinct identity')
+        if args.tool == 'saved-blender-shot' and args.step not in data.get('execution_routes',{}):
+            raise ValueError('Saved-shot requires explicit selected-route admission')
         if not args.execute:
             return {'step': args.step, 'tool': args.tool, 'source': args.source,
                     'output': args.output, 'state': 'preview_only', 'execution_started': False,
@@ -136,20 +142,23 @@ def run(args):
                         'execution_started': True}
             resources = {'host': RESOURCES['snapshot']([project.parent])} if args.observe_resources else None
             sampler = None
+            shot_folder = project.parent / ('executor-shot-' + uuid.uuid4().hex) if args.tool=='saved-blender-shot' else None
             try:
                 with tempfile.TemporaryDirectory(prefix='.executor-', dir=project.parent) as temporary:
                     temp_output = Path(temporary) / 'preview.mp4'
                     seconds = gate['limits']['worker_seconds'] if gate else 180
                     arguments = [str(source)] if args.tool == 'local-media-review' else [
                         str(source), str(temp_output), str(args.start), str(args.end), str(args.context)]
+                    if shot_folder is not None:
+                        arguments=[str(project),args.source,str(args.start),str(args.end),shot_folder.name.removeprefix('executor-shot-'),str(shot_folder),json.dumps(gate['evidence']['executables']),str(gate['limits']['max_output_bytes'])]
                     command = [sys.executable, str(BASE / 'executor_worker.py'), str(fd),
                                str(seconds), args.tool, *arguments]
                     child = subprocess.Popen(command,
                                              stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
                                              start_new_session=True, pass_fds=(fd,))
-                    if args.observe_resources:
-                        sampler = RESOURCES['OwnedSampler'](child.pid).start()
                     try:
+                        if args.observe_resources:
+                            sampler = RESOURCES['OwnedSampler'](child.pid).start()
                         stdout, stderr = child.communicate(timeout=gate['limits']['worker_seconds'] if gate else 180)
                     except BaseException:
                         # Termination, Ctrl-C and timeouts must not leave a detached worker.
@@ -172,7 +181,9 @@ def run(args):
                         raise ValueError('Retained files changed during inspection; result not registered')
                     output = project.parent / ('executor-review-' + uuid.uuid4().hex +
                                                ('.json' if args.tool == 'local-media-review' else '.mp4'))
-                    if args.tool == 'local-media-review':
+                    if shot_folder is not None:
+                        output=shot_folder/'preview.mp4'
+                    elif args.tool == 'local-media-review':
                         with output.open('x', encoding='utf-8') as stream:
                             json.dump(report, stream, ensure_ascii=False, indent=2, allow_nan=False); stream.write('\n')
                     else:
@@ -183,20 +194,22 @@ def run(args):
                                 output.unlink(missing_ok=True)
                                 raise
                     if P['file_problems'](data, project.parent):
-                        output.unlink(missing_ok=True)
+                        if shot_folder is None:output.unlink(missing_ok=True)
                         raise ValueError('Retained files changed while saving; result not registered')
                     if gate and output.stat().st_size>gate['limits']['max_output_bytes']:
                         raise ValueError('Written result exceeds selected output limit; file kept unretained for inspection')
                     if gate:ADMISSION['validate_output'](gate,output,report)
+                    if shot_folder is not None:
+                        SHOT['retain'](data,project,args.source,shot_folder,report,P)
                     P['retain'](data, project.parent, args.output, output, False, False)
-                    if args.tool == 'review-clip':
+                    if args.tool in {'review-clip','saved-blender-shot'}:
                         P['JOURNAL']['append'](data, 'output:' + args.output, 'decision', 'proposed',
                                                'framewright', 'administrative_change',
-                                               'Review proxy created; playback and creative review pending',
-                                               'executor-review-clip', [args.source])
+                                               'Local preview created; playback and creative review pending',
+                                               'executor-'+args.tool, list(pins))
                     P['event'](data, 'executor_run', step=args.step, tool=args.tool, source=args.source,
                                source_pin=item, output=args.output, result='retained_review_pending',
-                               admission=gate, resources=resources, details=report if args.tool == 'review-clip' else {'scope': 'technical report'})
+                               admission=gate, resources=resources, details=report if args.tool in {'review-clip','saved-blender-shot'} else {'scope': 'technical report'})
                     STATE['finish'](data,attempt,'produced',P,output=args.output,output_pin=P['JOURNAL']['pin'](data,'output:'+args.output))
                     P['save'](project, data)
             except (OSError, ValueError, subprocess.SubprocessError) as exc:
@@ -212,6 +225,7 @@ def run(args):
     if gate is not None: result['admission'] = gate
     if resources is not None: result['resources'] = resources
     if args.tool == 'review-clip': result.update(report)
+    if args.tool == 'saved-blender-shot':result.update(receipt=str(shot_folder/'render-report.json'),receipt_subject=report['subject'])
     return result
 
 
@@ -219,8 +233,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('project', type=Path); parser.add_argument('--step', required=True)
     parser.add_argument('--source', required=True); parser.add_argument('--output', required=True)
-    parser.add_argument('--tool', choices=['local-media-review', 'review-clip', 'revision-comparison'], default='local-media-review')
-    parser.add_argument('--start', type=float); parser.add_argument('--end', type=float)
+    parser.add_argument('--tool', choices=['local-media-review', 'review-clip', 'revision-comparison', 'saved-blender-shot'], default='local-media-review')
+    parser.add_argument('--start', type=float, help='Seconds for review-clip; zero-based frame for saved-blender-shot'); parser.add_argument('--end', type=float, help='Exclusive end in the same units as start')
     parser.add_argument('--context', type=float, default=1.0)
     parser.add_argument('--request', help='Retained output: revision request subject')
     parser.add_argument('--after-start', type=float); parser.add_argument('--after-end', type=float)

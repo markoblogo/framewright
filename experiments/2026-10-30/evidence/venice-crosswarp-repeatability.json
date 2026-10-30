@@ -1,0 +1,15 @@
+{
+  "samples": [
+    {
+      "time": 4.65,
+      "decoded_pixels_equal": true,
+      "sha256": "33feed0785c2edce2bf8b27b75b50f49f45eae89f255fdd0bed2629a53634d5d"
+    },
+    {
+      "time": 19.7,
+      "decoded_pixels_equal": true,
+      "sha256": "6d5caff64eedde8a5c813e8a40c368fae52ca398d27b6cabfbf5e884d10081ab"
+    }
+  ],
+  "scope": "two midpoint transition samples, two independent invocations on this Mac"
+}

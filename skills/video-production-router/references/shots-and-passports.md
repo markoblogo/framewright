@@ -102,3 +102,11 @@ This checks documents, retained versions and manual decisions. It does **not** v
 rendered identity, proportions, costume, rig deformation or rights automatically.
 Rights/source admission remain independent. Prepare the Good Dog hero and sets with
 the owner during real production; the supplied drafts define no approved canon.
+
+
+### Selected sequential execution
+
+R01 adds the optional [saved-shot executor bridge](route-admission.md#saved-blender-shot-r01).
+It reuses this renderer inside the existing host lock/deadline and durable attempt
+journal. Choose the prepared shot, exact frame interval and bounded output before
+executing. Source/version checks and pending human review remain mandatory.

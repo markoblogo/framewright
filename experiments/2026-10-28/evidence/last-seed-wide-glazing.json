@@ -1,0 +1,20 @@
+{
+  "id": "last-seed-wide-glazing-v5",
+  "checks": {
+    "full_decode": true,
+    "frame_hashes": true,
+    "duration_3s": true,
+    "frames72": true,
+    "format720p24": true,
+    "intentional_silence": true
+  },
+  "camera_unchanged_72samples": true,
+  "source_sha256": "e5093b6bbac993decdfe1f6fbc97bf4159e91f8a98a013d6383e0062fe8bb235",
+  "output_sha256": "d417397ee736038d66ccef3e7157824f994fa7b4035448eb7153b8567388dedd",
+  "render_seconds": 170.63230125000155,
+  "scope": "Owner-requested roof/side/rear glazing; front entry open",
+  "dawn_v2": "owner_accepted_unchanged",
+  "creative_acceptance": "pending",
+  "executor_admission": false,
+  "limitation": "Opaque frosted-glass look-development proxy; combined dawn transmission not tested; v3 layered transparency stopped due to11s/frame, v4 blend controls about20s/frame"
+}

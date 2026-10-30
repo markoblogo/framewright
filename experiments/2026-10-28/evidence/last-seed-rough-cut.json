@@ -1,0 +1,74 @@
+{
+  "id": "film-draft-v1",
+  "stage": "rough_cut_not_final",
+  "checks": {
+    "full_decode": true,
+    "duration_60s": true,
+    "frames1440": true,
+    "format720p24": true,
+    "audio48k_stereo": true,
+    "source_frame_hashes": true,
+    "pilot_bitstream_preserved_in_segment": true
+  },
+  "native_new_shots": "960x540/12fps/8samples; upscaled and frame-repeated to720p24 for draft assembly",
+  "accepted_pilot": "Original7.5s encoded video copied intoS04; original WAV placed at18s at unity gain",
+  "original_audio_peak_linear": 0.19390869140625,
+  "render_seconds": 514.6002492080006,
+  "output_sha256": "c7968b302e658a24989347a2b0a079f0bdbb933a19658e36a7cd20dbfc8c0c58",
+  "human_viewing": "pending",
+  "human_listening": "pending",
+  "creative_acceptance": "pending",
+  "publication": "not_authorised",
+  "manual_eevee": true,
+  "shots": [
+    [
+      "S01",
+      6
+    ],
+    [
+      "S02",
+      7
+    ],
+    [
+      "S03",
+      5
+    ],
+    [
+      "S04",
+      7.5
+    ],
+    [
+      "S05",
+      8.5
+    ],
+    [
+      "S06",
+      10
+    ],
+    [
+      "S07",
+      10
+    ],
+    [
+      "S08",
+      6
+    ]
+  ],
+  "combined_dawn_controls": {
+    "scope": "Actual glazed set control stills; brightness is not perception approval",
+    "samples": [
+      {
+        "frame": 1,
+        "mean_gray": 36.03731481481481
+      },
+      {
+        "frame": 60,
+        "mean_gray": 44.66212191358024
+      },
+      {
+        "frame": 120,
+        "mean_gray": 51.505640432098765
+      }
+    ]
+  }
+}

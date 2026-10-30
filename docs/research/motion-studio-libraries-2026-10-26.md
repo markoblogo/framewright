@@ -13,7 +13,7 @@ Scope: user-supplied shortlist, compared against Framewright's current records. 
 | [React Spring](https://github.com/pmndrs/react-spring) | Springs in React | Reserve for characterful UI; confirm deterministic seek/rerender before video use. |
 | [GL Transitions](https://github.com/gl-transitions/gl-transitions) | Shader transition collection | Candidate for restrained transition between scenes; inspect the specific shader and renderer licence and attribution. |
 | [tsParticles](https://github.com/tsparticles/tsparticles) | Particles | Candidate for dust, rain or sparks; test seeded repeatability and occlusion. |
-| [PixiJS](https://github.com/pixijs/pixijs) | Web 2D renderer | High priority for layered 2D scenes with camera, depth and explicit asset animation; not a skeletal rig or a guarantee of natural gait. |
+| [PixiJS](https://github.com/pixijs/pixijs) | Web 2D renderer | Narrow [Exin photo-camera trial](../experiments/exin-agent-explainer.md) completed locally; broader layered depth/asset animation remains a candidate. Not a skeletal rig or guarantee of natural gait. |
 | [p5.js](https://github.com/processing/p5.js) | Generative imagery | Candidate for an original seeded background; compare complexity with existing tools. |
 | [Paper.js](https://github.com/paperjs/paper.js) | Vector paths | Reserve for route tracing or hand-drawn motion; lower priority than existing graphics tools. |
 | [Matter.js](https://github.com/liabru/matter-js) | 2D rigid-body physics | Candidate for believable object contact/fall, not a replacement for character rigging. |
@@ -34,3 +34,14 @@ Scope: user-supplied shortlist, compared against Framewright's current records. 
 5. **Tool comparison when useful:** 15s actual edit in OpenCut or OBS and/or Anime.js against current workflow; track elapsed time, editability, export and Mac availability. Prefer a concrete gap over installing all 20.
 
 Repeated first/last frame and actual pixel/audio inspection are required for deterministic captures. A local code licence alone does not cover downloaded music, voices, models or a hosted service. Existing subscription exceptions follow [owner policy](../production-guide.md#owner-preference-free-open-source-and-macos-first).
+
+## 30October production-linked PixiJS probe
+
+[Exin explainer](../experiments/exin-agent-explainer.md): narrow source-photo camera/crop/annotation trial in PixiJS8.6.6 inside HyperFrames. Two separate snapshot invocations matched four sampled decoded frames on this M4/ANGLE environment; owner accepted preview. This does not test Matter.js, physical contact,3D or arbitrary rigs. Next fitting candidate: INSIGHT-ILLUSTRATION-01, a licensed stock mouse/brain contextual shot kept visibly separate from documentary evidence.
+
+
+30October2026: [TIME _ CAPSULE](../experiments/time-capsule.md) exercised Tone.js14.8.49 offline for an original51.2s instrumental score. Retained WAV is the assembly source; synthesis byte repeatability is not established. Human music acceptance pending.
+
+30October2026: [p5.js radial interlude trial](../experiments/kazan-rooftop.md), pinned1.11.3/LGPL-2.1. Two sampled times repeated exactly on this Mac; human artistic acceptance pending. Not a general qualification.
+
+30October2026: [CrossWarp trial](../experiments/venice-afterimage.md), MIT shader by Eke Péter, minimal local WebGL adapter. Two sampled midpoints repeated exactly; owner artistic acceptance pending. No general GL Transitions qualification.

@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-30",
+  "stage": "rough_cut",
+  "owner_resumed": true,
+  "source_reuse": "Retained ground/rain/roof v2; corrected cassette-clear water/recovery/up v3; earlier cassette/reservoir/lamp/germination shots",
+  "new_frames": 372,
+  "selected_render_seconds": 614.34,
+  "jam_angle_range_radians": [
+    0.10402,
+    0.1159
+  ],
+  "final_roof_angle_radians": 0.64,
+  "mechanism_stops": true,
+  "native_new_shots": "960x540/12fps/8samples",
+  "executor_admission": false,
+  "human_visual_acceptance": "pending",
+  "human_listening": "pending",
+  "publication": "not_authorised",
+  "limits": [
+    "Authored animation, not simulated mechanics/fluids/biology",
+    "Retained cassette/grain appearance still needs final material refinement",
+    "Native draft frame rate/resolution not final quality"
+  ],
+  "checks": {
+    "full_decode": true,
+    "duration": true,
+    "frames": true,
+    "720p24": true,
+    "48k_stereo": true
+  },
+  "duration_seconds": 48.5,
+  "output_sha256": "84685cf8cc976535e56273e936686c3d29675aec48a2a29c57076fd203748349",
+  "audio_peak_linear": 0.1953004310113533,
+  "final_frame_mean_luminance": 249.98,
+  "light_ending_check": true
+}
