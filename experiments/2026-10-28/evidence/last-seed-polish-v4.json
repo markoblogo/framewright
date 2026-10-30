@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-30",
+  "baseline": "film-recovery-v3",
+  "owner_requested_corrections": true,
+  "duration_preserved": 48.5,
+  "changes": [
+    "grooved/pitted varied seed husk",
+    "fixed support/backplate/bolts/axles and geared linkage to vent",
+    "local drive lighting",
+    "right leaf/left leaf/soil rain destinations",
+    "larger final title held3.4s including fade",
+    "sectioned original musical score and CC0 recorded Foley"
+  ],
+  "source_controls": "first/middle/last controls for seed/hero/roof/water",
+  "selected_new_frames": 588,
+  "new_shots_native": "hero1280x720/24fps; remaining patches960x540/12fps",
+  "musical_sections": [
+    {
+      "start": 0,
+      "mood": "loneliness/exhaustion"
+    },
+    {
+      "start": 10,
+      "mood": "tentative hope"
+    },
+    {
+      "start": 17.5,
+      "mood": "loss/decline"
+    },
+    {
+      "start": 21.5,
+      "mood": "threat/tension"
+    },
+    {
+      "start": 26.7,
+      "mood": "release/breath"
+    },
+    {
+      "start": 28.5,
+      "mood": "relief/renewed hope"
+    }
+  ],
+  "raw_mix_peak_linear": 0.3942104074911734,
+  "master_target": "-20 LUFS, -1.5dBTP, LRA10; actual output check retained separately",
+  "sfx": [
+    {
+      "title": "Metal Door Squeaking 8 (Medium)",
+      "author": "MathewHenry",
+      "source_url": "https://freesound.org/people/MathewHenry/sounds/700705/",
+      "license": "CC0-1.0",
+      "sha256": "ffd7a24e3f7fceb3a22f3741611224cedae9fa72e0079521774ee5b07ceb81c7"
+    },
+    {
+      "title": "creaky ratchet.aiff",
+      "author": "cartoonrob",
+      "source_url": "https://freesound.org/people/cartoonrob/sounds/588466/",
+      "license": "CC0-1.0",
+      "sha256": "e154e59da58ece8f14784c73ef46cbaa8bc7f860a55a2f115123b5fc0caeeed1"
+    }
+  ],
+  "new_acceptance": "owner_accepted_exact_v4_2026-10-30",
+  "human_listening": "owner_accepted_2026-10-30",
+  "publication": {
+    "url": "https://youtu.be/ZQTORLBw9Zs",
+    "provenance": "owner_report",
+    "visibility": "unknown"
+  },
+  "executor_admission": false,
+  "simulation_claim": false,
+  "checks": {
+    "full_decode": true,
+    "duration": true,
+    "frames": true,
+    "720p24": true,
+    "48k_stereo": true
+  },
+  "output_sha256": "e771a4a2b9e96d79f0f10c8fa57a250834a5a261ddb2c50955f20c2dcdb7bc35",
+  "master_pcm_peak": 0.830810546875,
+  "encoded_integrated_lufs": -19.3,
+  "encoded_true_peak_dbtp": -0.96,
+  "ending_mean_luminance": 252.678525390625,
+  "delivery_copy_sha256": "e771a4a2b9e96d79f0f10c8fa57a250834a5a261ddb2c50955f20c2dcdb7bc35"
+}

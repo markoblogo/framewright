@@ -1,5 +1,10 @@
 # Framewright as an agent-led production agency
 
+Design detail beneath the [global roadmap](roadmap.md), which owns current priorities,
+milestone exits and intake/change rules. Keep this document for the profile, catalogue,
+quota and contribution design; historical first-slice descriptions below are not
+a second execution backlog.
+
 Owner direction, 27 October 2026. This is a staged product plan, not a claim that the
 full service or external integrations already exist. It does not start a production,
 generation, spending, network probe, account connection, publishing or community sync.
@@ -87,31 +92,22 @@ one global policy for all users. Paid visibility never authorizes a paid call.
 - A shared packet is inspectable and sanitized, owner consent is explicit and a
   community result never silently becomes a local production qualification.
 
-## Next slice
+## Current implementation and next slice
 
-ROUTE-01 follow-up: [local admission](experiments/route-admission.md) now links the
-selected intake stage to one supported local inspection/proxy action. Exact inputs,
-arguments, declared requirements/limits and expected result are rechecked; additional
-renderers and external billing remain future adapters. [Two-day capability review](product-progress-2026-10-27-28.md).
+28 October: [PR #46](https://github.com/markoblogo/framewright/pull/46) is merged.
+[Local admission](experiments/route-admission.md) links one selected intake stage to
+inspection/proxy execution with pinned inputs, requirements, limits and expected
+output. [Studio foundations](experiments/studio-foundations.md) add bounded resource
+observations, cost evidence, recovery and offline assertions. [Completion diagnosis](experiments/completion-diagnosis.md)
+reads existing tasks/decisions. [Capability review](product-progress-2026-10-27-28.md)
+retains the exact limits. Paid dispatch, quota scheduling and community sync remain
+unimplemented.
 
-
-28 October follow-up: [RESOURCE/COST/STATE/EVAL foundations](experiments/studio-foundations.md)
-are implemented in bounded local scope. The next integration binds selected routes
-to measured prerequisites, recorded exposure and exact allowed executor inputs.
-No paid dispatcher, provider reconciliation, quota scheduler or community exchange
-is implemented; useful production tests should become complete publishable films,
-with public upload kept separate.
-
-28 October: [PROD-01 completion diagnosis](experiments/completion-diagnosis.md) now
-derives required blockers and optional/unmapped followups from the existing journal,
-with no execution or new data store. Test its usefulness on the next selected real
-production. OTIO export/native-editor return now has its own accepted bounded trial;
-other research adapters remain separately scoped.
-
-Extend the existing catalogue with a small, reviewed cost/platform/availability
-facet for a representative set of existing tools, then connect it to proposals and
-cover free-only, unknown/stale pricing, unsupported platforms and quota timing with
-behavioral tests. Do not bulk-classify the entire research backlog by inference.
+The [global roadmap](roadmap.md) records completed internal R01 saved-shot admission
+and [R02 unified producer brief](experiments/r02-producer-brief.md). R03 is the next
+real proposal/production check. The bounded cost/platform catalogue and route-comparison
+slices described below already exist; broadening them is need-driven, not a new
+blanket classification task. A whole-route production test remains separately selected.
 
 ## Initial representative classification — not yet a complete price/OS index
 
@@ -144,7 +140,7 @@ Hyperframes based on retained software/model notes. Remotion remains cost-unknow
 until Free/Company eligibility is confirmed. This records the local-operation slice;
 it does not clear models, voices, assets or optional paid services. Language-aware
 discovery keeps documented language support separate from tested support.
-`intake.py routes` compares four bounded recipes (local authored, supplied-media
+`intake.py routes` compares five bounded recipes (saved Blender shot, local authored, supplied-media
 montage, quota generation and conditional authoring) across picture, optional voice
 and finishing. It retains capability gaps, explicit voice choice, dated quota terms,
 unknown costs/time and human integration checks. Free-only hides the conditional

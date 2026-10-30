@@ -32,3 +32,11 @@ measured runtimes and exact scope. This is a tiny technical test, not a beauty r
 benchmark of arbitrary scenes or proof of natural character animation. PNGs/logs stay
 private and are not individually registered. Creative/listening acceptance and actual
 production passports remain separate; no automatic catalogue promotion/publication.
+
+## R01 executor probe
+
+`run_executor_probe.py --output NEW_PRIVATE_FOLDER --blender TRUSTED_EXECUTABLE`
+shows the plan. Add `--execute` to create an original scene and perform four short,
+sequential renders through admission/executor: repeat, subrange and one light edit.
+Requires installed Blender4.5-compatible, FFmpeg and ffprobe; no installations or
+network calls. [Recorded results](../../docs/experiments/r01-saved-shot-executor.md).

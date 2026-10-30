@@ -1,0 +1,43 @@
+{
+  "output_sha256": "5ebbd50dc8a20e6873a564e68e9cff1fb95cbe215155a98aa58476b4c09ab928",
+  "source_sha256": "8331929564d3862aca2c3efeb91d2e821060a52f69e0af5011b5469b01382542",
+  "sound_sha256": "04e22d4380fbaba3736e6229739c125e6377484ebee38a459f11a65dbad9ab81",
+  "checks": {
+    "frame_count": true,
+    "dimensions": true,
+    "frame_rate": true,
+    "video_extent": true,
+    "audio_extent": true,
+    "audio_format": true,
+    "full_decode": true
+  },
+  "render_engine": "BLENDER_EEVEE_NEXT",
+  "executor_admission": false,
+  "render_seconds": 374.9210812090005,
+  "assembly_and_qa_seconds": 3.0046894579991203,
+  "volume_observations": {
+    "mean_dbfs": -37.3,
+    "peak_dbfs": -14.0,
+    "basis": "identical decoded audio to v3"
+  },
+  "human_viewing": "pending",
+  "human_listening": "pending",
+  "owner_acceptance": "pending",
+  "publication": "not_authorised",
+  "automatic_model_calls": 0,
+  "decoded_audio_matches_v3": true,
+  "preservation": {
+    "original_seconds": 7.5,
+    "revised_seconds": 7.5,
+    "control_points": 5,
+    "growth_and_tip_match": true,
+    "scope": "Five authored growth checkpoints; not all rendered pixels or motion perception",
+    "contacts_changed": [
+      "seed settling/depression/displaced grains at0.97s",
+      "water seed surface/runoff at2.833s",
+      "wet soil delayed until3.16s"
+    ],
+    "sound": "same retained original WAV"
+  },
+  "version": "contact-correction-v5"
+}

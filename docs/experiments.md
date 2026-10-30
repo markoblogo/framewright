@@ -1,5 +1,9 @@
 # Grow the lab without growing unsupported claims
 
+[Exin reported AI-agent experiment](experiments/exin-agent-explainer.md):104s source-photo explainer with local English narration and a bounded PixiJS camera/annotation trial. Preview accepted; [publication](https://youtu.be/tgMU4DCjohk) reported by owner. Medical outcome remains an attributed claim, independent of the production result.
+
+[The Last Seed](experiments/last-seed-recovery.md): owner accepted the48.5s v4 picture and soundtrack, then supplied its [YouTube publication](https://youtu.be/ZQTORLBw9Zs). Seed surface, mounted linkage, rain variation and scored musical moods were refined through scoped corrections. Accepted local delivery and publication are distinct from fresh-session recovery and manual Eevee/executor qualification, which remain open.
+
 [Selected-route admission](experiments/route-admission.md): exact retained route,
 source,requirements,limits and output contract before one local inspection/proxy;
 whole-route/paid dispatch remain outside scope.
@@ -175,3 +179,9 @@ is owner-reported; visibility, playback and audience results remain unverified.
 [PR #46 checks and review corrections](experiments/pr46-review.md) records the
 packaging boundary and fixes for OTIO trims, settlement corrections, model paths
 and interrupted local workers.
+
+- [TIME _ CAPSULE](experiments/time-capsule.md): sourced photo/video fashion film, animated public-domain projector, first Tone.js offline score trial; encoded QA passed, owner review pending.
+
+- [Kazan rooftop: A Roof Rewritten](experiments/kazan-rooftop.md): English art film from supplied photos/video, original music/narration, bounded p5.js radial-interlude trial; owner review pending.
+
+- [Afterimage](experiments/venice-afterimage.md): Venice2019 art-film edit, scene-aware GIF processing and bounded CrossWarp shader trial; owner review pending.

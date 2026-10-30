@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-30",
+  "production": "time-capsule",
+  "duration_seconds": 51.2,
+  "frames": 1536,
+  "width": 1920,
+  "height": 1080,
+  "frame_rate": "30/1",
+  "audio": {
+    "codec": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "integrated_lufs": -17.21,
+    "true_peak_dbtp": -1.2
+  },
+  "full_decode": "pass",
+  "encoded_frame_inspection": "seven samples including opening/end",
+  "film_sha256": "4009038dbd749400fe3266153a1549d657429a2ced826f220cf06941b0066aff",
+  "source_audio_removed": true,
+  "picture_packets_preserved": true,
+  "tone_version": "14.8.49",
+  "tone_regenerated_bytes_identical": false,
+  "stock": "public-domain projector with independently rotating reel layers",
+  "creative_acceptance": "pending",
+  "listening_acceptance": "pending",
+  "publication": "not performed",
+  "paid_generation": "none",
+  "render_workers": 1,
+  "render_seconds": 190.8
+}

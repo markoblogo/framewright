@@ -14,7 +14,7 @@ def main():
     descriptor = int(descriptor); seconds = float(seconds)
     if not math.isfinite(seconds) or not 1 <= seconds <= 180:
         raise ValueError('Invalid worker deadline')
-    scripts = {'local-media-review': 'media_review.py', 'review-clip': 'executor_clip_worker.py'}
+    scripts = {'local-media-review': 'media_review.py', 'review-clip': 'executor_clip_worker.py', 'saved-blender-shot': 'executor_shot.py'}
     if mode not in scripts:
         raise ValueError('Unsupported worker')
     os.fstat(descriptor)  # Keep the inherited host-lock description open until exit.

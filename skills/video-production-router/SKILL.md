@@ -25,9 +25,14 @@ For optional host/owned-worker measurements, project costs, interrupted local ru
 or offline action assertions, read [studio foundations](references/studio-foundations.md).
 An unresolved intent blocks repeating that task; reconcile actual evidence first.
 Ledger caps and resource snapshots are not execution authority or provider guarantees.
+For one understandable production offer, read [producer brief](references/producer-brief.md).
+`intake.py brief` joins existing route candidates, optional source-index evidence and
+project status; preserve declared/checked/proposed/unknown boundaries and explicit
+preferences. It does not approve a route, quote unknown costs or start production.
 For a selected route's local action, read [route admission](references/route-admission.md):
 bind exact inputs/settings/requirements/limits and let the executor recheck that
-selection. Intake suggestions alone do not dispatch or qualify the whole route.
+selection. The saved-Blender-shot adapter requires that binding; its frame bounds
+are not seconds. Intake suggestions alone do not dispatch or qualify the whole route.
 
 For an authorised saved-Blender-shot correction or recurring character/set definition,
 read [shots and passports](references/shots-and-passports.md). `shots.py` restores a

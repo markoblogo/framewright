@@ -1,0 +1,22 @@
+{
+  "production": "venice-afterimage",
+  "date": "2026-10-30",
+  "file_sha256": "c552869ea51c053df85b75c989829086aea310fdba20ace8dab06bb8eab90ae0",
+  "duration": "61.566667",
+  "frames": "1847",
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": "30/1",
+  "audio_sample_rate": "48000",
+  "audio_channels": 2,
+  "integrated_lufs": "-17.32",
+  "true_peak_dbtp": "-1.19",
+  "full_decode": "pass",
+  "source_audio_streams": 0,
+  "crosswarp_scope": "two transition midpoint timestamps repeated in independent invocations on this Mac",
+  "creative_acceptance": "pending",
+  "listening_acceptance": "pending",
+  "publication": "not performed"
+}

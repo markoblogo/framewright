@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-28",
+  "scope": "Two owner-authorised silent staging tests; full film not rendered",
+  "tests": [
+    {
+      "id": "wide-test-v2",
+      "duration_seconds": 3,
+      "checks": {
+        "full_decode": true,
+        "frame_hashes": true,
+        "72_frames": true,
+        "three_seconds": true,
+        "720p24fps": true,
+        "intentional_silence": true
+      },
+      "source_scene_sha256": "3ae7f254ba85d615625434dcbe7cc2c5bd3c397e087a3ba790377b16da88dab0",
+      "render_seconds": 122.81300633299907,
+      "output_sha256": "647d00c96eb9a41fd0b4911cfc694a2602353c8e69da81836b5cfd0971bd87ef",
+      "frame_luminance": [
+        {
+          "frame": 1,
+          "mean_gray": 42.84166666666667
+        },
+        {
+          "frame": 36,
+          "mean_gray": 42.81402777777778
+        },
+        {
+          "frame": 72,
+          "mean_gray": 43.36423611111111
+        }
+      ],
+      "camera_start": [
+        3.5999999046325684,
+        -5.5,
+        2.299999952316284
+      ],
+      "camera_end": [
+        3.3499999046325684,
+        -4.849999904632568,
+        2.2200000286102295
+      ],
+      "lamp_start": 55.0,
+      "lamp_end": 55.0,
+      "sun_start": 0.25,
+      "sun_end": 0.25,
+      "creative_acceptance": "pending",
+      "executor_admission": false
+    },
+    {
+      "id": "dawn-test-v2",
+      "duration_seconds": 3,
+      "checks": {
+        "full_decode": true,
+        "frame_hashes": true,
+        "72_frames": true,
+        "three_seconds": true,
+        "720p24fps": true,
+        "intentional_silence": true
+      },
+      "source_scene_sha256": "ea538d171bd4dd5a9bc02b497e454fdf1b62b61c3de857deba38daf70a2bd65d",
+      "render_seconds": 119.8950824170006,
+      "output_sha256": "637b57f84996d7212cc97342905eef67548baab192c274fcad802414179b599a",
+      "frame_luminance": [
+        {
+          "frame": 1,
+          "mean_gray": 42.719166666666666
+        },
+        {
+          "frame": 36,
+          "mean_gray": 32.03423611111111
+        },
+        {
+          "frame": 72,
+          "mean_gray": 63.26555555555556
+        }
+      ],
+      "camera_start": [
+        1.25,
+        -2.25,
+        1.159999966621399
+      ],
+      "camera_end": [
+        1.190000057220459,
+        -2.25,
+        1.159999966621399
+      ],
+      "lamp_start": 55.0,
+      "lamp_end": 0.0,
+      "sun_start": 0.05000000074505806,
+      "sun_end": 2.1500000953674316,
+      "creative_acceptance": "pending",
+      "executor_admission": false
+    }
+  ],
+  "failure_and_correction": "v1 rear backdrop intercepted sunlight; v2 lowered opaque backdrop below window aperture. Side bench supports added. Original controls retained.",
+  "limitations": [
+    "Authored lighting/camera tests, not a completed film",
+    "No fluid solver, generative service or new paid tool",
+    "No automatic visual conformance or artist approval established"
+  ]
+}

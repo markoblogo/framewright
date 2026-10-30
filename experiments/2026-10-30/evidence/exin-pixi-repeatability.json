@@ -1,0 +1,21 @@
+{
+  "library": "PixiJS8.6.6",
+  "scope": "source-photo crops/annotation seeking inside HF0.8.183",
+  "separate_cli_snapshot_runs": 2,
+  "sample_count": 4,
+  "decoded_pixel_matches": {
+    "frame-00-at-2s.png": true,
+    "frame-01-at-54s.png": true,
+    "frame-02-at-81s.png": true,
+    "frame-03-at-101.3s.png": true
+  },
+  "not_tested": [
+    "other GPUs",
+    "3D reconstruction",
+    "Matter.js",
+    "character animation",
+    "photographic depth inference"
+  ],
+  "creative_review": "pending",
+  "all_sampled_frames_match": true
+}

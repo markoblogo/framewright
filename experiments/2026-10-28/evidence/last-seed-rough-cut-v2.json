@@ -1,0 +1,68 @@
+{
+  "id": "film-draft-v2",
+  "stage": "rough_cut_not_final",
+  "checks": {
+    "full_decode": true,
+    "duration_40s": true,
+    "frames960": true,
+    "format720p24": true,
+    "audio48k_stereo": true,
+    "source_frame_hashes": true,
+    "revised_pilot_bitstream_preserved_in_segment": true
+  },
+  "native_new_shots": "960x540/12fps/8samples; upscaled and frame-repeated to720p24 for draft assembly",
+  "pilot_revision": "New pointed grain/hardware render with original7.5s action timing; original WAV placed at10s at unity gain. Revised picture pending approval",
+  "original_audio_peak_linear": 0.19390869140625,
+  "render_seconds": 346.29745162400104,
+  "output_sha256": "ce074f35cc0a20407edd125185bc4668cd6e1eb333c3447889f82939772d310c",
+  "human_viewing": "pending",
+  "human_listening": "pending",
+  "creative_acceptance": "pending",
+  "publication": "not_authorised",
+  "manual_eevee": true,
+  "shots": [
+    [
+      "S01",
+      3
+    ],
+    [
+      "S02",
+      4
+    ],
+    [
+      "S03",
+      3
+    ],
+    [
+      "S04",
+      7.5
+    ],
+    [
+      "S05",
+      5
+    ],
+    [
+      "S06",
+      7.5
+    ],
+    [
+      "S07",
+      5
+    ],
+    [
+      "S08",
+      5
+    ]
+  ],
+  "action_preservation": {
+    "frames_checked": 180,
+    "leaf_tip_positions_unchanged": true,
+    "camera_positions_unchanged": true,
+    "duration_seconds": 7.5,
+    "seed_mesh_ground_offset_and_runoff_changed": true,
+    "scope": "Authored action timing/leaf tip/camera positions, not creative acceptance"
+  },
+  "pilot_render_seconds": 236.4647287079988,
+  "total_render_seconds": 582.7621803319998,
+  "reservoir_patch": "S03 re-rendered with outer-collar attachment; other shots reuse main render. Carry corrected unified holder into final-quality render."
+}

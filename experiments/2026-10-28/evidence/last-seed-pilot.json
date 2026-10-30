@@ -1,0 +1,68 @@
+{
+  "output_sha256": "1fc3ebea5b20b14ddc0788dd7b251be2a6780f0c14e5ce2acd2cd27abf76bb8c",
+  "source_sha256": "2596f19bd48502ae5faf0bfbd6d7c00be44de764fcb2eacb46bca78a9b4b353d",
+  "sound_sha256": "04e22d4380fbaba3736e6229739c125e6377484ebee38a459f11a65dbad9ab81",
+  "checks": {
+    "frame_count": true,
+    "dimensions": true,
+    "frame_rate": true,
+    "video_extent": true,
+    "audio_extent": true,
+    "audio_format": true,
+    "full_decode": true
+  },
+  "render_engine": "BLENDER_EEVEE_NEXT",
+  "executor_admission": false,
+  "render_seconds": 387.36279062500034,
+  "assembly_and_qa_seconds": 3.1345252499995695,
+  "volume_observations": {
+    "mean_dbfs": -37.3,
+    "peak_dbfs": -14.0,
+    "basis": "ffmpeg volumedetect on encoded pilot"
+  },
+  "human_viewing": "pending",
+  "human_listening": "pending",
+  "owner_acceptance": "pending",
+  "publication": "not_authorised",
+  "automatic_model_calls": 0,
+  "id": "last-seed-pilot",
+  "date": "2026-10-28",
+  "roadmap_task": "R03",
+  "duration_seconds": 7.5,
+  "frames": 180,
+  "dimensions": [
+    1280,
+    720
+  ],
+  "fps": 24,
+  "control_repeat": {
+    "comparison": "Control frames in sparse fresh process versus same frames in continuous full render; same saved scene, 32 Eevee samples",
+    "results": [
+      {
+        "frame": 25,
+        "png_sha256_identical": false,
+        "psnr_average_db": "inf"
+      },
+      {
+        "frame": 68,
+        "png_sha256_identical": false,
+        "psnr_average_db": "inf"
+      },
+      {
+        "frame": 171,
+        "png_sha256_identical": false,
+        "psnr_average_db": "inf"
+      }
+    ],
+    "limit": "PNG byte equality is not established; PSNR measures pixel similarity, not human acceptance or temporal quality."
+  },
+  "scope": "pilot_only",
+  "fresh_tools_tested": [],
+  "provider_cost": {
+    "amount": "0",
+    "currency": "USD",
+    "basis": "No external provider calls; excludes labour and hardware"
+  },
+  "known_failure": "First Cycles control rejected a mesh/light name collision; v2 fixed it, original task remains blocked as historical superseded work",
+  "release_gate": "not_reached"
+}

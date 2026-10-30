@@ -1,0 +1,78 @@
+{
+  "schema": "framewright-executor-shot-probe-v1",
+  "blender": "Blender 4.5.15 LTS",
+  "scope": "Original480x27012fps Cycles CPU scene;18frames across4sequential runs",
+  "repeat_frames_equal": 6,
+  "subset_frames_equal": 3,
+  "light_changed_frames": 3,
+  "repeat_pcm_equal": true,
+  "subset_pcm_sample_aligned": true,
+  "light_preserves_pcm": true,
+  "light_preserves_camera_action": true,
+  "outputs_review_pending": true,
+  "paid_calls": 0,
+  "publication_authorized": false,
+  "release_created": false,
+  "elapsed_render_seconds": {
+    "baseline": 9.025304959000096,
+    "repeat": 8.433571374999701,
+    "subset": 4.143417457999931,
+    "light": 4.936766125000759
+  },
+  "technical_checks": {
+    "baseline": {
+      "full_decode": "pass",
+      "frame_count": "pass",
+      "dimensions": "pass",
+      "audio_policy": "pass"
+    },
+    "repeat": {
+      "full_decode": "pass",
+      "frame_count": "pass",
+      "dimensions": "pass",
+      "audio_policy": "pass"
+    },
+    "subset": {
+      "full_decode": "pass",
+      "frame_count": "pass",
+      "dimensions": "pass",
+      "audio_policy": "pass"
+    },
+    "light": {
+      "full_decode": "pass",
+      "frame_count": "pass",
+      "dimensions": "pass",
+      "audio_policy": "pass"
+    }
+  },
+  "date": "2026-10-28",
+  "host_scope": "macOS Apple Silicon; same Blender build and machine only",
+  "automated_controls": "tests/test_executor_shot.py; synthetic worker stand-in for interruption/timeout, not native Blender failure qualification",
+  "source_hashes": {
+    "stage.blend": "75960d2cc6ddd1638578eea79129c5b190561631bf49e0f7d41c737aa09aef8f",
+    "sound.wav": "2289df5f6a714cfc009e39285881062484041f7acb8ce2ea1deefc21936ecd82",
+    "shot-spec.json": "8ad3af2ad831a38921b714042560e17bd12d81798e39147e470f99ac76a5b3f5"
+  },
+  "adapter_hashes": {
+    "admission.py": "724ea8f701e28f1db83e5a5e48c3a5b2806a976f75f3a1b6cec348d5773bd713",
+    "executor.py": "0bc18ee3a0674efc2918a61fdaee40afd89c9c9b5c329df0d1c55d3ef2f21632",
+    "executor_worker.py": "02f79ac3c6df4884846c8d4c4fa1f2ccc018dd38f9b361ae522a37fbdf130bcd",
+    "executor_clip_worker.py": "0c2a4f033dae8f5da0fa4e6373f42c23e9c738a72b84ac310b24f29fa038f593",
+    "executor_shot.py": "a96d864c32f84d632be1a83ab9d42592bbc18ce0c6304a345dc19b049283d3f0",
+    "shots.py": "739bdd003a1c6e1199c3410afb53226e69ecd6b561963aba43bf46bc6c9ba0b1",
+    "blender_shot_worker.py": "eacb1bedd0fbcb46935226aff189500ee9bcb595768e92d4f512d1c4114f822a",
+    "trials.py": "05f4f9bb2523b5d82f093c5db4b1b56488dee1f43afc3c4b405bef9a93b67451",
+    "passports.py": "04cdafda49f120ddbcae36e04e90b9059d9c943f5cf3f459440f384fe45064d9",
+    "environment.py": "b188755c4fb965080da6b5e5f5f79790b2e4b99162e1f548cb9669eeb0158a59",
+    "resources.py": "0a97ae6abd333b7dcf219f5abcf2d7ef1b37d3876d94e0982b2f7d33879e60ae",
+    "costs.py": "d066d5baa77fc5c673835ab7f6c6a112a8feda9ad698c1ba0f65e7b271dd4be6",
+    "editing.py": "9736ec06dc4155180490d10a0d69759574f4536f867812495df954b6c96ad331",
+    "media_review.py": "90685d77a5d661d4b409f35442ab367123476bcb8f042693af5e9385e1765245",
+    "intake-cost-facets.json": "c3e178c46fdbcb015e0e93e17a30f54581e2b4176fa2fda2c46aaf6797de1ef4"
+  },
+  "runtime_hashes": {
+    "blender": "d85bac46c9cc9ae7e64ecdc5a647db28af60959eb7df65e030657ff9e0ed8299",
+    "ffmpeg": "fcae660f1ae35bdd8f8dec9c8548a8658e49f453e2b1a86732de8ddba93796b7",
+    "ffprobe": "acca2bc5a89462a30564071be5618dfd3d29e0d423bf1b3d842d71c33e0ec937"
+  }
+}

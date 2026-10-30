@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-30",
+  "production": "exin-agent-explainer",
+  "revision": 2,
+  "previous_publication": "https://youtu.be/tgMU4DCjohk",
+  "previous_upload_removal": "owner intends; not performed or verified",
+  "new_video_seconds": 5.4666666667,
+  "new_video_at": 78.1,
+  "new_photo_range": [
+    27.788,
+    36.888
+  ],
+  "narration_changed": false,
+  "music_changed": false,
+  "duration_changed": false,
+  "source_sound": "excluded",
+  "source_video_codec": "AV1",
+  "working_codec": "H264/yuv420p",
+  "creative_acceptance": "pending",
+  "publication": "pending",
+  "source_provenance": "owner supplied",
+  "independent_patient_identity": "unknown"
+}

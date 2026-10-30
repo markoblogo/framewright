@@ -1,5 +1,73 @@
 # Proposed experiment queue
 
+[Global roadmap](roadmap.md) governs priority and intake. This queue preserves dated
+candidate and trial records, including earlier planned states; consult the linked
+latest evidence before treating a historical heading as current. New finds map to a
+milestone and a bounded question; they do not automatically displace active work.
+
+## Agent video toolkits — queued30October
+
+[Adoption levels, prerequisites and stop conditions](research/agent-video-toolkits-2026-10-30.md).
+Maps to M4/R05 and R09; no installation or broad qualification.
+
+- **FFMPEG-OPS-01:** first candidate for a local operation adapter; scene/contact-sheet
+  and small cut/join test on retained source, preserving the accepted master.
+- **OM-BOARD-01:** architectural reference → read-only view of existing project state.
+- **OM-CORPUS-01:** later external retrieval comparison; model/resource/licence gates first.
+- **VIDEO-SKILL-DISCOVERY-01:** catalogue reference → individually assess onetake or
+  ClaudeAnimationBase for a concrete missing technique. No wholesale skill import.
+
+## GL-CROSSWARP-01 — sourced-image links, trial30October
+
+[Afterimage](experiments/venice-afterimage.md),R05/R09. MIT GL Transitions
+CrossWarp shader in an authored absolute-time WebGL adapter. Two sampled
+midpoints repeat at pixel level on this Mac; creative review pending. GIF
+cleanup/interpolation is a separate local presentation trial, not super-resolution
+or restored true30fps capture. Inspect every original scene before attribution.
+
+## P5-RADIAL-01 — original radial interlude, trial30October
+
+[Kazan art-film case](experiments/kazan-rooftop.md), R05/R09. p5.js1.11.3
+local 2D absolute-time sketch; two sampled timestamps matched decoded pixels
+across independent snapshot invocations. Motion exists between the two times.
+Technical scope only; owner review and another appropriate production pending.
+No automatic promotion to general 3D/character/generative-video capability.
+
+## CAPSULE-01 — photo/video + animated stock + original score, trial30October
+
+[Production case](experiments/time-capsule.md), maps to R05/R09. Tone.js14.8.49
+first offline instrumental trial: original150BPM score with authored event timing;
+two6.4s probes completed with equal peaks and near-identical decoded PCM, but
+different bytes. Retain/hash final WAV. Do not claim deterministic regeneration.
+Public-domain projector split into body/two rotating reels; sampled motion inspected.
+Human picture/music acceptance remains pending. This supports a narrow stock-prop
+animation method; mouse/brain and character animation remain untested.
+
+## INSIGHT-ILLUSTRATION-01 — contextual stock animation, queued30October
+
+Owner feedback after accepting [the Exin explainer](experiments/exin-agent-explainer.md):
+next fitting sourced story should include a5–8s animated illustrative mouse/brain
+or other subject from reusable licensed stock/local models, alongside actual source
+photos. Maps to M4/R05, with R09 documentation. Check derivative-use rights,
+readable motion/scale, voice sync, seek/export repeatability and distinction between
+illustration and actual experimental evidence. Start free/macOS-first. Do not alter
+the accepted Exin film or imply a stock animal/brain proves its clinical outcome.
+
+The preceding PixiJS8.6.6 photo crop/annotation trial matched four sampled frames
+across separate snapshots on M4/ANGLE, preview accepted and encoded delivery checked.
+That narrow result does not qualify photographic depth,3D, Matter.js or rigging.
+
+## RECON-01 — real location to reusable film set, queued 28 October
+
+[Candidate assessment and bounded test](research/reality-capture-2026-10-28.md).
+Maps to roadmap M4/R05 and potential M5/R07; does not replace R01/R02. One selected
+permitted location → reconstruction → actual scene export/reopen → 10–15s camera
+move → one camera change without reconstruction. Compare with captured footage or
+photo staging. Check unseen/generated areas, scale, artifacts, handoff and resources;
+character occlusion/contact is a subsequent optional control. Echo-3/Polycam remain
+plan/export-gated; Postshot/Splatframes Windows reserves; Nerfstudio compute-gated.
+No installation, subscription, upload, generation or trial performed.
+
 ## RESOURCE-01 — host and process observations, planned 28 October
 
 [psutil scope and acceptance criteria](research/psutil-machine-observations-2026-10-28.md).
@@ -768,6 +836,9 @@ in the preceding intake checkpoint are historical, not current blockers for B.
 [Route bridge](experiments/route-admission.md) binds an actual selected intake stage
 to one supported local inspection/proxy action. Fresh pins,requirements,cost/limits
 and expected results are checked; intake,execution and acceptance stay separate.
-Other renderers,whole-route dispatch and paid/external execution remain unimplemented.
-A controlled saved-shot renderer is the next fitting adapter; use an original coherent
-YouTube-suitable film when production evidence is needed. No film starts here.
+[R01](experiments/r01-saved-shot-executor.md) now also binds a saved Blender shot:
+four short native renders and automated failure controls passed in stated scope.
+Other adapters,whole-route dispatch and paid/external execution remain future work.
+R02 is next; a coherent YouTube-suitable film supplies later R03 evidence. No film starts here.
+
+P5-RADIAL-01 update30October2026: [Kazan film](https://youtu.be/QqJ2J9RGOfo) accepted by owner and publication reported. One production accepted; a second suitable production remains the next repeat test, not automatic broad qualification.

@@ -1,0 +1,22 @@
+{
+  "production": "kazan-rooftop",
+  "date": "2026-10-30",
+  "file_sha256": "18e44063759139eaea690677e9470ce609fa35dd78f8e5f6fa69af6fe723d8f7",
+  "duration": "68.100000",
+  "frames": "2043",
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": "30/1",
+  "audio_sample_rate": "48000",
+  "audio_channels": 2,
+  "integrated_lufs": "-18.49",
+  "true_peak_dbtp": "-1.51",
+  "full_decode": "pass",
+  "source_audio_streams": 0,
+  "p5_scope": "two sampled timestamps repeated in independent invocations on this Mac",
+  "creative_acceptance": "pending",
+  "listening_acceptance": "pending",
+  "publication": "not performed"
+}

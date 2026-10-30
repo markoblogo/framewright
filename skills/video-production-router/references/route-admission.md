@@ -58,9 +58,8 @@ needs explicit execution; no old approval is inherited.
 
 ## Checks and current scope
 
-- The route and stage must actually exist in the retained intake comparison. Only
-  the known local FFmpeg adapter currently maps to `local-media-review` or
-  `review-clip`. A HyperFrames, remote generation or other stage is not silently
+- The route and stage must actually exist in the retained intake comparison. The local FFmpeg adapter maps to `local-media-review` or
+  `review-clip`; the selected Blender picture stage maps to `saved-blender-shot`. A HyperFrames, remote generation or other stage is not silently
   substituted. Other route stages remain unexecuted/unqualified.
 - Task/dependencies/waits, exact retained bytes and invocation match must hold.
   Fresh fixed local version probes, declared environment checks, source rights and
@@ -94,5 +93,50 @@ job identity/reconciliation and ambiguity handling. This implementation does not
 supply a transport sandbox, remote idempotency or a general generation scheduler.
 
 Relative model paths preserve the retained manifest directory; output disk checks
-still use the project volume. Inspection/proxy workers inherit the host lock and
+still use the project volume. Inspection/proxy/saved-shot workers inherit the host lock and
 a process-group deadline, including when the executor itself exits abruptly.
+
+## Saved Blender shot (R01)
+
+`intake.py routes` includes `local-saved-shot`, a proposal for an existing prepared
+scene. Select its `picture` stage with tool `saved-blender-shot`, a retained
+`output:shot:ID:VERSION` source, and a declared `shot-preview` output. A saved-shot
+execution always requires a bound selection; there is no legacy unbound bypass.
+Scene creation, the rest of the recipe and final acceptance are separate work.
+
+Use the same selection fields as above. `arguments.start/end` are **zero-based,
+end-exclusive integer frames** for this adapter, not seconds. `context` remains1
+and is unused; revision-request/after bounds must be null. Keep the range within the
+saved shot, at most240frames/300million pixels, and worker time at most180seconds.
+Split larger production work into explicitly selected bounded tasks.
+
+Prerequisites declare `blender`, `ffmpeg`, `ffprobe`; expose the trusted installed
+Blender as `blender` on PATH (or the standard macOS application location). Selection
+pins resolved executable paths and hashes, the shot card, scene, resources, audio,
+passport references and adapter implementation. Preflight rechecks passport status,
+frame bounds, resource drift, environment, rights and zero local provider fees.
+The worker rechecks executables and the existing saved-shot renderer checks inputs.
+This is for trusted local scenes; it is not a sandbox for untrusted blend files,
+add-ons, linked dependencies or executables, nor a hash of the entire OS/runtime.
+
+The full render folder is kept: PNGs, job/state, logs, PCM where applicable, MP4 and
+receipt. For this adapter `max_output_bytes` covers **the entire folder**, checked
+during rendering and before retention. Sampling is not a hard filesystem quota: an
+in-flight write can overshoot. The worker group shares the existing deadline/host
+lock; failures retain diagnostics without registering the expected output. A crash
+with uncertain outcome requires reconciliation before an explicit retry.
+
+Parent-side checks decode the MP4 and verify H264, dimensions, fps, frame count,
+audio presence, duration, byte allowance and receipt/source/output pins. Successful
+files and the receipt are retained under new identities; artistic/listening checks
+remain pending. The executor does not mark the task accepted or publish it.
+
+Reproduce the original internal test with an installed trusted Blender (no install,
+network or account access):
+
+```sh
+python3 examples/blender-stage/run_executor_probe.py --output /tmp/fw-r01 --blender /path/to/Blender
+# Add --execute only to run four short sequential renders of an original fixture.
+```
+
+See [R01 evidence](../../../docs/experiments/r01-saved-shot-executor.md).

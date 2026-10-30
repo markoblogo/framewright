@@ -1,8 +1,22 @@
 # Next production cycle
 
-Updated 28 October 2026. This is a planning record, not a render queue or spending
+[Global roadmap](roadmap.md) is the current priority/milestone authority. This page
+retains dated production status and evidence; older “next” suggestions below are
+history unless selected in that roadmap or by a later owner decision.
+
+Updated 30 October 2026. This is a planning record, not a render queue or spending
 authority. [Completed PlayMCP review](experiments/playmcp-service-review.md) ·
 [Experiment backlog](experiment-queue.md).
+
+**R01 completed internally,28 October:** [saved-shot execution](experiments/r01-saved-shot-executor.md)
+now reuses the admitted sequential worker for a pinned Blender scene.
+**R02 completed internally:** the [unified proposal](experiments/r02-producer-brief.md)
+joins task, materials, scene purpose, routes, constraints and next step.
+**R03 current:** owner accepted48.5s recovery v4 picture and sound on30October; a local final copy and YouTube kit are prepared. Publication is owner-reported. Fresh-process file recovery passed; independent-session recovery and the manual Eevee/executor boundary remain open. See [release closeout](release-audit-2026-10-30.md). Historical start: the owner selected [The Last Seed pilot](experiments/last-seed-pilot.md),
+7.5s of seed, drop and first sprout. Its admitted Cycles control exposed a practical
+render-time limit; the corrected preview uses a documented manual Eevee fallback.
+Owner accepted the corrected pilot on28October and the completed v4 cut on30October.
+No release gate is marked complete by creative acceptance alone.
 
 **Current product order,28 October:** [studio foundations](experiments/studio-foundations.md)
 now implement optional resource observation and cost evidence first, followed by
@@ -10,9 +24,9 @@ local executor recovery and offline decision assertions. [ROUTE-01](experiments/
 review action to exact inputs/settings, requirements, limits and expected output.
 Whole-route rendering, priced external dispatch and additional adapters remain
 separate; do not infer hardware fit, prices or authority.
-No production is currently selected. When a production test is needed, the owner
-permits an original coherent YouTube-suitable film designed around fitting queued
-methods, as in recent trials. Technical demonstrations alone are not the final
+The Last Seed is the currently selected production; its v4 film and local kit are delivered. For production tests,
+the owner permits proposals for original coherent YouTube-suitable films designed
+around fitting queued methods. Technical demonstrations alone are not the final
 creative goal; public upload remains separate. Pocket OS stays paused.
 
 28 October: the offline intake can compare bounded picture/voice/finishing recipes,
@@ -287,3 +301,39 @@ candidate has now passed its separate technical and owner listening/creative
 reviews and was explicitly selected as final. Other candidates still require
 their own reviews; composition adaptation and automatic editor-to-journal
 synchronization are not implemented by this trial.
+
+28October: [Last Seed staging tests](experiments/last-seed-staging-tests.md)
+now provide two3s silent previews: greenhouse camera move and lamp-to-dawn light.
+Technical checks passed; owner review is pending. Full-film production remains open.
+
+29October: owner accepted translucent greenhouse wide-v7 after the opaque proxy
+was rejected and revised. Dawn-v2 is also accepted. Next selected proposal: seed
+cassette/last-water details and full-film animatic; combined glazed dawn needs a
+control. See [staging evidence](experiments/last-seed-staging-tests.md).
+
+29October: [The Last Seed60s rough cut](experiments/last-seed-rough-cut.md) delivered
+locally, with original cassette/reservoir shots, actual glazed dawn and retained
+pilot. Technical checks passed; full-film viewing/listening and creative review
+are pending. Final-quality renders, kit and fresh-session continuation remain R03.
+
+29October: owner requested faster pace, grain recognition, natural irrigation
+and readable text in The Last Seed. [40s revised rough cut](experiments/last-seed-rough-cut.md)
+now replaces the rejected60s proposal for review. New grain/props retain previous
+action timing without inheriting visual approval. Final quality/kit/recovery remain open.
+
+**Owner pause,29October:** [The Last Seed checkpoint](experiments/last-seed-next-session.md)
+records the selected rain/cracked-earth/last-energy/roof-jam/recovery/white-ending
+story. This supersedes the older open/black-fade ending. Not implemented; resume
+only with owner, starting with cheap mechanism/weather controls.
+
+**Owner resume,30October:** the Last Seed recovery story is in local production: dry cracked soil, exterior rain, straining roof drive, delayed power exhaustion, water reaching the plant and upward/light ending. Prior full-film rejections remain recorded. New rough revision requires separate viewing/listening; R03 and REL-A remain open.
+
+30October, owner feedback on recovery v3: scoped [surface/mechanism/rain/title and dramatic-score correction](experiments/last-seed-recovery.md#owner-corrections-after-v3-viewing) is in progress. Retain music and Foley stems separately; no new production or release milestone is marked complete by these renders.
+
+**Accepted delivery,30October:** owner accepted v4 picture/sound. Final file is a byte-identical copy, with a proposed text-bearing cover and English YouTube title/description/tags/credits. Publication link remains pending; next bounded work is fresh-session recovery before reassessing REL-A.
+
+30October: owner reported [The Last Seed publication](https://youtu.be/ZQTORLBw9Zs); the version-bound publication observation is retained separately from creative acceptance. R03 fresh-session/manual-executor checks and REL-A assessment remain open.
+
+**Priority owner order,30October:** [Exin reported agent explainer](experiments/exin-agent-explainer.md) takes precedence before Last Seed fresh-session recovery. Preview accepted; local export/YouTube kit in progress. Bounded PixiJS source-photo seeking has matching sampled frames; full-tool/medical efficacy claims are not inferred. Future INSIGHT-ILLUSTRATION-01 tests licensed contextual mouse/brain animation without revising the accepted film.
+
+30October: owner reported [Exin explainer publication](https://youtu.be/tgMU4DCjohk); link retained in the version-bound journal. INSIGHT-ILLUSTRATION-01 is future work. Next selected product direction remains the Last Seed fresh-session/release-gate check, requiring explicit continuation.

@@ -1,0 +1,21 @@
+Pokras Lampas turns a brick facade into a message for future generations. TIME _ CAPSULE is a short art film exploring his calligrafuturist mural at Lennauchfilm in St Petersburg: human handwriting, cinema history and contemporary street art, cut to an original instrumental trap soundtrack.
+
+The mural asks viewers to decode its letters, signs and references to writing cultures across different eras. Its composition follows the building’s brick architecture, connecting the people who once made science films here with those who will read the wall in the future.
+
+According to the artist’s statement supplied for this video, the inscription was written in May 2026 and refers to a studio making science films since 11 February 1933, with more than 4,000 films. These historical details are presented from that statement, rather than as independently verified findings. The supplied project statement is dated 14 July 2026.
+
+Location: Lennauchfilm, 4 Melnichnaya Street, St Petersburg.
+Coordinates: 59.917109, 30.395857.
+
+Artwork: Pokras Lampas — TIME _ CAPSULE.
+Project credits as supplied: БС АРТ ДЕВ ╳ Культ_Прорыв.
+Original photographs, video and artist statement supplied by the video’s creator. The artwork and source photography remain the work of their respective creators. This is an independent editorial art film, not an official artist commission or endorsement.
+
+Created with Framewright: https://github.com/markoblogo/framewright
+Editing and source-image camera moves: HyperFrames + PixiJS.
+Original instrumental music composed for this film using Tone.js. No vocals. The original source-video audio was removed.
+
+Animated stock illustration: Pearson Scott Foresman, public-domain film projector drawing. This is an illustrative insert, not archival footage of Lennauchfilm:
+https://commons.wikimedia.org/wiki/File:Reel_(PSF).png
+
+#PokrasLampas #Calligrafuturism #StreetArt

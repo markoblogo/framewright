@@ -6,7 +6,7 @@ Existing project memory, rights/review separation and prior productions were reu
 
 | Area | What now has a concrete implementation or trial | Important remaining boundary |
 | --- | --- | --- |
-| Producer intake | Private preferences, persisted free-only choice, a small linked cost/platform catalogue slice and comparable picture/voice/finishing proposals | Partial index; unknown prices, durations, installed access and whole-route fit are not invented |
+| Producer intake | Private preferences, persisted free-only choice, a small linked cost/platform catalogue slice and [one producer proposal](experiments/r02-producer-brief.md) joining task, scene purposes, source gaps, routes and journal blockers | Partial index; unknown prices, durations, installed access and whole-route fit are not invented |
 | Local execution | One explicit allowlisted action, review clips/comparisons, durable intent/recovery, current blockers and now a pinned route-admission bridge | Bound inspection/proxy adapters only; no universal full-route/paid/remote dispatcher |
 | Existing sources | Source-pinned lexical retrieval, raw local ASR import, multi-source edit map/gap report and an accepted internal MN7R recut | Recognition false miss retained; no general semantic/motion understanding or measured labour advantage |
 | Editorial interchange | Actual OTIO export, Kdenlive import/15-frame edit/render/re-export, safe candidate return and separate owner-accepted B final choice | Straight cuts/baked assets; not universal editor FX preservation or automatic journal synchronization |
@@ -17,8 +17,8 @@ Existing project memory, rights/review separation and prior productions were reu
 The useful change is a more connected and recoverable production workflow: proposals,
 selected inputs, actual execution, review and exact-version decisions increasingly
 refer to the same project. Research-only tools stay research-only; installing another
-framework is not the product result. Broader changes remain local/unreleased until
-separately authorised Git publication/release.
+framework is not the product result. The snapshot is now merged through [PR #46](https://github.com/markoblogo/framewright/pull/46);
+no new release was created. [Global roadmap](roadmap.md) records the next milestones.
 
 Next practical milestone: admit production of one saved shot through the same route
 contract, then use a fitting complete original film to check creative continuity,
