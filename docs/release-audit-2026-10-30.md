@@ -36,7 +36,13 @@ then independently exercise it before measuring R04 reuse.
 Pre-edit full offline suite passed492tests with1optional skip; source/benchmark
 integrity, local documentation links, generated tool reference and standalone
 package smoke passed. Current-source model routing remains not evaluated.
-Final-tree checks, CI/review and publication evidence are appended below when done.
+Final-tree documentation validation, generated-reference check and v0.5.0 package
+smoke passed. The implementation commit `39ee0d4` received completed automated
+Codex review with no findings. Final CI/review state and merge identity are retained
+in [PR47](https://github.com/markoblogo/framewright/pull/47); tag, downloadable
+assets and publication time are retained in the
+[GitHub release](https://github.com/markoblogo/framewright/releases/tag/v0.5.0).
+These external records must be checked before claiming publication complete.
 No model/provider calls, new dependencies or paid generation were used.
 
 ## Compatibility and delivery
