@@ -12,6 +12,11 @@ Default dark-transition miss retained; one tuned pass and accurate excerpts/join
 completed. Temporary external checkout only; no general qualification or installed
 skill. Additional production validation remains separate.
 
+**1 November R05 repeat:** explicit-frame extraction confirmed against direct
+FFmpeg on Beyond the Letters; automatic sheet repeated failure and is excluded.
+[Exact scope](experiments/ffmpeg-skill-operations.md#r05-repeat-on-beyond-the-letters--1-november-2026).
+No installed adapter or library-wide qualification.
+
 ## Agent video toolkits — queued30October
 
 [Adoption levels, prerequisites and stop conditions](research/agent-video-toolkits-2026-10-30.md).

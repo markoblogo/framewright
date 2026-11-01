@@ -1,6 +1,6 @@
 # Working here
 
-- Read README.md, then only the selected recipe/evidence. Do not load all experiments.
+- Read README.md; use docs/start-here.md for start / continue / correct and docs/next-cycle.md for current work. Then load only the selected recipe/evidence, not all experiments or docs/history/.
 - For priorities or new ideas/tools/orders, consult docs/roadmap.md; link to an existing milestone/task and preserve active scope and owner pauses.
 - On resuming an existing production, run `project.py brief PROJECT.json`; preserve explicit waits and distinguish its proposed next step from execution authority.
 - This is a methods/skills library, not a renderer or automatic publishing service.

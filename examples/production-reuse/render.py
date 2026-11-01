@@ -2,7 +2,7 @@
 """Source-preserving photo/clip montage, explicit crops and frozen copy per aspect.
 Requires an explicit private plan; no network, model download or publication.
 """
-import argparse,json,hashlib,subprocess,time,shutil
+import argparse,json,hashlib,subprocess,time,shutil,runpy
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont
 FONT='/System/Library/Fonts/Supplemental/Arial Bold.ttf'
@@ -30,8 +30,13 @@ def label(path,title,subtitle,w,h):
  if subtitle:d.text((x+8,y+10),subtitle,font=subfont,fill='#d6e4ed')
  image.save(path)
  return {'title_lines':len(lines),'font_size':size,'safe_area':True,'subtitle_present':bool(subtitle)}
-def render(plan,root,aspect):
- d=json.loads(plan.read_text());w,h=(1280,720) if aspect=='16x9' else (720,1280);out=root.resolve()/aspect
+def render(plan,root,aspect,enforce_caption_timing=False):
+ d=json.loads(plan.read_text())
+ if enforce_caption_timing:
+  timing=runpy.run_path(str(Path(__file__).with_name('caption_timing.py')))['inspect'](d,24)
+  failed=[str(x['shot']) for x in timing['shots'] if x['status']!='pass']
+  if failed:raise ValueError('Caption reading time too short in shot(s) '+', '.join(failed)+'; shorten copy or explicitly replan timing and narration')
+ w,h=(1280,720) if aspect=='16x9' else (720,1280);out=root.resolve()/aspect
  if out.exists():raise ValueError('Use a new output directory')
  out.mkdir(parents=True);timings=[];parts=[];sources={}
  def run(args,stage):
@@ -62,4 +67,4 @@ def render(plan,root,aspect):
  report={'aspect':aspect,'resolution':[w,h],'duration_seconds':total,'fps':24,'sha256':sha(master),'sources':sources,'timings':timings,'source_audio_used':False,'creative_review':'pending','listening_review':'pending','publication_authorized':False,'reuse_scope':d['reuse_scope']}
  (out/'render.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({'file':str(master),'duration':total,'stages':timings}))
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('plan',type=Path);p.add_argument('output',type=Path);p.add_argument('--aspect',choices=['16x9','9x16'],required=True);a=p.parse_args();render(a.plan,a.output,a.aspect)
+ p=argparse.ArgumentParser();p.add_argument('plan',type=Path);p.add_argument('output',type=Path);p.add_argument('--aspect',choices=['16x9','9x16'],required=True);p.add_argument('--enforce-caption-timing',action='store_true',help='Reject too-short English copy before creating outputs; no automatic retiming');a=p.parse_args();render(a.plan,a.output,a.aspect,a.enforce_caption_timing)

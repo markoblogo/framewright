@@ -135,3 +135,142 @@ The reported closeout generated no new reports, speech or videos and sent no
 messages. The first actual scheduled run, fresh listening/editorial review and
 six confirmed delivery receipts remain pending. Do not treat the deployment
 report as successful weekly production or add a Framewright scheduler.
+
+
+## 1 November 2026 — first receiving-project render (supplied report)
+
+The owner supplied `FRAMEWRIGHT-VIDEO-HANDOFF.md` from SSI. This is receiving-project
+reported evidence, not a Framewright rerun or independent media inspection.
+Three local previews are reported: Logistics **41.3s / 1.18MB**, Grains
+**55.8s / 1.55MB**, Oilseeds **82.0s / 2.27MB**; all1080×1920,30fps,H.264/AAC.
+SSI reports22 checked fact/unit/basis/date bindings across5/7/10scenes, fresh
+Supertonic-3 M1/en speech (12steps,1.03speed), no music/SFX and at least2s
+holds after speech. HyperFrames0.8.185 and local FFmpeg retain the handed-off style.
+
+Reported corrections: scope animation selectors to each scene; prevent AAC
+true-peak overshoot using two-pass normalization with headroom; atomically retain
+per-film receipts bound to source packet, voice version, parameters and SHA-256.
+An unchanged-job retry may reuse its successful file; a new weekly report requires
+new facts and speech. Reported checks include full decode, layouts/captions/audio,
+settled frames of all22scenes and seven renderer tests. These checks were not rerun here.
+
+**Current boundary:** local previews only, autosend disabled, full listening and
+creative approval pending with owner. No scheduled send, Telegram receipt or public
+publication demonstrated. This is meaningful partial M6 handoff evidence, not
+complete independent operation or REL-B completion. Durations exceed the original
+up-to30s trial target; confirm whether these longer weekly formats are acceptable
+at owner review, rather than silently declaring that original duration requirement met.
+
+Reusable lessons: scoped selectors; AAC checks after encoding; retry receipts bound
+to the unchanged job; updated report is new content. They are candidates for reuse
+with their own tests, not imported code or generally qualified implementations.
+
+
+### Same-day delivery closeout — superseding supplied report
+
+The owner supplied an updated handoff with a delivery closeout dated1November.
+SSI now reports owner approval of the reviewed editorial revision and private
+Telegram delivery of all three pairs in order: Ukrainian text, corresponding
+English video. Video message IDs reported: **1754 /1756 /1758**. All six messages
+are reported confirmed/persisted in its server ledger with no blind resend. The
+ledger and referenced `telegram-delivery-receipt.json` were not inspected here.
+
+Reported SHA-256 for the exact reviewed MP4s:
+- Logistics: `555d456e72aac992955f2933f742857cd4357d540915092acd4bd3932fbc1ab0`.
+- Grains: `b5c43543386603278713da6ff3f49a8129e52c267e678cb68d60f6215a0208b2`.
+- Oilseeds: `3061facd413abfe09598d2008977d62415113a9f9394d46eab56d6dbf050d035`.
+
+This supersedes the earlier report's pending-owner-approval/local-only state for
+this set. It does not add independent full subjective listening or establish
+unattended future generation: the automatic candidate was rejected and not sent;
+the recurring Mac worker remains disabled. No public-channel, website or WhatsApp
+publication is reported. Retain both report versions. M6 has receiving-project
+render/QA and owner-approved ordered private-delivery evidence by supplied report;
+future scheduling/unattended editorial quality remain open. Do not re-enable the
+worker or resend from Framewright on the basis of this report.
+
+
+### Owner feedback — mandatory next template revision
+
+Owner considers new SSI films broadly OK, requests an ending in **all three**
+parts with readable **spike.1d3x.com** and the **actual site interface**, plus restored
+animated graphics showing supported growth/decline. This supersedes the historical
+optional-site-ending rule for new variants. Preserve English voice-only and at least
+2s after speech AND animation settle. Numeric count-up alone is insufficient.
+Use comparable source-bound data; do not invent prior values or time series.
+A new private revision contract/handoff was prepared as `ssi-template-revision-20261101`;
+SSI runtime integration, new animation test renders and review are pending.
+Frozen accepted v1 bundles were not edited. No new send or worker enablement.
+
+
+### Current owner-reported review boundary
+
+1 November: owner says SSI is making one test video from today's reports with the
+updated template, without publication, for their approval. Await that report; do
+not infer creative acceptance or start a duplicate render/send from Framewright.
+This statement does not independently certify the installed runtime or schedule.
+
+
+### Supplied revised-template test and owner correction request
+
+Owner supplied FRAMEWRIGHT-VIDEO-TEST-20261101.md. SSI reports template
+ssi-template-v2-2026-11-01 installed, template prefix 6a20feda and renderer prefix
+c587dd87; Sunday scheduling retained. Internal 85.5s 1080×1920/30fps test, fresh
+English M1 voice, no music/SFX; nine week-level comparisons derived from explicit
+deltas plus one level without asserted dynamics. Ending 3.5s includes an archived
+SSI interface labelled 23 October, readable site and CTA. Reported checks: 13
+Python/33 TS tests, types/lint, encoded motion/layout/decode, ≥2s holds, -17.10 LUFS
+and -2.09 dBTP. Report is supplied evidence, not a Framewright rerun. No test sends,
+historical accepted MP4s unchanged. Next planned weekly run 8 November is subject
+to the outstanding viewing corrections.
+
+After viewing, owner requested shorter silent gaps and three separate films matching
+the report blocks, not a combined report film. Do not silently interpret this as
+removal of all reading holds: SSI should resolve pacing in the revised preview.
+The file describes Oilseeds only whereas the owner's viewing account describes
+three combined blocks; exact viewed-version/source mapping is unresolved here.
+Preserve both accounts. Updated-template creative acceptance remains pending;
+owner says revisions are underway in SSI. No duplicate production or message here.
+
+### v2.1 test accepted by owner; three-film production pending
+
+Owner supplied FRAMEWRIGHT-VIDEO-TEST-20261101-v2.1.md and accepted the viewed
+result. The report clarifies the test is **Oilseeds/part III only**, not a combined
+weekly release; the complete release remains three separate text/video pairs.
+This resolves the earlier report/viewing ambiguity as a test-scope clarification.
+SSI reports a silence-only recut from85.5 to73.866667s: about1s after speech instead
+of2s, no fixed7.6s scene floor; charts remain settled at least2s and ending3.5s.
+This owner-accepted timing supersedes the old after-speech2s rule for this revision;
+it does not remove the chart reading hold. M1 voice/copy/data/motion retained,
+no music/SFX. Reported14 Python tests on the installed renderer and3 report tests,
+decode/format/hold checks, -17.16LUFS/-2.09dBTP. Installed revision reported as
+ssi-template-v2.1-2026-11-01, renderer prefix8b73884c, template prefixbc6ee7ff.
+No independent rerender/runtime verification here. Source file was read, but its
+Desktop path was no longer present at retention time; private read notes preserve
+this limitation rather than claiming a byte-identical retained original.
+
+Owner requested SSI make all three films from today's report and will manually
+send them to partners. Await separate production report, partner comments/approval,
+and Telegram/Instagram publication links. Test acceptance is not those outcomes.
+Framewright sends nothing and does not duplicate SSI production.
+
+
+### Three-film closeout — superseding owner report, 1 November
+
+Owner reports all three v2.1 films prepared from the approved30October report:
+Logistics39.8s, Grains51.4s, Oilseeds73.9s;1080×1920/30fps, English Supertonic-3 M1,
+no music/SFX, no regenerated facts. Template accepted by owner; correct three-part
+structure and shorter pauses now confirmed in supplied closeout. Changes are
+source-backed; without comparable data, current level only. About1s after speech,
+at least2s settled-chart reading hold; mandatory3.5s real-interface/site/CTA ending
+with explicit archival illustration label. Reported14 renderer/3 report tests plus
+MP4 decode/layout/timing/audio/hash/size checks. No independent rerender here.
+
+New files have not been sent or published; earlier accepted files/receipts remain.
+Partner approval/publication of this new set are pending. Reported next automatic
+run is8November: macOS login, mounted Work, internet and Keychain access;5min
+checks, all parts ready before sending, not before09:00 Kyiv; three Ukrainian text
+→ corresponding English video pairs to private founders group, duplicate protection
+retained. This is reported configuration, not observed autonomous execution.
+Receiving-project production handoff has concrete repeat-output evidence; M6's
+first fully autonomous outcome and partner acceptance remain separate.

@@ -43,3 +43,31 @@ The automatic timed3×2sheet instead contained only an incomplete black tile; it
 is retained as a failure, not accepted as a visual review. A direct six-frame
 sheet and full final-master decode are the fallback. This narrows the candidate
 qualification; no automatic integration or current-source model evaluation.
+
+## R05 repeat on Beyond the Letters — 1 November 2026
+
+Same upstream revision8b6c30528d70b262d8211c6ad0cf88b0de93d8c2, existing macOS
+Apple Silicon/FFmpeg, no install/update/network/model/purchase. Accepted36s master
+pinned and unchanged. First probe, then --no-timecode/320px PNG extraction and
+960px3×2automatic sheet, sequential60s outer timeouts (upstream30–45s).
+
+**Negative confirmation:** automatic sheet exits0 and reports completed, but actual
+968×366 PNG contains one nearly black tile and otherwise empty grey padding.
+Agent inspected the PNG and retained tile measurements/commands. Earlier R04
+failure reproduces on this second production. Do not use exit0/probe as proof of
+a populated sheet. Automatic sheet is excluded from the working route on this
+revision/host; root cause not established and no upstream patch or general rejection.
+
+**Positive confirmation:** explicit look.py --at PNG extraction at3/9/15/21/27/33s
+matched direct FFmpeg pixel-for-pixel. Some correct frames were black because the
+chosen times hit scene fades. A second bounded set at2/8/14/20/26/32s also matched
+pixel-for-pixel; its local six-frame composition visibly contains artwork,
+architecture and captions in all tiles. Choose midscene times, then assemble with
+our existing image helper. Six-frame visual inspection is not full-film QA.
+
+Scoped disposition: explicit --at extraction, --no-timecode, width320, PNG on this
+host/revision is confirmed across two suitable production cases. Keep the direct
+FFmpeg/local composition fallback. Scene suggestions/cut/join retain their prior
+limited statuses; no captions/HDR/MCP/full-library qualification, automatic adapter
+installation or rights clearance. This completes the bounded R05 comparison with
+both positive and negative outcomes. [REL-B assessment](../rel-b-readiness-2026-11-01.md).
