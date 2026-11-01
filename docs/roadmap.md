@@ -278,3 +278,5 @@ It was not executed in Good Dog; trial only when a later scene needs pixel effec
 **1November REL-A assessment:** [evidence matrix and remaining actions](release-readiness-2026-11-01.md). Blocks1/2 remain closed in scope. No new film or full-queue test is required for this release; consolidate the complete candidate, run final checks and review it before requesting a release decision. No commit/push/release authorised by this assessment.
 
 **1November final local closeout:** [510-test full check and local review](final-local-review-2026-11-01.md) pass with18explicit skips. Caption overflow and stale catalogue fixtures corrected. Local REL-A readiness is evidenced; no new code-independent approval, remote CI, commit/push or release is implied. Next: authorised PR/CI and release decision, not another production/tool trial.
+
+**1November release preparation:** merged-main CI on5a98bd6 passed. [0.6.0 REL-A candidate](release-audit-2026-11-01.md) is prepared locally; version/notes/package work does not itself publish a tag or release. No new functional gate or tool trial is added.

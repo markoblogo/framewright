@@ -2,13 +2,23 @@
 
 ## Unreleased
 
-- Reject clipped long titles/subtitles in the reusable montage example; refresh component-only discovery fixtures and complete final local checks/review.
+## 0.6.0 — 2026-11-01 — experimental
 
-- Explicit Eevee Next saved-shot execution with retained engine/build, bounded native interruption/retry evidence on a Last Seed scene, and a30s Blender version-query allowance for observed external-disk startup. New output remains review pending.
-
-- Keep new ready tasks visible after final selection; include selected file location, exact-version review notes and provider/publication scope in recovery briefs. Verify Good Dog recovery with a new read-only agent without prior chat context.
-
-- Add explicit revision-bound final selection and selected-delivery-first recovery briefs, preserving whole-project waits and invalidating selection on drift or rejection.
+- Recover the explicitly selected final video with its retained path, size, SHA256
+  and exact-version technical/listening/creative receipts. Preserve historical
+  waits, new ready tasks and provider/publication limits without rerendering.
+- Add explicit Eevee Next/AUTO saved-shot execution alongside Cycles CPU, with
+  engine/build evidence, bounded admission and native interruption/explicit retry.
+  Support a bounded Blender version query for observed cold external-disk startup.
+- Reject overflowing titles/subtitles in the reusable montage example. Refresh
+  discovery fixtures while keeping component evidence distinct from structured
+  feature qualification, current account access and media rights.
+- Close the accepted Good Dog/R04 production records and retain their successful
+  techniques, failures and next-film tests. Add scoped tool findings to the queue.
+- Verify fresh-agent recovery, final local checks and two-round independent review.
+  PR48 CI and the exact merged-main CI passed. REL-A is evidenced for an
+  operator-led workflow with explicit manual stages; this is not full automation,
+  new model qualification, commercial media clearance or another-user success.
 
 ## 0.5.0 — 2026-10-30 — experimental
 

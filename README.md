@@ -2,7 +2,7 @@
 
 ![Framewright — craft the cut, keep the evidence](assets/framewright-cover.png)
 
-[![Version: 0.5.0](https://img.shields.io/badge/version-0.5.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.5.0)
+[![Version: 0.6.0](https://img.shields.io/badge/version-0.6.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.6.0)
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 [![Stage: experimental](https://img.shields.io/badge/stage-experimental-293F48?style=flat-square)](docs/router-evaluation.md)
 
@@ -50,7 +50,7 @@ A [fresh-agent recovery trial](docs/experiments/session-recovery-2026-11-01.md) 
 
 A [bounded Eevee production-scene trial](docs/experiments/admitted-eevee-render-2026-11-01.md) now passes through selected-route admission and the executor, including native interruption and explicit retry. Whole-film/final-quality qualification remains separate.
 
-[REL-A readiness assessment,1November](docs/release-readiness-2026-11-01.md): bounded production/recovery evidence and [final local checks/review](docs/final-local-review-2026-11-01.md) pass (510tests,18skips). Remote CI and the release decision remain separate.
+[REL-A readiness assessment,1November](docs/release-readiness-2026-11-01.md): bounded production/recovery evidence and [final local checks/review](docs/final-local-review-2026-11-01.md) pass (510tests,18skips). [PR48](https://github.com/markoblogo/framewright/pull/48) and merged-main CI passed; the0.6.0 release scope is recorded in its [audit](docs/release-audit-2026-11-01.md).
 
 ## Try one production plan
 
@@ -244,9 +244,9 @@ their own authority. Tools/models/media have separate terms; private assets stay
 [Production guide](docs/production-guide.md) · [Project and scene workflow](skills/video-production-router/references/production.md) ·
 [Experiments and limits](docs/experiments.md) · [Current priorities](docs/next-cycle.md) ·
 [Research queue](docs/experiment-queue.md) · [Contributing checks](docs/checking-policy.md) ·
-[Current release audit](docs/release-audit-2026-10-30.md) · [Earlier production closeout](docs/closeout-2026-10-25.md).
+[Current release audit](docs/release-audit-2026-11-01.md) · [Earlier production closeout](docs/closeout-2026-10-25.md).
 
-MIT for original repository materials. v0.5.0 is an experimental prerelease. The [release audit](docs/release-audit-2026-10-30.md)
+MIT for original repository materials. v0.6.0 is an experimental prerelease. The [release audit](docs/release-audit-2026-11-01.md)
 records package/check scope; current-source model routing is not newly evaluated. [ABVX ecosystem](docs/ecosystem.md).
 
 ## Ecosystem references

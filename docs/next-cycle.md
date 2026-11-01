@@ -351,3 +351,5 @@ only with owner, starting with cheap mechanism/weather controls.
 **1November readiness assessment:** [REL-A evidence matrix](release-readiness-2026-11-01.md) finds the bounded operator-led loop evidenced, with explicit manual film stages. Next is final candidate validation/review; whole-film automation is not a new release condition. Blocks1/2 are not reopened. No new production, commit/push or release in this assessment.
 
 **1November final local checks:** [LOCAL_PASS](final-local-review-2026-11-01.md),510tests/18skips plus retained-packet/schema/link/matrix/package checks. Local review findings fixed; no open material local finding. Next is separately authorised commit/push and PR/CI before release. No new production or model evaluation.
+
+**1November REL-A candidate:** [v0.6.0 preparation](release-audit-2026-11-01.md) follows green merged-main CI. Next is candidate metadata/CI and an explicit publication decision; no new production is required for this release.

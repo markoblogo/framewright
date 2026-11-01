@@ -235,9 +235,10 @@ filters capabilities and grants no spending authority.
 
 Run `python3 scripts/check.py --scope docs` for offline validation; no model/render.
 [Checking policy](checking-policy.md) · [Record an experiment](experiments.md) ·
-[Research queue](experiment-queue.md) · [Current product priorities](next-cycle.md#implemented-product-slices-and-next-evidence) · [Current v0.4.0 audit](release-audit-2026-10-26.md) · [Historical v0.3.1 audit](release-audit-2026-10-19.md).
-The v0.4.0 experimental prerelease groups these methods and current case records;
-its standalone archive excludes production media and external application runtimes.
+[Research queue](experiment-queue.md) · [Current product priorities](next-cycle.md#implemented-product-slices-and-next-evidence) · [Current v0.6.0 audit](release-audit-2026-11-01.md) · [Historical v0.4.0 audit](release-audit-2026-10-26.md) · [Historical v0.3.1 audit](release-audit-2026-10-19.md).
+The v0.6.0 experimental prerelease groups the verified operator-led recovery and
+bounded Eevee workflow. Its standalone
+archive excludes production media and external application runtimes.
 
 The MIT licence covers original repository materials. Tools, models, music and art
 have their own terms. Large media remain outside Git. [ABVX ecosystem](ecosystem.md) ·
