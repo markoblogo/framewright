@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-30",
+  "scope": "independent_isolated_process_recovery_not_independent_human",
+  "selected_final": {
+    "subject": "output:film-recovery-v4",
+    "selection_receipt": "e000044",
+    "sha256": "e771a4a2b9e96d79f0f10c8fa57a250834a5a261ddb2c50955f20c2dcdb7bc35",
+    "state": "accepted_recorded",
+    "reasons": [],
+    "reviews": {
+      "technical": [
+        {
+          "id": "e000040",
+          "result": "pass",
+          "provenance": "independent_check"
+        }
+      ],
+      "listening": [
+        {
+          "id": "e000042",
+          "result": "accepted",
+          "provenance": "owner_report"
+        }
+      ],
+      "creative": [
+        {
+          "id": "e000041",
+          "result": "accepted",
+          "provenance": "owner_report"
+        }
+      ]
+    },
+    "note": "Exact-version recorded choice; no independent QA, task cancellation, execution or publication authority."
+  },
+  "waits_retained": 9,
+  "other_project_blockers_retained": 40,
+  "tasks_unchanged": true,
+  "earlier_journal_unchanged": true,
+  "retained_file_problems": 0,
+  "execution_started": false,
+  "new_render": false,
+  "independent_operator": "not_tested"
+}

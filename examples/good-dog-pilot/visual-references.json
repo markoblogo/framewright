@@ -1,0 +1,297 @@
+{
+  "status": "source_reference_only",
+  "original_images_in_git": false,
+  "files": [
+    {
+      "id": "gd-ref-01",
+      "filename": "11.png",
+      "sha256": "6f95571a6b5654c84e2b33191a3dfdf6554847908e255dbcd854d35e68a85d71",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-02",
+      "filename": "12.png",
+      "sha256": "4bd55312e99ffb160d7a938af55e497055556c046164bbca0813a37886ae46de",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-03",
+      "filename": "GD0.png",
+      "sha256": "cddbe6f7ec5908928e756907d88e8c84715cedf44b10adcede016e16ca68fe15",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-04",
+      "filename": "GD1-print.png",
+      "sha256": "35e7c48b11dd7773f6496dff2d0eb08c418ca2223e85fdd63444ebae8d3b97b5",
+      "dimensions_px": [
+        1536,
+        1024
+      ],
+      "role": "cover_or_publicity"
+    },
+    {
+      "id": "gd-ref-05",
+      "filename": "GD1.png",
+      "sha256": "a25354c0400ab54824e25840fbbc77587ac04d7387a4f6e128e58308b372ff7f",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-06",
+      "filename": "GD1cover.jpg",
+      "sha256": "5b40841baf1ffe2c830e90791761a78172d2d81ce4ceae87309a05cf082479de",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "cover_or_publicity"
+    },
+    {
+      "id": "gd-ref-07",
+      "filename": "GD2-C01.png",
+      "sha256": "39ced8b02c835172e82f2439419e3974b20e4c1493e404c389d3f39d45e13fda",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-08",
+      "filename": "GD2-C02.png",
+      "sha256": "1b7dfd29c25a786c27a4091d1a0ada609445817d7fbbb45ab42b2e8fea7b41e5",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-09",
+      "filename": "GD2-C03.png",
+      "sha256": "5f998ff324981cc3b73ac06f6208d5a7a11147c61d709bfeb5dca507dd97a140",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-10",
+      "filename": "GD2-C04.png",
+      "sha256": "6a62295c76bea61d704fd9d848a0c7c0242d2afef3ba9d276f44b01f40c4d3de",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-11",
+      "filename": "GD2-CLOSE.png",
+      "sha256": "539d7d2c8f21f1093876b149958fbcfbcf02734066fdc67308cbe7bab1a53284",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-12",
+      "filename": "GD2-OPEN.png",
+      "sha256": "44d7501c2651861f7fe6758164a886dfeac780b87b4f66775c119034f67c5805",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-13",
+      "filename": "GD2.png",
+      "sha256": "a687ca57c34abce9ea082d55686cfb4b51b6a3069151f3a1f597e73825e6653a",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-14",
+      "filename": "GD2cover.jpg",
+      "sha256": "9dcf5a9e9da183ee548c69562be61079dcbf1819408daa04f9935355648c8a3e",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "cover_or_publicity"
+    },
+    {
+      "id": "gd-ref-15",
+      "filename": "GD3 front cover.jpg",
+      "sha256": "7b54669b1265ea09f86258f35d97ba72969c382d878e038d9b11c41724ff1071",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "cover_or_publicity"
+    },
+    {
+      "id": "gd-ref-16",
+      "filename": "GD3-C01.png",
+      "sha256": "01f1bda86083f5308a57147dfe72be04342cf12d36c3f518e5b2796a2388afcd",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-17",
+      "filename": "GD3-C02.png",
+      "sha256": "693ee9764c2e029d0b6786742b2852ec2513ee6f53e502ecc1c306fd96bd485a",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-18",
+      "filename": "GD3-C03.png",
+      "sha256": "07e61a9a24f5bb47384b5ab479487e935c67b40cd1226c4c786c301b92d47261",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-19",
+      "filename": "GD3-C04.png",
+      "sha256": "fa0983880cbff09182fc66079d6652162f675fa0ba846a3da2771c49f2feed15",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-20",
+      "filename": "GD3-CLOSE.png",
+      "sha256": "89ae2fd251bc5400c92723df83dd2ed1ebbfca022cf0ea4c15c42faeda35b17a",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-21",
+      "filename": "GD3-OPEN.png",
+      "sha256": "29ec49b40474f98d0ee5155cc8502490c88e986d772b5b7a173d221e2d765199",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-22",
+      "filename": "GD3.png",
+      "sha256": "1b747bdf61d73f499aea4761defca55a0e63ad73d327062a37806cfc0641d403",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-23",
+      "filename": "GD4.png",
+      "sha256": "de9d16aa9f3c261aaee35b774eebc92b74fd86a0da88def4d1a58e4f7ffcc952",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-24",
+      "filename": "GD5.png",
+      "sha256": "0fbd0a1809fc0d8f8a0790515e0d9192f7672fa7f1ba2c0164581dfcdeed4bde",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "illustration_or_comic"
+    },
+    {
+      "id": "gd-ref-25",
+      "filename": "GDserie-print.png",
+      "sha256": "0fd97e9a7ab779181abfd6d46883a698c89a692f6ec387e57b70be8dd47a67d8",
+      "dimensions_px": [
+        1536,
+        1024
+      ],
+      "role": "cover_or_publicity"
+    },
+    {
+      "id": "gd-ref-26",
+      "filename": "J-CLOSE.png",
+      "sha256": "d115d0c0753d7d3c507883d1a3a0b2d0802df83ba780d221246d905d6ae2eb6a",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "laboratory_reference_story_relevance_unconfirmed"
+    },
+    {
+      "id": "gd-ref-27",
+      "filename": "J-OPEN.png",
+      "sha256": "f5d313344be4c8e96c1680c3fe8a58a812e3ea4577b0079819be9c4cb4d1f17c",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "role": "laboratory_reference_story_relevance_unconfirmed"
+    }
+  ],
+  "primary_hero_proposal": [
+    "GD1cover.jpg",
+    "GD3 front cover.jpg",
+    "GD3-OPEN.png",
+    "GD3-CLOSE.png"
+  ],
+  "hero_identity": "proposed cover-dog identity; exact canon name/age/size unresolved",
+  "environment_proposal": [
+    "GD2-OPEN.png",
+    "GD5.png",
+    "11.png",
+    "12.png"
+  ],
+  "do_not_merge": [
+    "central mottled drop-eared cover dog",
+    "small pale shaggy terrier",
+    "point-eared shepherd-like dog",
+    "white northern-type dog"
+  ],
+  "plot_authority": "original story for current adaptation; illustration text does not establish trilogy chronology or alter the ending",
+  "lab_reference_scope": "J-OPEN/J-CLOSE: observed laboratory/system imagery; role in selected episode not established"
+}

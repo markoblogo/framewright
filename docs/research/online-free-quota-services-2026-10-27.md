@@ -42,3 +42,7 @@ or compute quota schedules. The future producer-agency catalogue slice must repr
 published facts, provenance/date, private entitlement, free vs one-off vs paid class,
 reset/timezone, model operation cost and rights independently. Refresh changing terms
 at use time; unknown is unknown. Do not silently publish, rank or run these candidates.
+
+## Follow-up31October2026
+
+Actual PixVerse/Raphael trials and Flow/Hailuo/Higgsfield account observations now exist: [dated follow-up](free-video-good-dog-2026-10-31.md). The no-generation statement above describes the original27October research only.

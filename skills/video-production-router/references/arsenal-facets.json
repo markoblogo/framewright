@@ -1174,6 +1174,27 @@
       ],
       "rights_class": "conditional",
       "licence_note_sha256": "0370d15bd259360daa9b1a541fa81d5a822b1bb47c1090b816356b84ed34824e"
+    },
+    "flow-good-dog-i2v": {
+      "tasks": [
+        "video"
+      ],
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "df7ea8a45255954aaf55f030d9ddd1ae8ae7265773e69313652036fd3381b197"
+    },
+    "eleven-v4-spuds-good-dog": {
+      "tasks": [
+        "narration"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "255cf2cc7c126980657d570552d4ff78a23b27981a54cfa4cef475e212d2391d"
     }
   }
 }

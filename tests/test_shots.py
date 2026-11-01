@@ -30,6 +30,23 @@ class ShotTest(unittest.TestCase):
         s=self.root/'spec.json';s.write_text(json.dumps(self.spec))
         return self.cli('shots.py','prepare',self.project,s,'--output',self.root/'shot.json','--actor','fixture')
 
+    def test_eevee_requires_explicit_auto_device_and_no_cycles_seed(self):
+        import copy, runpy
+        validate=runpy.run_path(str(BASE/'shots.py'))['validate']
+        self.spec['engine']={'name':'BLENDER_EEVEE_NEXT','device':'AUTO','samples':8,'seed':0}
+        validate(self.spec)
+        for field,value in [('device','CPU'),('seed',7),('name','BLENDER_WORKBENCH')]:
+            bad=copy.deepcopy(self.spec);bad['engine'][field]=value
+            with self.subTest(field=field), self.assertRaises(ValueError):validate(bad)
+        self.prepare()
+        row=json.loads((self.root/'shot.json').read_text())
+        self.assertEqual(row['spec']['engine'],self.spec['engine'])
+        planned=json.loads(self.cli('shots.py','render',self.project,'output:shot:stage:v1',
+            '--attempt','dry','--output',self.root/'unused').stdout)
+        self.assertIn('Eevee Next',planned['required_tools'][0])
+        self.assertNotIn('Cycles CPU',planned['required_tools'][0])
+        self.assertFalse(planned['execution_started']);self.assertFalse((self.root/'unused').exists())
+
     def test_dry_run_never_launches_blender_or_creates_render_output_and_patch_is_one_field(self):
         self.prepare();before=self.project.read_bytes()
         r=self.cli('shots.py','render',self.project,'output:shot:stage:v1','--start','8','--end','16',

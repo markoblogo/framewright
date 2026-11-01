@@ -25,9 +25,18 @@ def main():
             raise ValueError('Simulation/geometry-node state not qualified by this adapter')
     for binding in spec['bindings']:
         if binding['object'] is not None and binding['object'] not in scene.objects:raise ValueError('Passport-bound object missing')
-    scene.render.engine='CYCLES';scene.cycles.device='CPU'
-    scene.cycles.samples=spec['engine']['samples'];scene.cycles.seed=spec['engine']['seed']
-    scene.cycles.use_animated_seed=False;scene.cycles.use_denoising=False
+    engine=spec['engine']
+    if (engine['name'],engine['device'])==('CYCLES','CPU'):
+        scene.render.engine='CYCLES';scene.cycles.device='CPU'
+        scene.cycles.samples=engine['samples'];scene.cycles.seed=engine['seed']
+        scene.cycles.use_animated_seed=False;scene.cycles.use_denoising=False
+    elif (engine['name'],engine['device'])==('BLENDER_EEVEE_NEXT','AUTO') and engine['seed']==0:
+        # Eevee uses the host graphics backend; AUTO is not a CPU/RAM fit promise.
+        scene.render.engine='BLENDER_EEVEE_NEXT'
+        if not hasattr(scene,'eevee') or not hasattr(scene.eevee,'taa_render_samples'):
+            raise ValueError('This Blender build lacks the qualified Eevee sample control')
+        scene.eevee.taa_render_samples=engine['samples']
+    else:raise ValueError('Unsupported explicit render engine/device; no fallback')
     scene.render.threads_mode='FIXED';scene.render.threads=2
     scene.render.resolution_x=spec['canvas']['width'];scene.render.resolution_y=spec['canvas']['height'];scene.render.resolution_percentage=100
     scene.render.fps=spec['canvas']['fps'];scene.render.fps_base=1.0
@@ -59,7 +68,9 @@ def main():
                              'location':list(bpy.data.objects[name].location),'size':bpy.data.objects[name].data.size} for name in controls['lights']}})
         scene.render.filepath=str(out/f'frame_{frame+1:06d}.png')
         bpy.ops.render.render(write_still=True)
-    report={'blender_version':bpy.app.version_string,'build_hash':bpy.app.build_hash.decode(),
+    report={'engine':scene.render.engine,'requested_engine':engine,
+            'graphics_backend':'host-selected; not independently measured' if engine['device']=='AUTO' else 'CPU',
+            'blender_version':bpy.app.version_string,'build_hash':bpy.app.build_hash.decode(),
             'public_frames':'zero-based end-exclusive; Blender frame=public frame+1','states':states,
             'color_management':{'view_transform':scene.view_settings.view_transform,'look':scene.view_settings.look,
                                 'exposure':scene.view_settings.exposure,'gamma':scene.view_settings.gamma},

@@ -46,6 +46,21 @@ class EnvironmentTest(unittest.TestCase):
         self.assertTrue(any(c['id']=='program:python3' and c['status']=='pass' for c in r['checks']))
         self.assertTrue(any(c['id']=='manual:video-export' and c['status']=='unknown' for c in r['checks']))
 
+    def test_blender_version_query_has_bounded_cold_start_allowance(self):
+        import runpy
+        from unittest.mock import patch
+        inspect=runpy.run_path(str(BASE/'environment.py'))['inspect']
+        self.payload['programs']=[{'name':'blender','minimum_version':'4.5'}]
+        response=subprocess.CompletedProcess([],0,'Blender 4.5.15 LTS','')
+        with patch('shutil.which',return_value='/trusted/blender'), patch('subprocess.run',return_value=response) as run:
+            result=inspect(self.payload,self.root,probe_versions=True)
+        self.assertEqual(run.call_args.kwargs['timeout'],30)
+        self.assertEqual(result['technical_status'],'ready')
+        with patch('shutil.which',return_value='/trusted/blender'), patch('subprocess.run',side_effect=subprocess.TimeoutExpired('blender',30)):
+            result=inspect(self.payload,self.root,probe_versions=True)
+        self.assertEqual(result['technical_status'],'unknown')
+        self.assertFalse(result['execution_authorized'])
+
     def test_missing_models_and_platform_mismatch_need_preparation(self):
         self.payload['platforms']=['ImaginaryOS']
         self.payload['models']=[{'id':'voice','path':'absent.bin','sha256':None}]

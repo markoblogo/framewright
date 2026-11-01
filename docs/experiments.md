@@ -185,3 +185,9 @@ and interrupted local workers.
 - [Kazan rooftop: A Roof Rewritten](experiments/kazan-rooftop.md): English art film from supplied photos/video, original music/narration, bounded p5.js radial-interlude trial; owner review pending.
 
 - [Afterimage](experiments/venice-afterimage.md): Venice2019 art-film edit, scene-aware GIF processing and bounded CrossWarp shader trial; owner review pending.
+
+## 30October post-release follow-up
+
+- [Selected-final recovery](experiments/selected-final-recovery.md): exact revision first, other waits preserved.
+- [R04 comparative film and alternate aspect](experiments/two-cities-reuse.md): local delivery, owner review pending.
+- [FFMPEG-OPS-01](experiments/ffmpeg-skill-operations.md): bounded external-tool results and failures.

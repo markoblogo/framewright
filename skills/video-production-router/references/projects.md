@@ -275,3 +275,19 @@ For a route-bound task use [selected-route admission](route-admission.md). The
 executor automatically enforces its current source/settings/requirements/output
 binding; no extra opt-in flag can bypass an existing selection. Only the declared
 local action is covered, and produced media still require separate review.
+
+## Recover the selected final without erasing history
+
+After explicit final choice and current exact-file technical/listening/creative
+reviews, use `project.py select-final PROJECT output:film --actor OPERATOR --note REASON`.
+`project.py brief PROJECT` shows that selection first. It preserves all other
+waits and the whole-project diagnosis; no publication, task cancellation or new
+execution is implied. Drift or later rejection invalidates the selected state.
+The selected record includes its retained path (relative to the checkpoint), size,
+SHA256 and exact-version review receipts. Review notes and provider/publication
+records stay visible even with a small brief limit. These are recorded claims,
+not commercial clearance or independent media validation. A new ready task keeps
+its proposed-next priority; no action is dispatched by the brief. Old waits remain
+in whole-project status without cancelling the selected delivery.
+See [recovery evidence](../../../docs/experiments/selected-final-recovery.md) and
+[the fresh-agent Good Dog check](../../../docs/experiments/session-recovery-2026-11-01.md).

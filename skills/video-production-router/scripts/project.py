@@ -43,7 +43,7 @@ def file_record(path, root):
 def planning_sources():
     paths = [BASE / name for name in ['plan.py', 'music.py', 'terms.py', 'workflow.py', 'project.py', 'journal.py', 'packet.py', 'production.py', 'media_review.py', 'capture_check.py', 'project_summary.py', 'content.py', 'engine_capture.py', 'engine_capture.cjs', 'editing.py', 'revisions.py', 'templates.py', 'environment.py', 'trials.py', 'passports.py', 'shots.py', 'blender_shot_worker.py']]
     paths.append(BASE.parent / 'references/tools.json')
-    paths.extend(BASE / name for name in ['project_blockers.py','resources.py','costs.py','executor.py','executor_worker.py','executor_shot.py','executor_state.py','decision_checks.py','admission.py'])
+    paths.extend(BASE / name for name in ['project_blockers.py','final_selection.py','resources.py','costs.py','executor.py','executor_worker.py','executor_shot.py','executor_state.py','decision_checks.py','admission.py'])
     return {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 
 
@@ -337,6 +337,7 @@ def main():
     idea = commands.add_parser('hypothesis');idea.add_argument('project',type=Path);idea.add_argument('spec',type=Path);idea.add_argument('--actor',required=True);idea.add_argument('--provenance',choices=sorted(JOURNAL['PROVENANCE']),required=True)
     metrics = commands.add_parser('outcome');metrics.add_argument('project',type=Path);metrics.add_argument('spec',type=Path);metrics.add_argument('--actor',required=True);metrics.add_argument('--provenance',choices=sorted(JOURNAL['PROVENANCE']),required=True)
     results = commands.add_parser('results');results.add_argument('project',type=Path);results.add_argument('--json',action='store_true');results.add_argument('--compare-age-hours',type=float);results.add_argument('--age-tolerance-hours',type=float,default=6)
+    choice = commands.add_parser('select-final');choice.add_argument('project',type=Path);choice.add_argument('subject');choice.add_argument('--actor',required=True);choice.add_argument('--note',required=True)
     briefing = commands.add_parser('brief');briefing.add_argument('project',type=Path);briefing.add_argument('--json',action='store_true');briefing.add_argument('--limit',type=int,choices=range(1,11),default=3)
     blockers = commands.add_parser('blockers');blockers.add_argument('project',type=Path);blockers.add_argument('--json',action='store_true');blockers.add_argument('--limit',type=int,choices=range(1,21),default=5)
     projection = commands.add_parser('summary');projection.add_argument('project',type=Path);projection.add_argument('--json',action='store_true');projection.add_argument('--public',action='store_true');projection.add_argument('--title');projection.add_argument('--include',action='append',default=[]);projection.add_argument('--output',type=Path);projection.add_argument('--replace',action='store_true');projection.add_argument('--check',action='store_true')
@@ -499,6 +500,8 @@ def main():
                             'media-review:'+kind,[args.report])
                         event(data,'import_media_review',entry=row['id'],report=args.report)
                     invalidate(data,list(evidence_blockers(data,file_problems(data,path.parent))))
+                elif args.command=='select-final':
+                    runpy.run_path(str(BASE/'final_selection.py'))['select'](data,summary(data,path.parent),args.subject,args.actor,args.note,globals())
                 elif args.command=='observe':
                     # An observation of changed/missing bytes cannot claim to describe the retained revision.
                     targets=[args.subject,*args.depends_on]

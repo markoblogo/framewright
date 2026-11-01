@@ -1,6 +1,6 @@
 # Framewright roadmap
 
-Updated 30 October 2026, after [PR #46](https://github.com/markoblogo/framewright/pull/46)
+Updated 1 November 2026; baseline after [PR #46](https://github.com/markoblogo/framewright/pull/46)
 merged. This is the primary **priority and milestone map**. It connects product work,
 production and experiments; it does not start them or authorize spending/publication.
 The owner requested a stable roadmap that absorbs new ideas without replacing the
@@ -46,8 +46,8 @@ scope. A blocked experiment does not block unrelated approved production.
 
 | Milestone | Current state | Exit evidence and dependencies |
 | --- | --- | --- |
-| **M1 — One understandable entrance** | Partial: unified R02 proposal verified internally; real owner selection remains | A real brief becomes a short approved concept, source/gap list and 1–3 genuinely feasible offers. Each explains creative result, prerequisites, human effort, cost/time basis, uncertainty, fallback and cheapest useful pilot. Persist free-only choice; distinguish declared access from checked access. Exercise RV02 and the existing decision contracts. |
-| **M2 — One complete recoverable route** | Partial: individual local actions and saved-shot probe exist | On one selected route, pilot → review → production → technical/listening/creative checks → targeted correction → accepted local delivery. Resume in a new session without re-explaining retained decisions. Manual steps are explicit. Bind a saved-shot renderer first; record failure/recovery and preservation checks. Depends on a usable M1 offer, not a new UI application. |
+| **M1 — One understandable entrance** | Partial beyond the bounded case: R02 proposal retained for owner-selected Last Seed; forecasts/independent-client use unproven | A real brief becomes a short approved concept, source/gap list and 1–3 genuinely feasible offers. Each explains creative result, prerequisites, human effort, cost/time basis, uncertainty, fallback and cheapest useful pilot. Persist free-only choice; distinguish declared access from checked access. Exercise RV02 and the existing decision contracts. |
+| **M2 — One complete recoverable route** | Bounded operator-led loop evidenced; final release review pending; full automation unproven | On one selected route, pilot → review → production → technical/listening/creative checks → targeted correction → accepted local delivery. Resume in a new session without re-explaining retained decisions. Manual steps are explicit. Bind a saved-shot renderer first; record failure/recovery and preservation checks. Depends on a usable M1 offer, not a new UI application. |
 | **M3 — A repeatable second production** | Partial: templates, branding, passports and SSI handoff exist | A comparable second episode and one alternate format reuse accepted design/materials with their own reviews. Exercise short/long/missing-optional template controls. Measure active work, setup, render/wait, context recovery and avoidable rework separately under RV01. Depends on an accepted baseline from M2 or a suitable existing film. |
 | **M4 — Controlled expansion that improves a route** | Partial: catalogue/workbench and many scoped trials exist | One observed production weakness → bounded candidate comparison → exact feature qualification or rejection → repeat on another suitable production. Preserve a proven fallback. Extend cost/resource/platform coverage in small sourced batches. Can accompany M1–M3; does not require testing the whole queue. |
 | **M5 — A coherent short fiction** | Preparation only | Before Good Dog's approximately three-minute adaptation, accept a two-shot interaction/continuity pilot with versioned hero/set, readable action, body/ground/prop contact and motivated sound. Then a coherent story, targeted correction and independent viewing/listening. Requires usable M2 execution/review and relevant M4 evidence; published dog/robot studies are preparation, not completion. |
@@ -76,9 +76,13 @@ At each gate check the actual diff since the latest release, compatibility/migra
 notes, evidence links, README, package validation and review. Merge/push and a release
 remain distinct actions. A serious regression may justify a separate patch release,
 but still requires an explicit owner decision. Research-only additions and internal
-probes normally accumulate between gates. The owner authorized the 30October experimental consolidation release. REL-A remains
-partial: fresh-process checks do not establish independent-session recovery or
-complete admitted Eevee production. See the [release audit](release-audit-2026-10-30.md).
+probes normally accumulate between gates. The owner authorized the 30October experimental consolidation release. That
+[historical audit](release-audit-2026-10-30.md) kept recovery/Eevee evidence partial.
+The [1November REL-A assessment](release-readiness-2026-11-01.md) now finds the
+bounded operator-led production evidence assembled. [Final local checks/review](final-local-review-2026-11-01.md) now pass; remote CI and an owner release decision remain separate. Manual stages are explicit and allowed;
+whole-film automation is not an additional release requirement.
+
+**1November recovery update:** [new-agent Good Dog recovery](experiments/session-recovery-2026-11-01.md) verified selected-file/review/constraint restoration without chat history. This closes the bounded recovery block on that case. A subsequent bounded Eevee production-scene/admission test now passes (see block2 below); whole-film/final-quality and remaining REL-A evidence still need assessment. No release triggered.
 
 ## Tactical work: now, next, later
 
@@ -89,18 +93,17 @@ time on this Mac; related documentation can be updated during waits.
 | Horizon / ID | Concrete task | Completion check | Maps to |
 | --- | --- | --- | --- |
 | **Verified internal scope · R01** | Bind the existing saved-shot Blender adapter to selected-route admission and sequential execution; reuse scene pins, controls and review helpers | Passed original Blender fixture: repeated render, exact subrange and light-only change; automated drift, timeout/interruption and output-contract controls. [Results](experiments/r01-saved-shot-executor.md). Full production route and creative acceptance remain R03. | M2, ROUTE-01 |
-| **Verified internal scope · R02** | Join existing intake/profile/source-gap/proposal outputs into one readable producer brief, including why a scene exists | Passed retained free-only/broader brief replay, source-index evidence/gaps, project waits/drift and preference/constraint checks. [Results](experiments/r02-producer-brief.md). Real proposal selection remains R03; no invented costs or forced three-option count. | M1, RV02 |
-| **Film accepted / publication reported · R03; recovery gate partial** | The Last Seed: owner accepted48.5s v4 picture and sound | [Recovery record](experiments/last-seed-recovery.md): local final copy matches accepted v4; title/description/tags/cover prepared. Native mixed-quality limits retained. Fresh-process recovery checked file pins and selected final bytes; stale historical waits remain visible. Independent-session recovery and manual Eevee/executor qualification remain open; publication owner-reported. | M1–M2, RV01, RV03 |
-| **Next · R04** | Make a comparable second film or episode and alternate format on that accepted base | Review template edge cases; measure actual reuse and operator effort without counting first-time template development as recurring work. | M3, RV01 |
-| **Next · R05** | Test one missing capability exposed by R03/R04 | Existing-method baseline, one candidate, same inputs and explicit accept/reject criterion; record negative results and whether a second production confirms them. | M4 |
+| **Verified internal scope · R02** | Join existing intake/profile/source-gap/proposal outputs into one readable producer brief, including why a scene exists | Passed retained free-only/broader brief replay, source-index evidence/gaps, project waits/drift and preference/constraint checks. [Results](experiments/r02-producer-brief.md). Owner-selected Last Seed retains the R02 proposal; no invented costs or forced three-option count. | M1, RV02 |
+| **Film accepted; bounded follow-ups verified · R03; final release review pending** | The Last Seed: owner accepted48.5s v4 picture and sound | [Recovery record](experiments/last-seed-recovery.md): local final copy matches accepted v4; title/description/tags/cover prepared. Native mixed-quality limits retained. Fresh-process recovery checked file pins and selected final bytes; stale historical waits remain visible. Independent-session recovery is now evidenced separately on Good Dog; a short Last Seed Eevee executor trial now passes; historical full-film rendering remains manual. Publication owner-reported; see the1November REL-A assessment. | M1–M2, RV01, RV03 |
+| **Accepted scoped production · R04** | Make a comparable second film or episode and alternate format on that accepted base | Review template edge cases; measure actual reuse and operator effort without counting first-time template development as recurring work. | M3, RV01 |
+| **Partial scoped trial · R05** | Test one missing capability exposed by R03/R04 | Existing-method baseline, one candidate, same inputs and explicit accept/reject criterion; record negative results and whether a second production confirms them. | M4 |
 | **Later · R06** | Broaden admission to another needed local adapter or one pinned ComfyUI workflow | Concrete scene need, available host/model/rights, failure path and retained output. Do not bulk-install nodes or rewrite orchestration. | M2/M4, COMFY-01 |
-| **Later · R07** | Build the Good Dog continuity pilot from an owner-selected excerpt | Two coherent shots, actual travel/contact/interaction, stable hero and set, intelligible motivation; preserve a simpler staging fallback. | M5, PREVIS-01 |
+| **Production case closed · R07** | Good Dog v8 accepted and owner-reported published; [closeout and follow-ups](experiments/good-dog-closeout.md) | Retained133s film, corrections and limits; next-film two-shot continuity/voice tests remain open. No general rig/identity, rights or M5 completion inferred. | M5, GD-NEXT-01/02, PREVIS-01 |
 | **Later · R08** | Add provider/quota execution only when a selected production needs it | Current terms/account evidence, retry reserve, per-operation authority, ambiguous-charge recovery and no duplicate submission; local cost ledger alone is insufficient. | M2/M4, COST-01/STATE-01 |
 | **Ongoing closeout · R09** | Convert useful outcomes into reusable methods, case studies, post material and book coverage | Update exact evidence, existing queue/registry, chapter gap and next action. Retain with/without Framewright instructions; do not claim reader reproduction before it happens. | M6, BOOK-01 |
 
 R01 and R02 are complete within their internal test scopes. R03 now has an
-owner-accepted48.5s Last Seed film and reported publication; full-route execution
-and independent recovery remain unproven. The roadmap
+owner-accepted48.5s Last Seed film and reported publication; full-route execution remains unproven. Independent new-agent recovery is now evidenced on Good Dog. The roadmap
 itself grants no execution authority. Owner-requested films may supply R03/R04 evidence
 when they fit; otherwise use a separately selected original story designed for the
 needed tests. Do not make filler films merely to close tasks.
@@ -250,6 +253,28 @@ start from architectural reference and separate external trials;
 VIDEO-SKILL-DISCOVERY-01 is discovery only. All support R05/R09, with source
 retrieval linked to R02 and journal visibility to M2. No bulk installation.
 
-After this consolidation: first resolve selected-delivery versus historical-wait
-visibility and independently exercise recovery; then R04 measured reuse and one
-R05 candidate on that production. Good Dog R07 follows a two-shot continuity pilot.
+After this consolidation, selected-delivery visibility and independent Good Dog recovery were verified on1November. Next: actual production-render admission; then the remaining R04 reuse/R05 confirmation evidence. Good Dog R07 production closeout is recorded separately.
+
+## Active follow-up after0.5.0
+
+R03 recovery visibility: [selected-final implementation and isolated-process evidence](experiments/selected-final-recovery.md). Other waits remain explicit; [new-agent recovery](experiments/session-recovery-2026-11-01.md) now passes on Good Dog, while human-operator portability and whole-route evidence remain open. R04 selected production: **One Artist, Two Cities**, an English comparative Pokras Lampas art film using retained authorised sources, plus an alternate portrait edit. Measure scripted stage times and material reuse; baseline operator effort is unknown. One fitting R05 source-operation test uses ffmpeg-skill before any adapter promotion. Pocket OS remains paused.
+
+R04 delivery: [33.208s comparative film and portrait adaptation](experiments/two-cities-reuse.md), owner review pending. Reuse controls and scripted stage timing are recorded; no measured labour saving or independent production qualification. R05 [first ffmpeg-skill trial](experiments/ffmpeg-skill-operations.md) is partial: cut/join and individual extraction succeeded; a timed-sheet failure prevents wider promotion.
+
+30October owner accepted both R04 versions; [exact acceptance](experiments/two-cities-reuse.md). R07 now has the supplied original story and a [bounded pilot proposal](experiments/good-dog-preproduction.md). Canonical character/look and episode selection remain open. R06 is conditional on the selected pilot exposing an actual unsupported execution need; do not install another engine in advance.
+
+Good Dog visual preparation:27supplied trilogy illustrations indexed; cover-dog and industrial-set draft passports bind exact references. Scale/rig/anchors and final look remain unresolved. [Source/visual boundary](experiments/good-dog-preproduction.md).
+
+### R07 production case closed1November2026
+
+[Good Dog closeout](experiments/good-dog-closeout.md): accepted133s v8 and owner-reported publication complete this bounded production case. Hybrid I2V/world/local-insert editing and targeted corrections are evidenced; whole M5, rig/identity automation, commercial clearance and full cloud-executor integration are not. Prioritise two-shot continuity and a publication-eligible expressive voice on the next selected film; then motivated physical contact, DJV and export regression tests. New finds retain their separate queue status.
+
+PixelFX intake31October: [PIXELFX-01](research/pixelfx-codex-2026-10-31.md)
+adds an optional pixel-effects trial to M4/R05 with motivated Good Dog R07 reuse.
+It was not executed in Good Dog; trial only when a later scene needs pixel effects. No release follows automatically.
+
+**1November block2:** [admitted Eevee trial](experiments/admitted-eevee-render-2026-11-01.md) passes on the saved Last Seed pilot scene-v4: bounded repeat/light edit, native interruption and explicit retry, with outputs review_pending. This supersedes the earlier statement that no Eevee action is admitted; it does not convert the historical manual film into a fully admitted production. REL-A needs a remaining-evidence assessment before a release decision. No release/commit/push performed.
+
+**1November REL-A assessment:** [evidence matrix and remaining actions](release-readiness-2026-11-01.md). Blocks1/2 remain closed in scope. No new film or full-queue test is required for this release; consolidate the complete candidate, run final checks and review it before requesting a release decision. No commit/push/release authorised by this assessment.
+
+**1November final local closeout:** [510-test full check and local review](final-local-review-2026-11-01.md) pass with18explicit skips. Caption overflow and stale catalogue fixtures corrected. Local REL-A readiness is evidenced; no new code-independent approval, remote CI, commit/push or release is implied. Next: authorised PR/CI and release decision, not another production/tool trial.

@@ -30,13 +30,24 @@ class ArsenalSearchTest(unittest.TestCase):
             self.assertTrue(all(not row['eligible_for_feature_planning'] for row in rows))
 
     def test_latest_research_is_discoverable_without_tested_promotion(self):
-        for identity in ['awwwards-mcp','odyssey-world-models','genjutsu']:
+        for identity in ['awwwards-mcp','genjutsu']:
             with self.subTest(tool=identity):
                 rows=self.search('--tool',identity,'--evidence','any')['results']
                 self.assertEqual([r['id'] for r in rows],[identity])
                 self.assertFalse(rows[0]['eligible_for_feature_planning'])
                 self.assertFalse(rows[0]['rights']['asset_clearance'])
                 self.assertEqual(self.search('--tool',identity,'--evidence','tested')['results'],[])
+
+    def test_odyssey_retained_component_is_not_structured_feature_or_rights_approval(self):
+        rows=self.search('--tool','odyssey-world-models','--evidence','tested')['results']
+        self.assertEqual([r['id'] for r in rows],['odyssey-world-models'])
+        row=rows[0]
+        self.assertEqual(row['disposition'],'component_used')
+        self.assertFalse(row['eligible_for_feature_planning'])
+        self.assertEqual(row['task_capabilities'],{})
+        self.assertFalse(row['rights']['asset_clearance'])
+        self.assertFalse(row['rights']['publication_authorized'])
+        self.assertIn('docs/experiments/good-dog-closeout.md',row['reference'])
 
     def test_openverse_sfx_acquisition_does_not_qualify_audio_or_music_work(self):
         rows=self.search('--tool','openverse','--task','acquisition','--evidence','tested')['results']

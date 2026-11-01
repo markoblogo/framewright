@@ -46,6 +46,12 @@ For this workspace, prefer **free and open-source tools on macOS**. Paid and oth
 
 The [0.5.0 closeout](docs/release-audit-2026-10-30.md) records bounded execution and proposal improvements, recent films and remaining recovery limits. [29–30October progress and next steps](docs/product-progress-2026-10-29-30.md).
 
+A [fresh-agent recovery trial](docs/experiments/session-recovery-2026-11-01.md) recovered the accepted Good Dog file, exact-version reviews and remaining limits from its checkpoint without chat history. The brief preserves old waits, exposes provider/publication uncertainty and proposes new ready work without executing it. Other-machine setup and full production-route admission remain separate.
+
+A [bounded Eevee production-scene trial](docs/experiments/admitted-eevee-render-2026-11-01.md) now passes through selected-route admission and the executor, including native interruption and explicit retry. Whole-film/final-quality qualification remains separate.
+
+[REL-A readiness assessment,1November](docs/release-readiness-2026-11-01.md): bounded production/recovery evidence and [final local checks/review](docs/final-local-review-2026-11-01.md) pass (510tests,18skips). Remote CI and the release decision remain separate.
+
 ## Try one production plan
 
 From a local checkout, with Python 3 and no third-party Python packages:
@@ -65,6 +71,8 @@ For short story-led book and project promos, the optional [narrative module](ski
 [DJV 3.7.5](docs/experiments/djv-review.md) passed A/B frame-note and session-persistence checks, with black-frame capture gaps retained. Repeat on the next one or two productions before production qualification. Chaos Vantage is retained as a Windows-only reference candidate, with no current test/use plan.
 
 For recorded takes and screencasts, the [editing module](skills/video-production-router/references/editing.md) adds local source inspection, cut-only time maps, subtitle retiming and short review clips around joins. The helper is covered by synthetic CLI tests; editorial quality on a real recording remains to be assessed.
+
+Continue an accepted project with the [selected-final recovery](docs/experiments/selected-final-recovery.md): retain the exact chosen video and keep earlier waits visible without mistaking them for a request to rerender.
 
 ## Test a method before production
 

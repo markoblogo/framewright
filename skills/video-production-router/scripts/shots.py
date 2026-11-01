@@ -41,7 +41,10 @@ def validate(spec):
     f=spec['frames'];T['keys'](f,['start','end']);integer(f['start'],'start',0,28799);integer(f['end'],'end',1,28800)
     if f['end']<=f['start']:raise ValueError('Use a positive end-exclusive frame range')
     e=spec['engine'];T['keys'](e,['name','device','samples','seed'])
-    if e['name']!='CYCLES' or e['device']!='CPU':raise ValueError('Only pinned Cycles CPU is currently supported')
+    if (e['name'],e['device']) not in {('CYCLES','CPU'),('BLENDER_EEVEE_NEXT','AUTO')}:
+        raise ValueError('Use explicit Cycles CPU or Eevee Next AUTO; no engine fallback')
+    if e['name']=='BLENDER_EEVEE_NEXT' and e['seed']!=0:
+        raise ValueError('Eevee seed must be0 (unused); Cycles seed control does not apply')
     integer(e['samples'],'samples',1,256);integer(e['seed'],'seed',0,2147483647)
     s=spec['settings'];T['keys'](s,['camera','actions','lights'])
     c=s['camera'];T['keys'](c,['object','location','rotation_euler','lens']);T['text'](c['object'],'camera')
@@ -135,7 +138,7 @@ def render(data,project,subject,start,end,attempt,output,execute,blender,ffmpeg,
     if end-start>240 or (end-start)*spec['canvas']['width']*spec['canvas']['height']>300000000:raise ValueError('Preview exceeds bounded frame/pixel limit')
     T['identity'](attempt);gate=blockers(data,project,record)
     planned={'execution_started':False,'subject':subject,'frames':{'start':start,'end':end},'blockers':gate,
-             'output':str(output),'required_tools':['Blender4.5-compatible Cycles CPU','ffmpeg','ffprobe'],
+             'output':str(output),'required_tools':['Blender4.5-compatible '+('Cycles CPU' if spec['engine']['name']=='CYCLES' else 'Eevee Next / host graphics backend (AUTO)'),'ffmpeg','ffprobe'],
              'audio':'pinned source' if spec['audio'] else 'intentional silence'}
     if not execute:return planned
     if gate:raise ValueError('Shot not ready: '+'; '.join(gate))
@@ -147,7 +150,7 @@ def render(data,project,subject,start,end,attempt,output,execute,blender,ffmpeg,
     _,scene=T['current'](data,project,spec['scene'])
     resources=[str(T['current'](data,project,s)[1].resolve()) for s in spec['resources']]
     if spec['audio']:resources.append(str(T['current'](data,project,spec['audio']['subject'])[1].resolve()))
-    version=run([blender,'--version'],15).splitlines()[0]
+    version=run([blender,'--version'],30).splitlines()[0]
     output.mkdir();job={'spec':spec,'scene':str(scene.resolve()),'resources':resources,
                         'start':start,'end':end,'output':str(output.resolve())}
     T['write'](output/'job.json',job);clock=time.perf_counter()

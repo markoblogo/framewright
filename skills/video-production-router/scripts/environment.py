@@ -162,7 +162,7 @@ def inspect(spec, root, probe_versions=False, probe_hardware=False, observe_reso
             check(ident,'unknown' if minimum else 'pass','Executable found; version not executed/verified');continue
         argv=[path,*VERSION_PROBES[name]];probes.append({'program':name,'arguments':VERSION_PROBES[name]})
         try:
-            p=subprocess.run(argv,capture_output=True,text=True,timeout=5,check=True)
+            p=subprocess.run(argv,capture_output=True,text=True,timeout=30 if name=='blender' else 5,check=True)
             output=(p.stdout+'\n'+p.stderr).strip()[:4096]
             version=version_tuple(output)
             status='unknown' if version is None else 'fail' if minimum and version<version_tuple(minimum) else 'pass'

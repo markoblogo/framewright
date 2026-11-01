@@ -1,0 +1,60 @@
+{
+  "kind": "local_self_review_not_independent",
+  "base": "e944a821645a4c7f1d89e166f1effe2af50dbcef",
+  "scope": "Tracked and untracked changes since local v0.5.0, including examples, tests, catalogue and documentation",
+  "status": "LOCAL_PASS",
+  "findings": [
+    {
+      "id": "LOCAL-01",
+      "severity": "P2",
+      "file": "examples/production-reuse/render.py",
+      "finding": "An oversized subtitle or unbroken title token was clipped while label() reported safe_area=True.",
+      "reproduction": "Both oversized inputs returned safe_area=True before fix; two regression tests now pass.",
+      "resolution": "Fail closed on final rendered title width and subtitle width; reserve panel padding. No production rerender."
+    },
+    {
+      "id": "LOCAL-02",
+      "severity": "test_drift",
+      "files": [
+        "tests/test_intake.py",
+        "tests/test_search.py",
+        "examples/plans/arsenal-search-paper-uk.md"
+      ],
+      "finding": "Old fixtures expected PixVerse/Odyssey to have no tested component evidence and an old search exclusion count.",
+      "basis": "Current review ledger cites actual fragments in accepted Good Dog, disposition component_used.",
+      "resolution": "Retain tested component status while asserting empty structured capabilities, candidate-only/access-unknown/historical terms, no rights grant; refresh exact CLI example."
+    },
+    {
+      "id": "SETUP-01",
+      "severity": "test_environment",
+      "finding": "First complete snapshot lacked local Git metadata required by check-ignore tests.",
+      "resolution": "Empty Git repository in disposable snapshot only, no staging or commits. Repeat full check."
+    }
+  ],
+  "material_core_findings": [],
+  "external_calls": 0,
+  "commit_push_release": false,
+  "independent_approval": false,
+  "final_check_exit": 0,
+  "tests": {
+    "discovered": 510,
+    "skipped": 18,
+    "executed": 492,
+    "failures": 0,
+    "elapsed_seconds": 385.41
+  },
+  "source_drift": [],
+  "new_model_evaluation": false,
+  "remote_ci": "not_run",
+  "date": "2026-11-01",
+  "snapshot_source_files": 1112,
+  "validation": [
+    "retained_router_packets",
+    "retained_storyboard_packets",
+    "catalogue_schemas_links",
+    "generated_tool_matrix",
+    "standalone_package_smoke"
+  ],
+  "package_sha256": "d802bfd6246fc9b89486e017be8c98f349c846ccf429bc4c1a1592e376650d19",
+  "package_scope": "Temporary smoke only, VERSION remains0.5.0, output removed; not a published release"
+}

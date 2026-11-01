@@ -4,15 +4,19 @@
 retains dated production status and evidence; older “next” suggestions below are
 history unless selected in that roadmap or by a later owner decision.
 
-Updated 30 October 2026. This is a planning record, not a render queue or spending
+Updated 1 November 2026. This is a planning record, not a render queue or spending
 authority. [Completed PlayMCP review](experiments/playmcp-service-review.md) ·
 [Experiment backlog](experiment-queue.md).
+
+**Latest production closeout:** [Good Dog](experiments/good-dog-closeout.md) v8 accepted and publication URL supplied by owner. This R07 production case is closed; M5 and commercial/provider qualification remain open. Next-film tests are prioritised in the closeout and queue; no new production, install or spend selected automatically.
+
+**1November recovery:** [fresh-agent check](experiments/session-recovery-2026-11-01.md) completed on Good Dog. Selected v8, checks and unresolved rights were recovered without chat history. Next is the separate actual render/admission boundary; earlier dated recovery-pending entries below are historical or specific to Last Seed.
 
 **R01 completed internally,28 October:** [saved-shot execution](experiments/r01-saved-shot-executor.md)
 now reuses the admitted sequential worker for a pinned Blender scene.
 **R02 completed internally:** the [unified proposal](experiments/r02-producer-brief.md)
 joins task, materials, scene purpose, routes, constraints and next step.
-**R03 current:** owner accepted48.5s recovery v4 picture and sound on30October; a local final copy and YouTube kit are prepared. Publication is owner-reported. Fresh-process file recovery passed; independent-session recovery and the manual Eevee/executor boundary remain open. See [release closeout](release-audit-2026-10-30.md). Historical start: the owner selected [The Last Seed pilot](experiments/last-seed-pilot.md),
+**R03 current:** owner accepted48.5s recovery v4 picture and sound on30October; a local final copy and YouTube kit are prepared. Publication is owner-reported. Fresh-process file recovery passed; separate new-agent recovery is now evidenced on Good Dog, and a bounded Last Seed Eevee executor follow-up now passes; whole-film admission remains separate. See [release closeout](release-audit-2026-10-30.md). Historical start: the owner selected [The Last Seed pilot](experiments/last-seed-pilot.md),
 7.5s of seed, drop and first sprout. Its admitted Cycles control exposed a practical
 render-time limit; the corrected preview uses a documented manual Eevee fallback.
 Owner accepted the corrected pilot on28October and the completed v4 cut on30October.
@@ -337,3 +341,13 @@ only with owner, starting with cheap mechanism/weather controls.
 **Priority owner order,30October:** [Exin reported agent explainer](experiments/exin-agent-explainer.md) takes precedence before Last Seed fresh-session recovery. Preview accepted; local export/YouTube kit in progress. Bounded PixiJS source-photo seeking has matching sampled frames; full-tool/medical efficacy claims are not inferred. Future INSIGHT-ILLUSTRATION-01 tests licensed contextual mouse/brain animation without revising the accepted film.
 
 30October: owner reported [Exin explainer publication](https://youtu.be/tgMU4DCjohk); link retained in the version-bound journal. INSIGHT-ILLUSTRATION-01 is future work. Next selected product direction remains the Last Seed fresh-session/release-gate check, requiring explicit continuation.
+
+30October after0.5.0: selected-final recovery is implemented with retained historical waits. R04 One Artist, Two Cities has horizontal/portrait review exports; human picture/listening approval is next. ffmpeg-skill received a scoped trial with failures retained. No new release/upload is performed. See [case](experiments/two-cities-reuse.md).
+
+30October: R04 picture/sound accepted for both aspects; no public link supplied. Good Dog original story read privately and pilot proposal prepared. Next: select episode/look and validate passports before the two-shot contact/continuity pilot.
+
+**1November block2 update:** [real Eevee saved-shot execution](experiments/admitted-eevee-render-2026-11-01.md) passed short-range production-scene repeat/light-change and native interruption/retry. The earlier manual-Eevee-only limitation is narrowed to whole-film/final-quality and unsupported scene controls; history is retained. Next: REL-A evidence/gap assessment, not another tool experiment or automatic release.
+
+**1November readiness assessment:** [REL-A evidence matrix](release-readiness-2026-11-01.md) finds the bounded operator-led loop evidenced, with explicit manual film stages. Next is final candidate validation/review; whole-film automation is not a new release condition. Blocks1/2 are not reopened. No new production, commit/push or release in this assessment.
+
+**1November final local checks:** [LOCAL_PASS](final-local-review-2026-11-01.md),510tests/18skips plus retained-packet/schema/link/matrix/package checks. Local review findings fixed; no open material local finding. Next is separately authorised commit/push and PR/CI before release. No new production or model evaluation.
