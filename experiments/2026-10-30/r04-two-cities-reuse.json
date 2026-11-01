@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-30",
+  "production": "One Artist, Two Cities",
+  "status": "local_review_pending",
+  "duration_seconds": 33.208333333333336,
+  "deliveries": [
+    {
+      "aspect": "16x9",
+      "frames": 797,
+      "duration": 33.211,
+      "size": [
+        1280,
+        720
+      ],
+      "audio_rate": 48000,
+      "sha256": "0cdcb0420db387ba4da52921256322349f038a46c14ceefb04793ddf2cd2c4c7",
+      "full_decode": "pass",
+      "creative": "pending",
+      "listening": "pending"
+    },
+    {
+      "aspect": "9x16",
+      "frames": 797,
+      "duration": 33.208333,
+      "size": [
+        720,
+        1280
+      ],
+      "audio_rate": 48000,
+      "sha256": "353354e5deb5114634b8b012cd3ed020534fd1d061fbf8f72fba9040fe131492",
+      "full_decode": "pass",
+      "creative": "pending",
+      "listening": "pending"
+    }
+  ],
+  "template_controls": [
+    {
+      "aspect": "wide",
+      "control": "short",
+      "title_lines": 1,
+      "font_size": 67,
+      "safe_area": true,
+      "subtitle_present": true
+    },
+    {
+      "aspect": "wide",
+      "control": "long",
+      "title_lines": 2,
+      "font_size": 41,
+      "safe_area": true,
+      "subtitle_present": true
+    },
+    {
+      "aspect": "wide",
+      "control": "optional",
+      "title_lines": 1,
+      "font_size": 67,
+      "safe_area": true,
+      "subtitle_present": false
+    },
+    {
+      "aspect": "portrait",
+      "control": "short",
+      "title_lines": 1,
+      "font_size": 61,
+      "safe_area": true,
+      "subtitle_present": true
+    },
+    {
+      "aspect": "portrait",
+      "control": "long",
+      "title_lines": 3,
+      "font_size": 41,
+      "safe_area": true,
+      "subtitle_present": true
+    },
+    {
+      "aspect": "portrait",
+      "control": "optional",
+      "title_lines": 2,
+      "font_size": 61,
+      "safe_area": true,
+      "subtitle_present": false
+    }
+  ],
+  "reuse": [
+    "supplied media",
+    "original Kazan score",
+    "cached Supertonic-3 M1 recipe",
+    "blue/black/white type principles"
+  ],
+  "new": [
+    "English comparison script",
+    "montage and crop data",
+    "local FFmpeg assembler"
+  ],
+  "measured_stages": {
+    "16x9": {
+      "total_sequential_stage_seconds": 34.272,
+      "stages": [
+        {
+          "stage": "shot-0",
+          "elapsed_seconds": 5.75
+        },
+        {
+          "stage": "shot-1",
+          "elapsed_seconds": 1.624
+        },
+        {
+          "stage": "shot-2",
+          "elapsed_seconds": 1.598
+        },
+        {
+          "stage": "shot-3",
+          "elapsed_seconds": 5.827
+        },
+        {
+          "stage": "shot-4",
+          "elapsed_seconds": 1.395
+        },
+        {
+          "stage": "shot-5",
+          "elapsed_seconds": 5.756
+        },
+        {
+          "stage": "shot-6",
+          "elapsed_seconds": 1.63
+        },
+        {
+          "stage": "shot-7",
+          "elapsed_seconds": 1.361
+        },
+        {
+          "stage": "shot-8",
+          "elapsed_seconds": 1.446
+        },
+        {
+          "stage": "shot-9",
+          "elapsed_seconds": 3.246
+        },
+        {
+          "stage": "assemble",
+          "elapsed_seconds": 1.421
+        },
+        {
+          "stage": "full-decode",
+          "elapsed_seconds": 3.218
+        }
+      ]
+    },
+    "9x16": {
+      "total_sequential_stage_seconds": 23.677,
+      "stages": [
+        {
+          "stage": "shot-0",
+          "elapsed_seconds": 2.885
+        },
+        {
+          "stage": "shot-1",
+          "elapsed_seconds": 0.974
+        },
+        {
+          "stage": "shot-2",
+          "elapsed_seconds": 0.956
+        },
+        {
+          "stage": "shot-3",
+          "elapsed_seconds": 4.411
+        },
+        {
+          "stage": "shot-4",
+          "elapsed_seconds": 1.371
+        },
+        {
+          "stage": "shot-5",
+          "elapsed_seconds": 3.183
+        },
+        {
+          "stage": "shot-6",
+          "elapsed_seconds": 0.904
+        },
+        {
+          "stage": "shot-7",
+          "elapsed_seconds": 0.888
+        },
+        {
+          "stage": "shot-8",
+          "elapsed_seconds": 1.369
+        },
+        {
+          "stage": "shot-9",
+          "elapsed_seconds": 3.055
+        },
+        {
+          "stage": "assemble",
+          "elapsed_seconds": 2.134
+        },
+        {
+          "stage": "full-decode",
+          "elapsed_seconds": 1.547
+        }
+      ]
+    }
+  },
+  "failures": [
+    "Initial authored fade duration syntax rejected",
+    "Relative concat paths duplicated; corrected to absolute paths",
+    "ffmpeg-skill timed contact sheet incomplete/black; individual extraction and manual sheet used"
+  ],
+  "operator_effort": "not_fully_instrumented",
+  "baseline_effort": "unknown",
+  "labour_saving": "not_established",
+  "owner_acceptance": "pending",
+  "publication": "not_performed",
+  "source_audio_used": false
+}

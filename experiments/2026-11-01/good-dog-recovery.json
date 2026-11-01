@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-01",
+  "scope": "isolated Python process, not independent agent/operator",
+  "mode": "read_only, isolated cwd, python -I, minimal environment",
+  "selected_subject": "output:good-dog-revised-v8",
+  "final_sha256": "6326ada5174a971272b4e988a7a4c4d374071de24d92fefd19099e4090dfc1db",
+  "final_bytes": 82476466,
+  "required_reviews": {
+    "technical": [
+      {
+        "id": "e000051",
+        "result": "pass",
+        "provenance": "operator_observation"
+      }
+    ],
+    "listening": [
+      {
+        "id": "e000053",
+        "result": "accepted",
+        "provenance": "owner_report"
+      }
+    ],
+    "creative": [
+      {
+        "id": "e000052",
+        "result": "accepted",
+        "provenance": "owner_report"
+      }
+    ]
+  },
+  "preserved_waits": 2,
+  "preserved_journal_prefix": true,
+  "preserved_steps": true,
+  "checkpoint_unchanged_by_read": true,
+  "file_problems": 0,
+  "proposed_next": {
+    "kind": "selected_delivery_recorded",
+    "label": "Selected final is retained with recorded checks; other project tasks remain explicit and are not instructions to rerender old versions. Agree the next task.",
+    "task": null,
+    "status": "proposal_not_execution_authority"
+  },
+  "no_render_or_external_call": true,
+  "commercial_voice_clearance": "not inferred",
+  "independent_agent_session": {
+    "agent": "fresh_recovery_check",
+    "context": "fork_turns=none; no previous chat, expected answer or recovery results supplied",
+    "result": "recovered selected version, exact bytes, reviews and safe next-step boundary",
+    "independent_media_check": "size/SHA256/ffprobe/full decode passed; no fresh artistic or listening review",
+    "initial_brief_gap": "provider-use restriction and exact final receipts obscured in short Markdown",
+    "followup": "same agent read-only brief --limit1 confirmed exact receipts, provider/pending and owner-reported publication with unknown visibility; not a second blind session",
+    "writes_or_external_calls": false
+  },
+  "followup_provider_receipt": "e000057",
+  "tests": {
+    "status": "pass",
+    "count": 32,
+    "scope": "public CLI final selection, working brief, summary and blockers",
+    "execution": "byte-verified local source mirror; actual production CLI used separately for real-file recovery"
+  },
+  "new_session_block_scope": "verified new-agent recovery on Good Dog; actual render/admission and other-machine portability remain open",
+  "final_verification": {
+    "related_public_cli_tests": 32,
+    "catalogue_and_local_links": "pass on local staged source copy",
+    "generated_tool_matrix": "pass",
+    "current_unqualified_source_fingerprints": "pass; model evaluation not rerun",
+    "standalone_package_smoke": "pass; temporary archive only, not a release",
+    "external_disk_direct_scan": "timed out after240s; own broad-copy fallback interrupted, then replaced by bounded file staging",
+    "scope_note": "current behavior code/test mirror byte-verified; relevant source/data/link targets staged locally to avoid slow external disk"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-28",
+  "updated": "2026-11-01",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -823,16 +823,17 @@
       "id": "odyssey-world-models",
       "name": "Odyssey world models",
       "url": "https://odyssey.systems/introducing-odyssey-3",
-      "reviewed": "2026-10-19",
-      "review_basis": "Primary-source documentation review only;no installation,live production API call,asset download or render",
+      "reviewed": "2026-11-01",
+      "review_basis": "Earlier documentation plus actual browser-world recordings and a short retained shot in owner-accepted Good Dog",
       "upstream_revision": null,
-      "disposition": "candidate",
-      "scope_and_findings": "Odyssey-3 research preview documented;public API introduction still names Odyssey-2 Pro. SDK recordings/simulations documented,not tested. Proposed P3 later virtual-set shot trial,not a proven editable3D engine or current PlayMCP feature. Owner clarification:worlds as footage is cross-provider/model-flexible;an available Odyssey model can satisfy the first trial. Model identity must be recorded,not used to require Odyssey-3.",
+      "disposition": "component_used",
+      "scope_and_findings": "Five-minute browser probes produced third-person dog footage; a cropped short running passage was incorporated into accepted Good Dog v8. Awkward reverse travel, shake, baked controls and weak cross-shot continuity were observed. Not editable3D, first-person or API/model-wide qualification.",
       "licence_note": "Hosted service/API terms,account/order and exact output-use scope unresolved;no account or budget checked.",
-      "next_trial_or_retest_condition": "Use an accessible Odyssey model that fits the shot;verify recording/export,use scope and bounded cost,then log actual model and control/continuity results. Later compare other world resources.",
+      "next_trial_or_retest_condition": "Prepare prompt/reference and capture plan before timed session; validate forward movement, clean controls/export and one compatible cut before recording more. Record actual model identity; do not infer Odyssey3 from service name.",
       "evidence": [
         "docs/research-intake-2026-10-19.md",
-        "docs/research-review-2026-10-19.md"
+        "docs/research-review-2026-10-19.md",
+        "docs/experiments/good-dog-closeout.md"
       ]
     },
     {
@@ -938,6 +939,13 @@
           "kind": "internal_original_fixture_cpu_render",
           "evidence": "docs/experiments/blender-shot-replay.md",
           "outcome": "Blender4.5.15 LTS ARM64:36 identical repeated source frames,12 matching independently rendered range frames, two camera setups,12 changed light-patch frames with camera/action and PCM preserved. Restricted-process native startup failed; normal native access passed. No cinematic/owner/listening acceptance, complex rig or automatic catalogue qualification."
+        },
+        {
+          "date": "2026-11-01",
+          "kind": "bounded_admitted_eevee_production_scene",
+          "version": "4.5.15 LTS build5afeabba6097 ARM64",
+          "evidence": "docs/experiments/admitted-eevee-render-2026-11-01.md",
+          "outcome": "Last Seed pilot scene-v4,480x27024fps8samples,explicit Eevee Next/AUTO: repeat RGB,light-only change with camera/action/PCM preserved,native SIGTERM failure,no implicit retry,explicit retry success. Read-only prior production; new outputs review_pending. Version-probe timeout,restricted Metal crash and early-scene light-name conflict retained. Not whole-film/final-quality or arbitrary GPU qualification."
         }
       ]
     },
@@ -1780,15 +1788,16 @@
       "id": "pixverse",
       "name": "PixVerse Basic",
       "url": "https://pixverse.ai/en/ai-info-page",
-      "reviewed": "2026-10-27",
-      "review_basis": "Provider terms documentation; no runtime test",
+      "reviewed": "2026-11-01",
+      "review_basis": "Retained free Good Dog I2V result, owner feedback and accepted hybrid film; not broad provider qualification",
       "upstream_revision": null,
-      "disposition": "research_only",
-      "scope_and_findings": "Operation prices vary; daily credits may not cover a selected generation. API billing differs.",
+      "disposition": "component_used",
+      "scope_and_findings": "PixVerse source was used in the accepted Good Dog v8 opening. This qualifies that retained fragment only, not multi-shot identity, current free quotas or general commercial eligibility.",
       "licence_note": "Dated free-plan research; current commercial, asset, and account terms require separate review.",
-      "next_trial_or_retest_condition": "Verify current account, selected operation, terms and asset rights before a bounded trial.",
+      "next_trial_or_retest_condition": "GD-NEXT-01/08: two connected shots and actual current quota/model/terms; compare a real result. Preserve watermark/use conditions.",
       "evidence": [
-        "docs/research/online-free-quota-services-2026-10-27.md"
+        "docs/research/online-free-quota-services-2026-10-27.md",
+        "docs/experiments/good-dog-closeout.md"
       ]
     },
     {
@@ -1981,6 +1990,36 @@
         "docs/experiments/otio-mn7r-handoff.md",
         "experiments/2026-10-28/evidence/otio-kdenlive.json",
         "skills/video-production-router/references/otio-export.md"
+      ]
+    },
+    {
+      "id": "flow-good-dog-i2v",
+      "name": "Google Flow — Omni1.1 Flash Good Dog route",
+      "url": "https://flow.google.com/",
+      "reviewed": "2026-11-01",
+      "review_basis": "Actual4s/8s image-to-video files retained and reused in owner-accepted133s v8",
+      "upstream_revision": null,
+      "disposition": "component_used",
+      "scope_and_findings": "Existing Plus bonus access used for short actions/reactions. Selected generated shots plus local corrections supported the accepted hybrid edit. No general continuity, persistent free allowance or complete automatic dispatch qualification.",
+      "licence_note": "Hosted provider and source rights remain separate. UI quotes7/12existing credits are not reconciled debit; recheck account and operation terms before use.",
+      "next_trial_or_retest_condition": "GD-NEXT-01/08: two connected shots, exact retained state and current entitlement/cost evidence.",
+      "evidence": [
+        "docs/experiments/good-dog-closeout.md"
+      ]
+    },
+    {
+      "id": "eleven-v4-spuds-good-dog",
+      "name": "Eleven v4 — Spuds Oxley tired preset performance",
+      "url": "https://elevenlabs.io/docs/help-center/legal/can-i-publish-the-content-i-generate-on-the-platform",
+      "reviewed": "2026-11-01",
+      "review_basis": "Owner-accepted tired sample and full narration in accepted v8; direct Free account UI and official use FAQ",
+      "upstream_revision": "Eleven v4, observed31October2026",
+      "disposition": "owner_accepted_scoped_voice",
+      "scope_and_findings": "Tired/quiet delivery with sparse sighs/exhales accepted for Good Dog. This was a preset voice, not a new voice-cloning trial. macOS Grandpa quality and lowered M1 upbeat performance were rejected for this role only.",
+      "licence_note": "Generated on Free: noncommercial only with elevenlabs.io or11.ai in title. Commercial use unresolved/not cleared; a later subscription does not license earlier Free output. Owner acceptance/publication do not override this.",
+      "next_trial_or_retest_condition": "GD-NEXT-02: publication-eligible expressive alternative or separately authorised licensed regeneration; no new paid test without budget.",
+      "evidence": [
+        "docs/experiments/good-dog-closeout.md"
       ]
     }
   ]

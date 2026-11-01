@@ -5,6 +5,13 @@ candidate and trial records, including earlier planned states; consult the linke
 latest evidence before treating a historical heading as current. New finds map to a
 milestone and a bounded question; they do not automatically displace active work.
 
+## FFMPEG-OPS-01 — first scoped trial30October
+
+[Scene/contact-sheet/cut/join observations](experiments/ffmpeg-skill-operations.md).
+Default dark-transition miss retained; one tuned pass and accurate excerpts/join
+completed. Temporary external checkout only; no general qualification or installed
+skill. Additional production validation remains separate.
+
 ## Agent video toolkits — queued30October
 
 [Adoption levels, prerequisites and stop conditions](research/agent-video-toolkits-2026-10-30.md).
@@ -842,3 +849,54 @@ Other adapters,whole-route dispatch and paid/external execution remain future wo
 R02 is next; a coherent YouTube-suitable film supplies later R03 evidence. No film starts here.
 
 P5-RADIAL-01 update30October2026: [Kazan film](https://youtu.be/QqJ2J9RGOfo) accepted by owner and publication reported. One production accepted; a second suitable production remains the next repeat test, not automatic broad qualification.
+
+## REANIMATE-01 — original browser-motion reconstruction
+
+Active bounded candidate, not run. [Assessment](research/reanimate-2026-10-30.md).
+One owned3–5s animation → identical capture conditions → reconstruct motion →
+repeat capture and deliberate80–120ms timing defect → compare timing/diffs and
+resource cost. Mac/free-first; no setup during ongoing Good Dog pilot. R05/R07 QA,
+not a new character animation engine; do not infer Codex support from Claude tests.
+
+## Odyssey / Good Dog environment follow-up —30October2026
+
+[Free browser probe](experiments/good-dog-preproduction.md) produced two downloaded
+native recordings; prompt fit/movement/export observed. Not production-qualified:
+unrequested cart, baked control hints,16fps and temporal/architecture continuity
+not yet accepted. Prepare inputs before the five-minute session; next15–20s test
+should confirm World View and a clean export. No paid use or full-film expansion.
+
+## I2V-FREE-01 / LOCAL-VIDEO-01 —31October2026
+
+[Dated evidence and bounded candidates](research/free-video-good-dog-2026-10-31.md), R07/R08. PixVerse V6 first shot received positive owner feedback; Raphael H3 Turbo actual free comparator completed, owner review pending. Flow account access confirmed without generation. SeaArt/Vidnoz and remaining quota-account checks queued. LTX-Video is a conditional Mac MPS feasibility candidate; Wan2.2/HunyuanVideo1.5 retained for suitable NVIDIA hosts. No downloads/installations of model weights, paid actions or broad qualification.
+
+## TEARDOWN-01 / STABLEGEN-01 —31October2026
+
+[Assessment and first tests](research/teardown-stablegen-2026-10-31.md),R07/M4. Teardown: one mounted dispenser mechanism→repeatable5s clip→timing revision, conditional use in Good Dog. StableGen: one prop, multi-view texturing/seams/export after backend and weight gates; no dog-rig claim. Neither installed. Sora unavailable per current official notice; Flow and PlayMCP remain separate entitlement checks.
+
+## PIXELFX-01 — queued31October2026
+
+[PixelFX + Sprite Fusion, Codex recipe](research/pixelfx-codex-2026-10-31.md),
+M4/R05 and Good Dog R07. One2s pickup/transition → one parameter revision →
+repeat export → alpha/glow on target footage. Two sequential treatments maximum
+for the first selection on this Mac. Primary-source review only; no installation,
+render or owner acceptance yet. Keep Pictiq/barks intact; exclude gallery font.
+
+## ULTRA-WATER-01 — queued31October2026
+
+[Ultra-Water assessment](research/ultra-water-2026-10-31.md), M4/R05.
+One5–8s720p water scene→one parameter revision→repeat capture; validate
+foam/contact/frame pacing, replay and Mac resource use. Research only; no install
+or live demo test. Do not introduce it during the current Good Dog corrections.
+
+## Good Dog follow-up —1November2026
+
+Production case closed: [retrospective with explicit pass criteria](experiments/good-dog-closeout.md). The accepted film is not evidence that every proposed tool was used.
+
+1. **GD-NEXT-01/02 — next-film priorities:** two-shot identity/action continuity and a10–15s expressive voice with confirmed publication eligibility before full production.
+2. **GD-NEXT-03 — scene-dependent:** mounted local mechanism and object contact, including event sound; Teardown remains untested.
+3. **GD-NEXT-04/05 — next edit/delivery:** DJV A/B notes/save/reopen plus independent picture/audio extent, colour-range and join regression. DJV was not retested on this film.
+4. **GD-NEXT-06/07 — motivated inserts:** canonical Pictiq SVG/rounded alpha and an actual comparison of ASCII implementations. Current original ASCII code does not qualify Three.js AsciiEffect/Devault.
+5. **GD-NEXT-08 — when account needed:** refresh the actual free quota/model/terms and retain one real result. Historical free offers and UI quotes are not current entitlement or reconciled cost.
+
+PIXELFX-01, ULTRA-WATER-01, TEARDOWN-01, STABLEGEN-01 and local video models remain queued, not tested/promoted by the film. No paid generation, parallel heavy Mac tests or automatic quota consumption authorised by this entry. Flow was subsequently used in Good Dog; the earlier31October “access only” entry records an earlier checkpoint, not the final state.

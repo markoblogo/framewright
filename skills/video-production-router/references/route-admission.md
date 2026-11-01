@@ -140,3 +140,13 @@ python3 examples/blender-stage/run_executor_probe.py --output /tmp/fw-r01 --blen
 ```
 
 See [R01 evidence](../../../docs/experiments/r01-saved-shot-executor.md).
+
+### Eevee follow-up,1November2026
+
+A newly prepared saved-shot card may explicitly select Eevee Next/AUTO with
+seed0 (unused) and bounded samples. No implicit Cycles fallback or old-contract
+promotion. Native graphics access is required; version queries allow Blender30s
+for observed external-disk startup, other version probes remain5s.
+[Real Last Seed scene, interruption and explicit retry](../../../docs/experiments/admitted-eevee-render-2026-11-01.md)
+passed a480×270 short-range trial. Whole-film assembly, moving-camera production
+and final-quality qualification remain outside that result.

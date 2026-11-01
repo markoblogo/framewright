@@ -1,0 +1,91 @@
+{
+  "schema": "framewright-admitted-eevee-probe-v1",
+  "scope": "Retained Last Seed pilot;480x27024fps8samples, fixed declared camera; not full film or final-quality qualification",
+  "source_sha256": "af917b2b9b696916a8c82e6a3169df8c3844f2dd6eed49619dda3f3379834df4",
+  "engine": {
+    "name": "BLENDER_EEVEE_NEXT",
+    "device": "AUTO",
+    "samples": 8,
+    "seed": 0
+  },
+  "repeat_rgb_equal": true,
+  "light_changes_rgb": true,
+  "light_preserves_pcm": true,
+  "interrupted_output_unretained": true,
+  "interrupted_folder_stable": true,
+  "implicit_retry_blocked": true,
+  "explicit_retry_produced": true,
+  "interrupted_attempt": "private-attempt-retained-locally",
+  "initial_interruption_state": "failed",
+  "outputs_review_pending": true,
+  "external_calls": 0,
+  "release_created": false,
+  "renders": {
+    "baseline": {
+      "elapsed_seconds": 6.282383540994488,
+      "frames": {
+        "start": 68,
+        "end": 71
+      },
+      "technical_checks": {
+        "full_decode": "pass",
+        "frame_count": "pass",
+        "dimensions": "pass",
+        "audio_policy": "pass"
+      }
+    },
+    "repeat": {
+      "elapsed_seconds": 1.9183382089831866,
+      "frames": {
+        "start": 68,
+        "end": 71
+      },
+      "technical_checks": {
+        "full_decode": "pass",
+        "frame_count": "pass",
+        "dimensions": "pass",
+        "audio_policy": "pass"
+      }
+    },
+    "light": {
+      "elapsed_seconds": 1.969460042018909,
+      "frames": {
+        "start": 68,
+        "end": 71
+      },
+      "technical_checks": {
+        "full_decode": "pass",
+        "frame_count": "pass",
+        "dimensions": "pass",
+        "audio_policy": "pass"
+      }
+    },
+    "recovery": {
+      "elapsed_seconds": 2.484383125032764,
+      "frames": {
+        "start": 68,
+        "end": 74
+      },
+      "technical_checks": {
+        "full_decode": "pass",
+        "frame_count": "pass",
+        "dimensions": "pass",
+        "audio_policy": "pass"
+      }
+    }
+  },
+  "original_checkpoint_access": "not_opened_or_written",
+  "actual_engine_recorded": true,
+  "retry_prefix_rgb_matches": true,
+  "light_preserves_camera_action": true,
+  "blender_build": "5afeabba6097",
+  "native_frame_inspection": "One source PNG viewed: seed and drop on soil; no motion/listening acceptance",
+  "verification": {
+    "related_tests_passed": 56,
+    "catalogue_schema_links": "pass_byte_verified_local_staging",
+    "actual_native_trial": "original_checkout",
+    "full_suite": "not_run",
+    "ci": "not_run",
+    "current_model_evaluation": "not_evaluated_current_source"
+  }
+}

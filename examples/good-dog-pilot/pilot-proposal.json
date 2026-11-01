@@ -1,0 +1,52 @@
+{
+  "schema": "framewright-previs-proposal-v1",
+  "status": "proposed_not_canon_approval",
+  "source": "owner supplied short story; manuscript retained privately",
+  "working_title": "Good Dog \u2014 Who Trained Whom?",
+  "language": "en",
+  "format": "16:9",
+  "duration_seconds": 10,
+  "intent": "A small reward exchange starts to read as reversed control, preparing the story's dark satirical premise.",
+  "shots": [
+    {
+      "id": "exchange",
+      "seconds": [
+        0,
+        5
+      ],
+      "camera": "Low three-quarter view; dog moves left-to-right toward a seated human, staying on the same side of the action axis.",
+      "action": "Dog walks two real steps, stops, nudges an anonymous sealed packet toward the human. The complete human arm/body remain connected; the person begins placing a small food bowl beside the dog's front paws.",
+      "sound": "Two paw contacts, soft packet scrape, one bowl contact; no narration needed yet.",
+      "preserve": "One hero model, scale, floor height, packet position, bowl and human identity. No packet contents or procedural drug-use details."
+    },
+    {
+      "id": "control",
+      "seconds": [
+        5,
+        10
+      ],
+      "camera": "Closer reverse three-quarter, same action axis; match the exact placement motion across the cut.",
+      "action": "The bowl finishes contacting the floor. The dog looks from it to the waiting human, then calmly starts eating. The human keeps watching the dog, waiting for the next move.",
+      "sound": "Bowl contact continues exactly once across the cut, quiet room tone and restrained low pulse.",
+      "optional_final_text": "GOOD HUMAN.",
+      "preserve": "No repeated bowl placement, teleportation, foot slip, floating hand or unexplained object motion. The implied power reversal is a proposed adaptation, not a quotation from the books."
+    }
+  ],
+  "technical_checks": [
+    "Same versioned hero/set/prop references across both cameras",
+    "Root actually travels and stops; planted paws do not slide or sink",
+    "Muzzle-to-packet and bowl-to-floor contacts readable from both cameras",
+    "Cut preserves absolute action time, positions and direction",
+    "Same-frame seeks and a light-only revision preserve pose/camera timing"
+  ],
+  "visual_status": "27 owner-supplied trilogy references indexed; cover-dog and industrial-set draft passports retained privately. Exact identity/scale/rig/staging and final look approval remain unresolved.",
+  "route": "Free/macOS-first: test retained Three.js animal approach against the two-shot requirement before introducing another engine or rigging service.",
+  "not_authorized_by_this_file": [
+    "final character approval",
+    "paid calls",
+    "upload",
+    "automatic acceptance"
+  ],
+  "full_story_note": "The original story's escalation and bleak ending remain the adaptation baseline. A ten-second pilot does not replace or soften the whole story.",
+  "visual_reference_index": "visual-references.json"
+}

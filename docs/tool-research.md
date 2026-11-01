@@ -423,3 +423,31 @@ formats and blind footage remain unqualified. No new runtime/upstream audit.
 ## Agent video toolkits —30October2026
 
 [OpenMontage, ffmpeg-skill and the video-skills catalogue](research/agent-video-toolkits-2026-10-30.md): architectural reference/external trial, bounded local-adapter candidate, and discovery source respectively. Queue IDs and adoption limits are recorded; none is installed or production-qualified by this review.
+
+- [ffmpeg-skill first local operations trial](experiments/ffmpeg-skill-operations.md): accurate cuts/join and individual frames scoped; dark-scene threshold and timed-sheet failures retained.
+
+## Reanimate —30October2026
+
+[Assessment and REANIMATE-01](research/reanimate-2026-10-30.md): Mac/Linux motion-capture/reconstruction/comparison toolkit candidate; documented support includes browser graphics. Not installed/tested, Codex compatibility unverified. Useful to existing motion QA; does not supply Good Dog's rig or natural gait.
+
+## Video-generation follow-up —31October2026
+
+[Free-cloud trials, actual account boundaries and local-model candidates](research/free-video-good-dog-2026-10-31.md). Keep trial results separate from plan marketing, licences and Mac compatibility.
+
+## Mechanism and texturing candidates —31October2026
+
+[Teardown, StableGen, Sora/Google/PlayMCP clarification](research/teardown-stablegen-2026-10-31.md). Research scopes and resource prerequisites retained; no installation or runtime qualification.
+
+## PixelFX / Sprite Fusion —31October2026
+
+[Assessment and original Codex recipe](research/pixelfx-codex-2026-10-31.md):
+local pixel effects, stylised passages and transitions; active PIXELFX-01 candidate.
+MIT code with third-party notices; gallery font separately licensed. No wholesale
+skill import, installation or rendering performed.
+
+## Ultra-Water —31October2026
+
+[Three.js ocean candidate and bounded test](research/ultra-water-2026-10-31.md).
+MIT with notices; author GPU figures are not Mac measurements. ULTRA-WATER-01
+queued, no installation or runtime qualification. Separate spells collection
+remains unidentified.

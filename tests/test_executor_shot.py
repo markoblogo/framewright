@@ -72,6 +72,16 @@ for frame in range(job['start']+1,job['end']+1):
   self.assertIn('input:scene',self.intents()[0]['pins'])
   self.assertIn('input:source',self.intents()[0]['pins'])
   self.execute(ok=False);self.assertEqual(len(self.intents()),1)
+ def test_explicit_eevee_selection_survives_admission_and_receipt(self):
+  p=self.root/'shot-spec.json';spec=json.loads(p.read_text())
+  spec.update(version='eevee');spec['engine']={'name':'BLENDER_EEVEE_NEXT','device':'AUTO','samples':8,'seed':0};p.write_text(json.dumps(spec))
+  self.call('shots.py','prepare',self.project,p,'--output',self.root/'eevee.json','--actor','test')
+  self.spec['source']='output:shot:stage:eevee';self.select()
+  r=json.loads(self.execute().stdout)
+  job=json.loads(Path(r['receipt']).with_name('job.json').read_text())
+  self.assertEqual(job['spec']['engine'],spec['engine'])
+  self.assertEqual(r['state'],'review_pending')
+
  def test_intentional_silence_is_preserved(self):
   p=self.root/'shot-spec.json';spec=json.loads(p.read_text());spec.update(version='silent',audio=None);p.write_text(json.dumps(spec))
   self.call('shots.py','prepare',self.project,p,'--output',self.root/'silent.json','--actor','test')

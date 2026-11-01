@@ -17,8 +17,13 @@ project inputs. A shot specification contains `id`, `version`, `scene` subject,
 Settings contain a named camera and its local position/Euler rotation/lens, named
 existing object/actions and named area lights with energy/color/location/size.
 Geometry, materials, world, light orientation, camera constraints and color management
-come from the pinned scene. This version supports Cycles CPU only, fixed samples/seed,
-two threads and no denoising. It is not an arbitrary Python-command manifest.
+come from the pinned scene. Cycles CPU uses fixed samples/seed, two threads and
+no denoising. Explicit Eevee Next uses `engine: {name: "BLENDER_EEVEE_NEXT",
+device: "AUTO", samples: 8, seed: 0}`: samples control `taa_render_samples`, seed0
+is unused. AUTO uses the host graphics backend, not CPU-only execution or a GPU-fit
+guarantee. No engine fallback; a missing Eevee sample control fails closed.
+Actual engine/build are recorded in state.json.
+[Bounded production-scene trial](../../../docs/experiments/admitted-eevee-render-2026-11-01.md). It is not an arbitrary Python-command manifest.
 
 ```sh
 python3 skills/video-production-router/scripts/shots.py prepare local/project.json local/shot-spec.json --output local/shot-v1.json --actor operator

@@ -2,6 +2,7 @@
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit, parse_qs, urlencode
 import re
+import runpy
 
 
 def project(data, root, problems, journal, checkpoint_sha256, *, public=False, title=None, include=()):
@@ -109,19 +110,40 @@ def working_brief(data, status, files, limit=3):
     elif blockers:kind,label='blocked','Resolve the recorded constraint before dependent production; no authority inferred'
     elif rechecks:kind,label='evidence_review','Review the unresolved recorded checks; do not infer final acceptance'
     else:kind,label='no_recorded_next_action','Agree the next task; no production action is currently recorded as ready'
+    selected=runpy.run_path(str(Path(__file__).with_name('final_selection.py')))['view'](data,status)
+    if selected and not changes and not status.get('unresolved_attempts'):
+        if selected['state']=='needs_review':kind,label='evidence_review','Review the selected final revision and its current checks before reuse'
+        elif not status['next_actions']:kind,label='selected_delivery_recorded','Selected final is retained with recorded checks; other project tasks remain explicit and are not instructions to rerender old versions. Agree the next task.'
     sections={'accepted':accepted,'file_changes':changes,'recent_revisions':recent,'not_retained':unretained,'needs_recheck':rechecks,'waiting':waiting,'blockers':blockers,'ready_tasks':status['next_actions']}
     return {'schema_version':1,'goal':status['project']['goal'] or 'not recorded','execution':'not_started',
             **{k:v[:limit] for k,v in sections.items()},'counts':{k:len(v) for k,v in sections.items()},
-            'planning_sources_changed':status['planning_sources_changed'],
+            'selected_delivery':selected,'planning_sources_changed':status['planning_sources_changed'],
             'proposed_next':{'kind':kind,'label':label,'task':status['next_actions'][0]['id'] if kind=='ready_task' else None,'status':'proposal_not_execution_authority'},
             'note':'Local working brief from the same checkpoint. Recorded acceptance is not independent verification. Recent replacements are historical, not changes since a known session. Creative advice must be labelled separately; no work, approval or replan performed.'}
 
 
 def brief_markdown(view):
     lines=['# Working brief','', 'Goal: '+cell(view['goal']),'']
+    if view.get('selected_delivery'):
+        selected=view['selected_delivery']
+        lines+=['Selected final: '+cell(selected['subject'])+' / '+selected['state'], 'SHA256: '+str(selected['sha256']), selected['note'],'']
+        if selected.get('retained_file'):
+            pin=selected['retained_file']
+            lines+=['Retained file (path relative to checkpoint): '+cell(pin['path']), 'Retained bytes: '+str(pin['bytes']),'']
+        lines+=['Selected-version recorded reviews (not independent verification):']
+        for kind,rows in selected['reviews'].items():
+            for row in rows:
+                lines+=['- '+cell(kind)+': '+cell(row['result'])+' / '+cell(row['id'])+' / '+cell(row['actor'])+' ['+cell(row['provenance'])+']: '+cell(row['note'])]
+        lines+=['','Selected-version provider/publication records (not clearance):']
+        for row in selected.get('other_observations',[]):
+            lines+=['- '+cell(row['kind'])+': '+cell(row['result'])+' / '+cell(row['id'])+' ['+cell(row['provenance'])+']: '+cell(row['note'])]
+            if row.get('url'):lines+=['  '+cell(row['url'])+' / visibility: '+cell(row.get('visibility','unknown'))]
+        if not selected.get('other_observations'):lines+=['- None recorded; permission and publication remain unknown.']
+        lines+=['']
+        lines+=['- '+cell(reason) for reason in selected['reasons']]
     if view.get('completion'):
         lines+=['Completion diagnosis: '+cell(view['completion']['status'])+'; '+str(view['completion']['blockers'])+' blockers. Use project.py blockers PROJECT for reasons.','']
-    for key,label in [('accepted','Accepted work'),('file_changes','Current file problems'),('recent_revisions','Most recent recorded replacements'),('not_retained','Declared, not retained'),('needs_recheck','Checks to review'),('waiting','Explicit waits'),('blockers','Recorded constraints'),('ready_tasks','Recorded ready tasks')]:
+    for key,label in [('accepted','Accepted work'),('file_changes','Current file problems'),('recent_revisions','Most recent recorded replacements'),('not_retained','Declared, not retained'),('needs_recheck','Checks to review'),('waiting','Explicit waits'),('blockers','Task constraints (does not cover provider/use rights)'),('ready_tasks','Recorded ready tasks')]:
         rows=view[key];total=view['counts'][key]
         lines.append(label+' ('+str(total)+')'+(': showing '+str(len(rows)) if len(rows)<total else '')+':')
         if not rows:lines.append('- None recorded')

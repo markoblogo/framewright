@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-30",
+  "owner_statement": "\u0425\u043e\u0440\u043e\u0448\u043e - \u043f\u0440\u0438\u043d\u044f\u0442\u043e. \u0438\u0434\u0435\u043c \u0434\u0430\u043b\u0435\u0435",
+  "provenance": "owner_report",
+  "accepted": [
+    {
+      "aspect": "16x9",
+      "frames": 797,
+      "duration": 33.211,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "0cdcb0420db387ba4da52921256322349f038a46c14ceefb04793ddf2cd2c4c7"
+    },
+    {
+      "aspect": "9x16",
+      "frames": 797,
+      "duration": 33.208333,
+      "size": [
+        720,
+        1280
+      ],
+      "sha256": "353354e5deb5114634b8b012cd3ed020534fd1d061fbf8f72fba9040fe131492"
+    }
+  ],
+  "picture": "accepted",
+  "listening": "accepted",
+  "publication": "not_reported",
+  "primary_final": "wide",
+  "thumbnail_and_copy": "prepared_not_separately_approved"
+}

@@ -1,0 +1,226 @@
+{
+  "schema": "good-dog-story-map-v1",
+  "status": "working_adaptation_proposal_not_final_canon",
+  "title": "Good Dog — Who Trained Whom?",
+  "duration_seconds": 178,
+  "language": "en",
+  "format": "16:9",
+  "source": "owner original short story, trilogy images for visual reference only",
+  "adaptation_choices": [
+    "compressed fictional ruined industrial city, not literal Kyiv chronology",
+    "one recurring human narrator",
+    "anonymous sealed packets; dependency named in narration without operational detail",
+    "non-graphic factory reveal and power reversal; bleak ending preserved"
+  ],
+  "shots": [
+    {
+      "id": "K01",
+      "timeline_seconds": [
+        0,
+        14
+      ],
+      "turn": "Находка",
+      "change": "Собака замечает свёрток, человек ставит миску. Обмен кажется добрым.",
+      "image_prompt_en": "Horizontal16:9 cinematic graphic novel realism, engraved fine texture, damp brick and worn metal, muted charcoal and umber, cool grey daylight and restrained amber practical lamps. Same medium-large shaggy mottled brown and charcoal dog, floppy ears, cream muzzle and eyebrows, amber-brown eyes, worn dark harness. Same tired dark-haired bearded man in patched brown work clothes. Preserve identity, proportions and materials. No words, captions, speech bubbles, logos or added limbs. This is a fictional satirical film, no gore. Dog left, man right in the existing industrial refuge; a sealed paper packet between them, chipped teal bowl beside his boot.",
+      "motion": "Dog sniffs; bowl makes one contact; dog raises eyes.",
+      "route_proposal": "PixVerse retained + next Flow shot",
+      "narration_en_draft": "I thought I had taught him a trick. He found something I wanted. I gave him something he wanted. A perfectly ordinary arrangement.",
+      "status": "existing_reference",
+      "continuity": {
+        "hero": "draft-v1, not canon approval",
+        "man": "same generated reference",
+        "screen_axis": "dog left/man right for refuge and payoff",
+        "props": "one teal bowl and anonymous paper packets; placement tracked per shot"
+      }
+    },
+    {
+      "id": "K02",
+      "timeline_seconds": [
+        14,
+        30
+      ],
+      "turn": "Кто кого ждёт",
+      "change": "Еда уже на полу, но собака смотрит на человека; именно человек ждёт её решения.",
+      "image_prompt_en": "Horizontal16:9 cinematic graphic novel realism, engraved fine texture, damp brick and worn metal, muted charcoal and umber, cool grey daylight and restrained amber practical lamps. Same medium-large shaggy mottled brown and charcoal dog, floppy ears, cream muzzle and eyebrows, amber-brown eyes, worn dark harness. Same tired dark-haired bearded man in patched brown work clothes. Preserve identity, proportions and materials. No words, captions, speech bubbles, logos or added limbs. This is a fictional satirical film, no gore. Same refuge, same camera side and props. Bowl on the floor, man hands on knees, shaggy dog looking up at him.",
+      "motion": "Dog gaze to man; man leans forward; restrained pause, no talking dog.",
+      "route_proposal": "Flow image-to-video first; PixVerse next daily slot fallback",
+      "narration_en_draft": "He learned quickly. Not just where to look, but when I smiled. When I became generous. When I would do almost anything for one more find.",
+      "status": "keyframe_generated_owner_review_pending",
+      "continuity": {
+        "hero": "draft-v1, not canon approval",
+        "man": "same generated reference",
+        "screen_axis": "dog left/man right for refuge and payoff",
+        "props": "one teal bowl and anonymous paper packets; placement tracked per shot"
+      }
+    },
+    {
+      "id": "K03",
+      "timeline_seconds": [
+        30,
+        48
+      ],
+      "turn": "Маршрут",
+      "change": "Собака выбирает дорогу и останавливает человека; он послушно следует.",
+      "image_prompt_en": "Horizontal16:9 cinematic graphic novel realism, engraved fine texture, damp brick and worn metal, muted charcoal and umber, cool grey daylight and restrained amber practical lamps. Same medium-large shaggy mottled brown and charcoal dog, floppy ears, cream muzzle and eyebrows, amber-brown eyes, worn dark harness. Same tired dark-haired bearded man in patched brown work clothes. Preserve identity, proportions and materials. No words, captions, speech bubbles, logos or added limbs. This is a fictional satirical film, no gore. Low three-quarter view of the same dog leading the same man through damp brick alley toward a doorway. Dog is ahead, man behind.",
+      "motion": "Real forward travel, one stop and look back; match screen direction.",
+      "route_proposal": "Odyssey selected third-person + compatible World Labs/Marble passage",
+      "narration_en_draft": "Soon he chose our walks. The streets. The stops. I still held the leash. That was the part I liked to point out.",
+      "status": "planned",
+      "continuity": {
+        "hero": "draft-v1, not canon approval",
+        "man": "same generated reference",
+        "screen_axis": "dog left/man right for refuge and payoff",
+        "props": "one teal bowl and anonymous paper packets; placement tracked per shot"
+      }
+    },
+    {
+      "id": "K04",
+      "timeline_seconds": [
+        48,
+        66
+      ],
+      "turn": "Система вознаграждения",
+      "change": "Небольшой личный обмен превращается в повторяющийся распорядок.",
+      "image_prompt_en": "Horizontal16:9 cinematic graphic novel realism, engraved fine texture, damp brick and worn metal, muted charcoal and umber, cool grey daylight and restrained amber practical lamps. Same medium-large shaggy mottled brown and charcoal dog, floppy ears, cream muzzle and eyebrows, amber-brown eyes, worn dark harness. Same tired dark-haired bearded man in patched brown work clothes. Preserve identity, proportions and materials. No words, captions, speech bubbles, logos or added limbs. This is a fictional satirical film, no gore. Same workbench/refuge, three sealed paper packets, teal bowl and a wall clock. Dog watches man sort packets.",
+      "motion": "Two different short actions, repeat match cut, clock advances; no drug contents.",
+      "route_proposal": "I2V provider comparison; local time/clock overlay",
+      "narration_en_draft": "Then it became a routine. A find. A reward. Another walk. More people wanted dogs like mine. We called it a business.",
+      "status": "planned",
+      "continuity": {
+        "hero": "draft-v1, not canon approval",
+        "man": "same generated reference",
+        "screen_axis": "dog left/man right for refuge and payoff",
+        "props": "one teal bowl and anonymous paper packets; placement tracked per shot"
+      }
+    },
+    {
+      "id": "K05",
+      "timeline_seconds": [
+        66,
+        82
+      ],
+      "turn": "Масштаб",
+      "change": "У дверей уже несколько людей со своими собаками: люди думают, что построили сеть.",
+      "image_prompt_en": "Horizontal16:9 cinematic graphic novel realism, engraved fine texture, damp brick and worn metal, muted charcoal and umber, cool grey daylight and restrained amber practical lamps. Same medium-large shaggy mottled brown and charcoal dog, floppy ears, cream muzzle and eyebrows, amber-brown eyes, worn dark harness. Same tired dark-haired bearded man in patched brown work clothes. Preserve identity, proportions and materials. No words, captions, speech bubbles, logos or added limbs. This is a fictional satirical film, no gore. Industrial courtyard; central hero dog recognizable foreground left; a few distinct dogs and adults in background, no duplicate hero.",
+      "motion": "Foreground turn and background travel in separate layers; avoid crowd morphing.",
+      "route_proposal": "Keyframe + short I2V; local layered fallback",
+      "narration_en_draft": "We made it bigger. More dogs. More customers. Better routes. We were so proud of the network that we never asked who was running it.",
+      "status": "planned",
+      "continuity": {
+        "hero": "draft-v1, not canon approval",
+        "man": "same generated reference",
+        "screen_axis": "dog left/man right for refuge and payoff",
+        "props": "one teal bowl and anonymous paper packets; placement tracked per shot"
+      }
+    },
+    {
+      "id": "K06",
+      "timeline_seconds": [
+        82,
+        100
+      ],
+      "turn": "Перехват управления",
+      "change": "Без очередной награды люди стоят и ждут. Собака одним движением запускает выдачу.",
+      "image_prompt_en": "Horizontal16:9 cinematic graphic novel realism, engraved fine texture, damp brick and worn metal, muted charcoal and umber, cool grey daylight and restrained amber practical lamps. Same medium-large shaggy mottled brown and charcoal dog, floppy ears, cream muzzle and eyebrows, amber-brown eyes, worn dark harness. Same tired dark-haired bearded man in patched brown work clothes. Preserve identity, proportions and materials. No words, captions, speech bubbles, logos or added limbs. This is a fictional satirical film, no gore. Hero dog beside a simple guarded dispenser; man waits beyond a waist-high barrier, empty hands visible.",
+      "motion": "Dog operates one large accessible lever; one packet enters tray, man reacts.",
+      "route_proposal": "Blender or PlayMCP controlled scene; Teardown mechanism candidate",
+      "narration_en_draft": "The first time the supply stopped, the whole street waited. No one went to work. No one knew what to do. The dogs did.",
+      "status": "planned",
+      "continuity": {
+        "hero": "draft-v1, not canon approval",
+        "man": "same generated reference",
+        "screen_axis": "dog left/man right for refuge and payoff",
+        "props": "one teal bowl and anonymous paper packets; placement tracked per shot"
+      }
+    },
+    {
+      "id": "K07",
+      "timeline_seconds": [
+        100,
+        120
+      ],
+      "turn": "Открытие",
+      "change": "Тот же принцип виден внутри фабрики: собаки наблюдают, люди обслуживают линии.",
+      "image_prompt_en": "Horizontal16:9 cinematic graphic novel realism, engraved fine texture, damp brick and worn metal, muted charcoal and umber, cool grey daylight and restrained amber practical lamps. Same medium-large shaggy mottled brown and charcoal dog, floppy ears, cream muzzle and eyebrows, amber-brown eyes, worn dark harness. Same tired dark-haired bearded man in patched brown work clothes. Preserve identity, proportions and materials. No words, captions, speech bubbles, logos or added limbs. This is a fictional satirical film, no gore. Fictional industrial control room, same dog foreground silhouette, people at manual stations behind glass; conveyors connect visible rooms.",
+      "motion": "Camera reveals connected conveyor path and switches from human eye level to dog eye level.",
+      "route_proposal": "PlayMCP candidate / existing Blender fallback; optional Teardown insert",
+      "narration_en_draft": "They did not need our cities. Only the parts that kept the arrangement alive. Food production. The supply. And enough people to keep both moving.",
+      "status": "planned",
+      "continuity": {
+        "hero": "draft-v1, not canon approval",
+        "man": "same generated reference",
+        "screen_axis": "dog left/man right for refuge and payoff",
+        "props": "one teal bowl and anonymous paper packets; placement tracked per shot"
+      }
+    },
+    {
+      "id": "K08",
+      "timeline_seconds": [
+        120,
+        138
+      ],
+      "turn": "Попытка отказаться",
+      "change": "Герой отходит от очереди. Выдача останавливается, все смотрят на него; он возвращается.",
+      "image_prompt_en": "Horizontal16:9 cinematic graphic novel realism, engraved fine texture, damp brick and worn metal, muted charcoal and umber, cool grey daylight and restrained amber practical lamps. Same medium-large shaggy mottled brown and charcoal dog, floppy ears, cream muzzle and eyebrows, amber-brown eyes, worn dark harness. Same tired dark-haired bearded man in patched brown work clothes. Preserve identity, proportions and materials. No words, captions, speech bubbles, logos or added limbs. This is a fictional satirical film, no gore. Same man at a factory queue, turns toward exit, hero dog beside dispenser watching. Keep geography simple.",
+      "motion": "Man one step away, tray closes; next shot his hand returns to station.",
+      "route_proposal": "Flow I2V split into short actions; precise local tray animation",
+      "narration_en_draft": "I tried to leave once. The tray closed. Everyone looked at me. By evening, I was back. Not because I believed in it. Because I needed it.",
+      "status": "planned",
+      "continuity": {
+        "hero": "draft-v1, not canon approval",
+        "man": "same generated reference",
+        "screen_axis": "dog left/man right for refuge and payoff",
+        "props": "one teal bowl and anonymous paper packets; placement tracked per shot"
+      }
+    },
+    {
+      "id": "K09",
+      "timeline_seconds": [
+        138,
+        158
+      ],
+      "turn": "Цена системы",
+      "change": "За стеклом готовый корм и обозначение происхождения. Человек понимает, что людей считают ресурсом.",
+      "image_prompt_en": "Horizontal16:9 cinematic graphic novel realism, engraved fine texture, damp brick and worn metal, muted charcoal and umber, cool grey daylight and restrained amber practical lamps. Same medium-large shaggy mottled brown and charcoal dog, floppy ears, cream muzzle and eyebrows, amber-brown eyes, worn dark harness. Same tired dark-haired bearded man in patched brown work clothes. Preserve identity, proportions and materials. No words, captions, speech bubbles, logos or added limbs. This is a fictional satirical film, no gore. Non-graphic sealed pet-food tins on fictional factory belt; an inspection window and human silhouettes far behind opaque glass. No bodies, blood or operating instructions.",
+      "motion": "One tin moves under inspection lamp; readable label added locally, not generated.",
+      "route_proposal": "Blender/Three.js repeatable prop shot; StableGen texturing optional later",
+      "narration_en_draft": "Keeping us fed had never been the point. When people could no longer keep the system running, the system found another use for them.",
+      "status": "planned",
+      "continuity": {
+        "hero": "draft-v1, not canon approval",
+        "man": "same generated reference",
+        "screen_axis": "dog left/man right for refuge and payoff",
+        "props": "one teal bowl and anonymous paper packets; placement tracked per shot"
+      }
+    },
+    {
+      "id": "K10",
+      "timeline_seconds": [
+        158,
+        178
+      ],
+      "turn": "GOOD HUMAN",
+      "change": "Возвращаемся к первому обмену: собака теперь у рычага, человек садится ждать. Роль хозяина перевёрнута.",
+      "image_prompt_en": "Horizontal16:9 cinematic graphic novel realism, engraved fine texture, damp brick and worn metal, muted charcoal and umber, cool grey daylight and restrained amber practical lamps. Same medium-large shaggy mottled brown and charcoal dog, floppy ears, cream muzzle and eyebrows, amber-brown eyes, worn dark harness. Same tired dark-haired bearded man in patched brown work clothes. Preserve identity, proportions and materials. No words, captions, speech bubbles, logos or added limbs. This is a fictional satirical film, no gore. Same refuge composition echoed as factory waiting bay: hero dog left at lever, same man seated right, teal bowl beside him, sealed packet between them.",
+      "motion": "Dog gaze, lever movement, human sits; subtle room action; fade only after reveal.",
+      "route_proposal": "Flow matching keyframe + local title/sound",
+      "narration_en_draft": "I used to say, Good dog. Now I sit. I wait. And when they give me what I need, I remember to be grateful.",
+      "status": "planned",
+      "continuity": {
+        "hero": "draft-v1, not canon approval",
+        "man": "same generated reference",
+        "screen_axis": "dog left/man right for refuge and payoff",
+        "props": "one teal bowl and anonymous paper packets; placement tracked per shot"
+      }
+    }
+  ],
+  "production_policy": [
+    "one short action per generation, I2V preferred",
+    "generate adjacent keyframes from versioned references and last accepted frame",
+    "only actual free or already-included entitlement, no API billing inferred",
+    "one heavy local task at a time",
+    "no new world if retained Odyssey/Marble material can work",
+    "attempt every relevant tool only when it solves a named scene problem; keep failed attempts",
+    "full film stays unaccepted until owner image/audio review"
+  ]
+}

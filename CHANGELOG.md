@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased
+
+- Reject clipped long titles/subtitles in the reusable montage example; refresh component-only discovery fixtures and complete final local checks/review.
+
+- Explicit Eevee Next saved-shot execution with retained engine/build, bounded native interruption/retry evidence on a Last Seed scene, and a30s Blender version-query allowance for observed external-disk startup. New output remains review pending.
+
+- Keep new ready tasks visible after final selection; include selected file location, exact-version review notes and provider/publication scope in recovery briefs. Verify Good Dog recovery with a new read-only agent without prior chat context.
+
+- Add explicit revision-bound final selection and selected-delivery-first recovery briefs, preserving whole-project waits and invalidating selection on drift or rejection.
+
 ## 0.5.0 — 2026-10-30 — experimental
 
 - Bind saved Blender shots to selected-route admission and sequential execution:

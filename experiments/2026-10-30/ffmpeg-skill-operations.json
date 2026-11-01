@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-30",
+  "tool": "kajisho5/ffmpeg-skill",
+  "revision": "8b6c30528d70b262d8211c6ad0cf88b0de93d8c2",
+  "scope": "scene_suggestions_contact_sheet_accurate_cut_join",
+  "installation": "temporary_external_checkout_only",
+  "paid_calls": 0,
+  "defaults_scene_count": 2,
+  "tuned_scene_boundaries": [
+    0,
+    8.8,
+    17.2,
+    20.9
+  ],
+  "artwork_count_from_manual_review": 3,
+  "cuts": [
+    {
+      "status": "completed",
+      "upstream_verified": true,
+      "verification": [
+        {
+          "step": "probe",
+          "ok": true
+        },
+        {
+          "step": "streams",
+          "property": "stream_inventory",
+          "expected": {
+            "video": true,
+            "audio": false
+          },
+          "measured": {
+            "video": true,
+            "audio": false
+          },
+          "expected_count": {
+            "video": 1,
+            "audio": 0
+          },
+          "measured_count": {
+            "video": 1,
+            "audio": 0
+          },
+          "provenance": "input_premeasurement",
+          "ok": true
+        },
+        {
+          "step": "decode",
+          "property": "decodable",
+          "frames": {
+            "video": {
+              "head": 10,
+              "tail": 10
+            }
+          },
+          "window": 1.0,
+          "provenance": "measurement",
+          "ok": true
+        }
+      ],
+      "sha256": "91865196039c82a1f41b48aef35031c18937f8c70569f4be69c46aa937ff681f"
+    },
+    {
+      "status": "completed",
+      "upstream_verified": true,
+      "verification": [
+        {
+          "step": "probe",
+          "ok": true
+        },
+        {
+          "step": "streams",
+          "property": "stream_inventory",
+          "expected": {
+            "video": true,
+            "audio": false
+          },
+          "measured": {
+            "video": true,
+            "audio": false
+          },
+          "expected_count": {
+            "video": 1,
+            "audio": 0
+          },
+          "measured_count": {
+            "video": 1,
+            "audio": 0
+          },
+          "provenance": "input_premeasurement",
+          "ok": true
+        },
+        {
+          "step": "decode",
+          "property": "decodable",
+          "frames": {
+            "video": {
+              "head": 10,
+              "tail": 10
+            }
+          },
+          "window": 1.0,
+          "provenance": "measurement",
+          "ok": true
+        }
+      ],
+      "sha256": "ba973103478de3531a4993b4f79d973b64ab55e58e2b61c1adc6958a95db900c"
+    }
+  ],
+  "join": {
+    "status": "completed",
+    "upstream_verified": true,
+    "verification": [
+      {
+        "step": "probe",
+        "ok": true
+      },
+      {
+        "step": "duration",
+        "property": "video_duration",
+        "ok": true,
+        "measured": 4.0,
+        "expected": 4.0,
+        "delta": 0.0,
+        "tolerance": 0.062,
+        "provenance": "input_premeasurement",
+        "inputs_total": 4.0
+      },
+      {
+        "step": "streams",
+        "property": "stream_inventory",
+        "expected": {
+          "video": true,
+          "audio": true
+        },
+        "measured": {
+          "video": true,
+          "audio": true
+        },
+        "expected_count": {
+          "video": 1,
+          "audio": 1
+        },
+        "measured_count": {
+          "video": 1,
+          "audio": 1
+        },
+        "provenance": "input_premeasurement",
+        "ok": true
+      },
+      {
+        "step": "stream_lengths",
+        "property": "stream_end",
+        "measured": {
+          "video": 4.0,
+          "audio": 4.0
+        },
+        "tolerance": 0.25,
+        "provenance": "input_premeasurement",
+        "ends": {
+          "video": 4.0,
+          "audio": 4.0
+        },
+        "shortfall": {
+          "video": 0.0,
+          "audio": 0.0
+        },
+        "input_shortfall": {
+          "video": 0.0,
+          "audio": 0.0
+        },
+        "ok": true
+      },
+      {
+        "step": "decode",
+        "property": "decodable",
+        "frames": {
+          "video": {
+            "head": 24,
+            "tail": 24
+          },
+          "audio": {
+            "head": 47,
+            "tail": 48
+          }
+        },
+        "window": 1.0,
+        "provenance": "measurement",
+        "ok": true
+      }
+    ],
+    "sha256": "3a1a0fdea21b7bed2ba8ff898783200d6ea7b534410e0bd6ceb08143d1b11cc2"
+  },
+  "limits": [
+    "dark transition missed at threshold10",
+    "cut suggestions need visual interpretation",
+    "join adds silent audio by default",
+    "caption/HDR/MCP untested"
+  ],
+  "full_join_decode": "pass",
+  "r04_individual_extraction": "completed",
+  "r04_timed_sheet": "incomplete_black_image_not_qualified",
+  "operator_inspected_direct_frames": true
+}
