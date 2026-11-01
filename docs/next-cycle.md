@@ -1,18 +1,21 @@
 # Current work and protected waits
 
-Updated1November2026, after0.6.0. This is the current status entry point;
+Updated1November2026, source version0.7.0 / REL-B. This is the current status entry point;
 [strategic roadmap](roadmap.md) governs priority. [Start / continue / correct](start-here.md).
 
 ## Current next step
 
-**REL-B production evidence reviewed; release preparation in progress.**
-[Readiness assessment](rel-b-readiness-2026-11-01.md) connects the accepted repeat
-film, both formats, bounded controls/correction, independent continuation and R05.
-DOC-ENTRY-01,514-test offline check and independent local review now pass;
-[final evidence](rel-b-local-review-2026-11-01.md). Next: separately authorised
-commit/push/PR for remote CI and review.
-Commit/push/PR, remote CI and owner release decision remain separate, not executed
-by this status page. No new production or sweep of the whole tool queue is needed.
+**REL-B evidence and source work complete;0.7.0 release preparation.**
+[Release notes](release-notes-0.7.0.md) and [frozen publication audit](release-audit-0.7.0.md)
+link the verified scope and canonical public release records. Actual tag/assets
+must be checked there; prepared source text is not proof of publication.
+DOC-ENTRY-01,514-test offline check and independent local review pass; PR50 and
+merged-main CI pass. Release PR/CI and publication are performed under the owner's
+explicit request, with final evidence retained separately.
+
+After release, choose the next roadmap slice or owner production; no new film,
+channel action or sweep of the tool queue is automatically started. SSI/Azur waits
+below remain separate from release readiness.
 
 ## Production and handoff status
 
@@ -45,4 +48,4 @@ free/macOS-first policy remains. Plans and configured scheduling do not prove ou
 [Prior chronological next-cycle record](history/next-cycle-through-2026-11-01.md)
 retains dated production/research states without making old “next” statements current.
 [Prior detailed README](history/readme-through-2026-11-01.md) preserves its links.
-[Experiments](experiments.md) · [0.6.0 release audit](release-audit-2026-11-01.md).
+[Experiments](experiments.md) · [0.7.0 publication audit](release-audit-0.7.0.md) · [0.6.0 audit](release-audit-2026-11-01.md).

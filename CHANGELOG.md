@@ -2,6 +2,25 @@
 
 ## Unreleased
 
+## 0.7.0 — 2026-11-01 — experimental
+
+- Add clear start / continue / correct documentation entrypoints and a compact
+  current-work page; preserve earlier detail as linked historical snapshots.
+- Add an optional English caption reading-time preflight and render guard to the
+  source montage example. Count title plus subtitle, reject insufficient time
+  before media/output access, and never silently retime accepted films.
+- Record REL-B repeat-production evidence: accepted horizontal/portrait film,
+  protected audio correction, bounded template controls, source/recipe reuse,
+  scripted timings and independent read-only continuation. Operator labour savings
+  and whole-route autonomy remain unproven.
+- Confirm pinned ffmpeg-skill explicit frame extraction against direct FFmpeg on
+  another film; exclude its auto contact sheet after repeated failure. Retain SSI
+  v2.1 handoff, AzurMenton pilot and staged channel/book plans without claiming
+  autonomous publication or qualifying all provider features.
+- Pass514 local tests with18skips, package/structural checks and one-round independent
+  review. PR50 and exact merged-main CI passed. Release metadata/CI are separate;
+  this is an experimental capability increment, not stable1.0.
+
 ## 0.6.0 — 2026-11-01 — experimental
 
 - Recover the explicitly selected final video with its retained path, size, SHA256

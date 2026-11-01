@@ -41,8 +41,9 @@ Published films demonstrate concrete work, not those broader claims.
 **Current REL-B assessment, 1 November:** bounded repeat/reuse and scoped R05
 comparison evidence complete; [release preparation is recommended](rel-b-readiness-2026-11-01.md).
 DOC-ENTRY-01, final local checks and independent review now pass; see
-[local review](rel-b-local-review-2026-11-01.md). Next separately authorised PR/CI
-and owner release decision. This does not establish labour savings or whole-route automation.
+[local review](rel-b-local-review-2026-11-01.md). PR50/merged-main CI pass; owner has now authorised0.7.0 release preparation and
+publication. [Frozen publication audit](release-audit-0.7.0.md) separates candidate
+checks from actual canonical tag/asset verification. This does not establish labour savings or whole-route automation.
 
 ## Milestones and exit evidence
 
