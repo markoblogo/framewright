@@ -2,7 +2,7 @@
 
 ![Framewright — craft the cut, keep the evidence](assets/framewright-cover.png)
 
-[![Version: 0.6.0](https://img.shields.io/badge/version-0.6.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.6.0)
+[![Version: 0.7.0](https://img.shields.io/badge/version-0.7.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.7.0)
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 
 **Reusable workflows and local tools for a video studio run with an AI agent.**
@@ -37,8 +37,8 @@ This prints a plan; it does not render, install, call a model or spend money.
 
 | Scope | Evidence and boundary |
 | --- | --- |
-| Latest release | Experimental prerelease0.6.0; [release audit](docs/release-audit-2026-11-01.md) |
-| Next release preparation | [REL-B assessment](docs/rel-b-readiness-2026-11-01.md): repeat film and both aspects accepted, scoped recovery/reuse/correction evidence. Final checks/review are separate from commit, CI and release. |
+| Source version | Experimental0.7.0 / REL-B; [release notes](docs/release-notes-0.7.0.md) and [publication audit](docs/release-audit-0.7.0.md). Verify actual publication at the canonical release page. |
+| REL-B evidence | [Assessment](docs/rel-b-readiness-2026-11-01.md): both formats accepted, scoped recovery/reuse/correction; [local checks/review](docs/rel-b-local-review-2026-11-01.md) and PR50/merged-main CI pass. No labour-savings or whole-route-autonomy claim. |
 | SSI handoff | [v2.1 template](docs/experiments/ssi-brand-profiles.md) owner-accepted; three new weekly films reported prepared, not sent/published. Partner approval and configured8November autonomous outcome remain open. |
 | AzurMenton guide pilot | [40s guide film](docs/experiments/azur-guide-first-film.md) accepted; YouTube and guide embed owner-reported. A general automated guide template is not yet qualified. |
 
