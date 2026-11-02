@@ -5,22 +5,25 @@ Updated 2 November 2026, source version 0.7.0 / REL-B. This is the current statu
 
 ## Current next step
 
-**Preserve the post-release storage/tooling closeout through a scoped PR and CI.**
-The canonical GitHub record reports [v0.7.0](https://github.com/markoblogo/framewright/releases/tag/v0.7.0)
-published on 1 November as a non-draft experimental prerelease. This refresh checks
-release metadata; the [frozen audit](release-audit-0.7.0.md) retains its original
-candidate-time scope and is not retroactively rewritten.
+**No Further Claims selected for local adaptation planning; episode/style/donors await owner approval.**
+[Story and source proposal](productions/no-further-claims-proposal.md) covers the
+owner-supplied manuscript and cover, both16:9/9:16 and the proposed two-shot
+continuity pilot. No images, voice, footage or pilot generated from this intake.
+Next: owner chooses/adjusts the episode and visual direction, then approve specific
+donor images before animation. TikTok branding follows the first ready film;
+Instagram remains later. Preserve SSI/Azur waits below.
 
-[Storage sanitation](storage-maintenance-2026-11-01.md) is complete except for one
-isolated filesystem residue. Follow the [external-storage policy](storage-policy.md).
-[TokenEconomizer](experiments/tokeneconomizer-setup.md) retains the same profile
-after relocation; native session delivery and savings remain unverified.
-This closeout adds documentation, not a new release, film or tool trial.
+Storage/TokenEconomizer [PR52](https://github.com/markoblogo/framewright/pull/52)
+merged2November at5fb6c50 after green exact-head CI and completed automated review
+without findings. [Storage policy](storage-policy.md) and [maintenance report](storage-maintenance-2026-11-01.md)
+remain current: one isolated filesystem residue remains; no new cleanup attempted.
+[TokenEconomizer](experiments/tokeneconomizer-setup.md) native session delivery and
+savings remain unverified. This closeout does not trigger a release.
 
-After the closeout, select the next REL-C/M5 fiction slice: a two-shot continuity
-pilot, with expressive voice as a possible supporting test. Plan YouTube 16:9 and
-TikTok 9:16 together. No new film, account update or publication is selected here.
-SSI/Azur waits below remain separate.
+[Today's research closeout](research/intake-closeout-2026-11-02.md) is a separate
+reviewed documentation slice; new queue entries do not start tests or reorder the
+selected production. [Studio Notes02](editorial/2026-11-02-framewright-studio-notes-02.md)
+publication URL was supplied by the owner; visibility/text identity remain separate.
 
 ## Production and handoff status
 
@@ -38,7 +41,7 @@ SSI/Azur waits below remain separate.
   account update → first approved publication. Instagram discussed after TikTok starts.
 - **Fiction slate / Good Dog:** [book adaptations](book-adaptation-slate.md) and
   [Good Dog follow-ups](experiments/good-dog-closeout.md). Continuity/contact/voice
-  tests attach to a selected real film; no new film selected by this page.
+  tests attach to a selected real film; No Further Claims is selected for planning; episode/donors remain proposed.
 - **Pocket OS:** remains paused until explicit resumption and device material.
 - **Tools, writing and book:** [experiment queue](experiment-queue.md),
   [Studio Notes](editorial/README.md), [book readiness](book-milestone.md) retain

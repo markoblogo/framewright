@@ -1,6 +1,6 @@
 {
   "schema": "framewright-book-materials-v1",
-  "updated": "2026-10-26",
+  "updated": "2026-11-02",
   "language_of_working_docs": "ru",
   "book_language": "not_decided",
   "scope": "Video-production methods with Framewright and without it; parallel routes, same outcome criteria",
@@ -266,5 +266,50 @@
     "chapter_count": 10,
     "gap_count": 10,
     "new_reader_reproductions": 0
-  }
+  },
+  "weekly_updates": [
+    {
+      "date": "2026-11-02",
+      "file": "docs/book/updates-2026-11-02.md",
+      "editorial_issue": "studio-notes-02",
+      "chapters": [
+        "C02",
+        "C03",
+        "C06",
+        "C07",
+        "C08",
+        "C09"
+      ],
+      "cases": [
+        "P02",
+        "P03"
+      ],
+      "gaps": [
+        "G01",
+        "G03",
+        "G04",
+        "G07",
+        "G09"
+      ],
+      "source_sha256": {
+        "docs/experiments/last-seed-recovery.md": "a5fe459b0d8d793b9d2954c94c8aa80efa14f58bba68a265d8e82983848dac5d",
+        "docs/experiments/good-dog-closeout.md": "f96c336e873abe56622ecca86b060779c4e2280f5e1c2ec725a6e49a0fa20b4f",
+        "docs/experiments/rel-b-repeat-protocol.md": "65226a4f46dfd998a40bcdbba1afe25a9e7c10bc7f06bd2850f8ef3d4074255b",
+        "docs/storage-policy.md": "871f790c1403da0a3e017c09df92539834b955d67dd17ac6de84f5009637e349",
+        "docs/experiments/ssi-brand-profiles.md": "16fb2f82b289f70cc6536f6701b2be2b7d0a0ae43aff345376d4c647bcfe8549"
+      },
+      "book_source_article": "docs/editorial/2026-11-02-framewright-studio-notes-02.md",
+      "new_reader_reproductions": 0,
+      "gap_status_changes": [],
+      "chapter_status": "working_notes_only",
+      "rights": "specific_book_illustrations_not_cleared",
+      "blog_publication": {
+        "url": "https://abvx.xyz/writing/ai-video-production-story-continuity-framewright-02",
+        "received_date": "2026-11-02",
+        "provenance": "owner_provided_url",
+        "state": "published_owner_report",
+        "chapter_approval": "not_given"
+      }
+    }
+  ]
 }

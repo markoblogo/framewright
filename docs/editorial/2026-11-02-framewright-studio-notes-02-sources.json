@@ -1,0 +1,137 @@
+{
+  "schema": "framewright-editorial-sources-v1",
+  "date": "2026-11-02",
+  "issue": "studio-notes-02",
+  "article": "docs/editorial/2026-11-02-framewright-studio-notes-02.md",
+  "article_sha256": "45321e601c6ce2c61faa5c62a8db507a23b06b7a633c11e1e5d7e96de48d0589",
+  "baseline_previous_issue": "studio-notes-01",
+  "baseline_previous_head": "cc67a23758b667d76d114f608ee9282d974fd464",
+  "observed_git_head": "9d186134dbdc9916353e9c7a651f50947887ce18",
+  "source_state": "Working-tree snapshot, including uncommitted documentation; no claim these new research changes are released",
+  "source_sha256": {
+    "docs/experiments/last-seed-recovery.md": "a5fe459b0d8d793b9d2954c94c8aa80efa14f58bba68a265d8e82983848dac5d",
+    "docs/experiments/good-dog-closeout.md": "f96c336e873abe56622ecca86b060779c4e2280f5e1c2ec725a6e49a0fa20b4f",
+    "docs/experiments/rel-b-repeat-protocol.md": "65226a4f46dfd998a40bcdbba1afe25a9e7c10bc7f06bd2850f8ef3d4074255b",
+    "docs/storage-policy.md": "871f790c1403da0a3e017c09df92539834b955d67dd17ac6de84f5009637e349",
+    "docs/experiments/ssi-brand-profiles.md": "16fb2f82b289f70cc6536f6701b2be2b7d0a0ae43aff345376d4c647bcfe8549"
+  },
+  "youtube_examples": [
+    {
+      "url": "https://youtu.be/ZQTORLBw9Zs",
+      "case": "docs/experiments/last-seed-recovery.md",
+      "publication_provenance": "owner_provided_url",
+      "independent_visibility": "not_rechecked_this_pass",
+      "uploaded_byte_identity": "not_verified"
+    },
+    {
+      "url": "https://youtu.be/WxEa5q_PPOk",
+      "case": "docs/experiments/good-dog-closeout.md",
+      "publication_provenance": "owner_provided_url",
+      "independent_visibility": "not_rechecked_this_pass",
+      "uploaded_byte_identity": "not_verified"
+    }
+  ],
+  "claims": [
+    {
+      "topic": "Causal greenhouse story and scoped v4 acceptance",
+      "source": "docs/experiments/last-seed-recovery.md",
+      "boundary": "One accepted film; not general mechanism/plant qualification"
+    },
+    {
+      "topic": "Hybrid Good Dog edits, action sound and weary voice acceptance",
+      "source": "docs/experiments/good-dog-closeout.md",
+      "boundary": "Voice usage terms remain separate; identity/rig/physics not generally qualified"
+    },
+    {
+      "topic": "Dual-format repeat, long-copy timing and continuation",
+      "source": "docs/experiments/rel-b-repeat-protocol.md",
+      "boundary": "Internal-only accepted film; timing heuristic; no labour-savings baseline"
+    },
+    {
+      "topic": "External-first storage and selective retention",
+      "source": "docs/storage-policy.md",
+      "boundary": "Policy and local maintenance; removed inputs not claimed rebuildable"
+    }
+  ],
+  "cover": {
+    "file": "framewright-studio-notes-02-cover.png",
+    "sha256": "478e0604625e1c63b2e25bcf3d5539c411cf1fe0bd66ffec1540fefa3ec0b979",
+    "bytes": 2201902,
+    "width": 1672,
+    "height": 941,
+    "format": "PNG",
+    "alt": "Three film frames show a seed becoming a sprout and a leafy plant on an amber-lit editing workbench, beside the headline A Good Frame Is Not a Finished Film.",
+    "headline": "A GOOD FRAME IS NOT A FINISHED FILM",
+    "series_label": "FRAMEWRIGHT STUDIO NOTES 02",
+    "creation": "built-in image_gen; original editorial illustration",
+    "input_images": [],
+    "prompt_file": "cover-prompt.txt",
+    "prompt_sha256": "f966b92936b02ddc75ad1d9da918fb7dcd9b75117663149b180374b6a4181ba0",
+    "prompt": "Use case: stylized-concept. Create one original landscape editorial blog cover, approximately 16:9, for Framewright Studio Notes issue 02. Restrained charcoal, deep teal and warm amber palette. Premium cinematic miniature workbench: three linked film frames showing a seed, a small emerging sprout, and a mature upward leaf; beside them an amber pencil correcting a single frame, a compact film reel, and carefully organized archive boxes. Metaphorical editorial illustration, not a software screenshot and no existing artwork or brand logos. Right half: large beautifully typeset exact English headline, on three lines if needed: \"A GOOD FRAME IS NOT A FINISHED FILM\". Small but legible exact series label: \"FRAMEWRIGHT STUDIO NOTES 02\". Headline high contrast warm ivory, generous dark negative space, absolutely readable at reduced size. No additional words, no tiny interface text, no fake charts, no third-party references. Sophisticated tactile 3D illustration, subtle paper and metal textures, precise spacing and quiet lighting.",
+    "text_accuracy_review": "pass",
+    "full_size_visual_review": "pass",
+    "reduced_readability_review": "pass_at480px_headline_and_series_label",
+    "owner_approval": "pending",
+    "cms_upload": "not_performed",
+    "paid_api_calls": 0,
+    "entitlement_cost": "not_exposed_not_measured",
+    "storage": "private publication package outside Git"
+  },
+  "book_source": {
+    "status": "candidate_material",
+    "chapters": [
+      "C02",
+      "C03",
+      "C06",
+      "C07",
+      "C08",
+      "C09"
+    ],
+    "cases": [
+      "P02",
+      "P03"
+    ],
+    "gaps": [
+      "G01",
+      "G03",
+      "G04",
+      "G07",
+      "G09"
+    ],
+    "working_note": "docs/book/updates-2026-11-02.md",
+    "chapter_approval": "not_given",
+    "routes": [
+      "with_framewright",
+      "without_framewright"
+    ],
+    "reader_reproduction": "not_performed"
+  },
+  "publication_state": "published_owner_report",
+  "cms_collection": "working_label_not_verified",
+  "book_review": {
+    "threshold_changed": false,
+    "status": "reader_reproduction_and_editorial_review_pending",
+    "all_existing_gaps_remain_open": true
+  },
+  "checks": {
+    "metadata": "pass",
+    "youtube_count": 2,
+    "full_size_cover": "pass",
+    "reduced_cover": "pass_at480px",
+    "local_links": "pass_repository_validate",
+    "article_word_count": 953,
+    "diff_whitespace": "pass",
+    "source_hashes": "pass"
+  },
+  "blog_url": "https://abvx.xyz/writing/ai-video-production-story-continuity-framewright-02",
+  "publication_observations": [
+    {
+      "received_date": "2026-11-02",
+      "provenance": "owner_provided_url",
+      "url": "https://abvx.xyz/writing/ai-video-production-story-continuity-framewright-02",
+      "independent_visibility": "access_failed_web_tool_2026-11-02",
+      "text_and_cover_identity": "not_independently_verified",
+      "audience_metrics": "not_checked"
+    }
+  ]
+}

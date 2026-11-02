@@ -110,7 +110,7 @@ time on this Mac; related documentation can be updated during waits.
 | **First film accepted/published; later repeat · AZUR-GUIDE-01** | [Develop the guide-film style through varied guides](experiments/azur-guide-first-film.md) | First film owner-reported on YouTube; guide embed owner-reported complete. Next guide after several other productions: approve donor media before assembly, then pilot and dual-format review. Universal template not yet qualified. | M3/M6, R04, R09 |
 | **Later staged handoff · AZUR-AUTO-01** | Transfer a proven guide/event template to AzurMenton for source-triggered production and distribution | [Staged plan](experiments/azur-guide-first-film.md#future-automation--staged-owner-direction): first qualify style/tools and formats; later receiving-project generation, YouTube upload/embed and dedicated Instagram/TikTok publishing with per-platform verification and duplicate protection. No current account creation or publishing task. | M3/M6 |
 | **Next selected fiction; channel pilot · TIKTOK-01** | Learn vertical delivery on owner’s existing TikTok using animation experiments | Next selected book animation planned for YouTube 16:9 and TikTok 9:16 from the start. First film ready → owner brainstorm on name/branding/post concept → approved account update → first approved publication. Discuss Instagram after TikTok starts. | M4/M5/M6, R07/R09 |
-| **Later · LIT-FILM-01–04** | Original-book micro-shorts / film-like adaptations: No Further Claims; God Was Busy with the Plumbing (including Ukrainian localization); Marcus Aurelius Zombie Apocalypse; Don Quixote in Neverland | [Book adaptation slate](book-adaptation-slate.md): selected excerpt → coherent short story → two linked pilot shots → review → production. Same work/localization stays one adaptation family. No change to active REL-B priority. | M5, R07, R09 |
+| **Planning selected · LIT-FILM-01; later · LIT-FILM-02–04** | No Further Claims selected; other original-book adaptations remain later | [Selected episode/style/source proposal](productions/no-further-claims-proposal.md) awaits owner approval; then approved donors → two linked pilot shots → review → production. [Book adaptation slate](book-adaptation-slate.md) retains God Was Busy with the Plumbing (and Ukrainian localization), Marcus Aurelius Zombie Apocalypse and Don Quixote in Neverland. | M5, R07, R09 |
 | **Later · R08** | Add provider/quota execution only when a selected production needs it | Current terms/account evidence, retry reserve, per-operation authority, ambiguous-charge recovery and no duplicate submission; local cost ledger alone is insufficient. | M2/M4, COST-01/STATE-01 |
 | **Ongoing closeout · R09** | Convert useful outcomes into reusable methods, case studies, post material and book coverage | Update exact evidence, existing queue/registry, chapter gap and next action. Retain with/without Framewright instructions; do not claim reader reproduction before it happens. | M6, BOOK-01 |
 
@@ -290,3 +290,30 @@ It was not executed in Good Dog; trial only when a later scene needs pixel effec
 **1November final local closeout:** [510-test full check and local review](final-local-review-2026-11-01.md) pass with18explicit skips. Caption overflow and stale catalogue fixtures corrected. Local REL-A readiness is evidenced; no new code-independent approval, remote CI, commit/push or release is implied. Next: authorised PR/CI and release decision, not another production/tool trial.
 
 **1November release preparation:** merged-main CI on5a98bd6 passed. [0.6.0 REL-A candidate](release-audit-2026-11-01.md) is prepared locally; version/notes/package work does not itself publish a tag or release. No new functional gate or tool trial is added.
+
+### 2 November intake — parameterized scenes and visible handoffs
+
+[Unreal AI / Grok City assessment](research/unreal-ai-grok-city-2026-11-02.md):
+PARAM-SHOT-01 extends R01/PREVIS-01 for a suitable REL-C shot; first use Blender
+and verify it adds new evidence. UE-AI-01 remains deferred under M4/R05 and
+conditional R06. Grok City's task ownership and human-decision queue extend
+OM-BOARD-01 rather than creating another orchestrator. Grok Bot itself is a
+reference with account/cost unknowns. No new production or test is started.
+
+### 2 November lesson intake — motion guidance and bounded video edits
+
+[Video-generation challenges](research/video-generation-challenges-2026-11-02.md)
+adds conditional MOTION-GUIDE-01 and V2V-PRESERVE-01 under R05/R06/R07, using
+local previz and an existing eligible provider only when a selected scene needs it.
+Accepted-output yield enriches COST-01/R04; shot contracts and human decisions
+extend existing controls. This is research, not a whole-route implementation,
+new spending authority or a change to protected waits.
+
+### 2 November closeout and next fiction selection
+
+Storage/TokenEconomizer PR52 merged separately; [research closeout](research/intake-closeout-2026-11-02.md)
+retains the new finds without starting their tests or triggering a release.
+Owner selected LIT-FILM-01 / No Further Claims for REL-C planning; [episode/style/source
+proposal](productions/no-further-claims-proposal.md) is pending owner approval.
+Then agree donor images, then two linked shots with both16:9/9:16 coverage.
+No full film, account action or publication starts from this planning record.

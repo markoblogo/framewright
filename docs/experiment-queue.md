@@ -10,6 +10,77 @@ their historical trial records and queued questions remain. Old per-film runtime
 draft media and temporary test copies were retired under the owner's retention
 policy. Recheck availability before every trial; see [storage policy](storage-policy.md).
 
+## HKU benchmark — enrich existing provider comparison, 2 November 2026
+
+[Primary-source review and limits](research/hku-video-benchmark-2026-11-02.md).
+GD-NEXT-08 / M4/R05/R07: separate T2V and I2V for one frozen scene; first one
+available free/already-paid provider with at most two outputs, second provider
+only within separately agreed quota/attempt cap. Record identity/contact/audio,
+accepted seconds and actual known costs. HKU's Seedance 2.0 Pro result does not
+rank current 2.5 endpoints or establish local access. No automatic default-model
+switch, new benchmark fleet, generation or spending.
+
+## 3ds Max Pie Menu — reference reserve, 2 November 2026
+
+[Assessment](tool-research.md#3ds-max-pie-menu--windows-reference-only-2026-11-02).
+$0+ menu editor for 3ds Max 2024+, useful for manual contextual commands. Windows
+host/licence required; no current Mac route or new production capability. Outside
+the active test queue; revisit only for an existing Max production bottleneck.
+No download, checkout or installation performed.
+
+## EXPLODED-VIEW-01 / LIQUID-PHOTOS-01 — intake 2 November 2026
+
+[Demo identification, current availability and proposed trial](research/liquid-photos-exploded-views-2026-11-02.md).
+M4/R05, conditional R06/R07 and PARAM-SHOT-01. First a known original three-part
+Blender assembly → 5–8s separation/highlight/reassembly → one distance change and
+repeat render. Liquid Photos is a conditional comparison only after supported
+device, actual free/already-paid quota, export and rights checks. iPhone app now
+listed; Android beta; advertised Mac compatibility is unverified. Generated hidden
+parts are illustrative, not technical evidence. No signup, install, upload or spend.
+
+## SUNO-MCP-01 — official connector candidate, 2 November 2026
+
+[Endpoint, access, rights and limited test](research/suno-mcp-2026-11-02.md).
+Extends the existing Suno music profile under M4/R05/R09. Official remote MCP uses
+account sign-in and Suno credits; Free connector access does not establish download
+quota or commercial rights. After explicit connection selection: inspect tools and
+entitlements → one original instrumental brief → one revision at most → permitted
+audio handoff/listening against the available local-score baseline. Attempt/credit
+cap first. No connection, account grant, upload, generation or spend performed.
+
+## NEMOTRON-ASR-01 — compute/access-gated reserve, 2 November 2026
+
+[Model, platform and proposed comparison](research/nemotron-transcribe-2026-11-02.md).
+Offline multilingual/contextual ASR and timing candidate for SOURCE-01/R02/M4/R05.
+About 34B total parameters; NVIDIA reference runtimes do not establish Mac support.
+No download now. Conditional 60s Russian clip versus a viable existing local ASR;
+one baseline and at most two candidate requests, then word/timing/resource checks
+and source-index retrieval. Free/already-paid compatible access must exist first.
+For this Mac, revisit the existing short mlx-whisper comparison before a heavy
+server model. No new engine, cloud rental, audio transfer or measured speedup.
+
+## Video-generation challenges lesson — intake 2 November 2026
+
+[Sampled lesson analysis and fact boundaries](research/video-generation-challenges-2026-11-02.md).
+MOTION-GUIDE-01: original 4–6s Blender clay/skeleton motion → one supported
+reference-generation shot → timing/contact/camera comparison, only after eligible
+free/already-paid access. V2V-PRESERVE-01: one bounded edit → requested change and
+preserved hero/action/audio reviewed separately. One primary test per selected
+scene; no generation now. Enrich PARAM-SHOT-01/PREVIS-01, COST-01 accepted-output
+yield and OM-BOARD-01; do not create duplicate ledgers or a provider console.
+Local Whisper-small excerpt transcription was stopped at the resource/time bound
+without a usable transcript; analysis uses the supplied summary and sampled slides.
+
+## Unreal AI / Grok City — intake 2 November 2026
+
+[Evidence, dispositions and bounded trials](research/unreal-ai-grok-city-2026-11-02.md).
+PARAM-SHOT-01: extend saved-shot controls on the next suitable REL-C scene using
+Blender first. UE-AI-01: deferred Unreal/MCP cinematic route, exact plugin and
+Mac/resource/licence preflight first. OM-BOARD-01: extend the existing read-only
+production-view trial with ownership/handoffs and a human-decision queue; no new
+ledger or parallel fleet. GROK-BOT-REF-01: reference only, entitlement/cost unknown.
+No installs, trials, credits, account changes or publications performed.
+
 ## TOKEN-ECON-01 — local setup1November
 
 [Scoped TokenEconomizer setup and evidence](experiments/tokeneconomizer-setup.md).
@@ -85,12 +156,15 @@ That narrow result does not qualify photographic depth,3D, Matter.js or rigging.
 ## RECON-01 — real location to reusable film set, queued 28 October
 
 [Candidate assessment and bounded test](research/reality-capture-2026-10-28.md).
-Maps to roadmap M4/R05 and potential M5/R07; does not replace R01/R02. One selected
+Maps to roadmap M4/R05 and potential M5/R07; does not displace selected production. One selected
 permitted location → reconstruction → actual scene export/reopen → 10–15s camera
 move → one camera change without reconstruction. Compare with captured footage or
 photo staging. Check unseen/generated areas, scale, artifacts, handoff and resources;
 character occlusion/contact is a subsequent optional control. Echo-3/Polycam remain
 plan/export-gated; Postshot/Splatframes Windows reserves; Nerfstudio compute-gated.
+Primary sources refreshed 2 November: same dispositions; Echo-3 live coverage/preview
+has a separate LiDAR-Pro requirement, Polycam Free excludes splats, and no native
+Mac training route was established for Nerfstudio. No duplicate experiment added.
 No installation, subscription, upload, generation or trial performed.
 
 ## RESOURCE-01 — host and process observations, planned 28 October
@@ -320,6 +394,14 @@ eight B200s. Generated frames do not establish editable/persistent 3D geometry o
 stable long-form continuity. Confirm export, rights and budget before execution.
 No installation, weight download, rental, account grant, generation or publication
 authorised by queue retention; no provider added to production routing.
+
+Refresh 2026-11-02 from the [owner video](https://youtu.be/3n9RCoXGbuQ):
+main demo now documents reference-image initialization (31 October); Reactor's
+text-only path is a separate adapter. Extend this same trial with one approved
+hero/set image and compare identity/landmarks across the control change. Prefer
+verified free hosted access; single-GPU video workers still need a separate PE
+service in the documented demo deployment. No native Mac or real-time 4090 claim.
+Supports M4/R05 and optional M5/R07 reuse; does not displace the REL-C pilot.
 
 ## Tripo rig and motion — active bounded candidate, 2026-10-26
 

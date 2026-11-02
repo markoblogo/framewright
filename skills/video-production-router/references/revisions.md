@@ -85,3 +85,11 @@ complete or transfer creative approval from v1 to v2. Retain/recompose the inten
 final version and perform its own affected checks. The original accepted export
 and failed comparisons remain available. Source-content, technical, listening and
 owner preference receipts remain independent.
+
+## Generative video correction candidate
+
+[Lesson intake](../../../docs/research/video-generation-challenges-2026-11-02.md)
+queues V2V-PRESERVE-01: one bounded change with explicit hero/action/camera/audio
+invariants and contextual A/B review. Provider-side masks/timestamp control remain
+endpoint-specific and untested. Existing revision approval never authorizes paid
+calls or guarantees preservation of otherwise untouched content.

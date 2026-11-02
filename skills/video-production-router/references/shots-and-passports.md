@@ -115,3 +115,11 @@ R01 adds the optional [saved-shot executor bridge](route-admission.md#saved-blen
 It reuses this renderer inside the existing host lock/deadline and durable attempt
 journal. Choose the prepared shot, exact frame interval and bounded output before
 executing. Source/version checks and pending human review remain mandatory.
+
+## Reference-guided generation candidate
+
+[Lesson intake](../../../docs/research/video-generation-challenges-2026-11-02.md)
+proposes a short known Blender clay/skeleton action as a video-generation reference
+(MOTION-GUIDE-01). Retain shot invariants and compare contact/camera/timing to the
+local baseline. This is untested, needs an eligible exact endpoint, and adds no
+cloud execution capability to the saved-shot adapter.

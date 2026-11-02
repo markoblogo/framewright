@@ -4,8 +4,9 @@ This is a planning and handoff guide, not a cloud integration. The optional
 `scripts/music.py` helper makes no service calls, reads no referenced media and
 never grants permission to upload, spend or publish. Suno and Flow Music profiles
 are **documented**, not publicly qualified experiments. Private probes do not
-promote the public catalogue. Use each service's authorised UI/download workflow;
-no official public automation API is claimed here.
+promote the public catalogue. Use each service's authorised workflow. Suno now documents an
+[official MCP candidate](../../../docs/research/suno-mcp-2026-11-02.md); it is not
+connected or implemented by this helper. Flow Music automation remains unclaimed.
 
 ## Choose the timeline owner
 
@@ -120,3 +121,11 @@ protocol.
 
 External claims describe available product documentation, not Framewright tests or
 legal clearance. Recheck effective terms and account access at the next execution.
+
+## Official Suno MCP candidate
+
+[SUNO-MCP-01 assessment](../../../docs/research/suno-mcp-2026-11-02.md) separates
+connector access, generation credits, local-file download and per-track rights.
+No automatic provider calls were added to `music.py`. Inspect current entitlement
+and approve a bounded test before generation; preserve project-specific no-music
+requirements and keep public-use eligibility separate from listening acceptance.
