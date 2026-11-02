@@ -1,5 +1,11 @@
 # Creative tools pilot — 27 October 2026
 
+**Availability update1November2026:** owner-authorized storage sanitation removed
+the GLEA and Android Studio applications and their installers. The observations
+below remain historical; neither tool is currently installed. Reinstall only for
+a selected, bounded experiment. Blender and Kdenlive remain in the working set.
+See [storage policy](../storage-policy.md).
+
 ## Devault ASCII: partial success
 
 The authenticated browser app produced an animated OLD MONITOR preview from its built-in Orb sample. A real 720p export was saved locally and probed: H.264, 1152 × 720, 30 fps, 5 seconds. This verifies an export from an animated still sample, not conversion of live-action video or production suitability. The 1080p attempt displayed encoding progress but its output was not located; 1080p remains unverified. Test a cleared moving source, legibility and rights before using in a production.

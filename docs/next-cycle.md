@@ -1,21 +1,26 @@
 # Current work and protected waits
 
-Updated1November2026, source version0.7.0 / REL-B. This is the current status entry point;
+Updated 2 November 2026, source version 0.7.0 / REL-B. This is the current status entry point;
 [strategic roadmap](roadmap.md) governs priority. [Start / continue / correct](start-here.md).
 
 ## Current next step
 
-**REL-B evidence and source work complete;0.7.0 release preparation.**
-[Release notes](release-notes-0.7.0.md) and [frozen publication audit](release-audit-0.7.0.md)
-link the verified scope and canonical public release records. Actual tag/assets
-must be checked there; prepared source text is not proof of publication.
-DOC-ENTRY-01,514-test offline check and independent local review pass; PR50 and
-merged-main CI pass. Release PR/CI and publication are performed under the owner's
-explicit request, with final evidence retained separately.
+**Preserve the post-release storage/tooling closeout through a scoped PR and CI.**
+The canonical GitHub record reports [v0.7.0](https://github.com/markoblogo/framewright/releases/tag/v0.7.0)
+published on 1 November as a non-draft experimental prerelease. This refresh checks
+release metadata; the [frozen audit](release-audit-0.7.0.md) retains its original
+candidate-time scope and is not retroactively rewritten.
 
-After release, choose the next roadmap slice or owner production; no new film,
-channel action or sweep of the tool queue is automatically started. SSI/Azur waits
-below remain separate from release readiness.
+[Storage sanitation](storage-maintenance-2026-11-01.md) is complete except for one
+isolated filesystem residue. Follow the [external-storage policy](storage-policy.md).
+[TokenEconomizer](experiments/tokeneconomizer-setup.md) retains the same profile
+after relocation; native session delivery and savings remain unverified.
+This closeout adds documentation, not a new release, film or tool trial.
+
+After the closeout, select the next REL-C/M5 fiction slice: a two-shot continuity
+pilot, with expressive voice as a possible supporting test. Plan YouTube 16:9 and
+TikTok 9:16 together. No new film, account update or publication is selected here.
+SSI/Azur waits below remain separate.
 
 ## Production and handoff status
 
