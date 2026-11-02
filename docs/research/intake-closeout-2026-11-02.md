@@ -33,3 +33,8 @@ delivery/savings remain unverified, and the isolated filesystem residue remains.
 Next production selection: owner supplied No Further Claims. Its [story/style/source
 proposal](../productions/no-further-claims-proposal.md) awaits approval before
 donor generation or a two-shot pilot. Existing SSI/Azur waits remain protected.
+
+CI follow-up:514 unit tests passed (21 skips); source-fingerprint check rejected
+stale hashes for six updated method-reference files. Refresh only the current
+unqualified fingerprint in router-qualification.json. Historical evaluation
+packets/status stay unchanged; no model evaluation or promotion was performed.
