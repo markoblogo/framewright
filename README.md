@@ -42,7 +42,8 @@ This prints a plan; it does not render, install, call a model or spend money.
 | SSI handoff | [v2.1 template](docs/experiments/ssi-brand-profiles.md) owner-accepted; three new weekly films reported prepared, not sent/published. Partner approval and configured8November autonomous outcome remain open. |
 | AzurMenton guide pilot | [40s guide film](docs/experiments/azur-guide-first-film.md) accepted; YouTube and guide embed owner-reported. A general automated guide template is not yet qualified. |
 
-Private projects/media remain outside Git. Technical QA, creative/listening
+Private projects/media remain outside Git; follow the [external-storage and cleanup policy](docs/storage-policy.md).
+Technical QA, creative/listening
 acceptance, rights and publication are separate records. Labour savings,
 whole-route autonomy and audience performance are not established by these films.
 

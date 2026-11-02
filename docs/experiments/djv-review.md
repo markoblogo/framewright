@@ -1,5 +1,11 @@
 # DJV: A/B frame notes and portable sessions
 
+**Availability update1November2026:** DJV.app was removed with the owner's explicit
+confirmation during storage sanitation. Session notes and trial outcomes remain;
+duplicate review media are retired. A future retry requires reinstalling DJV and
+binding the retained accepted master. Historical save/reopen evidence below is
+not a claim that the old review copies still exist. See [storage policy](../storage-policy.md).
+
 26 October 2026. Owner-selected real trial: two retained Nantes green-line exports,
 1920×1080, 24fps, 100s. DJV 3.7.5 arm64; official release source pinned to
 `4d90982b4085adf4d150f1bf0b0b4a5490b023d5`. **Partial success with gaps; keep candidate

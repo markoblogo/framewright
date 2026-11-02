@@ -5,6 +5,19 @@ candidate and trial records, including earlier planned states; consult the linke
 latest evidence before treating a historical heading as current. New finds map to a
 milestone and a bounded question; they do not automatically displace active work.
 
+**Storage update1November2026:** GLEA, Android Studio and DJV are now uninstalled;
+their historical trial records and queued questions remain. Old per-film runtimes,
+draft media and temporary test copies were retired under the owner's retention
+policy. Recheck availability before every trial; see [storage policy](storage-policy.md).
+
+## TOKEN-ECON-01 — local setup1November
+
+[Scoped TokenEconomizer setup and evidence](experiments/tokeneconomizer-setup.md).
+Existing Codex plugin reused; Framewright profile enabled without model side calls
+or automatic pruning.62 upstream checks and isolated installed-hook smoke pass.
+Fresh native-session delivery and measured overhead/savings remain unverified;
+queue that small operator-tool trial under M4/R05/R09, without displacing production.
+
 ## FFMPEG-OPS-01 — first scoped trial30October
 
 [Scene/contact-sheet/cut/join observations](experiments/ffmpeg-skill-operations.md).
