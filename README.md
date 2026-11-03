@@ -56,6 +56,11 @@ whole-route autonomy and audience performance are not established by these films
 | [Menton: market to sea](https://youtu.be/WEEGy8Ks3ig) | Illustrated guide, owner footage, stock cutaways, route ending and expressive English narration; [case](docs/experiments/azur-guide-first-film.md) |
 | [Framewright workflow lesson](https://youtu.be/n1wuySSYQcQ) | Two-host dialogue and real production examples; [case and limits](docs/experiments/framewright-micro-lesson.md) |
 
+[Four training films → coherent fiction](docs/methods/training-to-fiction-2026-11-03.md):
+accepted AI-explainer, animated-poster, liquid-photo and transport-guide cases;
+reusable choices, remaining limits and three bounded next-production questions.
+These are production results, not blanket tool qualifications or a new release.
+
 Publication links and owner acceptance are owner-reported unless a case identifies
 separate verification. [More experiments](docs/experiments.md) ·
 [Prior detailed overview, dated history](docs/history/readme-through-2026-11-01.md).

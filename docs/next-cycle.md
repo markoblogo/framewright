@@ -1,17 +1,48 @@
 # Current work and protected waits
 
-Updated 2 November 2026, source version 0.7.0 / REL-B. This is the current status entry point;
+Updated 3 November 2026, source version 0.7.0 / REL-B. This is the current status entry point;
 [strategic roadmap](roadmap.md) governs priority. [Start / continue / correct](start-here.md).
 
 ## Current next step
 
-**No Further Claims selected for local adaptation planning; episode/style/donors await owner approval.**
-[Story and source proposal](productions/no-further-claims-proposal.md) covers the
-owner-supplied manuscript and cover, both16:9/9:16 and the proposed two-shot
-continuity pilot. No images, voice, footage or pilot generated from this intake.
-Next: owner chooses/adjusts the episode and visual direction, then approve specific
-donor images before animation. TikTok branding follows the first ready film;
-Instagram remains later. Preserve SSI/Azur waits below.
+Four selected trainings are complete. [Consolidated transfer/limits and bounded follow-ups](methods/training-to-fiction-2026-11-03.md) are being prepared for the existing PR53, without a release. After that PR slice, the owner authorised the No Giant Eagle montage plan and English copy for both aspects; exact donors and a pilot still require review.
+
+**TRAIN-POSTER-01 closed: [Living Posters](productions/lysogorov-living-posters.md).**
+48s **Posters, Unbound** accepted; cover and English metadata prepared.
+[YouTube publication](https://youtu.be/nqcI4COtP8c) supplied by owner2November2026;
+public visibility/file identity/metrics not independently verified. Accepted master,
+recipes and source evidence retained externally. Do not reopen accepted scenes;
+retain gait/mask/occlusion lessons and future tests in the production record.
+
+**TRAIN-SURREAL-01 creatively closed: [Gallery Lava](productions/gallery-lava.md).**
+Accepted54s v3; [YouTube](https://youtu.be/PHMx3I0VYqY) and
+[Substack](https://substack.com/profile/209325010-anton-biletskiy-volokh/note/c-377128126)
+owner-reported3November2026; public identity/metrics not independently checked.
+[Reusable method](methods/liquid-photo-memory.md) and source/QA/limitation records retained.
+Closeout removed60 intermediate files/54.46MiB; final hashes and required v2
+assembly input preserved. Stock ShareAlike decision remains open for owner;
+reviewable options/notice retained privately. No live licence/account change.
+
+**TRAIN-AZUR-ROUTE-01 — [airport to central Menton](productions/azur-airport-menton.md), accepted3November.**
+Full90s bus-first pixel journey / train map / fleeting taxi accepted with restored female F1 voice.
+YouTube package prepared privately: native720p master, original cover, English metadata with
+short French summary/bilingual tags, English SRT. Exact hashes/acceptance/cleanup retained.
+[YouTube URL](https://youtu.be/ih43aF1zeaM) supplied by owner3November; publication owner-reported. Guide embedding, public visibility and audience outcomes not independently verified. No live guide/account edit.
+
+**Completed owner order: [Halloween scrolling commentary](productions/halloween-scroll-2026.md).**
+Voice, feminine hand and 11-second pilot accepted; seven-costume60.46s film accepted.
+YouTube package and English Substack Note prepared; [publication](https://youtu.be/n3btOQ-khCU) owner-reported. [Substack Note](https://substack.com/profile/209325010-anton-biletskiy-volokh/note/c-376777745) also owner-reported. Training/book slate below is preserved.
+
+**TRAIN-AI-01 accepted and published per owner; article embed confirmed by owner.**
+[Better Pairs, Not Just Bigger Models](productions/jepa-good-views.md): owner accepted
+full100.81s English film. Final master, thumbnail, texts, chapters and captions are
+in the external private youtube/ package. Owner supplied [YouTube link](https://youtu.be/QNgjNNEpsAM);
+owner confirms the video is embedded in the source article. Independent page/player
+verification and metrics remain unverified.
+All four selected trainings now have owner-accepted films, including the90s Azur airport route; all four YouTube URLs are owner-reported. Proposed next: consolidate transferable results, then prepare the accepted No Giant Eagle book film with exact donors/pilot approval. [Training slate](productions/training-slate-2026-11-02.md). OpenFilm
+comparison remains unexecuted. [No Giant Eagle](productions/no-further-claims-proposal.md)
+remains accepted for later production after training/donor review. TikTok branding
+follows the first ready film; Instagram later. Preserve SSI/Azur waits below.
 
 Storage/TokenEconomizer [PR52](https://github.com/markoblogo/framewright/pull/52)
 merged2November at5fb6c50 after green exact-head CI and completed automated review
@@ -41,7 +72,7 @@ publication URL was supplied by the owner; visibility/text identity remain separ
   account update → first approved publication. Instagram discussed after TikTok starts.
 - **Fiction slate / Good Dog:** [book adaptations](book-adaptation-slate.md) and
   [Good Dog follow-ups](experiments/good-dog-closeout.md). Continuity/contact/voice
-  tests attach to a selected real film; No Further Claims is selected for planning; episode/donors remain proposed.
+  tests attach to a selected real film; No Giant Eagle proposal accepted; production follows training and donor review.
 - **Pocket OS:** remains paused until explicit resumption and device material.
 - **Tools, writing and book:** [experiment queue](experiment-queue.md),
   [Studio Notes](editorial/README.md), [book readiness](book-milestone.md) retain

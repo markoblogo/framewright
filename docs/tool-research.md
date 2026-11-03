@@ -483,3 +483,12 @@ No generic Framewright radial-menu UI work follows from this listing.
 A dated Seedance 2.0 Pro/Veo/Sora comparison informs GD-NEXT-08; it does not
 promote a new tool or current endpoint. Separate input mode, artistic result,
 identity/contact and actual accepted-shot cost; no generation was performed.
+
+## Motion control and studio analogues — 2 November 2026
+
+[Разбор записок, платформ и трёх тренировок](research/continuity-motion-intake-2026-11-02.md)
+contains H3 Motion, Openjutsu, TTM/WanVideo workflow, Sulphur-3, SVD1.1,
+Cogstudio/Pinokio and OpenFilm/OpenCinema dispositions. Research only: TTM's
+motion-guide method is useful; heavy backends stay conditional on compatible
+compute and rights. Existing Motion Canvas, MLX Audio, PySceneDetect, SOURCE-01
+and OTIO evidence is retained without broadening qualification.

@@ -10,6 +10,27 @@ their historical trial records and queued questions remain. Old per-film runtime
 draft media and temporary test copies were retired under the owner's retention
 policy. Recheck availability before every trial; see [storage policy](storage-policy.md).
 
+## TRAIN-AI-01 — owner-accepted film,2November2026
+
+[Production record](productions/jepa-good-views.md). Owner accepted revised pilot;
+100.81s full film adds real PDF camera/highlight, original projected point
+geometry and Table3-backed chart. Full decode/preservation checks passed; owner
+accepted full film; [YouTube publication](https://youtu.be/QNgjNNEpsAM) owner-reported2November.
+Article embed completed per owner; independent page/player verification and metrics unverified. These are scoped original helper functions,
+not an OpenFilm/HyperFrames/third-partyASCII qualification. No savings/audience
+claim or release follows from this production.
+
+## Motion / pre-film training intake — 2 November 2026
+
+[Разбор записок, платформ и трёх тренировок](research/continuity-motion-intake-2026-11-02.md). Owner sequence: research → short training films → No Further Claims.
+Earlier TRAIN-01/02/03 hypothetical stories are superseded by the owner-proposed
+[TRAIN-AI/POSTER/SURREAL/AZUR-ROUTE slate](productions/training-slate-2026-11-02.md);
+recommended order and concrete inputs await selection. No production started. H3-MOTION-01 and
+OPENJUTSU-01 are compute-gated extensions of MOTION-GUIDE-01/V2V-PRESERVE-01;
+SULPHUR-REF-01, SVD-REF-01 and COGSTUDIO-REF-01 remain reference reserves.
+OPENFILM-01 is a bounded graphics comparison; OPENCINEMA-01 is later contract/recovery
+research. No installs, weights, renders, accounts or expenditure from this intake.
+
 ## HKU benchmark — enrich existing provider comparison, 2 November 2026
 
 [Primary-source review and limits](research/hku-video-benchmark-2026-11-02.md).
@@ -1000,3 +1021,29 @@ Production case closed: [retrospective with explicit pass criteria](experiments/
 5. **GD-NEXT-08 — when account needed:** refresh the actual free quota/model/terms and retain one real result. Historical free offers and UI quotes are not current entitlement or reconciled cost.
 
 PIXELFX-01, ULTRA-WATER-01, TEARDOWN-01, STABLEGEN-01 and local video models remain queued, not tested/promoted by the film. No paid generation, parallel heavy Mac tests or automatic quota consumption authorised by this entry. Flow was subsequently used in Good Dog; the earlier31October “access only” entry records an earlier checkpoint, not the final state.
+
+
+## LAVA-FLOW-01 — coherent surreal-photo flow
+
+M4/R05; [TRAIN-SURREAL-01 / Gallery Lava](productions/gallery-lava.md). Owner asks for lava-lamp image portions flowing in both axes with harmonious surreal sound. Bounded8s source-pinned local trial of smooth texture displacement + merging organic-density masks + contour refraction, using existing NumPy/Pillow/FFmpeg. This is a new feature combination, not a qualified fluid simulator. Evaluate whole motion continuity, sufficient X/Y travel, recognisable source rests, mask joins, edge behaviour and sound/visual coherence; owner review required. No install, model weights, paid credits or unrelated tool trials. Full-film combinations and general qualification remain open.
+
+### LAVA-FLOW-01 follow-up — material memory and reaction-diffusion
+
+[2November research / comparison](research/gallery-lava-methods-2026-11-02.md). Owner requested slower persistent forms, division/fusion, real wax and nonstandard art direction; then authorised A/B/combined probes. Three14s private trials: analytic photograph carriers + sourced lava; local Gray-Scott; combination. Continuous carrier time survives the photograph handoff. Existing NumPy/Pillow/FFmpeg, no install or paid call. Numerical pattern test is not qualification of the researched WebGPU or WebGL repositories. Public reuse of CC BY-SA stock composite unresolved; owner creative/listening review pending. Preserve selected recipe/parameters after decision. Temporal feedback/slit-scan stays proposed, not running.
+
+LAVA-FLOW-01 decision,3November2026: owner accepted variant A of the14s comparison. Retain persistent photo carriers + recoloured real lava as the selected production direction. B/C not selected; no general WebGL/WebGPU qualification. Full-film and distribution checks remain open.
+
+LAVA-FLOW-01 full-draft evidence,3November2026: selected A extended to54s/all nine photos,1280×720. Continuous carrier clock, independent4s memory delay, padded Pillow mesh sampling and small working masks retained as reusable controls. Whole decode and sampled compositions checked; full-film owner review pending. Details in [production record](productions/gallery-lava.md); no general tool qualification.
+
+LAVA-FLOW-01 closeout,3November2026: [repeatable liquid-photo method](methods/liquid-photo-memory.md) derived from accepted/published-per-owner Gallery Lava. Pilot/unused intermediates retired with hash receipts; exact final and required v2 assembly dependency retained. B/C were not selected. Future pattern/performance tests remain conditional on a fitting production. Stock ShareAlike owner decision remains open. No new test/install/release started.
+
+
+## Training transfer —3November2026
+
+Four accepted production results and their limitations are consolidated in
+[training to fiction](methods/training-to-fiction-2026-11-03.md). Next bounded questions:
+**R06-MASK-01** (source-space contour/occlusion preflight), **R06-VOICE-01**
+(shared voice recovery and staged load/short-phrase check), **R07-PAIR-01**
+(two-shot character/action continuity in both aspects). These are proposed tests
+attached to the selected No Giant Eagle film, not implemented automated checks or
+blanket tool qualifications. Do not start the whole queue or a new install/release.

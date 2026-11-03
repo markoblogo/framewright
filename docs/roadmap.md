@@ -110,7 +110,7 @@ time on this Mac; related documentation can be updated during waits.
 | **First film accepted/published; later repeat · AZUR-GUIDE-01** | [Develop the guide-film style through varied guides](experiments/azur-guide-first-film.md) | First film owner-reported on YouTube; guide embed owner-reported complete. Next guide after several other productions: approve donor media before assembly, then pilot and dual-format review. Universal template not yet qualified. | M3/M6, R04, R09 |
 | **Later staged handoff · AZUR-AUTO-01** | Transfer a proven guide/event template to AzurMenton for source-triggered production and distribution | [Staged plan](experiments/azur-guide-first-film.md#future-automation--staged-owner-direction): first qualify style/tools and formats; later receiving-project generation, YouTube upload/embed and dedicated Instagram/TikTok publishing with per-platform verification and duplicate protection. No current account creation or publishing task. | M3/M6 |
 | **Next selected fiction; channel pilot · TIKTOK-01** | Learn vertical delivery on owner’s existing TikTok using animation experiments | Next selected book animation planned for YouTube 16:9 and TikTok 9:16 from the start. First film ready → owner brainstorm on name/branding/post concept → approved account update → first approved publication. Discuss Instagram after TikTok starts. | M4/M5/M6, R07/R09 |
-| **Planning selected · LIT-FILM-01; later · LIT-FILM-02–04** | No Further Claims selected; other original-book adaptations remain later | [Selected episode/style/source proposal](productions/no-further-claims-proposal.md) awaits owner approval; then approved donors → two linked pilot shots → review → production. [Book adaptation slate](book-adaptation-slate.md) retains God Was Busy with the Plumbing (and Ukrainian localization), Marcus Aurelius Zombie Apocalypse and Don Quixote in Neverland. | M5, R07, R09 |
+| **Planning selected · LIT-FILM-01; later · LIT-FILM-02–04** | No Further Claims selected; other original-book adaptations remain later | [No Giant Eagle proposal](productions/no-further-claims-proposal.md) accepted2November; owner first requests research → short training films, then approved donors → two linked pilot shots → review → production. [Book adaptation slate](book-adaptation-slate.md) retains God Was Busy with the Plumbing (and Ukrainian localization), Marcus Aurelius Zombie Apocalypse and Don Quixote in Neverland. | M5, R07, R09 |
 | **Later · R08** | Add provider/quota execution only when a selected production needs it | Current terms/account evidence, retry reserve, per-operation authority, ambiguous-charge recovery and no duplicate submission; local cost ledger alone is insufficient. | M2/M4, COST-01/STATE-01 |
 | **Ongoing closeout · R09** | Convert useful outcomes into reusable methods, case studies, post material and book coverage | Update exact evidence, existing queue/registry, chapter gap and next action. Retain with/without Framewright instructions; do not claim reader reproduction before it happens. | M6, BOOK-01 |
 
@@ -314,6 +314,29 @@ new spending authority or a change to protected waits.
 Storage/TokenEconomizer PR52 merged separately; [research closeout](research/intake-closeout-2026-11-02.md)
 retains the new finds without starting their tests or triggering a release.
 Owner selected LIT-FILM-01 / No Further Claims for REL-C planning; [episode/style/source
-proposal](productions/no-further-claims-proposal.md) is pending owner approval.
+proposal](productions/no-further-claims-proposal.md) accepted by owner; production follows the short training block.
 Then agree donor images, then two linked shots with both16:9/9:16 coverage.
 No full film, account action or publication starts from this planning record.
+
+### Pre-film training decision — 2 November 2026
+
+[Разбор записок, платформ и трёх тренировок](research/continuity-motion-intake-2026-11-02.md) extends M4/R05–R06 and M5/R07 without a new release gate.
+Owner approved the book proposal but requested analysis and several short training
+films first. TRAIN-01/02/03 are proposed; select story/style/donors before execution.
+Keep silent causality, bounded correction, meaningful resume and operator/machine
+time separate. Heavy GPU candidates stay reserves; no whole-queue prerequisite.
+
+Owner subsequently proposed [four training topics](productions/training-slate-2026-11-02.md)
+in place of hypothetical TRAIN-01/02/03: scientific article visualization, animated
+posters, surreal photo media art and practical airport routing. Recommended order
+is provisional; use bounded new-feature tests with reusable evidence, then book film.
+
+
+### Training-to-fiction checkpoint —3November2026
+
+[Four accepted trainings](methods/training-to-fiction-2026-11-03.md) now supply bounded
+R05/R06 lessons, not general tool qualification. Consolidate the documentation in
+existing PR53; no release. Then prepare the owner-selected No Giant Eagle
+100–120s montage/English text for16:9 and9:16, before exact donor/pilot review.
+R06-MASK-01, R06-VOICE-01 and R07-PAIR-01 stay limited to useful next-production
+questions. REL-C remains open until coherent fiction/interaction and recovery evidence.
