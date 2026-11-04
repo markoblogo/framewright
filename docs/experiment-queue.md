@@ -1066,7 +1066,7 @@ blanket tool qualifications. Do not start the whole queue or a new install/relea
 ## Current character-production disposition —4November2026
 
 - R07-PAIR-01: bounded selected animal-chase continuity now owner-accepted and used in completed No Further Claims; portrait adaptation accepted/published per owner. This is not the earlier adult-Eli No Giant Eagle test or generic identity qualification.
-- NFC-RESUME-01: one read-only no-history same-case dependency/decision recovery check remains before REL-C recommendation; [protocol](rel-c-readiness-2026-11-04.md). No render/new cloud trial required.
+- NFC-RESUME-01: PASS, independent read-only no-history same-case restoration; [record](rel-c-independent-review-2026-11-04.md). No repeat render/cloud trial needed. REL-C release is owner-authorised; next work waits for post-release plan discussion.
 - R06-MASK-01 remains proposed: no automatic contour/occlusion qualification follows from manual crop fixes. R06-VOICE-01 remains proposed; this film has no narration.
 - Future fitting trial: compare a single9:16 action layout against simultaneous repeated context/detail panels, judging geography/readability/redundancy; no new production authorised here.
 - MANGA-PANEL-01 export remains unconfirmed; existing local lettering is the working fallback. Heavy motion/rig tools stay conditional; do not complete the queue merely to release.
