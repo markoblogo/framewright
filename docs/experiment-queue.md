@@ -1,5 +1,9 @@
 # Proposed experiment queue
 
+## Social-media packaging intake — 4 November2026
+
+[SOCIAL-01 module](social-media/README.md) adds SM-PACK/READ/MEASURE first and conditional SHOTS/SPEECH/DISTRIBUTE/VIDIQ candidates. Research only; no installs or paid calls. TikTok identity/account review precedes adaptation; no live changes or deletion. Exact pass boundaries in candidates.json.
+
 [Global roadmap](roadmap.md) governs priority and intake. This queue preserves dated
 candidate and trial records, including earlier planned states; consult the linked
 latest evidence before treating a historical heading as current. New finds map to a
@@ -1047,3 +1051,22 @@ Four accepted production results and their limitations are consolidated in
 (two-shot character/action continuity in both aspects). These are proposed tests
 attached to the selected No Giant Eagle film, not implemented automated checks or
 blanket tool qualifications. Do not start the whole queue or a new install/release.
+
+
+## Manga film probes — 3 November 2026
+
+[Scope, sources, criteria and actual UI result](research/manga-film-tooling-2026-11-03.md). ROKEHAN-SET-02 (approved donor → two views), MANGA-PANEL-01 (partial UI; export/reopen unresolved), MANGA-MOTION-01 (4–6s graphic transition), then R07 chase pilot after exact character/style approval. Run sequentially; Speech Bubble Editor, Krita and OpenToonz are task-dependent reserves. No installs/model downloads/paid calls started; no successful new render claimed.
+
+
+### Manga probes executed,3November2026
+
+[Results](experiments/no-further-claims-manga-probes.md): ROKEHAN-SET-02 and local MANGA-MOTION-01 each produced6s in both aspects; technical decode/reseek checks pass, creative review pending. MANGA-PANEL-01 remains partial UI/export unconfirmed after bounded SVG/PNG retries. Next is donor/style review, then connected chase pilot; no character production started.
+
+
+## Current character-production disposition —4November2026
+
+- R07-PAIR-01: bounded selected animal-chase continuity now owner-accepted and used in completed No Further Claims; portrait adaptation accepted/published per owner. This is not the earlier adult-Eli No Giant Eagle test or generic identity qualification.
+- NFC-RESUME-01: one read-only no-history same-case dependency/decision recovery check remains before REL-C recommendation; [protocol](rel-c-readiness-2026-11-04.md). No render/new cloud trial required.
+- R06-MASK-01 remains proposed: no automatic contour/occlusion qualification follows from manual crop fixes. R06-VOICE-01 remains proposed; this film has no narration.
+- Future fitting trial: compare a single9:16 action layout against simultaneous repeated context/detail panels, judging geography/readability/redundancy; no new production authorised here.
+- MANGA-PANEL-01 export remains unconfirmed; existing local lettering is the working fallback. Heavy motion/rig tools stay conditional; do not complete the queue merely to release.

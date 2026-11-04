@@ -1,9 +1,22 @@
-# No Further Claims — предложение микроэкранизации
+# No Further Claims — proposal history and selected incident
+
+**Current4November:** Chapter1 incident completed131.25s in16:9 and9:16; publication URLs owner-reported. [Selected method and limits](../methods/coherent-manga-production.md), [complete evidence](../experiments/no-further-claims-manga-probes.md), [REL-C assessment](../rel-c-readiness-2026-11-04.md). No Giant Eagle below is the earlier approved proposal, superseded by the owner-selected incident; old pending steps are historical, not current work.
 
 2 ноября 2026 · LIT-FILM-01 · REL-C/M5/R07. Предложение No Giant Eagle принято автором2ноября.
 Четыре тренировки завершены; [перенос результатов](../methods/training-to-fiction-2026-11-03.md). После документационного PR владелец3ноября разрешил монтажный план и английский текст для16:9/9:16.
 Общее направление принято; конкретные доноры, реплики и результат пилота ещё не согласованы.
 Ни генерация, ни озвучка, ни рендер, ни публикация этим документом не запускаются.
+
+## Current direction — owner update,3November2026
+Owner now selects the incident itself (Chapter1), anime/manga treatment, up to180s, separately composed16:9/9:16. Quiet pale opening → accelerating darker motion → momentary black → quiet pale aftermath → white ending; English comic SFX and bubbles follow actual events. The archive/crossing proposal below is preserved as a deferred alternative. [Tool research and sequential test queue](../research/manga-film-tooling-2026-11-03.md). Set/rhythm v3 and characters now accepted. An8s two-angle chase pilot is ready for owner review; no full film started. Two sequential Flow calls consumed14 existing plan credits, without a cash purchase. See the linked probe record for QA and limits.
+
+## Incident storyboard01 — prepared3November2026
+
+Owner authorised the whole-film storyboard after accepting the5s chase tempo/contrast pilot. Private planning/storyboard-01 now contains two selected8-panel sheets,16 contiguous sequences/170s, English dialogue/text, separate portrait staging notes, source/prompt/hash receipt and review page. Earlier118s archive/path files stay deferred; current shot-plan.json is inside storyboard-01, not the old parent planning file.
+
+Quiet dawn → gate escape → pursuit/truck witness → Eli separately reaches already damaged gas installation → hides → offscreen shooting/brief black → rumours marked unconfirmed → Eli found/home → Hank's loss/corrected facts → white. No fabricated gas explosion, regulator collision, rescue or carefree animal reunion. Both animals die; Eli survives. Red blood accents were explicitly requested during storyboarding: small drops near dog's paw and thin stain on pale feather, marked as adaptation choices, not manuscript facts. Exact cause of the bird's death remains unseen. Yellow remains a limited gate-impact accent.
+
+Sheets are proposed visuals, not accepted individual generation inputs or proof of physical continuity. Truck lane/gas-site separation were revised during inspection. Vertical composition is described, not rendered/tested.170s is a pacing proposal; only5s accepted chase is presently available reuse. No additional video/audio, purchase, paid API call, commit/push or release. Owner subsequently accepted continuing to the timed animatic.170s draft now uses storyboard framing, accepted5s chase, temporary English dialogue/foley and two owner-provided Suno music variants. Animatic/listening review pending; no full-film creative approval yet.
 
 ## Источник и смысл
 
@@ -116,3 +129,9 @@ MOTION-GUIDE-01 для этого перехода, если доступный 
 приравнивается к дословной цитате романа. Затем доноры → связанный пилот → приёмка.
 TikTok-брендинг обсуждаем по готовности первого фильма, Instagram позже.
 SSI/Azur ожидания не меняются.
+
+
+Current4November motion status: owner accepted no-voice B, unified lettering and restrained accents v5 for the170s animatic. A standalone18s opening motion pilot is ready, with foreground overflow7.5s, bounded latch3.5s and escape7s. Three sequential Flow calls used32 existing credits (201→169); no purchase. Water-wide extra subject and late gate reclosure are rejected; crops/trims are documented, not concealed as full-shot success. Owner review pending before further motion production. See the [probe findings](../experiments/no-further-claims-manga-probes.md#opening-motion-pilot014november2026).
+
+
+4November continuation: owner accepted corrected20.5s living opening. Town witness motion block01 is now14s, plus34.5s joined-context review. Reuses4s accepted accelerated chase; new van/call shots remain pending owner review. No collision. ExistingB score, manga speech and local braking cues;30 existing Flow credits including a rejected duplicate-phone take. See current probe record for failure/retime/continuity limits.

@@ -1195,6 +1195,51 @@
       ],
       "rights_class": "conditional",
       "licence_note_sha256": "255cf2cc7c126980657d570552d4ff78a23b27981a54cfa4cef475e212d2391d"
+    },
+    "manga-editor-desu": {
+      "tasks": [
+        "graphics"
+      ],
+      "inputs": [
+        "image",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "65e9649a14a09e0ab60b9f1a14549d528bf406a805367b92a0533d04342eeafc"
+    },
+    "pretext-comic": {
+      "tasks": [
+        "graphics"
+      ],
+      "inputs": [
+        "image",
+        "text"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "ec6b5c070d2ca66b81c665f2cab6dcd15be5def8d35e971a372ec9f41c16fc80"
+    },
+    "comical-js": {
+      "tasks": [
+        "graphics"
+      ],
+      "inputs": [
+        "image",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "bf273ee9e8ca902a12c7a36cd1df5e70b8bfa43d8208252d67b225814777b1be"
+    },
+    "speech-bubble-editor": {
+      "tasks": [
+        "graphics"
+      ],
+      "inputs": [
+        "image",
+        "text",
+        "video"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "c00468c636e5bfc0cf9b0aaacc0b215cb40c58cca1f45ccb547b6acdb3cdf9e7"
     }
   }
 }

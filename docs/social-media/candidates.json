@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "qualification": "research_only",
+  "candidates": [
+    {
+      "id": "SM-PACK-01",
+      "candidate": "marketingskills + yt-package",
+      "status": "method_adaptation_proposed",
+      "licence": "MIT",
+      "pass_boundary": "Compare3 truthful packages for one accepted film; owner picks; zero unsupported claims, readable small cover, record time spent. No growth qualification from this test."
+    },
+    {
+      "id": "SM-READ-01",
+      "candidate": "existing compositor + optional Aegisub",
+      "status": "existing_compositor_used_owner_reported_publication",
+      "licence": "mixed BSD-style source; official Win/OSX builds GPLv2",
+      "pass_boundary": "Check3 difficult9:16 scenes with bubbles, action and profile/UI overlays. No clipping, misplaced tails or unreadable timing; owner accepts.",
+      "evidence": "No Further Claims portrait delivered and TikTok URL supplied by owner4November; custom cover upload confirmed.3150frames/equal AAC QA retained. No separate documented phone UI/readability verdict or Aegisub trial."
+    },
+    {
+      "id": "SM-MEASURE-01",
+      "candidate": "native analytics + ab-testing + yt-retention",
+      "status": "queued",
+      "licence": "MIT for external skills; platform terms separate",
+      "pass_boundary": "One comparable report from real exports, missing data labelled, no causal winner from sequential changes; actual native test verdict retained if used."
+    },
+    {
+      "id": "SM-SHOTS-01",
+      "candidate": "PySceneDetect",
+      "status": "conditional_queued",
+      "licence": "BSD-3-Clause",
+      "pass_boundary": "Compare cut list against known scene timings on one montage with flashes; list false positives before any use. Skip if edit list exists."
+    },
+    {
+      "id": "SM-SPEECH-01",
+      "candidate": "WhisperX",
+      "status": "later_speech_only",
+      "licence": "BSD-2-Clause code; model terms separate",
+      "pass_boundary": "20\u201330s narrated sample, compare word timing/errors and resource use with existing pipeline; not NoFurtherClaims."
+    },
+    {
+      "id": "SM-DISTRIBUTE-01",
+      "candidate": "Postiz",
+      "status": "deferred",
+      "licence": "AGPL-3.0",
+      "pass_boundary": "Only after manual workflow: approve platform app/access, test draft/no-publication then idempotent approved posting; no deployment now."
+    },
+    {
+      "id": "SM-VIDIQ-01",
+      "candidate": "installed vidIQ skills/connector",
+      "status": "optional_not_executed",
+      "licence": "commercial connector; not OSS",
+      "pass_boundary": "Before credit-consuming calls verify price/approval and channel; score remains heuristic, native viewer data separate."
+    }
+  ],
+  "latest_scope_note": "4November existing local compositor used for delivered No Further Claims portrait; publication owner-reported. No external candidate installation or broad qualification.",
+  "new_external_candidate_runtime_trials": 0,
+  "new_external_candidate_installations": 0
+}

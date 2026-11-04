@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-01",
+  "updated": "2026-11-04",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -1272,17 +1272,18 @@
       "id": "rokehan-location-scout",
       "name": "Rokehan / Location Scout",
       "url": "https://tools.oyasumi-gamedev.com/rokehan/",
-      "reviewed": "2026-10-26",
+      "reviewed": "2026-11-03",
       "review_basis": "Native public-UI GLB/PNG export; actual model import and original local manga finishing; two-angle15s encode with full decode/reseek and representative encoded-image inspection",
       "upstream_revision": null,
       "disposition": "tested_scoped",
-      "scope_and_findings": "One Nantes quarter:40mesh definitions/431loaded instances; native manga PNG inspected. Native GLB carries colour geometry, no camera/manga shader. Existing Three.js0.186 produces two timed views with original local line/halftone finishing.1080p24/15s/360frames decode and reseek pass; owner accepted lighter-street v2 after requested brightness correction. Fine-line temporal behaviour needs per-shot checks. No Blender, character animation, geographic accuracy or real-time FPS qualification.",
+      "scope_and_findings": "One Nantes quarter:40mesh definitions/431loaded instances; native manga PNG inspected. Native GLB carries colour geometry, no camera/manga shader. Existing Three.js0.186 produces two timed views with original local line/halftone finishing.1080p24/15s/360frames decode and reseek pass; owner accepted lighter-street v2 after requested brightness correction. Fine-line temporal behaviour needs per-shot checks. No Blender, character animation, geographic accuracy or real-time FPS qualification. Follow-up: one Hudson200m native GLB/PNG imported; two-angle6s renders1280x720 and720x1280 decode/reseek pass. Vertical framing revised. Owner review pending, no character/accuracy qualification.",
       "licence_note": "Service terms allow output within works including commercial video with map-data attribution; prohibit standalone/lightly modified asset redistribution and upstream-code extraction. OSM/ODbL and other third-party data rights remain independent. Exported model/media private, not vendored.",
-      "next_trial_or_retest_condition": "Reuse only the demonstrated native GLB/PNG→existing Three.js manga-finish→1080p24 encode route, with per-shot checks. Owner accepted Nantes v2. New locations, character integration or Blender import require a separate bounded authorised trial; preserve attribution and keep model assets private.",
+      "next_trial_or_retest_condition": "Owner review of Hudson set/line movement; approve exact donor and characters before linked chase shots. Preserve original Nantes acceptance separately.",
       "evidence": [
         "docs/experiments/rokehan-manga.md",
         "experiments/2026-10-26/evidence/rokehan-manga.json",
-        "skills/video-production-router/references/location-scout.md"
+        "skills/video-production-router/references/location-scout.md",
+        "docs/experiments/no-further-claims-manga-probes.md"
       ]
     },
     {
@@ -1996,15 +1997,16 @@
       "id": "flow-good-dog-i2v",
       "name": "Google Flow — Omni1.1 Flash Good Dog route",
       "url": "https://flow.google.com/",
-      "reviewed": "2026-11-01",
+      "reviewed": "2026-11-04",
       "review_basis": "Actual4s/8s image-to-video files retained and reused in owner-accepted133s v8",
       "upstream_revision": null,
       "disposition": "component_used",
-      "scope_and_findings": "Existing Plus bonus access used for short actions/reactions. Selected generated shots plus local corrections supported the accepted hybrid edit. No general continuity, persistent free allowance or complete automatic dispatch qualification.",
-      "licence_note": "Hosted provider and source rights remain separate. UI quotes7/12existing credits are not reconciled debit; recheck account and operation terms before use.",
+      "scope_and_findings": "Existing Plus bonus access used for short actions/reactions. Selected generated shots plus local corrections supported the accepted hybrid edit. No general continuity, persistent free allowance or complete automatic dispatch qualification. No Further Claims: initial wide added an extra ostrich, late gate reclosure rejected; separate static setup/water cut rejected for causal discontinuity. Changed10s trial retains two calm birds and rippled reflection in sampled frames; local camera move and escape margin crop await owner review. This is not robust multi-subject/physics qualification. Town witness: first phone pickup duplicated a device/arm; screen-relative foreground/far-hand retry improved sampled action, pending owner review. Three6s quotes10 each matched154→124. Accepted4s chase reused; no general hand qualification.",
+      "licence_note": "Hosted provider and source rights remain separate. UI quotes7/12existing credits are not reconciled debit; recheck account and operation terms before use. Dated NFC correction:10s quote15 matched displayed169→154; no purchase. This is account-specific evidence.",
       "next_trial_or_retest_condition": "GD-NEXT-01/08: two connected shots, exact retained state and current entitlement/cost evidence.",
       "evidence": [
-        "docs/experiments/good-dog-closeout.md"
+        "docs/experiments/good-dog-closeout.md",
+        "docs/experiments/no-further-claims-manga-probes.md"
       ]
     },
     {
@@ -2020,6 +2022,70 @@
       "next_trial_or_retest_condition": "GD-NEXT-02: publication-eligible expressive alternative or separately authorised licensed regeneration; no new paid test without budget.",
       "evidence": [
         "docs/experiments/good-dog-closeout.md"
+      ]
+    },
+    {
+      "id": "manga-editor-desu",
+      "name": "Manga Editor Desu",
+      "url": "https://github.com/new-sankaku/manga-editor-desu",
+      "reviewed": "2026-11-03",
+      "review_basis": "Official README plus bounded public-UI landscape/bubble probe, autosave recovery and native SVG/PNG download retries",
+      "upstream_revision": null,
+      "disposition": "partial_ui_export_unconfirmed",
+      "scope_and_findings": "Three-panel landscape layout and CRACK! bubble created; autosave recovery restored them. Native SVG and PNG waits timed out10s each; no export retained. No AI backend, install, credentials or private upload. No error-level console entries observed; cause unresolved.",
+      "licence_note": "GPL-3.0 repository; fonts/assets and optional backends require separate terms. Hosted analytics/external assets documented; no paid generation authorised.",
+      "next_trial_or_retest_condition": "Revisit only for a concrete export/workflow change or alternative verified download path; do not repeat unchanged retries or delay current compositor.",
+      "evidence": [
+        "docs/research/manga-film-tooling-2026-11-03.md",
+        "docs/experiments/no-further-claims-manga-probes.md"
+      ]
+    },
+    {
+      "id": "pretext-comic",
+      "name": "pretext-comic",
+      "url": "https://github.com/ShipItAndPray/pretext-comic",
+      "reviewed": "2026-11-03",
+      "review_basis": "Primary README and bounded native public-demo export for pretext only",
+      "upstream_revision": null,
+      "disposition": "static_native_png_tested",
+      "scope_and_findings": "Live public demo: one ellipse with supplied English line, native PNG download retained. Shape fitting legible, close edge spacing. No installation, tail/alpha/API/video qualification; no private uploads.",
+      "licence_note": "README declares MIT; verify package licence/notice before embedding code.",
+      "next_trial_or_retest_condition": "One explicitly selected local transparent overlay/source-tail/timing test; no general tool qualification or automatic install.",
+      "evidence": [
+        "docs/research/comic-lettering-tools.md",
+        "docs/experiments/no-further-claims-manga-probes.md"
+      ]
+    },
+    {
+      "id": "comical-js",
+      "name": "Comical-JS",
+      "url": "https://github.com/BloomBooks/comical-js",
+      "reviewed": "2026-11-03",
+      "review_basis": "Primary README review only; no runtime trial of this candidate",
+      "upstream_revision": null,
+      "disposition": "reviewed_queued",
+      "scope_and_findings": "Documented HTML bubble editing, tail handles, JSON specs and SVG at stopEditing; text layout left to host. No runtime trial.",
+      "licence_note": "MIT repository.",
+      "next_trial_or_retest_condition": "One explicitly selected local transparent overlay/source-tail/timing test; no general tool qualification or automatic install.",
+      "evidence": [
+        "docs/research/comic-lettering-tools.md",
+        "docs/experiments/no-further-claims-manga-probes.md"
+      ]
+    },
+    {
+      "id": "speech-bubble-editor",
+      "name": "Speech Bubble Editor",
+      "url": "https://github.com/longweekendlabs/speech-bubble-editor",
+      "reviewed": "2026-11-03",
+      "review_basis": "Primary README review only; no runtime trial of this candidate",
+      "upstream_revision": null,
+      "disposition": "reviewed_reserve",
+      "scope_and_findings": "Author describes desktop19styles, tail dragging and FFmpeg video export, Apple Silicon macOS15+. No install or video export trial.",
+      "licence_note": "MIT repository; exact release/dependency/font notices to retain before installation.",
+      "next_trial_or_retest_condition": "One explicitly selected local transparent overlay/source-tail/timing test; no general tool qualification or automatic install.",
+      "evidence": [
+        "docs/research/comic-lettering-tools.md",
+        "docs/experiments/no-further-claims-manga-probes.md"
       ]
     }
   ]

@@ -47,6 +47,10 @@ Technical QA, creative/listening
 acceptance, rights and publication are separate records. Labour savings,
 whole-route autonomy and audience performance are not established by these films.
 
+[No Further Claims character-film method](docs/methods/coherent-manga-production.md) now records
+the completed131.25s manga film and native aspect-layout workflow. [REL-C assessment](docs/rel-c-readiness-2026-11-04.md)
+retains one same-case cold-resume check; this documentation slice is not a new release.
+
 ## Selected results
 
 | Film | What it demonstrates |

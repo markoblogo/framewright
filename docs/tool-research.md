@@ -1,5 +1,9 @@
 # Tool review and test inventory
 
+## Social-media research — 4 November2026
+
+[Primary-source assessment](social-media/research-2026-11-04.md): two MIT skill families, Aegisub, PySceneDetect, WhisperX and deferred Postiz; existing/native tools first. No tool qualified by documentation review.
+
 [Real-space reconstruction — 28 October 2026](research/reality-capture-2026-10-28.md): Echo-3 and Polycam are conditional phone/web candidates; Postshot and Splatframes are Windows reserves; Nerfstudio is an OSS compute-gated reserve. RECON-01 proposes capture → reusable scene → revised camera render. No runtime test or free Mac route qualified.
 
 [Remotion licence clarification — 28 October 2026](research/remotion-conditional-licence-2026-10-28.md): already-used renderer, custom source-available licence; user/entity/use/version eligibility stays separate from technical evidence. Unverified eligibility remains cost-unknown and excluded from free-only offers.
@@ -492,3 +496,13 @@ Cogstudio/Pinokio and OpenFilm/OpenCinema dispositions. Research only: TTM's
 motion-guide method is useful; heavy backends stay conditional on compatible
 compute and rights. Existing Motion Canvas, MLX Audio, PySceneDetect, SOURCE-01
 and OTIO evidence is retained without broadening qualification.
+
+
+## Manga/anime film tools — 3 November 2026
+
+[Focused intake and partial UI probe](research/manga-film-tooling-2026-11-03.md): existing Rokehan city-set evidence, new Manga Editor Desu/Speech Bubble Editor candidates, short-effect Krita and later OpenToonz reserves. Desu three-panel/CRACK! editing observed; SVG export unconfirmed after browser timeout. No installation or backend qualification. Linked sequential trials support LIT-FILM-01/R07, not a release.
+
+
+## No Further Claims closeout —4November2026
+
+[Repeatable character/manga process](methods/coherent-manga-production.md): approved references → linked shots → bounded generation → local correction → unified source-directed lettering → sound → two aspect layouts. [REL-C matrix](rel-c-readiness-2026-11-04.md) retains drift/contact/crop/reading-time/repeated-panel/720p limits and one cold-resume gap. Original local compositor used; Desu export, Speech Bubble Editor, Krita and OpenToonz remain unqualified reserves. No new tool installation or blanket promotion.

@@ -1,5 +1,7 @@
 # From four trainings to coherent fiction
 
+**4November follow-up:** the selected film changed to the Chapter1 incident and is complete in two formats. [Resulting manga method](coherent-manga-production.md) and [REL-C assessment](../rel-c-readiness-2026-11-04.md) are current. No Giant Eagle and its adult-Eli pilot below describe the historical3November plan; unexecuted tests retain their own status.
+
 3 November2026 · M4/R05–R06 → M5/R07/REL-C. Consolidation of completed production
 records, not a new renderer, blanket tool qualification or a second production journal.
 
@@ -58,7 +60,7 @@ receipt. Without Framewright, the same method can use a source manifest, shot ta
 compositor/editor project, timed voice files and a human review sheet. Neither
 written alternative proves independent operator reproduction or general automation.
 
-## Next production boundary
+## Historical next-production boundary —3November
 
 The owner authorised consolidating this slice into a PR, with no separate release,
 then preparing the accepted [No Giant Eagle](../productions/no-further-claims-proposal.md)
