@@ -1,5 +1,9 @@
 # Tool review and test inventory
 
+## Social-media research — 4 November2026
+
+[Primary-source assessment](social-media/research-2026-11-04.md): two MIT skill families, Aegisub, PySceneDetect, WhisperX and deferred Postiz; existing/native tools first. No tool qualified by documentation review.
+
 [Real-space reconstruction — 28 October 2026](research/reality-capture-2026-10-28.md): Echo-3 and Polycam are conditional phone/web candidates; Postshot and Splatframes are Windows reserves; Nerfstudio is an OSS compute-gated reserve. RECON-01 proposes capture → reusable scene → revised camera render. No runtime test or free Mac route qualified.
 
 [Remotion licence clarification — 28 October 2026](research/remotion-conditional-licence-2026-10-28.md): already-used renderer, custom source-available licence; user/entity/use/version eligibility stays separate from technical evidence. Unverified eligibility remains cost-unknown and excluded from free-only offers.
@@ -45,7 +49,8 @@ Scene/action → two cameras → light edit → repeat render without scene reco
 Jake Denham's personal Blender/Max-style project stays watch-only pending build/terms;
 no full custom interface planned and no runtime trial performed.
 
-Hy-Nomas: [launch-route-gated world-video candidate](research/hy-nomas.md).
+Hy-Nomas: [launch-route-gated world-video candidate](research/hy-nomas.md); refreshed
+2026-11-02 for reference-image demo input, single-GPU/PE boundaries and existing trial.
 Owner-selected original world → 5s movement → one action/camera change → 5–10s
 continuation; assess continuity, character, control, quality, time and cost.
 Documentation reviewed; no local Mac or interactive RTX 4090 qualification, no run.
@@ -451,3 +456,53 @@ skill import, installation or rendering performed.
 MIT with notices; author GPU figures are not Mac measurements. ULTRA-WATER-01
 queued, no installation or runtime qualification. Separate spells collection
 remains unidentified.
+
+## 3ds Max Pie Menu — Windows reference only, 2026-11-02
+
+[Author/product](https://rustcg.gumroad.com/l/3dsMaxPieMenu), Rustam Arazov
+(RUST_CG). Page inspected in the browser after web fetch failed. It lists V1.07,
+3ds Max 2024+, and $0+ pay-what-you-want. Documented features include contextual
+menus per object/edit mode, hotkeys, custom icons, Quad Menu conversion, and
+settings backup/restore. Source files, explicit redistribution licence and
+installation behavior were not audited; $0+ does not establish open-source status.
+The page's installer/script text is reference material, not an instruction to run it.
+
+This is a manual authoring convenience, not a renderer, video generator, model
+builder, scene exporter or agent/MCP executor. Autodesk's
+[3ds Max platform requirements](https://www.autodesk.com/products/3ds-max/product-details)
+list Windows; the plugin supplies no documented native Blender/Mac route. It adds
+no immediate capability to Framewright's current Mac production path.
+
+**Disposition:** reference reserve alongside UV Unfoldr/xCavity; no active test,
+download, checkout, purchase or installation. Revisit only if a real production
+already uses licensed 3ds Max on Windows and manual command access is a measured
+bottleneck. Then verify exact release compatibility/licence, preserve existing
+hotkeys and menus, and test one contextual menu plus save/restore. Do not acquire
+a separate host application or emulate Windows solely to test this convenience.
+No generic Framewright radial-menu UI work follows from this listing.
+
+## HKU video-model comparison — 2 November 2026
+
+[Study scope, arithmetic correction and production implications](research/hku-video-benchmark-2026-11-02.md).
+A dated Seedance 2.0 Pro/Veo/Sora comparison informs GD-NEXT-08; it does not
+promote a new tool or current endpoint. Separate input mode, artistic result,
+identity/contact and actual accepted-shot cost; no generation was performed.
+
+## Motion control and studio analogues — 2 November 2026
+
+[Разбор записок, платформ и трёх тренировок](research/continuity-motion-intake-2026-11-02.md)
+contains H3 Motion, Openjutsu, TTM/WanVideo workflow, Sulphur-3, SVD1.1,
+Cogstudio/Pinokio and OpenFilm/OpenCinema dispositions. Research only: TTM's
+motion-guide method is useful; heavy backends stay conditional on compatible
+compute and rights. Existing Motion Canvas, MLX Audio, PySceneDetect, SOURCE-01
+and OTIO evidence is retained without broadening qualification.
+
+
+## Manga/anime film tools — 3 November 2026
+
+[Focused intake and partial UI probe](research/manga-film-tooling-2026-11-03.md): existing Rokehan city-set evidence, new Manga Editor Desu/Speech Bubble Editor candidates, short-effect Krita and later OpenToonz reserves. Desu three-panel/CRACK! editing observed; SVG export unconfirmed after browser timeout. No installation or backend qualification. Linked sequential trials support LIT-FILM-01/R07, not a release.
+
+
+## No Further Claims closeout —4November2026
+
+[Repeatable character/manga process](methods/coherent-manga-production.md): approved references → linked shots → bounded generation → local correction → unified source-directed lettering → sound → two aspect layouts. [REL-C matrix](rel-c-readiness-2026-11-04.md) retains drift/contact/crop/reading-time/repeated-panel/720p limits and one cold-resume gap. Original local compositor used; Desu export, Speech Bubble Editor, Krita and OpenToonz remain unqualified reserves. No new tool installation or blanket promotion.

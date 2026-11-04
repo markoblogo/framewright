@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "owner_brand": "ABV / Anton Biletskiy-Volokh",
+  "date": "2026-11-04",
+  "assets": [
+    {
+      "id": "abv-logo-dark",
+      "role": "logo",
+      "path": "/Volumes/Work/Work/FramewrightStudio/records/brand/abv/abv-mark-dark.avif",
+      "source_path": "/Users/antonbiletskiy-volokh/Downloads/logos/abv-mark-dark.avif",
+      "sha256": "c699b7b14e6f950ddaf644066703a905c0d5fee59dcff396201b4f7613485257",
+      "bytes": 12570,
+      "received_date": "2026-11-04",
+      "provenance": "owner_supplied_file",
+      "usage": "YouTube channel uses this logo, owner-reported2026-11-04. Transparent background owner-reported; preserve original.",
+      "image_properties": "/Volumes/Work/Work/FramewrightStudio/records/brand/abv/abv-mark-dark.avif\n  pixelWidth: 512\n  pixelHeight: 512\n  hasAlpha: yes",
+      "transformations": "none; byte-identical copy",
+      "source_retained": true
+    },
+    {
+      "id": "anton-avatar-yellow-inverted",
+      "role": "avatar",
+      "path": "/Volumes/Work/Work/FramewrightStudio/records/brand/abv/anton-avatar-yellow-inverted.jpg",
+      "source_path": "/Users/antonbiletskiy-volokh/Downloads/CVs/IMG_20250518_183701_267.jpg",
+      "sha256": "e86a911e712944eb3391ff70af71c821f0e8957b4bd3a086d32ef4e2e409b74a",
+      "bytes": 54023,
+      "received_date": "2026-11-04",
+      "provenance": "owner_supplied_file",
+      "usage": "Owner standard social avatar: inverted monochrome portrait on yellow. TikTok use proposed; not applied.",
+      "image_properties": "/Volumes/Work/Work/FramewrightStudio/records/brand/abv/anton-avatar-yellow-inverted.jpg\n  pixelWidth: 640\n  pixelHeight: 640\n  hasAlpha: no",
+      "transformations": "none; byte-identical copy",
+      "source_retained": true
+    }
+  ],
+  "rules": [
+    "Reusable owner brand originals, not disposable render cache.",
+    "Keep binary media outside Git. Use registry paths instead of searching Downloads.",
+    "Preserve logo transparency and portrait inversion; new crops/conversions are separate derivatives.",
+    "No account update or upload authorised by archival storage."
+  ]
+}

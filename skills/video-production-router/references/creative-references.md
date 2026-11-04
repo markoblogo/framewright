@@ -43,3 +43,11 @@ processing; that claim was read, not independently network-audited.
 [Retained prompt-only shortlist](../../../docs/prompt-motion-trial.md). Runtime,
 visual-match, Codex port and generation remain untested. No new provider/profile
 is promoted from catalogue inspection alone.
+
+## Exploded-view explanatory inserts
+
+[Liquid Photos intake and local baseline](../../../docs/research/liquid-photos-exploded-views-2026-11-02.md):
+intact object → separated components → explanation → reassembly. EXPLODED-VIEW-01
+first uses a known original Blender assembly; LIQUID-PHOTOS-01 is access-gated.
+Generated internal parts are a visual hypothesis, not verified device geometry.
+No app installation or production capability is established by the demonstration.

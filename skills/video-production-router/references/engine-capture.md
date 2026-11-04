@@ -108,3 +108,10 @@ then use the config above with `duration_seconds: 2` (its natural two-second cyc
 Normal unit tests require no browser or provider. To run the opt-in real-browser
 integration test, set `FRAMEWRIGHT_BROWSER` and `FRAMEWRIGHT_PUPPETEER` to those
 installed paths and run `python3 -m unittest discover -s tests -p test_engine_capture.py -q`.
+
+## Deferred native-engine authoring reference
+
+[Unreal AI authoring assessment](../../../docs/research/unreal-ai-grok-city-2026-11-02.md)
+separates editor MCP/code authoring from cinematic export. UE-AI-01 is deferred,
+not supported by this browser-canvas adapter. PARAM-SHOT-01 first extends the
+existing saved Blender shot with named controls and bounded A/B correction.

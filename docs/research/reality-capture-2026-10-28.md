@@ -1,6 +1,6 @@
 # Real spaces as reusable film sets — RECON-01
 
-Reviewed 28 October 2026 from official sources. Research only: no installation,
+Reviewed 28 October 2026; primary-source refresh 2 November 2026. Research only: no installation,
 account connection, subscription, upload, reconstruction or render. All five tools
 remain untested here. This records a missing production capability, not a new priority.
 
@@ -11,15 +11,15 @@ potential **M5 / R07** environment for Good Dog or other fiction. The useful out
 is a retained real location with repeatable camera moves, not another world-model
 demo. It can support a location promo, virtual visit, transition from footage to a
 digital set, or a separately staged character against a reconstructed environment.
-Current R01/R02 priorities and production pauses remain unchanged.
+The next selected REL-C production and existing production pauses remain unchanged.
 
 ## Candidate decisions and official evidence
 
 | Candidate | Documented scope | Cost/platform boundary | Disposition |
 | --- | --- | --- | --- |
-| **SpAItial Echo-3** | Phone capture → Gaussian-splat space; vendor claims metric scale and completion of unseen regions; browser sharing | iPhone, iOS 18+; subscription with introductory month, not a permanent free route. Android announced, not available evidence. Exact export formats, usable camera control, output terms and account entitlement unresolved | Conditional candidate after suitable device, entitlement and export/rights checks; no trial enrollment now |
+| **SpAItial Echo-3** | Phone capture → Gaussian-splat space; vendor claims metric scale and completion of unseen regions; browser sharing | iPhone, iOS 18+; LiDAR Pro device required for live coverage guidance/dense preview according to the store listing; account/internet/credits required. Subscription with introductory month, not a permanent free route. Android announced, not available evidence. Exact export formats, usable camera control, output terms and account entitlement unresolved | Conditional candidate after suitable device, entitlement and export/rights checks; no trial enrollment now |
 | **Polycam** | Photos/video → splats, editing/viewing; product page also advertises downloadable mesh | Official Object Mode table excludes splats from Free; Basic and above include them on iOS/web. Android listed as photogrammetry only. Exact output export entitlement and publication rights need checking | Conditional candidate if an existing eligible plan or a specifically approved production supports it; not a free splat route |
-| **Postshot** | Local reconstruction, animated cameras/movie output, AE integration and splat PLY export documented | Windows builds; historical official requirements specify NVIDIA. Free plan noncommercial; watermark-free video and radiance-field export listed under Indie, CLI under Studio. Current GPU minimum and actual paid quote must be refreshed | Windows/NVIDIA reference reserve; no current Mac trial |
+| **Postshot** | Local reconstruction, animated cameras/movie output, AE integration and splat PLY export documented | Windows builds; historical official requirements specify NVIDIA. Free plan noncommercial; watermark-free video and radiance-field PLY/SPZ export listed under Indie, CLI under Studio. Current GPU minimum and actual paid quote must be refreshed | Windows/NVIDIA reference reserve; no current Mac trial |
 | **Nerfstudio** | Open-source NeRF/splat tooling; viewer camera paths and video rendering | Core Apache-2.0; documented setup uses PyTorch/CUDA and tiny-cuda-nn, Docker NVIDIA. Native Apple Silicon training not established. Compute, dependencies and data terms separate | Technical reserve pending compatible available compute; no heavy install on current Mac |
 | **Splatframes** | Capture alignment, splat editing, camera position/look-at/FOV/roll keys; H.264, ProRes 4444 alpha, PNG; scene/data exports | Windows 10/11; viewer OpenGL 4.3, Trainer NVIDIA. Standard and Trainer differ. Early access with code/key; pricing unannounced | Windows reference reserve; no current test or free-cost classification |
 
@@ -99,3 +99,20 @@ unseen generated detail is not evidence of how the real place looks. For fiction
 may be useful set dressing, with its origin retained. Metric-scale claims need a
 measured control, not a visual impression. The same recorded camera/source contract
 can later feed saved-shot/revision workflows, but no adapter is implemented here.
+
+## Primary-source refresh — 2 November 2026
+
+This repeated intake updates RECON-01, not a second experiment. All five candidates
+remain untested and retain the dispositions above.
+
+- Echo-3's [announcement](https://spaitial.ai/blog/echo-3-release) still offers an introductory subscription month and says Android is coming. Its [App Store requirements](https://apps.apple.com/gb/app/spaitial/id6803571420) separately specify a LiDAR-equipped Pro iPhone for live coverage guidance/dense point-cloud preview. Do not equate ordinary phone capture with every guided scanning feature being available without LiDAR. Capture/reconstruction on a particular non-LiDAR phone remains a device-level question for preflight. Completion of missing regions and metric scale remain vendor claims; neither has been measured here.
+- Polycam's [Object Mode feature table](https://learn.poly.cam/hc/en-us/articles/27425185907348-How-to-Use-Object-Mode) explicitly excludes Gaussian Splats from Free and includes them from Basic. The website's free-tools menu and seven-day trial do not override that table or establish export rights.
+- Postshot's [Windows build list](https://www.jawset.com/builds/postshot/windows/) now lists v1.1.891 dated 1 November. The [pricing matrix](https://www.jawset.com/shop/pricing/) still restricts Free to noncommercial use, puts watermark-free rendering/PLY and SPZ export in Indie, and CLI in Studio. Extracted paid prices remain zero placeholders; no current payable quote or new GPU compatibility check was established.
+- Nerfstudio's [installation guide](https://docs.nerf.studio/quickstart/installation.html) still uses CUDA/tiny-cuda-nn; its Pixi recipe explicitly says Linux only. These are documented paths, not a native Apple Silicon training test. Retain technical reserve status rather than scheduling a heavy Mac install.
+- [Splatframes](https://splatframes.com/) still specifies Windows 10/11, NVIDIA for Trainer, access codes/keys and early-access pricing to be announced. Standard advertises PLY/SOG/RAD exports and camera-key editing; these are not independently tested production capabilities.
+
+**First useful trial remains:** one permitted location → retained scene export and
+reopen → 10–15s controlled camera move → change one camera key → render again.
+Check actual scale, missing/invented areas and editability against direct footage.
+Only start when a free or already-paid eligible route and a real scene need exist;
+no subscription/trial activation, upload, install or reconstruction occurred in this refresh.

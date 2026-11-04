@@ -47,6 +47,10 @@ Technical QA, creative/listening
 acceptance, rights and publication are separate records. Labour savings,
 whole-route autonomy and audience performance are not established by these films.
 
+[No Further Claims character-film method](docs/methods/coherent-manga-production.md) now records
+the completed131.25s manga film and native aspect-layout workflow. [REL-C assessment](docs/rel-c-readiness-2026-11-04.md)
+retains one same-case cold-resume check; this documentation slice is not a new release.
+
 ## Selected results
 
 | Film | What it demonstrates |
@@ -55,6 +59,11 @@ whole-route autonomy and audience performance are not established by these films
 | Beyond the Letters — internal test | Reused sources/recipe/score, new story/voice, accepted16:9 and9:16; [repeat-production evidence](docs/experiments/rel-b-repeat-protocol.md). No publication planned. |
 | [Menton: market to sea](https://youtu.be/WEEGy8Ks3ig) | Illustrated guide, owner footage, stock cutaways, route ending and expressive English narration; [case](docs/experiments/azur-guide-first-film.md) |
 | [Framewright workflow lesson](https://youtu.be/n1wuySSYQcQ) | Two-host dialogue and real production examples; [case and limits](docs/experiments/framewright-micro-lesson.md) |
+
+[Four training films → coherent fiction](docs/methods/training-to-fiction-2026-11-03.md):
+accepted AI-explainer, animated-poster, liquid-photo and transport-guide cases;
+reusable choices, remaining limits and three bounded next-production questions.
+These are production results, not blanket tool qualifications or a new release.
 
 Publication links and owner acceptance are owner-reported unless a case identifies
 separate verification. [More experiments](docs/experiments.md) ·

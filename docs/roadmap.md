@@ -1,7 +1,9 @@
 # Framewright roadmap
 
-Updated 1 November 2026; baseline after [PR #46](https://github.com/markoblogo/framewright/pull/46)
-merged. This is the primary **priority and milestone map**. It connects product work,
+Updated4November2026; source baseline0.7.0 / REL-B. Current authorised work:
+No Further Claims closeout → accumulated PR53 checks/review → separate merge decision
+and [REL-C evidence assessment](rel-c-readiness-2026-11-04.md). Earlier dated updates
+below remain history and do not override this current slice. This is the primary **priority and milestone map**. It connects product work,
 production and experiments; it does not start them or authorize spending/publication.
 The owner requested a stable roadmap that absorbs new ideas without replacing the
 direction each time. The ordering below is the proposed working sequence, adjustable
@@ -22,7 +24,7 @@ of portable production methods, not a requirement for applying them.
 | An arsenal that solves problems | New tools improve a specific weak point | Bounded comparison against the existing method, feature/version/host scope and retained failures |
 | Transferable knowledge | Another operator can use the methods and contribute experience | Reproduction, external handoff, worked cases with and without Framewright; book-readiness evidence |
 
-## Where we are
+## Foundation and dated release evidence
 
 The [27–28 October capability review](product-progress-2026-10-27-28.md) and
 [PR corrections](experiments/pr46-review.md) establish a bounded foundation:
@@ -54,10 +56,10 @@ scope. A blocked experiment does not block unrelated approved production.
 | Milestone | Current state | Exit evidence and dependencies |
 | --- | --- | --- |
 | **M1 — One understandable entrance** | Partial beyond the bounded case: R02 proposal retained for owner-selected Last Seed; forecasts/independent-client use unproven | A real brief becomes a short approved concept, source/gap list and 1–3 genuinely feasible offers. Each explains creative result, prerequisites, human effort, cost/time basis, uncertainty, fallback and cheapest useful pilot. Persist free-only choice; distinguish declared access from checked access. Exercise RV02 and the existing decision contracts. |
-| **M2 — One complete recoverable route** | Bounded operator-led loop evidenced; final release review pending; full automation unproven | On one selected route, pilot → review → production → technical/listening/creative checks → targeted correction → accepted local delivery. Resume in a new session without re-explaining retained decisions. Manual steps are explicit. Bind a saved-shot renderer first; record failure/recovery and preservation checks. Depends on a usable M1 offer, not a new UI application. |
-| **M3 — A repeatable second production** | Partial: templates, branding, passports and SSI handoff exist | A comparable second episode and one alternate format reuse accepted design/materials with their own reviews. Exercise short/long/missing-optional template controls. Measure active work, setup, render/wait, context recovery and avoidable rework separately under RV01. Depends on an accepted baseline from M2 or a suitable existing film. |
+| **M2 — One complete recoverable route** | Bounded operator-led loop evidenced in REL-A; full automation unproven | On one selected route, pilot → review → production → technical/listening/creative checks → targeted correction → accepted local delivery. Resume in a new session without re-explaining retained decisions. Manual steps are explicit. Bind a saved-shot renderer first; record failure/recovery and preservation checks. Depends on a usable M1 offer, not a new UI application. |
+| **M3 — A repeatable second production** | Bounded REL-B repeat/alternate-format evidence complete; general savings unproven | A comparable second episode and one alternate format reuse accepted design/materials with their own reviews. Exercise short/long/missing-optional template controls. Measure active work, setup, render/wait, context recovery and avoidable rework separately under RV01. Depends on an accepted baseline from M2 or a suitable existing film. |
 | **M4 — Controlled expansion that improves a route** | Partial: catalogue/workbench and many scoped trials exist | One observed production weakness → bounded candidate comparison → exact feature qualification or rejection → repeat on another suitable production. Preserve a proven fallback. Extend cost/resource/platform coverage in small sourced batches. Can accompany M1–M3; does not require testing the whole queue. |
-| **M5 — A coherent short fiction** | Preparation only | Before Good Dog's approximately three-minute adaptation, accept a two-shot interaction/continuity pilot with versioned hero/set, readable action, body/ground/prop contact and motivated sound. Then a coherent story, targeted correction and independent viewing/listening. Requires usable M2 execution/review and relevant M4 evidence; published dog/robot studies are preparation, not completion. |
+| **M5 — A coherent short fiction** | Bounded production evidence assembled; same-case cold resume open | No Further Claims: accepted linked chase, completed131.25s fiction, local corrections, sound and two aspects. [REL-C matrix](rel-c-readiness-2026-11-04.md) separates manual/owner review from independent recovery. No rig, general contact, automated whole-route or audience claim. |
 | **M6 — Transfer and independent use** | Partial: SSI reports approved private delivery; unattended cycle unproven; book base drafted | Another operator completes or resumes a bounded route from the handoff; record setup/support needs and unknowns. SSI reports three owner-approved videos delivered privately on1November; independent full listening and unattended future generation still need their own evidence. BOOK-01 remains its existing separate gate: cleared, reproducible cases and a useful sample chapter with/without Framewright. Optional community packets follow explicit opt-in and review; no telemetry or mandatory sharing. |
 
 M1 and M2 are the immediate product focus; M3 demonstrates the practical benefit.
@@ -109,8 +111,8 @@ time on this Mac; related documentation can be updated during waits.
 | **Production case closed · R07** | Good Dog v8 accepted and owner-reported published; [closeout and follow-ups](experiments/good-dog-closeout.md) | Retained133s film, corrections and limits; next-film two-shot continuity/voice tests remain open. No general rig/identity, rights or M5 completion inferred. | M5, GD-NEXT-01/02, PREVIS-01 |
 | **First film accepted/published; later repeat · AZUR-GUIDE-01** | [Develop the guide-film style through varied guides](experiments/azur-guide-first-film.md) | First film owner-reported on YouTube; guide embed owner-reported complete. Next guide after several other productions: approve donor media before assembly, then pilot and dual-format review. Universal template not yet qualified. | M3/M6, R04, R09 |
 | **Later staged handoff · AZUR-AUTO-01** | Transfer a proven guide/event template to AzurMenton for source-triggered production and distribution | [Staged plan](experiments/azur-guide-first-film.md#future-automation--staged-owner-direction): first qualify style/tools and formats; later receiving-project generation, YouTube upload/embed and dedicated Instagram/TikTok publishing with per-platform verification and duplicate protection. No current account creation or publishing task. | M3/M6 |
-| **Next selected fiction; channel pilot · TIKTOK-01** | Learn vertical delivery on owner’s existing TikTok using animation experiments | Next selected book animation planned for YouTube 16:9 and TikTok 9:16 from the start. First film ready → owner brainstorm on name/branding/post concept → approved account update → first approved publication. Discuss Instagram after TikTok starts. | M4/M5/M6, R07/R09 |
-| **Later · LIT-FILM-01–04** | Original-book micro-shorts / film-like adaptations: No Further Claims; God Was Busy with the Plumbing (including Ukrainian localization); Marcus Aurelius Zombie Apocalypse; Don Quixote in Neverland | [Book adaptation slate](book-adaptation-slate.md): selected excerpt → coherent short story → two linked pilot shots → review → production. Same work/localization stays one adaptation family. No change to active REL-B priority. | M5, R07, R09 |
+| **First TikTok publication owner-reported · TIKTOK-01 / SOCIAL-01** | [Social-media packaging and author/animation channel](social-media/README.md) | No Further Claims [TikTok](https://vt.tiktok.com/ZSpN7wfkP/) supplied4November; separate cover upload worked per owner. Region/monetisation are not launch blockers per owner. Next: measured learning; assess TikTok suitability at every new YouTube brief and adapt selected films natively. No reach/revenue claim or automatic publication. Instagram remains later discussion. | M4/M5/M6, R07/R09 |
+| **Production closed · LIT-FILM-01; later · LIT-FILM-02–04** | No Further Claims Chapter1 incident,131.25s,16:9 and9:16 | [Method and limits](methods/coherent-manga-production.md); [REL-C assessment](rel-c-readiness-2026-11-04.md). Earlier No Giant Eagle deferred; other books remain [later](book-adaptation-slate.md). One same-case cold-resume check open; no automatic release. | M5/R07/R09 |
 | **Later · R08** | Add provider/quota execution only when a selected production needs it | Current terms/account evidence, retry reserve, per-operation authority, ambiguous-charge recovery and no duplicate submission; local cost ledger alone is insufficient. | M2/M4, COST-01/STATE-01 |
 | **Ongoing closeout · R09** | Convert useful outcomes into reusable methods, case studies, post material and book coverage | Update exact evidence, existing queue/registry, chapter gap and next action. Retain with/without Framewright instructions; do not claim reader reproduction before it happens. | M6, BOOK-01 |
 
@@ -265,7 +267,7 @@ retrieval linked to R02 and journal visibility to M2. No bulk installation.
 
 After this consolidation, selected-delivery visibility and independent Good Dog recovery were verified on1November. Next: actual production-render admission; then the remaining R04 reuse/R05 confirmation evidence. Good Dog R07 production closeout is recorded separately.
 
-## Active follow-up after0.5.0
+## Historical follow-up after0.5.0
 
 R03 recovery visibility: [selected-final implementation and isolated-process evidence](experiments/selected-final-recovery.md). Other waits remain explicit; [new-agent recovery](experiments/session-recovery-2026-11-01.md) now passes on Good Dog, while human-operator portability and whole-route evidence remain open. R04 selected production: **One Artist, Two Cities**, an English comparative Pokras Lampas art film using retained authorised sources, plus an alternate portrait edit. Measure scripted stage times and material reuse; baseline operator effort is unknown. One fitting R05 source-operation test uses ffmpeg-skill before any adapter promotion. Pocket OS remains paused.
 
@@ -290,3 +292,57 @@ It was not executed in Good Dog; trial only when a later scene needs pixel effec
 **1November final local closeout:** [510-test full check and local review](final-local-review-2026-11-01.md) pass with18explicit skips. Caption overflow and stale catalogue fixtures corrected. Local REL-A readiness is evidenced; no new code-independent approval, remote CI, commit/push or release is implied. Next: authorised PR/CI and release decision, not another production/tool trial.
 
 **1November release preparation:** merged-main CI on5a98bd6 passed. [0.6.0 REL-A candidate](release-audit-2026-11-01.md) is prepared locally; version/notes/package work does not itself publish a tag or release. No new functional gate or tool trial is added.
+
+### 2 November intake — parameterized scenes and visible handoffs
+
+[Unreal AI / Grok City assessment](research/unreal-ai-grok-city-2026-11-02.md):
+PARAM-SHOT-01 extends R01/PREVIS-01 for a suitable REL-C shot; first use Blender
+and verify it adds new evidence. UE-AI-01 remains deferred under M4/R05 and
+conditional R06. Grok City's task ownership and human-decision queue extend
+OM-BOARD-01 rather than creating another orchestrator. Grok Bot itself is a
+reference with account/cost unknowns. No new production or test is started.
+
+### 2 November lesson intake — motion guidance and bounded video edits
+
+[Video-generation challenges](research/video-generation-challenges-2026-11-02.md)
+adds conditional MOTION-GUIDE-01 and V2V-PRESERVE-01 under R05/R06/R07, using
+local previz and an existing eligible provider only when a selected scene needs it.
+Accepted-output yield enriches COST-01/R04; shot contracts and human decisions
+extend existing controls. This is research, not a whole-route implementation,
+new spending authority or a change to protected waits.
+
+### 2 November closeout and next fiction selection
+
+Storage/TokenEconomizer PR52 merged separately; [research closeout](research/intake-closeout-2026-11-02.md)
+retains the new finds without starting their tests or triggering a release.
+Owner selected LIT-FILM-01 / No Further Claims for REL-C planning; [episode/style/source
+proposal](productions/no-further-claims-proposal.md) accepted by owner; production follows the short training block.
+Then agree donor images, then two linked shots with both16:9/9:16 coverage.
+No full film, account action or publication starts from this planning record.
+
+### Pre-film training decision — 2 November 2026
+
+[Разбор записок, платформ и трёх тренировок](research/continuity-motion-intake-2026-11-02.md) extends M4/R05–R06 and M5/R07 without a new release gate.
+Owner approved the book proposal but requested analysis and several short training
+films first. TRAIN-01/02/03 are proposed; select story/style/donors before execution.
+Keep silent causality, bounded correction, meaningful resume and operator/machine
+time separate. Heavy GPU candidates stay reserves; no whole-queue prerequisite.
+
+Owner subsequently proposed [four training topics](productions/training-slate-2026-11-02.md)
+in place of hypothetical TRAIN-01/02/03: scientific article visualization, animated
+posters, surreal photo media art and practical airport routing. Recommended order
+is provisional; use bounded new-feature tests with reusable evidence, then book film.
+
+
+### Training-to-fiction checkpoint —3November2026
+
+[Four accepted trainings](methods/training-to-fiction-2026-11-03.md) now supply bounded
+R05/R06 lessons, not general tool qualification. Consolidate the documentation in
+existing PR53; no release. Then prepare the owner-selected No Giant Eagle
+100–120s montage/English text for16:9 and9:16, before exact donor/pilot review.
+R06-MASK-01, R06-VOICE-01 and R07-PAIR-01 stay limited to useful next-production
+questions. REL-C remains open until coherent fiction/interaction and recovery evidence.
+
+### 4November — current character-production closeout
+
+[No Further Claims method](methods/coherent-manga-production.md) consolidates the selected film. [REL-C matrix](rel-c-readiness-2026-11-04.md) finds one bounded same-case cold-resume check still open. Update PR53 without a research-only release; merge and release decisions remain separate. Earlier No Giant Eagle/preparation next steps above are historical and superseded.

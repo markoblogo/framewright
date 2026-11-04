@@ -185,3 +185,10 @@ This is a working method, not an implemented connector or automatic exporter.
 Use existing project checkpoints and revision-bound observations to record the
 sample, selected template, feedback and handoff evidence. Keep private source
 reports, account data, media and credentials outside the public repository.
+
+## Production visibility reference
+
+[Grok City assessment](../../../docs/research/unreal-ai-grok-city-2026-11-02.md)
+extends the queued OM-BOARD-01 question: derive ownership, exact-version handoffs,
+blockers and human decisions from the existing journal. This is a read-only
+proposal, not an installed multi-agent backend, publishing route or second ledger.
