@@ -1,6 +1,6 @@
 # No Further Claims — manga set and rhythm probes
 
-**Current closeout4November:** accepted131.25s film in both formats; owner-reported YouTube/TikTok publication. [Repeatable process/limitations](../methods/coherent-manga-production.md) and [REL-C assessment](../rel-c-readiness-2026-11-04.md) supersede chronological pending markers below. Private cleanup receipts record retired historical exports; selected sources/recipes/masters retained. Same-case cold-resume remains open.
+**Current closeout4November:** accepted131.25s film in both formats; owner-reported YouTube/TikTok publication. [Repeatable process/limitations](../methods/coherent-manga-production.md) and [REL-C assessment](../rel-c-readiness-2026-11-04.md) supersede chronological pending markers below. Private cleanup receipts record retired historical exports; selected sources/recipes/masters retained. Same-case cold resume PASS and independent additions review APPROVE; see the later closeout record.
 
 
 3November2026 · LIT-FILM-01 / ROKEHAN-SET-02 / MANGA-PANEL-01 / MANGA-MOTION-01. Owner authorised starting the selected sequential tests. **Set and graphics v3 accepted; character sheet accepted; connected8s chase pilot delivered for owner review.** No new installs, cash purchase or publication. Two Flow calls used14 existing plan credits; built-in image generation cost is not exposed.
@@ -242,3 +242,11 @@ Owner supplied [TikTok URL](https://vt.tiktok.com/ZSpN7wfkP/) after portrait/pac
 Four superseded full drafts/review duplicates removed:195,522,620bytes (186.46MiB). A context still referenced by build.py was excluded from deletion; selected/ambiguous contexts and provider originals retained. Plan/receipt and retired hashes remain in private records/nfc-closeout-2026-11-04.666 retained file sizes and73 critical SHA256 values checked, including final packages and source clips/recipes. Obsolete review pages/dated receipts may still name retired versions; historical availability is not promised. Current master hashes match the prepared delivery records. No account/publication change.
 
 REL-C production evidence is assembled in bounded scope; the remaining specific check is NFC-RESUME-01, an independent no-history read-only restoration of this case after cleanup. Other films' recovery tests are not counted as this case's result.
+
+
+### Later4November — independent closeout completed
+
+[NFC-RESUME-01 PASS and independent additions review APPROVE](../rel-c-independent-review-2026-11-04.md).
+PR53 merged; merged-main CI passed. This later record supersedes earlier open
+recovery/review markers, without changing historical technical/media/rights decisions.
+Owner authorised0.8.0 REL-C release, then a pause for plan discussion.

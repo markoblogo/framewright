@@ -1,20 +1,20 @@
 # Current work and protected waits
 
-Updated4November2026 · source baseline0.7.0 / REL-B.
+Updated4November2026 · source version0.8.0 / REL-C.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md).
 
-## Current authorised slice
+## Current boundary — authorised REL-C release, then owner discussion
 
-1. Close No Further Claims: retain both accepted masters, selected recipes/dependencies,
-   rights/publication receipts and [repeatable manga method](methods/coherent-manga-production.md);
-   retire only audited superseded review exports. See [case evidence](experiments/no-further-claims-manga-probes.md).
-2. Reconcile documentation, run offline checks and review accumulated PR53 on its new
-   exact head. Commit/push to that PR are in scope; **merge is a separate owner decision**.
-   Research alone does not trigger a release.
-3. [REL-C assessment](rel-c-readiness-2026-11-04.md): completed character film and bounded
-   continuity/contact/correction evidence assembled; one same-case no-history cold-resume
-   check NFC-RESUME-01 remains. Do not claim another case's recovery as this film's result.
-   No new production, generation, account change or release starts from this list.
+No Further Claims closeout and NFC-RESUME-01 are complete; independent additions
+review approved, PR53 merged to2265f25 and merged-main CI passed.
+[Recovery/review record](rel-c-independent-review-2026-11-04.md).
+
+Prepare/publish experimental0.8.0 via the release PR/CI and verify the canonical tag
+and downloaded assets; [release audit](release-audit-0.8.0.md). Source preparation
+alone is not public availability. If the release already exists, verify it rather
+than republish. **After publication stop and discuss the next plan with the owner.**
+No next film, new trial, account change or new schedule starts from this page.
+Two stale catalogue/portrait-proposal suggestions are corrected in this release.
 
 ## Selected completed work
 

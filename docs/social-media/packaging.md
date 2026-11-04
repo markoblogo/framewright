@@ -65,7 +65,8 @@ caption_file_or_no_speech / credits / music_rights / disclosure_decision /
 content_suitability / account_eligibility_observed / owner_approval /
 publication_url_and_provenance / metrics_source_window / hypothesis / outcome.
 
-NoFurtherClaims-specific next test: two or three title/cover concepts and a scene-aware
-vertical pilot, preserving readable balloons and understated opening. No automatic
-speech subtitles; film communicates through bubbles/music/SFX. Keep publication
-confirmation distinct from full narrative, music-rights and monetisation evidence.
+No Further Claims has been delivered in both formats and published per owner;
+the earlier title/cover/vertical-pilot proposal is complete, not a new task. Optional
+next observation is actual24h/7d analytics if available, with age/window/source
+retained. Keep publication distinct from phone-readability, rights-document and
+monetisation evidence. No new adaptation or analytics automation is authorised.

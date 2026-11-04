@@ -2,6 +2,21 @@
 
 ## Unreleased
 
+## 0.8.0 — 2026-11-04 — experimental
+
+- Document a checked agent-and-human-led process for coherent character fiction:
+  approved references/set, linked shots, bounded generation/corrections, manga
+  lettering, sound and separate16:9/9:16 layouts, demonstrated by No Further Claims.
+- Close same-case no-history recovery and independent review in bounded internal
+  scope; retain drift, contact, crop, bubble readability, repeated portrait panels,
+  source720p/upscale and manual-operation limitations. No rig/autonomy claim.
+- Consolidate four training cases, social-media packaging, external-storage rules
+  and bounded research/tool dispositions; keep unexecuted trials and rights/metrics
+  unknowns explicit. Correct stale Hudson/pilot next steps and current documentation.
+- Preserve the0.7.0 CLI behavior and dependencies. No new renderer, model evaluation,
+  install, automatic posting or mandatory migration; public release/assets are
+  verified separately from source preparation. See release notes/audit for evidence.
+
 ## 0.7.0 — 2026-11-01 — experimental
 
 - Add clear start / continue / correct documentation entrypoints and a compact

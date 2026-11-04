@@ -1,8 +1,10 @@
 # Framewright roadmap
 
-Updated4November2026; source baseline0.7.0 / REL-B. Current authorised work:
-No Further Claims closeout → accumulated PR53 checks/review → separate merge decision
-and [REL-C evidence assessment](rel-c-readiness-2026-11-04.md). Earlier dated updates
+Updated4November2026; source version0.8.0 / REL-C. Bounded character-production
+and same-case recovery evidence passed; PR53 merged and CI green. Owner authorised
+release preparation/publication, then a stop for plan discussion. See the
+[REL-C assessment](rel-c-readiness-2026-11-04.md) and [release audit](release-audit-0.8.0.md).
+Earlier dated updates
 below remain history and do not override this current slice. This is the primary **priority and milestone map**. It connects product work,
 production and experiments; it does not start them or authorize spending/publication.
 The owner requested a stable roadmap that absorbs new ideas without replacing the
@@ -59,7 +61,7 @@ scope. A blocked experiment does not block unrelated approved production.
 | **M2 — One complete recoverable route** | Bounded operator-led loop evidenced in REL-A; full automation unproven | On one selected route, pilot → review → production → technical/listening/creative checks → targeted correction → accepted local delivery. Resume in a new session without re-explaining retained decisions. Manual steps are explicit. Bind a saved-shot renderer first; record failure/recovery and preservation checks. Depends on a usable M1 offer, not a new UI application. |
 | **M3 — A repeatable second production** | Bounded REL-B repeat/alternate-format evidence complete; general savings unproven | A comparable second episode and one alternate format reuse accepted design/materials with their own reviews. Exercise short/long/missing-optional template controls. Measure active work, setup, render/wait, context recovery and avoidable rework separately under RV01. Depends on an accepted baseline from M2 or a suitable existing film. |
 | **M4 — Controlled expansion that improves a route** | Partial: catalogue/workbench and many scoped trials exist | One observed production weakness → bounded candidate comparison → exact feature qualification or rejection → repeat on another suitable production. Preserve a proven fallback. Extend cost/resource/platform coverage in small sourced batches. Can accompany M1–M3; does not require testing the whole queue. |
-| **M5 — A coherent short fiction** | Bounded production evidence assembled; same-case cold resume open | No Further Claims: accepted linked chase, completed131.25s fiction, local corrections, sound and two aspects. [REL-C matrix](rel-c-readiness-2026-11-04.md) separates manual/owner review from independent recovery. No rig, general contact, automated whole-route or audience claim. |
+| **M5 — A coherent short fiction** | Verified bounded internal scope; release publication checked separately | No Further Claims: accepted linked chase, completed131.25s fiction, local corrections, sound and two aspects. [REL-C matrix](rel-c-readiness-2026-11-04.md) separates manual/owner review from independent recovery. No rig, general contact, automated whole-route or audience claim. |
 | **M6 — Transfer and independent use** | Partial: SSI reports approved private delivery; unattended cycle unproven; book base drafted | Another operator completes or resumes a bounded route from the handoff; record setup/support needs and unknowns. SSI reports three owner-approved videos delivered privately on1November; independent full listening and unattended future generation still need their own evidence. BOOK-01 remains its existing separate gate: cleared, reproducible cases and a useful sample chapter with/without Framewright. Optional community packets follow explicit opt-in and review; no telemetry or mandatory sharing. |
 
 M1 and M2 are the immediate product focus; M3 demonstrates the practical benefit.
@@ -112,7 +114,7 @@ time on this Mac; related documentation can be updated during waits.
 | **First film accepted/published; later repeat · AZUR-GUIDE-01** | [Develop the guide-film style through varied guides](experiments/azur-guide-first-film.md) | First film owner-reported on YouTube; guide embed owner-reported complete. Next guide after several other productions: approve donor media before assembly, then pilot and dual-format review. Universal template not yet qualified. | M3/M6, R04, R09 |
 | **Later staged handoff · AZUR-AUTO-01** | Transfer a proven guide/event template to AzurMenton for source-triggered production and distribution | [Staged plan](experiments/azur-guide-first-film.md#future-automation--staged-owner-direction): first qualify style/tools and formats; later receiving-project generation, YouTube upload/embed and dedicated Instagram/TikTok publishing with per-platform verification and duplicate protection. No current account creation or publishing task. | M3/M6 |
 | **First TikTok publication owner-reported · TIKTOK-01 / SOCIAL-01** | [Social-media packaging and author/animation channel](social-media/README.md) | No Further Claims [TikTok](https://vt.tiktok.com/ZSpN7wfkP/) supplied4November; separate cover upload worked per owner. Region/monetisation are not launch blockers per owner. Next: measured learning; assess TikTok suitability at every new YouTube brief and adapt selected films natively. No reach/revenue claim or automatic publication. Instagram remains later discussion. | M4/M5/M6, R07/R09 |
-| **Production closed · LIT-FILM-01; later · LIT-FILM-02–04** | No Further Claims Chapter1 incident,131.25s,16:9 and9:16 | [Method and limits](methods/coherent-manga-production.md); [REL-C assessment](rel-c-readiness-2026-11-04.md). Earlier No Giant Eagle deferred; other books remain [later](book-adaptation-slate.md). One same-case cold-resume check open; no automatic release. | M5/R07/R09 |
+| **Production closed · LIT-FILM-01; later · LIT-FILM-02–04** | No Further Claims Chapter1 incident,131.25s,16:9 and9:16 | [Method and limits](methods/coherent-manga-production.md); [REL-C assessment](rel-c-readiness-2026-11-04.md). Earlier No Giant Eagle deferred; other books remain [later](book-adaptation-slate.md). Same-case cold resume passed; owner authorised REL-C release, then plan discussion. | M5/R07/R09 |
 | **Later · R08** | Add provider/quota execution only when a selected production needs it | Current terms/account evidence, retry reserve, per-operation authority, ambiguous-charge recovery and no duplicate submission; local cost ledger alone is insufficient. | M2/M4, COST-01/STATE-01 |
 | **Ongoing closeout · R09** | Convert useful outcomes into reusable methods, case studies, post material and book coverage | Update exact evidence, existing queue/registry, chapter gap and next action. Retain with/without Framewright instructions; do not claim reader reproduction before it happens. | M6, BOOK-01 |
 
@@ -345,4 +347,11 @@ questions. REL-C remains open until coherent fiction/interaction and recovery ev
 
 ### 4November — current character-production closeout
 
-[No Further Claims method](methods/coherent-manga-production.md) consolidates the selected film. [REL-C matrix](rel-c-readiness-2026-11-04.md) finds one bounded same-case cold-resume check still open. Update PR53 without a research-only release; merge and release decisions remain separate. Earlier No Giant Eagle/preparation next steps above are historical and superseded.
+[No Further Claims method](methods/coherent-manga-production.md) consolidates the selected film. [REL-C matrix](rel-c-readiness-2026-11-04.md) now records bounded same-case cold resume PASS. PR53 merged after review/CI; the owner subsequently authorised the REL-C release. Earlier No Giant Eagle/preparation next steps above are historical and superseded.
+
+### 4November — REL-C release decision
+
+Same-case recovery PASS and independent additions review APPROVE; PR53 merged and
+main CI passed. Earlier OPEN recovery/PR53-next-step notes above are historical.
+Publish the authorised0.8.0 bounded methods release after release-PR/package checks.
+Then wait for owner discussion; this does not start REL-D, another film or queued tools.

@@ -200,4 +200,4 @@ and interrupted local workers.
 
 ## No Further Claims closeout —4November2026
 
-[Repeatable character/manga process](methods/coherent-manga-production.md): approved references → linked shots → bounded generation → local correction → unified source-directed lettering → sound → two aspect layouts. [REL-C matrix](rel-c-readiness-2026-11-04.md) retains drift/contact/crop/reading-time/repeated-panel/720p limits and one cold-resume gap. Original local compositor used; Desu export, Speech Bubble Editor, Krita and OpenToonz remain unqualified reserves. No new tool installation or blanket promotion.
+[Repeatable character/manga process](methods/coherent-manga-production.md): approved references → linked shots → bounded generation → local correction → unified source-directed lettering → sound → two aspect layouts. [REL-C matrix](rel-c-readiness-2026-11-04.md) retains drift/contact/crop/reading-time/repeated-panel/720p limits; same-case cold resume now passes in bounded internal scope. Original local compositor used; Desu export, Speech Bubble Editor, Krita and OpenToonz remain unqualified reserves. No new tool installation or blanket promotion.

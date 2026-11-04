@@ -2,7 +2,7 @@
 
 ![Framewright — craft the cut, keep the evidence](assets/framewright-cover.png)
 
-[![Version: 0.7.0](https://img.shields.io/badge/version-0.7.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.7.0)
+[![Version: 0.8.0](https://img.shields.io/badge/version-0.8.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.8.0)
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 
 **Reusable workflows and local tools for a video studio run with an AI agent.**
@@ -37,7 +37,8 @@ This prints a plan; it does not render, install, call a model or spend money.
 
 | Scope | Evidence and boundary |
 | --- | --- |
-| Source version | Experimental0.7.0 / REL-B; [release notes](docs/release-notes-0.7.0.md) and [publication audit](docs/release-audit-0.7.0.md). Verify actual publication at the canonical release page. |
+| Source version | Experimental0.8.0 / REL-C; [release notes](docs/release-notes-0.8.0.md) and [publication audit](docs/release-audit-0.8.0.md). Verify actual publication at the canonical release page. |
+| REL-C evidence | Completed character fiction, bounded continuity/contact/correction, two aspect layouts and independent same-case recovery; [assessment](docs/rel-c-readiness-2026-11-04.md) and [review](docs/rel-c-independent-review-2026-11-04.md). Agent-and-human-led manual workflow; no general rig or autonomous route claim. |
 | REL-B evidence | [Assessment](docs/rel-b-readiness-2026-11-01.md): both formats accepted, scoped recovery/reuse/correction; [local checks/review](docs/rel-b-local-review-2026-11-01.md) and PR50/merged-main CI pass. No labour-savings or whole-route-autonomy claim. |
 | SSI handoff | [v2.1 template](docs/experiments/ssi-brand-profiles.md) owner-accepted; three new weekly films reported prepared, not sent/published. Partner approval and configured8November autonomous outcome remain open. |
 | AzurMenton guide pilot | [40s guide film](docs/experiments/azur-guide-first-film.md) accepted; YouTube and guide embed owner-reported. A general automated guide template is not yet qualified. |
@@ -49,7 +50,8 @@ whole-route autonomy and audience performance are not established by these films
 
 [No Further Claims character-film method](docs/methods/coherent-manga-production.md) now records
 the completed131.25s manga film and native aspect-layout workflow. [REL-C assessment](docs/rel-c-readiness-2026-11-04.md)
-retains one same-case cold-resume check; this documentation slice is not a new release.
+records the passed same-case cold-resume check and explicit limitations. This methods
+release adds no new renderer, mandatory dependency or automatic publishing service.
 
 ## Selected results
 
@@ -63,7 +65,7 @@ retains one same-case cold-resume check; this documentation slice is not a new r
 [Four training films → coherent fiction](docs/methods/training-to-fiction-2026-11-03.md):
 accepted AI-explainer, animated-poster, liquid-photo and transport-guide cases;
 reusable choices, remaining limits and three bounded next-production questions.
-These are production results, not blanket tool qualifications or a new release.
+These production results inform REL-C; they do not establish blanket tool qualification.
 
 Publication links and owner acceptance are owner-reported unless a case identifies
 separate verification. [More experiments](docs/experiments.md) ·

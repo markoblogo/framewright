@@ -41,3 +41,11 @@ claim independent review or merge approval from structural checks.
 check remains before a bounded release recommendation; another film's recovery is
 not substituted. SSI partner/autonomous results, Gallery Lava rights and later
 Instagram work remain protected waits. No new production is started.
+
+
+### Later4November — independent closeout completed
+
+[NFC-RESUME-01 PASS and independent additions review APPROVE](rel-c-independent-review-2026-11-04.md).
+PR53 merged; merged-main CI passed. This later record supersedes earlier open
+recovery/review markers, without changing historical technical/media/rights decisions.
+Owner authorised0.8.0 REL-C release, then a pause for plan discussion.
