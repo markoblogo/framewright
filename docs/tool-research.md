@@ -1,5 +1,9 @@
 # Tool review and test inventory
 
+## Tool batch — 5 November 2026
+
+[Deduplicated assessment](research/tool-intake-2026-11-05.md): seven existing subjects retained; new Mac-first and conditional candidates distinguished from GPU/server references. Six X posts remain inaccessible. Documentation review only; no installs or qualification.
+
 ## Social-media research — 4 November2026
 
 [Primary-source assessment](social-media/research-2026-11-04.md): two MIT skill families, Aegisub, PySceneDetect, WhisperX and deferred Postiz; existing/native tools first. No tool qualified by documentation review.

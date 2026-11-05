@@ -1,42 +1,50 @@
 # Current work and protected waits
 
-Updated4November2026 · source version0.8.0 / REL-C.
+Updated5November2026 · source0.8.0 / REL-C published per retained release audit.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md).
 
-## Current boundary — authorised REL-C release, then owner discussion
+## Current boundary — close the production cycle and prepare a documentation PR
 
-No Further Claims closeout and NFC-RESUME-01 are complete; independent additions
-review approved, PR53 merged to2265f25 and merged-main CI passed.
-[Recovery/review record](rel-c-independent-review-2026-11-04.md).
+Owner authorised Three Parcels closeout, dependency-aware cleanup and consolidation
+of accumulated production/research documentation into a PR. No separate release,
+merge, new production or queued-tool trial is authorised by this closeout.
 
-Prepare/publish experimental0.8.0 via the release PR/CI and verify the canonical tag
-and downloaded assets; [release audit](release-audit-0.8.0.md). Source preparation
-alone is not public availability. If the release already exists, verify it rather
-than republish. **After publication stop and discuss the next plan with the owner.**
-No next film, new trial, account change or new schedule starts from this page.
-Two stale catalogue/portrait-proposal suggestions are corrected in this release.
+The agreed cycle **Radar → Radar → illustrated book** is complete in its scoped
+production/publication evidence. Next-production choice is a later owner decision;
+GitHub Agentic Workflows is a reserve from the earlier Radar slate, not a selected
+film. Refresh the actual Radar list and sources before proposing it.
 
-## Selected completed work
+## Completed current cycle
 
-| Case | Current outcome and boundary |
+| Case | Outcome and boundary |
 | --- | --- |
-| No Further Claims | Chapter1 incident,131.25s; all story blocks/ending owner-accepted. [YouTube](https://youtu.be/qq1dv0H-jvk), [TikTok](https://vt.tiktok.com/ZSpN7wfkP/) and [book page](https://abvx.xyz/books/no-further-claims) owner-supplied. Portrait cover upload confirmed by owner. Exact public media identity/metrics not independently verified. Original No Giant Eagle episode is superseded/deferred. |
-| Four trainings | [Consolidated results](methods/training-to-fiction-2026-11-03.md): AI explainer, Living Posters, Gallery Lava and airport→Menton route accepted; URLs owner-reported. Limits and optional follow-ups survive acceptance. |
-| Airport→Menton | [90s route](productions/azur-airport-menton.md), [YouTube](https://youtu.be/ih43aF1zeaM); Ukrainian guide embed also confirmed by owner. General automatic guide template remains unqualified. |
-| Beyond the Letters | Both36s aspects accepted as internal tests; no publication planned. [Evidence](experiments/rel-b-repeat-protocol.md). |
-| PR52 | Storage/TokenEconomizer merged2November at5fb6c50. Native TokenEconomizer savings/delivery remain unverified; no new installation. |
+| Living-muscle robots |105.9s English film/cover owner-accepted; [YouTube](https://youtu.be/LIbkbgDCgKM) owner-reported. Primary sources retained; no scientific reproduction or audience outcome. |
+| InfraDev |109.4167s English film/sound/cover owner-accepted; [YouTube](https://youtu.be/h3xC5FRlW30) owner-reported. [Production](productions/infradev.md) and [economical repeat method](methods/short-research-production.md). Cache/render times are scoped evidence, not measured labour savings. |
+| Trois paquets. Une énigme. |106.958s French illustrated puzzle accepted in both aspects. [YouTube](https://youtu.be/OHU26SiXCoU), [TikTok](https://vt.tiktok.com/ZSp24TUJ1/) and [book-page embed](https://abvx.xyz/books/les-petites-affaires-du-port) owner-reported. [Closed case](productions/harbour-three-parcels.md), [repeatable recipe](methods/french-illustrated-puzzle.md). Cleanup preserves required input MP4s; voice permission owner-reported, document pending. |
 
-## Protected waits and next-production rule
+Publication links do not independently prove public visibility, uploaded-file
+identity, metrics or revenue. [Cycle slate and preserved directions](productions/post-rel-c-slate-2026-11-05.md).
 
-- SSI v2.1: three new films owner-approved; partner response and configured8November
-  autonomous outcome remain open. Do not send/publish or alter its schedule here.
+## Reuse and research
+
+- [Deduplicated tool intake](research/tool-intake-2026-11-05.md), [Images follow-up](research/images-2-6-2026-11-05.md) and [bounded queue](experiment-queue.md#new-tool-intake--5-november-2026) are research, not new qualifications. Stageshow, MOSS-Nano, Three.js regression and other candidates need a fitting scoped trial; no tool tour or bulk install.
+- Every new brief decides audience/language and YouTube/TikTok suitability before assembly. Deliver direct media/subtitle links plus one browser-readable text document per platform. No automatic publishing authority.
+- REL-D/M6 remains a transferable-operation goal: another operator/receiving project must actually complete/resume a bounded route. Written recipes and same-operator repeats alone do not close it.
+
+## Protected waits
+
+- RUN-AUDIO-01 stays near-term without detail or a fixed slot, awaiting the owner's concept document. Do not invent a20-minute pilot, workout structure, tools or schedule.
+- SSIv2.1: three films owner-approved; partner feedback and configured8November autonomous outcome remain open. Do not send/publish or alter its schedule here.
 - Gallery Lava: stock ShareAlike owner decision remains separate/open; no invented clearance.
-- TikTok Lumière Noire / @lumierenoire.films: first film owner-reported published;
-  Ukraine region retained after unsuccessful France change, monetisation not enabled.
-  Learn from actual24h/7d data when available; no recurring analytics job created.
-- Every new brief decides YouTube/TikTok suitability and plans native aspects/packages
-  accordingly. No automatic publishing authority. Instagram discussion remains later.
-- Future book methods/cases can be maintained with/without Framewright; no manuscript
-  chapter or next film selected by this closeout. Queue novelty does not reorder work.
+- TikTok Lumière Noire / @lumierenoire.films: owner reports No Further Claims and Three Parcels published. Ukraine region retained; monetisation not enabled at launch. Actual comparable metrics remain uncollected here; no new analytics job. Instagram discussion remains later.
+- BOOK-01 retains its own evidence/rights gate; method notes do not authorise manuscript chapters.
 
-[Prior detailed current-status notes, historical](history/next-cycle-through-2026-11-04.md).
+## Prior anchors
+
+[REL-C release audit](release-audit-0.8.0.md) ·
+[No Further Claims method](methods/coherent-manga-production.md) ·
+[Four training results](methods/training-to-fiction-2026-11-03.md) ·
+[Airport→Menton](productions/azur-airport-menton.md) ·
+[REL-B repeat](experiments/rel-b-repeat-protocol.md).
+PR52storage/TokenEconomizer and PR53/54REL-C work are historical completed steps,
+not the next task. [Pre4November status history](history/next-cycle-through-2026-11-04.md).
