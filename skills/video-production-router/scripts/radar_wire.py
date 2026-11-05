@@ -142,7 +142,7 @@ def receive(root,role,row,apply):
     with locked(folder):
         saved=state(root,role);identity=row['message_id'];kind=row['kind'];payload=row['payload']
         if kind=='receipt':
-            if set(payload)!={'message_id','result','reason'} or not isinstance(payload['message_id'],str) or not HEX.fullmatch(payload['message_id']) or payload['result'] not in {'applied','duplicate','pending','rejected'} or not isinstance(payload['reason'],str):raise ValueError('Invalid receipt')
+            if set(payload)!={'message_id','result','reason'} or not isinstance(payload['message_id'],str) or not HEX.fullmatch(payload['message_id']) or payload['result'] not in {'applied','duplicate','pending','rejected'} or not isinstance(payload['reason'],str):return {'result':'rejected','reason':'Invalid receipt','message_id':identity}
             if not (folder/'outbox'/(payload['message_id']+'.json')).is_file():return {'result':'pending','reason':'Unknown outbound message','message_id':identity}
             saved['acks'][identity]=copy.deepcopy(row);atomic(folder/'state.json',saved)
             return {'result':'applied','reason':'Acknowledgement stored; no reply','message_id':identity}

@@ -189,4 +189,29 @@ class GitHubFollowupTest(unittest.TestCase):
         self.assertIn('rejected',[r['result'] for r in results]);self.assertIn('f'*64,wire.state(self.exchange,'framewright')['data']['menus'])
         row=self.studio.export_status(self.project,self.exchange);self.assertEqual(row['kind'],'production_status')
 
+class RecoveryFollowupTest(unittest.TestCase):
+    setUp=StudioWorkflowTest.setUp
+    select=StudioWorkflowTest.select
+    def test_stale_topic_is_not_removed_from_required_acceptance(self):
+        import json
+        from unittest.mock import patch
+        self.select();d=json.loads(self.project.read_text());out={'path':'final.mp4','sha256':'b'*64,'bytes':1};old={'path':'voice.wav','sha256':'c'*64,'bytes':1};d['inputs']={'voice':{**old,'sha256':'d'*64}};d['artifacts']={'final':{'file':out}}
+        for i,(kind,topic,result) in enumerate([('creative','facts','rejected'),('creative','style','accepted'),('listening','audio','accepted')]):
+            pins={'output:final':out}
+            if i==0:pins['input:voice']=old
+            d['journal'].append(dict(id='e'+str(i),subject='output:final',kind=kind,topic=topic,result=result,pins=pins))
+        with patch.object(self.studio,'project_data',return_value=d):row=self.studio.export_status(self.project,self.exchange)
+        self.assertFalse(row['payload']['outputs'][0]['accepted'])
+    def test_invalid_receipt_does_not_prevent_next_checkpoint_export(self):
+        self.select();row=wire.message('receipt','radar','ack:fixture','e'*64,0,'2026-11-05T12:00:00+00:00',{});wire.publish(self.exchange,'radar',row)
+        results=wire.drain(self.exchange,'framewright',self.studio.apply_message);self.assertEqual(results[0]['result'],'rejected')
+        self.assertEqual(self.studio.export_status(self.project,self.exchange)['kind'],'production_status')
+    def test_frozen_prospective_retry_ignores_new_selection_freshness(self):
+        from unittest.mock import patch
+        args=(self.project,self.exchange,'framewright:fixture','a'*64,'idea-1','prospective_hypothesis')
+        with patch.object(wire,'publish',side_effect=OSError('outbox unavailable')):
+            with self.assertRaises(OSError):self.studio.select(*args,owner_approved=True,before_production=True,now='2026-11-05T12:00:00+00:00')
+        row=self.studio.select(*args,owner_approved=True,now='2026-11-10T12:00:00+00:00')
+        self.assertEqual(row['payload']['selected_at'],'2026-11-05T12:00:00+00:00')
+
 if __name__=='__main__':unittest.main()

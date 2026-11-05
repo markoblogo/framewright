@@ -50,11 +50,7 @@ def select(project,root,project_id,revision,idea_id,mode,owner_approved=False,be
     idea=next((x for x in menu['ideas'] if x['id']==idea_id),None)
     if idea is None:raise ValueError('Unknown idea')
     now=now or datetime.now(timezone.utc).isoformat()
-    if mode=='prospective_hypothesis':
-        if not before_production or any(a.get('file') for a in d['artifacts'].values()):raise ValueError('Before-production owner attestation and no retained output required')
-        for s in idea['sources']:
-            if not timedelta(0)<=W.timestamp(now)-W.timestamp(s['checked_at'])<=timedelta(hours=72):raise ValueError('Refresh stale/future idea sources before new production')
-    elif mode!='retrospective_observation':raise ValueError('Unknown link mode')
+    if mode not in {'prospective_hypothesis','retrospective_observation'}:raise ValueError('Unknown link mode')
     p=dict(project_id=project_id,radar_idea_id=idea_id,research_revision=revision,idea_sha256=W.digest(idea),selected_at=now,link_mode=mode,owner_approval=True,timing_basis='retrospective owner link' if mode.startswith('retro') else 'owner before-production attestation; not a Radar experiment approval')
     W.association_payload(p)
     linkpath=project.parent/'radar-link.json'
@@ -70,6 +66,10 @@ def select(project,root,project_id,revision,idea_id,mode,owner_approved=False,be
                 if existing is not None and existing!=p:raise ValueError('Project identity collision')
             else:
                 if existing is not None:raise ValueError('Project identity already used at another project path')
+                if mode=='prospective_hypothesis':
+                    if not before_production or any(a.get('file') for a in d['artifacts'].values()):raise ValueError('Before-production owner attestation and no retained output required')
+                    for s in idea['sources']:
+                        if not timedelta(0)<=W.timestamp(now)-W.timestamp(s['checked_at'])<=timedelta(hours=72):raise ValueError('Refresh stale/future idea sources before new production')
                 link={'association':p,'frozen_idea':idea,'export_sequence':0,'last_export_hash':None}
                 W.atomic(linkpath,link,immutable=True)
         st['data'].setdefault('links',{})[project_id]=p;W.atomic(W.directory(root,'framewright')/'state.json',st)
@@ -92,7 +92,8 @@ def export_status(project,root):
 
 def _export_locked_status(project,root):
     d=project_data(project);linkpath=project.parent/'radar-link.json'
-    J=runpy.run_path(str(BASE/'journal.py'));effective=J['project'](d,{})['effective']
+    J=runpy.run_path(str(BASE/'journal.py'));projection=J['project'](d,{});effective=projection['effective']
+    latest_topics={(r['subject'],r['kind'],r['topic']):r['id'] for r in d.get('journal',[])}
     with W.locked(project.parent):
         link=W.read(linkpath);a=link['association'];outputs=[];pubs=[]
         for ident,artifact in d['artifacts'].items():
@@ -100,7 +101,8 @@ def _export_locked_status(project,root):
             if not pin:continue
             subject='output:'+ident
             reviews=[r for r in effective if r['subject']==subject and r['pins'].get(subject)==pin and r['kind'] in {'creative','listening'}]
-            accepted=all(any(r['kind']==k for r in reviews) and all(r['result']=='accepted' for r in reviews if r['kind']==k) for k in ['creative','listening'])
+            stale_required=any(r['subject']==subject and r['kind'] in {'creative','listening'} and latest_topics.get((r['subject'],r['kind'],r['topic']))==r['id'] for r in projection['stale'])
+            accepted=not stale_required and all(any(r['kind']==k for r in reviews) and all(r['result']=='accepted' for r in reviews if r['kind']==k) for k in ['creative','listening'])
             outputs.append({'id':ident,'sha256':pin['sha256'],'bytes':pin['bytes'],'accepted':accepted})
             publications={r['url']:r for r in effective if r['subject']==subject and r['pins'].get(subject)==pin and r['kind']=='publication'}
             for r in publications.values():

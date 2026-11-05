@@ -96,10 +96,11 @@ not trigger the hook. A missing external exchange produces a local pending recei
 not a failed project save or another storage tree.
 
 On the Radar side `enable-auto --radar-root ROOT` enables the existing `run`
-boundaries: pull associations/statuses, include known linked video IDs in the
-existing acquisition, then export the retained research/menu and available7/28-day
-calendar report snapshots. This does not make an extra API acquisition or change
-its schedule. Optional exchange failures preserve the primary Radar report/result.
+boundaries: pull associations/statuses, then export the retained research/menu and
+available7/28-day
+calendar report snapshots. Optional links do not extend primary experiment tracking or add age-window
+queries to its budget. Missing calendar rows remain pending. No extra acquisition
+or schedule change is made. Optional exchange failures preserve the primary Radar report/result.
 Each side processes at most250 peer outbox files and100 linked videos per run;
 capacity exhaustion requires manual rotation and is recorded pending.
 
