@@ -1093,3 +1093,11 @@ book film. Documentation-only; exact backend/variant, runtime GIF/SVG and measur
 quality/speed remain unverified. Built-in imagegen has no exposed model selector;
 never relabel a generic call as a verified 2.6 trial. No paid fallback or new install.
 Use a fitting future owner-selected production; the Radar → book cycle is complete and this probe remains unexecuted.
+
+
+### YT-RADAR-EXCHANGE-01 — follow-through gate
+
+Manual two-film retrospective exchange passed locally; [scope and limitations](methods/radar-exchange.md).
+Next fitting owner-selected film may test a prospective selection → production →
+publication → actual analytics cycle. Not started by this queue entry. Owner follow-up authorises opt-in local hooks;
+no new schedule, film or extra API acquisition. No audience result yet.

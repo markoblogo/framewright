@@ -531,6 +531,12 @@ def main():
                 else:mark(data,path.parent,args.step,args.state,args.evidence)
             save(path,data)
         print('Saved checkpoint:',path)
+        if (path.parent/'radar-auto.json').exists():
+            try:
+                from radar_auto import checkpoint
+                print('Radar exchange:',checkpoint(path)['result'])
+            except Exception:
+                print('Radar exchange: pending; saved project retained')
     except (OSError,ValueError,KeyError,TypeError,ImportError) as exc:
         parser.error(str(exc))
 

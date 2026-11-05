@@ -374,3 +374,13 @@ qualification. New tool intake remains proposed; no queue-wide testing.
 RUN-AUDIO-01 awaits the owner's concept without a fixed slot. Next film remains
 unselected; refresh the existing Radar slate before any proposal. No scheduler,
 account change, new production or release follows from this closeout.
+
+
+### YT-RADAR-EXCHANGE-01 — local manual control,5November2026
+
+[Thin exchange adapters](methods/radar-exchange.md) now link two existing films to
+retained Radar ideas and return pinned publication receipts. Duplicate/recovery
+checks passed locally; the existing InfraDev intake remains unchanged. Analytics
+for both videos are pending in the retained acquisition. Opt-in normal-cycle hooks are implemented under the owner follow-up; their first
+actual scheduled outcome, new prospective production and mature feedback remain open; REL-D is not closed.
+No separate release is required for this development slice.
