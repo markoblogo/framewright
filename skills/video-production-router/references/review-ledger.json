@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -1230,6 +1230,15 @@
           "finding": "Current film accepted for publication; mouth timing adequate, facial expressions jerky/artificial. Static imagegen atlas utility does not establish natural motion. Next similar production needs a short improved-motion trial.",
           "evidence": [
             "docs/experiments/framewright-micro-lesson.md"
+          ]
+        },
+        {
+          "date": "2026-11-05",
+          "scope": "Official Images 2.6 announcement and proposed IMG26-01; no generation trial",
+          "finding": "Vendor describes editing/layout/motion and API variants. Current built-in schema does not expose backend/variant or native GIF/SVG format selection. Exact 2.6 provenance unverified; living-muscle cover remains generic built-in imagegen, model unknown. Preserve previous bounded qualification; no promotion from documentation.",
+          "evidence": [
+            "docs/research/images-2-6-2026-11-05.md",
+            "docs/experiment-queue.md"
           ]
         }
       ]

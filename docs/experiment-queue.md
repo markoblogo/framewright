@@ -1,5 +1,9 @@
 # Proposed experiment queue
 
+## New tool intake — 5 November 2026
+
+[Assessment and exact pass boundaries](research/tool-intake-2026-11-05.md). M4/R05/R07: STAGESHOW-01 and PAGE-TO-SCENE-01 attach first to a suitable approved explainer; MOSS-NANO-01 requires Mac/environment/voice-rights preflight; THREE187-01 is isolated version regression; MAGO-AUTHOR-01 is later authoring-only; DESIGN-SKILLS-01 is low-priority selective review-page adaptation. None executed. Existing IMG26-01, H3-MOTION-01, OPENJUTSU-01, SULPHUR-REF-01, NEMOTRON-ASR-01 and SUNO-MCP-01 remain single records; Pie Menu remains reference only. P-H3, Orbit LoRA and MOVA stay outside active local tests. No production reorder or release.
+
 ## Social-media packaging intake — 4 November2026
 
 [SOCIAL-01 module](social-media/README.md) adds SM-PACK/READ/MEASURE first and conditional SHOTS/SPEECH/DISTRIBUTE/VIDIQ candidates. Research only; no installs or paid calls. TikTok identity/account review precedes adaptation; no live changes or deletion. Exact pass boundaries in candidates.json.
@@ -1070,3 +1074,22 @@ blanket tool qualifications. Do not start the whole queue or a new install/relea
 - R06-MASK-01 remains proposed: no automatic contour/occlusion qualification follows from manual crop fixes. R06-VOICE-01 remains proposed; this film has no narration.
 - Future fitting trial: compare a single9:16 action layout against simultaneous repeated context/detail panels, judging geography/readability/redundancy; no new production authorised here.
 - MANGA-PANEL-01 export remains unconfirmed; existing local lettering is the working fallback. Heavy motion/rig tools stay conditional; do not complete the queue merely to release.
+
+
+## Proposed next-production probes —5November2026
+
+[Agreed production order](productions/post-rel-c-slate-2026-11-05.md): First Radar film accepted/published per owner → another Radar pick → book (16:9/9:16) → reassess. Cycle completed: InfraDev and the French Three Parcels film accepted and publication URLs owner-reported. The following were candidate probes, not a new-production order:
+- YT-RADAR-01: one sourced mechanism/reliability explainer, actual production effort and existing Radar7/28-day feedback; no revenue forecast or new automation.
+- LIT-FILM-05: preserve supplied European-comic illustration style in one linked motion/puzzle probe, source-space masks/reading cues; R06-MASK-01 is not qualified by this proposal.
+- RUN-AUDIO-01: near-term placeholder only, awaiting the owner’s concept document. No pilot length, workout structure, tools or schedule selected.
+One active production; new tools only for a specific deficit. Films are complete; these tool probes are not automatically qualified by their completion.
+
+
+## IMG26-01 — Images 2.6, 5 November 2026
+
+[Official-announcement review and bounded probes](research/images-2-6-2026-11-05.md):
+cover/diagram typography → one protected-region edit → optional atlas/loop for the
+book film. Documentation-only; exact backend/variant, runtime GIF/SVG and measured
+quality/speed remain unverified. Built-in imagegen has no exposed model selector;
+never relabel a generic call as a verified 2.6 trial. No paid fallback or new install.
+Use a fitting future owner-selected production; the Radar → book cycle is complete and this probe remains unexecuted.

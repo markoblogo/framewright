@@ -1,11 +1,12 @@
 # Framewright roadmap
 
-Updated4November2026; source version0.8.0 / REL-C. Bounded character-production
-and same-case recovery evidence passed; PR53 merged and CI green. Owner authorised
-release preparation/publication, then a stop for plan discussion. See the
-[REL-C assessment](rel-c-readiness-2026-11-04.md) and [release audit](release-audit-0.8.0.md).
-Earlier dated updates
-below remain history and do not override this current slice. This is the primary **priority and milestone map**. It connects product work,
+Updated5November2026; source version0.8.0 / REL-C published per retained
+[release audit](release-audit-0.8.0.md). The Radar → Radar → French book cycle is
+complete in its stated scope. Owner authorised dependency-aware closeout and a
+documentation PR; no release, merge or new production. See the
+[current slice](next-cycle.md) and [5November closeout](#5-november--post-rel-c-cycle-completed-documentation-closeout).
+Earlier dated entries below are history; they do not restart completed work.
+This is the primary **priority and milestone map**. It connects product work,
 production and experiments; it does not start them or authorize spending/publication.
 The owner requested a stable roadmap that absorbs new ideas without replacing the
 direction each time. The ordering below is the proposed working sequence, adjustable
@@ -355,3 +356,21 @@ Same-case recovery PASS and independent additions review APPROVE; PR53 merged an
 main CI passed. Earlier OPEN recovery/PR53-next-step notes above are historical.
 Publish the authorised0.8.0 bounded methods release after release-PR/package checks.
 Then wait for owner discussion; this does not start REL-D, another film or queued tools.
+
+
+### 5 November — post-REL-C cycle completed; documentation closeout
+
+[Owner-confirmed slate](productions/post-rel-c-slate-2026-11-05.md): both Radar films
+(living-muscle robots and InfraDev) and the French illustrated book film
+[Trois paquets](productions/harbour-three-parcels.md) are accepted and their publication
+URLs owner-reported. The book film has YouTube16:9/TikTok9:16 packages and a book-page
+embed. [French puzzle recipe](methods/french-illustrated-puzzle.md) preserves voices,
+balloons, logic/reveal boundaries, corrections and known motion/source limits.
+
+Owner authorised dependency-aware cleanup and a consolidated documentation/research
+PR, without a release. YT-RADAR-01 maps to R04/R09/RV01; LIT-FILM-05 to M5/R07/R09.
+Neither scoped repeat closes REL-D/M6 independent transfer or general mask/acting
+qualification. New tool intake remains proposed; no queue-wide testing.
+RUN-AUDIO-01 awaits the owner's concept without a fixed slot. Next film remains
+unselected; refresh the existing Radar slate before any proposal. No scheduler,
+account change, new production or release follows from this closeout.
