@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:framewright:radar-exchange:v1",
+  "title": "Radar/Framewright structural envelope",
+  "description": "Structural envelope only. Semantic payload validation, source/ID/metric checks and canonical hashes are enforced by the vendored v1 wire validators.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "kind",
+    "producer",
+    "entity_key",
+    "source_revision",
+    "occurred_at",
+    "payload",
+    "payload_sha256",
+    "message_id"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "radar-framewright/v1"
+    },
+    "kind": {
+      "enum": [
+        "idea_menu",
+        "association",
+        "production_status",
+        "analytics_snapshot",
+        "receipt"
+      ]
+    },
+    "producer": {
+      "enum": [
+        "radar",
+        "framewright"
+      ]
+    },
+    "entity_key": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9:_.-]{0,159}$"
+    },
+    "source_revision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sha256",
+        "sequence"
+      ],
+      "properties": {
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "sequence": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "payload": {
+      "type": "object"
+    },
+    "payload_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "message_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

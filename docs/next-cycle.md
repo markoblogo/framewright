@@ -3,16 +3,23 @@
 Updated5November2026 · source0.8.0 / REL-C published per retained release audit.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md).
 
-## Current boundary — close the production cycle and prepare a documentation PR
+## Current boundary — Radar exchange reviewed locally; automatic hooks prepared
 
-Owner authorised Three Parcels closeout, dependency-aware cleanup and consolidation
-of accumulated production/research documentation into a PR. No separate release,
-merge, new production or queued-tool trial is authorised by this closeout.
+Three Parcels closeout and the production documentation are prepared in PR55;
+merge/release remain separate owner decisions. The owner accepted the small Radar
+exchange contract and authorised its implementation and two-film control.
+[Local adapter and evidence](methods/radar-exchange.md): two retrospective links
+and publication statuses exchanged without duplicates; existing InfraDev intake
+referenced unchanged. Current retained analytics are pending for both films.
+Owner authorised independent review, opt-in checkpoint/normal-run hooks and
+commit/push/PR without release or merge. Hooks add no schedule, extra acquisition,
+experiment registration or automatic production. Activation/first actual normal-run
+outcome must be recorded separately; future prospective feedback remains unproven.
 
 The agreed cycle **Radar → Radar → illustrated book** is complete in its scoped
 production/publication evidence. Next-production choice is a later owner decision;
-GitHub Agentic Workflows is a reserve from the earlier Radar slate, not a selected
-film. Refresh the actual Radar list and sources before proposing it.
+GitHub Agentic Workflows is a reserve, not a selected film. Refresh the actual
+Radar list and sources before proposing it.
 
 ## Completed current cycle
 
