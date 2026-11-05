@@ -85,7 +85,13 @@ def youtube_id(url):
 
 
 def export_status(project,root):
-    project=Path(project);d=project_data(project);linkpath=project.parent/'radar-link.json'
+    project=Path(project);P=runpy.run_path(str(BASE/'project.py'))
+    with P['locked'](project):
+        return _export_locked_status(project,root)
+
+
+def _export_locked_status(project,root):
+    d=project_data(project);linkpath=project.parent/'radar-link.json'
     J=runpy.run_path(str(BASE/'journal.py'));effective=J['project'](d,{})['effective']
     with W.locked(project.parent):
         link=W.read(linkpath);a=link['association'];outputs=[];pubs=[]
@@ -93,8 +99,8 @@ def export_status(project,root):
             pin=artifact.get('file')
             if not pin:continue
             subject='output:'+ident
-            latest={r['kind']:r for r in effective if r['subject']==subject and r['pins'].get(subject)==pin and r['kind'] in {'creative','listening'}}
-            accepted=all(latest.get(k,{}).get('result')=='accepted' for k in ['creative','listening'])
+            reviews=[r for r in effective if r['subject']==subject and r['pins'].get(subject)==pin and r['kind'] in {'creative','listening'}]
+            accepted=all(any(r['kind']==k for r in reviews) and all(r['result']=='accepted' for r in reviews if r['kind']==k) for k in ['creative','listening'])
             outputs.append({'id':ident,'sha256':pin['sha256'],'bytes':pin['bytes'],'accepted':accepted})
             publications={r['url']:r for r in effective if r['subject']==subject and r['pins'].get(subject)==pin and r['kind']=='publication'}
             for r in publications.values():

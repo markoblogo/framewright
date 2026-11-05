@@ -159,4 +159,34 @@ class PublicationIdentityTest(unittest.TestCase):
         p=dict(project_id='fixture',radar_idea_id='idea',research_revision='a'*64,source_journal_sha256='b'*64,status='published',outputs=[dict(id='final',sha256='c'*64,bytes=1,accepted=True)],publications=[dict(platform='youtube',video_id='abcdefghijk',url='https://youtu.be/zzzzzzzzzzz',output_id='final',receipt_id='e1',provenance='owner_report',recorded_at='2026-11-05T12:00:00+00:00',master_sha256='c'*64)])
         with self.assertRaises(ValueError):wire.status_payload(p)
 
+class GitHubFollowupTest(unittest.TestCase):
+    setUp=StudioWorkflowTest.setUp
+    select=StudioWorkflowTest.select
+    def test_unrelated_review_topic_cannot_erase_rejection(self):
+        import json
+        from unittest.mock import patch
+        self.select();d=json.loads(self.project.read_text());pin={'path':'final.mp4','sha256':'b'*64,'bytes':1};d['artifacts']={'final':{'file':pin}}
+        for i,(kind,topic,result) in enumerate([('creative','facts','rejected'),('creative','style','accepted'),('listening','audio','accepted')]):
+            d['journal'].append(dict(id='e'+str(i),subject='output:final',kind=kind,topic=topic,result=result,pins={'output:final':pin}))
+        with patch.object(self.studio,'project_data',return_value=d):row=self.studio.export_status(self.project,self.exchange)
+        self.assertFalse(row['payload']['outputs'][0]['accepted']);self.assertEqual(row['payload']['status'],'ready_for_review')
+    def test_snapshot_read_holds_the_actual_project_writer_lock(self):
+        import runpy,json
+        from unittest.mock import patch
+        self.select();P=runpy.run_path(str(SCRIPTS/'project.py'));d=json.loads(self.project.read_text())
+        def snapshot(path):
+            with self.assertRaises(ValueError):
+                with P['locked'](path):pass
+            return d
+        with patch.object(self.studio,'project_data',side_effect=snapshot):self.studio.export_status(self.project,self.exchange)
+    def test_null_timestamp_peer_does_not_block_valid_menu_or_status(self):
+        import json
+        self.select();good=self.menu.copy();bad={**good,'occurred_at':None}
+        folder=wire.directory(self.exchange,'radar')/'outbox'
+        (folder/(bad['message_id']+'.json')).write_text(json.dumps(bad))
+        other={**self.menu['payload'],'packet_sha256':'f'*64};msg=wire.message('idea_menu','radar','menu:other','f'*64,0,'2026-11-05T12:00:00+00:00',other);wire.publish(self.exchange,'radar',msg)
+        results=wire.drain(self.exchange,'framewright',self.studio.apply_message)
+        self.assertIn('rejected',[r['result'] for r in results]);self.assertIn('f'*64,wire.state(self.exchange,'framewright')['data']['menus'])
+        row=self.studio.export_status(self.project,self.exchange);self.assertEqual(row['kind'],'production_status')
+
 if __name__=='__main__':unittest.main()

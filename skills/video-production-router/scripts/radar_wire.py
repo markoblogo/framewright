@@ -30,6 +30,7 @@ def digest(value):return hashlib.sha256(canonical(value)).hexdigest()
 
 
 def timestamp(value):
+    if not isinstance(value,str):raise ValueError('Timestamp must be a string')
     t=datetime.fromisoformat(value.replace('Z','+00:00'))
     if t.tzinfo is None:raise ValueError('Timezone required')
     return t
