@@ -1,11 +1,7 @@
 # Framewright roadmap
 
 Updated 6 November 2026; source version 0.8.0 / REL-C published per retained
-[release audit](release-audit-0.8.0.md). The original Radar → Radar → French book cycle
-is complete; the subsequent prospectively selected GitHub Agentic Workflows film
-is accepted and owner-reported published. Current scope is dependency-aware closeout,
-standard seekable review and a documentation/helper PR, without merge or release.
-See [current work](next-cycle.md) and the [closed case](productions/github-agentic-workflows.md).
+[release audit](release-audit-0.8.0.md). The Radar/book cycle and subsequent Agentic, Feather Star, Real2Sim and EmbeddingGemma2 films have owner-reported publication evidence. PR58 is merged. Current authorised work consolidates the last two closeouts and6November research/internal-scope records in one PR, with no release or merge authorised. Next creative preparation: a Marcus Aurelius zombie-apocalypse book episode after the closeout, with story/style/donors agreed first. See [current work](next-cycle.md).
 Earlier dated entries below are history; they do not restart completed work.
 This is the primary **priority and milestone map**. It connects product work,
 production and experiments; it does not start them or authorize spending/publication.
@@ -14,6 +10,8 @@ direction each time. The ordering below is the proposed working sequence, adjust
 by an explicit owner decision. No new film is selected by this document.
 
 ## Direction and strategic outcomes
+
+[Internal studio scope](internal-studio-scope.md), clarified6November: images, audio products, game visuals, platform-specific social content and receiving-project curation accompany the public video-first focus. Current evidence and planned Instagram/Facebook/AzurMenton transfer remain separate; no all-platform autopublisher is claimed. This is a future expansion path: manual output → reusable template → receiving-project handoff → separately authorised automation; nothing is activated by this documentation.
 
 **A personal video-production studio led by an agent:** understand the intended
 result, propose feasible ways to make it, carry the chosen project through production,

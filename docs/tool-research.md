@@ -1,5 +1,13 @@
 # Tool review and test inventory
 
+## Tool batch and internal scope — 6 November 2026
+
+[20-subject deduplicated assessment](research/tool-intake-2026-11-06.md): local sand3d/OpenDirector/Ucupaint candidates; conditional service/asset trials; explicit Apple MLX memory and Windows/CUDA gates. Existing Meshy/Tripo/Krea research extended, not repeated. [Internal studio scope](internal-studio-scope.md) includes image/audio/game-visual products and platform-specific content/handoffs; planned Instagram/Facebook and receiving-project automation remain distinct from proven work. Research only, no installs/generation/spend.
+
+## Real2Sim closeout — 6 November 2026
+
+[MuJoCo CPU dynamics](productions/real2sim-twins.md) has one accepted-film toy friction trial on Apple Silicon; copied state data drove original Pillow graphics. Native rendering, robot reconstruction and calibrated contact remain untested. [Reusable recipe and rejected page transition](methods/physics-backed-research-explainer.md). No new general adapter/profile or model qualification.
+
 ## Tool batch — 5 November 2026
 
 [Deduplicated assessment](research/tool-intake-2026-11-05.md): seven existing subjects retained; new Mac-first and conditional candidates distinguished from GPU/server references. Six X posts remain inaccessible. Documentation review only; no installs or qualification.

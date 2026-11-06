@@ -1,5 +1,9 @@
 # Grow the lab without growing unsupported claims
 
+6November: [EmbeddingGemma2 closeout](productions/media-semantic-search.md) and [illustrative media-search recipe](methods/illustrative-media-search.md): published per owner, retrospective Radar delivery verified, dependency-aware cleanup complete. No model inference or general retrieval qualification.
+
+[Real2Sim](productions/real2sim-twins.md):111s accepted English explainer, original MuJoCo toy dynamics, source-qualified publication package and verified Radar publication/ack duplicate protection. [Method](methods/physics-backed-research-explainer.md); no real-world calibration or completed analytics cycle.
+
 [Training-to-fiction consolidation,3November2026](methods/training-to-fiction-2026-11-03.md) links four accepted films, scoped methods, unresolved limits and the next bounded probes.
 
 [Exin reported AI-agent experiment](experiments/exin-agent-explainer.md):104s source-photo explainer with local English narration and a bounded PixiJS camera/annotation trial. Preview accepted; [publication](https://youtu.be/tgMU4DCjohk) reported by owner. Medical outcome remains an attributed claim, independent of the production result.

@@ -1,5 +1,7 @@
 # Personal studio: direction and production workflows
 
+6November2026 clarification: [internal studio scope](internal-studio-scope.md) includes video, images, audio, game visuals and platform-specific social deliverables/connected-project handoff. Public focus remains video-first. The dated programme below remains historical; [next-cycle.md](next-cycle.md) is the current state.
+
 Current status, 2026-10-24: schema-2 production memory, scene/material/cut planning
 and local kits are implemented. Four PlayMCP games, the Jekyll virtual-set book
 promo, the owner-narrated service review, two English Trends-led Shorts and two

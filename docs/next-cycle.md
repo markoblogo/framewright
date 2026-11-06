@@ -3,20 +3,28 @@
 Updated 6 November 2026 · source 0.8.0 / REL-C; no new release requested.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md).
 
-## Current boundary — Feather Star published; documentation closeout
+## Current boundary — Real2Sim closed; no new production started
 
-[Feather Star](productions/feather-star-swimmer.md) is complete: accepted 90s English 16:9 film, owner-reported [YouTube](https://youtu.be/dQAm7kw49co), publication kit and dependency-aware sanitation. [Research-demonstration recipe](methods/research-demonstration-explainer.md) records action/voice correspondence, exact clip frame counts and current cache limits. No TikTok adaptation commissioned.
+[Real2Sim closed case](productions/real2sim-twins.md):111s English16:9 film accepted with sound; [YouTube](https://youtu.be/qB9P3oFm6fg) owner-reported6November2026. [Repeatable recipe](methods/physics-backed-research-explainer.md) records calculated toy friction, original motion graphics, targeted corrections and with/without Framewright routes. MuJoCo3.17.0 CPU trial is bounded; no robot reconstruction or real-world calibration qualified. The compressed/receding page transition was rejected and removed.
 
-PR55/56 and Radar-side ABVX-OS16 merged on 5 November. Framewright PR57 (Agentic closeout and seekable review) is also merged; it is not awaiting a decision. Existing checkpoint/normal-run hooks add no schedule or automatic selection/production/publication.
+Radar's project/idea/video link and published status are verified in retained state. Exact repeated publication delivery returns duplicate; acknowledgement return/repeat is checked. Both7/28calendar exports against the latest retained acquisition remain pending: no actual matching video report. No new API acquisition, schedule, project hook or recommendation refresh. Independent public visibility, cover usage and audience results remain unverified.
 
-Radar now holds owner-reported published statuses for both Agentic Workflows and Feather Star. Feather Star's link is explicitly retrospective; exact repeat delivery returned duplicate. Manual receiver acknowledgements do not establish a successful scheduled cycle. Available retained 7/28-day exports for Feather Star remain pending; no matching actual report. No new acquisition, account changes, recommendation change or new project auto-hook.
+Dependency-aware sanitation removed27 intermediate exports/frame samples (10.31MiB);32 protected media/source files rehashed unchanged. Final, package, editable recipe, physics states, voice stems/mix and accepted pilot review anchor remain. Private evidence: studio `productions/real2sim-twins/closeout/`.
 
-Current authorised task: finish this small documentation/closeout PR, checks and review, without merging or releasing. After handoff, choose a new film from refreshed existing Radar recommendations or an owner brief. No new production is selected here.
+Owner's next tool batch is [researched and retained](research/tool-intake-2026-11-06.md):20subjects, with conditional local/service trials and explicit Mac/resource/rights limits. [Internal scope](internal-studio-scope.md) includes image/audio/game-visual products, social packaging and receiving-project curation; autopublication remains planned, not a current general capability.
+
+[EmbeddingGemma2 is closed](productions/media-semantic-search.md):112.292s English1080p film accepted with sound, YouTube publication owner-reported, package delivered, retrospective Radar association/status/duplicate round trip verified. [Repeatable recipe](methods/illustrative-media-search.md) preserves authored-result and source-resolution limits; no embedding inference or model qualification. Two silent intermediates removed after dependency/hash checks (~33.7MiB); accepted files preserved.
+
+Current authorised work: consolidate Real2Sim, EmbeddingGemma2 and6November research/internal-scope records in one documentation/catalogue PR; independent review and CI, then stop for a separate merge decision. No new release. Next production after this closeout is a Marcus Aurelius zombie-apocalypse book episode: agree the short story, visual direction and donors first, considering16:9/9:16 together. This note does not start generation. RUN-AUDIO waits for the owner's concept.
+
+[Feather Star](productions/feather-star-swimmer.md) is complete and owner-reported published. PR58 merged at9def5ce; pre/post-merge CI passed. No release. Radar holds Agentic Workflows and Feather Star publication statuses; Feather Star's association is retrospective. Actual normal-run analytics/recommendation feedback remain open. No new acquisition, schedule or project auto-hook.
 
 ## Completed current cycle
 
 | Case | Outcome and boundary |
 | --- | --- |
+| EmbeddingGemma2 |112.292s English16:9 accepted; [YouTube](https://youtu.be/xiUkE1jhTw8) owner-reported. [Closed case](productions/media-semantic-search.md), [illustrative search recipe](methods/illustrative-media-search.md), retrospective Radar delivery/duplicate check; actual analytics unknown. No model inference. |
+| Real2Sim |111s English16:9 accepted and [YouTube](https://youtu.be/qB9P3oFm6fg) owner-reported; scoped MuJoCo friction test, explicit rejected page transition, verified Radar publication/ack duplicate protection; actual analytics pending. [Case](productions/real2sim-twins.md). |
 | Feather Star swimmer |90s English 16:9 accepted, [YouTube](https://youtu.be/dQAm7kw49co) owner-reported; retrospective Radar publication receipt verified; actual analytics pending. [Case](productions/feather-star-swimmer.md). |
 | GitHub Agentic Workflows | 111.933333s English v2 accepted and [YouTube](https://youtu.be/Q9lzhnQEGjQ) owner-reported. Manual receiver publication receipt verified; actual normal-run analytics/recommendation feedback pending. [Case](productions/github-agentic-workflows.md). |
 | Living-muscle robots |105.9s English film/cover owner-accepted; [YouTube](https://youtu.be/LIbkbgDCgKM) owner-reported. Primary sources retained; no scientific reproduction or audience outcome. |
