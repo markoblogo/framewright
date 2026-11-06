@@ -1101,3 +1101,8 @@ Manual two-film retrospective exchange passed locally; [scope and limitations](m
 Next fitting owner-selected film may test a prospective selection → production →
 publication → actual analytics cycle. Not started by this queue entry. Owner follow-up authorises opt-in local hooks;
 no new schedule, film or extra API acquisition. No audience result yet.
+
+
+### 6 November — bounded research-explainer follow-up
+
+[Feather Star closeout](productions/feather-star-swimmer.md) retains original-footage + diagram reuse and exact-length clip checks. On a fitting future selected film only: qualify content/range/transform-aware clip caching and repeat semantic trace/action checks. Current frame-count-only cache is not generally qualified. No new install, experiment, film or release starts from this entry. Radar retrospective receipt is applied; actual analytics/recommendation feedback remains pending.

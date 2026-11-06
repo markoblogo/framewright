@@ -111,6 +111,8 @@ observations, not proved by synthetic run tests or configuration.
 
 ## Current production and remaining gate — 6 November 2026
 
-Framewright55/56 and ABVX-OS16 merged on 5 November; enabled checkpoint and normal-run hooks are retained. The new prospectively selected [GitHub Agentic Workflows film](../productions/github-agentic-workflows.md) was accepted and owner-reported published. Its publication status is present in Framewright's outbox; the inspected Radar receiving state has not yet processed that message. Export is not receiver acknowledgement.
+Framewright55/56 and ABVX-OS16 are merged; enabled checkpoint and normal-run hooks remain. Framewright57 closed [Agentic Workflows](../productions/github-agentic-workflows.md). Current Radar receiving state contains its owner-reported publication; the earlier awaiting-receiver statement is superseded.
 
-Actual normal-run receipt, mature analytics, interpretation and evidence of recommendation changes remain open. No new acquisition/schedule or automatic production is enabled. This evidence does not close REL-D or justify a release.
+[Feather Star](../productions/feather-star-swimmer.md) was linked after production to the original retained menu as `retrospective_observation`. Radar applied association and published status; exact second deliveries returned duplicate, with receipts returned to Framewright. Primary-source refresh is retained separately, not represented as a new ranking. No prospective hypothesis or experiment registration was backfilled. No new project hook was enabled.
+
+Both Feather Star 7/28-day export attempts against the retained actual acquisition returned pending/no matching report. Manual delivery is not the configured normal-run outcome. Actual subsequent analytics, interpretation and recommendation changes remain open. No new acquisition/schedule or automatic production; REL-D remains open and no release is requested.
