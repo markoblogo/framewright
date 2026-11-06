@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -1597,16 +1597,17 @@
       "id": "tripo-rigging-animation",
       "name": "Tripo Rigging & Animation",
       "url": "https://www.tripo3d.ai/blog/rigging-animation",
-      "reviewed": "2026-10-26",
+      "reviewed": "2026-11-06",
       "upstream_revision": null,
       "disposition": "candidate",
       "review_basis": "Read-only official rigging/animation article, feature/pricing and developer pages; owner-selected bounded queue, no generation or export execution",
-      "scope_and_findings": "Active direct humanoid rig/action candidate: body/hand bones, five presets,1–10s Text to Motion and up to5segments documented. Humanoids T/A-pose and<=100ktriangles; nonhumanoids separatev2.5 without engine presets. No rig deformation, root travel, contacts/joins, export/reuse or two-view quality tested. Studio/API parity unknown; facial/lip-sync and dog support not inferred. Distinct from earlier shark/video-guided reconstruction candidate.",
+      "scope_and_findings": "Active direct humanoid rig/action candidate: body/hand bones, five presets,1–10s Text to Motion and up to5segments documented. Humanoids T/A-pose and<=100ktriangles; nonhumanoids separatev2.5 without engine presets. No rig deformation, root travel, contacts/joins, export/reuse or two-view quality tested. Studio/API parity unknown; facial/lip-sync and dog support not inferred. Distinct from earlier shark/video-guided reconstruction candidate. 6November Canvas follow-up: reusable node-based3D authoring documented; access rollout/export not verified. Not another rig/animation qualification.",
       "licence_note": "Proprietary cloud service; current Studio Free listing public/noncommercial, paid plans private/commercial; API plans/terms separate. Review chosen interface, model/input/output/privacy/animation rights and actual credits before upload/generation. Article quotes20credits rig/20motion, not an approved total budget; no account/upload/spend authority from retention.",
-      "next_trial_or_retest_condition": "Choose cleared simple humanoid, interface and action, review privacy/rights/plan and actual quotes. Rig→5–8s motion→actual FBX/GLB import→two-camera playback, inspect deformation/foot sliding/root motion/action joins and save/reload/reuse. Technical QA and owner review separate. Dog for Good Dog later separate stage; no upload/spend/install or production from queue retention.",
+      "next_trial_or_retest_condition": "Choose cleared simple humanoid, interface and action, review privacy/rights/plan and actual quotes. Rig→5–8s motion→actual FBX/GLB import→two-camera playback, inspect deformation/foot sliding/root motion/action joins and save/reload/reuse. Technical QA and owner review separate. Dog for Good Dog later separate stage; no upload/spend/install or production from queue retention. TRIPO-CANVAS-01: one original asset step revision/export/reuse after actual credits, privacy and rights checks; preserve prior rig-specific test separately.",
       "evidence": [
         "docs/research/tripo-rigging-animation.md",
-        "docs/experiment-queue.md"
+        "docs/experiment-queue.md",
+        "docs/research/tool-intake-2026-11-06.md"
       ]
     },
     {
@@ -1829,15 +1830,16 @@
       "id": "meshy",
       "name": "Meshy Free",
       "url": "https://docs.meshy.ai/en/webapp/pricing",
-      "reviewed": "2026-10-27",
+      "reviewed": "2026-11-06",
       "review_basis": "Provider terms documentation; no runtime test",
       "upstream_revision": null,
       "disposition": "research_only",
-      "scope_and_findings": "Specific operation costs, animation availability and export require verification.",
+      "scope_and_findings": "Specific operation costs, animation availability and export require verification. 6November Relief follow-up: single-image low/high relief, advertised20credits, no generation or export tested.",
       "licence_note": "Dated free-plan research; current commercial, asset, and account terms require separate review.",
-      "next_trial_or_retest_condition": "Verify current account, selected operation, terms and asset rights before a bounded trial.",
+      "next_trial_or_retest_condition": "Verify current account, selected operation, terms and asset rights before a bounded trial. RELIEF-01: original illustration local Blender displacement baseline first; conditional one Meshy comparison after quote/plan/export/rights admission.",
       "evidence": [
-        "docs/research/online-free-quota-services-2026-10-27.md"
+        "docs/research/online-free-quota-services-2026-10-27.md",
+        "docs/research/tool-intake-2026-11-06.md"
       ]
     },
     {
@@ -2095,6 +2097,311 @@
       "evidence": [
         "docs/research/comic-lettering-tools.md",
         "docs/experiments/no-further-claims-manga-probes.md"
+      ]
+    },
+    {
+      "id": "mujoco",
+      "name": "MuJoCo",
+      "url": "https://mujoco.org/",
+      "reviewed": "2026-11-06",
+      "review_basis": "Official PyPI3.17.0 installed in shared external Python3.12 runtime; retained CPU friction experiment and owner-accepted Real2Sim film.",
+      "upstream_revision": "3.17.0",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Apple Silicon CPU cube/plane dynamics,0.002s timestep and3s trajectory, two independent repeats per friction setting agree at absolute1e-12. Initial state only; copied positions/quaternions drive original graphics. Native MuJoCo rendering, robot reconstruction, real-object calibration and general simulator accuracy untested.",
+      "licence_note": "Installed MuJoCo3.17.0 package metadata declares Apache-2.0. Asset/model rights and intended use remain separate.",
+      "next_trial_or_retest_condition": "Only a selected need for known-reference contact validation or native renderer host preflight; no broad reinstall or automatic promotion.",
+      "evidence": [
+        "docs/productions/real2sim-twins.md",
+        "docs/methods/physics-backed-research-explainer.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "metawrap",
+      "name": "MetaWrap",
+      "url": "https://www.metawrap.ai/",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "Windows-only MetaHuman topology pipeline, Blender5.0-5.2 plus UE5.6-5.8; not current Mac/Blender4.5.",
+      "licence_note": "GPL add-on with proprietary solver; advertised paid licence and Epic assets/terms separate.",
+      "next_trial_or_retest_condition": "Revisit only for an explicitly selected supported Windows/UE character production.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "krea-production-method",
+      "name": "Krea production-agent method follow-up",
+      "url": "https://www.krea.ai/blog/what-is-krea-agent",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "Existing Krea provider research extended with agent/edit workflow method; exact supplied how-krea-uses-krea article returned404.",
+      "licence_note": "Proprietary service; current model/input/output/account rights and quota unverified.",
+      "next_trial_or_retest_condition": "One fitting selected edit versus existing route; no duplicate orchestrator or automatic account onboarding.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "hyper3d",
+      "name": "Hyper3D Rodin / WorldGen",
+      "url": "https://hyper3d.ai/",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Image/text3D and editable-world/bridge claims; two supplied X announcements inaccessible. No export or physical behaviour qualified.",
+      "licence_note": "Proprietary cloud; trial advertising is not verified credits/export/commercial eligibility.",
+      "next_trial_or_retest_condition": "HYPER3D-01: one cleared prop or small set, quoted quota first, GLB import/camera/revision/reuse.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "nvidia-vflash",
+      "name": "NVIDIA VFlash",
+      "url": "https://research.nvidia.com/labs/lpr/vflash/",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "Visual-planning physical-AI research, structured motion/trajectory outputs; not a studio video generator or Mac accelerator.",
+      "licence_note": "Research/code/model licence and intended downstream asset use require exact review before reuse.",
+      "next_trial_or_retest_condition": "Reference for robotics explanation; no present local inference trial.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "gemini-omni-flash",
+      "name": "Gemini Omni1.2Flash",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing#gemini-omni-1.2-flash",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Up to15s generation/editing with native audio; paid API no free tier. General France availability does not prove per-feature entitlement.",
+      "licence_note": "Google paid API/model/service terms; subscription/Flow access and source/output rights separate. No spend authorised.",
+      "next_trial_or_retest_condition": "OMNI-EDIT-01 extends V2V-PRESERVE-01 only after exact account/region/quote admission; one bounded edit preservation comparison.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "quixel-megascans",
+      "name": "Quixel Megascans / Fab",
+      "url": "https://quixel.com/news/update-megascans-are-going-free-again",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Official5November announcement free library and changed training terms; asset retrieval/Blender import not tested here.",
+      "licence_note": "Per-asset Fab/acquisition licence and source provenance must be retained; announcement is not every historical licence.",
+      "next_trial_or_retest_condition": "MEGASCANS-01: at most one small relevant prop/surface, resolution/storage/scale/material review in selected set.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "aura-autopilot",
+      "name": "Aura Autopilot",
+      "url": "https://github.com/ramenvr/autopilot",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Native UE/Unity/Godot gameplay testing on Mac/Windows, not browser-game compatibility or a film director.",
+      "licence_note": "Apache-2.0 source; engine/game/assets and paid account/BYOK model usage separate.",
+      "next_trial_or_retest_condition": "AUTOPILOT-01 later for an owned native-engine test scene, one camera/collision route and retained issue evidence.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "ucupaint",
+      "name": "Ucupaint3.0",
+      "url": "https://github.com/ucupumar/ucupaint/releases/tag/3.0.0",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Versioned manifest supports Blender>=4.2; layered paint and height/vector displacement, untested on retained Blender4.5.",
+      "licence_note": "GPL-3.0-or-later add-on; input texture/illustration rights separate.",
+      "next_trial_or_retest_condition": "UCUPAINT-01: original prop, editable layers, save/reopen/render compared with native nodes.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "luma-photo-reframe",
+      "name": "Luma Photo Reframe",
+      "url": "https://app.lumalabs.ai/solutions/shot-reframe-plugin",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Submitted URL retrieves Photo Reframe still-image expansion, not verified NLE video plugin. X announcement inaccessible.",
+      "licence_note": "Proprietary cloud; quota/export/source/output terms unverified; generated surroundings not documentary facts.",
+      "next_trial_or_retest_condition": "LUMA-REFRAME-01: one authorised still16:9/9:16 against crop/re-layout after actual entitlement checks.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "gradientdeck",
+      "name": "GradientDeck design references",
+      "url": "https://ui.gradientdeck.com/",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "DESIGN.md discovery useful for hierarchy/style reference; not a video renderer or accepted style replacement.",
+      "licence_note": "No blanket reuse licence established for site designs/assets/fonts.",
+      "next_trial_or_retest_condition": "Selective DESIGN-SKILLS-01 reference only, original social composition and existing design tools first.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "viggle-remake",
+      "name": "Viggle Remake",
+      "url": "https://huggingface.co/Viggle/Viggle-Remake",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "Motion-preserving V2V character/edit model; Comfy small-card tests emulated, host RAM47-80GB; not admitted on16GiBMac.",
+      "licence_note": "MiniMax H3 community model licence plus base/dependency and input-media rights; not consumer-service terms.",
+      "next_trial_or_retest_condition": "Server reserve V2V-PRESERVE-01 only after suitable compute/rights/budget; no weights now.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "figma-console-mcp",
+      "name": "Figma Console MCP",
+      "url": "https://github.com/southleft/figma-console-mcp",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Design token/layout/write bridge and Motion export documented; connection modes differ, no local setup or actual export trial.",
+      "licence_note": "MIT code; Figma account/plan/file/font/asset permissions and cloud exposure separate.",
+      "next_trial_or_retest_condition": "FIGMA-PACK-01 later: original social template in two aspects, text bounds and editable roundtrip versus existing route.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "kimi-3d-worlds",
+      "name": "Kimi3DWorlds Space",
+      "url": "https://huggingface.co/spaces/akhaliq/kimi-3d-worlds",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "Read app source: third-party HF/Together KimiK3.1Pro wrapper generates Three.js HTML; not learned real-time world model.",
+      "licence_note": "App code licence not established; HF/provider inference billing/token and generated/source assets separate.",
+      "next_trial_or_retest_condition": "Existing original Three.js method first; no account token, model calls or copied app execution.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "nitrofusion2",
+      "name": "NitroFusion2",
+      "url": "https://github.com/ChenDarYen/NitroFusion2",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "1-2step image generation on Z-Image-Turbo; CUDA examples and quantised files do not establish total-memory Metal fit.",
+      "licence_note": "Apache-2.0 repository licence inspected; exact checkpoint/base/component licences remain separate.",
+      "next_trial_or_retest_condition": "NITRO-PREFLIGHT-01 metadata/environment review first; download/run only after memory/disk/rights admission and a fitting keyframe need.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "vimoo",
+      "name": "Vimoo1.0 / official MLX",
+      "url": "https://github.com/Vimoo-AI/Vimoo-1.0-MLX",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Official Apple Silicon T2V/I2V exists; Lite~9.5B bundle22,448,007,764bytes(~20.9GiB), safe16GiB runtime not documented.",
+      "licence_note": "Apache-2.0 code and MLX model card; third-party component notices and hosted API terms separate.",
+      "next_trial_or_retest_condition": "VIMOO-PREFLIGHT-01 only: no default bundle download. Require documented smaller memory-safe config or authorised hosted quota.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "opendirector",
+      "name": "OpenDirector",
+      "url": "https://github.com/ThinkFlowLab/OpenDirector",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Canvas/timeline local authoring, JSON/FCPXML/asset bundles/MP4 claimed; Python3.11+,Node24.22.1+,FFmpeg; no roundtrip tested.",
+      "licence_note": "Apache-2.0 source; media/fonts and any external generation provider terms separate.",
+      "next_trial_or_retest_condition": "OPENDIRECTOR-01: existing original media12s timeline, provider calls disabled, export/reopen/relink and one timing correction against existing route.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "relayvsr",
+      "name": "RelayVSR",
+      "url": "https://github.com/kopperx/RelayVSR",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "research_only",
+      "scope_and_findings": "Video super-resolution sparse Wan references plus decoder; official Linux/NVIDIA; Comfy repack not Mac qualification. Reference output omits audio.",
+      "licence_note": "Apache-2.0 declared in author README/repack; exact dependency/checkpoint/input-media scope still reviewed for actual trial.",
+      "next_trial_or_retest_condition": "Server reserve; short cleared clip versus existing scale baseline, text/lines/flicker and remux/sync check; no current host install.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "sand3d",
+      "name": "sand3d",
+      "url": "https://github.com/Sandflow-ai/sand3d",
+      "reviewed": "2026-11-06",
+      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Python modelling over bpy4.5/5.2 with named solids/parts/joints and GLB/URDF/USD/OBJ/STL; not physical simulation.",
+      "licence_note": "Apache-2.0 library; Blender/build/export/assets separate. Vendor token benchmark not measured studio savings.",
+      "next_trial_or_retest_condition": "SAND3D-01: three-part hinge, two cameras, one dimension change and reopen/export/render versus raw bpy; no dataset/model download.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
       ]
     }
   ]

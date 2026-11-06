@@ -1,5 +1,7 @@
 # Social media: packaging, channel identity and learning
 
+6November2026: [broader internal scope and proof boundaries](../internal-studio-scope.md) explicitly includes YouTube, TikTok, Instagram and Facebook video/image/text preparation and authorised publication support. Instagram/Facebook execution and AzurMenton autoproduction remain planned; no new account actions, schedules or publication grants.
+
 4 November 2026 · SOCIAL-01 / TIKTOK-01 · M4/M5/M6.
 
 Owner direction: before TikTok adaptation/account launch, research reusable packaging

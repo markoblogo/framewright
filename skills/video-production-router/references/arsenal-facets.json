@@ -1240,6 +1240,220 @@
       ],
       "rights_class": "conditional",
       "licence_note_sha256": "c00468c636e5bfc0cf9b0aaacc0b215cb40c58cca1f45ccb547b6acdb3cdf9e7"
+    },
+    "mujoco": {
+      "tasks": [
+        "3d",
+        "diagram",
+        "graphics"
+      ],
+      "inputs": [
+        "data",
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "c57a13b4e1b8e09c33d254bc6c239b15a6ac2e71a0c1a6ef34efeaade64a1d16"
+    },
+    "metawrap": {
+      "tasks": [
+        "3d"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "4f0c70fc7775b8ebc31eba2991be980d16843afbcad1c580bfb1cccd006ab947"
+    },
+    "krea-production-method": {
+      "tasks": [
+        "editing",
+        "graphics"
+      ],
+      "inputs": [
+        "image",
+        "video"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "87d1b8472428b5059d54d142aedcd02622aacd426d119abd9ba4e81e08edf600"
+    },
+    "hyper3d": {
+      "tasks": [
+        "3d"
+      ],
+      "inputs": [
+        "image",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "51edf943bb45def61908a6a864b8442b4b37fec1699d035759fdbc0d6420b40d"
+    },
+    "nvidia-vflash": {
+      "tasks": [
+        "diagram"
+      ],
+      "inputs": [
+        "data"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "e7ec5f897ce49b15e7cda81566c914963ed34d46cfa6d79e3575b0470a5e83d4"
+    },
+    "gemini-omni-flash": {
+      "tasks": [
+        "video",
+        "editing"
+      ],
+      "inputs": [
+        "image",
+        "video",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "466854e38d01652f5a936d4489dda4852e3d96123f55c64ea159f0ce8e55ad1c"
+    },
+    "quixel-megascans": {
+      "tasks": [
+        "3d"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "920b5e1da5b84ebe43710c2fe2cb84498c5396fe9eddaf23ead04982a132ac77"
+    },
+    "aura-autopilot": {
+      "tasks": [
+        "3d"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "91af2f1f237c977ae1ceb8c4a7bae663bcdf32c5f5ffb1f0a04e64d2e7e6c29e"
+    },
+    "ucupaint": {
+      "tasks": [
+        "3d",
+        "illustration"
+      ],
+      "inputs": [
+        "3d",
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "cacf857dcd97dcaff961710661ffd0d5577958469c50c4bd75068fae011bdead"
+    },
+    "luma-photo-reframe": {
+      "tasks": [
+        "illustration",
+        "graphics"
+      ],
+      "inputs": [
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "38c73649459d00736894082555ba6e1a763253a7325002020409e8bb82c9c8c6"
+    },
+    "gradientdeck": {
+      "tasks": [
+        "graphics",
+        "interface"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "878ec5e5f3eb302012ab0057f2652bc3a776143186283563b4d8d1518f44b976"
+    },
+    "viggle-remake": {
+      "tasks": [
+        "video",
+        "editing"
+      ],
+      "inputs": [
+        "video",
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "53f95bcb75d226acc1ba45cebf286036e10475d104e48f226831cc5db2892f0b"
+    },
+    "figma-console-mcp": {
+      "tasks": [
+        "graphics",
+        "interface"
+      ],
+      "inputs": [
+        "image",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "8d1e4a5b41a6c19d9173a69bd62b01fd3a7c5f8142eb405f01b0efd161df2771"
+    },
+    "kimi-3d-worlds": {
+      "tasks": [
+        "3d"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "b62b5058bdff532aa2efdad0117dec48eda32097b4fd0aee8da68bacecc1cb8b"
+    },
+    "nitrofusion2": {
+      "tasks": [
+        "illustration"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "2ed499a6b2ba4f192f7a445f57c9348fe68b90cf18ea2aa934f1970f1e52feae"
+    },
+    "vimoo": {
+      "tasks": [
+        "video"
+      ],
+      "inputs": [
+        "image",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "223a413cc531b16c60064bbf2992459d4497437ddcbec820fd0fbd466bfe978d"
+    },
+    "opendirector": {
+      "tasks": [
+        "editing",
+        "montage"
+      ],
+      "inputs": [
+        "video",
+        "audio",
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "bca51c5b5d693465a32f444ec93420b8818775703390ec40830f0829643f02ef"
+    },
+    "relayvsr": {
+      "tasks": [
+        "video",
+        "editing"
+      ],
+      "inputs": [
+        "video"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "334b74588df0e7fdef8b52990f98ca5381573ea424738e5a929f0e7ec7771dac"
+    },
+    "sand3d": {
+      "tasks": [
+        "3d",
+        "diagram"
+      ],
+      "inputs": [
+        "data",
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "fe7781ee09057b546d93e7748d09d1e7ea3bd60b209a03d9a7cc17b7a053d285"
     }
   }
 }
