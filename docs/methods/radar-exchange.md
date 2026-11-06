@@ -109,8 +109,8 @@ choice, production, experiment registration, public upload or algorithm adjustme
 is enabled. Actual next weekly run and future prospective feedback are separate
 observations, not proved by synthetic run tests or configuration.
 
-## Remaining gate
+## Current production and remaining gate — 6 November 2026
 
-The next owner-selected film can exercise a truly prospective cycle. Actual
-mature analytics, interpretation and the first actual normal-run outcome remain
-open. This control does not close REL-D or justify a release.
+Framewright55/56 and ABVX-OS16 merged on 5 November; enabled checkpoint and normal-run hooks are retained. The new prospectively selected [GitHub Agentic Workflows film](../productions/github-agentic-workflows.md) was accepted and owner-reported published. Its publication status is present in Framewright's outbox; the inspected Radar receiving state has not yet processed that message. Export is not receiver acknowledgement.
+
+Actual normal-run receipt, mature analytics, interpretation and evidence of recommendation changes remain open. No new acquisition/schedule or automatic production is enabled. This evidence does not close REL-D or justify a release.

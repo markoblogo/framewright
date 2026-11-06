@@ -32,6 +32,8 @@ The intake was prepared for [Radar → illustrated book](../productions/post-rel
 [Article](https://benji.org/stageshow), [source skill](https://github.com/benjitaylor/skills/tree/main/stageshow), [licence](https://github.com/benjitaylor/skills/blob/main/stageshow/LICENSE).
 Version 1.1.1 describes React/CSS authored interface demos and cursor choreography. Its capture, jump and layout checks are useful for explanatory inserts. This is simulated UI, not browser automation. A local render/seek adapter still needs testing before reuse in our video timeline. Upstream instructions were read as research, not installed or adopted as project policy.
 
+6 November follow-up: [STAGESHOW-01 production](../productions/github-agentic-workflows.md) used the actual pinned kit/virtual clock with original Three.js r180 geometry. It supersedes the initial untested-render state only for this host/feature scope. Automatic page-to-scene conversion and arbitrary backward renderer seeking remain untested. Upstream policy was not adopted.
+
 ### MagoStudio
 
 [Repository](https://github.com/MagoStudio/MagoStudio), [README](https://raw.githubusercontent.com/MagoStudio/MagoStudio/main/README.md).
