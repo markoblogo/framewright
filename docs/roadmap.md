@@ -1,10 +1,11 @@
 # Framewright roadmap
 
-Updated5November2026; source version0.8.0 / REL-C published per retained
-[release audit](release-audit-0.8.0.md). The Radar → Radar → French book cycle is
-complete in its stated scope. Owner authorised dependency-aware closeout and a
-documentation PR; no release, merge or new production. See the
-[current slice](next-cycle.md) and [5November closeout](#5-november--post-rel-c-cycle-completed-documentation-closeout).
+Updated 6 November 2026; source version 0.8.0 / REL-C published per retained
+[release audit](release-audit-0.8.0.md). The original Radar → Radar → French book cycle
+is complete; the subsequent prospectively selected GitHub Agentic Workflows film
+is accepted and owner-reported published. Current scope is dependency-aware closeout,
+standard seekable review and a documentation/helper PR, without merge or release.
+See [current work](next-cycle.md) and the [closed case](productions/github-agentic-workflows.md).
 Earlier dated entries below are history; they do not restart completed work.
 This is the primary **priority and milestone map**. It connects product work,
 production and experiments; it does not start them or authorize spending/publication.
@@ -384,3 +385,11 @@ checks passed locally; the existing InfraDev intake remains unchanged. Analytics
 for both videos are pending in the retained acquisition. Opt-in normal-cycle hooks are implemented under the owner follow-up; their first
 actual scheduled outcome, new prospective production and mature feedback remain open; REL-D is not closed.
 No separate release is required for this development slice.
+
+### 6 November — moving explainer and standard movie review
+
+[GitHub Agentic Workflows](productions/github-agentic-workflows.md) closes the selected 111.933333-second English production: pinned StageShow/Three.js source, sustained-action corrections, unchanged audio and four unaffected clips, accepted v2 and owner-provided publication. [Recipe](methods/3d-explainer-production.md) includes both Framewright and a written folder/editor alternative; the latter was not independently reproduced.
+
+STAGESHOW-01 now has one scoped host/feature trial; PAGE-TO-SCENE-01 and THREE187-01 remain open. The [standard localhost server](../skills/video-production-router/references/preview.md) supports seeking; retain source clips for corrections, retire redundant exports with explicit availability records.
+
+Framewright55/56 and ABVX-OS16 are merged, not pending. The new publication status is exported; receiving Radar's normal-run acknowledgement, actual analytics and recommendation feedback remain open. No new scheduler or automatic production follows. This closeout does not close REL-D or request another release.

@@ -3,6 +3,8 @@
 [Product overview](../README.md). Read only the section relevant to your task;
 this guide preserves detailed methods, installation and evidence boundaries.
 
+[Moving 3D explainers](methods/3d-explainer-production.md) · [Standard seekable movie preview](../skills/video-production-router/references/preview.md).
+
 [Photo-series cinema workflow](workflows/photo-series-cinema.md): a private30s layered camera/sound trial and a reusable camera-plan component; owner accepted picture and revised music; local YouTube kit prepared.
 
 [Experiment workbench and readiness](../skills/video-production-router/references/trials-and-readiness.md):

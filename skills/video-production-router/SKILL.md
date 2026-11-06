@@ -57,6 +57,7 @@ project and selected assembler; generated review media do not approve content.
 For short educational films, read [micro-lessons](references/micro-lessons.md): source-backed dialogue, real examples and one practical action, with a pilot before a series.
 For repeated company/deck styling, read [brand profiles](references/branding.md): freeze selected assets/tokens, export the same profile, and check each rendered variant. Profiles do not inherit film approval.
 For an authorised editorial export or returned cut, read [OTIO handoff/return](references/otio-export.md): compare pinned sources/ranges, then explicitly stage a new candidate with pending checks; never inherit approval or replace the final film automatically.
+For prepared movie review pages, use the [standard seekable localhost preview](references/preview.md); test native forward/backward timeline movement before handoff.
 For a concrete correction, read [revisions](references/revisions.md). For an accepted
 film becoming a series, read [template contracts](references/templates.md). Both
 reuse the journal; rendering and per-variant approval remain separate.

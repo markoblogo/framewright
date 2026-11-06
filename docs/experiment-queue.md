@@ -2,7 +2,7 @@
 
 ## New tool intake — 5 November 2026
 
-[Assessment and exact pass boundaries](research/tool-intake-2026-11-05.md). M4/R05/R07: STAGESHOW-01 and PAGE-TO-SCENE-01 attach first to a suitable approved explainer; MOSS-NANO-01 requires Mac/environment/voice-rights preflight; THREE187-01 is isolated version regression; MAGO-AUTHOR-01 is later authoring-only; DESIGN-SKILLS-01 is low-priority selective review-page adaptation. None executed. Existing IMG26-01, H3-MOTION-01, OPENJUTSU-01, SULPHUR-REF-01, NEMOTRON-ASR-01 and SUNO-MCP-01 remain single records; Pie Menu remains reference only. P-H3, Orbit LoRA and MOVA stay outside active local tests. No production reorder or release.
+[Assessment and exact pass boundaries](research/tool-intake-2026-11-05.md). M4/R05/R07: STAGESHOW-01 and PAGE-TO-SCENE-01 attach first to a suitable approved explainer; MOSS-NANO-01 requires Mac/environment/voice-rights preflight; THREE187-01 is isolated version regression; MAGO-AUTHOR-01 is later authoring-only; DESIGN-SKILLS-01 is low-priority selective review-page adaptation. STAGESHOW-01 now has one scoped production trial in [GitHub Agentic Workflows](productions/github-agentic-workflows.md): actual kit/clock and Three.js r180 rendering; software SwiftShader fallback, bounded correction and native MP4 seeking. General qualification, PAGE-TO-SCENE-01 and THREE187-01 remain open. Other candidates in this intake remain unexecuted. Existing IMG26-01, H3-MOTION-01, OPENJUTSU-01, SULPHUR-REF-01, NEMOTRON-ASR-01 and SUNO-MCP-01 remain single records; Pie Menu remains reference only. P-H3, Orbit LoRA and MOVA stay outside active local tests. No production reorder or release.
 
 ## Social-media packaging intake — 4 November2026
 
