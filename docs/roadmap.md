@@ -392,4 +392,11 @@ No separate release is required for this development slice.
 
 STAGESHOW-01 now has one scoped host/feature trial; PAGE-TO-SCENE-01 and THREE187-01 remain open. The [standard localhost server](../skills/video-production-router/references/preview.md) supports seeking; retain source clips for corrections, retire redundant exports with explicit availability records.
 
-Framewright55/56 and ABVX-OS16 are merged, not pending. The new publication status is exported; receiving Radar's normal-run acknowledgement, actual analytics and recommendation feedback remain open. No new scheduler or automatic production follows. This closeout does not close REL-D or request another release.
+Framewright55/56 and ABVX-OS16 are merged, not pending. Radar's receiving state now contains the publication status (manually inspected at Feather Star closeout); actual normal-run analytics and recommendation feedback remain open. No new scheduler or automatic production follows. This closeout does not close REL-D or request another release.
+
+
+### 6 November — Feather Star production and reconciliation
+
+[Closed case](productions/feather-star-swimmer.md): accepted 90s research-demonstration film and YouTube package, owner-reported publication, exact-frame/semantic-action corrections, native movie seeking and verified dependency-aware cleanup. [Reusable recipe](methods/research-demonstration-explainer.md). Scoped M3/M4 repeat evidence; no measured total labour saving or general physics/template qualification.
+
+Radar applied its retrospective association and publication status; repeated messages were duplicate. Actual 7/28-day data are absent in the retained acquisition. Manual receipt, scheduled operation and recommendation feedback remain distinct. PR57 is merged; this small documentation PR does not request a release or close REL-D/M6. Next film requires a refreshed slate or owner brief; protected running/SSI/book waits remain.

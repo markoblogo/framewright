@@ -3,21 +3,22 @@
 Updated 6 November 2026 · source 0.8.0 / REL-C; no new release requested.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md).
 
-## Current boundary — film published per owner; closeout ready for review
+## Current boundary — Feather Star published; documentation closeout
 
-GitHub Agentic Workflows is complete and owner-reported [published](https://youtu.be/Q9lzhnQEGjQ), not a reserve proposal. The accepted 111.933333-second English v2 uses actual StageShow/Three.js geometry, sustained action and four-scene correction. [Closed case](productions/github-agentic-workflows.md) · [repeatable recipe](methods/3d-explainer-production.md). Standard localhost review now supports movie seeking; dependency-aware cleanup preserved the final and eight current source scene clips.
+[Feather Star](productions/feather-star-swimmer.md) is complete: accepted 90s English 16:9 film, owner-reported [YouTube](https://youtu.be/dQAm7kw49co), publication kit and dependency-aware sanitation. [Research-demonstration recipe](methods/research-demonstration-explainer.md) records action/voice correspondence, exact clip frame counts and current cache limits. No TikTok adaptation commissioned.
 
-PR [55](https://github.com/markoblogo/framewright/pull/55) and [56](https://github.com/markoblogo/framewright/pull/56), plus Radar-side [ABVX-OS16](https://github.com/markoblogo/ABVX-OS/pull/16), merged on 5 November (verified via GitHub at closeout). The existing checkpoint/normal-run hooks are enabled; they add no schedule or automatic selection/production/publication.
+PR55/56 and Radar-side ABVX-OS16 merged on 5 November. Framewright PR57 (Agentic closeout and seekable review) is also merged; it is not awaiting a decision. Existing checkpoint/normal-run hooks add no schedule or automatic selection/production/publication.
 
-The prospectively selected film's publication status is in Framewright's outbox. Radar's current receiving state has not yet processed that publication message. Next normal-run receipt, available analytics and evidence of changed recommendations remain open. Earlier two-film control and duplicate/recovery tests do not establish this complete feedback cycle or REL-D.
+Radar now holds owner-reported published statuses for both Agentic Workflows and Feather Star. Feather Star's link is explicitly retrospective; exact repeat delivery returned duplicate. Manual receiver acknowledgements do not establish a successful scheduled cycle. Available retained 7/28-day exports for Feather Star remain pending; no matching actual report. No new acquisition, account changes, recommendation change or new project auto-hook.
 
-Current authorised task: close this case and prepare a small reviewed PR for its reusable helper/method and accurate status. No merge or release is authorised by this closeout. A later new-film choice requires refreshing the existing Radar slate or an owner brief; no new production is selected here.
+Current authorised task: finish this small documentation/closeout PR, checks and review, without merging or releasing. After handoff, choose a new film from refreshed existing Radar recommendations or an owner brief. No new production is selected here.
 
 ## Completed current cycle
 
 | Case | Outcome and boundary |
 | --- | --- |
-| GitHub Agentic Workflows | 111.933333s English v2 accepted and [YouTube](https://youtu.be/Q9lzhnQEGjQ) owner-reported. Publication exchange receipt/analytics pending. [Case](productions/github-agentic-workflows.md). |
+| Feather Star swimmer |90s English 16:9 accepted, [YouTube](https://youtu.be/dQAm7kw49co) owner-reported; retrospective Radar publication receipt verified; actual analytics pending. [Case](productions/feather-star-swimmer.md). |
+| GitHub Agentic Workflows | 111.933333s English v2 accepted and [YouTube](https://youtu.be/Q9lzhnQEGjQ) owner-reported. Manual receiver publication receipt verified; actual normal-run analytics/recommendation feedback pending. [Case](productions/github-agentic-workflows.md). |
 | Living-muscle robots |105.9s English film/cover owner-accepted; [YouTube](https://youtu.be/LIbkbgDCgKM) owner-reported. Primary sources retained; no scientific reproduction or audience outcome. |
 | InfraDev |109.4167s English film/sound/cover owner-accepted; [YouTube](https://youtu.be/h3xC5FRlW30) owner-reported. [Production](productions/infradev.md) and [economical repeat method](methods/short-research-production.md). Cache/render times are scoped evidence, not measured labour savings. |
 | Trois paquets. Une énigme. |106.958s French illustrated puzzle accepted in both aspects. [YouTube](https://youtu.be/OHU26SiXCoU), [TikTok](https://vt.tiktok.com/ZSp24TUJ1/) and [book-page embed](https://abvx.xyz/books/les-petites-affaires-du-port) owner-reported. [Closed case](productions/harbour-three-parcels.md), [repeatable recipe](methods/french-illustrated-puzzle.md). Cleanup preserves required input MP4s; voice permission owner-reported, document pending. |
