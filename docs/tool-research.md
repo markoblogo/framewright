@@ -518,3 +518,8 @@ and OTIO evidence is retained without broadening qualification.
 ## No Further Claims closeout —4November2026
 
 [Repeatable character/manga process](methods/coherent-manga-production.md): approved references → linked shots → bounded generation → local correction → unified source-directed lettering → sound → two aspect layouts. [REL-C matrix](rel-c-readiness-2026-11-04.md) retains drift/contact/crop/reading-time/repeated-panel/720p limits and one cold-resume gap. Original local compositor used; Desu export, Speech Bubble Editor, Krita and OpenToonz remain unqualified reserves. No new tool installation or blanket promotion.
+
+
+## Kino.ai — 7 November 2026
+
+[Mac/Codex montage candidate and KINO-EDIT-01](research/kino-ai-2026-11-07.md). Proprietary desktop timeline with documented local MCP, checkpoint editing and aspect exports. Free tool-call allowance is bounded; model/generation costs and cloud proxies are separate. Proposed existing-media test only, not installed or qualified.
