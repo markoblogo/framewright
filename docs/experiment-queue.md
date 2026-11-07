@@ -1,5 +1,9 @@
 # Proposed experiment queue
 
+## KINO-EDIT-01 — 7 November 2026
+
+[Research, source links and bounded test](research/kino-ai-2026-11-07.md). Proposed M4/R05: Mac/Codex local MCP timeline assembly → one scoped correction → reopen → 16:9/9:16 export. Official Free allowance is 100 metered MCP calls/week, not free unlimited models/generation. Default cloud proxy upload and Work-only cache paths require preflight. Research only; no install, connection or qualification, and no displacement of the current Marcus film assembly.
+
 ## Tool intake — 6 November 2026
 
 [Full deduplicated assessment, sources and pass boundaries](research/tool-intake-2026-11-06.md). Research only; no new qualification/profile/install. M4/R05/R06/R07: **SAND3D-01** (named3D mechanism, two cameras, parameter revision/export) → **OPENDIRECTOR-01** (existing-media12s authoring/reopen/handoff, provider calls disabled) → **UCUPAINT-01 / RELIEF-01** (editable textured/embossed prop, native Blender baseline first). **MEGASCANS-01** retrieves at most one licensed small asset when a selected set needs it. Attach tests to owner-selected production, not a tool-tour slate.
@@ -1122,3 +1126,8 @@ no new schedule, film or extra API acquisition. No audience result yet.
 ### SOURCE-01 — media-search presentation versus inference, 6 November2026
 
 [EmbeddingGemma2](productions/media-semantic-search.md) closed as an accepted/published illustrative explanation, using six bounded archive ranges and source/use labels. No model inference, embeddings or ranking measured. The next fitting trial remains a small cleared real index/query/failure trace after Mac memory/licence admission; no full-archive scan, download or provider call starts here. Reuse the [presentation recipe](methods/illustrative-media-search.md) independently of whether that future trial is feasible. Retrospective Radar transport is verified; metrics/recommendation outcome remains open.
+
+
+### Marcus pop-art closeout — 7 November 2026
+
+[Closed production](productions/marcus-zombie-thoughts.md) and [recipe](methods/pop-art-thought-anthology.md), R04/R05/R07/R09 / M3–M5: one full accepted film per aspect, multi-provider sources, locally cloned fictional voice, perspective signage, limited tap animation, continuous ambience and native portrait interactions. Broad finger deformation rejected; accelerated three-pose tap accepted. Existing 540p source and cross-provider identity/contact drift remain limits. Conditional next fitting checks: same-reference interaction comparison, directed crop versus native take, and active effort versus queue time. None started by this closeout; Kino remains its separate queued trial. No new model/general qualification, autopublication or release.

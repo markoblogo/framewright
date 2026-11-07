@@ -1,9 +1,11 @@
 # Current work and protected waits
 
-Updated 6 November 2026 · source 0.8.0 / REL-C; no new release requested.
+Updated 7 November 2026 · source 0.8.0 / REL-C; no new release requested.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md).
 
-## Current boundary — Real2Sim closed; no new production started
+## Current boundary — Marcus Aurelius closed; next Radar selection authorised
+
+[Marcus Aurelius vs Zombies](productions/marcus-zombie-thoughts.md) is closed: both 76.2s English formats accepted, owner-reported YouTube/TikTok URLs and book page retained, [repeatable recipe](methods/pop-art-thought-anthology.md) saved. Native portrait actions and exact accepted audio reuse checked. Dependency-aware cleanup retired23 intermediates (89.48MiB), with231 protected files rehashed unchanged. Commercial entitlements, uploaded-file identity and audience results remain separate. Kino is research/queue only. Next authorised sequence: documentation PR/checks/review, select one Radar candidate, then assess the new tool batch. No new production, merge or release starts from these notes.
 
 [Real2Sim closed case](productions/real2sim-twins.md):111s English16:9 film accepted with sound; [YouTube](https://youtu.be/qB9P3oFm6fg) owner-reported6November2026. [Repeatable recipe](methods/physics-backed-research-explainer.md) records calculated toy friction, original motion graphics, targeted corrections and with/without Framewright routes. MuJoCo3.17.0 CPU trial is bounded; no robot reconstruction or real-world calibration qualified. The compressed/receding page transition was rejected and removed.
 
@@ -15,7 +17,7 @@ Owner's next tool batch is [researched and retained](research/tool-intake-2026-1
 
 [EmbeddingGemma2 is closed](productions/media-semantic-search.md):112.292s English1080p film accepted with sound, YouTube publication owner-reported, package delivered, retrospective Radar association/status/duplicate round trip verified. [Repeatable recipe](methods/illustrative-media-search.md) preserves authored-result and source-resolution limits; no embedding inference or model qualification. Two silent intermediates removed after dependency/hash checks (~33.7MiB); accepted files preserved.
 
-Current authorised work: consolidate Real2Sim, EmbeddingGemma2 and6November research/internal-scope records in one documentation/catalogue PR; independent review and CI, then stop for a separate merge decision. No new release. Next production after this closeout is a Marcus Aurelius zombie-apocalypse book episode: agree the short story, visual direction and donors first, considering16:9/9:16 together. This note does not start generation. RUN-AUDIO waits for the owner's concept.
+The earlier preproduction instruction for Marcus Aurelius is superseded by the completed case above. This slice updates methods and records only; no merge or release is authorised. Existing research edits remain separate. The owner reports RUN-AUDIO's concept is prepared; delivery and discussion follow the current PR/Radar selection.
 
 [Feather Star](productions/feather-star-swimmer.md) is complete and owner-reported published. PR58 merged at9def5ce; pre/post-merge CI passed. No release. Radar holds Agentic Workflows and Feather Star publication statuses; Feather Star's association is retrospective. Actual normal-run analytics/recommendation feedback remain open. No new acquisition, schedule or project auto-hook.
 
@@ -42,7 +44,7 @@ identity, metrics or revenue. [Cycle slate and preserved directions](productions
 
 ## Protected waits
 
-- RUN-AUDIO-01 stays near-term without detail or a fixed slot, awaiting the owner's concept document. Do not invent a20-minute pilot, workout structure, tools or schedule.
+- RUN-AUDIO-01: owner reports the concept is prepared and will supply it after the current task. No document reviewed yet; do not invent duration, training structure, pilot, tools or schedule.
 - SSIv2.1: three films owner-approved; partner feedback and configured8November autonomous outcome remain open. Do not send/publish or alter its schedule here.
 - Gallery Lava: stock ShareAlike owner decision remains separate/open; no invented clearance.
 - TikTok Lumière Noire / @lumierenoire.films: owner reports No Further Claims and Three Parcels published. Ukraine region retained; monetisation not enabled at launch. Actual comparable metrics remain uncollected here; no new analytics job. Instagram discussion remains later.

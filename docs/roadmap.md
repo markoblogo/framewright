@@ -1,7 +1,7 @@
 # Framewright roadmap
 
-Updated 6 November 2026; source version 0.8.0 / REL-C published per retained
-[release audit](release-audit-0.8.0.md). The Radar/book cycle and subsequent Agentic, Feather Star, Real2Sim and EmbeddingGemma2 films have owner-reported publication evidence. PR58 is merged. Current authorised work consolidates the last two closeouts and6November research/internal-scope records in one PR, with no release or merge authorised. Next creative preparation: a Marcus Aurelius zombie-apocalypse book episode after the closeout, with story/style/donors agreed first. See [current work](next-cycle.md).
+Updated 7 November 2026; source version 0.8.0 / REL-C per retained
+[release audit](release-audit-0.8.0.md). [Marcus Aurelius vs Zombies](productions/marcus-zombie-thoughts.md) is closed: both full formats accepted, publication URLs owner-reported, reusable recipe and dependency-aware sanitation retained. PR59 is merged. Current work prepares the Marcus/Kino documentation PR and then selects the next Radar candidate; no merge or release is authorised. New tool links follow that selection. The owner reports the running-series concept is prepared and will provide it afterward; no running production is started. See [current work](next-cycle.md).
 Earlier dated entries below are history; they do not restart completed work.
 This is the primary **priority and milestone map**. It connects product work,
 production and experiments; it does not start them or authorize spending/publication.
