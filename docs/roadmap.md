@@ -1,7 +1,7 @@
 # Framewright roadmap
 
-Updated 7 November 2026; source version 0.8.0 / REL-C per retained
-[release audit](release-audit-0.8.0.md). [Marcus Aurelius vs Zombies](productions/marcus-zombie-thoughts.md) is closed: both full formats accepted, publication URLs owner-reported, reusable recipe and dependency-aware sanitation retained. PR59 is merged. Current work prepares the Marcus/Kino documentation PR and then selects the next Radar candidate; no merge or release is authorised. New tool links follow that selection. The owner reports the running-series concept is prepared and will provide it afterward; no running production is started. See [current work](next-cycle.md).
+Updated 8 November 2026; source version 0.8.0 / REL-C per retained
+[release audit](release-audit-0.8.0.md). [Marcus Aurelius vs Zombies](productions/marcus-zombie-thoughts.md) is closed: both full formats accepted, publication URLs owner-reported, reusable recipe and dependency-aware sanitation retained. PR59 is merged. PR60 merged8November at a7e1d56 after both current-head checks passed; no release. RUN//SIGNAL M01 is accepted for desk review with one-use finale limits and waits for the owner outdoor-test report before M02. UBTree and Dimension9 publication/closeout records are retained. Both selected Radar films, Audio-Driven Avatars and Junie Local, are now accepted and owner-reported published. Their closeout and the new tool research form a documentation PR, without a release or merge. No third Radar film today. See [current work](next-cycle.md).
 Earlier dated entries below are history; they do not restart completed work.
 This is the primary **priority and milestone map**. It connects product work,
 production and experiments; it does not start them or authorize spending/publication.
@@ -186,7 +186,7 @@ must not create repetitive permission questions for already authorized work.
 
 ## Production opportunities and protected waits
 
-- **SSI:** v2.1 template owner-accepted; three new films reported prepared, not sent/published. Keep receiving-project ownership. Await partner/publication reports and the configured8November autonomous run outcome; do not duplicate its scheduler or infer autonomous success from configuration. Repeat-output evidence supports M3/M6 within this supplied scope.
+- **SSI:** v2.1 template owner-accepted. Keep receiving-project ownership. Latest [6November outcome](productions/ssi-2026-11-06.md), supplied8November, reports three corrected films, deployed checks and six Telegram confirmations. Partner listening/creative acceptance and publication remain open; restored autostart does not prove15November unattended execution. Review small chart-animation corrections near the end of the week before that production; do not duplicate its scheduler. Repeat-output evidence supports M3/M6 within this supplied scope.
 - **Pocket OS:** paused until explicit resumption and device material. It can later
   exercise source-first editing, capture assistance and ASCII, not trigger them now.
 - **Good Dog / later book series:** M5 destination; unique hero, continuity and
@@ -370,7 +370,7 @@ Owner authorised dependency-aware cleanup and a consolidated documentation/resea
 PR, without a release. YT-RADAR-01 maps to R04/R09/RV01; LIT-FILM-05 to M5/R07/R09.
 Neither scoped repeat closes REL-D/M6 independent transfer or general mask/acting
 qualification. New tool intake remains proposed; no queue-wide testing.
-RUN-AUDIO-01: the owner supplied the concept and accepted M01 v07 in home review8November; the outdoor report remains open and blocks M02. See [current case](productions/run-signal-m01.md). Next candidates are now [selected from the refreshed existing Radar slate](productions/radar-selection-2026-11-08.md); script/donor review remains the next production gate. No scheduler,
+RUN-AUDIO-01: the owner supplied the concept and accepted M01 v07 in home review8November; the outdoor report remains open and blocks M02. See [current case](productions/run-signal-m01.md). The two topics in the [8 November selection](productions/radar-selection-2026-11-08.md) subsequently completed as dual-format films; see the current closeout below. No scheduler,
 account change, new production or release follows from this closeout.
 
 
@@ -405,4 +405,13 @@ Radar applied its retrospective association and publication status; repeated mes
 
 [UBTree](productions/ubtree-explainer.md) and [Dimension9](productions/dimension9-weekend.md) are completed owner-selected productions with owner-provided YouTube/TikTok links, not Radar recommendations. Source claims/QA/owner observations/publication receipts remain distinct; audience outcomes unknown. UBTree also has an owner-provided companion Medium URL.
 
-PR60 checked8November: open/unmerged, both existing checks green atdc93da8. This additional working consolidation has its own checks and does not inherit that CI result. Owner subsequently authorised commit/push/merge after current-head checks and one/two Radar topic selections; no release. Actual PR state is verified on GitHub. SSI is actively handled separately; wait for the owner's result report without duplicating its work. [Current priorities](next-cycle.md) supersede earlier dated concept-wait notes.
+PR60 initially checked8November: then open/unmerged, both existing checks green atdc93da8. This additional working consolidation has its own checks and does not inherit that CI result. Owner subsequently authorised commit/push/merge after current-head checks and one/two Radar topic selections; no release. Actual PR state is verified on GitHub. SSI is actively handled separately; wait for the owner's result report without duplicating its work. [Current priorities](next-cycle.md) supersede earlier dated concept-wait notes.
+
+8November merge outcome: PR60 merged at a7e1d56b4965b1365b9d12764138e0c592846a23 after two successful checks on50c259a. No release. [New GLB/agent-tool research](research/tool-intake-2026-11-08.md) is a separate post-merge working slice, not an executed trial.
+
+
+### 8 November — two-format Radar closeout
+
+[Audio-Driven Avatars](productions/audio-driven-avatars.md) and [Junie Local](productions/junie-local-hardware.md) are accepted in both formats, packaged and owner-reported published. The [repeatable method](methods/dual-format-tech-explainer.md) retains primary-source claims, pilot/voice decisions, meaningful action, per-aspect composition and direct publication pages. Junie adds bounded original Blender/Pillow geometry, not local Junie inference; the avatar source-media rights question remains open.
+
+YouTube-only manual exchange applied both publications with returned acknowledgements; no new analytics acquisition, schedule, hook or automatic recommendation follows. Dependency-aware sanitation preserves pilot/audio/source dependencies and accepted masters. M3/M4/R04/R05/R09 gain case evidence, while REL-D/M6, measured savings and general tool qualification remain open. Owner authorised a documentation PR, without merge or release. Today’s Radar slate is complete; RUN//SIGNAL still waits for the outdoor report, and SSI chart-animation corrections stay near the end of the week before 15 November.

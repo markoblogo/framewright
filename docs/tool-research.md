@@ -537,3 +537,18 @@ and OTIO evidence is retained without broadening qualification.
 ### RUN//SIGNAL M01 provider evidence —8November2026
 
 [Case and reuse limits](productions/run-signal-m01.md): PlayMCP8s generated natural base motion for4800 existing credits; frame review/owner feedback found artificial acting and unsynchronised mouths. PixVerse5s start/end trial consumed an actual30-credit daily grant, but failed thermal registration/POV helmet logic. Neither qualifies a reusable finale module. Same moving footage with local thermal/rounded occlusion and muffled voices accepted only for M01. These are scoped, dated feature/account outcomes, not general provider quality or quota claims.
+
+
+## Named GLB and agent tooling —8November2026
+
+[Tool intake](research/tool-intake-2026-11-08.md): named-part GLB animation, prepared CT pack inventory/attribution, Agent Screenplay, REA-video, Vork, SolidCraft, UI UX Pro Max, ThinkRail, MotionSites and Awesome-REA. sand3d deduplicated. Local-fit candidates have bounded proposed tests; no installs or new qualification. Vork is source-available, not OSS. fal free-until9November guest claim remains unconfirmed; paid endpoint and sign-in observed, no generation.
+
+## Two-format explainer reuse — 8 November 2026
+
+[Accepted cases and recipe](methods/dual-format-tech-explainer.md): source-labelled
+avatar demonstrations and original Junie hardware animation use measured local M1
+speech, separate aspect layouts and per-output review. Blender 4.5.15 LTS Eevee
+rendered Junie's specific primitive scene; no Junie or Kandinsky model was run.
+720p/12fps source limits, enlarged delivery, approximate subtitles and unresolved
+avatar donor rights remain explicit. This does not qualify GLB-NAMED-01, a new
+provider, general acting or measured production savings.
