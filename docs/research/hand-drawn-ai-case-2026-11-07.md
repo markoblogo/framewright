@@ -1,0 +1,43 @@
+# Hand-authored drawing → constrained AI motion — 7 November 2026
+
+Research intake for R04/R05/R07, M3–M5. No installation, upload, generation, account farming, paid request, watermark removal or production started. This working slice is separate from frozen PR60; no merge/release.
+
+## Evidence and attribution
+
+Owner supplied a case attributed to [sa1ntdenis](https://www.instagram.com/sa1ntdenis/) and an [English video summary](https://youtu.be/cb8VIvOuVOU). The Instagram page was inaccessible to the web extractor. The YouTube page was accessible in the browser and identified the61s summary as an ABV channel video. Samples at0,20,40seconds showed paper treatment, a historical book reference and a repost collage. This is sample inspection, not a full animated-source/listening review or verification of the creator's project files. The claim that even AI critics repost it remains an unverified creator report; no audience or cost advantage established.
+
+The [MoMA record](https://www.moma.org/collection/works/10834) identifies **Igra v adu (A Game in Hell),1914**, an illustrated book with26 lithographs, credited to **Kazimir Malevich and Olga Rozanova**, with authors Velimir Khlebnikov and Aleksei Kruchenykh. It is not evidence that every pictured plate is Malevich's or that any particular download has a reusable licence. MoMA supplies reproduction-licensing contacts, not a blanket open-image grant on this record. Keep the exact plate/artist, source scan, jurisdiction/use and image terms separate. For our first method probe, use an original drawing or a separately cleared asset; no historical scan copied here.
+
+## What transfers to our studio
+
+1. **Author the visual language before asking for movement.** Approve silhouette, palette, paper, line weight, composition and two/three key poses first. Use the generator as an animator of that reference. This fits the existing approved-still → bounded I2V → local correction route; it does not qualify another general renderer.
+2. **Separate living contours from camera shake.** A line-boil loop changes the drawing subtly, while page, framing, text and contact anchors stay registered. Proposed2–3 distinct redraws held at8–12drawing updates/s inside the normal24/30fps output. These numbers are starting hypotheses, not standards or tested settings. Whole-frame random displacement would repeat the irritating photo tremble already rejected in AzurMenton.
+3. **Make limited detail an intentional design choice.** Masks, graphic faces, puppets and silhouettes can reduce dependence on facial/lip fidelity. They can still drift, grow extra limbs or lose contact. Do not erase expression from a story that needs it merely to hide generation errors. Animation of a faceless character does not prove hands, gait or prop interaction.
+4. **Repair only the unstable region.** Keep a clean background, foreground/limb masks and key poses. Repair a drifting face/line locally and inspect it in motion for seams and texture pumping. Optical-flow smoothing/upscaling can destroy the purposeful boiling line; retain a native-resolution baseline.
+5. **Use material continuity across edits.** Stable paper grain, consistent black density and a repeated motion gesture can connect shots. Mix short generated action with locally authored holds/cycles and sound; do not spend cloud quota to move every layer. Existing poster-morph and limited-tap lessons remain relevant, including their anatomy/matte limitations.
+
+These are transferable method hypotheses, not a claim that the original creator used every proposed implementation. The reported manual Photoshop preparation means the case is not an entirely automatic or cost-free pipeline.
+
+## Tool admission and duplicates
+
+| Item | Verified support | Disposition |
+| --- | --- | --- |
+| Dola / Seedance | [Official Seedance2.0 page](https://seed.bytedance.com/en/seedance2_0) links directly to Dola. Dola resolves to a JS chat with no readable quota/terms in this check. | New service-access candidate; Seedance family already researched/used through other providers. Two free10s720p clips/account is **owner-supplied case claim, unverified for our account/date/region**. Inspect the real model, quota, expiry, commercial/export terms, watermark and download before generation. No promise of recurring free allowance. |
+| Photoshop + Kyle brushes | [Adobe](https://www.adobe.com/products/photoshop/brushes.html) documents charcoal, dry-media/pastel, halftone and brush import/customisation. Exact *Ultimate Pastel Palooza* preset not verified. | Reference/reserve; existing licensed access only, no new subscription or brush download. A named brush is not necessary to reproduce the material principle. |
+| Krita | [Pixel Brush Engine](https://docs.krita.org/en/reference_manual/brushes/brush_engines/pixel_brush_engine.html) supports texture/scatter/brush-tip controls; [animation manual](https://docs.krita.org/en/user_manual/animation.html) documents raster keyframes/onion skins and memory limits. Old Chalk Engine page says it was removed in4.0: do not queue that obsolete engine. | macOS/open-source route for original textured drawings and a small redraw loop; use existing installation if present. Not installed or qualified in this intake. Animation document should be short, not a whole film in RAM. |
+| Existing Canvas/Blender/FFmpeg tools | Retained local film methods, not a new dependency. | First local probe can use layered masks/key poses and existing capture/compositing. Grease Pencil is a possible authored-line route; no new Blender feature qualification inferred. |
+| LogoRemover.ai | [Video page](https://logoremover.ai/video-watermark-remover) advertises MP4/WEBM up to100MB and free removal. | Reference only. Actual export, artefacts, privacy handling and pricing untested. Its marketing is not permission to remove a provider's required mark or another artist's credit. Prefer permitted clean export; only consider cleared owned-material cleanup after per-use terms check. Not a default finishing dependency. |
+
+The user's pasted “censorship workaround” is an external case description, not an instruction to bypass a provider. Our prompts should describe the actual permitted stylised action plainly; genuinely changing a scene to non-graphic puppet theatre is a creative option. Renaming a prohibited act does not establish acceptance or rights. No bypass recipe retained as an operational skill.
+
+## Two bounded queued probes
+
+**LINE-BOIL-01 — local-first, first suitable art production.** Original/cleared8s drawing, one moving object/contact anchor, one short transition, both aspect layouts. Compare existing smooth motion with2–3registered contour redraws; lock paper/text and avoid luminance flashes. Review recognisability, line/paper separation, contact, loop seam, mobile readability and whether boiling enriches rather than irritates. Record active effort, render/wait time, peak disk/RAM and repairs separately. Stop if this is just whole-frame jitter. No generation started.
+
+**DOLA-I2V-01 — account admission then one clip, conditional.** Read the actual allowance/terms first; use a single cleared reference and5–10s simple motion only if available within an authorised free/current quota. Keep resolution/model/settings/export and provider-original evidence. Compare with the same locally animated reference on texture preservation, identity, contact, camera stability, frame repairs and usable seconds per attempt. Record quota consumption and whether rights/clean export meet the chosen publication. No quota harvesting or fallback purchase; no need to test every service. A test is not authorised just because it appears here.
+
+Reusable prompt structure: **material and drawing rules → exact visible scene → one action/contact → camera → continuity constraints**. Example for a future cleared original: “Hand-drawn charcoal silhouettes on warm textured paper. A paper puppet lifts one arm and points to a doorway. Locked camera; preserve the reference silhouette and limb count. Subtle redrawn contour variation; paper grain and lettering remain fixed. No glossy shading or newly invented face.” This is a starting prompt, not an executed result or a safety-evasion instruction.
+
+## Next use and limits
+
+Most useful for a short surreal interlude, illustrated book thought or poster transition where tactile drawing matters more than photorealism. For a factual Radar explainer, reserve it for an intentionally bounded illustration; technical text and diagrams remain clean and stable. Do not replace an accepted style or start a new film from this intake. No claim that public-domain inspiration resolves model-training issues, platform monetisation or every downstream right.

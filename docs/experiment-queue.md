@@ -1,5 +1,9 @@
 # Proposed experiment queue
 
+## KINO-EDIT-01 — 7 November 2026
+
+[Research, source links and bounded test](research/kino-ai-2026-11-07.md). Proposed M4/R05: Mac/Codex local MCP timeline assembly → one scoped correction → reopen → 16:9/9:16 export. Official Free allowance is 100 metered MCP calls/week, not free unlimited models/generation. Default cloud proxy upload and Work-only cache paths require preflight. Research only; no install, connection or qualification, and no displacement of the current Marcus film assembly.
+
 ## Tool intake — 6 November 2026
 
 [Full deduplicated assessment, sources and pass boundaries](research/tool-intake-2026-11-06.md). Research only; no new qualification/profile/install. M4/R05/R06/R07: **SAND3D-01** (named3D mechanism, two cameras, parameter revision/export) → **OPENDIRECTOR-01** (existing-media12s authoring/reopen/handoff, provider calls disabled) → **UCUPAINT-01 / RELIEF-01** (editable textured/embossed prop, native Blender baseline first). **MEGASCANS-01** retrieves at most one licensed small asset when a selected set needs it. Attach tests to owner-selected production, not a tool-tour slate.
@@ -1122,3 +1126,32 @@ no new schedule, film or extra API acquisition. No audience result yet.
 ### SOURCE-01 — media-search presentation versus inference, 6 November2026
 
 [EmbeddingGemma2](productions/media-semantic-search.md) closed as an accepted/published illustrative explanation, using six bounded archive ranges and source/use labels. No model inference, embeddings or ranking measured. The next fitting trial remains a small cleared real index/query/failure trace after Mac memory/licence admission; no full-archive scan, download or provider call starts here. Reuse the [presentation recipe](methods/illustrative-media-search.md) independently of whether that future trial is feasible. Retrospective Radar transport is verified; metrics/recommendation outcome remains open.
+
+
+### Marcus pop-art closeout — 7 November 2026
+
+[Closed production](productions/marcus-zombie-thoughts.md) and [recipe](methods/pop-art-thought-anthology.md), R04/R05/R07/R09 / M3–M5: one full accepted film per aspect, multi-provider sources, locally cloned fictional voice, perspective signage, limited tap animation, continuous ambience and native portrait interactions. Broad finger deformation rejected; accelerated three-pose tap accepted. Existing 540p source and cross-provider identity/contact drift remain limits. Conditional next fitting checks: same-reference interaction comparison, directed crop versus native take, and active effort versus queue time. None started by this closeout; Kino remains its separate queued trial. No new model/general qualification, autopublication or release.
+
+
+## Proposed bounded tool probes — 7 November 2026
+
+[Admission, sources and criteria](research/tool-intake-2026-11-07.md), R04/R05/R09 / M3–M5: CINECODE-01 (12–15s deterministic original scene, dual format, Codex adaptation); ASR-PARAKEET-01 (local Redux/Photon preflight then cleared English/French timing comparison). RIVERFLOW-TYPE-01 and MISCHIEF-I2V-01 remain budget/upload-gated reserves. No test started or broad qualification inferred; no new production order.
+
+
+### CINECODE-01 method probe —7November2026
+
+Original deterministic Canvas2D/common cue-sheet15s pilot in1920×1080 and1080×1920 fully decoded; text bounds checked; owner accepted both and authorised full Copilot Memory/Dreaming film. Existing local Chromium/FFmpeg and Supertonic3 used; zero provider calls. Native upstream Cinecode workflow and an efficiency A/B are untested; candidate remains unqualified as a turnkey tool. Native portrait rearrangement is retained. Remaining shared-clock/offline-audio and measured comparison require a concrete fitting need; no blanket promotion.
+
+## Tactile drawing and motion —7November2026
+
+[Evidence and criteria](research/hand-drawn-ai-case-2026-11-07.md), R04/R05/R07 / M3–M5:
+
+- **LINE-BOIL-01, next fitting art scene:**8s original/cleared layered drawing; compare smooth motion versus registered2–3redraw contour loop, fixed paper/text/contact anchors, both aspects. Check temporal texture, anatomy/contact, seam and mobile readability; measure actual effort/resources. Existing local tools first, no new install or production started.
+- **DOLA-I2V-01, conditional:** inspect actual account/model/quota/export/use terms, then one cleared5–10s reference-motion clip within authorised available quota. Published “two free10s720p clips” is not verified for this account. Compare with the local baseline; no account cycling, paid fallback or watermark-removal dependency. Research only.
+
+
+## RUN//SIGNAL M01 — scoped outcomes,8November2026
+
+[Current production and limits](productions/run-signal-m01.md), RUN-AUDIO-01 / R04/R05/R09. Owner accepted audio/visor modules and shortened home-review v07. No M02 before outdoor report. PlayMCP natural base motion and locally derived thermal/rounded-helmet trial accepted only as M01 compromise; exact speech/acting sync, moving thermal masks and physically correct helmet orientation are unresolved. PixVerse actual30-credit daily grant is a dated account observation, not a general free quota guarantee. Vidu100 Free Credits observed; daily renewal unverified.
+
+**Next fitting finale probe, not started:** same cleared synthetic people/reference, short known speech, motion/thermal registration/helmet direction criteria before generation; compare with retained M01 fallback, inspect whole movement and actual export. Do not loop/extend a short human take to fill long dialogue without a new review; shorten dead time and use motivated off-screen detail shots. Owner outdoor report and new film priorities take precedence; this entry authorises no generation or spending.

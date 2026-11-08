@@ -70,3 +70,11 @@ the earlier title/cover/vertical-pilot proposal is complete, not a new task. Opt
 next observation is actual24h/7d analytics if available, with age/window/source
 retained. Keep publication distinct from phone-readability, rights-document and
 monetisation evidence. No new adaptation or analytics automation is authorised.
+
+
+## Radar dual-format rule —7November2026
+
+Owner decision: prepare future Radar films for both YouTube16:9 and TikTok9:16. Plan native portrait composition, readable larger labels and platform-specific cover/copy/subtitles at intake; do not merely crop horizontal diagrams. Each variant requires its own motion/reading/sound review. This does not authorise automatic uploads, create social accounts or retrospectively recut every earlier film.
+
+
+7November owner clarification: retain both YouTube and TikTok publication URLs in the studio journal, but send only YouTube links/publication receipts through the current YouTube Radar adapter. Do not forward TikTok URLs or treat its metrics as YouTube evidence.

@@ -1,59 +1,39 @@
 # Current work and protected waits
 
-Updated 6 November 2026 · source 0.8.0 / REL-C; no new release requested.
+Updated 8 November 2026 · 0.8.0 / REL-C remains the source release; no new release requested.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md).
 
-## Current boundary — Real2Sim closed; no new production started
+## Current boundary
 
-[Real2Sim closed case](productions/real2sim-twins.md):111s English16:9 film accepted with sound; [YouTube](https://youtu.be/qB9P3oFm6fg) owner-reported6November2026. [Repeatable recipe](methods/physics-backed-research-explainer.md) records calculated toy friction, original motion graphics, targeted corrections and with/without Framewright routes. MuJoCo3.17.0 CPU trial is bounded; no robot reconstruction or real-world calibration qualified. The compressed/receding page transition was rejected and removed.
+[RUN//SIGNAL M01](productions/run-signal-m01.md): owner accepted v07 in home visual/audio review. Total22:00.07; exactly1200s of time-based training. Outdoor Nantes running test/report remains open. No M02 until that report is recorded and resolved; no promotional production started. Finale is an explicit M01-only compromise, not a reusable natural-acting/thermal/helmet module.
 
-Radar's project/idea/video link and published status are verified in retained state. Exact repeated publication delivery returns duplicate; acknowledgement return/repeat is checked. Both7/28calendar exports against the latest retained acquisition remain pending: no actual matching video report. No new API acquisition, schedule, project hook or recommendation refresh. Independent public visibility, cover usage and audience results remain unverified.
+Owner authorised this documentation consolidation, checking PR60 and selecting one primary/one reserve Radar topic for today. Further supplied tool links and a production case follow this slice. SSI is actively being worked on elsewhere; wait for the owner's final report, do not duplicate its work or change its schedule.
 
-Dependency-aware sanitation removed27 intermediate exports/frame samples (10.31MiB);32 protected media/source files rehashed unchanged. Final, package, editable recipe, physics states, voice stems/mix and accepted pilot review anchor remain. Private evidence: studio `productions/real2sim-twins/closeout/`.
+## Latest completed productions
 
-Owner's next tool batch is [researched and retained](research/tool-intake-2026-11-06.md):20subjects, with conditional local/service trials and explicit Mac/resource/rights limits. [Internal scope](internal-studio-scope.md) includes image/audio/game-visual products, social packaging and receiving-project curation; autopublication remains planned, not a current general capability.
-
-[EmbeddingGemma2 is closed](productions/media-semantic-search.md):112.292s English1080p film accepted with sound, YouTube publication owner-reported, package delivered, retrospective Radar association/status/duplicate round trip verified. [Repeatable recipe](methods/illustrative-media-search.md) preserves authored-result and source-resolution limits; no embedding inference or model qualification. Two silent intermediates removed after dependency/hash checks (~33.7MiB); accepted files preserved.
-
-Current authorised work: consolidate Real2Sim, EmbeddingGemma2 and6November research/internal-scope records in one documentation/catalogue PR; independent review and CI, then stop for a separate merge decision. No new release. Next production after this closeout is a Marcus Aurelius zombie-apocalypse book episode: agree the short story, visual direction and donors first, considering16:9/9:16 together. This note does not start generation. RUN-AUDIO waits for the owner's concept.
-
-[Feather Star](productions/feather-star-swimmer.md) is complete and owner-reported published. PR58 merged at9def5ce; pre/post-merge CI passed. No release. Radar holds Agentic Workflows and Feather Star publication statuses; Feather Star's association is retrospective. Actual normal-run analytics/recommendation feedback remain open. No new acquisition, schedule or project auto-hook.
-
-## Completed current cycle
-
-| Case | Outcome and boundary |
+| Case | Retained outcome and boundary |
 | --- | --- |
-| EmbeddingGemma2 |112.292s English16:9 accepted; [YouTube](https://youtu.be/xiUkE1jhTw8) owner-reported. [Closed case](productions/media-semantic-search.md), [illustrative search recipe](methods/illustrative-media-search.md), retrospective Radar delivery/duplicate check; actual analytics unknown. No model inference. |
-| Real2Sim |111s English16:9 accepted and [YouTube](https://youtu.be/qB9P3oFm6fg) owner-reported; scoped MuJoCo friction test, explicit rejected page transition, verified Radar publication/ack duplicate protection; actual analytics pending. [Case](productions/real2sim-twins.md). |
-| Feather Star swimmer |90s English 16:9 accepted, [YouTube](https://youtu.be/dQAm7kw49co) owner-reported; retrospective Radar publication receipt verified; actual analytics pending. [Case](productions/feather-star-swimmer.md). |
-| GitHub Agentic Workflows | 111.933333s English v2 accepted and [YouTube](https://youtu.be/Q9lzhnQEGjQ) owner-reported. Manual receiver publication receipt verified; actual normal-run analytics/recommendation feedback pending. [Case](productions/github-agentic-workflows.md). |
-| Living-muscle robots |105.9s English film/cover owner-accepted; [YouTube](https://youtu.be/LIbkbgDCgKM) owner-reported. Primary sources retained; no scientific reproduction or audience outcome. |
-| InfraDev |109.4167s English film/sound/cover owner-accepted; [YouTube](https://youtu.be/h3xC5FRlW30) owner-reported. [Production](productions/infradev.md) and [economical repeat method](methods/short-research-production.md). Cache/render times are scoped evidence, not measured labour savings. |
-| Trois paquets. Une énigme. |106.958s French illustrated puzzle accepted in both aspects. [YouTube](https://youtu.be/OHU26SiXCoU), [TikTok](https://vt.tiktok.com/ZSp24TUJ1/) and [book-page embed](https://abvx.xyz/books/les-petites-affaires-du-port) owner-reported. [Closed case](productions/harbour-three-parcels.md), [repeatable recipe](methods/french-illustrated-puzzle.md). Cleanup preserves required input MP4s; voice permission owner-reported, document pending. |
+| [UBTree](productions/ubtree-explainer.md) |88.733s English, native1920×1080 and1080×1920,30fps; both accepted and packaged. Owner supplied YouTube/TikTok/Medium links. Not a Radar recommendation; no exchange or independent benchmark claim. |
+| [Dimension9](productions/dimension9-weekend.md) |27.4s landscape and83.1s portrait gameplay recuts,60fps, original source sound removed, local original score and platform packages. Owner supplied both publication links. Conventional upscale is not recovered native detail. Not a Radar recommendation. |
+| Copilot Memory vs Dreaming |Both96.267s English aspects accepted and packaged. Owner-reported [YouTube](https://youtu.be/JMIzP3zy90k) and [TikTok](https://vt.tiktok.com/ZSphWevm2/). Only YouTube delivered to Radar; duplicate delivery/ack return checked. Actual audience metrics unknown; matching7/28-day exports and normal-cycle recommendation feedback remain open. |
+| [Marcus Aurelius](productions/marcus-zombie-thoughts.md) |76.2s English in both aspects; owner-reported publication and book embed, recipe and dependency-checked cleanup retained. No general voice/identity/contact qualification. |
 
-Publication links do not independently prove public visibility, uploaded-file
-identity, metrics or revenue. [Cycle slate and preserved directions](productions/post-rel-c-slate-2026-11-05.md).
+Earlier completed films, source boundaries and dated state are in the [7November snapshot](history/next-cycle-through-2026-11-07.md). No published film implies independent public visibility, uploaded-file identity, reach or revenue.
 
-## Reuse and research
+## Documentation and PR
 
-- [Deduplicated tool intake](research/tool-intake-2026-11-05.md), [Images follow-up](research/images-2-6-2026-11-05.md) and [bounded queue](experiment-queue.md#new-tool-intake--5-november-2026) are research, not new qualifications. StageShow has one scoped production trial; MOSS-Nano, Three.js r187 regression and other candidates still need a fitting scoped trial; no tool tour or bulk install.
-- Every new brief decides audience/language and YouTube/TikTok suitability before assembly. Deliver direct media/subtitle links plus one browser-readable text document per platform. No automatic publishing authority.
-- REL-D/M6 remains a transferable-operation goal: another operator/receiving project must actually complete/resume a bounded route. Written recipes and same-operator repeats alone do not close it.
+[PR60](https://github.com/markoblogo/framewright/pull/60) carries the Marcus closeout plus this production/research consolidation. Its earlier two successful runs atdc93da8 are historical and do not qualify this new head. Owner authorised commit, push and merge8November after current-head checks; actual merge/check outcome is verified on GitHub, not inferred from this note. No release requested.
+
+Read [latest tool intake](research/tool-intake-2026-11-07.md), [hand-authored animation case](research/hand-drawn-ai-case-2026-11-07.md) and [bounded experiment queue](experiment-queue.md) on demand. Research listings are not tested capabilities. Cinecode-inspired deterministic timing has one accepted local pilot; native upstream workflow and efficiency comparison remain untested.
+
+## Next selection
+
+[8November Radar selection](productions/radar-selection-2026-11-08.md): Audio-driven avatars/Kandinsky S2V first; Junie Local requirements explainer as reserve. The current supplied menu is dated3–8November, not a new recommendation batch. Refreshed primary sources and actual demonstration access gate the script/donor proposal; selection starts no installation, paid call or film render. Future Radar productions use both native YouTube/TikTok layouts; deliver only YouTube links to Radar.
 
 ## Protected waits
 
-- RUN-AUDIO-01 stays near-term without detail or a fixed slot, awaiting the owner's concept document. Do not invent a20-minute pilot, workout structure, tools or schedule.
-- SSIv2.1: three films owner-approved; partner feedback and configured8November autonomous outcome remain open. Do not send/publish or alter its schedule here.
-- Gallery Lava: stock ShareAlike owner decision remains separate/open; no invented clearance.
-- TikTok Lumière Noire / @lumierenoire.films: owner reports No Further Claims and Three Parcels published. Ukraine region retained; monetisation not enabled at launch. Actual comparable metrics remain uncollected here; no new analytics job. Instagram discussion remains later.
-- BOOK-01 retains its own evidence/rights gate; method notes do not authorise manuscript chapters.
-
-## Prior anchors
-
-[REL-C release audit](release-audit-0.8.0.md) ·
-[No Further Claims method](methods/coherent-manga-production.md) ·
-[Four training results](methods/training-to-fiction-2026-11-03.md) ·
-[Airport→Menton](productions/azur-airport-menton.md) ·
-[REL-B repeat](experiments/rel-b-repeat-protocol.md).
-PR52storage/TokenEconomizer and PR53/54REL-C work are historical completed steps,
-not the next task. [Pre4November status history](history/next-cycle-through-2026-11-04.md).
+- RUN//SIGNAL: real running test/report before M02; distances are analysis, never workout controls. Record owner-reported physical parameters without claiming population validation.
+- SSIv2.1: owner reports active work; final production/autonomous-outcome report and partner feedback remain separate. No send/publish/scheduler action here.
+- Gallery Lava: stock ShareAlike decision remains separate/open; no invented clearance.
+- BOOK-01/REL-D: worked methods and handoffs remain scoped evidence; no manuscript chapters, independent-user success or release inferred.
+- AzurMenton: later manual guide/event style/template work and staged handoff; Instagram/TikTok automation is planned, not operational.
