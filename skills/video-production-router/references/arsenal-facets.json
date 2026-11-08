@@ -1454,6 +1454,17 @@
       ],
       "rights_class": "conditional",
       "licence_note_sha256": "fe7781ee09057b546d93e7748d09d1e7ea3bd60b209a03d9a7cc17b7a053d285"
+    },
+    "cinecode": {
+      "tasks": [
+        "video",
+        "diagram"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "78033b467a6273e0318dc2994c81cd989a44e1885dcfdae50e20a9f3895c864a"
     }
   }
 }

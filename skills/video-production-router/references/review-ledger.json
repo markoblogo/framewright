@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-06",
+  "updated": "2026-11-08",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -2401,6 +2401,22 @@
       "next_trial_or_retest_condition": "SAND3D-01: three-part hinge, two cameras, one dimension change and reopen/export/render versus raw bpy; no dataset/model download.",
       "evidence": [
         "docs/research/tool-intake-2026-11-06.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "cinecode",
+      "name": "Cinecode",
+      "url": "https://github.com/sarpstar/cinecode",
+      "reviewed": "2026-11-07",
+      "review_basis": "Pinned README/MIT documentation plus an original method-level Canvas2D pilot,15s in both aspects, accepted by owner. No native upstream workflow installed/executed.",
+      "upstream_revision": "67f9807112b97ae253d4a5f0eccaccc46c3b2633",
+      "disposition": "candidate",
+      "scope_and_findings": "Original deterministic HTML/Canvas scene and common picture/audio cue sheet rendered locally with existing Chromium/FFmpeg.1920x1080 and1080x1920,15s30fps; decode/bounds pass and owner accepts pilot. This tests a transferable method, not native Cinecode or general tool qualification.",
+      "licence_note": "Upstream MIT; no upstream executable functions/hooks/agents copied. Original graphics/oscillator bed and retained offline Supertonic3 educational-use baseline; no identity clone.",
+      "next_trial_or_retest_condition": "Full Copilot film96.267s is owner-accepted in both aspects and owner-reported published. Native Cinecode, shared-clock offline WebAudio export and controlled A/B active-time/storage comparison remain untested. No automatic install or paid calls.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-07.md",
         "docs/experiment-queue.md"
       ]
     }

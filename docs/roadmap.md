@@ -370,8 +370,7 @@ Owner authorised dependency-aware cleanup and a consolidated documentation/resea
 PR, without a release. YT-RADAR-01 maps to R04/R09/RV01; LIT-FILM-05 to M5/R07/R09.
 Neither scoped repeat closes REL-D/M6 independent transfer or general mask/acting
 qualification. New tool intake remains proposed; no queue-wide testing.
-RUN-AUDIO-01 awaits the owner's concept without a fixed slot. Next film remains
-unselected; refresh the existing Radar slate before any proposal. No scheduler,
+RUN-AUDIO-01: the owner supplied the concept and accepted M01 v07 in home review8November; the outdoor report remains open and blocks M02. See [current case](productions/run-signal-m01.md). Next candidates are now [selected from the refreshed existing Radar slate](productions/radar-selection-2026-11-08.md); script/donor review remains the next production gate. No scheduler,
 account change, new production or release follows from this closeout.
 
 
@@ -398,3 +397,12 @@ Framewright55/56 and ABVX-OS16 are merged, not pending. Radar's receiving state 
 [Closed case](productions/feather-star-swimmer.md): accepted 90s research-demonstration film and YouTube package, owner-reported publication, exact-frame/semantic-action corrections, native movie seeking and verified dependency-aware cleanup. [Reusable recipe](methods/research-demonstration-explainer.md). Scoped M3/M4 repeat evidence; no measured total labour saving or general physics/template qualification.
 
 Radar applied its retrospective association and publication status; repeated messages were duplicate. Actual 7/28-day data are absent in the retained acquisition. Manual receipt, scheduled operation and recommendation feedback remain distinct. PR57 is merged; this small documentation PR does not request a release or close REL-D/M6. Next film requires a refreshed slate or owner brief; protected running/SSI/book waits remain.
+
+
+### 8November production/status consolidation
+
+[RUN//SIGNAL M01](productions/run-signal-m01.md), RUN-AUDIO-01 / R04/R05/R09: audio-first22-minute M01 accepted in home review, with exact20-minute time-based training. Real running report remains open; no M02 or promotional production. Library audio/HUD modules are accepted within this episode; natural-human acting, thermal registration and helmet removal remain one-off compromises, not reusable qualifications.
+
+[UBTree](productions/ubtree-explainer.md) and [Dimension9](productions/dimension9-weekend.md) are completed owner-selected productions with owner-provided YouTube/TikTok links, not Radar recommendations. Source claims/QA/owner observations/publication receipts remain distinct; audience outcomes unknown. UBTree also has an owner-provided companion Medium URL.
+
+PR60 checked8November: open/unmerged, both existing checks green atdc93da8. This additional working consolidation has its own checks and does not inherit that CI result. Owner subsequently authorised commit/push/merge after current-head checks and one/two Radar topic selections; no release. Actual PR state is verified on GitHub. SSI is actively handled separately; wait for the owner's result report without duplicating its work. [Current priorities](next-cycle.md) supersede earlier dated concept-wait notes.

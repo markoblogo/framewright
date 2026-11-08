@@ -35,3 +35,8 @@ a passing file check is not audience validation or a monetisation decision.
 Latest film-specific posting details: private No Further Claims `delivery/tiktok-2026-11-04/POSTING-GUIDE-RU.md`, including source audio, cover fallback, AI/own-book disclosure, publication read-back and24h/7d manual analytics. Technical validation does not prove distribution or monetisation.
 
 Owner update4November: first [TikTok publication](https://vt.tiktok.com/ZSpN7wfkP/) reported; separate image cover upload works in this account. See [standing platform-selection rule](packaging.md#platform-decision-at-intake--owner-rule4november2026). Current objective is publication/learning, monetisation not enabled. Region change unsuccessful, not an owner launch blocker. No analytics independently collected.
+
+
+## Radar dual-format rule —7November2026
+
+Owner decision: prepare future Radar films for both YouTube16:9 and TikTok9:16. Plan native portrait composition, readable larger labels and platform-specific cover/copy/subtitles at intake; do not merely crop horizontal diagrams. Each variant requires its own motion/reading/sound review. This does not authorise automatic uploads, create social accounts or retrospectively recut every earlier film.

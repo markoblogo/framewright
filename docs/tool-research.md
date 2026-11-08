@@ -523,3 +523,17 @@ and OTIO evidence is retained without broadening qualification.
 ## Kino.ai — 7 November 2026
 
 [Mac/Codex montage candidate and KINO-EDIT-01](research/kino-ai-2026-11-07.md). Proprietary desktop timeline with documented local MCP, checkpoint editing and aspect exports. Free tool-call allowance is bounded; model/generation costs and cloud proxies are separate. Proposed existing-media test only, not installed or qualified.
+
+
+## Tool intake — 7 November 2026
+
+[Eight subjects and a related local ASR candidate](research/tool-intake-2026-11-07.md): Cinecode/Codex timing adaptation and Parakeet Redux local transcription first; Ultra, Riverflow and Mischief conditional; Inkling/Crouton/PortCode reference reserves. Kuwayama marks are noncommercial-reference only. Secondary roundup leads are not qualified tools. No install, inference or expenditure.
+
+### Hand-authored texture and constrained motion —7November2026
+
+[Case analysis and admission](research/hand-drawn-ai-case-2026-11-07.md): original drawing/material design → bounded I2V → registered contour redraw/local repair. New Dola access candidate; Seedance itself is an existing family, not a new qualification. Two-free-clips/10s720p is unverified. Adobe/Kyle is a licensed reference, Krita/local masks are the free/local alternative; exact named brush not verified. LogoRemover is reference only with per-use watermark/source terms unresolved. MoMA source is a Malevich/Rozanova illustrated book, not a blanket reusable image grant. LINE-BOIL-01 and DOLA-I2V-01 are queued, not executed; no moderation-bypass method adopted.
+
+
+### RUN//SIGNAL M01 provider evidence —8November2026
+
+[Case and reuse limits](productions/run-signal-m01.md): PlayMCP8s generated natural base motion for4800 existing credits; frame review/owner feedback found artificial acting and unsynchronised mouths. PixVerse5s start/end trial consumed an actual30-credit daily grant, but failed thermal registration/POV helmet logic. Neither qualifies a reusable finale module. Same moving footage with local thermal/rounded occlusion and muffled voices accepted only for M01. These are scoped, dated feature/account outcomes, not general provider quality or quota claims.
