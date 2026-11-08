@@ -1,5 +1,15 @@
 # Proposed experiment queue
 
+## Tool intake — 8 November 2026
+
+[Deduplicated assessment and admission boundaries](research/tool-intake-2026-11-08.md). M4/R05/R07: GLB-NAMED-01 → SCREENPLAY-01 → REA-VIDEO-01; optional VORK-01 (source-available preview, not OSS); later SOLIDCRAFT-01 / UIUX-PACK-01. Existing SAND3D-01 remains single. FAL-I2V-01 is conditional: advertised free guest promotion unconfirmed, visible endpoint paid; no generation or upload authorised by this research. No installs, qualification or production reorder. RUN//SIGNAL M02 still waits for both owner test reports.
+
+The [two completed Radar explainers](methods/dual-format-tech-explainer.md) supply
+scoped reuse evidence, not completion of the proposed tool tests above. Useful
+future questions are a hash-bound derived-clip cache and better subtitle alignment
+on a fitting production. Neither helper was implemented by this documentation
+closeout; no new render or model test is required solely to close the cases.
+
 ## KINO-EDIT-01 — 7 November 2026
 
 [Research, source links and bounded test](research/kino-ai-2026-11-07.md). Proposed M4/R05: Mac/Codex local MCP timeline assembly → one scoped correction → reopen → 16:9/9:16 export. Official Free allowance is 100 metered MCP calls/week, not free unlimited models/generation. Default cloud proxy upload and Work-only cache paths require preflight. Research only; no install, connection or qualification, and no displacement of the current Marcus film assembly.

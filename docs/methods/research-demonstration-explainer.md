@@ -19,3 +19,8 @@ The current render's clip cache compares frame counts only: after changing any s
 The full renderer reads the accepted pilot MP4 as an input; it is not disposable just because a full master exists. Preserve its source-hook and speech dependencies. Remove unused archive copies only after selected original members hash-match retained files. Record removed availability honestly.
 
 Keep synthetic speech disclosure, research attribution, scientific limits and viewer-facing claims. A title/thumbnail is a hypothesis, not evidence of CTR, retention, revenue or time saved. This recipe does not establish independent operator transfer or a complete analytics feedback loop.
+
+The later [two-format explainer cases](dual-format-tech-explainer.md) add separate
+portrait composition, a sound-off/source-audio viewing exercise and conceptual
+Blender hardware imagery. Their specific source/rights and resolution limits remain
+with those cases; they do not retroactively qualify every tool in this route.
