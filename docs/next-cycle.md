@@ -1,16 +1,21 @@
 # Current work and protected waits
 
-Updated 9 November 2026 · source release 0.8.0 / REL-C; no new release requested.
+Updated 9 November 2026 · source release 0.8.0 / REL-C; end-of-day release consideration is tentative, not execution authority.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md).
 
 ## Current boundary
 
-The 8 November Radar films and GLB Car Lab are accepted and owner-reported
-published. GLB's named-part recipe and dependency-aware cleanup are complete.
-The current authorised slice is a small documentation PR, then review of the next
-normal Radar report and selection of one dual-format topic. New film production,
-merge and release remain separate decisions. The 8 November two-film limit was
-for that day's slate; it is not a continuing prohibition on a later owner selection.
+Owner-selected9November order, revised after both Radar closeouts: **finish the accepted FW identity, public landing/README and Studio Notes03 handoff → discuss Transit Speed Mándok → RUN//SIGNAL outdoor-test review once the owner returns**. The fresh Radar menu (10 topics; five recommended) was received through the existing exchange. Its PARTIAL research status and source/claim limits remain; selection is not a measured commercial result.
+
+Premation's two full films were accepted and owner-reported published: YouTube PhwCWcEe0LE and TikTok ZSpDa9LYn. Only YouTube was sent to Radar; apply/duplicate/returned acknowledgements were checked. Its closeout recipe/sanitation is not yet performed. No extra Radar acquisition or project auto hook was added.
+
+[Gemini](productions/gemini-omni-revise.md) and [Prisma](productions/prisma-plugin-verify.md) are accepted and owner-reported published in both formats. YouTube-only Radar status delivery and returned acknowledgements passed. Both cases are closed with dependency-aware sanitation and retained recipes/limitations. Prisma includes an authorised isolated real Codex MCP database test; no app, ORM, hosting or user-isolation test. No paid calls or public deployment.
+
+Owner update9November: both cases are closed. [FW form, unfolding motion and thin-metal sound](productions/fw-identity.md) are accepted, with a pure-black opening and0.967second masters in both formats. The README GIF and English landing use this identity; routine ending/watermark placement remains an experiment. A transparent watermark is not yet delivered. Studio Notes03 is being revised and explicitly handed over; CMS publication remains the owner’s action. The next two comparable Radar films are assigned a matched production comparison: A separate aspect compositions, B centre-oriented landscape plus portrait crop, common tools/conditions and measured effort/cost/owner perception. A third film will explain the experiment from their excerpts and recorded results. No automatic replacement of separate portrait composition or causal audience claim. Licensing/community-feedback ideas remain discussion: the owner is open to a future licence change and local interface, but no licence, telemetry or access policy change is authorised.
+
+Transit Speed PDF v2.0 is a proposed system concept, not existing software or proven efficiency. Owner clarified: Ukrainian private partner presentation plus English public client-attraction case on the same visual basis; flexible duration. Include actual Monitor/MN7R, SSI and AMI ecosystem experience. Source-screen and script/style review remain pending. All new material remains on the external studio.
+
+At the end of the day, assess accumulated changes, PR/review/CI and release scope; the owner's tentative release idea does not itself authorise publishing a release. Do not bypass current approval gates to meet the calendar.
 
 [RUN//SIGNAL M01](productions/run-signal-m01.md): v07 accepted in home visual/audio
 review, total 22:00.07 with exactly 1200 seconds of time-based training. The outdoor
@@ -73,10 +78,7 @@ is a dated selection record; its two selected films have now completed.
   listening/creative acceptance and publication remain open. Review small
   chart-animation corrections near the end of the week before 15 November.
   Do not duplicate its worker or change schedules/sends in this documentation task.
-- Radar: owner authorised reviewing the next normal report and selecting one
-  dual-format topic after this documentation slice. Do not silently substitute
-  dated acquisition for fresh metrics or start a second acquisition/schedule.
-  Script/source approval and production remain separate from selection.
+- Radar: fresh9November menu received; first two topics selected by owner. Keep primary-source verification, script/pilot/full acceptance and prospective experiment registration separate. No extra acquisition/schedule or inferred revenue promise.
 - Gallery Lava: the stock ShareAlike decision remains open. BOOK-01/REL-D: no
   manuscript chapters, independent-user success or release inferred from these films.
 - AzurMenton: later manual guide/event template work and staged handoff; planned

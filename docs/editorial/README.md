@@ -84,3 +84,21 @@ YouTube publication as permission to reproduce third-party illustrations in the 
 Do not re-search the full tool catalogue each week merely to fill an article.
 
 [Current project plan](../next-cycle.md) · [First edition evidence](2026-10-26-framewright-studio-notes-01-sources.json).
+
+## Explicit delivery,9November2026 correction
+
+Preparing an article is not the handoff. Each issue retains a delivery record:
+prepared timestamp, selected text/cover hashes, publication-document path, links and
+state (`pending`, `ready_to_deliver`, `delivered_in_chat`). The final notification
+must include the readable publication document and direct Markdown/cover/receipt
+links. Interrupted delivery stays pending and is resumed on the same issue; do not
+create another issue or silently treat a saved file as delivered. A publication URL
+remains a separate owner-provided event. The existing Monday10:00 Europe/Paris
+heartbeat is preserved; its updated delivery rule still needs observation on the
+next scheduled run. No second schedule was created.
+
+For issue03 only, the owner selected the accepted landscape FW GIF as cover and
+requested the identity/landing addition. This overrides the headline/series-label
+illustration requirement for that cover. Its original morning text, illustration
+and hashes remain in revision history. Future editions keep the original cover
+rule unless the owner changes it.

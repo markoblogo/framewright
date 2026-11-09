@@ -1,6 +1,6 @@
 {
   "schema": "framewright-book-materials-v1",
-  "updated": "2026-11-02",
+  "updated": "2026-11-09",
   "language_of_working_docs": "ru",
   "book_language": "not_decided",
   "scope": "Video-production methods with Framewright and without it; parallel routes, same outcome criteria",
@@ -13,7 +13,7 @@
   "chapters": [
     {
       "id": "C01",
-      "title": "Бриф и критерий готовности",
+      "title": "\u0411\u0440\u0438\u0444 \u0438 \u043a\u0440\u0438\u0442\u0435\u0440\u0438\u0439 \u0433\u043e\u0442\u043e\u0432\u043d\u043e\u0441\u0442\u0438",
       "cases": [
         "P01",
         "P03"
@@ -25,7 +25,7 @@
     },
     {
       "id": "C02",
-      "title": "Источники и память проекта",
+      "title": "\u0418\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u0438 \u0438 \u043f\u0430\u043c\u044f\u0442\u044c \u043f\u0440\u043e\u0435\u043a\u0442\u0430",
       "cases": [
         "P01",
         "P03"
@@ -37,10 +37,11 @@
     },
     {
       "id": "C03",
-      "title": "Сцены и управление",
+      "title": "\u0421\u0446\u0435\u043d\u044b \u0438 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435",
       "cases": [
         "P01",
-        "P02"
+        "P02",
+        "P04"
       ],
       "gaps": [
         "G03"
@@ -49,7 +50,7 @@
     },
     {
       "id": "C04",
-      "title": "Исходная съёмка и фотографии",
+      "title": "\u0418\u0441\u0445\u043e\u0434\u043d\u0430\u044f \u0441\u044a\u0451\u043c\u043a\u0430 \u0438 \u0444\u043e\u0442\u043e\u0433\u0440\u0430\u0444\u0438\u0438",
       "cases": [
         "P01"
       ],
@@ -61,7 +62,7 @@
     },
     {
       "id": "C05",
-      "title": "Генерация, миры и площадки",
+      "title": "\u0413\u0435\u043d\u0435\u0440\u0430\u0446\u0438\u044f, \u043c\u0438\u0440\u044b \u0438 \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0438",
       "cases": [],
       "gaps": [
         "G04",
@@ -71,7 +72,7 @@
     },
     {
       "id": "C06",
-      "title": "Персонажи и окружение",
+      "title": "\u041f\u0435\u0440\u0441\u043e\u043d\u0430\u0436\u0438 \u0438 \u043e\u043a\u0440\u0443\u0436\u0435\u043d\u0438\u0435",
       "cases": [
         "P02"
       ],
@@ -84,7 +85,7 @@
     },
     {
       "id": "C07",
-      "title": "Голос, музыка и звук",
+      "title": "\u0413\u043e\u043b\u043e\u0441, \u043c\u0443\u0437\u044b\u043a\u0430 \u0438 \u0437\u0432\u0443\u043a",
       "cases": [
         "P01",
         "P02",
@@ -97,10 +98,11 @@
     },
     {
       "id": "C08",
-      "title": "Проверка и точечные правки",
+      "title": "\u041f\u0440\u043e\u0432\u0435\u0440\u043a\u0430 \u0438 \u0442\u043e\u0447\u0435\u0447\u043d\u044b\u0435 \u043f\u0440\u0430\u0432\u043a\u0438",
       "cases": [
         "P01",
-        "P02"
+        "P02",
+        "P04"
       ],
       "gaps": [
         "G01",
@@ -111,9 +113,10 @@
     },
     {
       "id": "C09",
-      "title": "Серия и передача",
+      "title": "\u0421\u0435\u0440\u0438\u044f \u0438 \u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0430",
       "cases": [
-        "P03"
+        "P03",
+        "P04"
       ],
       "gaps": [
         "G09"
@@ -122,10 +125,11 @@
     },
     {
       "id": "C10",
-      "title": "Публикация и обратная связь",
+      "title": "\u041f\u0443\u0431\u043b\u0438\u043a\u0430\u0446\u0438\u044f \u0438 \u043e\u0431\u0440\u0430\u0442\u043d\u0430\u044f \u0441\u0432\u044f\u0437\u044c",
       "cases": [
         "P01",
-        "P03"
+        "P03",
+        "P04"
       ],
       "gaps": [
         "G10"
@@ -165,6 +169,19 @@
       "file": "docs/book/cases/ssi-series.md",
       "primary_evidence": "docs/experiments/ssi-brand-profiles.md",
       "supporting_workflow": "docs/external-project-handoff.md",
+      "documentation_status": "worked_case_draft",
+      "with_framewright": "actual_method_documented_current_helpers_distinguished",
+      "without_framewright": "written_not_reproduced",
+      "new_reader_exercise": "planned_not_executed",
+      "source_media": "private_not_distributed",
+      "illustration_rights": "requires_item_review",
+      "chapter_approval": "not_given"
+    },
+    {
+      "id": "P04",
+      "file": "docs/book/cases/named-parts.md",
+      "primary_evidence": "docs/productions/glb-car-lab.md",
+      "supporting_workflow": null,
       "documentation_status": "worked_case_draft",
       "with_framewright": "actual_method_documented_current_helpers_distinguished",
       "without_framewright": "written_not_reproduced",
@@ -246,7 +263,13 @@
     "docs/experiments/framewright-micro-lesson.md": "d02907a36d9efb92f61962c9d57012b15fc226ca08cdbc30a1f2e0f55c5cd09c",
     "docs/experiments/marble-compositing.md": "f663a089558b6d70941561de0699a0a18d4116488df95254a6b595883cc18f11",
     "docs/experiments/jekyll-toki-pona.md": "6393dd387f7c23e6d4ff2bd75a4fdbce03f0900e09b4300285df97f0912a7201",
-    "docs/experiments/production-memory-adapters.md": "c83a351ab1c2dc9ccd4149fc9a82d0e36d9690f8bb9f02a153ae540a33fc429d"
+    "docs/experiments/production-memory-adapters.md": "c83a351ab1c2dc9ccd4149fc9a82d0e36d9690f8bb9f02a153ae540a33fc429d",
+    "docs/productions/glb-car-lab.md": "291066e34b62efc762837e5e3f35426300c4c9fa0add3a38943daa85440d5b87",
+    "docs/productions/marcus-zombie-thoughts.md": "186ffe9457cab7758c24fd7508fb14bfb2b2516ba802dc1dfbf4baf16e526d6d",
+    "docs/productions/harbour-three-parcels.md": "74ae85c6cbc29b14cc6eb5c0d524686b4062b989c813928019547e8d67b3a2f4",
+    "docs/productions/run-signal-m01.md": "d132d798e966c428fa1312619ca237928bd1f1ab4605eb6b3edfc0de85b40f81",
+    "docs/productions/ssi-2026-11-06.md": "cc85f45ceb785f2ff5d121b3784fdb492806687c1fbde2e3930dbe29ee1d3c8f",
+    "docs/storage-policy.md": "871f790c1403da0a3e017c09df92539834b955d67dd17ac6de84f5009637e349"
   },
   "editorial_source_index": "docs/editorial/series.json",
   "post_reuse_requires": [
@@ -258,11 +281,11 @@
   "publication_is_book_approval": false,
   "no_readiness_percentage": true,
   "documentation_checks": {
-    "date": "2026-10-26",
+    "date": "2026-11-09",
     "local_links": "pass",
     "source_hashes": "pass",
     "chapter_case_gap_references": "pass",
-    "case_count": 3,
+    "case_count": 4,
     "chapter_count": 10,
     "gap_count": 10,
     "new_reader_reproductions": 0
@@ -310,6 +333,49 @@
         "state": "published_owner_report",
         "chapter_approval": "not_given"
       }
+    },
+    {
+      "date": "2026-11-09",
+      "file": "docs/book/updates-2026-11-09.md",
+      "editorial_issue": "studio-notes-03",
+      "chapters": [
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09",
+        "C10"
+      ],
+      "cases": [
+        "P03",
+        "P04"
+      ],
+      "gaps": [
+        "G01",
+        "G03",
+        "G04",
+        "G05",
+        "G07",
+        "G08",
+        "G09",
+        "G10"
+      ],
+      "source_sha256": {
+        "docs/productions/glb-car-lab.md": "291066e34b62efc762837e5e3f35426300c4c9fa0add3a38943daa85440d5b87",
+        "docs/productions/marcus-zombie-thoughts.md": "186ffe9457cab7758c24fd7508fb14bfb2b2516ba802dc1dfbf4baf16e526d6d",
+        "docs/productions/harbour-three-parcels.md": "74ae85c6cbc29b14cc6eb5c0d524686b4062b989c813928019547e8d67b3a2f4",
+        "docs/productions/run-signal-m01.md": "d132d798e966c428fa1312619ca237928bd1f1ab4605eb6b3edfc0de85b40f81",
+        "docs/productions/ssi-2026-11-06.md": "cc85f45ceb785f2ff5d121b3784fdb492806687c1fbde2e3930dbe29ee1d3c8f",
+        "docs/storage-policy.md": "871f790c1403da0a3e017c09df92539834b955d67dd17ac6de84f5009637e349"
+      },
+      "book_source_article": "docs/editorial/2026-11-09-framewright-studio-notes-03.md",
+      "new_reader_reproductions": 0,
+      "gap_status_changes": [],
+      "chapter_status": "working_notes_only",
+      "rights": "specific_book_illustrations_not_cleared",
+      "book_readiness_threshold_changed": false
     }
   ]
 }

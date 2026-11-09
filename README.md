@@ -1,11 +1,13 @@
 # Framewright
 
-![Framewright — craft the cut, keep the evidence](assets/framewright-cover.png)
+[![Framewright — silver FW ribbon unfolding](assets/fw-unfold.gif)](https://markoblogo.github.io/framewright/)
 
 [![Version: 0.8.0](https://img.shields.io/badge/version-0.8.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.8.0)
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 
-**Reusable workflows and local tools for a video studio run with an AI agent.**
+**A human-and-agent creative studio: films, animation, graphics, sound—and reusable production methods.**
+
+[Explore the studio](https://markoblogo.github.io/framewright/) · [FW identity](docs/productions/fw-identity.md) · [How the site stays current](docs/site.md)
 
 Plan a film, keep sources and decisions together, review exact versions and reuse
 what worked. Framewright is an experimental methods/skills library: the agent runs
@@ -40,7 +42,7 @@ This prints a plan; it does not render, install, call a model or spend money.
 | Source version | Experimental0.8.0 / REL-C; [release notes](docs/release-notes-0.8.0.md) and [publication audit](docs/release-audit-0.8.0.md). Verify actual publication at the canonical release page. |
 | REL-C evidence | Completed character fiction, bounded continuity/contact/correction, two aspect layouts and independent same-case recovery; [assessment](docs/rel-c-readiness-2026-11-04.md) and [review](docs/rel-c-independent-review-2026-11-04.md). Agent-and-human-led manual workflow; no general rig or autonomous route claim. |
 | REL-B evidence | [Assessment](docs/rel-b-readiness-2026-11-01.md): both formats accepted, scoped recovery/reuse/correction; [local checks/review](docs/rel-b-local-review-2026-11-01.md) and PR50/merged-main CI pass. No labour-savings or whole-route-autonomy claim. |
-| SSI handoff | [v2.1 template](docs/experiments/ssi-brand-profiles.md) owner-accepted; three new weekly films reported prepared, not sent/published. Partner approval and configured8November autonomous outcome remain open. |
+| SSI handoff | [6 November cycle, owner report](docs/productions/ssi-2026-11-06.md): three films, deployment and six Telegram confirmations. Partner creative/listening acceptance, public publication and the15November unattended outcome remain separate. |
 | AzurMenton guide pilot | [40s guide film](docs/experiments/azur-guide-first-film.md) accepted; YouTube and guide embed owner-reported. A general automated guide template is not yet qualified. |
 
 Private projects/media remain outside Git; follow the [external-storage and cleanup policy](docs/storage-policy.md).
@@ -52,6 +54,8 @@ whole-route autonomy and audience performance are not established by these films
 the completed131.25s manga film and native aspect-layout workflow. [REL-C assessment](docs/rel-c-readiness-2026-11-04.md)
 records the passed same-case cold-resume check and explicit limitations. This methods
 release adds no new renderer, mandatory dependency or automatic publishing service.
+
+The [accepted FW identity](docs/productions/fw-identity.md) and [English public landing](https://markoblogo.github.io/framewright/) are now recorded. Sting/watermark use in films remains an optional experiment. The live catalogue counts distinguish methods, detailed tool profiles and review entries.
 
 ## Selected results
 
