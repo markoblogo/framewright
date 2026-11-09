@@ -1,0 +1,61 @@
+{
+  "profile": {
+    "schema": "framewright-public-profile-v1",
+    "updated": "2026-11-09",
+    "headline": "Craft the frame. Keep the method.",
+    "description": "An experimental creative studio run by a human and an AI agent. Films, animation, graphics and sound—made with selected tools, reviewed in context, and kept as reusable methods.",
+    "capabilities": [
+      {
+        "title": "Films & animation",
+        "text": "Character stories, illustrated explainers, media art and guides. From a small moving pilot to a reviewed final cut."
+      },
+      {
+        "title": "Graphics & sound",
+        "text": "Images, 3D scenes, lettering, voices and sound design. Exact local control where it helps; generation where it earns its place."
+      },
+      {
+        "title": "One idea. Different screens.",
+        "text": "YouTube and TikTok compositions, subtitles, covers and publication kits. Each format gets its own readability check."
+      }
+    ],
+    "boundary": "Today: human-and-agent-led production with local tools. Automatic social publishing and a standalone studio interface remain roadmap work.",
+    "playlist": "PLXX_Mo7C9ZvA",
+    "video_fallback": [
+      {
+        "id": "OknfCwdyXIc",
+        "title": "Prisma · a real database test"
+      },
+      {
+        "id": "qfEnMIjJzys",
+        "title": "Gemini Omni · an illustrated explanation"
+      },
+      {
+        "id": "PhwCWcEe0LE",
+        "title": "Premation · checking sound and picture"
+      },
+      {
+        "id": "SrWeTSaQ4DQ",
+        "title": "GLB Car Lab · control one part"
+      },
+      {
+        "id": "pAClkR9eIZ8",
+        "title": "Junie Local · an animated explainer"
+      },
+      {
+        "id": "zCNWJxI6XqU",
+        "title": "Audio-driven avatars · examples and limits"
+      }
+    ]
+  },
+  "counts": {
+    "methods": 10,
+    "profiles": 17,
+    "reviews": 139
+  },
+  "date": "2026-11-09",
+  "release": {
+    "tag_name": "v0.8.0",
+    "html_url": "https://github.com/markoblogo/framewright/releases/tag/v0.8.0",
+    "prerelease": true
+  }
+}
