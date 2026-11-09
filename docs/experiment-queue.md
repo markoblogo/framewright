@@ -1,5 +1,13 @@
 # Proposed experiment queue
 
+## GLB-NAMED-01 — scoped production result, 9 November 2026
+
+[GLB Car Lab recipe and limits](productions/glb-car-lab.md): named rigid-part choreography,
+reassembly, hinge-axis correction, two native aspect layouts and same-page state
+restoration tested in both owner-accepted films. Fresh-load exact pixels failed for
+wide; recolouring, modified-GLB export, meshopt and independent reproduction remain
+untested. This is partial evidence for the original trial, not blanket qualification.
+
 ## Tool intake — 8 November 2026
 
 [Deduplicated assessment and admission boundaries](research/tool-intake-2026-11-08.md). M4/R05/R07: GLB-NAMED-01 → SCREENPLAY-01 → REA-VIDEO-01; optional VORK-01 (source-available preview, not OSS); later SOLIDCRAFT-01 / UIUX-PACK-01. Existing SAND3D-01 remains single. FAL-I2V-01 is conditional: advertised free guest promotion unconfirmed, visible endpoint paid; no generation or upload authorised by this research. No installs, qualification or production reorder. RUN//SIGNAL M02 still waits for both owner test reports.
