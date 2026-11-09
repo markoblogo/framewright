@@ -1209,3 +1209,12 @@ for legibility, safe margins, interference and owner perception in both formats.
 The transparent watermark derivative and recurring-use decision remain open.
 No automatic insertion; no licence/telemetry change. The centre-crop A/B remains a
 separate two-topic experiment followed by a third film about its measured results.
+
+### RETIRE-01 — retirement-aware checkpoint summaries,9November2026
+
+Premation closeout deliberately retires two superseded pilot file pins while keeping
+all historical QA and accepted full masters. Generic `project.py brief` currently
+shows the historical pilot observations as stale checks. Proposed bounded regression:
+show retired/history separately from actionable unresolved checks, preserve missing
+current-master failures, and do not infer creative approval. No implementation or
+new trial run is authorised by this entry. [Case](productions/premation-sync-test.md).

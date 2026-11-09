@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -2418,6 +2418,21 @@
       "evidence": [
         "docs/research/tool-intake-2026-11-07.md",
         "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "premation",
+      "name": "Premation",
+      "url": "https://github.com/isroil01/premation",
+      "reviewed": "2026-11-09",
+      "review_basis": "Retained official1.1.1 arm64 native CLI run receipts and hash-verified original/failed/corrected exports; owner-accepted explanatory films",
+      "upstream_revision": "1.1.1 arm64; retained source-tree82fe4304adc8c70deaf3309cb3c344ea94163658",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Complete .motion bundles with registered embedded media: six flash/click anchors each in identity and variable-speed exports within one30fps frame. Initial minimal project lost required audio; failed measurement retained. Explanatory films use separate local renderer/mix and are not native sync evidence. Native trial not rerun in closeout. No GUI, pitch, arbitrary codec/media or long-form qualification.",
+      "licence_note": "Upstream licence/commercial eligibility not independently resolved in this closeout; original fixture and local film assets used, no upstream software redistributed.",
+      "next_trial_or_retest_condition": "Retest only a changed build, concrete new media/speed/codec requirement or unresolved UI path; preserve source/control and missing-event failures. No unchanged benchmark repetition.",
+      "evidence": [
+        "docs/productions/premation-sync-test.md"
       ]
     }
   ]

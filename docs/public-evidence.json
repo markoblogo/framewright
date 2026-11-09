@@ -380,8 +380,13 @@
     },
     {
       "id": "premation",
-      "source": "docs/next-cycle.md",
-      "basis": "explicit_completed_status"
+      "source": "docs/productions/premation-sync-test.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "transit-speed-private-pitch",
+      "source": "docs/productions/transit-speed-private-pitch.md",
+      "basis": "completed_case_record"
     }
   ],
   "trials": [
@@ -560,6 +565,11 @@
     {
       "id": "run-signal-pixverse-welcome",
       "source": "docs/productions/run-signal-m01.md"
+    },
+    {
+      "id": "premation-native-av-sync",
+      "source": "docs/productions/premation-sync-test.md",
+      "index_note": "Existing executed test newly indexed at closeout, not a new run."
     }
   ]
 }

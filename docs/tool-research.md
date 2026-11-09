@@ -552,3 +552,7 @@ rendered Junie's specific primitive scene; no Junie or Kandinsky model was run.
 720p/12fps source limits, enlarged delivery, approximate subtitles and unresolved
 avatar donor rights remain explicit. This does not qualify GLB-NAMED-01, a new
 provider, general acting or measured production savings.
+
+## Ukrainian voice preference — 9 November 2026
+
+[Fola baseline and export limitation](ukrainian-voice-baseline.md): owner-selected voice for Ukrainian until a better option is chosen; embedded-browser export fails; owner-supplied Chrome WAV is available. No API or paid route enabled.

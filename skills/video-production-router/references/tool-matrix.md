@@ -360,7 +360,7 @@ Exact Ukrainian female voice; one short promotional script,not singing or cloned
 **Role:** voice. **Inputs:** .
 
 **Style directions:** narrated, neutral.
-Local stockM1/F1;owner slight preferenceF1 after same-text Ukrainian probe. Naturalness is owner-assessed,not a universal quality score.
+Local stock M1/F1 historical scoped references. Current Ukrainian owner preference is Fola in AI Studio; see docs/ukrainian-voice-baseline.md. Long Transit F1 rejected for slow pacing/stress errors; preserve earlier short-probe and separate English acceptance.
 
 **Tested version/scope:** SDK1.3.1,ONNX CPU,Python3.12.13;model3cadd1ee6394adea1bd021217a0e650ede09a323
 
