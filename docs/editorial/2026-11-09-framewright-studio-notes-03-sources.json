@@ -1,0 +1,216 @@
+{
+  "schema": "framewright-editorial-sources-v1",
+  "date": "2026-11-09",
+  "issue": "studio-notes-03",
+  "article": "docs/editorial/2026-11-09-framewright-studio-notes-03.md",
+  "article_sha256": "9e90d670815a1442d392eff436066a8d0683b1e8bd2faebf86838bf3a6d517b5",
+  "baseline_previous_issue": "studio-notes-02",
+  "baseline_previous_head": "9d186134dbdc9916353e9c7a651f50947887ce18",
+  "observed_git_head": "7d68e46f6e5843c1743ed3e0083254b32af0fcb4",
+  "source_state": "Current repository production records, retained Premation trial and owner-directed accepted FW/public landing update. Local documentation revision, not a new software release.",
+  "source_sha256": {
+    "docs/productions/glb-car-lab.md": "291066e34b62efc762837e5e3f35426300c4c9fa0add3a38943daa85440d5b87",
+    "docs/productions/marcus-zombie-thoughts.md": "186ffe9457cab7758c24fd7508fb14bfb2b2516ba802dc1dfbf4baf16e526d6d",
+    "docs/productions/harbour-three-parcels.md": "74ae85c6cbc29b14cc6eb5c0d524686b4062b989c813928019547e8d67b3a2f4",
+    "docs/productions/run-signal-m01.md": "d132d798e966c428fa1312619ca237928bd1f1ab4605eb6b3edfc0de85b40f81",
+    "docs/productions/ssi-2026-11-06.md": "cc85f45ceb785f2ff5d121b3784fdb492806687c1fbde2e3930dbe29ee1d3c8f",
+    "docs/storage-policy.md": "871f790c1403da0a3e017c09df92539834b955d67dd17ac6de84f5009637e349",
+    "docs/productions/fw-identity.md": "b7221aaf8c765cbddef8c553464df6ce174e5ee2f21ac009b75b215d0cd1ab56",
+    "docs/site.md": "e56791c3761dddfaff5d3a57295f348652647dca04122230308bee5e2d8ee763",
+    "docs/public-profile.json": "de33c3da239390296692c80d404c9417afc54b77942f224d5ee10d1f7f0b2e36",
+    "docs/public-evidence.json": "0a12eb189327dc19323df2b9877de825663068f6d0a4812809cfe5950d1708cd"
+  },
+  "private_test_source_sha256": {
+    "trial/test-definition.json": "db1d08942891d793bc6ac4d24de5ca831cbcd714e7ae9f26b69ad39a7ad26a47",
+    "trial/control-bundle-export-sync.json": "2da5aca5292cf0cf2ff77d0452c53bc755a7a8a31f603c2fee799a54b2fd946f",
+    "trial/ramp-bundle-export-sync.json": "45b7461fbf340e262ecd8bd1b50d6b34cce4cf7f92ad6d07db7bbcbda9eaa6b9"
+  },
+  "youtube_examples": [
+    {
+      "url": "https://youtu.be/SrWeTSaQ4DQ",
+      "case": "docs/productions/glb-car-lab.md",
+      "publication_provenance": "owner_provided_url",
+      "independent_visibility": "not_rechecked_this_pass",
+      "uploaded_byte_identity": "not_verified",
+      "audience_metrics": "not_checked"
+    },
+    {
+      "url": "https://youtu.be/6cD8xI8nXG8",
+      "case": "docs/productions/marcus-zombie-thoughts.md",
+      "publication_provenance": "owner_provided_url",
+      "independent_visibility": "not_rechecked_this_pass",
+      "uploaded_byte_identity": "not_verified",
+      "audience_metrics": "not_checked"
+    },
+    {
+      "url": "https://youtu.be/OHU26SiXCoU",
+      "case": "docs/productions/harbour-three-parcels.md",
+      "publication_provenance": "owner_provided_url",
+      "independent_visibility": "not_rechecked_this_pass",
+      "uploaded_byte_identity": "not_verified",
+      "audience_metrics": "not_checked"
+    }
+  ],
+  "claims": [
+    {
+      "topic": "Named groups, hinge choice, transform reset and bounded correction",
+      "source": "docs/productions/glb-car-lab.md",
+      "boundary": "Specific rigid model; no physics/general GLB or exact fresh-context rendering guarantee; failed strict wide JPEG test retained"
+    },
+    {
+      "topic": "Mixed generated/local shots, billboard perspective and sound bed",
+      "source": "docs/productions/marcus-zombie-thoughts.md",
+      "boundary": "One accepted fictional performer and film, not general clone/acting qualification"
+    },
+    {
+      "topic": "French audience, role speech, balloon boundary, portrait layout and shorter ending",
+      "source": "docs/productions/harbour-three-parcels.md",
+      "boundary": "Accepted films, not independent adaptation reproduction or documentary rights verification"
+    },
+    {
+      "topic": "Reusable audio/visor modules and one-off finale compromise",
+      "source": "docs/productions/run-signal-m01.md",
+      "boundary": "Home review accepted; outdoor test andM02 remain gated"
+    },
+    {
+      "topic": "Local native Premation export check",
+      "private_source": "productions/premation-sync-test/trial/*-sync.json",
+      "boundary": "Six sparse events within one30fps frame in two files; no perceptual/general-codec claim"
+    },
+    {
+      "topic": "SSI receiving-project report",
+      "source": "docs/productions/ssi-2026-11-06.md",
+      "boundary": "Owner-supplied deployment/delivery report; partner listening and next unattended run remain separate"
+    },
+    {
+      "topic": "Accepted FW identity and English visitor-refreshed landing",
+      "sources": [
+        "docs/productions/fw-identity.md",
+        "docs/site.md",
+        "docs/public-profile.json"
+      ],
+      "boundary": "Identity accepted; routine film placement and crop comparison not performed. Contact opens an email draft, no server delivery. No new release or audience claim."
+    }
+  ],
+  "cover": {
+    "file": "FW-unfold-README.gif",
+    "sha256": "c5fc4e2484dc5fb92bac93cf9064cc151df405f3ef3d7d829efba5ae668a06ff",
+    "bytes": 199474,
+    "width": 960,
+    "height": 540,
+    "format": "GIF",
+    "duration_ms": 3350,
+    "frames": 67,
+    "alt": "A thin silver ribbon emerges from black and unfolds into the letters FW, then rests against the black background.",
+    "creation": "Local derivative of owner-accepted FW sting; initial artwork generated with built-in imagegen, then locally mapped to a curled surface. No new generation for this cover.",
+    "owner_override": "Owner explicitly selected the README GIF as the cover for Studio Notes03 on9November2026; replaces the morning illustration and its headline/series-text requirement for this edition only.",
+    "prompt_provenance": {
+      "owner_motion_direction": "Ribbon unfolds into selected FW form, not generic rotation; thin metal unrolls with a light ring; begin on pure black.",
+      "initial_artwork_prompt": "Not retained in the selected brand receipt; do not reconstruct it as an exact historical prompt.",
+      "derivative_command": "ffmpeg -i FW-unfold-YouTube-v2.mp4 -vf 'tpad=stop_mode=clone:stop_duration=2.4,fps=20,scale=960:-1:flags=lanczos,split[s0][s1];[s0]palettegen=stats_mode=diff[p];[s1][p]paletteuse=dither=bayer:bayer_scale=3' -loop 0 FW-unfold-README.gif",
+      "selected_artwork_sha256": "bda9bd93e93660dde219b73c800f72fe3018ff515e1df833037e0db6c221799c",
+      "selected_video_sha256": "b59d7434bff1a28625eaec034f21c0793437ecd46022145ecf480dfa899d12a6"
+    },
+    "full_size_visual_review": "pass_at960px_selected_final_frame_and_retained_animation",
+    "reduced_readability_review": "pass_at480px_FW_form",
+    "text_accuracy_review": "FW only; no headline or series label, explicit owner exception",
+    "owner_approval": "accepted logo/sting and owner-selected cover; revised article review pending",
+    "cms_upload": "not_performed",
+    "paid_api_calls": 0,
+    "known_cost": "No additional generation or paid API usage; local conversion cost not priced",
+    "storage": "Private publication package; public small README GIF explicitly authorised"
+  },
+  "book_source": {
+    "status": "candidate_material",
+    "chapters": [
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "C10"
+    ],
+    "cases": [
+      "P03",
+      "P04"
+    ],
+    "gaps": [
+      "G01",
+      "G03",
+      "G04",
+      "G05",
+      "G07",
+      "G08",
+      "G09",
+      "G10"
+    ],
+    "working_note": "docs/book/updates-2026-11-09.md",
+    "chapter_approval": "not_given",
+    "routes": [
+      "with_framewright",
+      "without_framewright"
+    ],
+    "reader_reproduction": "not_performed"
+  },
+  "publication": {
+    "state": "draft",
+    "blog_url": null,
+    "cms_collection_existence": "not_verified",
+    "cms_writes": "not_performed"
+  },
+  "book_readiness": {
+    "status": "outline_and_case_docs_prepared; reader_reproduction_and_editorial_review_pending",
+    "threshold_changed": false,
+    "new_reader_reproductions": 0,
+    "manuscript_chapters_written": 0
+  },
+  "revision_history": [
+    {
+      "revision": "morning-prepared-before-owner-brand-update",
+      "article_sha256": "4b863b51ae32ef57d5875dddcb0a9f75c43dff311fb98b6a05839e30234c5d66",
+      "sources_sha256": "bd1c02fafa57fdcf265e649819d12652d21667a80cb9453f59986d85dc7f85e5",
+      "cover": {
+        "file": "framewright-studio-notes-03-cover.png",
+        "sha256": "476aead08ebd5ce0c39121a720b9d5352fe0a51114d9bee8f79f6b159f1af530",
+        "bytes": 2239919,
+        "width": 1672,
+        "height": 941,
+        "format": "PNG",
+        "alt": "An amber inspection lamp lights a miniature hinged car door, landscape and portrait film frames, and a clapperboard with sound-wave pulses, beside the headline Reuse the Method. Check the Result.",
+        "headline": "REUSE THE METHOD. CHECK THE RESULT.",
+        "series_label": "FRAMEWRIGHT STUDIO NOTES 03",
+        "creation": "built-in image_gen; original editorial illustration",
+        "input_images": [],
+        "prompt_file": "cover-prompt.txt",
+        "prompt_sha256": "3633663a26696f79c217eee8557b4fd471328a48e41fdb14457b9b9e66888eb3",
+        "prompt": "Use case: stylized-concept. Create one original landscape editorial blog cover, approximately16:9, for Framewright Studio Notes issue03. Exact English headline in large high-contrast ivory type: \"REUSE THE METHOD. CHECK THE RESULT.\" Exact smaller series label: \"FRAMEWRIGHT STUDIO NOTES 03\". Restrained charcoal, deep teal and warm amber visual family. Sophisticated tactile miniature film-production workbench, not a software screenshot: three connected reusable modules represented by a hinged miniature car door on a precise pivot, two film-frame apertures in landscape and portrait, and a clapperboard aligned with two short sound-wave pulses on a strip. A small amber inspection light ties them together. Main illustrated arrangement on left half; headline on generous dark negative space on right, balanced and readable at480px reduced width. Convey selective control and verification rather than an assembly line claiming automatic success. Elegant editorial composition, textured paper/metal surfaces, quiet studio lighting. Only the exact headline and series label as text; no other words, logos, watermarks, fake statistics, gauges or brand characters. Original composition; no uploaded references.",
+        "text_accuracy_review": "pass",
+        "full_size_visual_review": "pass",
+        "reduced_readability_review": "pass_at480px_headline_and_series_label",
+        "owner_approval": "pending",
+        "cms_upload": "not_performed",
+        "paid_api_calls": 0,
+        "entitlement_cost": "not_exposed_not_measured",
+        "storage": "private publication package outside Git"
+      },
+      "retained_private_revision": "revisions/01-morning-draft/"
+    }
+  ],
+  "delivery": {
+    "state": "ready_to_deliver",
+    "prepared_at": "2026-11-09T16:42:33.888893+00:00",
+    "publication_document": "read.html",
+    "markdown_file": "2026-11-09-framewright-studio-notes-03.md",
+    "cover_file": "FW-unfold-README.gif",
+    "source_file": "2026-11-09-framewright-studio-notes-03-sources.json",
+    "links": [
+      "http://127.0.0.1:8945/read.html",
+      "http://127.0.0.1:8945/2026-11-09-framewright-studio-notes-03.md",
+      "http://127.0.0.1:8945/FW-unfold-README.gif",
+      "http://127.0.0.1:8945/2026-11-09-framewright-studio-notes-03-sources.json"
+    ],
+    "owner_published_url": null
+  }
+}

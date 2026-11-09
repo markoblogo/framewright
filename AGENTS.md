@@ -11,3 +11,4 @@
 - Follow docs/storage-policy.md: keep studio files on the external disk, retain accepted finals/recipes instead of all drafts, and sanitize after production or before large downloads. Internal storage is temporary scratch only.
 - Creating a video is not permission for paid API calls, account grants or public uploads.
 - Use `python3 scripts/validate.py`; no new video experiment is needed for documentation changes.
+- At completed-film or executed-trial closeout, update docs/public-evidence.json with one source-linked case per story/trial; aspect/language variants and retries are not new entries. This keeps visitor-loaded site counts current. See docs/site.md.

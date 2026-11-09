@@ -169,6 +169,16 @@ def validate(root, local_root=None):
         ledger = json.loads(ledger_path.read_text())
         discovered = {facets['aliases'].get(t['id'], t['id']) for t in ledger['tools']} | {t['id'] for t in registry['tools']}
         require(discovered == facets['tools'].keys(), 'Arsenal facets differ from registry/review ledger')
+    public_evidence = root / 'docs' / 'public-evidence.json'
+    if public_evidence.is_file():
+        evidence = json.loads(public_evidence.read_text())
+        require(evidence['schema'] == 'framewright-public-evidence-v1', 'Unknown public evidence schema')
+        for group in ('films', 'trials'):
+            entries = evidence[group]
+            require(len({entry['id'] for entry in entries}) == len(entries), f'Duplicate public {group} case')
+            for entry in entries:
+                source = (root / entry['source']).resolve()
+                require(source.is_relative_to(root.resolve()) and source.is_file(), f'Invalid public case source: {entry["id"]}')
     print(f"PASS: {len(methods)} methods, {len(records)} outputs, {len(scenarios['cases'])} scenario specifications; local links intact.")
     print('Catalogue qualification: structural_only; this integrity check runs no model or renderer.')
     if local_root:

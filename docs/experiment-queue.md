@@ -1,5 +1,13 @@
 # Proposed experiment queue
 
+## GLB-NAMED-01 — scoped production result, 9 November 2026
+
+[GLB Car Lab recipe and limits](productions/glb-car-lab.md): named rigid-part choreography,
+reassembly, hinge-axis correction, two native aspect layouts and same-page state
+restoration tested in both owner-accepted films. Fresh-load exact pixels failed for
+wide; recolouring, modified-GLB export, meshopt and independent reproduction remain
+untested. This is partial evidence for the original trial, not blanket qualification.
+
 ## Tool intake — 8 November 2026
 
 [Deduplicated assessment and admission boundaries](research/tool-intake-2026-11-08.md). M4/R05/R07: GLB-NAMED-01 → SCREENPLAY-01 → REA-VIDEO-01; optional VORK-01 (source-available preview, not OSS); later SOLIDCRAFT-01 / UIUX-PACK-01. Existing SAND3D-01 remains single. FAL-I2V-01 is conditional: advertised free guest promotion unconfirmed, visible endpoint paid; no generation or upload authorised by this research. No installs, qualification or production reorder. RUN//SIGNAL M02 still waits for both owner test reports.
@@ -1165,3 +1173,39 @@ Original deterministic Canvas2D/common cue-sheet15s pilot in1920×1080 and1080×
 [Current production and limits](productions/run-signal-m01.md), RUN-AUDIO-01 / R04/R05/R09. Owner accepted audio/visor modules and shortened home-review v07. No M02 before outdoor report. PlayMCP natural base motion and locally derived thermal/rounded-helmet trial accepted only as M01 compromise; exact speech/acting sync, moving thermal masks and physically correct helmet orientation are unresolved. PixVerse actual30-credit daily grant is a dated account observation, not a general free quota guarantee. Vidu100 Free Credits observed; daily renewal unverified.
 
 **Next fitting finale probe, not started:** same cleared synthetic people/reference, short known speech, motion/thermal registration/helmet direction criteria before generation; compare with retained M01 fallback, inspect whole movement and actual export. Do not loop/extend a short human take to fill long dialogue without a new review; shorten dead time and use motivated off-screen detail shots. Owner outdoor report and new film priorities take precedence; this entry authorises no generation or spending.
+
+
+### CENTRE-CROP-01 — next two Radar films plus an experiment film,9November2026
+
+Owner revised the design: compare two comparable Radar topics using the same tools,
+style, workflow, similar duration, scene complexity and narration load. Film A gets
+separate landscape/portrait compositions. Film B is staged as a landscape master
+with a self-contained central9:16 story and secondary lateral content; its centre
+becomes the portrait version. Both films are intended for publication after normal
+per-output acceptance. Then make a third film from their retained excerpts,
+measurements and owner commentary about the experiment.
+
+Record active effort by phase, tool/generation waiting, render/export time,
+corrections, actual charges, free-credit consumption and unknown unpriced resources.
+Include format-related source/upscale resolution and extra4K render cost. Owner
+reviews picture quality/readability/composition on phone and landscape display.
+Freeze criteria and conditions before production; count setup/order/learning effects.
+Different topics remain a confounder: this is a matched practical comparison,
+not a causal quality or audience-performance proof. Publication metrics, if later
+available through Radar, stay separate from production cost and owner perception.
+
+A1080p landscape gives about608x1080 central pixels; a4K master gives1215x2160.
+No assumed labour saving, native-detail recovery or reach increase. Topic selection,
+measurement capture and production have not started. This entry replaces the earlier
+single-fragment A/B proposal. No extra Radar acquisition/schedule is started.
+
+### FW-BRAND-01 — accepted identity; placement experiment open,9November2026
+
+[Selected FW identity](productions/fw-identity.md): corrected silver ribbon form,
+unfolding motion, thin-metal sound and pure-black opening accepted. Two masters
+last0.967seconds. Landscape README GIF and English public landing are prepared.
+Before routine adoption, compare optional ending and watermark use in selected films
+for legibility, safe margins, interference and owner perception in both formats.
+The transparent watermark derivative and recurring-use decision remain open.
+No automatic insertion; no licence/telemetry change. The centre-crop A/B remains a
+separate two-topic experiment followed by a third film about its measured results.

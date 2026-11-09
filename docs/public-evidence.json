@@ -1,0 +1,565 @@
+{
+  "schema": "framewright-public-evidence-v1",
+  "updated": "2026-11-09",
+  "scope": "Conservative documented cases, not an asserted lifetime total. Original records remain the source of truth.",
+  "definitions": {
+    "films": "One completed authored story/promo/tutorial/ambient master per case. Aspect, language and revision variants count once. A finished export need not be publicly published or creatively accepted.",
+    "trials": "One executed bounded trial or comparison suite. Partial, failed and incomplete attempts count as conducted; routine unit checks, retries and plans do not. Films and trials can overlap; do not add them together."
+  },
+  "deduplication": {
+    "merged_variants": {
+      "good-dogs-teaser": "good-dogs-en",
+      "ssi-site-reels-en": "ssi-site-reels",
+      "mn7r-reels": "mn7r-overview"
+    },
+    "excluded": [
+      "broken anatomy film prototype",
+      "FW sting",
+      "boards/pilots/render fixtures",
+      "SSI6November external-report-only three films",
+      "RUN outdoor test pending",
+      "future centre-crop experiment",
+      "research-only/queued tools"
+    ]
+  },
+  "films": [
+    {
+      "id": "asciitheme",
+      "source": "experiments/2026-10-14/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "ami",
+      "source": "experiments/2026-10-14/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "jeanne-fr",
+      "source": "experiments/2026-10-14/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "good-dogs-en",
+      "source": "experiments/2026-10-14/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "coqpi-flute",
+      "source": "experiments/2026-10-14/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "framewright-remotion",
+      "source": "experiments/2026-10-14/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "burgers-cue-analysis",
+      "source": "experiments/2026-10-15/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "spot-market-3d-miniature",
+      "source": "experiments/2026-10-15/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "mn7r-manim-mlx",
+      "source": "experiments/2026-10-15/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "agro-uk-paper-piper",
+      "source": "experiments/2026-10-15/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "spot-market-uk-lcd",
+      "source": "experiments/2026-10-15/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "contract-execution-prompt-motion",
+      "source": "experiments/2026-10-15/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "agri-brokerage-trading-table",
+      "source": "experiments/2026-10-15/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "ami-books-openscreen",
+      "source": "experiments/2026-10-15/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "agro-series-compilation",
+      "source": "experiments/2026-10-15/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "disco-coffee-game-overview",
+      "source": "experiments/2026-10-17/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "disco-coffee-shorts-worms",
+      "source": "experiments/2026-10-17/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "disco-coffee-shorts-boys",
+      "source": "experiments/2026-10-17/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "sirtet-overview",
+      "source": "experiments/2026-10-18/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "sirtet-ai-short",
+      "source": "experiments/2026-10-18/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "jekyll-toki-pona-book-promo",
+      "source": "experiments/2026-10-19/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "playmcp-service-review",
+      "source": "experiments/2026-10-21/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "ssi-site-reels",
+      "source": "experiments/2026-10-22/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "trend-short-profit-cash",
+      "source": "experiments/2026-10-23/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "trend-short-agent-savepoint",
+      "source": "experiments/2026-10-23/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "dream-walk-film",
+      "source": "experiments/2026-10-24/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "mobius-walk-ambient",
+      "source": "experiments/2026-10-24/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "marble-color-study",
+      "source": "experiments/2026-10-24/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "photo-series-cinema",
+      "source": "experiments/2026-10-25/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "little-light",
+      "source": "experiments/2026-10-25/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "nantes-pixel-journey",
+      "source": "experiments/2026-10-25/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "ssi-weekly-logistics-voice-only",
+      "source": "experiments/2026-10-25/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "ssi-weekly-grains-voice-only",
+      "source": "experiments/2026-10-25/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "ssi-weekly-oilseeds-voice-only",
+      "source": "experiments/2026-10-25/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "one-random-life",
+      "source": "experiments/2026-10-25/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "nantes-green-line-walk",
+      "source": "experiments/2026-10-26/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "framewright-micro-lesson",
+      "source": "experiments/2026-10-26/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "mn7r-overview",
+      "source": "experiments/2026-10-26/outputs.json",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "azur-guide-first-film",
+      "source": "docs/experiments/azur-guide-first-film.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "last-delivery",
+      "source": "docs/experiments/last-delivery.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "last-seed",
+      "source": "docs/experiments/last-seed-recovery.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "good-dog-v8",
+      "source": "docs/experiments/good-dog-closeout.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "two-cities-reuse",
+      "source": "docs/experiments/two-cities-reuse.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "time-capsule",
+      "source": "docs/experiments/time-capsule.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "kazan-rooftop",
+      "source": "docs/experiments/kazan-rooftop.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "venice-afterimage",
+      "source": "docs/experiments/venice-afterimage.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "exin-agent-explainer",
+      "source": "docs/experiments/exin-agent-explainer.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "beyond-the-letters",
+      "source": "docs/experiments/rel-b-repeat-protocol.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "audio-driven-avatars",
+      "source": "docs/productions/audio-driven-avatars.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "azur-airport-menton",
+      "source": "docs/productions/azur-airport-menton.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "dimension9-weekend",
+      "source": "docs/productions/dimension9-weekend.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "feather-star-swimmer",
+      "source": "docs/productions/feather-star-swimmer.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "gallery-lava",
+      "source": "docs/productions/gallery-lava.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "gemini-omni-revise",
+      "source": "docs/productions/gemini-omni-revise.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "github-agentic-workflows",
+      "source": "docs/productions/github-agentic-workflows.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "glb-car-lab",
+      "source": "docs/productions/glb-car-lab.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "halloween-scroll-2026",
+      "source": "docs/productions/halloween-scroll-2026.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "harbour-three-parcels",
+      "source": "docs/productions/harbour-three-parcels.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "infradev",
+      "source": "docs/productions/infradev.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "jepa-good-views",
+      "source": "docs/productions/jepa-good-views.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "junie-local-hardware",
+      "source": "docs/productions/junie-local-hardware.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "lysogorov-living-posters",
+      "source": "docs/productions/lysogorov-living-posters.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "marcus-zombie-thoughts",
+      "source": "docs/productions/marcus-zombie-thoughts.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "media-semantic-search",
+      "source": "docs/productions/media-semantic-search.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "no-further-claims",
+      "source": "docs/productions/no-further-claims-proposal.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "prisma-plugin-verify",
+      "source": "docs/productions/prisma-plugin-verify.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "real2sim-twins",
+      "source": "docs/productions/real2sim-twins.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "run-signal-m01",
+      "source": "docs/productions/run-signal-m01.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "ubtree-explainer",
+      "source": "docs/productions/ubtree-explainer.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "living-muscle-robots",
+      "source": "docs/productions/post-rel-c-slate-2026-11-05.md",
+      "basis": "explicit_completed_status"
+    },
+    {
+      "id": "copilot-memory-dreaming",
+      "source": "docs/next-cycle.md",
+      "basis": "explicit_completed_status"
+    },
+    {
+      "id": "premation",
+      "source": "docs/next-cycle.md",
+      "basis": "explicit_completed_status"
+    }
+  ],
+  "trials": [
+    {
+      "id": "anatomy-combined-pipeline",
+      "source": "experiments/2026-10-14/README.md"
+    },
+    {
+      "id": "coqpi-flute-native-export",
+      "source": "experiments/2026-10-14/coqpi-flute.md"
+    },
+    {
+      "id": "remotion-native-export",
+      "source": "experiments/2026-10-14/framewright-remotion.md"
+    },
+    {
+      "id": "burgers-cue-analysis",
+      "source": "experiments/2026-10-15/burgers-cue-analysis.md"
+    },
+    {
+      "id": "spot-market-staged-3d",
+      "source": "experiments/2026-10-15/spot-market-3d-miniature.md"
+    },
+    {
+      "id": "manimgx-mlx-integration",
+      "source": "experiments/2026-10-15/mn7r-manim-mlx.md"
+    },
+    {
+      "id": "paper-piper-integration",
+      "source": "experiments/2026-10-15/agro-uk-paper-piper.md"
+    },
+    {
+      "id": "supertonic-uk-voice-probe",
+      "source": "experiments/2026-10-15/spot-market-uk-voice-probe.md"
+    },
+    {
+      "id": "lcd-supertonic-integration",
+      "source": "experiments/2026-10-15/spot-market-uk-lcd.md"
+    },
+    {
+      "id": "prompt-motion-adaptation",
+      "source": "experiments/2026-10-15/contract-execution-prompt-motion.md"
+    },
+    {
+      "id": "ace-step-music-attempt",
+      "source": "experiments/2026-10-15/agri-brokerage-ace-step.md"
+    },
+    {
+      "id": "openscreen-site-capture",
+      "source": "experiments/2026-10-15/ami-books-openscreen.md"
+    },
+    {
+      "id": "moviepy-compilation",
+      "source": "experiments/2026-10-15/agro-series-compilation.md"
+    },
+    {
+      "id": "tesseract-roundtrip",
+      "source": "experiments/2026-10-18/sirtet-videos.md"
+    },
+    {
+      "id": "mlx-whisper-timing",
+      "source": "experiments/2026-10-18/sirtet-videos.md"
+    },
+    {
+      "id": "gemini-media-review",
+      "source": "docs/experiments/gemini-media-review.md"
+    },
+    {
+      "id": "awwwards-capture-component",
+      "source": "docs/experiments/playmcp-service-review.md"
+    },
+    {
+      "id": "terminaltexteffects-reveal",
+      "source": "docs/experiments/trend-shorts-publication.md"
+    },
+    {
+      "id": "blender-shot-replay",
+      "source": "docs/experiments/blender-shot-replay.md"
+    },
+    {
+      "id": "djv-review",
+      "source": "docs/experiments/djv-review.md"
+    },
+    {
+      "id": "orb-animated-still-export",
+      "source": "docs/experiments/creative-tools-pilot-2026-10-27.md"
+    },
+    {
+      "id": "glea-export-attempt",
+      "source": "docs/experiments/creative-tools-pilot-2026-10-27.md"
+    },
+    {
+      "id": "ffmpeg-ops-01",
+      "source": "docs/experiments/ffmpeg-skill-operations.md"
+    },
+    {
+      "id": "otio-01-handoff-return",
+      "source": "docs/experiments/otio-mn7r-handoff.md"
+    },
+    {
+      "id": "r01-saved-shot-executor",
+      "source": "docs/experiments/r01-saved-shot-executor.md"
+    },
+    {
+      "id": "route-01-admission",
+      "source": "docs/experiments/route-admission.md"
+    },
+    {
+      "id": "source-playmcp-retrieval",
+      "source": "docs/experiments/source-first-playmcp.md"
+    },
+    {
+      "id": "source-mn7r-raw-asr",
+      "source": "docs/experiments/source-asr-mn7r.md"
+    },
+    {
+      "id": "source-mn7r-multicut-proposal",
+      "source": "docs/experiments/source-multicut-mn7r.md"
+    },
+    {
+      "id": "last-seed-selected-final-recovery",
+      "source": "docs/experiments/selected-final-recovery.md"
+    },
+    {
+      "id": "good-dog-session-recovery",
+      "source": "docs/experiments/session-recovery-2026-11-01.md"
+    },
+    {
+      "id": "admitted-eevee-render",
+      "source": "docs/experiments/admitted-eevee-render-2026-11-01.md"
+    },
+    {
+      "id": "r04-two-cities-reuse-boundaries",
+      "source": "docs/experiments/two-cities-reuse.md"
+    },
+    {
+      "id": "rel-b-repeat-template-controls",
+      "source": "docs/experiments/rel-b-repeat-protocol.md"
+    },
+    {
+      "id": "gallery-lava-method-comparison",
+      "source": "docs/productions/gallery-lava.md"
+    },
+    {
+      "id": "rokehan-set-02",
+      "source": "docs/experiments/no-further-claims-manga-probes.md"
+    },
+    {
+      "id": "manga-panel-01",
+      "source": "docs/experiments/no-further-claims-manga-probes.md"
+    },
+    {
+      "id": "manga-motion-01",
+      "source": "docs/experiments/no-further-claims-manga-probes.md"
+    },
+    {
+      "id": "r07-pair-01",
+      "source": "docs/experiments/no-further-claims-manga-probes.md"
+    },
+    {
+      "id": "nfc-resume-01",
+      "source": "docs/rel-c-independent-review-2026-11-04.md"
+    },
+    {
+      "id": "glb-named-01",
+      "source": "docs/productions/glb-car-lab.md"
+    },
+    {
+      "id": "prisma-native-mcp-database",
+      "source": "docs/productions/prisma-plugin-verify.md"
+    },
+    {
+      "id": "run-signal-playmcp-welcome",
+      "source": "docs/productions/run-signal-m01.md"
+    },
+    {
+      "id": "run-signal-pixverse-welcome",
+      "source": "docs/productions/run-signal-m01.md"
+    }
+  ]
+}
