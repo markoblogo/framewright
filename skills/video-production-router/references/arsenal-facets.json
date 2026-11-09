@@ -1465,6 +1465,20 @@
       ],
       "rights_class": "conditional",
       "licence_note_sha256": "78033b467a6273e0318dc2994c81cd989a44e1885dcfdae50e20a9f3895c864a"
+    },
+    "premation": {
+      "tasks": [
+        "video",
+        "editing",
+        "audio",
+        "analysis"
+      ],
+      "inputs": [
+        "video",
+        "audio"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "4c691932781f83473408ee26d328c32488df2a1f4528e153022eb30207ba4641"
     }
   }
 }

@@ -1,7 +1,14 @@
 # Framewright roadmap
 
-Updated 8 November 2026; source version 0.8.0 / REL-C per retained
-[release audit](release-audit-0.8.0.md). [Marcus Aurelius vs Zombies](productions/marcus-zombie-thoughts.md) is closed: both full formats accepted, publication URLs owner-reported, reusable recipe and dependency-aware sanitation retained. PR59 is merged. PR60 merged8November at a7e1d56 after both current-head checks passed; no release. RUN//SIGNAL M01 is accepted for desk review with one-use finale limits and waits for the owner outdoor-test report before M02. UBTree and Dimension9 publication/closeout records are retained. Both selected Radar films, Audio-Driven Avatars and Junie Local, are now accepted and owner-reported published. Their closeout and the new tool research form a documentation PR, without a release or merge. No third Radar film today. See [current work](next-cycle.md).
+Updated 9 November 2026; source version 0.8.0 / REL-C per retained
+[release audit](release-audit-0.8.0.md). PR60, PR61 and PR62 are merged; the current
+local documentation batch records the closed [Premation case](productions/premation-sync-test.md),
+accepted [private Ukrainian terminal pitch](productions/transit-speed-private-pitch.md),
+[Fola voice preference](ukrainian-voice-baseline.md) and bounded tool evidence.
+No new release is implied. The private pitch awaits partner comments before its
+English case; RUN//SIGNAL M01 awaits the outdoor test before M02. The next comparable
+Radar pair carries the separate-layout versus centre-crop production comparison.
+See [current work](next-cycle.md) for protected waits and the selected order.
 Earlier dated entries below are history; they do not restart completed work.
 This is the primary **priority and milestone map**. It connects product work,
 production and experiments; it does not start them or authorize spending/publication.

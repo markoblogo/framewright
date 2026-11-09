@@ -1,21 +1,21 @@
 # Current work and protected waits
 
-Updated 9 November 2026 · source release 0.8.0 / REL-C; end-of-day release consideration is tentative, not execution authority.
+Updated9November2026 · source release0.8.0 / REL-C. Propose the next release when substantive changes justify it; no date-driven release or publication authority.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md).
 
 ## Current boundary
 
-Owner-selected9November order, revised after both Radar closeouts: **finish the accepted FW identity, public landing/README and Studio Notes03 handoff → discuss Transit Speed Mándok → RUN//SIGNAL outdoor-test review once the owner returns**. The fresh Radar menu (10 topics; five recommended) was received through the existing exchange. Its PARTIAL research status and source/claim limits remain; selection is not a measured commercial result.
+Owner-selected9November order, after accepted identity/site delivery: **close Premation → Transit Speed Mándok Ukrainian 16:9 reference frames/pilot → Ukrainian partner film → partner feedback/corrections → later English public case**. RUN//SIGNAL outdoor testing/report and further Radar films are deferred to10November. The fresh Radar menu is already received through the existing exchange; its PARTIAL research status and source/claim limits remain.
 
-Premation's two full films were accepted and owner-reported published: YouTube PhwCWcEe0LE and TikTok ZSpDa9LYn. Only YouTube was sent to Radar; apply/duplicate/returned acknowledgements were checked. Its closeout recipe/sanitation is not yet performed. No extra Radar acquisition or project auto hook was added.
+[Premation](productions/premation-sync-test.md) is closed: both99.3s English films accepted and owner-reported published, YouTube-only Radar delivery/duplicate/ack receipts checked. Recipe, scoped native sync result and failed setup retained;47 superseded files retired after52-input/hash/link checks. Full/package MP4 hardlinks retained. No new trial, acquisition or auto hook.
 
 [Gemini](productions/gemini-omni-revise.md) and [Prisma](productions/prisma-plugin-verify.md) are accepted and owner-reported published in both formats. YouTube-only Radar status delivery and returned acknowledgements passed. Both cases are closed with dependency-aware sanitation and retained recipes/limitations. Prisma includes an authorised isolated real Codex MCP database test; no app, ORM, hosting or user-isolation test. No paid calls or public deployment.
 
-Owner update9November: both cases are closed. [FW form, unfolding motion and thin-metal sound](productions/fw-identity.md) are accepted, with a pure-black opening and0.967second masters in both formats. The README GIF and English landing use this identity; routine ending/watermark placement remains an experiment. A transparent watermark is not yet delivered. Studio Notes03 is being revised and explicitly handed over; CMS publication remains the owner’s action. The next two comparable Radar films are assigned a matched production comparison: A separate aspect compositions, B centre-oriented landscape plus portrait crop, common tools/conditions and measured effort/cost/owner perception. A third film will explain the experiment from their excerpts and recorded results. No automatic replacement of separate portrait composition or causal audience claim. Licensing/community-feedback ideas remain discussion: the owner is open to a future licence change and local interface, but no licence, telemetry or access policy change is authorised.
+Owner update9November: both cases are closed. [FW form, unfolding motion and thin-metal sound](productions/fw-identity.md) are accepted, with a pure-black opening and0.967second masters in both formats. The README GIF and English landing use this identity; routine ending/watermark placement remains an experiment. A transparent watermark is not yet delivered. Studio Notes03 was revised and handed over through its readable publication package; CMS publication remains the owner’s action. The next two comparable Radar films are assigned a matched production comparison: A separate aspect compositions, B centre-oriented landscape plus portrait crop, common tools/conditions and measured effort/cost/owner perception. A third film will explain the experiment from their excerpts and recorded results. No automatic replacement of separate portrait composition or causal audience claim. Licensing/community-feedback ideas remain discussion: the owner is open to a future licence change and local interface, but no licence, telemetry or access policy change is authorised.
 
-Transit Speed PDF v2.0 is a proposed system concept, not existing software or proven efficiency. Owner clarified: Ukrainian private partner presentation plus English public client-attraction case on the same visual basis; flexible duration. Include actual Monitor/MN7R, SSI and AMI ecosystem experience. Source-screen and script/style review remain pending. All new material remains on the external studio.
+[Transit Speed — private terminal pitch](productions/transit-speed-private-pitch.md): owner accepted and fixed Ukrainian v5 on9November2026,179.967s,1920x1080/30fps. The selected master has the original AMI mark centred in the final0.967seconds and a small «Зроблено у FW» credit. All5370earlier picture packet payloads/PTS and the full AAC stream match v4. Fola speech, moving fictional terminal/3D scenes, proposed synthetic interfaces and brief actual public MN7R/SSI/AMI main screens are retained. Original concept scope was rechecked; no existing deployment or measured savings are claimed. Full decode, encoded layout, audio and two-way seek checks passed; owner creative/sound approval is recorded. The owner plans to send this version to partners: comments and partner approval have not been reported. **English public case is paused until partner comments and any required corrections.** No TikTok, agent client send, public upload, paid API, commit or release. Accepted master and editable dependencies remain in the external studio; no cleanup at this checkpoint.
 
-At the end of the day, assess accumulated changes, PR/review/CI and release scope; the owner's tentative release idea does not itself authorise publishing a release. Do not bypass current approval gates to meet the calendar.
+Release decision: the agent monitors accumulated changes and proposes a release when a coherent, useful capability/method increment and evidence justify it. Documentation volume and elapsed time are not enough. Publishing a release remains a separate decision; no end-of-day deadline.
 
 [RUN//SIGNAL M01](productions/run-signal-m01.md): v07 accepted in home visual/audio
 review, total 22:00.07 with exactly 1200 seconds of time-based training. The outdoor
@@ -53,8 +53,11 @@ and receipt live in studio records/production-closeout-2026-11-08/.
 [PR60](https://github.com/markoblogo/framewright/pull/60) merged at a7e1d56;
 [PR61](https://github.com/markoblogo/framewright/pull/61) merged at 40049fa on
 8 November. The latter includes the two Radar case closeouts, tool intake and SSI
-report; they are no longer awaiting review. This new GLB documentation slice needs
-its own checks/review/CI. No new release requested.
+report; they are no longer awaiting review. [PR62](https://github.com/markoblogo/framewright/pull/62)
+merged at7b1bfd7 on9November with GLB/identity/site/editorial records and both CI checks
+passed. The next scoped documentation batch records Premation closeout, the accepted private
+Ukrainian pitch, Fola preference and catalogue evidence. Source version remains
+0.8.0; no new release is part of this batch.
 
 GLB closeout retained accepted masters, indispensable GLB/vendor/scene/audio/package
 inputs and bounded pilot/reopen evidence. It retired 28 reproducible intermediates
