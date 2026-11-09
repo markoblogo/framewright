@@ -3,7 +3,7 @@
     "schema": "framewright-public-profile-v1",
     "updated": "2026-11-09",
     "headline": "Craft the frame. Keep the method.",
-    "description": "An experimental creative studio run by a human and an AI agent. Films, animation, graphics and sound—made with selected tools, reviewed in context, and kept as reusable methods.",
+    "description": "An experimental creative studio run by a human and an AI agent. Films, animation, graphics and sound\u2014made with selected tools, reviewed in context, and kept as reusable methods.",
     "capabilities": [
       {
         "title": "Films & animation",
@@ -23,34 +23,36 @@
     "video_fallback": [
       {
         "id": "OknfCwdyXIc",
-        "title": "Prisma · a real database test"
+        "title": "Prisma \u00b7 a real database test"
       },
       {
         "id": "qfEnMIjJzys",
-        "title": "Gemini Omni · an illustrated explanation"
+        "title": "Gemini Omni \u00b7 an illustrated explanation"
       },
       {
         "id": "PhwCWcEe0LE",
-        "title": "Premation · checking sound and picture"
+        "title": "Premation \u00b7 checking sound and picture"
       },
       {
         "id": "SrWeTSaQ4DQ",
-        "title": "GLB Car Lab · control one part"
+        "title": "GLB Car Lab \u00b7 control one part"
       },
       {
         "id": "pAClkR9eIZ8",
-        "title": "Junie Local · an animated explainer"
+        "title": "Junie Local \u00b7 an animated explainer"
       },
       {
         "id": "zCNWJxI6XqU",
-        "title": "Audio-driven avatars · examples and limits"
+        "title": "Audio-driven avatars \u00b7 examples and limits"
       }
     ]
   },
   "counts": {
     "methods": 10,
     "profiles": 17,
-    "reviews": 139
+    "reviews": 139,
+    "films": 72,
+    "trials": 44
   },
   "date": "2026-11-09",
   "release": {

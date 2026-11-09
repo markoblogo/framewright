@@ -5,3 +5,5 @@
 
 /* Preserve the accepted mark at every viewport; keep previews modest. */
 .hero-art img,.hero-art video{height:auto;aspect-ratio:16/9;object-fit:contain}.film{max-width:780px}
+
+.counters{grid-template-columns:repeat(4,1fr)}.counters a{padding-inline:24px}.counters strong{font-size:clamp(48px,5.5vw,76px)}@media(max-width:600px){.counters{grid-template-columns:repeat(2,1fr);row-gap:24px}.counters a{padding:0 18px}.counters a:nth-child(3){border-left:0;padding-left:0}.counters strong{font-size:54px}.counters span{font-size:11px}.counters small{font-size:9px}}
