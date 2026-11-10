@@ -33,6 +33,11 @@ of portable production methods, not a requirement for applying them.
 | An arsenal that solves problems | New tools improve a specific weak point | Bounded comparison against the existing method, feature/version/host scope and retained failures |
 | Transferable knowledge | Another operator can use the methods and contribute experience | Reproduction, external handoff, worked cases with and without Framewright; book-readiness evidence |
 
+Tool intake,10November: [cross-device catalogue](research/tool-intake-2026-11-10.md)
+extends M4/R05/R06/R07 without changing production priority. Useful incompatible
+tools stay discoverable for future hardware/users; only actual current-stack fit
+enters near-term admission. Requirements, licences and qualification stay separate.
+
 ## Foundation and dated release evidence
 
 The [27–28 October capability review](product-progress-2026-10-27-28.md) and

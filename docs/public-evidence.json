@@ -18,8 +18,7 @@
       "boards/pilots/render fixtures",
       "SSI6November external-report-only three films",
       "RUN outdoor test pending",
-      "research-only/queued tools",
-      "future A/B experiment-results film"
+      "research-only/queued tools"
     ]
   },
   "films": [
@@ -397,6 +396,17 @@
       "id": "pixelmator-roundtrip",
       "source": "docs/productions/radar-pair-centre-crop-2026-11-10.md",
       "basis": "completed_case_record"
+    },
+    {
+      "id": "centre-crop-results-film",
+      "source": "docs/productions/centre-crop-results-film.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "dependabot-apm-skills",
+      "source": "docs/productions/dependabot-apm-skills.md",
+      "basis": "owner_accepted_published",
+      "index_note": "One83.1s authored story in two native aspect layouts. Owner URLs, not independent visibility, audience results or a live APM test."
     }
   ],
   "trials": [

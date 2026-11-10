@@ -1,11 +1,12 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
     "separate": "Documentation review, runtime attempt, technical pass, owner preference, rights and public publication are distinct. Unknown is not failure.",
-    "authority": "A queued item is not install, model download, purchase, account, upload or autonomous execution authority."
+    "authority": "A queued item is not install, model download, purchase, account, upload or autonomous execution authority.",
+    "stack_retention": "Retain useful tools across operating systems, CPU/GPU vendors and memory classes even when unavailable on the current machine. Current-host admission and future-stack readiness are separate. Store sourced requirements/unknowns and a changed-stack recheck trigger; catalogue presence is not installation, qualification, rights clearance or purchase advice."
   },
   "tools": [
     {
@@ -2434,6 +2435,434 @@
       "evidence": [
         "docs/productions/premation-sync-test.md"
       ]
+    },
+    {
+      "id": "tesseract-runtime",
+      "name": "Tesseract creative runtime",
+      "url": "https://github.com/mirage-hq/Tesseract",
+      "source_urls": [
+        "https://github.com/mirage-hq/Tesseract",
+        "https://mirage.app/tesseract"
+      ],
+      "reviewed": "2026-11-10",
+      "review_basis": "Primary repository/model-card/licence documentation and retained hash-bound HTTP snapshots; no install, weight download or runtime test",
+      "upstream_revision": "runtime: f8a6caa07c90986a256838763b02484ddd56c580",
+      "disposition": "candidate",
+      "scope_and_findings": "Creative engine0.6.0: editable .tsrct, text/shapes/keyframes/masks/audio/video and3D. Separate from the historically tested Tesseract-Converter and unrelated OCR. Apple Silicon distribution documented; runtime not found in PATH or the documented per-user bin location checked. No binary executed.",
+      "licence_note": "Custom terms, not MIT. Covered-business commercial use at annual aggregated worldwide gross revenue >=US$1m requires separate agreement; eligibility unknown. Substitute/competing-product and integration restrictions also need scope review before Framewright use. Do not infer permission from free binary or converter MIT licence.",
+      "next_trial_or_retest_condition": "TESSERACT-RUNTIME-01 only after exact use/entity eligibility and integration terms are resolved, checksum/version/resource preflight, then a10–12s original project correction/reopen/two-aspect export/sync comparison.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-10.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM,macOS27.0.1; observed10November2026",
+        "current_status": "Conditional local candidate; terms unresolved",
+        "alternative_targets": [
+          "macOS Apple Silicon native CLI",
+          "Other officially supported OS/architecture builds after exact build check"
+        ],
+        "requirements_and_unknowns": "0.6.0 darwin-arm64 ZIP metadata~135MB; not runtime/RAM requirement. Current host fit not tested. Do not bypass Gatekeeper/quarantine.",
+        "recheck_trigger": "Changed host/OS/backend or access/terms, plus an owner-selected production need; recheck version, rights, resources and a bounded trial before admission. Hardware change alone does not clear licensing."
+      },
+      "proposed_trial_id": "TESSERACT-RUNTIME-01"
+    },
+    {
+      "id": "image-to-sculpt",
+      "name": "Image2Sculpt",
+      "url": "https://github.com/gokayfem/image-to-sculpt",
+      "source_urls": [
+        "https://github.com/gokayfem/image-to-sculpt"
+      ],
+      "reviewed": "2026-11-10",
+      "review_basis": "Primary repository/model-card/licence documentation and retained hash-bound HTTP snapshots; no install, weight download or runtime test",
+      "upstream_revision": "source: 454381c13f2506b12d392e9286a8d32fc9549566",
+      "disposition": "candidate",
+      "scope_and_findings": "Normal/silhouette/depth-guided fitted geometry and recorded sculpt operations, Blender replay/turntable and GLB/OBJ/STL output. Front-only inferred depth does not recover unseen true geometry. Offline synthetic demo and supplied-image paths documented; default run may invoke paid view providers.",
+      "licence_note": "MIT source; depth/model/provider and input rights separate. Author per-case provider cost estimate is not a measured project expense or authorised budget.",
+      "next_trial_or_retest_condition": "IMAGE-SCULPT-01: offline known synthetic shape with owned views, held-out silhouette/depth check, Blender reopen/turntable and one export; no provider calls. Then consider an owned stylised book prop.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-10.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM,macOS27.0.1; observed10November2026",
+        "current_status": "Conditional local offline candidate",
+        "alternative_targets": [
+          "macOS/Python/Blender supplied-view path",
+          "Higher-memory CPU/GPU host for separately admitted view/depth models"
+        ],
+        "requirements_and_unknowns": "Exact Python/dependency/Blender and RAM/time needs unmeasured here; do not assume API-free default command or rigged character output.",
+        "recheck_trigger": "Changed host/OS/backend or access/terms, plus an owner-selected production need; recheck version, rights, resources and a bounded trial before admission. Hardware change alone does not clear licensing."
+      },
+      "proposed_trial_id": "IMAGE-SCULPT-01"
+    },
+    {
+      "id": "ooosplat",
+      "name": "OOOSplat",
+      "url": "https://github.com/ooolabdev/ooosplat",
+      "source_urls": [
+        "https://github.com/ooolabdev/ooosplat"
+      ],
+      "reviewed": "2026-11-10",
+      "review_basis": "Primary repository/model-card/licence documentation and retained hash-bound HTTP snapshots; no install, weight download or runtime test",
+      "upstream_revision": "source: 82d46203635dfb338f8fa5118c9c09bd66f905ec",
+      "disposition": "candidate",
+      "scope_and_findings": "Tauri desktop video/image -> COLMAP -> Brush Gaussian splat reconstruction; PLY scene and camera workflow. Mac alpha documents CPU COLMAP and Metal Brush. A splat is not an editable named-part GLB mesh.",
+      "licence_note": "Apache2 app; bundled engines and captured scene/assets have their own terms. Mac alpha is unsigned/unnotarized; no trust bypass authorised.",
+      "next_trial_or_retest_condition": "OOOSPLAT-MAC-01: first trust/distribution and external-storage/RAM admission; then owner-supplied10–20s orbit or small still set, bounded reconstruction, reopen/PLY and verify Mac camera/movie export separately.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-10.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM,macOS27.0.1; observed10November2026",
+        "current_status": "Conditional admission-only candidate; source asset/trust/resource gates open",
+        "alternative_targets": [
+          "Apple Silicon macOS15+ Metal alpha",
+          "Windows NVIDIA CUDA route after build/VRAM check"
+        ],
+        "requirements_and_unknowns": "16GiB run size not established. CPU reconstruction and Metal training are separate stages. Mac movie export not proven by Windows WebView2 AVC docs. README0.7.1 is not a verified latest release; release API404 retained.",
+        "recheck_trigger": "Changed host/OS/backend or access/terms, plus an owner-selected production need; recheck version, rights, resources and a bounded trial before admission. Hardware change alone does not clear licensing."
+      },
+      "proposed_trial_id": "OOOSPLAT-MAC-01"
+    },
+    {
+      "id": "reelmimic",
+      "name": "ReelMimic",
+      "url": "https://github.com/edenfunf/reelmimic",
+      "source_urls": [
+        "https://github.com/edenfunf/reelmimic"
+      ],
+      "reviewed": "2026-11-10",
+      "review_basis": "Primary repository/model-card/licence documentation and retained hash-bound HTTP snapshots; no install, weight download or runtime test",
+      "upstream_revision": "source: 4e645857faefe34ff83596b09a43d7f610a4d481",
+      "disposition": "candidate",
+      "scope_and_findings": "Reference rhythm/shot/colour analysis -> original2D plan with painted, crayon, pixel, paper-cut, whiteboard and anime routes. Adopt a bounded method/component in Framewright, not a parallel studio or automatic multi-agent orchestration. Author mostly Windows-tested; stated1–3.5h for30–60s is not our measured time.",
+      "licence_note": "MIT source; reference footage/characters and optional ElevenLabs/Yating/Pixabay/Freesound services separate. Local agent-plan use is not zero-cost proof.",
+      "next_trial_or_retest_condition": "REELMIMIC-LOOK-01: owned10–12s reference, reviewed shot/colour/movement plan and one original short style with existing tools; no new service keys or automatic parallel agents.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-10.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM,macOS27.0.1; observed10November2026",
+        "current_status": "Conditional method-first candidate",
+        "alternative_targets": [
+          "Current macOS with existing local renderer/agent",
+          "Windows reference environment; Linux after dependency check"
+        ],
+        "requirements_and_unknowns": "Node22.18+,Python3.10+ documented; newer engines and Mac/Linux less-tested. No savings or motion quality established.",
+        "recheck_trigger": "Changed host/OS/backend or access/terms, plus an owner-selected production need; recheck version, rights, resources and a bounded trial before admission. Hardware change alone does not clear licensing."
+      },
+      "proposed_trial_id": "REELMIMIC-LOOK-01"
+    },
+    {
+      "id": "photodeblur",
+      "name": "ComfyUI-PhotoDeblur",
+      "url": "https://github.com/porfeng/ComfyUI-PhotoDeblur",
+      "source_urls": [
+        "https://github.com/porfeng/ComfyUI-PhotoDeblur"
+      ],
+      "reviewed": "2026-11-10",
+      "review_basis": "Primary repository/model-card/licence documentation and retained hash-bound HTTP snapshots; no install, weight download or runtime test",
+      "upstream_revision": "source: 4ffd73a7d244ea01b87ec0c7245497cdc51749fc",
+      "disposition": "candidate",
+      "scope_and_findings": "Static deblurring wrapper for HI-Diff and MISCFilter, optional tiling/TTA/tone correction. Source explicitly permits HI-Diff CPU but MISCFilter rejects non-CUDA. Not video super-resolution or general reconstruction of missing truth.",
+      "licence_note": "MIT nodes; HI-Diff code Apache2 and MISCFilter code MIT per retained THIRD_PARTY. Checkpoint/download terms still need exact review.",
+      "next_trial_or_retest_condition": "PHOTO-DEBLUR-01: checkpoint/RAM/runtime admission, then one512px owned synthetically blurred still vs retained clean source and local baseline, checking text/edges/faces/colour/tiles/time. Only HI-Diff CPU candidate on this host.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-10.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM,macOS27.0.1; observed10November2026",
+        "current_status": "Conditional HI-Diff CPU preflight; MPS unknown, MISCFilter unavailable without CUDA",
+        "alternative_targets": [
+          "CPU HI-Diff small-image diagnostic",
+          "NVIDIA CUDA host for MISCFilter/HI-Diff after exact weight and VRAM check"
+        ],
+        "requirements_and_unknowns": "No RAM/runtime benchmark on this16GiBMac. ComfyUI or model presence not assumed; do not download before resource/rights check.",
+        "recheck_trigger": "Changed host/OS/backend or access/terms, plus an owner-selected production need; recheck version, rights, resources and a bounded trial before admission. Hardware change alone does not clear licensing."
+      },
+      "proposed_trial_id": "PHOTO-DEBLUR-01"
+    },
+    {
+      "id": "opentoonz",
+      "name": "OpenToonz",
+      "url": "https://opentoonz.github.io/",
+      "source_urls": [
+        "https://opentoonz.github.io/",
+        "https://github.com/opentoonz/opentoonz"
+      ],
+      "reviewed": "2026-11-10",
+      "review_basis": "Primary repository/model-card/licence documentation and retained hash-bound HTTP snapshots; no install, weight download or runtime test",
+      "upstream_revision": "source: a2504560093f1e7104badef58d94a0f196ebae67",
+      "disposition": "reference_only",
+      "scope_and_findings": "Existing3November manga-tooling reserve, now indexed without a duplicate trial. Traditional2D, cutout and Plastic deformation; setup/manual GUI cost may exceed a small-shot benefit. No natural walk/contact/anatomy qualification.",
+      "licence_note": "Modified BSD core; third-party components, brushes and project assets separately licensed.",
+      "next_trial_or_retest_condition": "Reuse existing manga/cutout reserve only when a selected shot needs it; verify current Mac build/arm64/dependencies and a tiny cutout loop before broader use.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-10.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM,macOS27.0.1; observed10November2026",
+        "current_status": "Existing reserve, not newly queued",
+        "alternative_targets": [
+          "macOS supported distribution; current arm64 build unverified",
+          "Windows/Linux supported build after exact dependencies check"
+        ],
+        "requirements_and_unknowns": "Current OS compatibility, hardware acceleration and resource needs unmeasured; no installation from this review.",
+        "recheck_trigger": "Changed host/OS/backend or access/terms, plus an owner-selected production need; recheck version, rights, resources and a bounded trial before admission. Hardware change alone does not clear licensing."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "edits-meta",
+      "name": "Edits by Meta",
+      "url": "https://edits.instagram.com/",
+      "source_urls": [
+        "https://edits.instagram.com/"
+      ],
+      "reviewed": "2026-11-10",
+      "review_basis": "Primary repository/model-card/licence documentation and retained hash-bound HTTP snapshots; no install, weight download or runtime test",
+      "upstream_revision": "",
+      "disposition": "reference_only",
+      "scope_and_findings": "Phone editing/captions/teleprompter/storyboard and no-added-watermark exports documented by Meta. Useful manual mobile finishing or later AzurMenton handoff; not a verified Mac CLI/MCP or auto-publishing route.",
+      "licence_note": "Proprietary account/service terms. Music/effects/AI entitlement, regional availability and export rights need per-use checks; historical free promotions are not current unlimited quotas.",
+      "next_trial_or_retest_condition": "Owner-held iOS/Android trial only when a selected mobile/Instagram handoff needs captions/export; preserve original and inspect watermark/text/audio. No account changes or posting now.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-10.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM,macOS27.0.1; observed10November2026",
+        "current_status": "Mobile reference; not current desktop agent pipeline",
+        "alternative_targets": [
+          "iOS/Android with actual Instagram entitlement",
+          "Manual receiving-project mobile finishing"
+        ],
+        "requirements_and_unknowns": "No desktop automation established; current account, EU feature access, device requirements and free allowance not verified. Official Meta2025 introduction and2026 one-year update retained.",
+        "recheck_trigger": "Changed host/OS/backend or access/terms, plus an owner-selected production need; recheck version, rights, resources and a bounded trial before admission. Hardware change alone does not clear licensing."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "viggle-image-swap",
+      "name": "Viggle Image Swap",
+      "url": "https://huggingface.co/Viggle/Viggle-Image-Swap",
+      "source_urls": [
+        "https://huggingface.co/Viggle/Viggle-Image-Swap"
+      ],
+      "reviewed": "2026-11-10",
+      "review_basis": "Primary repository/model-card/licence documentation and retained hash-bound HTTP snapshots; no install, weight download or runtime test",
+      "upstream_revision": "weights: 572d4971fd0d11f643232a95c126f9317e13f937",
+      "disposition": "rights_blocked",
+      "scope_and_findings": "Qwen Image2.1-based full-person still swap from character sheet, distinct from previously researched Viggle Remake video. Author1MP B200 benchmark peaks46GB and turbo55GB; generic MPS snippet is not Apple feasibility evidence. Pose/background/clothes drift still needs controls.",
+      "licence_note": "Qwen Research licence: non-commercial research/evaluation only; separate commercial permission required. Apache inference code does not grant commercial weight rights.",
+      "next_trial_or_retest_condition": "Retain GPU research reserve; monetised/public production held until compatible permission. Exact eligible backend/weights and original-asset comparison required even after hardware change.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-10.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM,macOS27.0.1; observed10November2026",
+        "current_status": "Not admitted:16GiB and commercial-use rights",
+        "alternative_targets": [
+          "High-memory NVIDIA reference route after terms/use clearance",
+          "Hosted route only if explicitly licensed/authorised; none verified"
+        ],
+        "requirements_and_unknowns": "46/55GB are reported benchmark peaks, not independently established minimum VRAM. More Mac unified memory is not a CUDA substitute.",
+        "recheck_trigger": "Changed host/OS/backend or access/terms, plus an owner-selected production need; recheck version, rights, resources and a bounded trial before admission. Hardware change alone does not clear licensing."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "turboh3-fl2va",
+      "name": "TurboH3 FL2VA/I2VA",
+      "url": "https://huggingface.co/TurboDiffusion/TurboH3-FL2VA-I2VA",
+      "source_urls": [
+        "https://huggingface.co/TurboDiffusion/TurboH3-FL2VA-I2VA"
+      ],
+      "reviewed": "2026-11-10",
+      "review_basis": "Primary repository/model-card/licence documentation and retained hash-bound HTTP snapshots; no install, weight download or runtime test",
+      "upstream_revision": "weights: 60266aa6c44e2ff371bc6aa89af8437ed9494507",
+      "disposition": "rights_blocked",
+      "scope_and_findings": "First/last-image-to-audio/video TurboDiffusion variant; custom W8A8/PyTorch/CUDA runtime and NVIDIA reference. No current Apple path or memory/performance trial.",
+      "licence_note": "Retained MiniMax H3 terms exclude EU,UK,Republic of Korea and US from applicable territory absent separate authorisation. Current owner France/EU route not admitted; a larger GPU alone does not clear terms.",
+      "next_trial_or_retest_condition": "Reassess only changed terms/explicit permission and actual eligible CUDA backend plus bounded quote/resources, then owned short I2V control.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-10.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM,macOS27.0.1; observed10November2026",
+        "current_status": "Not admitted:CUDA/backend and territorial licence gates",
+        "alternative_targets": [
+          "Compatible NVIDIA CUDA12.8/PyTorch2.11-cu128 runtime after rights clearance",
+          "Separately licensed hosted inference; no entitlement verified"
+        ],
+        "requirements_and_unknowns": "RTX5090 example is a reference, not verified minimum memory or free hosted access. Repository aggregate parameter metadata includes variants; no runtime fit inferred.",
+        "recheck_trigger": "Changed host/OS/backend or access/terms, plus an owner-selected production need; recheck version, rights, resources and a bounded trial before admission. Hardware change alone does not clear licensing."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "hyperflow-h3-flash",
+      "name": "HyperFlow H3 Flash",
+      "url": "https://huggingface.co/VideoRebirthAI/hyperflow-h3-flash",
+      "source_urls": [
+        "https://huggingface.co/VideoRebirthAI/hyperflow-h3-flash"
+      ],
+      "reviewed": "2026-11-10",
+      "review_basis": "Primary repository/model-card/licence documentation and retained hash-bound HTTP snapshots; no install, weight download or runtime test",
+      "upstream_revision": "weights: 61f1311bb1c8fac290d1c5121f4ebbb44525f446",
+      "disposition": "rights_blocked",
+      "scope_and_findings": "14B H3 video acceleration variants. Author24/32GB RTX measurements; Q4~9.1GB file does not prove16GiBruntime fit. Some offload routes report~69/91GiBRAM; multi-Blackwell realtime claim not current Mac performance.",
+      "licence_note": "MiniMax H3 territorial conditions retained: EU/UK/Republic of Korea/US excluded without separate authorisation. Source/quantisation availability does not remove underlying conditions.",
+      "next_trial_or_retest_condition": "Reference only until territory/use permission and measured backend/RAM/VRAM change; choose exact quantisation and a bounded original shot, not an unchanged Mac attempt.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-10.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM,macOS27.0.1; observed10November2026",
+        "current_status": "Not admitted:resources/backend and territorial licence",
+        "alternative_targets": [
+          "NVIDIA24/32GB reference-class route with sufficient system RAM and rights",
+          "Higher-memory CUDA/multi-GPU routes if actual task justifies cost"
+        ],
+        "requirements_and_unknowns": "16GB GPU route not benchmarked in card; unified memory/file size/VRAM not interchangeable. No asserted minimum or local speedup.",
+        "recheck_trigger": "Changed host/OS/backend or access/terms, plus an owner-selected production need; recheck version, rights, resources and a bounded trial before admission. Hardware change alone does not clear licensing."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "h3-zimage-hybrid",
+      "name": "MiniMax H3 x Z-Image hybrid",
+      "url": "https://huggingface.co/taurusduan/MiniMax-H3-x-Z-Image-hybrid",
+      "source_urls": [
+        "https://huggingface.co/taurusduan/MiniMax-H3-x-Z-Image-hybrid"
+      ],
+      "reviewed": "2026-11-10",
+      "review_basis": "Primary repository/model-card/licence documentation and retained hash-bound HTTP snapshots; no install, weight download or runtime test",
+      "upstream_revision": "weights: 6ff453a950d37ded994a6ac37a59856b808aa2c1",
+      "disposition": "rights_blocked",
+      "scope_and_findings": "Experimental layer/tensor hybrid FL2VA/REF2VA blocks, BF16/INT8 variants. Not a qualified robust character or shot-continuity solution.",
+      "licence_note": "HF metadata says Apache2, but no LICENSE file found in model repository and MiniMax H3 base/derivative conditions remain unresolved. Do not treat tag as unrestricted commercial/EU clearance.",
+      "next_trial_or_retest_condition": "Wait for complete derivative/base licence clarification and eligible CUDA runtime before an original control-vs-hybrid trial; do not download for current production.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-10.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM,macOS27.0.1; observed10November2026",
+        "current_status": "Not admitted:ambiguous derivative terms and backend/resources",
+        "alternative_targets": [
+          "Future compatible CUDA host only after full derivative/base clearance"
+        ],
+        "requirements_and_unknowns": "No exact minimum VRAM, Mac backend, identity/continuity benchmark or hosted allowance established.",
+        "recheck_trigger": "Changed host/OS/backend or access/terms, plus an owner-selected production need; recheck version, rights, resources and a bounded trial before admission. Hardware change alone does not clear licensing."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "matrix-game-4",
+      "name": "Matrix-Game4.0",
+      "url": "https://github.com/SkyworkAI/Matrix-Game",
+      "source_urls": [
+        "https://github.com/SkyworkAI/Matrix-Game",
+        "https://huggingface.co/Skywork/Matrix-Game-4.0",
+        "https://matrix-game-v4-0.github.io/page/",
+        "https://arxiv.org/abs/2610.27999"
+      ],
+      "reviewed": "2026-11-10",
+      "review_basis": "Primary repository/model-card/licence documentation and retained hash-bound HTTP snapshots; no install, weight download or runtime test",
+      "upstream_revision": "source: 51913b2bfa78a6d54de912b8348b1d318f4d36e2; weights: 2c53100457da7abcf0e966f75637c644d3423a63",
+      "disposition": "reference_only",
+      "scope_and_findings": "Real-time game world rendering with separate executable low-poly state/physics/input and neural appearance; HUD/audio independent aligned layers. Useful architecture reference for later RUN/game visuals. Not arbitrary world/physics generation. Specialized castle/Egypt/racing resources and low-resolution realtime presets need scenario checks.",
+      "licence_note": "V4 source/model Apache2 per version-specific docs; older repository-root MIT is not the full v4 scope. Third-party audio/assets retain their credits/licences.",
+      "next_trial_or_retest_condition": "Future eligible GPU owned-scene test only: same input replay,state/control and image/HUD alignment,occlusion/identity/export checks. No RUN reprioritisation or weight download now.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-10.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM,macOS27.0.1; observed10November2026",
+        "current_status": "No current CUDA runtime; reference architecture retained",
+        "alternative_targets": [
+          "Linux NVIDIA: A10080GB reference",
+          "RTX5090/5080/5070Ti documented presets after exact runtime/resource admission"
+        ],
+        "requirements_and_unknowns": "Python3.12,version-specific PyTorch/CUDA;5B-class checkpoint. Card benchmark480x864 and presets do not establish minimum VRAM or sustained FPS on another host.",
+        "recheck_trigger": "Changed host/OS/backend or access/terms, plus an owner-selected production need; recheck version, rights, resources and a bounded trial before admission. Hardware change alone does not clear licensing."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "sophon-realtime",
+      "name": "Sophon Realtime",
+      "url": "https://huggingface.co/adventists-ai/Sophon-Realtime-v1",
+      "source_urls": [
+        "https://huggingface.co/adventists-ai/Sophon-Realtime-v1",
+        "https://github.com/adventists-ai/sophon-realtime"
+      ],
+      "reviewed": "2026-11-10",
+      "review_basis": "Primary repository/model-card/licence documentation and retained hash-bound HTTP snapshots; no install, weight download or runtime test",
+      "upstream_revision": "source: 59b687b56cfd3c44a3733eef9413dc3cf740478c; weights: 2e52bd4ade5ab9353a387de0b8930d305b1aff88",
+      "disposition": "reference_only",
+      "scope_and_findings": "Realtime audio dialogue family: expressive Tag, low-latency Flash, end-to-end Base on vLLM-Omni. Future radio/character acting reference, not a lightweight replacement for current narration. No listening/latency qualification.",
+      "licence_note": "Apache2 code and weights per retained cards; base/dependency/input/voice rights checked for actual use. No current free hosted entitlement verified.",
+      "next_trial_or_retest_condition": "Revisit an actually available licensed hosted route or suitable GPU server; then same English radio fixture measuring clarity,acting,latency,interruption and export with explicit budget.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-10.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM,macOS27.0.1; observed10November2026",
+        "current_status": "Not current16GiB desktop route",
+        "alternative_targets": [
+          "Tag/Flash: author recommends one80GB GPU",
+          "Base: author documents two-GPU setup; exact capacities/runtime to check",
+          "Separately authorised hosted endpoint if available"
+        ],
+        "requirements_and_unknowns": "Author16/40-user concurrency is not our benchmark. Bigger Apple RAM alone does not supply vLLM CUDA compatibility.",
+        "recheck_trigger": "Changed host/OS/backend or access/terms, plus an owner-selected production need; recheck version, rights, resources and a bounded trial before admission. Hardware change alone does not clear licensing."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "freefield",
+      "name": "Freefield and ComfyUI Freefield",
+      "url": "https://github.com/neuregex/ComfyUI-freefield",
+      "source_urls": [
+        "https://github.com/neuregex/ComfyUI-freefield",
+        "https://github.com/neuregex/freefield"
+      ],
+      "reviewed": "2026-11-10",
+      "review_basis": "Primary repository/model-card/licence documentation and retained hash-bound HTTP snapshots; no install, weight download or runtime test",
+      "upstream_revision": "wrapper: 56c2f6bb435510d1bb36b6c6218488052d974381; gateway: f3d32ce2e3128c58bb2fe38c8942edf87cdb2e4c",
+      "disposition": "reference_only",
+      "scope_and_findings": "ComfyUI workflow/gallery/gateway app manifests with local/Modal GPU paths; not free model hosting. Extract input/model/licence/receipt-manifest principles without duplicating Framewright orchestration. Author app-count and GPU checks are not our qualifications.",
+      "licence_note": "MIT wrapper/gateway source; every workflow/model/provider/input licence independent. A repository called free does not establish zero cost or EU/commercial clearance.",
+      "next_trial_or_retest_condition": "Future approved ComfyUI host: inspect one exact workflow manifest,dependencies,weights/rights,IO and reproducible receipt; no cloud billing setup, keys or automatic installs.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-10.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM,macOS27.0.1; observed10November2026",
+        "current_status": "Reference only; no new gateway or model backend",
+        "alternative_targets": [
+          "Future authorised local ComfyUI CUDA host",
+          "Explicitly budgeted/licensed Modal or other host",
+          "Only workflows with demonstrated Apple backend can enter a Mac trial"
+        ],
+        "requirements_and_unknowns": "GPU/RAM/storage vary per workflow; L40S/H100 author checks are not universal minimums. Avoid parallel studio/new scheduler.",
+        "recheck_trigger": "Changed host/OS/backend or access/terms, plus an owner-selected production need; recheck version, rights, resources and a bounded trial before admission. Hardware change alone does not clear licensing."
+      },
+      "proposed_trial_id": null
     }
   ]
 }

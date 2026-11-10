@@ -1,5 +1,16 @@
 # Tool review and test inventory
 
+## Cross-device intake —10November2026
+
+[Full assessment, sources and bounded tests](research/tool-intake-2026-11-10.md):
+22 link occurrences,14 families; duplicate OpenToonz and related-but-distinct
+Tesseract/Viggle scopes reconciled. Current Mac candidates and future CUDA,
+high-memory server, Windows/Linux and mobile routes remain separately recorded.
+The [selection policy](../skills/video-production-router/references/selection.md)
+retains useful incompatible tools for future hardware/users, with requirements,
+rights and recheck triggers. Documentation only; no new tested provider or trial.
+
+
 ## Tool batch and internal scope — 6 November 2026
 
 [20-subject deduplicated assessment](research/tool-intake-2026-11-06.md): local sand3d/OpenDirector/Ucupaint candidates; conditional service/asset trials; explicit Apple MLX memory and Windows/CUDA gates. Existing Meshy/Tripo/Krea research extended, not repeated. [Internal studio scope](internal-studio-scope.md) includes image/audio/game-visual products and platform-specific content/handoffs; planned Instagram/Facebook and receiving-project automation remain distinct from proven work. Research only, no installs/generation/spend.

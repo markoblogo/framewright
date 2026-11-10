@@ -79,18 +79,26 @@ class ArsenalSearchTest(unittest.TestCase):
     def test_ukrainian_voice_discovery_keeps_scope_and_excludes_low_quality_default(self):
         r=self.search('--task','narration','--language','uk','--evidence','tested','--rights','commercial')
         ids=[x['id'] for x in r['results']]
-        self.assertIn('supertonic3',ids)
+        self.assertNotIn('supertonic3',ids)
+        self.assertIn('low-quality explicit fallback;enable --include-fallbacks to inspect',r['excluded_summary'])
         self.assertNotIn('piper',ids)
         self.assertNotIn('kokoro',ids)
         self.assertEqual(r['execution'],'not_started')
-        row=next(x for x in r['results'] if x['id']=='supertonic3')
+        explicit=self.search('--task','narration','--language','uk','--tool','supertonic3','--evidence','tested','--rights','commercial')
+        row=next(x for x in explicit['results'] if x['id']=='supertonic3')
         self.assertEqual(row['rights']['status'],'conditional_review_required')
         self.assertFalse(row['rights']['asset_clearance'])
 
-    def test_style_matches_picture_without_filtering_out_ukrainian_voice(self):
+    def test_narrated_chain_requires_explicit_reserve_voice(self):
         r=self.search('--task','video','--input','book-art','--style','paper-cut',
                       '--feature','paper-cut-regroup','--feature','narration','--feature','still-export',
                       '--language','uk','--rights','commercial','--evidence','tested','--combinations')
+        self.assertEqual(r['combinations'],[])
+        self.assertTrue(any('narration' in c['unmet'] for c in r['blocked_combinations']))
+        r=self.search('--task','video','--input','book-art','--style','paper-cut',
+                      '--feature','paper-cut-regroup','--feature','narration','--feature','still-export',
+                      '--language','uk','--rights','commercial','--evidence','tested','--combinations',
+                      '--voice','supertonic3')
         self.assertTrue(r['combinations'])
         c=r['combinations'][0]
         self.assertEqual(c['primary'],'remotion')
@@ -207,7 +215,7 @@ class ArsenalSearchTest(unittest.TestCase):
         self.assertIn('style not indexed for this tool',r['excluded_summary'])
 
     def test_markdown_is_bounded_and_explicit_diagnostics_available(self):
-        p=subprocess.run([sys.executable,str(CLI),'--task','narration','--language','uk','--format','markdown'],capture_output=True,text=True,check=True)
+        p=subprocess.run([sys.executable,str(CLI),'--task','narration','--language','uk','--tool','supertonic3','--format','markdown'],capture_output=True,text=True,check=True)
         self.assertIn(r'conditional\_review\_required',p.stdout)
         self.assertNotIn('"id": "kokoro"',p.stdout)
         self.assertLess(len(p.stdout),12000)
@@ -218,7 +226,7 @@ class ArsenalSearchTest(unittest.TestCase):
     def test_retained_example_matches_current_cli_and_video_analysis_is_composable(self):
         flags=['--task','video','--input','book-art','--style','paper-cut','--feature','paper-cut-regroup',
                '--feature','narration','--feature','still-export','--language','uk','--rights','commercial',
-               '--evidence','tested','--combinations','--format','markdown']
+               '--evidence','tested','--combinations','--voice','supertonic3','--format','markdown']
         p=subprocess.run([sys.executable,str(CLI),*flags],capture_output=True,text=True,check=True)
         self.assertEqual(p.stdout,(ROOT/'examples/plans/arsenal-search-paper-uk.md').read_text())
         r=self.search('--task','video','--input','video','--feature','hard-cut-detection','--evidence','tested','--combinations')

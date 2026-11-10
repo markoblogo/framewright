@@ -2,7 +2,8 @@
 
 8 November 2026 · M3/M4, R04/R05/R09.
 Worked cases: [Audio-Driven Avatars](../productions/audio-driven-avatars.md) and
-[Junie Local](../productions/junie-local-hardware.md). Both films were accepted
+[Junie Local](../productions/junie-local-hardware.md), plus the later
+[Dependabot/APM cassette explainer](../productions/dependabot-apm-skills.md). These films were accepted
 with sound and their publication URLs supplied by the owner. This is bounded
 production evidence, not measured efficiency, model qualification or audience success.
 
@@ -18,6 +19,9 @@ production evidence, not measured efficiency, model qualification or audience su
    than an assumption that diagrams alone met the brief.
 3. Reuse the accepted pilot opening, including its audio dependencies. Measure
    remaining English Supertonic-3 M1 phrases before setting scene boundaries.
+   This is the historical production route. After the10November owner review,
+   [Supertonic stock speech is reserve-only](../voice-selection.md); choose a natural
+   eligible voice first and retain the new take's listening decision.
    Use one timeline and audio mix for both outputs; keep a quiet original bed
    underneath speech instead of hard muting it.
 4. Give each explanation visible action: source examples, moving data/layers,
@@ -52,6 +56,34 @@ is 720p at 12 rendered frames per second; the pilot blends frames to 24fps.
 Final 24fps files combine enlarged 720p material with native 1080p graphics and
 separate aspect layouts. Upscaling does not recover native detail. This establishes
 that selected scene/composition, not photorealistic animation or Junie inference.
+
+## Later native3D/cassette variant
+
+Dependabot/APM reuses six1000px-square RGBA Blender layers in independent native
+1080p30 layouts. Group named pieces only after updating dependency transforms;
+assert that parenting preserves world positions, then check several camera bounds.
+Use one crop across a source clip, rather than per-frame alpha bounds that can
+cause scale jitter. Change explanatory action or insert a large readable file
+example every few seconds; hide decorative progress lines in code-reading areas.
+
+Record the pilot and full mix separately. The accepted pilot's−18.12LUFS was
+0.12 below its proposed guard; keep that deviation. For the full take, preserve
+the original WAV and natural timing, use constant gain on the voice stem and
+measured two-pass normalisation on the final mix. Dynamic voice-stem processing
+failed the intended source-correlation check; it was corrected, not passed by
+relaxing the threshold. Full AAC measured−16.13LUFS/−1.73dBTP in both aspects.
+
+Keep caps on expensive convenience checks. Existing Whisper small produced no
+completed transcript in15m51s and was stopped. Script/silence-boundary captions
+were delivered with approximate phrase timing; no ASR alignment/listening success
+is claimed. Retain that limit rather than making recognition a mandatory stage
+for every short film. Owner acceptance remains separate.
+
+Current full assembly still reads960 source PNGs, the original stills/fonts and
+source audio. Retain them until a separately checked cache conversion changes the
+recipe. Regenerable rejected-preview/QA frames and intermediate mixes can retire
+with an availability receipt. The accepted FW ending is optional for this film;
+it does not settle routine watermark or branding placement. No live APM test.
 
 ## Correction and storage contract
 

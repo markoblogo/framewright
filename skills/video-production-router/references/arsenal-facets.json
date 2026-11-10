@@ -1479,6 +1479,181 @@
       ],
       "rights_class": "unknown",
       "licence_note_sha256": "4c691932781f83473408ee26d328c32488df2a1f4528e153022eb30207ba4641"
+    },
+    "tesseract-runtime": {
+      "tasks": [
+        "video",
+        "graphics",
+        "editing"
+      ],
+      "inputs": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "022ea83dab26dfa24757432c33c65ac316ae7007aa1001b47684629b4e9d664d"
+    },
+    "image-to-sculpt": {
+      "tasks": [
+        "3d",
+        "illustration"
+      ],
+      "inputs": [
+        "image",
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "3398846606cb346f849e494731570bd122ceaadd1f19cc328bb6ef9a850a0b79"
+    },
+    "ooosplat": {
+      "tasks": [
+        "3d",
+        "video"
+      ],
+      "inputs": [
+        "image",
+        "video",
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "dae963bf9ad793f0c7272d0e3ab4370c6df47acbbdb09df56cc7d2572af08f7a"
+    },
+    "reelmimic": {
+      "tasks": [
+        "video",
+        "analysis",
+        "storyboard"
+      ],
+      "inputs": [
+        "video",
+        "text",
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "70ae9e77b53135d6f676bf818c3e4d35ada486030acaaf6952a65ff61b87f35d"
+    },
+    "photodeblur": {
+      "tasks": [
+        "image",
+        "editing"
+      ],
+      "inputs": [
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "b9e77a41a9d360a9ff171da6e944a86861700473315bd6f137eac6691aab5c3b"
+    },
+    "opentoonz": {
+      "tasks": [
+        "video",
+        "illustration"
+      ],
+      "inputs": [
+        "image",
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "afbdc3d7b4c862aa7615209f7ee8eaba9809814d55fa6e6dbb95851921a9c06f"
+    },
+    "edits-meta": {
+      "tasks": [
+        "editing",
+        "distribution"
+      ],
+      "inputs": [
+        "video",
+        "image",
+        "audio"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "b48e2bcf44c6e5193e57d0228c6c939634d07f31f24b0f9596047be5031772f5"
+    },
+    "viggle-image-swap": {
+      "tasks": [
+        "image",
+        "illustration"
+      ],
+      "inputs": [
+        "image"
+      ],
+      "rights_class": "noncommercial_only",
+      "licence_note_sha256": "ff3b34ecd12f74edfe864d473ee419c927ffac4e0601e966f0ef0e44179211d5"
+    },
+    "turboh3-fl2va": {
+      "tasks": [
+        "video",
+        "audio"
+      ],
+      "inputs": [
+        "image",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "5fc6cc6eede7352bd787e918a7709b9c549310152af50272ae3909a2813df0a6"
+    },
+    "hyperflow-h3-flash": {
+      "tasks": [
+        "video"
+      ],
+      "inputs": [
+        "image",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "6ef80bba72185ea4354782443c57c7e924f59564c7a4ca98acbf426cc5c26885"
+    },
+    "h3-zimage-hybrid": {
+      "tasks": [
+        "video"
+      ],
+      "inputs": [
+        "image",
+        "text"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "f9b6a49211864c5e930300879c9797919381f7a239cc284829095d4c9052824b"
+    },
+    "matrix-game-4": {
+      "tasks": [
+        "video",
+        "3d"
+      ],
+      "inputs": [
+        "image",
+        "3d",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "5d36054cfc74815836f3c5a06583d17ad53fe0e9a312b5160006d7310e03211a"
+    },
+    "sophon-realtime": {
+      "tasks": [
+        "audio",
+        "narration"
+      ],
+      "inputs": [
+        "audio",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "602bcaf89a81084157c8d3f971204d9a1a137470e9f9e638968fba23c527efe7"
+    },
+    "freefield": {
+      "tasks": [
+        "video",
+        "image",
+        "audio"
+      ],
+      "inputs": [
+        "image",
+        "video",
+        "audio",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "3aa05ce83c3f3927d7ed83c454e7d692baadbe4d02659f09dfe60efe0b2d6dfd"
     }
   }
 }

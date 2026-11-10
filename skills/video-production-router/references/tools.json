@@ -1532,7 +1532,7 @@
         "narrated",
         "neutral"
       ],
-      "style_note": "Local stock M1/F1 historical scoped references. Current Ukrainian owner preference is Fola in AI Studio; see docs/ukrainian-voice-baseline.md. Long Transit F1 rejected for slow pacing/stress errors; preserve earlier short-probe and separate English acceptance.",
+      "style_note": "Local stock M1/F1 historical scoped references. Current Ukrainian owner preference is Fola in AI Studio; see docs/ukrainian-voice-baseline.md. Long Transit F1 rejected for slow pacing/stress errors; preserve earlier short-probe and separate English acceptance. Owner10November2026 rejected the new English comparison-film M1 take as too robotic and requested Supertonic stock narration only as a reserve when a more natural eligible route is unavailable; see docs/voice-selection.md. Historical accepted takes remain accepted.",
       "tested_version": "SDK1.3.1,ONNX CPU,Python3.12.13;model3cadd1ee6394adea1bd021217a0e650ede09a323",
       "licence_note": "SDKMIT;weightsBigScienceOpenRAIL-M,including explicit machine-generated-content disclosure;no cloning or redistribution.",
       "features": [
@@ -1566,7 +1566,7 @@
         "Model output requires explicit synthetic/AI-generated disclosure;licence restrictions still apply."
       ],
       "style_basis": "observed_pilot",
-      "default_narration_eligible": true,
+      "default_narration_eligible": false,
       "default_voice": "F1",
       "tested_voices": [
         "M1",

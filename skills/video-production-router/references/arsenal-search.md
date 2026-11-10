@@ -28,8 +28,11 @@ scoped tested/documented languages; it does not assume they all have equal quali
 `--evidence tested` accepts retained task/component evidence, not every function of
 a tool. `documented` (default) also admits documented features. `any` exposes queued,
 unknown or failed diagnostic records: read their disposition/coverage. They are not
-promoted to usable providers. Low-quality Piper is excluded by default; use explicit
-`--tool piper` or `--include-fallbacks` to inspect it. It remains an explicit fallback.
+promoted to usable providers. Piper and Supertonic stock are excluded from default
+narration after their recorded quality limitations. Use `--tool supertonic3` or
+`--include-fallbacks` to inspect a reserve record. Discovery does not select a voice
+for a chain: an intentional reserve example needs `--voice supertonic3`. The
+[owner voice policy](../../../docs/voice-selection.md) remains authoritative.
 
 Openverse is a **tested manual SFX acquisition workflow** after the SSI pilot and
 owner acceptance on 2026-10-20. Find it with
@@ -42,8 +45,11 @@ automatic semantic placement remain untested. [Trial](../../../docs/experiments/
 
 ## Compare proposed picture chains
 
+The retained example deliberately names the reserve voice. Omitting that choice
+leaves narration unmet; it does not silently fall back after a quality rejection.
+
 ```sh
-python3 skills/video-production-router/scripts/search.py --task video --input book-art --style paper-cut --feature paper-cut-regroup --feature narration --feature still-export --language uk --rights commercial --evidence tested --combinations --format markdown
+python3 skills/video-production-router/scripts/search.py --task video --input book-art --style paper-cut --feature paper-cut-regroup --feature narration --feature still-export --language uk --rights commercial --evidence tested --combinations --voice supertonic3 --format markdown
 ```
 
 [Generated result](https://github.com/markoblogo/framewright/blob/main/examples/plans/arsenal-search-paper-uk.md) for this

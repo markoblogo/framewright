@@ -134,3 +134,31 @@ and review log. Follow the same two layout choices and preview/QA steps in an ed
 or the same local tools. This written alternative is not a completed independent-user
 reproduction. Check image/font/model licences before reuse; the production retained
 original local imagery/music/SFX and existing Manrope/Supertonic provenance.
+
+
+## Turn the experiment into a sourced film
+
+The [90second YouTube-only results film](../productions/centre-crop-results-film.md)
+uses twelve retained excerpts from the two completed stories. Show both routes,
+then label each number with the measured phase. Export time is not active labour,
+total production cost or an audience effect. Different stories, preparation, rig
+corrections and order confound the comparison; keep inconclusive criteria open.
+
+Its later voice correction copies the accepted encoded picture packets/PTS/DTS
+unchanged. Measure the new natural speech, cut only at retained inter-paragraph
+silences, and fit those chunks into existing scene beats without speed/pitch shifts.
+Keep original score/SFX, caption-map limits, full decode/levels and owner listening
+acceptance separate. Verify packet preservation rather than claiming it from
+`video copy` settings alone. The final Knox take was explicitly accepted after
+publication; its public URL alone was not that listening decision.
+
+Retain the current v2 master, v1 picture-copy source, original new voice, stems,
+cut map, package, source-render/font inputs and twelve excerpts. The3720 JPEG
+proxies are rebuilt automatically by the retained assembler from those clips;
+temporary decoded floats and superseded per-phrase M1 takes are not current v2
+inputs. Preserve their retirement hashes and the earlier rejection.
+
+With Framewright, bind those files and component decisions in its existing journal.
+Without it, keep the same manifests, timed script, immutable picture source, WAVs
+and correction/QA receipts beside an ordinary editor project. This written route
+is not independent-user reproduction or evidence of causal audience benefit.
