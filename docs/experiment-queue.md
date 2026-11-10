@@ -1195,9 +1195,11 @@ not a causal quality or audience-performance proof. Publication metrics, if late
 available through Radar, stay separate from production cost and owner perception.
 
 A1080p landscape gives about608x1080 central pixels; a4K master gives1215x2160.
-No assumed labour saving, native-detail recovery or reach increase. Topic selection,
-measurement capture and production have not started. This entry replaces the earlier
-single-fragment A/B proposal. No extra Radar acquisition/schedule is started.
+No assumed labour saving, native-detail recovery or reach increase. On 10 November,
+[the pair and measurement protocol](productions/radar-pair-centre-crop-2026-11-10.md)
+were frozen, then amended after owner clarification: A Copilot addressed metrics with separate layouts; replacement B Final Cut/Pixelmator image roundtrip with a fixed portrait crop from its approved4K landscape master. Original B review-sources preparation was rejected as too similar to A; preserve its costs/history, not a closed film. Two distinct topics/visual worlds and palettes use common tools and comparable complexity, yielding two platform packages per film and later descriptive audience observations. Both use
+matched90s English scope and4K landscape output. Revised scripts/static references and both moving pilots are accepted. Two90second English full films, independentA portrait and fixed encoded-masterB crop, plus four platform packages are prepared and owner-accepted (films/covers). Technical export/crop/audio checks and source corrections are recorded; full films/covers are owner-accepted and both YouTube/TikTok publications are owner-reported. YouTube-only Radar delivery/duplicate/ack checks passed. The owner regards both visual techniques as good and reusable; numeric category scores and audience metrics remain unknown. Active-authoring effort and monetary allocations remain unknown, so no efficiency winner or savings result exists. This replaces the earlier single-fragment
+proposal; no extra Radar acquisition/schedule or registered Radar experiment.
 
 ### FW-BRAND-01 — accepted identity; placement experiment open,9November2026
 
@@ -1218,3 +1220,12 @@ shows the historical pilot observations as stale checks. Proposed bounded regres
 show retired/history separately from actionable unresolved checks, preserve missing
 current-master failures, and do not infer creative approval. No implementation or
 new trial run is authorised by this entry. [Case](productions/premation-sync-test.md).
+
+
+CENTRE-CROP-01 closeout10November: two published film cases retained with the
+[two-route recipe](methods/centre-safe-dual-format.md), owner acceptance of both
+visual methods, raw render/export/correction times and twelve future-film excerpts.
+Dependency-aware cleanup retired only unneeded caches; current full inputs remain.
+The exercise is conducted with an inconclusive active-effort/monetary result, not
+a universal crop winner or independently registered Radar experiment. Third-film
+production and later audience observations remain separate future steps.

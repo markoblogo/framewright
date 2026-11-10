@@ -1,9 +1,12 @@
 # Private terminal-flow video pitch
 
 Owner accepted the179.967-second Ukrainian16:9 version on9November2026.
-This is a private partner presentation. The owner plans to send it for feedback;
-no partner comments, partner approval or public publication are reported. The
-English public case remains paused until feedback and any required corrections.
+This is a private partner presentation. On10November2026 the owner reported partner
+approval and requested Hungarian localization: initially narration only, then all
+important on-screen titles, diagrams, interface labels and subtitles. The Hungarian
+version was accepted by the owner on10November2026; Ukrainian v5 remains retained.
+Separate Hungarian-native partner verification is not reported. Public publication is not reported. The English case
+remains paused; this request starts no English or TikTok production.
 
 ## Retained method
 
@@ -43,3 +46,26 @@ source and recipe dependencies; no files were deleted. This is preservation
 evidence, not a fresh full-film reproduction. Cleanup has not run at this checkpoint.
 No English production, new cloud generation, external send, upload, release or
 new schedule was started.
+
+## Hungarian localization checkpoint —10November2026
+
+Private work: studio `productions/transit-speed-mandok/hungarian-v1/`.
+The translation retains the accepted sequence, camera/animation, corrected phone
+tracking, sound design and AMI ending with a localized small FW credit. Fola in the
+same Google AI Studio Chrome speech UI generated two Hungarian takes; no API key
+or new purchase was selected. The owner separately accepted the final Hungarian variant below; a native-Hungarian
+partner pronunciation review is not separately reported. Ukrainian voice preference
+does not itself qualify Hungarian. Original Ukrainian master, voice takes and screenshots remain.
+
+The visual adaptation translates authored text and legible product-screen labels
+on retained screenshot derivatives. It does not establish native Hungarian product
+UI, a deployed terminal system or live data. Names/identifiers and source data stay
+unchanged. Sidecar captions have estimated timing, not word alignment. No client
+send, public upload, English case, release or cleanup is part of this correction.
+
+**Owner acceptance,10November:** Hungarian v1 accepted and selected for private
+partner delivery,179.966s,1920×1080/30fps, SHA-256
+`76e966d5e808430d9e4627e682dcc312a22e7254a391d036ddfa150eeca880a7`.
+Private receipt: `hungarian-v1/owner-acceptance.json`. Ukrainian v5 and editable
+sources remain retained. Separate Hungarian-native partner verification is not
+reported. No send, publication, English production or cleanup follows.

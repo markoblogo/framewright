@@ -32,6 +32,11 @@ production evidence, not measured efficiency, model qualification or audience su
    links. Inspect covers at full/reduced size and a simulated grid crop. Keep exact
    uploaded-cover identity and actual platform cropping unknown until observed.
 
+For a later executed alternative to separate aspect layouts, see the
+[centre-safe dual-format recipe](centre-safe-dual-format.md). Both techniques were
+owner-accepted on two different90-second stories; measured export time does not
+establish whole-workflow labour or monetary savings.
+
 ## Two useful variants
 
 **Demonstration-led:** Avatars alternates labelled official examples with original
