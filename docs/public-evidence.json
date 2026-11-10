@@ -1,6 +1,6 @@
 {
   "schema": "framewright-public-evidence-v1",
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "scope": "Conservative documented cases, not an asserted lifetime total. Original records remain the source of truth.",
   "definitions": {
     "films": "One completed authored story/promo/tutorial/ambient master per case. Aspect, language and revision variants count once. A finished export need not be publicly published or creatively accepted.",
@@ -18,8 +18,8 @@
       "boards/pilots/render fixtures",
       "SSI6November external-report-only three films",
       "RUN outdoor test pending",
-      "future centre-crop experiment",
-      "research-only/queued tools"
+      "research-only/queued tools",
+      "future A/B experiment-results film"
     ]
   },
   "films": [
@@ -387,6 +387,16 @@
       "id": "transit-speed-private-pitch",
       "source": "docs/productions/transit-speed-private-pitch.md",
       "basis": "completed_case_record"
+    },
+    {
+      "id": "copilot-addressed",
+      "source": "docs/productions/radar-pair-centre-crop-2026-11-10.md",
+      "basis": "completed_case_record"
+    },
+    {
+      "id": "pixelmator-roundtrip",
+      "source": "docs/productions/radar-pair-centre-crop-2026-11-10.md",
+      "basis": "completed_case_record"
     }
   ],
   "trials": [
@@ -570,6 +580,11 @@
       "id": "premation-native-av-sync",
       "source": "docs/productions/premation-sync-test.md",
       "index_note": "Existing executed test newly indexed at closeout, not a new run."
+    },
+    {
+      "id": "centre-crop-01",
+      "source": "docs/productions/radar-pair-centre-crop-2026-11-10.md",
+      "index_note": "Executed two-topic comparison; both visual methods accepted, active-effort/cost outcome inconclusive. Not an independently registered Radar experiment."
     }
   ]
 }

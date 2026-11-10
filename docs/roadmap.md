@@ -1,20 +1,20 @@
 # Framewright roadmap
 
-Updated 9 November 2026; source version 0.8.0 / REL-C per retained
-[release audit](release-audit-0.8.0.md). PR60, PR61 and PR62 are merged; the current
-local documentation batch records the closed [Premation case](productions/premation-sync-test.md),
-accepted [private Ukrainian terminal pitch](productions/transit-speed-private-pitch.md),
-[Fola voice preference](ukrainian-voice-baseline.md) and bounded tool evidence.
-No new release is implied. The private pitch awaits partner comments before its
-English case; RUN//SIGNAL M01 awaits the outdoor test before M02. The next comparable
-Radar pair carries the separate-layout versus centre-crop production comparison.
+Updated 10 November 2026; source version 0.8.0 / REL-C per retained
+[release audit](release-audit-0.8.0.md). PR60–PR63 are merged. PR63 records closed
+[Premation](productions/premation-sync-test.md), accepted
+[private Ukrainian terminal pitch](productions/transit-speed-private-pitch.md),
+[Fola preference](ukrainian-voice-baseline.md) and bounded tool evidence; merged-main
+CI passed. No release was made. Owner10November reports partner approval of the private pitch and requests full Hungarian
+localization, accepted by the owner on10November; its English case stays
+paused. RUN//SIGNAL M01 waits the outdoor test before M02. The [closed two-story comparison](productions/radar-pair-centre-crop-2026-11-10.md) records independent aspect compositions versus a fixed portrait crop of a4K landscape. Both90second films/covers are owner-accepted and published per owner; YouTube-only Radar transport/duplicate/ack checks passed. Both techniques remain usable. The [recipe](methods/centre-safe-dual-format.md), measured rendering/export phases, current sources and twelve future-film excerpts are retained after dependency-aware cleanup. The public index counts two films and one conducted comparison, not four films; no overall active-work/cost saving, numeric quality score or audience result is established.
 See [current work](next-cycle.md) for protected waits and the selected order.
 Earlier dated entries below are history; they do not restart completed work.
 This is the primary **priority and milestone map**. It connects product work,
 production and experiments; it does not start them or authorize spending/publication.
 The owner requested a stable roadmap that absorbs new ideas without replacing the
 direction each time. The ordering below is the proposed working sequence, adjustable
-by an explicit owner decision. No new film is selected by this document.
+by an explicit owner decision. Selections require an explicit owner instruction or delegated choice; they do not start production.
 
 ## Direction and strategic outcomes
 
