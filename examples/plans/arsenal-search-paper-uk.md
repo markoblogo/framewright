@@ -45,7 +45,7 @@ Component capabilities:
     ],
     "text": "",
     "tool": null,
-    "voice": null,
+    "voice": "supertonic3",
     "include_fallbacks": false,
     "allow_paid": false,
     "combinations": true,
@@ -58,17 +58,17 @@ Component capabilities:
     }
   },
   "excluded_summary": {
-    "task does not match": 82,
-    "style not indexed for this tool": 139,
-    "input kind does not match or is unindexed": 129,
-    "task evidence below requested level": 110,
-    "requested speech language not indexed at this evidence level": 138,
-    "feature unavailable or below level: video-export": 133,
-    "feature unavailable or below level: paper-cut-regroup": 139,
-    "feature unavailable or below level: narration": 138,
-    "feature unavailable or below level: still-export": 138,
-    "retained rights classification excluded or unknown for requested use": 37,
-    "low-quality explicit fallback;enable --include-fallbacks to inspect": 1
+    "task does not match": 87,
+    "style not indexed for this tool": 153,
+    "input kind does not match or is unindexed": 143,
+    "task evidence below requested level": 124,
+    "requested speech language not indexed at this evidence level": 152,
+    "feature unavailable or below level: video-export": 147,
+    "feature unavailable or below level: paper-cut-regroup": 153,
+    "feature unavailable or below level: narration": 152,
+    "feature unavailable or below level: still-export": 152,
+    "retained rights classification excluded or unknown for requested use": 40,
+    "low-quality explicit fallback;enable --include-fallbacks to inspect": 2
   },
   "excluded": []
 }

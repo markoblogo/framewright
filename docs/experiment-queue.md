@@ -1,5 +1,20 @@
 # Proposed experiment queue
 
+## Tool intake —10November2026: current and future stacks
+
+[22 links /14 retained families](research/tool-intake-2026-11-10.md), M4/R05/R06/R07.
+Useful CUDA/server/mobile tools stay in the catalogue for future owner hardware
+and heterogeneous users; incompatibility with today's16GiBMac is not rejection.
+Near-term conditional candidates: **IMAGE-SCULPT-01** offline owned geometry and
+**REELMIMIC-LOOK-01** original2D method; **TESSERACT-RUNTIME-01** requires use/entity/
+integration terms first; **OOOSPLAT-MAC-01** trust/asset/resources first;
+**PHOTO-DEBLUR-01** HI-Diff CPU only after exact checkpoint/resource admission.
+OpenToonz remains the existing reserve, not a duplicate trial. Viggle swap and
+H3 derivatives retain commercial/territorial rights gates regardless of hardware.
+Matrix/Sophon/Freefield retain future GPU/server routes; Edits a mobile handoff.
+No installs, model downloads, qualification, paid calls or production reorder.
+
+
 ## GLB-NAMED-01 — scoped production result, 9 November 2026
 
 [GLB Car Lab recipe and limits](productions/glb-car-lab.md): named rigid-part choreography,

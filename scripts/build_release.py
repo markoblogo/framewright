@@ -125,14 +125,17 @@ def build(root, output):
         if receipt['complete_local_handoff'] or receipt['publication_authorized'] or receipt['files']:
             raise ValueError('Standalone draft kit invented delivery or publication')
         search_cli = target / 'video-production-router/scripts/search.py'
+        # Inspect the reserve deliberately; default selection is covered by policy tests.
         found = subprocess.run([sys.executable, str(search_cli), '--task', 'narration', '--language', 'uk',
-                                '--evidence', 'tested', '--rights', 'commercial'], check=True, capture_output=True, text=True)
+                                '--tool', 'supertonic3', '--evidence', 'tested', '--rights', 'commercial'],
+                               check=True, capture_output=True, text=True)
         rows = json.loads(found.stdout)['results']
         if not any(row['id']=='supertonic3' and not row['rights']['asset_clearance'] for row in rows):
             raise ValueError('Standalone arsenal discovery smoke check failed')
         combined = subprocess.run([sys.executable, str(search_cli), '--task', 'video', '--input', 'book-art',
                                    '--style', 'paper-cut', '--feature', 'paper-cut-regroup', '--feature', 'narration',
-                                   '--language', 'uk', '--combinations', '--evidence', 'tested'],
+                                   '--language', 'uk', '--voice', 'supertonic3',
+                                   '--combinations', '--evidence', 'tested'],
                                   check=True, capture_output=True, text=True)
         if not any(set(c['tools'])=={'remotion','supertonic3'} for c in json.loads(combined.stdout)['combinations']):
             raise ValueError('Standalone arsenal combination smoke check failed')

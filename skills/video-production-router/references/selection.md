@@ -24,6 +24,29 @@ requests from silently acquiring3D work. It needs authored geometry/staging.
 
 Prioritise free/open-source options that work on the available Mac and satisfy the scene quality. Free proprietary options may also qualify. Record paid and other-platform options as reserves, not automatic test choices. No new paid exploratory calls by default. Already-owned apps and active paid subscriptions may be tested within their entitlement after checking per-use charges and rights. A truly necessary paid effect for an actual production needs an explicit production budget and cost/rights quote; run only a minimal bounded trial inside that budget before scaling. Treat this as agent guidance, not a hard-coded spending guard.
 
+## Keep other-stack options; admit against the actual device
+
+Owner clarification10November2026: preserve useful tools even when the current
+machine cannot run them. The catalogue serves future stronger owner hardware and
+users with other OS/GPU/memory profiles; it is not only a list for this Mac.
+Current-host fit controls near-term trials, not whether research is retained.
+
+For new/updated research records, keep `stack_admission`: dated current-host status,
+alternative OS/backend targets, sourced RAM/VRAM/storage requirements (or unknowns),
+and a concrete recheck trigger. Distinguish vendor measurements, requirements,
+inference and local observations. More unified RAM, file size and CUDA VRAM are
+not interchangeable. Do not guess a hardware minimum or recommend a purchase from
+one vendor benchmark. Preserve version/build, rights/cost and exact task question.
+
+When a machine/backend changes, filter retained candidates for that actual stack,
+recheck rights, dependency/version and resources, then propose a bounded trial
+against the retained baseline. Catalogue presence is not installation, execution,
+commercial clearance or tool qualification. No automatic model download, paid
+fallback or new production priority. Existing review history remains scoped;
+add alternative routes as evidence arrives rather than rewriting old results.
+The [10November intake](../../../docs/research/tool-intake-2026-11-10.md) applies
+this convention to14 families; it does not implement a new runtime selector.
+
 ## Evidence and capabilities
 
 Read [tool-matrix.md](tool-matrix.md) for the concise inventory; load matching profiles

@@ -67,8 +67,9 @@ class BlockPlannerTest(unittest.TestCase):
     def test_owner_rejected_voice_is_not_automatically_selected(self):
         result = self.run_plan(self.brief(input='book-art', language='uk',
                                          deliverables=['video-export', 'narration']))
-        self.assertEqual(result['status'], 'proposed')
-        self.assertIn('supertonic3', result['blocks'][0]['tools'])
+        self.assertEqual(result['status'], 'blocked')
+        self.assertIn('narration', result['blocks'][0]['unmet'])
+        self.assertNotIn('supertonic3', result['blocks'][0]['tools'])
         self.assertNotIn('piper', result['blocks'][0]['tools'])
         self.assertTrue(next(t for t in REGISTRY['tools'] if t['id'] == 'piper')['features'][0]['status'] == 'tested')
 
@@ -99,8 +100,9 @@ class BlockPlannerTest(unittest.TestCase):
         self.assertEqual(result['status'], 'blocked')
         self.assertNotIn('piper', result['blocks'][0]['tools'])
 
-    def test_lcd_uk_scene_selects_recommended_voice_and_actual_finisher(self):
+    def test_lcd_uk_scene_keeps_explicit_reserve_voice_and_actual_finisher(self):
         brief = self.brief(input='book-art', language='uk', preferred_tool='remotion',
+                           preferred_voice='supertonic3',
                            style='lcd-editorial', effects=['lcd-terminal-motion'],
                            deliverables=['video-export', 'narration', 'media-mux', 'still-export'])
         brief['minimum_evidence'] = 'tested'
