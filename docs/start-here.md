@@ -15,7 +15,10 @@ questions that change the production choice. A usable request can be:
 
 1. Review existing sources and permissions; distinguish find/adapt/create.
 2. Agree a short concept and feasible production route with gaps, tradeoffs,
-   observed or unknown costs/time, and a small pilot. A provider listing is not access.
+   observed or unknown costs/time, and a small pilot. For a fiction-book film,
+   first use the [creative proposal and case recommendations](creative-proposal.md):
+   explain the viewer result, full-film action and why the chosen technique fits.
+   A provider listing is not access; a technical route is not an approved treatment.
 3. Create the private project checkpoint, retain inputs and decisions, then execute
    the authorised stage. Review pilot before expanding production.
 
