@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -926,7 +926,8 @@
       "next_trial_or_retest_condition": "Review retained A/B evidence, then test one owner-approved recurring asset and bounded production correction with adjacent context. No arbitrary rig/physics/face/GPU/cross-build qualification; no automatic unchanged rerun.",
       "evidence": [
         "docs/research-review-2026-10-21.md",
-        "docs/experiments/blender-shot-replay.md"
+        "docs/experiments/blender-shot-replay.md",
+        "docs/research/tool-intake-2026-11-11.md"
       ],
       "followup_reviews": [
         {
@@ -947,6 +948,12 @@
           "version": "4.5.15 LTS build5afeabba6097 ARM64",
           "evidence": "docs/experiments/admitted-eevee-render-2026-11-01.md",
           "outcome": "Last Seed pilot scene-v4,480x27024fps8samples,explicit Eevee Next/AUTO: repeat RGB,light-only change with camera/action/PCM preserved,native SIGTERM failure,no implicit retry,explicit retry success. Read-only prior production; new outputs review_pending. Version-probe timeout,restricted Metal crash and early-scene light-name conflict retained. Not whole-film/final-quality or arbitrary GPU qualification."
+        },
+        {
+          "date": "2026-11-11",
+          "kind": "documentation_review_only",
+          "evidence": "docs/research/tool-intake-2026-11-11.md",
+          "outcome": "5.3 official release documented: native splats, EEVEE lighting nodes, compositor and OTIO. Existing 4.5.15 evidence does not qualify5.3; BLENDER53-COMPAT-01 isolated-version candidate, no upgrade. DLSS is NVIDIA-only."
         }
       ]
     },
@@ -2114,7 +2121,16 @@
       "evidence": [
         "docs/productions/real2sim-twins.md",
         "docs/methods/physics-backed-research-explainer.md",
-        "docs/experiment-queue.md"
+        "docs/experiment-queue.md",
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-11-11",
+          "kind": "documentation_review_only",
+          "evidence": "docs/research/tool-intake-2026-11-11.md",
+          "outcome": "Two fofr case descriptions suggest a contact-chain/continuous-camera method. Existing Apple CPU friction trial remains the only local scope; PHYSICS-CHAIN-01 proposes a new bounded scene, not an engine reinstall or custom CUDA tracer qualification."
+        }
       ]
     },
     {
@@ -2290,7 +2306,16 @@
       "next_trial_or_retest_condition": "Server reserve V2V-PRESERVE-01 only after suitable compute/rights/budget; no weights now.",
       "evidence": [
         "docs/research/tool-intake-2026-11-06.md",
-        "docs/experiment-queue.md"
+        "docs/experiment-queue.md",
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-11-11",
+          "kind": "documentation_review_only",
+          "evidence": "docs/research/tool-intake-2026-11-11.md",
+          "outcome": "Duplicate supplied model/service links reconciled. Consumer site quota/terms separate; no current Mac admission or new V2V test. H3 default territory restrictions require a separate eligible grant before France/EU derivative use."
+        }
       ]
     },
     {
@@ -2361,16 +2386,18 @@
       "id": "opendirector",
       "name": "OpenDirector",
       "url": "https://github.com/ThinkFlowLab/OpenDirector",
-      "reviewed": "2026-11-06",
-      "review_basis": "Primary-source documentation review only; no install, model/provider call or runtime trial. See dated intake and private source receipts.",
-      "upstream_revision": null,
-      "disposition": "candidate",
-      "scope_and_findings": "Canvas/timeline local authoring, JSON/FCPXML/asset bundles/MP4 claimed; Python3.11+,Node24.22.1+,FFmpeg; no roundtrip tested.",
+      "reviewed": "2026-11-11",
+      "review_basis": "Actual isolated native authoring/revision/cold-reopen/export test and hash-bound production receipts; owner accepted final Blender/FFmpeg films separately.",
+      "upstream_revision": "0.1.2 / 0bdc3a7b2a582cbb65a44e07a879775a9fc71fb1",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Three original clips/six placements, reorder/trim/cue correction, exact same-workspace stop/restart recovery and two real native MP4 exports:282frames/11.75s24fps. Six order samples/aspect and1.51/11.51s cue onsets pass within one frame. Later delivery-only native revision preserves decoded PCM. Published89.92s films are Blender/FFmpeg finishing, not full-film OpenDirector qualification.",
       "licence_note": "Apache-2.0 source; media/fonts and any external generation provider terms separate.",
-      "next_trial_or_retest_condition": "OPENDIRECTOR-01: existing original media12s timeline, provider calls disabled, export/reopen/relink and one timing correction against existing route.",
+      "next_trial_or_retest_condition": "Only a selected unresolved question: portable import on another workspace/device, speed changes, large timelines or codec variants. No duplicate unchanged trial; no connected generation provider by default.",
       "evidence": [
         "docs/research/tool-intake-2026-11-06.md",
-        "docs/experiment-queue.md"
+        "docs/experiment-queue.md",
+        "docs/productions/reverie-playall-opendirector.md",
+        "docs/methods/native-editor-before-render.md"
       ]
     },
     {
@@ -2861,6 +2888,567 @@
         ],
         "requirements_and_unknowns": "GPU/RAM/storage vary per workflow; L40S/H100 author checks are not universal minimums. Avoid parallel studio/new scheduler.",
         "recheck_trigger": "Changed host/OS/backend or access/terms, plus an owner-selected production need; recheck version, rights, resources and a bounded trial before admission. Hardware change alone does not clear licensing."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "alexpi-directed-vfx",
+      "name": "Directed procedural VFX case",
+      "url": "https://x.com/AlexPi194641/status/2120248196584648758",
+      "source_urls": [
+        "https://x.com/AlexPi194641/status/2120248196584648758"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "Author580+ notes with Blender/Houdini/Nuke: shot-specific direction, invariants and selective revisions. No measured tool competence or savings.",
+      "licence_note": "Example media rights not established; do not reuse footage.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Method reference in existing procedural3D route",
+        "alternative_targets": [
+          "Professional Blender/Houdini/Nuke pipeline; no service/model access inferred"
+        ],
+        "requirements_and_unknowns": "Author580+ notes with Blender/Houdini/Nuke: shot-specific direction, invariants and selective revisions. No measured tool competence or savings. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "pxld-dawn",
+      "name": "PXLD / DAWN",
+      "url": "https://pxld.ai/",
+      "source_urls": [
+        "https://pxld.ai/",
+        "https://youtu.be/iaJy1CPLfXw"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "Performance-preserving compositing/relight/cleanup direction; exact delivered edge/face/audio consistency and export untested.",
+      "licence_note": "Proprietary service/input rights; early-access terms/cost unknown.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Cloud reference, entitlement and original footage gate",
+        "alternative_targets": [
+          "Eligible hosted professional VFX workflow"
+        ],
+        "requirements_and_unknowns": "Performance-preserving compositing/relight/cleanup direction; exact delivered edge/face/audio consistency and export untested. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "adobe-max-2026",
+      "name": "Adobe MAX2026 creative updates",
+      "url": "https://blog.adobe.com/en/publish/2026/11/10/explore-new-ways-create-across-creative-cloud-adobe-firefly-while-advancing-craft-precision-choice-control",
+      "source_urls": [
+        "https://blog.adobe.com/en/publish/2026/11/10/explore-new-ways-create-across-creative-cloud-adobe-firefly-while-advancing-craft-precision-choice-control"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "Layer/timeline selective repair and graph workflows. Local Creative Cloud MCP is a preview promised early2027, not currently qualified integration.",
+      "licence_note": "Proprietary app/account/model credits and beta terms separate.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Reference, no installed integration or subscription verified",
+        "alternative_targets": [
+          "Licensed Mac/Windows Creative Cloud and separately verified integrations"
+        ],
+        "requirements_and_unknowns": "Layer/timeline selective repair and graph workflows. Local Creative Cloud MCP is a preview promised early2027, not currently qualified integration. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "astryx",
+      "name": "Astryx",
+      "url": "https://github.com/meta/astryx",
+      "source_urls": [
+        "https://github.com/meta/astryx"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": "4716e787805a4e951046d053710d5791d5b66d10",
+      "disposition": "reference_only",
+      "scope_and_findings": "React19+/StyleX beta design system; possible future project UI/client mockups. Local project screen remains deferred.",
+      "licence_note": "MIT source; third-party assets/services separate.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Web-stack compatible on documentation, deferred product UI",
+        "alternative_targets": [
+          "React19+ web environments"
+        ],
+        "requirements_and_unknowns": "React19+/StyleX beta design system; possible future project UI/client mockups. Local project screen remains deferred. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "afternoon-light",
+      "name": "Afternoon Light procedural lighting",
+      "url": "https://github.com/BubbleBrainBB/afternoon-light",
+      "source_urls": [
+        "https://github.com/BubbleBrainBB/afternoon-light"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": "545ac6799f57ca3de1884bac6017e187706ca570",
+      "disposition": "reference_only",
+      "scope_and_findings": "C++17/Python procedural still path tracer; author Apple M4Max result not our benchmark. Transfer light/material/camera method, not claimed AI-model qualification.",
+      "licence_note": "No repository licence found in reviewed root/README. Code/image reuse unresolved.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Method reference; do not copy or execute unlicensed repo",
+        "alternative_targets": [
+          "C++17 CPU compiler and numpy/scipy/Pillow; stronger CPU for full-size render"
+        ],
+        "requirements_and_unknowns": "C++17/Python procedural still path tracer; author Apple M4Max result not our benchmark. Transfer light/material/camera method, not claimed AI-model qualification. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "nuance-emma",
+      "name": "Nuance Labs / Emma",
+      "url": "https://app.nuancelabs.ai/",
+      "source_urls": [
+        "https://app.nuancelabs.ai/"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "Full-duplex conversational audiovisual persona reference. Not established arbitrary-character dubbing/offline export. App browser check; official overview readable.",
+      "licence_note": "Proprietary service, microphone/camera recording/consent/export terms unknown.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Cloud reference, no session or device input",
+        "alternative_targets": [
+          "Authorised browser/API service after terms/cost/export admission"
+        ],
+        "requirements_and_unknowns": "Full-duplex conversational audiovisual persona reference. Not established arbitrary-character dubbing/offline export. App browser check; official overview readable. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "hailuo",
+      "name": "Hailuo cloud service",
+      "url": "https://hailuoai.com/",
+      "source_urls": [
+        "https://hailuoai.com/"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "Duplicate earlier Hailuo research. Supplied Chinese site differs from prior international-account observation; current credits/daily grants unknown.",
+      "licence_note": "Current account/region/service export terms and quote required; model terms not assumed equivalent.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Conditional cloud reference, no generation",
+        "alternative_targets": [
+          "Eligible service account in relevant region"
+        ],
+        "requirements_and_unknowns": "Duplicate earlier Hailuo research. Supplied Chinese site differs from prior international-account observation; current credits/daily grants unknown. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "minimax-code-intake",
+      "name": "MiniMax Code and unresolved supplied model paths",
+      "url": "https://huggingface.co/MiniMaxAI/Mini",
+      "source_urls": [
+        "https://huggingface.co/MiniMaxAI/Mini",
+        "https://platform.minimax.io/docs/guides/im",
+        "https://code.minimax.io/about"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "HF /Mini returns401 and API /guides/im404; preserve exact incomplete paths. Code describes desktop/CLI/web local-file/browser/H3 agent work, not a verified free generation API.",
+      "licence_note": "Proprietary service/runtime terms; exact incomplete model unidentified.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Reference, no account/install/migration",
+        "alternative_targets": [
+          "Vendor Mac/Windows/CLI routes after explicit permission and bounded cost"
+        ],
+        "requirements_and_unknowns": "HF /Mini returns401 and API /guides/im404; preserve exact incomplete paths. Code describes desktop/CLI/web local-file/browser/H3 agent work, not a verified free generation API. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "minicharts",
+      "name": "Minicharts",
+      "url": "https://april-zhu.com/minicharts",
+      "source_urls": [
+        "https://april-zhu.com/minicharts"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Subject-shaped numeric SVG/browser charts; test scale, totals, negative/missing controls and phone legibility instead of trusting vendor checker.",
+      "licence_note": "Website advertises free MIT skill; exact archive licence/instructions not yet inspected. Paid shop packs separate.",
+      "next_trial_or_retest_condition": "MINICHARTS-01",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Conditional near-term candidate on existing browser/SVG tooling",
+        "alternative_targets": [
+          "Any suitable browser/code-agent stack after pack review"
+        ],
+        "requirements_and_unknowns": "Subject-shaped numeric SVG/browser charts; test scale, totals, negative/missing controls and phone legibility instead of trusting vendor checker. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": "MINICHARTS-01"
+    },
+    {
+      "id": "spaghetti-splatting",
+      "name": "Spaghetti Splatting",
+      "url": "https://spaghetti-splatting.github.io/",
+      "source_urls": [
+        "https://spaghetti-splatting.github.io/",
+        "https://arxiv.org/abs/2611.12716"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "Curvilinear splatting for thin connected strands. Site gives future supplement13Nov/code23Nov ETA; no runnable code supplied at review.",
+      "licence_note": "Paper licence and eventual code/data/model licences separate; code rights unknown.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Research reserve; no Mac runtime claim",
+        "alternative_targets": [
+          "Future documented reconstruction GPU/backend once code released"
+        ],
+        "requirements_and_unknowns": "Curvilinear splatting for thin connected strands. Site gives future supplement13Nov/code23Nov ETA; no runnable code supplied at review. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "h3-dials-mainodes",
+      "name": "H3 Dials / ComfyUI-MAINodes",
+      "url": "https://huggingface.co/MATLOWAI/H3-Dials",
+      "source_urls": [
+        "https://huggingface.co/MATLOWAI/H3-Dials",
+        "https://github.com/matlowai/ComfyUI-MAINodes"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": "MAINodes db1f62d0b499e2044e691ce0e259153be53083de / weights5ec30ba57a5b2964b07228683096bcdfea35835e",
+      "disposition": "rights_blocked",
+      "scope_and_findings": "Prompt-space steering/time curves, fast-motion de-roping, five-view contact sheets. Dials may drift identity/damage speech; small-card rows fenced on96GBGPU, not tested small devices.",
+      "licence_note": "MAINodes GPL3+ code; weights MiniMax H3 community territory restrictions exclude EU/UK/Republic of Korea/US by default. Separate ComfyUI-Dials AGPL3.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Not admitted on16GiBMac or under current default France/EU model terms",
+        "alternative_targets": [
+          "Eligible NVIDIA host with adequate system RAM/VRAM and separate terms clearance"
+        ],
+        "requirements_and_unknowns": "Prompt-space steering/time curves, fast-motion de-roping, five-view contact sheets. Dials may drift identity/damage speech; small-card rows fenced on96GBGPU, not tested small devices. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "patch-game-tools",
+      "name": "Patch game tools/assets",
+      "url": "https://patch.gg/",
+      "source_urls": [
+        "https://patch.gg/"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "Windows authoring, browser play, CLI/MCP and individually licensed assets. Mac waitlist is not a Mac editor/CLI.",
+      "licence_note": "Proprietary service plus each asset licence; catalogue not universally CC0.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Reference; Windows desktop not current Mac authoring",
+        "alternative_targets": [
+          "Windows authoring; browser play independent of toolchain"
+        ],
+        "requirements_and_unknowns": "Windows authoring, browser play, CLI/MCP and individually licensed assets. Mac waitlist is not a Mac editor/CLI. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "unrender",
+      "name": "Unrender",
+      "url": "https://www.unrender.app/",
+      "source_urls": [
+        "https://www.unrender.app/"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "First10s/still to clay/playblast-like visual; not actual mesh/animation recovery or proof of historical authoring stages.",
+      "licence_note": "Service provider, uploads/retention/export/own-key costs unknown despite advertised free flow.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Conditional cloud reference only; no upload",
+        "alternative_targets": [
+          "Authorised hosted route after terms/quote review"
+        ],
+        "requirements_and_unknowns": "First10s/still to clay/playblast-like visual; not actual mesh/animation recovery or proof of historical authoring stages. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "open-h3-regenerate-ic",
+      "name": "Open-H3-Regenerate-2K-IC / SoL-Engine",
+      "url": "https://github.com/NVlabs/Sana/tree/sol-engine/models/Open-H3-Regenerate-2K/IC",
+      "source_urls": [
+        "https://github.com/NVlabs/Sana/tree/sol-engine/models/Open-H3-Regenerate-2K/IC",
+        "https://nvlabs.github.io/Sana/Open-H3-Regenerate-2K/#ic",
+        "https://nvlabs.github.io/Sana/Sol-Engine/"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": "Sana1e3c9c27ce56ca03b203cff9f63bed225a1599cd / IC weights54a7104b204fb46486cf85c2f600942118186d57",
+      "disposition": "rights_blocked",
+      "scope_and_findings": "Ref2VA in-context draft reference/refinement. README Linux/CUDA multi-GPU route and24fps124frame padding/crop differ from parent-page generic claims; no Apple admission.",
+      "licence_note": "Weights follow MiniMax H3 territorial licence; NVIDIA/source licence does not override weight/dependency restrictions.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Not admitted on16GiBMac/default France/EU terms",
+        "alternative_targets": [
+          "Eligible Linux NVIDIA/Multi-GPU host after licences/VRAM/RAM admission"
+        ],
+        "requirements_and_unknowns": "Ref2VA in-context draft reference/refinement. README Linux/CUDA multi-GPU route and24fps124frame padding/crop differ from parent-page generic claims; no Apple admission. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "runway-sightline",
+      "name": "Runway Sightline",
+      "url": "https://sightline--rw.runway.studio/",
+      "source_urls": [
+        "https://sightline--rw.runway.studio/"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Panorama-based same-location lens/angle/aspect plates and orbit export. Rotation/crops do not establish translational parallax or editable3D reconstruction.",
+      "licence_note": "Proprietary Runway app; actual account/credits/data-transfer/export terms unknown.",
+      "next_trial_or_retest_condition": "PANORAMA-PLATES-01",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Conditional owned-panorama/non-generative crop candidate, app connection must be checked",
+        "alternative_targets": [
+          "Authorised cloud generation separately budgeted, or current local sphere/crop fallback"
+        ],
+        "requirements_and_unknowns": "Panorama-based same-location lens/angle/aspect plates and orbit export. Rotation/crops do not establish translational parallax or editable3D reconstruction. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": "PANORAMA-PLATES-01"
+    },
+    {
+      "id": "bmove-max",
+      "name": "BMove",
+      "url": "https://rustcg.gumroad.com/l/BMove",
+      "source_urls": [
+        "https://rustcg.gumroad.com/l/BMove",
+        "https://youtu.be/TvxYmZL0290"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "v1.12 Blender-style transform control for3dsMax2024+, not a Blender addon; distinct from prior PieMenu.",
+      "licence_note": "Gumroad product licence not reviewed;3dsMax entitlement separate.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Windows reference; no current Mac test",
+        "alternative_targets": [
+          "Windows/3dsMax2024+ operator"
+        ],
+        "requirements_and_unknowns": "v1.12 Blender-style transform control for3dsMax2024+, not a Blender addon; distinct from prior PieMenu. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "weta-ai-direction",
+      "name": "Weta artist-directed AI context",
+      "url": "https://variety.com/2026/film/markets-festivals/hollywood-flipped-genai-avatar-vfx-house-weta-fx-1236941070/",
+      "source_urls": [
+        "https://variety.com/2026/film/markets-festivals/hollywood-flipped-genai-avatar-vfx-house-weta-fx-1236941070/",
+        "https://au.variety.com/2026/film/global/peter-jackson-dont-dislike-ai-hunt-for-gollum-cannes-36542/",
+        "https://www.screendaily.com/news/weta-fx-to-build-ai-hub-in-taiwan-buy-into-moonshine-studio/5222119.article"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "Industry/interview context favours sustained artist control/client approval; May2026 Jackson article is not a November tool release.",
+      "licence_note": "Press reporting gives no tool/media/likeness rights or client blanket permission.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Workflow reference, not installable software",
+        "alternative_targets": [
+          "Professional VFX workflows with actual client grants"
+        ],
+        "requirements_and_unknowns": "Industry/interview context favours sustained artist control/client approval; May2026 Jackson article is not a November tool release. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "aswf-rmtc",
+      "name": "ASWF RMTC",
+      "url": "https://github.com/AcademySoftwareFoundation/RMTC",
+      "source_urls": [
+        "https://github.com/AcademySoftwareFoundation/RMTC"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": "62d8fe5f88da69cf96ed7e21efd59609f082f4f9",
+      "disposition": "reference_only",
+      "scope_and_findings": "Reviewed root has LICENSE only; no README/code/usable tool. Do not infer capabilities from organisation/name.",
+      "licence_note": "Apache2 LICENSE alone; no implementation/data supplied.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Placeholder reference, no install/test",
+        "alternative_targets": [
+          "Reassess actual implementation when released"
+        ],
+        "requirements_and_unknowns": "Reviewed root has LICENSE only; no README/code/usable tool. Do not infer capabilities from organisation/name. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
+      },
+      "proposed_trial_id": null
+    },
+    {
+      "id": "clickhunt-lab",
+      "name": "Clickhunt attention study",
+      "url": "https://lab.clickhunt.io/",
+      "source_urls": [
+        "https://lab.clickhunt.io/"
+      ],
+      "reviewed": "2026-11-11",
+      "review_basis": "Primary public documentation/author description and retained source hashes; no runtime/model/service trial. Press case records are explicitly reference context.",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "Human attention/model comparison study; no established export/API or causal packaging uplift. Agent must not impersonate human participant.",
+      "licence_note": "Research participation/privacy/export terms unreviewed.",
+      "next_trial_or_retest_condition": "Only changed code/terms/backend/access plus a specific approved production need; no automatic unchanged retest.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-11.md"
+      ],
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon arm64,16GiB unified RAM; observed10November2026",
+        "current_status": "Reference only, no login/participation/metric acquisition",
+        "alternative_targets": [
+          "Future owner-approved human packaging study"
+        ],
+        "requirements_and_unknowns": "Human attention/model comparison study; no established export/API or causal packaging uplift. Agent must not impersonate human participant. Exact resources, terms and access remain source-scoped; no runtime measurements here.",
+        "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
       },
       "proposed_trial_id": null
     }

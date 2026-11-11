@@ -1,15 +1,44 @@
 # Current work and protected waits
 
-Updated10November2026 · source release0.8.0 / REL-C.
+Updated11November2026 · source release0.8.0 / REL-C.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md).
 
 ## Current boundary
 
-[PR64](https://github.com/markoblogo/framewright/pull/64) is merged at d0b50684;
-PR63 is also merged. No release. The current closeout PR is being prepared from
-that merged base: two completed productions, research intake, voice-selection
-policy and corresponding offline regression checks. No new production, merge,
-release, install, paid call, telemetry, publishing or schedule change in this task.
+**Owner order11November:** DonQuixote is paused. The latest Radar production is
+[Preview the Cut Before You Render](productions/reverie-playall-opendirector.md):
+English YouTube/TikTok, original miniature cinema/courier imagery. Script/8reference
+stills accepted; corrected14.75s v3 pilots (delivery geometry plus owner-supplied
+modem-textured music) accepted with sound11November. Both full films are authorised
+and now accepted with sound:89.92s each, natural Knox narration and owner music.
+Both publication packages are ready; recipe/dependencies and scoped test are now closed.1874 rebuildable cache files retired after520 protected hash checks. Owner supplied YouTube G4-8YyrV1lk and TikTok
+on11November; only YouTube was delivered to Radar with applied/duplicate receipts
+and returned acknowledgements. No analytics acquisition or new hook. The real
+OPENDIRECTOR-01local authoring/revision/cold-reopen/export test passed its scoped
+technical checks. Native core revisions2/3 are retained separately; owner acceptance
+is distinct from general qualification, public visibility, new counts and release.
+
+[PR65](https://github.com/markoblogo/framewright/pull/65) is merged at c1b2908;
+its exact merged-main CI passed. PR60–64 are also merged. No release. The two
+production closeouts, research intake and reserve-voice regression checks are in
+main. Owner10November adopted [stronger creative proposals and case-informed
+recommendations](creative-proposal.md) for the next selected fiction film;
+local project UI remains deferred. [Don Quixote in Neverland](productions/don-quixote-neverland.md)
+is now a working three-film series: E01first-meeting premise selected; original
+cast-study-01still designs accepted11November. Book-cover direction and180s cap
+are superseded. No publication, paid API or schedule change; scene references are accepted as
+6pairs/12stills. The owner accepted both8s local motion pilots for continuation
+after a defective cloud landscape/refused portrait attempt; provider originals,
+refund report and local recipe are retained. Owner requested a distinct voice per
+character; a24.32s Riko/DonQuixote + Zeno/Peter sample and source-mapped English
+dialogue draft are ready. The owner accepted the two voices and requested full
+role dialogue. One45-block/50-line native take is retained:127.32s, decode and
+level checks passed, followed by explicit owner listening acceptance. A new51s
+linked opening block is ready in both formats; picture/mix review, full-film work
+and specific later adaptations remain ahead. The temporary export wait is resolved.
+**Owner paused Don Quixote11November** to make another Radar film using a fitting
+untested queued tool. Keep accepted bytes and the unresolved block-review wait;
+no Quixote rendering, generation or cleanup until owner resumption.
 
 ## Latest completed work
 
@@ -44,8 +73,8 @@ retiring3862 files/443,266,154 logical bytes. Post-cleanup hashes and live local
 HTML dependencies passed. Counts distinguish logical sizes from physical recovery.
 Private records: studio `records/production-closeout-20261110/`.
 
-`docs/public-evidence.json` now contains77 film stories and46 executed trial cases:
-75 at PR64 plus these two stories; variants/retries are deduplicated. Research-only
+`docs/public-evidence.json` now contains78 film stories and47 executed trial cases:
+77/46 at PR65 plus Preview the Cut / OPENDIRECTOR-01; variants/retries are deduplicated. Research intake and routine QA add none. Research-only
 entries and routine export QA are not new trials. Owner URLs do not establish
 independent visibility, uploaded-file/text identity, audience reach or revenue.
 Manual Radar receipts do not prove scheduled analytics or mature feedback.
@@ -73,15 +102,21 @@ community-feedback ideas remain discussion, without changed licence or telemetry
 
 Earlier completed cases and source boundaries remain in their production records,
 [7November snapshot](history/next-cycle-through-2026-11-07.md) and
-[roadmap](roadmap.md). PR60–63 are merged, not awaiting a decision.
+[roadmap](roadmap.md). PR60–65 are merged, not awaiting a decision.
 
 ## Next owner order and protected waits
 
-1. Finish this closeout PR with checks and independent review; keep it open for a
-   separate merge decision. No release for documentation volume alone.
-2. A creative fiction-book film follows once its book/material is selected.
-   Assess a coherent release increment after that film; release requires a
-   separate decision, not an end-of-day deadline.
+1. **Owner closeout order11November:** [Preview the Cut / OpenDirector](productions/reverie-playall-opendirector.md)
+   recipe/test/cleanup and [new tool intake](research/tool-intake-2026-11-11.md) are
+   consolidated with the accepted creative-proposal/paused-fiction records for
+   checks, independent review and authorised PR merge. PR65 is already merged;
+   live11November check found no other open PR. [Release assessment](release-readiness-2026-11-11.md)
+   is separate; this task does not publish a release or start another film/test.
+2. **Don Quixote is owner-paused.** Preserve the selected cast,6paired anchor
+   scenes, two accepted8s pilots, accepted127.32s role dialogue and the pending51s
+   opening-block picture/mix review. The native journal includes an owner-resume
+   wait. Do not continue or prune paused media. The local project UI stays deferred;
+   any eventual release remains a separate decision.
 3. **No RUN//SIGNAL work today.** [M01](productions/run-signal-m01.md) v07 is accepted
    in home review:22:00.07 total, exactly1200s time-based training. Outdoor Nantes
    report blocks M02; distance is analysis only. Finale is an M01-only compromise,

@@ -1,5 +1,34 @@
 # Proposed experiment queue
 
+## Tool intake —11November2026
+
+[34 URLs /22 topics, deduplication and future-stack routes](research/tool-intake-2026-11-11.md).
+Conditional current-stack questions: **MINICHARTS-01** numeric/legibility controls;
+**PANORAMA-PLATES-01** owned panorama → multiple angle/aspect plates, no generation;
+**BLENDER53-COMPAT-01** isolated version/copy, not a global upgrade; and
+**PHYSICS-CHAIN-01** extends existing MuJoCo CPU evidence with an original contact
+chain, not a duplicate engine trial. Exact licence/access/resource checks first.
+No installs, tests, uploads, generation or production reorder authorised by listing.
+
+H3 Dials/MAINodes and Open-H3-Regenerate-2K-IC stay future eligible-CUDA references,
+with separate territorial/model terms. BMove/Patch desktop are Windows routes;
+Astryx/local project UI stays deferred. Adobe MCP is an early2027 preview, RMTC
+currently LICENSE-only, Spaghetti code has a future ETA. Hailuo/Viggle duplicates
+and incomplete MiniMax URLs are retained explicitly, not turned into new trials.
+
+## OPENDIRECTOR-01 — closed scoped result,11November
+
+[Accepted films, test and cleanup](productions/reverie-playall-opendirector.md),
+[repeatable method](methods/native-editor-before-render.md). Native0.1.2 local
+three-clip edit → reorder/trim/cue correction → exact same-workspace cold reopen →
+two real11.75s exports passed scoped order/cue checks. Corrected14.75s pilots and
+both89.92s full films accepted with sound; owner supplied publication URLs.
+YouTube-only Radar exchange applied/duplicate/ack receipts retained.1874 cache
+files retired after dependency/hash checks; all accepted/current dependencies stay.
+Portable cross-machine import, speed changes, large timelines and general feature
+qualification remain open. No new duplicate trial; full films are Blender/FFmpeg
+finishing. DonQuixote remains paused.
+
 ## Tool intake —10November2026: current and future stacks
 
 [22 links /14 retained families](research/tool-intake-2026-11-10.md), M4/R05/R06/R07.
