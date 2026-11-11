@@ -1,7 +1,9 @@
 # Framewright roadmap
 
-Updated 10 November 2026; source version 0.8.0 / REL-C per retained
-[release audit](release-audit-0.8.0.md). PR60–PR63 are merged. PR63 records closed
+Updated 11 November 2026; source version 0.8.0 / REL-C per retained
+[release audit](release-audit-0.8.0.md). PR60–PR65 are merged. [PR65](https://github.com/markoblogo/framewright/pull/65)
+closed Dependabot/APM and the results film, recorded cross-stack tool research and
+aligned reserve-voice policy; merged-main CI passed at c1b2908. PR63 records closed
 [Premation](productions/premation-sync-test.md), accepted
 [private Ukrainian terminal pitch](productions/transit-speed-private-pitch.md),
 [Fola preference](ukrainian-voice-baseline.md) and bounded tool evidence; merged-main
@@ -15,6 +17,22 @@ production and experiments; it does not start them or authorize spending/publica
 The owner requested a stable roadmap that absorbs new ideas without replacing the
 direction each time. The ordering below is the proposed working sequence, adjustable
 by an explicit owner decision. Selections require an explicit owner instruction or delegated choice; they do not start production.
+
+## 11November closeout and next release boundary
+
+[Preview the Cut / OpenDirector](productions/reverie-playall-opendirector.md) is
+owner-accepted/published by report; scoped native edit/reopen/export proof and
+[repeatable recipe](methods/native-editor-before-render.md) are retained after
+verified cache retirement. [New intake](research/tool-intake-2026-11-11.md) groups
+34 URLs into22 topics, retaining future-stack candidates without new installs or
+qualification. Existing index remains78 films /47 trials, deduplicated.
+
+[Release readiness review](release-readiness-2026-11-11.md) compares actual changes
+since published prerelease v0.8.0. The next planned capability gate remains REL-D:
+independent operator handoff/setup/support evidence is missing. Do not infer it
+from production count, same-workspace reopen, source tests or research volume.
+No release/version change is authorised here. DonQuixote and RUN waits, SSI
+Saturday14November correction plan and deferred local project UI remain intact.
 
 ## Direction and strategic outcomes
 
@@ -32,6 +50,31 @@ of portable production methods, not a requirement for applying them.
 | Better repeat production | Reuse design, sources, voices, characters and decisions for a new episode | Comparable second production, measured operator effort and documented reuse; no assumed savings |
 | An arsenal that solves problems | New tools improve a specific weak point | Bounded comparison against the existing method, feature/version/host scope and retained failures |
 | Transferable knowledge | Another operator can use the methods and contribute experience | Reproduction, external handoff, worked cases with and without Framewright; book-readiness evidence |
+
+## Owner-adopted creative improvements — 10 November 2026
+
+The owner adopted the directions from the latest Perplexity assessment and asked
+to apply the stronger proposal and case-informed recommendations in the next
+fiction-book film. The review was based on public prose, without code/film review
+or full roadmap access; it is advice, not capability evidence. The historical
+28 October assessment below remains unchanged.
+
+| Direction / milestone | Next application and evidence | Boundary |
+| --- | --- | --- |
+| **Stronger creative proposal — M1/R02, M5/R07** | Before references/pilot, use the [compact creative proposal](creative-proposal.md): viewer result, image/conflict, useful alternatives, omissions, full-film action changes and the shortest pilot of the real risk. Retain owner choice. | Agent-and-human procedure; the existing CLI has not become an automatic director. Do not force several concepts for a simple task. |
+| **Case-informed recommendations — M3/M4/R05/R09** | In that proposal, link a few relevant past cases to the current need; state use/avoid conditions, defects, correction effort or UNKNOWN, and simpler fallback. Retain selected/declined reasons and actual outcomes. | Reuse current methods/journal, not a parallel knowledge database. No savings claim or new qualification from this decision. |
+| **Visible bounded correction — M2/RV01, M6** | When a real defect needs correction, keep the original, explicit interval/invariants and contextual comparison; record the outcome and actual effort. Existing results-film revoice is a scoped example. | No artificial defect, automatic arbitrary-edit promise or conflicting timing guarantee; reuse the revision contract. |
+| **Local project screen — deferred** | Revisit later under M2/M6 if needed, reusing current project/brief/board/revision data. | Owner explicitly deferred implementation; no new UI/editor/database now. |
+
+First application (owner-paused11November): [**Don Quixote in Neverland / LIT-FILM-04**](productions/don-quixote-neverland.md).
+Owner11November expanded the working plan to three films: first meeting, physical
+action, psychological climax/return. E01premise is selected. A new original2D
+sitcom-inspired cast replaces the cover-art direction; the three principal still
+designs are owner-accepted. No180s cap. Exact E02/E03adaptations, timings, scene
+references, voices and motion remain review stages; no new completed film/trial. Owner paused Quixote to select the next existing Radar topic and one fitting
+untested queued tool; preserve Quixote sources and its pending review. Keep
+RUN//SIGNAL and SSI waits and the current production order. A tourism series is a later possible validation route, not a
+replacement for that order. Research continues against concrete production needs.
 
 Tool intake,10November: [cross-device catalogue](research/tool-intake-2026-11-10.md)
 extends M4/R05/R06/R07 without changing production priority. Useful incompatible

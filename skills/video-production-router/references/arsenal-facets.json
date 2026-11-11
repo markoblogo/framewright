@@ -1654,6 +1654,238 @@
       ],
       "rights_class": "conditional",
       "licence_note_sha256": "3aa05ce83c3f3927d7ed83c454e7d692baadbe4d02659f09dfe60efe0b2d6dfd"
+    },
+    "alexpi-directed-vfx": {
+      "tasks": [
+        "video",
+        "3d",
+        "storyboard"
+      ],
+      "inputs": [
+        "text",
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "63b5e7e9aba17a2b334eaa33a608a63064fcc367fa8f32156f6be1a265273f9e"
+    },
+    "pxld-dawn": {
+      "tasks": [
+        "video",
+        "editing"
+      ],
+      "inputs": [
+        "video",
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "a30d04394c53f26a51e279de1632293a758a5c6fafa7199a81fad05e55c67589"
+    },
+    "adobe-max-2026": {
+      "tasks": [
+        "video",
+        "editing",
+        "image"
+      ],
+      "inputs": [
+        "video",
+        "image",
+        "audio"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "ccbc9fbe6e9827877ce6f80f2d66a3d80d4df1394deb1837cbc2bb74a3c7228b"
+    },
+    "astryx": {
+      "tasks": [
+        "interface",
+        "graphics"
+      ],
+      "inputs": [
+        "text",
+        "data"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "f5e9f503ff0f2de7624193b016a59ce3b79d6c1cc7528b7e22c90339f58914cc"
+    },
+    "afternoon-light": {
+      "tasks": [
+        "3d",
+        "image",
+        "graphics"
+      ],
+      "inputs": [
+        "3d",
+        "text"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "61c5a2deaff506560f8cbe94d0c7c791672be5db4fc2a5444843e2b80738264a"
+    },
+    "nuance-emma": {
+      "tasks": [
+        "video",
+        "audio"
+      ],
+      "inputs": [
+        "audio",
+        "video"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "b0fe1c4cc80fd8730fd7594b6d61da144f394f4089f3ac69dad9503fc7442070"
+    },
+    "hailuo": {
+      "tasks": [
+        "video"
+      ],
+      "inputs": [
+        "image",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "3f1b4a97311959887fc1e6531e982ebadf090bf81b8e833fd3975b649ed19f64"
+    },
+    "minimax-code-intake": {
+      "tasks": [
+        "video",
+        "software",
+        "analysis"
+      ],
+      "inputs": [
+        "text",
+        "image",
+        "data"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "6497ddbf619ac14cd9a4ccab76e67e34cbd4788bb0eacacbcb21ea679346b0fd"
+    },
+    "minicharts": {
+      "tasks": [
+        "diagram",
+        "graphics"
+      ],
+      "inputs": [
+        "data",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "4783bfe7ae505d71ccabebc7b3d8059c597d1a5294807a64515340b79da2646c"
+    },
+    "spaghetti-splatting": {
+      "tasks": [
+        "3d"
+      ],
+      "inputs": [
+        "image",
+        "video"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "2f51a902f4a7e4f9129835f2a8d6115f1dfc9f88a15f6b146b0dee5ab50c9553"
+    },
+    "h3-dials-mainodes": {
+      "tasks": [
+        "video",
+        "3d",
+        "image"
+      ],
+      "inputs": [
+        "image",
+        "video",
+        "text"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "310f8951a608268b20d13b1429dc9426c0a524944b1e6cc043de6f5edc5b4c74"
+    },
+    "patch-game-tools": {
+      "tasks": [
+        "3d",
+        "software",
+        "audio"
+      ],
+      "inputs": [
+        "3d",
+        "text",
+        "audio"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "098802430a88dc60eb0a6569ca104a5e21d45b776b09a36dbf489c6bac99a4f0"
+    },
+    "unrender": {
+      "tasks": [
+        "video",
+        "image",
+        "editing"
+      ],
+      "inputs": [
+        "video",
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "b9b2c6e3de373cd66a99cceb522a53f1812c8d996159f1bad6953b0032b31c9a"
+    },
+    "open-h3-regenerate-ic": {
+      "tasks": [
+        "video"
+      ],
+      "inputs": [
+        "video",
+        "text"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "96f4c65a1877bfd6f63889a8483b3db3a53fbb448641d16c329f493220642fe2"
+    },
+    "runway-sightline": {
+      "tasks": [
+        "3d",
+        "image",
+        "storyboard"
+      ],
+      "inputs": [
+        "image",
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "3faab05a12bdccc6a2d7b93c998ac38848e78d982fc0c3a8a718813f27b973cb"
+    },
+    "bmove-max": {
+      "tasks": [
+        "3d"
+      ],
+      "inputs": [
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "50bdcf040c4077d704adfbd63f276f784fbdea4fc94a5a0ac413560cd59c75fe"
+    },
+    "weta-ai-direction": {
+      "tasks": [
+        "video",
+        "storyboard"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "d1e81ad05f925324f849e0829c0ba4b9fd397b5e0a352f76c8cb7f1f12236f02"
+    },
+    "aswf-rmtc": {
+      "tasks": [
+        "software"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "e67b230fb73c37ea8fec137996a2d99909e9ee42a866d1003348af35b7a16a11"
+    },
+    "clickhunt-lab": {
+      "tasks": [
+        "analysis",
+        "media-review"
+      ],
+      "inputs": [
+        "image",
+        "data"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "f087319b594af58bf1cd89e8af358cf99cd47ea8a6db47f98b0343e0c4951eaa"
     }
   }
 }

@@ -1,5 +1,9 @@
 # Tool review and test inventory
 
+## Latest intake and scoped closeout —11November2026
+
+[34 URLs /22 topics](research/tool-intake-2026-11-11.md): current-stack chart/panorama/version/physics questions and retained future Windows/CUDA/cloud routes. No new runtime qualification from research. [OpenDirector](productions/reverie-playall-opendirector.md) separately records an executed bounded native edit/reopen/export test and accepted films, not a blanket tool endorsement.
+
 ## Cross-device intake —10November2026
 
 [Full assessment, sources and bounded tests](research/tool-intake-2026-11-10.md):

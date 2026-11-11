@@ -1,6 +1,6 @@
 {
   "schema": "framewright-public-evidence-v1",
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "scope": "Conservative documented cases, not an asserted lifetime total. Original records remain the source of truth.",
   "definitions": {
     "films": "One completed authored story/promo/tutorial/ambient master per case. Aspect, language and revision variants count once. A finished export need not be publicly published or creatively accepted.",
@@ -407,6 +407,12 @@
       "source": "docs/productions/dependabot-apm-skills.md",
       "basis": "owner_accepted_published",
       "index_note": "One83.1s authored story in two native aspect layouts. Owner URLs, not independent visibility, audience results or a live APM test."
+    },
+    {
+      "id": "reverie-playall-opendirector",
+      "source": "docs/productions/reverie-playall-opendirector.md",
+      "basis": "owner_accepted_published",
+      "index_note": "One89.9167s authored story in two aspect compositions. Owner-provided YouTube/TikTok URLs; no independent visibility or audience-result claim. Recipe and dependency-aware cache closeout completed11November; no extra variant count."
     }
   ],
   "trials": [
@@ -595,6 +601,11 @@
       "id": "centre-crop-01",
       "source": "docs/productions/radar-pair-centre-crop-2026-11-10.md",
       "index_note": "Executed two-topic comparison; both visual methods accepted, active-effort/cost outcome inconclusive. Not an independently registered Radar experiment."
+    },
+    {
+      "id": "opendirector-01",
+      "source": "docs/productions/reverie-playall-opendirector.md",
+      "index_note": "One executed local0.1.2 authoring/reorder/trim/cue/save-reopen/two-aspect export fixture. Scoped observed results; retries and final-film routine QA are not additional trials. No general tool or Reverie-service qualification."
     }
   ]
 }
