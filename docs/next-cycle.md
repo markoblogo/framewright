@@ -1,9 +1,24 @@
 # Current work and protected waits
 
-Updated11November2026 · source release0.8.0 / REL-C.
+Updated13November2026 · source release0.8.0 / REL-C. [Evidence index](public-evidence.json):79 film stories /48 executed trials, local deduplicated cases.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md).
 
 ## Current boundary
+
+**Current boundary —13November:** owner asked for project consolidation without production. Earlier11November orders remain the last recorded decisions on individual projects; dates below do not by themselves prove later activity.
+PR66 is verified merged at d7da7c5. A [small internal operator handoff](experiments/operator-handoff-2026-11-11.md)
+completed revision/export/reopen with recorded support friction; release scope and
+packaging remain undecided,no tag/release. The accepted RUN//SIGNAL v07 download
+was recovered unchanged; [outdoor phone test](productions/run-signal-m01.md) is still
+pending. Before DonQuixote,the owner selected [two interactive-world reviews](productions/interactive-worlds-series.md):
+**Vaybolet is now owner-reported published on YouTube/TikTok;Floor796 is next**,one at a time. Both are English real screencasts
+for newcomers,not easter-egg hunts:brief context then exploratory flight/wandering
+with sparse observations. Vaybolet:rough low male/Slavic accent;Floor796:expressive
+female reactions and light soundtrack,no hard runtime cap. Vaybolet full82s films were accepted with sound and publication links recorded;
+Floor796 voice/pilot review remains future work. The owner subsequently queued a Babylon world-overview and a NeuroRoast overview/review; [source context](research/tool-intake-2026-11-13.md). Six earlier reserves are names/links only in roadmap,not
+active stories;discuss separately at their turn and interleave with other tasks.
+Broader discovery depends on actual first-release results.
+DonQuixote remains paused;SSI corrections remain Saturday14November.
 
 **Owner order11November:** DonQuixote is paused. The latest Radar production is
 [Preview the Cut Before You Render](productions/reverie-playall-opendirector.md):
@@ -42,6 +57,13 @@ no Quixote rendering, generation or cleanup until owner resumption.
 
 ## Latest completed work
 
+- [Vaybolet](productions/interactive-worlds-series.md): both82s English formats
+  were accepted with sound and the owner supplied YouTube/TikTok links11November.
+  Local recipe, source/QA receipts, masters and packages are retained. The selected
+  source paths and master hashes were rechecked13November; VFR, capture failures,
+  rights and unmeasured audience results remain separate. A dependency-aware
+  cleanup has not yet been performed.
+
 - [Dependabot/APM](productions/dependabot-apm-skills.md): both83.1s English native
   aspect films/covers accepted with sound; owner supplied YouTube owWs6W4dR4w and
   TikTok. Original before-production Radar association, YouTube-only delivery,
@@ -73,8 +95,8 @@ retiring3862 files/443,266,154 logical bytes. Post-cleanup hashes and live local
 HTML dependencies passed. Counts distinguish logical sizes from physical recovery.
 Private records: studio `records/production-closeout-20261110/`.
 
-`docs/public-evidence.json` now contains78 film stories and47 executed trial cases:
-77/46 at PR65 plus Preview the Cut / OPENDIRECTOR-01; variants/retries are deduplicated. Research intake and routine QA add none. Research-only
+`docs/public-evidence.json` contains79 film stories and48 executed trial cases:
+78/47 at the prior consolidation plus one Vaybolet story and one bounded operator-handoff trial; the film’s two platform/aspect variants count once. Research intake and routine QA add none. Research-only
 entries and routine export QA are not new trials. Owner URLs do not establish
 independent visibility, uploaded-file/text identity, audience reach or revenue.
 Manual Radar receipts do not prove scheduled analytics or mature feedback.
@@ -106,18 +128,23 @@ Earlier completed cases and source boundaries remain in their production records
 
 ## Next owner order and protected waits
 
-1. **Owner closeout order11November:** [Preview the Cut / OpenDirector](productions/reverie-playall-opendirector.md)
-   recipe/test/cleanup and [new tool intake](research/tool-intake-2026-11-11.md) are
-   consolidated with the accepted creative-proposal/paused-fiction records for
-   checks, independent review and authorised PR merge. PR65 is already merged;
-   live11November check found no other open PR. [Release assessment](release-readiness-2026-11-11.md)
-   is separate; this task does not publish a release or start another film/test.
+Storage snapshot13November: the internal system volume reported5.9GiB available;
+the external Work volume reported177GiB. Per [storage policy](storage-policy.md),
+use the external studio for media and defer new heavyweight internal jobs below
+10GiB. This is a dated observation,not a live monitor or an authorisation to delete.
+
+1. **Consolidate project state; production paused for this work.** PR66 is merged at
+   d7da7c5. A GitHub connector read on13November found no open PR and confirmed
+   main at that SHA; latest listed release is experimental prerelease v0.8.0.
+   The handoff and Vaybolet records below consolidate subsequent work.
+   [Release scope and remaining checks](release-readiness-2026-11-11.md) remain
+   separate decisions; this consolidation neither publishes a release nor starts a film.
 2. **Don Quixote is owner-paused.** Preserve the selected cast,6paired anchor
    scenes, two accepted8s pilots, accepted127.32s role dialogue and the pending51s
    opening-block picture/mix review. The native journal includes an owner-resume
    wait. Do not continue or prune paused media. The local project UI stays deferred;
    any eventual release remains a separate decision.
-3. **No RUN//SIGNAL work today.** [M01](productions/run-signal-m01.md) v07 is accepted
+3. **RUN//SIGNAL awaits the outdoor report.** [M01](productions/run-signal-m01.md) v07 is accepted
    in home review:22:00.07 total, exactly1200s time-based training. Outdoor Nantes
    report blocks M02; distance is analysis only. Finale is an M01-only compromise,
    not a reusable natural-acting/thermal/helmet module. No promo started.

@@ -1,5 +1,9 @@
 # Proposed experiment queue
 
+## Motion resources —13November2026
+
+[DesignBookmark Motion intake](research/tool-intake-2026-11-13.md): **MOTION-COMPONENT-01**, conditional local browser experiment on an original title or stat-card animation, compared with an existing Framewright/HTML baseline. Check individual component provenance, licensing, dependencies and offline/seekable export first; no copied code or installation is authorised by queueing. Inspect readability, both aspects, timing and reduced-motion behaviour. No test or new qualification has occurred. Babylon and NeuroRoast are separate editorial candidates, not tool tests.
+
 ## Tool intake —11November2026
 
 [34 URLs /22 topics, deduplication and future-stack routes](research/tool-intake-2026-11-11.md).
