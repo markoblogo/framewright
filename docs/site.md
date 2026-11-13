@@ -15,7 +15,7 @@ AMI-like video carousel and contact. No analytics or background update schedule.
 - Detailed [tool profiles](../skills/video-production-router/references/tools.json): count `tools`.
 - [Review ledger](../skills/video-production-router/references/review-ledger.json): count `tools`.
 - GitHub releases API: newest non-draft release, including experimental prereleases.
-  Current observed release: v0.8.0, published4November; this site work is not a release.
+  The9November observation was v0.8.0, published4November. Source0.9.0 is now prepared under owner authority; the visitor-loaded API supplies actual publication state. This source edit does not itself prove release availability.
 
 The browser reads these public main-branch sources **once on each page opening**.
 No visitor means no requests. It uses a dated shipped snapshot or last successful

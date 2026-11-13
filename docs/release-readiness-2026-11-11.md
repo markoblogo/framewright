@@ -80,3 +80,7 @@ batch is required solely to increase volume. No release/version is authorised.
 
 PR66 is now verified merged11November17:04:02UTC at
 `d7da7c5ca7f8add02314db08b30dec02a085001d`; the local baseline matches.
+
+## Owner sequencing update —13 November 2026
+
+The owner decided that transfer to another operator or project is a parallel workstream to be pursued when an actual need arises (for example SSI or future AzurMenton), not a universal prerequisite to the next release or normal progress. The previous REL-D conditions apply only to a release that makes those transfer claims. Existing internal handoff evidence and limitations stay unchanged; M6 / REL-D is not complete. A narrower consolidation release can be prepared on verified current scope with accurate compatibility and limitations, package verification, relevant checks and a separate owner publication decision. No version or release is selected or made here.

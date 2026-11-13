@@ -1,5 +1,11 @@
 # Tool review and test inventory
 
+## Physical Android editor —13November2026
+
+[InShot feature follow-up](experiments/inshot-functions-2026-11-13.md): exported English caption/text/PIP/chroma/mix/speed fixtures and photo/collage outputs on the owner’s Premium tablet. Endpoint-frame parity, tracking, AI processing locality and long-form work remain open. Tablet Chrome capture and a Babylon tour are the selected production application; LocalSend is a conditional transfer candidate.
+
+[VLC / LocalSend / Kaossilator follow-up](experiments/android-companions-2026-11-13.md): bounded playback/seek, no successful LAN transfer, KORG owner-deferred. Installed does not mean every function is qualified.
+
 ## Latest intake and scoped closeout —11November2026
 
 [34 URLs /22 topics](research/tool-intake-2026-11-11.md): current-stack chart/panorama/version/physics questions and retained future Windows/CUDA/cloud routes. No new runtime qualification from research. [OpenDirector](productions/reverie-playall-opendirector.md) separately records an executed bounded native edit/reopen/export test and accepted films, not a blanket tool endorsement.

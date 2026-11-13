@@ -1,6 +1,6 @@
 # Current work and protected waits
 
-Updated13November2026 · source release0.8.0 / REL-C. [Evidence index](public-evidence.json):81 film stories /49 executed trials, local deduplicated cases.
+Updated13November2026 · source version0.9.0 consolidation; REL-C evidence retained. [Evidence index](public-evidence.json):82 film stories /51 executed trials, local deduplicated cases.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md).
 
 ## Completed test —13November
@@ -10,6 +10,14 @@ Owner selected the previously published [The Last Delivery](experiments/last-del
 ## Latest closeout —13November
 
 [Copilot review sources](productions/copilot-review-sources.md): owner accepted both55s v3 films and supplied YouTube/TikTok URLs. YouTube-only Radar status was applied with a retrospective association and acknowledgements; metrics and independent visibility remain unknown. The local head/hand movement is scoped 2D, not a complete character rig. The subsequent [DesignBookmark comparison and export trial](experiments/designbookmark-page-flip.md) reused The Last Delivery; baseline A was selected and owner-reported published.
+
+## Owner sequencing decision — 13 November
+
+Operator/project transfer is parallel work, triggered by a real need such as SSI or future AzurMenton; it is not a blanket blocker for the next release. M6 / REL-D remains partial. Scope a future release to substantiated changes, check its actual package and compatibility, and obtain the separate publication decision; do not imply transfer is complete. SSI, Don Quixote and RUN//SIGNAL are deferred until 14 November per owner. Current selected production: Babylon, applying the [physical-tablet InShot feature study](experiments/inshot-functions-2026-11-13.md). Chrome capture works independently of laptop Chrome; the heavy scene produced roughly7–12fps, so source motion and any interpolation need separate review. Both approximately44-second native InShot exports are accepted with sound; [Babylon packages and limits](productions/babylon-virtual-tour.md) are prepared. Publication links for both platforms are owner-reported; independent visibility/metrics remain unknown. Source/recipe/evidence stay in the private studio.
+
+## Current consolidation —13November
+
+Owner stopped further app trials to record outcomes and discuss direction. [Companion-app suite](experiments/android-companions-2026-11-13.md): VLC video/pause/media-key seeking observed; LocalSend transfer not achieved; KORG separately deferred after menu-response trouble confirmed by owner. [Release direction](release-direction-2026-11-13.md) records the proposal. The owner subsequently authorised all preparation and publication of0.9.0. Release branch/checks/review/package and canonical publication are being verified; see the [frozen audit](release-audit-0.9.0.md). No film or deferred app trial is resumed by that authority.
 
 ## Current boundary
 
