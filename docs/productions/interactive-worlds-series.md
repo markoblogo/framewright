@@ -16,16 +16,14 @@
    to see animations. Comment on interesting actual events rather than hunting
    secrets. Character identifications must be verified. DarthVader/Piglet was an
    example of tone,not a verified encounter or a required shot.
-   Each gets YouTube16:9 and TikTok9:16 with its own framing/cover/copy checks.
+   The owner accepted and reported publication of both formats: [YouTube](https://youtu.be/q9f_fESuNpc), [TikTok](https://vt.tiktok.com/ZSpCdJDxv/). [Production recipe and limitations](floor796-guided-tour.md).
 
 Floor796 official About/FAQ was actually inspected:the station-floor scene is a
 solo hobby project since2018,using a custom browser animation editor;clicking
 characters identifies many references,and some figures are invented. Do not infer
 AI generation from the old film's #AIVideo tag. The visible updates list contains
 StarTrek characters,Worms,Wednesday andother candidates;their exact scene positions
-and final filmed identifications still need checking. Unknown identities stay
-unnamed. No whole-video visual analysis or actual screen recording is claimed by
-reading a description.
+and final filmed identifications still need checking. Unknown identities stay unnamed. The subsequent production uses an actual owner-recorded screencast; scene observations are distinguished from the earlier source intake.
 
 A small visible comment sample on the old Floor796 film included a request for
 more explanation. This supports the proposed editorial correction,not a claim
@@ -35,7 +33,7 @@ retention,TikTok reach or causal evidence.
 
 ## Additional owner-requested candidates —13November
 
-- **Babylon c. 575 BCE** — [interactive Claude artifact](https://claude.ai/artifact/CTjrZXVdUgKJ6qJXrvvr28), explicitly in the production queue for a future world-overview video. The visible opening identifies an interactive3D reconstruction and describes a camera path; one initial city view was observed. Historical accuracy, authorship/rights, recording access, actual running performance and audio are not verified. Recheck these at the production brief; do not present the artifact's reconstruction claims as established history. Floor796 remains the next previously selected world; no fixed position after it is promised and no recording or video has started.
+- **Babylon c. 575 BCE** — [interactive Claude artifact](https://claude.ai/artifact/CTjrZXVdUgKJ6qJXrvvr28), explicitly in the production queue for a future world-overview video. The visible opening identifies an interactive3D reconstruction and describes a camera path; one initial city view was observed. Historical accuracy, authorship/rights, recording access, actual running performance and audio are not verified. Recheck these at the production brief; do not present the artifact's reconstruction claims as established history. Floor796 is now owner-reported published; no fixed position for this candidate is promised and no Babylon recording or video has started.
 - **[NeuroRoast / CG Event](https://neuroroast.cgevent.ru/)** — owner-requested future overview/review candidate. The visible site is an archive of AI videos, ratings, tool tags and reported creator pipelines, not another navigable world. Its usefulness for editorial analysis and an eventual overview can be assessed at its turn. Individual creator descriptions, reactions and metrics are unverified reports; reuse and audio/visual rights require separate checking. No donor clips, metrics or production have been acquired.
 
 [Motion resource intake](../research/tool-intake-2026-11-13.md) covers these links and the related tool proposal; no publication, research-score or schedule follows merely from queuing them.
@@ -178,5 +176,4 @@ Receipt provenance:`owner_provided_url`;independent visibility,uploaded-file
 identity,publish time and audience/revenue metrics were not checked. Prepared
 master/cover/copy hashes stay unchanged;the publication receipt is separate.
 This is one authored film case,two aspect/platform variants. No Radar association
-or automatic publication is inferred. Floor796 remains the next selected world;
-no new capture or production was started by this receipt.
+or automatic publication is inferred. At the time of this Vaybolet receipt, Floor796 was the next selected world. It has since been completed and owner-reported published; see [Floor796](floor796-guided-tour.md).

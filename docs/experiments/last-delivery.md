@@ -20,3 +20,7 @@
 - **Качество и воспроизводимость:** опубликованная автором сборка основана на принятой версии 720 × 406, 12 fps; это не свидетельство высокого разрешения или проверка производственного мастера в другом разрешении. Сохранять исходные сцены, версии материалов, звуковые источники и результат каждой правки отдельно от решений автора.
 
 Частные рабочие материалы и журнал сохранены локально в `last-delivery-20261026/`; опубликованный ролик и исходные права не превращаются автоматически в лицензию на повторное использование всех компонентов. Дальнейшая художественная и техническая квалификация остаётся открытой.
+
+## TikTok adaptation — 13 November 2026
+
+The owner selected the original-scene portrait crop (variant A) and supplied [TikTok URL](https://vt.tiktok.com/ZSpQn9kVD/). This is the same 33-second story, not another film. The vertical export is enlarged from the original 720×406 / 12fps source; the credited CC BY music is retained. Visibility, uploaded identity and audience results are not independently verified. A [separate Page Flip test](designbookmark-page-flip.md) was evaluated but its large insert was rejected for this film.

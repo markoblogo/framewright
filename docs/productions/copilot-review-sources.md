@@ -1,0 +1,15 @@
+# What Informed Copilot’s Code Review? — accepted and published
+
+13 November 2026 · English · one 55-second story; separate YouTube 16:9 and TikTok 9:16. Owner accepted both v3 films and supplied [YouTube](https://youtu.be/pT83dCFVxLU) and [TikTok](https://vt.tiktok.com/ZSpxP45bh/) URLs. This is owner-reported publication, not independently verified visibility, file identity or audience results. The selected 9 November Radar idea was linked retrospectively; association and YouTube-only status were applied and acknowledged. No analytics acquisition or experiment registration follows.
+
+## Repeatable recipe
+
+1. Source-ground one question: which skills, MCP servers and instructions Copilot **reports** as sources; a cited source is not proof of correctness. Illustrative graphics are not a real GitHub review. [GitHub update](https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/).
+2. Use an original investigator illustration and alternate poses; independently lay out readable titles and source cards for each aspect. Time the card reveals and light pulse to the explanation; avoid covering the character or the meaningful action. Large, upper-frame typography and separate compositions followed the owner's earlier feedback.
+3. The v3 correction uses two feathered 2D masks with small rigid head and raised-hand rotation over the original still in the explaining view. The owner accepted both outputs. This is a bounded, subtle 2D approximation with potential edge ghosting; other poses remain stills, not natural articulated 3D or independently verified character continuity.
+4. Time picture to the 52.96-second Knox take; keep the owner's Suno music softly under narration and add small local notification sounds. Both outputs are 55 seconds, 18 fps, enlarged to 1920×1080 / 1080×1920 from 960×540 / 540×960 authored composites. Upscaling does not add source detail. SRT phrase timing is approximate and has not been independently aligned by listening. Horizontal audio stream was preserved exactly from v2 to v3; both v3 files decoded. Owner listening/creative acceptance is separate from technical checks and music/voice rights verification.
+5. Keep the accepted masters, selected covers, copy pages, original generated art, exact voice, music source, final audio mix, pings, source scripts, motion rig and current review pages. Private project: `productions/copilot-review-sources/` in the studio. The compact closeout manifest records dependencies and exact retired files; historical full v1 intermediates are no longer available after cleanup. No general tool qualification or measured production savings.
+
+## DesignBookmark boundary
+
+The authored card was **inspired by** [DesignBookmark Motion](https://designbookmark.com/motion); it was not a test of a copied catalogue component. At the time of this Copilot film, the comparison and reduced-motion assessment were still open. A subsequent [bounded Page Flip trial](../experiments/designbookmark-page-flip.md) used The Last Delivery instead; it is not evidence that this film used the component. Reduced-motion remains untested.

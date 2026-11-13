@@ -419,6 +419,18 @@
       "source": "docs/productions/interactive-worlds-series.md",
       "basis": "owner_accepted_published",
       "index_note": "One82s English real-gameplay exploration in two aspect/platform variants. Owner-provided YouTube/TikTok URLs11November;no independent visibility,uploaded-file identity or audience/revenue verification."
+    },
+    {
+      "id": "copilot-review-sources",
+      "source": "docs/productions/copilot-review-sources.md",
+      "basis": "owner_accepted_published",
+      "index_note": "One 55-second English source-attribution explainer in two platform variants, accepted and owner-reported published 13 November. Retrospective Radar association applied; visibility and audience outcomes unverified."
+    },
+    {
+      "id": "floor796-guided-tour",
+      "source": "docs/productions/floor796-guided-tour.md",
+      "basis": "owner_accepted_published",
+      "index_note": "One 2:24 English guided tour of an interactive world; YouTube and TikTok variants accepted and links supplied by owner. Visibility, claims, rights and audience outcomes unverified."
     }
   ],
   "trials": [
@@ -617,6 +629,11 @@
       "id": "operator-handoff-2026-11-11",
       "source": "docs/experiments/operator-handoff-2026-11-11.md",
       "index_note": "One bounded same-host receiving-agent handoff, revision/export/reopen with reported support friction. Not independent external-user or clean-machine qualification."
+    },
+    {
+      "id": "designbookmark-page-flip-2026-11-13",
+      "source": "docs/experiments/designbookmark-page-flip.md",
+      "index_note": "One scoped Page Flip trial with adapted frame-controlled standalone export; owner liked the turn but rejected its frame-filling use in this film. Reduced-motion and full-film integration untested."
     }
   ]
 }

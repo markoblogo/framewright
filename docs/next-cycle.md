@@ -1,21 +1,29 @@
 # Current work and protected waits
 
-Updated13November2026 · source release0.8.0 / REL-C. [Evidence index](public-evidence.json):79 film stories /48 executed trials, local deduplicated cases.
+Updated13November2026 · source release0.8.0 / REL-C. [Evidence index](public-evidence.json):81 film stories /49 executed trials, local deduplicated cases.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md).
+
+## Completed test —13November
+
+Owner selected the previously published [The Last Delivery](experiments/last-delivery.md) for TikTok only. [One bounded Page Flip browser test](experiments/designbookmark-page-flip.md) and two vertical comparison videos received an owner report that both look acceptable. A follow-up rendered an adapted component as a standalone vertical clip; a repeated still matched; the owner liked the turn but rejected its frame-filling use for this film and suggested future book or research-document videos. The owner selected the baseline portrait and supplied TikTok ZSpQn9kVD; independent visibility and metrics remain unknown. TikTok publication is owner-reported; no independent visibility or audience metrics verified.
+
+## Latest closeout —13November
+
+[Copilot review sources](productions/copilot-review-sources.md): owner accepted both55s v3 films and supplied YouTube/TikTok URLs. YouTube-only Radar status was applied with a retrospective association and acknowledgements; metrics and independent visibility remain unknown. The local head/hand movement is scoped 2D, not a complete character rig. The subsequent [DesignBookmark comparison and export trial](experiments/designbookmark-page-flip.md) reused The Last Delivery; baseline A was selected and owner-reported published.
 
 ## Current boundary
 
-**Current boundary —13November:** owner asked for project consolidation without production. Earlier11November orders remain the last recorded decisions on individual projects; dates below do not by themselves prove later activity.
+**Current boundary —13November:** Floor796 and the DesignBookmark trial are closed in the current documentation; further productions remain separately selected. Earlier11November orders are historical and do not by themselves establish current activity.
 PR66 is verified merged at d7da7c5. A [small internal operator handoff](experiments/operator-handoff-2026-11-11.md)
 completed revision/export/reopen with recorded support friction; release scope and
 packaging remain undecided,no tag/release. The accepted RUN//SIGNAL v07 download
 was recovered unchanged; [outdoor phone test](productions/run-signal-m01.md) is still
 pending. Before DonQuixote,the owner selected [two interactive-world reviews](productions/interactive-worlds-series.md):
-**Vaybolet is now owner-reported published on YouTube/TikTok;Floor796 is next**,one at a time. Both are English real screencasts
+**Vaybolet and Floor796 are owner-reported published on YouTube/TikTok**,one at a time. Both are English real screencasts
 for newcomers,not easter-egg hunts:brief context then exploratory flight/wandering
 with sparse observations. Vaybolet:rough low male/Slavic accent;Floor796:expressive
 female reactions and light soundtrack,no hard runtime cap. Vaybolet full82s films were accepted with sound and publication links recorded;
-Floor796 voice/pilot review remains future work. The owner subsequently queued a Babylon world-overview and a NeuroRoast overview/review; [source context](research/tool-intake-2026-11-13.md). Six earlier reserves are names/links only in roadmap,not
+[Floor796](productions/floor796-guided-tour.md) voice, pilot and both full films were accepted and publication links supplied. The owner subsequently queued a Babylon world-overview and a NeuroRoast overview/review; [source context](research/tool-intake-2026-11-13.md). Six earlier reserves are names/links only in roadmap,not
 active stories;discuss separately at their turn and interleave with other tasks.
 Broader discovery depends on actual first-release results.
 DonQuixote remains paused;SSI corrections remain Saturday14November.
@@ -95,7 +103,7 @@ retiring3862 files/443,266,154 logical bytes. Post-cleanup hashes and live local
 HTML dependencies passed. Counts distinguish logical sizes from physical recovery.
 Private records: studio `records/production-closeout-20261110/`.
 
-`docs/public-evidence.json` contains79 film stories and48 executed trial cases:
+`docs/public-evidence.json` contained79 film stories and48 executed trial cases at the prior consolidation:
 78/47 at the prior consolidation plus one Vaybolet story and one bounded operator-handoff trial; the film’s two platform/aspect variants count once. Research intake and routine QA add none. Research-only
 entries and routine export QA are not new trials. Owner URLs do not establish
 independent visibility, uploaded-file/text identity, audience reach or revenue.
