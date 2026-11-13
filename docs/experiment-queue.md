@@ -1,5 +1,9 @@
 # Proposed experiment queue
 
+## Owner-installed production apps —13November2026
+
+[Local preflight](research/production-apps-2026-11-13.md): **SCREEN-STUDIO-01** capture/import → bounded edit → save/reopen → two-aspect export, conditional on actual free entitlement; imported MP4 reached the editor, but after login the app reported no active plan, so no export was obtained. **MACWHISPER-SRT-01** owner-approved sample → installed local model → compare text/timings and SRT export; installed Small WhisperKit observed but no transcript generated yet. No purchase, cloud transfer, completed tool qualification or unmeasured speed claim. Fit the test to the selected Babylon production if its requirements are met.
+
 ## Motion resources —13November2026
 
 [DesignBookmark Motion intake](research/tool-intake-2026-11-13.md): **MOTION-COMPONENT-01**, conditional local browser experiment on an original title or stat-card animation, compared with an existing Framewright/HTML baseline. Check individual component provenance, licensing, dependencies and offline/seekable export first; no copied code or installation is authorised by queueing. Inspect readability, both aspects, timing and reduced-motion behaviour. This was the initial proposal; a bounded Page Flip trial was subsequently executed as described below. Babylon and NeuroRoast are separate editorial candidates, not tool tests.
@@ -393,12 +397,12 @@ until a concrete team workflow; no mandatory dependency or copied upstream code.
 [Research and gates](research/creative-editors-ascii-krea-inshot-2026-10-27.md).
 [Partial pilot](experiments/creative-tools-pilot-2026-10-27.md): Devault sample
 exported at 720p; GLEA installed, but its 1080p render failed. Neither is broadly
-production-qualified. Android Studio was copied to external storage; emulator and
-InShot have not been set up or tested. Remaining trials are deferred.
+production-qualified. Android Studio was copied to external storage; the emulator remains untested.
+The physical InShot follow-up below was executed on13November; other trials remain deferred.
 
 1. **Devault ASCII:** after Pocket OS resumes, test 5–10 seconds of cleared device footage against existing ASCII tools; compare legibility, motion and 1080p export. Browser-local processing is a vendor claim; a free account is required for export.
 2. **GLEA free editor:** a 15–20 second editable project → one revision → save/reopen → export. Resolve conflicting free-vs-PRO statements before any agent trial; do not buy a plan.
-3. **InShot via physical Android:** compare a short synthetic edit through free/open-source scrcpy with actual Android export and transfer. Device connection, debugging permission and premium entitlement are unverified; an emulator is a separate fallback.
+3. **InShot via physical Android:** compare a short synthetic edit through free/open-source scrcpy with actual Android export and transfer. [13November control/export trial](experiments/inshot-android-control.md): Redmi Pad Pro connected and authorised; Premium annual membership observed, agent UI control and basic MP4/photo/grid exports with transfer succeeded. The [same-day feature study](experiments/inshot-functions-2026-11-13.md) exported captions/text/chroma/mix/speed/photo/collage fixtures. Frame/timestamp parity, tracking, long-form work and unexecuted AI features remain open; an emulator is not needed for this route.
 4. **Krea:** one synthetic Blender material/lighting reference only after confirming Blender 5.2+, account, free allowance, model terms and publication rights. Adobe hosts and Resolve Studio remain paid-host reserves; do not equate web access with a tested plugin.
 
 **27 October — Good Dog preparation:** [The Last Delivery](experiments/last-delivery.md)
@@ -1289,3 +1293,8 @@ Dependency-aware cleanup retired only unneeded caches; current full inputs remai
 The exercise is conducted with an inconclusive active-effort/monetary result, not
 a universal crop winner or independently registered Radar experiment. Third-film
 production and later audience observations remain separate future steps.
+
+
+## Physical Android follow-up —13November2026
+
+[VLC / LocalSend / KORG](experiments/android-companions-2026-11-13.md): VLC local playback/pause/media-key seeking observed. LocalSend waits selected network/receiver diagnosis then a hash-verified two-direction transfer. Kaossilator is an owner-deferred separate task: establish reliable response, make a new own loop and verify export before production use. No further trial or additional app installation is active. Link: M4/R05, with possible later audio-library reuse.

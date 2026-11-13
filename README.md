@@ -2,7 +2,7 @@
 
 [![Framewright — silver FW ribbon unfolding](assets/fw-unfold.gif)](https://markoblogo.github.io/framewright/)
 
-[![Version: 0.8.0](https://img.shields.io/badge/version-0.8.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.8.0)
+[![Version: 0.9.0](https://img.shields.io/badge/version-0.9.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.9.0)
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 
 **A human-and-agent creative studio: films, animation, graphics, sound—and reusable production methods.**
@@ -39,7 +39,9 @@ This prints a plan; it does not render, install, call a model or spend money.
 
 | Scope | Evidence and boundary |
 | --- | --- |
-| Source version | Experimental0.8.0 / REL-C; [release notes](docs/release-notes-0.8.0.md) and [publication audit](docs/release-audit-0.8.0.md). Verify actual publication at the canonical release page. |
+| Source version | Experimental0.9.0 consolidation; [release notes](docs/release-notes-0.9.0.md) and [publication audit](docs/release-audit-0.9.0.md). The canonical release records actual availability. |
+| Review and exchange | Seekable local media review, versioned corrections and the existing owner-approved Radar status flow; [review method](docs/methods/native-editor-before-render.md). Selection, generation and publication remain agent-and-owner work. |
+| Physical-tablet finishing | [InShot feature exports](docs/experiments/inshot-functions-2026-11-13.md) and the accepted [Babylon tour](docs/productions/babylon-virtual-tour.md); [companion-app results](docs/experiments/android-companions-2026-11-13.md). Source-frame rate, endpoint timing and incomplete app tests remain explicit. |
 | REL-C evidence | Completed character fiction, bounded continuity/contact/correction, two aspect layouts and independent same-case recovery; [assessment](docs/rel-c-readiness-2026-11-04.md) and [review](docs/rel-c-independent-review-2026-11-04.md). Agent-and-human-led manual workflow; no general rig or autonomous route claim. |
 | REL-B evidence | [Assessment](docs/rel-b-readiness-2026-11-01.md): both formats accepted, scoped recovery/reuse/correction; [local checks/review](docs/rel-b-local-review-2026-11-01.md) and PR50/merged-main CI pass. No labour-savings or whole-route-autonomy claim. |
 | SSI handoff | [6 November cycle, owner report](docs/productions/ssi-2026-11-06.md): three films, deployment and six Telegram confirmations. Partner creative/listening acceptance, public publication and the15November unattended outcome remain separate. |
@@ -52,8 +54,7 @@ whole-route autonomy and audience performance are not established by these films
 
 [No Further Claims character-film method](docs/methods/coherent-manga-production.md) now records
 the completed131.25s manga film and native aspect-layout workflow. [REL-C assessment](docs/rel-c-readiness-2026-11-04.md)
-records the passed same-case cold-resume check and explicit limitations. This methods
-release adds no new renderer, mandatory dependency or automatic publishing service.
+records the passed same-case cold-resume check and explicit limitations. The0.9.0 consolidation adds review/exchange helpers and further production recipes; optional editors/providers keep their own requirements. Transfer to an independent operator remains a parallel workstream with partial evidence.
 
 The [accepted FW identity](docs/productions/fw-identity.md) and [English public landing](https://markoblogo.github.io/framewright/) are now recorded. Sting/watermark use in films remains an optional experiment. The live catalogue counts distinguish methods, detailed tool profiles and review entries.
 
@@ -69,7 +70,7 @@ The [accepted FW identity](docs/productions/fw-identity.md) and [English public 
 [Four training films → coherent fiction](docs/methods/training-to-fiction-2026-11-03.md):
 accepted AI-explainer, animated-poster, liquid-photo and transport-guide cases;
 reusable choices, remaining limits and three bounded next-production questions.
-These production results inform REL-C; they do not establish blanket tool qualification.
+These production results inform the methods library; they do not establish blanket tool qualification.
 
 Publication links and owner acceptance are owner-reported unless a case identifies
 separate verification. [More experiments](docs/experiments.md) ·

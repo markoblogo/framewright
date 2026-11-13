@@ -1,0 +1,19 @@
+# Android companion apps — bounded trial
+
+13 November 2026. Owner installed VLC, LocalSend and KORG Kaossilator on the connected Redmi Pad Pro, then requested tests and a development/release discussion. Later owner direction stops further testing and defers Kaossilator to a separate task. Existing tablet media and loops are preserved; no purchase, publication, persistent pairing or network-security change.
+
+| App / installed version | Observed result | Use decision / remaining check |
+| --- | --- | --- |
+| VLC3.7.2 | Opened the accepted Babylon16:9 H264/AAC file and displayed its picture. Native media-session pause worked; forward23.155→33.155s and rewind33.155→23.155s worked while paused. Playback session reported no error. | Adopt for local preview and media-key seeking within this scope. Speed, external SRT loading, background/screen-off endurance and long-session listening remain untested. Player menus alone do not prove those functions. No measured performance improvement over another player is asserted. |
+| LocalSend Android1.18.2 / macOS CLI1.18.2 | Android receive screen loaded. Official arm64 CLI started with configuration and receive folder on Work. Its downloaded SHA256 matched the official release digest. Peer discovery returned none; direct TCP probe to tablet port53317 timed out. No file was transferred. | Useful candidate, not a proven replacement for working USB transfer on this network. Network isolation/firewall or application state are possible causes, not a diagnosis. Listener stopped; no router/firewall change, automatic receipt or persistent pairing. |
+| KORG Kaossilator1.2.9 | Synth UI loaded with120BPM and a preset visible. File-menu presses did not give a reliable response; owner confirmed that a physical press also did not open the menu. | Owner deferred a separate trial. No original loop, native audio export, audio-quality result or version-wide incompatibility verdict. Preserve installed app and existing loops. |
+
+Developer references: [VLC player controls](https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html), [LocalSend source/readme](https://github.com/localsend/localsend/blob/main/README.md), [official LocalSend release](https://github.com/localsend/localsend/releases/tag/v1.18.2), [KORG Android product](https://www.korg.com/us/products/software/korg_kaossilator_for_android/) and [Android specifications](https://www.korg.com/us/products/software/korg_kaossilator_for_android/specifications.php). KORG advertises XY performance, five parts and audio export; the older specifications mention Google Play Music. An iKaossilator support article is for iOS and is not evidence of the Android export UI or format.
+
+## Retained evidence and next selected test
+
+Private studio `records/android-companions-2026-11-13/receipt.json` retains versions, exact results, screenshot hashes and `vlc-media-keys.json`. Local network addresses and device identifiers are not needed in the public record. The official macOS LocalSend CLI and provenance are under `tools/localsend-cli/`; its verified installer archive was retired after extraction. No additional Android app was installed by the agent.
+
+For a future authorised Kaossilator trial: first establish reliable local response without altering existing work; then create a new own loop, export audio, verify the resulting file and try it under a short video. Separate original performance from bundled demo/preset-loop reuse rights. For LocalSend: check same-network reachability and explicit receiver acceptance, then verify one transfer in each direction by byte count/SHA256. Do not turn a plan into a successful transfer or keep an unattended listener running.
+
+This is one conducted comparison suite, including incomplete outcomes, not three newly qualified production tools. [InShot study](inshot-functions-2026-11-13.md) and [Babylon film](../productions/babylon-virtual-tour.md) remain separate evidence.

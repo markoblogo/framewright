@@ -431,6 +431,12 @@
       "source": "docs/productions/floor796-guided-tour.md",
       "basis": "owner_accepted_published",
       "index_note": "One 2:24 English guided tour of an interactive world; YouTube and TikTok variants accepted and links supplied by owner. Visibility, claims, rights and audience outcomes unverified."
+    },
+    {
+      "id": "babylon-virtual-tour",
+      "source": "docs/productions/babylon-virtual-tour.md",
+      "basis": "owner_accepted_finished_export",
+      "index_note": "One44s tablet-browser/InShot tour in two aspects; owner accepted and supplied YouTube/TikTok links. Independent visibility/metrics unverified; capture/interpolation limits retained."
     }
   ],
   "trials": [
@@ -634,6 +640,16 @@
       "id": "designbookmark-page-flip-2026-11-13",
       "source": "docs/experiments/designbookmark-page-flip.md",
       "index_note": "One scoped Page Flip trial with adapted frame-controlled standalone export; owner liked the turn but rejected its frame-filling use in this film. Reduced-motion and full-film integration untested."
+    },
+    {
+      "id": "inshot-physical-android-control",
+      "source": "docs/experiments/inshot-android-control.md",
+      "index_note": "One owner-authorised physical-tablet suite, with same-day feature follow-up: captions/text/PIP/chroma/audio/speed/photo/collage exports. Variants counted once. Frame parity, tracking, AI locality and long-form quality remain unqualified."
+    },
+    {
+      "id": "android-companions-2026-11-13",
+      "source": "docs/experiments/android-companions-2026-11-13.md",
+      "index_note": "One bounded companion-app suite: VLC playback/media-key seek observed; LocalSend no successful transfer; KORG launch then owner-deferred. Conducted does not mean qualified."
     }
   ]
 }

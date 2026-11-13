@@ -28,8 +28,7 @@ verified cache retirement. [New intake](research/tool-intake-2026-11-11.md) grou
 qualification. The local index now records79 films /48 trials, deduplicated; Vaybolet adds one story, not two platform variants, and the bounded operator handoff adds one trial.
 
 [Release readiness review](release-readiness-2026-11-11.md) compares actual changes
-since published prerelease v0.8.0. The next planned capability gate remains REL-D:
-the bounded internal-agent handoff is documented with support friction, while a portable packet/prerequisite contract and archive validation remain for release preparation. A clean-machine or external-human reproduction would add stronger evidence and is not yet established. Do not infer independent use from production count, same-workspace reopen, source tests or research volume.
+since published prerelease v0.8.0. REL-D remains a separate transfer capability milestone, not a prerequisite for an ordinary release. The bounded internal-agent handoff is documented with support friction; portable packet and independent setup evidence remain incomplete and will be pursued when needed. Do not infer independent use from production count, same-workspace reopen, source tests or research volume.
 No release/version change is authorised here. DonQuixote and RUN waits, SSI
 Saturday14November correction plan and deferred local project UI remain intact.
 
@@ -79,6 +78,12 @@ Tool intake,10November: [cross-device catalogue](research/tool-intake-2026-11-10
 extends M4/R05/R06/R07 without changing production priority. Useful incompatible
 tools stay discoverable for future hardware/users; only actual current-stack fit
 enters near-term admission. Requirements, licences and qualification stay separate.
+
+## Owner decision — transfer and release sequencing, 13 November 2026
+
+Transfer to another operator or connected project is a **parallel workstream**, not a prerequisite for every next release or for production progress. Pursue and measure it on an actual handoff when needed, such as SSI or a future AzurMenton integration. The existing same-host internal handoff remains bounded evidence; this decision does not complete M6 / REL-D or establish external-user, cross-machine or unattended operation. A release may instead be scoped to the changes actually verified, with ordinary current checks, compatibility, accurate notes and an owner decision to publish. A release that specifically claims portable independent operation still needs evidence for that claim. No version or release is authorised by this decision.
+
+[13November release-direction proposal](release-direction-2026-11-13.md): the owner subsequently authorised preparing and publishing the scoped experimental0.9.0 consolidation; [notes/audit](release-notes-0.9.0.md) distinguish preparation from canonical publication. Then prioritise a case-informed M1–M4 route/recovery/correction increment; no future production is started by the release. KORG is a separate deferred audio trial; current companion-app outcomes are retained.
 
 ## Foundation and dated release evidence
 
