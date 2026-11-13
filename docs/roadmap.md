@@ -25,7 +25,7 @@ owner-accepted/published by report; scoped native edit/reopen/export proof and
 [repeatable recipe](methods/native-editor-before-render.md) are retained after
 verified cache retirement. [New intake](research/tool-intake-2026-11-11.md) groups
 34 URLs into22 topics, retaining future-stack candidates without new installs or
-qualification. The local index now records79 films /47 trials, deduplicated; Vaybolet adds one story, not two platform variants.
+qualification. The local index now records79 films /48 trials, deduplicated; Vaybolet adds one story, not two platform variants, and the bounded operator handoff adds one trial.
 
 [Release readiness review](release-readiness-2026-11-11.md) compares actual changes
 since published prerelease v0.8.0. The next planned capability gate remains REL-D:

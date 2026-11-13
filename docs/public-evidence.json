@@ -1,6 +1,6 @@
 {
   "schema": "framewright-public-evidence-v1",
-  "updated": "2026-11-11",
+  "updated": "2026-11-13",
   "scope": "Conservative documented cases, not an asserted lifetime total. Original records remain the source of truth.",
   "definitions": {
     "films": "One completed authored story/promo/tutorial/ambient master per case. Aspect, language and revision variants count once. A finished export need not be publicly published or creatively accepted.",
@@ -612,6 +612,11 @@
       "id": "opendirector-01",
       "source": "docs/productions/reverie-playall-opendirector.md",
       "index_note": "One executed local0.1.2 authoring/reorder/trim/cue/save-reopen/two-aspect export fixture. Scoped observed results; retries and final-film routine QA are not additional trials. No general tool or Reverie-service qualification."
+    },
+    {
+      "id": "operator-handoff-2026-11-11",
+      "source": "docs/experiments/operator-handoff-2026-11-11.md",
+      "index_note": "One bounded same-host receiving-agent handoff, revision/export/reopen with reported support friction. Not independent external-user or clean-machine qualification."
     }
   ]
 }

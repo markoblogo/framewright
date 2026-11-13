@@ -1,6 +1,6 @@
 # Current work and protected waits
 
-Updated13November2026 · source release0.8.0 / REL-C. [Evidence index](public-evidence.json):79 film stories /47 executed trials, local deduplicated cases.
+Updated13November2026 · source release0.8.0 / REL-C. [Evidence index](public-evidence.json):79 film stories /48 executed trials, local deduplicated cases.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md).
 
 ## Current boundary
@@ -95,8 +95,8 @@ retiring3862 files/443,266,154 logical bytes. Post-cleanup hashes and live local
 HTML dependencies passed. Counts distinguish logical sizes from physical recovery.
 Private records: studio `records/production-closeout-20261110/`.
 
-`docs/public-evidence.json` contains79 film stories and47 executed trial cases:
-78/47 at the prior consolidation plus the one Vaybolet story; its two platform/aspect variants count once. Research intake and routine QA add none. Research-only
+`docs/public-evidence.json` contains79 film stories and48 executed trial cases:
+78/47 at the prior consolidation plus one Vaybolet story and one bounded operator-handoff trial; the film’s two platform/aspect variants count once. Research intake and routine QA add none. Research-only
 entries and routine export QA are not new trials. Owner URLs do not establish
 independent visibility, uploaded-file/text identity, audience reach or revenue.
 Manual Radar receipts do not prove scheduled analytics or mature feedback.
