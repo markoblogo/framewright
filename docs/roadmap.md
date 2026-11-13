@@ -1,7 +1,7 @@
 # Framewright roadmap
 
-Updated 11 November 2026; source version 0.8.0 / REL-C per retained
-[release audit](release-audit-0.8.0.md). PR60–PR65 are merged. [PR65](https://github.com/markoblogo/framewright/pull/65)
+Updated 13 November 2026; source version 0.8.0 / REL-C per retained
+[release audit](release-audit-0.8.0.md). PR60–PR66 are merged; subsequent handoff and production records are retained. [PR65](https://github.com/markoblogo/framewright/pull/65)
 closed Dependabot/APM and the results film, recorded cross-stack tool research and
 aligned reserve-voice policy; merged-main CI passed at c1b2908. PR63 records closed
 [Premation](productions/premation-sync-test.md), accepted
@@ -25,12 +25,11 @@ owner-accepted/published by report; scoped native edit/reopen/export proof and
 [repeatable recipe](methods/native-editor-before-render.md) are retained after
 verified cache retirement. [New intake](research/tool-intake-2026-11-11.md) groups
 34 URLs into22 topics, retaining future-stack candidates without new installs or
-qualification. Existing index remains78 films /47 trials, deduplicated.
+qualification. The local index now records79 films /47 trials, deduplicated; Vaybolet adds one story, not two platform variants.
 
 [Release readiness review](release-readiness-2026-11-11.md) compares actual changes
 since published prerelease v0.8.0. The next planned capability gate remains REL-D:
-independent operator handoff/setup/support evidence is missing. Do not infer it
-from production count, same-workspace reopen, source tests or research volume.
+the bounded internal-agent handoff is documented with support friction, while a portable packet/prerequisite contract and archive validation remain for release preparation. A clean-machine or external-human reproduction would add stronger evidence and is not yet established. Do not infer independent use from production count, same-workspace reopen, source tests or research volume.
 No release/version change is authorised here. DonQuixote and RUN waits, SSI
 Saturday14November correction plan and deferred local project UI remain intact.
 
@@ -137,6 +136,12 @@ packages or create a GitHub release. No version number/date is assigned in advan
 | **REL-B — Repeat production and reuse** | M3 + a relevant M4 repeat, primarily R04–R05 | Second comparable production and alternate format, tested template boundaries, observed reuse/effort and a scoped candidate confirmed on another suitable case. Bundle related improvements rather than releasing after each tool test. |
 | **REL-C — Coherent character production** | M5, primarily R07 plus needed R06 adapters | Accepted interaction/continuity pilot and completed coherent fiction; versioned hero/set, readable contact/action, correction/recovery and documented limits. A successful rig or single render is insufficient. |
 | **REL-D — Transferable operation** | M6 when there is a distinct usable product increment | Another operator's reproducible route/handoff, support/setup evidence and portable instructions. May join REL-B/C if achieved together; book-readiness alone is not a software release. |
+
+[11November internal operator handoff](experiments/operator-handoff-2026-11-11.md)
+now demonstrates one received eight-second project revision/export/reopen on the
+prepared Mac,with packaging/reporting support friction recorded. This is bounded
+M6/RV02 evidence;external-human setup,clean-machine operation and broad independent
+use remain unproven. Release scope/package/review are still separate owner decisions.
 
 At each gate check the actual diff since the latest release, compatibility/migration
 notes, evidence links, README, package validation and review. Merge/push and a release
@@ -470,3 +475,21 @@ PR60 initially checked8November: then open/unmerged, both existing checks green 
 [Audio-Driven Avatars](productions/audio-driven-avatars.md) and [Junie Local](productions/junie-local-hardware.md) are accepted in both formats, packaged and owner-reported published. The [repeatable method](methods/dual-format-tech-explainer.md) retains primary-source claims, pilot/voice decisions, meaningful action, per-aspect composition and direct publication pages. Junie adds bounded original Blender/Pillow geometry, not local Junie inference; the avatar source-media rights question remains open.
 
 YouTube-only manual exchange applied both publications with returned acknowledgements; no new analytics acquisition, schedule, hook or automatic recommendation follows. Dependency-aware sanitation preserves pilot/audio/source dependencies and accepted masters. M3/M4/R04/R05/R09 gain case evidence, while REL-D/M6, measured savings and general tool qualification remain open. Owner authorised a documentation PR, without merge or release. Today’s Radar slate is complete; RUN//SIGNAL still waits for the outdoor report, and SSI chart-animation corrections stay near the end of the week before 15 November.
+
+### Interactive-world reviews —11November owner queue
+
+[Selected pair and source links](productions/interactive-worlds-series.md):
+Vaybolet is owner-accepted and owner-reported published; Floor796 remains next when production resumes,each English YouTube/TikTok. Explore for new visitors with
+sparse observations,not a secret-hunting checklist. Six reserves only:Microverse
+In Box,OSSAS/Aella,Quaruntine virtual forest,Isometric NYC,Pax Historia,SKYFLY.
+Discuss each when its turn arrives;interleave with other work. No blanket production
+or new-project search. Expansion depends on actual published reach/retention and
+revenue where available;owner reports and public counters remain separate evidence.
+This supports R04/R09/SOCIAL-01,not a new release or tool-qualification claim.
+
+
+### 13November — owner additions to the queue
+
+[Babylon c. 575 BCE](https://claude.ai/artifact/CTjrZXVdUgKJ6qJXrvvr28) is an owner-requested future world-overview production; [NeuroRoast](https://neuroroast.cgevent.ru/) is an owner-requested overview/review candidate and an archive of others' AI videos,not a navigable world. [Recorded context and limits](productions/interactive-worlds-series.md#additional-owner-requested-candidates-13november). Floor796 remains the next previously selected production when the owner resumes production; the new candidates do not set a rigid later sequence. No production or publication follows now.
+
+[DesignBookmark Motion assessment](research/tool-intake-2026-11-13.md) adds one conditional local component test to the [experiment queue](experiment-queue.md); site examples are references and per-component reuse terms remain to be established. No component was copied,installed,tested or qualified.

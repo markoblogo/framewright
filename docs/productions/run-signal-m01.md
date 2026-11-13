@@ -24,3 +24,19 @@ The selected trial2 uses continuous moving PlayMCP footage, local coarse thermal
 ## Next gate
 
 Owner's real outdoor Nantes running test with phone in pocket, then report and any sports screenshots. Record actual experience/physical parameters as one participant's evidence, not a representative-user study. No M02 until both home and outdoor reports are recorded and issues resolved. Promo/teaser production (up to90s, YouTube/TikTok) follows the first episode; no promo starts in this documentation pass. Landing page remains after the0–5km season. No public release or posting authorised here.
+
+## Download recovery —11November2026
+
+Owner reported being unable to download the complete workout; no outdoor run took
+place. This is a delivery/access issue, not a failed running test. Located the
+exact accepted v07 in the private studio and verified its full SHA256 against the
+retained acceptance receipt:22:00.07,529788797bytes,H264720p15fps/AAC24kHz.
+On11November a dedicated loopback server served an unchanged hardlink with an
+attachment response and range support: HTTP200/full length and206/1024-byte range
+were actually checked. No re-encode or master edit. The loopback address requires
+the Mac/server and mounted Work; it is not a phone streaming endpoint.
+
+Private receipt and Android instructions: studio `deliveries/run-signal-m01-v07/`.
+Copy the downloaded local MP4 to Android; official VLC supports Play as audio or
+background video. Actual screen-locked/pocket playback on the owner's phone and
+the outdoor report remain pending. Delivery does not authorize M02 or publishing.
