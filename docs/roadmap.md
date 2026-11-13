@@ -479,7 +479,7 @@ YouTube-only manual exchange applied both publications with returned acknowledge
 ### Interactive-world reviews —11November owner queue
 
 [Selected pair and source links](productions/interactive-worlds-series.md):
-Vaybolet is owner-accepted and owner-reported published; Floor796 remains next when production resumes,each English YouTube/TikTok. Explore for new visitors with
+Vaybolet and [Floor796](productions/floor796-guided-tour.md) are owner-accepted and owner-reported published in English YouTube/TikTok versions. Explore for new visitors with
 sparse observations,not a secret-hunting checklist. Six reserves only:Microverse
 In Box,OSSAS/Aella,Quaruntine virtual forest,Isometric NYC,Pax Historia,SKYFLY.
 Discuss each when its turn arrives;interleave with other work. No blanket production
@@ -490,6 +490,6 @@ This supports R04/R09/SOCIAL-01,not a new release or tool-qualification claim.
 
 ### 13November — owner additions to the queue
 
-[Babylon c. 575 BCE](https://claude.ai/artifact/CTjrZXVdUgKJ6qJXrvvr28) is an owner-requested future world-overview production; [NeuroRoast](https://neuroroast.cgevent.ru/) is an owner-requested overview/review candidate and an archive of others' AI videos,not a navigable world. [Recorded context and limits](productions/interactive-worlds-series.md#additional-owner-requested-candidates-13november). Floor796 remains the next previously selected production when the owner resumes production; the new candidates do not set a rigid later sequence. No production or publication follows now.
+[Babylon c. 575 BCE](https://claude.ai/artifact/CTjrZXVdUgKJ6qJXrvvr28) is an owner-requested future world-overview production; [NeuroRoast](https://neuroroast.cgevent.ru/) is an owner-requested overview/review candidate and an archive of others' AI videos,not a navigable world. [Recorded context and limits](productions/interactive-worlds-series.md#additional-owner-requested-candidates-13november). Floor796 has since been published according to the owner; the new candidates do not set a rigid later sequence.
 
-[DesignBookmark Motion assessment](research/tool-intake-2026-11-13.md) adds one conditional local component test to the [experiment queue](experiment-queue.md); site examples are references and per-component reuse terms remain to be established. No component was copied,installed,tested or qualified.
+[DesignBookmark Motion assessment](research/tool-intake-2026-11-13.md) led to a [bounded Page Flip trial](experiments/designbookmark-page-flip.md): an adapted component rendered a standalone video. The turn was liked but its frame-filling use was rejected for The Last Delivery; book promotion and research-document reviews are future candidates. This does not establish general qualification.

@@ -2,7 +2,19 @@
 
 ## Motion resources —13November2026
 
-[DesignBookmark Motion intake](research/tool-intake-2026-11-13.md): **MOTION-COMPONENT-01**, conditional local browser experiment on an original title or stat-card animation, compared with an existing Framewright/HTML baseline. Check individual component provenance, licensing, dependencies and offline/seekable export first; no copied code or installation is authorised by queueing. Inspect readability, both aspects, timing and reduced-motion behaviour. No test or new qualification has occurred. Babylon and NeuroRoast are separate editorial candidates, not tool tests.
+[DesignBookmark Motion intake](research/tool-intake-2026-11-13.md): **MOTION-COMPONENT-01**, conditional local browser experiment on an original title or stat-card animation, compared with an existing Framewright/HTML baseline. Check individual component provenance, licensing, dependencies and offline/seekable export first; no copied code or installation is authorised by queueing. Inspect readability, both aspects, timing and reduced-motion behaviour. This was the initial proposal; a bounded Page Flip trial was subsequently executed as described below. Babylon and NeuroRoast are separate editorial candidates, not tool tests.
+
+**13 November scoped trial:** owner recognised this proposed story as overlapping [The Last Delivery](experiments/last-delivery.md), already published on YouTube, and selected its existing material for a TikTok-only comparison. Actual MIT Kokonut UI Page Flip (linked from DesignBookmark) was installed in a private isolated project and manually opened to the second page; the single-page text was legible after narrowing the test layout. At that stage direct deterministic video export and reduced-motion behavior were untested, and the two videos awaited review. The card is not the React component. Later feedback and publication are recorded below; no time saving is established. Private evidence: `productions/last-delivery-tiktok-motion/TRIAL.md`.
+
+**Follow-up:** the owner requested video export. A frame-controlled adapter around the actual Page Flip geometry rendered a standalone 4-second vertical MP4 locally, and two independent renders of frame34 matched. This is an adapted-component workflow, not a built-in export or integration into the film; see [trial evidence](experiments/designbookmark-page-flip.md). The owner later evaluated the insert as described below; reduced-motion review remains open.
+
+**Owner review:** the exported page turn is visually promising but its large overlay obscures this film; do not use this insert in The Last Delivery. Consider a suitably framed page turn for future book promotions or scientific-document reviews. Actual full-film integration and reduced-motion remain open. The owner selected the unchanged baseline and supplied TikTok https://vt.tiktok.com/ZSpQn9kVD/.
+
+### Superseded concept — The Last Signal
+
+A tiny courier receives a blank message in a sleeping city; one glowing card unfolds to reveal three fragments of a route. The fragments arrange themselves, one points the way, and the courier delivers a light to a dark window. The window lights up and the returned confirmation folds back into the card. A complete 20–25-second silent visual story, with a restrained original sound bed if later authorised.
+
+Trial question: does one expandable/fan-card motion inspired by a specified DesignBookmark example make the discovery and handoff easier to follow than the existing simple card animation? Keep art, timings, two aspect ratios, labels and sound constant; change only card motion. Preflight individual source terms and dependencies; author original assets/code if rights are unclear. Capture both deterministic seekable variants, compare readability, motion/reduced-motion fallback and setup/correction time; owner visual review is separate. Mark no winner without observed evidence. **Proposal only — no test, install or production performed.**
 
 ## Tool intake —11November2026
 
