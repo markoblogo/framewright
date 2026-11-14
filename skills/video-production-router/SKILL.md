@@ -25,6 +25,9 @@ For optional host/owned-worker measurements, project costs, interrupted local ru
 or offline action assertions, read [studio foundations](references/studio-foundations.md).
 An unresolved intent blocks repeating that task; reconcile actual evidence first.
 Ledger caps and resource snapshots are not execution authority or provider guarantees.
+Before a proposal/pilot, before full-film handoff and after owner corrections, use
+[video taste](references/video-taste.md): select project-specific rules, retain their
+concrete checks in the existing brief/handoff and learn only at the supported scope.
 For one understandable production offer, read [producer brief](references/producer-brief.md).
 `intake.py brief` joins existing route candidates, optional source-index evidence and
 project status; preserve declared/checked/proposed/unknown boundaries and explicit

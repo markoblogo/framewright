@@ -20,6 +20,11 @@ runtime blocks execution, not listing its preflight. A started command is only a
 attempt; a completed successful read is evidence of access, not proof that a claim
 or an entire asset was validated.
 
+Before showing the candidate, apply relevant [project video-taste rules](video-taste.md)
+from the same brief and record actual coverage in the states above. Do not infer
+full-film motion, small-screen readability or natural voice from a pilot, still
+or successful render. Feed later owner corrections back at their supported scope.
+
 ## Source-copy and rights checks
 
 State the comparison explicitly: compare each proposed product claim, title, author,

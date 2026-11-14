@@ -1,5 +1,16 @@
 # Proposed experiment queue
 
+## AUTOPROD-01 — one brief to complete dual-format packages
+
+[Owner-selected plan](experiments/autonomous-production-pilot.md): 3–5 simple full
+productions across a few styles/tool routes, with no mid-run approvals, downloads
+or other owner rescue. Measure interventions, whole-route time/cost and final
+quality separately; capture corrections into scoped video-taste rules. Exact topics,
+parameters and access remain to be agreed before execution. **0 tests started.**
+VOICE-EXPORT-01 compares a supported Mac path, tablet browser and a suitable Android
+app/export route to remove manual speech downloads while preserving voice quality.
+Recording this direction starts no production, install, upload or release.
+
 ## Owner-installed production apps —13November2026
 
 [Local preflight](research/production-apps-2026-11-13.md): **SCREEN-STUDIO-01** capture/import → bounded edit → save/reopen → two-aspect export, conditional on actual free entitlement; imported MP4 reached the editor, but after login the app reported no active plan, so no export was obtained. **MACWHISPER-SRT-01** owner-approved sample → installed local model → compare text/timings and SRT export; installed Small WhisperKit observed but no transcript generated yet. No purchase, cloud transfer, completed tool qualification or unmeasured speed claim. Fit the test to the selected Babylon production if its requirements are met.

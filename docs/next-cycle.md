@@ -8,9 +8,9 @@ Updated 14 November 2026. This is the current operational entry point, not a ses
 | Item | Current state / source |
 | --- | --- |
 | Shipped release | **0.9.0**, published experimental prerelease. Tag, page and downloaded assets were verified on 14 November; see [publication status](release-notes-0.9.0.md#publication-status). The frozen pre-publication audit is historical. |
-| Latest maintenance | This summary/history, next release goal and Pantheon worked correction are updated locally. Link/structure checks, historical wording and retained master hashes were checked. No new production or release. |
+| Latest maintenance | Summary/history, next release goal and Pantheon worked correction are merged in PR70. [Video taste](video-taste.md) is the current local workflow addition: source-backed rules applied before proposals and handoff; new owner feedback stays scoped. No new production or release. |
 | Latest completed film | [A Window to the Sky](productions/pantheon-chatgpt-orb.md): both 37-second v3 formats accepted; YouTube/TikTok publication URLs supplied by the owner. Masters/packages retained. Independent uploaded-file identity, visibility and audience results remain unknown. |
-| Next execution | No new film, app trial or release is selected by this documentation task. Continue only the next owner-selected scope. |
+| Next execution | [AUTOPROD-01](experiments/autonomous-production-pilot.md) is queued: 3–5 simple complete dual-format productions without mid-run owner input. First select the topic/parameters and resolve access/export, including the Mac/tablet/app speech path. No test production or installation has started. |
 
 ## Protected waits and commitments
 

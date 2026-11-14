@@ -29,6 +29,21 @@ attempt and accepted final versions. This supports the bounded correction within
 that production; it does not establish general arbitrary-edit or external-user success.
 The next end-to-end recovery/proposal application remains to be selected and observed.
 
+**Feedback-to-practice update, 14 November:** [video taste](video-taste.md) now links
+seven source-backed owner preferences to applicable scopes and concrete pre-handoff
+checks. The [portable procedure](../skills/video-production-router/references/video-taste.md)
+uses the existing brief/revision journal. This is an agent-led workflow improvement
+under M1–M4 / RV01; fewer repeated corrections and better creative quality are not
+yet measured. No new automatic grader, external-user proof or trial count is claimed.
+
+**Owner-selected experiment direction, 14 November:** [AUTOPROD-01](experiments/autonomous-production-pilot.md)
+plans 3–5 simple complete productions from one upfront brief to YouTube/TikTok
+packages, without mid-run owner approvals or downloads. Test a few fitting styles,
+learn from final corrections and measure interventions/effort and creative quality
+separately. VOICE-EXPORT-01 includes developing a supported Mac solution or testing
+tablet browser/app export. Topics, parameters and access are not yet locked;
+**no production has started** and no autonomy or new qualification is established.
+
 This documentation cleanup and worked example prepare the increment; they alone
 do not establish a new functional capability or require a release. Set the actual
 release scope from completed useful changes and their evidence, then perform the

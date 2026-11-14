@@ -14,7 +14,7 @@ questions that change the production choice. A usable request can be:
 > free tools on my Mac, no publication. Show the proposed source clips before assembly.
 
 1. Review existing sources and permissions; distinguish find/adapt/create.
-2. Agree a short concept and feasible production route with gaps, tradeoffs,
+2. Apply relevant [video-taste rules](video-taste.md) in the same brief, then agree a short concept and feasible production route with gaps, tradeoffs,
    observed or unknown costs/time, and a small pilot. For a fiction-book film,
    first use the [creative proposal and case recommendations](creative-proposal.md):
    explain the viewer result, full-film action and why the chosen technique fits.

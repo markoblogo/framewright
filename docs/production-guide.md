@@ -153,6 +153,14 @@ passed an original canvas/audio fixture and a native Möbius excerpt; the excerp
 correctly retains a loop-seam warning. Other engines and general autonomous
 production remain unqualified.
 
+## Reuse owner corrections
+
+Use [video taste](video-taste.md) before a proposal/pilot and again before showing
+full exports. Keep only applicable rule IDs and actual checks in the existing brief
+and handoff. At correction/acceptance, use the [capture procedure](../skills/video-production-router/references/video-taste.md)
+to improve the relevant rule or leave a case-only choice in its production record.
+This is a project workflow, not background training or a guarantee of creative quality.
+
 ## Keep production state current
 
 Generate a summary from the existing journal and current file hashes:
