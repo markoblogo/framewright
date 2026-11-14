@@ -1,36 +1,41 @@
 # Framewright roadmap
 
-Updated 13 November 2026; source version 0.8.0 / REL-C per retained
-[release audit](release-audit-0.8.0.md). PR60–PR66 are merged; subsequent handoff and production records are retained. [PR65](https://github.com/markoblogo/framewright/pull/65)
-closed Dependabot/APM and the results film, recorded cross-stack tool research and
-aligned reserve-voice policy; merged-main CI passed at c1b2908. PR63 records closed
-[Premation](productions/premation-sync-test.md), accepted
-[private Ukrainian terminal pitch](productions/transit-speed-private-pitch.md),
-[Fola preference](ukrainian-voice-baseline.md) and bounded tool evidence; merged-main
-CI passed. No release was made. Owner10November reports partner approval of the private pitch and requests full Hungarian
-localization, accepted by the owner on10November; its English case stays
-paused. RUN//SIGNAL M01 waits the outdoor test before M02. The [closed two-story comparison](productions/radar-pair-centre-crop-2026-11-10.md) records independent aspect compositions versus a fixed portrait crop of a4K landscape. Both90second films/covers are owner-accepted and published per owner; YouTube-only Radar transport/duplicate/ack checks passed. Both techniques remain usable. The [recipe](methods/centre-safe-dual-format.md), measured rendering/export phases, current sources and twelve future-film excerpts are retained after dependency-aware cleanup. The public index counts two films and one conducted comparison, not four films; no overall active-work/cost saving, numeric quality score or audience result is established.
-See [current work](next-cycle.md) for protected waits and the selected order.
-Earlier dated entries below are history; they do not restart completed work.
-This is the primary **priority and milestone map**. It connects product work,
-production and experiments; it does not start them or authorize spending/publication.
-The owner requested a stable roadmap that absorbs new ideas without replacing the
-direction each time. The ordering below is the proposed working sequence, adjustable
-by an explicit owner decision. Selections require an explicit owner instruction or delegated choice; they do not start production.
+Updated 14 November 2026. Shipped baseline: **0.9.0**, an experimental prerelease;
+[publication status](release-notes-0.9.0.md#publication-status) records the verified outcome.
+[Current work and protected waits](next-cycle.md) govern execution; the
+[archived operational history](history/next-cycle-through-2026-11-14.md) preserves superseded status text.
+This is the priority and milestone map. A roadmap entry does not start production,
+a tool trial, spending, publication or a release. Keep the selected direction stable;
+changes of priority require an owner decision or an explicitly delegated choice.
 
-## 11November closeout and next release boundary
+## Next release goal
 
-[Preview the Cut / OpenDirector](productions/reverie-playall-opendirector.md) is
-owner-accepted/published by report; scoped native edit/reopen/export proof and
-[repeatable recipe](methods/native-editor-before-render.md) are retained after
-verified cache retirement. [New intake](research/tool-intake-2026-11-11.md) groups
-34 URLs into22 topics, retaining future-stack candidates without new installs or
-qualification. The local index now records79 films /48 trials, deduplicated; Vaybolet adds one story, not two platform variants, and the bounded operator handoff adds one trial.
+**Owner-adopted, 14 November 2026: less repeated explanation when continuing or correcting a film.**
+Build on M1–M4 / RV01 and the existing start / continue / correct workflow, selected
+project journal and revision contract. Extend the existing route rather than creating
+a second state store or the deferred local project UI. Version and publication date
+are undecided; no new production or release is authorised by this planning update.
 
-[Release readiness review](release-readiness-2026-11-11.md) compares actual changes
-since published prerelease v0.8.0. REL-D remains a separate transfer capability milestone, not a prerequisite for an ordinary release. The bounded internal-agent handoff is documented with support friction; portable packet and independent setup evidence remain incomplete and will be pursued when needed. Do not infer independent use from production count, same-workspace reopen, source tests or research volume.
-No release/version change is authorised here. DonQuixote and RUN waits, SSI
-Saturday14November correction plan and deferred local project UI remain intact.
+| Outcome | Observable evidence for the next functional increment |
+| --- | --- |
+| A clear current state | One short summary identifies the shipped release, selected scope, accepted versions, unresolved waits and next permitted action. Superseded instructions are history, not competing current orders. |
+| A useful proposal | On the next owner-selected production, connect fitting past cases to the viewer result and selected route; use the shortest useful pilot of its main risk. Do not require extra alternatives or a new tool when unnecessary. |
+| Recovery and bounded correction | After a real pause, recover the exact selected version and current decisions; when a real defect appears, record the change interval/protected elements, compare in context and obtain an explicit decision. No artificial defect or rerender solely to tick a gate. |
+| Understandable effort | Record observed active work, waiting/rendering and correction time separately. Missing data stays UNKNOWN; elapsed render time is not total labour or money saved. |
+
+Existing evidence: the [Pantheon v2 → v3 correction](productions/pantheon-chatgpt-orb.md#worked-example-v2-to-v3)
+retains the real request, protected soundtrack/later scenes, comparison, failed join
+attempt and accepted final versions. This supports the bounded correction within
+that production; it does not establish general arbitrary-edit or external-user success.
+The next end-to-end recovery/proposal application remains to be selected and observed.
+
+This documentation cleanup and worked example prepare the increment; they alone
+do not establish a new functional capability or require a release. Set the actual
+release scope from completed useful changes and their evidence, then perform the
+ordinary compatibility/package/check/review steps under a separate owner release decision.
+M6 / REL-D transfer stays partial and parallel, triggered by a real handoff need.
+New tools remain welcome when they solve a selected production problem; neither
+catalogue size nor additional app installations are a release target.
 
 ## Direction and strategic outcomes
 

@@ -90,6 +90,8 @@ paid tools stay reserves. Existing subscriptions require actual access/terms che
 [Revisions](skills/video-production-router/references/revisions.md) retain the
 interval, defect, desired change and protected properties. [Templates](skills/video-production-router/references/templates.md)
 separate design from copy/media/voice, but variants need their own render and review.
+[Worked correction: A Window to the Sky](docs/productions/pantheon-chatgpt-orb.md#worked-example-v2-to-v3) follows a real opening-only change through comparison, preservation checks and owner acceptance.
+
 [Caption-time preflight](examples/production-reuse/README.md) flags overly short
 English copy; it never silently retimes accepted films.
 

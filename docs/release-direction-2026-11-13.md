@@ -1,5 +1,10 @@
 # Release direction — 13 November 2026
 
+Historical planning record. The scoped 0.9.0 release was subsequently published and
+[verified on 14 November](release-notes-0.9.0.md#publication-status). Use
+[current work](next-cycle.md) and the [next release goal](roadmap.md#next-release-goal)
+for present priorities; remaining preparation statements below describe the earlier state.
+
 Initial discussion proposal, followed by explicit owner authorisation13November to do all necessary preparation and publish0.9.0. Further app testing is stopped and Kaossilator deferred. The sections below retain the planning basis; [release notes](release-notes-0.9.0.md) and [audit](release-audit-0.9.0.md) record the selected release scope. No deferred production or app trial is resumed.
 
 ## Current baseline

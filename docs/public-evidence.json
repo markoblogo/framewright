@@ -1,6 +1,6 @@
 {
   "schema": "framewright-public-evidence-v1",
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "scope": "Conservative documented cases, not an asserted lifetime total. Original records remain the source of truth.",
   "definitions": {
     "films": "One completed authored story/promo/tutorial/ambient master per case. Aspect, language and revision variants count once. A finished export need not be publicly published or creatively accepted.",
@@ -437,6 +437,12 @@
       "source": "docs/productions/babylon-virtual-tour.md",
       "basis": "owner_accepted_finished_export",
       "index_note": "One44s tablet-browser/InShot tour in two aspects; owner accepted and supplied YouTube/TikTok links. Independent visibility/metrics unverified; capture/interpolation limits retained."
+    },
+    {
+      "id": "pantheon-chatgpt-orb",
+      "source": "docs/productions/pantheon-chatgpt-orb.md",
+      "basis": "owner_reported_publication",
+      "index_note": "One 37s English visual study in two accepted 1080p30 formats; owner supplied YouTube/TikTok publication URLs on 14 November 2026. Links and provenance are in the source case. Independent visibility, uploaded-file identity and audience results remain unknown. No design-origin or measured golden-ratio claim."
     }
   ],
   "trials": [
