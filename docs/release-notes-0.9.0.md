@@ -2,6 +2,19 @@
 
 Experimental prerelease for the agent-and-owner studio. This consolidation brings the production methods and local helpers developed since0.8.0 into one checked router package and source snapshot.
 
+## Publication status
+
+**Published experimental prerelease; verified 14 November 2026 at 15:20 UTC.**
+PR69 merged as `1e36a325a54eb41e3c045c11a1903fb706c506ca`; the annotated
+`v0.9.0` tag resolves to that commit. Retained anonymous checks observed a non-draft
+prerelease, accessible canonical page/tag and both assets. Downloaded ZIP CRC,
+93-file manifest and SHA256 matched the final build. ZIP SHA256:
+`6ed053a5e93ac5a5d07daddaaa89e35e6ccb36859ac94257241f462c9cd81584`.
+Source: private studio `records/release-0.9.0/published-verification.json` and its
+`verification-2026-11-14.json` copy. This records the observed publication outcome;
+the [frozen audit](release-audit-0.9.0.md) remains pre-publication history, not an open release task.
+No new publication or runtime qualification is implied by this documentation update.
+
 ## What is useful
 
 - **Review and recover the selected work.** The loopback preview server supports forward/backward media seeking and confines reads to the explicit review directory. Production checkpoints, source pins and bounded revisions keep accepted work separate from new candidates.

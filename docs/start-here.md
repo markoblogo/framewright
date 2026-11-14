@@ -68,6 +68,8 @@ Create a before/after comparison with neighbouring seconds; inspect the actual
 encoded files and sound. Record technical, listening and creative results against
 that exact revision, then explicitly select a final if accepted.
 
+[Real worked example: Pantheon v2 → v3](productions/pantheon-chatgpt-orb.md#worked-example-v2-to-v3) shows the owner note, permitted interval, protected elements, failed join, comparison and accepted exact versions.
+
 [Request and compare commands](../skills/video-production-router/references/revisions.md) ·
 [External-editor return](../skills/video-production-router/references/otio-export.md#safe-return-from-an-external-editor).
 Caption geometry and reading time are different checks; [timing preflight](../examples/production-reuse/README.md)
