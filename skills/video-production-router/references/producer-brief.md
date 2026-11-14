@@ -4,6 +4,10 @@
 source-search evidence and optional project-journal state. It is a read-only planning
 view, not a new scheduler or a replacement for the production journal.
 
+Before presenting the offer, apply relevant [project video-taste rules](video-taste.md)
+and name the concrete pre-handoff observations in the same private brief. This is
+agent-authored guidance, not an automatic taste assessment by `intake.py`.
+
 ```sh
 python3 skills/video-production-router/scripts/intake.py brief PROFILE.json BRIEF.json --format markdown
 python3 skills/video-production-router/scripts/intake.py brief PROFILE.json BRIEF.json --source-index INDEX.json --project PROJECT.json --format json

@@ -4,6 +4,7 @@
 - For priorities or new ideas/tools/orders, consult docs/roadmap.md; link to an existing milestone/task and preserve active scope and owner pauses.
 - On resuming an existing production, run `project.py brief PROJECT.json`; preserve explicit waits and distinguish its proposed next step from execution authority.
 - This is a methods/skills library, not a renderer or automatic publishing service.
+- Before proposing or reviewing video, read only applicable rules in docs/video-taste.md; apply them in the existing brief/handoff and capture reusable owner corrections using skills/video-production-router/references/video-taste.md.
 - Honour explicit tool choices. Prefer tested scope over tool novelty.
 - Keep failures, human preference, technical QA and publication separate.
 - Do not label structural checks as model evaluation or successful rendering as audience validation.

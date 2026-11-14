@@ -30,6 +30,11 @@ Do not add arbitrary cuts or motion to a deliberately quiet scene. Do not apply 
 fixed seconds-per-shot rule across unrelated work. Plan the full arc before the
 pilot so one animated image does not accidentally become the whole film.
 
+Before the proposal and full-film handoff, select applicable [video-taste rules](video-taste.md)
+and name how this film will be checked. Keep that selection in this same brief;
+[feedback capture](../skills/video-production-router/references/video-taste.md) turns
+repeated owner corrections into scoped rules instead of another production journal.
+
 ## Recommend from evidence, not catalogue size
 
 Select up to three relevant recommendations from existing case records. Fewer is
