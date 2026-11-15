@@ -1,6 +1,6 @@
 {
   "schema": "framewright-public-evidence-v1",
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "scope": "Conservative documented cases, not an asserted lifetime total. Original records remain the source of truth.",
   "definitions": {
     "films": "One completed authored story/promo/tutorial/ambient master per case. Aspect, language and revision variants count once. A finished export need not be publicly published or creatively accepted.",
@@ -443,6 +443,28 @@
       "source": "docs/productions/pantheon-chatgpt-orb.md",
       "basis": "owner_reported_publication",
       "index_note": "One 37s English visual study in two accepted 1080p30 formats; owner supplied YouTube/TikTok publication URLs on 14 November 2026. Links and provenance are in the source case. Independent visibility, uploaded-file identity and audience results remain unknown. No design-origin or measured golden-ratio claim."
+    },
+    {
+      "id": "same-street-three-moods",
+      "source": "docs/productions/same-street-three-moods.md",
+      "basis": "owner_reported_publication",
+      "index_note": "One original lighting story; both46.667s revision2 films accepted after tempo/contact correction. Owner supplied YouTube/TikTok publication URLs, retained in source case. Independent visibility, uploaded-file identity and audience results unverified. Variants/retries are not additional films; no correction-free or savings claim."
+    },
+    {
+      "id": "one-light-one-way-home",
+      "source": "docs/productions/one-light-one-way-home.md",
+      "basis": "owner_reported_publication",
+      "index_note": "One56s fictional boat/lighthouse story; both revision2 films accepted after motion correction. Owner supplied YouTube/TikTok URLs15November2026, recorded in source case. Independent visibility, uploaded-file identity and audience results unverified. Quoted8000existing credits, no purchase; cash UNKNOWN. Same film, no added variant count."
+    },
+    {
+      "id": "yapfiles-3797572-localization",
+      "source": "docs/productions/yapfiles-3797572-localization.md",
+      "basis": "owner_reported_publication"
+    },
+    {
+      "id": "foldable-flight-review",
+      "source": "docs/productions/foldable-flight-review.md",
+      "basis": "owner_reported_publication"
     }
   ],
   "trials": [
@@ -656,6 +678,30 @@
       "id": "android-companions-2026-11-13",
       "source": "docs/experiments/android-companions-2026-11-13.md",
       "index_note": "One bounded companion-app suite: VLC playback/media-key seek observed; LocalSend no successful transfer; KORG launch then owner-deferred. Conducted does not mean qualified."
+    },
+    {
+      "id": "voice-export-tablet-2026-11-14",
+      "source": "docs/experiments/voice-export-tablet-2026-11-14.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One short English Fola take generated/downloaded in prepared tablet Chrome and transferred to Mac by the agent; hashes and full decode pass, zero owner downloads during probe. Not long-form/new-language/Knox/multi-speaker or full-production qualification."
+    },
+    {
+      "id": "autoprod-01-test1",
+      "source": "docs/productions/same-street-three-moods.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Prepared-setup trial: zero requested assistance/manual owner actions, one unsolicited clarification. Revision2 accepted after tempo/contact correction. Same trial/story;2of planned3–5 accepted after corrections, no blanket autonomy/savings claim. Film/trial totals overlap."
+    },
+    {
+      "id": "autoprod-01-test2",
+      "source": "docs/productions/one-light-one-way-home.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Prepared-setup trial: zero requested assistance/manual owner actions, one unsolicited reaffirmation. Revision2 moving-clip films accepted after initial static-motion rejection; original audio retained. Same trial/story, no new count or general autonomy qualification."
+    },
+    {
+      "id": "inshot-video-enhance-2026-11-15",
+      "source": "docs/experiments/inshot-video-enhance-2026-11-15.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One native InShot Video Enhance trial:6s fixture plus full36.7s owner-supplied source,1080p export and CFR/audio-preserving finishing. Cloud/login, frame-parity and one-frame timing limits retained; owner picture review pending. Variants/full follow-up counted once; not a finished film or general qualification."
     }
   ]
 }

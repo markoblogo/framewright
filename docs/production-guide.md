@@ -116,6 +116,14 @@ The optional [narrative-promo module](../skills/video-production-router/referenc
 
 For this owner’s YouTube videos, prepare covers with short, readable text by default, in the video’s language. Inspect at full size and thumbnail size; keep the subject visible. Use a text-free cover only when explicitly requested or agreed. This is an owner preference, not a universal claim about thumbnail performance.
 
+For YouTube/TikTok delivery, provide direct, separate MP4, cover, subtitle and copy links, without ZIPs.
+
+- **YouTube:** one recommended title plus two distinct A/B alternatives; a useful description with a clear opening, concrete content, natural search terms, source credits/limits and relevant tags. Candidates are hypotheses, not established winners.
+- **TikTok:** a platform-specific caption, relevant hashtags and a ready-to-post first comment that invites a concrete response. Do not invent a link in bio.
+- Keep copy in the video's language, substantiate numbers, and avoid generic two-line descriptions, invented keyword scores or traffic claims. Preserve the exact prepared texts/hashes when later publication URLs arrive.
+
+This owner clarification was given on 15 November 2026 for the [Foldable Flight review](productions/foldable-flight-review.md); it changes packaging preparation, not publishing authority.
+
 ## Games and game engines
 
 Game engines are also a production direction: **create playable games, make

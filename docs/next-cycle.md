@@ -1,6 +1,6 @@
 # Current work and protected waits
 
-Updated 14 November 2026. This is the current operational entry point, not a session log.
+Updated15November2026. This is the current operational entry point, not a session log.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md) · [Case counts and definitions](public-evidence.json).
 
 ## Current state
@@ -8,9 +8,9 @@ Updated 14 November 2026. This is the current operational entry point, not a ses
 | Item | Current state / source |
 | --- | --- |
 | Shipped release | **0.9.0**, published experimental prerelease. Tag, page and downloaded assets were verified on 14 November; see [publication status](release-notes-0.9.0.md#publication-status). The frozen pre-publication audit is historical. |
-| Latest maintenance | Summary/history, next release goal and Pantheon worked correction are merged in PR70. [Video taste](video-taste.md) is the current local workflow addition: source-backed rules applied before proposals and handoff; new owner feedback stays scoped. No new production or release. |
-| Latest completed film | [A Window to the Sky](productions/pantheon-chatgpt-orb.md): both 37-second v3 formats accepted; YouTube/TikTok publication URLs supplied by the owner. Masters/packages retained. Independent uploaded-file identity, visibility and audience results remain unknown. |
-| Next execution | [AUTOPROD-01](experiments/autonomous-production-pilot.md) is queued: 3–5 simple complete dual-format productions without mid-run owner input. First select the topic/parameters and resolve access/export, including the Mac/tablet/app speech path. No test production or installation has started. |
+| Latest maintenance | PR71 is merged. The [15 November consolidation](history/production-closeout-2026-11-15.md) records two corrected autonomous tests, two assisted productions, scoped voice/InShot evidence and publication-copy requirements; the consolidation is on a separate review branch, without release. |
+| Latest completed film | [Foldable Flight](productions/foldable-flight-review.md): English catalogue tour, YouTube/TikTok, 71s, Fola and original score. Owner supplied [YouTube](https://youtu.be/3zh2QfO5iXM) / [TikTok](https://vt.tiktok.com/ZSpgJj3wQ/) publication URLs on 15 November; independent visibility, uploaded-file identity and metrics remain unverified. Prior [Claude localisation](productions/yapfiles-3797572-localization.md), [One Light](productions/one-light-one-way-home.md) and [Same Street](productions/same-street-three-moods.md) records are retained. |
+| Next execution | Dependency review/cleanup completed:180 generated files retired;876 retained files hash-checked unchanged. Consolidation checks and PR review are the current step. Next production candidate is the owner-prepared fictional-film trailer; source handoff and creative brief remain to agree. Protected waits/releases unchanged. |
 
 ## Protected waits and commitments
 

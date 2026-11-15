@@ -26,13 +26,13 @@ copying settings into a competing policy. New inferred generalisations remain pr
 
 **Rule:** plan meaningful changes of action, camera, composition or insert across
 the whole duration. For a sustained speaking/illustrative character, blinking alone
-or switching still poses does not satisfy the requested character movement.
+or switching still poses does not satisfy the requested character movement. When the brief requests a living environment or moving object, animate that content itself; camera drift or a light overlay over an otherwise unchanged scene is insufficient.
 **Why / owner evidence:** «на 95 сек надо разнообразить активность»; «не просто
 менял позы между кадрами, а двигал головой и руками». The stated problem was
 static, repetitive picture. [Gemini](productions/gemini-omni-revise.md) and
-[Copilot](productions/copilot-review-sources.md) retain the accepted corrections.
+[Copilot](productions/copilot-review-sources.md) retain the accepted corrections. The owner later called [One Light](productions/one-light-one-way-home.md) «это просто слайд-шоу» despite liking its images/sound: the same motion lesson had not been applied adequately. The owner subsequently accepted both motion-corrected versions; the failed initial check remains part of the lesson.
 **Check:** review the action plan and encoded movement through each relevant long
-scene in the full film. A short moving opening does not pass this check.
+scene in the full film. Look for the named subject/environment action within a continuous shot, not only pixel changes, a dissolve, light sweep or camera motion. A short moving opening does not pass this check.
 **Limit:** a deliberately quiet or static beat may serve the agreed story. Do not
 force a cut every N seconds, distort whole faces to move a hand, or claim natural
 acting from rigid layers. Use the [full-film proposal](creative-proposal.md).
@@ -67,14 +67,14 @@ are that case's solution, not mandatory colours, widths or universal thresholds.
 ## VT-FRAME — keep the subject and action visible in each format
 
 **Rule:** place overlays and reframe each requested output so they do not obscure
-the relevant body, object or action. Review the actual vertical result even if it
+the relevant body, object or action. For ordinary footage reframing, enlarge proportionally and crop to fill; do not infer nonuniform deformation from “stretch” or “fill the screen”. Review the actual vertical result even if it
 is a crop of a landscape master.
 **Why / owner evidence:** «в тикток плашки закрывают нижнюю половину тела робота»;
 the owner requested moving the robot up. [Gemini](productions/gemini-omni-revise.md),
 [Copilot](productions/copilot-review-sources.md) and [Floor796](productions/floor796-guided-tour.md)
-record overlay/crop decisions.
+record overlay/crop decisions. In [the English clip localisation](productions/yapfiles-3797572-localization.md), the owner corrected the agent’s anamorphic full-frame attempt: “не деформировать а масштабировать”.
 **Check:** inspect encoded framing at important action moments in both requested
-variants; a correct landscape view does not establish a usable portrait crop.
+variants; a correct landscape view does not establish a usable portrait crop. Inspect familiar round/rectangular objects and the scaling settings for unintended deformation.
 **Limit:** both [independent layouts and centre-safe cropping](methods/centre-safe-dual-format.md)
 are accepted techniques. Do not force a second native composition if the selected
 crop works, or insist on showing the whole body in an intentional close-up.
@@ -120,7 +120,7 @@ actual listening with gain arithmetic.
 
 ## Keep case-only details in their cases
 
-The phone-screen tracking repair is a functional correction, not a new taste law.
+The phone-screen tracking repair and [Same Street](productions/same-street-three-moods.md)'s wheel/foot surface contact are functional corrections, not new taste laws. Surface-height, planted-stance and encoded contact inspections live in Street's recipe; the requested20% tempo increase stays case-specific.
 The Pantheon line widths, Vaybolet's rough male voice, Floor796's female reactions,
 Transit Speed's AMI ending and the rejected frame-filling Page Flip use stay scoped.
 [FW](productions/fw-identity.md) is optional and its accepted sting is under one second;
