@@ -1,7 +1,8 @@
 # AUTOPROD-01 — complete simple films from one agreed brief
 
 Owner-selected experiment direction, 14 November 2026. **Planned: 3–5 test productions;
-0 started.** No topic, run or installation is started by recording this plan.
+2 of planned3–5 productions accepted in both formats after one owner-requested correction round each; publication packages ready.**
+[Test1: Same Street, Three Moods](../productions/same-street-three-moods.md) delivered both56-second English Fola versions, initially accepted, then reopened for slow pace and floating feet/tires. Revision2 is46.667s with1.2x picture/pitch-preserving audio tempo and planted contact, now accepted. It requested no owner assistance; the ledger also retains one unsolicited tablet-use clarification. YouTube/TikTok publication URLs are now owner-reported in its case record. [Test2: One Light, One Way Home](../productions/one-light-one-way-home.md) subsequently delivered both56-second near-photographic Fola versions without requested owner assistance; one unsolicited owner reaffirmation is retained. The owner rejected test2's static scene activity; revision2 animates the boat/water through short generated loops and preserves the exact original soundtrack. This corrective work belongs to the same two trials. Both revised films are now accepted. Select any further test under its own agreed brief; no correction-free success claim.
 Supports M1–M4 / R03–R05 / R09 and the [next release goal](../roadmap.md#next-release-goal).
 Use the existing brief, project journal, revision/handoff and [video taste](../video-taste.md).
 No parallel scheduler, telemetry service or production database.
@@ -56,10 +57,27 @@ Do not claim a causal tool-speed comparison across different stories/complexitie
 A prepared screencast recut does not qualify autonomous exploration or capture.
 No new character series or long fiction is needed for this experiment.
 
+## Test2 proposal — One Light, One Way Home
+
+Originally proposed15November2026 as a painted2.5D story. The owner selected the same story **in a near-photographic style**, then reaffirmed autonomous decisions. [Both56-second packages are delivered](../productions/one-light-one-way-home.md); baseline motion rejected, revision2 accepted; YouTube/TikTok publication URLs owner-reported in the case record. One bounded executed trial is now recorded under M3/M4; variants/retries are not new trials. The original painted treatment below was superseded for this case.
+
+**Viewer result:** a small, complete story about finding the way home. At sea after dark, one small boat looks for a safe approach; a lighthouse beam finds it, the boat follows the light and reaches the warm harbour. End on the lighthouse above the sheltered boat. No dialogue, recognizable real location or factual claim is needed.
+
+**Selected treatment:** original photorealistic generated stills with local2.5D motion, in navy, teal and warm amber. The painted/cut-paper texture proposal was superseded by the owner. Four/five motivated views: wide rough sea and distant light; boat nearer the water; beam/boat relationship; passing the harbour entrance; warm quiet arrival. Animate layered waves, spray, drifting mist, beam, boat pitch/bow wake/reflection and camera movement. These actions carry the story across the full film; one repeating pan over one unchanged picture is insufficient.
+
+**Executed brief:**45–60seconds, final56; English Fola through the observed tablet route; YouTube16:9 and TikTok9:16 composed for each aspect; soft original music plus sea/wind/lighthouse sound. Complete cover/copy/subtitle/credit/download packages; one upfront agreement, then no intermediate owner approvals/downloads. No new purchase, paid API, account grant or public upload. Branding stays optional and unselected until the brief is accepted.
+
+**Route and prior evidence:** original photorealistic generated stills, then local masked water/haze/light/camera compositing via Three.js180/Chrome plus Pillow/NumPy/FFmpeg using existing runtimes. Reuse [test1](../productions/same-street-three-moods.md)'s speech-export recovery, sound/packaging/check procedure and [Pantheon](../productions/pantheon-chatgpt-orb.md)'s local layered-camera/transition practice. That practice does not qualify this boat/water/beam sequence. A full3D build is a retained alternative, not selected for this photo-like2.5D test.
+
+**Internal risk check:** boat/water contact must not look like a sliding sticker; beam, glow and the boat's location must agree; a small portrait boat must remain recognizable above the platform overlay area. Test a short linked beam-to-approach passage internally before full export; recompose/simplify locally within the accepted story if needed. Apply VT-MOTION/READ/FRAME/VOICE/COVER and inspect both complete encoded versions/reduced-size views. Owner review occurs only after complete delivery.
+
+**Measurement improvement from test1:** timestamp the first action before preflight, label the accepted-brief timestamp UNKNOWN if unavailable, retain retries/generation counts and distinguish active work from waits. No total-labour or causal style-speed comparison from two different stories. Final feedback and any repeated defect become scoped observations, not invented new rules. Existing prepared tablet access remains a prerequisite; do not count needed owner setup as autonomous work.
+
 ## VOICE-EXPORT-01 — remove the manual speech-download dependency
 
-**Planned prerequisite/comparison, no attempt yet.** Current Knox/Fola production
-records include owner-assisted downloads; unattended export is not established.
+**Bounded tablet-browser proof completed, 14 November:** one English Fola WAV was
+generated, downloaded and transferred to Mac without owner input. [Result and limits](voice-export-tablet-2026-11-14.md).
+Earlier Knox/Fola records required owner-assisted downloads. [Test1](../productions/same-street-three-moods.md) subsequently exported a45.92-second English Fola take and delivered both full films without an owner download. It adds one bounded repeat/full-production instance; new languages, Knox selection and cold-session recovery remain untested. Mac/app alternatives remain candidates.
 Retain [natural-voice policy](../voice-selection.md) and [Fola preference](../ukrainian-voice-baseline.md).
 Do not silently substitute a rejected mechanical voice to manufacture autonomy.
 

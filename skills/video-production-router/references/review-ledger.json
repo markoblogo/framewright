@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-11",
+  "updated": "2026-11-15",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -3451,6 +3451,23 @@
         "recheck_trigger": "Changed host/backend/version/permission plus owner-selected need; keep resource and rights gates independent."
       },
       "proposed_trial_id": null
+    },
+    {
+      "id": "inshot-android",
+      "name": "InShot Android on authorised physical tablet",
+      "url": "https://inshot.com/",
+      "reviewed": "2026-11-15",
+      "review_basis": "Owner-selected physical tablet editing/export suite and scoped6s/full36.7s Video Enhance/upscale trial; actual native outputs and QA retained.",
+      "upstream_revision": "2.250.1556",
+      "disposition": "supported_scoped",
+      "scope_and_findings": "Native video/photo/collage functions remain limited to the13November executed suite.15November cloud Video Enhance exported1080p; complete range selection, exact-file Share import and extra endpoint frames recorded. Final CFR editing source decodes, exact original PCM matches. Operator sample comparisons are not owner acceptance, recovered screen text, whole-tool or unattended qualification. Login transition not fully retained; owner unlock required.",
+      "licence_note": "Proprietary Android app; owner Premium setup, no purchase. Cloud/account allowance and monetary cost not displayed; no blanket unlimited entitlement.",
+      "next_trial_or_retest_condition": "Use retained source/recipe on a selected task; inspect actual range/timing and cloud entitlement. Other AI features and long-form remain unqualified.",
+      "evidence": [
+        "docs/experiments/inshot-android-control.md",
+        "docs/experiments/inshot-functions-2026-11-13.md",
+        "docs/experiments/inshot-video-enhance-2026-11-15.md"
+      ]
     }
   ]
 }

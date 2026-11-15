@@ -50,3 +50,8 @@ Private application recipe, retained original music generator, source captures a
 
 
 Owner later installed VLC/LocalSend/KORG. See the [companion trial](android-companions-2026-11-13.md) for actual results; the uninstalled/untested candidate paragraphs above describe the earlier baseline. Babylon publication links are now owner-reported, without independent visibility/metrics checks. Further app tests are stopped; Kaossilator is deferred separately.
+
+
+## Video Enhance follow-up —15November2026
+
+The separate [6s/full36.7s source-enhancement trial](inshot-video-enhance-2026-11-15.md) now records actual1080p outputs from the native cloud Video Enhance function. It requires account/server access, explicit full-range selection and post-export timing checks. This supersedes the unexecuted video-enhancement status in the historical13November table only for that bounded scope; other AI functions and broad timing/quality remain unqualified.

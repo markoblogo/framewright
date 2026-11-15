@@ -1886,6 +1886,19 @@
       ],
       "rights_class": "unknown",
       "licence_note_sha256": "f087319b594af58bf1cd89e8af358cf99cd47ea8a6db47f98b0343e0c4951eaa"
+    },
+    "inshot-android": {
+      "tasks": [
+        "editing",
+        "video",
+        "graphics"
+      ],
+      "inputs": [
+        "video",
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "5e9476b0e673f40a0d2386c4f027213ec50d0ab8af996f2aba77f2a3d6e7dbb4"
     }
   }
 }

@@ -6,10 +6,11 @@
 productions across a few styles/tool routes, with no mid-run approvals, downloads
 or other owner rescue. Measure interventions, whole-route time/cost and final
 quality separately; capture corrections into scoped video-taste rules. Exact topics,
-parameters and access remain to be agreed before execution. **0 tests started.**
+parameters and access must be agreed for each run. **Both initial productions were returned for corrections:** [Same Street, Three Moods](productions/same-street-three-moods.md) was initially accepted then reopened for pace/levitation; revision2 is46.667s with1.2x tempo and planted contact. [One Light, One Way Home](productions/one-light-one-way-home.md) was rejected as static; revision2 is56s with moving boat/water and the unchanged sound. Both revised films are now accepted; final publication packages are ready. Two productions conducted; no current correction-free acceptance or universal autonomy claim. Initial runs requested no assistance; their unsolicited owner clarifications remain counted. Both films have owner-reported YouTube/TikTok publication URLs; independent visibility/metrics unverified.
 VOICE-EXPORT-01 compares a supported Mac path, tablet browser and a suitable Android
 app/export route to remove manual speech downloads while preserving voice quality.
 Recording this direction starts no production, install, upload or release.
+[14 November tablet result](experiments/voice-export-tablet-2026-11-14.md): one short English Fola take exported/transferred with no owner download; the later [full-film test1](productions/same-street-three-moods.md) repeated the route on a45.92-second take. New language/voice/cold-login scope remains untested.
 
 ## Owner-installed production apps —13November2026
 

@@ -41,6 +41,7 @@ This prints a plan; it does not render, install, call a model or spend money.
 | --- | --- |
 | Source version | Experimental0.9.0 consolidation; [release notes](docs/release-notes-0.9.0.md) and [publication audit](docs/release-audit-0.9.0.md). The canonical release records actual availability. |
 | Review and exchange | Seekable local media review, versioned corrections and the existing owner-approved Radar status flow; [review method](docs/methods/native-editor-before-render.md). Selection, generation and publication remain agent-and-owner work. |
+| Single-brief production tests | [Same Street, Three Moods](docs/productions/same-street-three-moods.md) revised for tempo/ground contact; [One Light, One Way Home](docs/productions/one-light-one-way-home.md) revised for scene motion. Both revision2 films are accepted after corrections, with owner-supplied YouTube/TikTok publication links. No requested mid-run assistance; prepared setup, unsolicited owner messages and timing limits retained in [AUTOPROD-01](docs/experiments/autonomous-production-pilot.md). |
 | Physical-tablet finishing | [InShot feature exports](docs/experiments/inshot-functions-2026-11-13.md) and the accepted [Babylon tour](docs/productions/babylon-virtual-tour.md); [companion-app results](docs/experiments/android-companions-2026-11-13.md). Source-frame rate, endpoint timing and incomplete app tests remain explicit. |
 | REL-C evidence | Completed character fiction, bounded continuity/contact/correction, two aspect layouts and independent same-case recovery; [assessment](docs/rel-c-readiness-2026-11-04.md) and [review](docs/rel-c-independent-review-2026-11-04.md). Agent-and-human-led manual workflow; no general rig or autonomous route claim. |
 | REL-B evidence | [Assessment](docs/rel-b-readiness-2026-11-01.md): both formats accepted, scoped recovery/reuse/correction; [local checks/review](docs/rel-b-local-review-2026-11-01.md) and PR50/merged-main CI pass. No labour-savings or whole-route-autonomy claim. |
@@ -50,7 +51,7 @@ This prints a plan; it does not render, install, call a model or spend money.
 Private projects/media remain outside Git; follow the [external-storage and cleanup policy](docs/storage-policy.md).
 Technical QA, creative/listening
 acceptance, rights and publication are separate records. Labour savings,
-whole-route autonomy and audience performance are not established by these films.
+general whole-route autonomy and audience performance are not established by these films.
 
 [No Further Claims character-film method](docs/methods/coherent-manga-production.md) now records
 the completed131.25s manga film and native aspect-layout workflow. [REL-C assessment](docs/rel-c-readiness-2026-11-04.md)

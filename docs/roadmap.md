@@ -41,8 +41,7 @@ plans 3–5 simple complete productions from one upfront brief to YouTube/TikTok
 packages, without mid-run owner approvals or downloads. Test a few fitting styles,
 learn from final corrections and measure interventions/effort and creative quality
 separately. VOICE-EXPORT-01 includes developing a supported Mac solution or testing
-tablet browser/app export. Topics, parameters and access are not yet locked;
-**no production has started** and no autonomy or new qualification is established.
+tablet browser/app export. [Test1: Same Street, Three Moods](productions/same-street-three-moods.md) was completed14November and accepted15November: both56-second films initially accepted, then reopened for pace and floating objects;46.667s revision2 now accepted after correction. No requested mid-run owner assistance; one unsolicited tablet-use clarification is retained. One bounded prepared-setup result does not qualify the full programme or establish savings. [Test2: One Light, One Way Home](productions/one-light-one-way-home.md) then delivered both56s near-photographic Fola packages; owner rejected static motion. Revision2 adds moving boat/water with exact original sound; both revised films now accepted. Corrections stay within the same two cases/trials. Each further brief/access scope must be agreed; two delivered cases do not establish the whole programme.
 
 This documentation cleanup and worked example prepare the increment; they alone
 do not establish a new functional capability or require a release. Set the actual
