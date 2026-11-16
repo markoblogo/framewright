@@ -1,6 +1,6 @@
 {
   "schema": "framewright-public-evidence-v1",
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "scope": "Conservative documented cases, not an asserted lifetime total. Original records remain the source of truth.",
   "definitions": {
     "films": "One completed authored story/promo/tutorial/ambient master per case. Aspect, language and revision variants count once. A finished export need not be publicly published or creatively accepted.",
@@ -465,6 +465,18 @@
       "id": "foldable-flight-review",
       "source": "docs/productions/foldable-flight-review.md",
       "basis": "owner_reported_publication"
+    },
+    {
+      "id": "ai-interview-reaction",
+      "source": "docs/productions/ai-interview-reaction.md",
+      "basis": "owner_reported_publication",
+      "index_note": "One123s reaction edit across landscape PiP v2 and portrait v1. Owner supplied both URLs16November2026; portrait explicit acceptance, landscape technical/sample checks and publication report remain separate. Independent visibility,uploaded identity,rights and metrics unverified. No new variant/trial count."
+    },
+    {
+      "id": "before-we-built-it",
+      "source": "docs/productions/before-we-built-it.md",
+      "basis": "owner_reported_publication",
+      "index_note": "One183s English visual essay in two owner-accepted aspects. Owner supplied YouTube/TikTok URLs16November2026; links and prepared-package provenance are in the source case. Independent visibility,uploaded identity,rights and audience outcomes remain unverified. No added variant/trial count."
     }
   ],
   "trials": [

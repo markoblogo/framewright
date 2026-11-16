@@ -1,6 +1,6 @@
 {
   "schema": "framewright-book-materials-v1",
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "language_of_working_docs": "ru",
   "book_language": "not_decided",
   "scope": "Video-production methods with Framewright and without it; parallel routes, same outcome criteria",
@@ -28,7 +28,8 @@
       "title": "\u0418\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u0438 \u0438 \u043f\u0430\u043c\u044f\u0442\u044c \u043f\u0440\u043e\u0435\u043a\u0442\u0430",
       "cases": [
         "P01",
-        "P03"
+        "P03",
+        "P05"
       ],
       "gaps": [
         "G01"
@@ -41,7 +42,8 @@
       "cases": [
         "P01",
         "P02",
-        "P04"
+        "P04",
+        "P05"
       ],
       "gaps": [
         "G03"
@@ -102,7 +104,8 @@
       "cases": [
         "P01",
         "P02",
-        "P04"
+        "P04",
+        "P05"
       ],
       "gaps": [
         "G01",
@@ -116,7 +119,8 @@
       "title": "\u0421\u0435\u0440\u0438\u044f \u0438 \u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0430",
       "cases": [
         "P03",
-        "P04"
+        "P04",
+        "P05"
       ],
       "gaps": [
         "G09"
@@ -129,7 +133,8 @@
       "cases": [
         "P01",
         "P03",
-        "P04"
+        "P04",
+        "P05"
       ],
       "gaps": [
         "G10"
@@ -182,6 +187,26 @@
       "file": "docs/book/cases/named-parts.md",
       "primary_evidence": "docs/productions/glb-car-lab.md",
       "supporting_workflow": null,
+      "documentation_status": "worked_case_draft",
+      "with_framewright": "actual_method_documented_current_helpers_distinguished",
+      "without_framewright": "written_not_reproduced",
+      "new_reader_exercise": "planned_not_executed",
+      "source_media": "private_not_distributed",
+      "illustration_rights": "requires_item_review",
+      "chapter_approval": "not_given"
+    },
+    {
+      "id": "P05",
+      "file": "docs/book/cases/corrections-to-checks.md",
+      "primary_evidence": "docs/productions/same-street-three-moods.md",
+      "supporting_evidence": [
+        "docs/productions/one-light-one-way-home.md",
+        "docs/productions/pantheon-chatgpt-orb.md",
+        "docs/productions/ai-interview-reaction.md",
+        "docs/productions/before-we-built-it.md",
+        "docs/video-taste.md"
+      ],
+      "supporting_workflow": "skills/video-production-router/references/video-taste.md",
       "documentation_status": "worked_case_draft",
       "with_framewright": "actual_method_documented_current_helpers_distinguished",
       "without_framewright": "written_not_reproduced",
@@ -269,7 +294,18 @@
     "docs/productions/harbour-three-parcels.md": "74ae85c6cbc29b14cc6eb5c0d524686b4062b989c813928019547e8d67b3a2f4",
     "docs/productions/run-signal-m01.md": "d132d798e966c428fa1312619ca237928bd1f1ab4605eb6b3edfc0de85b40f81",
     "docs/productions/ssi-2026-11-06.md": "cc85f45ceb785f2ff5d121b3784fdb492806687c1fbde2e3930dbe29ee1d3c8f",
-    "docs/storage-policy.md": "871f790c1403da0a3e017c09df92539834b955d67dd17ac6de84f5009637e349"
+    "docs/storage-policy.md": "871f790c1403da0a3e017c09df92539834b955d67dd17ac6de84f5009637e349",
+    "docs/productions/same-street-three-moods.md": "d5d5f8bd8c615bc8a7e5e7e39d28c150eea50f11018f03fe61057fa7bb4927f7",
+    "docs/productions/one-light-one-way-home.md": "08d26e093249cbbca07ebb5b842e1b85089eefccdbed41d74b91905606f5cc0a",
+    "docs/productions/pantheon-chatgpt-orb.md": "9fb2760df4b3419b303bb8b0309dbd1c39166ad6d6059e4c0f30522d1a1d0028",
+    "docs/productions/ai-interview-reaction.md": "292b0f3b798e1047a2bf62c9c0e3620446c7d1717a3d92e5b0ec799d8242df84",
+    "docs/productions/before-we-built-it.md": "31d0085ff292c1ae81e0b97011f1637982cc387efc14fbb3f3d1cf57bcfe2097",
+    "docs/video-taste.md": "0bffa197cc067944281f070ee445daee9f8c6755672cac24bd5c73f8c15a1f0b",
+    "docs/experiments/autonomous-production-pilot.md": "45fec65a12a5828ab62b1f7a898af5a671650ae19635e9d7b69144409da41447",
+    "docs/experiments/voice-export-tablet-2026-11-14.md": "a2da97505648680ff056cfd029dd1010d4a446673986fe1b6e9c96ee04201f96",
+    "docs/roadmap.md": "7137b395c9efa82b43480abaee131745831ce59af11ade5f5b46b72725657517",
+    "docs/next-cycle.md": "92497b190e53ed7ec711ab68f5651df4d8b3253a0ae1fc996aefba7d571559d0",
+    "skills/video-production-router/references/video-taste.md": "c238ad3d9b26d1d6467d8bfdb857fb41d77fbbe53a7c39ca93a84fdaf47c90d6"
   },
   "editorial_source_index": "docs/editorial/series.json",
   "post_reuse_requires": [
@@ -281,14 +317,17 @@
   "publication_is_book_approval": false,
   "no_readiness_percentage": true,
   "documentation_checks": {
-    "date": "2026-11-09",
-    "local_links": "pass",
-    "source_hashes": "pass",
-    "chapter_case_gap_references": "pass",
-    "case_count": 4,
+    "date": "2026-11-16",
+    "state": "pass",
+    "case_count": 5,
     "chapter_count": 10,
     "gap_count": 10,
-    "new_reader_reproductions": 0
+    "new_reader_reproductions": 0,
+    "local_links": "pass",
+    "new_source_hashes": "pass",
+    "historical_hashes": "retained_prepared_snapshots_not_requalified",
+    "chapter_case_gap_references": "pass",
+    "current_closeout_source_hashes": "pass; original weekly prepared snapshots retained"
   },
   "weekly_updates": [
     {
@@ -376,6 +415,65 @@
       "chapter_status": "working_notes_only",
       "rights": "specific_book_illustrations_not_cleared",
       "book_readiness_threshold_changed": false
+    },
+    {
+      "date": "2026-11-16",
+      "file": "docs/book/updates-2026-11-16.md",
+      "editorial_issue": "studio-notes-04",
+      "chapters": [
+        "C02",
+        "C03",
+        "C07",
+        "C08",
+        "C09",
+        "C10"
+      ],
+      "cases": [
+        "P05"
+      ],
+      "gaps": [
+        "G01",
+        "G03",
+        "G07",
+        "G08",
+        "G09",
+        "G10"
+      ],
+      "source_sha256": {
+        "docs/productions/same-street-three-moods.md": "d5d5f8bd8c615bc8a7e5e7e39d28c150eea50f11018f03fe61057fa7bb4927f7",
+        "docs/productions/one-light-one-way-home.md": "08d26e093249cbbca07ebb5b842e1b85089eefccdbed41d74b91905606f5cc0a",
+        "docs/productions/pantheon-chatgpt-orb.md": "9fb2760df4b3419b303bb8b0309dbd1c39166ad6d6059e4c0f30522d1a1d0028",
+        "docs/productions/ai-interview-reaction.md": "edff25a7ea741930864a0b0b95a89e33f811a637460a4225f3a0aeccf8a7e9a2",
+        "docs/productions/before-we-built-it.md": "cccfe84f7da0c0d34c610c220c36580771ebf6f483bc9599467462abaf4a6bf4",
+        "docs/video-taste.md": "0bffa197cc067944281f070ee445daee9f8c6755672cac24bd5c73f8c15a1f0b",
+        "docs/experiments/autonomous-production-pilot.md": "45fec65a12a5828ab62b1f7a898af5a671650ae19635e9d7b69144409da41447",
+        "docs/experiments/voice-export-tablet-2026-11-14.md": "a2da97505648680ff056cfd029dd1010d4a446673986fe1b6e9c96ee04201f96",
+        "docs/roadmap.md": "7137b395c9efa82b43480abaee131745831ce59af11ade5f5b46b72725657517",
+        "docs/next-cycle.md": "92497b190e53ed7ec711ab68f5651df4d8b3253a0ae1fc996aefba7d571559d0",
+        "docs/storage-policy.md": "871f790c1403da0a3e017c09df92539834b955d67dd17ac6de84f5009637e349",
+        "skills/video-production-router/references/video-taste.md": "c238ad3d9b26d1d6467d8bfdb857fb41d77fbbe53a7c39ca93a84fdaf47c90d6"
+      },
+      "book_source_article": "docs/editorial/2026-11-16-framewright-studio-notes-04.md",
+      "new_reader_reproductions": 0,
+      "gap_status_changes": [],
+      "chapter_status": "working_notes_only",
+      "rights": "specific_book_illustrations_and_quotations_not_cleared",
+      "book_readiness_threshold_changed": false,
+      "working_material_sha256": {
+        "docs/book/cases/corrections-to-checks.md": "84c2306ef30fe65f6cb8699c305d66f1a75c23a5c2850c5bdad25c7965e60c79",
+        "docs/book/updates-2026-11-16.md": "110d00e597931243bded52f4e166bd8330ca461cb41295f3c1212407dca886ee",
+        "docs/book/outline.md": "cfc5746f0ce6f06b07933918baa369b88394c94b3cec3d452d38804fbab0afd9",
+        "docs/book/coverage.md": "d34bc4223b3e4fdd2c997aa5a34b13a4cedcfbac6f16400749a3e65853e9e05f",
+        "docs/book-milestone.md": "5c5c7d056693fb4df99056f9aa0bd842a724c3059cd2a8b83013a1fc5f8dedca"
+      },
+      "blog_publication": {
+        "url": "https://abvx.xyz/writing/ai-video-corrections-stick-framewright-04",
+        "received_date": "2026-11-16",
+        "provenance": "owner_provided_url",
+        "state": "published_owner_report",
+        "chapter_approval": "not_given",
+        "readiness_threshold_changed": false
+      }
     }
   ]
 }
