@@ -11,6 +11,17 @@ import re
 
 
 class PreviewHandler(SimpleHTTPRequestHandler):
+    def guess_type(self, path):
+        content_type = super().guess_type(path)
+        # Copy and subtitle downloads must not depend on the browser's locale.
+        textual = content_type.startswith('text/') or content_type in {
+            'application/json', 'application/javascript', 'application/xml',
+            'application/x-subrip',
+        }
+        if textual and 'charset=' not in content_type.lower():
+            return content_type + '; charset=utf-8'
+        return content_type
+
     def send_head(self):
         self.remaining = None
         host = self.headers.get('Host', '').lower()
