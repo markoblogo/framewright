@@ -1,6 +1,6 @@
 # Current work and protected waits
 
-Updated15November2026. This is the current operational entry point, not a session log.
+Updated16November2026. This is the current operational entry point, not a session log.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md) · [Case counts and definitions](public-evidence.json).
 
 ## Current state
@@ -8,9 +8,10 @@ Updated15November2026. This is the current operational entry point, not a sessio
 | Item | Current state / source |
 | --- | --- |
 | Shipped release | **0.9.0**, published experimental prerelease. Tag, page and downloaded assets were verified on 14 November; see [publication status](release-notes-0.9.0.md#publication-status). The frozen pre-publication audit is historical. |
-| Latest maintenance | PR71 is merged. The [15 November consolidation](history/production-closeout-2026-11-15.md) records two corrected autonomous tests, two assisted productions, scoped voice/InShot evidence and publication-copy requirements; the consolidation is on a separate review branch, without release. |
-| Latest completed film | [Foldable Flight](productions/foldable-flight-review.md): English catalogue tour, YouTube/TikTok, 71s, Fola and original score. Owner supplied [YouTube](https://youtu.be/3zh2QfO5iXM) / [TikTok](https://vt.tiktok.com/ZSpgJj3wQ/) publication URLs on 15 November; independent visibility, uploaded-file identity and metrics remain unverified. Prior [Claude localisation](productions/yapfiles-3797572-localization.md), [One Light](productions/one-light-one-way-home.md) and [Same Street](productions/same-street-three-moods.md) records are retained. |
-| Next execution | Dependency review/cleanup completed:180 generated files retired;876 retained files hash-checked unchanged. Consolidation checks and PR review are the current step. Next production candidate is the owner-prepared fictional-film trailer; source handoff and creative brief remain to agree. Protected waits/releases unchanged. |
+| Latest maintenance | PR72 is merged (squash `d9e362b0`). The [16 November documentation pass](history/production-documentation-2026-11-16.md) records the two latest films: recipes, required inputs and 36 verified package files. The [15 November consolidation](history/production-closeout-2026-11-15.md) remains retained. Release remains0.9.0. |
+| Latest completed film | [Before We Built It, We Imagined It](productions/before-we-built-it.md): both3:03English films with sound are owner-accepted; owner supplied [YouTube](https://youtu.be/QPFxE_G9yHY) / [TikTok](https://vt.tiktok.com/ZSpgpWd49/) URLs on16November2026. Exact intended master/package hashes retained. Independent visibility,uploaded-file identity and metrics are unverified; new cover/copy approval and source/music terms remain separate. Prior [interview edit](productions/ai-interview-reaction.md) and its publication report remain retained. |
+| Editorial handoff | Owner supplied the [Studio Notes04 publication URL](https://abvx.xyz/writing/ai-video-corrections-stick-framewright-04) on16November; anonymous HTTP200 and expected headline observed. Prepared text/cover/source receipt unchanged. Published text/cover identity and metrics remain unchecked; the issue index records owner_provided_url separately. |
+| Next execution | Latest production knowledge and dependency inventories are captured. Next production requires separate owner selection. Protected Quixote/RUN/SSI/Transit waits and postponed fictional-film trailer remain unchanged. |
 
 ## Protected waits and commitments
 

@@ -64,3 +64,7 @@ BOOK-01 прежний: редакционное прочтение и чита�
 ## Недельная проверка,9ноября2026
 
 [P04 и новые источники](book/updates-2026-11-09.md) усилили C03/C07/C08/C09/C10. BOOK-01 остаётся `outline_and_case_docs_prepared; reader_reproduction_and_editorial_review_pending`. Четвёртый разбор — материал, не новый readiness threshold. Пробная глава не написана; новых reader reproduction и оформленных прав на конкретные книжные иллюстрации нет.
+
+## Недельная проверка16ноября2026
+
+[Studio Notes04](editorial/2026-11-16-framewright-studio-notes-04.md), [P05](book/cases/corrections-to-checks.md) и [пополнение](book/updates-2026-11-16.md) добавляют ограниченные реальные правки и два описанных маршрута. Оба autonomous теста потребовали коррекций; поздний full voice export снова был assisted. Разборов пять, но новых reader reproductions и manuscript chapters 0; конкретные illustration/quotation права и редакционный просмотр открыты. BOOK-01 остаётся outline_and_case_docs_prepared; reader_reproduction_and_editorial_review_pending. Порог sample-chapter proposal не изменился, повторное уведомление о готовности не выдаётся. Не требуется завершать все инструменты/будущие фильмы; новые работы этим обслуживанием не начинаются.

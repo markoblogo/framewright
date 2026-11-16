@@ -1,0 +1,302 @@
+{
+  "schema": "framewright-editorial-sources-v1",
+  "date": "2026-11-16",
+  "issue": "studio-notes-04",
+  "article": "docs/editorial/2026-11-16-framewright-studio-notes-04.md",
+  "article_sha256": "4c5a2137cc8e474370b82b07e5d6aae9400198f481fae2186a5c52108415178d",
+  "prepared_at": "2026-11-16T09:18:28.669441+00:00",
+  "baseline_previous_issue": "studio-notes-03",
+  "baseline_previous_head": "7d68e46f6e5843c1743ed3e0083254b32af0fcb4",
+  "observed_git_head": "d9e362b0f15ace4fed1968de7f99881328ca2358",
+  "source_state": "local_working_tree_snapshot_including_two_uncommitted_case_records",
+  "local_state_before": " M docs/next-cycle.md\n M docs/public-evidence.json\n?? docs/productions/ai-interview-reaction.md\n?? docs/productions/before-we-built-it.md\n",
+  "source_sha256": {
+    "docs/productions/same-street-three-moods.md": "d5d5f8bd8c615bc8a7e5e7e39d28c150eea50f11018f03fe61057fa7bb4927f7",
+    "docs/productions/one-light-one-way-home.md": "08d26e093249cbbca07ebb5b842e1b85089eefccdbed41d74b91905606f5cc0a",
+    "docs/productions/pantheon-chatgpt-orb.md": "9fb2760df4b3419b303bb8b0309dbd1c39166ad6d6059e4c0f30522d1a1d0028",
+    "docs/productions/ai-interview-reaction.md": "edff25a7ea741930864a0b0b95a89e33f811a637460a4225f3a0aeccf8a7e9a2",
+    "docs/productions/before-we-built-it.md": "cccfe84f7da0c0d34c610c220c36580771ebf6f483bc9599467462abaf4a6bf4",
+    "docs/video-taste.md": "0bffa197cc067944281f070ee445daee9f8c6755672cac24bd5c73f8c15a1f0b",
+    "docs/experiments/autonomous-production-pilot.md": "45fec65a12a5828ab62b1f7a898af5a671650ae19635e9d7b69144409da41447",
+    "docs/experiments/voice-export-tablet-2026-11-14.md": "a2da97505648680ff056cfd029dd1010d4a446673986fe1b6e9c96ee04201f96",
+    "docs/roadmap.md": "7137b395c9efa82b43480abaee131745831ce59af11ade5f5b46b72725657517",
+    "docs/next-cycle.md": "92497b190e53ed7ec711ab68f5651df4d8b3253a0ae1fc996aefba7d571559d0",
+    "docs/storage-policy.md": "871f790c1403da0a3e017c09df92539834b955d67dd17ac6de84f5009637e349",
+    "skills/video-production-router/references/video-taste.md": "c238ad3d9b26d1d6467d8bfdb857fb41d77fbbe53a7c39ca93a84fdaf47c90d6"
+  },
+  "youtube_examples": [
+    {
+      "title": "Same Street, Three Moods",
+      "url": "https://youtu.be/wBaKQ_i7dsA",
+      "source": "docs/productions/same-street-three-moods.md",
+      "provenance": "owner_provided_url",
+      "receipt_date": "2026-11-15",
+      "visibility": "not_independently_verified",
+      "uploaded_file_identity": "not_checked",
+      "audience_metrics": "unknown"
+    },
+    {
+      "title": "Who's Interviewing Whom?",
+      "url": "https://youtu.be/-ZjoRw8TY_Q",
+      "source": "docs/productions/ai-interview-reaction.md",
+      "provenance": "owner_provided_url",
+      "receipt_date": "2026-11-16",
+      "visibility": "not_independently_verified",
+      "uploaded_file_identity": "not_checked",
+      "audience_metrics": "unknown"
+    },
+    {
+      "title": "Before We Built It, We Imagined It",
+      "url": "https://youtu.be/QPFxE_G9yHY",
+      "source": "docs/productions/before-we-built-it.md",
+      "provenance": "owner_provided_url",
+      "receipt_date": "2026-11-16",
+      "visibility": "not_independently_verified",
+      "uploaded_file_identity": "not_checked",
+      "audience_metrics": "unknown"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "topic": "Two prepared-setup autonomous productions, no requested mid-run assistance, both corrected after owner feedback",
+      "sources": [
+        "docs/productions/same-street-three-moods.md",
+        "docs/productions/one-light-one-way-home.md",
+        "docs/experiments/autonomous-production-pilot.md"
+      ],
+      "boundary": "Two of planned3–5; unsolicited owner input retained; no correction-free/general portability/savings qualification"
+    },
+    {
+      "id": "C02",
+      "topic": "Street1.2x tempo and physical contact; lighthouse sustained motion via repeated short clips",
+      "sources": [
+        "docs/productions/same-street-three-moods.md",
+        "docs/productions/one-light-one-way-home.md"
+      ],
+      "boundary": "Case-specific tempo/contact; repeated generated clips, not56unique seconds; accepted revised films"
+    },
+    {
+      "id": "C03",
+      "topic": "Scoped preference/check procedure and Pantheon readability example",
+      "sources": [
+        "docs/productions/pantheon-chatgpt-orb.md",
+        "docs/video-taste.md",
+        "skills/video-production-router/references/video-taste.md"
+      ],
+      "boundary": "Agent-led checks, not automatic taste grader; Pantheon settings not universal"
+    },
+    {
+      "id": "C04",
+      "topic": "Interview opposite-participant inset preserves exact AAC packets and portrait while picture is re-encoded",
+      "sources": [
+        "docs/productions/ai-interview-reaction.md"
+      ],
+      "boundary": "Technical/sample review and publication report separate from explicit revised-landscape creative acceptance; no pixel equality claim"
+    },
+    {
+      "id": "C05",
+      "topic": "Essay episode source map, film-emblem hypothesis retained, unverified anecdote excluded, genuine stills distinguished from graphic animation",
+      "sources": [
+        "docs/productions/before-we-built-it.md"
+      ],
+      "boundary": "Summary of retained production research, not fresh independent historical investigation; public archive/music terms open"
+    },
+    {
+      "id": "C06",
+      "topic": "Tablet export result is conditional; subsequent full essay needed owner download",
+      "sources": [
+        "docs/experiments/voice-export-tablet-2026-11-14.md",
+        "docs/productions/same-street-three-moods.md",
+        "docs/productions/one-light-one-way-home.md",
+        "docs/productions/before-we-built-it.md"
+      ],
+      "boundary": "No general unattended speech export claim; provider monetary cost not displayed"
+    },
+    {
+      "id": "C07",
+      "topic": "Compact current summary/history and preference notes; two latest case records local uncommitted",
+      "sources": [
+        "docs/roadmap.md",
+        "docs/next-cycle.md",
+        "docs/video-taste.md"
+      ],
+      "boundary": "Observed local repository state, not a new released build; git status snapshot retained"
+    }
+  ],
+  "cover": {
+    "file": "productions/studio-notes-04/studio-notes-04-cover.png",
+    "sha256": "99878ea6fbedd95004039572612ee380c87a73b57b5ddb857ad127e52fe6ee19",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "format": "PNG",
+    "headline": "MAKING VIDEO CORRECTIONS STICK",
+    "series_issue_label": "FRAMEWRIGHT STUDIO NOTES 04",
+    "alt": "Three sculptural silver film frames stand on a charcoal editing table; an amber correction line resolves into teal registration marks on the final frame. The headline reads Making Video Corrections Stick, with Framewright Studio Notes 04 above it.",
+    "provenance": "original_builtin_imagegen_no_reference_upload",
+    "tool": "image_gen.imagegen",
+    "prompt_file": "productions/studio-notes-04/cover-prompt.txt",
+    "prompt_sha256": "d1d62173de56564e5714d9281f2ecb3b007b4c75597af0246892b78d26d80a49",
+    "full_prompt": "Use case: stylized-concept\nAsset type: original landscape editorial blog cover, 16:9.\nPrimary request: Create a polished restrained editorial cover about preserving useful video corrections between productions. An original conceptual image, not a screenshot, video thumbnail or software advertisement.\nScene/backdrop: deep charcoal studio darkness with subtle tactile paper grain.\nSubject: on the right, a sculptural silver film ribbon forms three distinct picture frames over a matte graphite editing table. A fine amber correction stroke travels across the first frame and resolves into a precise teal registration/anchor mark on the final frame. The final frame sits visibly and solidly on the table, with a believable contact shadow. One small inset frame nested within it suggests retaining context during reframing. Quiet, crafted materials, no clutter.\nStyle/medium: cinematic editorial still life, refined 3D objects mixed with delicate printed annotation marks; elegant, purposeful, no generic AI robot.\nComposition/framing: wide landscape. Large clear headline in the left 55 percent, illustration on the right. Generous margins; readable at 480 px wide.\nLighting/mood: soft silver rim light, very restrained teal and amber glows, deep but readable darks.\nColor palette: charcoal, ivory, silver, muted teal, amber.\nText (verbatim): \"MAKING VIDEO\nCORRECTIONS\nSTICK\"\nSeries/issue label (verbatim): \"FRAMEWRIGHT STUDIO NOTES 04\"\nConstraints: Render all text exactly as given. Use bold sophisticated condensed editorial sans serif for headline, ivory, high contrast. Small uppercase series label above headline, still readable. No other words, no watermarks, no logos, no invented metrics. Headline dominates without covering illustration. Completely original composition. Landscape 16:9.",
+    "generation_count": 1,
+    "cost": {
+      "amount": null,
+      "currency": null,
+      "status": "not_displayed"
+    },
+    "review": {
+      "state": "operator_pass",
+      "reviewed_at": "2026-11-16T09:22:21.520008+00:00",
+      "spelling": "exact_headline_and_series_label_pass",
+      "composition": "balanced_clear_margins_no_obstruction",
+      "native_size": [
+        1672,
+        941
+      ],
+      "native_review": "builtin_output_visually_inspected",
+      "reduced_file": "qa/cover-480.png",
+      "reduced_size": [
+        480,
+        270
+      ],
+      "reduced_review": "visually_inspected_480x270_headline_and_label_readable",
+      "owner_cover_approval": "not_requested_draft"
+    },
+    "width": 1672,
+    "height": 941,
+    "bytes": 2340462,
+    "creation": "original_builtin_imagegen",
+    "storage": "private_external_production_package_outside_git",
+    "paid_api_calls": 0,
+    "known_cost": "not_displayed"
+  },
+  "book_source": {
+    "candidate": true,
+    "draft_and_published_posts_are_sources": true,
+    "useful_explanations": [
+      "preference_scope_to_viewing_check",
+      "physical_defect_vs_taste",
+      "revision_invariants",
+      "assisted_vs_autonomous_export",
+      "source_uncertainty"
+    ],
+    "chapters": [
+      "C02",
+      "C03",
+      "C07",
+      "C08",
+      "C09",
+      "C10"
+    ],
+    "cases": [
+      "P05"
+    ],
+    "gaps": [
+      "G01",
+      "G03",
+      "G07",
+      "G08",
+      "G09",
+      "G10"
+    ],
+    "working_material_update": "docs/book/updates-2026-11-16.md",
+    "case_file": "docs/book/cases/corrections-to-checks.md",
+    "two_routes": "Framewright existing brief/journal and versioned editor-folder alternative explicitly described; alternative not reader reproduced",
+    "reuse_status": "candidate_only_fact_check_deduplicate_select_illustrations_and_clear_rights",
+    "chapter_approval": "not_given",
+    "status": "candidate_material",
+    "working_note": "docs/book/updates-2026-11-16.md",
+    "routes": [
+      "with_framewright",
+      "without_framewright"
+    ],
+    "reader_reproduction": "not_performed",
+    "working_material_sha256": {
+      "docs/book/cases/corrections-to-checks.md": "84c2306ef30fe65f6cb8699c305d66f1a75c23a5c2850c5bdad25c7965e60c79",
+      "docs/book/updates-2026-11-16.md": "110d00e597931243bded52f4e166bd8330ca461cb41295f3c1212407dca886ee",
+      "docs/book/outline.md": "cfc5746f0ce6f06b07933918baa369b88394c94b3cec3d452d38804fbab0afd9",
+      "docs/book/coverage.md": "d34bc4223b3e4fdd2c997aa5a34b13a4cedcfbac6f16400749a3e65853e9e05f",
+      "docs/book-milestone.md": "5c5c7d056693fb4df99056f9aa0bd842a724c3059cd2a8b83013a1fc5f8dedca"
+    },
+    "book_index_snapshot_sha256": "e9abe7088c175993eff0a9f472396c3a41882ff177eee18962f381a6743aa205"
+  },
+  "publication": {
+    "state": "draft",
+    "provenance": null,
+    "cms_collection_existence": "not_verified",
+    "owner_publishes": true,
+    "blog_url": null,
+    "cms_writes": "not_performed"
+  },
+  "book_readiness": {
+    "status": "outline_and_case_docs_prepared; reader_reproduction_and_editorial_review_pending",
+    "threshold_changed": false,
+    "new_reader_reproductions": 0,
+    "manuscript_chapters_written": 0
+  },
+  "validation": {
+    "metadata": "pass",
+    "language": "en",
+    "body_words": 932,
+    "youtube_count": 3,
+    "owner_report_provenance": "pass",
+    "cover_original_png": "pass",
+    "cover_dimensions": [
+      1672,
+      941
+    ],
+    "cover_sha256": "pass",
+    "cover_native_and_reduced_review": "pass",
+    "new_source_hashes": "pass",
+    "previous_editions": "pass",
+    "local_links": "pass",
+    "book_references": "pass",
+    "repository_validation": "pass_structural_integrity_no_model_or_renderer",
+    "local_link_count": 83,
+    "repository_validation_log_sha256": "c30de8d8e8a675875ca529099964473ed0b2365c8362f8d6f006c035b1e10edb",
+    "html_and_downloads_http": "pass_200_exact_file_bytes",
+    "reviewed_at": "2026-11-16T09:26:42.699139+00:00"
+  },
+  "delivery": {
+    "delivery_state": "ready_to_deliver",
+    "state": "ready_to_deliver",
+    "prepared_at": "2026-11-16T09:18:28.669441+00:00",
+    "package_path": "productions/studio-notes-04",
+    "publication_document": "read.html",
+    "markdown_file": "2026-11-16-framewright-studio-notes-04.md",
+    "cover_file": "studio-notes-04-cover.png",
+    "source_file": "2026-11-16-framewright-studio-notes-04-sources.json",
+    "selected_text_sha256": "4c5a2137cc8e474370b82b07e5d6aae9400198f481fae2186a5c52108415178d",
+    "selected_cover_sha256": "99878ea6fbedd95004039572612ee380c87a73b57b5ddb857ad127e52fe6ee19",
+    "delivered_at": null,
+    "publication_state": "draft_owner_publishes",
+    "ready_at": "2026-11-16T09:26:45.040340+00:00",
+    "publication_document_sha256": "0efd818501c4b572e056d24c6442cbc63164caf2f83f227c0d6279a0e0fb23fb",
+    "notification_emission": "pending_final_chat_message; file existence and successful HTTP checks are not delivery",
+    "recovery_instruction": "Before notifying this unchanged package again, verify whether the intended final notification was emitted in the current chat. If so, record that observed delivery in this private receipt; do not generate another issue.",
+    "links_storage": "Private delivery receipt retains actual owner-facing links",
+    "snapshot_role": "Prepared delivery snapshot; later private receipt supersedes operational state"
+  },
+  "private_test_source_sha256": {
+    "productions/same-street-three-moods/revision-v2/receipts/owner-publication-20261115.json": "02d16cb63d8d7ef15eb35deeeab79bd894dc3988b90f3b7e18c451243beac87c",
+    "productions/ai-interview-reaction/full-v2/publication/owner-publication.json": "25be3f4af4f5f70b85ffc206e8172c7aeda74f2c87035b8bb9ef3c23c226cc57",
+    "productions/before-we-built-it/package-v1/publication/owner-publication.json": "ca0a7b3a78bbbd10b191a8fee1cb423186dfb074641f561982c867164c230136",
+    "productions/same-street-three-moods/receipts/voice-export.json": "346489952fe47a49b567b3b4ac87b6159575f2e3fb5686f72d8766bad5a73fec"
+  },
+  "projection": {
+    "kind": "public_sanitized_projection_of_prepared_receipt",
+    "prepared_private_source_receipt_sha256": "32a17dd83e21eba139eeca72d59f7f8eacf81c333b78925af72ed4f3bd9d575d",
+    "private_prepared_source_receipt": "productions/studio-notes-04/2026-11-16-framewright-studio-notes-04-sources.json",
+    "redactions": [
+      "machine_absolute_delivery_paths",
+      "loopback_review_urls"
+    ],
+    "prepared_article_and_cover_sha256": "preserved",
+    "source_hashes_role": "frozen_prepared_snapshot; later documentation changes do not revise these hashes",
+    "source_snapshot_location": "productions/studio-notes-04/source-snapshot",
+    "current_delivery_record": "productions/studio-notes-04/delivery-receipt.json",
+    "current_publication_record": "productions/studio-notes-04/owner-publication-20261116.json"
+  }
+}
