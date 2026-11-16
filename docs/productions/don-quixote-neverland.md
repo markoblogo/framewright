@@ -2,7 +2,7 @@
 
 11 November 2026 · LIT-FILM-04 / M1/R02, M3–M5/R05/R07, R09.
 Owner-selected book and manuscript. **Owner paused production11November2026.**
-Preserve all accepted sources and the unaccepted51s opening-block review; resume
+The owner rejected the51s opening-block visual implementation16November2026. Preserve accepted sources and the rejected baseline; resume
 only on the owner's instruction. No cleanup, further rendering or new generation
 while paused. **No completed film or new trial qualification.**
 The owner requested2–3films and described three complementary story functions;
@@ -165,10 +165,35 @@ Retain use/avoid conditions, fallback and correction effort or UNKNOWN.
 
 Private production: studio `productions/don-quixote-neverland/`. Existing project
 journal points to the current series brief/plan; proposal01 remains history.
-Next: owner review of the linked51s opening in both aspects; then continue the
-conversation/discovery/invitation using the remaining accepted role dialogue. Private gallery/manifest/prompts: production
+Historical next step was owner review of the linked51s opening; that review is now complete and rejects the visuals. Continuation waits for the revised acting route below. Private gallery/manifest/prompts: production
 preparation/e01-frames-v1/. Still preparation and later consented provider attempts
 are separate stages; the private voice sample and full-role take are generated,
 but no full-film generation, purchases, public publication,
 commit/push or release in this task. Local project UI
 stays deferred. No additions to the completed-film/trial counters.
+
+##16November owner rejection / acting route must change
+
+Owner rejected both51s opening-block visuals: «озвучка хорошая, персонажи в целом тоже, но движения нет никакого и то какое есть, реализовано очень плохо». Peter slides in a frozen pose with boot/hand matte defects;the rectangular cloud clock is inorganic. Quixote does not prepare/attack bodily;aftermath and conversation remain still. Mill menace is weak and pacing prolonged. Earlier technical decode/sample checks and accepted8s transformation did not establish sufficient sustained character acting.
+
+Preserve cast and accepted role audio;do not repair this by adding more head sway,camera movement or static pose swaps. Replan actual articulated/shot-generated acting and purposeful shorter beats. A proposed8–12s action proof must show anticipation,lunge/horse step,Peter flight-posture change/recoil,threatening mill reaction,anatomy/contact and timing in both formats. Select a concrete feasible route/access/attempt cost before any provider action. This is discussion/replanning,not authority for new generation,spend or production resumption. Private exact-version rejection: e01-block1-v1/records/owner-rejection-20261116.json.
+
+
+##16November creative route research
+
+[Tool intake and proposed hybrid](../research/tool-intake-2026-11-16-quixote.md) separates actual cast performance, stable world/camera, deterministic mill mechanics and matting. Accepted cast/audio remain pinned; proposed8–12s comparison stays unexecuted pending concrete access/cost/terms. Atlas is a set candidate, not acting; free quotas do not establish eligible character-animation operations. Native ChatGPT GIF capability exists in product documentation; our native export/acting evidence is still open. Research does not resume the paused film.
+
+
+##16November bounded acting test / mill face accepted
+
+Owner selected a [matched Peter motion comparison](../experiments/peter-acting-comparison-2026-11-16.md), not full-episode continuation. New fanged mill-face still accepted verbatim. Native ChatGPT GIF request refused for similarity; no GIF media. One PlayMCP Fast8s video costs1600existing credits and yields two proportionally fitted formats; owner returned both video formats for visible flat padding,identity drift and warped shoulder/head transitions. Mill face remains accepted. No visual A/B winner or general animation qualification. Full film remains paused. Private `peter-motion-ab-20261116/` retains sources,requests,failed branch,QA and review.
+
+
+### Short Peter reaction / local v2
+
+Owner-selected2–4s follow-up now has a labelled3.2s articulated2D-rig fallback in both aspects,after new image/video requests refused;video credits refunded. Fixed head geometry,limb/trunk articulation and full sky replace the earlier drifting design and flat fields. [Same trial and limitations](../experiments/peter-acting-comparison-2026-11-16.md#short-reaction-follow-up--v2). All96frames inspected;exports decoded;owner nevertheless rejected twisted hands and the wart-like chin patch. Stop this local cutout route and reassess preparation/method before another trial. Mill face/audio remain accepted;full episode paused.
+
+
+## Current state — owner paused again16November
+
+Owner explicitly paused all Quixote production and trials after the rejected local short reaction. Preserve accepted cast,anchors,full role voice and fanged mill face;retain failed exports,editable sources,exact feedback and provider refusal/refund receipts for later review. No next generation,render,cleanup or method experiment is active. Resumption requires a new owner instruction. Documentation consolidation,checks,PR and merge are authorised;no release. Private pause receipt:`peter-motion-ab-20261116/records/owner-pause-20261116.json`.

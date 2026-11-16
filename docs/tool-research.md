@@ -1,5 +1,9 @@
 # Tool review and test inventory
 
+## Klap —16November2026
+
+[Gifted Pro assessment and scoped trial](research/klap-2026-11-16.md): existing-account import,editor/transcript,rename and actual MP4 export observed. First91-second source yielded one89-second candidate despite30–60second setting; clip quality/duration and intended plain style remain limited. Use when helpful in current productions;2–3 reviews later, with exact owner referral/disclosure. Separate paid API unselected.
+
 ## Physical Android editor —13November2026
 
 [InShot feature follow-up](experiments/inshot-functions-2026-11-13.md): exported English caption/text/PIP/chroma/mix/speed fixtures and photo/collage outputs on the owner’s Premium tablet. Endpoint-frame parity, tracking, AI processing locality and long-form work remain open. Tablet Chrome capture and a Babylon tour are the selected production application; LocalSend is a conditional transfer candidate.
@@ -577,3 +581,8 @@ provider, general acting or measured production savings.
 ## Ukrainian voice preference — 9 November 2026
 
 [Fola baseline and export limitation](ukrainian-voice-baseline.md): owner-selected voice for Ukrainian until a better option is chosen; embedded-browser export fails; owner-supplied Chrome WAV is available. No API or paid route enabled.
+
+
+## Quixote-focused intake —16November2026
+
+[Deduplicated assessment and creative route](research/tool-intake-2026-11-16-quixote.md): Atlas sets, actual character performance, Sand3D mechanisms, BRIA masks, local Zonos voice and future CUDA reserves. Krea free quota excludes motion transfer; ChatGPT GIF product capability is confirmed but our acting/export test stays open. All supplied leads retained with access/licence gaps; no new generation or qualification.
