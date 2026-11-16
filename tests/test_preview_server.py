@@ -43,6 +43,22 @@ class PreviewServerTests(unittest.TestCase):
                 self.assertEqual(r.status,200);self.assertEqual(r.headers['Accept-Ranges'],'bytes')
                 self.assertEqual(int(r.headers['Content-Length']),len(self.data))
                 self.assertEqual(r.read(),self.data if method=='GET' else b'')
+    def test_text_downloads_declare_utf8_for_full_head_and_range(self):
+        text='YOUTUBE — English copy. “Hello”. Пример.'
+        for suffix in ['txt','srt','html','json']:
+            payload=text.encode('utf-8')
+            (self.root/f'copy.{suffix}').write_bytes(payload)
+            for method,byte_range in [('GET',None),('HEAD',None),('GET','bytes=0-')]:
+                with self.subTest(suffix=suffix,method=method,range=byte_range):
+                    with self.request(f'/copy.{suffix}',byte_range,method) as r:
+                        self.assertEqual(r.headers.get_content_charset(),'utf-8')
+                        body=r.read()
+                        self.assertEqual(body,b'' if method=='HEAD' else payload)
+                        if body:self.assertEqual(body.decode(r.headers.get_content_charset()),text)
+        with self.request() as r:
+            self.assertEqual(r.headers.get_content_type(),'video/mp4')
+            self.assertIsNone(r.headers.get_content_charset())
+
     def test_forward_backward_and_suffix_bytes(self):
         for value,start,end in [('bytes=4000-4095',4000,4095),('bytes=10-39',10,39),('bytes=-100',5020,5119),('bytes=5100-',5100,5119),('bytes=5100-9000',5100,5119),('bytes=-9000',0,5119)]:
             with self.subTest(value=value),self.request(range_value=value) as r:

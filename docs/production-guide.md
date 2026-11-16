@@ -118,6 +118,8 @@ For this owner’s YouTube videos, prepare covers with short, readable text by d
 
 For YouTube/TikTok delivery, provide direct, separate MP4, cover, subtitle and copy links, without ZIPs.
 
+Save publication text and subtitles as UTF-8 and declare UTF-8 when serving text downloads. For English TXT copy, prefer plain ASCII punctuation (straight quotes/apostrophes and hyphens) so a locale-based editor also displays it correctly. Validate the downloaded bytes and header, not only the source file. Preserve old copy hashes and register a new package revision after any correction.
+
 - **YouTube:** one recommended title plus two distinct A/B alternatives; a useful description with a clear opening, concrete content, natural search terms, source credits/limits and relevant tags. Candidates are hypotheses, not established winners.
 - **TikTok:** a platform-specific caption, relevant hashtags and a ready-to-post first comment that invites a concrete response. Do not invent a link in bio.
 - Keep copy in the video's language, substantiate numbers, and avoid generic two-line descriptions, invented keyword scores or traffic claims. Preserve the exact prepared texts/hashes when later publication URLs arrive.

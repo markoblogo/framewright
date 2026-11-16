@@ -15,7 +15,7 @@ AMI-like video carousel and contact. No analytics or background update schedule.
 - Detailed [tool profiles](../skills/video-production-router/references/tools.json): count `tools`.
 - [Review ledger](../skills/video-production-router/references/review-ledger.json): count `tools`.
 - GitHub releases API: newest non-draft release, including experimental prereleases.
-  The9November observation was v0.8.0, published4November. Source0.9.0 is now prepared under owner authority; the visitor-loaded API supplies actual publication state. This source edit does not itself prove release availability.
+  The9November observation was v0.8.0, published4November. Publication of experimental0.9.0 was verified14November; the visitor-loaded API supplies the actual newest release state. Documentation changes do not themselves publish a release.
 
 The browser reads these public main-branch sources **once on each page opening**.
 No visitor means no requests. It uses a dated shipped snapshot or last successful
@@ -66,3 +66,7 @@ At production or trial closeout, add the completed/executed case ID and source t
 or revision. Check source links and the eligibility definition; do not add a plan
 or infer success from execution. The site counts the entries on each visit, so no
 website edit, hardcoded total or redeployment is required for catalogue updates.
+
+## Social channels —16November2026
+
+Owner-selected YouTube channel https://www.youtube.com/@ABV_Creative and TikTok profile https://www.tiktok.com/@lumierenoire.films appear as labelled, inline monochrome brand icons in both header and footer. Each target is44px; responsive header uses a separate navigation row on small screens. Desktop1280/mobile390 geometry and visible header/footer were checked with no horizontal overflow. Official Simple Icons vectors are embedded locally, with no extra runtime request. Both canonical GitHub Pages and the existing public Sites mirror were updated; Sites version3. Exact source/deployment hashes and screenshots remain in the private site-social-links-2026-11-16 record.

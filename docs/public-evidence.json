@@ -477,6 +477,18 @@
       "source": "docs/productions/before-we-built-it.md",
       "basis": "owner_reported_publication",
       "index_note": "One183s English visual essay in two owner-accepted aspects. Owner supplied YouTube/TikTok URLs16November2026; links and prepared-package provenance are in the source case. Independent visibility,uploaded identity,rights and audience outcomes remain unverified. No added variant/trial count."
+    },
+    {
+      "id": "describe-your-entire-day",
+      "source": "docs/productions/describe-your-entire-day.md",
+      "basis": "owner_reported_publication",
+      "index_note": "One75.333333s English surreal story, two owner-accepted full-v3 aspects after five bounded corrections. Owner supplied both publication URLs16November2026; source case records links and prepared text-encoding-2 package hashes. Independent visibility,uploaded identity,rights and metrics remain unverified. No extra aspect/revision/trial count."
+    },
+    {
+      "id": "coinbase-agent-controls",
+      "source": "docs/productions/coinbase-agent-controls.md",
+      "basis": "owner_reported_publication",
+      "index_note": "One60s English explainer,two owner-accepted native aspects. Owner supplied YouTube DmsXZ73w-Eg and TikTok ZSpssNpud URLs16November2026;linked source case retains URLs/prepared hashes. Independent visibility,uploaded identity and metrics unverified. No live financial test or extra film/trial count."
     }
   ],
   "trials": [
@@ -714,6 +726,18 @@
       "source": "docs/experiments/inshot-video-enhance-2026-11-15.md",
       "basis": "executed_bounded_workflow_trial",
       "index_note": "One native InShot Video Enhance trial:6s fixture plus full36.7s owner-supplied source,1080p export and CFR/audio-preserving finishing. Cloud/login, frame-parity and one-frame timing limits retained; owner picture review pending. Variants/full follow-up counted once; not a finished film or general qualification."
+    },
+    {
+      "id": "klap-repurpose-2026-11-16",
+      "source": "docs/research/klap-2026-11-16.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One existing-account web trial:public source import,one automatic portrait candidate,editor/transcript,truthful rename and actual1080x1920H264/AAC48kHz MP4 export/full decode.89.749333s output exceeded requested30–60s; whole-source fit/blur with small source detail and clear captions in three reduced samples. No useful multi-short selection,full listening/creative approval,general qualification,savings or audience claim. Same-source derivative is not a new authored film; reviews deferred."
+    },
+    {
+      "id": "peter-acting-comparison-2026-11-16",
+      "source": "docs/experiments/peter-acting-comparison-2026-11-16.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Partial same-action comparison:nativeGIF refused/no media;one8s720-square PlayMCP Fast video for1600credits,two aspect exports. Owner returned both for visible flat padding,identity drift and warped anatomy. New mill-face still accepted/reaffirmed. No animation qualification or visual A/B winner. Follow-up same trial:new provider request refused/refunded;3.2s local articulated2D rig/two full-sky compositions,all96frames inspected but owner rejected twisted hands and a wart-like chin patch;operator perceptual QA insufficient. No additional trial/film."
     }
   ]
 }

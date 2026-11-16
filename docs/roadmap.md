@@ -51,6 +51,10 @@ M6 / REL-D transfer stays partial and parallel, triggered by a real handoff need
 New tools remain welcome when they solve a selected production problem; neither
 catalogue size nor additional app installations are a release target.
 
+## Owner-selected warmup —16November2026
+
+[Describe Your Entire Day](productions/describe-your-entire-day.md) precedes returning to Quixote: owner source sheet, colored daily-life environments and moving monochrome motifs, then a100/100 return. Supports M1/M2/RV01 through the existing proposal, exact inputs, full-action pilot and bounded revisions if real feedback requires them. The four static references are not motion qualification or AUTOPROD test3. Landing YouTube/TikTok header/footer links are the preceding small site update. No software release is started by these tasks.
+
 ## Direction and strategic outcomes
 
 [Internal studio scope](internal-studio-scope.md), clarified6November: images, audio products, game visuals, platform-specific social content and receiving-project curation accompany the public video-first focus. Current evidence and planned Instagram/Facebook/AzurMenton transfer remain separate; no all-platform autopublisher is claimed. This is a future expansion path: manual output → reusable template → receiving-project handoff → separately authorised automation; nothing is activated by this documentation.
@@ -517,3 +521,7 @@ This supports R04/R09/SOCIAL-01,not a new release or tool-qualification claim.
 [Babylon c. 575 BCE](https://claude.ai/artifact/CTjrZXVdUgKJ6qJXrvvr28) is an owner-requested future world-overview production; [NeuroRoast](https://neuroroast.cgevent.ru/) is an owner-requested overview/review candidate and an archive of others' AI videos,not a navigable world. [Recorded context and limits](productions/interactive-worlds-series.md#additional-owner-requested-candidates-13november). Floor796 has since been published according to the owner; the new candidates do not set a rigid later sequence.
 
 [DesignBookmark Motion assessment](research/tool-intake-2026-11-13.md) led to a [bounded Page Flip trial](experiments/designbookmark-page-flip.md): an adapted component rendered a standalone video. The turn was liked but its frame-filling use was rejected for The Last Delivery; book promotion and research-document reviews are future candidates. This does not establish general qualification.
+
+###16November — Klap gifted access as a production helper
+
+[KLAP-01](research/klap-2026-11-16.md) supports M4/R05–R06 and R09. Owner clarified that the service review can wait until tomorrow/day after; apply Klap where useful in current Radar/Quixote work and save real examples for2–3 later positive, accurately sourced review treatments. Preserve affiliate disclosure. Coinbase is completed and owner-reported published;Quixote and all its trials are explicitly paused again. Future Klap applications wait for a new owner-selected production. No new paid API/integration/channel grant/publication/release.

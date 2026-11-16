@@ -1,5 +1,9 @@
 # Proposed experiment queue
 
+## KLAP-01 — current-production repurposing and later review evidence
+
+[Owner-selected service study](research/klap-2026-11-16.md): gifted30-day Pro; initial UI import/edit/export executed, not general qualification. Next bounded application belongs to an actual selected production, with complete idea, useful framing, readable captions and real exported bytes. Do not start a separate review batch today. Retain before/after evidence for later2–3 review angles; no paid API,channel grant or public upload.
+
 ## AUTOPROD-01 — one brief to complete dual-format packages
 
 [Owner-selected plan](experiments/autonomous-production-pilot.md): 3–5 simple full
@@ -1310,3 +1314,14 @@ production and later audience observations remain separate future steps.
 ## Physical Android follow-up —13November2026
 
 [VLC / LocalSend / KORG](experiments/android-companions-2026-11-13.md): VLC local playback/pause/media-key seeking observed. LocalSend waits selected network/receiver diagnosis then a hash-verified two-direction transfer. Kaossilator is an owner-deferred separate task: establish reliable response, make a new own loop and verify export before production use. No further trial or additional app installation is active. Link: M4/R05, with possible later audio-library reuse.
+
+
+## Quixote acting comparison —16November2026
+
+[Research and bounded pass criteria](research/tool-intake-2026-11-16-quixote.md), M4/R05/R07. Existing SAND3D-01 and IMG26-01 remain single; attach a proposed8–12s actual-acting proof to the rejected Quixote opening when resumed. Compare the same short reaction through a live-eligible I2V route and a native GIF/pose-sequence route; world/camera and mechanical mill are separate modules. BRIA matting is conditional; LongCat/DiffHDR retained for suitable NVIDIA stacks. No test, upload, spend, model installation or production resumption occurred.
+
+
+**PETER-MOTION-AB-01 executed16November:** [partial comparison](experiments/peter-acting-comparison-2026-11-16.md). Native ChatGPT GIF refused,no file; PlayMCP Fast8s generated once for1600existing credits,exported in both aspects. New mill-face still accepted;owner returned video for visible square padding,identity drift and warped transitions. IMG26-01 native-Peter branch failed; no broad GIF or acting qualification. Full Quixote remains paused.
+
+
+**Quixote owner pause,16November:** PETER-MOTION-AB-01 and its local follow-up are stopped after owner rejection. Existing SAND3D-01/IMG26-01 and other candidates are catalogue reserves,not authority to continue Quixote. Preserve sources;no automatic next trial.
