@@ -7,3 +7,21 @@
 .hero-art img,.hero-art video{height:auto;aspect-ratio:16/9;object-fit:contain}.film{max-width:780px}
 
 .counters{grid-template-columns:repeat(4,1fr)}.counters a{padding-inline:24px}.counters strong{font-size:clamp(48px,5.5vw,76px)}@media(max-width:600px){.counters{grid-template-columns:repeat(2,1fr);row-gap:24px}.counters a{padding:0 18px}.counters a:nth-child(3){border-left:0;padding-left:0}.counters strong{font-size:54px}.counters span{font-size:11px}.counters small{font-size:9px}}
+
+/* Owner-selected channel links: self-contained monochrome brand icons. */
+.header-actions{display:flex;align-items:center;gap:28px}
+.social-links{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.social-link{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #354038;border-radius:50%;color:#cbd2cc;transition:color .18s,border-color .18s,background .18s}
+.social-link svg{display:block;width:20px;height:20px;fill:currentColor}
+.social-link:hover{color:#fff;border-color:#87978c;background:#ffffff08}
+.social-link:focus-visible{outline:2px solid #d1e5d6;outline-offset:4px;color:#fff}
+footer .social-links{margin-left:auto}
+@media(max-width:900px){.header-actions{gap:18px}}
+@media(max-width:600px){
+ header{height:auto;min-height:104px;display:grid;grid-template-columns:1fr auto;row-gap:10px;padding-block:14px}
+ .header-actions{display:contents}
+ header .wordmark{grid-column:1;grid-row:1}
+ header .social-links{grid-column:2;grid-row:1}
+ header nav{grid-column:1/-1;grid-row:2;justify-content:flex-end}
+ footer .social-links{margin-left:0}
+}
