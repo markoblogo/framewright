@@ -1,8 +1,11 @@
-# Framewright 0.10.0 — local candidate readiness
+# Framewright 0.10.0 — frozen local candidate readiness
 
 Prepared17November2026. Owner authorised candidate preparation and a final readiness
-assessment,**without publication**. No push,PR,merge,tag,release,installed-skill replacement,
-film production or paused-project resumption is included in this pass.
+assessment,**without publication**. This audit freezes that completed local preparation
+pass;no push,PR,merge,tag,release,installed-skill replacement,film production or paused-project
+resumption occurred in that pass. The later owner-authorised source PR/CI/merge is
+recorded separately in the retained integration receipt. It does not authorise a tag
+or release or turn this frozen snapshot into public-availability proof.
 [Candidate notes](release-notes-0.10.0.md) · [Release goal](roadmap.md#next-release-goal).
 
 Repository markoblogo/framewright;local branch release/0.10.0-candidate.

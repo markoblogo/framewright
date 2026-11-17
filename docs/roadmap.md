@@ -75,7 +75,8 @@ bounded picture-correction example;no new defect or film is needed solely for a 
 PR76 and PR77 are merged. The concrete state-summary defect is closed;no additional
 film,artificial defect,tool qualification or operator transfer is required solely for
 this scoped release. The local candidate now passes package/upgrade checks and
-independent review;it has not been pushed,tagged or published. [Candidate notes](release-notes-0.10.0.md) and
+independent review. The owner now authorises its release PR,GitHub checks and merge;
+it remains untagged and unreleased. [Candidate notes](release-notes-0.10.0.md) and
 [readiness audit](release-audit-0.10.0.md) define the bounded increment and remaining
 source/CI/package/publication gates. No tag or public release is authorised in this
 pass. Portability stays parallel;Quixote remains paused.
