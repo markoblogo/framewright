@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-## 0.10.0 — candidate, not published
+## 0.10.0 — 2026-11-17 — experimental
 
 - Separate explicitly replaced creative-review waits and checks from the current
   working brief while retaining original task states and receipts. Bind the
@@ -18,6 +18,9 @@
   Core runtime remains standard-library Python;renderers/providers remain optional.
 - Preserve schema2 private journals and frozen plans. No automatic publication,
   installed-skill replacement or new model-routing qualification. See candidate notes.
+
+- Published17November2026;non-draft prerelease and anonymous public asset downloads
+  verified against the96-file ZIP manifest and SHA256. [Publication record](docs/release-notes-0.10.0.md#publication-status).
 
 ## 0.9.0 — published experimental prerelease
 

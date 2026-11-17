@@ -2,7 +2,7 @@
 
 [![Framewright — silver FW ribbon unfolding](assets/fw-unfold.gif)](https://markoblogo.github.io/framewright/)
 
-[![Latest published: 0.9.0](https://img.shields.io/badge/version-0.9.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.9.0)
+[![Latest published: 0.10.0](https://img.shields.io/badge/version-0.10.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.10.0)
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 
 **A human-and-agent creative studio: films, animation, graphics, sound—and reusable production methods.**
@@ -39,7 +39,7 @@ This prints a plan; it does not render, install, call a model or spend money.
 
 | Scope | Evidence and boundary |
 | --- | --- |
-| Source version | **0.10.0 candidate,not published**; [candidate notes](docs/release-notes-0.10.0.md) and [readiness audit](docs/release-audit-0.10.0.md). Latest published experimental prerelease remains [0.9.0](docs/release-notes-0.9.0.md#publication-status). |
+| Source version | **0.10.0 published experimental prerelease**; [verified publication](docs/release-notes-0.10.0.md#publication-status) and [frozen preparation audit](docs/release-audit-0.10.0.md). Local package proof and public availability are recorded separately. |
 | Review and exchange | Selected-version continuation,explicit replaced-review history,seekable local media review,versioned corrections and the existing owner-approved Radar status flow; [review method](docs/methods/native-editor-before-render.md). Selection, generation and publication remain agent-and-owner work. |
 | Single-brief production tests | [Same Street, Three Moods](docs/productions/same-street-three-moods.md) revised for tempo/ground contact; [One Light, One Way Home](docs/productions/one-light-one-way-home.md) revised for scene motion. Both revision2 films are accepted after corrections, with owner-supplied YouTube/TikTok publication links. No requested mid-run assistance; prepared setup, unsolicited owner messages and timing limits retained in [AUTOPROD-01](docs/experiments/autonomous-production-pilot.md). |
 | Physical-tablet finishing | [InShot feature exports](docs/experiments/inshot-functions-2026-11-13.md) and the accepted [Babylon tour](docs/productions/babylon-virtual-tour.md); [companion-app results](docs/experiments/android-companions-2026-11-13.md). Source-frame rate, endpoint timing and incomplete app tests remain explicit. |

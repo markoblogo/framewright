@@ -1,7 +1,7 @@
 # Framewright roadmap
 
-Updated 17 November 2026. Shipped baseline: **0.9.0**, an experimental prerelease;
-[publication status](release-notes-0.9.0.md#publication-status) records the verified outcome.
+Updated 17 November 2026. Shipped baseline: **0.10.0**, an experimental prerelease;
+[publication status](release-notes-0.10.0.md#publication-status) records the verified outcome.
 [Current work and protected waits](next-cycle.md) govern execution; the
 [archived operational history](history/next-cycle-through-2026-11-14.md) preserves superseded status text.
 This is the priority and milestone map. A roadmap entry does not start production,
@@ -10,13 +10,13 @@ changes of priority require an owner decision or an explicitly delegated choice.
 
 ## Next release goal
 
-**Owner-adopted, 14 November 2026: less repeated explanation when continuing or correcting a film.**
+**0.10.0 goal,adopted14November and shipped17November2026: less repeated explanation when continuing or correcting a film.**
+The next release objective is not yet selected;the criteria below retain this bounded increment and its limits.
 Build on M1–M4 / RV01 and the existing start / continue / correct workflow, selected
 project journal and revision contract. Extend the existing route rather than creating
-a second state store or the deferred local project UI. Version0.10.0 is now selected for local candidate preparation;publication date is
-undecided. No new production or release publication is authorised by this planning update.
+a second state store or the deferred local project UI. [0.10.0 is published and publicly verified](release-notes-0.10.0.md#publication-status). This planning record does not start another production or release.
 
-| Outcome | Observable evidence for the next functional increment |
+| Outcome | Evidence criteria for the0.10.0 increment |
 | --- | --- |
 | A clear current state | One short summary identifies the shipped release, selected scope, accepted versions, unresolved waits and next permitted action. Superseded instructions are history, not competing current orders. |
 | A useful proposal | On the next owner-selected production, connect fitting past cases to the viewer result and selected route; use the shortest useful pilot of its main risk. Do not require extra alternatives or a new tool when unnecessary. |
@@ -71,15 +71,17 @@ checkpoint. Owner evaluation of the corrected summary is still unrecorded;effort
 and general qualification are not claimed. Existing Pantheon evidence remains the
 bounded picture-correction example;no new defect or film is needed solely for a gate.
 
-**Current owner scope: prepare/check/review a local0.10.0 candidate and assess readiness;no publication.**
-PR76 and PR77 are merged. The concrete state-summary defect is closed;no additional
-film,artificial defect,tool qualification or operator transfer is required solely for
-this scoped release. The local candidate now passes package/upgrade checks and
-independent review. The owner now authorises its release PR,GitHub checks and merge;
-it remains untagged and unreleased. [Candidate notes](release-notes-0.10.0.md) and
-[readiness audit](release-audit-0.10.0.md) define the bounded increment and remaining
-source/CI/package/publication gates. No tag or public release is authorised in this
-pass. Portability stays parallel;Quixote remains paused.
+**0.10.0 publication completed by owner authority17November2026.**
+PR76–PR78 are merged. Local package/upgrade checks,independent review,source CI/merge,
+final-tree build,annotated tag and anonymous public asset downloads are recorded in
+[publication status](release-notes-0.10.0.md#publication-status). The [preparation audit](release-audit-0.10.0.md)
+is a frozen earlier snapshot. No additional film,tool trial or operator transfer was
+required solely for this release. This closes the scoped software/workflow increment,
+not universal autonomy,creative quality or measured savings.
+
+Next development priorities are for discussion,not execution. No next release version,
+date or production is selected. Portability and book work remain parallel under their
+existing authority;Quixote remains paused.
 
 ## Owner-selected warmup —16November2026
 

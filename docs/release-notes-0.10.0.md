@@ -1,8 +1,23 @@
 # Framewright 0.10.0 — clearer continuation and correction
 
-**Local experimental release candidate;not published.** Prepared17November2026.
-No v0.10.0 tag,GitHub release,public assets or deployment is created by this preparation.
-Latest published experimental prerelease remains [0.9.0](release-notes-0.9.0.md#publication-status).
+**Published experimental prerelease.** Public availability verified17November2026
+at 18:43:11 UTC. The [canonical release](https://github.com/markoblogo/framewright/releases/tag/v0.10.0) is non-draft;annotated
+`v0.10.0` resolves to `d11077c372339331d013976f61a8a438dc802b63` (PR78).
+
+## Publication status
+
+Unauthenticated HTTP200 checks observed the release page,release metadata,both assets
+and the visitor-loaded release feed. Downloaded ZIP CRC,all96manifest entries and
+individual hashes match the checked package. ZIP SHA256:
+`5346d9458e7145808eb4d6755b17d8b700ab621998ed94ecd2b4272fcedc443e`.
+
+Private source:studio `records/release-0.10.0/published-verification.json`,
+`public-http-results.json` and `public-download/`. The existing source-integration
+receipt and [frozen local audit](release-audit-0.10.0.md) preserve earlier preparation
+states;their pending gates are historical,not new execution instructions. The tagged
+preparation notes remain immutable;this main-branch document records the later
+publication outcome. Browser layout,independent clean-machine use,media rights and
+audience results are not inferred from these package/HTTP checks.
 
 ## What changes for the operator
 
@@ -35,7 +50,7 @@ reconciliation. These cases do not establish correction-free autonomy or measure
 
 ## Compatibility and upgrade
 
-Core remains standard-library Python;the unchanged core at PR77 passed Python3.12 CI.
+Core remains standard-library Python;the released source passed Python3.12 GitHub CI.
 Candidate package checks use the actual local runtime recorded in the audit. There is
 no mandatory Android,OpenMotion,Node,model download,paid account or new database.
 Renderers/providers and their licences are optional production choices.
@@ -62,18 +77,14 @@ operation remain unproven. Portability remains parallel,not a release prerequisi
 Quixote remains paused;SSI,RUN,Udemy,KORG and other selected work keep their own authority.
 No new film or provider test is needed solely to complete this candidate.
 
-## Candidate package and publication gate
+## Package and publication evidence
 
-`framewright-router-0.10.0.zip` contains the router,references,local helpers and LICENSE;
-`SHA256SUMS` identifies the exact local ZIP. Private journals,films,models,app binaries,
-credentials and copied upstream skills are excluded. Own materials retain MIT;
-third-party tools/media keep their separate terms.
+- [framewright-router-0.10.0.zip](https://github.com/markoblogo/framewright/releases/download/v0.10.0/framewright-router-0.10.0.zip):router,references,local helpers and LICENSE.
+- [SHA256SUMS](https://github.com/markoblogo/framewright/releases/download/v0.10.0/SHA256SUMS):the checked ZIP hash.
 
-Optional case/source links inside the ZIP are pinned to the proposed v0.10.0 tag.
-They are not expected to resolve publicly before publication;core internal references
-remain local. Do not claim tag/page/download availability from a successful build.
-
-[Candidate audit](release-audit-0.10.0.md) records local evidence and remaining gates.
-Before a later authorised publication:prepare/review/merge the candidate source with
-current-head CI,build and verify assets from the final merged tree,then create the tag
-and release. After publication,download the public assets and verify hashes/CRC again.
+Private journals,films,models,app binaries,credentials and copied upstream skills are
+excluded. Own materials retain MIT;third-party tools/media retain their own terms.
+Optional package links point to the immutable v0.10.0 source;core internal references
+remain local. The [frozen candidate audit](release-audit-0.10.0.md) and retained receipts
+distinguish local preparation,source CI/merge and actual public-download verification.
+No new production,model evaluation or paused-project resumption followed publication.
