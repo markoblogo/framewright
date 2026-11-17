@@ -1,8 +1,10 @@
 # AUTOPROD-01 — complete simple films from one agreed brief
 
 Owner-selected experiment direction, 14 November 2026. **Planned: 3–5 test productions;
-2 of planned3–5 productions accepted in both formats after one owner-requested correction round each; publication packages ready.**
+3 of planned3–5 productions accepted in both formats after one owner-requested correction round each; publication packages ready.**
 [Test1: Same Street, Three Moods](../productions/same-street-three-moods.md) delivered both56-second English Fola versions, initially accepted, then reopened for slow pace and floating feet/tires. Revision2 is46.667s with1.2x picture/pitch-preserving audio tempo and planted contact, now accepted. It requested no owner assistance; the ledger also retains one unsolicited tablet-use clarification. YouTube/TikTok publication URLs are now owner-reported in its case record. [Test2: One Light, One Way Home](../productions/one-light-one-way-home.md) subsequently delivered both56-second near-photographic Fola versions without requested owner assistance; one unsolicited owner reaffirmation is retained. The owner rejected test2's static scene activity; revision2 animates the boat/water through short generated loops and preserves the exact original soundtrack. This corrective work belongs to the same two trials. Both revised films are now accepted. Select any further test under its own agreed brief; no correction-free success claim.
+**Test3,17November:** [Agent402 tabletop](../productions/agent402-tabletop.md) prepared in both formats with local Kokoro af_heart after Fola Mac export failed. Owner authorised alternative tests and production without intermediate questions. Owner accepted test3 voice,requested player/canonical-FW corrections,then accepted both revision2 films. Three complete cases now accepted;test3 has one owner-requested correction round. Publication packages delivered separately;owner supplied both publication URLs17November;independent uploaded identity/metrics unchecked. No tablet or requested owner download.
+
 Supports M1–M4 / R03–R05 / R09 and the [next release goal](../roadmap.md#next-release-goal).
 Use the existing brief, project journal, revision/handoff and [video taste](../video-taste.md).
 No parallel scheduler, telemetry service or production database.

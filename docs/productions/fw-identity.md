@@ -22,6 +22,10 @@ The earlier EW-like form and procedural-mesh motion were rejected; do not restor
   No sound in GIF. This small public brand asset is an owner-requested exception to
   the repository's production-media exclusion. Full production media remain private.
 
+## Owner correction -17November2026
+
+When a film uses an FW ident,use only the accepted silver-ribbon masters above,including the matching aspect variant. Do not redraw,retype or substitute a generic FW card. This does not require adding an ident to every film. [Agent402 correction](agent402-tabletop.md) records the rejected substitute and canonical replacement.
+
 ## Adoption experiment remains open
 
 The brand is accepted; routine placement is **not**. Test the short ending and a

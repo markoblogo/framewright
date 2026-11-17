@@ -507,6 +507,24 @@
       "source": "docs/productions/nasa-eyes-collage.md",
       "basis": "owner_accepted_published",
       "index_note": "One50s NASA Eyes discovery story,two native films/sound/covers accepted and both publication URLs supplied by owner17November2026:YouTube h0ZTfFPKbcs,TikTok ZSpGfJyS5. Prepared hashes unchanged;independent availability,uploaded identity and metrics unchecked. Original monochrome collage with credited colour NASA tutorial excerpts."
+    },
+    {
+      "id": "agent402-tabletop",
+      "source": "docs/productions/agent402-tabletop.md",
+      "basis": "owner_accepted_published",
+      "index_note": "One52.5s story,two revision2 native formats accepted and both publication URLs supplied by owner17November2026:YouTube SET1GhIdhdc,TikTok ZSpt7FjU4. Prepared hashes unchanged;independent visibility,uploaded identity and metrics unchecked. AUTOPRODtest3 after one correction round;local Kokoro and Matter.js scopes retained."
+    },
+    {
+      "id": "clear-the-table-stick-scene",
+      "source": "docs/productions/clear-the-table-stick-scene.md",
+      "basis": "owner_reported_published",
+      "index_note": "One24.5s original robot literal-instruction comedy,two native formats accepted;owner supplied YouTube WChWhGCV5u0 and TikTok ZSptE6Cjj publication URLs17November2026.8prepared package hashes unchanged;independent visibility,uploaded identity and metrics unchecked. Actual Stick Scene rig/native checks,local dialogue;not AUTOPRODtest4."
+    },
+    {
+      "id": "praxis-robot-engineering",
+      "source": "docs/productions/praxis-robot-engineering.md",
+      "basis": "owner_reported_published",
+      "index_note": "One65.25s original engineering explainer,both revision2 films accepted;owner supplied YouTube DX86Vqs-ghg17November2026 and declined TikTok publication. Exact prepared hashes unchanged;Radar received publication. Uploaded identity/visibility/metrics unchecked. No Praxis inference or real robot test."
     }
   ],
   "trials": [
@@ -774,6 +792,30 @@
       "source": "docs/experiments/genmotion-collage-2026-11-17.md",
       "basis": "executed_bounded_workflow_trial",
       "index_note": "GenMotion motion-graphics CLI0.8.1/Three.js paper/photographic texture/text/keys/orbits/rocket export. Dual4s24fps proofs and dual50s12fps paper renders;local FFmpeg adds colour24fps NASA excerpts/audio. One trial including corrections. Not generative acting,the skeletal library,NASA science validation or autonomous speech export."
+    },
+    {
+      "id": "mac-voice-export-2026-11-17",
+      "source": "docs/experiments/mac-voice-export-2026-11-17.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Mac Fola generation but no verified export;ZONOS loading incomplete;two Kokoro direct local WAV exports. Owner17November accepted this full af_heart take and both short probes;not every voice/language."
+    },
+    {
+      "id": "matter-tabletop-2026-11-17",
+      "source": "docs/experiments/matter-tabletop-2026-11-17.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Matter.js0.20.0 fixed-step circle/rail contact with repeat-identical trajectories consumed by dual films. Not acting,3Dphysics or payment qualification."
+    },
+    {
+      "id": "stick-scene-2026-11-17",
+      "source": "docs/experiments/stick-scene-2026-11-17.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Pinned MIT Canvas rig;official motion/frames scripts,20initial findings corrected to clean. Explicit dual-format frame-export/sound/accepted FW finish. Not a generative model,universal acting or Quixote qualification."
+    },
+    {
+      "id": "openmotion-reuse-2026-11-17",
+      "source": "docs/experiments/openmotion-reuse-2026-11-17.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One local native MCP authoring/revision/export and Motion Package trial. Partial attempts included;two aspects/retries do not add cases. No new finished film,owner acceptance or global provider qualification."
     }
   ]
 }
