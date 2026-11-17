@@ -47,6 +47,16 @@ class ArsenalSearchTest(unittest.TestCase):
         self.assertEqual(r['combinations'],[])
         self.assertTrue(r['blocked_combinations'])
 
+    def test_historical_ledger_summary_is_not_feature_specific_evidence(self):
+        for tool,technique in [('hyperframes','native-audio'),('hyperframes','typography')]:
+            self.assertEqual(self.search('--tool',tool,'--technique',technique,'--evidence','tested')['results'],[])
+        apps=self.search('--tool','hyperframes','--evidence','tested')['results'][0]['applications']
+        self.assertEqual(len(apps),1)
+        self.assertEqual(apps[0]['id'],'hyperframes--retained-scope')
+        self.assertNotIn('experiment_id',apps[0])
+        self.assertEqual(apps[0]['techniques'],[])
+        self.assertTrue(apps[0]['scope'].startswith('Tool-level'))
+
     def test_application_facets_must_match_one_scope(self):
         import runpy
         match=runpy.run_path(str(CLI))['application_matches']

@@ -164,9 +164,10 @@ records do not become planner providers or fulfill narration/arbitrary features.
 | Resources | Observed host/formats/time/cost,or explicit unknowns. Render time is not active labour or a controlled speed comparison. |
 | Alternatives | Related candidates with a reason;currently marked not-compared,not a quality ranking. |
 
-Initial17November backfill:69 applications across44 tools,including three new
+Initial17November backfill:47 application/scope cards across44 tools,including three new
 scoped tools:GenMotion0.8.1,GiveMotion0.1.6 and Manim Community0.22.1. Legacy records
-cover retained ledger scopes and tested feature/experiment groups. Their
+cover one explicitly tool-level retained ledger summary per tool;they are not
+cloned under individual experiment IDs or used as technique-specific evidence. Their
 `retained_scope_summary` granularity,missing style/version/time/cost and
 `not_assessed` quality dimensions are intentional gaps,not completed new reviews.
 Detailed recent cards retain operator observations and separate owner decisions.
