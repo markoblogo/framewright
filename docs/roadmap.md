@@ -62,19 +62,19 @@ source contract,an exact-version copy edit/conflict control and a bounded native
 trial. The test edit is not the real-pause/owner-decision gate above.
 
 Progress is substantial in reusable proposals,retained taste,source/acceptance separation
-and case-indexed methods. Remaining release evidence is one selected real continuation
-that obtains the correct current summary,uses relevant retained decisions and records
-any actual bounded correction/owner decision plus effort unknowns. Do not manufacture
-a defect or resume paused Quixote to satisfy a checklist. Current private Praxis journal
-also retains an older blocked review task alongside the accepted selected revision2;
-verify the actual brief on continuation rather than treating that old wait as current
-owner authority. Resolving how superseded tasks appear is a functional state-summary
-question,not a new editor or portability prerequisite.
+and case-indexed methods. [The owner-selected Praxis continuation](experiments/praxis-continuation-2026-11-17.md)
+has now recovered the accepted revision2 in a fresh process and explicitly classified
+its replaced original review as history. Current waits/checks/blockers are zero;old
+tasks/receipts remain unchanged. Regressions protect unrelated waits,rejections,drift
+and reopening. This addresses the concrete state-summary gap found at the earlier
+checkpoint. Owner evaluation of the corrected summary is still unrecorded;effort savings
+and general qualification are not claimed. Existing Pantheon evidence remains the
+bounded picture-correction example;no new defect or film is needed solely for a gate.
 
-**Recommendation at this checkpoint: merge maintenance/adoption without release.**
-No release tag/version/date is selected. Operator portability stays parallel and does
-not block this increment. A later owner-selected continuation and a small state-summary
-fix if needed are more relevant than another catalogue expansion.
+**Current owner scope: continuation/summary maintenance only,no production or release.**
+PR76 maintenance/adoption is merged without release. The owner now authorised a PR,checks,independent review and merge for the Praxis
+follow-up,without release. No release tag/version/date is
+selected. Portability stays parallel;Quixote remains owner-paused.
 
 ## Owner-selected warmup —16November2026
 

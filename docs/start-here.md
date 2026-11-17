@@ -46,7 +46,7 @@ python3 skills/video-production-router/scripts/project.py blockers /absolute/pri
 
 Read the selected exact final, current-version reviews, explicit waits and latest
 checkpoint. Distinguish historical preparation text from later accepted receipts.
-Changed sources/checks require reconciliation, not blind retry. A ready-task
+Changed sources/checks require reconciliation, not blind retry. If an accepted revised creative review explicitly replaces an old request,use the [review-history procedure](../skills/video-production-router/references/projects.md#replace-an-obsolete-creative-review-wait-explicitly);selecting a final alone does not retire waits. A ready-task
 suggestion is not execution authority. Resume only the authorised stage; preserve
 accepted bytes and owner choices, including “internal only” and no-publication.
 If a real answer is missing, report that gap while continuing independent work.

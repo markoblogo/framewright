@@ -291,3 +291,29 @@ its proposed-next priority; no action is dispatched by the brief. Old waits rema
 in whole-project status without cancelling the selected delivery.
 See [recovery evidence](../../../docs/experiments/selected-final-recovery.md) and
 [the fresh-agent Good Dog check](../../../docs/experiments/session-recovery-2026-11-01.md).
+
+## Replace an obsolete creative-review wait explicitly
+
+Selecting an accepted final alone does not cancel another task. If the owner says a
+completed revised review replaces an unfinished original review, record that relation:
+
+```sh
+python3 skills/video-production-router/scripts/project.py supersede-review /absolute/private/project.json original-review --with-task revised-review --actor operator --note 'Owner chose the accepted revision2 pair;original review is historical'
+```
+
+Both tasks must be creative checks with retained required outputs;the replacement
+must cover at least the original output count for each artifact kind. The replacement
+must be recorded done,its dependencies done,and every replacement output must have
+current accepted creative review. It must include the currently selected accepted
+final,which cannot be an output of the original task. Frozen unmet constraints cannot
+be retired this way. The command appends a revision/context-bound project decision;
+it does not mark the original task done,alter its receipts,complete dependencies or
+start work. A later `mark ... --state done` cannot reuse the replacement approval;
+explicitly reopen and review the original revision first. It is not an inference from a publication URL or a newer filename.
+
+`brief`, `status` and `blockers` show the replaced review/checks separately as history.
+Unrelated waits,shared-subject reviews,file problems and unresolved executor outcomes
+remain visible. A changed pin,context,new rejection,lost replacement completion or
+explicit reopening of the original task restores its current visibility. Update scope
+before confirming the relation;do not refresh old receipt hashes to force it current.
+[Praxis continuation example](../../../docs/experiments/praxis-continuation-2026-11-17.md).

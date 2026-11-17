@@ -5,7 +5,9 @@ def diagnose(data,state,check_kind):
     steps={s['id']:s for s in data['steps']}
     latest={(r['subject'],r['kind'],r['topic']):r for r in data.get('journal',[])}
     observations={r['id']:r for r in state['observations']['effective']+state['observations']['stale']}
-    blockers=[];followups=[]
+    blockers=[];followups=[];historical=[]
+    historical_tasks=state.get('historical_reviews',{})
+    historical_pairs=state.get('historical_review_pairs',[])
 
     def context(subject,task):
         production=data.get('production',{})
@@ -50,7 +52,11 @@ def diagnose(data,state,check_kind):
         if receipt:
             row['receipt']={k:receipt[k] for k in ['id','kind','result','topic','actor','provenance','note','pins','stale_reasons']}
         if extra:row.update(extra)
-        (blockers if required else followups).append(row)
+        if kind not in {'file_problem','operation_unresolved'} and (task in historical_tasks or (receipt and [receipt['subject'],receipt['kind']] in historical_pairs)):
+            row['replacement']=historical_tasks.get(task)
+            row['next_action']='Historical replaced review;no action on the original revision while the replacement remains current'
+            row['action_status']='historical_not_current_action';historical.append(row)
+        else:(blockers if required else followups).append(row)
 
     for subject,reason in state['file_problems'].items():
         add('file_problem',reason,'Inspect or restore the retained source; record an intentional replacement explicitly',subject=subject,
@@ -113,7 +119,7 @@ def diagnose(data,state,check_kind):
     blockers.sort(key=lambda r:priority.get(r['kind'],10))
     return {'schema':'framewright-completion-diagnosis-v1','goal':data.get('project',{}).get('goal',''),
             'status':'recorded_blockers' if blockers else 'no_recorded_blockers' if steps or production else 'scope_not_defined',
-            'blockers':blockers,'followups':followups,'counts':{'blockers':len(blockers),'followups':len(followups)},
+            'blockers':blockers,'followups':followups,'historical':historical,'counts':{'blockers':len(blockers),'followups':len(followups),'historical':len(historical)},
             'execution':'not_started','publication_authorized':False,
             'note':'Derived local/private evidence only. No recorded blockers does not establish creative approval, rights clearance or publication readiness. Unmapped observations and optional tasks are followups.'}
 
@@ -122,7 +128,7 @@ def markdown(view,limit=5):
     def cell(v):return str(v).replace('&','&amp;').replace('<','&lt;').replace('>','&gt;').replace('\n',' ')
     lines=['# What prevents completion?','',cell(view['goal']), '', 'Status: '+view['status'],
            'Recorded blockers: '+str(view['counts']['blockers'])+'; followups: '+str(view['counts']['followups']),'']
-    for label in ['blockers','followups']:
+    for label in ['blockers','followups','historical']:
         lines+=['## '+label.capitalize(),'']
         for row in view[label][:limit]:
             lines.append('- '+cell(row['kind'])+' / '+cell(row['task'] or row['subject'] or row.get('variant','project'))+': '+cell(row['reason']))

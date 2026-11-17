@@ -35,3 +35,7 @@ Owner watched both corrected revision2films and accepted them. Private receipts/
 ## Owner-reported publication -17November2026
 
 Owner supplied [YouTube](https://youtu.be/DX86Vqs-ghg). TikTok publication explicitly declined;accepted portrait asset retained. Exact selected landscape revision2 hash unchanged. Radar applied the publication status and acknowledgement returned to Framewright;all seven16November film IDs now have owner-reported YouTube publication on its receiving side. This is not independent uploaded identity,visibility or audience/revenue verification. Private receipts/publication-owner-report.json retains the association and receiving-state check.
+
+## Accepted-project continuation -17November2026
+
+[Continuation and summary correction](../experiments/praxis-continuation-2026-11-17.md) recovered the exact accepted revision2 and moved the explicitly replaced original review into history. Original tasks/receipts and all media pins remain unchanged. No new production,publication,release or Quixote work.
