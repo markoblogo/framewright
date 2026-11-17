@@ -7,6 +7,8 @@ its fixed styling is separated from editable text, numbers, picture and voice in
 The selected renderer consumes the resulting packet; adaptation/rendering remains
 explicit. Guide inspiration: p.72; [source review](../../../docs/research/ai-editing-guide.md).
 
+For creative intent, action/state and keep/replace decisions, link a [readable motion specification](motion-spec.md) to the same source package. The typed template remains the input/timing contract; its acceptance and the new variant's review stay in the existing journal.
+
 ## Freeze the design
 
 Start from [the example design](../../../examples/templates/design.json). It defines:

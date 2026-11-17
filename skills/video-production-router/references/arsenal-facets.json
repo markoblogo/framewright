@@ -66,6 +66,119 @@
     "media-review": []
   },
   "tools": {
+    "openmotion": {
+      "tasks": [
+        "video",
+        "graphics"
+      ],
+      "inputs": [
+        "composition"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "dbf6191614f5ffae110034c833e2fcab2ac4270cb59ed6b08629342bf44e6db1",
+      "applications": [
+        {
+          "id": "openmotion--light-handoff",
+          "tasks": [
+            "video",
+            "graphics"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [
+            "minimalist",
+            "motion-graphics"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "editable-scene",
+            "revision-pinned-export",
+            "motion-specification",
+            "package-inventory"
+          ],
+          "version": "commit fcbaa2b;HyperFrames0.9.7;GSAP3.15.0;Node26.11.1",
+          "scope": "Original10s authored light-handoff scene in two native layouts;local voice/font import,one copy-only revision and stale-version negative controls. Native exports only as stated in retained case;not a finished owner-approved film.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/openmotion-reuse-2026-11-17.md",
+            "docs/research/openmotion-motion-md-2026-11-17.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/experiments/openmotion-reuse-2026-11-17.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Encoded quality not inferred from source/MCP/package checks;see trial for any later scoped observations.",
+              "source": "docs/experiments/openmotion-reuse-2026-11-17.md"
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Encoded quality not inferred from source/MCP/package checks;see trial for any later scoped observations.",
+              "source": "docs/experiments/openmotion-reuse-2026-11-17.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Encoded quality not inferred from source/MCP/package checks;see trial for any later scoped observations.",
+              "source": "docs/experiments/openmotion-reuse-2026-11-17.md"
+            },
+            "artifacts": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Encoded quality not inferred from source/MCP/package checks;see trial for any later scoped observations.",
+              "source": "docs/experiments/openmotion-reuse-2026-11-17.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "One explicit copy-only revision per aspect;stale revision rejected. Source audio/timing protected;not arbitrary-edit quality proof.",
+              "source": "docs/experiments/openmotion-reuse-2026-11-17.md"
+            }
+          },
+          "technical": {
+            "status": "partial",
+            "scope": "Local build,MCP create/import/edit/reopen/stale-refusal and package inventory executed;native export attempts recorded separately."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "No creative trial acceptance requested or recorded",
+            "source": "docs/experiments/openmotion-reuse-2026-11-17.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64;Work external;existing Chrome",
+            "time": "npm ci193.42s;build and native job receipts retained;active work unmeasured",
+            "cost": "No paid provider/API call;local compute unpriced"
+          },
+          "limitations": [
+            "No reconstruction/fidelity score or acting qualification.",
+            "Independent local MCP transport,not registered current-chat native plugin.",
+            "Package relocation checks file hashes,not a new-host render."
+          ],
+          "alternatives": [
+            {
+              "tool_id": "hyperframes",
+              "comparison": "not_compared",
+              "reason": "Existing direct renderer route;no matched quality/time comparison."
+            }
+          ],
+          "search_terms": [
+            "motion md",
+            "motion specification",
+            "editable motion graphics"
+          ],
+          "granularity": "specific_bounded_trial"
+        }
+      ]
+    },
     "brag": {
       "tasks": [
         "video",
@@ -132,7 +245,91 @@
       "rights_class": "conditional",
       "licence_note_sha256": "9b5e4e3b20acac765cabff25d40efabb620f38fb93f83dcfe7cea102d48412a0",
       "applications": [
-        {"id":"kokoro--retained-scope","tasks":["narration"],"inputs":[],"styles":[],"style_basis":"not_extracted","techniques":[],"version":"retained v1.0 ONNX voice/model files","scope":"Tool-level retained ledger summary,not an individual experiment: Local FR/EN tested; other documented languages require a voice/pronunciation and timing trial. No voice cloning tested.","evidence":"tested","sources":["skills/video-production-router/references/tools.json"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"recorded_execution","scope":"Retained tool-level execution summary only;not a feature-specific or newly repeated check."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"not_extracted;see sources","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Historical scope only;unrecorded quality/timing/version remain unknown."],"alternatives":[],"search_terms":[],"granularity":"retained_scope_summary","scope_note":"Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."}
+        {"id":"kokoro--retained-scope","tasks":["narration"],"inputs":[],"styles":[],"style_basis":"not_extracted","techniques":[],"version":"retained v1.0 ONNX voice/model files","scope":"Tool-level retained ledger summary,not an individual experiment: Local FR/EN tested; other documented languages require a voice/pronunciation and timing trial. No voice cloning tested.","evidence":"tested","sources":["skills/video-production-router/references/tools.json"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"recorded_execution","scope":"Retained tool-level execution summary only;not a feature-specific or newly repeated check."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"not_extracted;see sources","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Historical scope only;unrecorded quality/timing/version remain unknown."],"alternatives":[],"search_terms":[],"granularity":"retained_scope_summary","scope_note":"Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."},
+        {
+          "id": "kokoro--mac-autonomous-export",
+          "tasks": [
+            "narration"
+          ],
+          "inputs": [],
+          "styles": [],
+          "style_basis": "not_applicable",
+          "techniques": [
+            "direct-local-wav-export"
+          ],
+          "version": "kokoro-onnx0.6.1/modelv1.0",
+          "scope": "Two English af_heart/af_bella WAV probes and full af_heart film voice saved directly on Mac. Owner accepted these probes/full take17November;no Fola equivalence,cloning or other voice/language qualification.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/mac-voice-export-2026-11-17.md",
+            "docs/productions/agent402-tabletop.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/productions/agent402-tabletop.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "not_assessed",
+              "provenance": "operator_observation",
+              "note": "Visual axis not applicable to speech;decode/export/ASR do not prove naturalness or owner listening preference.",
+              "source": "docs/experiments/mac-voice-export-2026-11-17.md"
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "operator_observation",
+              "note": "Visual axis not applicable to speech;decode/export/ASR do not prove naturalness or owner listening preference.",
+              "source": "docs/experiments/mac-voice-export-2026-11-17.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "operator_observation",
+              "note": "Visual axis not applicable to speech;decode/export/ASR do not prove naturalness or owner listening preference.",
+              "source": "docs/experiments/mac-voice-export-2026-11-17.md"
+            },
+            "artifacts": {
+              "status": "not_assessed",
+              "provenance": "operator_observation",
+              "note": "Visual axis not applicable to speech;decode/export/ASR do not prove naturalness or owner listening preference.",
+              "source": "docs/experiments/mac-voice-export-2026-11-17.md"
+            },
+            "controllability": {
+              "status": "not_assessed",
+              "provenance": "operator_observation",
+              "note": "Visual axis not applicable to speech;decode/export/ASR do not prove naturalness or owner listening preference.",
+              "source": "docs/experiments/mac-voice-export-2026-11-17.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Two24kHz PCM probes and complete seven-phrase voice;ASR content corroboration."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner17November accepted this full English af_heart voice and both short probe candidates;not all voices/languages or final corrected picture",
+            "source": "docs/productions/agent402-tabletop.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64;external Work storage",
+            "time": "Per-aspect render receipts retained;active labour unknown",
+            "cost": "No paid API/provider charge;local compute not priced"
+          },
+          "limitations": [
+            "Only the two English probes and this full af_heart take on the recorded Mac setup.",
+            "No Fola equivalence,voice cloning,multilingual or multispeaker acting qualification;future takes need listening."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Mac без планшета",
+            "автономная озвучка",
+            "local English narration"
+          ],
+          "granularity": "specific_production_application"
+        }
       ]
     },
     "sound-layer": {
@@ -154,7 +351,112 @@
       "rights_class": "conditional",
       "licence_note_sha256": "d0953705187c885f542ac3af5332eb8b72c9d70b8278c88fdba6feaccbee6933",
       "applications": [
-        {"id":"ffmpeg--retained-scope","tasks":["editing","video","audio"],"inputs":["video"],"styles":[],"style_basis":"not_extracted","techniques":[],"version":"local ffmpeg/ffprobe on PATH","scope":"Tool-level retained ledger summary,not an individual experiment: Assembly, encoded audio mixing/QA and frame extraction used; permissions and build licences differ from media rights.","evidence":"tested","sources":["skills/video-production-router/references/tools.json"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"recorded_execution","scope":"Retained tool-level execution summary only;not a feature-specific or newly repeated check."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"not_extracted;see sources","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Historical scope only;unrecorded quality/timing/version remain unknown."],"alternatives":[],"search_terms":[],"granularity":"retained_scope_summary","scope_note":"Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."}
+        {"id":"ffmpeg--retained-scope","tasks":["editing","video","audio"],"inputs":["video"],"styles":[],"style_basis":"not_extracted","techniques":[],"version":"local ffmpeg/ffprobe on PATH","scope":"Tool-level retained ledger summary,not an individual experiment: Assembly, encoded audio mixing/QA and frame extraction used; permissions and build licences differ from media rights.","evidence":"tested","sources":["skills/video-production-router/references/tools.json"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"recorded_execution","scope":"Retained tool-level execution summary only;not a feature-specific or newly repeated check."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"not_extracted;see sources","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Historical scope only;unrecorded quality/timing/version remain unknown."],"alternatives":[],"search_terms":[],"granularity":"retained_scope_summary","scope_note":"Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."},
+        {
+          "id": "ffmpeg--praxis-engineering-finish",
+          "tasks": [
+            "video",
+            "editing",
+            "audio"
+          ],
+          "inputs": [
+            "video",
+            "audio"
+          ],
+          "styles": [
+            "engineering-illustration",
+            "technical-drafting",
+            "2.5d"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "frame-export",
+            "inverse-kinematics",
+            "contact-constraints",
+            "independent-aspect-layout",
+            "encoded-audio-qa"
+          ],
+          "version": "Existing local FFmpeg/ffprobe;Chrome Canvas2D;Playwright1.56.1",
+          "scope": "FFmpeg encodes/finishes original analytic Canvas arm animation;Canvas scene is authored code,not a FFmpeg character animation feature or Praxis model inference.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/praxis-robot-engineering.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/productions/praxis-robot-engineering.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Main titles and covers checked at reduced size;small source/auxiliary rig labels are supporting copy.",
+              "source": "docs/productions/praxis-robot-engineering.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Moving articulated arm/mug across eight scenes;no static source-image substitution.",
+              "source": "docs/productions/praxis-robot-engineering.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Absolute-time original geometry;five cold/warm frame hashes equal in each aspect.",
+              "source": "docs/productions/praxis-robot-engineering.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "First unreachable link geometry corrected;owner then caught table/text overlap and edge support missed by the first visual check. Revision2 removes legs,separates captions and verifies whole tray support. Owner accepted both corrected films17November;not exhaustive artifact qualification.",
+              "source": "docs/productions/praxis-robot-engineering.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "One timing source and exact grip relation;separate portrait layout. No generative drift or real physics claim.",
+              "source": "docs/productions/praxis-robot-engineering.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Full encode/decode,exact aspect/timing,analytic contact/link lengths,direct/reseek equality;not robot-policy/model evaluation."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner accepted both complete revision2 films17November;separate cover-only/isolated voice evaluation not stated"
+          },
+          "resources": {
+            "hardware": "Owner Mac;media/runtime/scratch external",
+            "formats": "1920x1080 and1080x1920,24fps,65.25s",
+            "time": "Component receipts retained;active labour unmeasured",
+            "cost": "No paid calls;local compute unpriced"
+          },
+          "limitations": [
+            "Original explanatory geometry,not detailed character acting or real hardware",
+            "Global freeze detector is not a subject-motion judgement",
+            "Subtitle intra-take timings interpolated,not word-forced alignment"
+          ],
+          "alternatives": [
+            {
+              "tool_id": "blender",
+              "comparison": "not_compared",
+              "reason": "Possible true3D route;no ranked comparison executed."
+            }
+          ],
+          "search_terms": [
+            "инженерный стенд",
+            "захват чашки",
+            "Praxis",
+            "robot arm",
+            "engineering illustration"
+          ],
+          "granularity": "specific_production_application"
+        }
       ]
     },
     "suno": {
@@ -2095,6 +2397,234 @@
       "licence_note_sha256": "cd6eb9ea73732d2441b3516591ce7a0014773af68e810df2b094ad22e320c265",
       "applications": [
         {"id":"chatgpt-native-gif--peter-comparison","tasks":["video"],"inputs":["image"],"styles":["2d-cartoon"],"style_basis":"executed_case","techniques":["native-gif-request"],"version":"not_exposed","scope":"Native GIF request/provider route refused;no animated GIF output obtained. Static mill-face artwork was separately accepted,not GIF motion.","evidence":"failed","sources":["docs/experiments/peter-acting-comparison-2026-11-16.md"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment"},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment"},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment"},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment"},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment"}},"technical":{"status":"failed","scope":"Provider request refused;no motion output"},"owner_evaluation":{"status":"not_recorded","scope":"No GIF output available for owner review.","source":"docs/experiments/peter-acting-comparison-2026-11-16.md"},"resources":{"hardware":"Cloud provider through authorised UI/connector;local aspect finishing","formats":"no animated GIF output","timing":"not_recorded","cost":"no successful generation cost recorded"},"limitations":["Native GIF request/provider route refused;no animated GIF output obtained. Static mill-face artwork was separately accepted,not GIF motion.","No visual A/B winner;GIF branch produced no output. Existing cast/voice/mill artwork acceptance remains separate."],"alternatives":[],"search_terms":["Питер полёт испуг персонаж Кихот","Peter flying braking recoil character"],"granularity":"specific_production_application"}
+      ]
+    },
+    "matter-js": {
+      "tasks": [
+        "video",
+        "graphics"
+      ],
+      "inputs": [
+        "composition"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "3aee5f1f40511b246ee2f761332e247aef54164b97a1cb1a18ac0a7d563d91e5",
+      "applications": [
+        {
+          "id": "matter-js--tabletop-contact",
+          "tasks": [
+            "video",
+            "graphics"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [
+            "tactile-tabletop",
+            "mechanical-model"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "fixed-step-physics",
+            "rigid-body-contact",
+            "native-aspect-layout"
+          ],
+          "version": "0.20.0",
+          "scope": "Three circular tokens collide with authored rails/stops;fixed-step state export consumed by Pillow/FFmpeg films. Not generative acting or native video rendering.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/matter-tabletop-2026-11-17.md",
+            "docs/productions/agent402-tabletop.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/productions/agent402-tabletop.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Native/reduced text and covers inspected separately in the film.",
+              "source": "docs/experiments/matter-tabletop-2026-11-17.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Actual circle/rail trajectories;active-work/feed and macro animation separately authored.",
+              "source": "docs/experiments/matter-tabletop-2026-11-17.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Original deterministic geometry,not generative identity.",
+              "source": "docs/experiments/matter-tabletop-2026-11-17.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Scale/radius/stop alignment corrected in self-review;not exhaustive contact proof.",
+              "source": "docs/experiments/matter-tabletop-2026-11-17.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Fixed120Hz step and repeated identical serialized states for selected inputs.",
+              "source": "docs/experiments/matter-tabletop-2026-11-17.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Repeated identical288-sample trajectories;final exports recorded separately."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner17November accepted both final revision2 films after player/canonical-FW corrections;not blanket physics qualification",
+            "source": "docs/productions/agent402-tabletop.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64;external Work storage",
+            "time": "Per-aspect render receipts retained;active labour unknown",
+            "cost": "No paid API/provider charge;local compute not priced"
+          },
+          "limitations": [
+            "Only fixed circles/rails on this host.",
+            "No motion/quality approval is inherited from the renderer."
+          ],
+          "alternatives": [
+            {
+              "tool_id": "blender",
+              "comparison": "not_compared",
+              "reason": "Different3D rigid-body route;no ranked claim."
+            }
+          ],
+          "search_terms": [
+            "настольная механическая головоломка",
+            "контакт жетонов",
+            "tabletop contact physics"
+          ],
+          "granularity": "specific_production_application"
+        }
+      ]
+    },
+    "stick-scene": {
+      "tasks": [
+        "video",
+        "graphics"
+      ],
+      "inputs": [
+        "composition"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "5a13fcda275ad65e7df4c2502fdd06a95b0d0374edbf934c450c4e88f4aadd58",
+      "applications": [
+        {
+          "id": "stick-scene--clear-the-table",
+          "tasks": [
+            "video",
+            "graphics"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [
+            "stick-figure",
+            "hand-drawn",
+            "minimalist"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "articulated-2d-rig",
+            "inverse-kinematics",
+            "planted-walk",
+            "frame-export",
+            "independent-aspect-camera"
+          ],
+          "version": "commit ca84311177a020c2dff7dfd9cb2e7b786288c1ab",
+          "scope": "Articulated stick figures,pose mixing,walk/contact props. Native motion check and contact sheets used. Separate local adapter exports MP4;not upstream native full-video or complex-character acting qualification.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/stick-scene-2026-11-17.md",
+            "docs/productions/clear-the-table-stick-scene.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/productions/clear-the-table-stick-scene.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Native/reduced cover and encoded frame samples;labels outside portrait view omitted rather than cut in half.",
+              "source": "docs/experiments/stick-scene-2026-11-17.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Actual articulated walking,push,hand/head gestures;first20findings corrected;exact final source reports clean.",
+              "source": "docs/experiments/stick-scene-2026-11-17.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Deterministic unchanged native rig,not generated raster identities.",
+              "source": "docs/experiments/stick-scene-2026-11-17.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "First human-arm/figure-overlap defects corrected;not a zero-artifact guarantee.",
+              "source": "docs/experiments/stick-scene-2026-11-17.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Explicit poses,timeline,frame sampling and two camera layouts;no prompt-only automation proof.",
+              "source": "docs/experiments/stick-scene-2026-11-17.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Official60fps motion check and final native contact sheet;dual24.5s24fps full decodes. Not automatic creative approval."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner17November accepted both complete films;separate cover-only/model-wide approval not stated",
+            "source": "docs/productions/clear-the-table-stick-scene.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64;external Work;existing vendor Chrome",
+            "time": "Per-aspect component export receipts;active labour/setup unmeasured",
+            "cost": "No paid API/provider call;local compute unpriced"
+          },
+          "limitations": [
+            "Native output is an interactive Canvas scene;video/audio/package adapter is separate.",
+            "Only this original stick-figure/table scenario,not detailed cast identity or Quixote acting.",
+            "Native diagnostics are heuristics;full encoded/user review remains necessary."
+          ],
+          "alternatives": [
+            {
+              "tool_id": "blender",
+              "comparison": "not_compared",
+              "reason": "Different authored character/3D route;no ranked quality comparison."
+            }
+          ],
+          "search_terms": [
+            "стикмен",
+            "стикмены",
+            "рисованная комедия",
+            "stick figure comedy",
+            "animated explanation"
+          ],
+          "granularity": "specific_production_application"
+        }
       ]
     }
   },

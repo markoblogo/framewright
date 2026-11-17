@@ -3548,6 +3548,54 @@
         "docs/experiments/peter-acting-comparison-2026-11-16.md"
       ],
       "followup_reviews": []
+    },
+    {
+      "id": "matter-js",
+      "name": "Matter.js 2D physics",
+      "url": "https://brm.io/matter-js/",
+      "reviewed": "2026-11-17",
+      "review_basis": "executed bounded local circle/rail trajectory trial used in a full film",
+      "upstream_revision": "0.20.0",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Fixed-step circle/rail/gate contact;repeated trajectory hashes identical. Pillow/FFmpeg render states. Not a native video exporter,character rig or planner provider.",
+      "licence_note": "Matter.js MIT;original authored objects. Host fonts,Python/Pillow/FFmpeg and other assets retain independent terms.",
+      "next_trial_or_retest_condition": "New body shapes,timesteps,host or interactions require new checks;owner accepted the Agent402 revision2 films17November,not solver-wide quality.",
+      "evidence": [
+        "docs/experiments/matter-tabletop-2026-11-17.md"
+      ],
+      "followup_reviews": []
+    },
+    {
+      "id": "stick-scene",
+      "name": "Stick Scene Canvas rig",
+      "url": "https://github.com/nilbuild/stick-scene",
+      "reviewed": "2026-11-17",
+      "review_basis": "Pinned source review and executed native frame/motion checks plus actual dual-format film export",
+      "upstream_revision": "ca84311177a020c2dff7dfd9cb2e7b786288c1ab",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Articulated stick figures,pose mixing,walk/contact props. Native motion check and contact sheets used. Separate local adapter exports MP4;not upstream native full-video or complex-character acting qualification.",
+      "licence_note": "Stick Scene MIT Copyright2026KamranAhmed;runtime/source notice retained externally. Host fonts,Chrome,Playwright,FFmpeg and narration assets retain independent terms.",
+      "next_trial_or_retest_condition": "New acting,props/aspect/camera or host require checks;owner accepted both Clear the Table films17November,not blanket acting quality.",
+      "evidence": [
+        "docs/experiments/stick-scene-2026-11-17.md"
+      ],
+      "followup_reviews": []
+    },
+    {
+      "id": "openmotion",
+      "name": "OpenMotion",
+      "url": "https://github.com/nexu-io/openmotion",
+      "reviewed": "2026-11-17",
+      "review_basis": "Pinned source review plus local native MCP authoring/import/revision and bounded export attempt;see case for terminal outcome",
+      "upstream_revision": "fcbaa2b0296167b0f14f47aa6c414f5bdd41316f",
+      "disposition": "supported_scoped",
+      "scope_and_findings": "Motion.md is creative context,not a renderer. External companion Studio;native local MCP imports,version-pinned editing and stale-version refusal. Motion Package check/pack/recheck verifies inventory and hashes. Native export qualification remains bounded by recorded terminal results;no global plugin registration or new planner provider.",
+      "licence_note": "Apache-2.0 upstream source;bundled runtime and media/fonts retain their own terms;local trial is not distribution clearance.",
+      "next_trial_or_retest_condition": "Use only for a selected editable motion-graphics need;inspect retained export failure/changed runtime before retry. No automatic Quixote resumption.",
+      "evidence": [
+        "docs/research/openmotion-motion-md-2026-11-17.md",
+        "docs/experiments/openmotion-reuse-2026-11-17.md"
+      ]
     }
   ]
 }

@@ -79,6 +79,8 @@ variants; a correct landscape view does not establish a usable portrait crop. In
 are accepted techniques. Do not force a second native composition if the selected
 crop works, or insist on showing the whole body in an intentional close-up.
 
+**Player check:** compare the actual encoded dimensions with the HTML video box in both aspects. A portrait MP4 inside a width-forced,height-capped landscape box can show misleading side fields. Remove unintended player/section framing before judging the export. Owner evidence17November:[Agent402](productions/agent402-tabletop.md).
+
 ## VT-VOICE — natural performance, scoped voice choices
 
 **Rule:** follow [voice selection](voice-selection.md): natural expressive narration
@@ -104,6 +106,8 @@ no additional reason or claim of better click-through was supplied.
 film acceptance alone is not a separate cover decision.
 **Limit:** an explicitly selected different cover treatment or text-free image
 supersedes this default; branding placement is governed by the selected brief.
+
+**Brand check:** if an FW ident is selected,use the [accepted silver-ribbon masters](productions/fw-identity.md),with matching aspect and verified source. Do not substitute a freshly typed FW card. Owner explicitly required the canonical ident17November;this is not a requirement to brand every film.
 
 ## VT-MIX — soft continuous music under tour commentary
 

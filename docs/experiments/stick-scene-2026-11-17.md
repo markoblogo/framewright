@@ -1,0 +1,20 @@
+# Stick Scene - scoped rig and film-export trial
+
+17November2026. Owner supplied [nilbuild/stick-scene](https://github.com/nilbuild/stick-scene),asked for study and a next fitting film,with adaptation if needed. Pinned source commit ca84311177a020c2dff7dfd9cb2e7b786288c1ab,MIT Copyright2026KamranAhmed. Source was reviewed before execution;SKILL.md and relevant craft/runtime/native-check scripts read. No global skill install,Claude account,paid call,new model or browser download.
+
+## What it is and what was adapted
+
+The upstream skill guides agent-written interactive Canvas scenes;its runtime provides articulated figures,IK arms/legs,walk segments,pose mixing,props and an HTML widget. It is usable here without launching Claude Code. Native scripts create contact sheets and check60fps motion;they do not export a complete narrated MP4 or certify creative quality.
+
+The [Clear the Table](../productions/clear-the-table-stick-scene.md) short uses the actual unmodified runtime plus an original scene,not a new implementation merely labelled Stick Scene. A small separate adapter renders explicit Canvas frames into FFmpeg,with independent native16:9/9:16 camera layouts. Local Kokoro dialogue,original music/effects and the accepted FW ending finish the film. The finite story uses0–23.5s of a28s widget definition;the final diagnostic reset is outside the film,not a hidden story beat or a claim that the published film seamlessly loops.
+
+## Actual checks and corrections
+
+- Official frames.mjs executed on the original scene;final contact sheet also includes the final diagnostic reset. Images inspected;no page errors reported.
+- Official motion.mjs initially found20issues:human walking-arm jumps/backward elbow poses and figure overlap/head occlusion. Walking-arm application and the short human movement were changed;robot/table contact action preserved. Exact final source was rerun and reported **motion is clean**. The runtime was not patched to suppress findings. Scripts are heuristics,not universal anatomical,physical or audience validation.
+- Table and mug are authored to meet:caster bottoms share the ground,mug base shares desktop height,and robot hand targets the table edge. Native/reduced/encoded frame inspection remains a separate operator observation;no full physical simulation or learned acting claimed.
+- Both24.5s588frame24fps H264/AAC films fully decoded;native1920x1080 and1080x1920. White/ink/orange/butter style,readable cover samples and separate portrait camera. Source/claim/context are fictional,not a real robot demo or AI reasoning benchmark.
+
+External Work contains the pinned source,unmodified runtime copy/MITnotice,original JS/HTML/export scripts,dependency lock,first failed native log,final native logs,source hashes,samples and final package hashes. Playwright1.56.1 uses an isolated temporary profile and the existing official Chrome executable;headless CLI rendering does not access the owner's logged-in profile. macOS process restrictions blocked the first default launch;the same bounded tool checks ran through approved elevated execution. No heavy internal scratch,new GPU/model or Chromium download. Fonts use available host fallbacks;the separate upstream contact-sheet template can load its web font,whereas our direct Canvas export has only local scripts/assets.
+
+Per-aspect export times are component receipts;active labour/setup and cold-session reproduction remain unmeasured. Owner17November subsequently accepted both complete films;separate cover-only and isolated voice assessments not stated. This does not turn a native diagnostic into a universal quality certificate. Scope:original simple stick figures,table/hand interaction and native video packaging on this Mac. Not complex Quixote character fidelity,arbitrary dialogue acting,all upstream scenes or automatic prompt-to-publication qualification. Alternatives are the existing direct2D/Blender routes,not compared here. No planner-provider admission or extra autonomous-programme case follows automatically.

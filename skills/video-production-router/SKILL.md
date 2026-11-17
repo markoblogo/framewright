@@ -62,7 +62,9 @@ For repeated company/deck styling, read [brand profiles](references/branding.md)
 For an authorised editorial export or returned cut, read [OTIO handoff/return](references/otio-export.md): compare pinned sources/ranges, then explicitly stage a new candidate with pending checks; never inherit approval or replace the final film automatically.
 For prepared movie review pages, use the [standard seekable localhost preview](references/preview.md); test native forward/backward timeline movement before handoff.
 For a concrete correction, read [revisions](references/revisions.md). For an accepted
-film becoming a series, read [template contracts](references/templates.md). Both
+film becoming a series, read [template contracts](references/templates.md). For reusable
+or stateful motion, use [MOTION.md](references/motion-spec.md) beside the same brief
+and recipe; it links existing design/timing/evidence and never owns journal status. Both
 reuse the journal; rendering and per-variant approval remain separate.
 
 1. Use the brief's product, available assets, audience/language, format, narration,

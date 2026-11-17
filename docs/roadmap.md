@@ -1,6 +1,6 @@
 # Framewright roadmap
 
-Updated 14 November 2026. Shipped baseline: **0.9.0**, an experimental prerelease;
+Updated 17 November 2026. Shipped baseline: **0.9.0**, an experimental prerelease;
 [publication status](release-notes-0.9.0.md#publication-status) records the verified outcome.
 [Current work and protected waits](next-cycle.md) govern execution; the
 [archived operational history](history/next-cycle-through-2026-11-14.md) preserves superseded status text.
@@ -50,6 +50,31 @@ ordinary compatibility/package/check/review steps under a separate owner release
 M6 / REL-D transfer stays partial and parallel, triggered by a real handoff need.
 New tools remain welcome when they solve a selected production problem; neither
 catalogue size nor additional app installations are a release target.
+
+## Release evidence checkpoint —17November2026
+
+The next release goal remains **less repeated explanation on continuation/correction**.
+[Current trials and corrections](experiments/autonomous-production-pilot.md) now include
+three accepted AUTOPROD cases,each after one correction round. New tools/styles are
+useful production evidence;they do not establish zero intervention or measured savings.
+[OpenMotion adoption](research/openmotion-motion-md-2026-11-17.md) adds a readable
+source contract,an exact-version copy edit/conflict control and a bounded native-runtime
+trial. The test edit is not the real-pause/owner-decision gate above.
+
+Progress is substantial in reusable proposals,retained taste,source/acceptance separation
+and case-indexed methods. Remaining release evidence is one selected real continuation
+that obtains the correct current summary,uses relevant retained decisions and records
+any actual bounded correction/owner decision plus effort unknowns. Do not manufacture
+a defect or resume paused Quixote to satisfy a checklist. Current private Praxis journal
+also retains an older blocked review task alongside the accepted selected revision2;
+verify the actual brief on continuation rather than treating that old wait as current
+owner authority. Resolving how superseded tasks appear is a functional state-summary
+question,not a new editor or portability prerequisite.
+
+**Recommendation at this checkpoint: merge maintenance/adoption without release.**
+No release tag/version/date is selected. Operator portability stays parallel and does
+not block this increment. A later owner-selected continuation and a small state-summary
+fix if needed are more relevant than another catalogue expansion.
 
 ## Owner-selected warmup —16November2026
 

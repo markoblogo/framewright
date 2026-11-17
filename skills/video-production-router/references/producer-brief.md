@@ -19,6 +19,8 @@ component capabilities, evidence references, terms and unresolved conditions.
 Markdown is the human review version. Output goes to stdout; keep private proposals
 outside Git. Neither source files nor the profile/project are updated.
 
+For reusable or stateful motion, link a [MOTION.md specification](motion-spec.md) from this same private proposal. It describes intent, action/state, keep/replace decisions and review windows; it does not duplicate project status or become a new executable timeline.
+
 ## Input and evidence boundaries
 
 Use the existing intake brief (`idea`, duration, format, language, source rights,
