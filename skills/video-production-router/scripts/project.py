@@ -17,6 +17,7 @@ CONTENT = runpy.run_path(str(BASE / 'content.py'))
 COSTS = runpy.run_path(str(BASE / 'costs.py'))
 EXECUTOR_STATE = runpy.run_path(str(BASE / 'executor_state.py'))
 ADMISSION = runpy.run_path(str(BASE / 'admission.py'))
+REVIEW_HISTORY = runpy.run_path(str(BASE / 'review_history.py'))
 MEDIA = runpy.run_path(str(BASE / "media_review.py"))
 
 
@@ -41,7 +42,7 @@ def file_record(path, root):
 
 
 def planning_sources():
-    paths = [BASE / name for name in ['plan.py', 'music.py', 'terms.py', 'workflow.py', 'project.py', 'journal.py', 'packet.py', 'production.py', 'media_review.py', 'capture_check.py', 'project_summary.py', 'content.py', 'engine_capture.py', 'engine_capture.cjs', 'editing.py', 'revisions.py', 'templates.py', 'environment.py', 'trials.py', 'passports.py', 'shots.py', 'blender_shot_worker.py']]
+    paths = [BASE / name for name in ['plan.py', 'music.py', 'terms.py', 'workflow.py', 'project.py', 'journal.py', 'packet.py', 'production.py', 'media_review.py', 'capture_check.py', 'project_summary.py', 'review_history.py', 'content.py', 'engine_capture.py', 'engine_capture.cjs', 'editing.py', 'revisions.py', 'templates.py', 'environment.py', 'trials.py', 'passports.py', 'shots.py', 'blender_shot_worker.py']]
     paths.append(BASE.parent / 'references/tools.json')
     paths.extend(BASE / name for name in ['project_blockers.py','final_selection.py','resources.py','costs.py','executor.py','executor_worker.py','executor_shot.py','executor_state.py','decision_checks.py','admission.py'])
     return {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
@@ -252,8 +253,10 @@ def check_kind(step):
 def evidence_blockers(data, problems):
     view=JOURNAL['project'](data,problems)
     latest={(r['subject'],r['kind'],r['topic']):r['id'] for r in data.get('journal',[])}
+    historical=REVIEW_HISTORY['candidates'](data,{'observations':view,'file_problems':problems},check_kind)
     blockers={}
     for step in data['steps']:
+        if step['id'] in historical:continue
         kind=check_kind(step)
         subjects={'output:'+f for f in step['required_outputs']}
         if step['id']=='owner-review' and 'final-video' in data['artifacts']:
@@ -276,7 +279,10 @@ def mark(data, root, identity, state, evidence):
     if state != 'blocked' and step['unmet']:
         raise ValueError('Frozen plan has unmet requirements; create a revised project, do not override')
     if state == 'done':
-        if evidence_blockers(data,file_problems(data,root)).get(identity):
+        problems=file_problems(data,root)
+        if identity in REVIEW_HISTORY['candidates'](data,{'observations':JOURNAL['project'](data,problems),'file_problems':problems},check_kind):
+            raise ValueError('Historical replacement does not complete the original review;reopen it explicitly and review its own revision')
+        if evidence_blockers(data,problems).get(identity):
             raise ValueError('Current rejected, failed, pending or stale evidence blocks this check; record the actual resolution first')
         if file_problems(data, root):
             raise ValueError('Retained evidence changed/missing; inspect status before continuing')
@@ -295,21 +301,24 @@ def summary(data, root):
     steps = {s['id']:s for s in data['steps']}
     problems = file_problems(data, root)
     gates=evidence_blockers(data,problems)
+    observations=JOURNAL['project'](data,problems)
+    historical=REVIEW_HISTORY['candidates'](data,{'observations':observations,'file_problems':problems},check_kind)
     unresolved=[r for r in EXECUTOR_STATE['attempts'](data) if r['state']=='unresolved']
     recovery_steps={r['step'] for r in unresolved}
-    ready = [s['id'] for s in data['steps'] if s['state']=='planned' and s['id'] not in gates and s['id'] not in recovery_steps and
+    ready = [s['id'] for s in data['steps'] if s['state']=='planned' and s['id'] not in gates and s['id'] not in recovery_steps and s['id'] not in historical and
              all(steps[d]['state']=='done' for d in s['depends_on'])] if not problems else []
     return {'project': data.get('project', {'goal': '', 'context': ''}), 'schema_version': data['schema_version'],
             'execution': 'not_started_by_project_cli', 'ready': ready,
             'costs': COSTS['report'](data) if 'costs' in data else None,
             'unresolved_attempts': [{'attempt':r['attempt'],'step':r['step'],'request_sha256':r['request_sha256']} for r in unresolved],
             'next_actions': [{'id':i,'label':steps[i]['label']} for i in ready],
-            'waiting': {s['id']:{'party':s['waiting_for'],'reason':s['evidence']} for s in data['steps'] if s['state']=='blocked' and s.get('waiting_for')},
-            'observations': JOURNAL['project'](data,problems), 'evidence_blockers':gates,
+            'waiting': {s['id']:{'party':s['waiting_for'],'reason':s['evidence']} for s in data['steps'] if s['state']=='blocked' and s.get('waiting_for') and s['id'] not in historical},
+            'observations': observations, 'evidence_blockers':gates,
+            'historical_reviews':historical, 'historical_review_pairs':[list(pair) for pair in sorted(REVIEW_HISTORY['historical_pairs'](data,historical,check_kind))],
             'production': PRODUCTION['report'](data,problems,JOURNAL['project'](data,problems),root),
             'file_problems': problems, 'planning_sources_changed': data['planning_sources'] != planning_sources(),
             'recorded_done': [s['id'] for s in data['steps'] if s['state']=='done'],
-            'blocked': {s['id']:s['unmet'] or s['evidence'] for s in data['steps'] if s['state']=='blocked'},
+            'blocked': {s['id']:s['unmet'] or s['evidence'] for s in data['steps'] if s['state']=='blocked' and s['id'] not in historical},
             'technical_handoff_recorded': steps.get('delivery',{}).get('state')=='done' and not problems,
             'outputs': {k:v['file'] is not None for k,v in data['artifacts'].items()},
             'note': 'Done means operator-recorded, not independently verified. Frozen plan is retained; no automatic replan.'}
@@ -328,6 +337,7 @@ def main():
     create = commands.add_parser('create');create.add_argument('project',type=Path);create.add_argument('--goal',required=True);create.add_argument('--note',required=True)
     asset = commands.add_parser('asset');asset.add_argument('project',type=Path);asset.add_argument('identity');asset.add_argument('--kind',required=True)
     task = commands.add_parser('task');task.add_argument('project',type=Path);task.add_argument('identity');task.add_argument('--label',required=True);task.add_argument('--after',action='append',default=[]);task.add_argument('--requires',action='append',default=[]);task.add_argument('--waiting-for');task.add_argument('--note',default='');task.add_argument('--check-kind',choices=['technical','listening','creative','provider','publication'])
+    supersede = commands.add_parser('supersede-review');supersede.add_argument('project',type=Path);supersede.add_argument('step');supersede.add_argument('--with-task',required=True);supersede.add_argument('--actor',required=True);supersede.add_argument('--note',required=True)
     observe = commands.add_parser('observe');observe.add_argument('project',type=Path);observe.add_argument('subject');observe.add_argument('--kind',choices=JOURNAL['RESULTS'],required=True);observe.add_argument('--result',required=True);observe.add_argument('--actor',required=True);observe.add_argument('--provenance',choices=sorted(JOURNAL['PROVENANCE']),required=True);observe.add_argument('--note',required=True);observe.add_argument('--topic');observe.add_argument('--depends-on',action='append',default=[]);observe.add_argument('--url');observe.add_argument('--visibility',choices=['public','unlisted','private','unknown']);observe.add_argument('--observed-at')
     review = commands.add_parser('review');review.add_argument('project',type=Path);review.add_argument('subject');review.add_argument('--report',required=True,help='Retained input:/output: report ID');review.add_argument('--actor',required=True)
     log = commands.add_parser('journal');log.add_argument('project',type=Path);log.add_argument('--json',action='store_true')
@@ -398,11 +408,15 @@ def main():
                 print(json.dumps(result,indent=2));return
             print('Production checkpoint — manual records; no work executed by this command')
             print('Goal:',result['project']['goal'] or 'not recorded')
+            selected=runpy.run_path(str(BASE/'final_selection.py'))['view'](data,result)
+            if selected:print('Selected final:',selected['subject'],'/',selected['state'],'SHA256:',selected['sha256'])
             print('Waiting:',json.dumps(result['waiting']))
             for row in result['observations']['effective']:
-                print('Observation:',row['id'],row['subject'],row['kind'],row['result'],'—',row['note'])
+                label='Historical review observation:' if [row['subject'],row['kind']] in result['historical_review_pairs'] else 'Version observation:'
+                print(label,row['id'],row['subject'],row['kind'],row['result'],'—',row['note'])
             if result['observations']['stale']:print('Stale observations:',len(result['observations']['stale']))
-            print('Recorded done:',len(result['recorded_done']), '/', len(data['steps']))
+            print('Recorded done:',len(result['recorded_done']), '/', len(data['steps'])-len(result['historical_reviews']),'current tasks')
+            print('Historical replaced reviews:',', '.join(k+' -> '+v['replacement_task'] for k,v in result['historical_reviews'].items()) or 'none')
             print('Ready to continue:',', '.join(result['ready'][:5]) or 'none')
             if len(result['ready'])>5:print('Additional ready steps:',len(result['ready'])-5)
             print('File problems:',json.dumps(result['file_problems']))
@@ -430,7 +444,7 @@ def main():
                 data = initial(json.loads(args.brief.read_text()))
             else:
                 data = load(path)
-                if args.command in {'asset','task','observe','compose','review','hypothesis','outcome'} and data['schema_version']!=2:
+                if args.command in {'asset','task','observe','compose','review','supersede-review','hypothesis','outcome'} and data['schema_version']!=2:
                     raise ValueError('Run migrate explicitly before using project memory')
                 if args.command=='hypothesis':
                     changed=CONTENT['hypothesis'](data,json.loads(args.spec.read_text()),args.actor,args.provenance,JOURNAL,file_problems(data,path.parent))
@@ -480,6 +494,8 @@ def main():
                         'evidence':args.note,'waiting_for':args.waiting_for,'check_kind':args.check_kind,'optional':False,
                         'attestation':'operator_recorded_not_independently_verified'})
                     event(data,'add_task',step=args.identity)
+                elif args.command=='supersede-review':
+                    REVIEW_HISTORY['supersede'](data,summary(data,path.parent),args.step,args.with_task,args.actor,args.note,globals())
                 elif args.command=='review':
                     if args.report==args.subject or not args.actor.strip():
                         raise ValueError('Use distinct retained media/report subjects and an explicit actor')

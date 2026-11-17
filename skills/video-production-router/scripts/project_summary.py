@@ -93,6 +93,8 @@ def working_brief(data, status, files, limit=3):
     unretained=[f['subject'] for f in files['files'] if f['state']=='declared']
     rechecks=[{'receipt':r['id'],'subject':r['subject'],'kind':r['kind'],'reason':'stale_revision'} for r in status['observations']['stale'] if r['id'] in latest]
     rechecks.extend({'receipt':r['id'],'subject':r['subject'],'kind':r['kind'],'reason':r['result']} for r in status['observations']['effective'] if r['kind'] in {'technical','listening','creative','provider'} and r['result'] in {'pending','fail','rejected'})
+    historical_checks=[r for r in rechecks if [r['subject'],r['kind']] in status.get('historical_review_pairs',[])]
+    rechecks=[r for r in rechecks if r not in historical_checks]
     waiting=[{'task':k,**v} for k,v in status['waiting'].items()]
     blockers=[{'task':k,'reason':v} for k,v in status['blocked'].items() if k not in status['waiting']]
     blockers.extend({'task':r['step'],'reason':'Unresolved executor attempt '+r['attempt']} for r in status.get('unresolved_attempts',[]))
@@ -114,7 +116,7 @@ def working_brief(data, status, files, limit=3):
     if selected and not changes and not status.get('unresolved_attempts'):
         if selected['state']=='needs_review':kind,label='evidence_review','Review the selected final revision and its current checks before reuse'
         elif not status['next_actions']:kind,label='selected_delivery_recorded','Selected final is retained with recorded checks; other project tasks remain explicit and are not instructions to rerender old versions. Agree the next task.'
-    sections={'accepted':accepted,'file_changes':changes,'recent_revisions':recent,'not_retained':unretained,'needs_recheck':rechecks,'waiting':waiting,'blockers':blockers,'ready_tasks':status['next_actions']}
+    sections={'accepted':accepted,'file_changes':changes,'recent_revisions':recent,'not_retained':unretained,'needs_recheck':rechecks,'waiting':waiting,'blockers':blockers,'ready_tasks':status['next_actions'],'historical_reviews':list(status.get('historical_reviews',{}).values()),'historical_checks':historical_checks}
     return {'schema_version':1,'goal':status['project']['goal'] or 'not recorded','execution':'not_started',
             **{k:v[:limit] for k,v in sections.items()},'counts':{k:len(v) for k,v in sections.items()},
             'selected_delivery':selected,'planning_sources_changed':status['planning_sources_changed'],
@@ -143,7 +145,7 @@ def brief_markdown(view):
         lines+=['- '+cell(reason) for reason in selected['reasons']]
     if view.get('completion'):
         lines+=['Completion diagnosis: '+cell(view['completion']['status'])+'; '+str(view['completion']['blockers'])+' blockers. Use project.py blockers PROJECT for reasons.','']
-    for key,label in [('accepted','Accepted work'),('file_changes','Current file problems'),('recent_revisions','Most recent recorded replacements'),('not_retained','Declared, not retained'),('needs_recheck','Checks to review'),('waiting','Explicit waits'),('blockers','Task constraints (does not cover provider/use rights)'),('ready_tasks','Recorded ready tasks')]:
+    for key,label in [('accepted','Accepted work'),('file_changes','Current file problems'),('recent_revisions','Most recent recorded replacements'),('not_retained','Declared, not retained'),('needs_recheck','Checks to review'),('waiting','Explicit waits'),('blockers','Task constraints (does not cover provider/use rights)'),('ready_tasks','Recorded ready tasks'),('historical_reviews','Historical replaced reviews'),('historical_checks','Historical checks (not current waits)')]:
         rows=view[key];total=view['counts'][key]
         lines.append(label+' ('+str(total)+')'+(': showing '+str(len(rows)) if len(rows)<total else '')+':')
         if not rows:lines.append('- None recorded')
@@ -152,8 +154,9 @@ def brief_markdown(view):
             elif key=='file_changes':text=r['subject']+': '+r['state']
             elif key=='recent_revisions':text=r['subject']+' at '+r['recorded_at']
             elif key=='not_retained':text=r
-            elif key=='needs_recheck':text=r['subject']+' / '+r['kind']+': '+r['reason']
+            elif key in {'needs_recheck','historical_checks'}:text=r['subject']+' / '+r['kind']+': '+r['reason']
             elif key=='blockers':text=r['task']+': '+str(r['reason'])
+            elif key=='historical_reviews':text=r['task']+' replaced by '+r['replacement_task']+' / '+r['receipt']+': '+r['note']
             elif key=='waiting':text=r['party']+' — '+r['task']+': '+r['reason']
             else:text=r['id']+': '+r['label']
             lines.append('- '+cell(text))
