@@ -13,7 +13,9 @@ def render(data):
              'Scope: decision-relevant inventory, not an exhaustive API guarantee. Tested means',
              'the stated local experiment only. Documented needs installed-version verification;',
              'failed is a retained limitation; unknown is not a usable promise. Styles are',
-             'affordances and preferences, not renderer boundaries or comparative quality scores.', '']
+             'affordances and preferences, not renderer boundaries or comparative quality scores.', '',
+             'For manual tools and case-specific style/technique/quality observations, use the',
+             '[existing arsenal search](arsenal-search.md); this generated table covers planner profiles only.', '']
     for tool in data['tools']:
         lines += ['## ' + tool['name'], '', '**Role:** ' + tool['role'] + '. **Inputs:** ' + ', '.join(tool['inputs']) + '.', '',
                   '**Style directions:** ' + ', '.join(tool['styles']) + '.', tool['style_note'], '',

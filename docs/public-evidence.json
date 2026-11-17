@@ -1,6 +1,6 @@
 {
   "schema": "framewright-public-evidence-v1",
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "scope": "Conservative documented cases, not an asserted lifetime total. Original records remain the source of truth.",
   "definitions": {
     "films": "One completed authored story/promo/tutorial/ambient master per case. Aspect, language and revision variants count once. A finished export need not be publicly published or creatively accepted.",
@@ -489,6 +489,24 @@
       "source": "docs/productions/coinbase-agent-controls.md",
       "basis": "owner_reported_publication",
       "index_note": "One60s English explainer,two owner-accepted native aspects. Owner supplied YouTube DmsXZ73w-Eg and TikTok ZSpssNpud URLs16November2026;linked source case retains URLs/prepared hashes. Independent visibility,uploaded identity and metrics unverified. No live financial test or extra film/trial count."
+    },
+    {
+      "id": "vet402-delivery",
+      "source": "docs/productions/vet402-delivery.md",
+      "basis": "owner_reported_publication",
+      "index_note": "One52s paper/ink English story,two native aspects. Owner supplied YouTube xaGggJR8RrM and TikTok ZSpGJ9Fv4 on17November2026;prepared hashes retained. Independent visibility,uploaded identity,metrics and separate explicit creative acceptance unverified. One film;GiveMotion remains one bounded trial."
+    },
+    {
+      "id": "pan2-ascii",
+      "source": "docs/productions/pan2-ascii.md",
+      "basis": "owner_accepted_published",
+      "index_note": "One approximately49s original ASCII/comic PAN2 explainer,two accepted native aspects and covers. Owner supplied YouTube sVa-etX-YxQ and TikTok ZSpGjho2F on17November2026. Prepared hashes retained;independent visibility,uploaded identity and metrics unchecked. No PAN2 inference/physics test or extra trial count."
+    },
+    {
+      "id": "nasa-eyes-collage",
+      "source": "docs/productions/nasa-eyes-collage.md",
+      "basis": "owner_accepted_published",
+      "index_note": "One50s NASA Eyes discovery story,two native films/sound/covers accepted and both publication URLs supplied by owner17November2026:YouTube h0ZTfFPKbcs,TikTok ZSpGfJyS5. Prepared hashes unchanged;independent availability,uploaded identity and metrics unchecked. Original monochrome collage with credited colour NASA tutorial excerpts."
     }
   ],
   "trials": [
@@ -738,6 +756,24 @@
       "source": "docs/experiments/peter-acting-comparison-2026-11-16.md",
       "basis": "executed_bounded_workflow_trial",
       "index_note": "Partial same-action comparison:nativeGIF refused/no media;one8s720-square PlayMCP Fast video for1600credits,two aspect exports. Owner returned both for visible flat padding,identity drift and warped anatomy. New mill-face still accepted/reaffirmed. No animation qualification or visual A/B winner. Follow-up same trial:new provider request refused/refunded;3.2s local articulated2D rig/two full-sky compositions,all96frames inspected but owner rejected twisted hands and a wart-like chin patch;operator perceptual QA insufficient. No additional trial/film."
+    },
+    {
+      "id": "givemotion-vet402-2026-11-16",
+      "source": "docs/experiments/givemotion-vet402-2026-11-16.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "GiveMotion0.1.6 local HTML/SVG motion and MP4/still export:four-second proof and native52s dual aspects;SVG transform/overlap corrections retained. No character-acting qualification,paid API,owner film acceptance or additional film count. Two aspects/retries are one trial."
+    },
+    {
+      "id": "manim-community-ascii-2026-11-17",
+      "source": "docs/experiments/manim-community-ascii-2026-11-17.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "ManimCommunity0.22.1/Cairo local ASCII/text,glyph transforms,trajectories,comic panels and MP4/PNG export. Dual3.5s proof and approximately49s native aspects;selected-scene readability/contact fixes. No PAN2 inference,acting qualification ;owner accepted both films/covers17November. One trial;one accepted story recorded separately."
+    },
+    {
+      "id": "genmotion-collage-2026-11-17",
+      "source": "docs/experiments/genmotion-collage-2026-11-17.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "GenMotion motion-graphics CLI0.8.1/Three.js paper/photographic texture/text/keys/orbits/rocket export. Dual4s24fps proofs and dual50s12fps paper renders;local FFmpeg adds colour24fps NASA excerpts/audio. One trial including corrections. Not generative acting,the skeletal library,NASA science validation or autonomous speech export."
     }
   ]
 }

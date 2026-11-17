@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-15",
+  "updated": "2026-11-17",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -3468,6 +3468,86 @@
         "docs/experiments/inshot-functions-2026-11-13.md",
         "docs/experiments/inshot-video-enhance-2026-11-15.md"
       ]
+    },
+    {
+      "id": "genmotion",
+      "name": "GenMotion motion graphics CLI",
+      "url": "https://github.com/haxzie/genmotion",
+      "reviewed": "2026-11-17",
+      "review_basis": "executed local bounded production trial;see retained case",
+      "upstream_revision": "0.8.1",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Native Three.js newspaper/paper animation and dual aspect exports;colour NASA footage and audio finished separately with FFmpeg. No acting or generative footage qualification.",
+      "licence_note": "Apache-2.0 CLI;host fonts,Chromium,FFmpeg and source media retain independent terms. No blanket NASA/asset rights grant.",
+      "next_trial_or_retest_condition": "Recheck exact version,host/fonts/browser and requested new technique;not general qualification.",
+      "evidence": [
+        "docs/experiments/genmotion-collage-2026-11-17.md"
+      ],
+      "followup_reviews": []
+    },
+    {
+      "id": "givemotion",
+      "name": "GiveMotion",
+      "url": "https://github.com/givemotion/givemotion",
+      "reviewed": "2026-11-17",
+      "review_basis": "executed local bounded production trial;see retained case",
+      "upstream_revision": "0.1.6",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "HTML/SVG deterministic paper/ink animation,proof and two native52s exports. Independent source positioning/animation groups required. Publication URLs are not explicit creative acceptance.",
+      "licence_note": "MIT package;Chrome,FFmpeg,fonts and media retain independent terms. No publication/asset clearance implied.",
+      "next_trial_or_retest_condition": "Recheck exact version,host/fonts/browser and requested new technique;not general qualification.",
+      "evidence": [
+        "docs/experiments/givemotion-vet402-2026-11-16.md"
+      ],
+      "followup_reviews": []
+    },
+    {
+      "id": "manim-community",
+      "name": "Manim Community (distinct from ManimGX)",
+      "url": "https://www.manim.community/",
+      "reviewed": "2026-11-17",
+      "review_basis": "executed local bounded production trial;see retained case",
+      "upstream_revision": "0.22.1",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Cairo ASCII/text,glyph transforms,trajectories,comic inserts and native49s exports. Not PAN2 inference,physics accuracy or character acting.",
+      "licence_note": "MIT engine;Cairo,Pango,FFmpeg and host fonts retain independent terms. No bundled font redistribution or asset clearance.",
+      "next_trial_or_retest_condition": "Recheck exact version,host/fonts/browser and requested new technique;not general qualification.",
+      "evidence": [
+        "docs/experiments/manim-community-ascii-2026-11-17.md"
+      ],
+      "followup_reviews": []
+    },
+    {
+      "id": "playmcp-veo31-fast",
+      "name": "PlayMCP Veo3.1 Fast Peter action trial",
+      "url": "https://github.com/markoblogo/framewright/blob/main/docs/experiments/peter-acting-comparison-2026-11-16.md",
+      "reviewed": "2026-11-17",
+      "review_basis": "Retained16November attempted comparison and owner corrections;no new trial",
+      "upstream_revision": "Observed provider label Veo3.1 Fast",
+      "disposition": "partial",
+      "scope_and_findings": "8s I2V Peter approach/braking/recoil;decoded exports passed,but owner rejected framing,warped face/body and shoulder artifact. One partial comparison suite;full Quixote remains paused.",
+      "licence_note": "Provider/model/account and source reference terms not qualified for new use;no publication or rights grant inferred.",
+      "next_trial_or_retest_condition": "Owner paused;no new action until explicitly resumed. Do not repeat rejected route.",
+      "evidence": [
+        "docs/experiments/peter-acting-comparison-2026-11-16.md"
+      ],
+      "followup_reviews": []
+    },
+    {
+      "id": "chatgpt-native-gif",
+      "name": "ChatGPT native GIF Peter request",
+      "url": "https://chatgpt.com/",
+      "reviewed": "2026-11-17",
+      "review_basis": "Retained16November attempted comparison and owner corrections;no new trial",
+      "upstream_revision": "backend not exposed",
+      "disposition": "partial",
+      "scope_and_findings": "Native GIF request/provider route refused;no animated GIF output obtained. Static mill-face artwork was separately accepted,not GIF motion.",
+      "licence_note": "Provider/model/account and source reference terms not qualified for new use;no publication or rights grant inferred.",
+      "next_trial_or_retest_condition": "Owner paused;no new action until explicitly resumed. Do not repeat rejected route.",
+      "evidence": [
+        "docs/experiments/peter-acting-comparison-2026-11-16.md"
+      ],
+      "followup_reviews": []
     }
   ]
 }

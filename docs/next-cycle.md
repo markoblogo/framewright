@@ -1,6 +1,6 @@
 # Current work and protected waits
 
-Updated16November2026. This is the current operational entry point, not a session log.
+Updated17November2026. This is the current operational entry point, not a session log.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md) · [Case counts and definitions](public-evidence.json).
 
 ## Current state
@@ -8,10 +8,10 @@ Updated16November2026. This is the current operational entry point, not a sessio
 | Item | Current state / source |
 | --- | --- |
 | Shipped release | **0.9.0**, published experimental prerelease. Tag, page and downloaded assets were verified on 14 November; see [publication status](release-notes-0.9.0.md#publication-status). The frozen pre-publication audit is historical. |
-| Latest maintenance | [16 November cases/tooling checkpoint](history/studio-checkpoint-2026-11-16.md): published daily-routine/Coinbase cases, encoding fix, tool intake and failed Quixote trial evidence. Previous consolidation was PR73 (`c7103d6`). Release remains0.9.0. |
-| Latest completed film | [Coinbase Agent Controls](productions/coinbase-agent-controls.md): both60s English formats accepted,including the requested20%audio boost;owner supplied both publication URLs16November. [Describe Your Entire Day](productions/describe-your-entire-day.md) is also accepted/published by owner report. Uploaded identity and audience metrics remain separate. |
+| Latest maintenance | [16 November cases/tooling checkpoint](history/studio-checkpoint-2026-11-16.md): published daily-routine/Coinbase cases, encoding fix, tool intake and failed Quixote trial evidence. PR74 merged (`9eab470`);previous consolidation was PR73 (`c7103d6`). Release remains0.9.0. |
+| Latest completed film | [The Mars Dispatch](productions/nasa-eyes-collage.md):both50s films/sound/covers accepted;owner supplied both publication URLs17November. [PAN2 / ASCII](productions/pan2-ascii.md):both films/covers accepted,both publication URLs supplied17November. Independent uploaded identity/metrics unverified. [The AI Paid](productions/vet402-delivery.md): both52s formats published by owner report17November;separate creative acceptance and uploaded identity remain unverified. [Coinbase Agent Controls](productions/coinbase-agent-controls.md): both60s English formats accepted,including the requested20%audio boost;owner supplied both publication URLs16November. [Describe Your Entire Day](productions/describe-your-entire-day.md) is also accepted/published by owner report. Uploaded identity and audience metrics remain separate. |
 | Editorial handoff | Owner supplied the [Studio Notes04 publication URL](https://abvx.xyz/writing/ai-video-corrections-stick-framewright-04) on16November; anonymous HTTP200 and expected headline observed. Prepared text/cover/source receipt unchanged. Published text/cover identity and metrics remain unchecked; the issue index records owner_provided_url separately. |
-| Next execution | No production selected now. Owner authorised documentation consolidation,checks,review,PR and merge only;no release. [Klap](research/klap-2026-11-16.md) remains available during the owner-reported gifted period;future review films require separate selection. |
+| Next execution | [The Mars Dispatch](productions/nasa-eyes-collage.md): owner selected another Radar film with retro newspaper collage and colour site footage contrast; two50s English films,sound and covers accepted17November2026;separate publication packages ready. [GenMotion0.8.1](experiments/genmotion-collage-2026-11-17.md) tested locally for authored paper animation/export. Both publication URLs supplied17November2026 and retained in the case;independent visibility/identity/metrics unchecked. No further production,PR or release selected. Quixote remains paused. |
 
 ## Protected waits and commitments
 

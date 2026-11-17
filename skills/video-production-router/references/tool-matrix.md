@@ -7,6 +7,9 @@ the stated local experiment only. Documented needs installed-version verificatio
 failed is a retained limitation; unknown is not a usable promise. Styles are
 affordances and preferences, not renderer boundaries or comparative quality scores.
 
+For manual tools and case-specific style/technique/quality observations, use the
+[existing arsenal search](arsenal-search.md); this generated table covers planner profiles only.
+
 ## Brag full
 
 **Role:** orchestrator. **Inputs:** source-project, brand.
