@@ -2,6 +2,32 @@
 
 ## Unreleased
 
+## 0.10.0 — candidate, not published
+
+- Separate explicitly replaced creative-review waits and checks from the current
+  working brief while retaining original task states and receipts. Bind the
+  replacement to accepted current outputs;restore waits on drift,rejection or
+  reopening. Never transfer replacement approval to the original version.
+- Add a readable MOTION.md entry to the existing brief/reuse workflow,source-backed
+  video preferences,and task/style/technique/application discovery with separate
+  technical,owner and quality evidence.
+- Retain three accepted autonomous-production cases after corrections,local English
+  voice-export findings,recent production recipes,Radar reconciliation and scoped
+  new-tool trials. These are not zero-correction,labour-saving or universal tool claims.
+- Return explicit UTF-8 text/subtitle responses from the local preview server.
+  Core runtime remains standard-library Python;renderers/providers remain optional.
+- Preserve schema2 private journals and frozen plans. No automatic publication,
+  installed-skill replacement or new model-routing qualification. See candidate notes.
+
+## 0.9.0 — published experimental prerelease
+
+- Consolidate seekable local review,existing Radar status exchange,production and
+  tablet-finishing recipes and scoped tool/device evidence. Preserve owner controls,
+  private media and separate tool/asset requirements.
+- Publication and downloaded assets were verified14November2026;see
+  [release notes](docs/release-notes-0.9.0.md#publication-status). This historical entry
+  summarises the existing published record;it is not a new release or fresh validation.
+
 ## 0.8.0 — 2026-11-04 — experimental
 
 - Document a checked agent-and-human-led process for coherent character fiction:

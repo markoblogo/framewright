@@ -13,8 +13,8 @@ changes of priority require an owner decision or an explicitly delegated choice.
 **Owner-adopted, 14 November 2026: less repeated explanation when continuing or correcting a film.**
 Build on M1–M4 / RV01 and the existing start / continue / correct workflow, selected
 project journal and revision contract. Extend the existing route rather than creating
-a second state store or the deferred local project UI. Version and publication date
-are undecided; no new production or release is authorised by this planning update.
+a second state store or the deferred local project UI. Version0.10.0 is now selected for local candidate preparation;publication date is
+undecided. No new production or release publication is authorised by this planning update.
 
 | Outcome | Observable evidence for the next functional increment |
 | --- | --- |
@@ -27,7 +27,7 @@ Existing evidence: the [Pantheon v2 → v3 correction](productions/pantheon-chat
 retains the real request, protected soundtrack/later scenes, comparison, failed join
 attempt and accepted final versions. This supports the bounded correction within
 that production; it does not establish general arbitrary-edit or external-user success.
-The next end-to-end recovery/proposal application remains to be selected and observed.
+The later [Praxis continuation](experiments/praxis-continuation-2026-11-17.md) supplies a real exact-version recovery and fixes the observed obsolete-wait projection. Together these are bounded evidence,not a universal end-to-end autonomy claim.
 
 **Feedback-to-practice update, 14 November:** [video taste](video-taste.md) now links
 seven source-backed owner preferences to applicable scopes and concrete pre-handoff
@@ -71,10 +71,14 @@ checkpoint. Owner evaluation of the corrected summary is still unrecorded;effort
 and general qualification are not claimed. Existing Pantheon evidence remains the
 bounded picture-correction example;no new defect or film is needed solely for a gate.
 
-**Current owner scope: continuation/summary maintenance only,no production or release.**
-PR76 maintenance/adoption is merged without release. The owner now authorised a PR,checks,independent review and merge for the Praxis
-follow-up,without release. No release tag/version/date is
-selected. Portability stays parallel;Quixote remains owner-paused.
+**Current owner scope: prepare/check/review a local0.10.0 candidate and assess readiness;no publication.**
+PR76 and PR77 are merged. The concrete state-summary defect is closed;no additional
+film,artificial defect,tool qualification or operator transfer is required solely for
+this scoped release. The local candidate now passes package/upgrade checks and
+independent review;it has not been pushed,tagged or published. [Candidate notes](release-notes-0.10.0.md) and
+[readiness audit](release-audit-0.10.0.md) define the bounded increment and remaining
+source/CI/package/publication gates. No tag or public release is authorised in this
+pass. Portability stays parallel;Quixote remains paused.
 
 ## Owner-selected warmup —16November2026
 
