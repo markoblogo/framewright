@@ -121,3 +121,73 @@ than silently omitting tools. The full offline gate also checks the installed ZI
 An unindexed input kind (`null`) cannot satisfy an explicit `--input` filter.
 A review-only candidate may still be found without an input filter using
 `--evidence any`; that result is not a compatibility or production claim.
+
+## Retained applications, style and quality
+
+The same `arsenal-facets.json` now links task → style → technique → tool/version →
+retained case. `review-ledger.json` remains the review history; `tools.json` remains
+structured planner capability coverage. An application is a discovery annotation,
+not another production journal or executable provider. Original experiments and
+owner decisions remain authoritative.
+
+```sh
+python3 skills/video-production-router/scripts/search.py --query 'газетный коллаж с цветными вставками' --evidence tested --format markdown
+python3 skills/video-production-router/scripts/search.py --task video --style paper-collage --technique colour-footage-insert --evidence tested --format markdown
+python3 skills/video-production-router/scripts/search.py --tool manim-community --style ascii --evidence tested --format markdown
+python3 skills/video-production-router/scripts/search.py --tool inshot-android --details --format markdown
+```
+
+Literal name lookup remains supported. Application queries match all significant
+words,case-insensitively,against retained annotations,including curated English and
+Russian terms. This is token matching,not semantic search,translation or stemming.
+Task/style/input/technique/text filters must match the **same application**;a video
+fixture cannot borrow a photo-collage style from another fixture. Historical profile
+style directions remain affordances,not proof that every style was tested.
+
+JSON retains all matching application records. Ordinary Markdown shows up to two
+applications per tool and concise historical summaries; `--details` expands them.
+`--list-filters` includes indexed techniques and application styles. New manual
+records do not become planner providers or fulfill narration/arbitrary features.
+
+### What the observations mean
+
+| Field | Meaning |
+| --- | --- |
+| Scope,version,sources,example | Exact retained application and its limits. Owner-provided publication URL is an example,not a fresh visibility/metrics check. |
+| Technical | Recorded execution,passed,failed or partial for the named scope;not overall visual quality. |
+| Readability | Text/line contrast,size,overlap and reduced-view inspection. |
+| Motion | Meaningful subject/action movement and timing;not just successful encoding. |
+| Drawing stability | Shape/silhouette/identity observations;deterministic vectors do not qualify generative acting. |
+| Artifacts | Defects and corrections observed in the case;not a guarantee of artifact-free future output. |
+| Controllability | What could actually be adjusted and rerendered within this route. |
+| Owner evaluation | Explicit accepted/rejected/mixed/not-recorded scope,kept separate from technical checks and publication. |
+| Resources | Observed host/formats/time/cost,or explicit unknowns. Render time is not active labour or a controlled speed comparison. |
+| Alternatives | Related candidates with a reason;currently marked not-compared,not a quality ranking. |
+
+Initial17November backfill:47 application/scope cards across44 tools,including three new
+scoped tools:GenMotion0.8.1,GiveMotion0.1.6 and Manim Community0.22.1. Legacy records
+cover one explicitly tool-level retained ledger summary per tool;they are not
+cloned under individual experiment IDs or used as technique-specific evidence. Their
+`retained_scope_summary` granularity,missing style/version/time/cost and
+`not_assessed` quality dimensions are intentional gaps,not completed new reviews.
+Detailed recent cards retain operator observations and separate owner decisions.
+GiveMotion publication does **not** fill its missing explicit creative acceptance.
+
+At each executed trial/production correction closeout:update the matching tool's
+application from the actual source record;preserve the source link,scope/version,
+technical result,per-axis observations,owner decision,resources and restrictions.
+Do not copy the full journal into the index,derive quality from views,guess a score,
+or generalise a rejected/accepted take to every feature/voice/style of that tool.
+Use comparable controlled trials before adding numeric rankings. `validate.py`
+checks application structure,unique IDs,local sources and alternative tool IDs;
+these checks assess documentation integrity,not media quality.
+
+The Peter comparison also indexes a technically decoded but owner-rejected I2V
+performance and a failed native-GIF request. They remain partial diagnostics under
+`--evidence any`,not default usable tools or an approval to resume paused Quixote.
+
+Source references are checkout-relative. Installed discovery validates their structure
+but does not require a full repository checkout; `scripts/validate.py` additionally
+checks source existence inside the repository. Manim Community/GiveMotion accept
+only authored composition input in these retained trials;image/video import is
+not inferred from their exported PNG/MP4 files.

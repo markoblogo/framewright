@@ -14,6 +14,104 @@ class ArsenalSearchTest(unittest.TestCase):
         self.assertEqual(p.returncode==0,ok,p.stderr)
         return json.loads(p.stdout) if ok else p
 
+    def test_newspaper_application_and_owner_evidence_are_discoverable(self):
+        rows=self.search('--query','газетный коллаж с цветными вставками','--evidence','tested')['results']
+        self.assertEqual([r['id'] for r in rows],['genmotion'])
+        row=rows[0];app=row['applications'][0]
+        self.assertEqual(app['version'],'0.8.1')
+        self.assertEqual(app['owner_evaluation']['status'],'accepted')
+        self.assertEqual(app['technical']['status'],'passed')
+        self.assertEqual(set(app['quality']),{'readability','motion','drawing_stability','artifacts','controllability'})
+        self.assertTrue(app['examples'][0]['url'].endswith('h0ZTfFPKbcs'))
+        self.assertFalse(row['eligible_for_feature_planning'])
+        self.assertFalse(row['rights']['asset_clearance'])
+
+    def test_new_style_technique_filters_and_distinct_manim(self):
+        for tool,style,tech in [('genmotion','paper-collage','colour-footage-insert'),('manim-community','ascii','glyph-transform'),('givemotion','paper-ink','receipt-story')]:
+            rows=self.search('--tool',tool,'--style',style,'--technique',tech,'--evidence','tested')['results']
+            self.assertEqual([r['id'] for r in rows],[tool])
+        self.assertEqual(self.search('--tool','manimgx','--style','ascii','--evidence','tested')['results'],[])
+        self.assertEqual(self.search('--tool','genmotion','--feature','narration','--evidence','tested')['results'],[])
+
+    def test_publication_does_not_create_owner_acceptance_or_a_comparison(self):
+        app=self.search('--tool','givemotion','--evidence','tested')['results'][0]['applications'][0]
+        self.assertEqual(app['owner_evaluation']['status'],'not_recorded')
+        self.assertEqual(app['technical']['status'],'passed')
+        self.assertTrue(app['examples'])
+        self.assertTrue(all(a['comparison']=='not_compared'for a in app['alternatives']))
+
+    def test_unknown_history_is_explicit_and_formats_do_not_promote_provider(self):
+        app=self.search('--tool','manimgx','--evidence','tested')['results'][0]['applications'][0]
+        self.assertTrue(all(q['status']=='not_assessed'for q in app['quality'].values()))
+        r=self.search('--task','video','--input','composition','--tool','genmotion','--style','paper-collage','--evidence','tested','--combinations')
+        self.assertEqual(r['combinations'],[])
+        self.assertTrue(r['blocked_combinations'])
+
+    def test_historical_ledger_summary_is_not_feature_specific_evidence(self):
+        for tool,technique in [('hyperframes','native-audio'),('hyperframes','typography')]:
+            self.assertEqual(self.search('--tool',tool,'--technique',technique,'--evidence','tested')['results'],[])
+        apps=self.search('--tool','hyperframes','--evidence','tested')['results'][0]['applications']
+        self.assertEqual(len(apps),1)
+        self.assertEqual(apps[0]['id'],'hyperframes--retained-scope')
+        self.assertNotIn('experiment_id',apps[0])
+        self.assertEqual(apps[0]['techniques'],[])
+        self.assertTrue(apps[0]['scope'].startswith('Tool-level'))
+
+    def test_application_facets_must_match_one_scope(self):
+        import runpy
+        match=runpy.run_path(str(CLI))['application_matches']
+        q={'task':'editing','style':'photo-collage','input':'video','technique':None,'evidence':'tested','text':''}
+        app={'tasks':['editing'],'styles':['screencast-tour'],'inputs':['video'],'techniques':[],'evidence':'tested'}
+        self.assertFalse(match(app,q))
+        self.assertEqual(self.search('--tool','inshot-android','--task','editing','--style','photo-collage','--evidence','tested')['results'],[])
+
+    def test_authored_compositions_do_not_claim_untested_media_import(self):
+        for tool,style in [('manim-community','ascii'),('givemotion','paper-ink')]:
+            for kind in ['image','video']:
+                self.assertEqual(self.search('--tool',tool,'--task','video','--input',kind,'--style',style,'--evidence','tested')['results'],[])
+            self.assertEqual([r['id']for r in self.search('--tool',tool,'--input','composition','--style',style,'--evidence','tested')['results']],[tool])
+
+    def test_installed_discovery_needs_no_checkout_docs(self):
+        import shutil,tempfile
+        with tempfile.TemporaryDirectory()as tmp:
+            target=Path(tmp)/'video-production-router'
+            for folder in ['scripts','references']:
+                shutil.copytree(ROOT/'skills/video-production-router'/folder,target/folder,ignore=shutil.ignore_patterns('__pycache__'))
+            self.assertFalse((Path(tmp)/'docs').exists())
+            p=subprocess.run([sys.executable,str(target/'scripts/search.py'),'--query','газетный коллаж с цветными вставками','--evidence','tested'],capture_output=True,text=True)
+            self.assertEqual(p.returncode,0,p.stderr)
+            self.assertEqual([r['id']for r in json.loads(p.stdout)['results']],['genmotion'])
+
+    def test_repository_validation_still_rejects_missing_source(self):
+        import runpy
+        validate=runpy.run_path(str(CLI))['validate_applications']
+        facets=json.loads((ROOT/'skills/video-production-router/references/arsenal-facets.json').read_text())
+        facets['tools']['genmotion']['applications'][0]['sources']=['docs/nonexistent-application-source.md']
+        validate(facets)  # Installed structural check keeps checkout-relative references.
+        with self.assertRaisesRegex(ValueError,'Invalid application source'):validate(facets,source_root=ROOT)
+
+    def test_rejected_and_failed_comparisons_stay_diagnostic(self):
+        r=self.search('--tool','playmcp-veo31-fast','--evidence','any')['results'][0]
+        a=r['applications'][0]
+        self.assertEqual(a['technical']['status'],'passed')
+        self.assertEqual(a['owner_evaluation']['status'],'rejected')
+        self.assertEqual(self.search('--tool','playmcp-veo31-fast','--evidence','tested')['results'],[])
+        a=self.search('--tool','chatgpt-native-gif','--evidence','any')['results'][0]['applications'][0]
+        self.assertEqual(a['evidence'],'failed')
+        self.assertEqual(a['technical']['status'],'failed')
+        self.assertEqual(a['owner_evaluation']['status'],'not_recorded')
+
+    def test_application_schema_rejects_missing_quality_and_duplicate_ids(self):
+        import runpy,copy
+        validate=runpy.run_path(str(CLI))['validate_applications']
+        facets=json.loads((ROOT/'skills/video-production-router/references/arsenal-facets.json').read_text())
+        a=facets['tools']['genmotion']['applications'][0]
+        del a['quality']['motion']
+        with self.assertRaisesRegex(ValueError,'quality axis'):validate(facets)
+        facets=json.loads((ROOT/'skills/video-production-router/references/arsenal-facets.json').read_text())
+        facets['tools']['genmotion']['applications'].append(copy.deepcopy(facets['tools']['genmotion']['applications'][0]))
+        with self.assertRaisesRegex(ValueError,'Duplicate application'):validate(facets)
+
     def test_unindexed_world_candidate_does_not_match_explicit_input_modalities(self):
         rows=self.search('--task','video','--tool','odyssey-world-models','--evidence','any')['results']
         self.assertEqual([row['id'] for row in rows],['odyssey-world-models'])

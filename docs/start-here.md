@@ -13,7 +13,7 @@ questions that change the production choice. A usable request can be:
 > Make a40-second English guide from my photos and footage. YouTube16:9 first,
 > free tools on my Mac, no publication. Show the proposed source clips before assembly.
 
-1. Review existing sources and permissions; distinguish find/adapt/create.
+1. Review existing sources and permissions; distinguish find/adapt/create. Search the [existing arsenal and retained applications](../skills/video-production-router/references/arsenal-search.md) by task/style/technique before choosing tools;read scope,quality observations and owner decisions separately.
 2. Apply relevant [video-taste rules](video-taste.md) in the same brief, then agree a short concept and feasible production route with gaps, tradeoffs,
    observed or unknown costs/time, and a small pilot. For a fiction-book film,
    first use the [creative proposal and case recommendations](creative-proposal.md):

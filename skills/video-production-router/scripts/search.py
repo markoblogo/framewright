@@ -5,6 +5,7 @@ import copy
 import hashlib
 from collections import Counter
 import json
+import re
 from pathlib import Path
 import runpy
 
@@ -13,9 +14,55 @@ REFS=BASE.parent/'references'
 LEVEL={'unknown':0,'failed':0,'documented':1,'tested':2}
 
 
+QUALITY_AXES=('readability','motion','drawing_stability','artifacts','controllability')
+
+def application_matches(app, query):
+    """All requested discovery facets must describe the SAME retained application."""
+    if query['task']!='all' and query['task'] not in app['tasks']: return False
+    if query.get('style') and query['style'] not in app['styles']: return False
+    if query.get('input') and query['input'] not in app['inputs']: return False
+    if query.get('technique') and query['technique'] not in app['techniques']: return False
+    if LEVEL.get(app['evidence'],0)<{'any':0,'documented':1,'tested':2}[query['evidence']]: return False
+    words=[w for w in re.findall(r'\w+',query.get('text','').casefold()) if w not in {'с','и','для','with','and','for'}]
+    hay=json.dumps(app,ensure_ascii=False).casefold()
+    return all(w in hay for w in words)
+
+
+def validate_applications(facets, source_root=None):
+    """Validate discovery evidence without promoting it to an executable provider."""
+    ids=set();root=Path(source_root).resolve() if source_root is not None else None
+    for tool,tag in facets['tools'].items():
+        for app in tag.get('applications',[]):
+            if app['id'] in ids: raise ValueError('Duplicate application ID: '+app['id'])
+            ids.add(app['id'])
+            if app['evidence'] not in LEVEL: raise ValueError('Invalid application evidence')
+            for key in ('tasks','styles','inputs','techniques','sources','examples','limitations','alternatives','search_terms'):
+                if not isinstance(app[key],list): raise ValueError('Application list required: '+key)
+            if not app['tasks'] or not set(app['tasks']).issubset(tag['tasks']): raise ValueError('Application task outside tool scope: '+tool)
+            if not app['sources']: raise ValueError('Application needs retained sources')
+            for source in app['sources']:
+                path=Path(source)
+                if path.is_absolute() or '..' in path.parts or '://' in source: raise ValueError('Invalid application source: '+source)
+                if root is not None:
+                    f=(root/path).resolve()
+                    if not f.is_relative_to(root) or not f.is_file(): raise ValueError('Invalid application source: '+source)
+            if set(app['quality'])!=set(QUALITY_AXES): raise ValueError('Missing application quality axis')
+            for assessment in app['quality'].values():
+                if assessment['status'] not in {'not_assessed','observed','limitation_observed'}: raise ValueError('Invalid quality status')
+                if assessment['provenance'] not in {'not_assessed','operator_observation','retained_report'}: raise ValueError('Invalid quality provenance')
+            if app['owner_evaluation']['status'] not in {'not_recorded','accepted','rejected','mixed','accepted_retained_scope'}: raise ValueError('Invalid owner evaluation')
+            if app['technical']['status'] not in {'recorded_execution','passed','failed','partial'}: raise ValueError('Invalid technical observation')
+            for key in ('version','scope','resources','owner_evaluation','technical'):
+                if not app[key]: raise ValueError('Missing application field: '+key)
+            for alternative in app['alternatives']:
+                if alternative['tool_id'] not in facets['tools']: raise ValueError('Unknown application alternative')
+                if alternative['comparison']!='not_compared': raise ValueError('Unqualified comparative claim')
+
+
 def inventory(registry,ledger,facets):
     if facets.get('schema_version')!=1:
         raise ValueError('Unsupported arsenal facets')
+    validate_applications(facets)
     rows={}
     aliases=facets['aliases']
     for tool in ledger['tools']:
@@ -65,11 +112,13 @@ def search(query,registry,ledger,facets):
     results=[];excluded=[];primary=[]
     for identity,row in sorted(rows.items()):
         tool=row['profile'];review=row['review'];tag=row['facets']
+        applications=[a for a in tag.get('applications',[]) if application_matches(a,query)]
         reasons=[];policy=rights(row,query['rights'])
         if task!='all' and task not in tag['tasks']:reasons.append('task does not match')
         if query['tool'] and identity!=facets['aliases'].get(query['tool'],query['tool']):reasons.append('explicit tool filter')
-        if query['text'] and query['text'].casefold() not in (identity+' '+row['name']+' '+str([k for k,v in facets['aliases'].items() if v==identity])+' '+str(tag['tasks'])+' '+str((review or {}).get('scope_and_findings',''))).casefold():reasons.append('text does not match')
-        if query['style'] and query['style'] not in (tool or {}).get('styles',[]):reasons.append('style not indexed for this tool')
+        if query['text'] and not applications and query['text'].casefold() not in (identity+' '+row['name']+' '+str([k for k,v in facets['aliases'].items() if v==identity])+' '+str(tag['tasks'])+' '+str((review or {}).get('scope_and_findings',''))).casefold():reasons.append('text does not match')
+        if query['style'] and not applications and query['style'] not in (tool or {}).get('styles',[]):reasons.append('style not indexed for this tool')
+        if query.get('technique') and not applications:reasons.append('technique not indexed for this application')
         if query['input']:
             inputs=tool['inputs'] if tool else tag.get('inputs')
             if inputs is None or (inputs and query['input'] not in inputs):reasons.append('input kind does not match or is unindexed')
@@ -105,7 +154,8 @@ def search(query,registry,ledger,facets):
                 'disposition':review['disposition'] if review else 'profile_only',
                 'coverage':coverage,'task_capabilities':{f['id']:f['status'] for f in facts},
                 'eligible_for_feature_planning':bool(tool and all(f['status'] in {'tested','documented'} for f in coverage) and LEVEL.get(evidence,0)>0),
-                'inputs':tool['inputs'] if tool else tag.get('inputs','unindexed'),'styles':(tool or {}).get('styles',[]),
+                'inputs':tool['inputs'] if tool else tag.get('inputs','unindexed'),'styles':sorted(set((tool or {}).get('styles',[]))|{s for a in applications for s in a['styles']}),
+                'applications':copy.deepcopy(applications),
                 'languages':next(({'tested':f.get('tested_languages',[]),'documented':f.get('documented_languages',[])} for f in (tool or {}).get('features',[]) if f['id']=='narration'),{'declared':tag.get('declared_languages',[])}),
                 'rights':policy,'limits':(tool or {}).get('limitations',[])+([review['scope_and_findings']] if review else []),
                 'reference':(review or {}).get('evidence',[]),
@@ -170,6 +220,26 @@ def markdown(result):
                 'Retained experiments: '+cell(', '.join(row['experiment_ids']) or 'see manual/review record')+'.',
                 'References: '+cell(', '.join(row['reference']) or 'tools.json source keys')+'.',
                 'Rights: '+cell(row['rights']['retained_terms'])+'. No asset clearance/publication authority inferred.']
+        apps=row.get('applications',[])
+        for app in apps if result['query'].get('details') else apps[:2]:
+            if not result['query'].get('details') and app.get('granularity')!='specific_production_application':
+                lines+=['', 'Application: '+cell(app['id'])+'; version: '+cell(app['version']),
+                        'Retained scope: '+cell(app['scope'][:260]),
+                        'Technical: '+cell(app['technical']['status'])+'; owner evaluation: '+cell(app['owner_evaluation']['status'])+'; per-axis assessment: see JSON/--details.',
+                        'Sources: '+cell(', '.join(app['sources'][:2]))]
+                continue
+            lines+=['', '### Application: '+cell(app['id']),
+                    'Version: '+cell(app['version'])+'. Scope: '+cell(app['scope']),
+                    'Styles: '+cell(', '.join(app['styles']) or 'not indexed')+'; techniques: '+cell(', '.join(app['techniques']) or 'not indexed'),
+                    'Technical: '+cell(json.dumps(app['technical'],ensure_ascii=False)),
+                    'Owner evaluation: '+cell(json.dumps(app['owner_evaluation'],ensure_ascii=False)),
+                    'Quality observations: '+cell(json.dumps(app['quality'],ensure_ascii=False)),
+                    'Resources: '+cell(json.dumps(app['resources'],ensure_ascii=False)),
+                    'Examples: '+cell(json.dumps(app['examples'],ensure_ascii=False)),
+                    'Sources: '+cell(', '.join(app['sources'])),
+                    'Application limits: '+cell('; '.join(app['limitations'])),
+                    'Alternatives (not compared): '+cell(json.dumps(app['alternatives'],ensure_ascii=False))]
+        if len(apps)>2 and not result['query'].get('details'):lines.append('More application records retained;use --details or JSON to inspect all.')
         lines.extend('- '+cell(limit) for limit in row['limits'])
     if not result['results'] and result['combinations']:
         lines+=['','No single tool covers all requested filters/features;matching chains follow.']
@@ -199,7 +269,7 @@ def main():
     parser.add_argument('--task',choices=['all',*tasks],default='all')
     input_kinds = set(runpy.run_path(str(BASE/'plan.py'))['DEFAULTS']) | {kind for row in facets['tools'].values() for kind in (row.get('inputs') or [])}
     parser.add_argument('--input',choices=sorted(input_kinds))
-    parser.add_argument('--style');parser.add_argument('--language');parser.add_argument('--rights',choices=['any','commercial','noncommercial'],default='any')
+    parser.add_argument('--details',action='store_true',help='Expand all retained application observations in Markdown');parser.add_argument('--technique');parser.add_argument('--style');parser.add_argument('--language');parser.add_argument('--rights',choices=['any','commercial','noncommercial'],default='any')
     parser.add_argument('--evidence',choices=['tested','documented','any'],default='documented')
     parser.add_argument('--feature',action='append',default=[]);parser.add_argument('--query',default='')
     parser.add_argument('--explain',action='store_true',help='Include per-tool exclusions,not just counts');parser.add_argument('--tool');parser.add_argument('--voice');parser.add_argument('--include-fallbacks',action='store_true')
@@ -211,7 +281,8 @@ def main():
     try:
         rows=inventory(registry,ledger,facets)
         if args.list_filters:
-            print(json.dumps({'tasks':tasks,'styles':sorted({s for t in registry['tools'] for s in t['styles']}),
+            print(json.dumps({'tasks':tasks,'styles':sorted({s for t in registry['tools'] for s in t['styles']} | {s for row in facets['tools'].values() for a in row.get('applications',[]) for s in a['styles']}),
+                              'techniques':sorted({t for row in facets['tools'].values() for a in row.get('applications',[]) for t in a['techniques']}),
                               'speech_languages':sorted({lang for t in registry['tools'] for f in t['features'] for lang in f.get('documented_languages',[])}),
                               'rights':['any','commercial','noncommercial'],'evidence':['tested','documented','any'],'tool_ids':sorted(rows),'records':len(rows)},indent=2));return
         features=runpy.run_path(str(BASE/'terms.py'))['normalize_effects'](args.feature)
@@ -226,7 +297,7 @@ def main():
         if args.voice and 'narration' not in features:raise ValueError('--voice requires --feature narration')
         if args.combinations:
             features=list(dict.fromkeys([{'interface':'camera-travel','3d':'staged-3d','diagram':'workflow-diagram','graphics':'typography','montage':'image-pan-zoom'}.get(args.task,'video-export'),*features]))
-        query={'task':args.task,'input':args.input,'style':args.style,'language':args.language,'rights':args.rights,
+        query={'task':args.task,'input':args.input,'style':args.style,'details':args.details,'technique':args.technique,'language':args.language,'rights':args.rights,
                'evidence':args.evidence,'features':list(dict.fromkeys(features)),'text':args.query,'tool':args.tool,'voice':args.voice,
                'include_fallbacks':args.include_fallbacks,'allow_paid':args.allow_paid,'combinations':args.combinations,'limit':args.limit,'explain':args.explain,
                'canvas':{'width':args.width,'height':args.height,'fps':args.fps}}
