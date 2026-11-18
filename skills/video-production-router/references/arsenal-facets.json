@@ -351,6 +351,323 @@
       "rights_class": "conditional",
       "licence_note_sha256": "d0953705187c885f542ac3af5332eb8b72c9d70b8278c88fdba6feaccbee6933",
       "applications": [
+        {
+          "id": "ffmpeg--papertrails-browser-walk",
+          "tasks": [
+            "video",
+            "editing",
+            "audio"
+          ],
+          "inputs": [
+            "video",
+            "audio"
+          ],
+          "styles": [
+            "paper-art",
+            "pop-up-book",
+            "cozy-gameplay"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "source-recut",
+            "independent-aspect-layout",
+            "manual-subject-framing",
+            "crossfade",
+            "procedural-audio-recovery"
+          ],
+          "version": "Existing local FFmpeg/ffprobe with native VideoToolbox;Python/Pillow;browser OfflineAudioContext",
+          "scope": "Two real gameplay edits with manual portrait framing,minimal local Kokoro intro and source-project procedural piano. No generated character acting.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/papertrails-world-walk.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/productions/papertrails-world-walk.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Titles and two cover headlines checked at full/reduced size;portrait text independently placed.",
+              "source": "docs/productions/papertrails-world-walk.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Actual browser gameplay and paper-fold world motion;0.4s crossfades between retained source sections.",
+              "source": "docs/productions/papertrails-world-walk.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Source-world imagery preserved;no character regeneration or stretch.",
+              "source": "docs/productions/papertrails-world-walk.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Desktop/browser margins excluded;native foreground occlusion/depth-of-field retained. Failed NCC tracker replaced by manual keyframes.",
+              "source": "docs/productions/papertrails-world-walk.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Exact source intervals/crops and manual x-keyframes retained;automatic tracking not qualified.",
+              "source": "docs/productions/papertrails-world-walk.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Encoded-frame sampling,full decode/aspect/audio and standard delivery checks in private receipts;bounded3s hardware/software SSIM comparison only."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "Full films and covers prepared;not yet owner reviewed."
+          },
+          "resources": {
+            "hardware": "Owner Mac;all production media on external studio disk",
+            "formats": "1920x1080/1080x1920,30fps;270.6s/150.2s",
+            "time": "Active labour unmeasured",
+            "cost": "No paid provider calls;imagegen cost not reported;local compute unpriced"
+          },
+          "limitations": [
+            "Manual portrait keyframes,not qualified automatic tracking",
+            "No synchronized game SFX recovered",
+            "Procedural soundtrack recovery requires licensed source synth",
+            "Cover art illustrative,not actual gameplay"
+          ],
+          "alternatives": [
+            {
+              "tool_id": "inshot-android",
+              "comparison": "not_compared",
+              "reason": "Possible local mobile edit/crop route;not used in this case."
+            }
+          ],
+          "search_terms": [
+            "Papertrails",
+            "paper world",
+            "pop-up book",
+            "бумажный мир",
+            "browser walk"
+          ],
+          "granularity": "specific_production_application"
+        },
+        {
+          "id": "ffmpeg--pl1-sourced-media-art",
+          "tasks": [
+            "video",
+            "editing",
+            "audio"
+          ],
+          "inputs": [
+            "video",
+            "image",
+            "audio"
+          ],
+          "styles": [
+            "media-art",
+            "calligraphy",
+            "monochrome",
+            "photographic"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "source-recut",
+            "split-composition",
+            "ink-mask-reveal",
+            "independent-aspect-layout",
+            "music-mix"
+          ],
+          "version": "Local FFmpeg/ffprobe;Python3/Pillow/NumPy;no speech generation",
+          "scope": "Two68s sourced art edits with actual brush footage and local Pillow ink-mask compositions;standard delivery reused.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/i-see-you-as-art-pl1.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/productions/i-see-you-as-art-pl1.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Titles/covers sampled in encoded output;small process labels secondary.",
+              "source": "docs/productions/i-see-you-as-art-pl1.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Actual brush footage plus ink reveals and photographic pairs;owner review pending.",
+              "source": "docs/productions/i-see-you-as-art-pl1.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Original bodies preserved;ink masks are graphic treatments.",
+              "source": "docs/productions/i-see-you-as-art-pl1.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Low-resolution sources;no anamorphic stretch observed in samples.",
+              "source": "docs/productions/i-see-you-as-art-pl1.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Source IDs/EDL/recipe and aspect layouts retained.",
+              "source": "docs/productions/i-see-you-as-art-pl1.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Full decodes,aspect/duration,identical PCM,Chrome seek/download/clipboard checks."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "Creative,music and cover review pending",
+            "source": "docs/productions/i-see-you-as-art-pl1.md"
+          },
+          "resources": {
+            "hardware": "Owner Mac;external studio",
+            "formats": "1280x720 and720x1280,24fps,68s",
+            "time": "Active labour and comparative savings unmeasured",
+            "cost": "No paid calls;existing local tools;local compute unpriced"
+          },
+          "limitations": [
+            "Prepared owner-supplied assets;no generative acting or autonomous source acquisition",
+            "640px source detail limits",
+            "Artwork/publication rights unverified;no upload"
+          ],
+          "alternatives": [
+            {
+              "tool_id": "blender",
+              "comparison": "not_compared",
+              "reason": "Constructed character animation would need a new scoped test."
+            }
+          ],
+          "search_terms": [
+            "Pokras Lampas",
+            "PL1",
+            "каллиграфия",
+            "медиа-арт",
+            "calligraphy media art"
+          ],
+          "granularity": "specific_production_application"
+        },
+        {
+          "id": "ffmpeg--filmj-local-acting-rejected",
+          "tasks": [
+            "video",
+            "editing",
+            "audio"
+          ],
+          "inputs": [
+            "image",
+            "audio"
+          ],
+          "styles": [
+            "cinematic",
+            "comic",
+            "science-fiction"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "image-pan-zoom",
+            "mesh-deformation",
+            "audio-mix"
+          ],
+          "version": "ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers;Python/Pillow/NumPy and existing Kokoro-ONNX",
+          "scope": "Local27s montage and16s facial mesh/procedural-hand trial;no native Astra video inference.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/filmj-astra-local-animation-2026-11-17.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/experiments/filmj-astra-local-animation-2026-11-17.md",
+              "provenance": "owner_report",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Selected source plates accepted;complete scene approval absent.",
+              "source": "docs/experiments/filmj-astra-local-animation-2026-11-17.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "retained_report",
+              "note": "Owner rejected character motion as insufficient.",
+              "source": "docs/experiments/filmj-astra-local-animation-2026-11-17.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No systematic identity/frame assessment.",
+              "source": "docs/experiments/filmj-astra-local-animation-2026-11-17.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Schematic hand and limited facial deformation;owner rejected overall result.",
+              "source": "docs/experiments/filmj-astra-local-animation-2026-11-17.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Explicit authored timeline;convincing acting unresolved.",
+              "source": "docs/experiments/filmj-astra-local-animation-2026-11-17.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Both MP4 full decodes completed;no creative quality inference."
+          },
+          "owner_evaluation": {
+            "status": "rejected",
+            "scope": "16s character-motion trial rejected;selected source plates accepted",
+            "source": "docs/experiments/filmj-astra-local-animation-2026-11-17.md"
+          },
+          "resources": {
+            "hardware": "Owner Mac;external studio",
+            "formats": "Landscape only;16s acting at960x54024fps",
+            "time": "Active labour and controlled savings unknown",
+            "cost": "No paid provider call;local compute unpriced"
+          },
+          "limitations": [
+            "Rejected acting;no demonstrated quality gain from model switch",
+            "No native video inference",
+            "Source artwork publication rights unverified"
+          ],
+          "alternatives": [
+            {
+              "tool_id": "blender",
+              "comparison": "not_compared",
+              "reason": "Constructed character animation would need a new scoped test."
+            }
+          ],
+          "search_terms": [
+            "filmJ",
+            "Zero Census",
+            "Astra",
+            "rejected character animation"
+          ],
+          "granularity": "specific_production_application"
+        },
         {"id":"ffmpeg--retained-scope","tasks":["editing","video","audio"],"inputs":["video"],"styles":[],"style_basis":"not_extracted","techniques":[],"version":"local ffmpeg/ffprobe on PATH","scope":"Tool-level retained ledger summary,not an individual experiment: Assembly, encoded audio mixing/QA and frame extraction used; permissions and build licences differ from media rights.","evidence":"tested","sources":["skills/video-production-router/references/tools.json"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"recorded_execution","scope":"Retained tool-level execution summary only;not a feature-specific or newly repeated check."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"not_extracted;see sources","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Historical scope only;unrecorded quality/timing/version remain unknown."],"alternatives":[],"search_terms":[],"granularity":"retained_scope_summary","scope_note":"Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."},
         {
           "id": "ffmpeg--praxis-engineering-finish",
@@ -490,6 +807,112 @@
       "rights_class": "conditional",
       "licence_note_sha256": "9b207cb9a21ee25efd948dcf1caf162ee3e42fd3bc6312c82295d3a4ce1b3076",
       "applications": [
+        {
+          "id": "three-scene--glossy-journal-kriptok-proof",
+          "tasks": [
+            "video",
+            "3d"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [
+            "glossy-editorial",
+            "financial-magazine",
+            "3d"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "flexible-double-sided-page",
+            "analytic-curl",
+            "graph-extrusion",
+            "paper-lighting",
+            "native-aspect-camera",
+            "semantic-3d-illustration",
+            "public-browser-capture"
+          ],
+          "version": "Three.js0.185.1;existing Chrome/Playwright;FFmpeg local encode",
+          "scope": "Owner accepted10s v3 office/cover/flexible-page proof;full141.333s/38.875s films now rendered with chapter diagrams/public-source windows. Direct Three.js authoring,no GenMotion CLI or financial app execution.",
+          "evidence": "tested",
+          "sources": [
+            "docs/research/kriptok-spotlight-preparation-2026-11-18.md",
+            "docs/productions/kriptok-same-ticker.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/research/kriptok-spotlight-preparation-2026-11-18.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "V3 larger bold headings and explanatory type,teal/dark bands;sampled in both aspects. General views are context,not reading shots.",
+              "source": "docs/research/kriptok-spotlight-preparation-2026-11-18.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Full v2 has nine landscape/six portrait distinct model applications with measured subject transforms,flexible turns and real site capture. Owner accepted corrected full v2 films;scope remains this production.",
+              "source": "docs/research/kriptok-spotlight-preparation-2026-11-18.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Deterministic geometry/textures;no generated character identity.",
+              "source": "docs/research/kriptok-spotlight-preparation-2026-11-18.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Owner caught wrapped-caption clipping/full-v1 repetition. V2 wraps type outside reserved illustration bays and checks reading-page projected bounds;not exhaustive collision validation.",
+              "source": "docs/research/kriptok-spotlight-preparation-2026-11-18.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Absolute-time animation and separate aspect camera retained.",
+              "source": "docs/research/kriptok-spotlight-preparation-2026-11-18.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "V2 timeline-wide reading-page bounds/controlled model-transform checks;native and encoded samples plus standard delivery checks retained privately."
+          },
+          "owner_evaluation": {
+            "status": "mixed",
+            "scope": "V1 pilot rejected,v3 pilot accepted. Full-film v1 interiors rejected as repetitive/static with clipping;both corrected v2 films accepted18November2026. Package covers are separate."
+          },
+          "resources": {
+            "hardware": "Owner Mac;existing external tools",
+            "formats": "1920x1080 /1080x1920,24fps;141.333s /38.875s full films",
+            "time": "Active labour and render time unmeasured",
+            "cost": "Built-in imagegen cover cost unknown;local compute unpriced;no paid API/CLI fallback"
+          },
+          "limitations": [
+            "Both corrected v2 films accepted;this does not qualify arbitrary character acting,paper physics or financial-product use",
+            "Small printed detail is texture;key claims need dedicated readable callouts",
+            "Not magazine photorealism,financial app testing or contest qualification"
+          ],
+          "alternatives": [
+            {
+              "tool_id": "blender",
+              "comparison": "not_compared",
+              "reason": "Potential higher-fidelity paper/lighting route;not executed here."
+            }
+          ],
+          "search_terms": [
+            "глянцевый журнал",
+            "оживающий график",
+            "glossy magazine",
+            "financial editorial",
+            "KriptoK"
+          ],
+          "granularity": "specific_production_application"
+        },
         {"id":"three-scene--retained-scope","tasks":["video","3d"],"inputs":["object","book-art","brand"],"styles":[],"style_basis":"not_extracted","techniques":[],"version":"Three.js0.186.1 inside Hyperframes0.8.161; Spot-Market20s1080p30 pilot","scope":"Tool-level retained ledger summary,not an individual experiment: Authored Spot-Market miniature/action/camera via three-scene profile; no calibrated physics or arbitrary model reconstruction.","evidence":"tested","sources":["experiments/2026-10-15/spot-market-3d-miniature.md"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"recorded_execution","scope":"Retained tool-level execution summary only;not a feature-specific or newly repeated check."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"not_extracted;see sources","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Historical scope only;unrecorded quality/timing/version remain unknown."],"alternatives":[],"search_terms":[],"granularity":"retained_scope_summary","scope_note":"Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."}
       ]
     },
@@ -849,7 +1272,110 @@
         "3d"
       ],
       "rights_class": "conditional",
-      "licence_note_sha256": "286d3585889a8252a2cc7c3ade2d99aaae20ec96ab8d8d8d33487a099fccfdd4"
+      "licence_note_sha256": "286d3585889a8252a2cc7c3ade2d99aaae20ec96ab8d8d8d33487a099fccfdd4",
+      "applications": [
+        {
+          "id": "three-ascii-effect--raenest-bank",
+          "tasks": [
+            "video",
+            "3d"
+          ],
+          "inputs": [
+            "3d"
+          ],
+          "styles": [
+            "ascii",
+            "cyberpunk"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "native-dom-ascii",
+            "3d-camera"
+          ],
+          "version": "Three.js0.187.0;control0.185.1;Chrome/FFmpeg retained",
+          "scope": "Actual AsciiEffect API and DOM output,2.5s bank/city insert inside22s dual-format proof;not Devault or fake hand-coded ASCII.",
+          "evidence": "tested",
+          "sources": [
+            "docs/research/raenest-payment-in-transit-2026-11-18.md",
+            "docs/productions/raenest-payment-in-transit.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/research/raenest-payment-in-transit-2026-11-18.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Encoded wide/portrait examples inspected;website uses proportion-preserving crop;ASCII is visual texture,not important text.",
+              "source": "docs/research/raenest-payment-in-transit-2026-11-18.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Actual camera parallax,moving parcel and native ASCII response;source people/cars remain static.",
+              "source": "docs/research/raenest-payment-in-transit-2026-11-18.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Deterministic authored geometry/source;no generative character identity test.",
+              "source": "docs/research/raenest-payment-in-transit-2026-11-18.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Initial roof/glow/source-fit corrected;not exhaustive collision or line-shimmer validation.",
+              "source": "docs/research/raenest-payment-in-transit-2026-11-18.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Absolute-time camera/objects plus seeked genuine site clips;no financial operation.",
+              "source": "docs/research/raenest-payment-in-transit-2026-11-18.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Both22s24fps1280x720/720x1280 exports fully decoded;same-source seven-pose control/version receipts and standard delivery checks retained. Full1920x1080/1080x1920exports2:29/0:39fully decoded;sampled motion/framing checks retained;owner accepted both full films18November2026."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner accepted dual22s pilots with upper plates lowered in full films. Owner watched and accepted full2:29/0:39films18November2026;not general tool qualification."
+          },
+          "resources": {
+            "hardware": "Owner Mac;retained external runtimes/native Rokehan geometry",
+            "formats": "1280x720 and720x1280;24fps;22s",
+            "timing": "Active labour/whole route not measured;no speed comparison",
+            "cost": "No paid provider calls;local compute unpriced"
+          },
+          "limitations": [
+            "Scoped proof,not arbitrary r187/ASCII or geographic-fidelity qualification",
+            "No new native Rokehan export,no bank identification or transaction",
+            "Native style/readability/listening remain owner-review dependent"
+          ],
+          "alternatives": [
+            {
+              "tool_id": "three-scene",
+              "comparison": "not_compared",
+              "reason": "Authored plain3D remains fallback;new post/ASCII combination not universally preferred."
+            }
+          ],
+          "search_terms": [
+            "киберпанк",
+            "ASCII город",
+            "банк",
+            "Raenest",
+            "cyberpunk city",
+            "native ASCII"
+          ],
+          "granularity": "specific_production_application"
+        }
+      ]
     },
     "chafa": {
       "tasks": [
@@ -894,7 +1420,111 @@
         "3d"
       ],
       "rights_class": "conditional",
-      "licence_note_sha256": "ae15449f97d146e3e029acd018b1ca6206536921851674780f3b8d193f392f80"
+      "licence_note_sha256": "ae15449f97d146e3e029acd018b1ca6206536921851674780f3b8d193f392f80",
+      "applications": [
+        {
+          "id": "three-postprocessing--raenest-r187",
+          "tasks": [
+            "video",
+            "3d"
+          ],
+          "inputs": [
+            "3d"
+          ],
+          "styles": [
+            "cyberpunk",
+            "neon"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "bloom",
+            "version-control",
+            "native-aspect-camera"
+          ],
+          "version": "Three.js0.187.0;control0.185.1;Chrome/FFmpeg retained",
+          "scope": "r187 loader/UnrealBloomPass/OutputPass against retained0.185.1 at seven same-source poses;full187 dual-aspect export. Not a full-engine regression or speed benchmark.",
+          "evidence": "tested",
+          "sources": [
+            "docs/research/raenest-payment-in-transit-2026-11-18.md",
+            "docs/productions/raenest-payment-in-transit.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/research/raenest-payment-in-transit-2026-11-18.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Encoded wide/portrait examples inspected;website uses proportion-preserving crop;ASCII is visual texture,not important text.",
+              "source": "docs/research/raenest-payment-in-transit-2026-11-18.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Actual camera parallax,moving parcel and native ASCII response;source people/cars remain static.",
+              "source": "docs/research/raenest-payment-in-transit-2026-11-18.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Deterministic authored geometry/source;no generative character identity test.",
+              "source": "docs/research/raenest-payment-in-transit-2026-11-18.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Initial roof/glow/source-fit corrected;not exhaustive collision or line-shimmer validation.",
+              "source": "docs/research/raenest-payment-in-transit-2026-11-18.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Absolute-time camera/objects plus seeked genuine site clips;no financial operation.",
+              "source": "docs/research/raenest-payment-in-transit-2026-11-18.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Both22s24fps1280x720/720x1280 exports fully decoded;same-source seven-pose control/version receipts and standard delivery checks retained. Full1920x1080/1080x1920exports2:29/0:39fully decoded;sampled motion/framing checks retained;owner accepted both full films18November2026."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner accepted dual22s pilots with upper plates lowered in full films. Owner watched and accepted full2:29/0:39films18November2026;not general tool qualification."
+          },
+          "resources": {
+            "hardware": "Owner Mac;retained external runtimes/native Rokehan geometry",
+            "formats": "1280x720 and720x1280;24fps;22s",
+            "timing": "Active labour/whole route not measured;no speed comparison",
+            "cost": "No paid provider calls;local compute unpriced"
+          },
+          "limitations": [
+            "Scoped proof,not arbitrary r187/ASCII or geographic-fidelity qualification",
+            "No new native Rokehan export,no bank identification or transaction",
+            "Native style/readability/listening remain owner-review dependent"
+          ],
+          "alternatives": [
+            {
+              "tool_id": "three-scene",
+              "comparison": "not_compared",
+              "reason": "Authored plain3D remains fallback;new post/ASCII combination not universally preferred."
+            }
+          ],
+          "search_terms": [
+            "киберпанк",
+            "ASCII город",
+            "банк",
+            "Raenest",
+            "cyberpunk city",
+            "native ASCII"
+          ],
+          "granularity": "specific_production_application"
+        }
+      ]
     },
     "motion-canvas": {
       "tasks": [
@@ -1102,7 +1732,179 @@
       "rights_class": "conditional",
       "licence_note_sha256": "63849b2335e7901d02d0fe13ac19413b61d131d073006526f392579817f3d541",
       "applications": [
-        {"id":"rokehan-location-scout--retained-scope","tasks":["3d","video"],"inputs":["text"],"styles":[],"style_basis":"not_extracted","techniques":[],"version":"not_recorded_in_index","scope":"Tool-level retained ledger summary,not an individual experiment: One Nantes quarter:40mesh definitions/431loaded instances; native manga PNG inspected. Native GLB carries colour geometry, no camera/manga shader. Existing Three.js0.186 produces two timed views with original local line/halftone finishing.1080p24/15s/360frames decode and reseek pass; owner accepted lighter-street v2 after requested brightness correction. Fine-line temporal behaviour needs per-shot checks. No Blender, character animation, geographic accuracy or real-time FPS qualification. Follow-up: one Hudson200m native GLB/PNG imported; two-angle6s renders1280x720 and720x1280 decode/reseek pass. Vertical framing revised. Hudson set/style owner-accepted for No Further Claims and reused for a short empty-street POV. Character motion was produced separately; no Rokehan character-animation or exact-geography qualification.","evidence":"tested","sources":["docs/experiments/rokehan-manga.md","experiments/2026-10-26/evidence/rokehan-manga.json","skills/video-production-router/references/location-scout.md","docs/experiments/no-further-claims-manga-probes.md"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"recorded_execution","scope":"Retained tool-level execution summary only;not a feature-specific or newly repeated check."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"not_extracted;see sources","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Historical scope only;unrecorded quality/timing/version remain unknown."],"alternatives":[],"search_terms":[],"granularity":"retained_scope_summary","scope_note":"Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."}
+        {
+          "id": "rokehan-location-scout--retained-scope",
+          "tasks": [
+            "3d",
+            "video"
+          ],
+          "inputs": [
+            "text"
+          ],
+          "styles": [],
+          "style_basis": "not_extracted",
+          "techniques": [],
+          "version": "not_recorded_in_index",
+          "scope": "Tool-level retained ledger summary,not an individual experiment: One Nantes quarter:40mesh definitions/431loaded instances; native manga PNG inspected. Native GLB carries colour geometry, no camera/manga shader. Existing Three.js0.186 produces two timed views with original local line/halftone finishing.1080p24/15s/360frames decode and reseek pass; owner accepted lighter-street v2 after requested brightness correction. Fine-line temporal behaviour needs per-shot checks. No Blender, character animation, geographic accuracy or real-time FPS qualification. Follow-up: one Hudson200m native GLB/PNG imported; two-angle6s renders1280x720 and720x1280 decode/reseek pass. Vertical framing revised. Hudson set/style owner-accepted for No Further Claims and reused for a short empty-street POV. Character motion was produced separately; no Rokehan character-animation or exact-geography qualification.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/rokehan-manga.md",
+            "experiments/2026-10-26/evidence/rokehan-manga.json",
+            "skills/video-production-router/references/location-scout.md",
+            "docs/experiments/no-further-claims-manga-probes.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "artifacts": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "controllability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Retained tool-level execution summary only;not a feature-specific or newly repeated check."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "No explicit owner decision extracted;publication does not imply approval."
+          },
+          "resources": {
+            "hardware": "not_extracted;see sources",
+            "formats": "not_extracted",
+            "timing": "not_recorded_in_index",
+            "cost": "unknown"
+          },
+          "limitations": [
+            "Historical scope only;unrecorded quality/timing/version remain unknown."
+          ],
+          "alternatives": [],
+          "search_terms": [],
+          "granularity": "retained_scope_summary",
+          "scope_note": "Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."
+        },
+        {
+          "id": "rokehan-location-scout--raenest-city",
+          "tasks": [
+            "video",
+            "3d"
+          ],
+          "inputs": [
+            "3d"
+          ],
+          "styles": [
+            "city-miniature",
+            "neon",
+            "ascii"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "retained-native-glb",
+            "local-style-finish"
+          ],
+          "version": "Three.js0.187.0;control0.185.1;Chrome/FFmpeg retained",
+          "scope": "Reused exact26October native Nantes export in new authored neon/ASCII/bank proof. No new native export or native shader;fictional bank separate;map credits retained.",
+          "evidence": "tested",
+          "sources": [
+            "docs/research/raenest-payment-in-transit-2026-11-18.md",
+            "docs/productions/raenest-payment-in-transit.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/research/raenest-payment-in-transit-2026-11-18.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Encoded wide/portrait examples inspected;website uses proportion-preserving crop;ASCII is visual texture,not important text.",
+              "source": "docs/research/raenest-payment-in-transit-2026-11-18.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Actual camera parallax,moving parcel and native ASCII response;source people/cars remain static.",
+              "source": "docs/research/raenest-payment-in-transit-2026-11-18.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Deterministic authored geometry/source;no generative character identity test.",
+              "source": "docs/research/raenest-payment-in-transit-2026-11-18.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Initial roof/glow/source-fit corrected;not exhaustive collision or line-shimmer validation.",
+              "source": "docs/research/raenest-payment-in-transit-2026-11-18.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Absolute-time camera/objects plus seeked genuine site clips;no financial operation.",
+              "source": "docs/research/raenest-payment-in-transit-2026-11-18.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Both22s24fps1280x720/720x1280 exports fully decoded;same-source seven-pose control/version receipts and standard delivery checks retained. Full1920x1080/1080x1920exports2:29/0:39fully decoded;sampled motion/framing checks retained;owner accepted both full films18November2026."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner accepted dual22s pilots with upper plates lowered in full films. Owner watched and accepted full2:29/0:39films18November2026;not general tool qualification."
+          },
+          "resources": {
+            "hardware": "Owner Mac;retained external runtimes/native Rokehan geometry",
+            "formats": "1280x720 and720x1280;24fps;22s",
+            "timing": "Active labour/whole route not measured;no speed comparison",
+            "cost": "No paid provider calls;local compute unpriced"
+          },
+          "limitations": [
+            "Scoped proof,not arbitrary r187/ASCII or geographic-fidelity qualification",
+            "No new native Rokehan export,no bank identification or transaction",
+            "Native style/readability/listening remain owner-review dependent"
+          ],
+          "alternatives": [
+            {
+              "tool_id": "three-scene",
+              "comparison": "not_compared",
+              "reason": "Authored plain3D remains fallback;new post/ASCII combination not universally preferred."
+            }
+          ],
+          "search_terms": [
+            "киберпанк",
+            "ASCII город",
+            "банк",
+            "Raenest",
+            "cyberpunk city",
+            "native ASCII"
+          ],
+          "granularity": "specific_production_application"
+        }
       ]
     },
     "claudemy": {
@@ -2186,7 +2988,113 @@
         "text"
       ],
       "rights_class": "conditional",
-      "licence_note_sha256": "4783bfe7ae505d71ccabebc7b3d8059c597d1a5294807a64515340b79da2646c"
+      "licence_note_sha256": "4783bfe7ae505d71ccabebc7b3d8059c597d1a5294807a64515340b79da2646c",
+      "applications": [
+        {
+          "id": "minicharts--allweb3-proof",
+          "tasks": [
+            "diagram",
+            "graphics"
+          ],
+          "inputs": [
+            "data",
+            "text"
+          ],
+          "styles": [
+            "mockumentary",
+            "editorial-collage",
+            "hand-drawn"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "native-svg",
+            "time-controlled-dom",
+            "cut-paper"
+          ],
+          "version": "Developer archive18November2026;no package semver declared;exact hashes in private source receipt",
+          "scope": "Native build/3interactive parts,label/click check and20s dual-aspect adapted video insert;invented3/2/1fixture,not platform metrics.",
+          "evidence": "tested",
+          "sources": [
+            "docs/research/allweb3-mockumentary-pilot-2026-11-18.md",
+            "docs/productions/allweb3-proof-behind-post.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/research/allweb3-mockumentary-pilot-2026-11-18.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "source": "docs/research/allweb3-mockumentary-pilot-2026-11-18.md",
+              "note": "V1 marks merged with envelope folds;corrected to10px green ticks/69px red question on light backing;SVG colour override removed. Checklist ticks now fixed-size three-point strokes,not aspect-dependent diagonals. Full encoded samples/text bounds checked."
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "source": "docs/research/allweb3-mockumentary-pilot-2026-11-18.md",
+              "note": "Actual native SVG envelope groups enter via authored time-controlled DOM transforms;not native video export."
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "source": "docs/research/allweb3-mockumentary-pilot-2026-11-18.md",
+              "note": "Fixed native SVG/kit geometry;no generative identity changes or character acting."
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "source": "docs/research/allweb3-mockumentary-pilot-2026-11-18.md",
+              "note": "V1 owner-returned title/closing style and mark/checklist problems preserved;corrections implemented before full assembly. Broader charts remain untested."
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "source": "docs/research/allweb3-mockumentary-pilot-2026-11-18.md",
+              "note": "Original3item fixture,native part/click tests and explicit timeline;other chart types untested."
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Native MIT builder/engine used;3parts and clicked note checked;complete dual20s exports and media/browser checks retained. Corrected20s v2 proofs and complete1920x1080/1080x1920films exported/decoded;source/paragraph samples,ASR,text/badge and standard browser checks retained."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner returned v1 for documentary opening/closing,larger coloured marks and aligned ticks. After corrections/expansion,owner watched and accepted both full films18November2026;not general chart-library qualification."
+          },
+          "resources": {
+            "hardware": "Owner Mac;retained Chrome/Kokoro/FFmpeg",
+            "formats": "1280x720 and720x1280,24fps,20s",
+            "timing": "No controlled whole-route labour/speed measurement",
+            "cost": "Free MIT package,no paid provider calls;local compute unpriced"
+          },
+          "limitations": [
+            "Illustrative fixture,not AllWeb3 data or payout verification",
+            "Authored DOM animation around actual SVG;not native video export",
+            "Other chart types and arbitrary data/typography untested"
+          ],
+          "alternatives": [
+            {
+              "tool_id": "manim-community",
+              "comparison": "not_compared",
+              "reason": "Retained authored diagrams are an alternative;no comparative winner established."
+            }
+          ],
+          "search_terms": [
+            "AllWeb3",
+            "мокументари",
+            "газетные вырезки",
+            "Minicharts",
+            "evidence",
+            "hand-drawn envelopes"
+          ],
+          "granularity": "specific_production_application"
+        }
+      ]
     },
     "spaghetti-splatting": {
       "tasks": [

@@ -14,3 +14,7 @@
 - Use `python3 scripts/validate.py`; no new video experiment is needed for documentation changes.
 - At completed-film or executed-trial closeout, update docs/public-evidence.json with one source-linked case per story/trial; aspect/language variants and retries are not new entries. This keeps visitor-loaded site counts current. See docs/site.md.
 - At executed-trial/production closeout, update the matching application in skills/video-production-router/references/arsenal-facets.json from retained sources; keep style/technique/version, technical checks, five quality observations, owner decision and resource unknowns separate. Follow references/arsenal-search.md; discovery annotations do not qualify planner providers.
+
+- For review and publication packages,use delivery.py and the fixed page/check procedure in skills/video-production-router/references/preview.md. Change package data per film;update the shared template only for a concrete requested improvement. Reuse automated seek/download checks;manual player regression is needed after player changes or a reported failure.
+
+- Delivery text uses per-field copy buttons with visible confirmation:YouTube titles/description/tags;TikTok caption/first comment. Never add publication-text downloads or TikTok subtitle/title fields. The TikTok player container itself must be portrait.

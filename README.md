@@ -22,7 +22,7 @@ publishing service.
 | **Continue a project** | [Recover the current state](docs/start-here.md#continue-a-project) | Exact selected version, accepted work, waits/blockers and the next permitted step |
 | **Correct a fragment** | [Bounded change and A/B review](docs/start-here.md#correct-a-fragment) | A precise request, preserved original and corrected version, comparison in context |
 
-[Current priorities](docs/next-cycle.md) · [Strategic roadmap and release gates](docs/roadmap.md)
+[Purpose and development path](docs/vision.md) · [Current priorities](docs/next-cycle.md) · [Strategic roadmap and release gates](docs/roadmap.md)
 
 ## Try one production plan
 

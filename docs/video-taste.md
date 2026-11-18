@@ -31,6 +31,7 @@ or switching still poses does not satisfy the requested character movement. When
 менял позы между кадрами, а двигал головой и руками». The stated problem was
 static, repetitive picture. [Gemini](productions/gemini-omni-revise.md) and
 [Copilot](productions/copilot-review-sources.md) retain the accepted corrections. The owner later called [One Light](productions/one-light-one-way-home.md) «это просто слайд-шоу» despite liking its images/sound: the same motion lesson had not been applied adequately. The owner subsequently accepted both motion-corrected versions; the failed initial check remains part of the lesson.
+[KriptoK](productions/kriptok-same-ticker.md#owner-revisionrepetitionstatic-source-windows-and-clipping) adds another failed full-film check:the owner liked the opening/3D graph but rejected repeated page layouts/three-dot decoration and long static source windows. A shared magazine identity must still give each argument an appropriate illustration and action;pilot approval did not approve these interiors. The owner subsequently accepted both corrected full films;the failed initial check remains part of the lesson.
 **Check:** review the action plan and encoded movement through each relevant long
 scene in the full film. Look for the named subject/environment action within a continuous shot, not only pixel changes, a dissolve, light sweep or camera motion. A short moving opening does not pass this check.
 **Limit:** a deliberately quiet or static beat may serve the agreed story. Do not

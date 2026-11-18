@@ -9,6 +9,10 @@ Supports M1–M4 / R03–R05 / R09 and the [next release goal](../roadmap.md#nex
 Use the existing brief, project journal, revision/handoff and [video taste](../video-taste.md).
 No parallel scheduler, telemetry service or production database.
 
+## Test4 —17November2026
+
+[PL1 / I See You as Art](../productions/i-see-you-as-art-pl1.md) is prepared in both68s formats from owner-supplied footage/photos/music. The owner selected autonomous creative editing and a real test of the standard review/delivery template. Source audio removed,no narration,independent aspect compositions,film-derived covers and platform copy. Automatic browser checks passed. Owner supplied both publication URLs17November. Separate creative/music/cover acceptance is unrecorded,so the explicitly accepted count stays three;test4 is owner-reported published. No intermediate owner approvals,downloads or window preparation requested.
+
 ## Question and boundary
 
 Can selected simple film types go from one upfront agreement to complete YouTube
