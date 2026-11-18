@@ -191,3 +191,7 @@ but does not require a full repository checkout; `scripts/validate.py` additiona
 checks source existence inside the repository. Manim Community/GiveMotion accept
 only authored composition input in these retained trials;image/video import is
 not inferred from their exported PNG/MP4 files.
+
+## Latest documentary intake —18November2026
+
+[26-family assessment and sources](../../../docs/research/tool-intake-2026-11-18.md) deduplicates existing routes and maps new rendering,effects,avatar and design-reference candidates to the existing queue. Keywords:ThreeRT,Canvas UI,AVA,Duo,LoreMax,Kling Image4,21st,Originkit,Transitions,DESIGN.md,Mobbin,Recent/Godly,Designeer. These are documentary discoveries,not executable providers or tested applications returned by search.py. Read exact access/licence/hardware/quality boundaries in the intake;refer to existing application records for Manim/MotionCanvas/HyperFrames/GiveMotion and GenMotion. Do not reset historical tests or infer qualification from a link.

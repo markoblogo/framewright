@@ -89,6 +89,9 @@ existing authority;Quixote remains paused.
 
 ## Direction and strategic outcomes
 
+[Owner-adopted goal,mission and development path](vision.md) define the mature studio and five connected stages. Current implementation slice is standard review/delivery under M1/M2 and SOCIAL-01: fixed branded pages,explicit revision/status,per-file packages and automated playback/download checks. Its acceptance is functional verification plus owner review of the interface. New creative production and next release scope are selected separately.
+
+
 [Internal studio scope](internal-studio-scope.md), clarified6November: images, audio products, game visuals, platform-specific social content and receiving-project curation accompany the public video-first focus. Current evidence and planned Instagram/Facebook/AzurMenton transfer remain separate; no all-platform autopublisher is claimed. This is a future expansion path: manual output → reusable template → receiving-project handoff → separately authorised automation; nothing is activated by this documentation.
 
 **A personal video-production studio led by an agent:** understand the intended

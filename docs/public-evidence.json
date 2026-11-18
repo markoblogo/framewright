@@ -1,6 +1,6 @@
 {
   "schema": "framewright-public-evidence-v1",
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "scope": "Conservative documented cases, not an asserted lifetime total. Original records remain the source of truth.",
   "definitions": {
     "films": "One completed authored story/promo/tutorial/ambient master per case. Aspect, language and revision variants count once. A finished export need not be publicly published or creatively accepted.",
@@ -525,7 +525,32 @@
       "source": "docs/productions/praxis-robot-engineering.md",
       "basis": "owner_reported_published",
       "index_note": "One65.25s original engineering explainer,both revision2 films accepted;owner supplied YouTube DX86Vqs-ghg17November2026 and declined TikTok publication. Exact prepared hashes unchanged;Radar received publication. Uploaded identity/visibility/metrics unchecked. No Praxis inference or real robot test."
-    }
+    },
+    {
+      "id": "i-see-you-as-art-pl1",
+      "source": "docs/productions/i-see-you-as-art-pl1.md",
+      "basis": "registered_finished_export",
+      "index_note": "Two68s sourced media-art formats;owner supplied YouTube/TikTok publication URLs17November. Separate creative/music/cover acceptance and uploaded identity/metrics unverified."
+    },
+    {
+      "id": "kriptok-same-ticker",
+      "source": "docs/productions/kriptok-same-ticker.md",
+      "basis": "completed_local_master",
+      "index_note": "141.333s /38.875s English v2 films accepted after visual correction;publication package prepared. Owner supplied both publication URLs18November;independent visibility/identity/metrics unchecked. Radar batch send request accepted;receiving visibility/persistence pending. No deposit,trade or exact in-app token test."
+    },
+    {
+      "id": "raenest-payment-in-transit",
+      "source": "docs/productions/raenest-payment-in-transit.md",
+      "basis": "registered_finished_export",
+      "index_note": "One story,two full aspects2:29/0:39;both full films owner-accepted;publication package prepared,owner supplied YouTube/TikTok URLs18November;visibility/identity/metrics unchecked. Genuine public-site captures,no account/deposit/payment or campaign entry."
+    },
+    {
+      "id": "allweb3-proof-behind-post",
+      "source": "docs/productions/allweb3-proof-behind-post.md",
+      "basis": "registered_finished_export",
+      "index_note": "One full story in2:40YouTube/0:37TikTok;four pilot corrections applied;owner accepted both full films,publication packages prepared,owner supplied YouTube/TikTok URLs18November;visibility/identity/metrics unchecked. Genuine public pages,no account/campaign/payout test or agent upload."
+    },
+    {"id": "papertrails-world-walk", "source": "docs/productions/papertrails-world-walk.md", "basis": "registered_finished_export"}
   ],
   "trials": [
     {
@@ -816,6 +841,42 @@
       "source": "docs/experiments/openmotion-reuse-2026-11-17.md",
       "basis": "executed_bounded_workflow_trial",
       "index_note": "One local native MCP authoring/revision/export and Motion Package trial. Partial attempts included;two aspects/retries do not add cases. No new finished film,owner acceptance or global provider qualification."
+    },
+    {
+      "id": "filmj-astra-local-animation-2026-11-17",
+      "source": "docs/experiments/filmj-astra-local-animation-2026-11-17.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One local montage/acting comparison suite. Selected plates accepted;16s local mesh/hand call scene rejected. No native Astra video inference or controlled model comparison. Not a completed film."
+    },
+    {
+      "id": "autoprod04-pl1-standard-delivery",
+      "source": "docs/productions/i-see-you-as-art-pl1.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Owner-selected autonomous prepared-source edit plus standard delivery reuse. Both films and six package downloads/browser checks passed;creative/listening review pending. No narration or provider generation."
+    },
+    {
+      "id": "kriptok-glossy-journal-proof",
+      "source": "docs/research/kriptok-spotlight-preparation-2026-11-18.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Initial8s proof rejected;v2 tempo/readability revised to10s v3 accepted in both aspects. One bounded trial. Full films now prepared separately;no financial transaction or product-use test."
+    },
+    {
+      "id": "raenest-three187-compatibility",
+      "source": "docs/research/raenest-payment-in-transit-2026-11-18.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Bounded same-source r187-versus0.185.1 sampled GLTF/bloom/ASCII check and full18722s two-aspect exports;not an engine migration or speed benchmark."
+    },
+    {
+      "id": "raenest-native-ascii3d",
+      "source": "docs/research/raenest-payment-in-transit-2026-11-18.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Actual native Three.js AsciiEffect bank/city insert exported in two22s proofs. No Devault or Pocket OS/UI preservation qualification;pilots and full films owner-accepted."
+    },
+    {
+      "id": "allweb3-minicharts-mockumentary",
+      "source": "docs/research/allweb3-mockumentary-pilot-2026-11-18.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Native Minicharts build,3interactive envelope parts,label/click check and adapted two-aspect20s video insert. Illustrative fixture only;no separate native-tool creative approval inferred. Full films subsequently accepted and owner-reported published;no platform/payout test."
     }
   ]
 }

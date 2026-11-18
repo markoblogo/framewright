@@ -1,5 +1,11 @@
 # Proposed experiment queue
 
+## Tool intake —18November2026: motion,avatars,rendering and references
+
+[Deduplicated26-family catalogue and conditional pass criteria](research/tool-intake-2026-11-18.md),M4/R05/R06/R07. **CANVAS-UI-01**:one controlled6–8s original effect vs plain Canvas;**THREERT-01**:tiny original physically lit prop/set vs existing Three.js;**AVA-BROWSER-01**:later private voice/lip-sync/export test,subject to runtime/model/default-avatar rights;**DUO-PREFLIGHT-01**:future eligibleCUDA backend/resource/licence research. KlingImage4extends existing **IMG26-01** when its exact question fits;components/style files extend **MOTION-COMPONENT-01 / DESIGN-SKILLS-01**,without another template system.
+
+Hera,Jitter,MotionCanvas,ManimCommunity,HyperFrames,GiveMotion,DesignBookmark,GradientDeck,60fps,BRIA andLongCat keep their existing records and scoped evidence. GiveMotion andGenMotion remain distinct. BRIA3weights are CC BY-NC4.0;defaultAVAavatar is noncommercial;Duo code/weights have different terms. CanvasUI HTML-in-Canvas depends on Chrome157+with Android fallback. Reference libraries do not grant footage/code rights. Google Sheets pixel-art post is a method reference,not a completed reproduction. Course/idea tooling remains an explicitly unfilled research need. No install,generation,credit use,account connection,production reorder,Quixote resumption or release.
+
 ## KLAP-01 — current-production repurposing and later review evidence
 
 [Owner-selected service study](research/klap-2026-11-16.md): gifted30-day Pro; initial UI import/edit/export executed, not general qualification. Next bounded application belongs to an actual selected production, with complete idea, useful framing, readable captions and real exported bytes. Do not start a separate review batch today. Retain before/after evidence for later2–3 review angles; no paid API,channel grant or public upload.
@@ -39,7 +45,7 @@ Trial question: does one expandable/fan-card motion inspired by a specified Desi
 ## Tool intake —11November2026
 
 [34 URLs /22 topics, deduplication and future-stack routes](research/tool-intake-2026-11-11.md).
-Conditional current-stack questions: **MINICHARTS-01** numeric/legibility controls;
+Conditional current-stack questions: **MINICHARTS-01** numeric/legibility controls; [18November scoped result](research/allweb3-mockumentary-pilot-2026-11-18.md):native3item envelope fixture,interactive checks and dual20s adapted video insert;owner review pending,not whole-library or AllWeb3 data validation;
 **PANORAMA-PLATES-01** owned panorama → multiple angle/aspect plates, no generation;
 **BLENDER53-COMPAT-01** isolated version/copy, not a global upgrade; and
 **PHYSICS-CHAIN-01** extends existing MuJoCo CPU evidence with an original contact
@@ -408,6 +414,10 @@ Custom IDs are dropped; native URLs become absolute. Full listening, other edito
 and bidirectional journal handling remain unqualified. Kitsu/Zou service integration stays deferred
 until a concrete team workflow; no mandatory dependency or copied upstream code.
 
+## Selected Raenest trials —18November2026
+
+Owner retargeted two fitting tests to the second Web3 film. [Executed scope](research/raenest-payment-in-transit-2026-11-18.md):THREE187-01 has seven matched-camera samples against retained0.185.1 plus complete dual-aspect187proof exports;no broad engine migration or performance ranking. Native Three.js AsciiEffect now has a22s dual-format proof containing a2.5s ASCII3D insert;Devault,real-UI preservation and Pocket OS remain untested/paused. Creative/listening review pending. No financial transaction or campaign entry.
+
 ## Creative editor / ASCII / Android trials — candidates, 27 October
 
 [Research and gates](research/creative-editors-ascii-krea-inshot-2026-10-27.md).
@@ -773,7 +783,7 @@ Twelve new candidate records; no installations, downloads, uploads or generation
 
 | Order | Proposed trial | Pass boundary |
 | --- | --- | --- |
-| Bounded TTE trial complete / ASCII 3D pending | TerminalTextEffects Decrypt is retained in the agent Short; Three.js AsciiEffect remains untested | Reuse the verified text reveal when appropriate; test an ASCII 3D illustration only against a concrete Pocket OS shot, keeping real UI legible |
+| Bounded TTE complete / native ASCII3D scoped Raenest trial | TerminalTextEffects Decrypt retained;native Three.js AsciiEffect now exported in the owner-selected Raenest proof;Pocket OS/UI preservation remain untested | Reuse the verified text reveal when appropriate; test an ASCII 3D illustration only against a concrete Pocket OS shot, keeping real UI legible |
 | P1 / owner voice, resource-gated | Qwen3-TTS Base local clone; Chatterbox Turbo/OpenVoice alternatives, ElevenLabs optional cloud comparator | Agreed private reference, exact model/terms, short new script and owner listening. No existing recording is implicitly selected or uploaded |
 | P1 / video perception, access-gated | Existing Gemini candidate on short known-defect controls; Qwen3-Omni local alternative | Action/timing/defect findings versus labels, false passes and human playback. Frame analysis, ASR and cut detection do not qualify continuous video quality |
 | P2 / storyboard-led | Blender camera/3D illustration; postprocessing CRT/VFX; optional Chafa/agg | One concrete shot each, existing assembler, rights/resources and encoded QA |
