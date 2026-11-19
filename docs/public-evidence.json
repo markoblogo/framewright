@@ -550,7 +550,11 @@
       "basis": "registered_finished_export",
       "index_note": "One full story in2:40YouTube/0:37TikTok;four pilot corrections applied;owner accepted both full films,publication packages prepared,owner supplied YouTube/TikTok URLs18November;visibility/identity/metrics unchecked. Genuine public pages,no account/campaign/payout test or agent upload."
     },
-    {"id": "papertrails-world-walk", "source": "docs/productions/papertrails-world-walk.md", "basis": "registered_finished_export"}
+    {
+      "id": "papertrails-world-walk",
+      "source": "docs/productions/papertrails-world-walk.md",
+      "basis": "registered_finished_export"
+    }
   ],
   "trials": [
     {
@@ -877,6 +881,12 @@
       "source": "docs/research/allweb3-mockumentary-pilot-2026-11-18.md",
       "basis": "executed_bounded_workflow_trial",
       "index_note": "Native Minicharts build,3interactive envelope parts,label/click check and adapted two-aspect20s video insert. Illustrative fixture only;no separate native-tool creative approval inferred. Full films subsequently accepted and owner-reported published;no platform/payout test."
+    },
+    {
+      "id": "course-lesson03-real-code-pilot",
+      "source": "docs/productions/practical-ai-bug-fixing-course.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One original runnable Python teaching lab and6minute real editor/terminal lesson;local Kokoro/captions/course-delivery check. Owner accepted the pilot19November;independent learner reproduction and Udemy upload untested. Not a full course release;no additional film count for this educational pilot."
     }
   ]
 }

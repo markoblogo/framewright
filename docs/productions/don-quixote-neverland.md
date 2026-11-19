@@ -1,12 +1,9 @@
-# Don Quixote in Neverland — owner-paused preparation
+# Don Quixote in Neverland — indefinitely frozen
 
 11 November 2026 · LIT-FILM-04 / M1/R02, M3–M5/R05/R07, R09.
-Owner-selected book and manuscript. **Owner paused production11November2026.**
-The owner rejected the51s opening-block visual implementation16November2026. Preserve accepted sources and the rejected baseline; resume
-only on the owner's instruction. No cleanup, further rendering or new generation
-while paused. **No completed film or new trial qualification.**
-The owner requested2–3films and described three complementary story functions;
-working plan is three films, starting with the first meeting.
+Owner-selected book and manuscript. **Current owner decision,19November2026:indefinitely frozen,with no return date.** The11/16November pauses and rejected motion work below are historical. Preserve accepted sources and failed evidence;no generation,rendering,method trial,cleanup or scheduled retry. Only an explicit new owner decision may resume this project. A new model,tool or software release does not lift the freeze. **No completed film or general acting qualification.**
+
+The earlier request for2–3films and three complementary story functions is retained below as a dormant proposal,not an active queue.
 
 | Film | Source and current proposal | State |
 | --- | --- | --- |
@@ -197,3 +194,8 @@ Owner-selected2–4s follow-up now has a labelled3.2s articulated2D-rig fallback
 ## Current state — owner paused again16November
 
 Owner explicitly paused all Quixote production and trials after the rejected local short reaction. Preserve accepted cast,anchors,full role voice and fanged mill face;retain failed exports,editable sources,exact feedback and provider refusal/refund receipts for later review. No next generation,render,cleanup or method experiment is active. Resumption requires a new owner instruction. Documentation consolidation,checks,PR and merge are authorised;no release. Private pause receipt:`peter-motion-ab-20261116/records/owner-pause-20261116.json`.
+
+
+## Owner freeze —19November2026
+
+The owner moved Quixote from pause to indefinite freeze. No return date is selected. Accepted cast,anchors,full role voices and fanged mill face remain protected alongside failed exports,source recipes and exact feedback. The16November pause receipt stays unchanged;the new private `owner-status-2026-11-19.json`and project decision record carry the current status. No new experiment,render,generation,source retirement or restart. The project is not a gate for the next release.

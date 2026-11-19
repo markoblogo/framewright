@@ -137,6 +137,48 @@ class DeliveryTests(unittest.TestCase):
         self.data['variants']*=2
         with self.assertRaises(ValueError):self.run_build()
 
+    def test_course_uses_native_lesson_label_and_materials(self):
+        variant = self.data['variants'][0]
+        variant['platform'] = 'course'
+        variant['files'].pop('copy')
+        variant['publication'] = {'title': 'Make the bug fail first',
+                                  'description': 'One real failing test.',
+                                  'prerequisites': 'Basic Python',
+                                  'learning_outcomes': 'Write a behavior test'}
+        (self.root/'resources.zip').write_bytes(b'fixture resources')
+        self.data['extras'] = [{'label':'Teaching files','path':'resources.zip'}]
+        receipt = self.run_build()
+        page = (self.root/'review.html').read_text()
+        self.assertIn('id="course"', page)
+        self.assertIn('Учебный урок', page)
+        self.assertIn('class="landscape"', page)
+        self.assertIn('data-field="Результат обучения"', page)
+        self.assertNotIn('YouTube', page)
+        self.assertNotIn('TikTok', page)
+        self.assertEqual(receipt['files'][0]['platform'], 'course')
+        self.assertIn('href="resources.zip" download', page)
+        variant['publication']['caption'] = 'Wrong platform field'
+        with self.assertRaises(ValueError):
+            self.run_build()
+        del variant['publication']['caption']
+        with self.assertRaises(ValueError):
+            self.run_build(720, 1280)
+
+    def test_course_final_plain_copy_remains_visible_and_copyable(self):
+        self.data['state'] = 'final'
+        variant = self.data['variants'][0]
+        variant['platform'] = 'course'
+        (self.root/'copy.txt').write_text('A meaningful lesson description — café.', encoding='utf-8')
+        (self.root/'cover.png').write_bytes(b'cover fixture')
+        (self.root/'subs.srt').write_text('captions', encoding='utf-8')
+        variant['files'].update(cover='cover.png', subtitles='subs.srt')
+        self.run_build()
+        page = (self.root/'review.html').read_text()
+        self.assertIn('data-field="Описание урока"', page)
+        self.assertIn('>A meaningful lesson description — café.</pre>', page)
+        self.assertEqual(page.count('type="button" data-copy='), 1)
+        self.assertNotIn('href="copy.txt" download', page)
+
     def test_invalid_utf8_refused(self):
         (self.root/'copy.txt').write_bytes(b'\xff')
         with self.assertRaises(UnicodeDecodeError):self.run_build()

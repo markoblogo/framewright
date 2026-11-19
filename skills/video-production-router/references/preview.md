@@ -107,3 +107,18 @@ Declare required_files for the actual media/file scope. A structured publication
 ### Owner acceptance —17November2026
 
 The owner accepted template v2 with “Шаблон принимаю”. This is the default review/delivery interface for future packages. Keep the shared layout and platform rules;populate each project’s agreed fields and assets. Private deliveries/standard-preview-demo/owner-template-acceptance.json pins the selected template/page hashes and browser evidence. This acceptance covers the interface. Film,cover and soundtrack decisions stay in their production records.
+
+
+### Course lesson package —template v2.1
+
+For an actual landscape lesson,use `platform: "course"` in the same manifest and
+builder. It renders **Учебный урок**,not YouTube/TikTok,and keeps the accepted
+layout,player,downloads and clipboard controls. No LMS or upload adapter is added.
+Course `publication` contains optional plain-text `title`, `description`,
+`prerequisites` and `learning_outcomes`;social-platform fields are refused.
+Declare `required_files` explicitly for the current review stage;for a complete
+lesson package use video,cover and subtitles. Course video is16:9;subtitle default
+is true. Add VTT,teaching ZIP,transcript or instructor materials through existing
+extras. Markdown/text extras remain visible copy blocks;ZIP/VTT remain downloads.
+Run the same real-browser seek/download/clipboard checks. A successful package
+check is not Udemy upload,platform acceptance,owner review or learner validation.

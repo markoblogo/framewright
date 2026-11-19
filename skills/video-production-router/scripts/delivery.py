@@ -9,7 +9,8 @@ from pathlib import Path
 import subprocess
 from urllib.parse import quote
 
-VERSION = '2'
+VERSION = '2.1'
+PLATFORMS = {'youtube': 'YouTube', 'tiktok': 'TikTok', 'course': 'Учебный урок'}
 STATES = {'pilot': 'Проба', 'review': 'На просмотр', 'final': 'Финальный пакет',
           'rejected': 'Отклонённая проба'}
 LABELS = {'video': 'Скачать видео', 'cover': 'Скачать обложку',
@@ -85,7 +86,9 @@ def size_label(size):
 
 
 def publication_fields(platform, supplied, legacy):
-    allowed = {'titles', 'description', 'tags'} if platform == 'youtube' else {'caption', 'first_comment'}
+    allowed = ({'title', 'description', 'prerequisites', 'learning_outcomes'} if platform == 'course'
+               else {'titles', 'description', 'tags'} if platform == 'youtube'
+               else {'caption', 'first_comment'})
     if supplied is not None:
         if not isinstance(supplied, dict) or set(supplied) - allowed:
             raise ValueError('Unsupported publication fields for ' + platform)
@@ -117,8 +120,12 @@ def publication_fields(platform, supplied, legacy):
                        for line in data.get('alternatives', '').splitlines() if line.strip()]
             data['titles'] = [title for title in titles if title][:3]
         if legacy and not found:
-            data['description' if platform == 'youtube' else 'caption'] = legacy.strip()
-    if platform == 'youtube':
+            data['description' if platform in {'youtube', 'course'} else 'caption'] = legacy.strip()
+    if platform == 'course':
+        fields = [(label, data.get(key, '')) for key, label in [
+            ('title', 'Название урока'), ('description', 'Описание урока'),
+            ('prerequisites', 'Что нужно знать'), ('learning_outcomes', 'Результат обучения')]]
+    elif platform == 'youtube':
         titles = data.get('titles', [])
         if not isinstance(titles, list) or len(titles) > 3 or any(not isinstance(t, str) for t in titles):
             raise ValueError('YouTube titles must be a list of at most three strings')
@@ -157,15 +164,15 @@ def build(manifest):
     seen, records, sections = set(), [], []
     for variant in variants:
         platform = variant.get('platform')
-        if platform not in {'youtube', 'tiktok'} or platform in seen:
-            raise ValueError('Each platform must be youtube or tiktok, once')
+        if platform not in PLATFORMS or platform in seen:
+            raise ValueError('Each platform must be youtube, tiktok or course, once')
         seen.add(platform)
         assets = variant.get('files', {})
         if not isinstance(assets, dict) or 'video' not in assets or set(assets) - LABELS.keys():
             raise ValueError('Expected video and supported file roles')
         if platform == 'tiktok' and 'subtitles' in assets:
             raise ValueError('TikTok packages do not include subtitles')
-        subtitles_required = variant.get('subtitles_required', platform == 'youtube')
+        subtitles_required = variant.get('subtitles_required', platform in {'youtube', 'course'})
         if not isinstance(subtitles_required, bool):
             raise ValueError('subtitles_required must be boolean')
         default_required = ['video', 'cover']
@@ -198,14 +205,14 @@ def build(manifest):
                 sar = video.get('sample_aspect_ratio', '1:1')
                 sn, sd = (1, 1) if sar in {'N/A', '0:1'} else map(int, sar.split(':'))
                 ratio = width * sn / (height * sd)
-                expected = 16 / 9 if platform == 'youtube' else 9 / 16
+                expected = 9 / 16 if platform == 'tiktok' else 16 / 9
                 if abs(ratio / expected - 1) > .02:
                     raise ValueError('Video does not match platform aspect: ' + platform)
                 subprocess.run(['ffmpeg', '-v', 'error', '-xerror', '-i', str(p),
                                 '-f', 'null', '-'], check=True, capture_output=True)
                 info = f'{width} × {height}'
-        name = 'YouTube' if platform == 'youtube' else 'TikTok'
-        aspect = 'landscape' if platform == 'youtube' else 'portrait'
+        name = PLATFORMS[platform]
+        aspect = 'portrait' if platform == 'tiktok' else 'landscape'
         downloads = ''.join(
             f'<a class="download {"primary" if role == "video" else ""}" href="{escape(url)}" download>{LABELS[role]} · {size_label(p.stat().st_size)}</a>'
             for role, (url, p, _) in checked.items() if role != 'copy')
@@ -235,8 +242,8 @@ def build(manifest):
         else:
             extra_html.append(f'<a class="download" href="{escape(quote(value, safe="/"))}" download>{escape(extra["label"])} · {size_label(p.stat().st_size)}</a>')
     additional = '<section class="variant"><h2>Дополнительные материалы</h2><div class="files">' + ''.join(extra_html) + '</div></section>' if extra_html else ''
-    nav = ''.join(f'<a href="#{p}">{"YouTube" if p == "youtube" else "TikTok"}</a>'
-                  for p in ('youtube', 'tiktok') if p in seen)
+    nav = ''.join(f'<a href="#{p}">{PLATFORMS[p]}</a>'
+                  for p in PLATFORMS if p in seen)
     page = f'''<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(data["title"])} · Framewright</title><style>{CSS}</style></head>
 <body><header><span class="wordmark">Framewright</span><nav aria-label="Версии">{nav}</nav></header>
 <main><div class="intro"><p class="status">{STATES[data["state"]]} · {escape(data["revision"])}</p><h1>{escape(data["title"])}</h1><p>{escape(data["note"])}</p></div>{''.join(sections)}{additional}</main>
