@@ -1,6 +1,8 @@
-# RUN//SIGNAL M01 — home review accepted, outdoor test pending
+# RUN//SIGNAL M01 — paused,not frozen;running test pending
 
 8 November 2026 · RUN-AUDIO-01 / R04/R05/R09 · audio-first running radio drama.
+
+**Current owner confirmation19November:**paused,not frozen.The final running test/report remains pending;home review acceptance is unchanged. No M02,new test or publication starts here. Completion of the running test OR creation and publication of the Udemy course,whichever actually occurs first,is the owner’s next release-timing trigger;see [roadmap](../roadmap.md#owner-release-timing-19november2026). This is not an automatic release instruction.Private current status:`productions/run-signal/owner-status-2026-11-19.json`and START-HERE.md;accepted media/receipts remain unchanged.
 
 ## Current accepted version
 

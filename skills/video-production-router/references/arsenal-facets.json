@@ -346,11 +346,122 @@
       "tasks": [
         "editing",
         "video",
-        "audio"
+        "audio",
+        "screen-capture"
       ],
       "rights_class": "conditional",
       "licence_note_sha256": "d0953705187c885f542ac3af5332eb8b72c9d70b8278c88fdba6feaccbee6933",
       "applications": [
+        {
+          "id": "ffmpeg--real-code-course-lesson03",
+          "tasks": [
+            "video",
+            "editing",
+            "audio",
+            "screen-capture"
+          ],
+          "inputs": [
+            "video",
+            "audio",
+            "text"
+          ],
+          "styles": [
+            "technical-tutorial",
+            "real-screen",
+            "minimal-editorial"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "real-editor-capture",
+            "behavior-test-demo",
+            "script-to-screen-cues",
+            "asr-anchored-captions",
+            "explicit-result-annotations"
+          ],
+          "version": "FFmpeg8.0.1/AVFoundation;VSCode1.143.1;KokoroONNX0.6.1/modelv1.0af_heart;local Whisper-small",
+          "scope": "One original Python truthiness bug lecture,real editor/terminal,local voice and standard course review package. No whole-course/Udemy learner validation.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/practical-ai-bug-fixing-course.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/productions/practical-ai-bug-fixing-course.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "11encoded samples;key failure at960x540;cover full/reduced. Original code and explicit editorial result callouts.",
+              "source": "docs/productions/practical-ai-bug-fixing-course.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Real editor insertion,tab changes and command/test output;not generated character animation.",
+              "source": "docs/productions/practical-ai-bug-fixing-course.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Original app/editor content retained;no image regeneration or geometry deformation used.",
+              "source": "docs/productions/practical-ai-bug-fixing-course.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Actual assertions and stdout preserved;original capture footer/suggestion is covered by labelled teaching annotations. No general ASR/pronunciation guarantee.",
+              "source": "docs/productions/practical-ai-bug-fixing-course.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Same lab checkpoint continued across two captures;post-save byte verification required waiting for the editor. Scoped scripted UI,not general unattended screen capture.",
+              "source": "docs/productions/practical-ai-bug-fixing-course.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "360s1080pfull decode,streams,9chapters,84cueSRT/VTT,extracted runnable kit and real-browser delivery checks;see private final-qa.json."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner accepted the full pilot overall19November2026;not platform acceptance or independent learner reproduction."
+          },
+          "resources": {
+            "hardware": "Owner Mac;external studio disk;no tablet",
+            "formats": "1920x1080,30fps from15fps capture;stereo48kHz;360s",
+            "time": "Component inference/capture/retry logs retained;active labour unmeasured",
+            "cost": "No paid API calls;local compute unpriced"
+          },
+          "limitations": [
+            "One synthetic status parser;not arbitrary real-app debugging",
+            "No separate pronunciation assessment;independent learner reproduction untested",
+            "No Udemy upload,platform acceptance,paid demand or course launch tested",
+            "Temporary VSCode profile needed a short socket path;UI focus/save completion require verification"
+          ],
+          "alternatives": [
+            {
+              "tool_id": "inshot-android",
+              "comparison": "not_compared",
+              "reason": "Existing mobile finishing option;not used for this Mac-only readable code lesson."
+            }
+          ],
+          "search_terms": [
+            "Udemy",
+            "course",
+            "lecture",
+            "real code",
+            "teaching exercise",
+            "red green rollback",
+            "учебный урок",
+            "сценарий лекции"
+          ]
+        },
         {
           "id": "ffmpeg--papertrails-browser-walk",
           "tasks": [

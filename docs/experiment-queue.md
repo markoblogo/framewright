@@ -1,14 +1,22 @@
 # Proposed experiment queue
 
+## Current owner boundaries —19November2026
+
+Quixote and its motion trials are **indefinitely frozen**,with no return date. RUN//SIGNAL is **paused,not frozen**. Next release timing is the first actual completion of the running test OR creation and publication of the Udemy course;current consolidation PR is merged without release. Dated trial/pause records below remain historical and do not lift the freeze. New Radar briefs/article-video idea are discussed after the PR;none is started here.
+
+## Selected course pilot —18November priority
+
+[Existing Practical AI Bug Fixing brief and full pilot record](productions/practical-ai-bug-fixing-course.md);[15-family owner-research assessment](research/udemy-course-tools-2026-11-18.md). One existing Radar project,not another course/task. Current result:full6minute lecture3pilot owner-accepted19November;owner plans platform registration/placement20November. Pilot-before-Klap condition is satisfied;no new clip is selected automatically. Reuse Claudemy teaching principles,Kdenlive/local capture/narration/caption components within their evidence. Conditional **COURSE-SOURCE-01**(NotebookLM),**COURSE-AUTHOR-01**(Coursebox,then Mindsmith alternative),**COURSE-CAPTIONS-01**(SubtitleEdit),later **COURSE-TEXT-EDIT-01**(Descript). **COURSE-DELIVERY-01** now has scoped implementation/execution:standard templatev2.1course variant,12builder+12server tests and the real six-minute package browser checks. This is local delivery,not Udemy upload or an LMS. Test one actual gap at a time;the other queued course services were not started;no trial clocks,account grants,uploads,credits or new installs in this pilot. Public Udemy launch and whole-course expansion remain separate.
+
 ## Tool intake —18November2026: motion,avatars,rendering and references
 
 [Deduplicated26-family catalogue and conditional pass criteria](research/tool-intake-2026-11-18.md),M4/R05/R06/R07. **CANVAS-UI-01**:one controlled6–8s original effect vs plain Canvas;**THREERT-01**:tiny original physically lit prop/set vs existing Three.js;**AVA-BROWSER-01**:later private voice/lip-sync/export test,subject to runtime/model/default-avatar rights;**DUO-PREFLIGHT-01**:future eligibleCUDA backend/resource/licence research. KlingImage4extends existing **IMG26-01** when its exact question fits;components/style files extend **MOTION-COMPONENT-01 / DESIGN-SKILLS-01**,without another template system.
 
-Hera,Jitter,MotionCanvas,ManimCommunity,HyperFrames,GiveMotion,DesignBookmark,GradientDeck,60fps,BRIA andLongCat keep their existing records and scoped evidence. GiveMotion andGenMotion remain distinct. BRIA3weights are CC BY-NC4.0;defaultAVAavatar is noncommercial;Duo code/weights have different terms. CanvasUI HTML-in-Canvas depends on Chrome157+with Android fallback. Reference libraries do not grant footage/code rights. Google Sheets pixel-art post is a method reference,not a completed reproduction. Course/idea tooling remains an explicitly unfilled research need. No install,generation,credit use,account connection,production reorder,Quixote resumption or release.
+Hera,Jitter,MotionCanvas,ManimCommunity,HyperFrames,GiveMotion,DesignBookmark,GradientDeck,60fps,BRIA andLongCat keep their existing records and scoped evidence. GiveMotion andGenMotion remain distinct. BRIA3weights are CC BY-NC4.0;defaultAVAavatar is noncommercial;Duo code/weights have different terms. CanvasUI HTML-in-Canvas depends on Chrome157+with Android fallback. Reference libraries do not grant footage/code rights. Google Sheets pixel-art post is a method reference,not a completed reproduction. Course-authoring resources are now assessed in the selected Udemy intake above;broader idea-discovery remains need-led. No install,generation,credit use,account connection,production reorder,Quixote resumption or release.
 
 ## KLAP-01 — current-production repurposing and later review evidence
 
-[Owner-selected service study](research/klap-2026-11-16.md): gifted30-day Pro; initial UI import/edit/export executed, not general qualification. Next bounded application belongs to an actual selected production, with complete idea, useful framing, readable captions and real exported bytes. Do not start a separate review batch today. Retain before/after evidence for later2–3 review angles; no paid API,channel grant or public upload.
+[Owner-selected service study](research/klap-2026-11-16.md): gifted30-day Pro; initial UI import/edit/export executed, not general qualification. Next bounded application belongs to an actual selected production, with complete idea, useful framing, readable captions and real exported bytes. Latest owner priority18November:course pilot first,Klap after at least that pilot;no separate review batch now. Retain before/after evidence for later2–3 review angles; no paid API,channel grant or public upload.
 
 ## AUTOPROD-01 — one brief to complete dual-format packages
 
@@ -69,7 +77,7 @@ YouTube-only Radar exchange applied/duplicate/ack receipts retained.1874 cache
 files retired after dependency/hash checks; all accepted/current dependencies stay.
 Portable cross-machine import, speed changes, large timelines and general feature
 qualification remain open. No new duplicate trial; full films are Blender/FFmpeg
-finishing. DonQuixote remains paused.
+finishing. DonQuixote is indefinitely frozen by owner decision19November.
 
 ## Tool intake —10November2026: current and future stacks
 

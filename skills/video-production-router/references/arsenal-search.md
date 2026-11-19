@@ -195,3 +195,5 @@ not inferred from their exported PNG/MP4 files.
 ## Latest documentary intake —18November2026
 
 [26-family assessment and sources](../../../docs/research/tool-intake-2026-11-18.md) deduplicates existing routes and maps new rendering,effects,avatar and design-reference candidates to the existing queue. Keywords:ThreeRT,Canvas UI,AVA,Duo,LoreMax,Kling Image4,21st,Originkit,Transitions,DESIGN.md,Mobbin,Recent/Godly,Designeer. These are documentary discoveries,not executable providers or tested applications returned by search.py. Read exact access/licence/hardware/quality boundaries in the intake;refer to existing application records for Manim/MotionCanvas/HyperFrames/GiveMotion and GenMotion. Do not reset historical tests or infer qualification from a link.
+
+Course preparation discovery: [15-family Udemy tool assessment](../../../docs/research/udemy-course-tools-2026-11-18.md) links retained Claudemy/Kdenlive/Whisper scope to conditional NotebookLM,Coursebox,Mindsmith,SubtitleEdit and Descript comparisons,with other supplied tools kept as references. This is documentary intake,not new tested providers or automatic planner qualification.

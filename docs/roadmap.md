@@ -1,6 +1,6 @@
 # Framewright roadmap
 
-Updated 17 November 2026. Shipped baseline: **0.10.0**, an experimental prerelease;
+Updated 19 November 2026. Shipped baseline: **0.10.0**, an experimental prerelease;
 [publication status](release-notes-0.10.0.md#publication-status) records the verified outcome.
 [Current work and protected waits](next-cycle.md) govern execution; the
 [archived operational history](history/next-cycle-through-2026-11-14.md) preserves superseded status text.
@@ -12,6 +12,18 @@ changes of priority require an owner decision or an explicitly delegated choice.
 
 **0.10.0 goal,adopted14November and shipped17November2026: less repeated explanation when continuing or correcting a film.**
 The next release objective is not yet selected;the criteria below retain this bounded increment and its limits.
+
+**Discussion proposal,19November—not adopted:** reliable delivery and reuse across social films and teaching lessons in the existing studio. Candidate evidence:accepted social/course packages through one shared interface,a real repeat or cold reopen/download check,and recorded human intervention/rework for the next selected case. Functional scope and version still need selection;this proposal is not the release-timing decision below.
+
+### Owner release timing —19November2026
+
+Plan the next release at the **first actual occurrence** of either:
+
+1. Completion of the running test,confirmed by the owner. RUN//SIGNAL is **paused,not frozen**;the existing home review does not satisfy final running-test completion.
+2. The Udemy course is **created and published**. Both are required;accepted pilot,registration,Test Video feedback or unpublished draft upload alone do not satisfy this event.
+
+Record which event occurred first and its evidence,then return to release scope/readiness and the owner’s publication decision. This timing rule does not create an automatic tag/release job. **Current authority is one consolidation PR,checks,review and merge without release.** Quixote is indefinitely frozen and is not a release gate;second-operator portability remains parallel. Further production/account actions still follow their actual briefs and authority.
+
 Build on M1–M4 / RV01 and the existing start / continue / correct workflow, selected
 project journal and revision contract. Extend the existing route rather than creating
 a second state store or the deferred local project UI. [0.10.0 is published and publicly verified](release-notes-0.10.0.md#publication-status). This planning record does not start another production or release.
@@ -53,7 +65,7 @@ catalogue size nor additional app installations are a release target.
 
 ## Release evidence checkpoint —17November2026
 
-The next release goal remains **less repeated explanation on continuation/correction**.
+Historical17November checkpoint:the0.10.0goal was **less repeated explanation on continuation/correction**;that release is now shipped.The next release goal remains unselected.
 [Current trials and corrections](experiments/autonomous-production-pilot.md) now include
 three accepted AUTOPROD cases,each after one correction round. New tools/styles are
 useful production evidence;they do not establish zero intervention or measured savings.
@@ -81,13 +93,15 @@ not universal autonomy,creative quality or measured savings.
 
 Next development priorities are for discussion,not execution. No next release version,
 date or production is selected. Portability and book work remain parallel under their
-existing authority;Quixote remains paused.
+existing authority;Quixote is indefinitely frozen by owner decision19November.
 
 ## Owner-selected warmup —16November2026
 
-[Describe Your Entire Day](productions/describe-your-entire-day.md) precedes returning to Quixote: owner source sheet, colored daily-life environments and moving monochrome motifs, then a100/100 return. Supports M1/M2/RV01 through the existing proposal, exact inputs, full-action pilot and bounded revisions if real feedback requires them. The four static references are not motion qualification or AUTOPROD test3. Landing YouTube/TikTok header/footer links are the preceding small site update. No software release is started by these tasks.
+Historical16November production order,now superseded by the Quixote freeze:[Describe Your Entire Day](productions/describe-your-entire-day.md) was to precede returning to Quixote: owner source sheet, colored daily-life environments and moving monochrome motifs, then a100/100 return. Supports M1/M2/RV01 through the existing proposal, exact inputs, full-action pilot and bounded revisions if real feedback requires them. The four static references are not motion qualification or AUTOPROD test3. Landing YouTube/TikTok header/footer links are the preceding small site update. No software release is started by these tasks.
 
 ## Direction and strategic outcomes
+
+18November owner priority:the already selected [Practical AI Bug Fixing course pilot](productions/practical-ai-bug-fixing-course.md) comes before Klap. The6minute real-code pilot is owner-accepted19November;owner plans platform registration/placement20November.Full-course expansion remains a separate choice. [Course-tool intake](research/udemy-course-tools-2026-11-18.md) supplies conditional gap-led tests. This is a production priority,not permission for a course launch.The19November release timing rule separately uses actual course creation plus publication as one of its two alternative triggers.
 
 [Owner-adopted goal,mission and development path](vision.md) define the mature studio and five connected stages. Current implementation slice is standard review/delivery under M1/M2 and SOCIAL-01: fixed branded pages,explicit revision/status,per-file packages and automated playback/download checks. Its acceptance is functional verification plus owner review of the interface. New creative production and next release scope are selected separately.
 
@@ -122,7 +136,7 @@ or full roadmap access; it is advice, not capability evidence. The historical
 | **Visible bounded correction — M2/RV01, M6** | When a real defect needs correction, keep the original, explicit interval/invariants and contextual comparison; record the outcome and actual effort. Existing results-film revoice is a scoped example. | No artificial defect, automatic arbitrary-edit promise or conflicting timing guarantee; reuse the revision contract. |
 | **Local project screen — deferred** | Revisit later under M2/M6 if needed, reusing current project/brief/board/revision data. | Owner explicitly deferred implementation; no new UI/editor/database now. |
 
-First application (owner-paused11November): [**Don Quixote in Neverland / LIT-FILM-04**](productions/don-quixote-neverland.md).
+Historical first application (paused11November;indefinitely frozen19November): [**Don Quixote in Neverland / LIT-FILM-04**](productions/don-quixote-neverland.md).
 Owner11November expanded the working plan to three films: first meeting, physical
 action, psychological climax/return. E01premise is selected. A new original2D
 sitcom-inspired cast replaces the cover-art direction; the three principal still
