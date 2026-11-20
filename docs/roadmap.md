@@ -574,3 +574,9 @@ This supports R04/R09/SOCIAL-01,not a new release or tool-qualification claim.
 ###16November — Klap gifted access as a production helper
 
 [KLAP-01](research/klap-2026-11-16.md) supports M4/R05–R06 and R09. Owner clarified that the service review can wait until tomorrow/day after; apply Klap where useful in current Radar/Quixote work and save real examples for2–3 later positive, accurately sourced review treatments. Preserve affiliate disclosure. Coinbase is completed and owner-reported published;Quixote and all its trials are explicitly paused again. Future Klap applications wait for a new owner-selected production. No new paid API/integration/channel grant/publication/release.
+
+###20November — Klap evaluation and case closeout
+
+Owner selected mixed-source Klap tests under KLAP-01/M4/R05–R06/R09 and screen recording,with scripts/copy discussed afterwards. Latest decision: one 2–3 minute partner demo focused on demonstrated benefits. The owner rejected the three reviewed portrait candidates and declined Klap adoption for Framewright production. Full evidence stays in the private dossier. Standalone clips and derivative reviews are out of scope. Udemy platform work is no longer current priority;accepted pilot retained. Private partner-section draft is authorised,public deployment is not. [First-pass evidence](experiments/klap-mixed-source-tests-2026-11-20.md). RUN remains paused,Quixote frozen;no replacement release timing rule or release publication is implied.
+
+**Closeout, 20 November.** The owner closed KLAP-01 on 20 November 2026 and declined Klap and OpusClip for the Framewright production arsenal. Retain both tool trials as historical evidence. The owner supplied YouTube URLs for the [Klap review](https://youtu.be/f_qFpZGfFq8) and [Klap–OpusClip comparison](https://youtu.be/-lIITHpkr1w).

@@ -589,6 +589,23 @@
       "source": "docs/productions/robot-meets-captcha.md",
       "basis": "registered_finished_export",
       "index_note": "Onefictionstory,two24.47sfull-v1exports;ownerprovidedYouTube/TikTokpublicationURLs20November2026,batch5of5. Independentvisibility/uploadidentity/metricsunchecked;separatefullcreativeacceptancenotinferred."
+    },
+    {
+      "id": "buymore-problems-delivered",
+      "source": "docs/productions/buymore-problems-delivered.md",
+      "index_note": "One 58s fictional marketplace satire, two aspects. Owner accepted YouTube v1 and smartphone/no-cursor TikTok v2; supplied YouTube https://youtu.be/AInINeF12I4 and TikTok https://vt.tiktok.com/ZSpELWp8T/ publication URLs on 20 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unchecked; revision adds no case."
+    },
+    {
+      "id": "klap-workflow-review",
+      "source": "docs/research/klap-2026-11-16.md",
+      "basis": "registered_finished_export",
+      "index_note": "One accepted landscape workflow review. Owner supplied https://youtu.be/f_qFpZGfFq8 on 20 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."
+    },
+    {
+      "id": "klap-vs-opusclip",
+      "source": "docs/experiments/opusclip-pro-trial-2026-11-20.md",
+      "basis": "registered_finished_export",
+      "index_note": "One accepted 1:53 comparison film with two matched sources, AllWeb3 and BuyMore. Owner supplied https://youtu.be/-lIITHpkr1w on 20 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."
     }
   ],
   "trials": [
@@ -938,6 +955,21 @@
       "id": "canvas-ui-captcha-pilot",
       "source": "docs/experiments/canvas-ui-captcha-pilot-2026-11-20.md",
       "index_note": "OneGlassadapted-raster8sdual-aspecteffect/plaintrial;ownerselectedGlassandacceptedcorrectedv3pilot. NativeDOMcaptureunexecuted;fullfilmseparatecase."
+    },
+    {
+      "id": "buymore-marketplace-pilot",
+      "source": "docs/experiments/buymore-marketplace-pilot-2026-11-20.md",
+      "index_note": "One12slandscapephotographic-fictional-products+HTMLmonitor-shoppingpilot;technical checks passed and owner accepted the moving pilot. Full film and portrait correction are documented separately."
+    },
+    {
+      "id": "klap-mixed-source-first-pass",
+      "source": "docs/experiments/klap-mixed-source-tests-2026-11-20.md",
+      "index_note": "One bounded five-source subscription-backed trial;cross-source preset,reopen,French subtitle translation,speaker framing failure and three owner-assisted export decodes checked. Local upload, prompt miss, manual editor controls and Split recovery retained. Three additional exports passed decode; 2160×3840 input returned 1080×1920 in direct Reframe. No new film/publication or audience result."
+    },
+    {
+      "id": "opusclip-pro-trial-20261120",
+      "source": "docs/experiments/opusclip-pro-trial-2026-11-20.md",
+      "index_note": "One OpusClip Pro trial with synchronized AllWeb3 and BuyMore comparisons, visual-only search, editable generated media, French speech, and speech enhancement plus cleanup. All three AllWeb3 exports decode; XML media references resolve within the ZIP. Upscale requires an upgrade in the observed trial; no NLE import or tool adoption."
     }
   ]
 }

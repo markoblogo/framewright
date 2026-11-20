@@ -82,6 +82,8 @@ variants; a correct landscape view does not establish a usable portrait crop. In
 are accepted techniques. Do not force a second native composition if the selected
 crop works, or insist on showing the whole body in an intentional close-up.
 
+Owner correction20November2026:[BuyMore](productions/buymore-problems-delivered.md#owner-correction-smartphone-portraitv2)accepted the desktop film but returned its rotated-monitor portrait treatment. For this shopping-sketch adaptation,the intended mobile device is a smartphone with touch conventions and no mouse pointer;native aspect geometry alone did not establish a believable device choice. Owner accepted smartphonev2. This does not prohibit portrait monitors in other contexts.
+
 **Player check:** compare the actual encoded dimensions with the HTML video box in both aspects. A portrait MP4 inside a width-forced,height-capped landscape box can show misleading side fields. Remove unintended player/section framing before judging the export. Owner evidence17November:[Agent402](productions/agent402-tabletop.md).
 
 Owner correction19November2026:[curl](productions/curl-maintenance-workshop.md)had low/off-centre3D stages,heading/source-panel collisions and important geometry hidden by native player controls. Evaluate the complete text/illustration/source hierarchy in both aspects,including open player controls;geometry fitting without the final player's occlusion is insufficient. Preserve explicit safe regions for the current delivery,inspect the encoded shot boundaries and revise contradictory placements. Numerical overlap checks remain supporting evidence,not visual acceptance.

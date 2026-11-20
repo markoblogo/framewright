@@ -53,7 +53,7 @@ class DeliveryTests(unittest.TestCase):
         for value in ['Main', 'Second', 'Third', 'A paragraph.', 'art, ink']:
             self.assertIn('>' + value + '</pre>', page)
         self.assertEqual(page.count('type="button" data-copy='), 5)
-        self.assertNotIn('Скачать тексты', page)
+        self.assertNotIn('Download copy', page)
         self.assertNotIn('Hidden note', page)
 
     def test_tiktok_fields_and_subtitle_policy(self):
@@ -62,10 +62,10 @@ class DeliveryTests(unittest.TestCase):
         variant['publication'] = {'caption':'Caption!', 'first_comment':'Comment!'}
         self.run_build(720,1280)
         page = (self.root/'review.html').read_text()
-        self.assertIn('layout tiktok-layout', page)
-        self.assertIn('data-field="Кэпшн"', page)
-        self.assertIn('data-field="Первый комментарий"', page)
-        self.assertNotIn('Основной заголовок', page)
+        self.assertIn('preview-card tiktok-preview', page)
+        self.assertIn('data-field="Caption"', page)
+        self.assertIn('data-field="First comment"', page)
+        self.assertNotIn('Primary title', page)
         variant['publication']['titles'] = ['Wrong']
         with self.assertRaises(ValueError):
             self.run_build(720,1280)
@@ -81,10 +81,32 @@ class DeliveryTests(unittest.TestCase):
         self.data['extras'] = [{'label':'Extra copy','path':'copy.txt'}]
         self.run_build()
         page = (self.root/'review.html').read_text()
-        self.assertNotIn('data-field="Описание"', page)
+        self.assertNotIn('data-field="Description"', page)
         self.assertIn('>ink, art</pre>', page)
         self.assertIn('data-field="Extra copy"', page)
         self.assertNotIn('href="copy.txt" download', page)
+
+    def test_all_downloads_precede_platform_copy_in_fixed_order(self):
+        (self.root/'portrait.mp4').write_bytes(b'portrait fixture')
+        (self.root/'sound.wav').write_bytes(b'original audio')
+        self.data['variants'] = [
+            {'platform':'tiktok','files':{'video':'portrait.mp4'},
+             'publication':{'caption':'TT caption','first_comment':'TT comment'}},
+            {'platform':'youtube','files':{'video':'film #1.mp4'},
+             'publication':{'titles':['YT main','YT second'], 'description':'YT description'}}]
+        self.data['extras'] = [{'label':'Audio','path':'sound.wav'}, {'label':'Notes','path':'copy.txt'}]
+        self.manifest.write_text(json.dumps(self.data))
+        def run(args, **kwargs):
+            portrait = any(str(arg).endswith('portrait.mp4') for arg in args)
+            return SimpleNamespace(stdout=json.dumps({'streams':[{'codec_type':'video',
+                'width':720 if portrait else 1280,'height':1280 if portrait else 720}]}))
+        with patch.object(delivery.subprocess,'run',side_effect=run): delivery.build(self.manifest)
+        page=(self.root/'review.html').read_text()
+        self.assertLess(page.index('id="youtube"'),page.index('id="tiktok"'))
+        self.assertLess(page.index('id="youtube-copy"'),page.index('id="tiktok-copy"'))
+        self.assertLess(page.index('href="sound.wav" download'),page.index('data-copy='))
+        self.assertLess(page.index('id="tiktok"'),page.index('id="publication-texts"'))
+        self.assertNotIn('Download copy',page)
 
     def test_missing_asset_does_not_replace_existing_page(self):
         self.run_build()
@@ -112,7 +134,7 @@ class DeliveryTests(unittest.TestCase):
         self.data['extras'] = [{'label':'Soundtrack <mix>', 'path':'music.wav'}]
         receipt = self.run_build()
         page = (self.root/'review.html').read_text()
-        self.assertNotIn('Скачать обложку', page)
+        self.assertNotIn('Download cover', page)
         self.assertIn('Soundtrack &lt;mix&gt;', page)
         self.assertEqual(receipt['files'][-1]['role'], 'extra')
         self.data['variants'][0]['required_files'].append('cover')
@@ -150,9 +172,9 @@ class DeliveryTests(unittest.TestCase):
         receipt = self.run_build()
         page = (self.root/'review.html').read_text()
         self.assertIn('id="course"', page)
-        self.assertIn('Учебный урок', page)
+        self.assertIn('Course lesson', page)
         self.assertIn('class="landscape"', page)
-        self.assertIn('data-field="Результат обучения"', page)
+        self.assertIn('data-field="Learning outcomes"', page)
         self.assertNotIn('YouTube', page)
         self.assertNotIn('TikTok', page)
         self.assertEqual(receipt['files'][0]['platform'], 'course')
@@ -174,7 +196,7 @@ class DeliveryTests(unittest.TestCase):
         variant['files'].update(cover='cover.png', subtitles='subs.srt')
         self.run_build()
         page = (self.root/'review.html').read_text()
-        self.assertIn('data-field="Описание урока"', page)
+        self.assertIn('data-field="Lesson description"', page)
         self.assertIn('>A meaningful lesson description — café.</pre>', page)
         self.assertEqual(page.count('type="button" data-copy='), 1)
         self.assertNotIn('href="copy.txt" download', page)
