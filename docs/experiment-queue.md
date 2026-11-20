@@ -58,7 +58,7 @@ Trial question: does one expandable/fan-card motion inspired by a specified Desi
 ## Tool intake —11November2026
 
 [34 URLs /22 topics, deduplication and future-stack routes](research/tool-intake-2026-11-11.md).
-Conditional current-stack questions: **MINICHARTS-01** numeric/legibility controls; [18November scoped result](research/allweb3-mockumentary-pilot-2026-11-18.md):native3item envelope fixture,interactive checks and dual20s adapted video insert;owner accepted20November2026,not whole-library or AllWeb3 data validation;
+Conditional current-stack questions: **MINICHARTS-01** numeric/legibility controls; [18November scoped result](research/allweb3-mockumentary-pilot-2026-11-18.md):native3item envelope fixture,interactive checks and dual20s adapted video insert;owner review pending,not whole-library or AllWeb3 data validation;
 **PANORAMA-PLATES-01** owned panorama → multiple angle/aspect plates, no generation;
 **BLENDER53-COMPAT-01** isolated version/copy, not a global upgrade; and
 **PHYSICS-CHAIN-01** extends existing MuJoCo CPU evidence with an original contact
@@ -931,7 +931,7 @@ that integration only; retain observations for each new component separately.
 | Order | Proposed pair / use | First bounded gate |
 | --- | --- | --- |
 | 1 | **ManimGX + MLX-Audio TTS**, book explainer promo | First [MN7R20s trial](../experiments/2026-10-15/mn7r-manim-mlx.md) completed technically;native timing workaround and setup-budget breach retained. Exact TTS model/terms/size, Python/GPU/backend first. Keep Kokoro as proven audio fallback if needed. Choose the book/brief before execution; Spot-Market is an available comparison candidate, not an automatically approved new run |
-| 2 | **OpenScreen + proven Supertonic3F1**, landing promo — delivered for scope | [AMI Books42s tour](../experiments/2026-10-15/ami-books-openscreen.md):public-window capture/pack,manual zoom/callouts,native60fps;FFmpeg edited30fps/VO delivery. Fullscreen/hidden-window failures retained. Owner accepted20November2026;automatic cursor/MCP/AI unqualified. Retest only changed capture-control need. |
+| 2 | **OpenScreen + proven Supertonic3F1**, landing promo — delivered for scope | [AMI Books42s tour](../experiments/2026-10-15/ami-books-openscreen.md):public-window capture/pack,manual zoom/callouts,native60fps;FFmpeg edited30fps/VO delivery. Fullscreen/hidden-window failures retained. Owner review pending;automatic cursor/MCP/AI unqualified. Retest only changed capture-control need. |
 | 3 | **Proven renderer + mlx-whisper / parakeet-mlx / WhisperX**, captioned promo | Same short EN spoken fixture and known transcript; compare words, timestamps and actual resources. Pick an exact model/budget; ASR is QA/captions, not a new music generator |
 | Later | **ACE-Step attempted with Three.js/Remotion**, English brokerage promo | [Retained incomplete trial](../experiments/2026-10-15/agri-brokerage-ace-step.md):MPS diffusion completed without retainedWAV across system restart;CPU-only stopped by disk guard. Final film narration only. Owner requested a delayed revisit:after at least two other completed experiments,not next. Changed resources/environment or concrete diagnosis and bounded preflight remain required;no automatic unchanged retry |
 
@@ -1128,7 +1128,7 @@ should confirm World View and a clean export. No paid use or full-film expansion
 
 ## I2V-FREE-01 / LOCAL-VIDEO-01 —31October2026
 
-[Dated evidence and bounded candidates](research/free-video-good-dog-2026-10-31.md), R07/R08. PixVerse V6 first shot received positive owner feedback; Raphael H3 Turbo actual free comparator completed, owner accepted20November2026. Flow account access confirmed without generation. SeaArt/Vidnoz and remaining quota-account checks queued. LTX-Video is a conditional Mac MPS feasibility candidate; Wan2.2/HunyuanVideo1.5 retained for suitable NVIDIA hosts. No downloads/installations of model weights, paid actions or broad qualification.
+[Dated evidence and bounded candidates](research/free-video-good-dog-2026-10-31.md), R07/R08. PixVerse V6 first shot received positive owner feedback; Raphael H3 Turbo actual free comparator completed, owner review pending. Flow account access confirmed without generation. SeaArt/Vidnoz and remaining quota-account checks queued. LTX-Video is a conditional Mac MPS feasibility candidate; Wan2.2/HunyuanVideo1.5 retained for suitable NVIDIA hosts. No downloads/installations of model weights, paid actions or broad qualification.
 
 ## TEARDOWN-01 / STABLEGEN-01 —31October2026
 
@@ -1172,7 +1172,7 @@ M4/R05; [TRAIN-SURREAL-01 / Gallery Lava](productions/gallery-lava.md). Owner as
 
 LAVA-FLOW-01 decision,3November2026: owner accepted variant A of the14s comparison. Retain persistent photo carriers + recoloured real lava as the selected production direction. B/C not selected; no general WebGL/WebGPU qualification. Full-film and distribution checks remain open.
 
-LAVA-FLOW-01 full-draft evidence,3November2026: selected A extended to54s/all nine photos,1280×720. Continuous carrier clock, independent4s memory delay, padded Pillow mesh sampling and small working masks retained as reusable controls. Whole decode and sampled compositions checked; full-film owner accepted20November2026. Details in [production record](productions/gallery-lava.md); no general tool qualification.
+LAVA-FLOW-01 full-draft evidence,3November2026: selected A extended to54s/all nine photos,1280×720. Continuous carrier clock, independent4s memory delay, padded Pillow mesh sampling and small working masks retained as reusable controls. Whole decode and sampled compositions checked; full-film owner review pending. Details in [production record](productions/gallery-lava.md); no general tool qualification.
 
 LAVA-FLOW-01 closeout,3November2026: [repeatable liquid-photo method](methods/liquid-photo-memory.md) derived from accepted/published-per-owner Gallery Lava. Pilot/unused intermediates retired with hash receipts; exact final and required v2 assembly dependency retained. B/C were not selected. Future pattern/performance tests remain conditional on a fitting production. Stock ShareAlike owner decision remains open. No new test/install/release started.
 
@@ -1352,12 +1352,12 @@ production and later audience observations remain separate future steps.
 
 ## Three-Live export/reopen —20November2026
 
-**THREELIVE-GLB-01 executed at bounded scope** during the owner-selected [Night Line production](productions/three-live-portable-world.md). npm1.4.0JavaScript authoring/sceneToGLB,5meshfixture and192mesh/17material/24s3trackoriginalscene,actual downloaded-byte match andindependent three.jsGLTFLoader reopening. Full films/covers prepared,owner accepted20November2026. Not ThreeRT;no AR,USDZ,native compiler/security,arbitrary scene ormobile qualification. Capture failures andselected ground-contact correction retained in the case. No new provider/spend orpaused/frozen production started.
+**THREELIVE-GLB-01 executed at bounded scope** during the owner-selected [Night Line production](productions/three-live-portable-world.md). npm1.4.0JavaScript authoring/sceneToGLB,5meshfixture and192mesh/17material/24s3trackoriginalscene,actual downloaded-byte match andindependent three.jsGLTFLoader reopening. Historical v1 preparation was followed by corrected v2 owner-provided YouTube/TikTok publication URLs20November. Separate full-film/cover/listening approval is not inferred. Not ThreeRT;no AR,USDZ,native compiler/security,arbitrary scene ormobile qualification. Capture failures andselected ground-contact correction retained in the case. No new provider/spend orpaused/frozen production started.
 
 
 ## CANVAS-UI-01 / selected CAPTCHA pilot —20November2026
 
-[ScopedGlassowned-rastertrial](experiments/canvas-ui-captcha-pilot-2026-11-20.md)executedduringowner-authorised8spilot,twoaspects andplainbaselines. Actualsource/pointer/frameadapter;notnativeHTMLcaptureorwholelibraryqualification. Robotmotionbelongs tothelocalrig. Owneraccepted20November2026;fullfilmnotstarted. FourpublishedRadarstoriesremainfour,notfive;noRadar message.
+[ScopedGlassowned-rastertrial](experiments/canvas-ui-captcha-pilot-2026-11-20.md)executedduringowner-authorised8spilot,twoaspects andplainbaselines. Actualsource/pointer/frameadapter;notnativeHTMLcaptureorwholelibraryqualification. Robot motion belongs to the local rig. Owner accepted corrected v3 pilot and supplied full-film publication URLs20November;separate full-film approval is not inferred. Current Radar batch5/5;consolidated report sent,receiver-state application unverified.
 
 
 ## FILMCRAFT-01 —20November executed bounded scope
