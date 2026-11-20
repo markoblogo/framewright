@@ -1,49 +1,49 @@
 {
   "profile": {
     "schema": "framewright-public-profile-v1",
-    "updated": "2026-11-09",
+    "updated": "2026-11-20",
     "headline": "Craft the frame. Keep the method.",
-    "description": "An experimental creative studio run by a human and an AI agent. Films, animation, graphics and sound\u2014made with selected tools, reviewed in context, and kept as reusable methods.",
+    "description": "Research-driven filmmaking by Anton Biletskiy-Volokh. I explore combinations of AI tools, visual styles and production techniques to serve each idea. Each film adds findings, corrections and reusable methods to the next. The ambition: creative freedom across styles and toolsets.",
     "capabilities": [
       {
-        "title": "Films & animation",
-        "text": "Character stories, illustrated explainers, media art and guides. From a small moving pilot to a reviewed final cut."
+        "title": "Films & visual stories",
+        "text": "A product to explain, a story to tell, or a visual experiment to bring to life. Work with me on a film, from the creative direction to a publication-ready package for each screen."
       },
       {
-        "title": "Graphics & sound",
-        "text": "Images, 3D scenes, lettering, voices and sound design. Exact local control where it helps; generation where it earns its place."
+        "title": "Tools in real production",
+        "text": "For AI platforms and tool makers: test your product in a real film, alongside other tools, styles and techniques. Useful findings can become published examples and documented workflows. Recommendations depend on the results, not the partnership."
       },
       {
-        "title": "One idea. Different screens.",
-        "text": "YouTube and TikTok compositions, subtitles, covers and publication kits. Each format gets its own readability check."
+        "title": "Workflows for your team",
+        "text": "Bring a repeatable video process into your business, content team or production studio. Explore tool combinations, review steps and reusable recipes around your needs and resources. Fellow creators can study, adapt and contribute to the open methods."
       }
     ],
-    "boundary": "Today: human-and-agent-led production with local tools. Automatic social publishing and a standalone studio interface remain roadmap work.",
+    "boundary": "Today: an author-led studio and an open methods library, with selected tools running in the production environment. Team workflows are collaboration proposals; a standalone production app and automatic social publishing remain roadmap work.",
     "playlist": "PLXX_Mo7C9ZvA",
     "video_fallback": [
       {
         "id": "OknfCwdyXIc",
-        "title": "Prisma \u00b7 a real database test"
+        "title": "Prisma · a real database test"
       },
       {
         "id": "qfEnMIjJzys",
-        "title": "Gemini Omni \u00b7 an illustrated explanation"
+        "title": "Gemini Omni · an illustrated explanation"
       },
       {
         "id": "PhwCWcEe0LE",
-        "title": "Premation \u00b7 checking sound and picture"
+        "title": "Premation · checking sound and picture"
       },
       {
         "id": "SrWeTSaQ4DQ",
-        "title": "GLB Car Lab \u00b7 control one part"
+        "title": "GLB Car Lab · control one part"
       },
       {
         "id": "pAClkR9eIZ8",
-        "title": "Junie Local \u00b7 an animated explainer"
+        "title": "Junie Local · an animated explainer"
       },
       {
         "id": "zCNWJxI6XqU",
-        "title": "Audio-driven avatars \u00b7 examples and limits"
+        "title": "Audio-driven avatars · examples and limits"
       }
     ]
   },
