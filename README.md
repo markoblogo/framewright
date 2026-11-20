@@ -5,14 +5,100 @@
 [![Latest published: 0.10.0](https://img.shields.io/badge/version-0.10.0-293F48?style=flat-square)](https://github.com/markoblogo/framewright/releases/tag/v0.10.0)
 [![License: MIT](https://img.shields.io/badge/license-MIT-E7BA6A?style=flat-square)](LICENSE)
 
-**A human-and-agent creative studio: films, animation, graphics, sound—and reusable production methods.**
+**Research-driven filmmaking. Every production adds to the method.**
 
-[Explore the studio](https://markoblogo.github.io/framewright/) · [FW identity](docs/productions/fw-identity.md) · [How the site stays current](docs/site.md)
+Framewright is an independent creative studio and production lab by
+[Anton Biletskiy-Volokh](https://abvx.xyz). I create films, explainers and visual
+experiments while investigating how **AI tools, visual styles and production
+techniques work together**.
 
-Plan a film, keep sources and decisions together, review exact versions and reuse
-what worked. Framewright is an experimental methods/skills library: the agent runs
-selected tools in your environment. It is not a hosted renderer or an automatic
-publishing service.
+The research unit is a real production: a creative result, the combination of
+tools and techniques behind it, and the revisions that made it work. Findings,
+failures and useful corrections are retained as recipes and checks for later
+projects. The process grows through practical work and human review.
+
+**The ambition is creative freedom across styles and toolsets**: build the right
+approach for the idea, with technical feasibility, access, time and budget guiding
+what can be achieved. This is an open-ended research direction, not a claim to
+have tested every tool or solved every kind of scene. Current capabilities and
+limits are linked to actual cases below.
+
+[Watch the work](https://markoblogo.github.io/framewright/#work) ·
+[Work with me](https://markoblogo.github.io/framewright/#contact) ·
+[Explore the methods](docs/start-here.md)
+
+## Three ways to work together
+
+### Make a film
+
+For brands, authors and organisations with a product to explain, a story to tell
+or a visual idea to explore. Discuss a film, explainer, product story or media-art
+piece, with creative direction, sound and a publication-ready package composed
+for the selected screens.
+
+[Discuss a creative project](https://markoblogo.github.io/framewright/#contact).
+
+### Test a tool in real production
+
+For AI platforms and creative-tool developers. Explore a partnership built around
+a concrete production question: use the product in a real project, retain the
+results and limitations, and develop a review or demonstration from that work.
+When a tool proves useful, it can also become part of a documented production
+recipe rather than disappearing after one review.
+
+Partner access is an opportunity to test, not a guarantee of a recommendation.
+Testing scope, editorial independence and any compensation or affiliate
+relationship should be agreed and disclosed. Audience results and sales are not
+promised.
+
+[Propose a tool partnership](https://markoblogo.github.io/framewright/#contact).
+
+### Build on the process
+
+For content teams and production studios: discuss a repeatable AI-assisted video
+workflow, including tool selection, review steps and reusable recipes, scoped
+to your production needs and available tools.
+
+For fellow creators and agent-assisted developers: explore the open repository,
+adapt the methods and contribute observations. Start with a
+[production plan](docs/start-here.md#start-a-film), a
+[worked correction](docs/productions/pantheon-chatgpt-orb.md#worked-example-v2-to-v3)
+or the [task/style/tool search](skills/video-production-router/references/arsenal-search.md).
+
+## See the work and what it taught us
+
+| Work | Production lesson |
+| --- | --- |
+| [Same Ticker, Different Rights](https://youtu.be/NQX0F57Iy7g) | A glossy animated financial magazine combining sourced product material with distinct explanatory scenes. [Case and revisions](docs/productions/kriptok-same-ticker.md). |
+| [I See You as Art](https://youtu.be/hb9oYAK37w4) | Media art made from supplied calligraphy footage and photographs, with music and separate screen compositions. [Sources and method](docs/productions/i-see-you-as-art-pl1.md). |
+| [The Last Seed](https://youtu.be/ZQTORLBw9Zs) | An original Blender short refined through precise contact, mechanism, rain and sound corrections. [Worked case](docs/experiments/last-seed-recovery.md). |
+| [This World Unfolds](https://youtu.be/eWheRM41ZaU) | A real browser-world recording shaped into two formats, with portrait reframing and source-aware sound work. [Case and limits](docs/productions/papertrails-world-walk.md). |
+
+Publication links are owner-reported; individual case records distinguish
+technical checks, creative decisions, rights and publication. Views, revenue and
+uploaded-file identity are not inferred from a link.
+
+## How the studio learns
+
+**Brief → moving pilot → review and refine → retain the useful recipe.**
+
+Framewright explores combinations of generation, code animation, 3D, real footage,
+screen capture, sound and local editing according to the scene. A tool is assessed
+in context: what it contributes to the chosen style, how it works with the rest
+of the pipeline and how precisely the result can be revised. The methods keep sources, selected
+versions, corrections and known limits connected, so a later project can build on
+actual work rather than repeat the same discovery.
+
+Public methods and original repository materials are open; private project
+assets, client material and confidential partner terms are not. External tools,
+models and media retain their own licences. [Purpose and development path](docs/vision.md) ·
+[Studio Notes](docs/editorial/README.md).
+
+## Use Framewright yourself
+
+Today the open project is an **experimental methods and agent-skills library**.
+An agent uses selected tools in your environment; this repository is not a hosted
+renderer or an automatic publishing service. Start with the task you need:
 
 ## Start / continue / correct
 
@@ -34,6 +120,9 @@ python3 skills/video-production-router/scripts/plan.py examples/briefs/mixed-pro
 
 This prints a plan; it does not render, install, call a model or spend money.
 [Example output](examples/plans/mixed-promo.md) · [Agent setup](docs/production-guide.md#use-the-agent-skill).
+
+<details>
+<summary>Current capabilities, evidence and earlier results</summary>
 
 ## Current state
 
@@ -76,6 +165,9 @@ These production results inform the methods library; they do not establish blank
 Publication links and owner acceptance are owner-reported unless a case identifies
 separate verification. [More experiments](docs/experiments.md) ·
 [Prior detailed overview, dated history](docs/history/readme-through-2026-11-01.md).
+
+
+</details>
 
 ## Test a method before production
 
