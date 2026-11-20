@@ -10,6 +10,14 @@ Owner-adopted direction, 17November2026. [Roadmap](roadmap.md) carries milestone
 
 Each production should build studio experience, reduce repeated technical work and expand the author's freedom for the next idea.
 
+## Public proposition and audiences
+
+Owner-selected20November2026. Framewright connects **finished films, real production tests and reusable methods**. Its distinction is research-driven production:investigating combinations of tools,styles and technical approaches in actual creative work,and retaining the sources,corrections,decisions and limits that make later productions better informed. The ambition is creative freedom across styles and toolsets,subject to technical feasibility,access,time and financial resources. Comprehensive tool coverage and ability to realise any scene are aspirations,not achieved capabilities. Improvement is through documented human-and-agent review and reuse,not an asserted self-training system. This is a positioning choice grounded in case records,not a claim that no other studio documents its work.
+
+The public landing and README serve three groups:creators/developers adapting open methods;AI platforms/tool makers seeking real production tests and potential ongoing editorial partnerships;and clients commissioning films or exploring a video workflow for their team. The studio is the main identity,the films demonstrate the work,and the open repository makes the process inspectable. Team workflow work is an offering,not evidence of already completed client deployments.
+
+A partner may gain a review/demonstration and,when the results justify it,a documented reusable application. Access,affiliate terms or payment never guarantee a favourable recommendation or catalogue qualification. Keep disclosures,technical results,owner decisions and audience outcomes separate. Public methods do not grant access to private source media,client material or confidential terms. A future partner/referral blog is deferred;this positioning starts no outreach,paid work or blog publication.
+
 ## Intended mature product
 
 A personal agent-led creative studio that can take a book, photographs, a discovery or a short idea through creative development, production, review and a publication-ready package. The author directs the intent, makes significant artistic choices and accepts the result. The studio progressively takes on production work at the level of autonomy agreed for each project.
