@@ -175,6 +175,9 @@ def validate(root, local_root=None):
     if public_evidence.is_file():
         evidence = json.loads(public_evidence.read_text())
         require(evidence['schema'] == 'framewright-public-evidence-v1', 'Unknown public evidence schema')
+        excluded = evidence.get('deduplication', {}).get('excluded', [])
+        require(isinstance(excluded, list) and all(isinstance(reason, str) and reason.strip() for reason in excluded),
+                'Public evidence exclusions must be text reasons; put cases in films or trials')
         for group in ('films', 'trials'):
             entries = evidence[group]
             require(len({entry['id'] for entry in entries}) == len(entries), f'Duplicate public {group} case')

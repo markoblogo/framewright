@@ -32,3 +32,7 @@ The canonical private studio retains the final, publication kit, eight current b
 Owner-authorised dependency-aware cleanup removed **69 intermediate files, 76,610,911 bytes (73.06 MiB)**. These were old pilot/full exports, a pre-normalisation mix, a regenerable faded clip, redundant diagnostic stills and Vite cache. Thirty-three protected files were rehashed unchanged. Historical pins were moved to explicit retired records; rejected v1 review remains historical, not falsely accepted. Retired movies are no longer locally playable. No full rebuild or independent cold resume was performed during closeout.
 
 This case improves M3/M4 in the stated scope. It does not close REL-D/M6 or justify a separate release.
+
+## Teaching-reuse candidate —19November2026
+
+Review/workflow motivation for Practical AI Bug Fixing. No live GitHub agent execution;exact retained master must be resolved before excerpting. This is an owner-authorised candidate marker,not an approved lesson/cut or blanket teaching licence. See [course reuse screening](../research/course-reuse-screening-2026-11-19.md). Original case/receipts remain the source of truth.

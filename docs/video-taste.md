@@ -1,6 +1,6 @@
 # Video taste — this studio's reusable owner preferences
 
-Updated 14 November 2026. These rules preserve explicit owner corrections and
+Updated 19 November 2026. These rules preserve explicit owner corrections and
 standing preferences from the supplied production conversation and linked cases.
 They are scoped working instructions, not universal design laws or model qualification.
 The current brief and a later explicit owner decision take precedence. Each new
@@ -52,6 +52,8 @@ or a moving camera over one unchanged slide. Use actual screen captures where se
 abstract film or SSI's established receiving-project template. Keep factual demonstrations
 and authored interface proposals distinct, as their case records require.
 
+Owner correction19November2026:[curl](productions/curl-maintenance-workshop.md)was formally animated but felt dry and unengaging. Retain useful illustrations while varying the visual evidence and treatment:appropriate genuine site/document recordings,photographic context and sourced video can carry distinct beats. This is an editorial lesson about that repetitive cut,not a requirement to add stock to every film or a claim that movement alone passed creative review.
+
 ## VT-READ — inspect the delivered small-screen result
 
 **Rule:** make text and important construction lines readable over their actual
@@ -81,6 +83,8 @@ are accepted techniques. Do not force a second native composition if the selecte
 crop works, or insist on showing the whole body in an intentional close-up.
 
 **Player check:** compare the actual encoded dimensions with the HTML video box in both aspects. A portrait MP4 inside a width-forced,height-capped landscape box can show misleading side fields. Remove unintended player/section framing before judging the export. Owner evidence17November:[Agent402](productions/agent402-tabletop.md).
+
+Owner correction19November2026:[curl](productions/curl-maintenance-workshop.md)had low/off-centre3D stages,heading/source-panel collisions and important geometry hidden by native player controls. Evaluate the complete text/illustration/source hierarchy in both aspects,including open player controls;geometry fitting without the final player's occlusion is insufficient. Preserve explicit safe regions for the current delivery,inspect the encoded shot boundaries and revise contradictory placements. Numerical overlap checks remain supporting evidence,not visual acceptance.
 
 ## VT-VOICE — natural performance, scoped voice choices
 

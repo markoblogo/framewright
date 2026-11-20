@@ -1,6 +1,6 @@
 {
   "schema": "framewright-public-evidence-v1",
-  "updated": "2026-11-18",
+  "updated": "2026-11-20",
   "scope": "Conservative documented cases, not an asserted lifetime total. Original records remain the source of truth.",
   "definitions": {
     "films": "One completed authored story/promo/tutorial/ambient master per case. Aspect, language and revision variants count once. A finished export need not be publicly published or creatively accepted.",
@@ -554,9 +554,49 @@
       "id": "papertrails-world-walk",
       "source": "docs/productions/papertrails-world-walk.md",
       "basis": "registered_finished_export"
+    },
+    {
+      "id": "osmo-ai-nose",
+      "source": "docs/productions/osmo-ai-nose.md",
+      "basis": "registered_finished_export"
+    },
+    {
+      "id": "mit-microrobot-onboard-brain",
+      "source": "docs/productions/mit-microrobot-onboard-brain.md",
+      "basis": "registered_finished_export",
+      "index_note": "Two native56.681s English v2 full exports;owner accepted visuals/edit/covers with voice-clarity correction now applied;separate new-audio acceptance unrecorded;owner supplied both publication URLs19November;visibility/identity/metrics unchecked;one story."
+    },
+    {
+      "id": "curl-maintenance-workshop",
+      "source": "docs/productions/curl-maintenance-workshop.md",
+      "basis": "registered_finished_export",
+      "index_note": "One story:initial native57.714s v1 returned for composition/editorial revision;v2 films/covers accepted;owner-reported YouTube publication19November;TikTok publication declined,accepted local portrait retained."
+    },
+    {
+      "id": "tecobot-many-bodies",
+      "source": "docs/productions/tecobot-many-bodies.md",
+      "basis": "registered_finished_export",
+      "index_note": "One story,two native59.75sEnglish v1films andcovers accepted20November;owner supplied both publication URLs20November;independent visibility/identity/metrics unchecked;source-media public-use clearance unresolved."
+    },
+    {
+      "id": "three-live-portable-world",
+      "source": "docs/productions/three-live-portable-world.md",
+      "basis": "registered_finished_export",
+      "index_note": "One story:60.25s/36.92s English films;v1returned fordoorway/montage;v2owner publication URLs received20November. Independent visibility/identity/metrics unchecked."
+    },
+    {
+      "id": "robot-meets-captcha",
+      "source": "docs/productions/robot-meets-captcha.md",
+      "basis": "registered_finished_export",
+      "index_note": "Onefictionstory,two24.47sfull-v1exports;ownerprovidedYouTube/TikTokpublicationURLs20November2026,batch5of5. Independentvisibility/uploadidentity/metricsunchecked;separatefullcreativeacceptancenotinferred."
     }
   ],
   "trials": [
+    {
+      "id": "filmcraft-edit-reopen",
+      "source": "docs/experiments/filmcraft-edit-reopen-2026-11-20.md",
+      "index_note": "One18snativeFilmCraft0.20.1save/reopen/titlecorrection/exporttrial,twoA/Bexports;not2films. Owneraccepted20November2026;acceptedcourseuntouched."
+    },
     {
       "id": "anatomy-combined-pipeline",
       "source": "experiments/2026-10-14/README.md"
@@ -887,6 +927,17 @@
       "source": "docs/productions/practical-ai-bug-fixing-course.md",
       "basis": "executed_bounded_workflow_trial",
       "index_note": "One original runnable Python teaching lab and6minute real editor/terminal lesson;local Kokoro/captions/course-delivery check. Owner accepted the pilot19November;independent learner reproduction and Udemy upload untested. Not a full course release;no additional film count for this educational pilot."
+    },
+    {
+      "id": "three-live-glb-reopen",
+      "source": "docs/productions/three-live-portable-world.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Three-Live1.4.0JSauthoring/GLBexport;5mesh fixture and224mesh24s7channelv2scene(192meshv1) independently reopened;actual downloaded-file hash match. Not AR/USDZ/native compiler/device qualification."
+    },
+    {
+      "id": "canvas-ui-captcha-pilot",
+      "source": "docs/experiments/canvas-ui-captcha-pilot-2026-11-20.md",
+      "index_note": "OneGlassadapted-raster8sdual-aspecteffect/plaintrial;ownerselectedGlassandacceptedcorrectedv3pilot. NativeDOMcaptureunexecuted;fullfilmseparatecase."
     }
   ]
 }

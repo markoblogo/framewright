@@ -1,5 +1,13 @@
 # Tool review and test inventory
 
+## FilmCraft bounded trial —20November2026
+
+[Executed native save/reopen/title correction/export](experiments/filmcraft-edit-reopen-2026-11-20.md):18s1080p fixture,three clips,two signal stems,one native title andthree captions. Technical pass;owneraccepted20November2026. Course unchanged;not a generalcourse/UI/MCPqualification.
+
+## Tool intake —20November2026
+
+[Six-family assessment](research/tool-intake-2026-11-20.md):FilmCraft editable agent-driven NLE candidate;Premotio plan/licence gates;UltraTex internal-code/model-licence blockers;existing Devault partial trial reconciled;unslop-ui principles mapped to DESIGN-SKILLS-01;Genie4 model-access uncertainty retained. Documentation only,no installs,exports,generation or paid usage.
+
 ## Klap —16November2026
 
 [Gifted Pro assessment and scoped trial](research/klap-2026-11-16.md): existing-account import,editor/transcript,rename and actual MP4 export observed. First91-second source yielded one89-second candidate despite30–60second setting; clip quality/duration and intended plain style remain limited. Use when helpful in current productions;2–3 reviews later, with exact owner referral/disclosure. Separate paid API unselected.
@@ -369,7 +377,7 @@ A documented feature, code licence and model/media licence are separate claims.
 | [Hyperframes](https://github.com/heygen-com/hyperframes) | **supported_scoped**: HTML rendering used in delivered pilots; only recorded formats/effects qualified. | Existing tool profile and experiment records; no blanket retest. |
 | [FFmpeg](https://github.com/FFmpeg/FFmpeg) | **supported_scoped**: Assembly, encoded audio mixing/QA and frame extraction used; permissions and build licences differ from media rights. | Test only a new codec/filter/handoff requirement. |
 | [auto-editor](https://github.com/WyattBlue/auto-editor) | **candidate**: Automatic timeline cuts by audio loudness/motion; not semantic judgement of which words can be removed. | Authorised60–90s spoken sample; label pauses first, protect phrase edges, check edit list and sync. |
-| [OpenScreen](https://github.com/getopenscreen/openscreen) | **supported_scoped**: [AMI Books42s tour](../experiments/2026-10-15/ami-books-openscreen.md),CLI capture/pack,manual zoom/callouts,native1080p60 with FFmpeg30fps/voice finishing. Miniature/black-window failures retained;automatic cursor/MCP/AI unqualified. | Retest only changed capture-control need,released MCP or explicit automatic-cursor trial;owner review pending. |
+| [OpenScreen](https://github.com/getopenscreen/openscreen) | **supported_scoped**: [AMI Books42s tour](../experiments/2026-10-15/ami-books-openscreen.md),CLI capture/pack,manual zoom/callouts,native1080p60 with FFmpeg30fps/voice finishing. Miniature/black-window failures retained;automatic cursor/MCP/AI unqualified. | Retest only changed capture-control need,released MCP or explicit automatic-cursor trial;owner accepted20November2026. |
 | [yt-dlp](https://github.com/yt-dlp/yt-dlp) | **candidate**: Acquisition utility, not a renderer/editor or licence to reuse downloaded media. | Only an authorised owner clip if no retained local master exists; test segment timing/metadata; do not import browser cookies implicitly. |
 | [Puppeteer](https://github.com/puppeteer/puppeteer) | **component_used**: Browser/seek harness used for Spot-Market and a 120s Babylon canvas recording in Möbius Walk; this is not qualification of arbitrary continuous browser recording. | Reuse existing browser harness; test only new seek/readiness/capture requirements. |
 | [ManimGX](https://github.com/academa-labs/manimgx) | **supported_scoped**: [MN7R2D workflow pilot](../experiments/2026-10-15/mn7r-manim-mlx.md),FFmpeg timing normalization required;native mux warnings retained | Reuse runtime;3D/math plots,other formats and native still remain untested |

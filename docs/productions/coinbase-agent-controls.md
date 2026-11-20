@@ -50,3 +50,7 @@ Owner accepted both exact full-v1 picture/sound masters: «Принимаю об
 ## Owner-reported publication —16November2026
 
 [YouTube](https://youtu.be/DmsXZ73w-Eg) and [TikTok](https://vt.tiktok.com/ZSpssNpud/) supplied by the owner. receipts/owner-publication-links.json binds those URLs to the prepared package snapshot and accepted local masters. Prepared text/cover hashes are unchanged. Independent visibility,uploaded identity,cover use,rights/platform status and audience/monetisation metrics remain unverified. One story/two aspects;no extra film or trial count. Prior pending-review wording above is historical and superseded by acceptance/publication records.
+
+## Teaching-reuse candidate —19November2026
+
+Candidate AI-workflow guardrails lesson:limits outside the agent. Conceptual product explainer,not a tested payment workflow;needs an original synthetic lab. This is an owner-authorised candidate marker,not an approved lesson/cut or blanket teaching licence. See [course reuse screening](../research/course-reuse-screening-2026-11-19.md). Original case/receipts remain the source of truth.

@@ -884,6 +884,321 @@
             "engineering illustration"
           ],
           "granularity": "specific_production_application"
+        },
+        {
+          "id": "ffmpeg--osmo-lab-editorial-finish",
+          "tasks": [
+            "video",
+            "editing",
+            "audio"
+          ],
+          "inputs": [
+            "video",
+            "audio",
+            "image"
+          ],
+          "styles": [
+            "science-editorial",
+            "lab-notebook",
+            "mixed-media"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "independent-aspect-layout",
+            "molecular-diagram",
+            "scanning-overlay",
+            "labelled-source-window",
+            "encoded-audio-qa"
+          ],
+          "version": "FFmpeg8.0.1;Python3.14/Pillow12.0.0 authored compositor;Kokoro ONNX modelv1.0",
+          "scope": "Two69.381s narrated science explainers. Pillow authors diagrams and composition;FFmpeg assembles/finishes. Not scientific simulation or generative acting.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/osmo-ai-nose.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/productions/osmo-ai-nose.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Primary titles,source/illustration labels and reduced covers inspected;small support copy is not a main message.",
+              "source": "docs/productions/osmo-ai-nose.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Official motion clips and time-driven scanner,signal,molecule and fluid/nozzle actions;sampled native/encoded frames inspected,not an exhaustive continuous review.",
+              "source": "docs/productions/osmo-ai-nose.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Deterministic authored diagram geometry;no generative video identity claim.",
+              "source": "docs/productions/osmo-ai-nose.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Encoded sample frames inspected for crop/overlap;Camembert drawing corrected before full render. No exhaustive artifact qualification.",
+              "source": "docs/productions/osmo-ai-nose.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "One measured paragraph timeline and separately authored aspect layouts;clear source-versus-illustration roles.",
+              "source": "docs/productions/osmo-ai-nose.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Full encode/decode,aspect/SAR/audio inspection;standard real-browser delivery checks pass;not continuous creative/listening acceptance."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner accepted both full v1 films and covers19November2026;isolated voice assessment not inferred."
+          },
+          "resources": {
+            "hardware": "Owner Mac;canonical external studio",
+            "formats": "1920x1080/1080x1920,30fps,69.381s",
+            "time": "Per-take voice timing retained;active labour unmeasured",
+            "cost": "Local compute unpriced;one built-in image generation cost not exposed;no separate chargeable API/CLI"
+          },
+          "limitations": [
+            "Official source media attributed;blanket reuse clearance unverified",
+            "ASR is not acoustic listening;proper-name timestamps interpolated",
+            "Sampled stills do not prove continuous motion quality"
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Osmo",
+            "lab notebook",
+            "science explainer",
+            "молекулярная схема",
+            "научный репортаж"
+          ],
+          "granularity": "specific_production_application"
+        },
+        {
+          "id": "ffmpeg--mit-microflight-research-editorial",
+          "tasks": [
+            "video",
+            "editing",
+            "audio"
+          ],
+          "inputs": [
+            "video",
+            "audio",
+            "image"
+          ],
+          "styles": [
+            "science-editorial",
+            "dark-laboratory",
+            "research-documentary"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "independent-aspect-layout",
+            "labelled-research-figure",
+            "sensor-diagram",
+            "source-video-reframing",
+            "encoded-audio-qa"
+          ],
+          "version": "FFmpeg8.0.1;Python3.14/Pillow12.0.0 authored compositor;Kokoro ONNX modelv1.0",
+          "scope": "Two56.681s narrated science explainers. Authored diagrams and credited real flight excerpts;not physical simulation or generative acting.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/mit-microrobot-onboard-brain.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/productions/mit-microrobot-onboard-brain.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Native titles/labels and full/reduced covers inspected;research figure microtext is supporting context.",
+              "source": "docs/productions/mit-microrobot-onboard-brain.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Real flight/macros plus deterministic tracking,tilt,optical-flow,height andpower diagrams. Flower is a labelled research photo;not real landing footage.",
+              "source": "docs/productions/mit-microrobot-onboard-brain.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Fixed sourced research images and deterministic vector geometry;no generative identity claim.",
+              "source": "docs/productions/mit-microrobot-onboard-brain.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Initial strip crop errors corrected;sampled final encoded frames inspected in both aspects;not exhaustive continuous artifact qualification.",
+              "source": "docs/productions/mit-microrobot-onboard-brain.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Shared paragraph timing with independently authored portrait/landscape framing and explicit experiment labels.",
+              "source": "docs/productions/mit-microrobot-onboard-brain.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Native encode/decode,aspect/SAR,loudness/peak/mono and source-spelled ASR alignment;browser receipt retained separately."
+          },
+          "owner_evaluation": {
+            "status": "accepted_retained_scope",
+            "scope": "Owner accepted visual edit/covers with muffled-voice correction;audio-only v2 applied. Separate revised-mix listening acceptance unrecorded."
+          },
+          "resources": {
+            "hardware": "Owner Mac;external studio",
+            "formats": "1920x1080/1080x1920,30fps,56.681s",
+            "time": "Voice timings retained;active labour unmeasured",
+            "cost": "Local compute unpriced;no paid API/provider"
+          },
+          "limitations": [
+            "Separate human-guided flower trial used offboard computation inpreprint;do not merge with onboard-control flights",
+            "Flower is a research photo;publisher movie download unsuccessful",
+            "Official video reuse clearance unverified;CC BY4.0 applies only to author-preprint figures",
+            "ASR/sample frames/software QA are not owner listening/creative approval"
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "MIT",
+            "microrobot",
+            "flying robot",
+            "dark laboratory",
+            "sensor diagram",
+            "микроробот",
+            "научный документальный ролик"
+          ],
+          "granularity": "specific_production_application"
+        },
+        {
+          "id": "ffmpeg--tecobot-real-research-documentary",
+          "tasks": [
+            "video",
+            "editing",
+            "audio"
+          ],
+          "inputs": [
+            "video",
+            "audio"
+          ],
+          "styles": [
+            "research-documentary",
+            "dark-laboratory",
+            "footage-led-editorial"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "source-video-reframing",
+            "independent-aspect-layout",
+            "labelled-research-excerpt",
+            "local-narration",
+            "encoded-audio-qa"
+          ],
+          "version": "FFmpeg8.0.1;Python3.14/Pillow12.0.0;KokoroONNX0.6.1/modelv1.0af_heart;Whisper-small",
+          "scope": "Two59.75sEnglish TeCoBot research micro-documentaries from real author footage;private review,not robot testing or autonomous-team qualification.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/tecobot-many-bodies.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/productions/tecobot-many-bodies.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            },
+            {
+              "url": "https://youtu.be/_fkugk-1FbA",
+              "provenance": "owner_report",
+              "independent_visibility": "unchecked",
+              "metrics": "unknown"
+            },
+            {
+              "url": "https://vt.tiktok.com/ZSpT7Uq7P/",
+              "provenance": "owner_report",
+              "independent_visibility": "unchecked",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "High-contrast headlines inspected in native encoded samples and reduced covers;microtext is supporting context.",
+              "source": "docs/productions/tecobot-many-bodies.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Actual research action throughout15shots;source contact sheets and encoded moments sampled,not exhaustive continuous review.",
+              "source": "docs/productions/tecobot-many-bodies.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Source robot appearance preserved;no generative acting/identity trial.",
+              "source": "docs/productions/tecobot-many-bodies.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Proportional framing retains grape release and docking setup;some800pxsources gently upscaled;not recovered detail.",
+              "source": "docs/productions/tecobot-many-bodies.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Exact source intervals,crops,per-aspect positions,paragraph timing and mix recipe retained;three sections revised without regenerating narration.",
+              "source": "docs/productions/tecobot-many-bodies.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Full decode/native aspects;ASR0.989;audio levels/peak/mono;source and encoded samples;Chrome157standard delivery passed."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner watched andaccepted both full films/mixes andcovers20November;publication andsource-media clearance remain separate."
+          },
+          "resources": {
+            "hardware": "Owner Mac;external studio",
+            "formats": "1920x1080/1080x1920,30fps,59.75s",
+            "time": "Active labour unmeasured;not a controlled timing test",
+            "cost": "No paid provider/API;local compute unpriced"
+          },
+          "limitations": [
+            "Video public-use clearance unresolved;MITcode licence does not cover footage",
+            "Research demonstrations accelerated;not realtime speed benchmark",
+            "Teleoperated reconfiguration and separate camera-guided docking must remain distinct",
+            "Frame/ASR/numeric checks do not establish continuous viewing,listening or owner acceptance"
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "TeCoBot",
+            "real robot footage",
+            "research documentary",
+            "модульные роботы",
+            "документальный ролик"
+          ],
+          "granularity": "specific_production_application"
         }
       ]
     },
@@ -1024,7 +1339,107 @@
           ],
           "granularity": "specific_production_application"
         },
-        {"id":"three-scene--retained-scope","tasks":["video","3d"],"inputs":["object","book-art","brand"],"styles":[],"style_basis":"not_extracted","techniques":[],"version":"Three.js0.186.1 inside Hyperframes0.8.161; Spot-Market20s1080p30 pilot","scope":"Tool-level retained ledger summary,not an individual experiment: Authored Spot-Market miniature/action/camera via three-scene profile; no calibrated physics or arbitrary model reconstruction.","evidence":"tested","sources":["experiments/2026-10-15/spot-market-3d-miniature.md"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"recorded_execution","scope":"Retained tool-level execution summary only;not a feature-specific or newly repeated check."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"not_extracted;see sources","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Historical scope only;unrecorded quality/timing/version remain unknown."],"alternatives":[],"search_terms":[],"granularity":"retained_scope_summary","scope_note":"Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."}
+        {"id":"three-scene--retained-scope","tasks":["video","3d"],"inputs":["object","book-art","brand"],"styles":[],"style_basis":"not_extracted","techniques":[],"version":"Three.js0.186.1 inside Hyperframes0.8.161; Spot-Market20s1080p30 pilot","scope":"Tool-level retained ledger summary,not an individual experiment: Authored Spot-Market miniature/action/camera via three-scene profile; no calibrated physics or arbitrary model reconstruction.","evidence":"tested","sources":["experiments/2026-10-15/spot-market-3d-miniature.md"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"recorded_execution","scope":"Retained tool-level execution summary only;not a feature-specific or newly repeated check."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"not_extracted;see sources","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Historical scope only;unrecorded quality/timing/version remain unknown."],"alternatives":[],"search_terms":[],"granularity":"retained_scope_summary","scope_note":"Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."},
+        {
+          "id": "three-scene--curl-isometric-maintenance-workshop",
+          "tasks": [
+            "video",
+            "3d"
+          ],
+          "inputs": [
+            "image",
+            "audio"
+          ],
+          "styles": [
+            "isometric-miniature",
+            "software-workshop",
+            "editorial-explainer"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "true-3d-mechanisms",
+            "independent-aspect-layout",
+            "source-excerpt-window",
+            "macro-camera-cut",
+            "native-cover-render"
+          ],
+          "version": "Three.jsrevision185(retained0.185.1build);Chrome157;FFmpeg8.0.1",
+          "scope": "Two57.714s original isometric workshop explainers;deterministic 3D mechanisms and sourced editorial claims,not physics/agent execution or generated character acting.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/curl-maintenance-workshop.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/productions/curl-maintenance-workshop.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Native titles/count attribution/source windows inspected in both aspects;covers inspected full/reduced.",
+              "source": "docs/productions/curl-maintenance-workshop.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Original mechanisms retained;v2 adds stock workplace footage,photographic context and actual curl/Rust document captures. Whole6fps draft and encoded samples inspected;owner found v1 dry despite motion.",
+              "source": "docs/productions/curl-maintenance-workshop.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Deterministic actual3D geometry/time;no generative identity or anatomy claim.",
+              "source": "docs/productions/curl-maintenance-workshop.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "V1 operator samples missed material owner-reported layout/player problems. V2 projected fitting and60state bounds/overlap checks plus10actual-control screenshots inspected;new creative approval pending.",
+              "source": "docs/productions/curl-maintenance-workshop.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Single measured voice timeline,absolute-time local canvas and independent native aspect framing;no cloud generation.",
+              "source": "docs/productions/curl-maintenance-workshop.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Native30fps encode/decode,aspect/SAR,loudness/peak/stereo-mono,ASR alignment and standard real-browser delivery checks."
+          },
+          "owner_evaluation": {
+            "status": "accepted_retained_scope",
+            "scope": "V1 returned for layout/player collisions and editorial dryness;3D assets retained. Owner accepted both mixed-media v2 full films and covers19November2026."
+          },
+          "resources": {
+            "hardware": "Owner Mac;external studio",
+            "formats": "1920x1080/1080x1920,30fps,57.714s",
+            "time": "Component voice timings retained;active labour unmeasured",
+            "cost": "No paid API/provider;local compute unpriced"
+          },
+          "limitations": [
+            "Reported historical figures attributed to Stenberg;no rewrite benchmark",
+            "Authored motion is not physical simulation",
+            "Course reuse is candidate-only;source excerpt rights and learning exercise require separate review",
+            "ASR/sample frames/browser tests are not listening or owner approval"
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "curl",
+            "isometric workshop",
+            "maintenance",
+            "code review",
+            "изометрическая мастерская",
+            "сопровождение кода"
+          ],
+          "granularity": "specific_production_application"
+        }
       ]
     },
     "manimgx": {
@@ -1843,77 +2258,7 @@
       "rights_class": "conditional",
       "licence_note_sha256": "63849b2335e7901d02d0fe13ac19413b61d131d073006526f392579817f3d541",
       "applications": [
-        {
-          "id": "rokehan-location-scout--retained-scope",
-          "tasks": [
-            "3d",
-            "video"
-          ],
-          "inputs": [
-            "text"
-          ],
-          "styles": [],
-          "style_basis": "not_extracted",
-          "techniques": [],
-          "version": "not_recorded_in_index",
-          "scope": "Tool-level retained ledger summary,not an individual experiment: One Nantes quarter:40mesh definitions/431loaded instances; native manga PNG inspected. Native GLB carries colour geometry, no camera/manga shader. Existing Three.js0.186 produces two timed views with original local line/halftone finishing.1080p24/15s/360frames decode and reseek pass; owner accepted lighter-street v2 after requested brightness correction. Fine-line temporal behaviour needs per-shot checks. No Blender, character animation, geographic accuracy or real-time FPS qualification. Follow-up: one Hudson200m native GLB/PNG imported; two-angle6s renders1280x720 and720x1280 decode/reseek pass. Vertical framing revised. Hudson set/style owner-accepted for No Further Claims and reused for a short empty-street POV. Character motion was produced separately; no Rokehan character-animation or exact-geography qualification.",
-          "evidence": "tested",
-          "sources": [
-            "docs/experiments/rokehan-manga.md",
-            "experiments/2026-10-26/evidence/rokehan-manga.json",
-            "skills/video-production-router/references/location-scout.md",
-            "docs/experiments/no-further-claims-manga-probes.md"
-          ],
-          "examples": [],
-          "quality": {
-            "readability": {
-              "status": "not_assessed",
-              "provenance": "not_assessed",
-              "note": "No separate structured assessment extracted;consult retained sources."
-            },
-            "motion": {
-              "status": "not_assessed",
-              "provenance": "not_assessed",
-              "note": "No separate structured assessment extracted;consult retained sources."
-            },
-            "drawing_stability": {
-              "status": "not_assessed",
-              "provenance": "not_assessed",
-              "note": "No separate structured assessment extracted;consult retained sources."
-            },
-            "artifacts": {
-              "status": "not_assessed",
-              "provenance": "not_assessed",
-              "note": "No separate structured assessment extracted;consult retained sources."
-            },
-            "controllability": {
-              "status": "not_assessed",
-              "provenance": "not_assessed",
-              "note": "No separate structured assessment extracted;consult retained sources."
-            }
-          },
-          "technical": {
-            "status": "recorded_execution",
-            "scope": "Retained tool-level execution summary only;not a feature-specific or newly repeated check."
-          },
-          "owner_evaluation": {
-            "status": "not_recorded",
-            "scope": "No explicit owner decision extracted;publication does not imply approval."
-          },
-          "resources": {
-            "hardware": "not_extracted;see sources",
-            "formats": "not_extracted",
-            "timing": "not_recorded_in_index",
-            "cost": "unknown"
-          },
-          "limitations": [
-            "Historical scope only;unrecorded quality/timing/version remain unknown."
-          ],
-          "alternatives": [],
-          "search_terms": [],
-          "granularity": "retained_scope_summary",
-          "scope_note": "Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."
-        },
+        {"id":"rokehan-location-scout--retained-scope","tasks":["3d","video"],"inputs":["text"],"styles":[],"style_basis":"not_extracted","techniques":[],"version":"not_recorded_in_index","scope":"Tool-level retained ledger summary,not an individual experiment: One Nantes quarter:40mesh definitions/431loaded instances; native manga PNG inspected. Native GLB carries colour geometry, no camera/manga shader. Existing Three.js0.186 produces two timed views with original local line/halftone finishing.1080p24/15s/360frames decode and reseek pass; owner accepted lighter-street v2 after requested brightness correction. Fine-line temporal behaviour needs per-shot checks. No Blender, character animation, geographic accuracy or real-time FPS qualification. Follow-up: one Hudson200m native GLB/PNG imported; two-angle6s renders1280x720 and720x1280 decode/reseek pass. Vertical framing revised. Hudson set/style owner-accepted for No Further Claims and reused for a short empty-street POV. Character motion was produced separately; no Rokehan character-animation or exact-geography qualification.","evidence":"tested","sources":["docs/experiments/rokehan-manga.md","experiments/2026-10-26/evidence/rokehan-manga.json","skills/video-production-router/references/location-scout.md","docs/experiments/no-further-claims-manga-probes.md"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"recorded_execution","scope":"Retained tool-level execution summary only;not a feature-specific or newly repeated check."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"not_extracted;see sources","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Historical scope only;unrecorded quality/timing/version remain unknown."],"alternatives":[],"search_terms":[],"granularity":"retained_scope_summary","scope_note":"Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."},
         {
           "id": "rokehan-location-scout--raenest-city",
           "tasks": [
@@ -3339,10 +3684,296 @@
       "rights_class": "conditional",
       "licence_note_sha256": "5e9476b0e673f40a0d2386c4f027213ec50d0ab8af996f2aba77f2a3d6e7dbb4",
       "applications": [
-        {"id":"inshot-android--video","tasks":["video","editing"],"inputs":["video"],"styles":["screencast-tour"],"style_basis":"executed_case","techniques":["cutting","titles","colour-grade","audio-mix","pip"],"version":"2.243.1555 (13November native feature suite)","scope":"Native video feature suite plus Babylon43.933s/44s native aspects;Mac preprocessing remains separate.","evidence":"tested","sources":["docs/experiments/inshot-functions-2026-11-13.md"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"passed","scope":"Retained bounded feature exports/inspection;see source for exact endpoint/sync limits."},"owner_evaluation":{"status":"mixed","scope":"Babylon complete films/sound accepted;individual feature fixtures do not inherit whole-app approval.","source":"docs/productions/babylon-virtual-tour.md"},"resources":{"hardware":"Authorised Xiaomi Android tablet via USB/scrcpy;owner unlock required","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Native video feature suite plus Babylon43.933s/44s native aspects;Mac preprocessing remains separate.","No unattended export,device-to-device project portability or precise tracked compositing qualification."],"alternatives":[],"search_terms":[],"granularity":"specific_feature_suite"},
-        {"id":"inshot-android--photo","tasks":["graphics"],"inputs":["image"],"styles":["photo-editing"],"style_basis":"executed_case","techniques":["background-cutout","photo-adjustment"],"version":"2.243.1555 (13November native feature suite)","scope":"Bounded native photo exports with private tablet fixtures;not public asset clearance.","evidence":"tested","sources":["docs/experiments/inshot-functions-2026-11-13.md"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"passed","scope":"Retained bounded feature exports/inspection;see source for exact endpoint/sync limits."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"Authorised Xiaomi Android tablet via USB/scrcpy;owner unlock required","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Bounded native photo exports with private tablet fixtures;not public asset clearance.","No unattended export,device-to-device project portability or precise tracked compositing qualification."],"alternatives":[],"search_terms":[],"granularity":"specific_feature_suite"},
-        {"id":"inshot-android--collage","tasks":["graphics"],"inputs":["image"],"styles":["photo-collage"],"style_basis":"executed_case","techniques":["collage-layout"],"version":"2.243.1555 (13November native feature suite)","scope":"Native collage feature fixture on physical tablet;no universal layout/quality qualification.","evidence":"tested","sources":["docs/experiments/inshot-functions-2026-11-13.md"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"passed","scope":"Retained bounded feature exports/inspection;see source for exact endpoint/sync limits."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"Authorised Xiaomi Android tablet via USB/scrcpy;owner unlock required","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Native collage feature fixture on physical tablet;no universal layout/quality qualification.","No unattended export,device-to-device project portability or precise tracked compositing qualification."],"alternatives":[],"search_terms":[],"granularity":"specific_feature_suite"},
-        {"id":"inshot-android--enhance","tasks":["video","editing"],"inputs":["video"],"styles":[],"style_basis":"not_extracted","techniques":["video-enhance"],"version":"version not extracted;physical Xiaomi tablet/owner premium entitlement","scope":"1080p cloud Video Enhance export/range/import check;not recovered detail or text,not owner acceptance.","evidence":"tested","sources":["docs/experiments/inshot-video-enhance-2026-11-15.md"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"passed","scope":"Retained bounded feature exports/inspection;see source for exact endpoint/sync limits."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"Authorised Xiaomi Android tablet via USB/scrcpy;owner unlock required","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["1080p cloud Video Enhance export/range/import check;not recovered detail or text,not owner acceptance.","No unattended export,device-to-device project portability or precise tracked compositing qualification."],"alternatives":[],"search_terms":[],"granularity":"specific_feature_suite"}
+        {
+          "id": "inshot-android--video",
+          "tasks": [
+            "video",
+            "editing"
+          ],
+          "inputs": [
+            "video"
+          ],
+          "styles": [
+            "screencast-tour"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "cutting",
+            "titles",
+            "colour-grade",
+            "audio-mix",
+            "pip"
+          ],
+          "version": "2.243.1555 (13November native feature suite)",
+          "scope": "Native video feature suite plus Babylon43.933s/44s native aspects;Mac preprocessing remains separate.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/inshot-functions-2026-11-13.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "artifacts": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "controllability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Retained bounded feature exports/inspection;see source for exact endpoint/sync limits."
+          },
+          "owner_evaluation": {
+            "status": "mixed",
+            "scope": "Babylon complete films/sound accepted;individual feature fixtures do not inherit whole-app approval.",
+            "source": "docs/productions/babylon-virtual-tour.md"
+          },
+          "resources": {
+            "hardware": "Authorised Xiaomi Android tablet via USB/scrcpy;owner unlock required",
+            "formats": "not_extracted",
+            "timing": "not_recorded_in_index",
+            "cost": "unknown"
+          },
+          "limitations": [
+            "Native video feature suite plus Babylon43.933s/44s native aspects;Mac preprocessing remains separate.",
+            "No unattended export,device-to-device project portability or precise tracked compositing qualification."
+          ],
+          "alternatives": [],
+          "search_terms": [],
+          "granularity": "specific_feature_suite"
+        },
+        {
+          "id": "inshot-android--photo",
+          "tasks": [
+            "graphics"
+          ],
+          "inputs": [
+            "image"
+          ],
+          "styles": [
+            "photo-editing"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "background-cutout",
+            "photo-adjustment"
+          ],
+          "version": "2.243.1555 (13November native feature suite)",
+          "scope": "Bounded native photo exports with private tablet fixtures;not public asset clearance.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/inshot-functions-2026-11-13.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "artifacts": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "controllability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Retained bounded feature exports/inspection;see source for exact endpoint/sync limits."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "No explicit owner decision extracted;publication does not imply approval."
+          },
+          "resources": {
+            "hardware": "Authorised Xiaomi Android tablet via USB/scrcpy;owner unlock required",
+            "formats": "not_extracted",
+            "timing": "not_recorded_in_index",
+            "cost": "unknown"
+          },
+          "limitations": [
+            "Bounded native photo exports with private tablet fixtures;not public asset clearance.",
+            "No unattended export,device-to-device project portability or precise tracked compositing qualification."
+          ],
+          "alternatives": [],
+          "search_terms": [],
+          "granularity": "specific_feature_suite"
+        },
+        {
+          "id": "inshot-android--collage",
+          "tasks": [
+            "graphics"
+          ],
+          "inputs": [
+            "image"
+          ],
+          "styles": [
+            "photo-collage"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "collage-layout"
+          ],
+          "version": "2.243.1555 (13November native feature suite)",
+          "scope": "Native collage feature fixture on physical tablet;no universal layout/quality qualification.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/inshot-functions-2026-11-13.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "artifacts": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "controllability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Retained bounded feature exports/inspection;see source for exact endpoint/sync limits."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "No explicit owner decision extracted;publication does not imply approval."
+          },
+          "resources": {
+            "hardware": "Authorised Xiaomi Android tablet via USB/scrcpy;owner unlock required",
+            "formats": "not_extracted",
+            "timing": "not_recorded_in_index",
+            "cost": "unknown"
+          },
+          "limitations": [
+            "Native collage feature fixture on physical tablet;no universal layout/quality qualification.",
+            "No unattended export,device-to-device project portability or precise tracked compositing qualification."
+          ],
+          "alternatives": [],
+          "search_terms": [],
+          "granularity": "specific_feature_suite"
+        },
+        {
+          "id": "inshot-android--enhance",
+          "tasks": [
+            "video",
+            "editing"
+          ],
+          "inputs": [
+            "video"
+          ],
+          "styles": [],
+          "style_basis": "not_extracted",
+          "techniques": [
+            "video-enhance"
+          ],
+          "version": "version not extracted;physical Xiaomi tablet/owner premium entitlement",
+          "scope": "1080p cloud Video Enhance export/range/import check;not recovered detail or text,not owner acceptance.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/inshot-video-enhance-2026-11-15.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "artifacts": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            },
+            "controllability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate structured assessment extracted;consult retained sources."
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Retained bounded feature exports/inspection;see source for exact endpoint/sync limits."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "No explicit owner decision extracted;publication does not imply approval."
+          },
+          "resources": {
+            "hardware": "Authorised Xiaomi Android tablet via USB/scrcpy;owner unlock required",
+            "formats": "not_extracted",
+            "timing": "not_recorded_in_index",
+            "cost": "unknown"
+          },
+          "limitations": [
+            "1080p cloud Video Enhance export/range/import check;not recovered detail or text,not owner acceptance.",
+            "No unattended export,device-to-device project portability or precise tracked compositing qualification."
+          ],
+          "alternatives": [],
+          "search_terms": [],
+          "granularity": "specific_feature_suite"
+        }
       ]
     },
     "genmotion": {
@@ -3359,7 +3990,118 @@
       "rights_class": "conditional",
       "licence_note_sha256": "726563e615749602e4eb27b9d2abb6b97990cee30348d2b164abacfa95416e26",
       "applications": [
-        {"id":"genmotion--mars-dispatch","tasks":["video","graphics","montage"],"inputs":["image","video","composition"],"styles":["paper-collage","newspaper","retro-documentary","mixed-media"],"style_basis":"executed_case","techniques":["animated-cutouts","halftone","colour-footage-insert","native-aspect-layout"],"version":"0.8.1","scope":"Native Three.js newspaper/paper animation and dual aspect exports;colour NASA footage and audio finished separately with FFmpeg. No acting or generative footage qualification.","evidence":"tested","sources":["docs/experiments/genmotion-collage-2026-11-17.md","docs/productions/nasa-eyes-collage.md"],"examples":[{"url":"https://youtu.be/h0ZTfFPKbcs","provenance":"owner_provided_url","independent_visibility":"not_checked","metrics":"unknown"}],"quality":{"readability":{"status":"observed","provenance":"operator_observation","note":"Encoded text/credit/stamp collisions corrected;reduced frames inspected.","source":"docs/experiments/genmotion-collage-2026-11-17.md"},"motion":{"status":"observed","provenance":"operator_observation","note":"12fps authored paper movement with24fps NASA footage;native playback checked.","source":"docs/experiments/genmotion-collage-2026-11-17.md"},"drawing_stability":{"status":"observed","provenance":"operator_observation","note":"Deterministic paper/photo layers;not generative character identity.","source":"docs/experiments/genmotion-collage-2026-11-17.md"},"artifacts":{"status":"observed","provenance":"operator_observation","note":"Initial schematic planet and caption/rocket intersections corrected;not a zero-artifact guarantee.","source":"docs/experiments/genmotion-collage-2026-11-17.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"Frame-based key/orbit/rocket paths and independently authored aspects.","source":"docs/experiments/genmotion-collage-2026-11-17.md"}},"technical":{"status":"passed","scope":"Native dual-format exports and full decode,encoded native/reduced samples;retained source notes,not a new reproduction."},"owner_evaluation":{"status":"accepted","scope":"Explicit full-film/sound/cover acceptance","source":"docs/productions/nasa-eyes-collage.md"},"resources":{"hardware":"macOS arm64;external Work storage;host fonts;existing browser/FFmpeg where required","formats":"1920x1080 and1080x1920;paper12fps,final24fps;50s","timing":"CLI4s proof:software125.041s/GPU34.296s;portraitGPU23.332s. Final paper revision147.618s/157.267s;non-controlled observations,not comparative benchmark.","cost":"No new paid API/model call;AIStudio UI cost not displayed. Monetary total unknown."},"limitations":["Native Three.js newspaper/paper animation and dual aspect exports;colour NASA footage and audio finished separately with FFmpeg. No acting or generative footage qualification.","Observation/owner preference is case-specific;no comparable quality score or measured audience effect.","Another host/operator and new combinations require scope-specific checks."],"alternatives":[{"tool_id":"givemotion","comparison":"not_compared","reason":"Related authored-animation route with a different retained style;not a ranked replacement."},{"tool_id":"manim-community","comparison":"not_compared","reason":"Related authored-animation route with a different retained style;not a ranked replacement."}],"search_terms":["газетный коллаж с цветными вставками","newspaper collage with colour footage inserts","чёрно-белая ретро документалка","бумажные вырезки"],"granularity":"specific_production_application"}
+        {
+          "id": "genmotion--mars-dispatch",
+          "tasks": [
+            "video",
+            "graphics",
+            "montage"
+          ],
+          "inputs": [
+            "image",
+            "video",
+            "composition"
+          ],
+          "styles": [
+            "paper-collage",
+            "newspaper",
+            "retro-documentary",
+            "mixed-media"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "animated-cutouts",
+            "halftone",
+            "colour-footage-insert",
+            "native-aspect-layout"
+          ],
+          "version": "0.8.1",
+          "scope": "Native Three.js newspaper/paper animation and dual aspect exports;colour NASA footage and audio finished separately with FFmpeg. No acting or generative footage qualification.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/genmotion-collage-2026-11-17.md",
+            "docs/productions/nasa-eyes-collage.md"
+          ],
+          "examples": [
+            {
+              "url": "https://youtu.be/h0ZTfFPKbcs",
+              "provenance": "owner_provided_url",
+              "independent_visibility": "not_checked",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Encoded text/credit/stamp collisions corrected;reduced frames inspected.",
+              "source": "docs/experiments/genmotion-collage-2026-11-17.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "12fps authored paper movement with24fps NASA footage;native playback checked.",
+              "source": "docs/experiments/genmotion-collage-2026-11-17.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Deterministic paper/photo layers;not generative character identity.",
+              "source": "docs/experiments/genmotion-collage-2026-11-17.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Initial schematic planet and caption/rocket intersections corrected;not a zero-artifact guarantee.",
+              "source": "docs/experiments/genmotion-collage-2026-11-17.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Frame-based key/orbit/rocket paths and independently authored aspects.",
+              "source": "docs/experiments/genmotion-collage-2026-11-17.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Native dual-format exports and full decode,encoded native/reduced samples;retained source notes,not a new reproduction."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Explicit full-film/sound/cover acceptance",
+            "source": "docs/productions/nasa-eyes-collage.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64;external Work storage;host fonts;existing browser/FFmpeg where required",
+            "formats": "1920x1080 and1080x1920;paper12fps,final24fps;50s",
+            "timing": "CLI4s proof:software125.041s/GPU34.296s;portraitGPU23.332s. Final paper revision147.618s/157.267s;non-controlled observations,not comparative benchmark.",
+            "cost": "No new paid API/model call;AIStudio UI cost not displayed. Monetary total unknown."
+          },
+          "limitations": [
+            "Native Three.js newspaper/paper animation and dual aspect exports;colour NASA footage and audio finished separately with FFmpeg. No acting or generative footage qualification.",
+            "Observation/owner preference is case-specific;no comparable quality score or measured audience effect.",
+            "Another host/operator and new combinations require scope-specific checks."
+          ],
+          "alternatives": [
+            {
+              "tool_id": "givemotion",
+              "comparison": "not_compared",
+              "reason": "Related authored-animation route with a different retained style;not a ranked replacement."
+            },
+            {
+              "tool_id": "manim-community",
+              "comparison": "not_compared",
+              "reason": "Related authored-animation route with a different retained style;not a ranked replacement."
+            }
+          ],
+          "search_terms": [
+            "газетный коллаж с цветными вставками",
+            "newspaper collage with colour footage inserts",
+            "чёрно-белая ретро документалка",
+            "бумажные вырезки"
+          ],
+          "granularity": "specific_production_application"
+        }
       ]
     },
     "givemotion": {
@@ -3374,7 +4116,111 @@
       "rights_class": "conditional",
       "licence_note_sha256": "4471715c469605fe024bccd3cbcef5592209438ae346ebf21dfe1ac551c03cfb",
       "applications": [
-        {"id":"givemotion--vet402","tasks":["video","graphics","diagram"],"inputs":["composition"],"styles":["paper-ink","editorial-diagram"],"style_basis":"executed_case","techniques":["svg-animation","receipt-story","native-aspect-layout"],"version":"0.1.6","scope":"HTML/SVG deterministic paper/ink animation,proof and two native52s exports. Independent source positioning/animation groups required. Publication URLs are not explicit creative acceptance.","evidence":"tested","sources":["docs/experiments/givemotion-vet402-2026-11-16.md","docs/productions/vet402-delivery.md"],"examples":[{"url":"https://youtu.be/xaGggJR8RrM","provenance":"owner_provided_url","independent_visibility":"not_checked","metrics":"unknown"}],"quality":{"readability":{"status":"observed","provenance":"operator_observation","note":"Small labels/overlaps corrected after encoded review.","source":"docs/experiments/givemotion-vet402-2026-11-16.md"},"motion":{"status":"observed","provenance":"operator_observation","note":"Transform/opacity/SVG movement;not natural character acting.","source":"docs/experiments/givemotion-vet402-2026-11-16.md"},"drawing_stability":{"status":"observed","provenance":"operator_observation","note":"Authored vector layers;anatomy/acting untested.","source":"docs/experiments/givemotion-vet402-2026-11-16.md"},"artifacts":{"status":"observed","provenance":"operator_observation","note":"Position/animation transform conflict fixed with nested groups.","source":"docs/experiments/givemotion-vet402-2026-11-16.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"Deterministic callbacks and sequential clips;no unattended editing claim.","source":"docs/experiments/givemotion-vet402-2026-11-16.md"}},"technical":{"status":"passed","scope":"Native dual-format exports and full decode,encoded native/reduced samples;retained source notes,not a new reproduction."},"owner_evaluation":{"status":"not_recorded","scope":"Publication URLs supplied;separate creative acceptance unrecorded.","source":"docs/productions/vet402-delivery.md"},"resources":{"hardware":"macOS arm64;external Work storage;host fonts;existing browser/FFmpeg where required","formats":"1920x1080 and1080x1920;24fps;52s","timing":"4s proof7.55s;full52s roughly2minutes/aspect in retained receipts;not controlled benchmark.","cost":"No new paid API/model call;AIStudio UI cost not displayed. Monetary total unknown."},"limitations":["HTML/SVG deterministic paper/ink animation,proof and two native52s exports. Independent source positioning/animation groups required. Publication URLs are not explicit creative acceptance.","Observation/owner preference is case-specific;no comparable quality score or measured audience effect.","Another host/operator and new combinations require scope-specific checks."],"alternatives":[{"tool_id":"genmotion","comparison":"not_compared","reason":"Related authored-animation route with a different retained style;not a ranked replacement."},{"tool_id":"manim-community","comparison":"not_compared","reason":"Related authored-animation route with a different retained style;not a ranked replacement."}],"search_terms":["бумага тушь квитанция","paper ink receipt dossier"],"granularity":"specific_production_application"}
+        {
+          "id": "givemotion--vet402",
+          "tasks": [
+            "video",
+            "graphics",
+            "diagram"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [
+            "paper-ink",
+            "editorial-diagram"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "svg-animation",
+            "receipt-story",
+            "native-aspect-layout"
+          ],
+          "version": "0.1.6",
+          "scope": "HTML/SVG deterministic paper/ink animation,proof and two native52s exports. Independent source positioning/animation groups required. Publication URLs are not explicit creative acceptance.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/givemotion-vet402-2026-11-16.md",
+            "docs/productions/vet402-delivery.md"
+          ],
+          "examples": [
+            {
+              "url": "https://youtu.be/xaGggJR8RrM",
+              "provenance": "owner_provided_url",
+              "independent_visibility": "not_checked",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Small labels/overlaps corrected after encoded review.",
+              "source": "docs/experiments/givemotion-vet402-2026-11-16.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Transform/opacity/SVG movement;not natural character acting.",
+              "source": "docs/experiments/givemotion-vet402-2026-11-16.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Authored vector layers;anatomy/acting untested.",
+              "source": "docs/experiments/givemotion-vet402-2026-11-16.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Position/animation transform conflict fixed with nested groups.",
+              "source": "docs/experiments/givemotion-vet402-2026-11-16.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Deterministic callbacks and sequential clips;no unattended editing claim.",
+              "source": "docs/experiments/givemotion-vet402-2026-11-16.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Native dual-format exports and full decode,encoded native/reduced samples;retained source notes,not a new reproduction."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "Publication URLs supplied;separate creative acceptance unrecorded.",
+            "source": "docs/productions/vet402-delivery.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64;external Work storage;host fonts;existing browser/FFmpeg where required",
+            "formats": "1920x1080 and1080x1920;24fps;52s",
+            "timing": "4s proof7.55s;full52s roughly2minutes/aspect in retained receipts;not controlled benchmark.",
+            "cost": "No new paid API/model call;AIStudio UI cost not displayed. Monetary total unknown."
+          },
+          "limitations": [
+            "HTML/SVG deterministic paper/ink animation,proof and two native52s exports. Independent source positioning/animation groups required. Publication URLs are not explicit creative acceptance.",
+            "Observation/owner preference is case-specific;no comparable quality score or measured audience effect.",
+            "Another host/operator and new combinations require scope-specific checks."
+          ],
+          "alternatives": [
+            {
+              "tool_id": "genmotion",
+              "comparison": "not_compared",
+              "reason": "Related authored-animation route with a different retained style;not a ranked replacement."
+            },
+            {
+              "tool_id": "manim-community",
+              "comparison": "not_compared",
+              "reason": "Related authored-animation route with a different retained style;not a ranked replacement."
+            }
+          ],
+          "search_terms": [
+            "бумага тушь квитанция",
+            "paper ink receipt dossier"
+          ],
+          "granularity": "specific_production_application"
+        }
       ]
     },
     "manim-community": {
@@ -3389,7 +4235,114 @@
       "rights_class": "conditional",
       "licence_note_sha256": "93b3cc4d51ef3105631086374c13f4ae716484a4b88504f724e3859e22b9f67d",
       "applications": [
-        {"id":"manim-community--pan2-ascii","tasks":["video","graphics","diagram"],"inputs":["composition"],"styles":["ascii","minimal","comic"],"style_basis":"executed_case","techniques":["glyph-transform","trajectory-animation","comic-insert","native-aspect-layout"],"version":"0.22.1","scope":"Cairo ASCII/text,glyph transforms,trajectories,comic inserts and native49s exports. Not PAN2 inference,physics accuracy or character acting.","evidence":"tested","sources":["docs/experiments/manim-community-ascii-2026-11-17.md","docs/productions/pan2-ascii.md"],"examples":[{"url":"https://youtu.be/sVa-etX-YxQ","provenance":"owner_provided_url","independent_visibility":"not_checked","metrics":"unknown"}],"quality":{"readability":{"status":"observed","provenance":"operator_observation","note":"Glyph weight,size,wrapping and comic labels corrected in reduced outputs.","source":"docs/experiments/manim-community-ascii-2026-11-17.md"},"motion":{"status":"observed","provenance":"operator_observation","note":"Trajectories,Create/Write and glyph transforms exported.","source":"docs/experiments/manim-community-ascii-2026-11-17.md"},"drawing_stability":{"status":"observed","provenance":"operator_observation","note":"Authored glyphs/vectors;not generative identity or acting.","source":"docs/experiments/manim-community-ascii-2026-11-17.md"},"artifacts":{"status":"observed","provenance":"operator_observation","note":"Egg/surface contact and caption overlap corrected.","source":"docs/experiments/manim-community-ascii-2026-11-17.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"Frame/scene code and selected-scene rerender;no inference performed.","source":"docs/experiments/manim-community-ascii-2026-11-17.md"}},"technical":{"status":"passed","scope":"Native dual-format exports and full decode,encoded native/reduced samples;retained source notes,not a new reproduction."},"owner_evaluation":{"status":"accepted","scope":"Explicit full-film/sound/cover acceptance","source":"docs/productions/pan2-ascii.md"},"resources":{"hardware":"macOS arm64;external Work storage;host fonts;existing browser/FFmpeg where required","formats":"1920x1080 and1080x1920;24fps;about49s","timing":"Per-scene render receipts retained privately;slow cold import,whole-route active labour not measured.","cost":"No new paid API/model call;AIStudio UI cost not displayed. Monetary total unknown."},"limitations":["Cairo ASCII/text,glyph transforms,trajectories,comic inserts and native49s exports. Not PAN2 inference,physics accuracy or character acting.","Observation/owner preference is case-specific;no comparable quality score or measured audience effect.","Another host/operator and new combinations require scope-specific checks."],"alternatives":[{"tool_id":"genmotion","comparison":"not_compared","reason":"Related authored-animation route with a different retained style;not a ranked replacement."},{"tool_id":"givemotion","comparison":"not_compared","reason":"Related authored-animation route with a different retained style;not a ranked replacement."}],"search_terms":["ASCII графика комикс","минималистичная типографика","minimal ascii comic"],"granularity":"specific_production_application"}
+        {
+          "id": "manim-community--pan2-ascii",
+          "tasks": [
+            "video",
+            "graphics",
+            "diagram"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [
+            "ascii",
+            "minimal",
+            "comic"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "glyph-transform",
+            "trajectory-animation",
+            "comic-insert",
+            "native-aspect-layout"
+          ],
+          "version": "0.22.1",
+          "scope": "Cairo ASCII/text,glyph transforms,trajectories,comic inserts and native49s exports. Not PAN2 inference,physics accuracy or character acting.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/manim-community-ascii-2026-11-17.md",
+            "docs/productions/pan2-ascii.md"
+          ],
+          "examples": [
+            {
+              "url": "https://youtu.be/sVa-etX-YxQ",
+              "provenance": "owner_provided_url",
+              "independent_visibility": "not_checked",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Glyph weight,size,wrapping and comic labels corrected in reduced outputs.",
+              "source": "docs/experiments/manim-community-ascii-2026-11-17.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Trajectories,Create/Write and glyph transforms exported.",
+              "source": "docs/experiments/manim-community-ascii-2026-11-17.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Authored glyphs/vectors;not generative identity or acting.",
+              "source": "docs/experiments/manim-community-ascii-2026-11-17.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Egg/surface contact and caption overlap corrected.",
+              "source": "docs/experiments/manim-community-ascii-2026-11-17.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Frame/scene code and selected-scene rerender;no inference performed.",
+              "source": "docs/experiments/manim-community-ascii-2026-11-17.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Native dual-format exports and full decode,encoded native/reduced samples;retained source notes,not a new reproduction."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Explicit full-film/sound/cover acceptance",
+            "source": "docs/productions/pan2-ascii.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64;external Work storage;host fonts;existing browser/FFmpeg where required",
+            "formats": "1920x1080 and1080x1920;24fps;about49s",
+            "timing": "Per-scene render receipts retained privately;slow cold import,whole-route active labour not measured.",
+            "cost": "No new paid API/model call;AIStudio UI cost not displayed. Monetary total unknown."
+          },
+          "limitations": [
+            "Cairo ASCII/text,glyph transforms,trajectories,comic inserts and native49s exports. Not PAN2 inference,physics accuracy or character acting.",
+            "Observation/owner preference is case-specific;no comparable quality score or measured audience effect.",
+            "Another host/operator and new combinations require scope-specific checks."
+          ],
+          "alternatives": [
+            {
+              "tool_id": "genmotion",
+              "comparison": "not_compared",
+              "reason": "Related authored-animation route with a different retained style;not a ranked replacement."
+            },
+            {
+              "tool_id": "givemotion",
+              "comparison": "not_compared",
+              "reason": "Related authored-animation route with a different retained style;not a ranked replacement."
+            }
+          ],
+          "search_terms": [
+            "ASCII графика комикс",
+            "минималистичная типографика",
+            "minimal ascii comic"
+          ],
+          "granularity": "specific_production_application"
+        }
       ]
     },
     "playmcp-veo31-fast": {
@@ -3402,7 +4355,84 @@
       "rights_class": "unknown",
       "licence_note_sha256": "cd6eb9ea73732d2441b3516591ce7a0014773af68e810df2b094ad22e320c265",
       "applications": [
-        {"id":"playmcp-veo31-fast--peter-comparison","tasks":["video"],"inputs":["image"],"styles":["2d-cartoon"],"style_basis":"executed_case","techniques":["image-to-video"],"version":"Veo3.1 Fast provider label","scope":"8s I2V Peter approach/braking/recoil;decoded exports passed,but owner rejected framing,warped face/body and shoulder artifact. One partial comparison suite;full Quixote remains paused.","evidence":"tested","sources":["docs/experiments/peter-acting-comparison-2026-11-16.md"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment"},"motion":{"status":"limitation_observed","provenance":"retained_report","note":"Livelier action but not accepted as a usable performance.","source":"docs/experiments/peter-acting-comparison-2026-11-16.md"},"drawing_stability":{"status":"limitation_observed","provenance":"retained_report","note":"Face/body warp and changed character design;owner correction.","source":"docs/experiments/peter-acting-comparison-2026-11-16.md"},"artifacts":{"status":"limitation_observed","provenance":"retained_report","note":"Square-source padding visibly differs;yellow shoulder triangle and warped transition frames.","source":"docs/experiments/peter-acting-comparison-2026-11-16.md"},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment"}},"technical":{"status":"passed","scope":"Encoded outputs/dimensions/seeking passed"},"owner_evaluation":{"status":"rejected","scope":"Both motion versions require rework;technical decode did not establish acting quality.","source":"docs/experiments/peter-acting-comparison-2026-11-16.md"},"resources":{"hardware":"Cloud provider through authorised UI/connector;local aspect finishing","formats":"1280x720 and720x1280;8s24fps","timing":"not_recorded","cost":"1600existing credits;no purchase;not a current quote"},"limitations":["8s I2V Peter approach/braking/recoil;decoded exports passed,but owner rejected framing,warped face/body and shoulder artifact. One partial comparison suite;full Quixote remains paused.","No visual A/B winner;GIF branch produced no output. Existing cast/voice/mill artwork acceptance remains separate."],"alternatives":[],"search_terms":["Питер полёт испуг персонаж Кихот","Peter flying braking recoil character"],"granularity":"specific_production_application"}
+        {
+          "id": "playmcp-veo31-fast--peter-comparison",
+          "tasks": [
+            "video"
+          ],
+          "inputs": [
+            "image"
+          ],
+          "styles": [
+            "2d-cartoon"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "image-to-video"
+          ],
+          "version": "Veo3.1 Fast provider label",
+          "scope": "8s I2V Peter approach/braking/recoil;decoded exports passed,but owner rejected framing,warped face/body and shoulder artifact. One partial comparison suite;full Quixote remains paused.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/peter-acting-comparison-2026-11-16.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate assessment"
+            },
+            "motion": {
+              "status": "limitation_observed",
+              "provenance": "retained_report",
+              "note": "Livelier action but not accepted as a usable performance.",
+              "source": "docs/experiments/peter-acting-comparison-2026-11-16.md"
+            },
+            "drawing_stability": {
+              "status": "limitation_observed",
+              "provenance": "retained_report",
+              "note": "Face/body warp and changed character design;owner correction.",
+              "source": "docs/experiments/peter-acting-comparison-2026-11-16.md"
+            },
+            "artifacts": {
+              "status": "limitation_observed",
+              "provenance": "retained_report",
+              "note": "Square-source padding visibly differs;yellow shoulder triangle and warped transition frames.",
+              "source": "docs/experiments/peter-acting-comparison-2026-11-16.md"
+            },
+            "controllability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate assessment"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Encoded outputs/dimensions/seeking passed"
+          },
+          "owner_evaluation": {
+            "status": "rejected",
+            "scope": "Both motion versions require rework;technical decode did not establish acting quality.",
+            "source": "docs/experiments/peter-acting-comparison-2026-11-16.md"
+          },
+          "resources": {
+            "hardware": "Cloud provider through authorised UI/connector;local aspect finishing",
+            "formats": "1280x720 and720x1280;8s24fps",
+            "timing": "not_recorded",
+            "cost": "1600existing credits;no purchase;not a current quote"
+          },
+          "limitations": [
+            "8s I2V Peter approach/braking/recoil;decoded exports passed,but owner rejected framing,warped face/body and shoulder artifact. One partial comparison suite;full Quixote remains paused.",
+            "No visual A/B winner;GIF branch produced no output. Existing cast/voice/mill artwork acceptance remains separate."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Питер полёт испуг персонаж Кихот",
+            "Peter flying braking recoil character"
+          ],
+          "granularity": "specific_production_application"
+        }
       ]
     },
     "chatgpt-native-gif": {
@@ -3415,7 +4445,81 @@
       "rights_class": "unknown",
       "licence_note_sha256": "cd6eb9ea73732d2441b3516591ce7a0014773af68e810df2b094ad22e320c265",
       "applications": [
-        {"id":"chatgpt-native-gif--peter-comparison","tasks":["video"],"inputs":["image"],"styles":["2d-cartoon"],"style_basis":"executed_case","techniques":["native-gif-request"],"version":"not_exposed","scope":"Native GIF request/provider route refused;no animated GIF output obtained. Static mill-face artwork was separately accepted,not GIF motion.","evidence":"failed","sources":["docs/experiments/peter-acting-comparison-2026-11-16.md"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment"},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment"},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment"},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment"},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment"}},"technical":{"status":"failed","scope":"Provider request refused;no motion output"},"owner_evaluation":{"status":"not_recorded","scope":"No GIF output available for owner review.","source":"docs/experiments/peter-acting-comparison-2026-11-16.md"},"resources":{"hardware":"Cloud provider through authorised UI/connector;local aspect finishing","formats":"no animated GIF output","timing":"not_recorded","cost":"no successful generation cost recorded"},"limitations":["Native GIF request/provider route refused;no animated GIF output obtained. Static mill-face artwork was separately accepted,not GIF motion.","No visual A/B winner;GIF branch produced no output. Existing cast/voice/mill artwork acceptance remains separate."],"alternatives":[],"search_terms":["Питер полёт испуг персонаж Кихот","Peter flying braking recoil character"],"granularity":"specific_production_application"}
+        {
+          "id": "chatgpt-native-gif--peter-comparison",
+          "tasks": [
+            "video"
+          ],
+          "inputs": [
+            "image"
+          ],
+          "styles": [
+            "2d-cartoon"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "native-gif-request"
+          ],
+          "version": "not_exposed",
+          "scope": "Native GIF request/provider route refused;no animated GIF output obtained. Static mill-face artwork was separately accepted,not GIF motion.",
+          "evidence": "failed",
+          "sources": [
+            "docs/experiments/peter-acting-comparison-2026-11-16.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate assessment"
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate assessment"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate assessment"
+            },
+            "artifacts": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate assessment"
+            },
+            "controllability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No separate assessment"
+            }
+          },
+          "technical": {
+            "status": "failed",
+            "scope": "Provider request refused;no motion output"
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "No GIF output available for owner review.",
+            "source": "docs/experiments/peter-acting-comparison-2026-11-16.md"
+          },
+          "resources": {
+            "hardware": "Cloud provider through authorised UI/connector;local aspect finishing",
+            "formats": "no animated GIF output",
+            "timing": "not_recorded",
+            "cost": "no successful generation cost recorded"
+          },
+          "limitations": [
+            "Native GIF request/provider route refused;no animated GIF output obtained. Static mill-face artwork was separately accepted,not GIF motion.",
+            "No visual A/B winner;GIF branch produced no output. Existing cast/voice/mill artwork acceptance remains separate."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Питер полёт испуг персонаж Кихот",
+            "Peter flying braking recoil character"
+          ],
+          "granularity": "specific_production_application"
+        }
       ]
     },
     "matter-js": {
@@ -3645,7 +4749,392 @@
           "granularity": "specific_production_application"
         }
       ]
-    }
+    },
+    "three-live": {
+      "tasks": [
+        "3d",
+        "video",
+        "editing"
+      ],
+      "inputs": [
+        "3d",
+        "composition"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "de2b1d44a849223e2e2d469456a88fb605fd6e1a270ba277f544752f5e8a2358",
+      "applications": [
+        {
+          "id": "three-live--night-line-glb-reopen",
+          "tasks": [
+            "3d",
+            "video",
+            "editing"
+          ],
+          "inputs": [
+            "3d",
+            "composition"
+          ],
+          "styles": [
+            "cinematic-miniature",
+            "night-diorama",
+            "proof-led-explainer"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "baked-transform-animation",
+            "independent-glb-reopen",
+            "authored-mechanical-motion",
+            "source-screen-capture",
+            "independent-aspect-layout"
+          ],
+          "version": "Three-Live1.4.0JSauthoring/sceneToGLB;three0.185.1GLTFLoader;Chrome157;FFmpeg8.0.1;KokoroONNX0.6.1/modelv1.0",
+          "scope": "One original224mesh(v2;192meshv1) night-tram scene plus5mesh fixture;export/download/independent reopen andtwo film cuts. Not native video export,AR,USDZ orarbitrary scene/device qualification.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/three-live-portable-world.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/productions/three-live-portable-world.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Native/reduced typography andcovers;real source-code microtext is supporting context,not teaching copy.",
+              "source": "docs/productions/three-live-portable-world.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Tram,two sliding doors andfour wheel tracks independently reopened in v2;sampled cycle checks,not physics/acting qualification.",
+              "source": "docs/productions/three-live-portable-world.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Deterministic original geometry andsame-byte GLB;viewer appearance depends onseparate lighting.",
+              "source": "docs/productions/three-live-portable-world.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Owner returned v1 for a narrow doorway and repeated shots. V2 hollow shell/full-width gap checked at8phases;new edit varies subject/view/information. Earlier capture failures retained;not exhaustive artifact qualification.",
+              "source": "docs/productions/three-live-portable-world.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Named meshes,24s baked cycle,exact source timestamps andindependent aspect cameras;no arbitrary source compiler ordevice qualification.",
+              "source": "docs/productions/three-live-portable-world.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Actual GLBexport/reopen/byte identity;full-scene animation/material checks;final decode/aspects/audio/covers andstandard browser delivery."
+          },
+          "owner_evaluation": {
+            "status": "mixed",
+            "scope": "Owner returnedv1fordoorwaygeometryandrepeatedshots;v2YouTube/TikTokpublicationURLsprovided20November. No separate explicitv2creativeacceptanceinferredfromlinks."
+          },
+          "resources": {
+            "hardware": "Owner Mac;local Node/Chrome/FFmpeg;external studio",
+            "formats": "V2 GLB224meshes/21materials/24s7channels;1920x1080/1080x1920movies30fps",
+            "time": "Active labour unmeasured;actual capture timestamps retained,not a controlled speed comparison",
+            "cost": "No paid provider/API calls;local compute unpriced"
+          },
+          "limitations": [
+            "JavaScript authoring/serializer path only;not native/sandbox compiler test",
+            "Viewer lighting/environment/camera/postprocess not carried asidentical appearance",
+            "No USDZ/AR/mobile/all-effects qualification",
+            "Native abort event/capture failures retained;not general reliability pass",
+            "Owner film/mix/cover review pending"
+          ],
+          "alternatives": [
+            {
+              "tool_id": "three-scene",
+              "comparison": "not_compared",
+              "reason": "Direct Three.js scene authoring/capture is retained baseline;GLTFExporter orBlender export not compared inthis trial."
+            }
+          ],
+          "search_terms": [
+            "Three-Live",
+            "GLB export",
+            "night tram diorama",
+            "portable 3D scene",
+            "миниатюрная ночная диорама",
+            "экспорт 3D сцены"
+          ],
+          "granularity": "specific_production_application"
+        }
+      ]
+    },
+    "canvas-ui": {
+      "tasks": [
+        "graphics",
+        "video"
+      ],
+      "inputs": [
+        "composition",
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "7423709b6a42ee325e9655369de3312283511ca9bb049fd4818d8843db9b8e21",
+      "applications": [
+        {
+          "id": "canvas-ui--captcha-glass-raster-pilot",
+          "tasks": [
+            "graphics",
+            "video"
+          ],
+          "inputs": [
+            "composition",
+            "image"
+          ],
+          "styles": [
+            "retrofuturist-comedy",
+            "ceramic-robot",
+            "glass-interface"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "gpu-glass-refraction",
+            "frame-controlled-raster-adapter",
+            "effect-plain-ab",
+            "independent-aspect-layout"
+          ],
+          "version": "CanvasUIcommit6d46250/GlassVanilla;Node26.11.1;three0.185.1;Chrome157;FFmpeg8.0.1",
+          "scope": "Glassowned-rasteradapter in8spilotplus24.47sfictionfilm,twoaspects;notnativeHTMLcapture orwholelibrary/characteractingqualification.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/canvas-ui-captcha-pilot-2026-11-20.md",
+            "docs/productions/robot-meets-captcha.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/experiments/canvas-ui-captcha-pilot-2026-11-20.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "LargeUIcopy;limitedlensrefraction affectsletters locally,ownerpreferencepending.",
+              "source": "docs/experiments/canvas-ui-captcha-pilot-2026-11-20.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Authored3Drig/head/handaction;v3pilotacceptedafterjoint/limbcorrections. ContinuationhasnewHELP/reactionaction;notCanvasUIactingqualification.",
+              "source": "docs/experiments/canvas-ui-captcha-pilot-2026-11-20.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Deterministicmesh/texturestate;repeatseekpixelsmatched;notgenerativeidentityqualification.",
+              "source": "docs/experiments/canvas-ui-captcha-pilot-2026-11-20.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "V1shellintersection;v2fixedselectedjointbutmisidentifiedownerintendedarmsandretainedreversebend. V3action-basedlimbIDs,outward/backrestingelbowandarticulatedactivehand. Numericalpassesdonotestablishanatomy/actingquality.",
+              "source": "docs/experiments/canvas-ui-captcha-pilot-2026-11-20.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Frame/pointer/cameras andsameAACsoundpreserved;v2joint/hand-onlyrevisionretainsv1baseline.",
+              "source": "docs/experiments/canvas-ui-captcha-pilot-2026-11-20.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Four8s240frameexports,actualeffectdifference,seekbackequality,contact/arm-lengthsamples;deliverychecksretainedprivately."
+          },
+          "owner_evaluation": {
+            "status": "accepted_retained_scope",
+            "scope": "OwnerselectedGlassandacceptedcorrectedv3pilotwithcontinuationauthority. OwnerprovidedfullfilmpublicationURLson20November2026;separatefullcreative/mix/coverapprovalnotinferred."
+          },
+          "resources": {
+            "hardware": "OwnerMac;existingChrome/Node/three.js/FFmpeg;externalstudio",
+            "formats": "1920x1080and1080x1920,30fps,8s;privateGLSLadapter",
+            "time": "Activelabourunmeasured;notacontrolledspeedclaim",
+            "cost": "Nopaidcalls/newmodels;localcomputeunpriced"
+          },
+          "limitations": [
+            "Owned-rasterinputadapter,nonnativeDOMcapture",
+            "Glassonly;noothercomponent/buildqualification",
+            "Actingapprovallimitedtocorrectedv3pilot;nogeneralrigqualification",
+            "Privatecomponentlicence/notice;notstandalonecode redistributionpermission"
+          ],
+          "alternatives": [
+            {
+              "tool_id": "three-scene",
+              "comparison": "not_compared",
+              "reason": "Same-sceneplainCanvasbaselineswereexported;thisdoesnotrankallthree-sceneversusCanvasUIcapabilities."
+            }
+          ],
+          "search_terms": [
+            "Canvas UI",
+            "Glass",
+            "CAPTCHA",
+            "ретрофутуристическая комедия",
+            "стеклянный интерфейс"
+          ],
+          "granularity": "specific_production_application"
+        }
+      ]
+    },
+    "filmcraft": {
+      "tasks": [
+        "video",
+        "editing",
+        "montage",
+        "software"
+      ],
+      "inputs": [
+        "video",
+        "audio",
+        "composition"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "926dabfbd04378827e7bc07d00773cfd5972bd1774f51e96c79ebea065732eda",
+      "applications": [
+        {
+          "id": "filmcraft--lesson-save-reopen-title-01",
+          "tasks": [
+            "video",
+            "editing",
+            "montage"
+          ],
+          "inputs": [
+            "video",
+            "audio",
+            "composition"
+          ],
+          "styles": [
+            "clean-teaching-slates",
+            "code-workshop"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "native-nle-assembly",
+            "fresh-process-reopen",
+            "bounded-native-title-correction",
+            "two-audio-track-preservation",
+            "native-caption-export"
+          ],
+          "version": "FilmCraftCLI0.20.1macOSuniversal;nativeCPUH264AAC;1080p30",
+          "scope": "18soriginalprepared-footagefixture;3clips,2signalstems,oneeditabletitle,3captions. Not fullcourse/UI/MCP qualification.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/filmcraft-edit-reopen-2026-11-20.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/experiments/filmcraft-edit-reopen-2026-11-20.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Native title/caption legibility sampled at2/8/14s full/reduced;no fullcourse/mobile claim.",
+              "source": "docs/experiments/filmcraft-edit-reopen-2026-11-20.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Input progress animation retained through3nativecuts;notnativecharacteranimation.",
+              "source": "docs/experiments/filmcraft-edit-reopen-2026-11-20.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Unchanged420decodedframesidenticalaftertitlecorrection;originalpreparedslatesretained.",
+              "source": "docs/experiments/filmcraft-edit-reopen-2026-11-20.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Strictdecodepassed,noofflineassets;AAC container duration18.005s;no arbitrary codec claim.",
+              "source": "docs/experiments/filmcraft-edit-reopen-2026-11-20.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Native title value changed after fresh reopen;save-as names also changed;other timeline state preserved.",
+              "source": "docs/experiments/filmcraft-edit-reopen-2026-11-20.md"
+            }
+          },
+          "technical": {
+            "status": "recorded_execution",
+            "scope": "Officialchecksum/signature;both540frame1080p30exports,exactPCMparity,source-correlation,projectdiff andencodedpixelpreservation."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner explicitly accepted FILMCRAFT-01 on20November2026. Covers isolated18sheadlessfixture,notdesktop/MCP/fullcourse."
+          },
+          "resources": {
+            "hardware": "OwnerMac;externalWorkvolume;CPUrender;exactenvironmentretained",
+            "formats": "1920x1080,30fps,18s,H264/AAC,SRT",
+            "timing": "Native renderer16.56s/15.78s,onefixture;active labour unmeasured",
+            "cost": "No paid usage;local compute unpriced"
+          },
+          "limitations": [
+            "Preparedsourcefootage,notnativeauthoringofeveryvisual",
+            "Signalstems,notvoice/listeningqualification",
+            "NoUI/MCP,interchange,portrait,longcourseorcrossmachinequalification",
+            "Absolute media references;notaselfcontainedportablepackage"
+          ],
+          "alternatives": [
+            {
+              "tool_id": "ffmpeg",
+              "comparison": "not_compared",
+              "note": "Existing scoped route;no controlled quality or speed ranking in this trial."
+            },
+            {
+              "tool_id": "hyperframes",
+              "comparison": "not_compared",
+              "note": "Existing scoped route;no controlled quality or speed ranking in this trial."
+            },
+            {
+              "tool_id": "openmotion",
+              "comparison": "not_compared",
+              "note": "Existing scoped route;no controlled quality or speed ranking in this trial."
+            },
+            {
+              "tool_id": "kdenlive",
+              "comparison": "not_compared",
+              "note": "Existing scoped route;no controlled quality or speed ranking in this trial."
+            }
+          ],
+          "search_terms": [
+            "course",
+            "lesson",
+            "editable timeline",
+            "save reopen",
+            "bounded correction",
+            "teaching montage"
+          ]
+        }
+      ]
+    },
+    "premotio": {"tasks": ["graphics", "video"], "inputs": ["image", "video", "audio"], "rights_class": "conditional", "licence_note_sha256": "ed7da725ef9ce491ec5be178274c7a243d2ff273ed9b4bcd75f391da6188fa31"},
+    "ultratex": {"tasks": ["3d", "graphics"], "inputs": ["3d", "image"], "rights_class": "conditional", "licence_note_sha256": "494f9a6ad8f4c895d6c2539f9a52c4b90cf1e62c184b540ee27599c3b10141ad"},
+    "devault-ascii": {"tasks": ["graphics", "video"], "inputs": ["image", "video"], "rights_class": "conditional", "licence_note_sha256": "f1f70abc1f4ad456afc90a38a7a58ec29d2b30455c2b0dcfa3c192cfe5b168aa"},
+    "unslop-ui": {"tasks": ["software", "graphics"], "inputs": ["composition"], "rights_class": "conditional", "licence_note_sha256": "c36e67bbbe746f08ce2c0cc5a9ab7f2a2456d8e76d7ba736a152cae0bccf5ef0"},
+    "project-genie": {"tasks": ["video", "3d"], "inputs": ["image", "text"], "rights_class": "conditional", "licence_note_sha256": "060446d2b3d15f3bd0be3428e1621c9cf776bf119b00d62a871e2bd2dc22c043"}
   },
   "application_contract": {
     "version": 1,

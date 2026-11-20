@@ -47,3 +47,7 @@ YouTube-only retrospective Radar association/status and returned acknowledgement
 passed. No TikTok URL, new analytics run, schedule or prospective registration.
 The test cloud database remains with one synthetic row; sanitation did not delete
 cloud resources or change provider policy. No release or broad tool qualification.
+
+## Teaching-reuse candidate —19November2026
+
+Existing Practical AI Bug Fixing course:test-scope/persistence verification example. Preserve synthetic data/secrets boundaries;do not expand into ORM,performance or security qualification. This is an owner-authorised candidate marker,not an approved lesson/cut or blanket teaching licence. See [course reuse screening](../research/course-reuse-screening-2026-11-19.md). Original case/receipts remain the source of truth.
