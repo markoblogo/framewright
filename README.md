@@ -82,6 +82,8 @@ uploaded-file identity are not inferred from a link.
 
 **Brief → moving pilot → review and refine → retain the useful recipe.**
 
+![Framewright research cycle: brief, moving pilot, review and refinement, then a reusable recipe feeding the next project.](assets/fw-process-loop.gif)
+
 Framewright explores combinations of generation, code animation, 3D, real footage,
 screen capture, sound and local editing according to the scene. A tool is assessed
 in context: what it contributes to the chosen style, how it works with the rest
