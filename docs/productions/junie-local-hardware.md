@@ -61,3 +61,7 @@ frames read by the selected assembler. Retired inspection/backup/temporary files
 and hashes are listed in availability-2026-11-08.json; the private cleanup receipt
 is records/production-closeout-2026-11-08/cleanup-receipt.json. No film regeneration,
 source/model download, commit or release is implied by the sanitation receipt.
+
+## Teaching-reuse candidate —19November2026
+
+Optional setup context for Practical AI Bug Fixing:check local prerequisites. No installed Junie/inference benchmark is established by this film. This is an owner-authorised candidate marker,not an approved lesson/cut or blanket teaching licence. See [course reuse screening](../research/course-reuse-screening-2026-11-19.md). Original case/receipts remain the source of truth.

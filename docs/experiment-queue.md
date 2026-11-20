@@ -1,5 +1,10 @@
 # Proposed experiment queue
 
+## Intake20November2026 — proposed,not selected
+
+[Primary-source assessment and bounded checks](research/tool-intake-2026-11-20.md),M1/M2/M4/R05–R07. **FILMCRAFT-01:**15–20s owned edit→save→fresh reopen→one correction→1080p export,actual binary first;optional NLE route,no studio migration. **PREMOTIO-01:**held pending exact permitted finished-video use and plan;MCP isPro,template copying/ML/competitive-use restrictions retained. **ULTRATEX-01:**watch only until executable code,model licence and resource path exist. Devault extends its existing moving-input/1080p follow-up;no duplicate sample test or Pocket OS resumption. unslop-ui extends **DESIGN-SKILLS-01** as selective audit,not a new template system. Genie4 extends the existing world intake,with exact account/model/access/download and drift checks;no new world test now. No production reorder,purchases,installations,generation,release or Quixote resumption.
+
+
 ## Current owner boundaries —19November2026
 
 Quixote and its motion trials are **indefinitely frozen**,with no return date. RUN//SIGNAL is **paused,not frozen**. Next release timing is the first actual completion of the running test OR creation and publication of the Udemy course;current consolidation PR is merged without release. Dated trial/pause records below remain historical and do not lift the freeze. New Radar briefs/article-video idea are discussed after the PR;none is started here.
@@ -1343,3 +1348,18 @@ production and later audience observations remain separate future steps.
 
 
 **Quixote owner pause,16November:** PETER-MOTION-AB-01 and its local follow-up are stopped after owner rejection. Existing SAND3D-01/IMG26-01 and other candidates are catalogue reserves,not authority to continue Quixote. Preserve sources;no automatic next trial.
+
+
+## Three-Live export/reopen —20November2026
+
+**THREELIVE-GLB-01 executed at bounded scope** during the owner-selected [Night Line production](productions/three-live-portable-world.md). npm1.4.0JavaScript authoring/sceneToGLB,5meshfixture and192mesh/17material/24s3trackoriginalscene,actual downloaded-byte match andindependent three.jsGLTFLoader reopening. Historical v1 preparation was followed by corrected v2 owner-provided YouTube/TikTok publication URLs20November. Separate full-film/cover/listening approval is not inferred. Not ThreeRT;no AR,USDZ,native compiler/security,arbitrary scene ormobile qualification. Capture failures andselected ground-contact correction retained in the case. No new provider/spend orpaused/frozen production started.
+
+
+## CANVAS-UI-01 / selected CAPTCHA pilot —20November2026
+
+[ScopedGlassowned-rastertrial](experiments/canvas-ui-captcha-pilot-2026-11-20.md)executedduringowner-authorised8spilot,twoaspects andplainbaselines. Actualsource/pointer/frameadapter;notnativeHTMLcaptureorwholelibraryqualification. Robot motion belongs to the local rig. Owner accepted corrected v3 pilot and supplied full-film publication URLs20November;separate full-film approval is not inferred. Current Radar batch5/5;consolidated report sent,receiver-state application unverified.
+
+
+## FILMCRAFT-01 —20November executed bounded scope
+
+[Native lesson assembly/reopen/correction trial](experiments/filmcraft-edit-reopen-2026-11-20.md) passed technically:18s1080p30,three clips,two signal audio tracks,native title/three captions;fresh-process reopen,two native exports. Onlyfirst120frameschanged;remaining420anddecodedPCMidentical. Owneraccepted20November2026;acceptedUdemyMP4/receipthashesunchanged. Desktop/MCP,interchange,longcourse,portrait andportablemedia remain untested. No new lesson,release or provider qualification. This supersedes the proposed execution status of FILMCRAFT-01 above.

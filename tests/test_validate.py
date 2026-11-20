@@ -59,6 +59,25 @@ class ArtifactValidationTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'Arsenal facets differ'):
             validator.validate(self.root, None)
 
+    def test_public_case_cannot_hide_in_exclusion_reasons(self):
+        docs = self.root / 'docs'
+        docs.mkdir()
+        evidence = {'schema': 'framewright-public-evidence-v1',
+                    'deduplication': {'excluded': [{'id': 'lost-film', 'source': 'evidence.txt'}]},
+                    'films': [], 'trials': []}
+        (docs / 'public-evidence.json').write_text(json.dumps(evidence))
+        with self.assertRaisesRegex(validator.ValidationError, 'exclusions must be text reasons'):
+            self.check()
+
+    def test_public_case_is_counted_in_root_group(self):
+        docs = self.root / 'docs'
+        docs.mkdir()
+        evidence = {'schema': 'framewright-public-evidence-v1',
+                    'deduplication': {'excluded': ['research-only tools']},
+                    'films': [{'id': 'film', 'source': 'evidence.txt'}], 'trials': []}
+        (docs / 'public-evidence.json').write_text(json.dumps(evidence))
+        self.check()
+
     def test_dependency_readme_is_not_project_documentation(self):
         dependency = self.root / 'node_modules/fixture'
         dependency.mkdir(parents=True)

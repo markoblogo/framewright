@@ -107,3 +107,7 @@ production's `closeout/cleanup-receipt.json`. Logical sizes are not a claim of
 uniquely reclaimed disk blocks. Current native file pins remain valid.
 This closes production, not future analytics or global tool qualification.
 No merge or release is part of this closeout.
+
+## Teaching-reuse candidate —19November2026
+
+Existing Practical AI Bug Fixing course:dependency/pinning maintenance context. Fictional YAML is not a runnable configuration;new original teaching fixture required. This is an owner-authorised candidate marker,not an approved lesson/cut or blanket teaching licence. See [course reuse screening](../research/course-reuse-screening-2026-11-19.md). Original case/receipts remain the source of truth.

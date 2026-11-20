@@ -26,3 +26,7 @@ Private source of truth: `productions/nantes-yt-20261116-vet402-delivery/` with 
 ## Owner-reported publication —17November2026
 
 [YouTube](https://youtu.be/xaGggJR8RrM) and [TikTok](https://vt.tiktok.com/ZSpGJ9Fv4/) supplied by the owner. Private receipts/owner-publication-links.json preserves the prepared package hashes and URL provenance. Independent visibility,uploaded file/cover/text identity,rights/platform status and audience/monetisation metrics are unchecked. No separate explicit acceptance statement was supplied. Existing final sources and candidates remain retained;no cleanup or new production started.
+
+## Teaching-reuse candidate —19November2026
+
+Candidate output-verification lesson:payment/HTTP success versus useful delivered content. Keep source-reported categories separate;do not imply fraud or independent replication. This is an owner-authorised candidate marker,not an approved lesson/cut or blanket teaching licence. See [course reuse screening](../research/course-reuse-screening-2026-11-19.md). Original case/receipts remain the source of truth.

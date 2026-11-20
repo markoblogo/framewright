@@ -33,3 +33,7 @@ Private receipts/revision-v2 retains requests,before/after comparison clips,cano
 ## Owner-reported publication -17November2026
 
 [YouTube](https://youtu.be/SET1GhIdhdc) and [TikTok](https://vt.tiktok.com/ZSpt7FjU4/) supplied by the owner for the accepted revision2 films. Private receipts/owner-publication-links.json records owner_provided_url provenance and unchanged prepared package hashes. Independent visibility,uploaded video/cover/text identity,audience and monetisation metrics remain unchecked. Same story/two variants;no extra film or trial count.
+
+## Teaching-reuse candidate —19November2026
+
+Candidate AI-workflow guardrails lesson:reserve aggregate coverage before admitting another task. Original mechanism is reusable;real payment execution not tested. This is an owner-authorised candidate marker,not an approved lesson/cut or blanket teaching licence. See [course reuse screening](../research/course-reuse-screening-2026-11-19.md). Original case/receipts remain the source of truth.

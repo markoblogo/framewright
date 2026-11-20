@@ -13,3 +13,7 @@
 ## DesignBookmark boundary
 
 The authored card was **inspired by** [DesignBookmark Motion](https://designbookmark.com/motion); it was not a test of a copied catalogue component. At the time of this Copilot film, the comparison and reduced-motion assessment were still open. A subsequent [bounded Page Flip trial](../experiments/designbookmark-page-flip.md) used The Last Delivery instead; it is not evidence that this film used the component. Reduced-motion remains untested.
+
+## Teaching-reuse candidate —19November2026
+
+Existing Practical AI Bug Fixing course:review provenance is not correctness. Recheck dated source claims and add a real diff/review action;illustration is not live Copilot footage. This is an owner-authorised candidate marker,not an approved lesson/cut or blanket teaching licence. See [course reuse screening](../research/course-reuse-screening-2026-11-19.md). Original case/receipts remain the source of truth.

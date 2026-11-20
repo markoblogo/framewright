@@ -56,3 +56,7 @@ Next step:owner plans platform registration/placement20November;check the privat
 
 
 19November release timing clarification:course **creation plus publication**,rather than this accepted pilot or a private upload,is one of two alternative future release triggers;the other is completed running test. See [current roadmap](../roadmap.md#owner-release-timing-19november2026). This PR integrates the present work without releasing software or starting the remaining lectures.
+
+## Related-film pool —19November2026
+
+Owner authorised marking suitable social films for later teaching reuse. [Screening and missing learning evidence](../research/course-reuse-screening-2026-11-19.md)maps curl(owner-reported YouTube publication19November),Copilot review sources,Dependabot/APM,Prisma,Junie and GitHub Agentic Workflows to bounded contextual roles. These are candidate excerpts,not additional produced lectures or learner-tested exercises. The accepted six-minute lab remains the teaching baseline;no platform upload,full-course expansion or new lesson was executed by this documentation pass. Private source/hash/availability receipt:studio records/course-reuse-2026-11-19/screening-receipt.json.

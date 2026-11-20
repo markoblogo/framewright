@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-17",
+  "updated": "2026-11-20",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -3595,6 +3595,131 @@
       "evidence": [
         "docs/research/openmotion-motion-md-2026-11-17.md",
         "docs/experiments/openmotion-reuse-2026-11-17.md"
+      ]
+    },
+    {
+      "id": "three-live",
+      "name": "Three-Live",
+      "url": "https://github.com/google/three-live",
+      "reviewed": "2026-11-20",
+      "review_basis": "Official documentation/licence andnpm integrity review plus executed bounded GLBexport/reopen andoriginal dual-format film",
+      "upstream_revision": "npm1.4.0",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "JavaScriptGLBexport/reopen:5meshfixture,192meshv1;correctedv2has224meshes,21materials,7animationchannelsand24scycle. Actualdownloadhashmatched. Bothv2publicationURLsownerprovided20November;independentvisibility/identityunchecked. NotAR/USDZ/nativecompilerqualification.",
+      "licence_note": "Three-Live1.4.0 Apache-2.0 GoogleLLC;independent three0.185.1 MIT;original scene/music. Chrome,FFmpeg,Kokoro/model andhost-font terms remain separate. No officialGoogleproduct support orpublic upload implied.",
+      "next_trial_or_retest_condition": "Recheck new scene/version/geometry/material/animation/export target;AR,USDZ,native compiler/security sandbox andmobile remain untested.",
+      "evidence": [
+        "docs/productions/three-live-portable-world.md"
+      ],
+      "followup_reviews": []
+    },
+    {
+      "id": "canvas-ui",
+      "name": "Canvas UI",
+      "url": "https://canvasui.dev/",
+      "reviewed": "2026-11-20",
+      "review_basis": "Officialsource/licence review andactualadaptedGlass8sdual-aspecteffect/plainfilmtrial",
+      "upstream_revision": "6d46250b4360fddec0e3bc87425564fa4f4cda18",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "OriginalGlassGLSL withprivateexplicitpointer/frame/ownedCanvastextureadapter;two8s30fpsaspectexports plusplainbaselines,seek-repeat/contact/layoutchecks. NativeHTMLAPIavailability detected,notnativeDOMcaptureexecution. Originalrobotmotion belongs tothree.jsrig,notCanvasUI. OwnerselectedGlassandacceptedcorrectedv3pilot;fullfilmownerpublicationURLsreported20November,separatefullcreativeapprovalnotinferred.",
+      "licence_note": "MIT+CommonsClauseCopyright2026DavidHaz;privateadaptedcomponentwithnotice retained;standalonecomponentresale/redistributionrestricted. Originalfilmgeometry/UI/audio independentlyauthored. NotunrestrictedMIT orwholetoolclearance.",
+      "next_trial_or_retest_condition": "Newcomponent/nativeDOMcapture/browser/build needs exactsource/runtime/rights andboundedexportcheck;no whole-libraryqualification.",
+      "evidence": [
+        "docs/experiments/canvas-ui-captcha-pilot-2026-11-20.md",
+        "docs/research/tool-intake-2026-11-18.md"
+      ],
+      "followup_reviews": []
+    },
+    {
+      "id": "filmcraft",
+      "name": "FilmCraft",
+      "url": "https://github.com/storytold/filmcraft",
+      "reviewed": "2026-11-20",
+      "review_basis": "Official0.20.1MacCLIchecksum/signature check plus executed isolated native montage/save/fresh reopen/title correction/export and independent QA",
+      "upstream_revision": "v0.20.1 official universal macOS CLI",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "18s1080p30:3preparedclips,2signalstems,nativetitleand3captions. Freshprocessreopenandboundedtitlecorrection;540framesperexport,onlyfirst120encodedframeschange,remaining420anddecodedPCMidentical. AcceptedcourseMP4/receiptunchanged. Owneraccepted20November2026;notUI/MCP/longcoursequalification.",
+      "licence_note": "MIT OR Apache-2.0 declared upstream;dependencies,codec and media terms separate.",
+      "next_trial_or_retest_condition": "Reuse for a selected prepared lesson segment;check exactbinary/sourcepaths/preset. Desktop/MCP,interchange,relocation,realcamerafootage,portraitandlongcourse need separate scoped checks.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-20.md",
+        "docs/experiments/filmcraft-edit-reopen-2026-11-20.md"
+      ]
+    },
+    {
+      "id": "premotio",
+      "name": "Premotio",
+      "url": "https://premotio.com/",
+      "reviewed": "2026-11-20",
+      "review_basis": "Primary-source documentation review;historical execution only where explicitly linked",
+      "upstream_revision": null,
+      "disposition": "conditional",
+      "scope_and_findings": "Vendor preset-motion editor. Guest/Free720p10exports/month;MCP requiresPro. Runtime not tested.",
+      "licence_note": "Proprietary terms;finished-video permission has project/template/ML/competitive-use restrictions. Exact intended Framewright use unresolved.",
+      "next_trial_or_retest_condition": "PREMOTIO-01 held pending permitted finished-video use;no template copying,paidMCP or model critique.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-20.md"
+      ]
+    },
+    {
+      "id": "ultratex",
+      "name": "UltraTex",
+      "url": "https://ultratex.vercel.app/",
+      "reviewed": "2026-11-20",
+      "review_basis": "Primary-source documentation review;historical execution only where explicitly linked",
+      "upstream_revision": "arXiv2611.24941",
+      "disposition": "conditional",
+      "scope_and_findings": "PBR texture generation research;code internal toMeshy,release approval pending. Weights presence is not executable route.",
+      "licence_note": "Model licence unspecified;project figures CC BY-NC-SA4.0. No commercial-weight clearance.",
+      "next_trial_or_retest_condition": "ULTRATEX-01 watch for code/licence/resource route;no weights downloaded.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-20.md"
+      ]
+    },
+    {
+      "id": "devault-ascii",
+      "name": "Devault ASCII",
+      "url": "https://devault.design/ascii-art-generator/",
+      "reviewed": "2026-11-20",
+      "review_basis": "Primary-source documentation review;historical execution only where explicitly linked",
+      "upstream_revision": null,
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Historical27October built-in animated-still5s1152x72030fps export only. New URL reviewed,not executed. Moving input and1080p remain unverified.",
+      "licence_note": "Commercial output/source rights unverified;browser locality is vendor claim,not network audit.",
+      "next_trial_or_retest_condition": "Existing Devault queue:5–10s owned moving source,legibility/flicker/dimensions;no duplicate sample test or Pocket OS resumption.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-20.md",
+        "docs/experiments/creative-tools-pilot-2026-10-27.md"
+      ]
+    },
+    {
+      "id": "unslop-ui",
+      "name": "unslop-ui",
+      "url": "https://github.com/felipebasurto/unslop-ui",
+      "reviewed": "2026-11-20",
+      "review_basis": "Primary-source documentation review;historical execution only where explicitly linked",
+      "upstream_revision": null,
+      "disposition": "candidate",
+      "scope_and_findings": "Read-only skill-source review;copy/chart/chrome cleanup with explicit guardrails and optional surface rules. Not installed/executed.",
+      "licence_note": "MIT upstream;do not vendor substantial code/skill without notices and scoped review.",
+      "next_trial_or_retest_condition": "Existing DESIGN-SKILLS-01:optional audit of delivery-page copy,protect statuses/accessibility/copy feedback;no automatic restyling.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-20.md"
+      ]
+    },
+    {
+      "id": "project-genie",
+      "name": "Project Genie / Genie4",
+      "url": "https://labs.google/projectgenie",
+      "reviewed": "2026-11-20",
+      "review_basis": "Primary-source documentation review;historical execution only where explicitly linked",
+      "upstream_revision": null,
+      "disposition": "conditional",
+      "scope_and_findings": "Existing world candidate;help documents video download and eligibleUltra/Prowaitlist;exactGenie4 access conflicts between landing and preview announcement. No account check or generation.",
+      "licence_note": "Service/account/output terms must be checked;no broad media reuse or3Dexport permission inferred.",
+      "next_trial_or_retest_condition": "Existing world intake:read actual model/access/limits then separately authorised short camera/return/download proof.",
+      "evidence": [
+        "docs/research/tool-intake-2026-11-20.md"
       ]
     }
   ]

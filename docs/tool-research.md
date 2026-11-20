@@ -1,5 +1,13 @@
 # Tool review and test inventory
 
+## FilmCraft bounded trial —20November2026
+
+[Executed native save/reopen/title correction/export](experiments/filmcraft-edit-reopen-2026-11-20.md):18s1080p fixture,three clips,two signal stems,one native title andthree captions. Technical pass;owneraccepted20November2026. Course unchanged;not a generalcourse/UI/MCPqualification.
+
+## Tool intake —20November2026
+
+[Six-family assessment](research/tool-intake-2026-11-20.md):FilmCraft editable agent-driven NLE candidate;Premotio plan/licence gates;UltraTex internal-code/model-licence blockers;existing Devault partial trial reconciled;unslop-ui principles mapped to DESIGN-SKILLS-01;Genie4 model-access uncertainty retained. Documentation only,no installs,exports,generation or paid usage.
+
 ## Klap —16November2026
 
 [Gifted Pro assessment and scoped trial](research/klap-2026-11-16.md): existing-account import,editor/transcript,rename and actual MP4 export observed. First91-second source yielded one89-second candidate despite30–60second setting; clip quality/duration and intended plain style remain limited. Use when helpful in current productions;2–3 reviews later, with exact owner referral/disclosure. Separate paid API unselected.
