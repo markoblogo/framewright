@@ -25,3 +25,6 @@ footer .social-links{margin-left:auto}
  header nav{grid-column:1/-1;grid-row:2;justify-content:flex-end}
  footer .social-links{margin-left:0}
 }
+
+/* Owner-selected research-cycle illustration,20November2026. */
+.process-figure{margin:0;border-block:1px solid var(--line)}.process-figure picture,.process-figure img{display:block;width:100%;height:auto}.process-caption{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 0;color:var(--muted);font-size:12px}.process-caption a{display:inline-flex;align-items:center;min-height:44px}.process-caption span{text-align:right}@media(max-width:700px){.process-caption{align-items:center;gap:12px;flex-wrap:wrap;font-size:11px}.process-caption span{text-align:left}.process-figure{margin-top:12px}}
