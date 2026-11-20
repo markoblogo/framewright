@@ -9,56 +9,39 @@ from pathlib import Path
 import subprocess
 from urllib.parse import quote
 
-VERSION = '2.1'
-PLATFORMS = {'youtube': 'YouTube', 'tiktok': 'TikTok', 'course': 'Учебный урок'}
-STATES = {'pilot': 'Проба', 'review': 'На просмотр', 'final': 'Финальный пакет',
-          'rejected': 'Отклонённая проба'}
-LABELS = {'video': 'Скачать видео', 'cover': 'Скачать обложку',
-          'subtitles': 'Скачать субтитры', 'copy': 'Скачать тексты'}
+VERSION = '2.2'
+PLATFORMS = {'youtube': 'YouTube', 'tiktok': 'TikTok', 'course': 'Course lesson'}
+STATES = {'pilot': 'Preview', 'review': 'For review', 'final': 'Publication package',
+          'rejected': 'Rejected preview'}
+LABELS = {'video': 'Download video', 'cover': 'Download cover',
+          'subtitles': 'Download subtitles', 'copy': 'Download copy'}
 CSS = """
-:root{color-scheme:dark;--ink:#101d24;--paper:#f6efdb;--amber:#e7ba6a;--muted:#aec0c6}
-*{box-sizing:border-box}body{margin:0;background:var(--ink);color:var(--paper);font:17px/1.6 system-ui,sans-serif}
-header,main,footer{max-width:1200px;margin:auto;padding:24px}
-header{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #39505b}
-.wordmark{font:28px Georgia,serif;letter-spacing:-1px}nav{display:flex;gap:22px}
-a{color:var(--paper);text-underline-offset:5px}a:hover{color:var(--amber)}
-h1{font:clamp(36px,6vw,64px)/1.1 Georgia,serif;margin:20px 0}
-h2{font-size:26px;margin:0}h3{font-size:17px;margin:24px 0 8px}
-.status{color:var(--amber)}.intro{max-width:780px}.muted,footer{color:var(--muted)}
-.variant{margin-top:48px;padding-top:22px;border-top:1px solid #39505b;scroll-margin-top:20px}
-.variant-head{display:flex;gap:20px;align-items:baseline;justify-content:space-between}
-.layout{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(260px,1fr);gap:30px;margin-top:18px}
-.stage{background:#080e12;border:1px solid #344953;display:flex;align-items:center;justify-content:center;min-width:0}
-video{display:block;width:100%;max-height:70vh;object-fit:contain}
-.tiktok-layout{grid-template-columns:minmax(0,360px) minmax(260px,1fr);align-items:start}
-.tiktok-layout .stage{width:100%;aspect-ratio:9/16;align-self:start}
-.portrait{aspect-ratio:9/16;width:100%;height:100%;max-height:none;margin:0}
-button[data-copied=true]{background:#173f36;border-color:#86d3b2;color:#ccf4df}
-.copy-head{flex-wrap:wrap}.copy-head h3{margin:0}.copy-head button{margin-left:auto}.copy-status{flex-basis:100%}.copy-status:empty{display:none}.copy-status{color:#ccf4df;font-size:14px}
-@media(max-width:760px){.layout.tiktok-layout{grid-template-columns:1fr}.tiktok-layout .stage{max-width:360px;justify-self:center}.tiktok-layout video{max-height:none}}
-.landscape{aspect-ratio:16/9}
-.files{display:flex;gap:10px;flex-direction:column}.download,button{font:inherit;border:1px solid #53646b;background:transparent;color:var(--paper);padding:10px 15px;text-decoration:none;border-radius:4px;text-align:left}
-.download.primary{background:var(--amber);color:#101d24;border-color:var(--amber);font-weight:650}
-button{cursor:pointer;padding:6px 12px;font-size:14px}button:hover{border-color:var(--amber)}
-:focus-visible{outline:3px solid #80d3c2;outline-offset:4px}
-.cover{display:block;max-width:100%;max-height:210px;object-fit:contain;margin:20px 0}
-pre{white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.65 system-ui,sans-serif;margin:12px 0 0}
-.copy{margin-top:24px;padding:22px;background:#192b34;border:1px solid #39505b;border-radius:4px}
-.copy-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
-.media-error{color:#ffb2a6;padding:12px;border:1px solid #bb766d}footer{font-size:14px;border-top:1px solid #39505b;margin-top:50px}
-@media(max-width:760px){header,main,footer{padding:18px}.layout{grid-template-columns:1fr}.variant-head{display:block}nav{gap:14px;font-size:14px}video{max-height:65vh}.copy{padding:16px}}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{color-scheme:dark;--bg:#070808;--fg:#f0f0eb;--muted:#939999;--line:#272b2b;--accent:#b5d4c4;--columns:minmax(0,256fr) minmax(0,81fr) minmax(240px,120fr)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 'DM Sans',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+header,main,footer{width:min(1320px,calc(100% - 80px));margin:auto}header{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}main{padding-top:30px}
+.wordmark{font:800 18px Manrope,Arial,sans-serif;letter-spacing:-.7px;display:flex;gap:8px;align-items:center}.brand-dot{width:5px;height:5px;background:var(--accent);border-radius:50%}
+nav{display:flex;gap:26px;font-size:13px;color:#bbc0bd}a{color:inherit;text-decoration:none}a:hover{color:white}h1,h2,h3,p{overflow-wrap:anywhere}h1,h2,h3{font-family:Manrope,Arial,sans-serif}h1{font-size:clamp(28px,3.2vw,42px);font-weight:500;line-height:1.15;letter-spacing:-1.5px;margin:12px 0 16px;max-width:none}h2{font-size:20px;line-height:1.35;font-weight:600;letter-spacing:-.5px;margin:0}h3{font-size:13px;font-weight:600;margin:0}
+.intro{width:100%;margin-bottom:30px}.intro p{margin:0;color:var(--muted);font-size:14px}.intro .status{font-size:11px;letter-spacing:.8px;color:var(--accent)}
+.media-grid,.publication-grid{display:grid;grid-template-columns:var(--columns);gap:24px;align-items:start}.media-grid{padding-top:24px;border-top:1px solid var(--line)}.preview-card,.download-card{min-width:0;display:flex;flex-direction:column;gap:12px}.download-card{align-self:stretch}.stage{min-width:0;background:#000;border:1px solid var(--line);overflow:hidden}.landscape{aspect-ratio:16/9}.portrait{aspect-ratio:9/16}video{display:block;width:100%;height:100%;max-height:none;object-fit:contain}.youtube-preview .stage,.course-preview .stage{aspect-ratio:16/9}.tiktok-preview .stage{aspect-ratio:9/16}
+.files{display:grid;grid-auto-rows:minmax(42px,1fr);gap:10px;flex:1}.download,button{font:inherit;border:1px solid #454d49;background:transparent;color:var(--fg);border-radius:3px;text-align:left}.download{display:flex;align-items:center;padding:10px 14px;font-size:14px;line-height:1.35}.download.primary{background:#e4e9e1;color:#121613;border-color:#dce0d9;font-weight:600}.download:hover{border-color:#dce0d9}.download.primary:hover{background:white}
+.publication-grid{margin-top:32px;padding-top:26px;border-top:1px solid var(--line)}.publication{min-width:0}.publication-youtube,.publication-course{grid-column:1/3}.publication-tiktok{grid-column:3}.copy{margin-top:14px;padding:18px;border:1px solid var(--line);border-radius:3px;background:#0c1010}.copy-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.copy-head button{margin-left:auto}.copy-status{flex-basis:100%;font-size:12px;color:var(--accent)}.copy-status:empty{display:none}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.65 'DM Sans',Arial,sans-serif;margin:12px 0 0;color:#d5dcd7}
+button{cursor:pointer;padding:5px 10px;font-size:12px;line-height:1.5}button:hover{border-color:var(--accent)}button[data-copied=true]{background:#14231c;border-color:#789c87;color:#d0e8da}:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.media-error{color:#efb4a8;padding:12px;border:1px solid #8a5d55}.extra-text{margin-top:24px}footer{font-size:12px;color:var(--muted);border-top:1px solid var(--line);margin-top:40px;padding:24px 0}
+.single-landscape{grid-template-columns:minmax(0,1fr) minmax(240px,320px)}.single-portrait{grid-template-columns:minmax(0,240px) minmax(240px,1fr)}.publication-grid.single-landscape,.publication-grid.single-portrait{grid-template-columns:1fr}.publication-grid.single-landscape>.publication,.publication-grid.single-portrait>.publication{grid-column:1}
+@media(max-width:900px) and (min-width:761px){:root{--columns:minmax(0,256fr) minmax(0,81fr) minmax(210px,150fr)}header,main,footer{width:calc(100% - 48px)}.media-grid,.publication-grid{gap:16px}.download{font-size:12px;padding:8px}.copy{padding:14px}}
+@media(max-width:760px){header,main,footer{width:calc(100% - 32px)}header{height:68px}main{padding-top:22px}nav{gap:18px}h1{font-size:29px;letter-spacing:-1px}.intro{margin-bottom:24px}.media-grid,.publication-grid{display:flex;flex-direction:column;gap:24px}.preview-card,.download-card,.publication{width:100%}.tiktok-preview{width:min(100%,280px);align-self:center}.files{display:flex;flex-direction:column}.download{min-height:46px}.publication-grid{margin-top:28px}.copy{padding:16px}}
 """
 JS = """
 document.querySelectorAll('video').forEach(v=>{
  v.addEventListener('play',()=>document.querySelectorAll('video').forEach(o=>{if(o!==v)o.pause()}));
  v.addEventListener('error',()=>{const p=document.createElement('p');p.className='media-error';
- p.textContent='Видео не загрузилось. Попробуйте прямое скачивание.';v.after(p)},{once:true});
+ p.textContent='Video could not load. Use the download link.';v.after(p)},{once:true});
 });
 document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',async()=>{
  const text=document.getElementById(b.dataset.copy).textContent;
- try{await navigator.clipboard.writeText(text);b.textContent='✓ Скопировано';b.dataset.copied='true';b.parentElement.querySelector('.copy-status').textContent='В буфере обмена'}
+ try{await navigator.clipboard.writeText(text);b.textContent='✓ Copied';b.dataset.copied='true';b.parentElement.querySelector('.copy-status').textContent='Copied to clipboard'}
  catch{const s=window.getSelection(),r=document.createRange();r.selectNodeContents(document.getElementById(b.dataset.copy));
- s.removeAllRanges();s.addRange(r);b.textContent='Текст выделен — скопируйте'}
+ s.removeAllRanges();s.addRange(r);b.textContent='Text selected — copy manually'}
 }));
 """
 def escape(value):
@@ -123,19 +106,19 @@ def publication_fields(platform, supplied, legacy):
             data['description' if platform in {'youtube', 'course'} else 'caption'] = legacy.strip()
     if platform == 'course':
         fields = [(label, data.get(key, '')) for key, label in [
-            ('title', 'Название урока'), ('description', 'Описание урока'),
-            ('prerequisites', 'Что нужно знать'), ('learning_outcomes', 'Результат обучения')]]
+            ('title', 'Lesson title'), ('description', 'Lesson description'),
+            ('prerequisites', 'Prerequisites'), ('learning_outcomes', 'Learning outcomes')]]
     elif platform == 'youtube':
         titles = data.get('titles', [])
         if not isinstance(titles, list) or len(titles) > 3 or any(not isinstance(t, str) for t in titles):
             raise ValueError('YouTube titles must be a list of at most three strings')
-        fields = list(zip(['Основной заголовок', 'Заголовок 2', 'Заголовок 3'], titles))
+        fields = list(zip(['Primary title', 'Title 2', 'Title 3'], titles))
         tags = data.get('tags', '')
         if isinstance(tags, list) and all(isinstance(t, str) for t in tags):
             tags = ', '.join(tags)
-        fields += [('Описание', data.get('description', '')), ('Теги', tags)]
+        fields += [('Description', data.get('description', '')), ('Tags', tags)]
     else:
-        fields = [('Кэпшн', data.get('caption', '')), ('Первый комментарий', data.get('first_comment', ''))]
+        fields = [('Caption', data.get('caption', '')), ('First comment', data.get('first_comment', ''))]
     if any(not isinstance(value, str) for _, value in fields):
         raise ValueError('Publication fields must contain text')
     return [(label, value.strip()) for label, value in fields if value.strip()]
@@ -144,7 +127,7 @@ def copy_section(identity, label, value):
     return (
         f'<section class="copy" data-field="{escape(label)}">'
         f'<div class="copy-head"><h3>{escape(label)}</h3>'
-        f'<button type="button" data-copy="{identity}">Копировать</button>'
+        f'<button type="button" data-copy="{identity}">Copy</button>'
         '<span class="copy-status" role="status" aria-live="polite"></span></div>'
         f'<pre id="{identity}">{escape(value)}</pre></section>'
     )
@@ -161,7 +144,10 @@ def build(manifest):
     variants = data.get('variants')
     if not isinstance(variants, list) or not 1 <= len(variants) <= 2:
         raise ValueError('Provide one or two platform variants')
-    seen, records, sections = set(), [], []
+    seen, records, sections, publication, download_buttons = set(), [], [], [], []
+    # Platform order is a presentation contract,not caller insertion order.
+    order = {"youtube": 0, "course": 1, "tiktok": 2}
+    variants = sorted(variants, key=lambda v: order.get(v.get("platform"), 99))
     for variant in variants:
         platform = variant.get('platform')
         if platform not in PLATFORMS or platform in seen:
@@ -191,7 +177,8 @@ def build(manifest):
             copy = p.read_text(encoding='utf-8-sig') if role in {'copy', 'subtitles'} else None
             checked[role] = (quote(value, safe='/'), p, copy)
             records.append({'platform': platform, 'role': role, 'path': value,
-                            'bytes': p.stat().st_size, 'sha256': digest(p)})
+                            'bytes': p.stat().st_size, 'sha256': digest(p),
+                            'identity': {'mtime_ns': str(p.stat().st_mtime_ns), 'inode': str(p.stat().st_ino), 'device': str(p.stat().st_dev)}})
             if role == 'video':
                 probe = subprocess.run(['ffprobe', '-v', 'error', '-show_streams',
                                         '-of', 'json', str(p)], check=True,
@@ -213,19 +200,21 @@ def build(manifest):
                 info = f'{width} × {height}'
         name = PLATFORMS[platform]
         aspect = 'portrait' if platform == 'tiktok' else 'landscape'
-        downloads = ''.join(
-            f'<a class="download {"primary" if role == "video" else ""}" href="{escape(url)}" download>{LABELS[role]} · {size_label(p.stat().st_size)}</a>'
-            for role, (url, p, _) in checked.items() if role != 'copy')
-        cover = f'<img class="cover" src="{escape(checked["cover"][0])}" alt="Обложка {name}" loading="lazy">' if 'cover' in checked else ''
+        for role in ['video', 'cover', 'subtitles']:
+            if role not in checked:
+                continue
+            url, file, _ = checked[role]
+            label = ('YouTube video' if platform == 'youtube' else 'TikTok video' if platform == 'tiktok' else 'Lesson video') if role == 'video' else ('YouTube cover' if platform == 'youtube' else 'TikTok cover' if platform == 'tiktok' else 'Lesson cover') if role == 'cover' else 'Subtitles'
+            download_buttons.append(f'<a class="download {"primary" if role == "video" else ""}" href="{escape(url)}" download>Download {label} · {size_label(file.stat().st_size)}</a>')
         fields = publication_fields(platform, variant.get('publication'),
                                     checked.get('copy', (None, None, ''))[2])
         copy_block = ''.join(copy_section(f'copy-{platform}-{i}', label, value)
                              for i, (label, value) in enumerate(fields))
-        sections.append(f'''<section class="variant" id="{platform}">
-<div class="variant-head"><h2>{name}</h2><span class="muted">{info} · {escape(data["revision"])}</span></div>
-<div class="layout {platform}-layout"><div class="stage"><video class="{aspect}" controls playsinline preload="metadata" src="{escape(checked["video"][0])}"></video></div>
-<div><div class="files">{downloads}</div>{cover}</div></div>{copy_block}</section>''')
-    extra_html = []
+        sections.append(f'''<section class="preview-card {platform}-preview" id="{platform}">
+<h2>{name}</h2><div class="stage"><video class="{aspect}" aria-label="{name} preview" controls playsinline preload="metadata" src="{escape(checked["video"][0])}"></video></div></section>''')
+        if copy_block:
+            publication.append(f'<section class="publication publication-{platform}" id="{platform}-copy"><h2>{name} copy</h2>{copy_block}</section>')
+    extra_downloads, extra_text = [], []
     extras = data.get('extras', [])
     if not isinstance(extras, list):
         raise ValueError('extras must be a list')
@@ -235,19 +224,24 @@ def build(manifest):
         value = extra.get('path')
         p = local_file(root, value)
         records.append({'platform': 'common', 'role': 'extra', 'path': value,
-                        'bytes': p.stat().st_size, 'sha256': digest(p)})
+                        'bytes': p.stat().st_size, 'sha256': digest(p),
+                            'identity': {'mtime_ns': str(p.stat().st_mtime_ns), 'inode': str(p.stat().st_ino), 'device': str(p.stat().st_dev)}})
         if p.suffix.lower() in {'.txt', '.md'}:
             text = p.read_text(encoding='utf-8-sig')
-            extra_html.append(copy_section(f'copy-extra-{len(extra_html)}', extra['label'], text))
+            extra_text.append(copy_section(f'copy-extra-{len(extra_text)}', extra['label'], text))
         else:
-            extra_html.append(f'<a class="download" href="{escape(quote(value, safe="/"))}" download>{escape(extra["label"])} · {size_label(p.stat().st_size)}</a>')
-    additional = '<section class="variant"><h2>Дополнительные материалы</h2><div class="files">' + ''.join(extra_html) + '</div></section>' if extra_html else ''
-    nav = ''.join(f'<a href="#{p}">{PLATFORMS[p]}</a>'
-                  for p in PLATFORMS if p in seen)
-    page = f'''<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(data["title"])} · Framewright</title><style>{CSS}</style></head>
-<body><header><span class="wordmark">Framewright</span><nav aria-label="Версии">{nav}</nav></header>
-<main><div class="intro"><p class="status">{STATES[data["state"]]} · {escape(data["revision"])}</p><h1>{escape(data["title"])}</h1><p>{escape(data["note"])}</p></div>{''.join(sections)}{additional}</main>
-<footer>Framewright Studio · Версия шаблона {VERSION}. Ссылки работают, пока запущен локальный сервер.</footer><script>{JS}</script></body></html>'''
+            extra_downloads.append(f'<a class="download" href="{escape(quote(value, safe="/"))}" download>{escape(extra["label"])} · {size_label(p.stat().st_size)}</a>')
+    mode = 'dual' if 'tiktok' in seen and ('youtube' in seen or 'course' in seen) else 'single-portrait' if 'tiktok' in seen else 'single-landscape'
+    buttons = ''.join(download_buttons + extra_downloads)
+    media = f'<section class="media-grid {mode}" id="downloads">' + ''.join(sections) + f'<section class="download-card" id="download-links"><h2>Downloads</h2><div class="files">{buttons}</div></section></section>'
+    texts = f'<section class="publication-grid {mode}" id="publication-texts">' + ''.join(publication) + '</section>' if publication else ''
+    if extra_text:
+        texts += '<section class="extra-text">' + ''.join(extra_text) + '</section>'
+    nav = ''.join(f'<a href="#{p}">{PLATFORMS[p]}</a>' for p in PLATFORMS if p in seen)
+    page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(data["title"])} · Framewright</title><style>{CSS}</style></head>
+<body><header><span class="wordmark"><span class="brand-dot" aria-hidden="true"></span>FRAMEWRIGHT</span><nav aria-label="Formats">{nav}</nav></header>
+<main><div class="intro"><p class="status">{STATES[data["state"]]} · {escape(data["revision"])}</p><h1>{escape(data["title"])}</h1><p>{escape(data["note"])}</p></div>{media}{texts}</main>
+<footer>Framewright Studio · Files are available while this local page is running.</footer><script>{JS}</script></body></html>'''
     receipt = {'schema_version': 1, 'template_version': VERSION,
                'template_sha256': digest(Path(__file__)), 'manifest_sha256': digest(manifest),
                'state': data['state'], 'files': records,

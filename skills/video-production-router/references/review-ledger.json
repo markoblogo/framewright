@@ -3721,6 +3721,22 @@
       "evidence": [
         "docs/research/tool-intake-2026-11-20.md"
       ]
+    },
+    {
+      "id": "klap",
+      "name": "Klap",
+      "url": "https://klap.app/",
+      "reviewed": "2026-11-20",
+      "review_basis": "Authenticated mixed-source web trial, actual portrait exports, controlled manual editing, and owner review of three portrait candidates.",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "Speech-led selection useful in one longer explainer;short stories mostly retained;music-only auto selection rejected. Owner declined three portrait candidates and chose not to adopt Klap in Framewright production. Case closed; retained for historical reference only.",
+      "licence_note": "Cloud service subscription and output/source rights apply. Gifted access and affiliate relationship require accurate disclosure;no broad third-party reuse grant.",
+      "next_trial_or_retest_condition": "Case closed. No retest is queued.",
+      "evidence": [
+        "docs/experiments/klap-mixed-source-tests-2026-11-20.md",
+        "docs/research/klap-2026-11-16.md"
+      ]
     }
   ]
 }

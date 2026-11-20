@@ -329,7 +329,9 @@
             "local English narration"
           ],
           "granularity": "specific_production_application"
-        }
+        },
+        {"id":"kokoro--buymore-marketplace-pilot","tasks":["narration"],"inputs":["text"],"styles":["offscreen-shopper-commentary"],"style_basis":"executed_case","techniques":["local-english-synthetic-dialogue"],"version":"KokoroONNX0.6.1/modelv1.0/am_michael","scope":"One12s1920×1080fictional-marketplace pilot;source case gives exact tool contribution. No full film,portrait,real product or device animation.","evidence":"tested","sources":["docs/experiments/buymore-marketplace-pilot-2026-11-20.md"],"examples":[{"path":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md","provenance":"operator_observation","independent_visibility":"not_applicable","metrics":"unknown"}],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"Voice text/timing/audio peak recorded;owner listening and emotional performance remain pending.","source":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md"},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"Voice text/timing/audio peak recorded;owner listening and emotional performance remain pending.","source":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md"},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"Voice text/timing/audio peak recorded;owner listening and emotional performance remain pending.","source":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md"},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"Voice text/timing/audio peak recorded;owner listening and emotional performance remain pending.","source":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"One selected am_michael utterance at speed1.03;no emotion-control or voice-cloning test.","source":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md"}},"technical":{"status":"recorded_execution","scope":"Original four image assets,12s288-frame export,full decode,encoded samples and delivery proof reuse. Not generic tool qualification."},"owner_evaluation":{"status":"accepted","scope":"Owner accepted the12spilot20November;requested a stronger full-film introduction and authorised fullYouTube/TikTok production. This is not full-film approval."},"resources":{"hardware":"Mac;exact host profile not measured for this case","formats":"1920×1080/24fps/12s;English;no portrait export","timing":"active labour/compute not measured","cost":"built-in generation cost not reported;no paid API/model downloads"},"limitations":["Still photographs,not animated devices.","Only one short fictional shopping sequence.","Independent reuse,full-film storytelling and owner listening/creative acceptance remain untested."],"alternatives":[],"search_terms":["marketplace","ecommerce","product photography","deadpan shopper","fictional store","monitor","BuyMore"],"granularity":"executed_case"},
+        {"id":"kokoro--buymore-marketplace-full-v1","tasks":["narration"],"inputs":["text"],"styles":["offscreen-shopper-commentary"],"style_basis":"executed_case","techniques":["local-english-synthetic-dialogue"],"version":"KokoroONNX0.6.1/modelv1.0/am_michael","scope":"One original58sfictional-shopping comedy in nativeYouTube/TikTokcompositions;exact contribution and limits in source. Still product photos,not device animation.","evidence":"tested","sources":["docs/productions/buymore-problems-delivered.md"],"examples":[{"path":"docs/productions/buymore-problems-delivered.md","provenance":"operator_observation","independent_visibility":"not_applicable","metrics":"unknown"}],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"Voice text/timing/audio peak recorded;owner accepted the complete films; no general voice evaluation.","source":"docs/productions/buymore-problems-delivered.md"},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"Voice text/timing/audio peak recorded;owner accepted the complete films; no general voice evaluation.","source":"docs/productions/buymore-problems-delivered.md"},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"Voice text/timing/audio peak recorded;owner accepted the complete films; no general voice evaluation.","source":"docs/productions/buymore-problems-delivered.md"},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"Voice text/timing/audio peak recorded;owner accepted the complete films; no general voice evaluation.","source":"docs/productions/buymore-problems-delivered.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"One selected am_michael utterance at speed1.03;no emotion-control or voice-cloning test.","source":"docs/productions/buymore-problems-delivered.md"}},"technical":{"status":"passed","scope":"Originalfullchecks plus verticalv2full decode,12no-pointer source states,encoded phone frames,exact originalPCM and181ending frame hashes.YTmasterSHAunchanged."},"owner_evaluation":{"status":"accepted","scope":"Owner accepted YouTube v1 unchanged and corrected TikTok smartphone v2. Portrait v1 device treatment was returned; this remains historical. New publication covers have operator QA only."},"resources":{"hardware":"Mac;exact host profile not measured for this case","formats":"1920×1080and1080×1920/24fps/58.003s;English","timing":"active labour/compute not measured","cost":"imagegenbackend/costnotreported;no paidvoiceAPI/newmodel;localcompute/labourunmeasured"},"limitations":["Still photographs,not animated devices.","Only one short fictional shopping sequence.","Independent reuse and audience outcomes remain untested; owner accepted the two current film versions."],"alternatives":[],"search_terms":["marketplace","ecommerce","product photography","deadpan shopper","fictional store","monitor","BuyMore"],"granularity":"executed_case"}
       ]
     },
     "sound-layer": {
@@ -1199,7 +1201,9 @@
             "документальный ролик"
           ],
           "granularity": "specific_production_application"
-        }
+        },
+        {"id":"ffmpeg--buymore-marketplace-pilot","tasks":["video","editing","audio"],"inputs":["image","audio","html"],"styles":["photographic-ecommerce","deadpan-comedy","fictional-interface"],"style_basis":"executed_case","techniques":["html-screen-frame-assembly","image2pipe-encoding","audio-picture-mux","encoded-frame-inspection"],"version":"FFmpeg8.0.1;Chrome157;Playwright source capture","scope":"One12s1920×1080fictional-marketplace pilot;source case gives exact tool contribution. No full film,portrait,real product or device animation.","evidence":"tested","sources":["docs/experiments/buymore-marketplace-pilot-2026-11-20.md"],"examples":[{"path":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md","provenance":"operator_observation","independent_visibility":"not_applicable","metrics":"unknown"}],"quality":{"readability":{"status":"observed","provenance":"operator_observation","note":"ExactHTMLlabels/prices and product/listing text inspected in source and encoded frames;monitor camera pushes in for reading.","source":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md"},"motion":{"status":"observed","provenance":"operator_observation","note":"Cursor,scroll,gallery and wishlist action;device photographs remain static. No generated product/character movement tested.","source":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md"},"drawing_stability":{"status":"observed","provenance":"operator_observation","note":"Assembled frames retain the selected source images;no image/geometry generation by FFmpeg.","source":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md"},"artifacts":{"status":"observed","provenance":"operator_observation","note":"Selected original images and encoded frames inspected;slight one-level browser raster rounding on seek-back. Owner aesthetic assessment pending.","source":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"Timing,prices,copy,cursor and gallery are editable deterministic HTML;photographic appearance uses generated images.","source":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md"}},"technical":{"status":"recorded_execution","scope":"Original four image assets,12s288-frame export,full decode,encoded samples and delivery proof reuse. Not generic tool qualification."},"owner_evaluation":{"status":"accepted","scope":"Owner accepted the12spilot20November;requested a stronger full-film introduction and authorised fullYouTube/TikTok production. This is not full-film approval."},"resources":{"hardware":"Mac;exact host profile not measured for this case","formats":"1920×1080/24fps/12s;English;no portrait export","timing":"active labour/compute not measured","cost":"built-in generation cost not reported;no paid API/model downloads"},"limitations":["Still photographs,not animated devices.","Only one short fictional shopping sequence.","Independent reuse,full-film storytelling and owner listening/creative acceptance remain untested."],"alternatives":[{"tool_id":"hyperframes","comparison":"not_compared","note":"AlternativeHTMLcomposition/export route;not executed or compared for this scene."}],"search_terms":["marketplace","ecommerce","product photography","deadpan shopper","fictional store","monitor","BuyMore"],"granularity":"executed_case"},
+        {"id":"ffmpeg--buymore-marketplace-full-v1","tasks":["video","editing","audio"],"inputs":["image","audio","html"],"styles":["photographic-ecommerce","deadpan-comedy","fictional-interface"],"style_basis":"executed_case","techniques":["html-screen-frame-assembly","image2pipe-encoding","audio-picture-mux","encoded-frame-inspection","bounded-portrait-device-correction","copy-preserved-ending-and-audio"],"version":"FFmpeg8.0.1;Chrome157;Playwright source capture","scope":"One original58sfictional-shopping comedy in nativeYouTube/TikTokcompositions;exact contribution and limits in source. Still product photos,not device animation.","evidence":"tested","sources":["docs/productions/buymore-problems-delivered.md"],"examples":[{"path":"docs/productions/buymore-problems-delivered.md","provenance":"operator_observation","independent_visibility":"not_applicable","metrics":"unknown"}],"quality":{"readability":{"status":"observed","provenance":"operator_observation","note":"Encoded landscape/portrait product title/price/photo/buttons,queue review,checkout and parcel frames inspected;native responsive UI.","source":"docs/productions/buymore-problems-delivered.md"},"motion":{"status":"observed","provenance":"operator_observation","note":"Shopper cursor,scroll,gallery,save,review/checkout and scene/camera actions;photos are stills by design.","source":"docs/productions/buymore-problems-delivered.md"},"drawing_stability":{"status":"observed","provenance":"operator_observation","note":"Assembled frames retain the selected source images;no image/geometry generation by FFmpeg.","source":"docs/productions/buymore-problems-delivered.md"},"artifacts":{"status":"observed","provenance":"operator_observation","note":"Selected original images and encoded frames inspected;slight one-level browser raster rounding on seek-back. Owner aesthetic assessment pending.","source":"docs/productions/buymore-problems-delivered.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"Separate smartphone scene;rendered only changed portrait prefix,then reused original delivery/FW video and all audio.Accepted horizontalfileunchanged.","source":"docs/productions/buymore-problems-delivered.md"}},"technical":{"status":"passed","scope":"Originalfullchecks plus verticalv2full decode,12no-pointer source states,encoded phone frames,exact originalPCM and181ending frame hashes.YTmasterSHAunchanged."},"owner_evaluation":{"status":"accepted","scope":"Owner accepted YouTube v1 unchanged and corrected TikTok smartphone v2. Portrait v1 device treatment was returned; this remains historical. New publication covers have operator QA only."},"resources":{"hardware":"Mac;exact host profile not measured for this case","formats":"1920×1080and1080×1920/24fps/58.003s;English","timing":"active labour/compute not measured","cost":"imagegenbackend/costnotreported;no paidvoiceAPI/newmodel;localcompute/labourunmeasured"},"limitations":["Still photographs,not animated devices.","Only one short fictional shopping sequence.","Independent reuse and audience outcomes remain untested; owner accepted the two current film versions."],"alternatives":[{"tool_id":"hyperframes","comparison":"not_compared","note":"AlternativeHTMLcomposition/export route;not executed or compared for this scene."}],"search_terms":["marketplace","ecommerce","product photography","deadpan shopper","fictional store","monitor","BuyMore"],"granularity":"executed_case"}
       ]
     },
     "suno": {
@@ -2220,7 +2224,9 @@
       "rights_class": "conditional",
       "licence_note_sha256": "31057b256836be836e7bbf18be8a773afeb4a4da3a4e22a23b696fcfbc530aee",
       "applications": [
-        {"id":"codex-imagegen--retained-scope","tasks":["image"],"inputs":["text","image"],"styles":[],"style_basis":"not_extracted","techniques":[],"version":"not_recorded_in_index","scope":"Tool-level retained ledger summary,not an individual experiment: Reference18 anchors fictional identity across6/18/40/70/85. Labelled portrait inserts/montages and1280x720 text cover checked full and320px. No video generation, lip sync, geometric identity guarantee or general character-consistency benchmark. API guide is background documentation, not evidence that an API/particular model was used. Exact backend model and cost were not reported.","evidence":"tested","sources":["docs/experiments/one-random-life.md","experiments/2026-10-25/evidence/one-random-life.json"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"recorded_execution","scope":"Retained tool-level execution summary only;not a feature-specific or newly repeated check."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"not_extracted;see sources","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Historical scope only;unrecorded quality/timing/version remain unknown."],"alternatives":[],"search_terms":[],"granularity":"retained_scope_summary","scope_note":"Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."}
+        {"id":"codex-imagegen--retained-scope","tasks":["image"],"inputs":["text","image"],"styles":[],"style_basis":"not_extracted","techniques":[],"version":"not_recorded_in_index","scope":"Tool-level retained ledger summary,not an individual experiment: Reference18 anchors fictional identity across6/18/40/70/85. Labelled portrait inserts/montages and1280x720 text cover checked full and320px. No video generation, lip sync, geometric identity guarantee or general character-consistency benchmark. API guide is background documentation, not evidence that an API/particular model was used. Exact backend model and cost were not reported.","evidence":"tested","sources":["docs/experiments/one-random-life.md","experiments/2026-10-25/evidence/one-random-life.json"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"recorded_execution","scope":"Retained tool-level execution summary only;not a feature-specific or newly repeated check."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"not_extracted;see sources","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Historical scope only;unrecorded quality/timing/version remain unknown."],"alternatives":[],"search_terms":[],"granularity":"retained_scope_summary","scope_note":"Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."},
+        {"id":"codex-imagegen--buymore-marketplace-pilot","tasks":["image"],"inputs":["text","image"],"styles":["photographic-ecommerce","deadpan-comedy","fictional-interface"],"style_basis":"executed_case","techniques":["original-product-photography","reference-lifestyle-edit","blank-monitor-plate"],"version":"built-in imagegen;backend model not reported","scope":"One12s1920×1080fictional-marketplace pilot;source case gives exact tool contribution. No full film,portrait,real product or device animation.","evidence":"tested","sources":["docs/experiments/buymore-marketplace-pilot-2026-11-20.md"],"examples":[{"path":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md","provenance":"operator_observation","independent_visibility":"not_applicable","metrics":"unknown"}],"quality":{"readability":{"status":"observed","provenance":"operator_observation","note":"Object silhouettes/product details inspected in generated originals;all interface typography is separately rendered HTML.","source":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md"},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"Still-image generation/edit only;no video generation.","source":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md"},"drawing_stability":{"status":"observed","provenance":"operator_observation","note":"Reference edit visually retained the cable appliance casing,rollers,knob,LED and tray;no rigid topology guarantee.","source":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md"},"artifacts":{"status":"observed","provenance":"operator_observation","note":"Selected generated photos inspected for grounded placement and ordinary materials;owner aesthetic assessment pending.","source":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"One new product view was requested from a specific retained reference;no general prompt-adherence benchmark.","source":"docs/experiments/buymore-marketplace-pilot-2026-11-20.md"}},"technical":{"status":"recorded_execution","scope":"Original four image assets,12s288-frame export,full decode,encoded samples and delivery proof reuse. Not generic tool qualification."},"owner_evaluation":{"status":"accepted","scope":"Owner accepted the12spilot20November;requested a stronger full-film introduction and authorised fullYouTube/TikTok production. This is not full-film approval."},"resources":{"hardware":"Mac;exact host profile not measured for this case","formats":"1920×1080/24fps/12s;English;no portrait export","timing":"active labour/compute not measured","cost":"built-in generation cost not reported;no paid API/model downloads"},"limitations":["Still photographs,not animated devices.","Only one short fictional shopping sequence.","Independent reuse,full-film storytelling and owner listening/creative acceptance remain untested."],"alternatives":[{"tool_id":"blender","comparison":"not_compared","note":"Original3Dproduct geometry and rendered catalogue views;not executed or compared here."}],"search_terms":["marketplace","ecommerce","product photography","deadpan shopper","fictional store","monitor","BuyMore"],"granularity":"executed_case"},
+        {"id":"codex-imagegen--buymore-marketplace-full-v1","tasks":["image"],"inputs":["text","image"],"styles":["photographic-ecommerce","deadpan-comedy","fictional-interface"],"style_basis":"executed_case","techniques":["original-product-photography","reference-lifestyle-edit","blank-monitor-plate"],"version":"built-in imagegen;backend model not reported","scope":"Eleven original still images for sixfictionalproducts,two desk aspects and closed/open-door continuity;one full58sstory.Sourcecase distinguishes image/edit role from HTMLmotion. Ownerrequested oneadditional smartphone referenceedit for portraitv2;device adaptation pending creative review. Owner accepted smartphone v2. Two reference-generated publication covers inspected at full/reduced size; covers not separately owner-approved.","evidence":"tested","sources":["docs/productions/buymore-problems-delivered.md"],"examples":[{"path":"docs/productions/buymore-problems-delivered.md","provenance":"operator_observation","independent_visibility":"not_applicable","metrics":"unknown"}],"quality":{"readability":{"status":"observed","provenance":"operator_observation","note":"Object silhouettes/product details inspected in generated originals;all interface typography is separately rendered HTML.","source":"docs/productions/buymore-problems-delivered.md"},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"Still-image generation/edit only;no video generation.","source":"docs/productions/buymore-problems-delivered.md"},"drawing_stability":{"status":"observed","provenance":"operator_observation","note":"Reference edit visually retained the cable appliance casing,rollers,knob,LED and tray;no rigid topology guarantee.","source":"docs/productions/buymore-problems-delivered.md"},"artifacts":{"status":"observed","provenance":"operator_observation","note":"Selected generated photos inspected for grounded placement and ordinary materials;owner accepted both current films; new cover acceptance separate.","source":"docs/productions/buymore-problems-delivered.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"One new product view was requested from a specific retained reference;no general prompt-adherence benchmark.","source":"docs/productions/buymore-problems-delivered.md"}},"technical":{"status":"passed","scope":"Originalfullchecks plus verticalv2full decode,12no-pointer source states,encoded phone frames,exact originalPCM and181ending frame hashes.YTmasterSHAunchanged."},"owner_evaluation":{"status":"accepted","scope":"Owner accepted YouTube v1 unchanged and corrected TikTok smartphone v2. Portrait v1 device treatment was returned; this remains historical. New publication covers have operator QA only."},"resources":{"hardware":"Mac;exact host profile not measured for this case","formats":"1920×1080and1080×1920/24fps/58.003s;English","timing":"active labour/compute not measured","cost":"imagegenbackend/costnotreported;no paidvoiceAPI/newmodel;localcompute/labourunmeasured"},"limitations":["Still photographs,not animated devices.","Only one short fictional shopping sequence.","Independent reuse and audience outcomes remain untested; owner accepted the two current film versions."],"alternatives":[{"tool_id":"blender","comparison":"not_compared","note":"Original3Dproduct geometry and rendered catalogue views;not executed or compared here."}],"search_terms":["marketplace","ecommerce","product photography","deadpan shopper","fictional store","monitor","BuyMore"],"granularity":"executed_case"}
       ]
     },
     "djv": {
@@ -5134,7 +5140,127 @@
     "ultratex": {"tasks": ["3d", "graphics"], "inputs": ["3d", "image"], "rights_class": "conditional", "licence_note_sha256": "494f9a6ad8f4c895d6c2539f9a52c4b90cf1e62c184b540ee27599c3b10141ad"},
     "devault-ascii": {"tasks": ["graphics", "video"], "inputs": ["image", "video"], "rights_class": "conditional", "licence_note_sha256": "f1f70abc1f4ad456afc90a38a7a58ec29d2b30455c2b0dcfa3c192cfe5b168aa"},
     "unslop-ui": {"tasks": ["software", "graphics"], "inputs": ["composition"], "rights_class": "conditional", "licence_note_sha256": "c36e67bbbe746f08ce2c0cc5a9ab7f2a2456d8e76d7ba736a152cae0bccf5ef0"},
-    "project-genie": {"tasks": ["video", "3d"], "inputs": ["image", "text"], "rights_class": "conditional", "licence_note_sha256": "060446d2b3d15f3bd0be3428e1621c9cf776bf119b00d62a871e2bd2dc22c043"}
+    "project-genie": {"tasks": ["video", "3d"], "inputs": ["image", "text"], "rights_class": "conditional", "licence_note_sha256": "060446d2b3d15f3bd0be3428e1621c9cf776bf119b00d62a871e2bd2dc22c043"},
+    "klap": {
+      "tasks": [
+        "video",
+        "editing"
+      ],
+      "inputs": [
+        "video"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "c4e3915f41f7779a4bfeb89b737a4743cab036a54a3806636de2072f8bf27b32",
+      "applications": [
+        {
+          "id": "klap--mixed-source-20261120",
+          "tasks": [
+            "video",
+            "editing"
+          ],
+          "inputs": [
+            "video"
+          ],
+          "styles": [
+            "mockumentary",
+            "technical-explainer",
+            "marketplace-comedy",
+            "media-art"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "speech-led-clip-selection",
+            "portrait-reframing",
+            "animated-captions",
+            "template-save-reopen",
+            "cross-source-template-transfer",
+            "subtitle-translation"
+          ],
+          "version": "Hosted web UI,20November2026;backend version not reported",
+          "scope": "Five public owner sources;music-only automatic selection unsupported. Six owner-saved 1080×1920 exports decode-checked: AllWeb3, English/French interview, Split interview, BuyMore edit and the 2160×3840 input control. One cross-source preset,reopen,speaker-switch and subtitle-translation test. Local BuyMore upload, prompt, trim, manual crop, title/logo/media and interview Split override exercised.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/klap-mixed-source-tests-2026-11-20.md"
+          ],
+          "examples": [
+            {
+              "path": "docs/experiments/klap-mixed-source-tests-2026-11-20.md",
+              "provenance": "operator_observation",
+              "independent_visibility": "not_applicable",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "limitation_observed",
+              "provenance": "operator_observation",
+              "note": "Wide page graphics become small or cropped in automatic portrait frames.",
+              "source": "docs/experiments/klap-mixed-source-tests-2026-11-20.md"
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Not a character/video generator;no motion-quality qualification from a successful UI preview.",
+              "source": "docs/experiments/klap-mixed-source-tests-2026-11-20.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Existing source footage used;no generated drawing-stability test.",
+              "source": "docs/experiments/klap-mixed-source-tests-2026-11-20.md"
+            },
+            "artifacts": {
+              "status": "limitation_observed",
+              "provenance": "operator_observation",
+              "note": "BuyMore duplicate Finally;unsupported in minutes;Hassabis misidentified as Sundar;French technical translation errors;Speaker/Full wrong subject and empty chair in encoded output.",
+              "source": "docs/experiments/klap-mixed-source-tests-2026-11-20.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Preset settings transferred and survived reopening. Local upload and manual trim/crop/title/logo/cutaway worked in the editor. Prompt did not isolate the BuyMore ending. Manual Split recovered the interview transition with the interviewer partly clipped.",
+              "source": "docs/experiments/klap-mixed-source-tests-2026-11-20.md"
+            }
+          },
+          "technical": {
+            "status": "partial",
+            "scope": "UI import/select/edit,preset transfer/reopen,French subtitle-copy generation,sampled speaker failure, manual Split recovery and six real export decodes. Direct Reframe returned 1080×1920 from 2160×3840. Manual downloads required;independent listening/creative acceptance and dubbing remain unassessed."
+          },
+          "owner_evaluation": {
+            "status": "rejected",
+            "scope": "Owner rejected the three reviewed portrait candidates for publication and closed the Klap case. Klap is excluded from the production arsenal. This application records historical test evidence."
+          },
+          "resources": {
+            "hardware": "Mac/browser;cloud backend not reported",
+            "formats": "six decoded 1080×1920 H.264/AAC stereo exports across both passes",
+            "timing": "source processing not clocked consistently;active labour not measured",
+            "cost": "gifted Pro;Usage1/300→5/300→9/300;translation marginal cost not isolated;no separately billed API;labour unknown"
+          },
+          "limitations": [
+            "Automatic selection requires speech.",
+            "Our short existing stories often remain nearly whole.",
+            "Auto-generated titles still need factual review.",
+            "Screencast/caption legibility and final listening not generally qualified."
+          ],
+          "alternatives": [
+            {
+              "tool_id": "ffmpeg",
+              "comparison": "not_compared",
+              "note": "Existing native finishing remains available;no controlled time/quality benchmark."
+            }
+          ],
+          "search_terms": [
+            "Klap",
+            "shorts",
+            "repurposing",
+            "speech",
+            "reframe",
+            "subtitles"
+          ],
+          "granularity": "executed_case"
+        }
+      ]
+    }
   },
   "application_contract": {
     "version": 1,
