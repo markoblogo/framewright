@@ -52,3 +52,14 @@ The owner accepted the picture and requested an audible dispatcher, repeated pro
 Private evidence and reuse: `productions/run-signal/records/outdoor-test-2026-11-21.md` and `m01/audio-v08/` retain the handoff, cue script, mix recipe and checks. The revised audio awaits owner review; the reported run used v07.
 
 Owner sequence: consolidate accumulated work in GitHub without a release; prepare M01 YouTube packaging as the next separate production action; after M01 is published, proceed to the Framewright release, then to M02 production. The training thread may prepare the M02 script in parallel.
+
+
+## Season and publication plan — owner decision, 21 November 2026
+
+The season title is **RUN//SIGNAL: Beginner-Friendly Return to Run**. It builds from M01's 20-minute easy run toward M15, a 60-minute continuous run and the story's Runner qualification. Six weeks is a suggested progression; the listener may repeat sessions and advance at their own pace.
+
+- M01 is prepared for YouTube from v08 with an English caption track, thumbnail and metadata. The story description locates the route inside Haven Nine. An episode-ordered playlist accompanies the launch. Local preparation, upload, publication and playlist creation are separate states. A new field test of v08 is unrecorded.
+- M02 Waterline is selected for private production. One 15-minute clock covers 3 minutes of walking, 9 minutes of easy running and 3 minutes of walking. The voice, phase labels and signals share the same clock. Field test before publication.
+- After M03 is published, create the first series promo in YouTube and TikTok formats, introducing the project and Missions 01–03. Then create a YouTube and TikTok promo for each subsequent episode.
+
+The owner provided the [M01 YouTube URL](https://youtu.be/XYRVeefj6aM) on 21 November 2026 (`owner_provided_url`). This records M01 publication by owner report. The next Framewright release depends on [M02 completion and acceptance](run-signal-m02.md). Independent visibility, uploaded-file identity, playlist URL/membership and metrics are unverified. The Framewright release itself remains pending.
