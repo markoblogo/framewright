@@ -17,14 +17,20 @@ The next release objective is not yet selected;the criteria below retain this bo
 
 ### Owner release timing —19November2026
 
-**Owner update, 21 November 2026:** M01's outdoor test took place. The owner requested an audio-only revision, a private training-thread report and consolidation without a release. The current release gate is publication of M01 on YouTube, after a separate package preparation step. M02 scripting can proceed in the training thread; video production follows the release. The prior timing rule below remains historical.
+**Owner update, 21 November 2026:** M01's outdoor test took place. The owner requested an audio-only revision, a private training-thread report and consolidation without a release. At that checkpoint the release was expected after the M01 YouTube publication. The latest decision below updates that sequence.
 
-Plan the next release at the **first actual occurrence** of either:
+**Owner season plan, 21 November 2026:** launch M01 with the episode-ordered YouTube playlist. Prepare M02 Waterline privately and field-test it before publication. Publish the first dual-format RUN//SIGNAL promo after M03, then create a YouTube and TikTok promo for each subsequent episode. [Season details](productions/run-signal-m01.md#season-and-publication-plan--owner-decision-21-november-2026).
+
+**M01 publication evidence, 21 November 2026:** the owner supplied [the YouTube URL](https://youtu.be/XYRVeefj6aM). The owner reported M01 publication. Independent public playback and playlist membership are unverified. The next release scope, version and readiness are still to be decided.
+
+**Latest owner release decision, 21 November 2026:** complete and obtain owner approval for [M02 Waterline](productions/run-signal-m02.md) before the next Framewright release. The owner accepted the v2 picture in the home review. The outdoor audio test alongside Nike Run Club remains pending. Earlier release sequencing below is historical.
+
+**Earlier timing rule, superseded on 21 November 2026.** The release was planned at the first actual occurrence of either:
 
 1. Completion of the running test,confirmed by the owner. RUN//SIGNAL is **paused,not frozen**;the existing home review does not satisfy final running-test completion.
 2. The Udemy course is **created and published**. Both are required;accepted pilot,registration,Test Video feedback or unpublished draft upload alone do not satisfy this event.
 
-Record which event occurred first and its evidence,then return to release scope/readiness and the owner’s publication decision. This timing rule does not create an automatic tag/release job. **Current authority is one consolidation PR,checks,review and merge without release.** Quixote is indefinitely frozen and is not a release gate;second-operator portability remains parallel. Further production/account actions still follow their actual briefs and authority.
+Quixote remains indefinitely frozen. Second-operator portability remains parallel. Release readiness and publication follow the latest M02 decision above.
 
 Build on M1–M4 / RV01 and the existing start / continue / correct workflow, selected
 project journal and revision contract. Extend the existing route rather than creating

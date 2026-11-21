@@ -1,0 +1,15 @@
+# RUN//SIGNAL M02 — Waterline
+
+21 November 2026. Private audiovisual test for **Beginner-Friendly Return to Run**, the recovery mission after [M01: The First Relay](run-signal-m01.md). North Relay reports a pressure fault. In the protected service corridor, the Runner brings a replacement seal to Waterline. A distant Husher and one unexplained radio signal support the story while the effort stays easy. The station welcome plays after Mission Complete.
+
+One 900-second workout: walk 0:00–3:00, easy run 3:00–12:00, walking cooldown 12:00–15:00. The spoken quarter calls start at 3:45, 7:30 and 11:15 relative to Go. The last five minutes have remaining-time announcements, then 30- and 10-second cues. The finish and phase tones land on the same clock as the HUD. Speech follows the transition tones with a short separation.
+
+## Season 1 continuity
+
+The owner returned the first picture for a full rebuild. Freeze the original M01 ident, visor drawing and layout, and Haven Nine departure as season assets. Use the actual M01 renderer and source modules. Change episode labels, timer values, phases and signal data in the existing display positions. Draw route landmarks and creatures with the visor's established palette, scale and pixel grid. Include creature encounters in every episode. Build a finite roster: introduce new silhouettes as routes reach distinct terrain, and reuse known creatures whenever a location and scene support them. As the roster grows, rely chiefly on recurrence. Start from Haven Nine and follow an episode-specific route to a separately designed destination. Reuse the thermal-to-warm arrival transition where it fits.
+
+Each creature has a recognisable signature sound. Reuse it with the creature across episodes and adapt its distance, perspective and surroundings to the encounter. Make the sound intelligible with the screen off and leave dispatch and pace cues clear. The two water creatures in the current M02 mix have no individual cues yet. If the outdoor test leads to an audio revision, give each a distinct cue in that pass, for example a sharp splash and a low watery snort. If the mix passes as delivered, keep their M02 appearances silent and add their cues before they recur.
+
+Private candidate v2 uses the M01 animation sources for the ident, launch, visor, route display and Husher. The canal, bridge, pipe district and Waterline gate are drawn on the existing visor canvas. The recurring Husher is across the canal; two new silhouettes briefly surface at file 05:35–05:49 and 11:10–11:25. The arrival uses a new generated station artwork with a slow camera move and the established visor-off reveal. The 16:20 mission picture, English subtitles and training MP3 retain v1 timing and audio. Go is at file 00:48 and finish is at 15:48.
+
+Private storage: `productions/run-signal/m02/`. The owner accepted the v2 picture on 21 November. The outdoor MP3 test alongside Nike Run Club remains pending. M02 remains private through the field test. The owner moved the next Framewright release to after M02 completion and approval.

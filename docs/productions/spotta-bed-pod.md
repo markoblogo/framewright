@@ -1,0 +1,9 @@
+# The AI Under Your Hotel Mattress
+
+21 November 2026. Two private English review exports with original music and a Framewright ident. The owner supplied a silent product demonstration. The edit combines it with a hotel stock clip, public-domain bed bug reference images, a labelled cutaway and an illustrative hotel alert. The final line is a fictional gag. Source credits and unverified reuse status for the supplied clip and the vendor treatment still are retained privately. Product operation was not tested by Framewright.
+
+[Spotta's product description](https://www.spotta.co/post/find-bed-bugs-before-your-guests-do-24-7-monitoring-with-spotta-s-bed-pod) supports the lure, triggered camera, AI identification and email alert. The [first-year company report](https://blog.spotta.co/hubfs/Spotta%20Bed%20Pod%20One%20Year%20In%20white%20paper.pdf) covers 963 rooms and 91,049 room-nights at three hotels from February 2019 to January 2020. It reports Spotta 113, guests four, and housekeeping three out of 120 known cases. The 3.3% is the guest-first share, compared in the film with the company's earlier estimate of about 50%. The [investor's October 2025 update](https://thefsegroup.com/news/spotta-gets-investment/) attributes deployment to more than 10,000 rooms. It is a dated count, not an independently verified current total.
+
+[GiveMotion data-revision trial](../experiments/givemotion-spotta-chart-2026-11-21.md). Private folder `productions/spotta-bed-pod-2026-11-21/`. The owner accepted both v1 cuts on 21 November 2026. The standard local publication page in `publication/` contains both accepted MP4s, two covers, English YouTube subtitles and platform-specific copy.
+
+On 21 November 2026 the owner supplied [YouTube](https://youtu.be/h0T9PxMdvmg) and [TikTok](https://vt.tiktok.com/ZSsJ64Kx1/) links for the accepted v1 cuts (`owner_provided_url`). Public visibility, uploaded-file identity, and metrics are unverified. Both cuts belong to one film case.
