@@ -1,5 +1,9 @@
 # Proposed experiment queue
 
+## Intake 21 November 2026 — proposed, not selected
+
+[Five-family assessment and bounded checks](research/tool-intake-2026-11-21.md). **IDEOGRAM-EDIT-01** is the proposed first new test: one precise masked edit on an owned still against local compositing. **TOPAZ-STILL-01** is a reserve for a low-resolution source plate against local scaling. **HYPER3D-01** keeps one textured-prop GLB trial and narrows its PolyGen variant to mesh simplification and texture transfer. **SUNO-MCP-01** remains one conditional account and track-handoff test. OpenMotion extends its existing portable, editable motion trial. Print on Demand Studio is a mockup reference. No account connection, cloud call, spend or production reorder.
+
 ## Intake20November2026 — proposed,not selected
 
 [Primary-source assessment and bounded checks](research/tool-intake-2026-11-20.md),M1/M2/M4/R05–R07. **FILMCRAFT-01:**15–20s owned edit→save→fresh reopen→one correction→1080p export,actual binary first;optional NLE route,no studio migration. **PREMOTIO-01:**held pending exact permitted finished-video use and plan;MCP isPro,template copying/ML/competitive-use restrictions retained. **ULTRATEX-01:**watch only until executable code,model licence and resource path exist. Devault extends its existing moving-input/1080p follow-up;no duplicate sample test or Pocket OS resumption. unslop-ui extends **DESIGN-SKILLS-01** as selective audit,not a new template system. Genie4 extends the existing world intake,with exact account/model/access/download and drift checks;no new world test now. No production reorder,purchases,installations,generation,release or Quixote resumption.
@@ -11,7 +15,7 @@ Quixote and its motion trials are **indefinitely frozen**,with no return date. R
 
 ## Selected course pilot —18November priority
 
-[Existing Practical AI Bug Fixing brief and full pilot record](productions/practical-ai-bug-fixing-course.md);[15-family owner-research assessment](research/udemy-course-tools-2026-11-18.md). One existing Radar project,not another course/task. Current result:full6minute lecture3pilot owner-accepted19November;owner plans platform registration/placement20November. Pilot-before-Klap condition is satisfied;no new clip is selected automatically. Reuse Claudemy teaching principles,Kdenlive/local capture/narration/caption components within their evidence. Conditional **COURSE-SOURCE-01**(NotebookLM),**COURSE-AUTHOR-01**(Coursebox,then Mindsmith alternative),**COURSE-CAPTIONS-01**(SubtitleEdit),later **COURSE-TEXT-EDIT-01**(Descript). **COURSE-DELIVERY-01** now has scoped implementation/execution:standard templatev2.1course variant,12builder+12server tests and the real six-minute package browser checks. This is local delivery,not Udemy upload or an LMS. Test one actual gap at a time;the other queued course services were not started;no trial clocks,account grants,uploads,credits or new installs in this pilot. Public Udemy launch and whole-course expansion remain separate.
+[Existing Practical AI Bug Fixing brief and full pilot record](productions/practical-ai-bug-fixing-course.md);[15-family owner-research assessment](research/udemy-course-tools-2026-11-18.md). One existing Radar project,not another course/task. The six-minute lecture 3 pilot was accepted on 19 November. The owner subsequently parked Udemy platform work. Pilot-before-Klap condition is satisfied;no new clip is selected automatically. Reuse Claudemy teaching principles,Kdenlive/local capture/narration/caption components within their evidence. Conditional **COURSE-SOURCE-01**(NotebookLM),**COURSE-AUTHOR-01**(Coursebox,then Mindsmith alternative),**COURSE-CAPTIONS-01**(SubtitleEdit),later **COURSE-TEXT-EDIT-01**(Descript). **COURSE-DELIVERY-01** now has scoped implementation/execution:standard templatev2.1course variant,12builder+12server tests and the real six-minute package browser checks. This is local delivery,not Udemy upload or an LMS. Test one actual gap at a time;the other queued course services were not started;no trial clocks,account grants,uploads,credits or new installs in this pilot. Public Udemy launch and whole-course expansion remain separate.
 
 ## Tool intake —18November2026: motion,avatars,rendering and references
 
@@ -21,7 +25,7 @@ Hera,Jitter,MotionCanvas,ManimCommunity,HyperFrames,GiveMotion,DesignBookmark,Gr
 
 ## KLAP-01 — current-production repurposing and later review evidence
 
-[Owner-selected service study](research/klap-2026-11-16.md): gifted30-day Pro; initial UI import/edit/export executed, not general qualification. Next bounded application belongs to an actual selected production, with complete idea, useful framing, readable captions and real exported bytes. Latest owner priority18November:course pilot first,Klap after at least that pilot;no separate review batch now. Retain before/after evidence for later2–3 review angles; no paid API,channel grant or public upload.
+[Owner-selected service study](research/klap-2026-11-16.md) closed on 20 November. The owner declined Klap and OpusClip for the production arsenal. Preserve [the matched-source comparison](editorial/2026-11-21-framewright-studio-notes-05.md) as scoped evidence. No active follow-up or production adoption.
 
 ## AUTOPROD-01 — one brief to complete dual-format packages
 
@@ -1363,3 +1367,6 @@ production and later audience observations remain separate future steps.
 ## FILMCRAFT-01 —20November executed bounded scope
 
 [Native lesson assembly/reopen/correction trial](experiments/filmcraft-edit-reopen-2026-11-20.md) passed technically:18s1080p30,three clips,two signal audio tracks,native title/three captions;fresh-process reopen,two native exports. Onlyfirst120frameschanged;remaining420anddecodedPCMidentical. Owneraccepted20November2026;acceptedUdemyMP4/receipthashesunchanged. Desktop/MCP,interchange,longcourse,portrait andportablemedia remain untested. No new lesson,release or provider qualification. This supersedes the proposed execution status of FILMCRAFT-01 above.
+
+
+[FilmCraft portrait follow-up](experiments/filmcraft-portrait-subjective-time-2026-11-21.md) passed save, fresh reopen and native 1080×1920 export for the first cut. The accepted v2 was a separate FFmpeg picture re-edit.

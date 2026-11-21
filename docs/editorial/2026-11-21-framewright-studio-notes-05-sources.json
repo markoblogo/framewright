@@ -1,0 +1,187 @@
+{
+  "schema": "framewright-editorial-source-receipt-v1",
+  "date": "2026-11-21",
+  "issue": "studio-notes-05",
+  "edition_kind": "special",
+  "advances_weekly_baseline": false,
+  "article": "docs/editorial/2026-11-21-framewright-studio-notes-05.md",
+  "article_sha256": "dfd5e8a8044dabb671b3ec2c55031fe9a73b78fc32a1ca50d1fdde0293cc7afb",
+  "prepared_at": "2026-11-21T00:02:11.853315+01:00",
+  "baseline_previous_issue": "studio-notes-04",
+  "baseline_previous_head": "d9e362b0f15ace4fed1968de7f99881328ca2358",
+  "observed_git_head": "fafedee24a5c74b52b8e2a964c5c88c92d22445c",
+  "source_state": "PR 85 merged to main; latest published release stays 0.10.0",
+  "local_state_before": "clean before this editorial work",
+  "source_sha256": {
+    "docs/research/klap-2026-11-16.md": "0a7fef8d5ccfc4a97f18c23c6699fac4ceaa3ce6694eaacd809476a5003d4fe6",
+    "docs/experiments/klap-mixed-source-tests-2026-11-20.md": "c1d24d044f110a8ec597ac7b1c79d8ad4c8f72e73e653d7d687f2e2e4c559e1f",
+    "docs/experiments/opusclip-pro-trial-2026-11-20.md": "415fbfbdf02f9a092f007f33dd9d4b62eb483946f13a99199a91564accb85b2e",
+    "docs/productions/buymore-problems-delivered.md": "ebdcfbb25745609cfd680590be0449791f37cf61ba14e0659950637179c8b34b",
+    "docs/productions/allweb3-proof-behind-post.md": "b9ce19a00b7bcf7de4bd65614e417acd149478a9cccc3125423fe821a9d365ba",
+    "docs/public-evidence.json": "27083b93b46fdfca104e2fe953dbf551eb0173ee65d3bea64979f03a11c0d578",
+    "docs/book-milestone.md": "5c5c7d056693fb4df99056f9aa0bd842a724c3059cd2a8b83013a1fc5f8dedca"
+  },
+  "youtube_examples": [
+    {
+      "title": "Klap review: From Long Video to Short Clip",
+      "url": "https://youtu.be/f_qFpZGfFq8",
+      "source": "docs/research/klap-2026-11-16.md",
+      "provenance": "owner_provided_url",
+      "receipt_date": "2026-11-20",
+      "visibility": "independent_fetch_cache_miss_unverified",
+      "uploaded_file_identity": "not_established",
+      "audience_metrics": "not_checked"
+    },
+    {
+      "title": "Klap vs OpusClip: Two Videos, Side by Side",
+      "url": "https://youtu.be/-lIITHpkr1w",
+      "source": "docs/experiments/opusclip-pro-trial-2026-11-20.md",
+      "provenance": "owner_provided_url",
+      "receipt_date": "2026-11-20",
+      "visibility": "independent_fetch_cache_miss_unverified",
+      "uploaded_file_identity": "not_established",
+      "audience_metrics": "not_checked"
+    }
+  ],
+  "claims": [
+    {
+      "id": "plans-and-watermark",
+      "sources": [
+        "docs/research/klap-2026-11-16.md",
+        "docs/experiments/opusclip-pro-trial-2026-11-20.md"
+      ],
+      "boundary": "Klap Pro and the no-cost OpusClip Pro trial were observed. Watermark is an observation on trial exports. No permanent Free or paid OpusClip comparison."
+    },
+    {
+      "id": "matched-allweb3",
+      "sources": [
+        "docs/experiments/klap-mixed-source-tests-2026-11-20.md",
+        "docs/experiments/opusclip-pro-trial-2026-11-20.md",
+        "docs/productions/allweb3-proof-behind-post.md"
+      ],
+      "boundary": "Two versus three candidates in this run and six aligned source seconds, 00:40–00:46. No performance or audience comparison."
+    },
+    {
+      "id": "matched-buymore",
+      "sources": [
+        "docs/experiments/klap-mixed-source-tests-2026-11-20.md",
+        "docs/experiments/opusclip-pro-trial-2026-11-20.md",
+        "docs/productions/buymore-problems-delivered.md"
+      ],
+      "boundary": "Six aligned checkout seconds with Klap manual crop and OpusClip automatic Fit. Separate silent prompt test retains beginning of ident."
+    },
+    {
+      "id": "opusclip-features",
+      "sources": [
+        "docs/experiments/opusclip-pro-trial-2026-11-20.md"
+      ],
+      "boundary": "Actual French track and packaged XML references checked. Translation delivery, sync, desktop import and relink remain unverified."
+    },
+    {
+      "id": "decision-and-two-routes",
+      "sources": [
+        "docs/research/klap-2026-11-16.md",
+        "docs/experiments/opusclip-pro-trial-2026-11-20.md",
+        "docs/book-milestone.md"
+      ],
+      "boundary": "Both services excluded by owner. The two routes are candidate teaching explanations; reader reproduction and rights review remain open."
+    }
+  ],
+  "cover": {
+    "file": "productions/studio-notes-05/studio-notes-05-cover.png",
+    "sha256": "936aca7bddbd2f10380bf7b945d56be7ed98380006e7cadbd60ef0ef8f1a1bb5",
+    "bytes": 2100540,
+    "width": 1672,
+    "height": 941,
+    "headline": "Same Footage, Different Cuts",
+    "series_issue_label": "FRAMEWRIGHT STUDIO NOTES 05",
+    "alt": "Two upright portrait frames sit against a wide film strip on a charcoal editing table, edged in teal and amber. The cover reads Same Footage, Different Cuts and Framewright Studio Notes 05.",
+    "tool": "image_gen.imagegen",
+    "provenance": "original_builtin_imagegen_no_reference_upload",
+    "prompt_file": "productions/studio-notes-05/cover-prompt.txt",
+    "prompt_sha256": "dbed31d79b34129f78a977c2c53196d055d9c14d481757996d9b742bbe152bf5",
+    "full_prompt": "Create an original landscape editorial blog cover (16:9), in a restrained charcoal, muted teal and amber Framewright palette. On the left, render the exact headline \"Same Footage, Different Cuts\" in large warm ivory editorial sans-serif type, on two or three lines, preserving the comma and capitalization. Above it in a clearly legible smaller type, render exactly \"FRAMEWRIGHT STUDIO NOTES 05\". On the right, design a photoreal editorial still life on a matte graphite editing table: a wide translucent film strip containing a warm home shopping scene passes behind two upright narrow portrait apertures. One narrow aperture contains a tight crop of a waiting-room chair and printed price card with no readable text, while the other holds the wide composition centered with dark negative space. A muted teal rim along one aperture and an amber rim along the other, elegant silver hardware and believable shadows. Quiet studio lighting, subtle tactile texture, generous margins. Headline and series line must stay legible at 480 pixels wide. Title left, visual right. No other text, numbers, logos, interface imitation, watermarks or badges.",
+    "generation_count": 1,
+    "cost": {
+      "amount": null,
+      "currency": null,
+      "status": "not_displayed"
+    },
+    "review": {
+      "state": "operator_pass",
+      "reviewed_at": "2026-11-21T00:02:11.853315+01:00",
+      "native_size": [
+        1672,
+        941
+      ],
+      "reduced_size": [
+        480,
+        270
+      ],
+      "spelling": "exact headline and issue label at both sizes",
+      "composition": "headline and illustration have clear margins",
+      "reduced_file": "qa/cover-480.png",
+      "owner_cover_approval": "pending"
+    }
+  },
+  "book_source": {
+    "candidate": true,
+    "chapters": [
+      "C03",
+      "C08",
+      "C09"
+    ],
+    "cases": [],
+    "gaps": [
+      "G01",
+      "G08",
+      "G09"
+    ],
+    "routes": [
+      "with_framewright",
+      "without_framewright"
+    ],
+    "reader_reproduction": "not_performed",
+    "status": "candidate_supporting_evidence",
+    "useful_explanations": [
+      "matched_source_window",
+      "manual_vs_automatic_framing",
+      "export_verification_vs_import"
+    ],
+    "working_note": "docs/book/coverage.md",
+    "chapter_approval": "not_given",
+    "reuse_status": "fact_check_deduplicate_adapt_and_clear_rights"
+  },
+  "publication": {
+    "state": "draft",
+    "blog_url": null,
+    "cms_collection": "unverified",
+    "owner_publishes": true
+  },
+  "book_readiness": {
+    "threshold_changed": false,
+    "new_reader_reproductions": 0,
+    "gap_status_changes": []
+  },
+  "validation": {
+    "metadata": "pass",
+    "linked_video_count": 2,
+    "cover": "native and reduced operator pass",
+    "local_links": "pass"
+  },
+  "delivery": {
+    "delivery_state": "ready_to_deliver",
+    "prepared_at": "2026-11-21T00:02:11.853315+01:00",
+    "package_path": "productions/studio-notes-05",
+    "publication_document": "read.html",
+    "markdown_file": "2026-11-21-framewright-studio-notes-05.md",
+    "cover_file": "studio-notes-05-cover.png",
+    "source_file": "2026-11-21-framewright-studio-notes-05-sources.json",
+    "selected_text_sha256": "dfd5e8a8044dabb671b3ec2c55031fe9a73b78fc32a1ca50d1fdde0293cc7afb",
+    "selected_cover_sha256": "936aca7bddbd2f10380bf7b945d56be7ed98380006e7cadbd60ef0ef8f1a1bb5",
+    "publication_document_sha256": "7928b41b660d01bdd1c3c7a55e7ca4a2bdfc17daab013cc77ec26c491ad0a2d5",
+    "publication_state": "draft_owner_publishes",
+    "notification_emission": "pending_final_chat_message",
+    "snapshot_role": "Prepared snapshot. Private delivery receipt records operational handoff."
+  }
+}
