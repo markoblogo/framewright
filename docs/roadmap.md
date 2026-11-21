@@ -17,6 +17,8 @@ The next release objective is not yet selected;the criteria below retain this bo
 
 ### Owner release timing —19November2026
 
+**Owner update, 21 November 2026:** M01's outdoor test took place. The owner requested an audio-only revision, a private training-thread report and consolidation without a release. The current release gate is publication of M01 on YouTube, after a separate package preparation step. M02 scripting can proceed in the training thread; video production follows the release. The prior timing rule below remains historical.
+
 Plan the next release at the **first actual occurrence** of either:
 
 1. Completion of the running test,confirmed by the owner. RUN//SIGNAL is **paused,not frozen**;the existing home review does not satisfy final running-test completion.

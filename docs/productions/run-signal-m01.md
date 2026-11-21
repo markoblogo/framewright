@@ -1,10 +1,10 @@
-# RUN//SIGNAL M01 — paused,not frozen;running test pending
+# RUN//SIGNAL M01 — outdoor test recorded; audio revision in review
 
 8 November 2026 · RUN-AUDIO-01 / R04/R05/R09 · audio-first running radio drama.
 
-**Current owner confirmation19November:**paused,not frozen.The final running test/report remains pending;home review acceptance is unchanged. No M02,new test or publication starts here. Completion of the running test OR creation and publication of the Udemy course,whichever actually occurs first,is the owner’s next release-timing trigger;see [roadmap](../roadmap.md#owner-release-timing-19november2026). This is not an automatic release instruction.Private current status:`productions/run-signal/owner-status-2026-11-19.json`and START-HERE.md;accepted media/receipts remain unchanged.
+**Historical owner confirmation19November:**paused,not frozen.The final running test/report remains pending;home review acceptance is unchanged. No M02,new test or publication starts here. Completion of the running test OR creation and publication of the Udemy course,whichever actually occurs first,is the owner’s next release-timing trigger;see [roadmap](../roadmap.md#owner-release-timing-19november2026). This is not an automatic release instruction.Private current status:`productions/run-signal/owner-status-2026-11-19.json`and START-HERE.md;accepted media/receipts remain unchanged.
 
-## Current accepted version
+## Accepted v07 picture and home-review reference
 
 Owner accepted shortened v07 after home visual/audio review8November. H2641280×720 at15fps, AAC24kHz, total1320.069667s (22:00.07). Exactly1200s training:8×(60s easy run+90s walk), displayed01:01–21:01. The final remux places video timestamps+0.041992s; exact range61.041992–1261.041992. Final full decode and three sampled decoded training frames match the prior candidate. Aggregate encoded hashes differed after remux: do not claim byte-identical output.
 
@@ -23,7 +23,7 @@ Local puppet mouths/blinks on a photoreal still were rejected. PlayMCP generated
 
 The selected trial2 uses continuous moving PlayMCP footage, local coarse thermal recolouring, a rounded dark helmet-rim reveal and quiet muffled base voices. Owner accepted it for M01 with later refinement required. v06 extended the scene too long; owner requested trimming after~45s of the final excerpt. v07 removes32s: retains the first46s of the finale, then a short off-screen recovery cue over moving room details, fade and original logo. No new generation. Short-source reuse, approximate thermal registration and non-lip-synced acting remain limits. Do not promote this finale as a reusable natural-acting/helmet module.
 
-## Next gate
+## Pre-test gates (historical)
 
 Owner's real outdoor Nantes running test with phone in pocket, then report and any sports screenshots. Record actual experience/physical parameters as one participant's evidence, not a representative-user study. No M02 until both home and outdoor reports are recorded and issues resolved. Promo/teaser production (up to90s, YouTube/TikTok) follows the first episode; no promo starts in this documentation pass. Landing page remains after the0–5km season. No public release or posting authorised here.
 
@@ -42,3 +42,13 @@ Private receipt and Android instructions: studio `deliveries/run-signal-m01-v07/
 Copy the downloaded local MP4 to Android; official VLC supports Play as audio or
 background video. Actual screen-locked/pocket playback on the owner's phone and
 the outdoor report remain pending. Delivery does not authorize M02 or publishing.
+
+## Outdoor test and v08 audio revision — 21 November 2026
+
+The owner completed the field trial using the v07 MP4 on a phone in VLC audio mode. Playback worked. The owner started on the countdown and finished as the shelter welcome began. The phone app provided timings, but distance, pace and cadence for this session are unusable. A separately dated same-route run supplies historical context only. Screenshots, location and personal workout data remain private.
+
+The owner accepted the picture and requested an audible dispatcher, repeated progress milestones and more time cues. v08 retains the v07 video and 1,200-second workout. All 19,800 encoded video packets and their timestamps match v07. The new MP4 remains 22:00.07. The English dispatcher now guides uninterrupted easy running as planned: 0–5 min very easy, 5–15 min comfortable, 15–20 min gentlest effort. Go follows the countdown. Reusable quarter/half/final-quarter blocks lead at 5:00, 10:00 and 15:00 from Go. The spoken milestones reference timed fictional route progress, with no GPS, turn-around instruction or sprint. From five minutes remaining, update each minute, then at 30 and 10 seconds. Rebalanced dispatcher presence and music ducking support listening with the screen off. The original HUD still displays legacy RUN/WALK labels and interval count; the dispatcher explicitly controls pacing. Future episodes should align those graphics with the coaching.
+
+Private evidence and reuse: `productions/run-signal/records/outdoor-test-2026-11-21.md` and `m01/audio-v08/` retain the handoff, cue script, mix recipe and checks. The revised audio awaits owner review; the reported run used v07.
+
+Owner sequence: consolidate accumulated work in GitHub without a release; prepare M01 YouTube packaging as the next separate production action; after M01 is published, proceed to the Framewright release, then to M02 production. The training thread may prepare the M02 script in parallel.
