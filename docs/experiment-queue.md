@@ -9,6 +9,10 @@
 [Primary-source assessment and bounded checks](research/tool-intake-2026-11-20.md),M1/M2/M4/R05–R07. **FILMCRAFT-01:**15–20s owned edit→save→fresh reopen→one correction→1080p export,actual binary first;optional NLE route,no studio migration. **PREMOTIO-01:**held pending exact permitted finished-video use and plan;MCP isPro,template copying/ML/competitive-use restrictions retained. **ULTRATEX-01:**watch only until executable code,model licence and resource path exist. Devault extends its existing moving-input/1080p follow-up;no duplicate sample test or Pocket OS resumption. unslop-ui extends **DESIGN-SKILLS-01** as selective audit,not a new template system. Genie4 extends the existing world intake,with exact account/model/access/download and drift checks;no new world test now. No production reorder,purchases,installations,generation,release or Quixote resumption.
 
 
+## RUN//SIGNAL M01 — field report, 21 November 2026
+
+[Owner field report outcome and audio revision](productions/run-signal-m01.md#outdoor-test-and-v08-audio-revision--21-november-2026). The v07 phone trial was completed. v08 changes the coaching and mix while retaining the picture. M01 YouTube packaging is a separate step. Release follows M01 publication; then M02 production. The older pause and release timing entries below are historical for this project.
+
 ## Current owner boundaries —19November2026
 
 Quixote and its motion trials are **indefinitely frozen**,with no return date. RUN//SIGNAL is **paused,not frozen**. Next release timing is the first actual completion of the running test OR creation and publication of the Udemy course;current consolidation PR is merged without release. Dated trial/pause records below remain historical and do not lift the freeze. New Radar briefs/article-video idea are discussed after the PR;none is started here.

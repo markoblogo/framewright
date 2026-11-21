@@ -54,6 +54,8 @@ and authored interface proposals distinct, as their case records require.
 
 Owner correction19November2026:[curl](productions/curl-maintenance-workshop.md)was formally animated but felt dry and unengaging. Retain useful illustrations while varying the visual evidence and treatment:appropriate genuine site/document recordings,photographic context and sourced video can carry distinct beats. This is an editorial lesson about that repetitive cut,not a requirement to add stock to every film or a claim that movement alone passed creative review.
 
+Owner correction 21 November 2026: When the source footage carries the evidence and the viewer needs to inspect a small subject or precise action, give it the whole frame. Crop proportionally for each aspect ratio and keep overlaid captions brief and clear of the action. For [Liquid Robot](productions/liquid-robot.md#v2--full-frame-lab-footage), the two trial samples are shown as successive full-frame shots. The owner also noticed undersized footage in the Klarna edits. Check the reveal and outcome in each encoded format.
+
 ## VT-READ — inspect the delivered small-screen result
 
 **Rule:** make text and important construction lines readable over their actual

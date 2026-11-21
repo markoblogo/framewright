@@ -176,7 +176,9 @@
             "editable motion graphics"
           ],
           "granularity": "specific_bounded_trial"
-        }
+        },
+        {"id":"openmotion--ao-relocated-title","tasks":["graphics","video"],"inputs":["composition"],"styles":["editorial-motion-graphics"],"style_basis":"executed_case","techniques":["portable-motion-package","title-revision","dual-aspect-browser-export"],"version":"OpenMotion fcbaa2b; Motion Package 0.2; Chromium/FFmpeg","scope":"One original 3.5-second animated opening title and one text correction in a relocated package.","evidence":"tested","sources":["docs/experiments/openmotion-ao-title-2026-11-21.md","docs/productions/ao-one-prompt-six-outputs.md"],"examples":[{"path":"docs/experiments/openmotion-ao-title-2026-11-21.md","provenance":"operator_observation","independent_visibility":"not_applicable","metrics":"unknown"}],"quality":{"readability":{"status":"observed","provenance":"operator_observation","note":"Edited line and supporting labels inspected in both rendered orientations.","source":"docs/experiments/openmotion-ao-title-2026-11-21.md"},"motion":{"status":"observed","provenance":"operator_observation","note":"Grid and progress rule driven by explicit frame time.","source":"docs/experiments/openmotion-ao-title-2026-11-21.md"},"drawing_stability":{"status":"observed","provenance":"operator_observation","note":"Local font and CSS geometry retained in the relocated package.","source":"docs/experiments/openmotion-ao-title-2026-11-21.md"},"artifacts":{"status":"observed","provenance":"operator_observation","note":"Mid-title frames inspected in both aspects.","source":"docs/experiments/openmotion-ao-title-2026-11-21.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"Text changed once and inventory hashes re-locked after move.","source":"docs/experiments/openmotion-ao-title-2026-11-21.md"}},"technical":{"status":"recorded_execution","scope":"Lock/check/pack and relocated correction checked; separate browser rendered two 84-frame titles."},"owner_evaluation":{"status":"accepted_retained_scope","scope":"Owner accepted both v2 cuts. No separate verdict on the package toolkit."},"resources":{"hardware":"Existing Mac, Work volume","formats":"960×540 / 540×960 24 fps; local browser render","time":"Active time not measured","cost":"Local compute unpriced"},"limitations":["No native Studio export in this trial","Same host; no cross-machine evidence","One copy change only"],"alternatives":[],"search_terms":["OpenMotion","portable title","same-prompt comparison"],"granularity":"specific_production_application"},
+        {"id":"openmotion--prayer-ring-notification","tasks":["graphics","video"],"inputs":["composition"],"styles":["editorial-motion-graphics","satire"],"style_basis":"executed_case","techniques":["portable-motion-package","data-driven-animation","native-dual-aspect"],"version":"OpenMotion fcbaa2b; Motion Package 0.2; Chromium/FFmpeg","scope":"A 3.2-second satirical signal animation from a relocated package with separately inventoried JSON data.","evidence":"tested","sources":["docs/experiments/prayer-rings-tool-trials-2026-11-21.md","docs/productions/prayer-rings.md"],"examples":[{"path":"docs/experiments/prayer-rings-tool-trials-2026-11-21.md","provenance":"operator_observation","independent_visibility":"not_applicable","metrics":"unknown"},{"url":"https://youtu.be/rGz5ialbeXI","provenance":"owner_provided_url","independent_visibility":"not_checked","metrics":"unknown"},{"url":"https://vt.tiktok.com/ZSsJRx6M3/","provenance":"owner_provided_url","independent_visibility":"not_checked","metrics":"unknown"}],"quality":{"readability":{"status":"observed","provenance":"operator_observation","note":"Labels remain readable in wide and stacked layouts.","source":"docs/experiments/prayer-rings-tool-trials-2026-11-21.md"},"motion":{"status":"observed","provenance":"operator_observation","note":"Pulses follow the two signal paths.","source":"docs/experiments/prayer-rings-tool-trials-2026-11-21.md"},"drawing_stability":{"status":"observed","provenance":"operator_observation","note":"Repeated-time frames matched after seeking backward.","source":"docs/experiments/prayer-rings-tool-trials-2026-11-21.md"},"artifacts":{"status":"observed","provenance":"operator_observation","note":"Reduced-size frames inspected in both formats.","source":"docs/experiments/prayer-rings-tool-trials-2026-11-21.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"JSON controls text and duration separately from the scene code.","source":"docs/experiments/prayer-rings-tool-trials-2026-11-21.md"}},"technical":{"status":"recorded_execution","scope":"Lock, pack and relocated check passed. Dual 96-frame render, same-frame hash after reverse seek."},"owner_evaluation":{"status":"accepted_retained_scope","scope":"Owner accepted both v1 cuts. No separate evaluation of the insert."},"resources":{"hardware":"Existing Mac, Work volume","formats":"960×540 and 540×960, 30 fps","time":"Active time not measured","cost":"Local compute unpriced"},"limitations":["No native Studio export","No cross-host test"],"alternatives":[],"search_terms":["ring notification","satirical explainer","portable motion package"],"granularity":"specific_production_application"}
       ]
     },
     "brag": {
@@ -2366,7 +2368,8 @@
             "native ASCII"
           ],
           "granularity": "specific_production_application"
-        }
+        },
+        {"id":"rokehan-location-scout--neubad-paper-city","tasks":["3d","video"],"inputs":["3d","image"],"styles":["black-and-white-manga","art-film","paper-collage"],"style_basis":"executed_case","techniques":["retained-native-glb","edge-halftone-shader","perspective-posters","independent-aspect-layout"],"version":"Retained Rokehan Hudson GLB; Three.js r187; Chrome; FFmpeg 8.0.1","scope":"Three authored 3D street installations with separate wide and portrait camera framing.","evidence":"tested","sources":["docs/productions/neubad-paper-city.md","docs/experiments/no-further-claims-manga-probes.md"],"examples":[{"path":"docs/productions/neubad-paper-city.md","provenance":"operator_observation","independent_visibility":"not_applicable","metrics":"unknown"}],"quality":{"readability":{"status":"observed","provenance":"operator_observation","note":"Preserved visible source details for central posters; peripheral portrait crops intentional.","source":"docs/productions/neubad-paper-city.md"},"motion":{"status":"observed","provenance":"operator_observation","note":"Three new timed camera passes and a moving window reflection.","source":"docs/productions/neubad-paper-city.md"},"drawing_stability":{"status":"observed","provenance":"operator_observation","note":"Deterministic geometry with still poster textures.","source":"docs/productions/neubad-paper-city.md"},"artifacts":{"status":"observed","provenance":"operator_observation","note":"Sampled final editorial shots inspected; no dedicated temporal line-shimmer benchmark.","source":"docs/productions/neubad-paper-city.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"Wall, window and billboard share the retained street with separately authored cameras and placement.","source":"docs/productions/neubad-paper-city.md"}},"technical":{"status":"recorded_execution","scope":"Six moving 120-frame plate exports; final H.264/AAC closed and decoded in both formats."},"owner_evaluation":{"status":"accepted_retained_scope","scope":"Owner accepted both full film cuts. No separate tool, cover or listening verdict."},"resources":{"hardware":"Existing Mac and external Work volume","formats":"960×540 and 540×960 scene plates, 24 fps, corresponding 1080p delivery","time":"Active labour and render efficiency unmeasured","cost":"No external calls; local compute unpriced"},"limitations":["One retained geometry, no new geographic accuracy or Rokehan native video test","Foreground installations composited as a separately drawn 3D layer; no general occlusion qualification","Private poster and soundtrack rights pending"],"alternatives":[],"search_terms":["manga city","poster installation","billboard","window display","Neubad"],"granularity":"specific_production_application"}
       ]
     },
     "claudemy": {
@@ -4346,6 +4349,116 @@
             "ASCII графика комикс",
             "минималистичная типографика",
             "minimal ascii comic"
+          ],
+          "granularity": "specific_production_application"
+        },
+        {
+          "id": "manim-community--liquid-robot",
+          "tasks": [
+            "video",
+            "graphics",
+            "diagram"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [
+            "scientific",
+            "minimal"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "particle-shell-diagram",
+            "authored-deformation",
+            "native-aspect-layout"
+          ],
+          "version": "0.22.1",
+          "scope": "Cairo vector shell deformation with native 16:9 and 9:16 callout layouts.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/manim-liquid-robot-2026-11-21.md",
+            "docs/productions/liquid-robot.md"
+          ],
+          "examples": [
+            {
+              "url": "https://youtu.be/eB6HnfiTN8c",
+              "provenance": "owner_provided_url",
+              "independent_visibility": "not_checked",
+              "metrics": "unknown"
+            },
+            {
+              "url": "https://vt.tiktok.com/ZSs1oNCLg/",
+              "provenance": "owner_provided_url",
+              "independent_visibility": "not_checked",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Water and PTFE labels legible in sampled frames.",
+              "source": "docs/experiments/manim-liquid-robot-2026-11-21.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Coat and core stretch together.",
+              "source": "docs/experiments/manim-liquid-robot-2026-11-21.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Stable authored particle and core shapes.",
+              "source": "docs/experiments/manim-liquid-robot-2026-11-21.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Fixed a label occluded by the shell layer.",
+              "source": "docs/experiments/manim-liquid-robot-2026-11-21.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Layer order and callout position controlled per format.",
+              "source": "docs/experiments/manim-liquid-robot-2026-11-21.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Two 227-frame source renders and inspection of both review cuts."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner accepted both full v2 cuts. Diagram not separately rated.",
+            "source": "docs/productions/liquid-robot.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64;external Work storage;host fonts;existing browser/FFmpeg where required",
+            "formats": "960x540 and 540x960 at 30 fps",
+            "timing": "227 frames each. Comparative labour unmeasured.",
+            "cost": "Existing runtime and local render. No paid calls."
+          },
+          "limitations": [
+            "Illustrative particle spacing and deformation. No fluid or adhesion simulation."
+          ],
+          "alternatives": [
+            {
+              "tool_id": "genmotion",
+              "comparison": "not_compared",
+              "reason": "Related authored-animation route with a different retained style;not a ranked replacement."
+            },
+            {
+              "tool_id": "givemotion",
+              "comparison": "not_compared",
+              "reason": "Related authored-animation route with a different retained style;not a ranked replacement."
+            }
+          ],
+          "search_terms": [
+            "particle shell diagram",
+            "scientific explainer",
+            "схема капли и оболочки"
           ],
           "granularity": "specific_production_application"
         }
