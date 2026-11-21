@@ -606,7 +606,9 @@
       "source": "docs/experiments/opusclip-pro-trial-2026-11-20.md",
       "basis": "registered_finished_export",
       "index_note": "One accepted 1:53 comparison film with two matched sources, AllWeb3 and BuyMore. Owner supplied https://youtu.be/-lIITHpkr1w on 20 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."
-    }
+    },
+    {"id":"half-a-life-by-18","source":"docs/productions/half-a-life-by-18.md","basis":"registered_finished_export","index_note":"One English mathematical explainer in two accepted 48.9-second v2 cuts. Owner supplied https://youtu.be/vLU1dIXCjWY and https://vt.tiktok.com/ZSpEGuw3W/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."},
+    {"id":"gravity-through-wall","source":"docs/productions/gravity-through-wall.md","basis":"registered_finished_export","index_note":"One English explainer in two owner-accepted 60.23-second v2 cuts, with original diagrams, stock footage and a credited archival inset. Owner supplied https://youtu.be/IQeH4VAVyZo and https://vt.tiktok.com/ZSpE3xd19/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."}
   ],
   "trials": [
     {
@@ -970,6 +972,8 @@
       "id": "opusclip-pro-trial-20261120",
       "source": "docs/experiments/opusclip-pro-trial-2026-11-20.md",
       "index_note": "One OpusClip Pro trial with synchronized AllWeb3 and BuyMore comparisons, visual-only search, editable generated media, French speech, and speech enhancement plus cleanup. All three AllWeb3 exports decode; XML media references resolve within the ZIP. Upscale requires an upgrade in the observed trial; no NLE import or tool adoption."
-    }
+    },
+    {"id":"filmcraft-portrait-subjective-time","source":"docs/experiments/filmcraft-portrait-subjective-time-2026-11-21.md","basis":"executed_bounded_workflow_trial","index_note":"Actual 1080×1920 30 fps FilmCraft CLI export with save and fresh reopen, seven picture and two audio placements. Scope limited to one production."},
+    {"id":"canvas-ui-gravity-annotation","source":"docs/experiments/canvas-ui-gravity-2026-11-21.md","basis":"executed_bounded_workflow_trial","index_note":"Six-second same-input Glass versus opaque baseline with 72 A/B frame pairs and repeat-frame verification. Native DOM capture not run."}
   ]
 }

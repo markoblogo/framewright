@@ -116,6 +116,8 @@ supersedes this default; branding placement is governed by the selected brief.
 
 **Brand check:** if an FW ident is selected,use the [accepted silver-ribbon masters](productions/fw-identity.md),with matching aspect and verified source. Do not substitute a freshly typed FW card. Owner explicitly required the canonical ident17November;this is not a requirement to brand every film.
 
+**Check the cut across the full voiceover.** For [Half a Life by 18?](productions/half-a-life-by-18.md#owner-correction-and-picture-edit-v2), the owner liked the individual animated charts and narration but returned the full edit for long holds and a lack of human feeling. Preserve the graphics at the explanatory beats and use real subject action to carry the emotional beats. Check both crops and the unchanged narration timeline.
+
 ## VT-MIX — soft continuous music under tour commentary
 
 **Rule:** for a voice-led exploratory tour, start with clear foreground speech and

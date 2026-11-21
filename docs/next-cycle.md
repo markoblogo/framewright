@@ -1,9 +1,11 @@
 # Current work and protected waits
 
-Updated20November2026. This is the current operational entry point, not a session log.
+Updated 21 November 2026. This is the current operational entry point, not a session log.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md) · [Case counts and definitions](public-evidence.json).
 
 ## Current state
+
+**21 November:** [Half a Life by 18?](productions/half-a-life-by-18.md) and [The Elevator That Sent a Word Through a Wall](productions/gravity-through-wall.md) have accepted v2 cuts and owner-reported YouTube/TikTok links. FilmCraft portrait export and the Canvas UI callout comparison retain separate technical results. [Studio Notes 05](editorial/2026-11-21-framewright-studio-notes-05.md) is an owner-reported published special edition and leaves the weekly baseline in place. The [new tool intake](research/tool-intake-2026-11-21.md) proposes tests for later selection.
 
 **Klap case closed, 20 November:** [Klap review](https://youtu.be/f_qFpZGfFq8) and [Klap–OpusClip comparison](https://youtu.be/-lIITHpkr1w) have owner-provided YouTube URLs. Both tool trials are retained as reference evidence. Owner decision: exclude Klap and OpusClip from the production arsenal. Quixote stays frozen and RUN paused.
 
@@ -14,7 +16,7 @@ Owner-selected [FILMCRAFT-01](experiments/filmcraft-edit-reopen-2026-11-20.md) c
 
 20 November 2026: owner supplied [YouTube](https://youtu.be/zZx5ZM5p59g) and [TikTok](https://vt.tiktok.com/ZSpKbosAk/) publication URLs for the two24.47s full-v1 films. Radar batch **5/5 stories,9 publication links** (curl YouTube only). Provenance: owner_provided_url; independent visibility,uploaded identity and metrics unchecked. Local master hashes match the prepared package; publication links do not independently approve the full mix/covers. Private publication receipt: productions/robot-meets-captcha/publication-2026-11-20.json.
 
-Latest case: [Robot meets CAPTCHA](productions/robot-meets-captcha.md). All five batch stories now have owner-reported publication URLs. Course reuse screening remains prepared; Quixote frozen, RUN paused, release timing unchanged.
+Latest Radar batch case: [Robot meets CAPTCHA](productions/robot-meets-captcha.md). All five batch stories now have owner-reported publication URLs. Course reuse screening remains prepared; Quixote frozen, RUN paused, release timing unchanged.
 
 **Historical priority,19November (superseded by20November Klap selection):** [Practical AI Bug Fixing / Udemy pilot](productions/practical-ai-bug-fixing-course.md) is **owner-accepted**. The6:00English lecture,real-code capture,84-cueSRT/VTT,cover and teaching archive are retained;technical/resource/browser checks passed. The earlier registration plan was superseded by the owner’s decision to park Udemy. One lecture of six is produced. Full-course expansion and publication remain separate. The Klap evaluation and production case subsequently closed on 20 November. Quixote is indefinitely frozen.
 
