@@ -1,6 +1,6 @@
 {
   "schema": "framewright-public-evidence-v1",
-  "updated": "2026-11-20",
+  "updated": "2026-11-22",
   "scope": "Conservative documented cases, not an asserted lifetime total. Original records remain the source of truth.",
   "definitions": {
     "films": "One completed authored story/promo/tutorial/ambient master per case. Aspect, language and revision variants count once. A finished export need not be publicly published or creatively accepted.",
@@ -22,6 +22,9 @@
     ]
   },
   "films": [
+    {"id":"reaction-telemetry","source":"docs/productions/reaction-telemetry.md","basis":"registered_finished_export","index_note":"One owner-accepted 61-second English YouTube master. The finished edit adds the question that motivates the chart. Owner supplied https://youtu.be/N6BoSZ4Fykk on 22 November 2026 (owner_provided_url). Independent visibility, uploaded-file identity and metrics unverified."},
+    {"id":"escapade-powered-flyby","source":"docs/productions/escapade-powered-flyby.md","basis":"registered_finished_export","index_note":"One owner-accepted 60-second English YouTube master. Silent Manim pilot led to a synchronized burn highlight and a fitted caption. Owner supplied https://youtu.be/xuO__yvDhHo on 22 November 2026 (owner_provided_url). Independent visibility, uploaded-file identity and metrics unverified."},
+    {"id":"dry-ultrasound","source":"docs/productions/dry-ultrasound.md","basis":"registered_finished_export","index_note":"One source-led science explainer in two owner-accepted English 1080p cuts. Silent Manim pilot accepted in both aspects. Owner supplied https://youtu.be/B7WQ0FScopw on 22 November 2026 (owner_provided_url) and reported no TikTok upload. Independent visibility, uploaded-file identity and metrics unverified."},
     {
       "id": "asciitheme",
       "source": "experiments/2026-10-14/outputs.json",
@@ -363,7 +366,7 @@
       "basis": "completed_case_record",
       "index_note": "Owner completed a v07 field test in VLC audio mode. v08 retains the picture and revises timed running cues. Owner provided YouTube https://youtu.be/XYRVeefj6aM on 21 November 2026 (owner_provided_url). Independent visibility, uploaded-file identity, playlist and metrics unverified."
     },
-    {"id":"run-signal-m02-waterline","source":"docs/productions/run-signal-m02.md","basis":"registered_finished_export","index_note":"One full 16:20 private AV film with 15 minutes of aligned workout cues and a separate MP3 for the owner field test. The owner accepted the v2 picture. The outdoor audio test is pending."},
+    {"id":"run-signal-m02-waterline","source":"docs/productions/run-signal-m02.md","basis":"registered_finished_export","index_note":"One owner-accepted 16:20 film with 15 minutes of aligned workout cues. The outdoor VLC listening test passed. Owner supplied https://youtu.be/3b8ESlIpQkE on 22 November 2026 (owner_provided_url). Independent visibility, playlist membership, uploaded-file identity and metrics unverified."},
     {
       "id": "ubtree-explainer",
       "source": "docs/productions/ubtree-explainer.md",
@@ -610,6 +613,7 @@
       "index_note": "One accepted 1:53 comparison film with two matched sources, AllWeb3 and BuyMore. Owner supplied https://youtu.be/-lIITHpkr1w on 20 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."
     },
     {"id":"half-a-life-by-18","source":"docs/productions/half-a-life-by-18.md","basis":"registered_finished_export","index_note":"One English mathematical explainer in two accepted 48.9-second v2 cuts. Owner supplied https://youtu.be/vLU1dIXCjWY and https://vt.tiktok.com/ZSpEGuw3W/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."},
+    {"id":"french-vineyard-finance","source":"docs/productions/french-vineyard-finance.md","basis":"registered_finished_export","index_note":"One owner-accepted English explainer in two 1080p cuts. Real illustrative vineyard footage, captured Safer listing and original financing diagram. Owner supplied https://youtu.be/Woi6ZaNdiMs and https://vt.tiktok.com/ZSsJxNTcf/ (owner_provided_url). Independent visibility, upload identity and metrics unverified."},
     {"id":"spotta-bed-pod","source":"docs/productions/spotta-bed-pod.md","basis":"registered_finished_export","index_note":"One English editorial film in two owner-accepted 1080p cuts. Owner supplied https://youtu.be/h0T9PxMdvmg and https://vt.tiktok.com/ZSsJ64Kx1/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."},
     {"id":"prayer-rings","source":"docs/productions/prayer-rings.md","basis":"registered_finished_export","index_note":"One source-led review in two owner-accepted 1080p English cuts. Owner supplied https://youtu.be/rGz5ialbeXI and https://vt.tiktok.com/ZSsJRx6M3/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."},
     {"id":"liquid-robot","source":"docs/productions/liquid-robot.md","basis":"registered_finished_export","index_note":"Two owner-accepted 1080p English v2 cuts with full-frame lab footage and original schematics. Owner supplied https://youtu.be/eB6HnfiTN8c and https://vt.tiktok.com/ZSs1oNCLg/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."},

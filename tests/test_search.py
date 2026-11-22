@@ -14,6 +14,45 @@ class ArsenalSearchTest(unittest.TestCase):
         self.assertEqual(p.returncode==0,ok,p.stderr)
         return json.loads(p.stdout) if ok else p
 
+    def test_ranked_profile_falls_back_when_primary_is_unavailable(self):
+        result=self.search('--rank-profile','editorial-graphics','--unavailable','GiveMotion',
+                           '--confirmed','minicharts')
+        self.assertEqual((result['primary'],result['fallback'],result['next_test']),
+                         ('manim-community','openmotion','minicharts'))
+        self.assertIn('Unavailable in this production',result['production'][0]['blocking_reasons'])
+        self.assertNotIn('speed',result['production_score_axes'])
+        self.assertIsNone(result['production'][0]['ratings']['speed'])
+
+    def test_paid_trials_need_both_confirmation_and_paid_permission(self):
+        args=('--rank-profile','editorial-graphics','--confirmed','premotio')
+        self.assertIsNone(self.search(*args)['next_test'])
+        self.assertEqual(self.search(*args,'--allow-paid')['next_test'],'premotio')
+        self.assertIsNone(self.search('--rank-profile','editorial-graphics','--allow-paid')['next_test'])
+
+    def test_reserve_and_rejected_routes_do_not_silently_take_over(self):
+        args=('--rank-profile','local-english-narration','--unavailable','kokoro')
+        self.assertIsNone(self.search(*args)['primary'])
+        self.assertEqual(self.search(*args,'--include-fallbacks')['primary'],'supertonic3')
+        args=('--rank-profile','portrait-adaptation','--unavailable','ffmpeg','--unavailable','filmcraft',
+              '--confirmed','klap','--confirmed','opusclip','--allow-paid','--include-fallbacks')
+        result=self.search(*args)
+        self.assertIsNone(result['primary'])
+        self.assertEqual({r['tool'] for r in result['excluded']},{'klap','opusclip'})
+        self.assertEqual(self.search(*args,'--confirmed','inshot-android')['primary'],'inshot-android')
+
+    def test_rankings_require_a_tested_application_and_a_valid_rating(self):
+        import runpy
+        ranking=runpy.run_path(str(CLI))['RANKING']
+        facets=json.loads((ROOT/'skills/video-production-router/references/arsenal-facets.json').read_text())
+        first=facets['rankings']['editorial-graphics']['entries'][0]
+        first['ratings']['quality']=6
+        with self.assertRaisesRegex(ValueError,'Invalid ranking ratings'):
+            ranking['validate_rankings'](facets)
+        first['ratings']['quality']=4
+        del first['application']
+        with self.assertRaisesRegex(ValueError,'requires usable tested application'):
+            ranking['validate_rankings'](facets)
+
     def test_newspaper_application_and_owner_evidence_are_discoverable(self):
         rows=self.search('--query','газетный коллаж с цветными вставками','--evidence','tested')['results']
         self.assertEqual([r['id'] for r in rows],['genmotion'])
@@ -34,7 +73,8 @@ class ArsenalSearchTest(unittest.TestCase):
         self.assertEqual(self.search('--tool','genmotion','--feature','narration','--evidence','tested')['results'],[])
 
     def test_publication_does_not_create_owner_acceptance_or_a_comparison(self):
-        app=self.search('--tool','givemotion','--evidence','tested')['results'][0]['applications'][0]
+        applications=self.search('--tool','givemotion','--evidence','tested')['results'][0]['applications']
+        app=next(row for row in applications if row['id']=='givemotion--vet402')
         self.assertEqual(app['owner_evaluation']['status'],'not_recorded')
         self.assertEqual(app['technical']['status'],'passed')
         self.assertTrue(app['examples'])

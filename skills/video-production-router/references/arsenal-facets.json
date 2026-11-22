@@ -4126,6 +4126,92 @@
       "licence_note_sha256": "4471715c469605fe024bccd3cbcef5592209438ae346ebf21dfe1ac551c03cfb",
       "applications": [
         {
+          "id": "givemotion--reaction-telemetry",
+          "tasks": [
+            "video",
+            "graphics",
+            "diagram"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [
+            "editorial-motion-graphics",
+            "data-visualization"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "synchronized-chart-reveal",
+            "vector-traces",
+            "native-aspect-layout"
+          ],
+          "version": "GiveMotion 0.1.6",
+          "scope": "One silent 11.2-second native chart and five atlas-style inserts in a complete 16:9 science explainer.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/reaction-telemetry.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Two stroke styles identify the tube traces; the ending marker gives their shared value.",
+              "source": "docs/productions/reaction-telemetry.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "A single horizontal reveal gives both series the same time base.",
+              "source": "docs/productions/reaction-telemetry.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "The grid and labels retain their positions throughout the silent comparison.",
+              "source": "docs/productions/reaction-telemetry.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Inspected reduced encoded samples for graph clipping and caption overlap.",
+              "source": "docs/productions/reaction-telemetry.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Narration introduces the endpoint-only question before the unchanged chart.",
+              "source": "docs/productions/reaction-telemetry.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Chromium MP4 export, 336-frame silent 16:9 chart and completed 1080p package decode."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Pilot feedback confirms curve readability and the shared endpoint; motivation was unclear without context. Owner accepted the complete narrated film.",
+            "source": "docs/productions/reaction-telemetry.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64, local Chrome and FFmpeg",
+            "formats": "1920x1080 at 30 fps",
+            "timing": "Active labor unmeasured.",
+            "cost": "No new paid calls; aggregate cost unknown."
+          },
+          "limitations": [
+            "The temperatures are illustrative. No participant or audience evaluation recorded for the full film."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "reaction telemetry",
+            "dual temperature curve",
+            "optical wireless sensor",
+            "GiveMotion chart reveal"
+          ],
+          "granularity": "specific_production_application"
+        },
+        {
           "id": "givemotion--vet402",
           "tasks": [
             "video",
@@ -4245,6 +4331,177 @@
       "rights_class": "conditional",
       "licence_note_sha256": "93b3cc4d51ef3105631086374c13f4ae716484a4b88504f724e3859e22b9f67d",
       "applications": [
+        {
+          "id": "manim-community--escapade-powered-flyby",
+          "tasks": [
+            "video",
+            "diagram"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [
+            "minimal"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "trajectory-animation",
+            "motion-tracking",
+            "native-aspect-layout"
+          ],
+          "version": "0.22.1",
+          "scope": "A silent native 16:9 Earth flyby schematic and its integration in one narrated orbital-atlas film. A tracking ring shares the engine-on interval and an annotation panel fits its measured text.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/escapade-powered-flyby.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Engine label now fits its plate at full and reduced size.",
+              "source": "docs/productions/escapade-powered-flyby.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "The highlight follows the rocket and vanishes when its engine plume vanishes.",
+              "source": "docs/productions/escapade-powered-flyby.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Rocket, path and Earth retain the same screen geometry through ignition.",
+              "source": "docs/productions/escapade-powered-flyby.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Caption overflow in the first export was corrected using measured text bounds.",
+              "source": "docs/productions/escapade-powered-flyby.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "One shared parameter drives plume, outline and colored burn trail; a later window-card crossing was fixed in that shot.",
+              "source": "docs/productions/escapade-powered-flyby.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "1920x1080 at 30fps. Before/during/after samples, video/audio decode and standard package checks."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner saw ignition in the silent v1 and requested changes to highlighting and text fit. Owner accepted the corrected narrated YouTube film.",
+            "source": "docs/productions/escapade-powered-flyby.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64 with existing Manim/Cairo runtime and FFmpeg.",
+            "formats": "1920x1080;30fps;332-frame silent diagram and ~60-second English full cut.",
+            "timing": "Active labor unmeasured.",
+            "cost": "No new paid API call; aggregate cost unknown."
+          },
+          "limitations": [
+            "Trajectory and timing are illustrative, not measured ephemeris.",
+            "Owner confirmed visibility of ignition in the first pilot only."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "ESCAPADE",
+            "powered flyby",
+            "engine burn",
+            "orbital atlas",
+            "гравитационный манёвр"
+          ],
+          "granularity": "specific_production_application"
+        },
+        {
+          "id": "manim-community--dry-ultrasound-contact",
+          "tasks": [
+            "video",
+            "diagram"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [
+            "minimal"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "cross-section-animation",
+            "trajectory-animation",
+            "native-aspect-layout"
+          ],
+          "version": "0.22.1",
+          "scope": "Native 16:9 and 9:16 probe contact cross-section: air, gel and dry pad with moving pulse in the same coordinates; integrated in one two-format film.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/dry-ultrasound.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Fixed probe/skin silhouette and three labeled coupling states inspected in reduced exports.",
+              "source": "docs/productions/dry-ultrasound.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Pulse reflects at the air gap and traverses the gel and dry coupling states.",
+              "source": "docs/productions/dry-ultrasound.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "One authored cross-section preserves material boundaries across transitions.",
+              "source": "docs/productions/dry-ultrasound.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Representative encoded frames show no apparent collision of text and layers or aspect clipping.",
+              "source": "docs/productions/dry-ultrasound.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "The full cut reuses the rendered 314-frame diagrams and times narration to the three states.",
+              "source": "docs/productions/dry-ultrasound.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Native 30 fps dual-format render and full decode; reduced samples and standard delivery receipt."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner explicitly accepted the two silent pilots and both narrated v1 cuts.",
+            "source": "docs/productions/dry-ultrasound.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64 with existing Manim/Cairo runtime and FFmpeg.",
+            "formats": "1920x1080 and 1080x1920;30fps;314-frame scene per aspect.",
+            "timing": "Active labor unmeasured.",
+            "cost": "No new paid API call; aggregate cost unknown."
+          },
+          "limitations": [
+            "Schematic, not a physical simulation or validation of the device.",
+            "Owner review covered both silent pilots and both finished formats; independent audience testing was not conducted."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "dry ultrasound",
+            "probe skin contact",
+            "air gel dry pad",
+            "сухой ультразвук"
+          ],
+          "granularity": "specific_production_application"
+        },
         {
           "id": "manim-community--pan2-ascii",
           "tasks": [
@@ -5376,6 +5633,18 @@
           "granularity": "executed_case"
         }
       ]
+    },
+    "opusclip": {
+      "tasks": [
+        "video",
+        "editing"
+      ],
+      "inputs": [
+        "video"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "07aece173ed398f16f6b8eeb935d7063dc1623cd06658856f4b0af6d30f846ab",
+      "applications": []
     }
   },
   "application_contract": {
@@ -5384,5 +5653,273 @@
     "unknowns": "Unknown assessment/time/cost/version stays explicit;historical summaries are not new tests.",
     "quality": "Five separate descriptive axes;operator observation,owner acceptance,technical checks,publication and audience results are distinct. No numeric ranking without a comparable test.",
     "closeout": "Update the matching tool application from retained case sources after a production/trial/correction;do not overwrite prepared historical evidence."
+  },
+  "rankings": {
+    "editorial-graphics": {
+      "title": "Editorial graphics and diagrams",
+      "scope": "Short authored charts or explanatory vector inserts for Mac production, with wide and portrait layouts.",
+      "weights": {
+        "quality": 4,
+        "control": 3,
+        "repeatability": 2,
+        "speed": 1,
+        "cost": 1
+      },
+      "entries": [
+        {
+          "tool": "givemotion",
+          "application": "givemotion--spotta-data-chart",
+          "status": "production",
+          "access": "local",
+          "ratings": {
+            "quality": 4,
+            "control": 5,
+            "repeatability": 4,
+            "speed": null,
+            "cost": 5
+          },
+          "reason": "Strong fit for a chart with changing data. One JSON label revision preserved the rest of the image; both 30 fps layouts exported."
+        },
+        {
+          "tool": "manim-community",
+          "application": "manim-community--liquid-robot",
+          "status": "production",
+          "access": "local",
+          "ratings": {
+            "quality": 4,
+            "control": 4,
+            "repeatability": null,
+            "speed": null,
+            "cost": 5
+          },
+          "reason": "Explicit vector motion and separate native layouts. Prefer this route when the diagram needs geometric animation rather than a reusable data template."
+        },
+        {
+          "tool": "openmotion",
+          "application": "openmotion--prayer-ring-notification",
+          "status": "production",
+          "access": "local",
+          "ratings": {
+            "quality": 3,
+            "control": 4,
+            "repeatability": 4,
+            "speed": null,
+            "cost": 5
+          },
+          "reason": "Useful for short motion inserts with a relocatable package. This path did not verify native Studio export."
+        },
+        {
+          "tool": "minicharts",
+          "status": "trial",
+          "access": "confirm",
+          "ratings": {
+            "fit": 4,
+            "readiness": 3,
+            "test_value": 4
+          },
+          "reason": "Potential source for compact data inserts. Exact export path needs proof.",
+          "test": "Reuse the Spotta source data; change one label and compare wide and portrait exports."
+        },
+        {
+          "tool": "premotio",
+          "status": "trial",
+          "access": "paid",
+          "ratings": {
+            "fit": 3,
+            "readiness": 2,
+            "test_value": 3
+          },
+          "reason": "Possible motion treatment source. Verify the plan and rights for finished-video use and the chosen template first.",
+          "test": "Try one licensed 5-second callout and confirm an editable project and usable export."
+        }
+      ]
+    },
+    "local-english-narration": {
+      "title": "Local English narration",
+      "scope": "Standalone English narration on the Mac, with an audition for the actual script and voice direction.",
+      "weights": {
+        "quality": 5,
+        "control": 2,
+        "repeatability": 3,
+        "speed": 1,
+        "cost": 1
+      },
+      "entries": [
+        {
+          "tool": "kokoro",
+          "application": "kokoro--mac-autonomous-export",
+          "status": "production",
+          "access": "local",
+          "ratings": {
+            "quality": 4,
+            "control": 4,
+            "repeatability": 4,
+            "speed": null,
+            "cost": 5
+          },
+          "reason": "Owner accepted the retained English probes and full take. Direct local WAV export. Voice fit requires a fresh listen."
+        },
+        {
+          "tool": "supertonic3",
+          "application": "supertonic3--retained-scope",
+          "status": "reserve",
+          "access": "local",
+          "ratings": {
+            "quality": 2,
+            "control": 3,
+            "repeatability": null,
+            "speed": null,
+            "cost": null
+          },
+          "reason": "Stock voice is an explicit reserve under the studio voice policy. This retained case does not qualify a natural English editorial voice."
+        },
+        {
+          "tool": "chatterbox-turbo",
+          "status": "trial",
+          "access": "confirm",
+          "ratings": {
+            "fit": 4,
+            "readiness": 2,
+            "test_value": 4
+          },
+          "reason": "Candidate for expressive English delivery; local build, input permissions and cost of a usable take need checking.",
+          "test": "Compare the same 20-second text with the Kokoro take for clarity, pronunciation, expressiveness and hands-on time."
+        }
+      ]
+    },
+    "editable-montage": {
+      "title": "Editable montage",
+      "scope": "Short Mac edits from prepared media, with a retained recipe or editable timeline and a bounded later correction.",
+      "weights": {
+        "quality": 3,
+        "control": 5,
+        "repeatability": 4,
+        "speed": 1,
+        "cost": 1
+      },
+      "entries": [
+        {
+          "tool": "filmcraft",
+          "application": "filmcraft--lesson-save-reopen-title-01",
+          "status": "production",
+          "access": "local",
+          "ratings": {
+            "quality": 4,
+            "control": 5,
+            "repeatability": 4,
+            "speed": null,
+            "cost": 5
+          },
+          "reason": "Saved, reopened and corrected a title on the same lesson timeline before native export."
+        },
+        {
+          "tool": "ffmpeg",
+          "application": "ffmpeg--real-code-course-lesson03",
+          "status": "production",
+          "access": "local",
+          "ratings": {
+            "quality": 4,
+            "control": 3,
+            "repeatability": null,
+            "speed": null,
+            "cost": 5
+          },
+          "reason": "Strong fallback for scripted finishing and a precise repeatable assembly. Retain the edit recipe and source media."
+        },
+        {
+          "tool": "auto-editor",
+          "status": "trial",
+          "access": "confirm",
+          "ratings": {
+            "fit": 3,
+            "readiness": 3,
+            "test_value": 4
+          },
+          "reason": "Could reduce initial assembly effort on speech-led material. It has no confirmed fit for fine visual editing here.",
+          "test": "Try one owned spoken clip with intentional pauses; compare kept phrases and active correction time with a manual edit."
+        }
+      ]
+    },
+    "portrait-adaptation": {
+      "title": "Manual portrait adaptation",
+      "scope": "Produce intentional 9:16 framing from prepared footage. Native portrait staging or per-shot manual crop rather than automatic clip selection.",
+      "weights": {
+        "quality": 5,
+        "control": 4,
+        "repeatability": 2,
+        "speed": 1,
+        "cost": 1
+      },
+      "entries": [
+        {
+          "tool": "ffmpeg",
+          "application": "ffmpeg--papertrails-browser-walk",
+          "status": "production",
+          "access": "local",
+          "ratings": {
+            "quality": 4,
+            "control": 5,
+            "repeatability": null,
+            "speed": null,
+            "cost": 5
+          },
+          "reason": "Per-shot manual keyframes and native 1080x1920 export. No automatic speaker tracking claim."
+        },
+        {
+          "tool": "filmcraft",
+          "application": "filmcraft--portrait-subjective-time-20261121",
+          "status": "production",
+          "access": "local",
+          "ratings": {
+            "quality": 3,
+            "control": 4,
+            "repeatability": 3,
+            "speed": null,
+            "cost": 5
+          },
+          "reason": "Native portrait edit and export from prepared motion. Keep the original media paths; portability unverified."
+        },
+        {
+          "tool": "inshot-android",
+          "application": "inshot-android--video",
+          "status": "production",
+          "access": "confirm",
+          "ratings": {
+            "quality": 3,
+            "control": 4,
+            "repeatability": null,
+            "speed": null,
+            "cost": null
+          },
+          "reason": "Hands-on tablet alternative. Requires the owner-unlocked device; the recorded results and effort vary by case."
+        },
+        {
+          "tool": "edits-meta",
+          "status": "trial",
+          "access": "confirm",
+          "ratings": {
+            "fit": 3,
+            "readiness": 2,
+            "test_value": 3
+          },
+          "reason": "Mobile handoff candidate if the owner needs captions and touch editing. Confirm device/account requirements.",
+          "test": "Edit the same 15-second fixture and check manual framing, captions, export and how many handoffs it takes."
+        },
+        {
+          "tool": "klap",
+          "status": "excluded",
+          "access": "confirm",
+          "ratings": {},
+          "reason": "Owner declined the portrait results and closed the adoption test."
+        },
+        {
+          "tool": "opusclip",
+          "status": "excluded",
+          "access": "confirm",
+          "ratings": {},
+          "reason": "Pro Trial evidence retained. Owner declined adoption after the matched-footage comparison."
+        }
+      ]
+    }
   }
 }

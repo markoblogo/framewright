@@ -23,7 +23,7 @@ The next release objective is not yet selected;the criteria below retain this bo
 
 **M01 publication evidence, 21 November 2026:** the owner supplied [the YouTube URL](https://youtu.be/XYRVeefj6aM). The owner reported M01 publication. Independent public playback and playlist membership are unverified. The next release scope, version and readiness are still to be decided.
 
-**Latest owner release decision, 21 November 2026:** complete and obtain owner approval for [M02 Waterline](productions/run-signal-m02.md) before the next Framewright release. The owner accepted the v2 picture in the home review. The outdoor audio test alongside Nike Run Club remains pending. Earlier release sequencing below is historical.
+**Latest owner release decision, 21 November 2026:** complete and obtain owner approval for [M02 Waterline](productions/run-signal-m02.md) before the next Framewright release. The owner accepted the v2 picture in the home review. On 22 November the owner reported a successful outdoor VLC listening test with no requested audio changes. The parallel GPS logger did not retain a valid route; tracker selection is separate from M02 media approval. Earlier release sequencing below is historical.
 
 **Earlier timing rule, superseded on 21 November 2026.** The release was planned at the first actual occurrence of either:
 
