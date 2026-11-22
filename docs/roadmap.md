@@ -1,7 +1,7 @@
 # Framewright roadmap
 
-Updated 19 November 2026. Shipped baseline: **0.10.0**, an experimental prerelease;
-[publication status](release-notes-0.10.0.md#publication-status) records the verified outcome.
+Updated 22 November 2026. Shipped baseline: **0.11.0**, an experimental [GitHub prerelease](https://github.com/markoblogo/framewright/releases/tag/v0.11.0).
+See the [0.11.0 scope](release-notes-0.11.0.md).
 [Current work and protected waits](next-cycle.md) govern execution; the
 [archived operational history](history/next-cycle-through-2026-11-14.md) preserves superseded status text.
 This is the priority and milestone map. A roadmap entry does not start production,
@@ -9,6 +9,8 @@ a tool trial, spending, publication or a release. Keep the selected direction st
 changes of priority require an owner decision or an explicitly delegated choice.
 
 ## Next release goal
+
+The post-0.11.0 update records M03 season standards and the bilingual training handoff. A new release objective is open.
 
 **0.10.0 goal,adopted14November and shipped17November2026: less repeated explanation when continuing or correcting a film.**
 The next release objective is not yet selected;the criteria below retain this bounded increment and its limits.
