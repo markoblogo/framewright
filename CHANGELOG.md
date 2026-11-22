@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## 0.11.0 — 2026-11-22 — experimental
+
+- Rank tools by production task, with tested applications, fallbacks, and a separate queue for untested candidates. Surface access and cost conditions before suggesting a test.
+- Share review and publication packages through a standard branded page with aspect-specific previews, downloads, copyable platform fields, and reusable player checks.
+- Record repeatable production with RUN//SIGNAL Waterline, the accepted outdoor mix, and recent editorial case evidence. Keep field playback, GPS data quality and publication evidence separate.
+- Retain FilmCraft’s bounded editable montage trial and the owner’s decision to exclude Klap and OpusClip from production. See the [release notes](docs/release-notes-0.11.0.md).
+
 ## 0.10.0 — 2026-11-17 — experimental
 
 - Separate explicitly replaced creative-review waits and checks from the current

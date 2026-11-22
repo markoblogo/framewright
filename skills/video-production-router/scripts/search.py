@@ -12,6 +12,7 @@ import runpy
 BASE=Path(__file__).resolve().parent
 REFS=BASE.parent/'references'
 LEVEL={'unknown':0,'failed':0,'documented':1,'tested':2}
+RANKING=runpy.run_path(str(BASE/'ranking.py'))
 
 
 QUALITY_AXES=('readability','motion','drawing_stability','artifacts','controllability')
@@ -63,6 +64,7 @@ def inventory(registry,ledger,facets):
     if facets.get('schema_version')!=1:
         raise ValueError('Unsupported arsenal facets')
     validate_applications(facets)
+    RANKING['validate_rankings'](facets)
     rows={}
     aliases=facets['aliases']
     for tool in ledger['tools']:
@@ -277,9 +279,42 @@ def main():
     parser.add_argument('--list-filters',action='store_true');parser.add_argument('--format',choices=['json','markdown'],default='json')
     parser.add_argument('--limit',type=int,default=10)
     parser.add_argument('--width',type=int,default=1920);parser.add_argument('--height',type=int,default=1080);parser.add_argument('--fps',type=int,default=30)
+    ranking_mode=parser.add_mutually_exclusive_group()
+    ranking_mode.add_argument('--list-rankings',action='store_true',help='List scoped decision profiles')
+    ranking_mode.add_argument('--rank-profile',choices=['all',*sorted(facets.get('rankings',{}))],help='Compare tools for a named production use or show every profile')
+    parser.add_argument('--unavailable',action='append',default=[],metavar='TOOL',help='Exclude a tool for this project only')
+    parser.add_argument('--confirmed',action='append',default=[],metavar='TOOL',help='Confirm current access and setup for a tool')
     args=parser.parse_args()
     try:
         rows=inventory(registry,ledger,facets)
+        if args.list_rankings or args.rank_profile:
+            if (args.list_filters or args.task!='all' or args.input or args.details or args.technique or args.style
+                or args.language or args.evidence!='documented' or args.feature or args.query or args.explain
+                or args.tool or args.voice or args.combinations or args.limit!=10 or (args.width,args.height,args.fps)!=(1920,1080,30)):
+                raise ValueError('Ranking profiles define their own scope; use ordinary discovery for ad hoc filters')
+            if args.list_rankings:
+                listing=[{'id':key,'title':value['title'],'scope':value['scope']} for key,value in facets.get('rankings',{}).items()]
+                print('\n'.join(f"- `{row['id']}` — {row['title']}. {row['scope']}" for row in listing)
+                      if args.format=='markdown' else json.dumps(listing,ensure_ascii=True,indent=2))
+                return
+            unavailable={facets['aliases'].get(tool,tool) for tool in args.unavailable}
+            confirmed={facets['aliases'].get(tool,tool) for tool in args.confirmed}
+            unknown=(unavailable | confirmed)-rows.keys()
+            if unknown:
+                raise ValueError('Unknown tool IDs: '+', '.join(sorted(unknown)))
+            profiles=facets['rankings']
+            selected=profiles if args.rank_profile=='all' else {args.rank_profile:profiles[args.rank_profile]}
+            results=[]
+            for key, profile in selected.items():
+                result=RANKING['ranked_profile'](profile,rows,rights,args.rights,unavailable,confirmed,args.allow_paid,args.include_fallbacks)
+                results.append(dict(profile=key, **result))
+            if args.format=='markdown':
+                print('\n---\n\n'.join(RANKING['markdown'](result) for result in results))
+            else:
+                print(json.dumps(results if args.rank_profile=='all' else results[0],ensure_ascii=True,indent=2))
+            return
+        if args.unavailable or args.confirmed:
+            raise ValueError('--unavailable and --confirmed require --rank-profile')
         if args.list_filters:
             print(json.dumps({'tasks':tasks,'styles':sorted({s for t in registry['tools'] for s in t['styles']} | {s for row in facets['tools'].values() for a in row.get('applications',[]) for s in a['styles']}),
                               'techniques':sorted({t for row in facets['tools'].values() for a in row.get('applications',[]) for t in a['techniques']}),

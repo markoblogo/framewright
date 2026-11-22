@@ -109,6 +109,53 @@ ID aliases its staged adapter; new unique records require explicit indexing. The
 standalone package smoke checks this join. No new model evaluation, renderer trial
 or general reliability/rights-clearance qualification is established by this helper.
 
+## Ranked choices by production task
+
+Use the existing catalogue to select a primary route, a fallback and the next
+worthwhile test for a particular job. Start with editorial graphics, local
+English narration, editable montage and manual portrait adaptation.
+
+```sh
+python3 skills/video-production-router/scripts/search.py --list-rankings --format markdown
+python3 skills/video-production-router/scripts/search.py --rank-profile all --format markdown
+python3 skills/video-production-router/scripts/search.py --rank-profile editorial-graphics --rights commercial --format markdown
+python3 skills/video-production-router/scripts/search.py --rank-profile editorial-graphics --unavailable givemotion --confirmed minicharts --format markdown
+python3 skills/video-production-router/scripts/search.py --rank-profile local-english-narration --include-fallbacks --format markdown
+```
+
+Production ratings in the existing `arsenal-facets.json` link to a tested
+application. Use 1 for poor fit, 2 for limited, 3 for workable, 4 for strong,
+and 5 for a particularly good fit with direct evidence. Rate output quality,
+control over edits, repeatability (save/reopen/export), end-to-end speed and
+incremental budget fit. The quality score is a studio assessment; the owner's
+evaluation stays in the application. For cost, 5 can mean the retained local
+route needed no new paid service; local compute and labour stay unpriced.
+Record render time separately from active work, waiting and time to a usable
+result. An unknown score stays blank. Each profile weights its own priorities.
+The weighted score uses only axes rated for all options in that pool. Ties
+keep the recorded order. Scores from different profiles or from the reserve
+and production pools are not comparable.
+
+Referenced but untested routes use a separate test ranking. Rate relevance to
+the gap, readiness of the access/setup and value of the proposed comparison.
+Each entry names the smallest useful probe. Its priority is not a quality
+rating. Routes requiring confirmed access remain listed with the reason they
+are blocked. Use `--confirmed TOOL` once access, equipment and setup are
+available for this run. Add `--allow-paid` for an authorised comparison of a
+paid route. Use `--unavailable TOOL` for a temporary project constraint and
+`--include-fallbacks` to consider explicitly reserved tools. Rights filtering
+uses the retained classifications. The output does not confirm current
+licences, subscriptions or workflow compatibility outside the named profile.
+
+After each trial, production or owner correction, update the matching
+application and then review affected rankings. Retain the earlier evidence.
+Promote a queued route only after scoped execution and assessment, review a
+changed version or access condition before relying on the previous result, and
+exclude routes rejected by the owner. Add profiles as production needs them.
+The rankings propose choices; they do not select a planner provider or run a
+test.
+
+
 ## Maintain the discovery index
 
 Adding or removing a review-ledger/profile ID also requires an explicit entry in

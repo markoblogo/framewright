@@ -1,0 +1,11 @@
+# Ultrasound Without Gel
+
+21 November 2026. An English science explainer: 53.7 seconds for YouTube and 32.4 seconds for TikTok. The owner explicitly accepted both 10.5-second Manim Community 0.22.1 pilots after watching without sound. On 22 November 2026 the owner accepted both full v1 cuts. The local publication page includes the identical accepted masters, two original covers in the film palette, English YouTube subtitles and separate English publication copy.
+
+The [MIT News report](https://news.mit.edu/2026/ultrasound-imaging-without-gel-1119) and [study DOI](https://doi.org/10.1126/science.aef9553) frame two separate results: about nine days of continuous imaging on a tissue-mimicking lab model and a thirty-minute stationary bicycle test with one volunteer wearing the patch on his neck. The film identifies the device as a research prototype. [MIT’s original video](https://www.youtube.com/watch?v=wwYwD-IsIPQ) is a reference. Editing rights for that video were unconfirmed. The finished film uses labeled Pexels footage for conventional ultrasound and cycling, with schematic reconstructions for the experiments.
+
+The Manim shot holds the same view of probe and skin as air, gel and a dry pad are shown in sequence. The three coupling states use visible boundaries and a pulse with different behavior at the air gap. Native framing kept the labels and diagram readable at phone scale. The small pilot verified visual explanation. The film adds time-aligned English Kokoro narration, an original light score, and animated illustrations of the polymer and separate trials. The film has no recorded audience testing.
+
+The pilot, full recipe, source ledger and encoded review exports are retained in the private studio under `productions/dry-ultrasound-pilot-2026-11-21/`. Full files (1920 × 1080 and 1080 × 1920 at 30 fps) were decoded and the standard delivery page checked, using its verified player baseline. No new paid API or subscription call. Active labor and inclusive cost were not measured.
+
+On 22 November 2026 the owner supplied the [YouTube publication URL](https://youtu.be/B7WQ0FScopw) and reported no TikTok publication. The accepted portrait master is retained locally. Independent visibility, uploaded-file identity and metrics remain unverified.

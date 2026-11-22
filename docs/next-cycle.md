@@ -1,9 +1,11 @@
 # Current work and protected waits
 
-Updated 21 November 2026. This is the current operational entry point, not a session log.
+Updated 22 November 2026. This is the current operational entry point, not a session log.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md) · [Case counts and definitions](public-evidence.json).
 
 ## Current state
+
+**22 November:** [M02 Waterline](productions/run-signal-m02.md) passed outdoor listening; the owner supplied its YouTube URL. [French Vineyard](productions/french-vineyard-finance.md), [Ultrasound Without Gel](productions/dry-ultrasound.md), [ESCAPADE](productions/escapade-powered-flyby.md) and [Reaction Telemetry](productions/reaction-telemetry.md) have accepted masters and owner-reported publication links. The [tool ranking profiles](../skills/video-production-router/references/arsenal-search.md) now inform editorial graphics, narration, editable montage and portrait adaptation. See [0.11.0 scope](release-notes-0.11.0.md).
 
 **21 November:** [Half a Life by 18?](productions/half-a-life-by-18.md) and [The Elevator That Sent a Word Through a Wall](productions/gravity-through-wall.md) have accepted v2 cuts and owner-reported YouTube/TikTok links. FilmCraft portrait export and the Canvas UI callout comparison retain separate technical results. [Studio Notes 05](editorial/2026-11-21-framewright-studio-notes-05.md) is an owner-reported published special edition and leaves the weekly baseline in place. The [new tool intake](research/tool-intake-2026-11-21.md) proposes tests for later selection.
 
@@ -45,7 +47,7 @@ Third Web3 film:[AllWeb3 / The Proof Behind the Post](productions/allweb3-proof-
 | Work | State and next required evidence / decision |
 | --- | --- |
 | [Don Quixote E01](productions/don-quixote-neverland.md) | **Indefinitely frozen by the owner19November;no return date.** Accepted cast,anchors,full role voice and new fanged mill face remain protected. The51s block,8s Peter I2V and3.2s local rig were rejected;nativeGIF/new provider requests refused. [Exact outcomes and limits](experiments/peter-acting-comparison-2026-11-16.md). Keep sources and failed evidence;no render,generation or cleanup until explicit resumption. |
-| [RUN//SIGNAL M01](productions/run-signal-m01.md) | **[YouTube URL supplied](https://youtu.be/XYRVeefj6aM) on 21 November.** v08 keeps the accepted picture and 20-minute workout. Playlist membership is unverified. [M02 Waterline](productions/run-signal-m02.md) v2 picture is owner-approved, with the private outdoor MP3 test pending. Series promo after M03; then one dual-format promo per episode. |
+| [RUN//SIGNAL M01](productions/run-signal-m01.md) | **[YouTube URL supplied](https://youtu.be/XYRVeefj6aM) on 21 November.** v08 keeps the accepted picture and 20-minute workout. Playlist membership is unverified. [M02 Waterline](productions/run-signal-m02.md) v2 picture was accepted and the outdoor VLC listening test passed by owner report on 22 November. Owner supplied [M02 on YouTube](https://youtu.be/3b8ESlIpQkE) on 22 November. Playlist membership is unverified. GPS logger reliability is a separate follow-up. Series promo after M03; then one dual-format promo per episode. |
 | [SSI](productions/ssi-2026-11-06.md) | Chart-animation corrections were planned for Saturday 14 November before the existing 15 November cycle (not before 09:00 Kyiv). Completion is not recorded here. SSI owns its worker/schedule/send; this documentation work changes none of them and calendar passage does not authorise execution. |
 | [Transit Speed](productions/transit-speed-private-pitch.md) | Hungarian v1 accepted; Ukrainian v5 and editable sources retained for partner changes. English public case remains paused. Private horizontal presentation; no TikTok or agent client send. |
 | Deferred work | [KORG / LocalSend](experiments/android-companions-2026-11-13.md) need a separately selected retry; no successful KORG audio export or LocalSend transfer is recorded. Local project UI stays deferred. Gallery Lava's ShareAlike decision, book manuscript approval and future AzurMenton transfer remain separate owner decisions in [roadmap](roadmap.md). |
@@ -54,7 +56,7 @@ Transfer to another operator (M6 / REL-D) remains partial and **parallel**, purs
 
 ## Next release direction
 
-The bounded0.10.0goal,**less repeated explanation when continuing or correcting a film**,is shipped.Functional scope/version of the next release remain to be agreed. **Owner timing decision 21 November:** PR #87 merged without release. The next release follows completion and acceptance of [M02 Waterline](productions/run-signal-m02.md). The owner accepted the home picture for M02 v2. The outdoor MP3 test remains pending. See [the updated gate](roadmap.md#owner-release-timing-19november2026).
+The bounded0.10.0goal,**less repeated explanation when continuing or correcting a film**,is shipped.Functional scope/version of the next release remain to be agreed. **Owner timing decision 21 November:** PR #87 merged without release. The next release follows completion and acceptance of [M02 Waterline](productions/run-signal-m02.md). The owner accepted the picture and outdoor mix, supplied the episode’s YouTube URL and authorized the consolidation PR and release on 22 November. The 0.11.0 source scope is recorded in the release notes. GitHub is the source of truth for build availability. See [the updated gate](roadmap.md#owner-release-timing-19november2026).
 [Scope and observable criteria](roadmap.md#next-release-goal) retain the evidence and limitations;they do not authorise another release.
 [17November release evidence checkpoint](roadmap.md#release-evidence-checkpoint-17november2026) records completed Praxis continuation. [0.10.0 publication](release-notes-0.10.0.md#publication-status),source CI/merge,final build and anonymous download checks are complete. No further release or production is started by this status update.
 The [Pantheon worked correction](productions/pantheon-chatgpt-orb.md#worked-example-v2-to-v3) is existing same-case evidence, not a new trial or proof of independent operation.

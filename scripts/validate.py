@@ -170,7 +170,9 @@ def validate(root, local_root=None):
         discovered = {facets['aliases'].get(t['id'], t['id']) for t in ledger['tools']} | {t['id'] for t in registry['tools']}
         require(discovered == facets['tools'].keys(), 'Arsenal facets differ from registry/review ledger')
         import runpy
-        runpy.run_path(str(root / 'skills/video-production-router/scripts/search.py'))['validate_applications'](facets, source_root=root)
+        search = runpy.run_path(str(root / 'skills/video-production-router/scripts/search.py'))
+        search['validate_applications'](facets, source_root=root)
+        search['RANKING']['validate_rankings'](facets)
     public_evidence = root / 'docs' / 'public-evidence.json'
     if public_evidence.is_file():
         evidence = json.loads(public_evidence.read_text())

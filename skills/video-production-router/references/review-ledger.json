@@ -3737,6 +3737,21 @@
         "docs/experiments/klap-mixed-source-tests-2026-11-20.md",
         "docs/research/klap-2026-11-16.md"
       ]
+    },
+    {
+      "id": "opusclip",
+      "name": "OpusClip",
+      "url": "https://www.opus.pro/",
+      "reviewed": "2026-11-20",
+      "review_basis": "Saved Pro Trial exports, matched-footage comparisons with Klap Pro and XML inspection.",
+      "upstream_revision": null,
+      "disposition": "reference_only",
+      "scope_and_findings": "Portrait exports, prompt-based selection, French dubbing and XML archive observed. Editing-app XML import and permanent Free access unverified. Owner declined adoption.",
+      "licence_note": "Hosted subscription or trial conditions and source/output rights apply. No current plan or publication clearance inferred.",
+      "next_trial_or_retest_condition": "Case closed; no retest queued.",
+      "evidence": [
+        "docs/experiments/opusclip-pro-trial-2026-11-20.md"
+      ]
     }
   ]
 }
