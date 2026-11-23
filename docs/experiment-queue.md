@@ -1,5 +1,13 @@
 # Proposed experiment queue
 
+## Intake 23 November 2026 — proposed
+
+- **INWORLD-ISOLATE-01:** matched-loudness offline test on owned noisy speech against the current cleanup baseline. Listen for intelligibility, voice character and artifacts.
+- **TRIPO-ORBIT-01:** inspect the same textured animated glTF and one static asset as in the existing viewer. Compare material fidelity, animation playback and time to inspect.
+
+[Source assessment and pass criteria](research/tool-intake-2026-11-23.md).
+
+
 ## Intake 21 November 2026 — proposed, not selected
 
 [Five-family assessment and bounded checks](research/tool-intake-2026-11-21.md). **IDEOGRAM-EDIT-01** is the proposed first new test: one precise masked edit on an owned still against local compositing. **TOPAZ-STILL-01** is a reserve for a low-resolution source plate against local scaling. **HYPER3D-01** keeps one textured-prop GLB trial and narrows its PolyGen variant to mesh simplification and texture transfer. **SUNO-MCP-01** remains one conditional account and track-handoff test. OpenMotion extends its existing portable, editable motion trial. Print on Demand Studio is a mockup reference. No account connection, cloud call, spend or production reorder.

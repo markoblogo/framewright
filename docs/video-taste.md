@@ -19,6 +19,7 @@ copying settings into a competing policy. New inferred generalisations remain pr
 | VT-READ | Text, diagrams and animated drawing over picture | Lines/titles that disappear on bright scenery or a small screen |
 | VT-FRAME | Both requested aspect variants / centre crop | Overlays or reframing hide the subject or meaningful action |
 | VT-VOICE | New narrated films | Mechanical reserve speech or a short voice probe treated as long-take approval |
+| VT-CAPTIONS | YouTube and TikTok versions | Burned-in captions competing with a platform subtitle track |
 | VT-COVER | Publication packaging | Cover treatment detached from the accepted film |
 | VT-MIX | Voice-led exploratory tours | Background music competes with speech or needs needless fragment-by-fragment gaps |
 
@@ -68,6 +69,11 @@ backing or placement where needed; native-resolution inspection alone is insuffi
 previews, including the brightest/busiest relevant backgrounds. Name the size checked.
 **Limit:** the Pantheon's blue 8 px / white 12 px treatment and 335/640 px previews
 are that case's solution, not mandatory colours, widths or universal thresholds.
+
+For a single UI action, show enough context to locate the control, then
+frame the actual confirmation at a readable scale immediately after the click.
+In the [Transit Speed comparison](experiments/transit-speed-one-step-2026-11-23.md),
+the owner found this sequence clearer than the full view with a pointer.
 
 ## VT-FRAME — keep the subject and action visible in each format
 
@@ -132,6 +138,13 @@ intelligibility fails. A percentage alone does not prove the audible balance.
 **Limit:** source loudness and editor controls differ. This does not require music
 throughout RUN//SIGNAL, change a music-led film, prohibit useful ducking or replace
 actual listening with gain arithmetic.
+
+## VT-CAPTIONS — platform subtitles
+
+Keep the YouTube picture free of burned-in dialogue and narration subtitles.
+Supply the timed subtitle track separately when preparing a publication package.
+Burn subtitles into the TikTok picture and keep them clear of the platform controls.
+Story text, interface labels and designed titles are part of the picture.
 
 ## Keep case-only details in their cases
 

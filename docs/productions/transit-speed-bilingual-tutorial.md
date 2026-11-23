@@ -26,3 +26,14 @@ The two 1080p exports have 8,603 matching video frames by stream hash and
 different audio streams. The Ukrainian SRT has 61 cues and the Hungarian SRT
 has 60. Separate native-speaker language review and public publication are
 unverified. The demo recordings, scripts, masters and subtitles remain private.
+
+## English narration for owner publication — 23 November 2026
+
+The owner selected a separate public-facing English package using the accepted
+v4 demo picture. It retains the scene timing and original owner-selected music.
+The English narration and SRT follow the fictional data already visible in
+the approved picture. The YouTube copy links to the training demo and provides
+chapter starts from the retained edit map. The Ukrainian and Hungarian
+deliveries remain independent. On 23 November the owner supplied the [English YouTube publication](https://youtu.be/tyhMWxCJrEg).
+YouTube oEmbed confirmed the title. Uploaded-file identity and audience
+metrics are unverified.

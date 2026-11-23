@@ -1,5 +1,13 @@
 # Tool review and test inventory
 
+## Tool intake — 23 November 2026
+
+[Four-link assessment](research/tool-intake-2026-11-23.md). Inworld Voice Isolator
+is the first proposed audio-cleanup probe. Tripo Orbit is a secondary asset
+inspection candidate. AO is a visual reference and Sentinel7/h3 is an
+unverified reference pending provenance and terms. No tool qualified by intake.
+
+
 ## FilmCraft bounded trial —20November2026
 
 [Executed native save/reopen/title correction/export](experiments/filmcraft-edit-reopen-2026-11-20.md):18s1080p fixture,three clips,two signal stems,one native title andthree captions. Technical pass;owneraccepted20November2026. Course unchanged;not a generalcourse/UI/MCPqualification.
