@@ -1,6 +1,6 @@
 # Framewright roadmap
 
-Updated 22 November 2026. Shipped baseline: **0.11.0**, an experimental [GitHub prerelease](https://github.com/markoblogo/framewright/releases/tag/v0.11.0).
+Updated 23 November 2026. Shipped baseline: **0.11.0**, an experimental [GitHub prerelease](https://github.com/markoblogo/framewright/releases/tag/v0.11.0).
 See the [0.11.0 scope](release-notes-0.11.0.md).
 [Current work and protected waits](next-cycle.md) govern execution; the
 [archived operational history](history/next-cycle-through-2026-11-14.md) preserves superseded status text.
@@ -8,9 +8,29 @@ This is the priority and milestone map. A roadmap entry does not start productio
 a tool trial, spending, publication or a release. Keep the selected direction stable;
 changes of priority require an owner decision or an explicitly delegated choice.
 
+## Current production order
+
+The owner selected two or three YouTube-first editorial experiments on
+23 November under M3/M4 and R05. Each tests one concrete question in a short
+piece that could support a publication. TikTok adaptation follows owner
+selection. Consolidate the accumulated work after the experiments in one PR
+without a release. For the revised RUN//SIGNAL test order and the next Radar
+slate, see [current work](next-cycle.md).
+
 ## Next release goal
 
-The post-0.11.0 update records M03 season standards and the bilingual training handoff. A new release objective is open.
+The post-0.11.0 work adds publication-copy standards, retained editorial and
+tutorial comparisons, and a release-independent tool intake. A new version and
+release objective remain open. One candidate is a repeatable editorial and
+training handoff: use the established delivery page and demonstrate from a
+fresh session that a second operator can reopen the selected project and obtain
+its master, subtitles and copy. A single controlled demo can separately check
+whether a viewer can repeat the action after one viewing.
+
+Next useful extensions are offline speech cleanup and fast 3D asset inspection
+([bounded probes](research/tool-intake-2026-11-23.md)). Use the next Radar brief
+to exercise ranking and one concrete visual risk. Keep [automated social publishing](research/social-publishing-audit-2026-11-22.md)
+in research. M03's field test and publication sequence remain episode milestones.
 
 **0.10.0 goal,adopted14November and shipped17November2026: less repeated explanation when continuing or correcting a film.**
 The next release objective is not yet selected;the criteria below retain this bounded increment and its limits.
@@ -21,7 +41,7 @@ The next release objective is not yet selected;the criteria below retain this bo
 
 **Owner update, 21 November 2026:** M01's outdoor test took place. The owner requested an audio-only revision, a private training-thread report and consolidation without a release. At that checkpoint the release was expected after the M01 YouTube publication. The latest decision below updates that sequence.
 
-**Owner season plan, 21 November 2026:** launch M01 with the episode-ordered YouTube playlist. Prepare M02 Waterline privately and field-test it before publication. Publish the first dual-format RUN//SIGNAL promo after M03, then create a YouTube and TikTok promo for each subsequent episode. [Season details](productions/run-signal-m01.md#season-and-publication-plan--owner-decision-21-november-2026).
+**Owner season plan, 21 November 2026:** launch M01 with the episode-ordered YouTube playlist. Prepare M02 Waterline privately and field-test it before publication. Prepare the first dual-format RUN//SIGNAL promo in parallel and publish it alongside M03, once the M03 URL is available. Then create a YouTube and TikTok promo for each subsequent episode. [Season details](productions/run-signal-m01.md#season-and-publication-plan--owner-decision-21-november-2026).
 
 **M01 publication evidence, 21 November 2026:** the owner supplied [the YouTube URL](https://youtu.be/XYRVeefj6aM). The owner reported M01 publication. Independent public playback and playlist membership are unverified. The next release scope, version and readiness are still to be decided.
 
@@ -290,6 +310,15 @@ At equal urgency, prefer resolving an active delivery blocker, then a reusable
 capability gap, then stronger evidence for an existing method. Novelty alone has no
 priority. Scope a test only when its expected learning justifies setup, resource and
 review cost; otherwise keep the candidate in reserve.
+
+
+### Deferred publishing integration and retrospective audit
+
+Owner decision, 22 November 2026. Keep the [YouTube and TikTok research](research/social-publishing-audit-2026-11-22.md)
+for later. It records the native Studio baseline, Metricool and Postiz,
+YouTube Data API, TikTok publishing limits, and a read-only audit pilot.
+Recheck current access and terms when this work is selected. New publication
+packages continue to use the [publication copy standard](publication-copy.md).
 
 ## Intake rule for every new idea, tool or production order
 

@@ -1,6 +1,6 @@
 {
   "schema": "framewright-public-evidence-v1",
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "scope": "Conservative documented cases, not an asserted lifetime total. Original records remain the source of truth.",
   "definitions": {
     "films": "One completed authored story/promo/tutorial/ambient master per case. Aspect, language and revision variants count once. A finished export need not be publicly published or creatively accepted.",
@@ -22,8 +22,10 @@
     ]
   },
   "films": [
+    {"id":"the-backup-route","source":"docs/productions/the-backup-route.md","basis":"registered_finished_export","index_note":"One owner-approved 34-second YouTube explainer linking the Baltimore cargo diversion to the retained OpenMotion routing animation. Owner supplied https://youtu.be/lZm5E5-xhLQ on 23 November 2026."},
+    {"id":"tonfeld-demo","source":"docs/productions/tonfeld-demo.md","basis":"registered_finished_export","index_note":"One TONFELD product film in a 91.4-second owner-approved landscape cut and a 34.4-second native portrait edit. Real app recording with separately produced sound. Owner supplied https://youtu.be/IZKKa9ThG7g and https://vt.tiktok.com/ZSsRspp21/ on 23 November 2026; YouTube title and TikTok redirect checked."},
     {"id":"run-signal-m03-window-three","source":"docs/productions/run-signal-m03.md","basis":"registered_finished_export","index_note":"One 27:08 film accepted in home review. Outdoor validation and publication are pending."},
-    {"id":"transit-speed-bilingual-tutorial","source":"docs/productions/transit-speed-bilingual-tutorial.md","basis":"registered_finished_export","index_note":"One accepted 5:58 demo tutorial in two language versions with identical picture. Private handoff confirmed."},
+    {"id":"transit-speed-bilingual-tutorial","source":"docs/productions/transit-speed-bilingual-tutorial.md","basis":"registered_finished_export","index_note":"One accepted 5:58 demo tutorial in two language versions with identical picture. Private handoff confirmed. English version on YouTube https://youtu.be/tyhMWxCJrEg; owner-provided link, title confirmed by YouTube oEmbed on 23 November 2026."},
     {"id":"reaction-telemetry","source":"docs/productions/reaction-telemetry.md","basis":"registered_finished_export","index_note":"One owner-accepted 61-second English YouTube master. The finished edit adds the question that motivates the chart. Owner supplied https://youtu.be/N6BoSZ4Fykk on 22 November 2026 (owner_provided_url). Independent visibility, uploaded-file identity and metrics unverified."},
     {"id":"escapade-powered-flyby","source":"docs/productions/escapade-powered-flyby.md","basis":"registered_finished_export","index_note":"One owner-accepted 60-second English YouTube master. Silent Manim pilot led to a synchronized burn highlight and a fitted caption. Owner supplied https://youtu.be/xuO__yvDhHo on 22 November 2026 (owner_provided_url). Independent visibility, uploaded-file identity and metrics unverified."},
     {"id":"dry-ultrasound","source":"docs/productions/dry-ultrasound.md","basis":"registered_finished_export","index_note":"One source-led science explainer in two owner-accepted English 1080p cuts. Silent Manim pilot accepted in both aspects. Owner supplied https://youtu.be/B7WQ0FScopw on 22 November 2026 (owner_provided_url) and reported no TikTok upload. Independent visibility, uploaded-file identity and metrics unverified."},
@@ -389,11 +391,7 @@
       "source": "docs/productions/premation-sync-test.md",
       "basis": "completed_case_record"
     },
-    {
-      "id": "transit-speed-private-pitch",
-      "source": "docs/productions/transit-speed-private-pitch.md",
-      "basis": "completed_case_record"
-    },
+    {"id":"transit-speed-private-pitch","source":"docs/productions/transit-speed-private-pitch.md","basis":"completed_case_record","index_note":"English version on YouTube https://youtu.be/xC-3gGs4bTs; owner-provided link, title confirmed by YouTube oEmbed on 23 November 2026."},
     {
       "id": "copilot-addressed",
       "source": "docs/productions/radar-pair-centre-crop-2026-11-10.md",
@@ -602,6 +600,7 @@
       "source": "docs/productions/buymore-problems-delivered.md",
       "index_note": "One 58s fictional marketplace satire, two aspects. Owner accepted YouTube v1 and smartphone/no-cursor TikTok v2; supplied YouTube https://youtu.be/AInINeF12I4 and TikTok https://vt.tiktok.com/ZSpELWp8T/ publication URLs on 20 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unchecked; revision adds no case."
     },
+    {"id":"buymore-cancelled","source":"docs/experiments/buymore-cancelled-2026-11-23.md","basis":"registered_finished_export","index_note":"One 22-second BuyMore sequel in two aspects. Owner supplied https://youtu.be/XBpboKIoozo and https://vt.tiktok.com/ZSsRm3GJP/ on 23 November 2026 (owner_provided_url). Visibility, upload identity and metrics unverified."},
     {
       "id": "klap-workflow-review",
       "source": "docs/research/klap-2026-11-16.md",
@@ -624,6 +623,9 @@
     {"id":"ao-one-prompt-six-outputs","source":"docs/productions/ao-one-prompt-six-outputs.md","basis":"registered_finished_export","index_note":"One 40s comparison of six owner-supplied clips in two owner-accepted v2 cuts. Owner supplied https://youtu.be/VPqHDX-Jtn8 and https://vt.tiktok.com/ZSs1v31f6/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."}
   ],
   "trials": [
+    {"id":"transit-speed-one-step","source":"docs/experiments/transit-speed-one-step-2026-11-23.md","basis":"executed_bounded_workflow_trial","index_note":"One internal comparison of two five-second framings of the same demo step. Owner found the close-up cut clearer; task reproduction unmeasured."},
+    {"id":"auto-editor-transit-pacing","source":"docs/experiments/auto-editor-transit-pacing-2026-11-22.md","basis":"executed_bounded_workflow_trial","index_note":"One private dry-voice and mixed-audio pacing trial with explicit reading hold, manual comparison and a Kdenlive MLT render."},
+    {"id":"minicharts-spotta-compare","source":"docs/experiments/minicharts-spotta-compare-2026-11-22.md","basis":"executed_bounded_workflow_trial","index_note":"One internal Spotta chart comparison: native Minicharts SVG, separate Chromium and FFmpeg MP4 adapter, retained GiveMotion control and bounded label edit."},
     {
       "id": "filmcraft-edit-reopen",
       "source": "docs/experiments/filmcraft-edit-reopen-2026-11-20.md",
@@ -994,6 +996,7 @@
     {"id":"openmotion-prayer-rings-routing","source":"docs/experiments/prayer-rings-tool-trials-2026-11-21.md","basis":"executed_bounded_workflow_trial","index_note":"Relocated OpenMotion package with separately inventoried JSON controls, two 96-frame browser renders and repeat-seek frame hashes."},
     {"id":"threert-prayer-rings-scene","source":"docs/experiments/prayer-rings-tool-trials-2026-11-21.md","basis":"executed_bounded_workflow_trial","index_note":"ThreeRT scene API 0.1.1 recording-engine test with an original ring and a transform delta. No native render."},
     {"id":"openmotion-ao-title-relocation","source":"docs/experiments/openmotion-ao-title-2026-11-21.md","basis":"executed_bounded_workflow_trial","index_note":"Actual OpenMotion package lock/check/pack, a copy edit in a relocated package and independent Chromium/FFmpeg dual-aspect renders. Native Studio export not tested."},
+    {"id":"openmotion-native-backup-route","source":"docs/experiments/openmotion-native-export-2026-11-22.md","basis":"executed_bounded_workflow_trial","index_note":"Original silent 10-second OpenMotion native MP4 with a saved revision, successful terminal verification, sampled-frame review and owner confirmation that the silent sequence was clear."},
     {"id":"ao-same-prompt-comparison","source":"docs/experiments/ao-same-prompt-comparison-2026-11-21.md","basis":"executed_bounded_workflow_trial","index_note":"One owner-supplied six-output run; local decode, same-time frame comparisons and notes on type legibility, visual treatment and identity continuity. No verified model settings or ranking."}
   ]
 }

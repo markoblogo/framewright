@@ -69,3 +69,14 @@ partner delivery,179.966s,1920×1080/30fps, SHA-256
 Private receipt: `hungarian-v1/owner-acceptance.json`. Ukrainian v5 and editable
 sources remain retained. Separate Hungarian-native partner verification is not
 reported. No send, publication, English production or cleanup follows.
+
+## English narration for owner publication — 23 November 2026
+
+The owner selected an English YouTube package. Use the accepted Ukrainian v5
+picture and its original bed and effects, with an adapted English track,
+separate SRT, cover and copy. The picture contains some Ukrainian product
+graphics and is a concept illustration. Keep the public demo and the historic
+concept separate in the description. The private partners' masters remain
+separate. On 23 November the owner supplied the [English YouTube publication](https://youtu.be/xC-3gGs4bTs).
+YouTube oEmbed confirmed the title. Uploaded-file identity and audience
+metrics are unverified.

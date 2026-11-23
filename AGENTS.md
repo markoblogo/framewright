@@ -18,4 +18,8 @@
 
 - For review and publication packages,use delivery.py and the fixed page/check procedure in skills/video-production-router/references/preview.md. Change package data per film;update the shared template only for a concrete requested improvement. Publication UI is English in the FW site black/silver style. Desktop:equal-height YouTube/TikTok previews plus one download column;YouTube copy below both previews,TikTok copy below downloads. Mobile order:YouTube preview,TikTok preview,all downloads,YouTube copy,TikTok copy. Optional/missing assets remain supported. Run delivery_check.cjs in its default shared-baseline mode:unchanged template/server/browser reuses player proof without launching a browser. Do not manually repeat playback/seek tests for each film;force --full-player after a reported player failure. New media still require their own integrity/decode/aspect checks.
 
+- Keep burned-in dialogue and narration subtitles out of YouTube masters. Deliver subtitles separately at YouTube packaging, and burn them into TikTok masters. See [the platform caption rule](docs/video-taste.md#vt-captions--platform-subtitles).
+
+- For publication copy, follow [the YouTube and TikTok standard](docs/publication-copy.md), using native and free research by default.
+
 - Delivery text uses per-field copy buttons with visible confirmation:YouTube titles/description/tags;TikTok caption/first comment. Never add publication-text downloads or TikTok subtitle/title fields. The TikTok player container itself must be portrait.

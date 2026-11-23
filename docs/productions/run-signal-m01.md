@@ -60,6 +60,11 @@ The season title is **RUN//SIGNAL: Beginner-Friendly Return to Run**. It builds 
 
 - M01 is prepared for YouTube from v08 with an English caption track, thumbnail and metadata. The story description locates the route inside Haven Nine. An episode-ordered playlist accompanies the launch. Local preparation, upload, publication and playlist creation are separate states. A new field test of v08 is unrecorded.
 - M02 Waterline is selected for private production. One 15-minute clock covers 3 minutes of walking, 9 minutes of easy running and 3 minutes of walking. The voice, phase labels and signals share the same clock. Field test before publication.
-- After M03 is published, create the first series promo in YouTube and TikTok formats, introducing the project and Missions 01–03. Then create a YouTube and TikTok promo for each subsequent episode.
+- Prepare and approve the launch promo in YouTube and TikTok formats ahead of M03. Publish the promo alongside M03, once the full episode links are available. Then create a YouTube and TikTok promo for each subsequent episode.
 
 The owner provided the [M01 YouTube URL](https://youtu.be/XYRVeefj6aM) on 21 November 2026 (`owner_provided_url`). This records M01 publication by owner report. The next Framewright release depends on [M02 completion and acceptance](run-signal-m02.md). Independent visibility, uploaded-file identity, playlist URL/membership and metrics are unverified. The Framewright release itself remains pending.
+
+### Episode and launch-promo links
+
+- A full episode’s YouTube description lists all previous full episodes in mission order with the mission number, title and direct YouTube URL. M01 has no previous-missions block. M02 links M01. M03 links M01 and M02. M04 and later extend the list.
+- The launch promo description or caption lists all three full missions in order. Add the verified M03 URL before releasing either promo. Use the TikTok first comment to repeat the links when useful. Pending markers are for internal review.

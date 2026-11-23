@@ -1,13 +1,32 @@
 # Current work and protected waits
 
-Updated 22 November 2026. This is the current operational entry point, not a session log.
+Updated 23 November 2026. This is the current operational entry point, not a session log.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md) · [Case counts and definitions](public-evidence.json).
 
 ## Current state
 
-**Current handoffs, 22 November:** [M03 Window Three](productions/run-signal-m03.md) passed home review. Next is the outdoor OpenTrack + VLC test, then the YouTube package. After M03 is published, make the season promo with the first three episodes for YouTube and TikTok, then prepare a promo per episode. The [Transit Speed bilingual lesson](productions/transit-speed-bilingual-tutorial.md) is accepted and delivered privately to the receiving project.
+**Editorial batch, 23 November:** [BuyMore: Your Bus Has Been Cancelled](experiments/buymore-cancelled-2026-11-23.md)
+and [The Backup Route](productions/the-backup-route.md) have publication links.
+[One Step in the Interface](experiments/transit-speed-one-step-2026-11-23.md)
+remains an internal demo comparison. Its focused cut was clearer in owner
+review. The next Radar slate informs the next editorial selection. Separately,
+[the pending tool probes](research/tool-intake-2026-11-23.md) prioritize offline
+voice isolation and a quick asset-inspection check.
 
-**Parallel work:** owner partner correspondence is planned for Monday, 23 November. Keep applying the tool rankings to each selected production and record one concrete risk in a short pilot. Udemy is parked and Quixote is frozen.
+**RUN//SIGNAL:** The first-three-missions promo is owner-approved in both
+formats and held for the M03 URL. The first possible outdoor check is the
+revised M01 audio with OpenTrack + VLC on 24 November, weather permitting.
+[M03 Window Three](productions/run-signal-m03.md) passed home review. Its
+field test follows M01, on 25 November at the earliest in the current plan.
+After a successful M03 field test, prepare the episode's YouTube package and
+complete the promo copy with all three URLs. Prepare a promo per subsequent
+episode. The [Transit Speed bilingual lesson](productions/transit-speed-bilingual-tutorial.md)
+is accepted and delivered privately to the receiving project.
+
+**Parallel owner work:** Partner correspondence is planned for 24 November.
+Any follow-up production depends on the response. Udemy can be revisited from
+24 November at the earliest if the owner chooses. Editorial work can proceed
+in parallel. Quixote is frozen.
 
 **22 November:** [M02 Waterline](productions/run-signal-m02.md) passed outdoor listening; the owner supplied its YouTube URL. [French Vineyard](productions/french-vineyard-finance.md), [Ultrasound Without Gel](productions/dry-ultrasound.md), [ESCAPADE](productions/escapade-powered-flyby.md) and [Reaction Telemetry](productions/reaction-telemetry.md) have accepted masters and owner-reported publication links. The [tool ranking profiles](../skills/video-production-router/references/arsenal-search.md) now inform editorial graphics, narration, editable montage and portrait adaptation. See [0.11.0 scope](release-notes-0.11.0.md).
 
@@ -44,16 +63,16 @@ Third Web3 film:[AllWeb3 / The Proof Behind the Post](productions/allweb3-proof-
 | Previously integrated maintenance —baseline | [PR80](https://github.com/markoblogo/framewright/pull/80) merged (`9d91847`):standard deliveryv2,recent production/intake records;independent review,590local tests(18skipped),real browser delivery and both GitHub CI runs passed. No tag/release. Earlier [PR78](https://github.com/markoblogo/framewright/pull/78) merged (`d11077c`):0.10.0 source integration;CI and merged-tree build passed. [PR77](https://github.com/markoblogo/framewright/pull/77) retains the explicit replaced-review fix and actual Praxis continuation. Public0.10.0 download/hash verification is recorded separately. |
 | Retained earlier film examples | [Praxis-1](productions/praxis-robot-engineering.md):both65.25s revision2films accepted17November after table/text and tray-support corrections;YouTube URL supplied17November;TikTok publication declined. [Clear the Table](productions/clear-the-table-stick-scene.md):both24.5s Stick Scene films accepted17November;owner supplied YouTube/TikTok publication URLs17November;uploaded identity/metrics unchecked. [Agent402 tabletop](productions/agent402-tabletop.md):both52.5s revision2 films accepted;owner supplied YouTube/TikTok URLs17November. No independent uploaded identity/metrics check. [The Mars Dispatch](productions/nasa-eyes-collage.md):both50s films/sound/covers accepted;owner supplied both publication URLs17November. [PAN2 / ASCII](productions/pan2-ascii.md):both films/covers accepted,both publication URLs supplied17November. Independent uploaded identity/metrics unverified. [The AI Paid](productions/vet402-delivery.md): both52s formats published by owner report17November;separate creative acceptance and uploaded identity remain unverified. [Coinbase Agent Controls](productions/coinbase-agent-controls.md): both60s English formats accepted,including the requested20%audio boost;owner supplied both publication URLs16November. [Describe Your Entire Day](productions/describe-your-entire-day.md) is also accepted/published by owner report. Uploaded identity and audience metrics remain separate. |
 | Editorial handoff | Owner supplied the [Studio Notes04 publication URL](https://abvx.xyz/writing/ai-video-corrections-stick-framewright-04) on16November; anonymous HTTP200 and expected headline observed. Prepared text/cover/source receipt unchanged. Published text/cover identity and metrics remain unchecked; the issue index records owner_provided_url separately. |
-| Next execution | Field-test M03, then prepare the YouTube package. The five-story Radar batch is closed. A new editorial production awaits topic selection. |
+| Next execution | Field-test the revised M01 audio, then M03. In parallel, choose one editorial item from the next Radar slate and advance the bounded tests when their production need arises. |
 
 ## Protected waits and commitments
 
 | Work | State and next required evidence / decision |
 | --- | --- |
 | [Don Quixote E01](productions/don-quixote-neverland.md) | **Indefinitely frozen by the owner19November;no return date.** Accepted cast,anchors,full role voice and new fanged mill face remain protected. The51s block,8s Peter I2V and3.2s local rig were rejected;nativeGIF/new provider requests refused. [Exact outcomes and limits](experiments/peter-acting-comparison-2026-11-16.md). Keep sources and failed evidence;no render,generation or cleanup until explicit resumption. |
-| [RUN//SIGNAL M01](productions/run-signal-m01.md) | **[YouTube URL supplied](https://youtu.be/XYRVeefj6aM) on 21 November.** v08 keeps the accepted picture and 20-minute workout. Playlist membership is unverified. [M02 Waterline](productions/run-signal-m02.md) v2 picture was accepted and the outdoor VLC listening test passed by owner report on 22 November. Owner supplied [M02 on YouTube](https://youtu.be/3b8ESlIpQkE) on 22 November. Playlist membership is unverified. GPS logger reliability is a separate follow-up. Series promo after M03; then one dual-format promo per episode. |
+| [RUN//SIGNAL M01](productions/run-signal-m01.md) | **[YouTube URL supplied](https://youtu.be/XYRVeefj6aM) on 21 November.** v08 keeps the accepted picture and 20-minute workout. Playlist membership is unverified. [M02 Waterline](productions/run-signal-m02.md) v2 picture was accepted and the outdoor VLC listening test passed by owner report on 22 November. Owner supplied [M02 on YouTube](https://youtu.be/3b8ESlIpQkE) on 22 November. Playlist membership is unverified. GPS logger reliability is a separate follow-up. Series promo prepared before M03 publication and released alongside it; then one dual-format promo per episode. |
 | [SSI](productions/ssi-2026-11-06.md) | Chart-animation corrections were planned for Saturday 14 November before the existing 15 November cycle (not before 09:00 Kyiv). Completion is not recorded here. SSI owns its worker/schedule/send; this documentation work changes none of them and calendar passage does not authorise execution. |
-| Transit Speed | [Bilingual lesson](productions/transit-speed-bilingual-tutorial.md) accepted and handed off privately. The [earlier partner pitch](productions/transit-speed-private-pitch.md) remains a separate case with its English public version paused. |
+| Transit Speed | [Bilingual lesson](productions/transit-speed-bilingual-tutorial.md) accepted and handed off privately. The owner supplied YouTube links for the English [concept presentation](https://youtu.be/xC-3gGs4bTs) and [lesson](https://youtu.be/tyhMWxCJrEg); titles confirmed through YouTube metadata. |
 | Deferred work | [KORG / LocalSend](experiments/android-companions-2026-11-13.md) need a separately selected retry; no successful KORG audio export or LocalSend transfer is recorded. Local project UI stays deferred. Gallery Lava's ShareAlike decision, book manuscript approval and future AzurMenton transfer remain separate owner decisions in [roadmap](roadmap.md). |
 
 Transfer to another operator (M6 / REL-D) remains partial and **parallel**, pursued on real need; it does not block ordinary production or the next scoped release.
