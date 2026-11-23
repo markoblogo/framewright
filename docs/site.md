@@ -96,3 +96,18 @@ Owner selected three audiences:creators/developers,AI platform/tool partners,and
 Owner requested a black/white/yellow looping3D illustration in place of the text-only method strip and long status copy,and an additional process illustration in the README without replacing the upper FW logo. Original Three.js0.185.1geometry shows brief/sources,moving pilot,review/correction and retained recipe returning to the next project. Desktop1200×390and mobile640×820variants are8s/128frames/16fpsGIFs. A responsive picture selects a phone composition;prefers-reduced-motion selects a static poster. Text equivalents,English alt text and the repository link remain available. This represents a human-reviewed production method,not autonomous learning or universal tool qualification.
 
 The owner explicitly authorised the original processGIF as a README illustration;`assets/fw-process-loop.gif` is the retained media exception for that purpose. The upper `fw-unfold.gif` remains unchanged. Editable scene/render sources,posters,frame/export hashes and loop0/8identity checks are retained privately at productions/fw-process-loop/. No external generation,stock reference,voice,music,paid call or new film/trial count is involved.
+
+## Studio Notes — 23 November 2026
+
+The canonical landing's [Studio Notes](https://markoblogo.github.io/framewright/#studio-notes)
+section follows the video carousel. The header and footer link to the section.
+The three newest issues are visible first; the built-in Earlier notes section
+contains the other three. Each card links to its canonical ABVX article and uses
+the public ABVX cover and a short description. The site renders the cards as
+static HTML. To add a published issue, check its article URL and cover, move the
+oldest featured card into the archive, and deploy the existing landing. The
+editorial index records issue and publication provenance separately.
+
+Chrome checks at 1280, 390 and 320 px covered both anchor links, archive disclosure
+with the keyboard, all six destinations, cover decoding and horizontal overflow.
+The checked Pages source commit is `a027cbceba4a060374cc2081293bccc8e793925f`.

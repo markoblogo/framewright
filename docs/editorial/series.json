@@ -7,7 +7,7 @@
     "weekday": "Monday",
     "time": "10:00",
     "timezone": "Europe/Paris",
-    "next_planned_date": "2026-11-23",
+    "next_planned_date": "2026-11-30",
     "scheduler": "Codex thread heartbeat"
   },
   "publication_policy": "draft_only_owner_publishes",
@@ -203,8 +203,8 @@
       "post": "docs/editorial/2026-11-09-framewright-studio-notes-03.md",
       "sources": "docs/editorial/2026-11-09-framewright-studio-notes-03-sources.json",
       "sha256": "9e90d670815a1442d392eff436066a8d0683b1e8bd2faebf86838bf3a6d517b5",
-      "state": "draft",
-      "blog_url": null,
+      "state": "published_owner_report",
+      "blog_url": "https://abvx.xyz/writing/ai-video-production-reuse-test-framewright-03",
       "youtube_urls": [
         "https://youtu.be/SrWeTSaQ4DQ",
         "https://youtu.be/6cD8xI8nXG8",
@@ -317,7 +317,19 @@
           "http://127.0.0.1:8945/2026-11-09-framewright-studio-notes-03-sources.json"
         ],
         "owner_published_url": null
-      }
+      },
+      "publication_observations": [
+        {
+          "type": "owner_provided_publication_url",
+          "received_date": "2026-11-23",
+          "provenance": "owner_provided_url",
+          "url": "https://abvx.xyz/writing/ai-video-production-reuse-test-framewright-03",
+          "independent_visibility": "anonymous_http200_matching_canonical_with_published_cover",
+          "checked_at": "2026-11-23T13:55:12.805982+01:00",
+          "text_and_cover_identity": "not_independently_compared_to_prepared_hashes",
+          "metrics": "not_checked"
+        }
+      ]
     },
     {
       "date": "2026-11-16",
@@ -649,6 +661,243 @@
         }
       ],
       "public_source_receipt_sha256": "26f62541dd657d39657d65a348d546049327a90865f7211d6a0297cb945c32e6"
+    },
+    {
+      "id": "studio-notes-06",
+      "date": "2026-11-23",
+      "post": "docs/editorial/2026-11-23-framewright-studio-notes-06.md",
+      "sources": "docs/editorial/2026-11-23-framewright-studio-notes-06-sources.json",
+      "sha256": "4675c9cc40d3784898eb481b55a39584020e6ad0b18325d2f1a3b5367f807f10",
+      "source_receipt_sha256": "e677cc338004ba4ae795c5df8325ef96792f818bab23c7176b29dbc3b6d34dfd",
+      "state": "published_owner_report",
+      "blog_url": "https://abvx.xyz/writing/what-to-test-before-you-make-the-whole-film-framewright-06",
+      "youtube_urls": [
+        "https://youtu.be/xuO__yvDhHo",
+        "https://youtu.be/lZm5E5-xhLQ"
+      ],
+      "covered_capabilities": [
+        "silent-causal-pilot",
+        "bounded-visual-correction",
+        "native-diagram-reuse",
+        "matched-screencast-framing"
+      ],
+      "baseline_git_head": "286e7cfaf8bc81ee0e3bf50043e4165b51267e26",
+      "source_sha256": {
+        "docs/productions/escapade-powered-flyby.md": "d0eac21e4042fc56bd8b1d326a293d7a5faf3659c74e6420f7a164a4dbc3c575",
+        "docs/productions/the-backup-route.md": "388f7d519c71323c1260f547402d7062df2049017c3c2b5cd49f25b34aa7b4c9",
+        "docs/experiments/openmotion-native-export-2026-11-22.md": "f68f292e5d7fa9028704069dc39c373bfd4f2f77dcc41d77c08756f245570ff0",
+        "docs/experiments/transit-speed-one-step-2026-11-23.md": "fad61e1650addd2e4fb8eaa8739dc25adb8e1cd9316fb89aa21c3a94cfdeddff",
+        "docs/video-taste.md": "fe86338ba0e37b8198ff0e6ab69cda43d0d0e9a42b478390a6c7f5ff9e9a85de",
+        "docs/release-notes-0.11.0.md": "2d5b3fbc34d05e2385c65ebac8433fef650b419220f9a1d2e359587007c3eddc"
+      },
+      "cover": {
+        "file": "productions/studio-notes-06/studio-notes-06-cover.png",
+        "sha256": "e52c73fffc587df69f3fa5d777558596854e6ffb6b68c2137ac50d996eb13226",
+        "bytes": 2068307,
+        "width": 1672,
+        "height": 941,
+        "format": "PNG",
+        "headline": "What to Test Before You Make the Whole Film",
+        "series_issue_label": "FRAMEWRIGHT STUDIO NOTES 06",
+        "alt": "A short strip of film runs through a lit inspection gate on a charcoal editing desk. One frame shows an amber trajectory curving around a teal sphere. The text reads What to Test Before You Make the Whole Film and Framewright Studio Notes 06.",
+        "tool": "image_gen.imagegen",
+        "provenance": "original_builtin_imagegen_no_reference_upload",
+        "prompt_file": "productions/studio-notes-06/cover-prompt.txt",
+        "full_prompt": "Original landscape 16:9 editorial cover for an English filmmaking essay. The only typography must read exactly: ‘What to Test Before You Make the Whole Film’ in a large bold ivory editorial sans-serif on the left, line breaks as needed. Above it in smaller clearly legible uppercase, exactly ‘FRAMEWRIGHT STUDIO NOTES 06’. A restrained contemporary physical editing-desk still life on the right: a short translucent film strip crosses a single precision-cut illuminated inspection gate; one decisive frame shows a small amber trajectory curving around a pale teal sphere, the other frames are quiet. Tangible graphite metal, restrained charcoal, teal and amber, elegant side lighting, ample safe margins, readable at 480 pixels wide. Avoid any additional text, numerals, marks, logos and people. No reference images.",
+        "prompt_sha256": "8575955a0cb10682630f7a8953915a7faedb2878ebf749efd12d454e9552f68b",
+        "generation_count": 1,
+        "cost": {
+          "amount": null,
+          "status": "not_displayed",
+          "paid_api_calls": 0
+        },
+        "review": {
+          "state": "operator_pass",
+          "reviewed_at": "2026-11-23T11:58:38.722544+01:00",
+          "full_size": [
+            1672,
+            941
+          ],
+          "reduced_size": [
+            480,
+            270
+          ],
+          "reduced_file": "qa/cover-480.png",
+          "spelling": "exact headline and issue line",
+          "composition": "clear margins and readable at both sizes",
+          "owner_cover_approval": "pending"
+        }
+      },
+      "book_source": {
+        "candidate": true,
+        "status": "candidate_supporting_evidence",
+        "chapters": [
+          "C03",
+          "C08"
+        ],
+        "cases": [
+          "P05"
+        ],
+        "gaps": [
+          "G01",
+          "G03",
+          "G08"
+        ],
+        "routes": [
+          "with_framewright",
+          "without_framewright"
+        ],
+        "reader_reproduction": "not_performed",
+        "chapter_approval": "not_given",
+        "reuse_status": "fact_check_deduplicate_adapt_and_clear_rights"
+      },
+      "delivery": {
+        "issue_id": "studio-notes-06",
+        "prepared_at": "2026-11-23T11:58:38.722544+01:00",
+        "package_path": "productions/studio-notes-06",
+        "publication_document": "read.html",
+        "markdown_file": "2026-11-23-framewright-studio-notes-06.md",
+        "cover_file": "studio-notes-06-cover.png",
+        "source_file": "2026-11-23-framewright-studio-notes-06-sources.json",
+        "selected_text_sha256": "4675c9cc40d3784898eb481b55a39584020e6ad0b18325d2f1a3b5367f807f10",
+        "selected_cover_sha256": "e52c73fffc587df69f3fa5d777558596854e6ffb6b68c2137ac50d996eb13226",
+        "publication_document_sha256": "39b70dacfc541b9ed3867c7305965080b209750c4f8909ae67bba34edc1bb8ce",
+        "delivery_state": "ready_to_deliver",
+        "notification_emission": "pending_final_chat_message",
+        "publication_state": "draft_owner_publishes"
+      },
+      "publication_observations": [
+        {
+          "type": "owner_provided_publication_url",
+          "received_date": "2026-11-23",
+          "provenance": "owner_provided_url",
+          "url": "https://abvx.xyz/writing/what-to-test-before-you-make-the-whole-film-framewright-06",
+          "independent_visibility": "anonymous_http200_matching_canonical_with_published_cover",
+          "checked_at": "2026-11-23T13:55:12.806189+01:00",
+          "text_and_cover_identity": "not_independently_compared_to_prepared_hashes",
+          "metrics": "not_checked"
+        }
+      ]
+    },
+    {
+      "id": "studio-notes-07",
+      "date": "2026-11-23",
+      "post": "docs/editorial/2026-11-23-framewright-studio-notes-07.md",
+      "sources": "docs/editorial/2026-11-23-framewright-studio-notes-07-sources.json",
+      "sha256": "8c1441ebeae2425efa82f97c32861dd1b1796ddb5f943b15ec40b428d6b2c9a6",
+      "source_receipt_sha256": "6e3aebcb6f032894ca2128f97570334d97ab839a7b378d4f5a69a073d66f1cab",
+      "state": "published_owner_report",
+      "blog_url": "https://abvx.xyz/writing/tulvo-review-two-workflows-framewright-07",
+      "youtube_urls": [
+        "https://youtu.be/m9lKpzSPnws",
+        "https://youtu.be/87jxMAuyOCQ",
+        "https://youtu.be/YPYXpOpbCl4"
+      ],
+      "covered_capabilities": [
+        "synthetic-workflow-testing",
+        "source-vs-saved-report",
+        "labelled-vendor-and-test-footage",
+        "player-safe-interface-closeups"
+      ],
+      "baseline_git_head": "286e7cfaf8bc81ee0e3bf50043e4165b51267e26",
+      "source_sha256": {
+        "docs/productions/tulvo-small-studio.md": "f219de8f47b1c2ea05e01df4837539946bfd433173b43e34a4cfbd28dc6c0e3e",
+        "docs/productions/tulvo-business-operations.md": "d7251c3254725813213c36b4fecf5292cc3e7ecf4ac7212adac5f8b6e32851bf",
+        "docs/productions/tulvo-overview.md": "1e700978a5851926ded9813f6688361e104ac82a080a2a85c77fd5951c7686c3"
+      },
+      "cover": {
+        "file": "productions/studio-notes-07/studio-notes-07-cover.png",
+        "sha256": "47f97819eac295099e339a914ace37133463d80d7467f49045bf4e839839159c",
+        "bytes": 1419566,
+        "width": 1600,
+        "height": 900,
+        "format": "PNG",
+        "headline": "I Tested Tulvo on Two Workflows",
+        "series_issue_label": "FRAMEWRIGHT STUDIO NOTES 07",
+        "alt": "The Tulvo logo sits above the headline I Tested Tulvo on Two Workflows. A paper proposal, translucent task cards and a miniature teal rail container sit on a charcoal background.",
+        "tool": "image_gen.imagegen + local typesetting",
+        "provenance": "original_builtin_imagegen_background_no_reference_upload_plus_official_tulvo_logo",
+        "logo": {
+          "url": "https://tulvo.io/assets/tulvo-logo-footer.svg",
+          "sha256": "f2abb9f28928047cced77c00742bdd4633543cd7f31784a42189484ad1fa484a",
+          "use": "editorial identification"
+        },
+        "background_sha256": "04c2a898a6afb98e1eb18a19c277e807495e93af14a931f755339424be6dadc6",
+        "prompt_file": "productions/studio-notes-07/cover-prompt.txt",
+        "full_prompt": "Create a wide landscape 16:9 editorial cover background for a serious English article about testing one AI workspace on creative studio and rail freight workflows. Charcoal ink, restrained teal, warm amber. LEFT 54% must be uninterrupted smooth near-black charcoal negative space for large type to be composited later, with no objects or highlights there. On the right, a tangible studio still life on a dark graphite table: a blank folded proposal sheet, two translucent task cards, and a small sculptural industrial rail container in desaturated teal, connected by one discreet amber line. Intelligent editorial photography mixed with tactile 3D, soft directional light, distinctive yet calm, enough room around the focal objects, horizontal safe framing. The composition should work as an article hero, not a software advertisement. NO text, NO letters, NO numbers, NO marks, NO logos, NO watermarks. No reference images.",
+        "prompt_sha256": "a9d05a57480379c852851699e585f47e2343789c218c00a478a052e4085b994f",
+        "generation_count": 1,
+        "cost": {
+          "amount": null,
+          "status": "not_displayed",
+          "paid_api_calls": 0
+        },
+        "review": {
+          "state": "operator_pass",
+          "reviewed_at": "2026-11-23T22:03:37+01:00",
+          "full_size": [
+            1600,
+            900
+          ],
+          "reduced_size": [
+            480,
+            270
+          ],
+          "reduced_file": "qa/cover-480.png",
+          "spelling": "exact headline and issue label, official wordmark",
+          "owner_cover_approval": "pending"
+        }
+      },
+      "book_source": {
+        "candidate": true,
+        "status": "candidate_supporting_evidence",
+        "chapters": [
+          "C03",
+          "C08"
+        ],
+        "cases": [],
+        "gaps": [
+          "G01",
+          "G03"
+        ],
+        "routes": [
+          "with_framewright",
+          "without_framewright"
+        ],
+        "reader_reproduction": "not_performed",
+        "chapter_approval": "not_given",
+        "reuse_status": "fact_check_deduplicate_adapt_and_clear_rights"
+      },
+      "delivery": {
+        "issue_id": "studio-notes-07",
+        "prepared_at": "2026-11-23T22:03:37+01:00",
+        "package_path": "productions/studio-notes-07",
+        "publication_document": "read.html",
+        "markdown_file": "2026-11-23-framewright-studio-notes-07.md",
+        "cover_file": "studio-notes-07-cover.png",
+        "source_file": "2026-11-23-framewright-studio-notes-07-sources.json",
+        "selected_text_sha256": "8c1441ebeae2425efa82f97c32861dd1b1796ddb5f943b15ec40b428d6b2c9a6",
+        "selected_cover_sha256": "47f97819eac295099e339a914ace37133463d80d7467f49045bf4e839839159c",
+        "publication_document_sha256": "2744cf08fefe2fef3bb7917d08b3d718d187ca9381669c8fd8a006be50b4533e",
+        "delivery_state": "ready_to_deliver",
+        "notification_emission": "pending_final_chat_message",
+        "publication_state": "draft_owner_publishes"
+      },
+      "publication_observations": [
+        {
+          "issue_id": "studio-notes-07",
+          "type": "owner_provided_publication_url",
+          "received_date": "2026-11-23",
+          "provenance": "owner_provided_url",
+          "url": "https://abvx.xyz/writing/tulvo-review-two-workflows-framewright-07",
+          "state": "published_owner_report",
+          "independent_visibility": "anonymous_html_expected_page_title_and_headline_observed",
+          "checked_at": "2026-11-23T22:18:53+01:00",
+          "text_and_cover_identity": "not_independently_compared_to_prepared_hashes",
+          "metrics": "not_checked",
+          "private_receipt": "productions/studio-notes-07/owner-publication-20261123.json"
+        }
+      ]
     }
   ],
   "automation": {

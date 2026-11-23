@@ -357,6 +357,8 @@
       "rights_class": "conditional",
       "licence_note_sha256": "d0953705187c885f542ac3af5332eb8b72c9d70b8278c88fdba6feaccbee6933",
       "applications": [
+        {"id":"ffmpeg--water-drop-reframe","tasks":["video","editing"],"inputs":["video"],"styles":[],"style_basis":"executed_case","techniques":["manual-reframing","native-aspect-layout","matched-frame-comparison"],"version":"FFmpeg","evidence":"tested","scope":"One landscape water-drop shot reframed with fixed and manually moving 9:16 windows.","sources":["docs/productions/vertical-crop-keep-the-action.md"],"examples":[],"quality":{"readability":{"status":"observed","provenance":"operator_observation","note":"At the matched frame, the target bucket and release can be seen in the manual crop.","source":"docs/productions/vertical-crop-keep-the-action.md"},"motion":{"status":"observed","provenance":"operator_observation","note":"The moving window follows the bucket to the source left edge.","source":"docs/productions/vertical-crop-keep-the-action.md"},"drawing_stability":{"status":"observed","provenance":"operator_observation","note":"Both portraits preserve source proportions and output geometry throughout the excerpt.","source":"docs/productions/vertical-crop-keep-the-action.md"},"artifacts":{"status":"observed","provenance":"operator_observation","note":"Reduced frame review retained the red bucket, visible water detail and legible comparison labels.","source":"docs/productions/vertical-crop-keep-the-action.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"The same frame, crop size and grade isolate horizontal window position.","source":"docs/productions/vertical-crop-keep-the-action.md"}},"technical":{"status":"passed","scope":"Both 720x1280 crops and the 1280x720 comparison master passed geometry and decode checks."},"owner_evaluation":{"status":"accepted","scope":"Owner accepted the complete version after requesting stronger contrast and saturation.","source":"docs/productions/vertical-crop-keep-the-action.md"},"resources":{"hardware":"macOS arm64","formats":"720x1280 and 1280x720 at 30 fps","timing":"Active labor unmeasured.","cost":"No API credits used."},"limitations":["Confirm visibility for different motion and compositions separately. LTX Reframe was not executed."],"alternatives":[],"search_terms":["FFmpeg crop","vertical reframing","follow action"],"granularity":"specific_production_application"},
+        {"id":"ffmpeg--clip-join-audio-tail","tasks":["video","editing","audio"],"inputs":["video","audio"],"styles":["editorial-motion-graphics"],"style_basis":"executed_case","techniques":["audio-tail-trim","mixed-format-normalization","decoded-flash-tone-check"],"version":"FFmpeg 8.0.1 plus local Pillow composition","scope":"Original two-clip fixture and one 36.6-second English explainer.","evidence":"tested","sources":["docs/productions/clip-join-audio.md"],"examples":[],"quality":{"readability":{"status":"observed","provenance":"operator_observation","note":"Sampled frames show separate Before/After labels and an active-audio label for comparison.","source":"docs/productions/clip-join-audio.md"},"motion":{"status":"observed","provenance":"operator_observation","note":"Both simultaneous panels show the same timed flash.","source":"docs/productions/clip-join-audio.md"},"drawing_stability":{"status":"observed","provenance":"operator_observation","note":"Comparison geometry is fixed across both passes in sampled frames.","source":"docs/productions/clip-join-audio.md"},"artifacts":{"status":"observed","provenance":"operator_observation","note":"Full decode; sampled frames show no obvious corruption. No blanket artifact rating.","source":"docs/productions/clip-join-audio.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"A fixed trim changes the measured offset while preserving the same example pictures.","source":"docs/productions/clip-join-audio.md"}},"technical":{"status":"passed","scope":"Encoded 720p30 H.264/AAC fully decoded. Flash-to-tone offset was 320.27 ms before and 0.27 ms after."},"owner_evaluation":{"status":"accepted","scope":"Owner accepted the full review with individual and simultaneous comparisons.","source":"docs/productions/clip-join-audio.md"},"resources":{"hardware":"Local macOS arm64","formats":"1280×720 30fps H.264/AAC","timing":"Active labour and matched rendering time unmeasured.","cost":"Local media finishing, no paid API fallback. Total production cost unmeasured."},"limitations":["Single authored test, no generalized mixed-FPS or sample-rate failure claim.","No ComfyUI or FilmCraft run."],"alternatives":[],"search_terms":["clip sync","audio tail","flash and beep","before and after"],"granularity":"specific_production_application"},
         {"id":"ffmpeg--run-signal-m03-finish","tasks":["video"],"inputs":[],"styles":[],"style_basis":"executed_case","techniques":["locked-picture","radio-to-room-transition","matched-field-mp3"],"version":"FFmpeg, version not recorded here","scope":"Same-visor continuity and final cue correction for one episode.","evidence":"tested","sources":["docs/productions/run-signal-m03.md"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment recorded."},"motion":{"status":"observed","provenance":"operator_observation","note":"A vertical visor lift leads into a photo-sequence arrival.","source":"docs/productions/run-signal-m03.md"},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment recorded."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment recorded."},"controllability":{"status":"observed","provenance":"operator_observation","note":"Duplicate spoken line replaced with the intended welcome over locked picture.","source":"docs/productions/run-signal-m03.md"}},"technical":{"status":"recorded_execution","scope":"The MP4 and field MP3 are from the same locked mix with fixed training cues."},"owner_evaluation":{"status":"accepted_retained_scope","scope":"Owner accepted the finished edit in review.","source":"docs/productions/run-signal-m03.md"},"resources":{"hardware":"Existing local Mac studio","formats":"Local 1080p picture and language-specific audio or subtitles as applicable","timing":"Render time and labour not measured","cost":"Local compute unpriced"},"limitations":["Accepted at home; field listening and tracking for M03 are pending."],"alternatives":[],"search_terms":["run-signal-m03-finish"],"granularity":"specific_production_application"},
         {"id":"ffmpeg--transit-speed-shared-picture","tasks":["video"],"inputs":[],"styles":[],"style_basis":"executed_case","techniques":["shared-picture","narration-led-edit","masked-screen-inserts"],"version":"FFmpeg, version not recorded here","scope":"Two language releases from one private lesson timeline.","evidence":"tested","sources":["docs/productions/transit-speed-bilingual-tutorial.md"],"examples":[],"quality":{"readability":{"status":"observed","provenance":"operator_observation","note":"Opening and end-card text centred; device imagery framed to support the lesson.","source":"docs/productions/transit-speed-bilingual-tutorial.md"},"motion":{"status":"observed","provenance":"operator_observation","note":"Camera pans and pushes on context stills.","source":"docs/productions/transit-speed-bilingual-tutorial.md"},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment recorded."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment recorded."},"controllability":{"status":"observed","provenance":"operator_observation","note":"Shared picture retained across the two audio and subtitle versions.","source":"docs/productions/transit-speed-bilingual-tutorial.md"}},"technical":{"status":"recorded_execution","scope":"Matching 8,603-frame 1080p picture streams and separate language audio and SRTs."},"owner_evaluation":{"status":"accepted_retained_scope","scope":"Owner accepted the finished edit in review.","source":"docs/productions/transit-speed-bilingual-tutorial.md"},"resources":{"hardware":"Existing local Mac studio","formats":"Local 1080p picture and language-specific audio or subtitles as applicable","timing":"Render time and labour not measured","cost":"Local compute unpriced"},"limitations":["One private lesson. No independent native-language or audience review."],"alternatives":[],"search_terms":["transit-speed-shared-picture"],"granularity":"specific_production_application"},
         {
@@ -1516,6 +1518,98 @@
         {"id":"auto-editor--transit-pacing","tasks":["editing"],"inputs":["video"],"styles":[],"style_basis":"executed_case","techniques":["audio-threshold","protected-source-range","kdenlive-project-export"],"version":"Auto-Editor 31.9.0 macOS arm64; Kdenlive 26.08.2 bundled MLT","scope":"One 58-second speech-led excerpt. Mixed and dry audio, one protected pause and a hand-selected reference.","evidence":"tested","sources":["docs/experiments/auto-editor-transit-pacing-2026-11-22.md"],"examples":[],"quality":{"readability":{"status":"observed","provenance":"operator_observation","note":"Dry audio cuts a table-reading hold. An explicit keep range restores it.","source":"docs/experiments/auto-editor-transit-pacing-2026-11-22.md"},"motion":{"status":"observed","provenance":"operator_observation","note":"Original screencast content is retained within selected intervals.","source":"docs/experiments/auto-editor-transit-pacing-2026-11-22.md"},"drawing_stability":{"status":"observed","provenance":"operator_observation","note":"Expected pictured screen in the inspected MLT sample. Frame equivalence unmeasured.","source":"docs/experiments/auto-editor-transit-pacing-2026-11-22.md"},"artifacts":{"status":"observed","provenance":"operator_observation","note":"Four review MP4s and one engine-rendered project fully decoded. Listening acceptance unrecorded.","source":"docs/experiments/auto-editor-transit-pacing-2026-11-22.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"One keep range restores the visual hold. GUI edit remains unverified.","source":"docs/experiments/auto-editor-transit-pacing-2026-11-22.md"}},"technical":{"status":"recorded_execution","scope":"MP4 and project export, full decode, MLT render. GUI reopen and edits unverified."},"owner_evaluation":{"status":"accepted","scope":"The owner preferred the shortest 35.35-second dry-voice cut and can pause playback to read the table."},"resources":{"hardware":"Local Mac","formats":"960×540, 24 fps fixed-rate dry route","timing":"0.68 s auto scan; matched active editing time unmeasured","cost":"Local compute and labour unpriced"},"limitations":["One excerpt and threshold","Music masks speech gaps","Desktop editor first-run blocker"],"alternatives":[],"search_terms":["silence removal","speech edit","reading hold","Kdenlive"],"granularity":"specific_production_application"}
       ]
     },
+    "ego-lite": {
+      "tasks": [
+        "screen-capture"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "a4d2136e124923c79e6080baf48d4e30b5bb351541f598aaed07fab9e6122ec4",
+      "applications": [
+        {
+          "id": "ego-lite--tulvo-browser-and-studio-download",
+          "tasks": [
+            "screen-capture"
+          ],
+          "inputs": [],
+          "styles": [],
+          "style_basis": "executed_case",
+          "techniques": [
+            "clean-browser-profile",
+            "browser-product-testing",
+            "foreground-window-capture",
+            "native-media-download"
+          ],
+          "version": "Ego Lite 0.6.3.17; macOS window recorder",
+          "scope": "One separate-profile Tulvo enquiry and persisted stage change, a foreground macOS window recording, and one Google AI Studio attachment download verified on disk.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/ego-lite-tulvo-2026-11-23.md",
+            "docs/productions/tulvo-small-studio.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "The cropped recording shows the inquiry and both stages.",
+              "source": "docs/experiments/ego-lite-tulvo-2026-11-23.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "The native recording visually shows the actual stage selection.",
+              "source": "docs/experiments/ego-lite-tulvo-2026-11-23.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No dedicated browser rendering assessment.",
+              "source": "docs/experiments/ego-lite-tulvo-2026-11-23.md"
+            },
+            "artifacts": {
+              "status": "limitation_observed",
+              "provenance": "operator_observation",
+              "note": "An initial capture of a hidden window was black; foreground recording passed.",
+              "source": "docs/experiments/ego-lite-tulvo-2026-11-23.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Separate clean profile, reload confirmed the stage, and the downloaded file decoded.",
+              "source": "docs/experiments/ego-lite-tulvo-2026-11-23.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "720p Tulvo screen recording and 360p H.264/AAC attachment fully decoded."
+          },
+          "owner_evaluation": {
+            "status": "accepted_retained_scope",
+            "scope": "Owner retained browser for projects that need browser tests and recording.",
+            "source": "docs/experiments/ego-lite-tulvo-2026-11-23.md"
+          },
+          "resources": {
+            "hardware": "Local macOS arm64",
+            "formats": "1280×720 capture; 640×360 MP4 attachment",
+            "timing": "Not measured",
+            "cost": "No paid purchase; local compute unpriced"
+          },
+          "limitations": [
+            "Only two web services and one attachment.",
+            "Ego CLI and generated Veo exports untested."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "browser testing",
+            "screen recording",
+            "download",
+            "Tulvo",
+            "Google AI Studio"
+          ],
+          "granularity": "specific_bounded_trial"
+        }
+      ]
+    },
     "openscreen": {
       "tasks": [
         "screen-capture"
@@ -2079,6 +2173,7 @@
         {"id":"motion-canvas--retained-scope","tasks":["video","diagram"],"inputs":["text"],"styles":[],"style_basis":"not_extracted","techniques":[],"version":"7b91435c301d530351dcf5ebb91dd139c002e405","scope":"Tool-level retained ledger summary,not an individual experiment: 3.17.2 native Renderer/ImageExporter main114s1080p30, separate36s portrait and text cover. Range-only QA rerenders preserved outside-range source hashes; FFmpeg masters decoded. Full owner review pending; no broad renderer/efficiency qualification.","evidence":"tested","sources":["docs/research-review-2026-10-21.md","docs/experiments/mn7r-promo.md"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"recorded_execution","scope":"Retained tool-level execution summary only;not a feature-specific or newly repeated check."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"not_extracted;see sources","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Historical scope only;unrecorded quality/timing/version remain unknown."],"alternatives":[],"search_terms":[],"granularity":"retained_scope_summary","scope_note":"Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."}
       ]
     },
+    "inworld-voice-isolator": {"tasks":["audio"],"inputs":["audio"],"rights_class":"conditional","licence_note_sha256":"c1a959740a8c1586822adc5887947f46aac37c2e176cb9dc9968cc9bf7cb06b4","applications":[{"id":"inworld-voice-isolator--watch-duty-controlled-radio","tasks":["audio"],"inputs":["audio"],"styles":[],"style_basis":"executed_case","techniques":["radio-band-isolation","reference-comparison"],"version":"1.0.0 offline v1 checkpoint","scope":"A single 4.6-second reconstructed radio fixture with authored noise and a pre-static reference.","evidence":"tested","sources":["docs/productions/watch-duty-radio.md"],"examples":[],"limitations":["Only a synthetic radio fixture. No field validation or final-cut use."],"alternatives":[],"search_terms":["reconstructed radio","static","voice isolation"],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment in this audio trial.","source":"docs/productions/watch-duty-radio.md"},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment in this audio trial.","source":"docs/productions/watch-duty-radio.md"},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate assessment in this audio trial.","source":"docs/productions/watch-duty-radio.md"},"artifacts":{"status":"observed","provenance":"retained_report","note":"Against the aligned reference, SI-SDR was 5.09 dB input and 13.91 dB output.","source":"docs/productions/watch-duty-radio.md"},"controllability":{"status":"observed","provenance":"retained_report","note":"The local invocation retained the input, reference, and the isolated file.","source":"docs/productions/watch-duty-radio.md"}},"owner_evaluation":{"status":"not_recorded","scope":"The isolated fixture had no owner listening verdict.","source":"docs/productions/watch-duty-radio.md"},"technical":{"status":"passed","scope":"Apple MPS with cached weights, offline. Mono compared at 24 kHz."},"resources":{"hardware":"Local Apple Silicon Mac, 16 GB","formats":"4.6-second WAV fixture","timing":"34.67 s wall time; active labour unmeasured.","cost":"No paid calls; local compute and labour unpriced"},"granularity":"specific_bounded_trial"},{"id":"inworld-voice-isolator--controlled-offline","tasks":["audio"],"inputs":["audio"],"styles":[],"style_basis":"executed_case","techniques":["noise-reduction","voice-isolation","blind-audio-comparison"],"version":"1.0.0 offline v1 checkpoint","scope":"One 24-second synthetic-noise mix on Apple Silicon, compared with a dry reference, original mixture and light FFmpeg.","evidence":"tested","sources":["docs/experiments/inworld-voice-isolation-2026-11-23.md"],"examples":[],"limitations":["One controlled fixture and one owner listener.","Field noise, room reverb, competing speech and streaming remain untested."],"alternatives":[],"search_terms":["speech cleanup","denoise","metal","offline"],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate measurement in this audio fixture.","source":"docs/experiments/inworld-voice-isolation-2026-11-23.md"},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate measurement in this audio fixture.","source":"docs/experiments/inworld-voice-isolation-2026-11-23.md"},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate measurement in this audio fixture.","source":"docs/experiments/inworld-voice-isolation-2026-11-23.md"},"artifacts":{"status":"observed","provenance":"retained_report","note":"Owner judged Inworld the cleanest of three anonymous clips.","source":"docs/experiments/inworld-voice-isolation-2026-11-23.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"Identical duration, aligned mono output and speech-active RMS matching.","source":"docs/experiments/inworld-voice-isolation-2026-11-23.md"}},"owner_evaluation":{"status":"accepted_retained_scope","scope":"Owner preferred A (Inworld), then B (FFmpeg), then C (original); one fixture.","source":"docs/experiments/inworld-voice-isolation-2026-11-23.md"},"technical":{"status":"passed","scope":"Metal completed in 104.82 seconds with cached weights. CPU incomplete; all blind WAVs fully decoded."},"resources":{"hardware":"Local Apple Silicon Mac, 16 GB","formats":"24 seconds, 48 kHz mono","timing":"83 s CLI processing; 104.82 s whole Metal invocation","cost":"No paid calls; local compute and labour unpriced"},"granularity":"specific_bounded_trial"}]},
     "deepfilternet": {
       "tasks": [
         "audio"
@@ -2583,6 +2678,7 @@
       "rights_class": "conditional",
       "licence_note_sha256": "8d2581e51a43406400c496791e405775db21783e8f8a86dc31f5e34d49142e3a"
     },
+    "tripo-orbit": {"tasks":["3d"],"inputs":["3d-model"],"rights_class":"unknown","licence_note_sha256":"26cf86e00f691ddc8bf153942534d8444ffbcd7c2361bf5f20160cc695ede00a","applications":[{"id":"tripo-orbit--small-glb-inspection","tasks":["3d"],"inputs":["3d-model"],"styles":[],"style_basis":"executed_case","techniques":["glb-inspection","embedded-texture-preview","skeletal-animation-preview"],"version":"0.4.82 macOS","scope":"Two authored small GLBs; an animated textured cylinder and a static textured sphere.","evidence":"tested","sources":["docs/experiments/tripo-orbit-2026-11-23.md"],"examples":[],"limitations":["No matched speed benchmark or heavy asset test.","No round-trip export, proprietary format or missing texture test."],"alternatives":[],"search_terms":["3d viewer","pbr","glb","animation inspection"],"granularity":"specific_bounded_trial","quality":{"readability":{"status":"observed","provenance":"operator_observation","note":"Material, texture, skeleton and clip were visible in the info panel.","source":"docs/experiments/tripo-orbit-2026-11-23.md"},"motion":{"status":"observed","provenance":"operator_observation","note":"Animated bend played on the three-second timeline.","source":"docs/experiments/tripo-orbit-2026-11-23.md"},"drawing_stability":{"status":"observed","provenance":"operator_observation","note":"Static sphere texture was visible.","source":"docs/experiments/tripo-orbit-2026-11-23.md"},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No systematic material or artifact comparison.","source":"docs/experiments/tripo-orbit-2026-11-23.md"},"controllability":{"status":"observed","provenance":"operator_observation","note":"Direct opening and timeline availability verified.","source":"docs/experiments/tripo-orbit-2026-11-23.md"}},"technical":{"status":"passed","scope":"Both GLBs opened in Orbit. Both Blender control imports retained packed texture and expected vertex motion. Initial Blender GUI hung; isolated startup opened lighter copy."},"owner_evaluation":{"status":"accepted_retained_scope","scope":"After viewing both, owner tentatively preferred Orbit for this check.","source":"docs/experiments/tripo-orbit-2026-11-23.md"},"resources":{"hardware":"Local Apple Silicon Mac","formats":"Two small GLBs","timing":"Comparable end-to-end timing unmeasured","cost":"No paid access; local compute unpriced"}}]},
     "tripo-rigging-animation": {
       "tasks": [
         "3d",
@@ -4134,6 +4230,90 @@
       "licence_note_sha256": "4471715c469605fe024bccd3cbcef5592209438ae346ebf21dfe1ac551c03cfb",
       "applications": [
         {
+          "id": "givemotion--copilot-evals-package-check",
+          "tasks": [
+            "video",
+            "graphics",
+            "diagram"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [
+            "editorial-motion-graphics"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "native-aspect-layout",
+            "timed-scan",
+            "divergent-path-animation"
+          ],
+          "version": "GiveMotion 0.1.6",
+          "scope": "An 11-second landscape handoff pilot and retained extracts in a 57-second English editorial film.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/copilot-evals-package-check.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "retained_report",
+              "note": "The revised silent action made the comparison clear to the owner.",
+              "source": "docs/productions/copilot-evals-package-check.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "retained_report",
+              "note": "Owner found the animated handoff much better after rejecting the static comparison.",
+              "source": "docs/productions/copilot-evals-package-check.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Package labels and verdicts retain positions when the two paths separate.",
+              "source": "docs/productions/copilot-evals-package-check.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Checked encoded samples at 480–640 pixels for legibility and panel clipping.",
+              "source": "docs/productions/copilot-evals-package-check.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Explicit timestamps hold the verdicts and separate them from the two scan passes.",
+              "source": "docs/productions/copilot-evals-package-check.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "330-frame 1280×720 pilot and full 1280×720 30 fps export decoded successfully."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "The owner approved the revised moving pilot and requested separate real and generated context; the final package was followed by an owner-provided publication URL.",
+            "source": "docs/productions/copilot-evals-package-check.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64, local Chromium and FFmpeg",
+            "formats": "1280x720 at 30 fps",
+            "timing": "Active labor unmeasured.",
+            "cost": "Aggregate production cost unknown."
+          },
+          "limitations": [
+            "The animation illustrates an actual local file check; the film did not run an AI agent or Copilot Evals."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "package handoff",
+            "subtitle file verification",
+            "GiveMotion process animation"
+          ],
+          "granularity": "specific_production_application"
+        },
+        {
           "id": "givemotion--reaction-telemetry",
           "tasks": [
             "video",
@@ -4339,6 +4519,87 @@
       "rights_class": "conditional",
       "licence_note_sha256": "93b3cc4d51ef3105631086374c13f4ae716484a4b88504f724e3859e22b9f67d",
       "applications": [
+        {
+          "id": "manim-community--watch-duty-workflow",
+          "tasks": [
+            "video",
+            "diagram"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [
+            "minimal"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "animated-workflow-diagram",
+            "dual-aspect-layout"
+          ],
+          "version": "0.22.1",
+          "scope": "Two silent authored diagrams of a radio dispatch workflow. The horizontal version is reused in the full film.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/watch-duty-radio.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "retained_report",
+              "note": "Both pilot layouts read for the owner.",
+              "source": "docs/productions/watch-duty-radio.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "retained_report",
+              "note": "State reveals proceed from dispatch through review to the public alert.",
+              "source": "docs/productions/watch-duty-radio.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "retained_report",
+              "note": "Sampled film frames retain three distinct workflow stages and a separate alert.",
+              "source": "docs/productions/watch-duty-radio.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "retained_report",
+              "note": "Sampled frames show the key labels within their plates.",
+              "source": "docs/productions/watch-duty-radio.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "retained_report",
+              "note": "The same decision sequence is separately laid out for landscape and portrait.",
+              "source": "docs/productions/watch-duty-radio.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Two silent exports and a decoded 43-second YouTube master."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "The owner could follow both silent pilots. The full film was accepted subject to an ending correction.",
+            "source": "docs/productions/watch-duty-radio.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64 with existing Manim/Cairo runtime and FFmpeg.",
+            "formats": "Landscape and portrait silent pilots; 1280×720 final",
+            "timing": "Active labour unmeasured.",
+            "cost": "No new paid API call; aggregate cost unknown."
+          },
+          "limitations": [
+            "One authored workflow and no website or alert system exercised."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "dispatch workflow",
+            "human verification"
+          ],
+          "granularity": "specific_production_application"
+        },
         {
           "id": "manim-community--escapade-powered-flyby",
           "tasks": [

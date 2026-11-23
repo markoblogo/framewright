@@ -10,6 +10,15 @@ Tell the agent the intended viewer/result, source material, language, aspect rat
 length, deadline and budget/tool limits. Unknown answers stay visible; ask only
 questions that change the production choice. A usable request can be:
 
+Default to a landscape YouTube pilot and a YouTube-only initial master when the
+owner has not specified a format. Pilots use landscape YouTube framing, including
+when a vertical release is being considered. An explicit final-format instruction
+from the owner governs the deliverables, including TikTok-only. For an unspecified
+release, add a TikTok adaptation only after the owner selects it following the pilot.
+For that decision, look for an opening or payoff that works on its own in a short
+vertical edit. Science and tutorial explainers default to YouTube unless the owner
+sees a strong TikTok angle.
+
 > Make a40-second English guide from my photos and footage. YouTube16:9 first,
 > free tools on my Mac, no publication. Show the proposed source clips before assembly.
 

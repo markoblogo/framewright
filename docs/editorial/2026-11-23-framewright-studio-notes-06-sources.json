@@ -1,0 +1,154 @@
+{
+  "schema": "framewright-editorial-source-receipt-v1",
+  "issue": "studio-notes-06",
+  "date": "2026-11-23",
+  "article": "docs/editorial/2026-11-23-framewright-studio-notes-06.md",
+  "article_sha256": "4675c9cc40d3784898eb481b55a39584020e6ad0b18325d2f1a3b5367f807f10",
+  "baseline_previous_issue": "studio-notes-05",
+  "observed_git_head": "286e7cfaf8bc81ee0e3bf50043e4165b51267e26",
+  "local_state_before": "clean main at PR 91 merge",
+  "publication": {
+    "state": "draft",
+    "cms_collection": "unverified",
+    "videos": [
+      {
+        "url": "https://youtu.be/xuO__yvDhHo",
+        "source": "docs/productions/escapade-powered-flyby.md",
+        "received_date": "2026-11-22",
+        "provenance": "owner_provided_url",
+        "access": "youtube_oembed_title_and_channel_observed",
+        "observed_title": "Why NASA Flew Back to Earth to Reach Mars",
+        "observed_channel": "ABV — AI · Books · Validation",
+        "uploaded_identity": "not_checked",
+        "metrics": "not_checked"
+      },
+      {
+        "url": "https://youtu.be/lZm5E5-xhLQ",
+        "source": "docs/productions/the-backup-route.md",
+        "received_date": "2026-11-23",
+        "provenance": "owner_provided_url",
+        "access": "youtube_oembed_title_and_channel_observed",
+        "observed_title": "How Cargo Kept Moving After Baltimore’s Key Bridge Collapse",
+        "observed_channel": "ABV — AI · Books · Validation",
+        "uploaded_identity": "not_checked",
+        "metrics": "not_checked"
+      }
+    ]
+  },
+  "source_sha256": {
+    "docs/productions/escapade-powered-flyby.md": "d0eac21e4042fc56bd8b1d326a293d7a5faf3659c74e6420f7a164a4dbc3c575",
+    "docs/productions/the-backup-route.md": "388f7d519c71323c1260f547402d7062df2049017c3c2b5cd49f25b34aa7b4c9",
+    "docs/experiments/openmotion-native-export-2026-11-22.md": "f68f292e5d7fa9028704069dc39c373bfd4f2f77dcc41d77c08756f245570ff0",
+    "docs/experiments/transit-speed-one-step-2026-11-23.md": "fad61e1650addd2e4fb8eaa8739dc25adb8e1cd9316fb89aa21c3a94cfdeddff",
+    "docs/video-taste.md": "fe86338ba0e37b8198ff0e6ab69cda43d0d0e9a42b478390a6c7f5ff9e9a85de",
+    "docs/release-notes-0.11.0.md": "2d5b3fbc34d05e2385c65ebac8433fef650b419220f9a1d2e359587007c3eddc"
+  },
+  "covered_capabilities": [
+    "silent-causal-pilot",
+    "bounded-visual-correction",
+    "native-diagram-reuse",
+    "matched-screencast-framing"
+  ],
+  "cover": {
+    "file": "productions/studio-notes-06/studio-notes-06-cover.png",
+    "sha256": "e52c73fffc587df69f3fa5d777558596854e6ffb6b68c2137ac50d996eb13226",
+    "bytes": 2068307,
+    "width": 1672,
+    "height": 941,
+    "format": "PNG",
+    "headline": "What to Test Before You Make the Whole Film",
+    "series_issue_label": "FRAMEWRIGHT STUDIO NOTES 06",
+    "alt": "A short strip of film runs through a lit inspection gate on a charcoal editing desk. One frame shows an amber trajectory curving around a teal sphere. The text reads What to Test Before You Make the Whole Film and Framewright Studio Notes 06.",
+    "tool": "image_gen.imagegen",
+    "provenance": "original_builtin_imagegen_no_reference_upload",
+    "prompt_file": "productions/studio-notes-06/cover-prompt.txt",
+    "full_prompt": "Original landscape 16:9 editorial cover for an English filmmaking essay. The only typography must read exactly: ‘What to Test Before You Make the Whole Film’ in a large bold ivory editorial sans-serif on the left, line breaks as needed. Above it in smaller clearly legible uppercase, exactly ‘FRAMEWRIGHT STUDIO NOTES 06’. A restrained contemporary physical editing-desk still life on the right: a short translucent film strip crosses a single precision-cut illuminated inspection gate; one decisive frame shows a small amber trajectory curving around a pale teal sphere, the other frames are quiet. Tangible graphite metal, restrained charcoal, teal and amber, elegant side lighting, ample safe margins, readable at 480 pixels wide. Avoid any additional text, numerals, marks, logos and people. No reference images.",
+    "prompt_sha256": "8575955a0cb10682630f7a8953915a7faedb2878ebf749efd12d454e9552f68b",
+    "generation_count": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_displayed",
+      "paid_api_calls": 0
+    },
+    "review": {
+      "state": "operator_pass",
+      "reviewed_at": "2026-11-23T11:58:38.722544+01:00",
+      "full_size": [
+        1672,
+        941
+      ],
+      "reduced_size": [
+        480,
+        270
+      ],
+      "reduced_file": "qa/cover-480.png",
+      "spelling": "exact headline and issue line",
+      "composition": "clear margins and readable at both sizes",
+      "owner_cover_approval": "pending"
+    }
+  },
+  "book_source": {
+    "candidate": true,
+    "status": "candidate_supporting_evidence",
+    "chapters": [
+      "C03",
+      "C08"
+    ],
+    "cases": [
+      "P05"
+    ],
+    "gaps": [
+      "G01",
+      "G03",
+      "G08"
+    ],
+    "routes": [
+      "with_framewright",
+      "without_framewright"
+    ],
+    "reader_reproduction": "not_performed",
+    "chapter_approval": "not_given",
+    "reuse_status": "fact_check_deduplicate_adapt_and_clear_rights"
+  },
+  "delivery": {
+    "issue_id": "studio-notes-06",
+    "prepared_at": "2026-11-23T11:58:38.722544+01:00",
+    "package_path": "productions/studio-notes-06",
+    "publication_document": "read.html",
+    "markdown_file": "2026-11-23-framewright-studio-notes-06.md",
+    "cover_file": "studio-notes-06-cover.png",
+    "source_file": "2026-11-23-framewright-studio-notes-06-sources.json",
+    "selected_text_sha256": "4675c9cc40d3784898eb481b55a39584020e6ad0b18325d2f1a3b5367f807f10",
+    "selected_cover_sha256": "e52c73fffc587df69f3fa5d777558596854e6ffb6b68c2137ac50d996eb13226",
+    "publication_document_sha256": "39b70dacfc541b9ed3867c7305965080b209750c4f8909ae67bba34edc1bb8ce",
+    "delivery_state": "ready_to_deliver",
+    "notification_emission": "pending_final_chat_message",
+    "publication_state": "draft_owner_publishes"
+  },
+  "book_readiness": {
+    "status": "outline_and_case_docs_prepared; reader_reproduction_and_editorial_review_pending",
+    "threshold_changed": false,
+    "new_reader_reproductions": 0,
+    "illustration_rights": "not_cleared_for_book",
+    "sample_chapter": "not_started"
+  },
+  "claims": [
+    {
+      "source": "docs/productions/escapade-powered-flyby.md",
+      "scope": "11.07 s silent pilot; ignition visible in owner review; circle during burn and panel correction; full film accepted"
+    },
+    {
+      "source": "docs/productions/the-backup-route.md",
+      "trial_source": "docs/experiments/openmotion-native-export-2026-11-22.md",
+      "scope": "Original ten-second native diagram reused at original speed after the documented cargo case"
+    },
+    {
+      "source": "docs/experiments/transit-speed-one-step-2026-11-23.md",
+      "scope": "Identical click timing and duration; owner found focused cut clearer; task repetition unmeasured"
+    },
+    {
+      "source": "docs/release-notes-0.11.0.md",
+      "scope": "Published baseline 0.11.0 prerelease; PR 91 merged without a release; this edition is local"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 # Publication copy for YouTube and TikTok
 
-Framewright standard. Platform sources and connector access checked 22 November 2026.
+Framewright standard. YouTube packaging guidance rechecked 23 November 2026.
+Connector access was checked 22 November 2026.
 Use with the [standard publication page](../skills/video-production-router/references/preview.md)
 when a film reaches publication packaging. Keep the research and test notes in
 the existing production record. The English copy fields on the page are for the
@@ -33,26 +34,73 @@ For account audits and publishing tools, see the [publishing and audit research]
   natural viewer language. A browse-led option makes the specific result,
   tension or surprise legible on its own. Move episode numbers and channel
   branding toward the end when the subject is the main reason to click.
-- **Description** (`publication.description`). Open with one or two sentences
-  that say who the film is for and what it delivers. Use the main phrase
-  naturally near the start. Follow with useful details, checked chapters when
-  they help navigation, primary sources and credits when relevant, and the
-  verified links or series block. Shorts description and comment URLs are
-  non-clickable. Use YouTube’s Related Video field where available for a
-  clickable route from a Short. [YouTube title tips](https://support.google.com/youtube/answer/12340300)
-  · [Description tips](https://support.google.com/youtube/answer/12948449)
+- **Description** (`publication.description`). Open with the viewer’s question
+  or payoff and one or two natural topic phrases. The opening must make sense
+  on mobile before “Show more.” Give the rest of the description a job. For a
+  demo or explainer, explain what the example shows, how it was tested, what
+  changed and what the viewer can take away. Put sources, credits and verified
+  links after that useful copy. For stories and art films, use context or a
+  production detail that rewards curiosity. Check chapters against the cut
+  and [YouTube’s chapter requirements](https://support.google.com/youtube/answer/9884579).
+  Shorts description and comment URLs are non-clickable. Use YouTube’s Related
+  Video field where available. [Description tips](https://support.google.com/youtube/answer/12948449)
   · [Link behaviour](https://support.google.com/youtube/answer/13748639)
-- **Tags** (`publication.tags`). Use for useful aliases, spelling variants or
-  disambiguation. Leave the field empty when it adds nothing. Search considers
-  query match, engagement and quality. Recommendations also consider viewer
-  response, including choosing to watch, staying and satisfaction.
-  [YouTube Search](https://support.google.com/youtube/answer/16090438)
+- **Tags** (`publication.tags`). Include the precise problem or topic, useful
+  aliases or spelling variants, and the actual tool, method or entity if it
+  helps identify the video. Drop generic terms and duplicates that add no
+  meaning. YouTube describes tags as a minor discovery factor and gives more
+  weight to the title, thumbnail and description. Search also considers the
+  content itself and engagement. [YouTube tag guidance](https://support.google.com/youtube/answer/146402)
+  · [YouTube Search](https://support.google.com/youtube/answer/16090438)
   · [Recommendations](https://support.google.com/youtube/answer/16559650)
-  · [Video settings](https://support.google.com/youtube/answer/57404)
+
+### Standard description footer
+
+Place this English credit block after the sources and credits, on two lines.
+Use the canonical URLs in full so they can be copied directly.
+
+```text
+Made in Framewright — https://markoblogo.github.io/framewright/
+By ABVX — https://abvx.xyz/
+```
+
+Finish the YouTube description with a separate line of about five topical
+hashtags. Choose them for the current film. Keep them separate from the
+YouTube Studio Tags field. [YouTube hashtag guidance](https://support.google.com/youtube/answer/6390658)
+
+### Before handing over a YouTube package
+
+1. For a search-led film, check the natural symptom or question in free YouTube
+   search. Check a narrower topic, named entity or method if it might change
+   the copy. Record queries, date, language/market, what changed and any useful
+   data unavailable. When search is incidental, record the viewer payoff and
+   the primary discovery route.
+2. Read the primary title, cover and first lines together. Check the first
+   lines without the expanded description. Different title angles should make
+   distinct promises the opening and finished film can keep.
+3. Read the body for a detail useful enough to stand on its own. Check that
+   the description says what was actually demonstrated, links and timing
+   are verified, and tags cover relevant wording without repetition. Use
+   content value to set length and tag count. Verify both brand links and the
+   final hashtag line.
+4. Record the check in the existing production record. During regular
+   editorial review, use actual search terms, Home/Suggested and available
+   retention data to refine the next packages. Document platform guidance
+   changes when observed.
+
+Audit, 23 November 2026: Watch Duty, The Backup Route and the clip-join
+explainer had 70–82 words before source credits and 4–7 tags. Their first
+lines named the topic, but some descriptions went straight from a summary to
+credits. The clip-join copy was expanded to include the control, result and
+a check the viewer can repeat. TONFELD's package already provided a feature
+breakdown, limitation, repository link and chapter navigation. This audit
+reviewed local package copy, without drawing conclusions about discoverability
+or changing published metadata.
 
 ## TikTok
 
 - **Caption** (`publication.caption`). Give the clip its own first sentence.
+  Include the standard Framewright and ABVX credit block in TikTok copy.
   Name the subject and the specific reason to watch. Use the target phrase
   where it reads naturally. Add relevant topic, niche or series hashtags only
   when they classify the clip. Keep the caption, in-video opening and cover

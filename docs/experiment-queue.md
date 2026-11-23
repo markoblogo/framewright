@@ -2,8 +2,8 @@
 
 ## Intake 23 November 2026 — proposed
 
-- **INWORLD-ISOLATE-01:** matched-loudness offline test on owned noisy speech against the current cleanup baseline. Listen for intelligibility, voice character and artifacts.
-- **TRIPO-ORBIT-01:** inspect the same textured animated glTF and one static asset as in the existing viewer. Compare material fidelity, animation playback and time to inspect.
+- **INWORLD-ISOLATE-01:** [completed controlled offline trial](experiments/inworld-voice-isolation-2026-11-23.md). Owner preferred Inworld. Retest on owned real noise before making it a default.
+- **TRIPO-ORBIT-01:** [completed on two small GLBs](experiments/tripo-orbit-2026-11-23.md). Owner tentatively preferred Orbit for initial inspection. Heavy-case speed remains untested.
 
 [Source assessment and pass criteria](research/tool-intake-2026-11-23.md).
 
