@@ -15,10 +15,13 @@ class ArsenalSearchTest(unittest.TestCase):
         return json.loads(p.stdout) if ok else p
 
     def test_ranked_profile_falls_back_when_primary_is_unavailable(self):
-        result=self.search('--rank-profile','editorial-graphics','--unavailable','GiveMotion',
-                           '--confirmed','minicharts')
+        result=self.search('--rank-profile','editorial-graphics','--unavailable','GiveMotion')
         self.assertEqual((result['primary'],result['fallback'],result['next_test']),
-                         ('manim-community','openmotion','minicharts'))
+                         ('manim-community','openmotion',None))
+        remaining=('--rank-profile','editorial-graphics','--unavailable','givemotion',
+                   '--unavailable','manim-community','--unavailable','openmotion')
+        self.assertIsNone(self.search(*remaining)['primary'])
+        self.assertEqual(self.search(*remaining,'--include-fallbacks')['primary'],'minicharts')
         self.assertIn('Unavailable in this production',result['production'][0]['blocking_reasons'])
         self.assertNotIn('speed',result['production_score_axes'])
         self.assertIsNone(result['production'][0]['ratings']['speed'])
