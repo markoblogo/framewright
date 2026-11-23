@@ -28,3 +28,21 @@ footer .social-links{margin-left:auto}
 
 /* Owner-selected research-cycle illustration,20November2026. */
 .process-figure{margin:0;border-block:1px solid var(--line)}.process-figure picture,.process-figure img{display:block;width:100%;height:auto}.process-caption{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 0;color:var(--muted);font-size:12px}.process-caption a{display:inline-flex;align-items:center;min-height:44px}.process-caption span{text-align:right}@media(max-width:700px){.process-caption{align-items:center;gap:12px;flex-wrap:wrap;font-size:11px}.process-caption span{text-align:left}.process-figure{margin-top:12px}}
+
+
+/* Studio Notes */
+.studio-notes{padding-block:clamp(56px,8vw,112px);border-bottom:1px solid var(--line)}
+.studio-notes .section-head{margin-bottom:26px}
+.note-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;list-style:none;padding:0;margin:0}
+.note-card{height:100%;display:flex;flex-direction:column;border:1px solid var(--line);background:#101212}
+.note-card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#161919;display:block}
+.note-copy{display:flex;flex:1;flex-direction:column;align-items:flex-start;padding:20px}
+.note-copy h3{font-size:clamp(18px,2.1vw,25px);line-height:1.2;margin:0 0 10px}
+.note-copy p{font-size:14px;color:var(--muted);line-height:1.5;margin:0 0 14px}
+.note-copy .text-link{margin-top:auto;display:inline-flex;align-items:center;gap:6px;min-height:44px}
+.note-archive{margin-top:22px;border-top:1px solid var(--line)}
+.note-archive summary{padding-block:14px;min-height:44px;cursor:pointer;font-size:14px;color:var(--fg)}
+.note-archive[open] summary{margin-bottom:10px}
+.studio-notes :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(max-width:700px){.note-grid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:360px){header nav{gap:12px}}
