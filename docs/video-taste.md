@@ -1,6 +1,6 @@
 # Video taste — this studio's reusable owner preferences
 
-Updated 19 November 2026. These rules preserve explicit owner corrections and
+Updated 23 November 2026. These rules preserve explicit owner corrections and
 standing preferences from the supplied production conversation and linked cases.
 They are scoped working instructions, not universal design laws or model qualification.
 The current brief and a later explicit owner decision take precedence. Each new
@@ -22,6 +22,7 @@ copying settings into a competing policy. New inferred generalisations remain pr
 | VT-CAPTIONS | YouTube and TikTok versions | Burned-in captions competing with a platform subtitle track |
 | VT-COVER | Publication packaging | Cover treatment detached from the accepted film |
 | VT-MIX | Voice-led exploratory tours | Background music competes with speech or needs needless fragment-by-fragment gaps |
+| VT-ENDING | Films intended for standalone playback | An abrupt stop after the final story beat |
 
 ## VT-MOTION — sustain the scene, not just the pilot
 
@@ -145,6 +146,19 @@ Keep the YouTube picture free of burned-in dialogue and narration subtitles.
 Supply the timed subtitle track separately when preparing a publication package.
 Burn subtitles into the TikTok picture and keep them clear of the platform controls.
 Story text, interface labels and designed titles are part of the picture.
+
+## VT-ENDING — close standalone films
+
+**Rule:** give every film intended for standalone playback a deliberate
+ending. Use a fade to black, a resolved final shot or another clear visual
+close. Land the last spoken line before the finish and let any remaining
+music or ambience resolve naturally. Leave room for the final image or
+text to read. Designed loops use their intended loop transition.
+
+**Check:** inspect the last beat of the encoded master before packaging.
+The owner requested this as a standing rule after reviewing
+[Watch Duty](productions/watch-duty-radio.md). Its one-second fade is
+specific to that cut.
 
 ## Keep case-only details in their cases
 

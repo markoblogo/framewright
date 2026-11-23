@@ -103,6 +103,21 @@
       ]
     },
     {
+      "id": "ego-lite",
+      "name": "Ego Lite",
+      "url": "https://github.com/citrolabs/ego-lite",
+      "reviewed": "2026-11-23",
+      "review_basis": "Signed local macOS browser installation and owner-accepted browser probe",
+      "upstream_revision": "0.6.3.17 signed macOS app",
+      "disposition": "supported_scoped",
+      "scope_and_findings": "One separate-profile Tulvo enquiry and persisted stage change, a foreground macOS window recording, and one Google AI Studio attachment download verified on disk.",
+      "licence_note": "MIT repository; distributed browser, site access and captured assets have their own terms.",
+      "next_trial_or_retest_condition": "Retest for a generated-media download, a new authenticated service or direct Ego CLI automation.",
+      "evidence": [
+        "docs/experiments/ego-lite-tulvo-2026-11-23.md"
+      ]
+    },
+    {
       "id": "openscreen",
       "name": "OpenScreen",
       "url": "https://github.com/getopenscreen/openscreen",
@@ -1005,6 +1020,21 @@
       ]
     },
     {
+      "id": "inworld-voice-isolator",
+      "name": "Inworld Voice Isolator",
+      "url": "https://github.com/inworld-ai/voice-isolator",
+      "reviewed": "2026-11-23",
+      "review_basis": "Executed local offline Metal comparison and owner blind listening.",
+      "upstream_revision": "Package 1.0.0; weights 9b0285b3fe8403aa8e2f1dbb2165a80a4294c970",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Owner preferred Inworld on one 24-second controlled mixture. Metal completed with cached weights; CPU run was stopped.",
+      "licence_note": "Upstream documents Apache-2.0 for this project; asset and voice permissions remain separate.",
+      "next_trial_or_retest_condition": "Retest on one owned real noisy recording before considering default use.",
+      "evidence": [
+        "docs/experiments/inworld-voice-isolation-2026-11-23.md"
+      ]
+    },
+    {
       "id": "deepfilternet",
       "name": "DeepFilterNet",
       "url": "https://github.com/Rikorose/DeepFilterNet",
@@ -1599,6 +1629,21 @@
       "evidence": [
         "docs/research/corridorkey.md",
         "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "tripo-orbit",
+      "name": "Tripo Orbit",
+      "url": "https://www.tripo3d.ai/3d-tools/tripo-orbit",
+      "reviewed": "2026-11-23",
+      "review_basis": "Two identical local GLBs opened in Orbit and Blender; owner compared both.",
+      "upstream_revision": "Tripo Orbit 0.4.82, notarized macOS build",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Texture and three-second skeleton playback observed in Orbit; owner tentatively preferred it for inspection.",
+      "licence_note": "Proprietary free macOS viewer; independent asset rights apply.",
+      "next_trial_or_retest_condition": "Check a heavier production asset when needed; use consistent warm and cold timing boundaries.",
+      "evidence": [
+        "docs/experiments/tripo-orbit-2026-11-23.md"
       ]
     },
     {

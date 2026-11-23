@@ -1,0 +1,155 @@
+{
+  "schema": 1,
+  "issue": "studio-notes-07",
+  "date": "2026-11-23",
+  "article": "docs/editorial/2026-11-23-framewright-studio-notes-07.md",
+  "article_sha256": "8c1441ebeae2425efa82f97c32861dd1b1796ddb5f943b15ec40b428d6b2c9a6",
+  "baseline_previous_issue": "studio-notes-06",
+  "observed_git_head": "286e7cfaf8bc81ee0e3bf50043e4165b51267e26",
+  "source_sha256": {
+    "docs/productions/tulvo-small-studio.md": "f219de8f47b1c2ea05e01df4837539946bfd433173b43e34a4cfbd28dc6c0e3e",
+    "docs/productions/tulvo-business-operations.md": "d7251c3254725813213c36b4fecf5292cc3e7ecf4ac7212adac5f8b6e32851bf",
+    "docs/productions/tulvo-overview.md": "1e700978a5851926ded9813f6688361e104ac82a080a2a85c77fd5951c7686c3"
+  },
+  "publication": {
+    "state": "draft_owner_publishes",
+    "special_edition": true,
+    "cadence_changed": false,
+    "youtube_videos": [
+      {
+        "url": "https://youtu.be/m9lKpzSPnws",
+        "title": "Tulvo Review for Freelancers: From Client Inquiry to Project",
+        "channel": "ABV — AI · Books · Validation",
+        "provenance": "owner_provided_url",
+        "oembed": "verified",
+        "oembed_sha256": "f614842488d03355d21652d097accbd36e79df79f195cd618948878fea4cf31e",
+        "case_source": "docs/productions/tulvo-small-studio.md"
+      },
+      {
+        "url": "https://youtu.be/87jxMAuyOCQ",
+        "title": "Tulvo Review for Business Operations: Testing a Shipment Release Workflow",
+        "channel": "ABV — AI · Books · Validation",
+        "provenance": "owner_provided_url",
+        "oembed": "verified",
+        "oembed_sha256": "a2127a87ca020eb5178446d1dbe2e5cf245d5f6d467d31bd4b737941379574e5",
+        "case_source": "docs/productions/tulvo-business-operations.md"
+      },
+      {
+        "url": "https://youtu.be/YPYXpOpbCl4",
+        "title": "What Is Tulvo? A Tour of Its AI Workspace",
+        "channel": "ABV — AI · Books · Validation",
+        "provenance": "owner_provided_url",
+        "oembed": "verified",
+        "oembed_sha256": "9b2d20bad880e3775160666141f645da3d3d173f89c6308f8ffbb206481e66d7",
+        "case_source": "docs/productions/tulvo-overview.md"
+      }
+    ],
+    "affiliate": "owner_provided_discount_url_and_commission_disclosure",
+    "feature_claim_source": "https://tulvo.io/platform"
+  },
+  "covered_capabilities": [
+    "synthetic-workflow-testing",
+    "source-vs-saved-report",
+    "labelled-vendor-and-test-footage",
+    "player-safe-interface-closeups"
+  ],
+  "cover": {
+    "file": "productions/studio-notes-07/studio-notes-07-cover.png",
+    "sha256": "47f97819eac295099e339a914ace37133463d80d7467f49045bf4e839839159c",
+    "bytes": 1419566,
+    "width": 1600,
+    "height": 900,
+    "format": "PNG",
+    "headline": "I Tested Tulvo on Two Workflows",
+    "series_issue_label": "FRAMEWRIGHT STUDIO NOTES 07",
+    "alt": "The Tulvo logo sits above the headline I Tested Tulvo on Two Workflows. A paper proposal, translucent task cards and a miniature teal rail container sit on a charcoal background.",
+    "tool": "image_gen.imagegen + local typesetting",
+    "provenance": "original_builtin_imagegen_background_no_reference_upload_plus_official_tulvo_logo",
+    "logo": {
+      "url": "https://tulvo.io/assets/tulvo-logo-footer.svg",
+      "sha256": "f2abb9f28928047cced77c00742bdd4633543cd7f31784a42189484ad1fa484a",
+      "use": "editorial identification"
+    },
+    "background_sha256": "04c2a898a6afb98e1eb18a19c277e807495e93af14a931f755339424be6dadc6",
+    "prompt_file": "productions/studio-notes-07/cover-prompt.txt",
+    "full_prompt": "Create a wide landscape 16:9 editorial cover background for a serious English article about testing one AI workspace on creative studio and rail freight workflows. Charcoal ink, restrained teal, warm amber. LEFT 54% must be uninterrupted smooth near-black charcoal negative space for large type to be composited later, with no objects or highlights there. On the right, a tangible studio still life on a dark graphite table: a blank folded proposal sheet, two translucent task cards, and a small sculptural industrial rail container in desaturated teal, connected by one discreet amber line. Intelligent editorial photography mixed with tactile 3D, soft directional light, distinctive yet calm, enough room around the focal objects, horizontal safe framing. The composition should work as an article hero, not a software advertisement. NO text, NO letters, NO numbers, NO marks, NO logos, NO watermarks. No reference images.",
+    "prompt_sha256": "a9d05a57480379c852851699e585f47e2343789c218c00a478a052e4085b994f",
+    "generation_count": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_displayed",
+      "paid_api_calls": 0
+    },
+    "review": {
+      "state": "operator_pass",
+      "reviewed_at": "2026-11-23T22:03:37+01:00",
+      "full_size": [
+        1600,
+        900
+      ],
+      "reduced_size": [
+        480,
+        270
+      ],
+      "reduced_file": "qa/cover-480.png",
+      "spelling": "exact headline and issue label, official wordmark",
+      "owner_cover_approval": "pending"
+    }
+  },
+  "book_source": {
+    "candidate": true,
+    "status": "candidate_supporting_evidence",
+    "chapters": [
+      "C03",
+      "C08"
+    ],
+    "cases": [],
+    "gaps": [
+      "G01",
+      "G03"
+    ],
+    "routes": [
+      "with_framewright",
+      "without_framewright"
+    ],
+    "reader_reproduction": "not_performed",
+    "chapter_approval": "not_given",
+    "reuse_status": "fact_check_deduplicate_adapt_and_clear_rights"
+  },
+  "delivery": {
+    "issue_id": "studio-notes-07",
+    "prepared_at": "2026-11-23T22:03:37+01:00",
+    "package_path": "productions/studio-notes-07",
+    "publication_document": "read.html",
+    "markdown_file": "2026-11-23-framewright-studio-notes-07.md",
+    "cover_file": "studio-notes-07-cover.png",
+    "source_file": "2026-11-23-framewright-studio-notes-07-sources.json",
+    "selected_text_sha256": "8c1441ebeae2425efa82f97c32861dd1b1796ddb5f943b15ec40b428d6b2c9a6",
+    "selected_cover_sha256": "47f97819eac295099e339a914ace37133463d80d7467f49045bf4e839839159c",
+    "publication_document_sha256": "2744cf08fefe2fef3bb7917d08b3d718d187ca9381669c8fd8a006be50b4533e",
+    "delivery_state": "ready_to_deliver",
+    "notification_emission": "pending_final_chat_message",
+    "publication_state": "draft_owner_publishes"
+  },
+  "book_readiness": {
+    "status": "unchanged",
+    "reason": "Useful review method; no independent reader reproduction or chapter approval."
+  },
+  "claims": [
+    {
+      "claim": "Specific brief led to a proposal and a tracked studio task",
+      "source": "docs/productions/tulvo-small-studio.md",
+      "scope": "one fictional creative-studio project"
+    },
+    {
+      "claim": "Manual release accepted both records, and the saved report retained the earlier status after reload",
+      "source": "docs/productions/tulvo-business-operations.md",
+      "scope": "two fictional shipments and one saved report"
+    },
+    {
+      "claim": "Third video distinguishes tested screens and vendor examples",
+      "source": "docs/productions/tulvo-overview.md",
+      "scope": "owner-approved overview; deployment, public publishing and readership untested"
+    }
+  ]
+}

@@ -17,6 +17,37 @@ selection. Consolidate the accumulated work after the experiments in one PR
 without a release. For the revised RUN//SIGNAL test order and the next Radar
 slate, see [current work](next-cycle.md).
 
+## Apply production memory in the next cycle
+
+23 November, follow-up to the Perplexity review of the public materials. Use the
+next selected production with a comparable predecessor. A returning series or
+an editorial explainer with a retained recipe both fit.
+
+1. **Recover the working state.** Use the production journal and existing
+   brief to surface the selected version, open question, current wait and
+   permitted next step. Show only selected work and relevant probes in the
+   working summary. Keep historical decisions reachable from the catalogue.
+   Check after a fresh session whether an operator can recover those four
+   facts and locate the review package without an owner recap.
+2. **Check the risky moment before the full cut.** Name what changes on screen,
+   where the viewer should look and what should make sense on its own. Use a
+   short moving excerpt for that question. Choose one past owner correction
+   that applies and record which decision it changed before the first full
+   review. Ask whether the same issue still needed correction.
+3. **Measure one real repeat.** Identify the comparable prior piece, what
+   will be reused and what benefit is expected. In the existing production
+   record, note active owner minutes, substantial revision rounds, recurring
+   issues already covered by a rule, and what was reused or rebuilt. Record
+   missing observations as unknown. A single comparison is case evidence.
+4. **Distill one worked case.** Use the existing case format to show the
+   question, first attempt, correction, comparison and limits. The [Transit
+   Speed demo](experiments/transit-speed-one-step-2026-11-23.md) is a candidate:
+   one viewer preferred B; success after one viewing remains untested.
+   Keep private footage out of any public version unless cleared.
+
+These checks fit M3/M4 and the existing handoff work. Reuse current records
+and delivery. Apply them when the next suitable production is selected.
+
 ## Next release goal
 
 The post-0.11.0 work adds publication-copy standards, retained editorial and

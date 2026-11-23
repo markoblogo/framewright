@@ -1,6 +1,6 @@
 {
   "schema": "framewright-book-materials-v1",
-  "updated": "2026-11-16",
+  "updated": "2026-11-23",
   "language_of_working_docs": "ru",
   "book_language": "not_decided",
   "scope": "Video-production methods with Framewright and without it; parallel routes, same outcome criteria",
@@ -473,6 +473,44 @@
         "state": "published_owner_report",
         "chapter_approval": "not_given",
         "readiness_threshold_changed": false
+      }
+    },
+    {
+      "date": "2026-11-23",
+      "file": "docs/book/updates-2026-11-23.md",
+      "editorial_issue": "studio-notes-06",
+      "chapters": [
+        "C03",
+        "C08"
+      ],
+      "cases": [
+        "P05"
+      ],
+      "gaps": [
+        "G01",
+        "G03",
+        "G08"
+      ],
+      "source_sha256": {
+        "docs/productions/escapade-powered-flyby.md": "d0eac21e4042fc56bd8b1d326a293d7a5faf3659c74e6420f7a164a4dbc3c575",
+        "docs/productions/the-backup-route.md": "388f7d519c71323c1260f547402d7062df2049017c3c2b5cd49f25b34aa7b4c9",
+        "docs/experiments/openmotion-native-export-2026-11-22.md": "f68f292e5d7fa9028704069dc39c373bfd4f2f77dcc41d77c08756f245570ff0",
+        "docs/experiments/transit-speed-one-step-2026-11-23.md": "fad61e1650addd2e4fb8eaa8739dc25adb8e1cd9316fb89aa21c3a94cfdeddff",
+        "docs/video-taste.md": "fe86338ba0e37b8198ff0e6ab69cda43d0d0e9a42b478390a6c7f5ff9e9a85de",
+        "docs/release-notes-0.11.0.md": "2d5b3fbc34d05e2385c65ebac8433fef650b419220f9a1d2e359587007c3eddc"
+      },
+      "book_source_article": "docs/editorial/2026-11-23-framewright-studio-notes-06.md",
+      "new_reader_reproductions": 0,
+      "gap_status_changes": [],
+      "chapter_status": "working_notes_only",
+      "rights": "specific_book_illustrations_and_quotations_not_cleared",
+      "book_readiness_threshold_changed": false,
+      "working_material_sha256": {
+        "docs/book/updates-2026-11-23.md": "4ab4ef713abdb9350f0da274d7c7d57220ae9ab98ea16eb7cd834371a875dd19",
+        "docs/book/outline.md": "620f1b152dee4e6b2d5f87bdba53d3233d275493ecdb83fc650d3837d3722cdb",
+        "docs/book/coverage.md": "a564f03d96d9366e26952d17db393d6eb8e7aadfc23421412bb4dedc2a21a8a3",
+        "docs/book/cases/corrections-to-checks.md": "b998462714d1509e479e0db58876b389b7c129e0bc387b2cb60a5f3c80aba299",
+        "docs/book-milestone.md": "bf1d770d2ddb7504b3513fca3d12f38445809d4771e61148af9cfcd59ad71b7a"
       }
     }
   ],

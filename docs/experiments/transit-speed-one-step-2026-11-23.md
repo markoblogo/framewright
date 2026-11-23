@@ -9,9 +9,9 @@ click and confirmation timing. The five-second exports are silent, 720×960,
 - B pushes in on Confirm receipt, then reframes immediately to the actual
   confirmation panel showing 5,000 kg recorded.
 
-**Owner review:** B was clearer. This is a qualitative preference from one
-viewer comparing the two cuts. Recall and successful reproduction in a reset
-demo were not measured.
+**Owner review:** Either cut showed enough for a viewer to repeat the action;
+B was clearer. This is the owner's judgement after watching both cuts. Recall
+and successful reproduction in a reset demo were not measured.
 
 For a tutorial focused on one action, keep enough context to locate the
 control, then give the actual success state a readable frame immediately

@@ -10,8 +10,20 @@ and [The Backup Route](productions/the-backup-route.md) have publication links.
 [One Step in the Interface](experiments/transit-speed-one-step-2026-11-23.md)
 remains an internal demo comparison. Its focused cut was clearer in owner
 review. The next Radar slate informs the next editorial selection. Separately,
-[the pending tool probes](research/tool-intake-2026-11-23.md) prioritize offline
-voice isolation and a quick asset-inspection check.
+[offline voice isolation](experiments/inworld-voice-isolation-2026-11-23.md) passed one controlled owner comparison. [Tripo Orbit](experiments/tripo-orbit-2026-11-23.md) passed small-GLB inspection and was tentatively preferred by the owner.
+
+**Tulvo series complete:** The [creative studio](productions/tulvo-small-studio.md),
+[business operations](productions/tulvo-business-operations.md) and
+[overview](productions/tulvo-overview.md) have owner-provided YouTube URLs.
+The [ABVX special edition](https://abvx.xyz/writing/tulvo-review-two-workflows-framewright-07) is published and its expected headline
+was independently observed. The three films and article form the finished series.
+
+**Project improvement, 23 November:** On the next suitable selected production,
+reuse one established method, test one familiar failure before the full cut,
+and record owner effort, corrections and reuse. Separately, verify that a fresh
+session can recover the selected version, wait and permitted next step from
+the existing records. [Checks and one worked case](roadmap.md#apply-production-memory-in-the-next-cycle).
+[M03 v5](productions/run-signal-m03.md) was recovered on the same machine; the owner confirmed the review page, MP3 in VLC and clarity of the next step. A separate operator handoff remains untested.
 
 **RUN//SIGNAL:** The first-three-missions promo is owner-approved in both
 formats and held for the M03 URL. The first possible outdoor check is the

@@ -60,16 +60,16 @@ Component capabilities:
     }
   },
   "excluded_summary": {
-    "task does not match": 98,
-    "style not indexed for this tool": 191,
-    "input kind does not match or is unindexed": 181,
+    "task does not match": 101,
+    "style not indexed for this tool": 194,
+    "input kind does not match or is unindexed": 184,
     "task evidence below requested level": 150,
-    "requested speech language not indexed at this evidence level": 190,
-    "feature unavailable or below level: video-export": 185,
-    "feature unavailable or below level: paper-cut-regroup": 191,
-    "feature unavailable or below level: narration": 190,
-    "feature unavailable or below level: still-export": 190,
-    "retained rights classification excluded or unknown for requested use": 48,
+    "requested speech language not indexed at this evidence level": 193,
+    "feature unavailable or below level: video-export": 188,
+    "feature unavailable or below level: paper-cut-regroup": 194,
+    "feature unavailable or below level: narration": 193,
+    "feature unavailable or below level: still-export": 193,
+    "retained rights classification excluded or unknown for requested use": 49,
     "low-quality explicit fallback;enable --include-fallbacks to inspect": 2
   },
   "excluded": []
