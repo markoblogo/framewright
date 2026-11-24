@@ -3035,6 +3035,90 @@
       "rights_class": "conditional",
       "licence_note_sha256": "c57a13b4e1b8e09c33d254bc6c239b15a6ac2e71a0c1a6ef34efeaade64a1d16",
       "applications": [
+        {
+          "id": "mujoco--event-gate-contact",
+          "tasks": [
+            "3d",
+            "diagram",
+            "graphics"
+          ],
+          "inputs": [
+            "data",
+            "3d"
+          ],
+          "styles": [
+            "editorial-motion-graphics"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "physics-backed-motion",
+            "recorded-transform-replay"
+          ],
+          "version": "MuJoCo 3.17.0",
+          "scope": "One Apple Silicon CPU experiment with two gate heights, identical initial ball motion, and an 8.2-second Three.js insert.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/mujoco-event-gate-2026-11-24.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Two delivery labels preserve the same E42 ID and the outcome is shown by an adjacent status badge.",
+              "source": "docs/experiments/mujoco-event-gate-2026-11-24.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Recorded rotations and translations animate the ball during travel and contact.",
+              "source": "docs/experiments/mujoco-event-gate-2026-11-24.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Two runs per mode yielded identical pose arrays at recorded precision.",
+              "source": "docs/experiments/mujoco-event-gate-2026-11-24.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Encoded frames sampled around the passage and stopped token.",
+              "source": "docs/experiments/mujoco-event-gate-2026-11-24.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Changing only the gate height changed whether the ball crossed the target plane.",
+              "source": "docs/experiments/mujoco-event-gate-2026-11-24.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Two repeats per condition, contact logged at 1.300 s in closed case, and 246-frame insert decoded."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner accepted the full cut containing the 8.2-second physics insert. No separate rating of the tool was given.",
+            "source": "docs/productions/render-complete-events.md"
+          },
+          "resources": {
+            "hardware": "Apple Silicon CPU, local Chrome/Three.js graphics",
+            "formats": "120 recorded pose samples per condition; 1280×720, 30 fps insert",
+            "timing": "Active labor and comparative speed unmeasured.",
+            "cost": "Aggregate production cost unknown."
+          },
+          "limitations": [
+            "One rigid sphere and one gate; longer chains, different machines, native MuJoCo rendering and delivery performance remain untested."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "MuJoCo gate",
+            "rigid contact",
+            "recorded physics",
+            "event queue illustration"
+          ]
+        },
         {"id":"mujoco--retained-scope","tasks":["3d","diagram","graphics"],"inputs":["data","3d"],"styles":[],"style_basis":"not_extracted","techniques":[],"version":"3.17.0","scope":"Tool-level retained ledger summary,not an individual experiment: Apple Silicon CPU cube/plane dynamics,0.002s timestep and3s trajectory, two independent repeats per friction setting agree at absolute1e-12. Initial state only; copied positions/quaternions drive original graphics. Native MuJoCo rendering, robot reconstruction, real-object calibration and general simulator accuracy untested.","evidence":"tested","sources":["docs/productions/real2sim-twins.md","docs/methods/physics-backed-research-explainer.md","docs/experiment-queue.md","docs/research/tool-intake-2026-11-11.md"],"examples":[],"quality":{"readability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"motion":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"drawing_stability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"artifacts":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."},"controllability":{"status":"not_assessed","provenance":"not_assessed","note":"No separate structured assessment extracted;consult retained sources."}},"technical":{"status":"recorded_execution","scope":"Retained tool-level execution summary only;not a feature-specific or newly repeated check."},"owner_evaluation":{"status":"not_recorded","scope":"No explicit owner decision extracted;publication does not imply approval."},"resources":{"hardware":"not_extracted;see sources","formats":"not_extracted","timing":"not_recorded_in_index","cost":"unknown"},"limitations":["Historical scope only;unrecorded quality/timing/version remain unknown."],"alternatives":[],"search_terms":[],"granularity":"retained_scope_summary","scope_note":"Not evidence for any specific feature/experiment. Consult original feature experiment IDs and case sources;no per-experiment application assessment was extracted."}
       ]
     },
@@ -4229,6 +4313,90 @@
       "rights_class": "conditional",
       "licence_note_sha256": "4471715c469605fe024bccd3cbcef5592209438ae346ebf21dfe1ac551c03cfb",
       "applications": [
+        {
+          "id": "givemotion--gemini-skill-file-access",
+          "tasks": [
+            "video",
+            "graphics",
+            "diagram"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [
+            "editorial-motion-graphics"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "native-aspect-layout",
+            "timed-scan",
+            "fixed-card-perspective"
+          ],
+          "version": "GiveMotion 0.1.6",
+          "scope": "Silent 11.5-second landscape perspective-change pilot and retained animation in a 46-second English film.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/gemini-skill-file-access.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "retained_report",
+              "note": "The owner found the silent example clear overall and asked to lift the ending text.",
+              "source": "docs/productions/gemini-skill-file-access.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "A moving package and row-by-row scan show the transition to the editor’s view.",
+              "source": "docs/productions/gemini-skill-file-access.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "File card placement stays fixed while the view and one access status change.",
+              "source": "docs/productions/gemini-skill-file-access.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Encoded samples at 640 pixels were inspected for clipping and status visibility.",
+              "source": "docs/productions/gemini-skill-file-access.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "The full cut raises the takeaway and preserves card order; the one-file state change is timed explicitly.",
+              "source": "docs/productions/gemini-skill-file-access.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "1280×720 at 30 fps pilot and full master decoded."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Pilot judged clear; the full edit accepted subject to one opening correction.",
+            "source": "docs/productions/gemini-skill-file-access.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64 with local Chrome and FFmpeg",
+            "formats": "1280×720 at 30 fps",
+            "timing": "Active labor unmeasured.",
+            "cost": "Aggregate production cost unknown."
+          },
+          "limitations": [
+            "Illustrates permissions on fictional files. No live Gemini or Drive test."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Gemini skill sharing",
+            "file access",
+            "fixed card perspective",
+            "handoff"
+          ]
+        },
         {
           "id": "givemotion--copilot-evals-package-check",
           "tasks": [

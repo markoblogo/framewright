@@ -1,5 +1,13 @@
 # Proposed experiment queue
 
+## EmbeddingGemma 2 · tool-card retrieval, 24 November
+
+[Executed local 12-card/two-query trial](experiments/embeddinggemma-tool-retrieval-2026-11-24.md). Both rankings kept the reference tool first and surfaced a transcription near match. The original media-index trial remains open.
+
+## PHYSICS-CHAIN-01 · first production contact shot, 24 November
+
+[Executed MuJoCo / Three.js test](experiments/mujoco-event-gate-2026-11-24.md). Same rolling prop with the gate raised and closed. Two local repeats per condition matched at recorded precision. Native contact and trajectories drove the 8.2-second rendered insert. [Full cut accepted](productions/render-complete-events.md); longer contact chains and cross-machine reproduction remain open.
+
 ## Intake 23 November 2026 — proposed
 
 - **INWORLD-ISOLATE-01:** [completed controlled offline trial](experiments/inworld-voice-isolation-2026-11-23.md). Owner preferred Inworld. Retest on owned real noise before making it a default.
