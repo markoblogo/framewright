@@ -1,5 +1,7 @@
 # Tool review and test inventory
 
+[Seven-tool intake, 24 November 2026](research/tool-intake-2026-11-24.md). Try diagram-design first, retain ArcBrush for noncommercial work, and queue a Comfy Desktop compatibility check. Treg is a marketing research reference. Topaz and Blend Online stay in reserve.
+
 ## Tool intake — 23 November 2026
 
 [Four-link assessment](research/tool-intake-2026-11-23.md). Inworld Voice Isolator

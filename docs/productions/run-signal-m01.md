@@ -67,4 +67,9 @@ The owner provided the [M01 YouTube URL](https://youtu.be/XYRVeefj6aM) on 21 Nov
 ### Episode and launch-promo links
 
 - A full episode’s YouTube description lists all previous full episodes in mission order with the mission number, title and direct YouTube URL. M01 has no previous-missions block. M02 links M01. M03 links M01 and M02. M04 and later extend the list.
+- End every full workout’s YouTube description with the same training-frequency note, after the regular description blocks and hashtags.
+
+  > One RUN//SIGNAL workout per day at most. If you feel ready, do the next session the following day. It’s fine to take a rest day between sessions.
+
+- Publish an episode promo only after the full workout is live on YouTube and the owner has supplied its direct URL. Put that exact URL in the YouTube promo description and the TikTok promo caption, labelled with the workout title or mission number. Verify both packages contain the same URL before handing them over. Where the URL stays plain text, keep it in the caption and add a native video link when available and authorised.
 - The launch promo description or caption lists all three full missions in order. Add the verified M03 URL before releasing either promo. Use the TikTok first comment to repeat the links when useful. Pending markers are for internal review.

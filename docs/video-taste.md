@@ -170,3 +170,32 @@ this preference work does not mandate a watermark/ending in every film.
 A new palette, fixed cut frequency or universal character style needs its own owner
 instruction. Record any actual conflict/exception in the affected film, and update
 this index only at the authorised scope.
+
+
+For standalone explainers that finish their argument on a diagram or UI, prefer
+a brief relevant photographic or live-action closing image, then fade that
+image to black. Allow enough time to read the final takeaway before the cut.
+Radar 20 established the reference: approximately 1.3 seconds for the image
+and fade together, with the approved timing and narration preserved.
+
+### Radar visual rotation
+
+For each new Radar pilot, check the recent releases and choose a visual treatment
+suited to the story. Rotate palette, typography, lighting, composition and the
+balance of photography, footage and diagrams across releases. Record the chosen
+direction and one visual question in the existing brief. Prefer real photographs
+and footage where they fit. For generated stills intended to read as photos,
+inspect lighting, texture and plausible physical details at delivery size.
+
+### Rotate stock cutaways
+
+The reusable photo and footage library lives in the external studio's
+`tools/b-roll/`, with source, author, licence, subject and actual uses in
+`index.json`. Start with a cap of 16 assets or 256 MiB, whichever comes first.
+Before choosing footage, check recent Radar cuts. Prefer fresh material or a
+clip absent from the last three cuts, except where a recurring visual has a
+specific narrative purpose. Log reuse once per cut. At the cap, remove the
+most-used eligible library copy first, breaking ties by oldest last use,
+and replace it with the new clip. Repeat if needed to stay within both limits.
+Keep project copies required by existing recipes, plus source and usage history
+for retired stock. Project masters and source records are outside the library cap.
