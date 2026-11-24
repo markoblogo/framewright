@@ -1,6 +1,6 @@
 # Current work and protected waits
 
-Updated 23 November 2026. This is the current operational entry point, not a session log.
+Updated 24 November 2026. This is the current operational entry point, not a session log.
 [Start / continue / correct](start-here.md) · [Roadmap](roadmap.md) · [Case counts and definitions](public-evidence.json).
 
 ## Current state
@@ -9,8 +9,16 @@ Updated 23 November 2026. This is the current operational entry point, not a ses
 and [The Backup Route](productions/the-backup-route.md) have publication links.
 [One Step in the Interface](experiments/transit-speed-one-step-2026-11-23.md)
 remains an internal demo comparison. Its focused cut was clearer in owner
-review. The next Radar slate informs the next editorial selection. Separately,
-[offline voice isolation](experiments/inworld-voice-isolation-2026-11-23.md) passed one controlled owner comparison. [Tripo Orbit](experiments/tripo-orbit-2026-11-23.md) passed small-GLB inspection and was tentatively preferred by the owner.
+review. The next Radar slate informs the next editorial selection. For a selected Radar film, default to a horizontal
+YouTube probe and pair one production question with a suitable queued tool.
+Project Genie is closed after its Ultra requirement and the owner declining the
+upgrade. The accepted Three.js lighthouse probe stays internal. FastFrames is
+blocked on the current macOS stack pending a compatible Linux/NVIDIA runtime.
+In the internal browser-action comparison both cuts were readable and the owner
+preferred the focused cut. Copilot itself was not run in that comparison.
+The current five-film Radar package is prepared for batch handoff. Four of its films predate this merge. The [Gemini on Mac handoff](productions/gemini-mac-handoff.md) completes that set. The [skill access](productions/gemini-skill-file-access.md), [render events](productions/render-complete-events.md) and [tool retrieval](productions/tool-retrieval-shortlist.md) films have owner-provided YouTube URLs and remain in the subsequent batch. Delivery to Radar is pending.
+
+Separately, [offline voice isolation](experiments/inworld-voice-isolation-2026-11-23.md) passed one controlled owner comparison. [Tripo Orbit](experiments/tripo-orbit-2026-11-23.md) passed small-GLB inspection and was tentatively preferred by the owner.
 
 **Tulvo series complete:** The [creative studio](productions/tulvo-small-studio.md),
 [business operations](productions/tulvo-business-operations.md) and
@@ -25,20 +33,19 @@ session can recover the selected version, wait and permitted next step from
 the existing records. [Checks and one worked case](roadmap.md#apply-production-memory-in-the-next-cycle).
 [M03 v5](productions/run-signal-m03.md) was recovered on the same machine; the owner confirmed the review page, MP3 in VLC and clarity of the next step. A separate operator handoff remains untested.
 
-**RUN//SIGNAL:** The first-three-missions promo is owner-approved in both
-formats and held for the M03 URL. The first possible outdoor check is the
-revised M01 audio with OpenTrack + VLC on 24 November, weather permitting.
-[M03 Window Three](productions/run-signal-m03.md) passed home review. Its
-field test follows M01, on 25 November at the earliest in the current plan.
-After a successful M03 field test, prepare the episode's YouTube package and
-complete the promo copy with all three URLs. Prepare a promo per subsequent
-episode. The [Transit Speed bilingual lesson](productions/transit-speed-bilingual-tutorial.md)
+**RUN//SIGNAL:** [M03 Window Three](productions/run-signal-m03.md) passed the
+owner’s outdoor test on 24 November with no changes requested. Its YouTube
+package uses v5. The owner supplied [the M03 YouTube URL](https://youtu.be/wfFjqxWzwNs).
+Both [68-second launch promo cuts](productions/run-signal-launch-promo.md) have
+owner-supplied YouTube and TikTok URLs. The scenario-thread report is prepared. M01 v08 outdoor validation is
+tracked separately. The owner is drafting M04. Production follows the script
+handoff. Prepare a promo per subsequent episode. The [Transit Speed bilingual lesson](productions/transit-speed-bilingual-tutorial.md)
 is accepted and delivered privately to the receiving project.
 
 **Parallel owner work:** Partner correspondence is planned for 24 November.
-Any follow-up production depends on the response. Udemy can be revisited from
-24 November at the earliest if the owner chooses. Editorial work can proceed
-in parallel. Quixote is frozen.
+Any follow-up production depends on the response. The owner uploaded the
+[2:21 Udemy test clip](productions/practical-ai-bug-fixing-course.md#udemy-test-video--24-november-2026)
+on 24 November. Platform feedback is pending. Editorial work can proceed in parallel. Quixote is frozen.
 
 **22 November:** [M02 Waterline](productions/run-signal-m02.md) passed outdoor listening; the owner supplied its YouTube URL. [French Vineyard](productions/french-vineyard-finance.md), [Ultrasound Without Gel](productions/dry-ultrasound.md), [ESCAPADE](productions/escapade-powered-flyby.md) and [Reaction Telemetry](productions/reaction-telemetry.md) have accepted masters and owner-reported publication links. The [tool ranking profiles](../skills/video-production-router/references/arsenal-search.md) now inform editorial graphics, narration, editable montage and portrait adaptation. See [0.11.0 scope](release-notes-0.11.0.md).
 
@@ -57,7 +64,7 @@ Latest Radar batch case: [Robot meets CAPTCHA](productions/robot-meets-captcha.m
 
 **Historical priority,19November (superseded by20November Klap selection):** [Practical AI Bug Fixing / Udemy pilot](productions/practical-ai-bug-fixing-course.md) is **owner-accepted**. The6:00English lecture,real-code capture,84-cueSRT/VTT,cover and teaching archive are retained;technical/resource/browser checks passed. The earlier registration plan was superseded by the owner’s decision to park Udemy. One lecture of six is produced. Full-course expansion and publication remain separate. The Klap evaluation and production case subsequently closed on 20 November. Quixote is indefinitely frozen.
 
-Earlier accepted and owner-reported social publication: [Osmo / AI Is Coming for Your Nose](productions/osmo-ai-nose.md),19November. Both69.381s English films and covers accepted;publication links above. The accepted Udemy pilot is retained; platform work is parked. Prior social case: [Papertrails / This World Unfolds](productions/papertrails-world-walk.md),owner-reported publication18November. No new release;Quixote is indefinitely frozen.
+Earlier accepted and owner-reported social publication: [Osmo / AI Is Coming for Your Nose](productions/osmo-ai-nose.md),19November. Both69.381s English films and covers accepted;publication links above. Prior social case: [Papertrails / This World Unfolds](productions/papertrails-world-walk.md),owner-reported publication18November. No new release;Quixote is indefinitely frozen.
 
 18November:[KriptoK / Same Ticker. Different Rights.](productions/kriptok-same-ticker.md) full v2 films accepted in both formats after correction of repetitive interiors/static source windows. Publication package prepared:two covers,three YouTube titles,description/tags/SRT,TikTok caption/first comment. Video hashes unchanged. Owner supplied YouTube/TikTok URLs18November;visibility/identity/metrics unchecked. All three films complete;Radar’s19November owner context confirms completion. The exact six-URL receiving-state application remains unverified;do not resend blindly. No deposits,trades or campaign submissions.
 
@@ -91,9 +98,10 @@ Transfer to another operator (M6 / REL-D) remains partial and **parallel**, purs
 
 ## Next release direction
 
-**Owner timing decision 21 November:** PR #87 merged without release. The next release follows completion and acceptance of [M02 Waterline](productions/run-signal-m02.md). The owner accepted the picture and outdoor mix, supplied the episode’s YouTube URL and authorized the consolidation PR and release on 22 November. The 0.11.0 source scope is recorded in the release notes. GitHub is the source of truth for build availability. See [the updated gate](roadmap.md#owner-release-timing-19november2026).
-[Scope and observable criteria](roadmap.md#next-release-goal) retain the evidence and limitations;they do not authorise another release.
-[17November release evidence checkpoint](roadmap.md#release-evidence-checkpoint-17november2026) records completed Praxis continuation. [0.10.0 publication](release-notes-0.10.0.md#publication-status),source CI/merge,final build and anonymous download checks were completed for that version.
+The latest release baseline is the [0.11.0 experimental prerelease](release-notes-0.11.0.md). The M02 approval and publication condition belonged to that release and is closed. The next release version and scope await owner selection.
+
+The [current candidate](roadmap.md#next-release-goal) is repeatable editorial and training handoff through the existing delivery page. The next check is to reopen a real selected package in a fresh session and recover its approved revision, master, subtitles and publication or lesson materials. Independent second-operator transfer stays a parallel check. For any selected release scope, verify the build and supported upgrade path from the merged source, prepare release notes and get separate owner authorization to publish.
+
 The [Pantheon worked correction](productions/pantheon-chatgpt-orb.md#worked-example-v2-to-v3) is existing same-case evidence, not a new trial or proof of independent operation.
 
 ## Read and maintain

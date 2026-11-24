@@ -53,15 +53,16 @@ and delivery. Apply them when the next suitable production is selected.
 The post-0.11.0 work adds publication-copy standards, retained editorial and
 tutorial comparisons, and a release-independent tool intake. A new version and
 release objective remain open. One candidate is a repeatable editorial and
-training handoff: use the established delivery page and demonstrate from a
-fresh session that a second operator can reopen the selected project and obtain
-its master, subtitles and copy. A single controlled demo can separately check
-whether a viewer can repeat the action after one viewing.
+training handoff. Use the existing delivery page to reopen a real selected
+package in a fresh session and recover its approved revision, master, subtitles
+and copy. Independent second-operator transfer is a parallel workstream. Claim
+it only after an independent test. A controlled viewer repeatability test can
+separately check whether a learner can repeat an action after one viewing.
 
 Next useful extensions are offline speech cleanup and fast 3D asset inspection
 ([bounded probes](research/tool-intake-2026-11-23.md)). Use the next Radar brief
 to exercise ranking and one concrete visual risk. Keep [automated social publishing](research/social-publishing-audit-2026-11-22.md)
-in research. M03's field test and publication sequence remain episode milestones.
+in research. RUN//SIGNAL production and publication follow their own episode milestones.
 
 **0.10.0 goal,adopted14November and shipped17November2026: less repeated explanation when continuing or correcting a film.**
 The next release objective is not yet selected;the criteria below retain this bounded increment and its limits.
@@ -76,7 +77,7 @@ The next release objective is not yet selected;the criteria below retain this bo
 
 **M01 publication evidence, 21 November 2026:** the owner supplied [the YouTube URL](https://youtu.be/XYRVeefj6aM). The owner reported M01 publication. Independent public playback and playlist membership are unverified. The next release scope, version and readiness are still to be decided.
 
-**Latest owner release decision, 21 November 2026:** complete and obtain owner approval for [M02 Waterline](productions/run-signal-m02.md) before the next Framewright release. The owner accepted the v2 picture in the home review. On 22 November the owner reported a successful outdoor VLC listening test with no requested audio changes. The parallel GPS logger did not retain a valid route; tracker selection is separate from M02 media approval. Earlier release sequencing below is historical.
+**Owner timing for 0.11.0, 21 November 2026:** complete and obtain owner approval for [M02 Waterline](productions/run-signal-m02.md) before the next Framewright release. The owner accepted the v2 picture in the home review. On 22 November the owner reported a successful outdoor VLC listening test with no requested audio changes. The parallel GPS logger did not retain a valid route; tracker selection is separate from M02 media approval. Earlier release sequencing below is historical.
 
 **Earlier timing rule, superseded on 21 November 2026.** The release was planned at the first actual occurrence of either:
 
