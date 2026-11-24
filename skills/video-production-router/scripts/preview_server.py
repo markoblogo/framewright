@@ -8,6 +8,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import os
 from pathlib import Path
 import re
+from urllib.parse import quote, urlsplit
 
 
 class PreviewHandler(SimpleHTTPRequestHandler):
@@ -24,6 +25,7 @@ class PreviewHandler(SimpleHTTPRequestHandler):
 
     def send_head(self):
         self.remaining = None
+        self.download_name = None
         host = self.headers.get('Host', '').lower()
         allowed = {'127.0.0.1', 'localhost', f'127.0.0.1:{self.server.server_port}',
                    f'localhost:{self.server.server_port}'}
@@ -51,6 +53,8 @@ class PreviewHandler(SimpleHTTPRequestHandler):
         if not os.path.isfile(path):
             self.send_error(404, 'File not found')
             return None
+        if urlsplit(self.path).query == 'download=1':
+            self.download_name = Path(path).name
         value = self.headers.get('Range')
         if not value:
             return super().send_head()
@@ -92,6 +96,7 @@ class PreviewHandler(SimpleHTTPRequestHandler):
                 raise ValueError()
         except ValueError:
             stream.close()
+            self.download_name = None
             self.send_response(416)
             self.send_header('Content-Range', f'bytes */{size}')
             self.send_header('Content-Length', '0')
@@ -112,6 +117,10 @@ class PreviewHandler(SimpleHTTPRequestHandler):
         return None
 
     def end_headers(self):
+        download_name = getattr(self, 'download_name', None)
+        if download_name:
+            filename = quote(download_name, safe='')
+            self.send_header('Content-Disposition', "attachment; filename*=UTF-8''" + filename)
         self.send_header('Accept-Ranges', 'bytes')
         self.send_header('Cache-Control', 'no-cache')
         super().end_headers()

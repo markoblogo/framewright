@@ -292,6 +292,37 @@ in whole-project status without cancelling the selected delivery.
 See [recovery evidence](../../../docs/experiments/selected-final-recovery.md) and
 [the fresh-agent Good Dog check](../../../docs/experiments/session-recovery-2026-11-01.md).
 
+## Reopen an accepted review delivery
+
+After building and checking the [standard delivery page](preview.md), attach its
+manifest to the project using the retained video output IDs. All video variants in
+the package need current technical and creative acceptance. Listening and
+publication waits remain visible. You can register separate IDs for the episode
+review, its promos and a complete publication package. Use the same ID for a
+replacement only after reviewing the new package and choosing it with `--replace`.
+
+```sh
+python3 project.py attach-delivery /absolute/project/project.json workout /absolute/project/delivery/delivery.json --video master
+python3 project.py brief /absolute/project/project.json
+python3 project.py open-delivery /absolute/project/project.json workout
+```
+
+Run these commands with the installed `project.py` path or from its directory.
+Open `http://127.0.0.1:8871/review.html` once the preview process reports readiness.
+Choose `--port` when the default port is already occupied. Stop the foreground
+preview with Ctrl+C. The checkpoint uses paths relative to the project directory.
+The page, manifest and package files must stay under their own package folder.
+The brief gives absolute file links and an exact restart command for the current
+machine. JSON consumers can use `review_deliveries` and its `open_command`.
+
+The review binding checks hashes of the page, manifest and every advertised file
+against the retained package. A browser-check receipt refresh can preserve that
+binding. If a file, page, manifest or approved master changes, the entry asks for
+review and reopening refuses to start. A review package may have pending copy or
+field feedback. Use the visible project wait to decide what can happen next.
+The command serves only the registered folder on loopback. Existing checkpoints
+work without a delivery binding.
+
 ## Replace an obsolete creative-review wait explicitly
 
 Selecting an accepted final alone does not cancel another task. If the owner says a

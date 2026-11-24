@@ -29,11 +29,10 @@ For account audits and publishing tools, see the [publishing and audit research]
 
 ## YouTube
 
-- **Titles** (`publication.titles`). Write a primary title and up to two distinct
-  alternatives when useful. A search-led option names the subject or task in
-  natural viewer language. A browse-led option makes the specific result,
-  tension or surprise legible on its own. Move episode numbers and channel
-  branding toward the end when the subject is the main reason to click.
+- **Titles** (`publication.titles`). For each new YouTube package, provide exactly two titles in this order.
+  **Title A (SEO-focused)** names the topic, tool or task in natural search language.
+  **Title B (CTR-focused)** leads with the result, tension or question the video delivers.
+  Both titles must match the cover, opening and evidence in the finished film.
 - **Description** (`publication.description`). Open with the viewer’s question
   or payoff and one or two natural topic phrases. The opening must make sense
   on mobile before “Show more.” Give the rest of the description a job. For a
@@ -75,7 +74,7 @@ YouTube Studio Tags field. [YouTube hashtag guidance](https://support.google.com
    the copy. Record queries, date, language/market, what changed and any useful
    data unavailable. When search is incidental, record the viewer payoff and
    the primary discovery route.
-2. Read the primary title, cover and first lines together. Check the first
+2. Read each title with the cover and first lines. Check the first
    lines without the expanded description. Different title angles should make
    distinct promises the opening and finished film can keep.
 3. Read the body for a detail useful enough to stand on its own. Check that
@@ -114,8 +113,11 @@ or changing published metadata.
   to action requires a verified destination. Treat pasted URLs as references
   until clickability is confirmed on the actual surface.
 - **Series**. Keep the [RUN//SIGNAL link order](productions/run-signal-m01.md#episode-and-launch-promo-links).
-  Put the viewer promise before the ordered links. The launch promo requires
-  verified URLs for all three missions.
+  Put the viewer promise before the ordered links. End each full workout’s
+  YouTube description with the series rest-day note after the hashtags.
+  Release episode promos only once the owner supplies the URL of the published
+  workout. Include that direct URL in the YouTube description and TikTok
+  caption. The launch promo requires verified URLs for all three missions.
 
 ## Tools and open-source options
 

@@ -1,6 +1,6 @@
 # Framewright roadmap
 
-Updated 23 November 2026. Shipped baseline: **0.11.0**, an experimental [GitHub prerelease](https://github.com/markoblogo/framewright/releases/tag/v0.11.0).
+Updated 24 November 2026. Shipped baseline: **0.11.0**, an experimental [GitHub prerelease](https://github.com/markoblogo/framewright/releases/tag/v0.11.0).
 See the [0.11.0 scope](release-notes-0.11.0.md).
 [Current work and protected waits](next-cycle.md) govern execution; the
 [archived operational history](history/next-cycle-through-2026-11-14.md) preserves superseded status text.
@@ -50,19 +50,53 @@ and delivery. Apply them when the next suitable production is selected.
 
 ## Next release goal
 
-The post-0.11.0 work adds publication-copy standards, retained editorial and
-tutorial comparisons, and a release-independent tool intake. A new version and
-release objective remain open. One candidate is a repeatable editorial and
-training handoff. Use the existing delivery page to reopen a real selected
-package in a fresh session and recover its approved revision, master, subtitles
-and copy. Independent second-operator transfer is a parallel workstream. Claim
-it only after an independent test. A controlled viewer repeatability test can
-separately check whether a learner can repeat an action after one viewing.
+### Audit — 24 November 2026
 
-Next useful extensions are offline speech cleanup and fast 3D asset inspection
-([bounded probes](research/tool-intake-2026-11-23.md)). Use the next Radar brief
-to exercise ranking and one concrete visual risk. Keep [automated social publishing](research/social-publishing-audit-2026-11-22.md)
-in research. RUN//SIGNAL production and publication follow their own episode milestones.
+GitHub lists [v0.11.0](https://github.com/markoblogo/framewright/releases/tag/v0.11.0)
+as the latest experimental prerelease. Its tag is 91890f9. [PR #93](https://github.com/markoblogo/framewright/pull/93)
+is merged at dc3e819. The merged changes are chiefly production cases, tool
+evidence, publication-copy standards and catalogue maintenance. The local M04
+records and roadmap update are outside that merge.
+
+The owner accepted the M04 workout indoors and both v2 promos. On the studio
+Mac, the audit compared six retained files with their recorded hashes and
+reopened both review pages in fresh preview processes. Both pages served the
+expected files with working byte ranges. The standalone package smoke check
+passed. The M04 brief recovered accepted outputs and owner waits, but its
+selected delivery was empty. The preview test used known package paths.
+Publication copy awaits the workout's field test and direct URL.
+Clean-machine and independent-operator reuse remain open.
+
+The local v0.12.0 implementation adds an explicit
+[review-delivery binding](../skills/video-production-router/references/projects.md#reopen-an-accepted-review-delivery)
+to the project brief. From an extracted test package and an unrelated working
+directory on the studio Mac, the brief found the M04 workout and v2 promos
+with their outstanding outdoor and publication waits, and the complete M03 v5
+YouTube package with its retained copy and SRT. All three reopened through
+fresh loopback processes and returned checked file ranges or subtitle bytes.
+A project created using the published v0.11.0 archive reopened without
+migration or writes. The feature is available in the working source for the
+next suitable production. Source integration and software publication are
+separate owner decisions.
+
+### Proposed milestones and release mapping
+
+| Milestone | Proposed release and exit evidence |
+| --- | --- |
+| **Recover the selected delivery (M1/M2, RV01/RV02)** | **v0.12.0 experimental candidate.** Starting from the existing brief in a fresh session, recover the selected revision, its review page or restart action, the master, subtitles and copy or lesson materials, the outstanding wait and the next permitted action. Exercise M04’s review/field split and one complete package, e.g. M03 or Transit Speed. Run one short rights-cleared example from the extracted release package. |
+| **Carry a correction into the next comparable production (M3/M4, RV01)** | **v0.13.0 working hypothesis.** On M05 if selected, or another comparable owner-selected production, reuse the promo sequence and check caption/title clearance before full export. Keep the route still specific to the episode. Retain one bounded correction and measure active review time, revision rounds, reuse and recurring issues. Propose a release when a reusable workflow improvement is verified. |
+| **Transfer to another operator (M6 / REL-D)** | Later candidate, version open. An independent operator completes a bounded handoff or recovery in their own environment. Record setup, help required and outcome. This work runs in parallel. BOOK-01 retains its reader reproduction and editorial gates. |
+
+Before an authorised release, agree the scope, consolidate the selected diff,
+check exact-head CI, verify clean extraction and upgrade from v0.11.0 on a
+retained-project fixture, and prepare release notes and checksums. Record the
+owner's separate publication decision. Candidate version numbers are proposals.
+
+M04 follows its production sequence: outdoor feedback, full YouTube workout
+and owner-supplied direct URL, then both promos with that URL in their copy.
+Radar handoff and Udemy feedback have separate decisions. Tie new tool trials
+to selected production needs. Automated social publishing remains
+[research](research/social-publishing-audit-2026-11-22.md).
 
 **0.10.0 goal,adopted14November and shipped17November2026: less repeated explanation when continuing or correcting a film.**
 The next release objective is not yet selected;the criteria below retain this bounded increment and its limits.

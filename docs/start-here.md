@@ -60,6 +60,12 @@ suggestion is not execution authority. Resume only the authorised stage; preserv
 accepted bytes and owner choices, including “internal only” and no-publication.
 If a real answer is missing, report that gap while continuing independent work.
 
+To reopen an accepted review or publication package, use the **Review deliveries**
+section of the brief. It gives the exact revision, file links, availability of
+publication copy or lesson materials and the local restart command. The same brief
+shows the remaining owner decision and proposed next action. Registration and
+reopening are described in [review-delivery recovery](../skills/video-production-router/references/projects.md#reopen-an-accepted-review-delivery).
+
 [Recovery procedure](../skills/video-production-router/references/projects.md) ·
 [Selected-final recovery evidence](experiments/selected-final-recovery.md) ·
 [Current release assessment](rel-b-readiness-2026-11-01.md).

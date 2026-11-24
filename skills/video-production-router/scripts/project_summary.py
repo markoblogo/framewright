@@ -3,6 +3,7 @@ from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit, parse_qs, urlencode
 import re
 import runpy
+import shlex
 
 
 def project(data, root, problems, journal, checkpoint_sha256, *, public=False, title=None, include=()):
@@ -143,6 +144,20 @@ def brief_markdown(view):
         if not selected.get('other_observations'):lines+=['- None recorded; permission and publication remain unknown.']
         lines+=['']
         lines+=['- '+cell(reason) for reason in selected['reasons']]
+    if view.get('review_deliveries'):
+        lines+=['Review deliveries:', '']
+        for entry in view['review_deliveries']:
+            if entry['state']!='available':
+                lines+=['- '+cell(entry['id'])+' — needs review. '+cell(entry['reason'])]
+                continue
+            lines+=['- '+cell(entry['id'])+' — '+cell(entry['title'])+' / '+cell(entry['revision']),
+                    '  Review page: [review.html](<'+entry['page']+'>)',
+                    '  Reopen locally: '+shlex.join(entry['open_command']),
+                    '  Then open http://127.0.0.1:8871/review.html.',
+                    '  Publication copy: '+(', '.join(entry['publication_copy']) or 'pending or not included')]
+            for file in entry['files']:
+                lines+=['  - '+cell(file['platform']+'/'+file['role'])+': ['+cell(Path(file['path']).name)+'](<'+file['path']+'>)']
+        lines+=['']
     if view.get('completion'):
         lines+=['Completion diagnosis: '+cell(view['completion']['status'])+'; '+str(view['completion']['blockers'])+' blockers. Use project.py blockers PROJECT for reasons.','']
     for key,label in [('accepted','Accepted work'),('file_changes','Current file problems'),('recent_revisions','Most recent recorded replacements'),('not_retained','Declared, not retained'),('needs_recheck','Checks to review'),('waiting','Explicit waits'),('blockers','Task constraints (does not cover provider/use rights)'),('ready_tasks','Recorded ready tasks'),('historical_reviews','Historical replaced reviews'),('historical_checks','Historical checks (not current waits)')]:

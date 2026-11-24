@@ -8,6 +8,7 @@ import json
 import os
 from pathlib import Path
 import runpy
+import sys
 import tempfile
 
 BASE = Path(__file__).resolve().parent
@@ -44,7 +45,7 @@ def file_record(path, root):
 def planning_sources():
     paths = [BASE / name for name in ['plan.py', 'music.py', 'terms.py', 'workflow.py', 'project.py', 'journal.py', 'packet.py', 'production.py', 'media_review.py', 'capture_check.py', 'project_summary.py', 'review_history.py', 'content.py', 'engine_capture.py', 'engine_capture.cjs', 'editing.py', 'revisions.py', 'templates.py', 'environment.py', 'trials.py', 'passports.py', 'shots.py', 'blender_shot_worker.py']]
     paths.append(BASE.parent / 'references/tools.json')
-    paths.extend(BASE / name for name in ['project_blockers.py','final_selection.py','resources.py','costs.py','executor.py','executor_worker.py','executor_shot.py','executor_state.py','decision_checks.py','admission.py'])
+    paths.extend(BASE / name for name in ['project_blockers.py','final_selection.py','project_delivery.py','resources.py','costs.py','executor.py','executor_worker.py','executor_shot.py','executor_state.py','decision_checks.py','admission.py'])
     return {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 
 
@@ -349,6 +350,16 @@ def main():
     results = commands.add_parser('results');results.add_argument('project',type=Path);results.add_argument('--json',action='store_true');results.add_argument('--compare-age-hours',type=float);results.add_argument('--age-tolerance-hours',type=float,default=6)
     choice = commands.add_parser('select-final');choice.add_argument('project',type=Path);choice.add_argument('subject');choice.add_argument('--actor',required=True);choice.add_argument('--note',required=True)
     briefing = commands.add_parser('brief');briefing.add_argument('project',type=Path);briefing.add_argument('--json',action='store_true');briefing.add_argument('--limit',type=int,choices=range(1,11),default=3)
+    attach = commands.add_parser('attach-delivery', help='Pin a verified package to recorded accepted masters')
+    attach.add_argument('project', type=Path)
+    attach.add_argument('identity')
+    attach.add_argument('manifest', type=Path)
+    attach.add_argument('--video', action='append', required=True, help='Retained video output ID, once per variant')
+    attach.add_argument('--replace', action='store_true')
+    reopen = commands.add_parser('open-delivery', help='Serve the pinned review package on loopback')
+    reopen.add_argument('project', type=Path)
+    reopen.add_argument('identity')
+    reopen.add_argument('--port', type=int, default=8871)
     blockers = commands.add_parser('blockers');blockers.add_argument('project',type=Path);blockers.add_argument('--json',action='store_true');blockers.add_argument('--limit',type=int,choices=range(1,21),default=5)
     projection = commands.add_parser('summary');projection.add_argument('project',type=Path);projection.add_argument('--json',action='store_true');projection.add_argument('--public',action='store_true');projection.add_argument('--title');projection.add_argument('--include',action='append',default=[]);projection.add_argument('--output',type=Path);projection.add_argument('--replace',action='store_true');projection.add_argument('--check',action='store_true')
     args = parser.parse_args()
@@ -361,11 +372,24 @@ def main():
             view['checkpoint_sha256']=hashlib.sha256(checkpoint_bytes).hexdigest()
             if path.read_bytes()!=checkpoint_bytes:raise ValueError('Project changed during diagnosis; retry')
             print(json.dumps(view,indent=2,ensure_ascii=False) if args.json else module['markdown'](view,args.limit));return
+        if args.command in {'brief', 'open-delivery', 'attach-delivery'}:
+            deliveries = runpy.run_path(str(BASE / 'project_delivery.py'))
+        if args.command=='open-delivery':
+            checkpoint_bytes = path.read_bytes()
+            data = load(path)
+            if args.identity not in data.get('review_deliveries', {}):
+                raise ValueError('No recorded delivery with this ID; see the working brief')
+            info = deliveries['current'](data, summary(data,path.parent), path, args.identity)
+            if path.read_bytes() != checkpoint_bytes:
+                raise ValueError('Project changed during delivery check; retry')
+            os.execv(sys.executable, [sys.executable, str(BASE / 'preview_server.py'),
+                                     '--directory', str(Path(info['page']).parent), '--port', str(args.port)])
         if args.command=='brief':
             checkpoint_bytes=path.read_bytes();data=load(path);state=summary(data,path.parent)
             module=runpy.run_path(str(BASE/'project_summary.py'))
             files=module['project'](data,path.parent,state['file_problems'],JOURNAL,hashlib.sha256(checkpoint_bytes).hexdigest())
             view=module['working_brief'](data,state,files,args.limit)
+            view['review_deliveries']=deliveries['views'](data,state,path)
             diagnosis=runpy.run_path(str(BASE/'project_blockers.py'))['diagnose'](data,state,check_kind)
             view['completion']={'status':diagnosis['status'],**diagnosis['counts']}
             if path.read_bytes()!=checkpoint_bytes:raise ValueError('Project changed during brief generation; retry')
@@ -444,9 +468,16 @@ def main():
                 data = initial(json.loads(args.brief.read_text()))
             else:
                 data = load(path)
-                if args.command in {'asset','task','observe','compose','review','supersede-review','hypothesis','outcome'} and data['schema_version']!=2:
+                if args.command in {'asset','task','observe','compose','review','supersede-review','hypothesis','outcome','attach-delivery'} and data['schema_version']!=2:
                     raise ValueError('Run migrate explicitly before using project memory')
-                if args.command=='hypothesis':
+                if args.command=='attach-delivery':
+                    changed = deliveries['attach'](data, summary(data,path.parent), path, args.identity,
+                                                   args.manifest, args.video, args.replace)
+                    if not changed:
+                        print('Delivery unchanged')
+                        return
+                    event(data,'attach_delivery',identity=args.identity,subjects=args.video)
+                elif args.command=='hypothesis':
                     changed=CONTENT['hypothesis'](data,json.loads(args.spec.read_text()),args.actor,args.provenance,JOURNAL,file_problems(data,path.parent))
                     if not changed:print('Hypothesis unchanged');return
                     data['content_sha256']=digest(data['content']);event(data,'content_hypothesis',identity=data['content']['hypotheses'][-1]['id'])
@@ -547,7 +578,7 @@ def main():
                 else:mark(data,path.parent,args.step,args.state,args.evidence)
             save(path,data)
         print('Saved checkpoint:',path)
-        if (path.parent/'radar-auto.json').exists():
+        if args.command!='attach-delivery' and (path.parent/'radar-auto.json').exists():
             try:
                 from radar_auto import checkpoint
                 print('Radar exchange:',checkpoint(path)['result'])
