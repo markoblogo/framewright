@@ -9,7 +9,7 @@ from pathlib import Path
 import subprocess
 from urllib.parse import quote
 
-VERSION = '2.2'
+VERSION = '2.4'
 PLATFORMS = {'youtube': 'YouTube', 'tiktok': 'TikTok', 'course': 'Course lesson'}
 STATES = {'pilot': 'Preview', 'review': 'For review', 'final': 'Publication package',
           'rejected': 'Rejected preview'}
@@ -32,6 +32,13 @@ button{cursor:pointer;padding:5px 10px;font-size:12px;line-height:1.5}button:hov
 @media(max-width:760px){header,main,footer{width:calc(100% - 32px)}header{height:68px}main{padding-top:22px}nav{gap:18px}h1{font-size:29px;letter-spacing:-1px}.intro{margin-bottom:24px}.media-grid,.publication-grid{display:flex;flex-direction:column;gap:24px}.preview-card,.download-card,.publication{width:100%}.tiktok-preview{width:min(100%,280px);align-self:center}.files{display:flex;flex-direction:column}.download{min-height:46px}.publication-grid{margin-top:28px}.copy{padding:16px}}
 """
 JS = """
+if (location.protocol === 'http:' || location.protocol === 'https:') {
+ document.querySelectorAll('a.download[download]').forEach(link => {
+  const url = new URL(link.href);
+  url.searchParams.set('download', '1');
+  link.href = url.href;
+ });
+}
 document.querySelectorAll('video').forEach(v=>{
  v.addEventListener('play',()=>document.querySelectorAll('video').forEach(o=>{if(o!==v)o.pause()}));
  v.addEventListener('error',()=>{const p=document.createElement('p');p.className='media-error';
@@ -112,7 +119,9 @@ def publication_fields(platform, supplied, legacy):
         titles = data.get('titles', [])
         if not isinstance(titles, list) or len(titles) > 3 or any(not isinstance(t, str) for t in titles):
             raise ValueError('YouTube titles must be a list of at most three strings')
-        fields = list(zip(['Primary title', 'Title 2', 'Title 3'], titles))
+        labels = (['Title A (SEO-focused)', 'Title B (CTR-focused)'] if len(titles) == 2
+                  else ['Primary title', 'Title 2', 'Title 3'])
+        fields = list(zip(labels, titles))
         tags = data.get('tags', '')
         if isinstance(tags, list) and all(isinstance(t, str) for t in tags):
             tags = ', '.join(tags)
