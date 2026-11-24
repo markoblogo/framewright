@@ -96,6 +96,7 @@ class PreviewHandler(SimpleHTTPRequestHandler):
                 raise ValueError()
         except ValueError:
             stream.close()
+            self.download_name = None
             self.send_response(416)
             self.send_header('Content-Range', f'bytes */{size}')
             self.send_header('Content-Length', '0')
@@ -116,8 +117,9 @@ class PreviewHandler(SimpleHTTPRequestHandler):
         return None
 
     def end_headers(self):
-        if self.download_name:
-            filename = quote(self.download_name, safe='')
+        download_name = getattr(self, 'download_name', None)
+        if download_name:
+            filename = quote(download_name, safe='')
             self.send_header('Content-Disposition', "attachment; filename*=UTF-8''" + filename)
         self.send_header('Accept-Ranges', 'bytes')
         self.send_header('Cache-Control', 'no-cache')
