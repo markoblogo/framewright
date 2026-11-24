@@ -38,8 +38,7 @@ owner’s outdoor test on 24 November with no changes requested. Its YouTube
 package uses v5. The owner supplied [the M03 YouTube URL](https://youtu.be/wfFjqxWzwNs).
 Both [68-second launch promo cuts](productions/run-signal-launch-promo.md) have
 owner-supplied YouTube and TikTok URLs. The scenario-thread report is prepared. M01 v08 outdoor validation is
-tracked separately. The owner is drafting M04. Production follows the script
-handoff. Prepare a promo per subsequent episode. The [Transit Speed bilingual lesson](productions/transit-speed-bilingual-tutorial.md)
+tracked separately. The owner accepted [M04 The Quiet Street](productions/run-signal-m04.md) indoors and took its field MP3. The owner also accepted both private v2 promos. Outdoor feedback gates the workout. The owner-supplied YouTube URL gates both promos. The [24 November roadmap audit](roadmap.md#audit--24-november-2026) is complete. The [Transit Speed bilingual lesson](productions/transit-speed-bilingual-tutorial.md)
 is accepted and delivered privately to the receiving project.
 
 **Parallel owner work:** Partner correspondence is planned for 24 November.
@@ -82,7 +81,7 @@ Third Web3 film:[AllWeb3 / The Proof Behind the Post](productions/allweb3-proof-
 | Previously integrated maintenance —baseline | [PR80](https://github.com/markoblogo/framewright/pull/80) merged (`9d91847`):standard deliveryv2,recent production/intake records;independent review,590local tests(18skipped),real browser delivery and both GitHub CI runs passed. No tag/release. Earlier [PR78](https://github.com/markoblogo/framewright/pull/78) merged (`d11077c`):0.10.0 source integration;CI and merged-tree build passed. [PR77](https://github.com/markoblogo/framewright/pull/77) retains the explicit replaced-review fix and actual Praxis continuation. Public0.10.0 download/hash verification is recorded separately. |
 | Retained earlier film examples | [Praxis-1](productions/praxis-robot-engineering.md):both65.25s revision2films accepted17November after table/text and tray-support corrections;YouTube URL supplied17November;TikTok publication declined. [Clear the Table](productions/clear-the-table-stick-scene.md):both24.5s Stick Scene films accepted17November;owner supplied YouTube/TikTok publication URLs17November;uploaded identity/metrics unchecked. [Agent402 tabletop](productions/agent402-tabletop.md):both52.5s revision2 films accepted;owner supplied YouTube/TikTok URLs17November. No independent uploaded identity/metrics check. [The Mars Dispatch](productions/nasa-eyes-collage.md):both50s films/sound/covers accepted;owner supplied both publication URLs17November. [PAN2 / ASCII](productions/pan2-ascii.md):both films/covers accepted,both publication URLs supplied17November. Independent uploaded identity/metrics unverified. [The AI Paid](productions/vet402-delivery.md): both52s formats published by owner report17November;separate creative acceptance and uploaded identity remain unverified. [Coinbase Agent Controls](productions/coinbase-agent-controls.md): both60s English formats accepted,including the requested20%audio boost;owner supplied both publication URLs16November. [Describe Your Entire Day](productions/describe-your-entire-day.md) is also accepted/published by owner report. Uploaded identity and audience metrics remain separate. |
 | Editorial handoff | Owner supplied the [Studio Notes04 publication URL](https://abvx.xyz/writing/ai-video-corrections-stick-framewright-04) on16November; anonymous HTTP200 and expected headline observed. Prepared text/cover/source receipt unchanged. Published text/cover identity and metrics remain unchecked; the issue index records owner_provided_url separately. |
-| Next execution | Field-test the revised M01 audio, then M03. In parallel, choose one editorial item from the next Radar slate and advance the bounded tests when their production need arises. |
+| Next execution | M04 awaits the owner’s outdoor feedback. The M01 v08 field check remains a separate wait. The five-film Radar handoff is prepared. |
 
 ## Protected waits and commitments
 
@@ -100,7 +99,13 @@ Transfer to another operator (M6 / REL-D) remains partial and **parallel**, purs
 
 The latest release baseline is the [0.11.0 experimental prerelease](release-notes-0.11.0.md). The M02 approval and publication condition belonged to that release and is closed. The next release version and scope await owner selection.
 
-The [current candidate](roadmap.md#next-release-goal) is repeatable editorial and training handoff through the existing delivery page. The next check is to reopen a real selected package in a fresh session and recover its approved revision, master, subtitles and publication or lesson materials. Independent second-operator transfer stays a parallel check. For any selected release scope, verify the build and supported upgrade path from the merged source, prepare release notes and get separate owner authorization to publish.
+The [24 November recommendation](roadmap.md#proposed-milestones-and-release-mapping)
+is a **v0.12.0 experimental candidate** for recoverable review and delivery.
+The working implementation now reopens the selected M04 workout and v2 promos
+and the complete M03 publication package from the brief. The extracted-package
+control passed on this Mac, including the v0.11.0 checkpoint upgrade read.
+Use the same path at the next suitable production and record any setup friction.
+An observed repeat and scoped correction are the basis for a later candidate.
 
 The [Pantheon worked correction](productions/pantheon-chatgpt-orb.md#worked-example-v2-to-v3) is existing same-case evidence, not a new trial or proof of independent operation.
 
