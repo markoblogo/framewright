@@ -46,3 +46,32 @@ footer .social-links{margin-left:auto}
 .studio-notes :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 @media(max-width:700px){.note-grid{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:360px){header nav{gap:12px}}
+
+
+/* A continuous, locally hosted collaboration strip. */
+.collaborations{border-top:1px solid var(--line);padding:25px 0 30px}
+.collaborations h2{font-family:inherit;font-size:10px;letter-spacing:1.6px;line-height:1.5;margin:0 0 14px;font-weight:700}
+.collab-window{overflow:hidden;position:relative}
+.collab-track{display:flex;width:200%;animation:collab-scroll 22s linear infinite}
+.collab-set{flex:0 0 50%;display:flex;justify-content:space-around;align-items:center;gap:36px;min-width:0}
+.collab-set>a,.collab-set>span{display:flex;justify-content:center;align-items:center;min-height:64px;flex:1;min-width:0;color:#cbd2cc}
+.collab-set img{display:block;max-width:100%;height:auto;max-height:48px;object-fit:contain;filter:grayscale(1) brightness(0) invert(.84)}
+.collab-wordmark{font:700 clamp(18px,3vw,32px) Manrope,Arial,sans-serif;letter-spacing:-1px;white-space:nowrap}
+.collab-window:hover .collab-track,.collab-window:focus-within .collab-track{animation-play-state:paused}
+.collab-set a:hover{color:white}.collab-set a:hover img{filter:grayscale(1) brightness(0) invert(1)}
+.collab-note{font-size:11px;color:var(--muted);margin:10px 0 0}
+@keyframes collab-scroll{to{transform:translateX(-50%)}}
+@media(max-width:600px){.collab-track{width:300%}.collab-set{gap:20px;padding-inline:12px}.collab-set img{max-width:100px;max-height:36px}}
+@media(prefers-reduced-motion:reduce){.collab-track{width:100%;animation:none}.collab-copy{display:none}.collab-set{flex-basis:100%;gap:12px}.collab-set img{max-width:100%;max-height:40px}}
+
+.collab-brand{display:flex;gap:10px;align-items:center}
+.collab-set img.collab-icon{width:40px;height:40px;filter:grayscale(1);border-radius:8px}
+.collab-window:focus-within .collab-track{transform:none;animation:none}
+@media(max-width:600px){.collab-track{width:250%}.collab-brand{gap:6px}.collab-set img.collab-icon{width:28px;height:28px}.collab-window:focus-within .collab-track{width:100%}.collab-window:focus-within .collab-copy{display:none}.collab-window:focus-within .collab-set{flex-basis:100%}}
+@media(prefers-reduced-motion:reduce){.collab-track{width:100%}.collab-set{gap:8px}.collab-brand{gap:4px}.collab-set img.collab-icon{width:25px;height:25px}}
+
+.collaborations{position:relative}
+.collab-pause{position:absolute;right:0;top:25px;width:16px;height:16px;margin:0;appearance:auto;accent-color:#b5d4c4}
+.collab-pause+label{position:absolute;right:24px;top:25px;font-size:11px;color:var(--muted);line-height:16px}
+.collab-pause:checked~.collab-window .collab-track{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.collab-pause,.collab-pause+label{display:none}}
