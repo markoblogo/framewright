@@ -78,7 +78,7 @@ The smart check uses existing Playwright and installed Chrome only when a full r
 
 Manual player checks are template-maintenance work after a relevant change or reported fault. Ordinary per-film handoffs run the reusable automated checks. If runtime access is unavailable,record that check as pending and state the exact limitation instead of treating it as a creative failure or requiring repeated owner debugging.
 
-Before delivery,ensure the local server is actually reachable. Give its review URL and direct individual download links. If the server later stops,restart it for the same retained package. Absolute file links are a fallback. A file existing on disk alone does not establish a working browser download.
+Before delivery,ensure the local server is actually reachable. Owner correction 25 November 2026: do not automatically open the review link in a browser; provide the verified link without interrupting ongoing screen recordings. Give its review URL and direct individual download links. If the server later stops,restart it for the same retained package. Absolute file links are a fallback. A file existing on disk alone does not establish a working browser download.
 
 The standard template is versioned with source. After template/player changes,inspect both viewport screenshots and manually review normal playback before adopting the revision. No film regeneration is required to check the interface.
 

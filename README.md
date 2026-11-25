@@ -216,3 +216,13 @@ and behavior-first checks in [ABVX agent skills](https://github.com/markoblogo/a
 These are references, not runtime dependencies. [AGENTS.md Generator](https://github.com/markoblogo/AGENTS.md_generator)
 is an optional instruction-practice reference. [ID](https://github.com/markoblogo/ID)
 and [Pomerado](https://github.com/Pomerado/pomerado) remain conditional candidates.
+
+## Collaborations
+
+Completed product collaborations and practical evaluations:
+
+- [Tulvo](https://tulvo.io/) — business workflow reviews and case studies.
+- [Klap](https://klap.app/) — short-form repurposing trials and comparative review.
+- [PlayMCP](https://playmcp.io/) — interactive game and video-production experiments.
+
+New projects are added after the collaboration has been completed.

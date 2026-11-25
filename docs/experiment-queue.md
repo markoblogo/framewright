@@ -1,5 +1,43 @@
 # Proposed experiment queue
 
+- **CATALOGUE-PANEL-01 (pilot executed):** [Krimnuz FX Lab](experiments/krimnuz-editorial-catalogue-2026-11-25.md): four actual tool demos in reserved-column editorial layout, repeated cut-aligned music. Owner corrected frame sizing and asked for native monochrome label; 24s full-screen v2 preferred by owner; 194s YouTube and 90s TikTok all-six-tool review owner-accepted. Publication packages prepared. M4/R05.
+
+## Video, roto, 3D and score intake · 25 November 2026
+
+- **MUSIC-CUE-01 (partial):** [Riemann pilot](experiments/music-cue-riemann-2026-11-25.md) — identical picture, engineered offset versus aligned cue stems, 1/4 vs 4/4 within ±500ms; isolated revision verified. Owner preferred B and accepted the soundtrack; full dual-aspect edit repeats 10/10 timing, review pending. Ordinary-track comparison remains open. No Taan account needed.
+- **SILHOUETTE-ROTO-01 (conditional):** owned 5–8s temporal matte versus local baseline, one manual correction, alpha export and reopen; verify Mac memory, OS and free-trial rights first.
+- **TAAN-SCORE-01 (conditional):** same cue sheet and owned footage, actual stems and selective edit only if permitted no-extra-cost access is confirmed. Otherwise reference only.
+
+[Five-family assessment and pass criteria](research/video-audio-3d-intake-2026-11-25.md). MAGI-2 cloud reserve; CUPID/ComfyUI CUDA reserve; AURA CUDA/noncommercial reserve. No installation, generation or production reorder.
+
+## Animation styles and Zopia preflight · 25 November 2026
+
+- **STYLE-ROTATION-01 (partial):** [first risograph direction executed in Radar 16](experiments/framelens-adaptive-review-2026-11-25.md); owner accepted this direction, multi-style comparison still queued. [26 style vocabulary and bounded next comparison](research/animation-style-reference-2026-11-25.md). On a suitable selected production, compare three genuinely distinct visual directions on the same owned 3–5s landscape action; first still, then motion and correction. No generation at intake.
+- **ZOPIA-01 (HOLD):** [creation-guide review and optional future pilot](research/zopia-preflight-2026-11-25.md). Preparation only; owner has not activated test work. Do not log in, spend credits, promise deliverables, contact the provider or start production. Verify actual access/terms when owner activates.
+
+## Reverse engineering video · 25 November
+
+- **REVERSE-VIDEO-01:** [executed baseline](experiments/reverse-video-rea-2026-11-25.md); exact boundaries and incorrect capture-route inference. Next: more difficult transitions, known production routes and audio.
+- **VIDEO-MD-01:** validator passed; queue verified boundary-only OTIO handoff and cold reopen.
+- **REVERSE-VIDEO-02:** [bounded FrameLens pilot executed](experiments/framelens-adaptive-review-2026-11-25.md): static vs pan label correct, exact cuts, zoom missed. Clean dependency retest and harder transitions remain.
+- **REVERSE-VIDEO-03:** TransNetV2 harder-transition comparison, conditional runtime.
+- **REVERSE-VIDEO-04:** isolated ComfyUI-ReaVideoBreakdown, conditional source/dependencies/model.
+- **REVERSE-VIDEO-05:** [bounded Video Shot Breakdown trial executed on Brushveil](experiments/video-shot-breakdown-brushveil-2026-11-25.md). 1/2 known cuts, manual correction, 3 embedded keyframes in checked workbook; language/aspect limitations retained. Follow-up [Radar 17](experiments/video-shot-breakdown-copilot-connectors-2026-11-25.md): default failed; tuned .04 exact 2/2, English proportional comparison worksheet verified.
+
+[Sources and criteria](research/reverse-video-2026-11-25.md).
+
+**Follow-up 25 November:** [nine-tool review](research/reverse-video-followup-2026-11-25.md). Queue **REVERSE-STYLE-01 (partial)** ([Florida pilot motion strips](experiments/reverse-style-florida-pilot-2026-11-25.md): 5/5 nominated cut peaks; in-game motion also detected; full narrated/style/OCR/audio branch remains queued), **LEMO-ANIMI-01** (original 8–12s craft stop-motion), **CAPSULE-RECIPE-01** (offline VIDEO.md to reusable recipe/brief), **OPENMOTION-REFERENCE-01** (owned reference to editable cut and one revision). **TURBO-DRY-01** conditional isolated dry-run; MotionClone Windows/web reserve and HyperFrames Pro reverse gated. Existing REA and ComfyUI trials retained; no duplicate or paid call. No production reorder, general qualification or cloud access.
+
+## Intake 25 November 2026 — owner-selected queued tests
+
+- **BUTTON-SOUNDS-01:** [executed 10s matched-picture click A/B](experiments/button-sounds-2026-11-25.md); technical checks passed, owner listening pending.
+- **CORRIDORKEY-02-MAC:** extend existing keying comparison with Resolve OFX on Apple Silicon; confirm route first.
+- **FLUIDVOICE-01:** offline production-note dictation and cleanup.
+- **DBS-SPLATTRAIN-01:** tracked-shot reconstruction in Nuke, conditional on compatible Windows/GPU route.
+- **AUTODESK-ASSIST-01:** conditional reversible scene-edit checks for Maya/3ds Max; host and entitlement required.
+
+[Sources, pass criteria and access conditions](research/tool-intake-2026-11-25.md). Remaining four tests queued; Button Sounds executed as above.
+
 ## EmbeddingGemma 2 · tool-card retrieval, 24 November
 
 [Executed local 12-card/two-query trial](experiments/embeddinggemma-tool-retrieval-2026-11-24.md). Both rankings kept the reference tool first and surfaced a transcription near match. The original media-index trial remains open.
@@ -485,6 +523,8 @@ each actual new-tool experiment. [Research](tool-research.md) ·
 **Owner selection policy:** prioritise free/open-source Mac tools. Paid and other-platform candidates remain reference reserves. New paid exploratory trials are not the default; use existing paid entitlements within their limits, or a minimal paid trial only for a concrete production need with an explicitly approved production budget. [Details](production-guide.md#owner-preference-free-open-source-and-macos-first).
 
 ## Motion-studio library shortlist — planned, 2026-10-26
+
+**Anime.js follow-up:** [Radar 19 bounded timeline trial](experiments/animejs-github-desktop-accounts-2026-11-25.md) executed 25 November. Actual 12s forward export; state exact, 9/16 reverse screenshot hashes exact, remaining slight raster differences. Owner accepted pilot; [full film prepared](productions/github-desktop-accounts.md), no broad qualification.
 
 [Assessment of all 20 tools and five bounded trials](research/motion-studio-libraries-2026-10-26.md). First choose a fitting production: rigged character/contact; PixiJS and 2D physics; animated glTF optimisation; local speech/caption comparison; or an editor/capture/motion comparison. Remotion, HyperFrames, FFmpeg and Three.js already have documented production use; Chatterbox is already queued. No research-only item is promoted to tested. No paid exploratory trial.
 

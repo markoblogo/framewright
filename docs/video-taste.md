@@ -36,6 +36,8 @@ static, repetitive picture. [Gemini](productions/gemini-omni-revise.md) and
 [KriptoK](productions/kriptok-same-ticker.md#owner-revisionrepetitionstatic-source-windows-and-clipping) adds another failed full-film check:the owner liked the opening/3D graph but rejected repeated page layouts/three-dot decoration and long static source windows. A shared magazine identity must still give each argument an appropriate illustration and action;pilot approval did not approve these interiors. The owner subsequently accepted both corrected full films;the failed initial check remains part of the lesson.
 **Check:** review the action plan and encoded movement through each relevant long
 scene in the full film. Look for the named subject/environment action within a continuous shot, not only pixel changes, a dissolve, light sweep or camera motion. A short moving opening does not pass this check.
+
+Owner correction 25 November 2026: [Copilot Adaptive Effort](productions/copilot-adaptive-effort.md#owner-directed-motion-correction-and-youtube-package--25-november-2026) had static opening/source blocks and an almost static closing. In a similar explainer, verify visible purposeful motion during the opening, meaningful focus changes on source imagery and a resolved closing shot, not only motion in the central diagram. Respect readable holds and avoid shaking or moving text over faces/source labels. This is a documented revision lesson, not a fixed minimum zoom or cut rate.
 **Limit:** a deliberately quiet or static beat may serve the agreed story. Do not
 force a cut every N seconds, distort whole faces to move a hand, or claim natural
 acting from rigid layers. Use the [full-film proposal](creative-proposal.md).
@@ -109,6 +111,8 @@ Ukrainian take's slow delivery and stress errors after liking its short pilot.
 record listening and owner acceptance separately from decode/level checks.
 **Limit:** no global Knox default, automatic voice substitution, paid call or changed
 SSI worker follows. Character casting and Riko's rough delivery remain case choices.
+
+Owner correction 25 November 2026: [Baked Brand Kit](productions/baked-brand-kit.md#owner-directed-v3-correction-and-publication-package) had an unnaturally accelerated voice passage. When fitting narration to an approved picture, check each natural take against its scene budget; shorten wording or adjust the visual timeline rather than forcing a long take into the slot by resampling. Inspect the complete encoded cadence, not just peak levels. The owner also requested the canonical FW ending specifically for this logo-related story, not mandatory branding on all films.
 
 ## VT-COVER — keep publication art connected to the film
 

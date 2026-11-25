@@ -1,5 +1,23 @@
 # Tool review and test inventory
 
+[Video, avatar, roto, 3D and score intake](research/video-audio-3d-intake-2026-11-25.md): Silhouette conditional Mac trial, local music cue-sheet comparison and conditional Taan score; MAGI-2 paid cloud, CUPID CUDA and AURA noncommercial/GPU reserves. Research only.
+
+[Reverse-video follow-up and lemo-animi](research/reverse-video-followup-2026-11-25.md): nine tools deduplicated; priority local style analysis, stop-motion, reusable recipe and reference reconstruction. Documentation only.
+
+[Anime.js bounded Radar 19 trial](experiments/animejs-github-desktop-accounts-2026-11-25.md): 4.5.0 actual timeline/direct comparison; precise state, partial strict reverse pixel repeatability; 12s forward export.
+
+[Video Shot Breakdown trial · Brushveil](experiments/video-shot-breakdown-brushveil-2026-11-25.md): 12 reference frames, one missed authored cut, manually corrected three-row learning workbook verified. No general qualification. [Radar 17 follow-up](experiments/video-shot-breakdown-copilot-connectors-2026-11-25.md): .32 failed with no candidates, tuned .04 found both known cuts and an English comparison worksheet was verified.
+
+[FrameLens local motion and cut test](experiments/framelens-adaptive-review-2026-11-25.md): bounded static/pan comparison and known zoom miss retained; mixed OpenCV environment, no general qualification.
+
+[Animation style reference](research/animation-style-reference-2026-11-25.md) · [Zopia guide preflight](research/zopia-preflight-2026-11-25.md): owner-supplied PDFs reviewed, original sources private. Style vocabulary and a bounded queue; Zopia preparation only, held pending owner activation. No runtime qualification.
+
+[Reverse-video research · 25 November](research/reverse-video-2026-11-25.md): REA Video and VIDEO.md validated on one bounded local fixture; actual method-inference limitation retained. FrameLens AI, TransNetV2, ComfyUI-ReaVideoBreakdown and video-shot-breakdown queued.
+
+[Baked AI Brand Kit · two-site trial, 25 November](experiments/baked-brand-kit-2026-11-25.md): owner-retained reference extraction for future partner/ad films; ZIP and owner-site CSS cross-check; original brand assets and inferred rules still need verification.
+
+[25 November intake](research/tool-intake-2026-11-25.md): [Button Sounds matched click A/B](experiments/button-sounds-2026-11-25.md) executed; owner listening pending. CVT CorridorKey, FluidVoice, DBS SplatTrain and Autodesk Assistant remain queued with bounded checks.
+
 [Seven-tool intake, 24 November 2026](research/tool-intake-2026-11-24.md). Try diagram-design first, retain ArcBrush for noncommercial work, and queue a Comfy Desktop compatibility check. Treg is a marketing research reference. Topaz and Blend Online stay in reserve.
 
 ## Tool intake — 23 November 2026
