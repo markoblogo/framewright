@@ -111,3 +111,13 @@ editorial index records issue and publication provenance separately.
 Chrome checks at 1280, 390 and 320 px covered both anchor links, archive disclosure
 with the keyboard, all six destinations, cover decoding and horizontal overflow.
 The checked Pages source commit is `a027cbceba4a060374cc2081293bccc8e793925f`.
+
+## Collaborations — 25 November 2026
+
+Owner-selected completed collaborations: Tulvo, Klap, PlayMCP. The compact
+continuous logo strip links to their official sites and uses locally retained
+brand assets from their official websites. PlayMCP uses the published app icon
+with a text label. Hover and keyboard focus pause motion; reduced-motion
+preferences show a static list. README lists the same three projects. Add new
+brands only after the owner confirms completed collaboration. Pending
+relationships are not listed.
