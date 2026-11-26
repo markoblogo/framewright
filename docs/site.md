@@ -121,3 +121,14 @@ with a text label. Hover and keyboard focus pause motion; reduced-motion
 preferences show a static list. README lists the same three projects. Add new
 brands only after the owner confirms completed collaboration. Pending
 relationships are not listed.
+
+## Basic SEO and AI-search maintenance — 26 November 2026
+
+See the [bounded audit and prepared changes](audits/landing-seo-2026-11-26.md).
+Keep initial HTML useful without JavaScript: studio identity, service scope, selected
+film/case links and dated catalogue/release fallback. JSON-LD must match visible
+facts. Update the optional `llms.txt` summary when positioning/licensing changes;
+it is not a search inclusion requirement. The sitemap lists only the canonical
+landing URL, not anchors, GitHub documents or the Sites mirror. A project-path
+robots.txt cannot set the GitHub Pages host's crawler policy. Local preparation,
+public deployment and measured search visibility are separate states.
