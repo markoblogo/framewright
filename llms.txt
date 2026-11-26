@@ -1,0 +1,21 @@
+# Framewright
+
+> Independent AI-assisted video production studio and research lab by Anton Biletskiy-Volokh.
+
+Films, explainers and product stories; creative tools evaluated in real productions; reusable video methods. Human review guides selection and corrections. Framewright is an author-led studio and an open methods library, not a self-service production app or automatic social publisher.
+
+## Main pages
+- [Studio, selected work and contact](https://markoblogo.github.io/framewright/): Canonical public landing page.
+- [About and scope](https://markoblogo.github.io/framewright/#about): Services, licences and current limits.
+- [Open-source repository](https://github.com/markoblogo/framewright): Methods and documentation under MIT; external tools, models and media retain their own licences.
+- [Start a project](https://github.com/markoblogo/framewright/blob/main/docs/start-here.md): Planning, review and continuation.
+- [Production cases](https://github.com/markoblogo/framewright/tree/main/docs/productions): Sources, revisions and known limits.
+- [Studio Notes](https://markoblogo.github.io/framewright/#studio-notes): Published production lessons on ABVX.
+- [Public evidence](https://github.com/markoblogo/framewright/blob/main/docs/public-evidence.json): One story per film; trials include partial and failed attempts. Review entries include untested candidates.
+- [Releases](https://github.com/markoblogo/framewright/releases): Consult current release notes and limitations.
+- [Author](https://abvx.xyz/): Anton Biletskiy-Volokh.
+
+## Contact
+Public enquiries: a.biletskiy@gmail.com. The landing form opens an email draft; the website does not send or store enquiries.
+
+Updated 26 November 2026. This optional text summary is not a crawler permission policy or a guarantee of search inclusion. The linked sources take precedence for current release and evidence status.

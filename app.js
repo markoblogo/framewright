@@ -4,7 +4,7 @@ const intro=$('#intro'),iv=$('#intro-video');
 function finishIntro(){intro.classList.add('done');iv.pause();}
 if(reduced)finishIntro();else{iv.src=matchMedia('(max-width:600px)').matches?portrait:landscape;iv.onended=finishIntro;iv.onerror=finishIntro;iv.play().catch(finishIntro);setTimeout(finishIntro,2300);}
 const hv=$('#hero-video');$('#replay').onclick=()=>{iv.pause();hv.src=landscape;hv.muted=false;$('.hero-art').classList.add('playing');hv.currentTime=0;hv.play().catch(()=>$('.hero-art').classList.remove('playing'));};hv.onended=()=>$('.hero-art').classList.remove('playing');
-let counterSeen=false,currentCounts={methods:10,profiles:17,reviews:139,films:72,trials:44};
+let counterSeen=false,currentCounts={methods:10,profiles:17,reviews:207,films:165,trials:119};
 function countUp(){for(const el of document.querySelectorAll('[data-count]')){const n=currentCounts[el.dataset.count];if(reduced){el.textContent=n;continue;}const start=performance.now();function frame(t){const p=Math.min(1,(t-start)/850);el.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(frame);}requestAnimationFrame(frame);}}
 new IntersectionObserver((entries,o)=>{if(entries.some(e=>e.isIntersecting)){counterSeen=true;countUp();o.disconnect();}},{threshold:.2}).observe($('.counters'));
 const base='https://raw.githubusercontent.com/markoblogo/framewright/main/';
