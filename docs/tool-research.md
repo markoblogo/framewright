@@ -428,7 +428,7 @@ A documented feature, code licence and model/media licence are separate claims.
   film, not a generic travel capture adapter; private source modifications retained.
 - [Reusable brand profiles](../skills/video-production-router/references/branding.md):
   local pinned-reference/CSS helper with three SSI report-film adaptations.
-- [Spline](experiment-queue.md#spline-editable-3d-sets--p1-candidate-2026-10-25):
+- [Spline](history/experiment-queue-through-2026-11-26.md#spline-editable-3d-sets--p1-candidate-2026-10-25):
   documentation-reviewed candidate for editable 3D sets; not connected or tested.
 
 ## Source pinning and rights

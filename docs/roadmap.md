@@ -1,7 +1,6 @@
 # Framewright roadmap
 
-Updated 24 November 2026. Shipped baseline: **0.11.0**, an experimental [GitHub prerelease](https://github.com/markoblogo/framewright/releases/tag/v0.11.0).
-See the [0.11.0 scope](release-notes-0.11.0.md).
+Updated26November2026. Version **0.12.0**: [selected-delivery recovery scope](release-notes-0.12.0.md). [GitHub release](https://github.com/markoblogo/framewright/releases/tag/v0.12.0) and exact assets determine public availability. Previous published baseline:[0.11.0](release-notes-0.11.0.md).
 [Current work and protected waits](next-cycle.md) govern execution; the
 [archived operational history](history/next-cycle-through-2026-11-14.md) preserves superseded status text.
 This is the priority and milestone map. A roadmap entry does not start production,
@@ -10,12 +9,17 @@ changes of priority require an owner decision or an explicitly delegated choice.
 
 ## Current production order
 
-The owner selected two or three YouTube-first editorial experiments on
-23 November under M3/M4 and R05. Each tests one concrete question in a short
-piece that could support a publication. TikTok adaptation follows owner
-selection. Consolidate the accumulated work after the experiments in one PR
-without a release. For the revised RUN//SIGNAL test order and the next Radar
-slate, see [current work](next-cycle.md).
+26 November2026: owner selected a multi-step strengthening plan after closing the
+20-topic Radar slate. Follow [the five-move plan](studio-strengthening-plan-2026-11-26.md):
+trustworthy storage/current state → selected-package recovery → bounded internal
+trials → two or three owner-selected game reviews → narrow release assessment.
+This orders existing M1–M4/RV/R05 work; it starts no deletion,new film,spend or release.
+Radar production is paused through29November inclusive. Quixote and Zopia waits remain.
+Step1 is complete in read-only/documentation scope; see [audit](audits/step1-order-2026-11-26.md).
+Move2 recent selected-delivery recovery [passed on Radar18](experiments/radar18-selected-delivery-recovery-2026-11-26.md) using existing bindings; same-Mac isolated process,not independent-user or clean-machine proof. VIDEO-MD-01 [passed boundary-only OTIO/relocated library reopen](experiments/video-md-otio-reopen-2026-11-26.md); no current GUIeditor qualification. CAPSULE-RECIPE-01 [passed curated offline recipe portability](experiments/capsule-recipe-2026-11-26.md);no automatic semantic recovery or video-generation qualification. REVERSE-STYLE-01 completed its bounded known-edit comparison;MUSIC-CUE ordinary-track A/B was owner-accepted,both good with stronger music-picture linkage in B. Selected five scopes closed. Next are two owner-selected game reviews(third optional) and narrow release assessment;necessary small preparatory probes follow the [agreed warm-up format](studio-strengthening-plan-2026-11-26.md#agreed-working-format--small-warm-ups). No new game or release is started. Storage cleanup was not performed;check current space before execution.
+No requirement to exhaust the whole tool queue before a release.
+
+[26November local v0.12readiness](release-readiness-0.12.0-2026-11-26.md) now pins the scope and passing bounded archive/recovery/upgrade checks,with initial failures and scoped repairs retained. Full integrated-head checks and owner release decision remain. Game reviews are later reuse evidence,not mandatory production gates.
 
 ## Apply production memory in the next cycle
 

@@ -27,6 +27,7 @@ nav{display:flex;gap:26px;font-size:13px;color:#bbc0bd}a{color:inherit;text-deco
 .files{display:grid;grid-auto-rows:minmax(42px,1fr);gap:10px;flex:1}.download,button{font:inherit;border:1px solid #454d49;background:transparent;color:var(--fg);border-radius:3px;text-align:left}.download{display:flex;align-items:center;padding:10px 14px;font-size:14px;line-height:1.35}.download.primary{background:#e4e9e1;color:#121613;border-color:#dce0d9;font-weight:600}.download:hover{border-color:#dce0d9}.download.primary:hover{background:white}
 .publication-grid{margin-top:32px;padding-top:26px;border-top:1px solid var(--line)}.publication{min-width:0}.publication-youtube,.publication-course{grid-column:1/3}.publication-tiktok{grid-column:3}.copy{margin-top:14px;padding:18px;border:1px solid var(--line);border-radius:3px;background:#0c1010}.copy-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.copy-head button{margin-left:auto}.copy-status{flex-basis:100%;font-size:12px;color:var(--accent)}.copy-status:empty{display:none}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.65 'DM Sans',Arial,sans-serif;margin:12px 0 0;color:#d5dcd7}
 button{cursor:pointer;padding:5px 10px;font-size:12px;line-height:1.5}button:hover{border-color:var(--accent)}button[data-copied=true]{background:#14231c;border-color:#789c87;color:#d0e8da}:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.media-error{color:#efb4a8;padding:12px;border:1px solid #8a5d55}.extra-text{margin-top:24px}footer{font-size:12px;color:var(--muted);border-top:1px solid var(--line);margin-top:40px;padding:24px 0}
+.youtube-preview.shorts-preview .stage{aspect-ratio:9/16}body:has(.shorts-preview) .media-grid,body:has(.shorts-preview) .publication-grid{grid-template-columns:1fr 1fr 1fr}
 .single-landscape{grid-template-columns:minmax(0,1fr) minmax(240px,320px)}.single-portrait{grid-template-columns:minmax(0,240px) minmax(240px,1fr)}.publication-grid.single-landscape,.publication-grid.single-portrait{grid-template-columns:1fr}.publication-grid.single-landscape>.publication,.publication-grid.single-portrait>.publication{grid-column:1}
 @media(max-width:900px) and (min-width:761px){:root{--columns:minmax(0,256fr) minmax(0,81fr) minmax(210px,150fr)}header,main,footer{width:calc(100% - 48px)}.media-grid,.publication-grid{gap:16px}.download{font-size:12px;padding:8px}.copy{padding:14px}}
 @media(max-width:760px){header,main,footer{width:calc(100% - 32px)}header{height:68px}main{padding-top:22px}nav{gap:18px}h1{font-size:29px;letter-spacing:-1px}.intro{margin-bottom:24px}.media-grid,.publication-grid{display:flex;flex-direction:column;gap:24px}.preview-card,.download-card,.publication{width:100%}.tiktok-preview{width:min(100%,280px);align-self:center}.files{display:flex;flex-direction:column}.download{min-height:46px}.publication-grid{margin-top:28px}.copy{padding:16px}}
@@ -162,6 +163,7 @@ def build(manifest):
         if platform not in PLATFORMS or platform in seen:
             raise ValueError('Each platform must be youtube, tiktok or course, once')
         seen.add(platform)
+        is_shorts = platform == 'youtube' and variant.get('format') == 'shorts'
         assets = variant.get('files', {})
         if not isinstance(assets, dict) or 'video' not in assets or set(assets) - LABELS.keys():
             raise ValueError('Expected video and supported file roles')
@@ -201,14 +203,14 @@ def build(manifest):
                 sar = video.get('sample_aspect_ratio', '1:1')
                 sn, sd = (1, 1) if sar in {'N/A', '0:1'} else map(int, sar.split(':'))
                 ratio = width * sn / (height * sd)
-                expected = 9 / 16 if platform == 'tiktok' else 16 / 9
+                expected = 9 / 16 if platform == 'tiktok' or is_shorts else 16 / 9
                 if abs(ratio / expected - 1) > .02:
                     raise ValueError('Video does not match platform aspect: ' + platform)
                 subprocess.run(['ffmpeg', '-v', 'error', '-xerror', '-i', str(p),
                                 '-f', 'null', '-'], check=True, capture_output=True)
                 info = f'{width} × {height}'
-        name = PLATFORMS[platform]
-        aspect = 'portrait' if platform == 'tiktok' else 'landscape'
+        name = 'YouTube Shorts' if is_shorts else PLATFORMS[platform]
+        aspect = 'portrait' if platform == 'tiktok' or is_shorts else 'landscape'
         for role in ['video', 'cover', 'subtitles']:
             if role not in checked:
                 continue
@@ -219,7 +221,7 @@ def build(manifest):
                                     checked.get('copy', (None, None, ''))[2])
         copy_block = ''.join(copy_section(f'copy-{platform}-{i}', label, value)
                              for i, (label, value) in enumerate(fields))
-        sections.append(f'''<section class="preview-card {platform}-preview" id="{platform}">
+        sections.append(f'''<section class="preview-card {platform}-preview {"shorts-preview" if is_shorts else ""}" id="{platform}">
 <h2>{name}</h2><div class="stage"><video class="{aspect}" aria-label="{name} preview" controls playsinline preload="metadata" src="{escape(checked["video"][0])}"></video></div></section>''')
         if copy_block:
             publication.append(f'<section class="publication publication-{platform}" id="{platform}-copy"><h2>{name} copy</h2>{copy_block}</section>')
