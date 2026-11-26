@@ -72,7 +72,8 @@ or the [task/style/tool search](skills/video-production-router/references/arsena
 | [Same Ticker, Different Rights](https://youtu.be/NQX0F57Iy7g) | A glossy animated financial magazine combining sourced product material with distinct explanatory scenes. [Case and revisions](docs/productions/kriptok-same-ticker.md). |
 | [I See You as Art](https://youtu.be/hb9oYAK37w4) | Media art made from supplied calligraphy footage and photographs, with music and separate screen compositions. [Sources and method](docs/productions/i-see-you-as-art-pl1.md). |
 | [The Last Seed](https://youtu.be/ZQTORLBw9Zs) | An original Blender short refined through precise contact, mechanism, rain and sound corrections. [Worked case](docs/experiments/last-seed-recovery.md). |
-| [This World Unfolds](https://youtu.be/eWheRM41ZaU) | A real browser-world recording shaped into two formats, with portrait reframing and source-aware sound work. [Case and limits](docs/productions/papertrails-world-walk.md). |
+| [Night Shift: After the Final](https://youtu.be/Gxn_w0Bvdlk) | A five-case PlayMCP game and two walkthroughs, refined through character, anatomy, interface and sound corrections. [Game, production case and limits](docs/productions/night-shift-after-the-final.md). |
+| [Riemann Explorer](https://youtu.be/TBY5TcF4Vac) | A sourced walkthrough of a mathematical visualisation, built from owner-recorded material. [Fact checks and production case](docs/productions/riemann-explorer.md). |
 
 Publication links are owner-reported; individual case records distinguish
 technical checks, creative decisions, rights and publication. Views, revenue and
@@ -123,53 +124,39 @@ python3 skills/video-production-router/scripts/plan.py examples/briefs/mixed-pro
 This prints a plan; it does not render, install, call a model or spend money.
 [Example output](examples/plans/mixed-promo.md) · [Agent setup](docs/production-guide.md#use-the-agent-skill).
 
-<details>
-<summary>Current capabilities, evidence and earlier results</summary>
+## Current release and tested scope
 
-## Current state
+**[v0.12.0 — recover the selected delivery](https://github.com/markoblogo/framewright/releases/tag/v0.12.0)**
+is an experimental prerelease. It binds an accepted master to its existing
+publication package and reopens the exact video, cover, copy, review page and
+recorded next step. Changed or explicitly rejected packages require review.
+[Release notes and limits](docs/release-notes-0.12.0.md) ·
+[Worked recovery case](docs/experiments/radar18-selected-delivery-recovery-2026-11-26.md).
 
-| Scope | Evidence and boundary |
+| What you can build on | What has been checked |
 | --- | --- |
-| Source version | **0.11.0** · [source release notes](docs/release-notes-0.11.0.md) · [published builds and checksums](https://github.com/markoblogo/framewright/releases). |
-| Review and exchange | Selected-version continuation,explicit replaced-review history,seekable local media review,versioned corrections and the existing owner-approved Radar status flow; [review method](docs/methods/native-editor-before-render.md). Selection, generation and publication remain agent-and-owner work. |
-| Single-brief production tests | [Same Street, Three Moods](docs/productions/same-street-three-moods.md) revised for tempo/ground contact; [One Light, One Way Home](docs/productions/one-light-one-way-home.md) revised for scene motion. Both revision2 films are accepted after corrections, with owner-supplied YouTube/TikTok publication links. No requested mid-run assistance; prepared setup, unsolicited owner messages and timing limits retained in [AUTOPROD-01](docs/experiments/autonomous-production-pilot.md). |
-| Physical-tablet finishing | [InShot feature exports](docs/experiments/inshot-functions-2026-11-13.md) and the accepted [Babylon tour](docs/productions/babylon-virtual-tour.md); [companion-app results](docs/experiments/android-companions-2026-11-13.md). Source-frame rate, endpoint timing and incomplete app tests remain explicit. |
-| REL-C evidence | Completed character fiction, bounded continuity/contact/correction, two aspect layouts and independent same-case recovery; [assessment](docs/rel-c-readiness-2026-11-04.md) and [review](docs/rel-c-independent-review-2026-11-04.md). Agent-and-human-led manual workflow; no general rig or autonomous route claim. |
-| REL-B evidence | [Assessment](docs/rel-b-readiness-2026-11-01.md): both formats accepted, scoped recovery/reuse/correction; [local checks/review](docs/rel-b-local-review-2026-11-01.md) and PR50/merged-main CI pass. No labour-savings or whole-route-autonomy claim. |
-| SSI handoff | [6 November cycle, owner report](docs/productions/ssi-2026-11-06.md): three films, deployment and six Telegram confirmations. Partner creative/listening acceptance, public publication and the15November unattended outcome remain separate. |
-| AzurMenton guide pilot | [40s guide film](docs/experiments/azur-guide-first-film.md) accepted; YouTube and guide embed owner-reported. A general automated guide template is not yet qualified. |
+| Continue selected work | Same-Mac isolated-process recovery of a real delivery; not a clean-machine or independent-operator transfer. |
+| Exchange an edit | [VIDEO.md → OTIO](docs/experiments/video-md-otio-reopen-2026-11-26.md): three clip boundaries and library reopening, including relocated media. GUI editor import remains unqualified. |
+| Carry a production recipe | [Capsule trial](docs/experiments/capsule-recipe-2026-11-26.md): a curated recipe reopens offline. It is not automatic semantic reconstruction or a generated remake. |
+| Study an existing montage | [Known-edit analysis](docs/experiments/reverse-style-known-edit-2026-11-26.md): measured cuts compared with an authored edit; motion/OCR/ASR and listening limits remain explicit. |
+| Link music and picture | [Music-cue A/B](docs/experiments/music-cue-ordinary-track-2026-11-26.md): two cuts adjusted around detected acoustic changes in one game recording; bounded evidence, not automatic music editing. |
 
-Private projects/media remain outside Git; follow the [external-storage and cleanup policy](docs/storage-policy.md).
-Technical QA, creative/listening
-acceptance, rights and publication are separate records. Labour savings,
-general whole-route autonomy and audience performance are not established by these films.
+Framewright combines an author-led production practice with an open methods
+library. It is **not a self-service production app or automatic social publisher**.
+Optional tools require their own access, installation and licence checks. Public
+methods do not include private source media, client material or confidential terms.
 
-[No Further Claims character-film method](docs/methods/coherent-manga-production.md) now records
-the completed131.25s manga film and native aspect-layout workflow. [REL-C assessment](docs/rel-c-readiness-2026-11-04.md)
-records the passed same-case cold-resume check and explicit limitations. The0.9.0 consolidation adds review/exchange helpers and further production recipes; optional editors/providers keep their own requirements. Transfer to an independent operator remains a parallel workstream with partial evidence.
+Technical QA, creative/listening acceptance, rights and publication are separate
+records. General tool qualification, labour savings and audience results are not
+inferred from successful exports or publication links. The landing's
+[catalogue](https://markoblogo.github.io/framewright/) reads source-linked film
+and trial cases; variants count once, failed trials remain trials, and review
+entries include untested candidates.
 
-The [accepted FW identity](docs/productions/fw-identity.md) and [English public landing](https://markoblogo.github.io/framewright/) are now recorded. Sting/watermark use in films remains an optional experiment. The live catalogue counts distinguish methods, detailed tool profiles and review entries.
+[Earlier releases](https://github.com/markoblogo/framewright/releases) ·
+[Production cases](https://github.com/markoblogo/framewright/tree/main/docs/productions) · [Experiments](docs/experiments.md) ·
+[Current priorities](docs/next-cycle.md) · [External-storage policy](docs/storage-policy.md).
 
-## Selected results
-
-| Film | What it demonstrates |
-| --- | --- |
-| [The Last Seed](https://youtu.be/ZQTORLBw9Zs) | Original Blender short with targeted contact, mechanism, rain and soundtrack corrections; [case](docs/experiments/last-seed-recovery.md) |
-| Beyond the Letters — internal test | Reused sources/recipe/score, new story/voice, accepted16:9 and9:16; [repeat-production evidence](docs/experiments/rel-b-repeat-protocol.md). No publication planned. |
-| [Menton: market to sea](https://youtu.be/WEEGy8Ks3ig) | Illustrated guide, owner footage, stock cutaways, route ending and expressive English narration; [case](docs/experiments/azur-guide-first-film.md) |
-| [Framewright workflow lesson](https://youtu.be/n1wuySSYQcQ) | Two-host dialogue and real production examples; [case and limits](docs/experiments/framewright-micro-lesson.md) |
-
-[Four training films → coherent fiction](docs/methods/training-to-fiction-2026-11-03.md):
-accepted AI-explainer, animated-poster, liquid-photo and transport-guide cases;
-reusable choices, remaining limits and three bounded next-production questions.
-These production results inform the methods library; they do not establish blanket tool qualification.
-
-Publication links and owner acceptance are owner-reported unless a case identifies
-separate verification. [More experiments](docs/experiments.md) ·
-[Prior detailed overview, dated history](docs/history/readme-through-2026-11-01.md).
-
-
-</details>
 
 ## Test a method before production
 
