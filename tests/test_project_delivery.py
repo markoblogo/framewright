@@ -114,6 +114,39 @@ class ProjectDeliveryTest(unittest.TestCase):
         self.assertNotIn('open_command', entry)
         self.cli('open-delivery', self.project, 'episode', ok=False)
 
+    def set_package_state(self, state):
+        manifest = json.loads(self.manifest.read_text())
+        manifest['state'] = state
+        self.manifest.write_text(json.dumps(manifest))
+        receipt = json.loads(self.receipt.read_text())
+        receipt.update(state=state, manifest_sha256=self.hash(self.manifest))
+        self.receipt.write_text(json.dumps(receipt))
+
+    def test_rejected_package_cannot_be_attached(self):
+        self.approve()
+        self.set_package_state('rejected')
+        self.attach(ok=False)
+
+    def test_legacy_rejected_package_binding_cannot_reopen(self):
+        self.approve()
+        self.attach()
+        self.set_package_state('rejected')
+        # Older clients could explicitly attach this rejected manifest. Model
+        # their consistent binding so only the state guard prevents reopening.
+        data = json.loads(self.project.read_text())
+        data['review_deliveries']['episode']['manifest_sha256'] = self.hash(self.manifest)
+        self.project.write_text(json.dumps(data))
+        entry, = self.brief()['review_deliveries']
+        self.assertEqual(entry['state'], 'needs_review')
+        self.assertNotIn('open_command', entry)
+        self.cli('open-delivery', self.project, 'episode', ok=False)
+
+    def test_review_package_with_approved_master_remains_available(self):
+        self.approve()
+        self.set_package_state('review')
+        self.attach()
+        self.assertEqual(self.brief()['review_deliveries'][0]['state'], 'available')
+
     def test_rejected_master_cannot_reopen_previous_delivery(self):
         self.approve()
         self.attach()

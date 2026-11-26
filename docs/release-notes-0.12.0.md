@@ -6,7 +6,7 @@ Experimental prerelease,26November2026. Version0.12.0 packages selected-delivery
 
 - Explicitly bind an accepted selected master to its existing review/publication manifest with `project.py attach-delivery`.
 - Recover that package through `project.py brief` and `open-delivery`:revision,exact master,cover,subtitles,copy,review page/restart command,owner waits and proposed next action.
-- Recheck retained files and acceptance;changed or rejected packages need review instead of reopening as accepted. Existing publication/field-test waits are not retired by reopening.
+- Recheck retained files and acceptance;changed packages need review and explicitly rejected packages cannot register or reopen,including legacy bindings with otherwise approved masters. Existing publication/field-test waits are not retired by reopening.
 - Preserve previous-version projects;absence of a new delivery binding remains explicit,not fabricated from folder names or publication URLs.
 
 Core implementation:`project.py`,`project_delivery.py`,`project_summary.py`;regression cases in`tests/test_project_delivery.py`. [Recovery contract](../skills/video-production-router/references/projects.md#reopen-an-accepted-review-delivery) · [Actual Radar18 case](experiments/radar18-selected-delivery-recovery-2026-11-26.md).

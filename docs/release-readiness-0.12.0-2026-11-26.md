@@ -53,3 +53,5 @@ Readiness is same-Mac/process-level proof on the pinned local candidate. Public 
 ## Subsequent integration authority —26November2026
 
 After this local audit,the owner explicitly authorised PR creation,a complete check run on the final commit,and merge/release conditional on green checks. Working VERSION is updated to0.12.0 for that integration. Earlier results/version/approval statements above remain the initial audit snapshot;they are not rewritten as final-commit proof. Permanent Shorts/default-YouTube aspect regressions are included. The final GitHub checks and release assets must supply the separate exact-head/public-identity proof.
+
+Independent release review subsequently found FWR-012-01:an explicitly rejected manifest/receipt could still reopen with an approved master. Two new regressions reproduced the defect before the fix. Shared inspection now refuses rejected package state for registration and reopening;valid review packages remain supported. Three regressions cover those cases. The superseded9dd2edecheck was cancelled;complete checks must run on the corrected head.
