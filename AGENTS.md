@@ -6,6 +6,7 @@
 - This is a methods/skills library, not a renderer or automatic publishing service.
 - Before proposing or reviewing video, read only applicable rules in docs/video-taste.md; apply them in the existing brief/handoff and capture reusable owner corrections using skills/video-production-router/references/video-taste.md.
 - Honour explicit tool choices. Prefer tested scope over tool novelty.
+- Use the owner-adopted [small warm-up format](docs/studio-strengthening-plan-2026-11-26.md#agreed-working-format--small-warm-ups): one useful short probe between productions; several necessary probes may prepare a selected review. Reuse existing queue/material/stack, avoid heavy setup and paid calls, record outcomes, and do not repeat already-answered tests.
 - Start new videos and pilots in landscape YouTube format by default. Follow the owner’s explicit final-format instruction and wait for owner selection before adding an optional TikTok adaptation. See docs/start-here.md.
 - Keep failures, human preference, technical QA and publication separate.
 - Do not label structural checks as model evaluation or successful rendering as audience validation.

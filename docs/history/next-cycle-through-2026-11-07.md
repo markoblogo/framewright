@@ -42,7 +42,7 @@ identity, metrics or revenue. [Cycle slate and preserved directions](../producti
 
 ## Reuse and research
 
-- [Deduplicated tool intake](../research/tool-intake-2026-11-05.md), [Images follow-up](../research/images-2-6-2026-11-05.md) and [bounded queue](../experiment-queue.md#new-tool-intake--5-november-2026) are research, not new qualifications. StageShow has one scoped production trial; MOSS-Nano, Three.js r187 regression and other candidates still need a fitting scoped trial; no tool tour or bulk install.
+- [Deduplicated tool intake](../research/tool-intake-2026-11-05.md), [Images follow-up](../research/images-2-6-2026-11-05.md) and [bounded queue](experiment-queue-through-2026-11-26.md#new-tool-intake--5-november-2026) are research, not new qualifications. StageShow has one scoped production trial; MOSS-Nano, Three.js r187 regression and other candidates still need a fitting scoped trial; no tool tour or bulk install.
 - Every new brief decides audience/language and YouTube/TikTok suitability before assembly. Deliver direct media/subtitle links plus one browser-readable text document per platform. No automatic publishing authority.
 - REL-D/M6 remains a transferable-operation goal: another operator/receiving project must actually complete/resume a bounded route. Written recipes and same-operator repeats alone do not close it.
 

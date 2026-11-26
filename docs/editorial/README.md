@@ -1,5 +1,7 @@
 # Framewright Studio Notes — weekly English blog drafts
 
+Next issue: [owner-prioritised game/video cases — j3lly b3ing and Night Shift](next-issue-notes.md). Include these in the next weekly draft.
+
 Owner-authorised26October2026: prepare one English blog article weekly, with ABVX
 metadata, a generated cover image and1–3 relevant YouTube videos reported published by the owner. First draft:
 [Studio Notes01](2026-10-26-framewright-studio-notes-01.md).

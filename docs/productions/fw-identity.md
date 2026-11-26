@@ -33,7 +33,7 @@ small watermark in selected future films, checking readability, safe margins,
 colour/background conflicts and whether the ending feels intrusive in both formats.
 Watermark positioning is platform-specific; lower-right can conflict with controls.
 No automatic insertion. A flat transparent watermark has not yet been delivered.
-Keep the matched two-topic [centre-crop experiment](../experiment-queue.md#centre-crop-01--next-two-radar-films-plus-an-experiment-film9november2026)
+Keep the matched two-topic [centre-crop experiment](../history/experiment-queue-through-2026-11-26.md#centre-crop-01--next-two-radar-films-plus-an-experiment-film9november2026)
 separate from brand-placement acceptance. No licence or telemetry change.
 
 ## Public presentation

@@ -1,6 +1,6 @@
 {
   "schema": "framewright-public-evidence-v1",
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "scope": "Conservative documented cases, not an asserted lifetime total. Original records remain the source of truth.",
   "definitions": {
     "films": "One completed authored story/promo/tutorial/ambient master per case. Aspect, language and revision variants count once. A finished export need not be publicly published or creatively accepted.",
@@ -22,39 +22,204 @@
     ]
   },
   "films": [
-    {"id":"github-desktop-accounts","source":"docs/productions/github-desktop-accounts.md","basis":"registered_finished_export","index_note":"42.5s English horizontal film with owner-approved pilot. Owner supplied https://youtu.be/gm4LecfmGYk on 25 November 2026; oEmbed confirmed SEO title and ABV channel. Visibility, upload identity and metrics unverified."},
-    {"id":"brushveil-gameplay-review","source":"docs/productions/brushveil.md","basis":"registered_finished_export","index_note":"One 61s landscape v1 and 38s portrait v2 review of owner-recorded Van Gogh-inspired Starry Town. Owner supplied https://youtu.be/2Eo7TqHaF50 and https://vt.tiktok.com/ZSs6qDesY/ on 25 November 2026. YouTube oEmbed confirmed title and ABV channel. Owner-approved edits with corrected portrait title spacing; visibility, upload identity and metrics unverified."},
-    {"id":"copilot-adaptive-effort","source":"docs/productions/copilot-adaptive-effort.md","basis":"registered_finished_export","index_note":"Owner supplied https://youtu.be/btgYpgsP7kQ on 25 November 2026; oEmbed confirmed SEO title and ABV channel. 51.5s horizontal film after motion correction; visibility, upload identity and metrics unverified."},
-    {"id":"reverse-engineering-video","source":"docs/productions/reverse-engineering-video.md","basis":"registered_finished_export","index_note":"Owner supplied https://youtu.be/pdWiWzb4t28 on 25 November 2026; YouTube oEmbed confirmed SEO title and ABV channel. One 60s English landscape film, local REA fixture. Visibility, upload identity and metrics unverified."},
-    {"id":"baked-brand-kit","source":"docs/productions/baked-brand-kit.md","basis":"registered_finished_export","index_note":"One 63.49s corrected English YouTube film: actual two-site extraction, ZIP/CSS checks, Button Sounds probe and canonical FW ident. Owner supplied https://youtu.be/vBg5K1uFo9o on 25 November 2026; YouTube oEmbed confirmed title and channel. Visibility class and upload identity unverified. Baked retained as reference tool."},
-    {"id":"no-humans-allowed","source":"docs/productions/no-humans-allowed.md","basis":"registered_finished_export","index_note":"One actual AI gameplay film in two owner-accepted English v2 cuts (41s and 32s); real game result 7:19 until caught. Owner supplied https://youtu.be/WyJ533vszfs and https://vt.tiktok.com/ZSs6M9FUH/ on 25 November 2026 (owner_provided_url). Independent visibility and upload identity unverified."},
-    {"id":"run-signal-m04-quiet-street","source":"docs/productions/run-signal-m04.md","basis":"registered_finished_export","index_note":"One 27:08 home-approved episode with a matching field MP3, a 25:00 workout and navigation starting on GO. Outdoor validation and publication are pending."},
-    {"id":"run-signal-m04-episode-promo","source":"docs/productions/run-signal-m04.md","basis":"registered_finished_export","index_note":"One 30-second promo with two private aspect variants. Both v2 cuts passed full decode and matching audio checks and were accepted by the owner on 24 November 2026. Publication is pending."},
-    {"id":"run-signal-launch-promo","source":"docs/productions/run-signal-launch-promo.md","basis":"registered_finished_export","index_note":"One owner-approved 68-second Season 1 promo with two aspect variants. Owner supplied https://youtu.be/MSWGGwMv9eo and https://vt.tiktok.com/ZSsYPEB9U/ on 24 November 2026. YouTube oEmbed confirmed title and channel; TikTok short link resolved."},
-    {"id":"tool-retrieval-shortlist","source":"docs/productions/tool-retrieval-shortlist.md","basis":"registered_finished_export","index_note":"47.2-second English landscape explainer, with a local EmbeddingGemma 2 text retrieval result and authored GiveMotion and Three.js visuals. Owner supplied https://youtu.be/95UQQ92HPcU; YouTube oEmbed confirmed title and channel."},
-    {"id":"render-complete-events","source":"docs/productions/render-complete-events.md","basis":"registered_finished_export","index_note":"Owner accepted the 47.2-second English landscape film on 24 November 2026. It contains a local event replay and an 8.2-second MuJoCo-backed shot. Owner supplied https://youtu.be/hhtE8DiGCA0; YouTube oEmbed confirmed title and channel."},
-    {"id":"blue-lagoon-ipo","source":"docs/productions/blue-lagoon-ipo.md","basis":"registered_finished_export","index_note":"Owner supplied https://youtu.be/7dVALyWwIyY and https://vt.tiktok.com/ZSs2r1VtB/ for accepted landscape and portrait cuts. Visibility and upload identity unverified. Archive source licence review pending."},
-    {"id":"event-horizon","source":"docs/productions/event-horizon.md","basis":"registered_finished_export","index_note":"Owner supplied https://youtu.be/cMcVebqs5zs and https://vt.tiktok.com/ZSs26Nr9S/ for the accepted landscape and portrait v2 cuts. Independent visibility and upload identity unverified."},
-    {"id":"helios-mechanica","source":"docs/productions/helios-mechanica.md","basis":"registered_finished_export","index_note":"Owner supplied https://youtu.be/g0BaVm892Vs and https://vt.tiktok.com/ZSs2F4SfB/ for the accepted landscape and portrait v3 cuts. Independent visibility and upload identity unverified."},
-    {"id":"radar-batch-check","source":"docs/productions/radar-batch-check.md","basis":"registered_finished_export","index_note":"Owner supplied https://youtu.be/lQ89C2f-bno for the accepted 35-second English landscape v2. Independent visibility and upload identity unverified."},
-    {"id":"hydrogen-handoff","source":"docs/productions/hydrogen-handoff.md","basis":"registered_finished_export","index_note":"Owner supplied https://youtu.be/k9s_jHPZ5pI for the accepted 43-second English landscape v2. Independent visibility and upload identity unverified."},
-    {"id":"copilot-browser-confirmation","source":"docs/productions/copilot-browser-confirmation.md","basis":"registered_finished_export","index_note":"Owner supplied https://youtu.be/CeycVKY7GVM for the accepted 39-second English landscape film. Independent visibility and upload identity unverified."},
-    {"id":"gemini-skill-file-access","source":"docs/productions/gemini-skill-file-access.md","basis":"registered_finished_export","index_note":"Owner supplied https://youtu.be/Ezrab-CrWqM for the 46-second English film on 24 November 2026. YouTube oEmbed confirmed title and channel."},
-    {"id":"tulvo-small-studio","source":"docs/productions/tulvo-small-studio.md","basis":"registered_finished_export","index_note":"One owner-approved 61-second English creative-studio workflow review. Owner supplied https://youtu.be/m9lKpzSPnws on 23 November 2026; title and channel confirmed by YouTube oEmbed."},
-    {"id":"tulvo-business-operations","source":"docs/productions/tulvo-business-operations.md","basis":"registered_finished_export","index_note":"One owner-approved 80-second logistics workflow review. Owner supplied https://youtu.be/87jxMAuyOCQ on 23 November 2026; title and channel confirmed by YouTube oEmbed."},
-    {"id":"tulvo-overview","source":"docs/productions/tulvo-overview.md","basis":"registered_finished_export","index_note":"One owner-approved 79.45-second English YouTube overview. Owner supplied https://youtu.be/YPYXpOpbCl4 on 23 November 2026; title and channel confirmed by YouTube oEmbed."},
-    {"id":"gemini-mac-handoff","source":"docs/productions/gemini-mac-handoff.md","basis":"registered_finished_export","index_note":"Owner supplied https://youtu.be/8L2dUiwqyhM for the 47-second English film on 24 November 2026. YouTube oEmbed confirmed title and channel; the agent handoff is a reconstruction."},
-    {"id":"vertical-crop-keep-the-action","source":"docs/productions/vertical-crop-keep-the-action.md","basis":"registered_finished_export","index_note":"Owner supplied https://youtu.be/OQm-MV2m0_8 for the 31.5-second English cut on 23 November 2026. YouTube oEmbed confirmed the title and channel."},
-    {"id":"copilot-evals-package-check","source":"docs/productions/copilot-evals-package-check.md","basis":"registered_finished_export","index_note":"Owner supplied https://youtu.be/n-wtccrWF-0 on 23 November 2026 for the 57-second English film; title and channel confirmed by YouTube oEmbed."},
-    {"id":"clip-join-audio","source":"docs/productions/clip-join-audio.md","basis":"registered_finished_export","index_note":"Owner supplied https://youtu.be/nhOBQe4YgBU on 23 November 2026 for the accepted 36.6-second English explainer; title and channel confirmed by YouTube oEmbed."},
-    {"id":"watch-duty-radio","source":"docs/productions/watch-duty-radio.md","basis":"registered_finished_export","index_note":"One 43-second English landscape explainer. Owner accepted the edit subject to a closed ending. Packaged with a fade to black. Owner supplied https://youtu.be/IkZg6DYe-iQ on 23 November 2026; YouTube title and channel confirmed via oEmbed."},
-    {"id":"the-backup-route","source":"docs/productions/the-backup-route.md","basis":"registered_finished_export","index_note":"One owner-approved 34-second YouTube explainer linking the Baltimore cargo diversion to the retained OpenMotion routing animation. Owner supplied https://youtu.be/lZm5E5-xhLQ on 23 November 2026."},
-    {"id":"tonfeld-demo","source":"docs/productions/tonfeld-demo.md","basis":"registered_finished_export","index_note":"One TONFELD product film in a 91.4-second owner-approved landscape cut and a 34.4-second native portrait edit. Real app recording with separately produced sound. Owner supplied https://youtu.be/IZKKa9ThG7g and https://vt.tiktok.com/ZSsRspp21/ on 23 November 2026; YouTube title and TikTok redirect checked."},
-    {"id":"run-signal-m03-window-three","source":"docs/productions/run-signal-m03.md","basis":"registered_finished_export","index_note":"One 27:08 film accepted in home review and passed the owner’s outdoor test on 24 November 2026. YouTube package prepared from v5. Owner supplied https://youtu.be/wfFjqxWzwNs; YouTube oEmbed confirmed title and channel."},
-    {"id":"transit-speed-bilingual-tutorial","source":"docs/productions/transit-speed-bilingual-tutorial.md","basis":"registered_finished_export","index_note":"One accepted 5:58 demo tutorial in two language versions with identical picture. Private handoff confirmed. English version on YouTube https://youtu.be/tyhMWxCJrEg; owner-provided link, title confirmed by YouTube oEmbed on 23 November 2026."},
-    {"id":"reaction-telemetry","source":"docs/productions/reaction-telemetry.md","basis":"registered_finished_export","index_note":"One owner-accepted 61-second English YouTube master. The finished edit adds the question that motivates the chart. Owner supplied https://youtu.be/N6BoSZ4Fykk on 22 November 2026 (owner_provided_url). Independent visibility, uploaded-file identity and metrics unverified."},
-    {"id":"escapade-powered-flyby","source":"docs/productions/escapade-powered-flyby.md","basis":"registered_finished_export","index_note":"One owner-accepted 60-second English YouTube master. Silent Manim pilot led to a synchronized burn highlight and a fitted caption. Owner supplied https://youtu.be/xuO__yvDhHo on 22 November 2026 (owner_provided_url). Independent visibility, uploaded-file identity and metrics unverified."},
-    {"id":"dry-ultrasound","source":"docs/productions/dry-ultrasound.md","basis":"registered_finished_export","index_note":"One source-led science explainer in two owner-accepted English 1080p cuts. Silent Manim pilot accepted in both aspects. Owner supplied https://youtu.be/B7WQ0FScopw on 22 November 2026 (owner_provided_url) and reported no TikTok upload. Independent visibility, uploaded-file identity and metrics unverified."},
+    {
+      "id": "github-desktop-accounts",
+      "source": "docs/productions/github-desktop-accounts.md",
+      "basis": "registered_finished_export",
+      "index_note": "42.5s English horizontal film with owner-approved pilot. Owner supplied https://youtu.be/gm4LecfmGYk on 25 November 2026; oEmbed confirmed SEO title and ABV channel. Visibility, upload identity and metrics unverified."
+    },
+    {
+      "id": "brushveil-gameplay-review",
+      "source": "docs/productions/brushveil.md",
+      "basis": "registered_finished_export",
+      "index_note": "One 61s landscape v1 and 38s portrait v2 review of owner-recorded Van Gogh-inspired Starry Town. Owner supplied https://youtu.be/2Eo7TqHaF50 and https://vt.tiktok.com/ZSs6qDesY/ on 25 November 2026. YouTube oEmbed confirmed title and ABV channel. Owner-approved edits with corrected portrait title spacing; visibility, upload identity and metrics unverified."
+    },
+    {
+      "id": "copilot-adaptive-effort",
+      "source": "docs/productions/copilot-adaptive-effort.md",
+      "basis": "registered_finished_export",
+      "index_note": "Owner supplied https://youtu.be/btgYpgsP7kQ on 25 November 2026; oEmbed confirmed SEO title and ABV channel. 51.5s horizontal film after motion correction; visibility, upload identity and metrics unverified."
+    },
+    {
+      "id": "reverse-engineering-video",
+      "source": "docs/productions/reverse-engineering-video.md",
+      "basis": "registered_finished_export",
+      "index_note": "Owner supplied https://youtu.be/pdWiWzb4t28 on 25 November 2026; YouTube oEmbed confirmed SEO title and ABV channel. One 60s English landscape film, local REA fixture. Visibility, upload identity and metrics unverified."
+    },
+    {
+      "id": "baked-brand-kit",
+      "source": "docs/productions/baked-brand-kit.md",
+      "basis": "registered_finished_export",
+      "index_note": "One 63.49s corrected English YouTube film: actual two-site extraction, ZIP/CSS checks, Button Sounds probe and canonical FW ident. Owner supplied https://youtu.be/vBg5K1uFo9o on 25 November 2026; YouTube oEmbed confirmed title and channel. Visibility class and upload identity unverified. Baked retained as reference tool."
+    },
+    {
+      "id": "no-humans-allowed",
+      "source": "docs/productions/no-humans-allowed.md",
+      "basis": "registered_finished_export",
+      "index_note": "One actual AI gameplay film in two owner-accepted English v2 cuts (41s and 32s); real game result 7:19 until caught. Owner supplied https://youtu.be/WyJ533vszfs and https://vt.tiktok.com/ZSs6M9FUH/ on 25 November 2026 (owner_provided_url). Independent visibility and upload identity unverified."
+    },
+    {
+      "id": "run-signal-m04-quiet-street",
+      "source": "docs/productions/run-signal-m04.md",
+      "basis": "registered_finished_export",
+      "index_note": "One 27:08 home-approved episode with a matching field MP3, a 25:00 workout and navigation starting on GO. Outdoor validation and publication are pending."
+    },
+    {
+      "id": "run-signal-m04-episode-promo",
+      "source": "docs/productions/run-signal-m04.md",
+      "basis": "registered_finished_export",
+      "index_note": "One 30-second promo with two private aspect variants. Both v2 cuts passed full decode and matching audio checks and were accepted by the owner on 24 November 2026. Publication is pending."
+    },
+    {
+      "id": "run-signal-launch-promo",
+      "source": "docs/productions/run-signal-launch-promo.md",
+      "basis": "registered_finished_export",
+      "index_note": "One owner-approved 68-second Season 1 promo with two aspect variants. Owner supplied https://youtu.be/MSWGGwMv9eo and https://vt.tiktok.com/ZSsYPEB9U/ on 24 November 2026. YouTube oEmbed confirmed title and channel; TikTok short link resolved."
+    },
+    {
+      "id": "tool-retrieval-shortlist",
+      "source": "docs/productions/tool-retrieval-shortlist.md",
+      "basis": "registered_finished_export",
+      "index_note": "47.2-second English landscape explainer, with a local EmbeddingGemma 2 text retrieval result and authored GiveMotion and Three.js visuals. Owner supplied https://youtu.be/95UQQ92HPcU; YouTube oEmbed confirmed title and channel."
+    },
+    {
+      "id": "render-complete-events",
+      "source": "docs/productions/render-complete-events.md",
+      "basis": "registered_finished_export",
+      "index_note": "Owner accepted the 47.2-second English landscape film on 24 November 2026. It contains a local event replay and an 8.2-second MuJoCo-backed shot. Owner supplied https://youtu.be/hhtE8DiGCA0; YouTube oEmbed confirmed title and channel."
+    },
+    {
+      "id": "blue-lagoon-ipo",
+      "source": "docs/productions/blue-lagoon-ipo.md",
+      "basis": "registered_finished_export",
+      "index_note": "Owner supplied https://youtu.be/7dVALyWwIyY and https://vt.tiktok.com/ZSs2r1VtB/ for accepted landscape and portrait cuts. Visibility and upload identity unverified. Archive source licence review pending."
+    },
+    {
+      "id": "event-horizon",
+      "source": "docs/productions/event-horizon.md",
+      "basis": "registered_finished_export",
+      "index_note": "Owner supplied https://youtu.be/cMcVebqs5zs and https://vt.tiktok.com/ZSs26Nr9S/ for the accepted landscape and portrait v2 cuts. Independent visibility and upload identity unverified."
+    },
+    {
+      "id": "helios-mechanica",
+      "source": "docs/productions/helios-mechanica.md",
+      "basis": "registered_finished_export",
+      "index_note": "Owner supplied https://youtu.be/g0BaVm892Vs and https://vt.tiktok.com/ZSs2F4SfB/ for the accepted landscape and portrait v3 cuts. Independent visibility and upload identity unverified."
+    },
+    {
+      "id": "radar-batch-check",
+      "source": "docs/productions/radar-batch-check.md",
+      "basis": "registered_finished_export",
+      "index_note": "Owner supplied https://youtu.be/lQ89C2f-bno for the accepted 35-second English landscape v2. Independent visibility and upload identity unverified."
+    },
+    {
+      "id": "hydrogen-handoff",
+      "source": "docs/productions/hydrogen-handoff.md",
+      "basis": "registered_finished_export",
+      "index_note": "Owner supplied https://youtu.be/k9s_jHPZ5pI for the accepted 43-second English landscape v2. Independent visibility and upload identity unverified."
+    },
+    {
+      "id": "copilot-browser-confirmation",
+      "source": "docs/productions/copilot-browser-confirmation.md",
+      "basis": "registered_finished_export",
+      "index_note": "Owner supplied https://youtu.be/CeycVKY7GVM for the accepted 39-second English landscape film. Independent visibility and upload identity unverified."
+    },
+    {
+      "id": "gemini-skill-file-access",
+      "source": "docs/productions/gemini-skill-file-access.md",
+      "basis": "registered_finished_export",
+      "index_note": "Owner supplied https://youtu.be/Ezrab-CrWqM for the 46-second English film on 24 November 2026. YouTube oEmbed confirmed title and channel."
+    },
+    {
+      "id": "tulvo-small-studio",
+      "source": "docs/productions/tulvo-small-studio.md",
+      "basis": "registered_finished_export",
+      "index_note": "One owner-approved 61-second English creative-studio workflow review. Owner supplied https://youtu.be/m9lKpzSPnws on 23 November 2026; title and channel confirmed by YouTube oEmbed."
+    },
+    {
+      "id": "tulvo-business-operations",
+      "source": "docs/productions/tulvo-business-operations.md",
+      "basis": "registered_finished_export",
+      "index_note": "One owner-approved 80-second logistics workflow review. Owner supplied https://youtu.be/87jxMAuyOCQ on 23 November 2026; title and channel confirmed by YouTube oEmbed."
+    },
+    {
+      "id": "tulvo-overview",
+      "source": "docs/productions/tulvo-overview.md",
+      "basis": "registered_finished_export",
+      "index_note": "One owner-approved 79.45-second English YouTube overview. Owner supplied https://youtu.be/YPYXpOpbCl4 on 23 November 2026; title and channel confirmed by YouTube oEmbed."
+    },
+    {
+      "id": "gemini-mac-handoff",
+      "source": "docs/productions/gemini-mac-handoff.md",
+      "basis": "registered_finished_export",
+      "index_note": "Owner supplied https://youtu.be/8L2dUiwqyhM for the 47-second English film on 24 November 2026. YouTube oEmbed confirmed title and channel; the agent handoff is a reconstruction."
+    },
+    {
+      "id": "vertical-crop-keep-the-action",
+      "source": "docs/productions/vertical-crop-keep-the-action.md",
+      "basis": "registered_finished_export",
+      "index_note": "Owner supplied https://youtu.be/OQm-MV2m0_8 for the 31.5-second English cut on 23 November 2026. YouTube oEmbed confirmed the title and channel."
+    },
+    {
+      "id": "copilot-evals-package-check",
+      "source": "docs/productions/copilot-evals-package-check.md",
+      "basis": "registered_finished_export",
+      "index_note": "Owner supplied https://youtu.be/n-wtccrWF-0 on 23 November 2026 for the 57-second English film; title and channel confirmed by YouTube oEmbed."
+    },
+    {
+      "id": "clip-join-audio",
+      "source": "docs/productions/clip-join-audio.md",
+      "basis": "registered_finished_export",
+      "index_note": "Owner supplied https://youtu.be/nhOBQe4YgBU on 23 November 2026 for the accepted 36.6-second English explainer; title and channel confirmed by YouTube oEmbed."
+    },
+    {
+      "id": "watch-duty-radio",
+      "source": "docs/productions/watch-duty-radio.md",
+      "basis": "registered_finished_export",
+      "index_note": "One 43-second English landscape explainer. Owner accepted the edit subject to a closed ending. Packaged with a fade to black. Owner supplied https://youtu.be/IkZg6DYe-iQ on 23 November 2026; YouTube title and channel confirmed via oEmbed."
+    },
+    {
+      "id": "the-backup-route",
+      "source": "docs/productions/the-backup-route.md",
+      "basis": "registered_finished_export",
+      "index_note": "One owner-approved 34-second YouTube explainer linking the Baltimore cargo diversion to the retained OpenMotion routing animation. Owner supplied https://youtu.be/lZm5E5-xhLQ on 23 November 2026."
+    },
+    {
+      "id": "tonfeld-demo",
+      "source": "docs/productions/tonfeld-demo.md",
+      "basis": "registered_finished_export",
+      "index_note": "One TONFELD product film in a 91.4-second owner-approved landscape cut and a 34.4-second native portrait edit. Real app recording with separately produced sound. Owner supplied https://youtu.be/IZKKa9ThG7g and https://vt.tiktok.com/ZSsRspp21/ on 23 November 2026; YouTube title and TikTok redirect checked."
+    },
+    {
+      "id": "run-signal-m03-window-three",
+      "source": "docs/productions/run-signal-m03.md",
+      "basis": "registered_finished_export",
+      "index_note": "One 27:08 film accepted in home review and passed the owner’s outdoor test on 24 November 2026. YouTube package prepared from v5. Owner supplied https://youtu.be/wfFjqxWzwNs; YouTube oEmbed confirmed title and channel."
+    },
+    {
+      "id": "transit-speed-bilingual-tutorial",
+      "source": "docs/productions/transit-speed-bilingual-tutorial.md",
+      "basis": "registered_finished_export",
+      "index_note": "One accepted 5:58 demo tutorial in two language versions with identical picture. Private handoff confirmed. English version on YouTube https://youtu.be/tyhMWxCJrEg; owner-provided link, title confirmed by YouTube oEmbed on 23 November 2026."
+    },
+    {
+      "id": "reaction-telemetry",
+      "source": "docs/productions/reaction-telemetry.md",
+      "basis": "registered_finished_export",
+      "index_note": "One owner-accepted 61-second English YouTube master. The finished edit adds the question that motivates the chart. Owner supplied https://youtu.be/N6BoSZ4Fykk on 22 November 2026 (owner_provided_url). Independent visibility, uploaded-file identity and metrics unverified."
+    },
+    {
+      "id": "escapade-powered-flyby",
+      "source": "docs/productions/escapade-powered-flyby.md",
+      "basis": "registered_finished_export",
+      "index_note": "One owner-accepted 60-second English YouTube master. Silent Manim pilot led to a synchronized burn highlight and a fitted caption. Owner supplied https://youtu.be/xuO__yvDhHo on 22 November 2026 (owner_provided_url). Independent visibility, uploaded-file identity and metrics unverified."
+    },
+    {
+      "id": "dry-ultrasound",
+      "source": "docs/productions/dry-ultrasound.md",
+      "basis": "registered_finished_export",
+      "index_note": "One source-led science explainer in two owner-accepted English 1080p cuts. Silent Manim pilot accepted in both aspects. Owner supplied https://youtu.be/B7WQ0FScopw on 22 November 2026 (owner_provided_url) and reported no TikTok upload. Independent visibility, uploaded-file identity and metrics unverified."
+    },
     {
       "id": "asciitheme",
       "source": "experiments/2026-10-14/outputs.json",
@@ -396,7 +561,12 @@
       "basis": "completed_case_record",
       "index_note": "Owner completed a v07 field test in VLC audio mode. v08 retains the picture and revises timed running cues. Owner provided YouTube https://youtu.be/XYRVeefj6aM on 21 November 2026 (owner_provided_url). Independent visibility, uploaded-file identity, playlist and metrics unverified."
     },
-    {"id":"run-signal-m02-waterline","source":"docs/productions/run-signal-m02.md","basis":"registered_finished_export","index_note":"One owner-accepted 16:20 film with 15 minutes of aligned workout cues. The outdoor VLC listening test passed. Owner supplied https://youtu.be/3b8ESlIpQkE on 22 November 2026 (owner_provided_url). Independent visibility, playlist membership, uploaded-file identity and metrics unverified."},
+    {
+      "id": "run-signal-m02-waterline",
+      "source": "docs/productions/run-signal-m02.md",
+      "basis": "registered_finished_export",
+      "index_note": "One owner-accepted 16:20 film with 15 minutes of aligned workout cues. The outdoor VLC listening test passed. Owner supplied https://youtu.be/3b8ESlIpQkE on 22 November 2026 (owner_provided_url). Independent visibility, playlist membership, uploaded-file identity and metrics unverified."
+    },
     {
       "id": "ubtree-explainer",
       "source": "docs/productions/ubtree-explainer.md",
@@ -417,7 +587,12 @@
       "source": "docs/productions/premation-sync-test.md",
       "basis": "completed_case_record"
     },
-    {"id":"transit-speed-private-pitch","source":"docs/productions/transit-speed-private-pitch.md","basis":"completed_case_record","index_note":"English version on YouTube https://youtu.be/xC-3gGs4bTs; owner-provided link, title confirmed by YouTube oEmbed on 23 November 2026."},
+    {
+      "id": "transit-speed-private-pitch",
+      "source": "docs/productions/transit-speed-private-pitch.md",
+      "basis": "completed_case_record",
+      "index_note": "English version on YouTube https://youtu.be/xC-3gGs4bTs; owner-provided link, title confirmed by YouTube oEmbed on 23 November 2026."
+    },
     {
       "id": "copilot-addressed",
       "source": "docs/productions/radar-pair-centre-crop-2026-11-10.md",
@@ -626,7 +801,12 @@
       "source": "docs/productions/buymore-problems-delivered.md",
       "index_note": "One 58s fictional marketplace satire, two aspects. Owner accepted YouTube v1 and smartphone/no-cursor TikTok v2; supplied YouTube https://youtu.be/AInINeF12I4 and TikTok https://vt.tiktok.com/ZSpELWp8T/ publication URLs on 20 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unchecked; revision adds no case."
     },
-    {"id":"buymore-cancelled","source":"docs/experiments/buymore-cancelled-2026-11-23.md","basis":"registered_finished_export","index_note":"One 22-second BuyMore sequel in two aspects. Owner supplied https://youtu.be/XBpboKIoozo and https://vt.tiktok.com/ZSsRm3GJP/ on 23 November 2026 (owner_provided_url). Visibility, upload identity and metrics unverified."},
+    {
+      "id": "buymore-cancelled",
+      "source": "docs/experiments/buymore-cancelled-2026-11-23.md",
+      "basis": "registered_finished_export",
+      "index_note": "One 22-second BuyMore sequel in two aspects. Owner supplied https://youtu.be/XBpboKIoozo and https://vt.tiktok.com/ZSsRm3GJP/ on 23 November 2026 (owner_provided_url). Visibility, upload identity and metrics unverified."
+    },
     {
       "id": "klap-workflow-review",
       "source": "docs/research/klap-2026-11-16.md",
@@ -639,42 +819,260 @@
       "basis": "registered_finished_export",
       "index_note": "One accepted 1:53 comparison film with two matched sources, AllWeb3 and BuyMore. Owner supplied https://youtu.be/-lIITHpkr1w on 20 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."
     },
-    {"id":"half-a-life-by-18","source":"docs/productions/half-a-life-by-18.md","basis":"registered_finished_export","index_note":"One English mathematical explainer in two accepted 48.9-second v2 cuts. Owner supplied https://youtu.be/vLU1dIXCjWY and https://vt.tiktok.com/ZSpEGuw3W/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."},
-    {"id":"french-vineyard-finance","source":"docs/productions/french-vineyard-finance.md","basis":"registered_finished_export","index_note":"One owner-accepted English explainer in two 1080p cuts. Real illustrative vineyard footage, captured Safer listing and original financing diagram. Owner supplied https://youtu.be/Woi6ZaNdiMs and https://vt.tiktok.com/ZSsJxNTcf/ (owner_provided_url). Independent visibility, upload identity and metrics unverified."},
-    {"id":"spotta-bed-pod","source":"docs/productions/spotta-bed-pod.md","basis":"registered_finished_export","index_note":"One English editorial film in two owner-accepted 1080p cuts. Owner supplied https://youtu.be/h0T9PxMdvmg and https://vt.tiktok.com/ZSsJ64Kx1/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."},
-    {"id":"prayer-rings","source":"docs/productions/prayer-rings.md","basis":"registered_finished_export","index_note":"One source-led review in two owner-accepted 1080p English cuts. Owner supplied https://youtu.be/rGz5ialbeXI and https://vt.tiktok.com/ZSsJRx6M3/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."},
-    {"id":"liquid-robot","source":"docs/productions/liquid-robot.md","basis":"registered_finished_export","index_note":"Two owner-accepted 1080p English v2 cuts with full-frame lab footage and original schematics. Owner supplied https://youtu.be/eB6HnfiTN8c and https://vt.tiktok.com/ZSs1oNCLg/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."},
-    {"id":"gravity-through-wall","source":"docs/productions/gravity-through-wall.md","basis":"registered_finished_export","index_note":"One English explainer in two owner-accepted 60.23-second v2 cuts, with original diagrams, stock footage and a credited archival inset. Owner supplied https://youtu.be/IQeH4VAVyZo and https://vt.tiktok.com/ZSpE3xd19/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."},
-    {"id":"neubad-paper-city","source":"docs/productions/neubad-paper-city.md","basis":"registered_finished_export","index_note":"One music-led art film from the Neubad poster archive with two accepted cuts. Owner supplied https://youtu.be/QlJF7yLcV_g and https://vt.tiktok.com/ZSs1GgKRA/ on 21 November 2026 (owner_provided_url). Independent visibility, uploaded-file identity, metrics and public-use clearance unverified."},
-    {"id":"ao-one-prompt-six-outputs","source":"docs/productions/ao-one-prompt-six-outputs.md","basis":"registered_finished_export","index_note":"One 40s comparison of six owner-supplied clips in two owner-accepted v2 cuts. Owner supplied https://youtu.be/VPqHDX-Jtn8 and https://vt.tiktok.com/ZSs1v31f6/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."},
-    {"id":"riemann-explorer","source":"docs/productions/riemann-explorer.md","basis":"registered_finished_export","index_note":"One 53s editorial explorer review with owner-accepted landscape and portrait English masters. Owner supplied https://youtu.be/TBY5TcF4Vac and https://vt.tiktok.com/ZSs6wBusB/ on 25 November 2026 (owner_provided_url). Independent upload identity, visibility and metrics unknown."},
-    {"id":"krimnuz-fx-lab","source":"docs/productions/krimnuz-fx-lab.md","basis":"registered_finished_export","index_note":"One six-tool editorial review, 194s landscape and 90s portrait, accepted fullscreen pilot and both full masters. Owner supplied https://youtu.be/jLUDjXmABnM and https://vt.tiktok.com/ZSsMJKjQq/ on 25 November 2026 (owner_provided_url). Independent visibility, uploaded-file identity and metrics unknown."},
-    {"id":"florida-vs-man","source":"docs/productions/florida-vs-man.md","basis":"registered_finished_export","index_note":"One browser-game review, 47s YouTube and 39s full-screen TikTok, owner-approved pilot and both full cuts. Owner supplied https://youtu.be/67nzMseumzc and https://vt.tiktok.com/ZSsMR5N3a/ on 25 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unknown."}
+    {
+      "id": "half-a-life-by-18",
+      "source": "docs/productions/half-a-life-by-18.md",
+      "basis": "registered_finished_export",
+      "index_note": "One English mathematical explainer in two accepted 48.9-second v2 cuts. Owner supplied https://youtu.be/vLU1dIXCjWY and https://vt.tiktok.com/ZSpEGuw3W/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."
+    },
+    {
+      "id": "french-vineyard-finance",
+      "source": "docs/productions/french-vineyard-finance.md",
+      "basis": "registered_finished_export",
+      "index_note": "One owner-accepted English explainer in two 1080p cuts. Real illustrative vineyard footage, captured Safer listing and original financing diagram. Owner supplied https://youtu.be/Woi6ZaNdiMs and https://vt.tiktok.com/ZSsJxNTcf/ (owner_provided_url). Independent visibility, upload identity and metrics unverified."
+    },
+    {
+      "id": "spotta-bed-pod",
+      "source": "docs/productions/spotta-bed-pod.md",
+      "basis": "registered_finished_export",
+      "index_note": "One English editorial film in two owner-accepted 1080p cuts. Owner supplied https://youtu.be/h0T9PxMdvmg and https://vt.tiktok.com/ZSsJ64Kx1/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."
+    },
+    {
+      "id": "prayer-rings",
+      "source": "docs/productions/prayer-rings.md",
+      "basis": "registered_finished_export",
+      "index_note": "One source-led review in two owner-accepted 1080p English cuts. Owner supplied https://youtu.be/rGz5ialbeXI and https://vt.tiktok.com/ZSsJRx6M3/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."
+    },
+    {
+      "id": "liquid-robot",
+      "source": "docs/productions/liquid-robot.md",
+      "basis": "registered_finished_export",
+      "index_note": "Two owner-accepted 1080p English v2 cuts with full-frame lab footage and original schematics. Owner supplied https://youtu.be/eB6HnfiTN8c and https://vt.tiktok.com/ZSs1oNCLg/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."
+    },
+    {
+      "id": "gravity-through-wall",
+      "source": "docs/productions/gravity-through-wall.md",
+      "basis": "registered_finished_export",
+      "index_note": "One English explainer in two owner-accepted 60.23-second v2 cuts, with original diagrams, stock footage and a credited archival inset. Owner supplied https://youtu.be/IQeH4VAVyZo and https://vt.tiktok.com/ZSpE3xd19/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."
+    },
+    {
+      "id": "neubad-paper-city",
+      "source": "docs/productions/neubad-paper-city.md",
+      "basis": "registered_finished_export",
+      "index_note": "One music-led art film from the Neubad poster archive with two accepted cuts. Owner supplied https://youtu.be/QlJF7yLcV_g and https://vt.tiktok.com/ZSs1GgKRA/ on 21 November 2026 (owner_provided_url). Independent visibility, uploaded-file identity, metrics and public-use clearance unverified."
+    },
+    {
+      "id": "ao-one-prompt-six-outputs",
+      "source": "docs/productions/ao-one-prompt-six-outputs.md",
+      "basis": "registered_finished_export",
+      "index_note": "One 40s comparison of six owner-supplied clips in two owner-accepted v2 cuts. Owner supplied https://youtu.be/VPqHDX-Jtn8 and https://vt.tiktok.com/ZSs1v31f6/ on 21 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unverified."
+    },
+    {
+      "id": "riemann-explorer",
+      "source": "docs/productions/riemann-explorer.md",
+      "basis": "registered_finished_export",
+      "index_note": "One 53s editorial explorer review with owner-accepted landscape and portrait English masters. Owner supplied https://youtu.be/TBY5TcF4Vac and https://vt.tiktok.com/ZSs6wBusB/ on 25 November 2026 (owner_provided_url). Independent upload identity, visibility and metrics unknown."
+    },
+    {
+      "id": "krimnuz-fx-lab",
+      "source": "docs/productions/krimnuz-fx-lab.md",
+      "basis": "registered_finished_export",
+      "index_note": "One six-tool editorial review, 194s landscape and 90s portrait, accepted fullscreen pilot and both full masters. Owner supplied https://youtu.be/jLUDjXmABnM and https://vt.tiktok.com/ZSsMJKjQq/ on 25 November 2026 (owner_provided_url). Independent visibility, uploaded-file identity and metrics unknown."
+    },
+    {
+      "id": "florida-vs-man",
+      "source": "docs/productions/florida-vs-man.md",
+      "basis": "registered_finished_export",
+      "index_note": "One browser-game review, 47s YouTube and 39s full-screen TikTok, owner-approved pilot and both full cuts. Owner supplied https://youtu.be/67nzMseumzc and https://vt.tiktok.com/ZSsMR5N3a/ on 25 November 2026 (owner_provided_url). Independent visibility, upload identity and metrics unknown."
+    },
+    {
+      "id": "night-shift-after-the-final",
+      "source": "docs/productions/night-shift-after-the-final.md",
+      "basis": "registered_finished_export",
+      "index_note": "One original five-case game walkthrough story:202sYouTube and98sTikTok, English. Owner supplied https://youtu.be/Gxn_w0Bvdlk and https://vt.tiktok.com/ZSsMsm3Rj/ on26November2026 (owner_provided_url). Photoreal covers and matched comic-to-photo closing dissolve. Independent visibility, upload identity and metrics unknown."
+    },
+    {
+      "id": "j3lly-being-gameplay-review",
+      "source": "docs/productions/j3lly-being.md",
+      "basis": "registered_finished_export",
+      "index_note": "One owner-approved story, 84.5s YouTube and 43s TikTok; owner supplied https://youtu.be/OUbxnkNFBkA and https://vt.tiktok.com/ZSsMc8HAN/ on 26 November 2026. Independent visibility/upload identity unverified. Actual jellyfish exploration and sunfish arrival; portrait framing, local narration, music and covers."
+    },
+    {
+      "id": "copilot-secret-scanning",
+      "source": "docs/productions/copilot-secret-scanning.md",
+      "basis": "registered_finished_export",
+      "index_note": "Owner accepted 52s horizontal v3; YouTube publication reported 26 November 2026: https://youtu.be/7BYU8J9zfJM. Visibility and uploaded-file identity not independently verified. Continuous animated editor, fictional example, Bencho cues."
+    },
+    {
+      "id": "robot-sandwich-comedy",
+      "source": "docs/productions/robot-sandwich.md",
+      "basis": "registered_finished_export",
+      "index_note": "One 18s vertical comedy edit, YouTube Shorts and TikTok links reported by owner 26 November 2026: https://youtube.com/shorts/LUwetDkvCEE and https://vt.tiktok.com/ZSshdrScJ/. Original English commentary, AI-logic score, separate covers. Visibility/upload identity unverified."
+    },
+    {
+      "id": "goat-robot-vacuum-comedy",
+      "source": "docs/productions/goat-robot-vacuum.md",
+      "basis": "registered_finished_export",
+      "index_note": "One10.166s humorous source edit in two portrait caption treatments with covers. Owner supplied https://youtube.com/shorts/LJuv9zXsgbc?feature=share and https://vt.tiktok.com/ZSsh8vTYt/ on26November2026. Independent visibility and uploaded-file identity unverified; underlying clip reuse rights unknown."
+    },
+    {
+      "id": "matrix-game-4-overview",
+      "source": "docs/productions/matrix-game.md",
+      "basis": "registered_finished_export",
+      "index_note": "One79.2s landscape overview and40s portrait developer-demo recut with English commentary and covers. Owner supplied https://youtu.be/EMaumbo21Nw and https://vt.tiktok.com/ZSsh2FGGC/ on26November2026. Not local model inference; independent public visibility and uploaded-file identity unverified; source video reuse licence unknown."
+    },
+    {
+      "id": "moss-walker-gameplay-review",
+      "source": "docs/productions/moss-walker.md",
+      "basis": "registered_finished_export",
+      "index_note": "One84s landscape/42s portrait review of owner-recorded Moss Walker, English narration and added Ethereal Void score. Owner supplied https://youtu.be/q1eNTO8TWQE and https://vt.tiktok.com/ZSshrkdPS/ on26November2026. Independent visibility/upload identity unverified; captured silence does not establish game sound."
+    },
+    {
+      "id": "longcat-avatar",
+      "source": "docs/productions/longcat-avatar.md",
+      "basis": "registered_finished_export",
+      "index_note": "28s horizontal full-v2; owner supplied https://youtu.be/wCksJ0hExfs on26November2026. oEmbed confirms title and ABV channel. One3.72s cloud LongCat output, animated workflow, camera push/pull and separate comic-image edit. Metrics/upload identity unverified."
+    }
   ],
   "trials": [
-    {"id":"animejs-github-desktop-accounts","source":"docs/experiments/animejs-github-desktop-accounts-2026-11-25.md","basis":"executed_bounded_workflow_trial","index_note":"12s original photo collage, actual Anime.js v4.5.0; 16/16 state/forward reference exact, 9/16 strict reverse PNGs exact, max 954 changed pixels; 360-frame export. Owner accepted visual pilot; no separate tool rating."},
-    {"id":"video-shot-breakdown-copilot-connectors","source":"docs/experiments/video-shot-breakdown-copilot-connectors-2026-11-25.md","basis":"executed_bounded_workflow_trial","index_note":"12s original permission-diorama pilot: default threshold failed with no candidates; tuned .04 matched 4s/8s exactly; raw plus annotated Excel comparison verified. Owner visual review pending; no film publication."},
-    {"id":"video-shot-breakdown-brushveil","source":"docs/experiments/video-shot-breakdown-brushveil-2026-11-25.md","basis":"executed_bounded_workflow_trial","index_note":"12s actual gameplay fixture: 1/2 edit boundaries, 12 sampled frames, manually corrected three-row learning Excel verified with 3 embedded keyframes. No model/semantic qualification."},
-    {"id":"framelens-adaptive-review-fixture","source":"docs/experiments/framelens-adaptive-review-2026-11-25.md","basis":"executed_bounded_workflow_trial","index_note":"Two matched 4s exports, static/pan distinguished; prior 12s cuts exact but digital zoom missed. Media hash identity check independent; no broad tool qualification."},
-    {"id":"reverse-video-rea-fixture","source":"docs/experiments/reverse-video-rea-2026-11-25.md","basis":"executed_bounded_workflow_trial","index_note":"REA local 12s three-shot fixture: exact two cut boundaries, screen-capture route missed, VIDEO.md validator passes. No VLM/audio or owner review."},
-    {"id":"button-sounds-baked-click-ab","source":"docs/experiments/button-sounds-2026-11-25.md","basis":"executed_bounded_workflow_trial","index_note":"Two official MIT WAV click variants, identical 10s picture stream A/B, measured timing and levels. Technical pass, owner listening pending."},
-    {"id":"baked-brand-kit-two-sites","source":"docs/experiments/baked-brand-kit-2026-11-25.md","basis":"executed_bounded_workflow_trial","index_note":"Two actual Baked extractions and ZIP CRC checks; Framewright seven hex values present in published CSS, fonts match, heading weight differs, logo/emoji omitted. Owner retained for partner/ad reference."},
-    {"id":"nha-portrait-dialogue-reframe","source":"docs/productions/no-humans-allowed.md","basis":"executed_bounded_workflow_trial","index_note":"Manual shot-wise portrait reframe and separate native dialogue crop; corrected duplicate panel header and inspected reduced encoded frame. Owner accepted both full films; no automatic tracker or audience comparison."},
-    {"id":"embeddinggemma-tool-retrieval-2026-11-24","source":"docs/experiments/embeddinggemma-tool-retrieval-2026-11-24.md","basis":"executed_bounded_workflow_trial","index_note":"Local EmbeddingGemma 2 text ranking on 12 cards and two paraphrases retained Inworld at rank one in both. MLX Whisper was a near match. Measured local JSON payload bytes."},
-    {"id":"mujoco-event-gate-2026-11-24","source":"docs/experiments/mujoco-event-gate-2026-11-24.md","basis":"executed_bounded_workflow_trial","index_note":"Two local runs of each MuJoCo gate condition matched recorded poses; gate contact changed whether the sphere crossed X = 0. Recorded states drove an 8.2-second Three.js insert."},
-    {"id":"gemini-skill-fixed-card-perspective","source":"docs/productions/gemini-skill-file-access.md","basis":"executed_bounded_workflow_trial","index_note":"GiveMotion silent landscape test with fixed cards and a switch from owner to editor. Owner reported clear overall with a lower-text placement correction. No live Gemini permissions test."},
-    {"id":"tulvo-small-studio-workflow","source":"docs/productions/tulvo-small-studio.md","basis":"executed_bounded_workflow_trial","index_note":"One synthetic inquiry-to-project test including a rejected broad AI preview and a saved report that retained its earlier status."},
-    {"id":"tulvo-business-operations-workflow","source":"docs/productions/tulvo-business-operations.md","basis":"executed_bounded_workflow_trial","index_note":"One private two-shipment trial covering cross-template links, paired manual release edits and a saved report that retained its earlier status."},
-    {"id":"ego-lite-tulvo-browser-probe","source":"docs/experiments/ego-lite-tulvo-2026-11-23.md","basis":"executed_bounded_workflow_trial","index_note":"One retained Ego Lite probe: clean-profile Tulvo stage change, native window capture and verified Google AI Studio attachment download."},
-    {"id":"ffmpeg-water-drop-reframe","source":"docs/productions/vertical-crop-keep-the-action.md","basis":"executed_bounded_workflow_trial","index_note":"One real shot, two synchronized 9:16 FFmpeg crops. The manually moved window retained the bucket and start of the discharge at frame 64. LTX was not run."},
-    {"id":"copilot-evals-synthetic-package-trial","source":"docs/productions/copilot-evals-package-check.md","basis":"executed_bounded_workflow_trial","index_note":"Two local checks per synthetic delivery package matched both video files, cleared the approved SRT and rejected the stale SRT. Copilot Evals was not run."},
-    {"id":"clip-join-audio-tail","source":"docs/productions/clip-join-audio.md","basis":"executed_bounded_workflow_trial","index_note":"One controlled FFmpeg join measured 320.27 ms before and 0.27 ms after trimming an audio tail. No ComfyUI or FilmCraft execution."},
-    {"id":"watch-duty-radio-workflow","source":"docs/productions/watch-duty-radio.md","basis":"executed_bounded_workflow_trial","index_note":"Owner confirmed the workflow reads in both silent Manim compositions. Separate local radio isolation measured one controlled fixture."},
-    {"id":"tripo-orbit-01","source":"docs/experiments/tripo-orbit-2026-11-23.md","basis":"executed_bounded_workflow_trial","index_note":"Same two small local GLBs tested in Orbit and Blender; material and skeletal playback observed. Owner tentatively preferred Orbit. Heavy-scene speed unknown."},
-    {"id":"inworld-isolate-01","source":"docs/experiments/inworld-voice-isolation-2026-11-23.md","basis":"executed_bounded_workflow_trial","index_note":"One 24-second controlled noise fixture with three matched-level outputs. Owner preferred offline Inworld on Apple Metal. Real-world generalization untested."},
-    {"id":"transit-speed-one-step","source":"docs/experiments/transit-speed-one-step-2026-11-23.md","basis":"executed_bounded_workflow_trial","index_note":"One internal comparison of two five-second framings of the same demo step. Owner found the close-up cut clearer; task reproduction unmeasured."},
-    {"id":"auto-editor-transit-pacing","source":"docs/experiments/auto-editor-transit-pacing-2026-11-22.md","basis":"executed_bounded_workflow_trial","index_note":"One private dry-voice and mixed-audio pacing trial with explicit reading hold, manual comparison and a Kdenlive MLT render."},
-    {"id":"minicharts-spotta-compare","source":"docs/experiments/minicharts-spotta-compare-2026-11-22.md","basis":"executed_bounded_workflow_trial","index_note":"One internal Spotta chart comparison: native Minicharts SVG, separate Chromium and FFmpeg MP4 adapter, retained GiveMotion control and bounded label edit."},
+    {
+      "id": "animejs-github-desktop-accounts",
+      "source": "docs/experiments/animejs-github-desktop-accounts-2026-11-25.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "12s original photo collage, actual Anime.js v4.5.0; 16/16 state/forward reference exact, 9/16 strict reverse PNGs exact, max 954 changed pixels; 360-frame export. Owner accepted visual pilot; no separate tool rating."
+    },
+    {
+      "id": "video-shot-breakdown-copilot-connectors",
+      "source": "docs/experiments/video-shot-breakdown-copilot-connectors-2026-11-25.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "12s original permission-diorama pilot: default threshold failed with no candidates; tuned .04 matched 4s/8s exactly; raw plus annotated Excel comparison verified. Owner visual review pending; no film publication."
+    },
+    {
+      "id": "video-shot-breakdown-brushveil",
+      "source": "docs/experiments/video-shot-breakdown-brushveil-2026-11-25.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "12s actual gameplay fixture: 1/2 edit boundaries, 12 sampled frames, manually corrected three-row learning Excel verified with 3 embedded keyframes. No model/semantic qualification."
+    },
+    {
+      "id": "framelens-adaptive-review-fixture",
+      "source": "docs/experiments/framelens-adaptive-review-2026-11-25.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Two matched 4s exports, static/pan distinguished; prior 12s cuts exact but digital zoom missed. Media hash identity check independent; no broad tool qualification."
+    },
+    {
+      "id": "reverse-video-rea-fixture",
+      "source": "docs/experiments/reverse-video-rea-2026-11-25.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "REA local 12s three-shot fixture: exact two cut boundaries, screen-capture route missed, VIDEO.md validator passes. No VLM/audio or owner review."
+    },
+    {
+      "id": "button-sounds-baked-click-ab",
+      "source": "docs/experiments/button-sounds-2026-11-25.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Two official MIT WAV click variants, identical 10s picture stream A/B, measured timing and levels. Technical pass, owner listening pending."
+    },
+    {
+      "id": "baked-brand-kit-two-sites",
+      "source": "docs/experiments/baked-brand-kit-2026-11-25.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Two actual Baked extractions and ZIP CRC checks; Framewright seven hex values present in published CSS, fonts match, heading weight differs, logo/emoji omitted. Owner retained for partner/ad reference."
+    },
+    {
+      "id": "nha-portrait-dialogue-reframe",
+      "source": "docs/productions/no-humans-allowed.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Manual shot-wise portrait reframe and separate native dialogue crop; corrected duplicate panel header and inspected reduced encoded frame. Owner accepted both full films; no automatic tracker or audience comparison."
+    },
+    {
+      "id": "embeddinggemma-tool-retrieval-2026-11-24",
+      "source": "docs/experiments/embeddinggemma-tool-retrieval-2026-11-24.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Local EmbeddingGemma 2 text ranking on 12 cards and two paraphrases retained Inworld at rank one in both. MLX Whisper was a near match. Measured local JSON payload bytes."
+    },
+    {
+      "id": "mujoco-event-gate-2026-11-24",
+      "source": "docs/experiments/mujoco-event-gate-2026-11-24.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Two local runs of each MuJoCo gate condition matched recorded poses; gate contact changed whether the sphere crossed X = 0. Recorded states drove an 8.2-second Three.js insert."
+    },
+    {
+      "id": "gemini-skill-fixed-card-perspective",
+      "source": "docs/productions/gemini-skill-file-access.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "GiveMotion silent landscape test with fixed cards and a switch from owner to editor. Owner reported clear overall with a lower-text placement correction. No live Gemini permissions test."
+    },
+    {
+      "id": "tulvo-small-studio-workflow",
+      "source": "docs/productions/tulvo-small-studio.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One synthetic inquiry-to-project test including a rejected broad AI preview and a saved report that retained its earlier status."
+    },
+    {
+      "id": "tulvo-business-operations-workflow",
+      "source": "docs/productions/tulvo-business-operations.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One private two-shipment trial covering cross-template links, paired manual release edits and a saved report that retained its earlier status."
+    },
+    {
+      "id": "ego-lite-tulvo-browser-probe",
+      "source": "docs/experiments/ego-lite-tulvo-2026-11-23.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One retained Ego Lite probe: clean-profile Tulvo stage change, native window capture and verified Google AI Studio attachment download."
+    },
+    {
+      "id": "ffmpeg-water-drop-reframe",
+      "source": "docs/productions/vertical-crop-keep-the-action.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One real shot, two synchronized 9:16 FFmpeg crops. The manually moved window retained the bucket and start of the discharge at frame 64. LTX was not run."
+    },
+    {
+      "id": "copilot-evals-synthetic-package-trial",
+      "source": "docs/productions/copilot-evals-package-check.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Two local checks per synthetic delivery package matched both video files, cleared the approved SRT and rejected the stale SRT. Copilot Evals was not run."
+    },
+    {
+      "id": "clip-join-audio-tail",
+      "source": "docs/productions/clip-join-audio.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One controlled FFmpeg join measured 320.27 ms before and 0.27 ms after trimming an audio tail. No ComfyUI or FilmCraft execution."
+    },
+    {
+      "id": "watch-duty-radio-workflow",
+      "source": "docs/productions/watch-duty-radio.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Owner confirmed the workflow reads in both silent Manim compositions. Separate local radio isolation measured one controlled fixture."
+    },
+    {
+      "id": "tripo-orbit-01",
+      "source": "docs/experiments/tripo-orbit-2026-11-23.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Same two small local GLBs tested in Orbit and Blender; material and skeletal playback observed. Owner tentatively preferred Orbit. Heavy-scene speed unknown."
+    },
+    {
+      "id": "inworld-isolate-01",
+      "source": "docs/experiments/inworld-voice-isolation-2026-11-23.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One 24-second controlled noise fixture with three matched-level outputs. Owner preferred offline Inworld on Apple Metal. Real-world generalization untested."
+    },
+    {
+      "id": "transit-speed-one-step",
+      "source": "docs/experiments/transit-speed-one-step-2026-11-23.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One internal comparison of two five-second framings of the same demo step. Owner found the close-up cut clearer; task reproduction unmeasured."
+    },
+    {
+      "id": "auto-editor-transit-pacing",
+      "source": "docs/experiments/auto-editor-transit-pacing-2026-11-22.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One private dry-voice and mixed-audio pacing trial with explicit reading hold, manual comparison and a Kdenlive MLT render."
+    },
+    {
+      "id": "minicharts-spotta-compare",
+      "source": "docs/experiments/minicharts-spotta-compare-2026-11-22.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One internal Spotta chart comparison: native Minicharts SVG, separate Chromium and FFmpeg MP4 adapter, retained GiveMotion control and bounded label edit."
+    },
     {
       "id": "filmcraft-edit-reopen",
       "source": "docs/experiments/filmcraft-edit-reopen-2026-11-20.md",
@@ -1037,18 +1435,119 @@
       "source": "docs/experiments/opusclip-pro-trial-2026-11-20.md",
       "index_note": "One OpusClip Pro trial with synchronized AllWeb3 and BuyMore comparisons, visual-only search, editable generated media, French speech, and speech enhancement plus cleanup. All three AllWeb3 exports decode; XML media references resolve within the ZIP. Upscale requires an upgrade in the observed trial; no NLE import or tool adoption."
     },
-    {"id":"filmcraft-portrait-subjective-time","source":"docs/experiments/filmcraft-portrait-subjective-time-2026-11-21.md","basis":"executed_bounded_workflow_trial","index_note":"Actual 1080×1920 30 fps FilmCraft CLI export with save and fresh reopen, seven picture and two audio placements. Scope limited to one production."},
-    {"id":"manim-liquid-robot","source":"docs/experiments/manim-liquid-robot-2026-11-21.md","basis":"executed_bounded_workflow_trial","index_note":"Particle-shell deformation rendered in native widescreen and portrait with a corrected label layer. Owner accepted both full cuts. The diagram received no separate rating."},
-    {"id":"canvas-ui-gravity-annotation","source":"docs/experiments/canvas-ui-gravity-2026-11-21.md","basis":"executed_bounded_workflow_trial","index_note":"Six-second same-input Glass versus opaque baseline with 72 A/B frame pairs and repeat-frame verification. Native DOM capture not run."},
-    {"id":"neubad-ascii-composition","source":"docs/experiments/neubad-ascii-composition-2026-11-21.md","basis":"executed_bounded_workflow_trial","index_note":"Same-raster 58×36 comparison of a luminance-only ramp and an edge-assisted ramp. Proof and dual-format art-film integration retained; no general ASCII qualification."},
-    {"id":"givemotion-spotta-chart","source":"docs/experiments/givemotion-spotta-chart-2026-11-21.md","basis":"executed_bounded_workflow_trial","index_note":"GiveMotion JSON-only chart label revision with pixel-difference proof and two native 192-frame exports."},
-    {"id":"openmotion-prayer-rings-routing","source":"docs/experiments/prayer-rings-tool-trials-2026-11-21.md","basis":"executed_bounded_workflow_trial","index_note":"Relocated OpenMotion package with separately inventoried JSON controls, two 96-frame browser renders and repeat-seek frame hashes."},
-    {"id":"threert-prayer-rings-scene","source":"docs/experiments/prayer-rings-tool-trials-2026-11-21.md","basis":"executed_bounded_workflow_trial","index_note":"ThreeRT scene API 0.1.1 recording-engine test with an original ring and a transform delta. No native render."},
-    {"id":"openmotion-ao-title-relocation","source":"docs/experiments/openmotion-ao-title-2026-11-21.md","basis":"executed_bounded_workflow_trial","index_note":"Actual OpenMotion package lock/check/pack, a copy edit in a relocated package and independent Chromium/FFmpeg dual-aspect renders. Native Studio export not tested."},
-    {"id":"openmotion-native-backup-route","source":"docs/experiments/openmotion-native-export-2026-11-22.md","basis":"executed_bounded_workflow_trial","index_note":"Original silent 10-second OpenMotion native MP4 with a saved revision, successful terminal verification, sampled-frame review and owner confirmation that the silent sequence was clear."},
-    {"id":"ao-same-prompt-comparison","source":"docs/experiments/ao-same-prompt-comparison-2026-11-21.md","basis":"executed_bounded_workflow_trial","index_note":"One owner-supplied six-output run; local decode, same-time frame comparisons and notes on type legibility, visual treatment and identity continuity. No verified model settings or ranking."},
-    {"id":"music-cue-riemann","source":"docs/experiments/music-cue-riemann-2026-11-25.md","basis":"executed_bounded_workflow_trial","index_note":"12s same-picture local audio A/B, engineered offset negative control, isolated PCM cue timing 1/4 vs 4/4, one bounded revision. Owner preferred B; full 53-second review repeats timing with 10/10 cue events. No Taan claim."},
-    {"id":"krimnuz-editorial-catalogue","source":"docs/experiments/krimnuz-editorial-catalogue-2026-11-25.md","basis":"executed_bounded_workflow_trial","index_note":"18s real four-tool capture pilot with nonoverlapping English labels and cut-aligned local score; 4/4 isolated onsets. Owner preferred full-screen v2; full 194s/90s review covers all six tools, with separate portrait layout and timed audio. Owner accepted both full versions."},
-    {"id":"reverse-style-florida-strips","source":"docs/experiments/reverse-style-florida-pilot-2026-11-25.md","basis":"executed_bounded_workflow_trial","index_note":"Actual upstream reverse-video strips on owner-directed 20s edit: five preselected known boundaries peak exactly, gameplay-only window also triggers motion. No semantic detector or full teardown claim."}
+    {
+      "id": "filmcraft-portrait-subjective-time",
+      "source": "docs/experiments/filmcraft-portrait-subjective-time-2026-11-21.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Actual 1080×1920 30 fps FilmCraft CLI export with save and fresh reopen, seven picture and two audio placements. Scope limited to one production."
+    },
+    {
+      "id": "manim-liquid-robot",
+      "source": "docs/experiments/manim-liquid-robot-2026-11-21.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Particle-shell deformation rendered in native widescreen and portrait with a corrected label layer. Owner accepted both full cuts. The diagram received no separate rating."
+    },
+    {
+      "id": "canvas-ui-gravity-annotation",
+      "source": "docs/experiments/canvas-ui-gravity-2026-11-21.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Six-second same-input Glass versus opaque baseline with 72 A/B frame pairs and repeat-frame verification. Native DOM capture not run."
+    },
+    {
+      "id": "neubad-ascii-composition",
+      "source": "docs/experiments/neubad-ascii-composition-2026-11-21.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Same-raster 58×36 comparison of a luminance-only ramp and an edge-assisted ramp. Proof and dual-format art-film integration retained; no general ASCII qualification."
+    },
+    {
+      "id": "givemotion-spotta-chart",
+      "source": "docs/experiments/givemotion-spotta-chart-2026-11-21.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "GiveMotion JSON-only chart label revision with pixel-difference proof and two native 192-frame exports."
+    },
+    {
+      "id": "openmotion-prayer-rings-routing",
+      "source": "docs/experiments/prayer-rings-tool-trials-2026-11-21.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Relocated OpenMotion package with separately inventoried JSON controls, two 96-frame browser renders and repeat-seek frame hashes."
+    },
+    {
+      "id": "threert-prayer-rings-scene",
+      "source": "docs/experiments/prayer-rings-tool-trials-2026-11-21.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "ThreeRT scene API 0.1.1 recording-engine test with an original ring and a transform delta. No native render."
+    },
+    {
+      "id": "openmotion-ao-title-relocation",
+      "source": "docs/experiments/openmotion-ao-title-2026-11-21.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Actual OpenMotion package lock/check/pack, a copy edit in a relocated package and independent Chromium/FFmpeg dual-aspect renders. Native Studio export not tested."
+    },
+    {
+      "id": "openmotion-native-backup-route",
+      "source": "docs/experiments/openmotion-native-export-2026-11-22.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Original silent 10-second OpenMotion native MP4 with a saved revision, successful terminal verification, sampled-frame review and owner confirmation that the silent sequence was clear."
+    },
+    {
+      "id": "ao-same-prompt-comparison",
+      "source": "docs/experiments/ao-same-prompt-comparison-2026-11-21.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "One owner-supplied six-output run; local decode, same-time frame comparisons and notes on type legibility, visual treatment and identity continuity. No verified model settings or ranking."
+    },
+    {
+      "id": "music-cue-riemann",
+      "source": "docs/experiments/music-cue-riemann-2026-11-25.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "12s same-picture local audio A/B, engineered offset negative control, isolated PCM cue timing 1/4 vs 4/4, one bounded revision. Owner preferred B; full 53-second review repeats timing with 10/10 cue events. No Taan claim."
+    },
+    {
+      "id": "krimnuz-editorial-catalogue",
+      "source": "docs/experiments/krimnuz-editorial-catalogue-2026-11-25.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "18s real four-tool capture pilot with nonoverlapping English labels and cut-aligned local score; 4/4 isolated onsets. Owner preferred full-screen v2; full 194s/90s review covers all six tools, with separate portrait layout and timed audio. Owner accepted both full versions."
+    },
+    {
+      "id": "reverse-style-florida-strips",
+      "source": "docs/experiments/reverse-style-florida-pilot-2026-11-25.md",
+      "basis": "executed_bounded_workflow_trial",
+      "index_note": "Actual upstream reverse-video strips on owner-directed 20s edit: five preselected known boundaries peak exactly, gameplay-only window also triggers motion. No semantic detector or full teardown claim."
+    },
+    {
+      "id": "radar-12-13-feasibility",
+      "source": "docs/experiments/radar-12-13-feasibility-2026-11-26.md",
+      "basis": "recorded_execution",
+      "index_note": "One bounded feasibility suite: actual3.72s LongCat1.6 ZeroGPU generation and a FastFrames ZeroGPU quota rejection.10s silent native-speed replay pilot prepared; no local model installation, no long-continuity qualification or publication."
+    },
+    {
+      "id": "radar18-selected-delivery-recovery",
+      "source": "docs/experiments/radar18-selected-delivery-recovery-2026-11-26.md",
+      "basis": "recorded_execution",
+      "index_note": "Real recent-package late registration and isolated-process recovery through existing project/attach-delivery; selected accepted-v3,all three file hashes,publication copy and HTTP206range verified. Same Mac,not new agent/independent operator/source rebuild; no media changes."
+    },
+    {
+      "id": "video-md-otio-reopen",
+      "source": "docs/experiments/video-md-otio-reopen-2026-11-26.md",
+      "basis": "recorded_execution",
+      "index_note": "Measured VIDEO.md3shot boundaries→officialOTIO0.18.1→relocated isolated-process readback.288/288comparison frames match after full-decoder-init/output-side seeking; failed globaltrim/fastseek checks retained. Current Kdenlive GUIimport not completed; no audio/layer recovery."
+    },
+    {
+      "id": "capsule-recipe-portability",
+      "source": "docs/experiments/capsule-recipe-2026-11-26.md",
+      "basis": "recorded_execution",
+      "index_note": "Native VIDEO.md-only preview refused promotion without content scope. Operator-curated source-editing planning capsule validated/packed/reopened after relocation;two brief instances,one purpose correction with other files/timing preserved,and original-subject leak rejected. Zero generation/render/provider calls."
+    },
+    {
+      "id": "reverse-style-known-edit",
+      "source": "docs/experiments/reverse-style-known-edit-2026-11-26.md",
+      "basis": "recorded_execution",
+      "index_note": "Actual native measure.py on owned28s narrated LongCat edit:6/6authored boundaries exact plus2source-loop seams;camera direction/attribution failures,EBU R128 output. OCR/ASR absent,stems off,semantic listening not run. Operator-curated style.json separates measured and recipe facts;no new film."
+    },
+    {
+      "id": "music-cue-ordinary-track",
+      "source": "docs/experiments/music-cue-ordinary-track-2026-11-26.md",
+      "basis": "recorded_execution",
+      "index_note": "Two real20sJellyBeing recuts with identical ordinary soundtrack. Content-led A versus onset-adjusted B:exact cut frames;2/2Bcuts within80ms of detected acoustic changes,A0/2. Not verified musical beats or superiority;owner accepted both variants and reports stronger music-picture linkage in B. Scoped owner feedback,not audience evidence. No new published film."
+    }
   ]
 }

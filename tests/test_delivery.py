@@ -148,6 +148,24 @@ class DeliveryTests(unittest.TestCase):
         self.data['variants'][0]['platform']='youtube'
         self.run_build(720,576,'64:45')
 
+    def test_explicit_youtube_shorts_uses_portrait_and_rejects_landscape(self):
+        self.data['variants'][0]['format'] = 'shorts'
+        self.run_build(720,1280)
+        page = (self.root/'review.html').read_text()
+        self.assertIn('YouTube Shorts',page)
+        self.assertIn('shorts-preview',page)
+        self.assertIn('class="portrait"',page)
+        with self.assertRaises(ValueError):
+            self.run_build(1280,720)
+
+    def test_youtube_without_shorts_flag_preserves_landscape_policy(self):
+        with self.assertRaises(ValueError):
+            self.run_build(720,1280)
+        self.run_build(1280,720)
+        page = (self.root/'review.html').read_text()
+        self.assertNotIn('<h2>YouTube Shorts</h2>',page)
+        self.assertIn('class="landscape"',page)
+
     def test_escape_and_duplicate_platform_refused(self):
         outside=self.root.parent/'escape-delivery-fixture.txt'
         outside.write_text('private')

@@ -37,6 +37,8 @@ def inspect(project_root, manifest_path):
             receipt['state'] != data['state'] or receipt['manifest_sha256'] != manifest_sha or
             receipt['page_sha256'] != page_sha):
         raise ValueError('Delivery page or manifest differs from the delivery receipt')
+    if data['state'] == 'rejected':
+        raise ValueError('Rejected delivery package cannot be attached or reopened')
 
     advertised = Counter((v['platform'], role, path) for v in data['variants'] for role, path in v['files'].items())
     advertised.update(('common', 'extra', x['path']) for x in data.get('extras', []))

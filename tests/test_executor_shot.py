@@ -24,7 +24,7 @@ class SavedShotExecutorTest(unittest.TestCase):
 from pathlib import Path
 if '--version' in sys.argv: print('Blender 4.5.15');sys.exit()
 job=json.loads(Path(sys.argv[-1]).read_text());out=Path(job['output']);spec=job['spec']
-(out/'started').write_text(str(os.getpid()))
+(out/'started.tmp').write_text(str(os.getpid())); (out/'started.tmp').replace(out/'started')
 if (Path(job['scene']).parent/'hang').exists():
  for _ in range(1200): (out/'alive').touch();time.sleep(.05)
 for frame in range(job['start']+1,job['end']+1):
