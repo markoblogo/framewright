@@ -85,3 +85,6 @@ footer .social-links{margin-left:auto}
 /* Four-brand strip: keep every logo visible when motion is paused or reduced. */
 @media(max-width:600px){.collab-window:focus-within .collab-set{flex-wrap:wrap}.collab-window:focus-within .collab-set>a{flex:1 1 40%}}
 @media(prefers-reduced-motion:reduce) and (max-width:600px){.collab-set{flex-wrap:wrap}.collab-set>a{flex:1 1 40%}}
+
+/* Five confirmed brands: preserve mobile marquee logo sizes. */
+@media(max-width:600px) and (prefers-reduced-motion:no-preference){.collab-track{width:350%}.collab-window:focus-within .collab-track{width:100%}}
