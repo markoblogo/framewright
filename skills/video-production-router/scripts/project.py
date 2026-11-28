@@ -392,6 +392,20 @@ def main():
             view['review_deliveries']=deliveries['views'](data,state,path)
             diagnosis=runpy.run_path(str(BASE/'project_blockers.py'))['diagnose'](data,state,check_kind)
             view['completion']={'status':diagnosis['status'],**diagnosis['counts']}
+            if 'studio-management' in data['inputs']:
+                studio=runpy.run_path(str(BASE/'studio.py'))
+                try:
+                    current=studio['report'](data,studio['read_profile'](data,path.parent),datetime.now(timezone.utc),path.parent)
+                    view['studio_management']={
+                        'state':'available','as_of':current['as_of'],
+                        'relationships':[{k:v for k,v in row.items() if k not in {'communications','contacts'}} for row in current['relationships']],
+                        'relationship_evidence_issues':current['relationship_evidence_issues'],
+                        'correspondence_attention':current['correspondence_attention'],
+                        'communication_policy':current['communication_policy'],
+                        'report_command':[sys.executable,str(BASE/'studio.py'),str(path)],
+                        'note':'Private read-only studio view from the same pinned profile. No message, approval or work executed.'}
+                except (OSError,ValueError,KeyError,TypeError) as exc:
+                    view['studio_management']={'state':'needs_recheck','reason':str(exc)}
             if path.read_bytes()!=checkpoint_bytes:raise ValueError('Project changed during brief generation; retry')
             print(json.dumps(view,indent=2,ensure_ascii=False) if args.json else module['brief_markdown'](view));return
         if args.command=='results':

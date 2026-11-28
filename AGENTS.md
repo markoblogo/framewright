@@ -13,6 +13,7 @@
 - Do not commit media, caches, models, credentials or copied upstream code/skills.
 - Follow docs/storage-policy.md: keep studio files on the external disk, retain accepted finals/recipes instead of all drafts, and sanitize after production or before large downloads. Internal storage is temporary scratch only.
 - Creating a video is not permission for paid API calls, account grants or public uploads.
+- Framewright controls client/partner correspondence only:track messages,statuses,dates,priorities,budgets and due reminders;the owner writes/sends in another thread. Do not compose/send replies,delete mail or archive threads from this project. Gmail labels need scoped owner authorisation;no automatic polling/filter/scheduler. See docs/studio-relationships.md.
 - Use `python3 scripts/validate.py`; no new video experiment is needed for documentation changes.
 - At completed-film or executed-trial closeout, update docs/public-evidence.json with one source-linked case per story/trial; aspect/language variants and retries are not new entries. This keeps visitor-loaded site counts current. See docs/site.md.
 - At executed-trial/production closeout, update the matching application in skills/video-production-router/references/arsenal-facets.json from retained sources; keep style/technique/version, technical checks, five quality observations, owner decision and resource unknowns separate. Follow references/arsenal-search.md; discovery annotations do not qualify planner providers.

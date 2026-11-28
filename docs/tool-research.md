@@ -1,5 +1,9 @@
 # Tool review and test inventory
 
+Latest dated intake: [Yumina/OpenRouter/Video Explainer](research/yumina-openrouter-video-explainer-2026-11-26.md), [Watabou video locations](research/watabou-video-locations-2026-11-27.md), [Deft skills](research/deft-skills-intake-2026-11-28.md) and [Krea/Meshy/process-3D/Hy-MT3](research/krea-meshy-process-3d-hymt3-2026-11-28.md). Refer to the [single experiment queue](experiment-queue.md) for lifecycle and access blockers; reference analysis is not a completed trial.
+
+[AI video editor market intake —27November2026](research/ai-video-editors-market-2026-11-27.md):24 screenshot labels screened;launch chronology and several identities unresolved. Propose Editroom and Daydream as two bounded reserve probes against existing FilmCraft/FFmpeg;Scarlet/Kino and others retained as conditional references. Agent memory/recipes are already competitive features. Framewright positioning proposal stays within the existing studio identity;no rebrand,installation,paid request or tool qualification.
+
 [Video, avatar, roto, 3D and score intake](research/video-audio-3d-intake-2026-11-25.md): Silhouette conditional Mac trial, local music cue-sheet comparison and conditional Taan score; MAGI-2 paid cloud, CUPID CUDA and AURA noncommercial/GPU reserves. Research only.
 
 [Reverse-video follow-up and lemo-animi](research/reverse-video-followup-2026-11-25.md): nine tools deduplicated; priority local style analysis, stop-motion, reusable recipe and reference reconstruction. Documentation only.

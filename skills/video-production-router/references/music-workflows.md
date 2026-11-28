@@ -129,3 +129,9 @@ connector access, generation credits, local-file download and per-track rights.
 No automatic provider calls were added to `music.py`. Inspect current entitlement
 and approve a bounded test before generation; preserve project-specific no-music
 requirements and keep public-use eligibility separate from listening acceptance.
+
+## Owner stock and missing-music requests
+
+Use the existing [private music bank](../../../docs/workflows/private-music-bank.md) before choosing a new source. Its technical inventory remains library.py;the usage/needs extension links hashes to friendly display names,retained applications,proposed gaps and supply routes. Display aliases do not rename files referenced by historical projects. Retain each selected source interval,cues and mix in the production checkpoint;embedded tags are not listening/BPM verification.
+
+For advertising or art projects,if stock does not fit,ask the owner for music with a concrete brief. Do not automatically generate or substitute a score. Owner-provided files are the confirmed replenishment route;historical service access is not current generation/download eligibility. Budget any later authorised generation through existing studio-management.

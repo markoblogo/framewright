@@ -25,6 +25,17 @@ work-allocation rules, not claims that eight cases prove general reliability or
 that a call ceiling fixes token billing. Runtime timeout is enforced per actor;
 account price and final bill remain separately unavailable unless measured.
 
+## Local temporary paths on macOS
+
+Security fixtures intentionally reject exchange roots with symlink ancestors. The macOS default temporary path may contain `/var` → `/private/var`, so a default-temp run can fail those guards without a product regression. Use a task-owned canonical directory under the external studio for local checks:
+
+```sh
+mkdir -p /absolute/studio/scratch/check
+TMPDIR=/absolute/studio/scratch/check python3 scripts/check.py
+```
+
+Keep its full resolved path free of symlink ancestors; remove only that task's temporary contents after all check processes stop. Do not weaken the exchange path guard or relabel these failures as passed. Linux CI runs the same full check entry point with its ordinary temporary directory.
+
 ## Capture before grade
 
 Use the reusable runner on a **prepared frozen fixture root** with `cases.json`,

@@ -27,3 +27,15 @@ intervals,gain and fade decisions in the production checkpoint. No background
 scanning,automatic uploads,unreviewed mood classification or blanket publishing.
 
 [Commands and limits](../../skills/video-production-router/references/studio-workflows.md#private-musicsound-library).
+
+## Working registry —27 November2026
+
+Owner requested an ongoing music-use register and authorised clearer names. The existing `library.py` now indexes the selected MyMusic stock:15files,15distinct hashes,zero probe errors. Friendly display names live alongside the inventory;source filenames/bytes remain unchanged so historical recipes continue to resolve. No new database,background scan,upload or automated generation.
+
+Private extension:`records/music-bank/index.json` is the technical inventory;`usage-and-needs.json` links each hash to display name,retained uses,proposed fit,unreviewed questions,needs and supply routes. `README.md` is the readable selection sheet. Usage records are evidence of prior application,not semantic analysis or universal suitability. Embedded genre/BPM text remains a hint;exact BPM,vocal status and each new excerpt need review.
+
+After a production,record which track and interval worked,what did not,and the cue/mix decisions in that production checkpoint;update the corresponding usage row. Before asking for new music,check existing alternatives. Repeated use may indicate a variety gap rather than a missing category. Keep proposed mood/tempo briefs distinct from measured track properties.
+
+**Advertising and art:**if suitable music is missing,ask the owner with purpose,mood/reference,duration,tempo range,vocal/instrumental preference,edit points and timing. Do not autonomously substitute or generate a score. Owner-provided files are the confirmed replenishment route. Historical Suno web generation/import is recorded separately from unavailable MCP and restricted native downloads;current quota is unverified. Bencho is SFX,not a qualified music generator. Flow/Zopia/PlayMCP video/game access does not establish music-generation access. Any later generation budget uses existing studio-management/resource records.
+
+No blanket commercial clearance is inferred from local possession or historical publication. Preserve specific owner/provider grants when available.

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-26",
+  "updated": "2026-11-28",
   "policy": {
     "before_trial": "Look up canonical tool and prior findings before installing, downloading or testing; absence from router profiles is not absence of a prior review.",
     "retest": "Do not repeat unchanged failed, rights-blocked or completed tests. Record a changed revision, permission/terms, requirement or unresolved specific capability that justifies a bounded follow-up.",
@@ -29,15 +29,16 @@
       "id": "zopia",
       "name": "Zopia",
       "url": "https://zopia.ai/",
-      "reviewed": "2026-11-25",
-      "review_basis": "Owner-supplied 15-page vendor creation guide; documentation-only reading; no live account/provider access.",
+      "reviewed": "2026-11-27",
+      "review_basis": "Earlier guide plus authenticated account/model/settings preflight;no generated output yet.",
       "upstream_revision": "Supplied guide, date/version not stated; reviewed 25 Nov 2026",
       "disposition": "conditional",
-      "scope_and_findings": "Documented script, asset refs, four shot workflow modes, storyboard edits and timeline preview; no runtime result or qualified performance. Held at owner instruction.",
+      "scope_and_findings": "Live200general+800Vidu promotional credits,expiry26December;selected quote samples and blank English canvas inspected. Storyboard,continuity,timeline,export and actual debit not qualified.",
       "licence_note": "Service, models, generated-output rights, references, data handling, entitlements and commercial terms require current confirmation; supplied guide alone is not clearance.",
-      "next_trial_or_retest_condition": "Await explicit owner activation. Then verify current account/terms, compare one original continuity fixture and one localized correction; no ongoing dependency.",
+      "next_trial_or_retest_condition": "Owner activated practical review for27November afternoon. Minimal quoted image/Vidu probes with per-pool before/after receipts and bounded20general/80Vidu operator ceilings;no purchases or guaranteed refill.",
       "evidence": [
-        "docs/research/zopia-preflight-2026-11-25.md"
+        "docs/research/zopia-preflight-2026-11-25.md",
+        "docs/research/zopia-creator-partnership-2026-11-27.md"
       ]
     },
     {
@@ -65,12 +66,13 @@
       "review_basis": "Official repo and executed local fixture",
       "upstream_revision": "0.1.0 commit c11f1bd8fd3edd26a40e8f45be828be685417700",
       "disposition": "tested_scoped",
-      "scope_and_findings": "One silent 12s authored fixture, exact two cut boundaries; 2 of 3 technique labels align with known source route, 3D screen capture described as 3D render. HTML and VIDEO.md output retained.",
+      "scope_and_findings": "One silent 12s authored fixture, exact two cut boundaries; 2 of 3 technique labels align with known source route, 3D screen capture described as 3D render. HTML and VIDEO.md output retained. Slow Roads74s follow-up:8/9actual editorial cuts exact;UI/season/fade detections and incorrect live-action/AI provenance require manual review.",
       "licence_note": "Apache-2.0 code; face, audio and optional model weights/third-party dependencies have separate terms, including upstream BandIt CC BY-SA 4.0; no redistribution or cloud clearance.",
       "next_trial_or_retest_condition": "Compare harder cuts, ground-truth capture/AI/live action, audio and manual corrections.",
       "evidence": [
         "docs/experiments/reverse-video-rea-2026-11-25.md",
-        "docs/research/reverse-video-2026-11-25.md"
+        "docs/research/reverse-video-2026-11-25.md",
+        "docs/experiments/slow-roads-road-background-2026-11-27.md"
       ]
     },
     {
@@ -222,16 +224,21 @@
       "id": "ffmpeg",
       "name": "FFmpeg",
       "url": "https://github.com/FFmpeg/FFmpeg",
-      "reviewed": "2026-11-26",
-      "review_basis": "current upstream README/metadata plus retained local evidence; not a fresh runtime test",
+      "reviewed": "2026-11-27",
+      "review_basis": "Retained AssBench production/trial evidence plus previous scoped evidence;no fresh upstream audit.",
       "upstream_revision": null,
       "disposition": "supported_scoped",
-      "scope_and_findings": "Assembly, encoded audio mixing/QA and frame extraction used; permissions and build licences differ from media rights. Ordinary-track MUSIC-CUE A/B executed:identical audio,controlled cut frames;owner accepted both,with stronger music-picture connection in B. No change to editable-montage rank.",
+      "scope_and_findings": "Assembly, encoded audio mixing/QA and frame extraction used; permissions and build licences differ from media rights. Ordinary-track MUSIC-CUE A/B executed:identical audio,controlled cut frames;owner accepted both,with stronger music-picture connection in B. No change to editable-montage rank. Pink-wig robot shared vertical edit/colour/replay/mix/package conducted;owner review pending. Existing editable-montage ranking unchanged. AssBench dual-voice review and12s reaction timing A/B executed;owner listening/creative/timing preference pending. Existing decision-profile ranks retained at their accepted scopes. Registered three-contour lighthouse A/B executed with Pillow/FFmpeg;contact repair,full decode and source reopen retained. Owner rejected the lighthouse line-boil treatment for unnatural rigid-body vibration and preferred clean A;technical checks remain separate. Editorial-graphics provider ranks unchanged. Unitree23s shared vertical comedy:owner supplied Shorts/TikTok publication links28November2026;separate quality appraisal not reported. Manual-portrait ranking unchanged.",
       "licence_note": "build-dependent LGPL/GPL",
       "next_trial_or_retest_condition": "Test only a new codec/filter/handoff requirement.",
       "evidence": [
         "skills/video-production-router/references/tools.json",
-        "docs/experiments/music-cue-ordinary-track-2026-11-26.md"
+        "docs/experiments/music-cue-ordinary-track-2026-11-26.md",
+        "docs/productions/pink-wig-party-robot.md",
+        "docs/productions/assbench-review.md",
+        "docs/experiments/assbench-reaction-cues-2026-11-27.md",
+        "docs/experiments/line-boil-lighthouse-2026-11-27.md",
+        "docs/productions/unitree-avatar-bear-short.md"
       ],
       "followup_reviews": [
         {
@@ -251,6 +258,18 @@
           "kind": "scoped_production_trial",
           "evidence": "docs/experiments/one-random-life.md",
           "outcome": "118s1080p24/2832frames full decode; gentle still zoom, selected native frames, concat/mux and original score/voice mix. Encoded -16.20LUFS/-1.27dBTP;23sampled frames. Listening and continuous motion review not inferred."
+        },
+        {
+          "date": "2026-11-28",
+          "kind": "deft_source_led_review",
+          "evidence": "docs/productions/deft-skills-review.md",
+          "outcome": "Existingstack92slandscapereview prepared;normal-speedaf_heart/softstockmusic,sourcecrop/labels. Full decode andsampledvisualchecks;ownercreative/listeningpending. No newtoolbenchmark orpaid/newmodel operation. Rankings reviewed,unchanged."
+        },
+        {
+          "date": "2026-11-28",
+          "kind": "bruno_simon_source_led_review",
+          "evidence": "docs/productions/bruno-simon-portfolio-review.md",
+          "outcome": "98-second landscape review prepared with existing local stack. Real 1× driving, English comments and quiet stock music. Technical checks passed; owner creative/listening/cover decision pending. No site/tool assessment. Existing ranks reviewed and unchanged."
         }
       ]
     },
@@ -589,15 +608,31 @@
       "id": "kokoro",
       "name": "Kokoro ONNX",
       "url": "https://github.com/thewh1teagle/kokoro-onnx/blob/3596b26764286a7de9d90c363e988d50578918e5/README.md",
-      "reviewed": "2026-10-15",
-      "review_basis": "backfilled retained router profile; no fresh upstream/runtime audit",
+      "reviewed": "2026-11-27",
+      "review_basis": "Retained AssBench production/trial evidence plus previous scoped evidence;no fresh upstream audit.",
       "upstream_revision": null,
       "disposition": "retained_profile",
-      "scope_and_findings": "Local FR/EN tested; other documented languages require a voice/pronunciation and timing trial. No voice cloning tested.",
+      "scope_and_findings": "Local FR/EN tested; other documented languages require a voice/pronunciation and timing trial. No voice cloning tested. AssBench dual-voice review and12s reaction timing A/B executed;owner listening/creative/timing preference pending. Existing decision-profile ranks retained at their accepted scopes.",
       "licence_note": "Wrapper MIT; model Apache-2.0; inspect individual input/voice rights",
       "next_trial_or_retest_condition": "Inspect the existing profile and evidence first; test only the specific changed or missing requirement.",
       "evidence": [
-        "skills/video-production-router/references/tools.json"
+        "skills/video-production-router/references/tools.json",
+        "docs/productions/assbench-review.md",
+        "docs/experiments/assbench-reaction-cues-2026-11-27.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-11-28",
+          "kind": "deft_source_led_review",
+          "evidence": "docs/productions/deft-skills-review.md",
+          "outcome": "Existingstack92slandscapereview prepared;normal-speedaf_heart/softstockmusic,sourcecrop/labels. Full decode andsampledvisualchecks;ownercreative/listeningpending. No newtoolbenchmark orpaid/newmodel operation. Rankings reviewed,unchanged."
+        },
+        {
+          "date": "2026-11-28",
+          "kind": "bruno_simon_source_led_review",
+          "evidence": "docs/productions/bruno-simon-portfolio-review.md",
+          "outcome": "98-second landscape review prepared with existing local stack. Real 1× driving, English comments and quiet stock music. Technical checks passed; owner creative/listening/cover decision pending. No site/tool assessment. Existing ranks reviewed and unchanged."
+        }
       ]
     },
     {
@@ -1144,6 +1179,19 @@
           "kind": "documentation_review_only",
           "evidence": "docs/research/tool-intake-2026-11-11.md",
           "outcome": "5.3 official release documented: native splats, EEVEE lighting nodes, compositor and OTIO. Existing 4.5.15 evidence does not qualify5.3; BLENDER53-COMPAT-01 isolated-version candidate, no upgrade. DLSS is NVIDIA-only."
+        },
+        {
+          "date": "2026-11-28",
+          "kind": "original_native_exploded_view_ab",
+          "version": "4.5.15 LTS build5afeabba6097 ARM64",
+          "evidence": "docs/experiments/exploded-view-module-2026-11-28.md",
+          "outcome": "Native threecomponent8s landscapeA/B:partidentity,192poseframe/separationbounds,exactreturn,encodeddecodepassed. Preview960x540upscaled720p;8samplegrain;onecamera correction. Owner preferencepending.15mincapmissed18m01stomedia. No LiquidPhotos,portrait,5.3,arbitraryrigorproviderqualification;existingrankingsunchanged."
+        },
+        {
+          "date": "2026-11-28",
+          "kind": "owner_creative_review",
+          "evidence": "docs/experiments/exploded-view-module-2026-11-28.md",
+          "outcome": "Both compact/spatial exploded-view treatments accepted;compact A preferred for this module only. No universal ranking or rejection of spatial B;reason not recorded. Existing technical,preview quality and cap limitations unchanged. Editorial graphics ranking reviewed and unchanged;no new render or genericprovider qualification."
         }
       ]
     },
@@ -1545,14 +1593,15 @@
       "id": "emerging-images",
       "name": "Emerging Images / Codrops",
       "url": "https://github.com/akella/CodropsEmergingImages",
-      "reviewed": "2026-10-26",
-      "review_basis": "Read-only catalogue detail and upstream README/licence metadata review; no source execution",
-      "upstream_revision": null,
-      "disposition": "candidate",
-      "scope_and_findings": "WebGL image emergence effects; candidate for photo-series/book-art reveals. Runtime compatibility, deterministic timing and source-detail preservation untested.",
-      "licence_note": "Upstream identifies MIT code; generated demo images, fonts and dependencies require separate clearance. Use an authorised original image; pin exact source and licence before trial.",
-      "next_trial_or_retest_condition": "P1: 6–8s1080p reveal with two variants; compare repeated/out-of-order seeks, source detail, encoded transitions/black frames and owner acceptance.",
+      "reviewed": "2026-11-26",
+      "review_basis": "Pinned native GLSL extraction executed through existing local Three/Chrome route;matched8s A/B,colour/seek/fresh-page/decode checks.",
+      "upstream_revision": "e866c0287be4e1e3eb7a2bcfadf93ff731440f35",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Native type0 reveal versus ordinary fade rendered8s1080p silent. Raw manual gamma mismatches shared sRGB workflow;one-line output adapter restores exact source final pixels. Sampled backwards/fresh-page rasters exact;owner adopted as additional tool with colour-output adapter. Not complete React demo or other material types.",
+      "licence_note": "Pinned MIT Codrops code;retained notice. Original Framewright SVG/PNG,existing Three MIT/system Arial rasterisation;no gallery images,font binaries or new model weights distributed.",
+      "next_trial_or_retest_condition": "Owner-adopted additional effect for tested type0 local reveal with colour/time adapter. Reuse only for a selected short reveal;new image classes/material types require a bounded check.",
       "evidence": [
+        "docs/experiments/emerging-images-8s-2026-11-26.md",
         "docs/research/fglibs.md",
         "docs/experiment-queue.md"
       ]
@@ -1561,14 +1610,15 @@
       "id": "paper-crumple",
       "name": "Paper Crumple Demo",
       "url": "https://github.com/item-develop/paper-crumple-demo",
-      "reviewed": "2026-10-26",
-      "review_basis": "Read-only catalogue detail and upstream README/licence metadata review; no source execution",
-      "upstream_revision": null,
-      "disposition": "candidate",
-      "scope_and_findings": "Houdini Vellum animation baked as VAT, played in Three.js with cannon-es interaction. Candidate for paper/card/letter reveals; local Houdini authoring and deterministic physics/capture untested.",
-      "licence_note": "Upstream identifies MIT; confirm selected VAT exports, dependencies and design assets at pinned commit. Use original paper design and retain applicable notices; no upstream assets vendored.",
-      "next_trial_or_retest_condition": "P2: 6–8s unfold into an original readable card; deterministic VAT/camera and frozen/seeded/baked physics, no clipping, encoded QA and owner review.",
+      "reviewed": "2026-11-27",
+      "review_basis": "Pinned native VAT decoder,mesh creation/interpolation executed on original card;matched8s A/B plus seek/fresh-page/bounds/decode checks.",
+      "upstream_revision": "f84648b001dd13becda7a629ab5398cecfe3a252",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "8s silent native baked paper unfold versus simple card appearance passed in existing Three0.187/Chrome route. Exact final A/B PNGs;sampled repeat/fresh-page raster exact;rendered vertices stay in frame at240times. Authored kinematic/art wrapper;interactive physics/Houdini authoring and exhaustive self-collision untested. Owner accepts and adopts as additional tool;reports that the effect livens up the picture.",
+      "licence_note": "Pinned MIT source and included FBX/EXR VAT assets;notices/hashes retained. Original card/illustration;existing Three MIT/loader notices and system Arial rasterisation. No gallery designs,external font files or neural weights used.",
+      "next_trial_or_retest_condition": "Owner-adopted native baked-card unfold with retained time/art/pose wrapper. Reuse for a selected suitable card reveal;new geometry/simulations/interactive physics require separate scoped checks.",
       "evidence": [
+        "docs/experiments/paper-crumple-8s-2026-11-27.md",
         "docs/research/fglibs.md",
         "docs/experiment-queue.md"
       ]
@@ -2068,6 +2118,14 @@
       "evidence": [
         "docs/research/online-free-quota-services-2026-10-27.md",
         "docs/research/tool-intake-2026-11-06.md"
+      ],
+      "followup_reviews": [
+        {
+          "date": "2026-11-28",
+          "kind": "public_world_static_review",
+          "evidence": "docs/research/krea-meshy-process-3d-hymt3-2026-11-28.md",
+          "outcome": "ThePawprintFriezeMeshy7.5showcaseHTML/main.jsread;WebGPUrequired,walk/cateye/photo/UIhide/camerapresets documentedincode. Browserplayback/performance nottested,noassetdownload/reusegrantverified. MESHY-WORLD-CAPTURE-01reserve;generationcreditsandserviceaccountseparate."
+        }
       ]
     },
     {
@@ -3987,6 +4045,315 @@
       "evidence": [
         "docs/experiments/capsule-recipe-2026-11-26.md",
         "docs/research/reverse-video-followup-2026-11-25.md"
+      ]
+    },
+    {
+      "id": "video-explainer",
+      "name": "Video Explainer",
+      "url": "https://github.com/petergyang/video-explainer",
+      "reviewed": "2026-11-26",
+      "review_basis": "Pinned native build/Studio3D/HyperFrames0.9.79 executed on matched original12s silent3D fixture;local export/revision/reopen checks;owner adopted as additional tool.",
+      "upstream_revision": "be2f729161585be2482f6a5699e8cfb47da3daeb",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Native3D build/export succeeds with isolated dependency/cache resolution. Both12s360frame silent masters decode;7sampled state checks match;protected native plaque edit and fresh-browser raster reopen pass after shared authored font correction. Owner adopted as additional tool;no other styles/audio/cloud/review-UI qualification.",
+      "licence_note": "MIT code; bundled Inter OFL; web media and optional providers retain separate terms. No native setup/render executed.",
+      "next_trial_or_retest_condition": "Owner adopted as additional tool. Reuse for a suitable selected3D scene with font-ready guard;no repeat of unchanged fixture or automatic primary-route replacement.",
+      "evidence": [
+        "docs/experiments/video-explainer-12s-2026-11-26.md",
+        "docs/research/yumina-openrouter-video-explainer-2026-11-26.md"
+      ],
+      "proposed_trial_id": "VIDEO-EXPLAINER-01",
+      "stack_admission": {
+        "basis": "scoped_runtime_check",
+        "current_host": "Apple Silicon macOS; Node22.14.0, Python3.14.5, FFmpeg and pnpm found this intake; no GPU/RAM admission test.",
+        "current_status": "Executed silent3D local route on current Mac;owner adopted as an additional tool. No model weights or paid calls.",
+        "alternative_targets": [
+          "Browser/cloud or portable Node/Python host as documented"
+        ],
+        "requirements_and_unknowns": "Compatible Node/Python/FFmpeg architecture; native HyperFrames0.9.79/browser/Three.js0.149 setup and pruning require isolated fixture.",
+        "recheck_trigger": "12s original silent continuous-camera scene; one label revision and exact preserved timing; compare retained renderer; do not run global installer or native pruning on accepted masters."
+      }
+    },
+    {
+      "id": "yumina",
+      "name": "Yumina OSS / hosted",
+      "url": "https://github.com/lovetimo0421/yumina-oss",
+      "reviewed": "2026-11-26",
+      "review_basis": "Pinned native engine/handler/PGlite proof plus native Ego Lite browser follow-up. Stock UI checkpoint-list defect; repaired local UI scope passed.",
+      "upstream_revision": "f44419c5f47325ee964c9f7a7d3310a0a640cf8d",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Rules,state,checkpoint,rewind and backup reopen passed unmodified. Native local UI/auth/actions/save/restore/page reload passed after a local checkpoint store-to-sandbox wiring repair;stock UI partial. Initial app install29m31.1s on Work;no AI dialogue/audio/hosted qualification. Owner adopts as an additional tool with the local repair caveat.",
+      "licence_note": "AGPL-3.0-only code; CC BY4.0 docs; trademarks and hosted/model terms separate. Not an MIT-vendor component.",
+      "next_trial_or_retest_condition": "Reuse repaired pinned runtime only for selected local deterministic prototypes. Verify upstream checkpoint-list fix before removing patch;live model play requires separately confirmed access. No repeat of unchanged fixture.",
+      "evidence": [
+        "docs/experiments/yumina-ui-state-2026-11-26.md",
+        "docs/experiments/yumina-state-2026-11-26.md",
+        "docs/research/yumina-openrouter-video-explainer-2026-11-26.md"
+      ],
+      "proposed_trial_id": "YUMINA-STATE-01",
+      "stack_admission": {
+        "basis": "scoped_runtime_check",
+        "current_host": "Apple Silicon macOS; Node22.14.0, Python3.14.5, FFmpeg and pnpm found this intake; no GPU/RAM admission test.",
+        "current_status": "Owner-adopted additional tool for tested local deterministic scope;retained checkpoint-list wiring repair required. Stock UI partial.",
+        "alternative_targets": [
+          "Browser/cloud or portable Node/Python host as documented"
+        ],
+        "requirements_and_unknowns": "Checkpoint wiring patch required on pinned source. Heavy first install/cold disk reads;AI dialogue,audio,backend restart,hosting and clean-machine transfer untested.",
+        "recheck_trigger": "Reuse repaired pinned runtime only for selected local deterministic prototypes. Verify upstream checkpoint-list fix before removing patch;live model play requires separately confirmed access. No repeat of unchanged fixture."
+      }
+    },
+    {
+      "id": "seed-tts-3-0",
+      "name": "Seed-TTS 3.0 via OpenRouter",
+      "url": "https://openrouter.ai/bytedance-seed/seed-tts-3-0",
+      "reviewed": "2026-11-26",
+      "review_basis": "Pinned primary source and anonymous public model/provider metadata; documentation only, no runtime generation or installation.",
+      "upstream_revision": "OpenRouter canonical slug bytedance-seed/seed-tts-3-0-20261125",
+      "disposition": "conditional",
+      "scope_and_findings": "Speech API, not chat-completions; no local GPU required. $20/M input characters listed; model metadata zero completion price is not free generation.",
+      "licence_note": "Proprietary cloud route; provider speech/output/voice terms and authorised spend unconfirmed; no open weights inferred.",
+      "next_trial_or_retest_condition": "After access/budget check, same20s English acronym/number/emotion comparison with retained local voice; listen in context; no replacement by default.",
+      "evidence": [
+        "docs/research/yumina-openrouter-video-explainer-2026-11-26.md"
+      ],
+      "proposed_trial_id": "SEED-TTS-01",
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon macOS; Node22.14.0, Python3.14.5, FFmpeg and pnpm found this intake; no GPU/RAM admission test.",
+        "current_status": "Conditional cloud route; actual paid account/budget not confirmed.",
+        "alternative_targets": [
+          "Browser/cloud or portable Node/Python host as documented"
+        ],
+        "requirements_and_unknowns": "Speech API, not chat-completions; no local GPU required. $20/M input characters listed; model metadata zero completion price is not free generation.",
+        "recheck_trigger": "After access/budget check, same20s English acronym/number/emotion comparison with retained local voice; listen in context; no replacement by default."
+      }
+    },
+    {
+      "id": "mai-image-2-7",
+      "name": "MAI-Image 2.7 via OpenRouter",
+      "url": "https://openrouter.ai/microsoft/mai-image-2.7",
+      "reviewed": "2026-11-26",
+      "review_basis": "Pinned primary source and anonymous public model/provider metadata; documentation only, no runtime generation or installation.",
+      "upstream_revision": "OpenRouter canonical slug microsoft/mai-image-2.7-20261117",
+      "disposition": "conditional",
+      "scope_and_findings": "Image API, no local GPU; advertised five-reference editing. Page/API input-price discrepancy retained, per-image cost not established.",
+      "licence_note": "Proprietary Azure/cloud route; reference/output terms and authorised spend unconfirmed. API listing is not open-source licensing.",
+      "next_trial_or_retest_condition": "Paired original reference-edit comparison with Flash: identity, typography, protected regions, timing and actual cost after access/budget confirmation.",
+      "evidence": [
+        "docs/research/yumina-openrouter-video-explainer-2026-11-26.md"
+      ],
+      "proposed_trial_id": "MAI-EDIT-01",
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon macOS; Node22.14.0, Python3.14.5, FFmpeg and pnpm found this intake; no GPU/RAM admission test.",
+        "current_status": "Conditional cloud route; actual paid account/budget not confirmed.",
+        "alternative_targets": [
+          "Browser/cloud or portable Node/Python host as documented"
+        ],
+        "requirements_and_unknowns": "Image API, no local GPU; advertised five-reference editing. Page/API input-price discrepancy retained, per-image cost not established.",
+        "recheck_trigger": "Paired original reference-edit comparison with Flash: identity, typography, protected regions, timing and actual cost after access/budget confirmation."
+      }
+    },
+    {
+      "id": "mai-image-2-7-flash",
+      "name": "MAI-Image 2.7 Flash via OpenRouter",
+      "url": "https://openrouter.ai/microsoft/mai-image-2.7-flash",
+      "reviewed": "2026-11-26",
+      "review_basis": "Pinned primary source and anonymous public model/provider metadata; documentation only, no runtime generation or installation.",
+      "upstream_revision": "OpenRouter canonical slug microsoft/mai-image-2.7-flash-20261117",
+      "disposition": "conditional",
+      "scope_and_findings": "Image API, no local GPU; advertised faster cheaper tier. Page/API input-price discrepancy retained; no measured speed or quality.",
+      "licence_note": "Proprietary Azure/cloud route; reference/output terms and authorised spend unconfirmed. Vendor comparable-quality claim untested.",
+      "next_trial_or_retest_condition": "Same paired MAI-EDIT-01, not a duplicate family; compare exact references, requested edit, actual elapsed time and invoice.",
+      "evidence": [
+        "docs/research/yumina-openrouter-video-explainer-2026-11-26.md"
+      ],
+      "proposed_trial_id": "MAI-EDIT-01",
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon macOS; Node22.14.0, Python3.14.5, FFmpeg and pnpm found this intake; no GPU/RAM admission test.",
+        "current_status": "Conditional cloud route; actual paid account/budget not confirmed.",
+        "alternative_targets": [
+          "Browser/cloud or portable Node/Python host as documented"
+        ],
+        "requirements_and_unknowns": "Image API, no local GPU; advertised faster cheaper tier. Page/API input-price discrepancy retained; no measured speed or quality.",
+        "recheck_trigger": "Same paired MAI-EDIT-01, not a duplicate family; compare exact references, requested edit, actual elapsed time and invoice."
+      }
+    },
+    {
+      "id": "hy-world-2-1-panorama",
+      "name": "HY-World 2.1 Panorama via OpenRouter",
+      "url": "https://openrouter.ai/tencent/hy-world-2.1-panorama",
+      "reviewed": "2026-11-26",
+      "review_basis": "Pinned primary source and anonymous public model/provider metadata; documentation only, no runtime generation or installation.",
+      "upstream_revision": "OpenRouter canonical slug tencent/hy-world-2.1-panorama-20261112",
+      "disposition": "conditional",
+      "scope_and_findings": "Image API creates one equirectangular background; not playable/editable3D or translational reconstruction; no local GPU required.",
+      "licence_note": "Proprietary Tencent/cloud generation; output terms/access/budget unconfirmed; rendered environment and reference rights remain separate.",
+      "next_trial_or_retest_condition": "Optional paid-generated input to existing panorama family; owned panorama can test local rotation first. Inspect seam/poles and10s same-position camera export.",
+      "evidence": [
+        "docs/research/yumina-openrouter-video-explainer-2026-11-26.md"
+      ],
+      "proposed_trial_id": "PANORAMA-PLATES-01",
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon macOS; Node22.14.0, Python3.14.5, FFmpeg and pnpm found this intake; no GPU/RAM admission test.",
+        "current_status": "Conditional cloud route; actual paid account/budget not confirmed.",
+        "alternative_targets": [
+          "Browser/cloud or portable Node/Python host as documented"
+        ],
+        "requirements_and_unknowns": "Image API creates one equirectangular background; not playable/editable3D or translational reconstruction; no local GPU required.",
+        "recheck_trigger": "Optional paid-generated input to existing panorama family; owned panorama can test local rotation first. Inspect seam/poles and10s same-position camera export."
+      }
+    },
+    {
+      "id": "heygen-avatar-6",
+      "name": "HeyGen Avatar 6 via OpenRouter",
+      "url": "https://openrouter.ai/heygen/heygen-avatar-6",
+      "reviewed": "2026-11-26",
+      "review_basis": "Pinned primary source and anonymous public model/provider metadata; documentation only, no runtime generation or installation.",
+      "upstream_revision": "OpenRouter canonical slug heygen/heygen-avatar-6-20261117",
+      "disposition": "conditional",
+      "scope_and_findings": "Video API with supplied audio and image/video reference;1080p/2K. Published per-second fee applies despite zero prompt/completion token metadata.",
+      "licence_note": "Proprietary HeyGen/cloud route; original/cleared presenter reference and output terms required; authorised paid access unconfirmed.",
+      "next_trial_or_retest_condition": "After access/budget check, original presenter8–10s with same audio; compare expressiveness, lip sync, identity and end hold; not general body animation.",
+      "evidence": [
+        "docs/research/yumina-openrouter-video-explainer-2026-11-26.md"
+      ],
+      "proposed_trial_id": "AVATAR6-LIPSYNC-01",
+      "stack_admission": {
+        "basis": "documentation_only",
+        "current_host": "Apple Silicon macOS; Node22.14.0, Python3.14.5, FFmpeg and pnpm found this intake; no GPU/RAM admission test.",
+        "current_status": "Conditional cloud route; actual paid account/budget not confirmed.",
+        "alternative_targets": [
+          "Browser/cloud or portable Node/Python host as documented"
+        ],
+        "requirements_and_unknowns": "Video API with supplied audio and image/video reference;1080p/2K. Published per-second fee applies despite zero prompt/completion token metadata.",
+        "recheck_trigger": "After access/budget check, original presenter8–10s with same audio; compare expressiveness, lip sync, identity and end hold; not general body animation."
+      }
+    },
+    {
+      "id": "pixelfx",
+      "name": "PixelFX",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "reviewed": "2026-11-27",
+      "review_basis": "Pinned native collect-burst executed with original lighthouse;matched two-palette8s comparison and native buffer/raster/decode checks.",
+      "upstream_revision": "5294518ce7c72e48b6100a744596e0acf57f2826",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Native collect-burst in authored absolute-time/single-canvas wrapper passed bounded checks;separate normal colour/additive light recommended. Full library/CLI/importers unqualified;owner preference pending.",
+      "licence_note": "MIT pinned PixelFX source; derivative SpriteFusion/HugoDuprez and HollowCrown/rehan-remade notices retained. Original Framewright artwork;no gallery font/demo art redistributed.",
+      "next_trial_or_retest_condition": "Owner review of palette comparison;reuse selected event accent with retained deterministic wrapper.",
+      "evidence": [
+        "docs/experiments/pixelfx-lighthouse-palettes-2026-11-27.md"
+      ]
+    },
+    {
+      "id": "watabou-mfcg",
+      "name": "Medieval Fantasy City Generator",
+      "url": "https://watabou.itch.io/medieval-fantasy-city-generator",
+      "reviewed": "2026-11-27",
+      "review_basis": "Bounded native browser/export preflight followed by explicit owner adoption for video locations.",
+      "upstream_revision": "Export metadata MFCG 0.11.5; current 0.12 preview not tested.",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Generated Greenfair map; native SVG and JSON saved and inspected. Same JSON used in City Viewer. Owner adopted as video-location source; PNG export not executed.",
+      "licence_note": "Author permits generated-map use/modification including commercial RPG material; attribution appreciated. Old source repository GPL-3.0 is a separate code licence; do not resell raw generated maps.",
+      "next_trial_or_retest_condition": "Reuse as selected video-location source; qualify any new export/renderer/rights scope before treating it as tested.",
+      "evidence": [
+        "docs/research/watabou-video-locations-2026-11-27.md"
+      ]
+    },
+    {
+      "id": "watabou-city-viewer",
+      "name": "City Viewer",
+      "url": "https://watabou.itch.io/city-viewer",
+      "reviewed": "2026-11-27",
+      "review_basis": "Bounded native browser/export preflight followed by explicit owner adoption for video locations.",
+      "upstream_revision": "Live browser build on 2026-11-27; exact upstream revision UNKNOWN.",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Imported the exact Greenfair JSON and exported native OBJ:400220 vertices/200410 faces; no material/UV/normal declarations. Owner adopted as video-location/blockout source. External-engine import remains unverified.",
+      "licence_note": "Author map-output permissions are documented; a blanket licence for exported 3D geometry/material/code use was not established. Assess intended 3D asset use separately; do not infer it from GPL old generator code.",
+      "next_trial_or_retest_condition": "Reuse as selected video-location source; qualify any new export/renderer/rights scope before treating it as tested.",
+      "evidence": [
+        "docs/research/watabou-video-locations-2026-11-27.md"
+      ]
+    },
+    {
+      "id": "rooms-xyz",
+      "name": "Rooms",
+      "url": "https://rooms.xyz/play",
+      "reviewed": "2026-11-27",
+      "review_basis": "Native UI3object assembly,creator-room lighting/object adaptation,undo/redo,two unlisted saved copies reopened;visible canvas capture.",
+      "upstream_revision": "Live Web UI27November2026,Unity WebGL;exact build UNKNOWN.",
+      "disposition": "tested_scoped",
+      "scope_and_findings": "Owner-adopted additional personal creative voxel-set/blockout and remix tool.3library objects assembled;magiclab lighting/removal survived saved-copy reload. Screen capture retained;controlled camera and3D export unqualified.",
+      "licence_note": "Rooms Terms effective17May2026 restrict service use to personal/internal noncommercial purposes;User Creation remix licences do not establish blanket client/advertising clearance. Owner selected personal creative use;retain room/asset credits and check imported third-party IP separately. Unlisted links remain accessible to people knowing the URL.",
+      "next_trial_or_retest_condition": "Use for a selected personal creative shot;test controlled camera/capture to that brief if needed. No arbitrary-scene or commercial clearance claim.",
+      "evidence": [
+        "docs/experiments/rooms-creative-video-sets-2026-11-27.md"
+      ]
+    },
+    {
+      "id": "krea-motion",
+      "name": "Krea Motion",
+      "url": "https://www.krea.ai/motion",
+      "reviewed": "2026-11-28",
+      "review_basis": "Primarydocumentation,publicsource/staticcode andread-onlylocalpreflight;noinstallation,render,inference,paidcall oraccountgrant.",
+      "upstream_revision": null,
+      "disposition": "blocked",
+      "scope_and_findings": "Officialannouncement via officialoEmbed confirms free try;actualpage isclientapp shell. Motionoperation,allowance,editableproject/export/aspect/watermark/commercialtermsunverified. DistinctfromMotionTransfer/KreaAgent.",
+      "licence_note": "Proprietaryservice;paidplancommercialFAQ does not establishfreeMotionrights.",
+      "next_trial_or_retest_condition": "KREA-MOTION-01 actualaccount/zero-cost/export/rightsread-onlycheckfirst;conditionalonegraphic/revision;no purchase.",
+      "evidence": [
+        "docs/research/krea-meshy-process-3d-hymt3-2026-11-28.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "pid-to-kg",
+      "name": "P&ID to Knowledge Graph",
+      "url": "https://github.com/ScottDuncanAI/PID-to-Knowledge-Graph",
+      "reviewed": "2026-11-28",
+      "review_basis": "Primarydocumentation,publicsource/staticcode andread-onlylocalpreflight;noinstallation,render,inference,paidcall oraccountgrant.",
+      "upstream_revision": "97e27f66ec3a4cfc62e5415b4b36d92ccb7d5b78",
+      "disposition": "blocked",
+      "scope_and_findings": "Agentvisualextraction+Pythonsemanticgraph/QA/DEXPI;notstandalonePDF-to3Dmodel. Dependencyset/nativeClaudeaccessnotqualified;publicEPA25pagefile andsheet9inspected.",
+      "licence_note": "MITcode;sourceengineeringdrawingsseparaterights.",
+      "next_trial_or_retest_condition": "PID-TO-KG-01 one digitalpage/5items/2relations/oneinstrument afterexplicitagent/dependencyroute.",
+      "evidence": [
+        "docs/research/krea-meshy-process-3d-hymt3-2026-11-28.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "kg-to-3d",
+      "name": "Knowledge Graph to 3D",
+      "url": "https://github.com/AtelierPlatonAI/kg-to-3d",
+      "reviewed": "2026-11-28",
+      "review_basis": "Primarydocumentation,publicsource/staticcode andread-onlylocalpreflight;noinstallation,render,inference,paidcall oraccountgrant.",
+      "upstream_revision": "42408f31133238e75219146557c2b324603dc4e5",
+      "disposition": "research_only",
+      "scope_and_findings": "ExistingBlender4.5.15/networkx3.7meetdeclaredbaseprerequisites;bundled224576Bgraphfixture. Staticcodeonly,notrendered. Topologyinvolume,notphysicalplantlayout.4:5defaults;explicitEeveeneededtoavoidautofallback.",
+      "licence_note": "MITcode;SILOFLfonts/Three.jsMIT;EPAhosteddrawingsretainauthorsrights.",
+      "next_trial_or_retest_condition": "KG-TO-3D-01 onepath+lowresstillthenbounded6–8slandscape;noautomaticCPUfallbackor3D/BIMqualification.",
+      "evidence": [
+        "docs/research/krea-meshy-process-3d-hymt3-2026-11-28.md",
+        "docs/experiment-queue.md"
+      ]
+    },
+    {
+      "id": "hy-mt3",
+      "name": "Tencent Hy-MT3 translation family",
+      "url": "https://huggingface.co/collections/tencent/hy-mt3",
+      "reviewed": "2026-11-28",
+      "review_basis": "Primarydocumentation,publicsource/staticcode andread-onlylocalpreflight;noinstallation,render,inference,paidcall oraccountgrant.",
+      "upstream_revision": null,
+      "disposition": "blocked",
+      "scope_and_findings": "1.8B/7B/30BMoE,102languages inclRU/UK/FR;metadata/weightsizes/architectures read,noinference/download.1.8BQ4≈1.35GB;7BQ4≈5.15GB;30BQ4≈19.50GB.16GiBMac;runtimeparser/templateunqualified;MoEactive3Bdoesnotmean3BRAM.",
+      "licence_note": "ModelcardsApache2.0;intendedsourceoutputrightsremainseparate.",
+      "next_trial_or_retest_condition": "HY-MT3-LOCAL-01 conditional1.8Bwithinstalledbaselines;preserveplaceholders/meaning;7Bextensiononlyifneeded,30Bnotadmittedroutine.",
+      "evidence": [
+        "docs/research/krea-meshy-process-3d-hymt3-2026-11-28.md",
+        "docs/experiment-queue.md"
       ]
     }
   ]

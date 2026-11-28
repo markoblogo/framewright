@@ -1,10 +1,10 @@
 # Framewright purpose and development path
 
-Owner-adopted direction, 17November2026. [Roadmap](roadmap.md) carries milestones and execution scope. [Internal studio scope](internal-studio-scope.md) includes film, graphics, sound and related creative products.
+Owner-adopted direction,17November2026;expanded27November2026 toward a creative agency with agent-assisted operations. [Agency operating direction and staged plan](agency-operating-model.md) distinguish implemented functions from planned ones. [Roadmap](roadmap.md) carries milestones and execution scope. [Internal studio scope](internal-studio-scope.md) includes film, graphics, sound and related creative products.
 
 ## Goal and mission
 
-**Goal:** give one author the ability to regularly turn ideas into high-quality films and other visual works while controlling intention, style, cost and the result.
+**Goal:** enable an owner-led creative agency to regularly turn ideas and client/partner briefs into high-quality audiovisual and interactive work while controlling intention,style,resources,commitments and the result.
 
 **Mission:** expand human creative possibilities through AI-assisted production, making complex audiovisual work accessible while preserving the author's voice.
 
@@ -20,7 +20,7 @@ A partner may gain a review/demonstration and,when the results justify it,a docu
 
 ## Intended mature product
 
-A personal agent-led creative studio that can take a book, photographs, a discovery or a short idea through creative development, production, review and a publication-ready package. The author directs the intent, makes significant artistic choices and accepts the result. The studio progressively takes on production work at the level of autonomy agreed for each project.
+An owner-led creative agency with agent-assisted production and operations,covering audiovisual work,games and worlds. It connects research/tool selection,resource planning,client/partner commitments,communication and own media to the existing creative studio. The production core can take a book,photographs,a discovery or a short idea through development,production,review and an appropriate delivery package. The complete agency layer is a development target,not an implemented service claim. The author directs the intent, makes significant artistic choices and accepts the result. The studio progressively takes on production work at the level of autonomy agreed for each project.
 
 Five capabilities define the destination:
 
@@ -30,7 +30,7 @@ Five capabilities define the destination:
 4. Retain sources, decisions, preferences and revisions so a project can be resumed and corrected predictably.
 5. Complete familiar formats from one brief and request author decisions at meaningful creative branches in complex work.
 
-The practical near-maximum is a small one-author studio capable of regular explainers, reviews, promos, atmospheric films and longer coherent fiction. Tools and computers can change while projects and accumulated production knowledge remain usable.
+The current production core is a small owner-led studio working toward regular explainers,reviews,promos,atmospheric films and longer coherent fiction. Games/worlds and agency operations extend that core under the27November direction;they are not all qualified or implemented. Tools and computers can change while projects and accumulated production knowledge remain usable.
 
 ## Development sequence
 

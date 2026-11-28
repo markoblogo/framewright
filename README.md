@@ -34,7 +34,8 @@ limits are linked to actual cases below.
 For brands, authors and organisations with a product to explain, a story to tell
 or a visual idea to explore. Discuss a film, explainer, product story or media-art
 piece, with creative direction, sound and a publication-ready package composed
-for the selected screens.
+for the selected screens. Games and small interactive worlds are also part of the
+practice, with their own playable pilot, review and handover scope.
 
 [Discuss a creative project](https://markoblogo.github.io/framewright/#contact).
 
@@ -96,6 +97,31 @@ Public methods and original repository materials are open; private project
 assets, client material and confidential partner terms are not. External tools,
 models and media retain their own licences. [Purpose and development path](docs/vision.md) ·
 [Studio Notes](docs/editorial/README.md).
+
+## Production operations
+
+The studio is developing an agency workflow alongside production. The current
+local implementation reuses the existing project journal and cost ledger:
+
+- Prioritise client and partner work, distinguish committed deadlines from internal
+  targets, and keep at most five business tasks active.
+- Track separate credit pools, expiry and renewal conditions, allocations,
+  reservations, charges and unknown outcomes. Forecasts are not live balances.
+- Recover clients, partners, commitments and correspondence references with
+  evidence, outstanding replies and dated follow-up flags.
+
+Framewright tracks correspondence; the owner writes and sends elsewhere. There
+is no automatic mail sender, background account sync, purchasing or job dispatch.
+These are unreleased local additions after v0.12.0, not a claim that the full
+agency system is complete. [Operating direction](docs/agency-operating-model.md) ·
+[Plan and budgets](docs/studio-production-management.md) ·
+[Relationships and commitments](docs/studio-relationships.md).
+
+Recent source-led reviews include [Toy Town](https://youtu.be/VfdXpggan5A),
+[Rooms](https://youtu.be/2Dir5coXoco), [Slow Roads](https://youtu.be/Da5dqHIFS6o),
+[Deft](https://youtu.be/uXHUnbMXCkU) and
+[Bruno Simon’s portfolio](https://youtu.be/_ziZIZ9nj0w). Their linked
+[case records](https://github.com/markoblogo/framewright/tree/main/docs/productions) preserve source, editing, sound and review limits.
 
 ## Use Framewright yourself
 
@@ -206,10 +232,14 @@ and [Pomerado](https://github.com/Pomerado/pomerado) remain conditional candidat
 
 ## Collaborations
 
-Completed product collaborations and practical evaluations:
+Selected collaborations and evaluations; status recorded on 28 November 2026:
 
 - [Tulvo](https://tulvo.io/) — business workflow reviews and case studies.
 - [Klap](https://klap.app/) — short-form repurposing trials and comparative review.
 - [PlayMCP](https://playmcp.io/) — interactive game and video-production experiments.
+- [Zopia](https://zopia.ai/) — active Creator Program partnership; practical video-workflow evaluation in progress.
+- [PLAUD](https://www.plaud.ai/) — confirmed creator partnership; awaiting the device for a practical review.
 
-New projects are added after the collaboration has been completed.
+Completed evaluations and active partnerships are distinguished above. Access,
+resource renewals and future deliverables depend on the current agreement; a logo
+or a past collaboration does not imply a new obligation.

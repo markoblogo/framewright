@@ -4,6 +4,12 @@ Choose the task below. [Current priorities](next-cycle.md) track ongoing project
 [roadmap](roadmap.md) governs priorities and release gates. Production records belong
 in a private project folder; example files are demonstrations, not your live project.
 
+## Plan studio work and resources
+
+For the broader client/partner,communication,own-media and game/world direction,use the [agency operating model](agency-operating-model.md). It separates the current production foundation from proposed business-function slices.
+
+Use the [production plan and resource budgets](studio-production-management.md) for partner/client priorities,deadlines,service terms,expiring credit pools and project allocations. It joins a pinned input to the existing project/cost ledger;it does not start jobs or create a second production database. [Client/partner tracking](studio-relationships.md) extends that same profile;the ordinary project brief recovers it. Framewright observes correspondence;the owner writes/sends in another thread.
+
 ## Start a film
 
 Tell the agent the intended viewer/result, source material, language, aspect ratio,
@@ -68,7 +74,7 @@ reopening are described in [review-delivery recovery](../skills/video-production
 
 [Recovery procedure](../skills/video-production-router/references/projects.md) ·
 [Selected-final recovery evidence](experiments/selected-final-recovery.md) ·
-[Current release assessment](rel-b-readiness-2026-11-01.md).
+[Current release scope and limits](release-notes-0.12.0.md); [dated readiness audit](release-readiness-0.12.0-2026-11-26.md).
 
 ## Correct a fragment
 
