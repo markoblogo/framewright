@@ -17,6 +17,10 @@ def timestamp(value):
  if d.tzinfo is None:raise ValueError('Timestamp needs timezone')
  return d
 
+def verified_refresh_window(pool):
+ recurring=pool['refresh'].get('cadence') in {'daily','weekly','monthly','rolling'}
+ return pool['refresh_status']=='current_window' or pool['refresh_status']=='reset_unknown' and not recurring
+
 def read_profile(data,root):
  pin=data['inputs'].get('studio-management')
  if not pin:raise ValueError('Retain studio-management input in the existing project first')
@@ -104,8 +108,8 @@ def report(data,profile,now,root=None):
    for pool in pools:
     models=pool['eligible_models']
     if pool['service']!=service['id'] or models is None or '*' not in models and model not in models:continue
-    fresh=not pool['future_observation'] and pool['expiry_status']=='valid' and pool['refresh_status']!='needs_current_balance'
-    funding=C['amount'](pool['forecast_remaining']);cap=C['amount'](pool['budget_remaining'])
+    fresh=not pool['future_observation'] and pool['expiry_status']=='valid' and verified_refresh_window(pool)
+    funding=C['amount'](pool['forecast_remaining'],negative=True);cap=C['amount'](pool['budget_remaining'],negative=True)
     n=None if not fresh or funding is None or cap is None else max(Decimal(0),min(funding,cap))//price
     candidates.append({'unit':pool['unit'],'budgeted_attempts':str(n) if n is not None else None,'availability':'budget_fits' if n is not None and n>0 else 'budget_not_assigned_or_insufficient' if n==0 else 'verify_balance_expiry_or_reset'})
    options.append({'service':service['id'],'model':model,'configuration':quote,'pools':candidates,'provider_availability':'not_verified','scope':'Quoted attempts within local bounds,not guaranteed successful generations;do not combine candidate pools.'})
@@ -116,7 +120,7 @@ def admit(view,unit,value,model):
  if n is None or n<=0:raise ValueError('Positive known quote required')
  pool=next((p for p in view['budgets'] if p['unit']==unit),None)
  if not pool:raise ValueError('Unknown credit pool')
- if pool['future_observation'] or pool['expiry_status']!='valid' or pool.get('refresh_status')=='needs_current_balance':raise ValueError('Credit observation/expiry needs verification before reservation')
+ if pool['future_observation'] or pool['expiry_status']!='valid' or not verified_refresh_window(pool):raise ValueError('Credit observation/expiry needs verification before reservation')
  models=pool['eligible_models']
  if models is None or '*' not in models and model not in models:raise ValueError('Model not verified for this pool')
  if pool['forecast_remaining'] is None or pool['budget_remaining'] is None:raise ValueError('Unknown funding/exposure or no explicit cost limit')

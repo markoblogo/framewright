@@ -264,7 +264,7 @@ def html(rows):
             parts.append('<details><summary>Correspondence · ' + str(len(row["communications"])) + '</summary>')
             for mail in reversed(row["communications"]):
                 link = '<a href="' + text(mail["url"]) + '">' + text(mail["summary"]) + '</a>' if mail.get("url") else text(mail["summary"])
-                parts.append('<p>' + text(mail["occurred_at"]) + ' · ' + text(mail["direction"]) + ' · ' + text(mail["state"]) + '<br>' + link + '<br>' + text(mail["reply_status"]) + ' · ' + text(mail["response_status"]) + ' · source ' + text(mail["evidence"]["state"]) + '</p>')
+                parts.append('<p>' + text(mail.get("occurred_at")) + ' · ' + text(mail["direction"]) + ' · ' + text(mail["state"]) + '<br>' + link + '<br>' + text(mail["reply_status"]) + ' · ' + text(mail["response_status"]) + ' · source ' + text(mail["evidence"]["state"]) + '</p>')
             parts.append('</details>')
         parts.append('</article>')
     return "".join(parts)

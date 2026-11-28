@@ -244,5 +244,19 @@ class StudioRelationshipsTest(unittest.TestCase):
         view = self.view('--relationship', 'partner')
         self.assertEqual([x['relationship_id'] for x in view['correspondence_attention']], ['partner'])
 
+    def test_undated_drafts_and_owner_reports_export_with_unknown_date(self):
+        mail = self.data['communications'][0]
+        mail.pop('occurred_at')
+        destination = self.root / 'undated.html'
+        for state in ['draft', 'approved', 'owner_reported']:
+            with self.subTest(state=state):
+                mail['state'] = state
+                if state == 'approved':
+                    mail['approval_evidence'] = self.evidence
+                self.pin()
+                self.view('--html', destination)
+                self.assertIn('Unknown', destination.read_text())
+
+
 if __name__ == "__main__":
     unittest.main()

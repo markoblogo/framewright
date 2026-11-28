@@ -48,7 +48,7 @@ python3 skills/video-production-router/scripts/studio.py /absolute/studio/projec
 python3 skills/video-production-router/scripts/studio.py /absolute/studio/project.json --html /absolute/studio/review.html
 ```
 
-A relationship filter narrows cards and work; shared account budgets remain account-wide. Reading and exporting the report do not modify the checkpoint. Export cannot overwrite the checkpoint or retained files. The HTML is the existing private studio report with added relationship cards, contacts, source state, obligations, waits and collapsible original-mail links.
+A relationship filter narrows cards and work; shared account budgets remain account-wide. Reading and exporting the report do not modify the checkpoint. Export cannot overwrite the checkpoint or retained files. The HTML is the existing private studio report with added relationship cards, contacts, source state, obligations, waits and collapsible original-mail links. Valid undated drafts and owner-reported records display an unknown date rather than preventing export.
 
 ## Refresh without parallel records
 

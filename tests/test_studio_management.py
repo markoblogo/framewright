@@ -48,4 +48,22 @@ class StudioManagementTest(unittest.TestCase):
   self.data['services'][0]['quotes']=[{'model':'Model A','credits':'6','resolution':'540p','duration_seconds':4}];self.pin();self.cost('limit','40')
   v=self.view();self.assertEqual(v['budgets'][0]['forecast_remaining'],'7');self.assertEqual(v['budgets'][0]['refresh']['amount'],'50');self.assertEqual(v['today_options'][0]['pools'][0]['budgeted_attempts'],'1')
   self.runcli(CLI,self.p,'--at','2026-11-29T12:00:00+00:00','--check-unit','vendor:restricted','--amount','6','--model','Model A',ok=False)
+ def test_overdrawn_balances_still_report_zero_affordable_quotes(self):
+  self.data['services'][0]['quotes']=[{'model':'Model A','credits':'10'}];self.pin();self.cost('limit','40');self.cost('usage','150','overspent')
+  v=self.view();self.assertEqual(v['budgets'][0]['forecast_remaining'],'-50');self.assertEqual(v['budgets'][0]['budget_remaining'],'-110')
+  self.assertEqual(v['today_options'][0]['pools'][0]['budgeted_attempts'],'0')
+  self.assertEqual(v['today_options'][0]['pools'][0]['availability'],'budget_not_assigned_or_insufficient')
+  brief=json.loads(self.runcli(PROJECT,'brief',self.p,'--json').stdout);self.assertEqual(brief['studio_management']['state'],'available')
+  self.runcli(CLI,self.p,'--check-unit','vendor:restricted','--amount','1','--model','Model A',ok=False)
+ def test_recurring_unknown_reset_blocks_quotes_and_reservations(self):
+  pool=self.data['services'][0]['pools'][0];pool.update(expires_on=None,nonexpiring=True,observed_at='2026-11-01T10:00:00+00:00')
+  self.data['services'][0]['quotes']=[{'model':'Model A','credits':'10'}];self.cost('limit','100')
+  for cadence in ['daily','weekly','monthly','rolling']:
+   with self.subTest(cadence=cadence):
+    pool['refresh']={'cadence':cadence,'rollover':'no','next_reset_at':None};self.pin();v=self.view()
+    self.assertIsNone(v['today_options'][0]['pools'][0]['budgeted_attempts'])
+    self.runcli(CLI,self.p,'--check-unit','vendor:restricted','--amount','10','--model','Model A',ok=False)
+    e={'id':'blocked-reset','kind':'reserve','amount':'10','operation':'unknown-reset:attempt1','unit':'vendor:restricted','supplier':'vendor','category':'generation','basis':'Synthetic quote','provenance':'operator_observation'}
+    f=self.root/'reserve.json';f.write_text(json.dumps(e));before=self.p.read_bytes();self.runcli(CLI,self.p,'--reserve',f,'--model','Model A',ok=False);self.assertEqual(before,self.p.read_bytes())
+  pool['refresh']={'cadence':'one_time','next_reset_at':None};self.pin();self.assertEqual(self.view()['today_options'][0]['pools'][0]['budgeted_attempts'],'10')
 if __name__=='__main__':unittest.main()
