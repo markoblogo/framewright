@@ -25,6 +25,10 @@ sampled sum which can double-count shared memory; CPU100% means one core. No
 hard memory limit, automatic kill policy, GPU/model/codec/storage-speed qualification
 or network-speed measurement follows. Paths/PIDs in local observations stay private.
 
+## Production plan and service budgets
+
+[Studio production management](../../../docs/studio-production-management.md) adds a pinned service/pool/business-work input and `studio.py` report/reservation wrapper to the existing project/COST-01 ledger. Client/partner priorities,deadline versus target,separate expiring units,conditional topups and shared-pool exposure remain explicit. No provider dispatcher or second production database.
+
 ## COST-01: separate limits, estimates, exposure and bills
 
 Create an ordinary local synthetic project, then import one explicit event at a time:

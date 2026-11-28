@@ -42,6 +42,8 @@ Owner correction 25 November 2026: [Copilot Adaptive Effort](productions/copilot
 force a cut every N seconds, distort whole faces to move a hand, or claim natural
 acting from rigid layers. Use the [full-film proposal](creative-proposal.md).
 
+Owner correction 27 November 2026:in the [line-boil lighthouse A/B](experiments/line-boil-lighthouse-2026-11-27.md),the owner preferred static A and rejected B as shaking “как под напряжением”;vibration was unnatural for a rigid lighthouse. For comparable stationary architecture,preserve the structural silhouette and choose motion appropriate to the subject. Pixel registration and an animated contour are not evidence of plausible motion. The owner also sees little general use for this vibration,mentioning particles or mosquito wings only as possibilities. Do not offer this implementation as generic illustration motion. Physical-vibration examples remain untested;this does not reject expressive redraw styles as a whole or activate another test.
+
 ## VT-SCENES — explain with moving scenes as well as diagrams
 
 **Rule:** in these narrative explainers/pitches, include fitting animated imagery,

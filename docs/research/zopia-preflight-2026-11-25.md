@@ -1,5 +1,7 @@
 # Zopia — guide reading and conditional practical evaluation
 
+**27November activation:** owner has now selected the Creator Partnership and practical review. [Live preflight and current scope](zopia-creator-partnership-2026-11-27.md) supersede the dated hold below.
+
 25 November 2026. Source: owner-supplied **Zopia Creation Guide**, attributed to Zopia, 15 pages. Retained privately with hash receipt in `records/reference-intake-2026-11-25/`. The guide and its UI screenshots are documentation, not independent evidence of current access, models, performance, entitlements or export quality. The owner explicitly asked not to start working with Zopia now. No account access, communication, installation, generations, spend or integration in this intake; no partnership/endorsement is claimed.
 
 ## Documented production route
@@ -34,6 +36,6 @@ Important nuance: the quick table on page 5 recommends N-Grid for comparatively 
 4. Verify rendered file resolution, aspect, duration, decode, audio and cut joins. Determine what can actually be downloaded, including selected shots, references, timeline/other artifacts if available and whether a cold reopen is possible. Keep source/outputs and edit recipe private outside Git; preserve same production record for future corrections and use Framewright as the independent delivery/QA/assembly layer. No production integration or migration.
 5. Prepare a factual review only if activation and production are approved. Distinguish platform documentation from our own screen recording and observed results; disclose partnership/affiliate relationship and only use verified link/offer terms if applicable. Owner selects whether/when to publish.
 
-### Decision currently in force
+### Decision at intake —25November2026
 
 **HOLD: preparation only.** Test plan retained; no login, generation, paid action, production scheduling or partner communication. On owner activation, recheck terms and account before spending. No qualification of Zopia or its models and no inclusion in completed-collaboration lists. [Animation direction reference](animation-style-reference-2026-11-25.md) can supply an original look for the future pilot, but does not bind Zopia to a particular style or generator.

@@ -158,6 +158,23 @@ def brief_markdown(view):
             for file in entry['files']:
                 lines+=['  - '+cell(file['platform']+'/'+file['role'])+': ['+cell(Path(file['path']).name)+'](<'+file['path']+'>)']
         lines+=['']
+    if view.get('studio_management'):
+        studio=view['studio_management']
+        lines+=['Studio relationships: '+cell(studio['state']),'']
+        if studio.get('reason'):lines+=['- '+cell(studio['reason'])]
+        for relation in studio.get('relationships',[]):
+            lines+=['- '+cell(relation['name'])+' / '+cell(relation['status'])]
+            for promise in relation['commitments']:
+                lines+=['  '+cell(promise['title'])+' / '+cell(promise['state'])+' / committed deadline: '+cell(promise.get('deadline') or 'unknown')]
+            for work in relation['work']:
+                lines+=['  Next: '+cell(work['next_step'])+' / '+cell(work['status'])]
+                if work['blockers']:lines+=['  Waiting: '+cell('; '.join(work['blockers']))]
+            latest=relation.get('latest_communication')
+            if latest:lines+=['  Latest mail: '+cell(latest['state'])+' / '+cell(latest['summary'])]
+        if studio.get('relationship_evidence_issues'):
+            lines+=['- Evidence needs recheck: '+cell(', '.join(r['input_id']+': '+r['state'] for r in studio['relationship_evidence_issues']))]
+        if studio.get('report_command'):lines+=['Full studio report: '+shlex.join(studio['report_command'])]
+        lines+=['']
     if view.get('completion'):
         lines+=['Completion diagnosis: '+cell(view['completion']['status'])+'; '+str(view['completion']['blockers'])+' blockers. Use project.py blockers PROJECT for reasons.','']
     for key,label in [('accepted','Accepted work'),('file_changes','Current file problems'),('recent_revisions','Most recent recorded replacements'),('not_retained','Declared, not retained'),('needs_recheck','Checks to review'),('waiting','Explicit waits'),('blockers','Task constraints (does not cover provider/use rights)'),('ready_tasks','Recorded ready tasks'),('historical_reviews','Historical replaced reviews'),('historical_checks','Historical checks (not current waits)')]:

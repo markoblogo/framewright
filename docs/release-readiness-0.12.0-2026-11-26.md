@@ -1,5 +1,7 @@
 # v0.12.0 local readiness —26November2026
 
+Historical pre-integration audit. **Current status, 28 November 2026:** [v0.12.0 is published](https://github.com/markoblogo/framewright/releases/tag/v0.12.0). The earlier authority, working-version and pending-release statements below describe their dated checkpoint. [Current priorities](next-cycle.md) consolidate later work without another release.
+
 **Result: ready for integration preparation within the stated scope. Not yet an authorised or publicly verified release.** The owner authorised exact scope and local checks only. No commit,push,PR,merge,tag,public upload,paid call,model/dependency installation or new production occurred.
 
 ## Frozen scope

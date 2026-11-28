@@ -1,6 +1,6 @@
 {
   "schema": "framewright-public-evidence-v1",
-  "updated": "2026-11-26",
+  "updated": "2026-11-28",
   "scope": "Conservative documented cases, not an asserted lifetime total. Original records remain the source of truth.",
   "definitions": {
     "films": "One completed authored story/promo/tutorial/ambient master per case. Aspect, language and revision variants count once. A finished export need not be publicly published or creatively accepted.",
@@ -932,6 +932,66 @@
       "source": "docs/productions/longcat-avatar.md",
       "basis": "registered_finished_export",
       "index_note": "28s horizontal full-v2; owner supplied https://youtu.be/wCksJ0hExfs on26November2026. oEmbed confirms title and ABV channel. One3.72s cloud LongCat output, animated workflow, camera push/pull and separate comic-image edit. Metrics/upload identity unverified."
+    },
+    {
+      "id": "pink-wig-party-robot",
+      "source": "docs/productions/pink-wig-party-robot.md",
+      "basis": "registered_finished_export",
+      "index_note": "One25.133s1080x1920 shared Shorts/TikTok master and one common real-frame cover. Full scene then1.818xreplay;balanced colour finishing,owner-selected Alpha x,original-18dB,no voice/subtitles. Decode/standard delivery checks passed;Owner supplied YouTube Shorts https://youtube.com/shorts/4Xd3RLy5tQs?feature=share and TikTok https://vt.tiktok.com/ZSshn7S8q/ on26November. Independent visibility/upload identity and separate creative/listening verdict unverified."
+    },
+    {
+      "id": "quantum-gravity-null-cone-en",
+      "source": "docs/productions/quantum-gravity-null-cone-en.md",
+      "basis": "registered_finished_export",
+      "index_note": "One187.433s English1080p landscape localisation of supplied149.733s square Russian animation;proportional crops,translated labels,local narration,owner-library bed,cover,SRT and YouTube copy. Owner creative/listening review pending;Owner supplied YouTube https://youtu.be/9wFEHvzcsKM on27November2026;visibility/upload identity not independently checked."
+    },
+    {
+      "id": "funeral-interactive-short",
+      "source": "docs/productions/funeral-interactive-short.md",
+      "basis": "registered_finished_export",
+      "index_note": "One28s shared portrait comedy recut of supplied funeral-screen/live-band footage;original live sound,English editorial cards,common cover,separate Shorts/TikTok copy. China is supplied context;interactive controls and exact location unverified. Owner review pending. Owner supplied publication URLs on27November2026: YouTube https://youtube.com/shorts/cpyETjvPhR8?feature=share and TikTok https://vt.tiktok.com/ZSsBs4DEe/;visibility/upload identity not independently checked."
+    },
+    {
+      "id": "toy-town-review",
+      "source": "docs/productions/toy-town-review.md",
+      "basis": "registered_finished_export",
+      "index_note": "One70s English landscape review,3labelled AI reimaginings,library soundtrack,sparse narration and cover.Owner supplied https://youtu.be/VfdXpggan5A on27November2026. Independent visibility/upload identity/actual cover choice and metrics unverified;no new film count for publication."
+    },
+    {
+      "id": "rooms-review",
+      "source": "docs/productions/rooms-review.md",
+      "basis": "registered_finished_export",
+      "index_note": "One112s landscape English review with catalogue-first opening,creator worlds,editor and bounded saved-set test.Owner supplied YouTube publication https://youtu.be/2Dir5coXoco on27November2026.Independent visibility/upload identity/thumbnail and metrics unverified;no new film count."
+    },
+    {
+      "id": "slow-roads-review",
+      "source": "docs/productions/slow-roads-review.md",
+      "basis": "registered_finished_export",
+      "index_note": "One74s landscape browser-world review with English voice,existing Devil track,cover and YouTube package.Owner supplied https://youtu.be/Da5dqHIFS6o on27November2026.Independent visibility/upload identity/thumbnail and metrics unverified;no new film count or TikTok claim."
+    },
+    {
+      "id": "assbench-review",
+      "source": "docs/productions/assbench-review.md",
+      "basis": "registered_finished_export",
+      "index_note": "One170.1667slandscape/50.0333sportrait dual-voice review. Owner supplied YouTube https://youtu.be/9JRQmK6UOgQ and TikTok https://vt.tiktok.com/ZSsA1HtCE/ on27November2026. Public access,uploaded-byte identity and metrics independently unverified;separate listening/A-B preference not reported."
+    },
+    {
+      "id": "unitree-avatar-bear-short",
+      "source": "docs/productions/unitree-avatar-bear-short.md",
+      "basis": "registered_finished_export",
+      "index_note": "One23s shared portrait comedy master. Owner supplied YouTube Shorts https://youtube.com/shorts/061L0VamfC8?feature=share and TikTok https://vt.tiktok.com/ZSsALdrKQ/ on28November2026. Independent visibility,uploaded-byte identity and metrics unverified;not two films or a new trial."
+    },
+    {
+      "id": "deft-skills-review",
+      "source": "docs/productions/deft-skills-review.md",
+      "basis": "registered_finished_export",
+      "index_note": "One92slandscape review. Owner supplied YouTube https://youtu.be/uXHUnbMXCkU on28November2026. Independentvisibility,uploaded-byteidentity,metrics andseparatecreative/listeningverdict unverified. Fivefutureprobesremaininexistinggeneralqueue;not26executedtrials."
+    },
+    {
+      "id": "bruno-simon-portfolio-review",
+      "source": "docs/productions/bruno-simon-portfolio-review.md",
+      "basis": "registered_finished_export",
+      "index_note": "One 98-second landscape source-led tour. Owner supplied YouTube https://youtu.be/_ziZIZ9nj0w on 28 November 2026; independent visibility, uploaded identity, metrics and separate creative/listening verdict unverified. Site excluded from tool assessment; not a new trial."
     }
   ],
   "trials": [
@@ -963,7 +1023,7 @@
       "id": "reverse-video-rea-fixture",
       "source": "docs/experiments/reverse-video-rea-2026-11-25.md",
       "basis": "executed_bounded_workflow_trial",
-      "index_note": "REA local 12s three-shot fixture: exact two cut boundaries, screen-capture route missed, VIDEO.md validator passes. No VLM/audio or owner review."
+      "index_note": "One existing REA family:original12s baseline plus74s Slow Roads known-edit follow-up,8/9editorial cuts exact,UI/light events and wrong origin inference retained.No new family count;audio/VLM unqualified."
     },
     {
       "id": "button-sounds-baked-click-ab",
@@ -1548,6 +1608,72 @@
       "source": "docs/experiments/music-cue-ordinary-track-2026-11-26.md",
       "basis": "recorded_execution",
       "index_note": "Two real20sJellyBeing recuts with identical ordinary soundtrack. Content-led A versus onset-adjusted B:exact cut frames;2/2Bcuts within80ms of detected acoustic changes,A0/2. Not verified musical beats or superiority;owner accepted both variants and reports stronger music-picture linkage in B. Scoped owner feedback,not audience evidence. No new published film."
+    },
+    {
+      "id": "video-explainer-native-3d-ab",
+      "source": "docs/experiments/video-explainer-12s-2026-11-26.md",
+      "basis": "recorded_execution",
+      "index_note": "One12s silent native Studio3D versus direct Three.js local comparison;both360frames/full decode;sampled state/backwards/reopen and one plaque revision after shared authoring fixes. No paid generation/new weights,other styles/audio/owner preference unqualified. Variants/corrections count once;not a new published film."
+    },
+    {
+      "id": "yumina-native-state-checkpoint",
+      "source": "docs/experiments/yumina-ui-state-2026-11-26.md",
+      "basis": "recorded_execution",
+      "index_note": "One Yumina state/checkpoint family: earlier native handler/backup checks plus browser follow-up. Stock sandbox save-list defect;native UI save/restore/page reload passed with retained local client repair. No paid calls/new weights;not a film or generic gameplay qualification."
+    },
+    {
+      "id": "emerging-images-native-reveal-ab",
+      "source": "docs/experiments/emerging-images-8s-2026-11-26.md",
+      "basis": "recorded_execution",
+      "index_note": "One matched8s silent original-image fade/type0 native GLSL integration with colour/time adapter;raw gamma boundary,seek/fresh-page/source/decode checks retained. Owner preference pending;not a film."
+    },
+    {
+      "id": "paper-crumple-native-vat-ab",
+      "source": "docs/experiments/paper-crumple-8s-2026-11-27.md",
+      "basis": "recorded_execution",
+      "index_note": "One8s silent original-card native VAT unfold/simple appearance comparison;repeat/fresh-page/bounds/decode and exact final A/B PNG checks. Authored kinematic/art wrapper;no interactive physics,Houdini authoring,paid request or neural weights. Owner adopted retained effect scope;not a film."
+    },
+    {
+      "id": "pixelfx-collect-burst-palettes",
+      "source": "docs/experiments/pixelfx-lighthouse-palettes-2026-11-27.md",
+      "basis": "recorded_execution",
+      "index_note": "One native collect-burst8s two-palette comparison;repeat/native composition/decode checks retained. No paid calls/new weights;owner pending;not a film."
+    },
+    {
+      "id": "openmotion-reference-edit-native",
+      "source": "docs/experiments/openmotion-reference-edit-2026-11-27.md",
+      "basis": "recorded_execution",
+      "index_note": "One10s owned-reference manual/source-assisted editable reconstruction with native A/B exports,independent source reopen and one label/colour edit. Native typography differs;owner asked to retain bounded result; separate fidelity rating unrecorded;not a film or automatic video analysis."
+    },
+    {
+      "id": "rooms-creative-set-ui",
+      "source": "docs/experiments/rooms-creative-video-sets-2026-11-27.md",
+      "basis": "recorded_execution",
+      "index_note": "One native UI trial:3library objects,creator-room light/object adaptation,undo/redo,two unlisted saves and reopened copies.Visible canvas capture retained;controlled camera/export and commercial scope unqualified."
+    },
+    {
+      "id": "slow-roads-road-background",
+      "source": "docs/experiments/slow-roads-road-background-2026-11-27.md",
+      "basis": "recorded_execution",
+      "index_note": "One bounded native hood-camera,HUD-off,autodrive6s road-plate capture/crop;separate camera comparison.No native3D/export,commercial-rights or universal-FPS qualification.Owner output review pending."
+    },
+    {
+      "id": "assbench-reaction-cues",
+      "source": "docs/experiments/assbench-reaction-cues-2026-11-27.md",
+      "basis": "executed_bounded_trial",
+      "index_note": "12s identical-picture A/B;female starts600mslater in B. Timing/no-overlap/hash/decode verified;owner preference pending;not automated event recognition."
+    },
+    {
+      "id": "line-boil-lighthouse",
+      "source": "docs/experiments/line-boil-lighthouse-2026-11-27.md",
+      "basis": "executed_bounded_trial",
+      "index_note": "One8s landscape A/B conducted. Technical registration/decode/reopen passed;owner rejects B as unnatural vibration of rigid architecture and prefers A. Negative creative result;not adopted,not a film or general animation qualification."
+    },
+    {
+      "id": "exploded-view-module",
+      "source": "docs/experiments/exploded-view-module-2026-11-28.md",
+      "basis": "executed_bounded_trial",
+      "index_note": "One8s silent landscape native Blender A/B;technical checks pass. Owner accepts both treatments,A preferred for this module only;no universal ranking.15min preparation cap missed. Original threepart geometry,not LiquidPhotos or a publishedfilm."
     }
   ]
 }

@@ -1,11 +1,23 @@
 # Framewright roadmap
 
-Updated26November2026. Version **0.12.0**: [selected-delivery recovery scope](release-notes-0.12.0.md). [GitHub release](https://github.com/markoblogo/framewright/releases/tag/v0.12.0) and exact assets determine public availability. Previous published baseline:[0.11.0](release-notes-0.11.0.md).
+Updated 28 November 2026. Version **0.12.0**: [selected-delivery recovery scope](release-notes-0.12.0.md). [GitHub release](https://github.com/markoblogo/framewright/releases/tag/v0.12.0) and exact assets determine public availability. Previous published baseline:[0.11.0](release-notes-0.11.0.md).
 [Current work and protected waits](next-cycle.md) govern execution; the
 [archived operational history](history/next-cycle-through-2026-11-14.md) preserves superseded status text.
 This is the priority and milestone map. A roadmap entry does not start production,
 a tool trial, spending, publication or a release. Keep the selected direction stable;
 changes of priority require an owner decision or an explicitly delegated choice.
+
+## Studio production operations —27November owner selection
+
+[Production plan and resource budgets](studio-production-management.md),M4/R09:first local business-function slice over existing project/cost mechanisms. Client/partner obligations first;committed deadlines,internal targets,blocked waits and at most5active items. Separate expiring/conditional credit pools,planned allocations,reservations and actual charges;no guaranteed renewals or provider dispatcher. [Zopia partnership/review](research/zopia-creator-partnership-2026-11-27.md) was selected on 27 November; its elapsed internal target is not a committed deadline. Tulvo capability-card game is conditional next slot,without obligations;Plaud waits for its device. Two PlayMCP walking games and reusable partner learning games are queued. Flow entitlement/refresh must be verified. No Radar resumption or new automation. Owner-selected 28 November consolidation may merge these additions without a release.
+
+## Market reference —27November2026
+
+[AI editor/agent screen](research/ai-video-editors-market-2026-11-27.md),M3/M4,R05/R09:retain24 labels as dated reference;queue only two conditional reserve probes(Editroom,Daydream). Proposed differentiation strengthens the existing research-driven studio positioning;it does not adopt a rebrand or build another NLE. No production priority,account,installation or spending change.
+
+## Creative agency direction —27November2026
+
+[Owner-selected operating direction](agency-operating-model.md):extend the production studio with research/tool selection,resource economics,client/partner commitments and communication,and own media;games/worlds are first-class products. Build on the existing checkpoints/cost ledger,not a parallel CRM or publisher. Ordered proposed slices:relationships/commitments → actual resource reconciliation → one complete real project/follow-up. Maps toM1/M2/M3/M4,R05/R09,SOCIAL-01;independent transfer remainsM6/REL-D. [Slice1 relationship/correspondence tracking is now implemented](studio-relationships.md) on the existing checkpoint/cost-report foundation,with the owner-selected mail reconciliation. The remaining slices are proposed. Owner controls all writing/sending in another thread;Framewright observes and updates records. No new production,outreach,public rebrand or release is activated. Existing client/partner priorities and pauses remain.
 
 ## Current production order
 
@@ -14,12 +26,12 @@ changes of priority require an owner decision or an explicitly delegated choice.
 trustworthy storage/current state → selected-package recovery → bounded internal
 trials → two or three owner-selected game reviews → narrow release assessment.
 This orders existing M1–M4/RV/R05 work; it starts no deletion,new film,spend or release.
-Radar production is paused through29November inclusive. Quixote and Zopia waits remain.
+Radar production is paused through29November inclusive. Quixote remains frozen;Zopia was separately owner-activated27November(see business operations below).
 Step1 is complete in read-only/documentation scope; see [audit](audits/step1-order-2026-11-26.md).
-Move2 recent selected-delivery recovery [passed on Radar18](experiments/radar18-selected-delivery-recovery-2026-11-26.md) using existing bindings; same-Mac isolated process,not independent-user or clean-machine proof. VIDEO-MD-01 [passed boundary-only OTIO/relocated library reopen](experiments/video-md-otio-reopen-2026-11-26.md); no current GUIeditor qualification. CAPSULE-RECIPE-01 [passed curated offline recipe portability](experiments/capsule-recipe-2026-11-26.md);no automatic semantic recovery or video-generation qualification. REVERSE-STYLE-01 completed its bounded known-edit comparison;MUSIC-CUE ordinary-track A/B was owner-accepted,both good with stronger music-picture linkage in B. Selected five scopes closed. Next are two owner-selected game reviews(third optional) and narrow release assessment;necessary small preparatory probes follow the [agreed warm-up format](studio-strengthening-plan-2026-11-26.md#agreed-working-format--small-warm-ups). No new game or release is started. Storage cleanup was not performed;check current space before execution.
+Move2 recent selected-delivery recovery [passed on Radar18](experiments/radar18-selected-delivery-recovery-2026-11-26.md) using existing bindings; same-Mac isolated process,not independent-user or clean-machine proof. VIDEO-MD-01 [passed boundary-only OTIO/relocated library reopen](experiments/video-md-otio-reopen-2026-11-26.md); no current GUIeditor qualification. CAPSULE-RECIPE-01 [passed curated offline recipe portability](experiments/capsule-recipe-2026-11-26.md);no automatic semantic recovery or video-generation qualification. REVERSE-STYLE-01 completed its bounded known-edit comparison;MUSIC-CUE ordinary-track A/B was owner-accepted,both good with stronger music-picture linkage in B. Selected five scopes closed. Subsequent Toy Town, Rooms, Slow Roads and Bruno Simon reviews now provide real source-led reuse cases; each retains its own technical, creative and publication boundaries. v0.12.0 was published; broader agency work continues as unreleased development, without making every queue item a release blocker.
 No requirement to exhaust the whole tool queue before a release.
 
-[26November local v0.12readiness](release-readiness-0.12.0-2026-11-26.md) now pins the scope and passing bounded archive/recovery/upgrade checks,with initial failures and scoped repairs retained. Full integrated-head checks and owner release decision remain. Game reviews are later reuse evidence,not mandatory production gates.
+[26 November local readiness](release-readiness-0.12.0-2026-11-26.md) retains the original scope, failures and bounded repairs. The subsequent v0.12.0 prerelease is published. Its earlier pending integration/release language is historical; current work consolidates later additions without a version bump or new release.
 
 ## Apply production memory in the next cycle
 

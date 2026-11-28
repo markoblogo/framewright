@@ -377,10 +377,11 @@
             "shot-recipe"
           ],
           "version": "0.1.0 commit c11f1bd8fd3edd26a40e8f45be828be685417700",
-          "scope": "One silent 12s authored fixture, exact two cut boundaries; 2 of 3 technique labels align with known source route, 3D screen capture described as 3D render. HTML and VIDEO.md output retained.",
+          "scope": "One silent 12s authored fixture, exact two cut boundaries; 2 of 3 technique labels align with known source route, 3D screen capture described as 3D render. HTML and VIDEO.md output retained. Applied74s Slow Roads follow-up:8/9editorial cuts exact;extra settings/fade boundaries and inaccurate origin summary.",
           "evidence": "tested",
           "sources": [
-            "docs/experiments/reverse-video-rea-2026-11-25.md"
+            "docs/experiments/reverse-video-rea-2026-11-25.md",
+            "docs/experiments/slow-roads-road-background-2026-11-27.md"
           ],
           "examples": [],
           "quality": {
@@ -411,13 +412,13 @@
             "controllability": {
               "status": "limitation_observed",
               "provenance": "operator_observation",
-              "note": "Exact boundaries and explicit hypotheses; browser capture method not recovered.",
-              "source": "docs/experiments/reverse-video-rea-2026-11-25.md"
+              "note": "Known74s edit:8/9actual cuts exact,one267ms early;12recipe joins include3continuous-source joins. Extra UI/season/fade events require manual interpretation.",
+              "source": "docs/experiments/slow-roads-road-background-2026-11-27.md"
             }
           },
           "technical": {
             "status": "partial",
-            "scope": "Two exact cut boundaries and output package; capture-route misclassification explicitly retained."
+            "scope": "Original baseline plus guarded74s follow-up;native reports written.8/9editorial cuts exact;origin/live-action/AI guesses rejected. No audio/VLM/OCR qualification."
           },
           "owner_evaluation": {
             "status": "not_recorded",
@@ -431,8 +432,10 @@
             "cost": "No paid purchase; local compute unpriced"
           },
           "limitations": [
-            "Single fixture; no generalized method accuracy or semantic validation.",
-            "No audio or VLM evaluation."
+            "Two bounded inputs,not general analysis accuracy.",
+            "Visual game changes are not automatically editorial cuts.",
+            "Pixel-statistic live-action/AI provenance unreliable on known browser-game footage.",
+            "No audio/OCR/VLM evaluation."
           ],
           "alternatives": [
             {
@@ -1036,7 +1039,8 @@
         "graphics"
       ],
       "inputs": [
-        "composition"
+        "composition",
+        "video"
       ],
       "rights_class": "conditional",
       "licence_note_sha256": "dbf6191614f5ffae110034c833e2fcab2ac4270cb59ed6b08629342bf44e6db1",
@@ -1419,6 +1423,92 @@
             "native export",
             "MP4",
             "routing diagram"
+          ],
+          "granularity": "specific_bounded_trial"
+        },
+        {
+          "id": "openmotion--owned-reference-native-edit",
+          "tasks": [
+            "video",
+            "graphics"
+          ],
+          "inputs": [
+            "video"
+          ],
+          "styles": [
+            "fictional-editor-workbench"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "manual-reference-reconstruction",
+            "editable-svg",
+            "native-versioned-export",
+            "scoped-label-colour-revision"
+          ],
+          "version": "fcbaa2b;native HyperFrames;HTML/SVG subcomposition",
+          "scope": "Owned10s Radar18 reference;manual/source-assisted native reconstruction,independent reopen,label/colour change and two native exports;typography mismatch retained.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/openmotion-reference-edit-2026-11-27.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "limitation_observed",
+              "provenance": "operator_observation",
+              "note": "Native text readable in sampled frames but visibly different serif fallback;reference typography not preserved.",
+              "source": "docs/experiments/openmotion-reference-edit-2026-11-27.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Persistent editor,cursor,camera and state changes reconstructed;native encoded samples inspected.",
+              "source": "docs/experiments/openmotion-reference-edit-2026-11-27.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Draft repeat/backwards/fresh-page raster exact;not native final pixel-repeat qualification.",
+              "source": "docs/experiments/openmotion-reference-edit-2026-11-27.md"
+            },
+            "artifacts": {
+              "status": "limitation_observed",
+              "provenance": "operator_observation",
+              "note": "Initial native composition lint failures repaired;native font mismatch remains.",
+              "source": "docs/experiments/openmotion-reference-edit-2026-11-27.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Independent source reopen;only CONFIG label/colour differ;two immutable native versions exported.",
+              "source": "docs/experiments/openmotion-reference-edit-2026-11-27.md"
+            }
+          },
+          "technical": {
+            "status": "partial",
+            "scope": "Two10s960x54030fps300frame silent native exports fully verified;reopen/source edit passed. Native typography differs from reference/draft."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "Owner asked to retain the bounded result on27November; native font limitation remains. No separate creative fidelity rating or blanket adoption recorded."
+          },
+          "resources": {
+            "hardware": "Current macOSarm64;existing Chrome/node/runtime;Work storage",
+            "time": "20minute preparation budget;native export/QA/packaging separate;no benchmark",
+            "cost": "No paid requests,new models or installation;local work/compute unpriced"
+          },
+          "limitations": [
+            "Manual/source-assisted reconstruction,not blind or automatic video analysis.",
+            "Native font differs from source/draft;exact typography not qualified.",
+            "Interactive editor display/use not checked;no automatic browser opening."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "OpenMotion",
+            "reference reconstruction",
+            "editable project",
+            "native export",
+            "label change"
           ],
           "granularity": "specific_bounded_trial"
         }
@@ -2271,6 +2361,285 @@
             "comic photoreal closing"
           ],
           "granularity": "specific_production_application"
+        },
+        {
+          "tasks": [
+            "narration"
+          ],
+          "inputs": [
+            "text"
+          ],
+          "styles": [
+            "deadpan-tech-review"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "local-english-narration",
+            "multi-voice-dialogue",
+            "manual-reaction-cue"
+          ],
+          "version": "KokoroONNX0.6.1/modelv1.0;am_michael/af_bella",
+          "evidence": "tested",
+          "scope": "One170.1667s YouTube/50.0333s TikTok review and12s reaction-timing A/B;owner listening/creative decision pending.",
+          "sources": [
+            "docs/productions/assbench-review.md",
+            "docs/experiments/assbench-reaction-cues-2026-11-27.md"
+          ],
+          "examples": [
+            {
+              "url": "https://youtu.be/9JRQmK6UOgQ",
+              "provenance": "owner_report",
+              "independent_visibility": "unknown",
+              "metrics": "unknown"
+            },
+            {
+              "url": "https://vt.tiktok.com/ZSsA1HtCE/",
+              "provenance": "owner_report",
+              "independent_visibility": "unknown",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Audio generation/timing measured;independent voice quality/listening pending.",
+              "source": "docs/productions/assbench-review.md"
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Audio generation/timing measured;independent voice quality/listening pending.",
+              "source": "docs/productions/assbench-review.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Audio generation/timing measured;independent voice quality/listening pending.",
+              "source": "docs/productions/assbench-review.md"
+            },
+            "artifacts": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Audio generation/timing measured;independent voice quality/listening pending.",
+              "source": "docs/productions/assbench-review.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Pinned source timing/crops,voice stems/captions and A/B picture hash;female timing changes600ms,no overlap.",
+              "source": "docs/productions/assbench-review.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Final files/aspects/full decode,measured AAC,retained cue schedule and shared delivery checks;not listening approval."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "Owner supplied both publication links27November2026. Separate voice-quality,creative or reaction-timing appraisal not reported.",
+            "source": "docs/productions/assbench-review.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64 CPU",
+            "formats": "1920x1080/1080x1920 H26430fps/AAC48k stereo",
+            "timing": "Local render elapsed not measured as controlled benchmark",
+            "cost": "No paid requests/new models;local compute cost unmeasured"
+          },
+          "limitations": [
+            "No independent whole-film listening or comedic-quality acceptance.",
+            "No automated event recognition or general model-quality ranking.",
+            "Source/media rights remain separate from tool licence."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "AssBench",
+            "two voices",
+            "deadpan",
+            "reaction timing"
+          ],
+          "granularity": "production_case",
+          "id": "kokoro--assbench-dual-voice-review"
+        },
+        {
+          "id": "kokoro--deft-review",
+          "tasks": [
+            "narration"
+          ],
+          "inputs": [
+            "text"
+          ],
+          "styles": [
+            "source-led-software-review"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "local-english-narration",
+            "normal-speed-scene-budget"
+          ],
+          "version": "KokoroONNX0.6.1/modelv1.0;af_heart",
+          "evidence": "tested",
+          "scope": "One92s1920x1080landscapeDeftreview;ownercreative/listeningpending. Catalogue assessment separate.",
+          "sources": [
+            "docs/productions/deft-skills-review.md"
+          ],
+          "examples": [
+            {
+              "url": "https://youtu.be/uXHUnbMXCkU",
+              "provenance": "owner_report",
+              "independent_visibility": "unknown",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Audio generation/timing measured;independent listening and creative judgment pending.",
+              "source": "docs/productions/deft-skills-review.md"
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Audio generation/timing measured;independent listening and creative judgment pending.",
+              "source": "docs/productions/deft-skills-review.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Audio generation/timing measured;independent listening and creative judgment pending.",
+              "source": "docs/productions/deft-skills-review.md"
+            },
+            "artifacts": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Audio generation/timing measured;independent listening and creative judgment pending.",
+              "source": "docs/productions/deft-skills-review.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Tennormal-speed takes measured;overlongwording shortened,no timestretch;WAV/cues retained.",
+              "source": "docs/productions/deft-skills-review.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "TenWAVtakes,normal-speedfit,sceneplacements andfinalAACdecode;not listeningapproval."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "Owner supplied YouTube publication URL28November2026;separate creative/listening/cover appraisal not reported. Both remain distinct from publication.",
+            "source": "docs/productions/deft-skills-review.md"
+          },
+          "resources": {
+            "hardware": "ExistingmacOSarm64,externalstudio",
+            "time": "Rendertimereceiptretained;activeeffort,peakmemory andsavingsunknown",
+            "cost": "No paidcalls,installs ornewmodels;localcomputeunpriced"
+          },
+          "limitations": [
+            "Landscapeonly.",
+            "No runtimeDeftMCP/AskAI evaluation orthirdpartyskill execution.",
+            "Voice,mix,cover andcreativeacceptancepending;approximatephraseSRT."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Deft",
+            "agent skills",
+            "markoblogo",
+            "directory review"
+          ],
+          "granularity": "production_case"
+        },
+        {
+          "id": "kokoro--bruno-simon-review",
+          "tasks": [
+            "narration"
+          ],
+          "inputs": [
+            "text"
+          ],
+          "styles": [
+            "relaxed-browser-world-tour"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "local-english-narration",
+            "normal-speed-scene-budget"
+          ],
+          "version": "KokoroONNX0.6.1/modelv1.0;af_heart",
+          "evidence": "tested",
+          "scope": "One 98-second landscape owner-screencast review; technical and sampled visual checks passed, owner creative/listening/cover review pending. No site tool assessment.",
+          "sources": [
+            "docs/productions/bruno-simon-portfolio-review.md"
+          ],
+          "examples": [
+            {
+              "url": "https://youtu.be/_ziZIZ9nj0w",
+              "provenance": "owner_report",
+              "independent_visibility": "unknown",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Nine normal-speed takes measured and placed; no independent listening-quality verdict.",
+              "source": "docs/productions/bruno-simon-portfolio-review.md"
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Nine normal-speed takes measured and placed; no independent listening-quality verdict.",
+              "source": "docs/productions/bruno-simon-portfolio-review.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Nine normal-speed takes measured and placed; no independent listening-quality verdict.",
+              "source": "docs/productions/bruno-simon-portfolio-review.md"
+            },
+            "artifacts": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Nine normal-speed takes measured and placed; no independent listening-quality verdict.",
+              "source": "docs/productions/bruno-simon-portfolio-review.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Nine normal-speed takes measured and placed; no independent listening-quality verdict.",
+              "source": "docs/productions/bruno-simon-portfolio-review.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Nine measured natural-speed takes fit their scene slots; final AAC decode passed, not listening approval."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "Owner supplied the YouTube publication URL on 28 November 2026. Separate creative/listening/cover appraisal not reported.",
+            "source": "docs/productions/bruno-simon-portfolio-review.md"
+          },
+          "resources": {
+            "hardware": "Existing macOS arm64 stack; external studio",
+            "time": "Render receipts retained, not controlled performance or labour measurements",
+            "cost": "No paid calls, installs or new models; local compute unpriced"
+          },
+          "limitations": [
+            "Landscape only; no site tool assessment.",
+            "Sampled visual inspection, not whole-film human motion or listening approval.",
+            "Approximate phrase SRT; source/media rights separate from tool licence."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Bruno Simon",
+            "portfolio",
+            "browser world",
+            "sea driving"
+          ],
+          "granularity": "production_case"
         }
       ]
     },
@@ -4776,6 +5145,938 @@
             "Jelly Being"
           ],
           "granularity": "executed_case"
+        },
+        {
+          "id": "ffmpeg--pink-wig-party-robot",
+          "tasks": [
+            "video",
+            "editing",
+            "audio"
+          ],
+          "inputs": [
+            "video",
+            "audio"
+          ],
+          "styles": [],
+          "style_basis": "authored_editorial",
+          "techniques": [
+            "colour-correction",
+            "subject-focused-replay",
+            "continuous-music-bed",
+            "local-look-comparison"
+          ],
+          "version": "FFmpeg8.0.1;Python3.14/NumPy/Pillow;no new install",
+          "scope": "One25.133s shared vertical comedy master:full owner-supplied scene then1.818xclose-up replay,static balanced grade,continuous Alpha x with original-18dB;one cover,two platform copy blocks.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/pink-wig-party-robot.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Real-frame PARTY MODE cover readable full/reduced;no narration subtitles requested.",
+              "source": "docs/productions/pink-wig-party-robot.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Sampled actual encoded frames show full scene then live close-up at1x;no full-motion subjective verdict.",
+              "source": "docs/productions/pink-wig-party-robot.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Owner creative/listening assessment pending.",
+              "source": "docs/productions/pink-wig-party-robot.md"
+            },
+            "artifacts": {
+              "status": "limitation_observed",
+              "provenance": "operator_observation",
+              "note": "Source compression/motion blur and edge-reaching wand tips remain;no synthetic detail claim.",
+              "source": "docs/productions/pink-wig-party-robot.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Pinned frame ranges,grade,crop,music offset and-18dBsource gain;one actual master/cover for both platforms.",
+              "source": "docs/productions/pink-wig-party-robot.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "754frames,full decode,1080x1920 H264/AAC48k30fps;mix-15.4LUFS/truepeak-4.4dBFS;source hashes and actual encoded-frame/cover inspection;standard page full browser regression passes."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "Owner supplied both publication URLs26November. Separate creative/listening verdict not reported;publication is not independent uploaded-byte/visibility proof.",
+            "source": "docs/productions/pink-wig-party-robot.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64;external studio outputs;existing local FFmpeg/NumPy/Pillow",
+            "formats": "25.133s1080x1920H264/AAC;common1080x1920JPEG",
+            "timing": "80.77s successful analysis/audio/render;active labour unknown",
+            "cost": "No paid/model calls;local compute unpriced"
+          },
+          "limitations": [
+            "Owner listening and creative verdict pending.",
+            "Source compression/motion blur remains;crop/upscale does not recover detail.",
+            "Spectral change candidate is not verified beat/downbeat.",
+            "Source/video/music reuse rights unverified;quiet original does not clear them."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "pink wig",
+            "robot vacuum",
+            "party replay",
+            "colour correction",
+            "shared Shorts TikTok master"
+          ],
+          "granularity": "production_case"
+        },
+        {
+          "id": "ffmpeg--null-cone-english-localisation",
+          "tasks": [
+            "video",
+            "editing",
+            "audio"
+          ],
+          "inputs": [
+            "video",
+            "audio"
+          ],
+          "styles": [
+            "dark-science-particle-explainer"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "proportional-reframing",
+            "source-label-replacement",
+            "measured-narration-time-map",
+            "music-bed-mix"
+          ],
+          "version": "Existing FFmpeg8.0.1;Pillow;KokoroONNXv1.0am_michael;Whisper-small transcript aid",
+          "evidence": "tested",
+          "scope": "Supplied square animated explainer to187.433s landscape English YouTube;no neural background reconstruction.",
+          "sources": [
+            "docs/productions/quantum-gravity-null-cone-en.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "English headings/diagram labels and cover inspected full size and reduced cover;source text crops/patches retained.",
+              "source": "docs/productions/quantum-gravity-null-cone-en.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Original moving particle diagrams retained,retimed per measured normal-speed English narration;not new generative motion.",
+              "source": "docs/productions/quantum-gravity-null-cone-en.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No new drawing or generative identity test;source animation preserved.",
+              "source": "docs/productions/quantum-gravity-null-cone-en.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Sampled crop-tip and Russian-label defects corrected;opaque masks remain visible as intentional label backings.",
+              "source": "docs/productions/quantum-gravity-null-cone-en.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Explicit per-shot crop/mask/time map and isolated correction recipes;source integrity checked.",
+              "source": "docs/productions/quantum-gravity-null-cone-en.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "5623frames1080p30 full decode;source hash;timed English voice/SRT;sampled crop/mask/OCR;measured mix."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "Awaiting owner picture/listening review."
+          },
+          "resources": {
+            "hardware": "Current macOSarm64,Work storage,existing local runtimes",
+            "formats": "1920x1080/30fps H264AAC;cover1280x720",
+            "timing": "Uncontrolled production time;not a benchmark",
+            "cost": "No paid requests/new models;local work/compute unpriced"
+          },
+          "limitations": [
+            "Opaque text backings can cover underlying artwork where source captions overlap it.",
+            "ASR and sampled frames do not establish continuous listening/viewing acceptance.",
+            "No general arbitrary-video text removal or neural inpainting qualification."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "English localisation",
+            "Russian labels",
+            "square to landscape",
+            "science explainer"
+          ],
+          "granularity": "executed_case"
+        },
+        {
+          "id": "ffmpeg--funeral-tech-shared-short",
+          "tasks": [
+            "video",
+            "editing",
+            "audio"
+          ],
+          "inputs": [
+            "video"
+          ],
+          "styles": [
+            "native-footage-comedy-short"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "cut-only-recut",
+            "english-editorial-cards",
+            "original-live-audio-normalisation"
+          ],
+          "version": "Existing FFmpeg8.0.1 and Pillow",
+          "evidence": "tested",
+          "scope": "One28s shared native-portrait footage recut;not generative animation or automated interactivity analysis.",
+          "sources": [
+            "docs/productions/funeral-interactive-short.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "English gag cards and cover inspected in encoded samples and270px cover.",
+              "source": "docs/productions/funeral-interactive-short.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Original camera movement,screen animation and musicians retained at real-time speed.",
+              "source": "docs/productions/funeral-interactive-short.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No new drawings or identity-generation test.",
+              "source": "docs/productions/funeral-interactive-short.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Original compression remains;proportions preserved,modest fixed grade.",
+              "source": "docs/productions/funeral-interactive-short.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Explicit three source ranges,timed PNG overlays and retained recipe.",
+              "source": "docs/productions/funeral-interactive-short.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "28s1080x1920/30fps840frames full decode; sampled encoded frames, cover and fixed delivery checked."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "Owner creative and listening review pending."
+          },
+          "resources": {
+            "hardware": "Current macOSarm64,Work external storage",
+            "formats": "Shared1080x1920/30fps H264AAC;JPEG cover",
+            "timing": "Uncontrolled production time,not benchmark",
+            "cost": "No paid requests or new models;local work unpriced"
+          },
+          "limitations": [
+            "Original source compression remains;upscaling is not detail recovery.",
+            "Source location, interactive mechanism and underlying reuse rights not verified.",
+            "Sampled QA is not owner creative or listening approval."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "funeral tech",
+            "portrait recut",
+            "original live band",
+            "comedy short"
+          ],
+          "granularity": "executed_case"
+        },
+        {
+          "id": "ffmpeg--toy-town-native-landscape-pilot",
+          "tasks": [
+            "video",
+            "editing",
+            "screen-capture"
+          ],
+          "inputs": [
+            "video"
+          ],
+          "styles": [
+            "low-poly-town"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "native-gameplay-capture",
+            "proportional-landscape-crop",
+            "editorial-plaques",
+            "palette-switch",
+            "fixed-step-native-canvas-capture",
+            "continuous-camera-motion",
+            "freeze-and-return",
+            "photoreal-reference-dissolve",
+            "ducked-library-soundtrack"
+          ],
+          "version": "FFmpeg 8.0.1;native browser VP8 capture",
+          "evidence": "tested",
+          "scope": "70s YouTube walkthrough with3photo reimaginings,English voice and soundtrack,following accepted steady-camera pilot.Owner requests only missing cover;publication package prepared.",
+          "sources": [
+            "docs/productions/toy-town-review.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Small English feature plaques;AI reimaginings explicitly labelled;three photoreal states inspected at640x360.",
+              "source": "docs/productions/toy-town-review.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Pilotv2 accepted for smoothness;full film reuses fixed-step native capture with exact stop/return anchors and intentional pauses only for photo inserts. Reused aerial excerpts replace too-close walls.",
+              "source": "docs/productions/toy-town-review.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No generated imagery;no separate drawing-stability benchmark.",
+              "source": "docs/productions/toy-town-review.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Generated photos approximate reference composition,not exact geometry reconstruction;labels separate them from gameplay. Native720p footage upscaled proportionally to1080p.",
+              "source": "docs/productions/toy-town-review.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Retained1440-frame source capture manifest,shot table,stop-frame matches,photo originals and deterministic dissolve/voice/music envelopes.",
+              "source": "docs/productions/toy-town-review.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Pilotv2:12s360frames.Full-v1b:70s2100frames1920x1080H264/AAC,complete decode;3encoded stop-anchor comparisons mean<0.001RGB/320x180,24timeline views,3reduced photo-label views,near-black final.AudioI−20.11LUFS,TP−1.83dBTP;not listening acceptance."
+          },
+          "owner_evaluation": {
+            "status": "accepted_retained_scope",
+            "scope": "Steady-camera pilotv2 accepted.Full film accepted in packaging follow-up;owner supplied YouTube VfdXpggan5A.No independent listening,upload identity,cover choice or audience measurement.",
+            "source": "docs/productions/toy-town-review.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64,Ego Lite",
+            "formats": "12s1280x720silent pilot;70s1920x1080H264/AAC review",
+            "timing": "Not independently benchmarked",
+            "cost": "3explicitly requested built-in image generations;no partner-platform credit usage/new models;local compute unpriced."
+          },
+          "limitations": [
+            "No independent listening,public visibility,uploaded-file identity,actual cover selection or metrics verification;owner-reported publication retained.",
+            "Fixed-clock capture does not measure native live browser performance.",
+            "Photo reference geometry approximate;imagined live scenes are clearly labelled.",
+            "1920x1080native footage is an upscale from1280x720."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Toy Town",
+            "walking review",
+            "native moving capture",
+            "video locations"
+          ],
+          "granularity": "executed_case"
+        },
+        {
+          "id": "ffmpeg--slow-roads-browser-review",
+          "tasks": [
+            "editing",
+            "audio"
+          ],
+          "inputs": [
+            "video",
+            "audio"
+          ],
+          "styles": [
+            "source-led-cozy-review"
+          ],
+          "style_basis": "authored_editorial",
+          "techniques": [
+            "portrait-recomposition",
+            "cross-dissolve",
+            "voice-ducking"
+          ],
+          "version": "FFmpeg9/Pillow/Kokoroaf_heart-v1",
+          "scope": "74s owner-source browser tour,personal comments,library music,cover/SRT/package;separate native-road capture crop. Full owner review pending.",
+          "evidence": "tested",
+          "sources": [
+            "docs/productions/slow-roads-review.md",
+            "docs/experiments/slow-roads-road-background-2026-11-27.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "source": "docs/productions/slow-roads-review.md",
+              "note": "14encoded480x270samples,English plaques/menus;1280x720cover inspected at480x270."
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "source": "docs/productions/slow-roads-review.md",
+              "note": "Real source driving retained;last17s continuous source;sampling is not whole-film human playback."
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "source": "docs/productions/slow-roads-review.md",
+              "note": "No generated gameplay/character drawing test."
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "source": "docs/productions/slow-roads-review.md",
+              "note": "Source game/compression and native road upscale limits retained;full files decode."
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "source": "docs/productions/slow-roads-review.md",
+              "note": "Timecoded source cuts/crop,music duck/fade,SRT and separate camera/crop test retained."
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "1920x1080/30fps74s2220frames,6s extras,full decode/aspect and shared page checks."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "12s pilot accepted;full film,sound and road-output review pending.",
+            "source": "docs/productions/slow-roads-review.md"
+          },
+          "resources": {
+            "hardware": "local Mac",
+            "formats": "1920x1080 and1080x1920 H26430fps/AAC48k stereo",
+            "timing": "84s/42s masters",
+            "cost": "no paid calls; exact compute usage unmeasured"
+          },
+          "limitations": [
+            "Full creative/listening/cover decision pending.",
+            "Road plate is an upscaled2Dcapture;no3Dexport or blanket client rights."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Moss Walker",
+            "cozy",
+            "gameplay review"
+          ],
+          "granularity": "production_case"
+        },
+        {
+          "tasks": [
+            "editing",
+            "video",
+            "audio"
+          ],
+          "inputs": [
+            "video",
+            "audio",
+            "text"
+          ],
+          "styles": [
+            "deadpan-tech-review"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "manual-reframing",
+            "multi-voice-dialogue",
+            "event-linked-reaction-cue",
+            "voice-ducking",
+            "platform-specific-captions"
+          ],
+          "version": "FFmpeg8.0.1/Pillow;KokoroONNX0.6.1/modelv1.0",
+          "evidence": "tested",
+          "scope": "One170.1667s YouTube/50.0333s TikTok review and12s reaction-timing A/B;owner listening/creative decision pending.",
+          "sources": [
+            "docs/productions/assbench-review.md",
+            "docs/experiments/assbench-reaction-cues-2026-11-27.md"
+          ],
+          "examples": [
+            {
+              "url": "https://youtu.be/9JRQmK6UOgQ",
+              "provenance": "owner_report",
+              "independent_visibility": "unknown",
+              "metrics": "unknown"
+            },
+            {
+              "url": "https://vt.tiktok.com/ZSsA1HtCE/",
+              "provenance": "owner_report",
+              "independent_visibility": "unknown",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Encoded landscape/portrait samples and full/reduced covers inspected;explicit version labels,private browser tabs cropped.",
+              "source": "docs/productions/assbench-review.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Real source rotations/pokes and deliberate close-up;short loaded-table holds replace blank loading screens.",
+              "source": "docs/productions/assbench-review.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No generated drawing/3D reconstruction benchmark;source mesh faults are review content.",
+              "source": "docs/productions/assbench-review.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Full decode/crops checked;menu/loading correction retained;source Mistral overscale is visible as source output.",
+              "source": "docs/productions/assbench-review.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Pinned source timing/crops,voice stems/captions and A/B picture hash;female timing changes600ms,no overlap.",
+              "source": "docs/productions/assbench-review.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Final files/aspects/full decode,measured AAC,retained cue schedule and shared delivery checks;not listening approval."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "Owner supplied both publication links27November2026. Separate voice-quality,creative or reaction-timing appraisal not reported.",
+            "source": "docs/productions/assbench-review.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64 CPU",
+            "formats": "1920x1080/1080x1920 H26430fps/AAC48k stereo",
+            "timing": "Local render elapsed not measured as controlled benchmark",
+            "cost": "No paid requests/new models;local compute cost unmeasured"
+          },
+          "limitations": [
+            "No independent whole-film listening or comedic-quality acceptance.",
+            "No automated event recognition or general model-quality ranking.",
+            "Source/media rights remain separate from tool licence."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "AssBench",
+            "two voices",
+            "deadpan",
+            "reaction timing"
+          ],
+          "granularity": "production_case",
+          "id": "ffmpeg--assbench-dual-voice-review"
+        },
+        {
+          "id": "ffmpeg--line-boil-lighthouse",
+          "tasks": [
+            "video",
+            "editing"
+          ],
+          "inputs": [
+            "image"
+          ],
+          "styles": [
+            "hand-drawn-paper"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "registered-contour-redraw",
+            "fixed-contact-anchors",
+            "synchronized-ab-comparison"
+          ],
+          "version": "FFmpeg8.0.1 with installed system Pillow raster adapter",
+          "evidence": "tested",
+          "scope": "Bounded8s silent landscape original-art A/B. Owner prefers A and rejects vibrating B for a rigid lighthouse. Not adopted;technical assembly remains tested.",
+          "sources": [
+            "docs/experiments/line-boil-lighthouse-2026-11-27.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Native and480x270encoded samples preserve heading and lighthouse silhouette.",
+              "source": "docs/experiments/line-boil-lighthouse-2026-11-27.md"
+            },
+            "motion": {
+              "status": "limitation_observed",
+              "provenance": "retained_report",
+              "source": "docs/experiments/line-boil-lighthouse-2026-11-27.md",
+              "note": "Owner rejects the10Hzcontour vibration for stationary lighthouse and sees little general illustration use;physical-vibration examples only untested hypotheses."
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Raw contact/registration patches pass,but owner rejects perceived structural vibration. No perceptual naturalness pass.",
+              "source": "docs/experiments/line-boil-lighthouse-2026-11-27.md"
+            },
+            "artifacts": {
+              "status": "limitation_observed",
+              "provenance": "operator_observation",
+              "note": "Endpoint-only contact drift failed first;20pxanchor zones repaired it. Encoded samples/full decode retained.",
+              "source": "docs/experiments/line-boil-lighthouse-2026-11-27.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Three original contour states,2.4pxoffset bound,exact cue times and independent-frame reproduction retained.",
+              "source": "docs/experiments/line-boil-lighthouse-2026-11-27.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "8s/240frames/1920x1080/30fps;three silent MP4s fully decoded;raw anchors and fresh-process sample frame match."
+          },
+          "owner_evaluation": {
+            "status": "rejected",
+            "scope": "B rejected;A preferred for this scene. This contour-jitter implementation not accepted as general illustration motion. No new test selected.",
+            "source": "docs/experiments/line-boil-lighthouse-2026-11-27.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64;16GiB total observed,not free memory",
+            "formats": "1920x1080,H264,30fps,no audio",
+            "timing": "529.7s to checked media package;per-arm render times retained,not a speed benchmark",
+            "cost": "No paid calls,new models or installs;local compute unpriced"
+          },
+          "limitations": [
+            "Only this original layered drawing and landscape aspect tested.",
+            "Whole-clip human motion/creative evaluation pending.",
+            "Local no-provider charge does not measure labour or energy.",
+            "Owner-rejected lighthouse treatment;do not select it from technical export success.",
+            "Possible particle/insect-wing vibration is only an owner hypothesis,not a capability or new commitment."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "line boil",
+            "living ink",
+            "lighthouse",
+            "hand drawn"
+          ],
+          "granularity": "production_case"
+        },
+        {
+          "id": "ffmpeg--unitree-avatar-bear-short",
+          "tasks": [
+            "video",
+            "editing",
+            "audio"
+          ],
+          "inputs": [
+            "video",
+            "audio"
+          ],
+          "styles": [
+            "real-footage-tech-comedy"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "manual-reframing",
+            "wide-context-insert",
+            "labelled-slow-replay",
+            "editorial-foley",
+            "shared-vertical-master"
+          ],
+          "version": "FFmpeg8.0.1/Pillow;existing numpy/soundfile audio adapter",
+          "evidence": "tested",
+          "scope": "One23s shared vertical source-led comedy short;owner reported both platform publications28November2026. No separate tool/creative rating or robotics performance test.",
+          "sources": [
+            "docs/productions/unitree-avatar-bear-short.md"
+          ],
+          "examples": [
+            {
+              "url": "https://youtube.com/shorts/061L0VamfC8?feature=share",
+              "provenance": "owner_report",
+              "independent_visibility": "unknown",
+              "metrics": "unknown"
+            },
+            {
+              "url": "https://vt.tiktok.com/ZSsALdrKQ/",
+              "provenance": "owner_report",
+              "independent_visibility": "unknown",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Encoded portrait/cover samples inspected;pair context retained with wider inserts,final face/hand cropped large.",
+              "source": "docs/productions/unitree-avatar-bear-short.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Actual source fight/operator/hand gestures;one clearly labelled0.7xreplay. No generated robot action.",
+              "source": "docs/productions/unitree-avatar-bear-short.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No generated drawing,mechanical-control or anatomy benchmark.",
+              "source": "docs/productions/unitree-avatar-bear-short.md"
+            },
+            "artifacts": {
+              "status": "limitation_observed",
+              "provenance": "operator_observation",
+              "note": "Initial pair loss/partial footer corrected;source wide inserts use dark blurred context backing.",
+              "source": "docs/productions/unitree-avatar-bear-short.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Pinned source ranges,pans,crops,speed,score/FX cues and one shared master/cover for both platforms.",
+              "source": "docs/productions/unitree-avatar-bear-short.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "1080x1920/30fps690frames;full decode,final AAC measurement,source/cover hashes and smart standard delivery checks."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "Owner supplied Shorts/TikTok publication links on28November2026;separate creative/listening/cover appraisal not reported.",
+            "source": "docs/productions/unitree-avatar-bear-short.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64,existing local stack",
+            "formats": "1080x1920 H26430fps/AAC48k stereo",
+            "timing": "Not measured as a controlled benchmark",
+            "cost": "No paid calls,new models or installs;local compute/effort unpriced"
+          },
+          "limitations": [
+            "Owner creative/listening/cover acceptance pending.",
+            "Manual source framing,no automatic object tracking or robotics performance verification.",
+            "Source/media rights separate from tool licence."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Unitree",
+            "bear mascot",
+            "robot comedy",
+            "Shorts",
+            "portrait"
+          ],
+          "granularity": "production_case"
+        },
+        {
+          "id": "ffmpeg--deft-directory-review",
+          "tasks": [
+            "video",
+            "editing",
+            "audio"
+          ],
+          "inputs": [
+            "video",
+            "audio"
+          ],
+          "styles": [
+            "source-led-software-review"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "fullframe-screencast",
+            "restrained-digital-push",
+            "editorial-labels",
+            "sparse-english-narration",
+            "ducked-music"
+          ],
+          "version": "FFmpeg8.0.1/Pillow;existingKokoroaf_heart",
+          "evidence": "tested",
+          "scope": "One92s1920x1080landscapeDeftreview;ownercreative/listeningpending. Catalogue assessment separate.",
+          "sources": [
+            "docs/productions/deft-skills-review.md"
+          ],
+          "examples": [
+            {
+              "url": "https://youtu.be/uXHUnbMXCkU",
+              "provenance": "owner_report",
+              "independent_visibility": "unknown",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Twentyencodedframes inspected;site headings,editoriallabels and ownerprofile/skills visible.",
+              "source": "docs/productions/deft-skills-review.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Actual browse/scroll actions with3.5%digitalpush;sampledvisualcheck only,not wholecliphumanmotionreview.",
+              "source": "docs/productions/deft-skills-review.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Real screencast;no generateddrawing,anatomy or3Dreconstruction test.",
+              "source": "docs/productions/deft-skills-review.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Browserchrome cropped;sourcepage transitions retained;separateSRT,no burnedvoicecaptions. Cover nativefromsource.",
+              "source": "docs/productions/deft-skills-review.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Ten pinnedsource ranges,crop,voicecues,musicducking andpublicationmanifest;no newcatalogueskill executed.",
+              "source": "docs/productions/deft-skills-review.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Full decode,92s2760frames1080p30fps,AAC48k;20encodedframes/cover sampled;fixeddeliverycheckseparate."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "Owner supplied YouTube publication URL28November2026;separate creative/listening/cover appraisal not reported. Both remain distinct from publication.",
+            "source": "docs/productions/deft-skills-review.md"
+          },
+          "resources": {
+            "hardware": "ExistingmacOSarm64,externalstudio",
+            "time": "Rendertimereceiptretained;activeeffort,peakmemory andsavingsunknown",
+            "cost": "No paidcalls,installs ornewmodels;localcomputeunpriced"
+          },
+          "limitations": [
+            "Landscapeonly.",
+            "No runtimeDeftMCP/AskAI evaluation orthirdpartyskill execution.",
+            "Voice,mix,cover andcreativeacceptancepending;approximatephraseSRT."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Deft",
+            "agent skills",
+            "markoblogo",
+            "directory review"
+          ],
+          "granularity": "production_case"
+        },
+        {
+          "id": "ffmpeg--bruno-simon-portfolio-review",
+          "tasks": [
+            "video",
+            "editing",
+            "audio"
+          ],
+          "inputs": [
+            "video",
+            "audio"
+          ],
+          "styles": [
+            "relaxed-browser-world-tour"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "fullframe-screencast",
+            "normal-speed-driving",
+            "editorial-labels",
+            "sparse-english-narration",
+            "ducked-music"
+          ],
+          "version": "FFmpeg8.0.1/Pillow;existingKokoroaf_heart",
+          "evidence": "tested",
+          "scope": "One 98-second landscape owner-screencast review; technical and sampled visual checks passed, owner creative/listening/cover review pending. No site tool assessment.",
+          "sources": [
+            "docs/productions/bruno-simon-portfolio-review.md"
+          ],
+          "examples": [
+            {
+              "url": "https://youtu.be/_ziZIZ9nj0w",
+              "provenance": "owner_report",
+              "independent_visibility": "unknown",
+              "metrics": "unknown"
+            }
+          ],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Sixteen encoded frames and native/reduced cover inspected; car and brief labels visible.",
+              "source": "docs/productions/bruno-simon-portfolio-review.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Real 1× driving; sampled frames only, not continuous human motion review.",
+              "source": "docs/productions/bruno-simon-portfolio-review.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No generated drawing or 3D reconstruction.",
+              "source": "docs/productions/bruno-simon-portfolio-review.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Chrome removed; original sea timing mismatch repaired with actual water footage.",
+              "source": "docs/productions/bruno-simon-portfolio-review.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Pinned source intervals/crop; two picture shots repaired while voice/cues/mix hashes stayed identical.",
+              "source": "docs/productions/bruno-simon-portfolio-review.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "98s/2940 frames/1080p30, full decode, sampled frames and shared delivery checks."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "Owner supplied the YouTube publication URL on 28 November 2026. Separate creative/listening/cover appraisal not reported.",
+            "source": "docs/productions/bruno-simon-portfolio-review.md"
+          },
+          "resources": {
+            "hardware": "Existing macOS arm64 stack; external studio",
+            "time": "Render receipts retained, not controlled performance or labour measurements",
+            "cost": "No paid calls, installs or new models; local compute unpriced"
+          },
+          "limitations": [
+            "Landscape only; no site tool assessment.",
+            "Sampled visual inspection, not whole-film human motion or listening approval.",
+            "Approximate phrase SRT; source/media rights separate from tool licence."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Bruno Simon",
+            "portfolio",
+            "browser world",
+            "sea driving"
+          ],
+          "granularity": "production_case"
         }
       ]
     },
@@ -6938,7 +8239,99 @@
         "3d"
       ],
       "rights_class": "conditional",
-      "licence_note_sha256": "924f372f6ed289b4743100dd7cbdfc313ce43fae4377917e6fe2df30e5509608"
+      "licence_note_sha256": "924f372f6ed289b4743100dd7cbdfc313ce43fae4377917e6fe2df30e5509608",
+      "applications": [
+        {
+          "id": "blender--exploded-light-module",
+          "tasks": [
+            "3d",
+            "video",
+            "graphics"
+          ],
+          "inputs": [
+            "3d"
+          ],
+          "styles": [
+            "product-illustration"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "exploded-view",
+            "part-callouts",
+            "emission-highlight",
+            "exact-reassembly"
+          ],
+          "version": "4.5.15 LTS build5afeabba6097 ARM64;Eevee Next8samples",
+          "evidence": "tested",
+          "scope": "One original threecomponent8s landscape A/B,native960x540scaled1280x720;manualCLI,not saved-shotexecutor. Owner accepts both treatments;A preferred only for this module.",
+          "sources": [
+            "docs/experiments/exploded-view-module-2026-11-28.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Three labels and leaderlines;both separated stacks remain in frame in encoded samples.",
+              "source": "docs/experiments/exploded-view-module-2026-11-28.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Shared clampedBezier open/hold/close and emitterhighlight;no random jitter. Owner accepts both treatments;A preferred for this fixture only.",
+              "source": "docs/experiments/exploded-view-module-2026-11-28.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Same procedural meshes,camera and exact return;no anatomy/AI image continuity test.",
+              "source": "docs/experiments/exploded-view-module-2026-11-28.md"
+            },
+            "artifacts": {
+              "status": "limitation_observed",
+              "provenance": "operator_observation",
+              "note": "Visible8sample surface/shadow grain;one initial clippingfailure corrected;preview lighting only.",
+              "source": "docs/experiments/exploded-view-module-2026-11-28.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Single distance parameter;native scenes/source/Fcurve checks retained. No photo reconstruction or arbitraryrig qualification.",
+              "source": "docs/experiments/exploded-view-module-2026-11-28.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "192posesperarm,component count/hashidentity,nativeFcurve translation,Zboundsseparation,framebounds,exactreturn;full decode and standarddelivery. No independent native scene reopen."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Both compact and wider separation accepted as viable. Compact A preferred only for this module;no universal winner. Reason not recorded.",
+            "source": "docs/experiments/exploded-view-module-2026-11-28.md"
+          },
+          "resources": {
+            "hardware": "Existing macOS arm64,Blender4.5.15 LTS",
+            "time": "Checkedmedia1081sfromrecordedstart;900scapmissed. Earlier scouting/laterpackagingextra;nativeprocess225.19s;peakmemory/activeeffortunknown.",
+            "cost": "No paid requests,installs ornewmodels;localcomputeunpriced."
+          },
+          "limitations": [
+            "Preview8samplegrain,not finalqualitylighting.",
+            "Original illustrativegeometry;not LiquidPhotos,photo-to3D orrealproductengineering.",
+            "Landscapeonly;no Blender5.3,arbitraryrigorGPUqualification.",
+            "Owner preference is case-only;preparation cap missed."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "exploded view",
+            "product illustration",
+            "three parts",
+            "light module",
+            "разборка",
+            "устройство прибора"
+          ],
+          "granularity": "specific_bounded_trial"
+        }
+      ]
     },
     "three-postprocessing": {
       "tasks": [
@@ -8385,7 +9778,94 @@
         "image"
       ],
       "rights_class": "conditional",
-      "licence_note_sha256": "e8611bd3ddd33fc06f805fe5fc56fdb0b2af3381d3c1a5efbee968c814979f48"
+      "licence_note_sha256": "71ab952be6513ab2c39c86718d8fd9c4fba7b4ef6da52bb226f21f921bee85da",
+      "applications": [
+        {
+          "id": "emerging-images--type0-lighthouse-reveal",
+          "tasks": [
+            "graphics",
+            "video"
+          ],
+          "inputs": [
+            "image"
+          ],
+          "styles": [
+            "pixel-grid-reveal"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "shader-reveal",
+            "absolute-time-seek",
+            "source-colour-preservation"
+          ],
+          "version": "e866c0287be4e1e3eb7a2bcfadf93ff731440f35;Three0.187;absolute-time and colour-output adapter",
+          "scope": "Matched8s silent type0 GLSL reveal on original Lighthouse still versus ordinary crossfade;not full React demo.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/emerging-images-8s-2026-11-26.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "source": "docs/experiments/emerging-images-8s-2026-11-26.md",
+              "note": "Ending full-frame source labels and illustration inspected;temporary transition pixelation intentional. No audience test."
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "source": "docs/experiments/emerging-images-8s-2026-11-26.md",
+              "note": "Continuous type0 pixel/grid/wipe reveal contrasted with matched uniform fade;not a complete film or gameplay motion test."
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "source": "docs/experiments/emerging-images-8s-2026-11-26.md",
+              "note": "Repeated/backwards samples and fresh-page effect raster match;final adapted PNG matches original source exactly."
+            },
+            "artifacts": {
+              "status": "limitation_observed",
+              "provenance": "operator_observation",
+              "source": "docs/experiments/emerging-images-8s-2026-11-26.md",
+              "note": "Raw manual gamma lightens shared sRGB workflow. Retained one-line output adapter corrects final pixels;other material types untested."
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "source": "docs/experiments/emerging-images-8s-2026-11-26.md",
+              "note": "Absolute-time progress replaces scroll;fixed crop/hold,repeat/out-of-order samples and native raw versus adapted colour check retained."
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Both240frame1080p silent masters and comparison decode;repeat/backwards/fresh-page raster checks;final source PNG exact after colour adapter."
+          },
+          "owner_evaluation": {
+            "status": "accepted_retained_scope",
+            "scope": "Owner adopts as additional tool with retained colour-output adaptation;tested type0 local scope only.",
+            "source": "docs/experiments/emerging-images-8s-2026-11-26.md"
+          },
+          "resources": {
+            "hardware": "Current macOS arm64;existing system Chrome/local capture runtime;Work storage.",
+            "time": "Usable adapted sample6m58s from preparation start;capture/check run85.453s;not a benchmark.",
+            "cost": "No paid requests,new weights or app install;local work/compute unpriced."
+          },
+          "limitations": [
+            "One original still,type0 only;other material types and complete React app not tested.",
+            "Colour-output and absolute-time adapters retained;raw workflow differs.",
+            "Intentional pixelation reduces readability during reveal;full detail returns at hold."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Emerging Images",
+            "Codrops",
+            "pixel reveal",
+            "crossfade"
+          ],
+          "granularity": "specific_bounded_trial"
+        }
+      ]
     },
     "paper-crumple": {
       "tasks": [
@@ -8397,7 +9877,94 @@
         "image"
       ],
       "rights_class": "conditional",
-      "licence_note_sha256": "41921e5c0774fbdaa0cbdf92140c785c61685f55d16be2e4f1739a66e4ceee2a"
+      "licence_note_sha256": "ee58912481d888f8bba8ff79c1d1290d5e6e8a9e74e90e50e804917fc9e2775d",
+      "applications": [
+        {
+          "id": "paper-crumple--native-vat-card-unfold",
+          "tasks": [
+            "graphics",
+            "video"
+          ],
+          "inputs": [
+            "image"
+          ],
+          "styles": [
+            "paper-card-unfold"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "native-vat-playback",
+            "mesh-unfold",
+            "absolute-time-seek"
+          ],
+          "version": "f84648b001dd13becda7a629ab5398cecfe3a252;Three0.187;authored kinematic/card adapter",
+          "scope": "Matched8s silent original-card native VAT unfold versus simple flat-card appearance;not full interactive demo or Houdini authoring.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/paper-crumple-8s-2026-11-27.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Main final card title/message inspected full-frame;embedded tiny art labels/thumbnail comprehension unqualified.",
+              "source": "docs/experiments/paper-crumple-8s-2026-11-27.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Native VAT mesh deformation and authored pose settle continuously from ball to flat card;not a still swap or interactive physics test.",
+              "source": "docs/experiments/paper-crumple-8s-2026-11-27.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Repeated/backwards samples and fresh-page raster match;final A/B PNGs exactly identical.",
+              "source": "docs/experiments/paper-crumple-8s-2026-11-27.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "All rendered vertex projections in frame at240times;sampled folds/UV inspected. No exhaustive self-intersection or collision proof.",
+              "source": "docs/experiments/paper-crumple-8s-2026-11-27.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Native loader/mesh/interpolation driven by fixed absolute time,shared ending pose and original art;viewport bounds verified.",
+              "source": "docs/experiments/paper-crumple-8s-2026-11-27.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "3x240frame1080p silent full-decode;repeat/backwards/fresh-page raster;exact final A/B PNG;all240vertex projections in view."
+          },
+          "owner_evaluation": {
+            "status": "accepted_retained_scope",
+            "scope": "Owner accepts effect and adopts into arsenal;reports noticeably livelier picture. Retained native baked-card/time/art/pose scope only.",
+            "source": "docs/experiments/paper-crumple-8s-2026-11-27.md"
+          },
+          "resources": {
+            "hardware": "Current macOS arm64;existing system Chrome/local capture runtime;Work storage.",
+            "time": "First paper sample5m39.5s;capture/check80.406s;not a benchmark.",
+            "cost": "No paid requests/new neural weights/app install;local work/compute unpriced."
+          },
+          "limitations": [
+            "Baked native mesh only;new geometry/simulation authoring,interactive physics and other machines untested.",
+            "Authored deterministic pose/art wrapper;not unmodified full interactive demo.",
+            "Framing/sampled fold checks are not exhaustive self-collision verification."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Paper Crumple",
+            "VAT",
+            "paper unfold",
+            "card reveal"
+          ],
+          "granularity": "specific_bounded_trial"
+        }
+      ]
     },
     "evilcharts": {
       "tasks": [
@@ -13292,6 +14859,748 @@
           "granularity": "specific_bounded_trial"
         }
       ]
+    },
+    "video-explainer": {
+      "tasks": [
+        "video",
+        "graphics",
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "5faec17250e6292f0fdf69a80f53a309ee0021a3eae8a7a2279a79ef12a77011",
+      "applications": [
+        {
+          "id": "video-explainer--silent-native-3d-ab",
+          "tasks": [
+            "video",
+            "3d",
+            "graphics"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [
+            "industrial-3d-explainer"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "continuous-camera",
+            "procedural-3d",
+            "protected-label-edit",
+            "native-local-export"
+          ],
+          "version": "be2f729161585be2482f6a5699e8cfb47da3daeb;HyperFrames0.9.79;Three.js0.149;GSAP3.14.2;system Chrome",
+          "scope": "Original12s silent landscape matched local rig comparison;one native plaque revision and same-Mac fresh-browser reopen. No generic full-pipeline or new-style qualification.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/video-explainer-12s-2026-11-26.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Station labels/document action readable in sampled full frames;no independent viewer-comprehension test.",
+              "source": "docs/experiments/video-explainer-12s-2026-11-26.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Continuous document travel,inspection sweep and connected stamp action;camera pullback and end hold.",
+              "source": "docs/experiments/video-explainer-12s-2026-11-26.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Seven sampled object/camera states match across wrappers and backwards seek;one fresh-page same-time raster exact after font fix.",
+              "source": "docs/experiments/video-explainer-12s-2026-11-26.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Early scanner/rod intersections and shared font race were corrected;sampled delivered frames inspected,not exhaustive geometry verification.",
+              "source": "docs/experiments/video-explainer-12s-2026-11-26.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Single native plaque edit changes only bounded label pixels;sampled state and independent reopen preserved.",
+              "source": "docs/experiments/video-explainer-12s-2026-11-26.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Both360frame12s1920x1080 no-audio exports fully decoded;7state samples/backwards seek;sampled native fresh-browser raster exact and protected plaque edit after shared font correction."
+          },
+          "owner_evaluation": {
+            "status": "accepted_retained_scope",
+            "scope": "Owner adopts as additional tool only;no A/B winner,primary-route replacement or untested-mode approval.",
+            "source": "docs/experiments/video-explainer-12s-2026-11-26.md"
+          },
+          "resources": {
+            "hardware": "Current macOS arm64;existing Chrome hardware Metal renderer;external Work storage.",
+            "time": "Native final report:1m 16.6s;baseline:32.373s;not controlled speed benchmark;authoring work unmeasured.",
+            "cost": "No paid provider calls or new model weights;local compute/work unpriced."
+          },
+          "limitations": [
+            "Silent3D only;other styles/audio/models/native review UI untested.",
+            "Shared authored font race and geometry defects fixed before delivery;not attributed to upstream.",
+            "One same-Mac fixture,not independent-machine portability or general quality proof."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Video Explainer",
+            "continuous3D",
+            "local silent rig"
+          ],
+          "granularity": "specific_bounded_trial"
+        }
+      ],
+      "inputs": [
+        "composition"
+      ]
+    },
+    "yumina": {
+      "tasks": [
+        "interface",
+        "software"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "a0f1689407d96994d7e77b574e3a6b22c37b2d18541b2f8a2f490b6517521b2a",
+      "applications": [
+        {
+          "id": "yumina--native-state-checkpoint",
+          "tasks": [
+            "interface",
+            "software"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [],
+          "style_basis": "executed_case",
+          "techniques": [
+            "state-checkpoint",
+            "message-rewind",
+            "database-backup-reopen"
+          ],
+          "version": "f44419c5f47325ee964c9f7a7d3310a0a640cf8d",
+          "scope": "Original three-choice native deterministic state fixture;direct route handlers and PGlite,not UI or AI play.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/yumina-state-2026-11-26.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "not_assessed",
+              "provenance": "operator_observation",
+              "note": "Nonvisual native state fixture;not assessed.",
+              "source": "docs/experiments/yumina-state-2026-11-26.md"
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "operator_observation",
+              "note": "Nonvisual native state fixture;not assessed.",
+              "source": "docs/experiments/yumina-state-2026-11-26.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "operator_observation",
+              "note": "Nonvisual native state fixture;not assessed.",
+              "source": "docs/experiments/yumina-state-2026-11-26.md"
+            },
+            "artifacts": {
+              "status": "not_assessed",
+              "provenance": "operator_observation",
+              "note": "Nonvisual native state fixture;not assessed.",
+              "source": "docs/experiments/yumina-state-2026-11-26.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Native rules,checkpoint,rewind,replay counters and independent-process backup restoration passed.",
+              "source": "docs/experiments/yumina-state-2026-11-26.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "20 native assertions and six fresh-process PGlite reopen checks;zero execution fetch attempts."
+          },
+          "owner_evaluation": {
+            "status": "accepted_retained_scope",
+            "scope": "Owner adopts as additional tool with local checkpoint-wiring repair caveat;no broader unmodified/UI/model/hosting qualification.",
+            "source": "docs/experiments/yumina-ui-state-2026-11-26.md"
+          },
+          "resources": {
+            "hardware": "Current Apple Silicon macOS;external Work storage.",
+            "time": "First filtered install17m9.9s;native body2.67s/full invocation95.2s;not benchmark.",
+            "cost": "No paid requests/new model weights;local work/compute unpriced."
+          },
+          "limitations": [
+            "No frontend,HTTP auth,AI dialogue or audible music playback tested.",
+            "Separate-process database read is not complete app restart or independent-machine portability."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Yumina",
+            "checkpoint",
+            "rewind"
+          ],
+          "granularity": "specific_bounded_trial"
+        },
+        {
+          "id": "yumina--native-ui-state-checkpoint",
+          "tasks": [
+            "interface",
+            "software"
+          ],
+          "inputs": [
+            "composition"
+          ],
+          "styles": [],
+          "style_basis": "executed_case",
+          "techniques": [
+            "native-sandbox-ui",
+            "state-checkpoint",
+            "page-reload"
+          ],
+          "version": "f44419c5f47325ee964c9f7a7d3310a0a640cf8d + Framewright checkpoint wiring patch;Vite6.4.1",
+          "scope": "Native local browser mini-game,HTTP auto-auth,rule actions,save/restore/page reload with local client repair. Stock UI partial.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/yumina-ui-state-2026-11-26.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Desktop screenshots show legible action/state/save controls and beacon/door state changes;no owner or audience comprehension test.",
+              "source": "docs/experiments/yumina-ui-state-2026-11-26.md"
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "operator_observation",
+              "note": "Not assessed in this non-video mini-game probe.",
+              "source": "docs/experiments/yumina-ui-state-2026-11-26.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "operator_observation",
+              "note": "Not assessed in this non-video mini-game probe.",
+              "source": "docs/experiments/yumina-ui-state-2026-11-26.md"
+            },
+            "artifacts": {
+              "status": "limitation_observed",
+              "provenance": "operator_observation",
+              "note": "Stock sandbox receives empty checkpoint list despite persisted saves;local wiring patch required. Vite required restart to serve changed source.",
+              "source": "docs/experiments/yumina-ui-state-2026-11-26.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Native UI choices,restart,live checkpoint list,restore and page reload verified against persisted state after client wiring repair.",
+              "source": "docs/experiments/yumina-ui-state-2026-11-26.md"
+            }
+          },
+          "technical": {
+            "status": "partial",
+            "scope": "Stock checkpoint list fails. With retained local client patch,13 bounded UI checks pass;backend persistence unchanged."
+          },
+          "owner_evaluation": {
+            "status": "accepted_retained_scope",
+            "scope": "Owner adopts as additional tool with local checkpoint-wiring repair caveat;no broader unmodified/UI/model/hosting qualification.",
+            "source": "docs/experiments/yumina-ui-state-2026-11-26.md"
+          },
+          "resources": {
+            "hardware": "Current Apple Silicon Mac;Work storage;Ego Lite.",
+            "time": "App dependency first install29m31.1s;patched Vite ready38.976s;other cold disk waits unbenchmarked.",
+            "cost": "No paid requests,new model weights or live inference;local work/compute unpriced."
+          },
+          "limitations": [
+            "Local upstream checkpoint wiring patch required for custom-UI save list.",
+            "Deterministic scene only;no dialogue,audio,hosting,backend restart or clean-machine qualification.",
+            "First setup heavy;development server required restart after file change on Work."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Yumina",
+            "native UI",
+            "checkpoint",
+            "local patch"
+          ],
+          "granularity": "specific_bounded_trial"
+        }
+      ]
+    },
+    "seed-tts-3-0": {
+      "tasks": [
+        "narration"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "aa4ae715a724e9361153546fb732831be4973c3f45703212286b1829ce514a5e"
+    },
+    "mai-image-2-7": {
+      "tasks": [
+        "illustration",
+        "graphics"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "a2792416add856bcce3be34e9f038ce81d02217f2256f96677d56ca79c8dc238"
+    },
+    "mai-image-2-7-flash": {
+      "tasks": [
+        "illustration",
+        "graphics"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "5a474e0a30ee65ab7db5dd88f1b0c65085581e96f299aa596c609191ba2b4d05"
+    },
+    "hy-world-2-1-panorama": {
+      "tasks": [
+        "illustration",
+        "3d"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "9304bd21546a415e4329c734a643a1f2d326e9f7c56ec591b74f7647e7c6b8ea"
+    },
+    "heygen-avatar-6": {
+      "tasks": [
+        "video"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "05ee90af8ff3d69d6959972ecbc86e320ff2e2d197b034bbbce18746502484d7"
+    },
+    "pixelfx": {
+      "tasks": [
+        "graphics",
+        "video"
+      ],
+      "inputs": [
+        "image"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "5c546875e714339564857b0b06851690800d2f35883fe97a970e173a59c24ecb",
+      "applications": [
+        {
+          "id": "pixelfx--collect-burst-lighthouse-palettes",
+          "tasks": [
+            "graphics",
+            "video"
+          ],
+          "inputs": [
+            "image"
+          ],
+          "styles": [
+            "pixel-particle-accent"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "native-collect-burst",
+            "absolute-time-seek",
+            "additive-light-composition"
+          ],
+          "version": "5294518ce7c72e48b6100a744596e0acf57f2826;authored scene/time/composition adapter",
+          "scope": "8s silent lighthouse switch-on with native collect-burst in amber and mint/cyan palettes.",
+          "evidence": "tested",
+          "sources": [
+            "docs/experiments/pixelfx-lighthouse-palettes-2026-11-27.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Both full-frame palette samples inspected;title remains clear.",
+              "source": "docs/experiments/pixelfx-lighthouse-palettes-2026-11-27.md"
+            },
+            "motion": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Native burst follows warm-up;beam continues gentle sweep.",
+              "source": "docs/experiments/pixelfx-lighthouse-palettes-2026-11-27.md"
+            },
+            "drawing_stability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Sampled repeat/backwards and fresh-page raster exact;41 palette alpha masks match.",
+              "source": "docs/experiments/pixelfx-lighthouse-palettes-2026-11-27.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Single-canvas wrapper fixes sampled mixed-layer raster instability;native composition audited only at2.2s on3backgrounds.",
+              "source": "docs/experiments/pixelfx-lighthouse-palettes-2026-11-27.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Fixed seed,time,emission anchor and palette;separate colour/light sheets retained.",
+              "source": "docs/experiments/pixelfx-lighthouse-palettes-2026-11-27.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "3x240frame1080p full decode/no audio;41 matched colour alpha masks;sampled repeat/fresh-page exact;native composition matches at2.2s/3backgrounds."
+          },
+          "owner_evaluation": {
+            "status": "not_recorded",
+            "scope": "Awaiting owner palette review."
+          },
+          "resources": {
+            "hardware": "Current macOS arm64,existing Chrome/Playwright/FFmpeg;Work storage.",
+            "time": "First stable sample19m34.887s including disk interruption;capture/check194.578s;not benchmark.",
+            "cost": "No paid requests/new models/install;local work/compute unpriced."
+          },
+          "limitations": [
+            "Native collect-burst only;full library/CLI/engine importers unqualified.",
+            "Authored time/composition wrapper;initial mixed-layer raster failure retained.",
+            "CombinedRGBA glow approximate;use normal colour plus additive light."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "PixelFX",
+            "pixel particles",
+            "event accent",
+            "lighthouse"
+          ],
+          "granularity": "specific_bounded_trial"
+        }
+      ]
+    },
+    "watabou-mfcg": {
+      "tasks": [
+        "video",
+        "map-generation"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "9ff3292d20ba78db83ccbfc1bff6a991fd6f187612ff9508b04760d7d959f3b4",
+      "applications": [
+        {
+          "id": "watabou-mfcg--video-location-source",
+          "tasks": [
+            "video",
+            "map-generation"
+          ],
+          "inputs": [],
+          "styles": [
+            "procedural-map"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "procedural-video-locations",
+            "native-export"
+          ],
+          "version": "Export metadata MFCG 0.11.5; current 0.12 preview not tested.",
+          "evidence": "tested",
+          "scope": "Generated Greenfair map; native SVG and JSON saved and inspected. Same JSON used in City Viewer. Owner adopted as video-location source; PNG export not executed.",
+          "sources": [
+            "docs/research/watabou-video-locations-2026-11-27.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Retained native map/viewer screenshots allow matching the settlement layout.",
+              "source": "docs/research/watabou-video-locations-2026-11-27.md"
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No video camera/motion qualification for this source in the export preflight.",
+              "source": "docs/research/watabou-video-locations-2026-11-27.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No generative or cross-scene continuity test.",
+              "source": "docs/research/watabou-video-locations-2026-11-27.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "SVG and JSON exported; PNG was menu-observed only.",
+              "source": "docs/research/watabou-video-locations-2026-11-27.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Explicit seed/map and native files retained; scope excludes untested controls.",
+              "source": "docs/research/watabou-video-locations-2026-11-27.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Native generated map, SVG and JSON; not an animation or historical-accuracy test."
+          },
+          "owner_evaluation": {
+            "status": "accepted_retained_scope",
+            "scope": "Owner explicitly adopted as a video-location source,27 November;no external renderer or finished-shot qualification.",
+            "source": "docs/research/watabou-video-locations-2026-11-27.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64, Ego Lite browser",
+            "time": "Not measured",
+            "cost": "No paid calls or new models;local compute unpriced"
+          },
+          "limitations": [
+            "Native generated map, SVG and JSON; not an animation or historical-accuracy test."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "video locations",
+            "fantasy city",
+            "Watabou",
+            "maps",
+            "establishing shot"
+          ],
+          "granularity": "specific_bounded_trial"
+        }
+      ]
+    },
+    "watabou-city-viewer": {
+      "tasks": [
+        "video",
+        "location-visualization"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "27c2eb81d583dc3148a588566915509f7f34e22ccbc780e7d5e520aa37bd25e7",
+      "applications": [
+        {
+          "id": "watabou-city-viewer--video-location-source",
+          "tasks": [
+            "video",
+            "location-visualization"
+          ],
+          "inputs": [
+            "json"
+          ],
+          "styles": [
+            "low-poly-town"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "procedural-video-locations",
+            "native-export"
+          ],
+          "version": "Live browser build on 2026-11-27; exact upstream revision UNKNOWN.",
+          "evidence": "tested",
+          "scope": "Imported the exact Greenfair JSON and exported native OBJ:400220 vertices/200410 faces; no material/UV/normal declarations. Owner adopted as video-location/blockout source. External-engine import remains unverified.",
+          "sources": [
+            "docs/research/watabou-video-locations-2026-11-27.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Retained native map/viewer screenshots allow matching the settlement layout.",
+              "source": "docs/research/watabou-video-locations-2026-11-27.md"
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No video camera/motion qualification for this source in the export preflight.",
+              "source": "docs/research/watabou-video-locations-2026-11-27.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No generative or cross-scene continuity test.",
+              "source": "docs/research/watabou-video-locations-2026-11-27.md"
+            },
+            "artifacts": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "OBJ has no UV/material/normal declarations; target renderer import unverified.",
+              "source": "docs/research/watabou-video-locations-2026-11-27.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Explicit seed/map and native files retained; scope excludes untested controls.",
+              "source": "docs/research/watabou-video-locations-2026-11-27.md"
+            }
+          },
+          "technical": {
+            "status": "partial",
+            "scope": "Matching 3D settlement and OBJ availability; not a polished external-engine scene or guaranteed detail continuity."
+          },
+          "owner_evaluation": {
+            "status": "accepted_retained_scope",
+            "scope": "Owner explicitly adopted as a video-location source,27 November;no external renderer or finished-shot qualification.",
+            "source": "docs/research/watabou-video-locations-2026-11-27.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64, Ego Lite browser",
+            "time": "Not measured",
+            "cost": "No paid calls or new models;local compute unpriced"
+          },
+          "limitations": [
+            "Matching 3D settlement and OBJ availability; not a polished external-engine scene or guaranteed detail continuity."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "video locations",
+            "fantasy city",
+            "Watabou",
+            "maps",
+            "establishing shot"
+          ],
+          "granularity": "specific_bounded_trial"
+        }
+      ]
+    },
+    "rooms-xyz": {
+      "tasks": [
+        "3d",
+        "video",
+        "storyboard"
+      ],
+      "rights_class": "noncommercial_only",
+      "licence_note_sha256": "b2543cf655e35fce5a5542a8e140bc570b0748b1f68513683b7a04758ab4d28f",
+      "applications": [
+        {
+          "id": "rooms-xyz--personal-creative-set-blockout",
+          "tasks": [
+            "3d",
+            "video",
+            "storyboard"
+          ],
+          "inputs": [
+            "native-room",
+            "library-assets"
+          ],
+          "styles": [
+            "voxel-diorama"
+          ],
+          "style_basis": "executed_case",
+          "techniques": [
+            "native-room-assembly",
+            "creator-room-remix",
+            "reversible-set-edit"
+          ],
+          "version": "Rooms Web UI27November2026;exact build UNKNOWN",
+          "evidence": "tested",
+          "scope": "Owner-adopted personal creative3object blockout and creator-room lighting/object remix;two unlisted saved copies reopened;visible native canvas capture,not native export.",
+          "sources": [
+            "docs/experiments/rooms-creative-video-sets-2026-11-27.md"
+          ],
+          "examples": [],
+          "quality": {
+            "readability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Native scene and named object properties inspected;review pilot labels readable at640x360.",
+              "source": "docs/experiments/rooms-creative-video-sets-2026-11-27.md"
+            },
+            "motion": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "Native scene preview seen;no controlled moving camera or complete smoothness test of authored set.",
+              "source": "docs/experiments/rooms-creative-video-sets-2026-11-27.md"
+            },
+            "drawing_stability": {
+              "status": "not_assessed",
+              "provenance": "not_assessed",
+              "note": "No generated imagery or continuity benchmark.",
+              "source": "docs/experiments/rooms-creative-video-sets-2026-11-27.md"
+            },
+            "artifacts": {
+              "status": "limitation_observed",
+              "provenance": "operator_observation",
+              "note": "Light graphics mode/limited lights in this browser;not a general platform result.",
+              "source": "docs/experiments/rooms-creative-video-sets-2026-11-27.md"
+            },
+            "controllability": {
+              "status": "observed",
+              "provenance": "operator_observation",
+              "note": "Grid insertion,Play,lighting,removal/undo/redo and two unlisted saved-copy reloads checked.",
+              "source": "docs/experiments/rooms-creative-video-sets-2026-11-27.md"
+            }
+          },
+          "technical": {
+            "status": "passed",
+            "scope": "Placement,Play,lighting/removal/undo/redo,two unlisted saves and reloads confirmed.Native canvas recording retained;no controlled camera,geometry export or timing benchmark."
+          },
+          "owner_evaluation": {
+            "status": "accepted",
+            "scope": "Owner explicitly adopted Rooms as additional personal creative tool;full review creative/listening decision pending.",
+            "source": "docs/experiments/rooms-creative-video-sets-2026-11-27.md"
+          },
+          "resources": {
+            "hardware": "macOS arm64,Ego Lite,Unity WebGL",
+            "time": "Active effort unknown;qualitative comparison only",
+            "cost": "No paid calls,new models,purchases or public publishing"
+          },
+          "limitations": [
+            "Controlled camera choreography and3D export remain unqualified.",
+            "Source creator retained;personal creative scope,no blanket client/ad permission.",
+            "Small blockout is not finished production design or proof of easy arbitrary worlds.",
+            "Light graphics/limited lights observed on this browser;not a universal performance verdict."
+          ],
+          "alternatives": [],
+          "search_terms": [
+            "Rooms",
+            "rooms.xyz",
+            "creative video sets",
+            "voxel interior",
+            "exterior",
+            "remix",
+            "diorama",
+            "previs"
+          ],
+          "granularity": "specific_bounded_trial"
+        }
+      ]
+    },
+    "krea-motion": {
+      "tasks": [
+        "graphics",
+        "video"
+      ],
+      "inputs": [
+        "text",
+        "image"
+      ],
+      "rights_class": "unknown",
+      "licence_note_sha256": "bfc5ab5e6bef7027ef70c1e18caf268e0d8eb729759198d5c19df9e52d741d9d"
+    },
+    "pid-to-kg": {
+      "tasks": [
+        "preproduction",
+        "analysis"
+      ],
+      "inputs": [
+        "pdf"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "bef76cc784f3cf1e8de57cafb18ed3ed1f6480851d77de015547d146dba1d4d5"
+    },
+    "kg-to-3d": {
+      "tasks": [
+        "3d",
+        "video",
+        "graphics"
+      ],
+      "inputs": [
+        "knowledge-graph"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "ac2a014ddf310df79b78e7b27df7e7e9761df3ea7924862970780cdf2030f6be"
+    },
+    "hy-mt3": {
+      "tasks": [
+        "translation",
+        "localization"
+      ],
+      "inputs": [
+        "text"
+      ],
+      "rights_class": "conditional",
+      "licence_note_sha256": "186e51ff024f3b695e1b3751f1a3c4b904eea0caaf5820a87740518c72aa415a"
     }
   },
   "application_contract": {

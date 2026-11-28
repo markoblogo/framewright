@@ -132,3 +132,9 @@ it is not a search inclusion requirement. The sitemap lists only the canonical
 landing URL, not anchors, GitHub documents or the Sites mirror. A project-path
 robots.txt cannot set the GitHub Pages host's crawler policy. Local preparation,
 public deployment and measured search visibility are separate states.
+
+## Zopia creator partnership —27November2026
+
+Owner activated Zopia and requested its logo in the existing collaboration loop. Official vector retained locally;four brands in both loop groups. Copy now covers evaluations and creator partnerships,without claiming a completed Zopia review. Desktop1280/mobile390 and reduced-motion wrap/pause checks passed;logo images decoded,no horizontal overflow. GitHub Pages commitd1b7f1a1f461172757b114af28014539ec986a66,build45990636291succeeded and anonymous HTML contains both Zopia instances. Existing Sites mirror version8 deployed successfully from source9942c62545e087e5aa8d62a161f1eb480b671ade. Private evidence:records/zopia-partnership-2026-11-27/. No software release or public budget details.
+
+**PLAUD follow-up,27November:** owner confirmed the existing partnership and authorized the logo while awaiting the review device. Official transparent header PNG added as fifth brand;mobile marquee widened,static/reduced-motion layouts wrap without overflow. Main Pages commit1d228e92da3512c6c8735c41efc83ee79d0b88d6,build45994727861succeeded. Existing Sites mirror version9deployed successfully from sourceeda5ff2f5b47a7d8272828d967a3c35514382710. No completed device review claimed.

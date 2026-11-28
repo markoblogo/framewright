@@ -1,5 +1,7 @@
 # Internal studio scope
 
+27November2026 expansion:[creative agency operating direction](agency-operating-model.md). The internal target now includes client/partner commitments and communication,shared resource economics,research and own media around audiovisual and interactive production. Games and worlds are products in their own right. The6November scope below remains the foundation;this update does not claim a complete agency system or change the public site.
+
 Owner clarification,6November2026. Public positioning remains **video-first**; internally Framewright is a personal agent-led creative-production and delivery toolkit. This clarifies the existing [personal studio direction](personal-studio.md), not a new all-purpose editor or an autonomous social publisher. It adds no installation, schedule, account action or production authority.
 
 ## Products and evidence boundaries

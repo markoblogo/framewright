@@ -1,5 +1,13 @@
 # Grow the lab without growing unsupported claims
 
+## Recent bounded trials — 26–28 November 2026
+
+- **Editing and interactive state:** [Video Explainer native 3D](experiments/video-explainer-12s-2026-11-26.md), [Yumina save/restore UI](experiments/yumina-ui-state-2026-11-26.md) and [OpenMotion reference edit](experiments/openmotion-reference-edit-2026-11-27.md). Retained additional routes, with the recorded repair/fidelity caveats.
+- **Image and motion treatments:** [Emerging Images](experiments/emerging-images-8s-2026-11-26.md), [Paper Crumple](experiments/paper-crumple-8s-2026-11-27.md), [PixelFX palettes](experiments/pixelfx-lighthouse-palettes-2026-11-27.md), [line-boil lighthouse](experiments/line-boil-lighthouse-2026-11-27.md) and [exploded-view module](experiments/exploded-view-module-2026-11-28.md). Owner adoption, rejection and pending decisions remain distinct; compact exploded view is a case-specific preference.
+- **Worlds and sound in real production:** [Rooms creative sets](experiments/rooms-creative-video-sets-2026-11-27.md), [Slow Roads plate/camera and REA follow-up](experiments/slow-roads-road-background-2026-11-27.md), [AssBench reaction timing](experiments/assbench-reaction-cues-2026-11-27.md). No generic commercial, export or automatic semantic qualification.
+
+[Current queue and counting rules](experiment-queue.md). Variants and retries do not create extra trial families; the public index retains failures as well as successes.
+
 6November: [EmbeddingGemma2 closeout](productions/media-semantic-search.md) and [illustrative media-search recipe](methods/illustrative-media-search.md): published per owner, retrospective Radar delivery verified, dependency-aware cleanup complete. No model inference or general retrieval qualification.
 
 [Real2Sim](productions/real2sim-twins.md):111s accepted English explainer, original MuJoCo toy dynamics, source-qualified publication package and verified Radar publication/ack duplicate protection. [Method](methods/physics-backed-research-explainer.md); no real-world calibration or completed analytics cycle.
